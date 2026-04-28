@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Design Digest</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+
+.header{text-align:center;padding:40px 0 20px}
+.header h1{font-size:32px;font-weight:700;background:linear-gradient(135deg,#6366f1,#d946ef);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{color:#86868b;font-size:14px;margin-top:4px}
+
+/* Stats */
+.stats{display:flex;gap:12px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
+.stat-card{background:#fff;border-radius:12px;padding:10px 18px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06);min-width:80px;cursor:pointer;transition:.15s;border:2px solid transparent}
+.stat-card:hover{border-color:#6366f1}
+.stat-card.active{border-color:#6366f1;background:#f0f0ff}
+.stat-card .num{font-size:20px;font-weight:700;color:#6366f1}
+.stat-card .label{font-size:10px;color:#86868b;margin-top:2px}
+
+/* Controls */
+.controls{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.search-input{flex:1;min-width:200px;padding:10px 16px;border:1px solid #e5e5ea;border-radius:10px;font-size:14px;outline:none;background:#fff;transition:.15s}
+.search-input:focus{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.1)}
+.filter-label{font-size:12px;font-weight:600;color:#86868b;margin-right:4px}
+
+/* Filter buttons */
+.source-filters,.category-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.filter-btn{padding:6px 14px;border-radius:20px;border:1px solid #e5e5ea;background:#fff;cursor:pointer;font-size:12px;transition:.15s;white-space:nowrap}
+.filter-btn.active{background:#6366f1;color:#fff;border-color:#6366f1}
+.filter-btn:hover:not(.active){border-color:#6366f1}
+.filter-btn.source-小红书.active{background:#c62828;border-color:#c62828;color:#fff}
+.filter-btn.source-抖音.active{background:#2e7d32;border-color:#2e7d32;color:#fff}
+.filter-btn.source-Instagram.active{background:#7b1fa2;border-color:#7b1fa2;color:#fff}
+.filter-btn.source-Good.active{background:#e65100;border-color:#e65100;color:#fff}
+.filter-btn.source-iF.active{background:#01579b;border-color:#01579b;color:#fff}
+.filter-btn.source-Red.active{background:#b71c1c;border-color:#b71c1c;color:#fff}
+.filter-btn.source-A.active{background:#4a148c;border-color:#4a148c;color:#fff}
+
+/* Items grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:.2s;position:relative;overflow:hidden}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-2px)}
+.card .badge{position:absolute;top:12px;right:12px;font-size:10px;padding:3px 8px;border-radius:6px;font-weight:600}
+.badge-score{background:#6366f1;color:#fff}
+.badge-top3{background:#f59e0b;color:#fff}
+.card h3{font-size:14px;font-weight:600;margin-bottom:5px;line-height:1.4;padding-right:40px}
+.card h3 a{color:#1d1d1f;text-decoration:none}
+.card h3 a:hover{color:#6366f1}
+.card .reason{font-size:12px;color:#86868b;margin-bottom:6px;line-height:1.5}
+.card .meta{font-size:11px;color:#aeaeb2;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.card .tag{display:inline-block;font-size:9px;padding:2px 7px;border-radius:4px;margin-right:3px;background:#f0f0f5;color:#6366f1}
+.card .cat-tag{background:#e8f5e9;color:#2e7d32}
+.card .src-tag{font-weight:600}
+.src-tag.src-小红书{background:#fce4ec;color:#c62828}
+.src-tag.src-抖音{background:#e8f5e9;color:#2e7d32}
+.src-tag.src-Instagram{background:#f3e5f5;color:#7b1fa2}
+.src-tag.src-Good{background:#fff3e0;color:#e65100}
+.src-tag.src-iF{background:#e3f2fd;color:#01579b}
+.src-tag.src-Red{background:#ffebee;color:#b71c1c}
+.src-tag.src-A{background:#f3e5f5;color:#4a148c}
+
+/* Empty state */
+.empty{text-align:center;padding:60px 20px;color:#aeaeb2;grid-column:1/-1}
+.empty .icon{font-size:48px;margin-bottom:12px}
+.empty p{font-size:15px}
+
+.footer{text-align:center;padding:30px;color:#aeaeb2;font-size:12px}
+
+.server-status{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#86868b;margin-left:10px}
+.server-dot{width:8px;height:8px;border-radius:50%;background:#30d158}
+.server-dot.offline{background:#ff453a}
+
+@media(max-width:700px){
+  .container{padding:12px}
+  .grid{grid-template-columns:1fr}
+  .header{padding:20px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>🎯 Daily Design Digest</h1>
+    <p id="subtitle">7个设计平台 · 15个品类 · 每日更新</p>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="controls">
+    <input type="text" class="search-input" id="search" placeholder="🔍 搜索标题、品类、标签..." oninput="render()">
+    <span class="server-status" id="serverStatus"><span class="server-dot offline" id="serverDot"></span> 离线版</span>
+    <button class="filter-btn" onclick="refreshNow()" style="background:#f0f0f5;border:1px solid #e5e5ea;padding:6px 14px;border-radius:20px;cursor:pointer;font-size:12px">🔄 刷新数据</button>
+  </div>
+
+  <div class="source-filters" id="sourceFilters"></div>
+  <div class="category-filters" id="categoryFilters"></div>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="footer">
+    <p>数据来源：小红书 · 抖音 · Instagram · Good Design Award · iF · Red Dot · A' Design</p>
+    <p style="margin-top:4px" id="footerTime"></p>
+  </div>
+</div>
+
+<script>
+let data = { items: [], stats: {} };
+let activeSource = '全部';
+let activeCategory = '全部';
+let searchQuery = '';
+
+async function loadData() {
+  const dot = document.getElementById('serverDot');
+  const status = document.getElementById('serverStatus');
+  try {
+    const resp = await fetch('/api/digest');
+    if (!resp.ok) throw new Error();
+    data = await resp.json();
+    dot.className = 'server-dot';
+    status.innerHTML = '<span class="server-dot"></span> 实时数据';
+  } catch(e) {
+    data = getDemoData();
+    dot.className = 'server-dot offline';
+    status.innerHTML = '<span class="server-dot offline"></span> 离线模式（示例数据）';
+  }
+  render();
+}
+
+function refreshNow() {
+  document.getElementById('subtitle').textContent = '🔄 刷新中...';
+  loadData();
+}
+
+function render() {
+  const q = document.getElementById('search').value.toLowerCase();
+  searchQuery = q;
+
+  let filtered = data.items.filter(item => {
+    if (activeSource !== '全部' && item.source !== activeSource) return false;
+    if (activeCategory !== '全部' && item.category !== activeCategory) return false;
+    if (q) {
+      const text = (item.title + ' ' + (item.category||'') + ' ' + item.source + ' ' + (item.tags||[]).join(' ')).toLowerCase();
+      if (!text.includes(q)) return false;
+    }
+    return true;
+  });
+
+  filtered.sort((a, b) => (b.score||0) - (a.score||0));
+
+  renderStats();
+  renderSourceFilters();
+  renderCategoryFilters();
+  renderGrid(filtered);
+
+  const total = data.items.length;
+  document.getElementById('subtitle').textContent = 
+    filtered.length !== total
+      ? `筛选后 ${filtered.length} 条 / 共 ${total} 条`
+      : `${total} 条设计灵感 · 7个来源 · 15个品类`;
+  document.getElementById('footerTime').textContent =
+    data.timestamp ? `更新于 ${new Date(data.timestamp).toLocaleString('zh-CN')}` : '';
+}
+
+function renderStats() {
+  const el = document.getElementById('stats');
+  const total = data.items.length;
+  const bySource = {};
+  data.items.forEach(i => { const s = i.source||'未知'; bySource[s] = (bySource[s]||0)+1; });
+  const sources = Object.keys(bySource);
+  
+  const sourceColors = {
+    '小红书': '#c62828','抖音':'#2e7d32','Instagram':'#7b1fa2',
+    'Good Design Award':'#e65100','iF设计奖':'#01579b','Red Dot':'#b71c1c',
+    "A' Design Award":'#4a148c'
+  };
+  
+  let html = `<div class="stat-card ${activeSource==='全部'?'active':''}" onclick="setSource('全部')">
+    <div class="num">${total}</div><div class="label">全部</div></div>`;
+  
+  for (const s of sources) {
+    const color = sourceColors[s] || '#6366f1';
+    html += `<div class="stat-card ${activeSource===s?'active':''}" onclick="setSource('${s}')" style="${activeSource===s?`border-color:${color}`:''}">
+      <div class="num">${bySource[s]}</div><div class="label" style="color:${color}">${s.replace(' Design Award','').replace('设计奖','奖')}</div></div>`;
+  }
+  el.innerHTML = html;
+}
+
+function renderSourceFilters() {
+  const el = document.getElementById('sourceFilters');
+  const sources = ['全部', ...new Set(data.items.map(i => i.source).filter(Boolean))];
+  const colors = { '小红书':'source-小红书','抖音':'source-抖音','Instagram':'source-Instagram',
+    'Good Design Award':'source-Good','iF设计奖':'source-iF','Red Dot':'source-Red',
+    "A' Design Award":"source-A" };
+  el.innerHTML = sources.map(s =>
+    `<button class="filter-btn ${colors[s]||''} ${activeSource===s?'active':''}" onclick="setSource('${s}')">${s}</button>`
+  ).join('');
+}
+
+function renderCategoryFilters() {
+  const el = document.getElementById('categoryFilters');
+  const cats = ['全部', ...new Set(data.items.map(i => i.category).filter(Boolean))];
+  el.innerHTML = cats.map(c =>
+    `<button class="filter-btn ${activeCategory===c?'active':''}" onclick="setCategory('${c}')">${c}</button>`
+  ).join('');
+}
+
+function renderGrid(items) {
+  const grid = document.getElementById('grid');
+  if (items.length === 0) {
+    grid.innerHTML = '<div class="empty"><div class="icon">🔍</div><p>没有找到匹配的内容</p></div>';
+    return;
+  }
+
+  const colors = { '小红书':'src-小红书','抖音':'src-抖音','Instagram':'src-Instagram',
+    'Good Design Award':'src-Good','iF设计奖':'src-iF','Red Dot':'src-Red',
+    "A' Design Award":"src-A" };
+
+  grid.innerHTML = items.map((item, i) => {
+    const isTop3 = i < 3 && activeSource === '全部' && activeCategory === '全部' && !searchQuery;
+    const sc = item.score || 7;
+    const srcClass = colors[item.source] || '';
+    return `<div class="card">
+      <span class="badge ${isTop3?'badge-top3':'badge-score'}">${isTop3?'⭐':''} ${sc.toFixed(1)}</span>
+      <span class="tag src-tag ${srcClass}">${item.source||'未知'}</span>
+      ${item.category ? `<span class="tag cat-tag">${item.category}</span>` : ''}
+      <h3><a href="${item.url||'#'}" target="_blank" rel="noopener">${item.title||'未命名'}</a></h3>
+      ${item.reason ? `<p class="reason">${item.reason}</p>` : ''}
+      <div class="meta">
+        <span>${item.creator||''}</span>
+        ${(item.tags||[]).map(t => `<span class="tag">${t}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function setSource(s) { activeSource = s; render(); }
+function setCategory(c) { activeCategory = c; render(); }
+
+loadData();
+setInterval(loadData, 300000);
+
+// ====== 示例数据（离线模式） ======
+function getDemoData() {
+  const cats = ['水杯','创意厨具','卡包','收纳包','钥匙扣水壶','氛围灯','日历',
+    '冲锋衣','帽子','T恤','卫衣','Polo衫','充电宝','手机壳','创意桌搭'];
+  const sources = ['小红书','抖音','Instagram','Good Design Award','iF设计奖','Red Dot',"A' Design Award"];
+  const items = [];
+  let idx = 0;
+  
+  const demos = {
+    '水杯': { k:['Kinto CAST陶瓷杯','虎牌保温杯','MUJI白瓷杯','BALMUDA The Pot'], s:8.5 },
+    '创意厨具': { k:['柳宗理铸铁锅','可折叠砧板','Joseph Joseph厨具套装'], s:8.0 },
+    '卡包': { k:['MAGSAFE卡片包','碳纤维超薄卡包','牛皮极简卡包'], s:7.5 },
+    '收纳包': { k:['MUJI PP收纳盒','模块化桌面收纳','MONO收纳袋'], s:7.5 },
+    '钥匙扣水壶': { k:['Nalgene水壶','折叠硅胶水壶','BOTTLED JOY'], s:7.5 },
+    '氛围灯': { k:['Nanoleaf奇光板','飞利浦Hue','Dyson Light Cycle'], s:8.0 },
+    '日历': { k:['MUJI翻页日历','HIGHTIDE桌面台历','PAPIER PLATZ'], s:7.5 },
+    '冲锋衣': { k:['Arc\'teryx Alpha SV','The North Face Summit','Patagonia Torrentshell'], s:8.0 },
+    '帽子': { k:['New Era 59FIFTY','Stüssy渔夫帽','Carhartt棒球帽'], s:7.0 },
+    'T恤': { k:['UNIQLO U系列','优衣库设计Tee','COS极简T恤'], s:7.0 },
+    '卫衣': { k:['Essentials连帽卫衣','Fear of God卫衣','A.P.C.卫衣'], s:7.5 },
+    'Polo衫': { k:['Ralph Lauren Polo','Fred Perry经典Polo','Sunspel英国制Polo'], s:7.0 },
+    '充电宝': { k:['Anker超薄充电宝','SHARGE MagSafe','Baseus Blade'], s:7.5 },
+    '手机壳': { k:['Casetify创意壳','PITAKA磁吸壳','Nomad真皮壳'], s:7.0 },
+    '创意桌搭': { k:['BenQ ScreenBar','IKEA UPPSPEL桌','Herman Miller Sayl椅'], s:8.0 },
+  };
+
+  for (const [cat, info] of Object.entries(demos)) {
+    for (const title of info.k) {
+      const src = sources[idx % sources.length];
+      const baseScore = info.s + (Math.random() - 0.5) * 0.6;
+      const tags = [cat, src];
+      if (['Good Design Award','iF设计奖','Red Dot',"A' Design Award"].includes(src)) tags.push('获奖');
+      items.push({
+        title: `${title} · ${src}`,
+        url: '#',
+        reason: `${cat}设计灵感，来自${src}`,
+        source: src, category: cat,
+        creator: src === '小红书' ? '小红书设计师' : src === '抖音' ? '抖音创作者' : src,
+        score: Math.round(baseScore * 10) / 10,
+        tags
+      });
+      idx++;
+    }
+  }
+  
+  items.sort((a,b) => b.score - a.score);
+  return { items, stats: { total: items.length }, date: '2026-04-27', timestamp: new Date().toISOString() };
+}
+</script>
+</body>
+</html>

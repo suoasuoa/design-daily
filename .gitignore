@@ -1,0 +1,32 @@
+# 敏感信息
+cookies.json
+*.env
+.env.*
+credentials.json
+
+# 日志
+server.log
+*.log
+
+# 截图
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 数据缓存
+data/xhs_screenshot.png
+
+# Node
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
