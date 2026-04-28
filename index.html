@@ -42,9 +42,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 
 /* Items grid */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
-.card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:.2s;position:relative;overflow:hidden}
+.card{background:#fff;border-radius:14px;padding:0;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:.2s;position:relative;overflow:hidden;display:flex;flex-direction:column}
 .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-2px)}
-.card .badge{position:absolute;top:12px;right:12px;font-size:10px;padding:3px 8px;border-radius:6px;font-weight:600}
+.card-img{width:100%;height:180px;object-fit:cover;background:#f0f0f5;display:block}
+.card-img.no-img{display:none}
+.card-body{padding:16px}
+.card .badge{position:absolute;top:12px;right:12px;font-size:10px;padding:3px 8px;border-radius:6px;font-weight:600;z-index:1}
 .badge-score{background:#6366f1;color:#fff}
 .badge-top3{background:#f59e0b;color:#fff}
 .card h3{font-size:14px;font-weight:600;margin-bottom:5px;line-height:1.4;padding-right:40px}
@@ -244,15 +247,19 @@ function renderGrid(items) {
     const isTop3 = i < 3 && activeSource === '全部' && activeCategory === '全部' && !searchQuery;
     const sc = item.score || 7;
     const srcClass = colors[item.source] || '';
+    const hasImg = item.image && item.image.startsWith('http');
     return `<div class="card">
       <span class="badge ${isTop3?'badge-top3':'badge-score'}">${isTop3?'⭐':''} ${sc.toFixed(1)}</span>
-      <span class="tag src-tag ${srcClass}">${item.source||'未知'}</span>
-      ${item.category ? `<span class="tag cat-tag">${item.category}</span>` : ''}
-      <h3><a href="${item.url||'#'}" target="_blank" rel="noopener">${item.title||'未命名'}</a></h3>
-      ${item.reason ? `<p class="reason">${item.reason}</p>` : ''}
-      <div class="meta">
-        <span>${item.creator||''}</span>
-        ${(item.tags||[]).map(t => `<span class="tag">${t}</span>`).join('')}
+      ${hasImg ? `<a href="${item.url||'#'}" target="_blank" rel="noopener"><img class="card-img" src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.classList.add('no-img')"></a>` : ''}
+      <div class="card-body">
+        <span class="tag src-tag ${srcClass}">${item.source||'未知'}</span>
+        ${item.category ? `<span class="tag cat-tag">${item.category}</span>` : ''}
+        <h3><a href="${item.url||'#'}" target="_blank" rel="noopener">${item.title||'未命名'}</a></h3>
+        ${item.reason ? `<p class="reason">${item.reason}</p>` : ''}
+        <div class="meta">
+          <span>${item.creator||''}</span>
+          ${(item.tags||[]).map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
       </div>
     </div>`;
   }).join('');
