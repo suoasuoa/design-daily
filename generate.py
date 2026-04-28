@@ -118,7 +118,39 @@ PRODUCTS = [
     {"title": "Patagonia Torrentshell", "url": "https://www.instagram.com/patagonia/", "src": "Instagram", "s": 8.1, "cat": "冲锋衣", "desc": "环保户外冲锋衣", "likes": 1800},
     {"title": "The North Face Summit", "url": "https://www.instagram.com/thenorthface/", "src": "Instagram", "s": 8.0, "cat": "冲锋衣", "desc": "巅峰系列专业冲锋衣", "likes": 2200},
     {"title": "凯乐石 冲锋衣", "url": "https://www.douyin.com/search/凯乐石冲锋衣", "src": "抖音", "s": 7.2, "cat": "冲锋衣", "desc": "国货登山冲锋衣", "likes": 900},
+    {"title": "Mammut 艾格极限冲锋衣", "url": "https://www.instagram.com/mammut/", "src": "Instagram", "s": 8.0, "cat": "冲锋衣", "desc": "瑞士专业户外冲锋衣", "likes": 1500},
+    {"title": "Mountain Hardwear Ghost", "url": "https://www.instagram.com/mountainhardwear/", "src": "Instagram", "s": 7.8, "cat": "冲锋衣", "desc": "超轻羽绒冲锋衣", "likes": 1100},
+    
+    # ========== 补充更多产品 ==========
+    # 办公用品
+    {"title": "MUJI PP 收纳盒", "url": "https://www.instagram.com/muji/", "src": "Instagram", "s": 7.5, "cat": "收纳包", "desc": "PP材质收纳盒经典", "likes": 600},
+    {"title": "IKEA SKADIS 收纳板", "url": "https://www.instagram.com/ikea/", "src": "Instagram", "s": 7.6, "cat": "收纳包", "desc": "模块化桌面收纳", "likes": 900},
+    {"title": "DULTON 工业风收纳", "url": "https://www.instagram.com/dultonofficial/", "src": "Instagram", "s": 7.5, "cat": "收纳包", "desc": "美式工业风收纳", "likes": 700},
+    {"title": "BAGGU 环保购物袋", "url": "https://www.instagram.com/baggu/", "src": "小红书", "s": 7.3, "cat": "收纳包", "desc": "彩色尼龙收纳袋", "likes": 2400},
+    # 更多充电宝
+    {"title": "SHARGE 闪极 Retro 充电宝", "url": "https://www.instagram.com/sharge/", "src": "Instagram", "s": 8.0, "cat": "充电宝", "desc": "透明设计移动电源", "likes": 2800},
+    {"title": "Mophie Powerstation", "url": "https://www.instagram.com/mophie/", "src": "Instagram", "s": 7.7, "cat": "充电宝", "desc": "苹果生态充电宝", "likes": 800},
+    {"title": "Native Union 编织充电宝", "url": "https://www.instagram.com/nativeunion/", "src": "Instagram", "s": 7.6, "cat": "充电宝", "desc": "编织线缆无线充电宝", "likes": 600},
+    # 更多水杯
+    {"title": "Loveramics 咖啡拉花杯", "url": "https://www.behance.net/gallery/70265877/Loveramics", "src": "Good Design Award", "s": 8.3, "cat": "水杯", "desc": "专业咖啡拉花杯", "likes": 1100},
+    {"title": "Bodum 法压壶", "url": "https://www.instagram.com/bodum/", "src": "Instagram", "s": 7.6, "cat": "水杯", "desc": "经典法式咖啡压壶", "likes": 700},
+    {"title": "Riedel 水晶酒杯", "url": "https://www.instagram.com/riedel/", "src": "Instagram", "s": 8.0, "cat": "水杯", "desc": "奥地利手工水晶杯", "likes": 1300},
+    {"title": "ZWIESEL 玻璃杯", "url": "https://www.instagram.com/zwiesel/", "src": "Instagram", "s": 7.8, "cat": "水杯", "desc": "德国专业水晶玻璃杯", "likes": 900},
+    # 更多氛围灯
+    {"title": "&Tradition 花苞灯", "url": "https://www.instagram.com/andtradition/", "src": "Instagram", "s": 8.2, "cat": "氛围灯", "desc": "丹麦经典台灯", "likes": 2600},
+    {"title": "Louis Poulsen PH 灯", "url": "https://www.behance.net/gallery/46517429/Louis-Poulsen", "src": "Good Design Award", "s": 8.5, "cat": "氛围灯", "desc": "北欧照明设计经典", "likes": 3100},
+    {"title": "Flos Snoopy 台灯", "url": "https://www.instagram.com/flos/", "src": "Instagram", "s": 8.1, "cat": "氛围灯", "desc": "意大利经典台灯", "likes": 2000},
+    # 更多日历
+    {"title": "Paperblanks 日程本", "url": "https://www.instagram.com/paperblanks/", "src": "Instagram", "s": 7.8, "cat": "日历", "desc": "爱尔兰复古精装日程本", "likes": 800},
+    {"title": "HOBONICHI 手帐", "url": "https://www.instagram.com/hobonichi/", "src": "Instagram", "s": 7.9, "cat": "日历", "desc": "日本经典手帐本", "likes": 1500},
+    {"title": "国誉自我手帐", "url": "https://www.xiaohongshu.com/search_result?keyword=国誉自我手帐", "src": "小红书", "s": 7.4, "cat": "日历", "desc": "日本时间管理手帐", "likes": 1200},
+    # 更多帽子
+    {"title": "Palace 5-Panel 帽", "url": "https://www.instagram.com/palaceskateboards/", "src": "Instagram", "s": 7.6, "cat": "帽子", "desc": "英国滑板品牌帽子", "likes": 1400},
+    {"title": "Kangol 贝雷帽", "url": "https://www.instagram.com/kangol/", "src": "Instagram", "s": 7.7, "cat": "帽子", "desc": "英伦经典贝雷帽", "likes": 1100},
+    {"title": "Nike Dri-FIT 运动帽", "url": "https://www.instagram.com/nike/", "src": "抖音", "s": 7.0, "cat": "帽子", "desc": "速干运动帽", "likes": 600},
 ]
+
+
 
 def generate_dataset():
     items = []
