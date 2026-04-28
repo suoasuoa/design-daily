@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-# Daily Design Digest - 数据自动生成器
-# 每天3次自动更新：可爬取Pinterest/Behance + 品牌精选数据
-import json, os, random, datetime, re, sys, urllib.request, urllib.error, ssl
+"""
+Daily Design Digest - 数据自动生成器
+每天3次自动更新：Pinterest/Behance实时爬取 + 品牌精选数据
+爬虫带重试机制 + 多重降级提取 + 随机User-Agent
+"""
+import json, os, random, datetime, re, sys, urllib.request, urllib.error, ssl, urllib.parse, time
 from collections import Counter
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
@@ -9,20 +12,21 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-# ===== 精选品牌数据 =====
+# ======================================================================
+# 精选品牌产品数据（294条，精确URL + OG图片 + 来源归属）
+# 不依赖任何在线API，离线可用
+# ======================================================================
 BRAND_ITEMS = []
-
 BRAND_ITEMS = [
   {
     "title": "Pinterest · OXO沙拉甩干器",
-    "category": "创意厨具",
-    "desc": "OXO Good Grips沙拉脱水器",
-    "url": "https://www.oxo.com/kitchen-tools/salad-spinners",
-    "image": "",
+    "reason": "Pinterest · OXO Good Grips沙拉脱水器",
     "source": "Pinterest",
-    "likes": 800,
-    "score": 8.6,
+    "category": "创意厨具",
     "creator": "Pinterest",
+    "score": 8.6,
+    "likes": 800,
+    "url": "https://www.oxo.com/kitchen-tools/salad-spinners",
     "tags": [
       "创意厨具",
       "Pinterest",
@@ -31,14 +35,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 桌面线材收纳",
-    "category": "创意桌搭",
-    "desc": "磁吸式桌面线材收纳管理器",
-    "url": "https://nomadgoods.com/collections/cables",
-    "image": "",
+    "reason": "Pinterest · 磁吸式桌面线材收纳管理器",
     "source": "Pinterest",
-    "likes": 500,
-    "score": 8.6,
+    "category": "创意桌搭",
     "creator": "Pinterest",
+    "score": 8.6,
+    "likes": 500,
+    "url": "https://nomadgoods.com/collections/cables",
     "tags": [
       "创意桌搭",
       "Pinterest",
@@ -47,14 +50,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 光影装置",
-    "category": "装置艺术",
-    "desc": "LED光影互动艺术装置",
-    "url": "https://www.teamlab.art/",
-    "image": "",
+    "reason": "Pinterest · LED光影互动艺术装置",
     "source": "Pinterest",
-    "likes": 5000,
-    "score": 8.6,
+    "category": "装置艺术",
     "creator": "Pinterest",
+    "score": 8.6,
+    "likes": 5000,
+    "url": "https://www.teamlab.art/",
     "tags": [
       "装置艺术",
       "Pinterest",
@@ -63,14 +65,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 蘑菇氛围灯",
-    "category": "氛围灯",
-    "desc": "可爱蘑菇造型小夜灯",
-    "url": "https://www.artemide.com/en/products/table/nessino",
-    "image": "",
+    "reason": "Pinterest · 可爱蘑菇造型小夜灯",
     "source": "Pinterest",
-    "likes": 2000,
-    "score": 8.6,
+    "category": "氛围灯",
     "creator": "Pinterest",
+    "score": 8.6,
+    "likes": 2000,
+    "url": "https://www.artemide.com/en/products/table/nessino",
     "tags": [
       "氛围灯",
       "Pinterest",
@@ -79,14 +80,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 极简卡包设计",
-    "category": "卡包",
-    "desc": "商务极简卡包产品设计项目",
-    "url": "https://www.behance.net/search/projects/?search=card+holder+design",
-    "image": "",
+    "reason": "Behance · 商务极简卡包产品设计项目",
     "source": "Behance",
-    "likes": 350,
-    "score": 8.6,
+    "category": "卡包",
     "creator": "Behance",
+    "score": 8.6,
+    "likes": 350,
+    "url": "https://www.behance.net/search/projects/?search=card+holder+design",
     "tags": [
       "卡包",
       "Behance",
@@ -95,14 +95,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 手工编织帽",
-    "category": "帽子",
-    "desc": "手工天然稻草编织遮阳帽",
-    "url": "https://www.etsy.com/market/handmade_straw_hat",
-    "image": "",
+    "reason": "Pinterest · 手工天然稻草编织遮阳帽",
     "source": "Pinterest",
-    "likes": 1000,
-    "score": 8.6,
+    "category": "帽子",
     "creator": "Pinterest",
+    "score": 8.6,
+    "likes": 1000,
+    "url": "https://www.etsy.com/market/handmade_straw_hat",
     "tags": [
       "帽子",
       "Pinterest",
@@ -111,14 +110,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Fear of God Essentials",
-    "category": "卫衣",
-    "desc": "高级街头基础款卫衣",
-    "url": "https://fearofgod.com/collections/essentials",
-    "image": "",
+    "reason": "A' Design Award · 高级街头基础款卫衣",
     "source": "A' Design Award",
-    "likes": 3800,
-    "score": 8.6,
+    "category": "卫衣",
     "creator": "A' Design Award",
+    "score": 8.6,
+    "likes": 3800,
+    "url": "https://fearofgod.com/collections/essentials",
     "tags": [
       "卫衣",
       "A' Design Award",
@@ -127,14 +125,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest 极简家居灵感",
-    "category": "创意礼盒",
-    "desc": "极简北欧家居设计灵感集",
-    "url": "https://www.pinterest.com/categories/home/",
-    "image": "",
+    "reason": "Pinterest · 极简北欧家居设计灵感集",
     "source": "Pinterest",
-    "likes": 1696,
-    "score": 8.6,
+    "category": "创意礼盒",
     "creator": "Pinterest",
+    "score": 8.6,
+    "likes": 1696,
+    "url": "https://www.pinterest.com/categories/home/",
     "tags": [
       "创意礼盒",
       "Pinterest",
@@ -143,14 +140,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "MUJI 翻页日历",
-    "category": "日历",
-    "desc": "经典极简桌面翻页日历",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107030204",
-    "image": "",
+    "reason": "iF设计奖 · 经典极简桌面翻页日历",
     "source": "iF设计奖",
-    "likes": 1200,
-    "score": 8.5,
+    "category": "日历",
     "creator": "iF设计奖",
+    "score": 8.5,
+    "likes": 1200,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107030204",
     "tags": [
       "日历",
       "iF设计奖",
@@ -159,14 +155,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 镜面装置",
-    "category": "装置艺术",
-    "desc": "镜面不锈钢反射装置艺术",
-    "url": "https://www.anishkapoor.com/",
-    "image": "",
+    "reason": "Pinterest · 镜面不锈钢反射装置艺术",
     "source": "Pinterest",
-    "likes": 8000,
-    "score": 8.5,
+    "category": "装置艺术",
     "creator": "Pinterest",
+    "score": 8.5,
+    "likes": 8000,
+    "url": "https://www.anishkapoor.com/",
     "tags": [
       "装置艺术",
       "Pinterest",
@@ -175,14 +170,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 磁吸锅铲套装",
-    "category": "创意厨具",
-    "desc": "磁吸收纳锅铲套装",
-    "url": "https://www.peugeot-saveurs.com/",
-    "image": "",
+    "reason": "Pinterest · 磁吸收纳锅铲套装",
     "source": "Pinterest",
-    "likes": 400,
-    "score": 8.5,
+    "category": "创意厨具",
     "creator": "Pinterest",
+    "score": 8.5,
+    "likes": 400,
+    "url": "https://www.peugeot-saveurs.com/",
     "tags": [
       "创意厨具",
       "Pinterest",
@@ -191,14 +185,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Alessi 外星人榨汁机",
-    "category": "创意厨具",
-    "desc": "后现代设计经典厨具",
-    "url": "https://www.alessi.com/products/juicy-salif",
-    "image": "",
+    "reason": "A' Design Award · 后现代设计经典厨具",
     "source": "A' Design Award",
-    "likes": 1200,
-    "score": 8.5,
+    "category": "创意厨具",
     "creator": "A' Design Award",
+    "score": 8.5,
+    "likes": 1200,
+    "url": "https://www.alessi.com/products/juicy-salif",
     "tags": [
       "创意厨具",
       "A' Design Award",
@@ -207,14 +200,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Tom Dixon 设计礼盒",
-    "category": "创意礼盒",
-    "desc": "英国设计师品牌家居礼品",
-    "url": "https://www.tomdixon.net/en/gifts.html",
-    "image": "",
+    "reason": "A' Design Award · 英国设计师品牌家居礼品",
     "source": "A' Design Award",
-    "likes": 4321,
-    "score": 8.5,
+    "category": "创意礼盒",
     "creator": "A' Design Award",
+    "score": 8.5,
+    "likes": 4321,
+    "url": "https://www.tomdixon.net/en/gifts.html",
     "tags": [
       "创意礼盒",
       "A' Design Award",
@@ -223,14 +215,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Staub 珐琅铸铁锅",
-    "category": "创意厨具",
-    "desc": "法式经典珐琅铸铁锅",
-    "url": "https://www.staub.com/us/cocotte",
-    "image": "",
+    "reason": "Good Design Award · 法式经典珐琅铸铁锅",
     "source": "Good Design Award",
-    "likes": 2300,
-    "score": 8.5,
+    "category": "创意厨具",
     "creator": "Good Design Award",
+    "score": 8.5,
+    "likes": 2300,
+    "url": "https://www.staub.com/us/cocotte",
     "tags": [
       "创意厨具",
       "Good Design Award",
@@ -239,14 +230,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Philips 千禧台灯",
-    "category": "氛围灯",
-    "desc": "LED照明设计创新之作",
-    "url": "https://www.philips.com/c-m/lighting/led-lights",
-    "image": "",
+    "reason": "iF设计奖 · LED照明设计创新之作",
     "source": "iF设计奖",
-    "likes": 1400,
-    "score": 8.5,
+    "category": "氛围灯",
     "creator": "iF设计奖",
+    "score": 8.5,
+    "likes": 1400,
+    "url": "https://www.philips.com/c-m/lighting/led-lights",
     "tags": [
       "氛围灯",
       "iF设计奖",
@@ -255,14 +245,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 潮流帽子包装",
-    "category": "帽子",
-    "desc": "街头品牌棒球帽包装设计",
-    "url": "https://www.behance.net/search/projects/?search=hat+packaging+design",
-    "image": "",
+    "reason": "Behance · 街头品牌棒球帽包装设计",
     "source": "Behance",
-    "likes": 350,
-    "score": 8.5,
+    "category": "帽子",
     "creator": "Behance",
+    "score": 8.5,
+    "likes": 350,
+    "url": "https://www.behance.net/search/projects/?search=hat+packaging+design",
     "tags": [
       "帽子",
       "Behance",
@@ -271,14 +260,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "BALMUDA 礼盒套装",
-    "category": "创意礼盒",
-    "desc": "BALMUDA家电礼盒组合",
-    "url": "https://www.balmuda.com/jp/gift/",
-    "image": "",
+    "reason": "Good Design Award · BALMUDA家电礼盒组合",
     "source": "Good Design Award",
-    "likes": 3819,
-    "score": 8.5,
+    "category": "创意礼盒",
     "creator": "Good Design Award",
+    "score": 8.5,
+    "likes": 3819,
+    "url": "https://www.balmuda.com/jp/gift/",
     "tags": [
       "创意礼盒",
       "Good Design Award",
@@ -287,14 +275,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 礼盒包装系统",
-    "category": "创意礼盒",
-    "desc": "高端礼盒包装结构设计项目",
-    "url": "https://www.behance.net/search/projects/?search=gift+box+packaging+design",
-    "image": "",
+    "reason": "Behance · 高端礼盒包装结构设计项目",
     "source": "Behance",
-    "likes": 800,
-    "score": 8.4,
+    "category": "创意礼盒",
     "creator": "Behance",
+    "score": 8.4,
+    "likes": 800,
+    "url": "https://www.behance.net/search/projects/?search=gift+box+packaging+design",
     "tags": [
       "创意礼盒",
       "Behance",
@@ -303,14 +290,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "BALMUDA K01A 电水壶",
-    "category": "水杯",
-    "desc": "手冲壶美学全新标准",
-    "url": "https://www.balmuda.com/jp/pot",
-    "image": "",
+    "reason": "iF设计奖 · 手冲壶美学全新标准",
     "source": "iF设计奖",
-    "likes": 3100,
-    "score": 8.4,
+    "category": "水杯",
     "creator": "iF设计奖",
+    "score": 8.4,
+    "likes": 3100,
+    "url": "https://www.balmuda.com/jp/pot",
     "tags": [
       "水杯",
       "iF设计奖",
@@ -319,14 +305,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 巧克力礼盒装",
-    "category": "创意礼盒",
-    "desc": "精品松露巧克力礼盒",
-    "url": "https://www.laderach.com/en/chocolate-gifts",
-    "image": "",
+    "reason": "Pinterest · 精品松露巧克力礼盒",
     "source": "Pinterest",
-    "likes": 600,
-    "score": 8.4,
+    "category": "创意礼盒",
     "creator": "Pinterest",
+    "score": 8.4,
+    "likes": 600,
+    "url": "https://www.laderach.com/en/chocolate-gifts",
     "tags": [
       "创意礼盒",
       "Pinterest",
@@ -335,30 +320,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "BALMUDA The Pot 手冲壶",
-    "category": "水杯",
-    "desc": "极致工业设计手冲电水壶",
-    "url": "https://www.balmuda.com/jp/pot",
-    "image": "https://www.balmuda.com/jp/pot/img/og/index.jpg",
+    "reason": "iF设计奖 · 极致工业设计手冲电水壶",
     "source": "iF设计奖",
-    "likes": 2800,
-    "score": 8.4,
+    "category": "水杯",
     "creator": "iF设计奖",
+    "score": 8.4,
+    "likes": 2800,
+    "url": "https://www.balmuda.com/jp/pot",
     "tags": [
       "水杯",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "https://www.balmuda.com/jp/pot/img/og/index.jpg"
   },
   {
     "title": "中茶 端午茶礼",
-    "category": "端午礼盒",
-    "desc": "中茶端午限定红茶礼盒",
-    "url": "https://www.chinatea.com.cn/",
-    "image": "",
+    "reason": "iF设计奖 · 中茶端午限定红茶礼盒",
     "source": "iF设计奖",
-    "likes": 3912,
-    "score": 8.4,
+    "category": "端午礼盒",
     "creator": "iF设计奖",
+    "score": 8.4,
+    "likes": 3912,
+    "url": "https://www.chinatea.com.cn/",
     "tags": [
       "端午礼盒",
       "iF设计奖",
@@ -367,14 +351,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 互动装置设计",
-    "category": "装置艺术",
-    "desc": "互动式数字艺术装置项目",
-    "url": "https://www.behance.net/search/projects/?search=interactive+installation",
-    "image": "",
+    "reason": "Behance · 互动式数字艺术装置项目",
     "source": "Behance",
-    "likes": 900,
-    "score": 8.4,
+    "category": "装置艺术",
     "creator": "Behance",
+    "score": 8.4,
+    "likes": 900,
+    "url": "https://www.behance.net/search/projects/?search=interactive+installation",
     "tags": [
       "装置艺术",
       "Behance",
@@ -383,14 +366,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Floral 蜡烛香味礼盒",
-    "category": "创意礼盒",
-    "desc": "天然植物香氛蜡烛套装",
-    "url": "https://www.yankeecandle.com/gifts/",
-    "image": "",
+    "reason": "A' Design Award · 天然植物香氛蜡烛套装",
     "source": "A' Design Award",
-    "likes": 1300,
-    "score": 8.4,
+    "category": "创意礼盒",
     "creator": "A' Design Award",
+    "score": 8.4,
+    "likes": 1300,
+    "url": "https://www.yankeecandle.com/gifts/",
     "tags": [
       "创意礼盒",
       "A' Design Award",
@@ -399,14 +381,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Nio 蔚来 EP9",
-    "category": "氛围灯",
-    "desc": "电动超跑设计理念",
-    "url": "https://www.nio.com/ep9",
-    "image": "",
+    "reason": "iF设计奖 · 电动超跑设计理念",
     "source": "iF设计奖",
-    "likes": 4500,
-    "score": 8.4,
+    "category": "氛围灯",
     "creator": "iF设计奖",
+    "score": 8.4,
+    "likes": 4500,
+    "url": "https://www.nio.com/ep9",
     "tags": [
       "氛围灯",
       "iF设计奖",
@@ -415,14 +396,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "MUJI 超声波香薰机",
-    "category": "氛围灯",
-    "desc": "极简超声波香薰扩散器",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550344593967",
-    "image": "",
+    "reason": "Good Design Award · 极简超声波香薰扩散器",
     "source": "Good Design Award",
-    "likes": 1600,
-    "score": 8.4,
+    "category": "氛围灯",
     "creator": "Good Design Award",
+    "score": 8.4,
+    "likes": 1600,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550344593967",
     "tags": [
       "氛围灯",
       "Good Design Award",
@@ -431,14 +411,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 永生花礼盒",
-    "category": "创意礼盒",
-    "desc": "永生花玻璃罩礼盒套装",
-    "url": "https://www.thebeastshop.com/",
-    "image": "",
+    "reason": "Pinterest · 永生花玻璃罩礼盒套装",
     "source": "Pinterest",
-    "likes": 500,
-    "score": 8.4,
+    "category": "创意礼盒",
     "creator": "Pinterest",
+    "score": 8.4,
+    "likes": 500,
+    "url": "https://www.thebeastshop.com/",
     "tags": [
       "创意礼盒",
       "Pinterest",
@@ -447,14 +426,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "New Era 59FIFTY 棒球帽",
-    "category": "帽子",
-    "desc": "MLB官方经典棒球帽",
-    "url": "https://www.neweracap.com/collections/59fifty-fitted",
-    "image": "",
+    "reason": "Good Design Award · MLB官方经典棒球帽",
     "source": "Good Design Award",
-    "likes": 4200,
-    "score": 8.4,
+    "category": "帽子",
     "creator": "Good Design Award",
+    "score": 8.4,
+    "likes": 4200,
+    "url": "https://www.neweracap.com/collections/59fifty-fitted",
     "tags": [
       "帽子",
       "Good Design Award",
@@ -463,14 +441,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "下关沱茶 端午礼盒",
-    "category": "端午礼盒",
-    "desc": "云南下关沱茶端午限定装",
-    "url": "https://www.xgtea.com/",
-    "image": "",
+    "reason": "iF设计奖 · 云南下关沱茶端午限定装",
     "source": "iF设计奖",
-    "likes": 4566,
-    "score": 8.4,
+    "category": "端午礼盒",
     "creator": "iF设计奖",
+    "score": 8.4,
+    "likes": 4566,
+    "url": "https://www.xgtea.com/",
     "tags": [
       "端午礼盒",
       "iF设计奖",
@@ -479,30 +456,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "NONOTAK 光音装置",
-    "category": "装置艺术",
-    "desc": "法国光与声媒体装置",
-    "url": "https://www.nonotak.com/",
-    "image": "https://assets.cdn.cargocollective.com/408512/435754190620483103326993812115427328/arrow-up.svg?f3a4624d93",
+    "reason": "A' Design Award · 法国光与声媒体装置",
     "source": "A' Design Award",
-    "likes": 2565,
-    "score": 8.4,
+    "category": "装置艺术",
     "creator": "A' Design Award",
+    "score": 8.4,
+    "likes": 2565,
+    "url": "https://www.nonotak.com/",
     "tags": [
       "装置艺术",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "https://assets.cdn.cargocollective.com/408512/435754190620483103326993812115427328/arrow-up.svg?f3a4624d93"
   },
   {
     "title": "Pinterest · 极简桌面日历",
-    "category": "日历",
-    "desc": "PAPIER PLATZ极简桌面日历",
-    "url": "https://www.papierplatz.com/",
-    "image": "",
+    "reason": "Pinterest · PAPIER PLATZ极简桌面日历",
     "source": "Pinterest",
-    "likes": 300,
-    "score": 8.4,
+    "category": "日历",
     "creator": "Pinterest",
+    "score": 8.4,
+    "likes": 300,
+    "url": "https://www.papierplatz.com/",
     "tags": [
       "日历",
       "Pinterest",
@@ -511,14 +487,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · Crewneck卫衣设计",
-    "category": "卫衣",
-    "desc": "经典圆领卫衣宽松版型设计",
-    "url": "https://www.uniqlo.com/us/en/c/crewneck-sweatshirts/",
-    "image": "",
+    "reason": "Pinterest · 经典圆领卫衣宽松版型设计",
     "source": "Pinterest",
-    "likes": 300,
-    "score": 8.4,
+    "category": "卫衣",
     "creator": "Pinterest",
+    "score": 8.4,
+    "likes": 300,
+    "url": "https://www.uniqlo.com/us/en/c/crewneck-sweatshirts/",
     "tags": [
       "卫衣",
       "Pinterest",
@@ -527,14 +502,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Oculus Quest 2",
-    "category": "创意桌搭",
-    "desc": "VR一体机工业设计",
-    "url": "https://www.meta.com/quest/",
-    "image": "",
+    "reason": "iF设计奖 · VR一体机工业设计",
     "source": "iF设计奖",
-    "likes": 2100,
-    "score": 8.4,
+    "category": "创意桌搭",
     "creator": "iF设计奖",
+    "score": 8.4,
+    "likes": 2100,
+    "url": "https://www.meta.com/quest/",
     "tags": [
       "创意桌搭",
       "iF设计奖",
@@ -543,14 +517,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · RFID防护卡包",
-    "category": "卡包",
-    "desc": "RFID防射频极薄卡片包",
-    "url": "https://www.secrid.com/en/products/cardprotector",
-    "image": "",
+    "reason": "Pinterest · RFID防射频极薄卡片包",
     "source": "Pinterest",
-    "likes": 350,
-    "score": 8.3,
+    "category": "卡包",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 350,
+    "url": "https://www.secrid.com/en/products/cardprotector",
     "tags": [
       "卡包",
       "Pinterest",
@@ -559,14 +532,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "虎屋 端午限定礼盒",
-    "category": "端午礼盒",
-    "desc": "京都虎屋端午柏饼礼盒",
-    "url": "https://www.toraya-group.co.jp/",
-    "image": "",
+    "reason": "Good Design Award · 京都虎屋端午柏饼礼盒",
     "source": "Good Design Award",
-    "likes": 1236,
-    "score": 8.3,
+    "category": "端午礼盒",
     "creator": "Good Design Award",
+    "score": 8.3,
+    "likes": 1236,
+    "url": "https://www.toraya-group.co.jp/",
     "tags": [
       "端午礼盒",
       "Good Design Award",
@@ -575,14 +547,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 超薄充电宝",
-    "category": "充电宝",
-    "desc": "Anker超薄磁吸充电宝",
-    "url": "https://www.anker.com/collections/chargers",
-    "image": "",
+    "reason": "Pinterest · Anker超薄磁吸充电宝",
     "source": "Pinterest",
-    "likes": 350,
-    "score": 8.3,
+    "category": "充电宝",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 350,
+    "url": "https://www.anker.com/collections/chargers",
     "tags": [
       "充电宝",
       "Pinterest",
@@ -591,14 +562,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "KINTO CAST 陶瓷咖啡杯",
-    "category": "水杯",
-    "desc": "日式极简陶瓷咖啡杯",
-    "url": "https://kinto-global.com/collections/cast/",
-    "image": "",
+    "reason": "Good Design Award · 日式极简陶瓷咖啡杯",
     "source": "Good Design Award",
-    "likes": 2200,
-    "score": 8.3,
+    "category": "水杯",
     "creator": "Good Design Award",
+    "score": 8.3,
+    "likes": 2200,
+    "url": "https://kinto-global.com/collections/cast/",
     "tags": [
       "水杯",
       "Good Design Award",
@@ -607,14 +577,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 极简Logo Tee",
-    "category": "T恤",
-    "desc": "A.P.C.经典极简Logo白T恤",
-    "url": "https://www.apc.fr/categories/men/t-shirts",
-    "image": "",
+    "reason": "Pinterest · A.P.C.经典极简Logo白T恤",
     "source": "Pinterest",
-    "likes": 600,
-    "score": 8.3,
+    "category": "T恤",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 600,
+    "url": "https://www.apc.fr/categories/men/t-shirts",
     "tags": [
       "T恤",
       "Pinterest",
@@ -623,14 +592,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "柳宗理 铸铁锅",
-    "category": "创意厨具",
-    "desc": "日本工业设计大师经典",
-    "url": "https://www.soriyanagi.jp/product/ironware/",
-    "image": "",
+    "reason": "Good Design Award · 日本工业设计大师经典",
     "source": "Good Design Award",
-    "likes": 1800,
-    "score": 8.3,
+    "category": "创意厨具",
     "creator": "Good Design Award",
+    "score": 8.3,
+    "likes": 1800,
+    "url": "https://www.soriyanagi.jp/product/ironware/",
     "tags": [
       "创意厨具",
       "Good Design Award",
@@ -639,14 +607,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance UI/UX 精选合集",
-    "category": "创意礼盒",
-    "desc": "Behance全球精选UI/UX设计案例",
-    "url": "https://www.behance.net/galleries/ui-ux",
-    "image": "",
+    "reason": "Behance · Behance全球精选UI/UX设计案例",
     "source": "Behance",
-    "likes": 2436,
-    "score": 8.3,
+    "category": "创意礼盒",
     "creator": "Behance",
+    "score": 8.3,
+    "likes": 2436,
+    "url": "https://www.behance.net/galleries/ui-ux",
     "tags": [
       "创意礼盒",
       "Behance",
@@ -655,14 +622,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 中秋礼盒包装项目",
-    "category": "中秋礼盒",
-    "desc": "新式中秋月饼礼盒包装设计",
-    "url": "https://www.behance.net/search/projects/?search=mooncake+packaging",
-    "image": "",
+    "reason": "Behance · 新式中秋月饼礼盒包装设计",
     "source": "Behance",
-    "likes": 600,
-    "score": 8.3,
+    "category": "中秋礼盒",
     "creator": "Behance",
+    "score": 8.3,
+    "likes": 600,
+    "url": "https://www.behance.net/search/projects/?search=mooncake+packaging",
     "tags": [
       "中秋礼盒",
       "Behance",
@@ -671,14 +637,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Vans 经典滑板鞋",
-    "category": "帽子",
-    "desc": "美式滑板鞋设计",
-    "url": "https://www.vans.com/en-us/categories/classic-shoes-old-skool",
-    "image": "",
+    "reason": "A' Design Award · 美式滑板鞋设计",
     "source": "A' Design Award",
-    "likes": 2000,
-    "score": 8.3,
+    "category": "帽子",
     "creator": "A' Design Award",
+    "score": 8.3,
+    "likes": 2000,
+    "url": "https://www.vans.com/en-us/categories/classic-shoes-old-skool",
     "tags": [
       "帽子",
       "A' Design Award",
@@ -687,14 +652,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · T恤图案设计",
-    "category": "T恤",
-    "desc": "原创T恤图案印花设计项目",
-    "url": "https://www.behance.net/search/projects/?search=t-shirt+pattern+design",
-    "image": "",
+    "reason": "Behance · 原创T恤图案印花设计项目",
     "source": "Behance",
-    "likes": 400,
-    "score": 8.3,
+    "category": "T恤",
     "creator": "Behance",
+    "score": 8.3,
+    "likes": 400,
+    "url": "https://www.behance.net/search/projects/?search=t-shirt+pattern+design",
     "tags": [
       "T恤",
       "Behance",
@@ -703,14 +667,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 极简纸灯",
-    "category": "氛围灯",
-    "desc": "日本和纸极简落地灯",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S106010102",
-    "image": "",
+    "reason": "Pinterest · 日本和纸极简落地灯",
     "source": "Pinterest",
-    "likes": 1800,
-    "score": 8.3,
+    "category": "氛围灯",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 1800,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S106010102",
     "tags": [
       "氛围灯",
       "Pinterest",
@@ -719,14 +682,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 手机壳图案系列",
-    "category": "手机壳",
-    "desc": "原创插画手机壳图案项目",
-    "url": "https://www.behance.net/search/projects/?search=phone+case+illustration",
-    "image": "",
+    "reason": "Behance · 原创插画手机壳图案项目",
     "source": "Behance",
-    "likes": 350,
-    "score": 8.3,
+    "category": "手机壳",
     "creator": "Behance",
+    "score": 8.3,
+    "likes": 350,
+    "url": "https://www.behance.net/search/projects/?search=phone+case+illustration",
     "tags": [
       "手机壳",
       "Behance",
@@ -735,14 +697,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 实木显示器架",
-    "category": "创意桌搭",
-    "desc": "北美黑胡桃木实木显示器架",
-    "url": "https://grovemade.com/shop/desk-accessories/",
-    "image": "",
+    "reason": "Pinterest · 北美黑胡桃木实木显示器架",
     "source": "Pinterest",
-    "likes": 2500,
-    "score": 8.3,
+    "category": "创意桌搭",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 2500,
+    "url": "https://grovemade.com/shop/desk-accessories/",
     "tags": [
       "创意桌搭",
       "Pinterest",
@@ -751,14 +712,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · Joseph Joseph砧板",
-    "category": "创意厨具",
-    "desc": "Joseph Joseph分类菜板，卫生设计",
-    "url": "https://www.josephjoseph.com/products/chopping-boards",
-    "image": "",
+    "reason": "Pinterest · Joseph Joseph分类菜板，卫生设计",
     "source": "Pinterest",
-    "likes": 2500,
-    "score": 8.3,
+    "category": "创意厨具",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 2500,
+    "url": "https://www.josephjoseph.com/products/chopping-boards",
     "tags": [
       "创意厨具",
       "Pinterest",
@@ -767,14 +727,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "八马茶业 中秋茶礼",
-    "category": "中秋礼盒",
-    "desc": "八马茶业中秋限定礼品装",
-    "url": "https://www.bamatea.com/",
-    "image": "",
+    "reason": "iF设计奖 · 八马茶业中秋限定礼品装",
     "source": "iF设计奖",
-    "likes": 4665,
-    "score": 8.3,
+    "category": "中秋礼盒",
     "creator": "iF设计奖",
+    "score": 8.3,
+    "likes": 4665,
+    "url": "https://www.bamatea.com/",
     "tags": [
       "中秋礼盒",
       "iF设计奖",
@@ -783,14 +742,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 端午礼盒包装",
-    "category": "端午礼盒",
-    "desc": "新中式端午礼盒包装设计",
-    "url": "https://www.wufangzhai.com/",
-    "image": "",
+    "reason": "Pinterest · 新中式端午礼盒包装设计",
     "source": "Pinterest",
-    "likes": 300,
-    "score": 8.3,
+    "category": "端午礼盒",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 300,
+    "url": "https://www.wufangzhai.com/",
     "tags": [
       "端午礼盒",
       "Pinterest",
@@ -799,14 +757,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · stojo折叠随行杯",
-    "category": "水杯",
-    "desc": "stojo可折叠硅胶随行杯，环保便携",
-    "url": "https://stojo.com/collections/cups",
-    "image": "",
+    "reason": "Pinterest · stojo可折叠硅胶随行杯，环保便携",
     "source": "Pinterest",
-    "likes": 1200,
-    "score": 8.3,
+    "category": "水杯",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 1200,
+    "url": "https://stojo.com/collections/cups",
     "tags": [
       "水杯",
       "Pinterest",
@@ -815,14 +772,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "伊势半 月见礼盒",
-    "category": "中秋礼盒",
-    "desc": "日本传统月见节礼盒包装",
-    "url": "https://www.isehan.jp/",
-    "image": "",
+    "reason": "Good Design Award · 日本传统月见节礼盒包装",
     "source": "Good Design Award",
-    "likes": 2704,
-    "score": 8.3,
+    "category": "中秋礼盒",
     "creator": "Good Design Award",
+    "score": 8.3,
+    "likes": 2704,
+    "url": "https://www.isehan.jp/",
     "tags": [
       "中秋礼盒",
       "Good Design Award",
@@ -831,14 +787,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 月饼礼盒设计",
-    "category": "中秋礼盒",
-    "desc": "轻奢风月饼礼盒包装设计",
-    "url": "https://www.maxims.com.hk/",
-    "image": "",
+    "reason": "Pinterest · 轻奢风月饼礼盒包装设计",
     "source": "Pinterest",
-    "likes": 500,
-    "score": 8.3,
+    "category": "中秋礼盒",
     "creator": "Pinterest",
+    "score": 8.3,
+    "likes": 500,
+    "url": "https://www.maxims.com.hk/",
     "tags": [
       "中秋礼盒",
       "Pinterest",
@@ -847,30 +802,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "虎屋 中秋限定礼盒",
-    "category": "中秋礼盒",
-    "desc": "京都虎屋和果子中秋限定",
-    "url": "https://www.toraya-group.co.jp/",
-    "image": "https://cdn.shopify.com/s/files/1/0641/4503/1410/files/cover_105301.jpg?v=1750647415",
+    "reason": "Good Design Award · 京都虎屋和果子中秋限定",
     "source": "Good Design Award",
-    "likes": 4144,
-    "score": 8.2,
+    "category": "中秋礼盒",
     "creator": "Good Design Award",
+    "score": 8.2,
+    "likes": 4144,
+    "url": "https://www.toraya-group.co.jp/",
     "tags": [
       "中秋礼盒",
       "Good Design Award",
       "获奖"
-    ]
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0641/4503/1410/files/cover_105301.jpg?v=1750647415"
   },
   {
     "title": "Pinterest · 翻页日历",
-    "category": "日历",
-    "desc": "MUJI经典翻页桌面日历",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107030204",
-    "image": "",
+    "reason": "Pinterest · MUJI经典翻页桌面日历",
     "source": "Pinterest",
-    "likes": 200,
-    "score": 8.2,
+    "category": "日历",
     "creator": "Pinterest",
+    "score": 8.2,
+    "likes": 200,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107030204",
     "tags": [
       "日历",
       "Pinterest",
@@ -879,14 +833,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Artemide Tolomeo 台灯",
-    "category": "氛围灯",
-    "desc": "意大利经典机械臂台灯",
-    "url": "https://www.artemide.com/en/products/table/tolomeo",
-    "image": "",
+    "reason": "A' Design Award · 意大利经典机械臂台灯",
     "source": "A' Design Award",
-    "likes": 2000,
-    "score": 8.2,
+    "category": "氛围灯",
     "creator": "A' Design Award",
+    "score": 8.2,
+    "likes": 2000,
+    "url": "https://www.artemide.com/en/products/table/tolomeo",
     "tags": [
       "氛围灯",
       "A' Design Award",
@@ -895,14 +848,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Stelton 保温壶礼盒",
-    "category": "创意礼盒",
-    "desc": "丹麦设计品牌礼盒",
-    "url": "https://www.stelton.com/en/em77-vacuum-jug-1l-soft-black",
-    "image": "",
+    "reason": "A' Design Award · 丹麦设计品牌礼盒",
     "source": "A' Design Award",
-    "likes": 1620,
-    "score": 8.2,
+    "category": "创意礼盒",
     "creator": "A' Design Award",
+    "score": 8.2,
+    "likes": 1620,
+    "url": "https://www.stelton.com/en/em77-vacuum-jug-1l-soft-black",
     "tags": [
       "创意礼盒",
       "A' Design Award",
@@ -911,14 +863,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 折叠运动水壶",
-    "category": "钥匙扣水壶",
-    "desc": "可折叠硅胶运动水壶",
-    "url": "https://nalgene.com/product/32oz-wide-mouth-sustain/",
-    "image": "",
+    "reason": "Pinterest · 可折叠硅胶运动水壶",
     "source": "Pinterest",
-    "likes": 200,
-    "score": 8.2,
+    "category": "钥匙扣水壶",
     "creator": "Pinterest",
+    "score": 8.2,
+    "likes": 200,
+    "url": "https://nalgene.com/product/32oz-wide-mouth-sustain/",
     "tags": [
       "钥匙扣水壶",
       "Pinterest",
@@ -927,14 +878,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 桌面收纳系统设计",
-    "category": "创意桌搭",
-    "desc": "模块化桌面收纳系统设计项目",
-    "url": "https://www.behance.net/search/projects/?search=desk+organizer+design",
-    "image": "",
+    "reason": "Behance · 模块化桌面收纳系统设计项目",
     "source": "Behance",
-    "likes": 400,
-    "score": 8.2,
+    "category": "创意桌搭",
     "creator": "Behance",
+    "score": 8.2,
+    "likes": 400,
+    "url": "https://www.behance.net/search/projects/?search=desk+organizer+design",
     "tags": [
       "创意桌搭",
       "Behance",
@@ -943,14 +893,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 极简水壶设计",
-    "category": "水杯",
-    "desc": "工业设计极简水壶项目",
-    "url": "https://www.behance.net/search/projects/?search=minimalist+water+bottle+design",
-    "image": "",
+    "reason": "Behance · 工业设计极简水壶项目",
     "source": "Behance",
-    "likes": 800,
-    "score": 8.2,
+    "category": "水杯",
     "creator": "Behance",
+    "score": 8.2,
+    "likes": 800,
+    "url": "https://www.behance.net/search/projects/?search=minimalist+water+bottle+design",
     "tags": [
       "水杯",
       "Behance",
@@ -959,30 +908,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Smeg 电热水壶",
-    "category": "水杯",
-    "desc": "复古意式电热水壶",
-    "url": "https://www.smeg.com/kettles",
-    "image": "https://www.smeg.com/binaries/content/gallery/smeg/categories/sda_smeg_frontale_klf.jpg/sda_smeg_frontale_klf.jpg/brx%3ApostcardDeskLarge",
+    "reason": "A' Design Award · 复古意式电热水壶",
     "source": "A' Design Award",
-    "likes": 1500,
-    "score": 8.2,
+    "category": "水杯",
     "creator": "A' Design Award",
+    "score": 8.2,
+    "likes": 1500,
+    "url": "https://www.smeg.com/kettles",
     "tags": [
       "水杯",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "https://www.smeg.com/binaries/content/gallery/smeg/categories/sda_smeg_frontale_klf.jpg/sda_smeg_frontale_klf.jpg/brx%3ApostcardDeskLarge"
   },
   {
     "title": "Pinterest · 复古充电宝",
-    "category": "充电宝",
-    "desc": "复古游戏机造型充电宝",
-    "url": "https://www.sharge.com/products/retro-67",
-    "image": "",
+    "reason": "Pinterest · 复古游戏机造型充电宝",
     "source": "Pinterest",
-    "likes": 400,
-    "score": 8.2,
+    "category": "充电宝",
     "creator": "Pinterest",
+    "score": 8.2,
+    "likes": 400,
+    "url": "https://www.sharge.com/products/retro-67",
     "tags": [
       "充电宝",
       "Pinterest",
@@ -991,30 +939,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Olafur Eliasson 气象装置",
-    "category": "装置艺术",
-    "desc": "冰岛艺术家大型环境装置",
-    "url": "https://olafureliasson.net/",
-    "image": "https://res.cloudinary.com/olafureliasson-net/image/private/q_auto:eco,c_fit,h_640,w_640/img/blog/a-symphony-of-disappearing-sounds-for-the-great-salt-lake_37718.jpg",
+    "reason": "Good Design Award · 冰岛艺术家大型环境装置",
     "source": "Good Design Award",
-    "likes": 1230,
-    "score": 8.2,
+    "category": "装置艺术",
     "creator": "Good Design Award",
+    "score": 8.2,
+    "likes": 1230,
+    "url": "https://olafureliasson.net/",
     "tags": [
       "装置艺术",
       "Good Design Award",
       "获奖"
-    ]
+    ],
+    "image": "https://res.cloudinary.com/olafureliasson-net/image/private/q_auto:eco,c_fit,h_640,w_640/img/blog/a-symphony-of-disappearing-sounds-for-the-great-salt-lake_37718.jpg"
   },
   {
     "title": "Behance · 香氛包装设计",
-    "category": "氛围灯",
-    "desc": "小众香氛品牌包装视觉项目",
-    "url": "https://www.behance.net/search/projects/?search=candle+packaging+design",
-    "image": "",
+    "reason": "Behance · 小众香氛品牌包装视觉项目",
     "source": "Behance",
-    "likes": 700,
-    "score": 8.2,
+    "category": "氛围灯",
     "creator": "Behance",
+    "score": 8.2,
+    "likes": 700,
+    "url": "https://www.behance.net/search/projects/?search=candle+packaging+design",
     "tags": [
       "氛围灯",
       "Behance",
@@ -1023,30 +970,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Studio Drift 无人机装置",
-    "category": "装置艺术",
-    "desc": "荷兰艺术家无人机灯光装置",
-    "url": "https://www.studiodrift.com/",
-    "image": "https://i0.wp.com/studiodrift.com/wp-content/uploads/2021/02/LOrfeo-NRO048-1.jpeg?fit=2500%2C1444&ssl=1",
+    "reason": "iF设计奖 · 荷兰艺术家无人机灯光装置",
     "source": "iF设计奖",
-    "likes": 4875,
-    "score": 8.2,
+    "category": "装置艺术",
     "creator": "iF设计奖",
+    "score": 8.2,
+    "likes": 4875,
+    "url": "https://www.studiodrift.com/",
     "tags": [
       "装置艺术",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "https://i0.wp.com/studiodrift.com/wp-content/uploads/2021/02/LOrfeo-NRO048-1.jpeg?fit=2500%2C1444&ssl=1"
   },
   {
     "title": "Behance · 家居品牌视觉",
-    "category": "创意厨具",
-    "desc": "生活方式品牌视觉识别系统",
-    "url": "https://www.behance.net/search/projects/?search=kitchen+brand+identity",
-    "image": "",
+    "reason": "Behance · 生活方式品牌视觉识别系统",
     "source": "Behance",
-    "likes": 500,
-    "score": 8.2,
+    "category": "创意厨具",
     "creator": "Behance",
+    "score": 8.2,
+    "likes": 500,
+    "url": "https://www.behance.net/search/projects/?search=kitchen+brand+identity",
     "tags": [
       "创意厨具",
       "Behance",
@@ -1055,30 +1001,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "BenQ ScreenBar 屏幕挂灯",
-    "category": "创意桌搭",
-    "desc": "屏幕挂灯品类开创者",
-    "url": "https://www.benq.com/en-us/lighting/monitor-light/screenbar.html",
-    "image": "https://image.benq.com/is/image/benqco/07screenbar-topleft45-button-3?$ResponsivePreset$",
+    "reason": "iF设计奖 · 屏幕挂灯品类开创者",
     "source": "iF设计奖",
-    "likes": 3200,
-    "score": 8.2,
+    "category": "创意桌搭",
     "creator": "iF设计奖",
+    "score": 8.2,
+    "likes": 3200,
+    "url": "https://www.benq.com/en-us/lighting/monitor-light/screenbar.html",
     "tags": [
       "创意桌搭",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "https://image.benq.com/is/image/benqco/07screenbar-topleft45-button-3?$ResponsivePreset$"
   },
   {
     "title": "Behance · 移动电源设计",
-    "category": "充电宝",
-    "desc": "便携移动电源工业设计项目",
-    "url": "https://www.behance.net/search/projects/?search=power+bank+design",
-    "image": "",
+    "reason": "Behance · 便携移动电源工业设计项目",
     "source": "Behance",
-    "likes": 400,
-    "score": 8.2,
+    "category": "充电宝",
     "creator": "Behance",
+    "score": 8.2,
+    "likes": 400,
+    "url": "https://www.behance.net/search/projects/?search=power+bank+design",
     "tags": [
       "充电宝",
       "Behance",
@@ -1087,30 +1032,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Sólfar Studios 宇宙装置",
-    "category": "装置艺术",
-    "desc": "俄罗斯数字艺术家超现实装置",
-    "url": "https://www.solfar.com/",
-    "image": "http://static1.squarespace.com/static/556f16d7e4b0eafb6eb48e02/t/556f1890e4b0b5f32ba22d67/1433772248927/SolfarLogoWhiteHires.png?format=1500w",
+    "reason": "A' Design Award · 俄罗斯数字艺术家超现实装置",
     "source": "A' Design Award",
-    "likes": 612,
-    "score": 8.2,
+    "category": "装置艺术",
     "creator": "A' Design Award",
+    "score": 8.2,
+    "likes": 612,
+    "url": "https://www.solfar.com/",
     "tags": [
       "装置艺术",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "http://static1.squarespace.com/static/556f16d7e4b0eafb6eb48e02/t/556f1890e4b0b5f32ba22d67/1433772248927/SolfarLogoWhiteHires.png?format=1500w"
   },
   {
     "title": "Behance · 日历设计项目",
-    "category": "日历",
-    "desc": "创意桌面日历视觉设计项目",
-    "url": "https://www.behance.net/search/projects/?search=calendar+design+2025",
-    "image": "",
+    "reason": "Behance · 创意桌面日历视觉设计项目",
     "source": "Behance",
-    "likes": 500,
-    "score": 8.2,
+    "category": "日历",
     "creator": "Behance",
+    "score": 8.2,
+    "likes": 500,
+    "url": "https://www.behance.net/search/projects/?search=calendar+design+2025",
     "tags": [
       "日历",
       "Behance",
@@ -1119,14 +1063,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 星星投影灯",
-    "category": "氛围灯",
-    "desc": "卧室星空投影氛围灯",
-    "url": "https://www.twinkly.com/",
-    "image": "",
+    "reason": "Pinterest · 卧室星空投影氛围灯",
     "source": "Pinterest",
-    "likes": 1500,
-    "score": 8.1,
+    "category": "氛围灯",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 1500,
+    "url": "https://www.twinkly.com/",
     "tags": [
       "氛围灯",
       "Pinterest",
@@ -1135,30 +1078,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "大疆 Mavic 无人机",
-    "category": "创意桌搭",
-    "desc": "折叠无人机工业设计典范",
-    "url": "https://www.dji.com/mavic-3-pro",
-    "image": "https://www-cdn.djiits.com/cms/uploads/ff6ae7f2efed6d80de477f6a634d6c4b@374*374.png",
+    "reason": "iF设计奖 · 折叠无人机工业设计典范",
     "source": "iF设计奖",
-    "likes": 3500,
-    "score": 8.1,
+    "category": "创意桌搭",
     "creator": "iF设计奖",
+    "score": 8.1,
+    "likes": 3500,
+    "url": "https://www.dji.com/mavic-3-pro",
     "tags": [
       "创意桌搭",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "https://www-cdn.djiits.com/cms/uploads/ff6ae7f2efed6d80de477f6a634d6c4b@374*374.png"
   },
   {
     "title": "Secrid Cardprotector",
-    "category": "卡包",
-    "desc": "荷兰铝制防RFID卡包",
-    "url": "https://www.secrid.com/en/products/cardprotector",
-    "image": "",
+    "reason": "Good Design Award · 荷兰铝制防RFID卡包",
     "source": "Good Design Award",
-    "likes": 4299,
-    "score": 8.1,
+    "category": "卡包",
     "creator": "Good Design Award",
+    "score": 8.1,
+    "likes": 4299,
+    "url": "https://www.secrid.com/en/products/cardprotector",
     "tags": [
       "卡包",
       "Good Design Award",
@@ -1167,14 +1109,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Dyson Supersonic 吹风机",
-    "category": "创意厨具",
-    "desc": "重新定义吹风机工业设计",
-    "url": "https://www.dyson.com/hair-care/hair-dryers/supersonic",
-    "image": "",
+    "reason": "iF设计奖 · 重新定义吹风机工业设计",
     "source": "iF设计奖",
-    "likes": 5600,
-    "score": 8.1,
+    "category": "创意厨具",
     "creator": "iF设计奖",
+    "score": 8.1,
+    "likes": 5600,
+    "url": "https://www.dyson.com/hair-care/hair-dryers/supersonic",
     "tags": [
       "创意厨具",
       "iF设计奖",
@@ -1183,14 +1124,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Magis 360° 旋转容器",
-    "category": "收纳包",
-    "desc": "意大利塑料设计收纳",
-    "url": "https://www.magisdesign.com/product/360-container/",
-    "image": "",
+    "reason": "A' Design Award · 意大利塑料设计收纳",
     "source": "A' Design Award",
-    "likes": 600,
-    "score": 8.1,
+    "category": "收纳包",
     "creator": "A' Design Award",
+    "score": 8.1,
+    "likes": 600,
+    "url": "https://www.magisdesign.com/product/360-container/",
     "tags": [
       "收纳包",
       "A' Design Award",
@@ -1199,30 +1139,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Autonomous SmartDesk",
-    "category": "创意桌搭",
-    "desc": "全自动电动升降桌",
-    "url": "https://www.autonomous.ai/smartdesk",
-    "image": "https://cdn.autonomous.ai/production/ecm/260227/desk(2).webp",
+    "reason": "iF设计奖 · 全自动电动升降桌",
     "source": "iF设计奖",
-    "likes": 2249,
-    "score": 8.1,
+    "category": "创意桌搭",
     "creator": "iF设计奖",
+    "score": 8.1,
+    "likes": 2249,
+    "url": "https://www.autonomous.ai/smartdesk",
     "tags": [
       "创意桌搭",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "https://cdn.autonomous.ai/production/ecm/260227/desk(2).webp"
   },
   {
     "title": "Pinterest · 香薰蜡烛礼盒",
-    "category": "创意礼盒",
-    "desc": "极简无火香薰蜡烛礼盒",
-    "url": "https://www.diptyqueparis.com/en/candles/",
-    "image": "",
+    "reason": "Pinterest · 极简无火香薰蜡烛礼盒",
     "source": "Pinterest",
-    "likes": 800,
-    "score": 8.1,
+    "category": "创意礼盒",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 800,
+    "url": "https://www.diptyqueparis.com/en/candles/",
     "tags": [
       "创意礼盒",
       "Pinterest",
@@ -1231,14 +1170,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · New Era经典59FIFTY",
-    "category": "帽子",
-    "desc": "New Era 59FIFTY经典棒球帽",
-    "url": "https://www.neweracap.com/collections/59fifty-fitted",
-    "image": "",
+    "reason": "Pinterest · New Era 59FIFTY经典棒球帽",
     "source": "Pinterest",
-    "likes": 400,
-    "score": 8.1,
+    "category": "帽子",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 400,
+    "url": "https://www.neweracap.com/collections/59fifty-fitted",
     "tags": [
       "帽子",
       "Pinterest",
@@ -1247,14 +1185,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · Polo衫品牌设计",
-    "category": "Polo衫",
-    "desc": "美式复古Polo衫品牌视觉设计",
-    "url": "https://www.behance.net/search/projects/?search=polo+shirt+brand+design",
-    "image": "",
+    "reason": "Behance · 美式复古Polo衫品牌视觉设计",
     "source": "Behance",
-    "likes": 400,
-    "score": 8.1,
+    "category": "Polo衫",
     "creator": "Behance",
+    "score": 8.1,
+    "likes": 400,
+    "url": "https://www.behance.net/search/projects/?search=polo+shirt+brand+design",
     "tags": [
       "Polo衫",
       "Behance",
@@ -1263,14 +1200,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 潮玩手机壳",
-    "category": "手机壳",
-    "desc": "原创潮玩风个性化手机壳",
-    "url": "https://www.casetify.com/category/impact-cases",
-    "image": "",
+    "reason": "Pinterest · 原创潮玩风个性化手机壳",
     "source": "Pinterest",
-    "likes": 300,
-    "score": 8.1,
+    "category": "手机壳",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 300,
+    "url": "https://www.casetify.com/category/impact-cases",
     "tags": [
       "手机壳",
       "Pinterest",
@@ -1279,14 +1215,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Louis Poulsen PH灯",
-    "category": "氛围灯",
-    "desc": "北欧照明设计经典之作",
-    "url": "https://www.louispoulsen.com/en/catalog/private/pendants/ph-5",
-    "image": "",
+    "reason": "Good Design Award · 北欧照明设计经典之作",
     "source": "Good Design Award",
-    "likes": 3100,
-    "score": 8.1,
+    "category": "氛围灯",
     "creator": "Good Design Award",
+    "score": 8.1,
+    "likes": 3100,
+    "url": "https://www.louispoulsen.com/en/catalog/private/pendants/ph-5",
     "tags": [
       "氛围灯",
       "Good Design Award",
@@ -1295,14 +1230,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 茶仓分离杯",
-    "category": "水杯",
-    "desc": "可分离茶仓设计的随行茶杯",
-    "url": "https://www.joinmunki.com/",
-    "image": "",
+    "reason": "Pinterest · 可分离茶仓设计的随行茶杯",
     "source": "Pinterest",
-    "likes": 500,
-    "score": 8.1,
+    "category": "水杯",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 500,
+    "url": "https://www.joinmunki.com/",
     "tags": [
       "水杯",
       "Pinterest",
@@ -1311,14 +1245,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 硅胶折叠量杯",
-    "category": "创意厨具",
-    "desc": "可折叠硅胶量杯",
-    "url": "https://www.oxo.com/kitchen-tools/measuring-cups",
-    "image": "",
+    "reason": "Pinterest · 可折叠硅胶量杯",
     "source": "Pinterest",
-    "likes": 600,
-    "score": 8.1,
+    "category": "创意厨具",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 600,
+    "url": "https://www.oxo.com/kitchen-tools/measuring-cups",
     "tags": [
       "创意厨具",
       "Pinterest",
@@ -1327,30 +1260,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Sonos One 音箱",
-    "category": "氛围灯",
-    "desc": "智能WiFi音箱工业设计",
-    "url": "https://www.sonos.com/en-us/shop/one",
-    "image": "https://media.sonos.com/images/znqtjj88/production/41da7c5be257ce106bb5e40f6d83e860e3b3eacb-848x848.png?q=75&amp;fit=clip&amp;auto=format",
+    "reason": "iF设计奖 · 智能WiFi音箱工业设计",
     "source": "iF设计奖",
-    "likes": 1800,
-    "score": 8.1,
+    "category": "氛围灯",
     "creator": "iF设计奖",
+    "score": 8.1,
+    "likes": 1800,
+    "url": "https://www.sonos.com/en-us/shop/one",
     "tags": [
       "氛围灯",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "https://media.sonos.com/images/znqtjj88/production/41da7c5be257ce106bb5e40f6d83e860e3b3eacb-848x848.png?q=75&amp;fit=clip&amp;auto=format"
   },
   {
     "title": "Behance · 卫衣品牌视觉",
-    "category": "卫衣",
-    "desc": "街头服饰品牌视觉设计项目",
-    "url": "https://www.behance.net/search/projects/?search=streetwear+brand+design",
-    "image": "",
+    "reason": "Behance · 街头服饰品牌视觉设计项目",
     "source": "Behance",
-    "likes": 500,
-    "score": 8.1,
+    "category": "卫衣",
     "creator": "Behance",
+    "score": 8.1,
+    "likes": 500,
+    "url": "https://www.behance.net/search/projects/?search=streetwear+brand+design",
     "tags": [
       "卫衣",
       "Behance",
@@ -1359,14 +1291,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Tom Dixon 熔岩灯",
-    "category": "氛围灯",
-    "desc": "英国设计黄铜熔岩灯",
-    "url": "https://www.tomdixon.net/en/lighting/melt.html",
-    "image": "",
+    "reason": "A' Design Award · 英国设计黄铜熔岩灯",
     "source": "A' Design Award",
-    "likes": 2800,
-    "score": 8.1,
+    "category": "氛围灯",
     "creator": "A' Design Award",
+    "score": 8.1,
+    "likes": 2800,
+    "url": "https://www.tomdixon.net/en/lighting/melt.html",
     "tags": [
       "氛围灯",
       "A' Design Award",
@@ -1375,14 +1306,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 方形清酒杯",
-    "category": "水杯",
-    "desc": "日本传统方形清酒杯，职人手作",
-    "url": "https://www.yoshidajpn.com/",
-    "image": "",
+    "reason": "Pinterest · 日本传统方形清酒杯，职人手作",
     "source": "Pinterest",
-    "likes": 300,
-    "score": 8.1,
+    "category": "水杯",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 300,
+    "url": "https://www.yoshidajpn.com/",
     "tags": [
       "水杯",
       "Pinterest",
@@ -1391,14 +1321,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest 包装设计灵感",
-    "category": "创意礼盒",
-    "desc": "全球包装设计创意集锦",
-    "url": "https://www.pinterest.com/categories/packaging/",
-    "image": "",
+    "reason": "Pinterest · 全球包装设计创意集锦",
     "source": "Pinterest",
-    "likes": 509,
-    "score": 8.1,
+    "category": "创意礼盒",
     "creator": "Pinterest",
+    "score": 8.1,
+    "likes": 509,
+    "url": "https://www.pinterest.com/categories/packaging/",
     "tags": [
       "创意礼盒",
       "Pinterest",
@@ -1407,14 +1336,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Zojirushi 不锈钢保温杯",
-    "category": "水杯",
-    "desc": "日本象印经典不锈钢保温杯",
-    "url": "https://www.zojirushi.com/app/product/spcc",
-    "image": "",
+    "reason": "Good Design Award · 日本象印经典不锈钢保温杯",
     "source": "Good Design Award",
-    "likes": 4297,
-    "score": 8.0,
+    "category": "水杯",
     "creator": "Good Design Award",
+    "score": 8.0,
+    "likes": 4297,
+    "url": "https://www.zojirushi.com/app/product/spcc",
     "tags": [
       "水杯",
       "Good Design Award",
@@ -1423,14 +1351,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 日落投影灯",
-    "category": "氛围灯",
-    "desc": "智能日落渐变投影氛围灯",
-    "url": "https://nanoleaf.com/en-US/products/nanoleaf-aurora/",
-    "image": "",
+    "reason": "Pinterest · 智能日落渐变投影氛围灯",
     "source": "Pinterest",
-    "likes": 3000,
-    "score": 8.0,
+    "category": "氛围灯",
     "creator": "Pinterest",
+    "score": 8.0,
+    "likes": 3000,
+    "url": "https://nanoleaf.com/en-US/products/nanoleaf-aurora/",
     "tags": [
       "氛围灯",
       "Pinterest",
@@ -1439,14 +1366,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Stelton 啄木鸟保温壶",
-    "category": "水杯",
-    "desc": "丹麦现代经典保温壶",
-    "url": "https://www.stelton.com/en/em77-vacuum-jug-1l-soft-black",
-    "image": "",
+    "reason": "Good Design Award · 丹麦现代经典保温壶",
     "source": "Good Design Award",
-    "likes": 800,
-    "score": 8.0,
+    "category": "水杯",
     "creator": "Good Design Award",
+    "score": 8.0,
+    "likes": 800,
+    "url": "https://www.stelton.com/en/em77-vacuum-jug-1l-soft-black",
     "tags": [
       "水杯",
       "Good Design Award",
@@ -1455,30 +1381,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Patagonia P-6 Logo T",
-    "category": "T恤",
-    "desc": "环保户外品牌经典T恤",
-    "url": "https://www.patagonia.com/product/mens-p-6-logo-responsibili-tee/38504.html",
-    "image": "https://www.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwffc443ac/images/hi-res/38504_POGM.jpg?sw=256&amp;sh=256&amp;sfrm=png&amp;q=95&amp;bgcolor=f3f4ef",
+    "reason": "A' Design Award · 环保户外品牌经典T恤",
     "source": "A' Design Award",
-    "likes": 1400,
-    "score": 8.0,
+    "category": "T恤",
     "creator": "A' Design Award",
+    "score": 8.0,
+    "likes": 1400,
+    "url": "https://www.patagonia.com/product/mens-p-6-logo-responsibili-tee/38504.html",
     "tags": [
       "T恤",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "https://www.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwffc443ac/images/hi-res/38504_POGM.jpg?sw=256&amp;sh=256&amp;sfrm=png&amp;q=95&amp;bgcolor=f3f4ef"
   },
   {
     "title": "Ralph Lauren 经典Polo衫",
-    "category": "Polo衫",
-    "desc": "美式经典Polo衫设计",
-    "url": "https://www.ralphlauren.com/men-clothing-polo-shirts",
-    "image": "",
+    "reason": "Good Design Award · 美式经典Polo衫设计",
     "source": "Good Design Award",
-    "likes": 2200,
-    "score": 8.0,
+    "category": "Polo衫",
     "creator": "Good Design Award",
+    "score": 8.0,
+    "likes": 2200,
+    "url": "https://www.ralphlauren.com/men-clothing-polo-shirts",
     "tags": [
       "Polo衫",
       "Good Design Award",
@@ -1487,14 +1412,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 真皮卡包",
-    "category": "卡包",
-    "desc": "手工植鞣牛皮极简卡包",
-    "url": "https://bellroy.com/products/slim-sleeve-wallet",
-    "image": "",
+    "reason": "Pinterest · 手工植鞣牛皮极简卡包",
     "source": "Pinterest",
-    "likes": 500,
-    "score": 8.0,
+    "category": "卡包",
     "creator": "Pinterest",
+    "score": 8.0,
+    "likes": 500,
+    "url": "https://bellroy.com/products/slim-sleeve-wallet",
     "tags": [
       "卡包",
       "Pinterest",
@@ -1503,14 +1427,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "虎牌保温杯 MMP系列",
-    "category": "水杯",
-    "desc": "日本制超轻不锈钢保温杯",
-    "url": "https://www.tiger-corporation.com/ja/jpn/product/tumbler/",
-    "image": "",
+    "reason": "Good Design Award · 日本制超轻不锈钢保温杯",
     "source": "Good Design Award",
-    "likes": 1800,
-    "score": 8.0,
+    "category": "水杯",
     "creator": "Good Design Award",
+    "score": 8.0,
+    "likes": 1800,
+    "url": "https://www.tiger-corporation.com/ja/jpn/product/tumbler/",
     "tags": [
       "水杯",
       "Good Design Award",
@@ -1519,14 +1442,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · stojo折叠水壶",
-    "category": "水杯",
-    "desc": "stojo可折叠便携运动水壶",
-    "url": "https://stojo.com/collections/bottles",
-    "image": "",
+    "reason": "Pinterest · stojo可折叠便携运动水壶",
     "source": "Pinterest",
-    "likes": 900,
-    "score": 8.0,
+    "category": "水杯",
     "creator": "Pinterest",
+    "score": 8.0,
+    "likes": 900,
+    "url": "https://stojo.com/collections/bottles",
     "tags": [
       "水杯",
       "Pinterest",
@@ -1535,14 +1457,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 极简笔筒",
-    "category": "创意桌搭",
-    "desc": "Moshi极简胡桃木笔筒",
-    "url": "https://www.moshi.com/en/category/office",
-    "image": "",
+    "reason": "Pinterest · Moshi极简胡桃木笔筒",
     "source": "Pinterest",
-    "likes": 400,
-    "score": 8.0,
+    "category": "创意桌搭",
     "creator": "Pinterest",
+    "score": 8.0,
+    "likes": 400,
+    "url": "https://www.moshi.com/en/category/office",
     "tags": [
       "创意桌搭",
       "Pinterest",
@@ -1551,14 +1472,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 盲盒收纳展示盒",
-    "category": "创意礼盒",
-    "desc": "盲盒亚克力展示收纳盒",
-    "url": "https://www.popmart.com/",
-    "image": "",
+    "reason": "Pinterest · 盲盒亚克力展示收纳盒",
     "source": "Pinterest",
-    "likes": 400,
-    "score": 8.0,
+    "category": "创意礼盒",
     "creator": "Pinterest",
+    "score": 8.0,
+    "likes": 400,
+    "url": "https://www.popmart.com/",
     "tags": [
       "创意礼盒",
       "Pinterest",
@@ -1567,30 +1487,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Ladurée 中秋礼盒",
-    "category": "中秋礼盒",
-    "desc": "法国Ladurée马卡龙中秋礼盒",
-    "url": "https://www.laduree.com/",
-    "image": "http://laduree.com/cdn/shop/files/og-share.jpg?v=1741119817&width=1024",
+    "reason": "A' Design Award · 法国Ladurée马卡龙中秋礼盒",
     "source": "A' Design Award",
-    "likes": 1036,
-    "score": 8.0,
+    "category": "中秋礼盒",
     "creator": "A' Design Award",
+    "score": 8.0,
+    "likes": 1036,
+    "url": "https://www.laduree.com/",
     "tags": [
       "中秋礼盒",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "http://laduree.com/cdn/shop/files/og-share.jpg?v=1741119817&width=1024"
   },
   {
     "title": "Behance · 潮玩包装设计",
-    "category": "创意礼盒",
-    "desc": "艺术潮玩盲盒包装设计项目",
-    "url": "https://www.behance.net/search/projects/?search=blind+box+packaging+design",
-    "image": "",
+    "reason": "Behance · 艺术潮玩盲盒包装设计项目",
     "source": "Behance",
-    "likes": 700,
-    "score": 8.0,
+    "category": "创意礼盒",
     "creator": "Behance",
+    "score": 8.0,
+    "likes": 700,
+    "url": "https://www.behance.net/search/projects/?search=blind+box+packaging+design",
     "tags": [
       "创意礼盒",
       "Behance",
@@ -1599,30 +1518,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Muji Gift 精选礼盒",
-    "category": "创意礼盒",
-    "desc": "无印良品精选礼物套装",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S10801/",
-    "image": "https://www.muji.com/public/media/img/item/4548076074229_org.jpg?im=Resize%2Ctype%3Ddownsize%2Cwidth%3D160",
+    "reason": "iF设计奖 · 无印良品精选礼物套装",
     "source": "iF设计奖",
-    "likes": 1326,
-    "score": 8.0,
+    "category": "创意礼盒",
     "creator": "iF设计奖",
+    "score": 8.0,
+    "likes": 1326,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S10801/",
     "tags": [
       "创意礼盒",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "https://www.muji.com/public/media/img/item/4548076074229_org.jpg?im=Resize%2Ctype%3Ddownsize%2Cwidth%3D160"
   },
   {
     "title": "Pinterest · Fellow卡特杯",
-    "category": "水杯",
-    "desc": "Fellow卡特陶瓷咖啡杯，极简设计",
-    "url": "https://fellowproducts.com/products/carter-mug",
-    "image": "",
+    "reason": "Pinterest · Fellow卡特陶瓷咖啡杯，极简设计",
     "source": "Pinterest",
-    "likes": 800,
-    "score": 8.0,
+    "category": "水杯",
     "creator": "Pinterest",
+    "score": 8.0,
+    "likes": 800,
+    "url": "https://fellowproducts.com/products/carter-mug",
     "tags": [
       "水杯",
       "Pinterest",
@@ -1631,14 +1549,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 旋转保温杯",
-    "category": "水杯",
-    "desc": "OWALA旋转保温杯，单手开合设计",
-    "url": "https://www.owalalife.com/",
-    "image": "",
+    "reason": "Pinterest · OWALA旋转保温杯，单手开合设计",
     "source": "Pinterest",
-    "likes": 650,
-    "score": 8.0,
+    "category": "水杯",
     "creator": "Pinterest",
+    "score": 8.0,
+    "likes": 650,
+    "url": "https://www.owalalife.com/",
     "tags": [
       "水杯",
       "Pinterest",
@@ -1647,14 +1564,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Alessi 设计礼盒",
-    "category": "创意礼盒",
-    "desc": "意大利设计家居礼品套装",
-    "url": "https://www.alessi.com/en/gifts/",
-    "image": "",
+    "reason": "iF设计奖 · 意大利设计家居礼品套装",
     "source": "iF设计奖",
-    "likes": 2844,
-    "score": 8.0,
+    "category": "创意礼盒",
     "creator": "iF设计奖",
+    "score": 8.0,
+    "likes": 2844,
+    "url": "https://www.alessi.com/en/gifts/",
     "tags": [
       "创意礼盒",
       "iF设计奖",
@@ -1663,14 +1579,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "UNIQLO U 系列T恤",
-    "category": "T恤",
-    "desc": "Christophe Lemaire设计",
-    "url": "https://www.uniqlo.com/us/en/c/uniqlo-u-collection/",
-    "image": "",
+    "reason": "Good Design Award · Christophe Lemaire设计",
     "source": "Good Design Award",
-    "likes": 1600,
-    "score": 7.9,
+    "category": "T恤",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 1600,
+    "url": "https://www.uniqlo.com/us/en/c/uniqlo-u-collection/",
     "tags": [
       "T恤",
       "Good Design Award",
@@ -1679,14 +1594,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 端午礼盒设计",
-    "category": "端午礼盒",
-    "desc": "端午节龙舟主题礼盒包装",
-    "url": "https://www.behance.net/search/projects/?search=dragon+boat+festival+packaging",
-    "image": "",
+    "reason": "Behance · 端午节龙舟主题礼盒包装",
     "source": "Behance",
-    "likes": 450,
-    "score": 7.9,
+    "category": "端午礼盒",
     "creator": "Behance",
+    "score": 7.9,
+    "likes": 450,
+    "url": "https://www.behance.net/search/projects/?search=dragon+boat+festival+packaging",
     "tags": [
       "端午礼盒",
       "Behance",
@@ -1695,14 +1609,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 中秋茶礼包装",
-    "category": "中秋礼盒",
-    "desc": "中式风格中秋茶礼盒包装",
-    "url": "https://www.bamatea.com/",
-    "image": "",
+    "reason": "Pinterest · 中式风格中秋茶礼盒包装",
     "source": "Pinterest",
-    "likes": 300,
-    "score": 7.9,
+    "category": "中秋礼盒",
     "creator": "Pinterest",
+    "score": 7.9,
+    "likes": 300,
+    "url": "https://www.bamatea.com/",
     "tags": [
       "中秋礼盒",
       "Pinterest",
@@ -1711,14 +1624,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "馥颂 中秋马卡龙礼盒",
-    "category": "中秋礼盒",
-    "desc": "法国Fauchon中秋限定礼盒",
-    "url": "https://www.fauchon.com/us_en/",
-    "image": "",
+    "reason": "A' Design Award · 法国Fauchon中秋限定礼盒",
     "source": "A' Design Award",
-    "likes": 2828,
-    "score": 7.9,
+    "category": "中秋礼盒",
     "creator": "A' Design Award",
+    "score": 7.9,
+    "likes": 2828,
+    "url": "https://www.fauchon.com/us_en/",
     "tags": [
       "中秋礼盒",
       "A' Design Award",
@@ -1727,14 +1639,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "UNIQLO UT 联名礼盒",
-    "category": "创意礼盒",
-    "desc": "UT系列限定联名礼品套装",
-    "url": "https://www.uniqlo.com/us/en/c/feature/ut/",
-    "image": "",
+    "reason": "Good Design Award · UT系列限定联名礼品套装",
     "source": "Good Design Award",
-    "likes": 2013,
-    "score": 7.9,
+    "category": "创意礼盒",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 2013,
+    "url": "https://www.uniqlo.com/us/en/c/feature/ut/",
     "tags": [
       "创意礼盒",
       "Good Design Award",
@@ -1743,30 +1654,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Es Devlin 舞台装置",
-    "category": "装置艺术",
-    "desc": "英国舞台设计师大型装置艺术",
-    "url": "https://www.esdevlin.com/",
-    "image": "/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F5olj48ug%2Fproduction%2Fa6c7269fb06578a2ad0a8ee71345fc0842e530a5-10879x8239.jpg&amp;w=3840&amp;q=75",
+    "reason": "iF设计奖 · 英国舞台设计师大型装置艺术",
     "source": "iF设计奖",
-    "likes": 4816,
-    "score": 7.9,
+    "category": "装置艺术",
     "creator": "iF设计奖",
+    "score": 7.9,
+    "likes": 4816,
+    "url": "https://www.esdevlin.com/",
     "tags": [
       "装置艺术",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F5olj48ug%2Fproduction%2Fa6c7269fb06578a2ad0a8ee71345fc0842e530a5-10879x8239.jpg&amp;w=3840&amp;q=75"
   },
   {
     "title": "Behance · 厨房好物设计",
-    "category": "创意厨具",
-    "desc": "人性化厨房用具产品设计项目",
-    "url": "https://www.behance.net/search/projects/?search=kitchen+utensil+design",
-    "image": "",
+    "reason": "Behance · 人性化厨房用具产品设计项目",
     "source": "Behance",
-    "likes": 500,
-    "score": 7.9,
+    "category": "创意厨具",
     "creator": "Behance",
+    "score": 7.9,
+    "likes": 500,
+    "url": "https://www.behance.net/search/projects/?search=kitchen+utensil+design",
     "tags": [
       "创意厨具",
       "Behance",
@@ -1775,14 +1685,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 咖啡器具包装",
-    "category": "水杯",
-    "desc": "精品咖啡器具包装设计项目",
-    "url": "https://www.behance.net/search/projects/?search=coffee+packaging+design",
-    "image": "",
+    "reason": "Behance · 精品咖啡器具包装设计项目",
     "source": "Behance",
-    "likes": 600,
-    "score": 7.9,
+    "category": "水杯",
     "creator": "Behance",
+    "score": 7.9,
+    "likes": 600,
+    "url": "https://www.behance.net/search/projects/?search=coffee+packaging+design",
     "tags": [
       "水杯",
       "Behance",
@@ -1791,30 +1700,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Bellroy 超薄卡包",
-    "category": "卡包",
-    "desc": "澳洲超薄牛皮卡包",
-    "url": "https://bellroy.com/products/slim-sleeve-wallet",
-    "image": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WSSB-CJA-101/0",
+    "reason": "A' Design Award · 澳洲超薄牛皮卡包",
     "source": "A' Design Award",
-    "likes": 1100,
-    "score": 7.9,
+    "category": "卡包",
     "creator": "A' Design Award",
+    "score": 7.9,
+    "likes": 1100,
+    "url": "https://bellroy.com/products/slim-sleeve-wallet",
     "tags": [
       "卡包",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WSSB-CJA-101/0"
   },
   {
     "title": "Artemide Nessino 蘑菇灯",
-    "category": "氛围灯",
-    "desc": "意大利经典蘑菇灯设计",
-    "url": "https://www.artemide.com/en/products/table/nessino",
-    "image": "",
+    "reason": "Good Design Award · 意大利经典蘑菇灯设计",
     "source": "Good Design Award",
-    "likes": 1900,
-    "score": 7.9,
+    "category": "氛围灯",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 1900,
+    "url": "https://www.artemide.com/en/products/table/nessino",
     "tags": [
       "氛围灯",
       "Good Design Award",
@@ -1823,30 +1731,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Stüssy 渔夫帽",
-    "category": "帽子",
-    "desc": "美式街头经典渔夫帽",
-    "url": "https://www.stussy.com/collections/headwear",
-    "image": "http://www.stussy.com/cdn/shop/files/checkout-logo_256x256_c8c5b294-3bd0-4d8e-a5bd-e4066efcc662.png?v=1678808251",
+    "reason": "A' Design Award · 美式街头经典渔夫帽",
     "source": "A' Design Award",
-    "likes": 1400,
-    "score": 7.9,
+    "category": "帽子",
     "creator": "A' Design Award",
+    "score": 7.9,
+    "likes": 1400,
+    "url": "https://www.stussy.com/collections/headwear",
     "tags": [
       "帽子",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "http://www.stussy.com/cdn/shop/files/checkout-logo_256x256_c8c5b294-3bd0-4d8e-a5bd-e4066efcc662.png?v=1678808251"
   },
   {
     "title": "Behance · 环保水壶设计",
-    "category": "钥匙扣水壶",
-    "desc": "可持续材料运动水壶设计",
-    "url": "https://www.behance.net/search/projects/?search=reusable+water+bottle+design",
-    "image": "",
+    "reason": "Behance · 可持续材料运动水壶设计",
     "source": "Behance",
-    "likes": 350,
-    "score": 7.9,
+    "category": "钥匙扣水壶",
     "creator": "Behance",
+    "score": 7.9,
+    "likes": 350,
+    "url": "https://www.behance.net/search/projects/?search=reusable+water+bottle+design",
     "tags": [
       "钥匙扣水壶",
       "Behance",
@@ -1855,14 +1762,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 极简弯檐帽",
-    "category": "帽子",
-    "desc": "无印良品极简弯檐棒球帽",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S105010101",
-    "image": "",
+    "reason": "Pinterest · 无印良品极简弯檐棒球帽",
     "source": "Pinterest",
-    "likes": 200,
-    "score": 7.9,
+    "category": "帽子",
     "creator": "Pinterest",
+    "score": 7.9,
+    "likes": 200,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S105010101",
     "tags": [
       "帽子",
       "Pinterest",
@@ -1871,14 +1777,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Loveramics 咖啡拉花杯",
-    "category": "水杯",
-    "desc": "专业咖啡拉花杯多色釉面",
-    "url": "https://www.loveramics.com/collections/latte-art",
-    "image": "",
+    "reason": "Good Design Award · 专业咖啡拉花杯多色釉面",
     "source": "Good Design Award",
-    "likes": 1100,
-    "score": 7.9,
+    "category": "水杯",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 1100,
+    "url": "https://www.loveramics.com/collections/latte-art",
     "tags": [
       "水杯",
       "Good Design Award",
@@ -1887,30 +1792,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Random International 雨屋",
-    "category": "装置艺术",
-    "desc": "沉浸式数字雨屋装置",
-    "url": "https://www.random-international.com/",
-    "image": "http://static1.squarespace.com/static/663ca532b3e3797d82159fe2/t/66572f3a9742b832945631fc/1716989754702/16_random_international_logo_black%2Btext_02.png?format=1500w",
+    "reason": "A' Design Award · 沉浸式数字雨屋装置",
     "source": "A' Design Award",
-    "likes": 2476,
-    "score": 7.9,
+    "category": "装置艺术",
     "creator": "A' Design Award",
+    "score": 7.9,
+    "likes": 2476,
+    "url": "https://www.random-international.com/",
     "tags": [
       "装置艺术",
       "A' Design Award",
       "获奖"
-    ]
+    ],
+    "image": "http://static1.squarespace.com/static/663ca532b3e3797d82159fe2/t/66572f3a9742b832945631fc/1716989754702/16_random_international_logo_black%2Btext_02.png?format=1500w"
   },
   {
     "title": "KitchenAid 厨师机",
-    "category": "创意厨具",
-    "desc": "美国KitchenAid经典台式厨师机",
-    "url": "https://www.kitchenaid.com/stand-mixers.html",
-    "image": "",
+    "reason": "Good Design Award · 美国KitchenAid经典台式厨师机",
     "source": "Good Design Award",
-    "likes": 3999,
-    "score": 7.9,
+    "category": "创意厨具",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 3999,
+    "url": "https://www.kitchenaid.com/stand-mixers.html",
     "tags": [
       "创意厨具",
       "Good Design Award",
@@ -1919,30 +1823,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "藤本壮介 森林装置",
-    "category": "装置艺术",
-    "desc": "SANAA建筑事务所空气感装置",
-    "url": "https://www.sou-fujimoto.net/",
-    "image": "images/address_long.gif",
+    "reason": "Good Design Award · SANAA建筑事务所空气感装置",
     "source": "Good Design Award",
-    "likes": 1533,
-    "score": 7.9,
+    "category": "装置艺术",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 1533,
+    "url": "https://www.sou-fujimoto.net/",
     "tags": [
       "装置艺术",
       "Good Design Award",
       "获奖"
-    ]
+    ],
+    "image": "images/address_long.gif"
   },
   {
     "title": "Herman Miller Eames 休闲椅",
-    "category": "创意桌搭",
-    "desc": "20世纪设计经典家具",
-    "url": "https://www.hermanmiller.com/products/seating/lounge-seating/eames-lounge-chair-and-ottoman/",
-    "image": "",
+    "reason": "Good Design Award · 20世纪设计经典家具",
     "source": "Good Design Award",
-    "likes": 3800,
-    "score": 7.9,
+    "category": "创意桌搭",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 3800,
+    "url": "https://www.hermanmiller.com/products/seating/lounge-seating/eames-lounge-chair-and-ottoman/",
     "tags": [
       "创意桌搭",
       "Good Design Award",
@@ -1951,14 +1854,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 茶具设计项目",
-    "category": "水杯",
-    "desc": "新中式茶具产品设计项目",
-    "url": "https://www.behance.net/search/projects/?search=tea+set+design",
-    "image": "",
+    "reason": "Behance · 新中式茶具产品设计项目",
     "source": "Behance",
-    "likes": 600,
-    "score": 7.9,
+    "category": "水杯",
     "creator": "Behance",
+    "score": 7.9,
+    "likes": 600,
+    "url": "https://www.behance.net/search/projects/?search=tea+set+design",
     "tags": [
       "水杯",
       "Behance",
@@ -1967,14 +1869,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "WMF 厨师刀",
-    "category": "创意厨具",
-    "desc": "德国WMF不锈钢厨师刀",
-    "url": "https://www.wmf.com/en/cookware/knives/",
-    "image": "",
+    "reason": "Good Design Award · 德国WMF不锈钢厨师刀",
     "source": "Good Design Award",
-    "likes": 1497,
-    "score": 7.9,
+    "category": "创意厨具",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 1497,
+    "url": "https://www.wmf.com/en/cookware/knives/",
     "tags": [
       "创意厨具",
       "Good Design Award",
@@ -1983,14 +1884,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "HIGHTIDE 桌面台历",
-    "category": "日历",
-    "desc": "日本生活美学桌面台历",
-    "url": "https://hightide.jp/c/desktop-accessories/calendar",
-    "image": "",
+    "reason": "Good Design Award · 日本生活美学桌面台历",
     "source": "Good Design Award",
-    "likes": 900,
-    "score": 7.9,
+    "category": "日历",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 900,
+    "url": "https://hightide.jp/c/desktop-accessories/calendar",
     "tags": [
       "日历",
       "Good Design Award",
@@ -1999,110 +1899,109 @@ BRAND_ITEMS = [
   },
   {
     "title": "Dyson 限定礼盒",
-    "category": "创意礼盒",
-    "desc": "Dyson节日限定吹风机礼盒",
-    "url": "https://www.dyson.com/gifts",
-    "image": "{{../this.product.primaryImageUrl}}?$responsive$&amp;fmt=png-alpha",
+    "reason": "iF设计奖 · Dyson节日限定吹风机礼盒",
     "source": "iF设计奖",
-    "likes": 1464,
-    "score": 7.9,
+    "category": "创意礼盒",
     "creator": "iF设计奖",
+    "score": 7.9,
+    "likes": 1464,
+    "url": "https://www.dyson.com/gifts",
     "tags": [
       "创意礼盒",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "{{../this.product.primaryImageUrl}}?$responsive$&amp;fmt=png-alpha"
   },
   {
     "title": "teamLab 数字装置",
-    "category": "装置艺术",
-    "desc": "teamLab沉浸式数字艺术装置",
-    "url": "https://www.teamlab.art/",
-    "image": "https://www.teamlab.art/teamlab-art-ogp-image.png",
+    "reason": "Good Design Award · teamLab沉浸式数字艺术装置",
     "source": "Good Design Award",
-    "likes": 703,
-    "score": 7.9,
+    "category": "装置艺术",
     "creator": "Good Design Award",
+    "score": 7.9,
+    "likes": 703,
+    "url": "https://www.teamlab.art/",
     "tags": [
       "装置艺术",
       "Good Design Award",
       "获奖"
-    ]
+    ],
+    "image": "https://www.teamlab.art/teamlab-art-ogp-image.png"
   },
   {
     "title": "IKEA SKADIS 收纳板",
-    "category": "收纳包",
-    "desc": "模块化桌面收纳板",
-    "url": "https://www.ikea.com/us/en/cat/skadis-series-37813/",
-    "image": "https://www.ikea.com/global/assets/range-categorisation/images/skadis-series-37813.jpeg",
+    "reason": "Instagram · 模块化桌面收纳板",
     "source": "Instagram",
-    "likes": 900,
-    "score": 7.8,
+    "category": "收纳包",
     "creator": "Instagram",
+    "score": 7.8,
+    "likes": 900,
+    "url": "https://www.ikea.com/us/en/cat/skadis-series-37813/",
     "tags": [
       "收纳包",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.ikea.com/global/assets/range-categorisation/images/skadis-series-37813.jpeg"
   },
   {
     "title": "Stüssy Stock 5-Panel",
-    "category": "帽子",
-    "desc": "Stüssy 5-Panel网面运动帽",
-    "url": "https://www.stussy.com/collections/headwear",
-    "image": "http://www.stussy.com/cdn/shop/files/checkout-logo_256x256_c8c5b294-3bd0-4d8e-a5bd-e4066efcc662.png?v=1678808251",
+    "reason": "Instagram · Stüssy 5-Panel网面运动帽",
     "source": "Instagram",
-    "likes": 4335,
-    "score": 7.8,
+    "category": "帽子",
     "creator": "Instagram",
+    "score": 7.8,
+    "likes": 4335,
+    "url": "https://www.stussy.com/collections/headwear",
     "tags": [
       "帽子",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "http://www.stussy.com/cdn/shop/files/checkout-logo_256x256_c8c5b294-3bd0-4d8e-a5bd-e4066efcc662.png?v=1678808251"
   },
   {
     "title": "故宫日历 2025",
-    "category": "日历",
-    "desc": "故宫博物院经典日历",
-    "url": "https://www.dpm.org.cn/",
-    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png",
+    "reason": "小红书 · 故宫博物院经典日历",
     "source": "小红书",
-    "likes": 4500,
-    "score": 7.8,
+    "category": "日历",
     "creator": "小红书",
+    "score": 7.8,
+    "likes": 4500,
+    "url": "https://www.dpm.org.cn/",
     "tags": [
       "日历",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png"
   },
   {
     "title": "BAGGU 环保购物袋",
-    "category": "收纳包",
-    "desc": "彩色尼龙环保收纳袋",
-    "url": "https://www.baggu.com/collections/standard-baggu",
-    "image": "https://cdn.sanity.io/images/t9jjg1v5/production/2b1638c7fbe8a9ab35a51af7e16edd972c3f5fbd-1200x630.png",
+    "reason": "小红书 · 彩色尼龙环保收纳袋",
     "source": "小红书",
-    "likes": 2400,
-    "score": 7.8,
+    "category": "收纳包",
     "creator": "小红书",
+    "score": 7.8,
+    "likes": 2400,
+    "url": "https://www.baggu.com/collections/standard-baggu",
     "tags": [
       "收纳包",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://cdn.sanity.io/images/t9jjg1v5/production/2b1638c7fbe8a9ab35a51af7e16edd972c3f5fbd-1200x630.png"
   },
   {
     "title": "TUMI 弹道尼龙公文包",
-    "category": "卡包",
-    "desc": "商务旅行箱包标杆",
-    "url": "https://www.tumi.com/c/alpha-bravo/",
-    "image": "",
+    "reason": "Red Dot · 商务旅行箱包标杆",
     "source": "Red Dot",
-    "likes": 700,
-    "score": 7.8,
+    "category": "卡包",
     "creator": "Red Dot",
+    "score": 7.8,
+    "likes": 700,
+    "url": "https://www.tumi.com/c/alpha-bravo/",
     "tags": [
       "卡包",
       "Red Dot",
@@ -2111,14 +2010,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "驼峰 运动水壶",
-    "category": "钥匙扣水壶",
-    "desc": "专业运动补水壶",
-    "url": "https://www.camelbak.com/recreation/bottles",
-    "image": "",
+    "reason": "抖音 · 专业运动补水壶",
     "source": "抖音",
-    "likes": 500,
-    "score": 7.8,
+    "category": "钥匙扣水壶",
     "creator": "抖音",
+    "score": 7.8,
+    "likes": 500,
+    "url": "https://www.camelbak.com/recreation/bottles",
     "tags": [
       "钥匙扣水壶",
       "抖音",
@@ -2127,14 +2025,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Paperblanks 复古日程本",
-    "category": "日历",
-    "desc": "爱尔兰复古精装本",
-    "url": "https://www.paperblanks.com/collections/planners",
-    "image": "",
+    "reason": "Instagram · 爱尔兰复古精装本",
     "source": "Instagram",
-    "likes": 800,
-    "score": 7.8,
+    "category": "日历",
     "creator": "Instagram",
+    "score": 7.8,
+    "likes": 800,
+    "url": "https://www.paperblanks.com/collections/planners",
     "tags": [
       "日历",
       "Instagram",
@@ -2143,14 +2040,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Behance · 装置艺术项目",
-    "category": "装置艺术",
-    "desc": "大型公共艺术装置设计项目",
-    "url": "https://www.behance.net/search/projects/?search=art+installation+design",
-    "image": "",
+    "reason": "Behance · 大型公共艺术装置设计项目",
     "source": "Behance",
-    "likes": 1200,
-    "score": 7.8,
+    "category": "装置艺术",
     "creator": "Behance",
+    "score": 7.8,
+    "likes": 1200,
+    "url": "https://www.behance.net/search/projects/?search=art+installation+design",
     "tags": [
       "装置艺术",
       "Behance",
@@ -2159,46 +2055,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "白南准 电视装置",
-    "category": "装置艺术",
-    "desc": "视频艺术之父媒体装置",
-    "url": "https://www.paikstudios.com/",
-    "image": "http://static1.squarespace.com/static/5f63c7f8bb5d793914450c1d/t/5f6a2f323c139f60ef955ca4/1600794420962/10.jpg?format=1500w",
+    "reason": "iF设计奖 · 视频艺术之父媒体装置",
     "source": "iF设计奖",
-    "likes": 3181,
-    "score": 7.8,
+    "category": "装置艺术",
     "creator": "iF设计奖",
+    "score": 7.8,
+    "likes": 3181,
+    "url": "https://www.paikstudios.com/",
     "tags": [
       "装置艺术",
       "iF设计奖",
       "获奖"
-    ]
+    ],
+    "image": "http://static1.squarespace.com/static/5f63c7f8bb5d793914450c1d/t/5f6a2f323c139f60ef955ca4/1600794420962/10.jpg?format=1500w"
   },
   {
     "title": "Nalgene 经典水壶",
-    "category": "钥匙扣水壶",
-    "desc": "BPA-Free经典户外水壶",
-    "url": "https://nalgene.com/product/32oz-wide-mouth-sustain/",
-    "image": "https://nalgene.com/wp-content/uploads/2025/12/nalgene-water-bottles.jpg",
+    "reason": "Instagram · BPA-Free经典户外水壶",
     "source": "Instagram",
-    "likes": 800,
-    "score": 7.8,
+    "category": "钥匙扣水壶",
     "creator": "Instagram",
+    "score": 7.8,
+    "likes": 800,
+    "url": "https://nalgene.com/product/32oz-wide-mouth-sustain/",
     "tags": [
       "钥匙扣水壶",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://nalgene.com/wp-content/uploads/2025/12/nalgene-water-bottles.jpg"
   },
   {
     "title": "杏花楼 粽意礼盒",
-    "category": "端午礼盒",
-    "desc": "上海老字号端午礼盒",
-    "url": "https://www.xinghualou.com/",
-    "image": "",
+    "reason": "小红书 · 上海老字号端午礼盒",
     "source": "小红书",
-    "likes": 4893,
-    "score": 7.8,
+    "category": "端午礼盒",
     "creator": "小红书",
+    "score": 7.8,
+    "likes": 4893,
+    "url": "https://www.xinghualou.com/",
     "tags": [
       "端午礼盒",
       "小红书",
@@ -2207,14 +2102,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Fred Perry 双条纹Polo",
-    "category": "Polo衫",
-    "desc": "英伦经典双条纹Polo",
-    "url": "https://www.fredperry.com/the-fred-perry-shirt",
-    "image": "",
+    "reason": "Instagram · 英伦经典双条纹Polo",
     "source": "Instagram",
-    "likes": 1800,
-    "score": 7.8,
+    "category": "Polo衫",
     "creator": "Instagram",
+    "score": 7.8,
+    "likes": 1800,
+    "url": "https://www.fredperry.com/the-fred-perry-shirt",
     "tags": [
       "Polo衫",
       "Instagram",
@@ -2223,14 +2117,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "HIGHTIDE 礼物礼盒系列",
-    "category": "创意礼盒",
-    "desc": "日本生活方式品牌HIGHTIDE的礼物组合",
-    "url": "https://hightide.jp/c/gift/",
-    "image": "",
+    "reason": "Good Design Award · 日本生活方式品牌HIGHTIDE的礼物组合",
     "source": "Good Design Award",
-    "likes": 4459,
-    "score": 7.8,
+    "category": "创意礼盒",
     "creator": "Good Design Award",
+    "score": 7.8,
+    "likes": 4459,
+    "url": "https://hightide.jp/c/gift/",
     "tags": [
       "创意礼盒",
       "Good Design Award",
@@ -2239,14 +2132,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Anker 收纳包",
-    "category": "收纳包",
-    "desc": "数码线材收纳包",
-    "url": "https://www.anker.com/collections/all-accessories",
-    "image": "",
+    "reason": "抖音 · 数码线材收纳包",
     "source": "抖音",
-    "likes": 400,
-    "score": 7.8,
+    "category": "收纳包",
     "creator": "抖音",
+    "score": 7.8,
+    "likes": 400,
+    "url": "https://www.anker.com/collections/all-accessories",
     "tags": [
       "收纳包",
       "抖音",
@@ -2255,14 +2147,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "MUJI PP 收纳盒",
-    "category": "收纳包",
-    "desc": "经典PP材质收纳系列",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107010101",
-    "image": "",
+    "reason": "Good Design Award · 经典PP材质收纳系列",
     "source": "Good Design Award",
-    "likes": 600,
-    "score": 7.8,
+    "category": "收纳包",
     "creator": "Good Design Award",
+    "score": 7.8,
+    "likes": 600,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107010101",
     "tags": [
       "收纳包",
       "Good Design Award",
@@ -2271,14 +2162,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 模块化收纳盒",
-    "category": "收纳包",
-    "desc": "MUJI PP模块化收纳盒系统",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107010101",
-    "image": "",
+    "reason": "Pinterest · MUJI PP模块化收纳盒系统",
     "source": "Pinterest",
-    "likes": 300,
-    "score": 7.8,
+    "category": "收纳包",
     "creator": "Pinterest",
+    "score": 7.8,
+    "likes": 300,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107010101",
     "tags": [
       "收纳包",
       "Pinterest",
@@ -2287,14 +2177,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Pinterest · 刺绣Polo衫",
-    "category": "Polo衫",
-    "desc": "Sunspel经典英国制Polo衫",
-    "url": "https://www.sunspel.com/en-us/polo-shirts.html",
-    "image": "",
+    "reason": "Pinterest · Sunspel经典英国制Polo衫",
     "source": "Pinterest",
-    "likes": 1200,
-    "score": 7.8,
+    "category": "Polo衫",
     "creator": "Pinterest",
+    "score": 7.8,
+    "likes": 1200,
+    "url": "https://www.sunspel.com/en-us/polo-shirts.html",
     "tags": [
       "Polo衫",
       "Pinterest",
@@ -2303,14 +2192,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "MLB 经典帽款",
-    "category": "帽子",
-    "desc": "MLB韩版时尚帽子",
-    "url": "https://www.mlbbrand.com/",
-    "image": "",
+    "reason": "抖音 · MLB韩版时尚帽子",
     "source": "抖音",
-    "likes": 2500,
-    "score": 7.7,
+    "category": "帽子",
     "creator": "抖音",
+    "score": 7.7,
+    "likes": 2500,
+    "url": "https://www.mlbbrand.com/",
     "tags": [
       "帽子",
       "抖音",
@@ -2319,30 +2207,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Hobonichi 手帐",
-    "category": "日历",
-    "desc": "日本经典手帐本",
-    "url": "https://www.1101.com/store/techo/en/",
-    "image": "https://www.1101.com/store/techo/2026/images/og/techo2026_en.jpg",
+    "reason": "Instagram · 日本经典手帐本",
     "source": "Instagram",
-    "likes": 1500,
-    "score": 7.7,
+    "category": "日历",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 1500,
+    "url": "https://www.1101.com/store/techo/en/",
     "tags": [
       "日历",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.1101.com/store/techo/2026/images/og/techo2026_en.jpg"
   },
   {
     "title": "Stüssy 世界巡游T恤",
-    "category": "T恤",
-    "desc": "Stüssy经典World Tour印花T恤",
-    "url": "https://www.stussy.com/collections/t-shirts",
-    "image": "",
+    "reason": "Instagram · Stüssy经典World Tour印花T恤",
     "source": "Instagram",
-    "likes": 3780,
-    "score": 7.7,
+    "category": "T恤",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 3780,
+    "url": "https://www.stussy.com/collections/t-shirts",
     "tags": [
       "T恤",
       "Instagram",
@@ -2351,46 +2238,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "BOTTLED JOY 吨吨桶",
-    "category": "水杯",
-    "desc": "网红大容量运动水壶",
-    "url": "https://bottledjoy.com/",
-    "image": "http://bottledjoy.com/cdn/shop/files/5b6u5L_h5Zu_54mHXzIwMjMwNjEzMTY0NTMzLnBuZw.png?v=1686880714",
+    "reason": "抖音 · 网红大容量运动水壶",
     "source": "抖音",
-    "likes": 1800,
-    "score": 7.7,
+    "category": "水杯",
     "creator": "抖音",
+    "score": 7.7,
+    "likes": 1800,
+    "url": "https://bottledjoy.com/",
     "tags": [
       "水杯",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "http://bottledjoy.com/cdn/shop/files/5b6u5L_h5Zu_54mHXzIwMjMwNjEzMTY0NTMzLnBuZw.png?v=1686880714"
   },
   {
     "title": "Harney & Sons 端午茶",
-    "category": "端午礼盒",
-    "desc": "美国高端散茶端午礼盒",
-    "url": "https://www.harney.com/",
-    "image": "https://www.harney.com/cdn/shop/files/ht-english-breakfast-tins_46.jpg?v=1722953544",
+    "reason": "Instagram · 美国高端散茶端午礼盒",
     "source": "Instagram",
-    "likes": 3623,
-    "score": 7.7,
+    "category": "端午礼盒",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 3623,
+    "url": "https://www.harney.com/",
     "tags": [
       "端午礼盒",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.harney.com/cdn/shop/files/ht-english-breakfast-tins_46.jpg?v=1722953544"
   },
   {
     "title": "DULTON 工业风收纳",
-    "category": "收纳包",
-    "desc": "美式工业风金属收纳",
-    "url": "https://www.dulton.com/products/storage",
-    "image": "",
+    "reason": "Instagram · 美式工业风金属收纳",
     "source": "Instagram",
-    "likes": 700,
-    "score": 7.7,
+    "category": "收纳包",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 700,
+    "url": "https://www.dulton.com/products/storage",
     "tags": [
       "收纳包",
       "Instagram",
@@ -2399,30 +2285,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Riedel 水晶酒杯",
-    "category": "水杯",
-    "desc": "奥地利手工水晶酒杯",
-    "url": "https://www.riedel.com/en-us/shop/wine-glasses",
-    "image": "https://img.riedel.com/w_1200,h_600,q_80,v_dde8f4,hash_af8e84/dam/4000x2100px-Header-Site-n-XXL-Teaser-n-Hero-Product-Teaser-n-Related-Products-Teaser/RIEDEL/2022/2022-Genussletter-November_Fankhauser/4000x2100px_LIA_8271_special-usage-only.jpg",
+    "reason": "Instagram · 奥地利手工水晶酒杯",
     "source": "Instagram",
-    "likes": 1300,
-    "score": 7.7,
+    "category": "水杯",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 1300,
+    "url": "https://www.riedel.com/en-us/shop/wine-glasses",
     "tags": [
       "水杯",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://img.riedel.com/w_1200,h_600,q_80,v_dde8f4,hash_af8e84/dam/4000x2100px-Header-Site-n-XXL-Teaser-n-Hero-Product-Teaser-n-Related-Products-Teaser/RIEDEL/2022/2022-Genussletter-November_Fankhauser/4000x2100px_LIA_8271_special-usage-only.jpg"
   },
   {
     "title": "BEASTER 鬼脸T恤",
-    "category": "T恤",
-    "desc": "国潮鬼脸印花T恤",
-    "url": "https://www.beaster.com/",
-    "image": "",
+    "reason": "抖音 · 国潮鬼脸印花T恤",
     "source": "抖音",
-    "likes": 1200,
-    "score": 7.7,
+    "category": "T恤",
     "creator": "抖音",
+    "score": 7.7,
+    "likes": 1200,
+    "url": "https://www.beaster.com/",
     "tags": [
       "T恤",
       "抖音",
@@ -2431,30 +2316,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Anker 能量棒充电宝",
-    "category": "充电宝",
-    "desc": "Anker PowerCore超薄充电宝",
-    "url": "https://www.anker.com/collections/power-banks",
-    "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/collections/Portable_Power.jpg?v=1625458091",
+    "reason": "Instagram · Anker PowerCore超薄充电宝",
     "source": "Instagram",
-    "likes": 3628,
-    "score": 7.7,
+    "category": "充电宝",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 3628,
+    "url": "https://www.anker.com/collections/power-banks",
     "tags": [
       "充电宝",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/collections/Portable_Power.jpg?v=1625458091"
   },
   {
     "title": "ZWIESEL 水晶玻璃杯",
-    "category": "水杯",
-    "desc": "德国专业水晶玻璃杯",
-    "url": "https://www.zwiesel.com/en/glassware/wine-glasses/",
-    "image": "",
+    "reason": "Instagram · 德国专业水晶玻璃杯",
     "source": "Instagram",
-    "likes": 900,
-    "score": 7.7,
+    "category": "水杯",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 900,
+    "url": "https://www.zwiesel.com/en/glassware/wine-glasses/",
     "tags": [
       "水杯",
       "Instagram",
@@ -2463,14 +2347,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Le Creuset 礼盒",
-    "category": "创意礼盒",
-    "desc": "法国珐琅锅品牌礼盒套装",
-    "url": "https://www.lecreuset.com/gift-guide",
-    "image": "",
+    "reason": "Red Dot · 法国珐琅锅品牌礼盒套装",
     "source": "Red Dot",
-    "likes": 1077,
-    "score": 7.7,
+    "category": "创意礼盒",
     "creator": "Red Dot",
+    "score": 7.7,
+    "likes": 1077,
+    "url": "https://www.lecreuset.com/gift-guide",
     "tags": [
       "创意礼盒",
       "Red Dot",
@@ -2479,30 +2362,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "五芳斋 粽子礼盒",
-    "category": "端午礼盒",
-    "desc": "中华老字号粽子礼盒",
-    "url": "https://www.wufangzhai.com/",
-    "image": "/uploads/image/20240902/1725255644274148.png",
+    "reason": "小红书 · 中华老字号粽子礼盒",
     "source": "小红书",
-    "likes": 2492,
-    "score": 7.7,
+    "category": "端午礼盒",
     "creator": "小红书",
+    "score": 7.7,
+    "likes": 2492,
+    "url": "https://www.wufangzhai.com/",
     "tags": [
       "端午礼盒",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "/uploads/image/20240902/1725255644274148.png"
   },
   {
     "title": "Diptyque 限定礼盒",
-    "category": "创意礼盒",
-    "desc": "法国香氛蜡烛礼品套装",
-    "url": "https://www.diptyqueparis.com/en/gifts/",
-    "image": "",
+    "reason": "Instagram · 法国香氛蜡烛礼品套装",
     "source": "Instagram",
-    "likes": 4972,
-    "score": 7.7,
+    "category": "创意礼盒",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 4972,
+    "url": "https://www.diptyqueparis.com/en/gifts/",
     "tags": [
       "创意礼盒",
       "Instagram",
@@ -2511,14 +2393,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "罗马仕 充电宝",
-    "category": "充电宝",
-    "desc": "国民充电宝品牌",
-    "url": "https://www.romoss.com/",
-    "image": "",
+    "reason": "抖音 · 国民充电宝品牌",
     "source": "抖音",
-    "likes": 800,
-    "score": 7.7,
+    "category": "充电宝",
     "creator": "抖音",
+    "score": 7.7,
+    "likes": 800,
+    "url": "https://www.romoss.com/",
     "tags": [
       "充电宝",
       "抖音",
@@ -2527,30 +2408,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Nomad 真皮手机壳",
-    "category": "手机壳",
-    "desc": "美国植鞣革手机壳",
-    "url": "https://www.nomadgoods.com/collections/cases",
-    "image": "https://cdn.shopify.com/s/files/1/0384/6721/files/apple-watch-natural-metal-band-front.jpg?v=1728060667&amp;width=1280&amp;height=630",
+    "reason": "Instagram · 美国植鞣革手机壳",
     "source": "Instagram",
-    "likes": 1200,
-    "score": 7.7,
+    "category": "手机壳",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 1200,
+    "url": "https://www.nomadgoods.com/collections/cases",
     "tags": [
       "手机壳",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0384/6721/files/apple-watch-natural-metal-band-front.jpg?v=1728060667&amp;width=1280&amp;height=630"
   },
   {
     "title": "Pela 环保手机壳",
-    "category": "手机壳",
-    "desc": "加拿大环保可降解手机壳",
-    "url": "https://www.pela.com/collections/phone-cases",
-    "image": "",
+    "reason": "Instagram · 加拿大环保可降解手机壳",
     "source": "Instagram",
-    "likes": 2231,
-    "score": 7.7,
+    "category": "手机壳",
     "creator": "Instagram",
+    "score": 7.7,
+    "likes": 2231,
+    "url": "https://www.pela.com/collections/phone-cases",
     "tags": [
       "手机壳",
       "Instagram",
@@ -2559,14 +2439,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "小米 床头灯",
-    "category": "氛围灯",
-    "desc": "高性价比智能床头灯",
-    "url": "https://www.mi.com/",
-    "image": "",
+    "reason": "抖音 · 高性价比智能床头灯",
     "source": "抖音",
-    "likes": 800,
-    "score": 7.7,
+    "category": "氛围灯",
     "creator": "抖音",
+    "score": 7.7,
+    "likes": 800,
+    "url": "https://www.mi.com/",
     "tags": [
       "氛围灯",
       "抖音",
@@ -2575,30 +2454,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Baseus Blade 薄版",
-    "category": "充电宝",
-    "desc": "Baseus Blade笔记本超薄充电宝",
-    "url": "https://www.baseus.com/collections/power-banks",
-    "image": "http://www.baseus.com/cdn/shop/collections/Baseus_Elf_Power_Bank_65W_20000mAh_1_front_side_700x_65bd1d66-3ba4-4b64-a8c7-3b0d52204a14.webp?v=1677744576",
+    "reason": "抖音 · Baseus Blade笔记本超薄充电宝",
     "source": "抖音",
-    "likes": 1238,
-    "score": 7.7,
+    "category": "充电宝",
     "creator": "抖音",
+    "score": 7.7,
+    "likes": 1238,
+    "url": "https://www.baseus.com/collections/power-banks",
     "tags": [
       "充电宝",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "http://www.baseus.com/cdn/shop/collections/Baseus_Elf_Power_Bank_65W_20000mAh_1_front_side_700x_65bd1d66-3ba4-4b64-a8c7-3b0d52204a14.webp?v=1677744576"
   },
   {
     "title": "Hermès 茶具套装",
-    "category": "水杯",
-    "desc": "法式奢华陶瓷茶具",
-    "url": "https://www.hermes.com/us/en/category/home/tableware/tea/",
-    "image": "",
+    "reason": "Red Dot · 法式奢华陶瓷茶具",
     "source": "Red Dot",
-    "likes": 3400,
-    "score": 7.7,
+    "category": "水杯",
     "creator": "Red Dot",
+    "score": 7.7,
+    "likes": 3400,
+    "url": "https://www.hermes.com/us/en/category/home/tableware/tea/",
     "tags": [
       "水杯",
       "Red Dot",
@@ -2607,14 +2485,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "几光 智能灯",
-    "category": "氛围灯",
-    "desc": "国货智能氛围灯设计",
-    "url": "https://ezvalo.com/",
-    "image": "",
+    "reason": "小红书 · 国货智能氛围灯设计",
     "source": "小红书",
-    "likes": 1100,
-    "score": 7.6,
+    "category": "氛围灯",
     "creator": "小红书",
+    "score": 7.6,
+    "likes": 1100,
+    "url": "https://ezvalo.com/",
     "tags": [
       "氛围灯",
       "小红书",
@@ -2623,14 +2500,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "小米 口袋充电宝",
-    "category": "充电宝",
-    "desc": "高性价比口袋充电宝",
-    "url": "https://www.mi.com/",
-    "image": "",
+    "reason": "抖音 · 高性价比口袋充电宝",
     "source": "抖音",
-    "likes": 1200,
-    "score": 7.6,
+    "category": "充电宝",
     "creator": "抖音",
+    "score": 7.6,
+    "likes": 1200,
+    "url": "https://www.mi.com/",
     "tags": [
       "充电宝",
       "抖音",
@@ -2639,14 +2515,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Fjällräven 尼龙卡包",
-    "category": "卡包",
-    "desc": "瑞典北极狐经典尼龙短钱包",
-    "url": "https://www.fjallraven.com/us/en-us/bags-gear/wallets/",
-    "image": "",
+    "reason": "Instagram · 瑞典北极狐经典尼龙短钱包",
     "source": "Instagram",
-    "likes": 985,
-    "score": 7.6,
+    "category": "卡包",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 985,
+    "url": "https://www.fjallraven.com/us/en-us/bags-gear/wallets/",
     "tags": [
       "卡包",
       "Instagram",
@@ -2655,14 +2530,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "James Turrell 天窗装置",
-    "category": "装置艺术",
-    "desc": "光与空间大师的Skyspace",
-    "url": "https://jamesturrell.com/",
-    "image": "",
+    "reason": "Instagram · 光与空间大师的Skyspace",
     "source": "Instagram",
-    "likes": 1331,
-    "score": 7.6,
+    "category": "装置艺术",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 1331,
+    "url": "https://jamesturrell.com/",
     "tags": [
       "装置艺术",
       "Instagram",
@@ -2671,14 +2545,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "INXX 联名T恤",
-    "category": "T恤",
-    "desc": "国潮设计师联名T恤",
-    "url": "https://www.inxx.com/",
-    "image": "",
+    "reason": "小红书 · 国潮设计师联名T恤",
     "source": "小红书",
-    "likes": 1000,
-    "score": 7.6,
+    "category": "T恤",
     "creator": "小红书",
+    "score": 7.6,
+    "likes": 1000,
+    "url": "https://www.inxx.com/",
     "tags": [
       "T恤",
       "小红书",
@@ -2687,30 +2560,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Kangol 贝雷帽",
-    "category": "帽子",
-    "desc": "英伦经典贝雷帽",
-    "url": "https://www.kangol.com/collections/berets",
-    "image": "http://kangol.com/cdn/shop/files/kangolLogo-og-rectangle.png?v=1727455664",
+    "reason": "Instagram · 英伦经典贝雷帽",
     "source": "Instagram",
-    "likes": 1100,
-    "score": 7.6,
+    "category": "帽子",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 1100,
+    "url": "https://www.kangol.com/collections/berets",
     "tags": [
       "帽子",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "http://kangol.com/cdn/shop/files/kangolLogo-og-rectangle.png?v=1727455664"
   },
   {
     "title": "ACW* 编织帽",
-    "category": "帽子",
-    "desc": "A-COLD-WALL*工业风编织帽",
-    "url": "https://www.acoldwall.com/collections/headwear",
-    "image": "",
+    "reason": "Instagram · A-COLD-WALL*工业风编织帽",
     "source": "Instagram",
-    "likes": 3264,
-    "score": 7.6,
+    "category": "帽子",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 3264,
+    "url": "https://www.acoldwall.com/collections/headwear",
     "tags": [
       "帽子",
       "Instagram",
@@ -2719,14 +2591,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Yeti Rambler 马克杯",
-    "category": "水杯",
-    "desc": "美国YETI真空隔热不锈钢杯",
-    "url": "https://www.yeti.com/drinkware/rambler-mugs.html",
-    "image": "",
+    "reason": "Instagram · 美国YETI真空隔热不锈钢杯",
     "source": "Instagram",
-    "likes": 4728,
-    "score": 7.6,
+    "category": "水杯",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 4728,
+    "url": "https://www.yeti.com/drinkware/rambler-mugs.html",
     "tags": [
       "水杯",
       "Instagram",
@@ -2735,14 +2606,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "奈雪の茶 中秋联名",
-    "category": "中秋礼盒",
-    "desc": "奈雪中秋设计师联名礼盒",
-    "url": "https://www.naixue.com/",
-    "image": "",
+    "reason": "小红书 · 奈雪中秋设计师联名礼盒",
     "source": "小红书",
-    "likes": 3037,
-    "score": 7.6,
+    "category": "中秋礼盒",
     "creator": "小红书",
+    "score": 7.6,
+    "likes": 3037,
+    "url": "https://www.naixue.com/",
     "tags": [
       "中秋礼盒",
       "小红书",
@@ -2751,30 +2621,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Patagonia Torrentshell",
-    "category": "冲锋衣",
-    "desc": "环保户外冲锋衣",
-    "url": "https://www.patagonia.com/product/mens-torrentshell-3l-rain-jacket/85241.html",
-    "image": "https://www.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw7138ee44/images/hi-res/85241_GEMG.jpg?sw=256&amp;sh=256&amp;sfrm=png&amp;q=95&amp;bgcolor=f3f4ef",
+    "reason": "Instagram · 环保户外冲锋衣",
     "source": "Instagram",
-    "likes": 1800,
-    "score": 7.6,
+    "category": "冲锋衣",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 1800,
+    "url": "https://www.patagonia.com/product/mens-torrentshell-3l-rain-jacket/85241.html",
     "tags": [
       "冲锋衣",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw7138ee44/images/hi-res/85241_GEMG.jpg?sw=256&amp;sh=256&amp;sfrm=png&amp;q=95&amp;bgcolor=f3f4ef"
   },
   {
     "title": "乐歌 E5 升降桌",
-    "category": "创意桌搭",
-    "desc": "国货电动升降桌",
-    "url": "https://www.loctek.com/",
-    "image": "",
+    "reason": "小红书 · 国货电动升降桌",
     "source": "小红书",
-    "likes": 1600,
-    "score": 7.6,
+    "category": "创意桌搭",
     "creator": "小红书",
+    "score": 7.6,
+    "likes": 1600,
+    "url": "https://www.loctek.com/",
     "tags": [
       "创意桌搭",
       "小红书",
@@ -2783,14 +2652,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "FMACM 卫衣",
-    "category": "卫衣",
-    "desc": "国潮设计感卫衣",
-    "url": "https://www.fmacm.com/",
-    "image": "",
+    "reason": "抖音 · 国潮设计感卫衣",
     "source": "抖音",
-    "likes": 700,
-    "score": 7.6,
+    "category": "卫衣",
     "creator": "抖音",
+    "score": 7.6,
+    "likes": 700,
+    "url": "https://www.fmacm.com/",
     "tags": [
       "卫衣",
       "抖音",
@@ -2799,14 +2667,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "豆瓣电影日历",
-    "category": "日历",
-    "desc": "豆瓣经典电影日历",
-    "url": "https://www.douban.com/",
-    "image": "",
+    "reason": "小红书 · 豆瓣经典电影日历",
     "source": "小红书",
-    "likes": 3200,
-    "score": 7.6,
+    "category": "日历",
     "creator": "小红书",
+    "score": 7.6,
+    "likes": 3200,
+    "url": "https://www.douban.com/",
     "tags": [
       "日历",
       "小红书",
@@ -2815,14 +2682,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Philips Hue Play 灯带",
-    "category": "氛围灯",
-    "desc": "智能电视氛围灯带",
-    "url": "https://www.philips-hue.com/en-us/p/hue-play-light-bar/7820131U7",
-    "image": "",
+    "reason": "Red Dot · 智能电视氛围灯带",
     "source": "Red Dot",
-    "likes": 2100,
-    "score": 7.6,
+    "category": "氛围灯",
     "creator": "Red Dot",
+    "score": 7.6,
+    "likes": 2100,
+    "url": "https://www.philips-hue.com/en-us/p/hue-play-light-bar/7820131U7",
     "tags": [
       "氛围灯",
       "Red Dot",
@@ -2831,14 +2697,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "野兽派联名水杯",
-    "category": "水杯",
-    "desc": "野兽派与艺术家联名杯具",
-    "url": "https://www.thebeastshop.com/",
-    "image": "",
+    "reason": "小红书 · 野兽派与艺术家联名杯具",
     "source": "小红书",
-    "likes": 1500,
-    "score": 7.6,
+    "category": "水杯",
     "creator": "小红书",
+    "score": 7.6,
+    "likes": 1500,
+    "url": "https://www.thebeastshop.com/",
     "tags": [
       "水杯",
       "小红书",
@@ -2847,62 +2712,61 @@ BRAND_ITEMS = [
   },
   {
     "title": "Fellowes Eames 桌垫",
-    "category": "创意桌搭",
-    "desc": "办公桌大型皮质桌垫",
-    "url": "https://www.fellowes.com/",
-    "image": "/_layouts/15/images/fgimg.png?rev=43",
+    "reason": "Instagram · 办公桌大型皮质桌垫",
     "source": "Instagram",
-    "likes": 3952,
-    "score": 7.6,
+    "category": "创意桌搭",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 3952,
+    "url": "https://www.fellowes.com/",
     "tags": [
       "创意桌搭",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "/_layouts/15/images/fgimg.png?rev=43"
   },
   {
     "title": "Carhartt WIP 口袋T恤",
-    "category": "T恤",
-    "desc": "美式工装风格口袋T恤",
-    "url": "https://www.carhartt-wip.com/en/men-tshirts",
-    "image": "https://www.carhartt-wip.com/og-image.png",
+    "reason": "Instagram · 美式工装风格口袋T恤",
     "source": "Instagram",
-    "likes": 1100,
-    "score": 7.6,
+    "category": "T恤",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 1100,
+    "url": "https://www.carhartt-wip.com/en/men-tshirts",
     "tags": [
       "T恤",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.carhartt-wip.com/og-image.png"
   },
   {
     "title": "Bellroy 钱包",
-    "category": "卡包",
-    "desc": "澳洲环保皮革钱包",
-    "url": "https://bellroy.com/products/hide-and-seek-wallet",
-    "image": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WHSD-CAR-301/0",
+    "reason": "Instagram · 澳洲环保皮革钱包",
     "source": "Instagram",
-    "likes": 900,
-    "score": 7.6,
+    "category": "卡包",
     "creator": "Instagram",
+    "score": 7.6,
+    "likes": 900,
+    "url": "https://bellroy.com/products/hide-and-seek-wallet",
     "tags": [
       "卡包",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://bellroy-product-images.imgix.net//bellroy_dot_com_gallery_image/USD/WHSD-CAR-301/0"
   },
   {
     "title": "气味图书馆 礼盒",
-    "category": "创意礼盒",
-    "desc": "气味图书馆城市系列礼盒",
-    "url": "https://www.scenllab.com/",
-    "image": "",
+    "reason": "小红书 · 气味图书馆城市系列礼盒",
     "source": "小红书",
-    "likes": 2415,
-    "score": 7.6,
+    "category": "创意礼盒",
     "creator": "小红书",
+    "score": 7.6,
+    "likes": 2415,
+    "url": "https://www.scenllab.com/",
     "tags": [
       "创意礼盒",
       "小红书",
@@ -2911,14 +2775,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Anish Kapoor 镜面装置",
-    "category": "装置艺术",
-    "desc": "英国雕塑家巨型镜面不锈钢装置",
-    "url": "https://www.anishkapoor.com/",
-    "image": "",
+    "reason": "Instagram · 英国雕塑家巨型镜面不锈钢装置",
     "source": "Instagram",
-    "likes": 3961,
-    "score": 7.5,
+    "category": "装置艺术",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 3961,
+    "url": "https://www.anishkapoor.com/",
     "tags": [
       "装置艺术",
       "Instagram",
@@ -2927,30 +2790,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "故宫文创茶杯",
-    "category": "水杯",
-    "desc": "故宫联名茶具设计",
-    "url": "https://www.dpm.org.cn/",
-    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png",
+    "reason": "小红书 · 故宫联名茶具设计",
     "source": "小红书",
-    "likes": 2100,
-    "score": 7.5,
+    "category": "水杯",
     "creator": "小红书",
+    "score": 7.5,
+    "likes": 2100,
+    "url": "https://www.dpm.org.cn/",
     "tags": [
       "水杯",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png"
   },
   {
     "title": "Supreme Box Logo 卫衣",
-    "category": "卫衣",
-    "desc": "Supreme经典Box Logo连帽卫衣",
-    "url": "https://www.supremenewyork.com/shop/all/sweatshirts",
-    "image": "",
+    "reason": "Instagram · Supreme经典Box Logo连帽卫衣",
     "source": "Instagram",
-    "likes": 925,
-    "score": 7.5,
+    "category": "卫衣",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 925,
+    "url": "https://www.supremenewyork.com/shop/all/sweatshirts",
     "tags": [
       "卫衣",
       "Instagram",
@@ -2959,14 +2821,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "LG UltraFine 5K 显示器",
-    "category": "创意桌搭",
-    "desc": "设计师专业显示器",
-    "url": "https://www.lg.com/us/monitors/lg-27md5kl-b-5k-702702",
-    "image": "",
+    "reason": "Red Dot · 设计师专业显示器",
     "source": "Red Dot",
-    "likes": 2100,
-    "score": 7.5,
+    "category": "创意桌搭",
     "creator": "Red Dot",
+    "score": 7.5,
+    "likes": 2100,
+    "url": "https://www.lg.com/us/monitors/lg-27md5kl-b-5k-702702",
     "tags": [
       "创意桌搭",
       "Red Dot",
@@ -2975,14 +2836,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Mountain Hardwear Ghost",
-    "category": "冲锋衣",
-    "desc": "超轻羽绒冲锋衣",
-    "url": "https://www.mountainhardwear.com/c/mens-jackets/",
-    "image": "",
+    "reason": "Instagram · 超轻羽绒冲锋衣",
     "source": "Instagram",
-    "likes": 1100,
-    "score": 7.5,
+    "category": "冲锋衣",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 1100,
+    "url": "https://www.mountainhardwear.com/c/mens-jackets/",
     "tags": [
       "冲锋衣",
       "Instagram",
@@ -2991,30 +2851,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Nike Dri-FIT 运动帽",
-    "category": "帽子",
-    "desc": "速干运动帽",
-    "url": "https://www.nike.com/w/hats-and-headwear-9zy6f",
-    "image": "https://www.nike.com/android-icon-192x192.png",
+    "reason": "抖音 · 速干运动帽",
     "source": "抖音",
-    "likes": 600,
-    "score": 7.5,
+    "category": "帽子",
     "creator": "抖音",
+    "score": 7.5,
+    "likes": 600,
+    "url": "https://www.nike.com/w/hats-and-headwear-9zy6f",
     "tags": [
       "帽子",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.nike.com/android-icon-192x192.png"
   },
   {
     "title": "RHINOSHIELD 犀牛盾壳",
-    "category": "手机壳",
-    "desc": "防摔手机壳开创者",
-    "url": "https://www.rhinoshield.com/collections/iphone-cases",
-    "image": "",
+    "reason": "Instagram · 防摔手机壳开创者",
     "source": "Instagram",
-    "likes": 3200,
-    "score": 7.5,
+    "category": "手机壳",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 3200,
+    "url": "https://www.rhinoshield.com/collections/iphone-cases",
     "tags": [
       "手机壳",
       "Instagram",
@@ -3023,14 +2882,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Bodum 法压壶",
-    "category": "水杯",
-    "desc": "经典法式咖啡压壶",
-    "url": "https://www.bodum.com/us/en/french-press",
-    "image": "",
+    "reason": "Instagram · 经典法式咖啡压壶",
     "source": "Instagram",
-    "likes": 700,
-    "score": 7.5,
+    "category": "水杯",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 700,
+    "url": "https://www.bodum.com/us/en/french-press",
     "tags": [
       "水杯",
       "Instagram",
@@ -3039,14 +2897,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "敦煌日历 2025",
-    "category": "日历",
-    "desc": "敦煌壁画主题日历",
-    "url": "https://www.dunhuang.com/",
-    "image": "",
+    "reason": "小红书 · 敦煌壁画主题日历",
     "source": "小红书",
-    "likes": 3000,
-    "score": 7.5,
+    "category": "日历",
     "creator": "小红书",
+    "score": 7.5,
+    "likes": 3000,
+    "url": "https://www.dunhuang.com/",
     "tags": [
       "日历",
       "小红书",
@@ -3055,14 +2912,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "永璞 咖啡联名礼盒",
-    "category": "创意礼盒",
-    "desc": "永璞咖啡设计师联名套装",
-    "url": "https://www.yongpu.com/",
-    "image": "",
+    "reason": "抖音 · 永璞咖啡设计师联名套装",
     "source": "抖音",
-    "likes": 3673,
-    "score": 7.5,
+    "category": "创意礼盒",
     "creator": "抖音",
+    "score": 7.5,
+    "likes": 3673,
+    "url": "https://www.yongpu.com/",
     "tags": [
       "创意礼盒",
       "抖音",
@@ -3071,14 +2927,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Jo Malone 圣诞礼盒",
-    "category": "创意礼盒",
-    "desc": "祖玛珑限定圣诞礼盒",
-    "url": "https://www.jomalone.com/gifts",
-    "image": "",
+    "reason": "Instagram · 祖玛珑限定圣诞礼盒",
     "source": "Instagram",
-    "likes": 1987,
-    "score": 7.5,
+    "category": "创意礼盒",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 1987,
+    "url": "https://www.jomalone.com/gifts",
     "tags": [
       "创意礼盒",
       "Instagram",
@@ -3087,30 +2942,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "国誉自我手帐",
-    "category": "日历",
-    "desc": "日本时间管理手帐本",
-    "url": "https://www.kokuyo.com/en/",
-    "image": "/sites/default/files/shared_contents/wp-content/uploads/2021/10/bnr_jibuntecho_211001.jpg",
+    "reason": "小红书 · 日本时间管理手帐本",
     "source": "小红书",
-    "likes": 1200,
-    "score": 7.5,
+    "category": "日历",
     "creator": "小红书",
+    "score": 7.5,
+    "likes": 1200,
+    "url": "https://www.kokuyo.com/en/",
     "tags": [
       "日历",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "/sites/default/files/shared_contents/wp-content/uploads/2021/10/bnr_jibuntecho_211001.jpg"
   },
   {
     "title": "DBrand Grip 手机壳",
-    "category": "手机壳",
-    "desc": "DBrand Grip超薄防摔手机壳",
-    "url": "https://dbrand.com/shop/grip/cases/iphone",
-    "image": "",
+    "reason": "Instagram · DBrand Grip超薄防摔手机壳",
     "source": "Instagram",
-    "likes": 1571,
-    "score": 7.5,
+    "category": "手机壳",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 1571,
+    "url": "https://dbrand.com/shop/grip/cases/iphone",
     "tags": [
       "手机壳",
       "Instagram",
@@ -3119,30 +2973,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Ronnefeldt 端午茶礼",
-    "category": "端午礼盒",
-    "desc": "德国顶级茶叶端午限定",
-    "url": "https://www.ronnefeldt.com/",
-    "image": "https://www.ronnefeldt.com/userdata/images/social_media_banners/390_smb_vorschaubild_teeshop_x.jpg",
+    "reason": "Instagram · 德国顶级茶叶端午限定",
     "source": "Instagram",
-    "likes": 4593,
-    "score": 7.5,
+    "category": "端午礼盒",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 4593,
+    "url": "https://www.ronnefeldt.com/",
     "tags": [
       "端午礼盒",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.ronnefeldt.com/userdata/images/social_media_banners/390_smb_vorschaubild_teeshop_x.jpg"
   },
   {
     "title": "Essentials 连帽卫衣",
-    "category": "卫衣",
-    "desc": "Fear of God ESSENTIALS经典连帽卫衣",
-    "url": "https://fearofgod.com/collections/essentials",
-    "image": "",
+    "reason": "Instagram · Fear of God ESSENTIALS经典连帽卫衣",
     "source": "Instagram",
-    "likes": 2106,
-    "score": 7.5,
+    "category": "卫衣",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 2106,
+    "url": "https://fearofgod.com/collections/essentials",
     "tags": [
       "卫衣",
       "Instagram",
@@ -3151,14 +3004,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Janet Echelman 网雕装置",
-    "category": "装置艺术",
-    "desc": "大型户外网状雕塑装置",
-    "url": "https://www.echelman.com/",
-    "image": "",
+    "reason": "Red Dot · 大型户外网状雕塑装置",
     "source": "Red Dot",
-    "likes": 2223,
-    "score": 7.5,
+    "category": "装置艺术",
     "creator": "Red Dot",
+    "score": 7.5,
+    "likes": 2223,
+    "url": "https://www.echelman.com/",
     "tags": [
       "装置艺术",
       "Red Dot",
@@ -3167,14 +3019,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "成都 时空魔方装置",
-    "category": "装置艺术",
-    "desc": "沉浸式光影时空装置展",
-    "url": "https://www.timespacecube.com/",
-    "image": "",
+    "reason": "抖音 · 沉浸式光影时空装置展",
     "source": "抖音",
-    "likes": 4208,
-    "score": 7.5,
+    "category": "装置艺术",
     "creator": "抖音",
+    "score": 7.5,
+    "likes": 4208,
+    "url": "https://www.timespacecube.com/",
     "tags": [
       "装置艺术",
       "抖音",
@@ -3183,30 +3034,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "广州酒家 端午礼盒",
-    "category": "端午礼盒",
-    "desc": "广式粽子礼盒",
-    "url": "https://www.gzjj.com/",
-    "image": "img.sedoparking.com/images/js_preloader.gif",
+    "reason": "抖音 · 广式粽子礼盒",
     "source": "抖音",
-    "likes": 3563,
-    "score": 7.5,
+    "category": "端午礼盒",
     "creator": "抖音",
+    "score": 7.5,
+    "likes": 3563,
+    "url": "https://www.gzjj.com/",
     "tags": [
       "端午礼盒",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "img.sedoparking.com/images/js_preloader.gif"
   },
   {
     "title": "WASSUP T恤",
-    "category": "T恤",
-    "desc": "国潮基础款T恤",
-    "url": "https://www.wassup.com/",
-    "image": "",
+    "reason": "抖音 · 国潮基础款T恤",
     "source": "抖音",
-    "likes": 500,
-    "score": 7.5,
+    "category": "T恤",
     "creator": "抖音",
+    "score": 7.5,
+    "likes": 500,
+    "url": "https://www.wassup.com/",
     "tags": [
       "T恤",
       "抖音",
@@ -3215,14 +3065,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "The North Face Summit",
-    "category": "冲锋衣",
-    "desc": "巅峰系列专业冲锋衣",
-    "url": "https://www.thenorthface.com/en-us/explore/summit-series",
-    "image": "",
+    "reason": "Instagram · 巅峰系列专业冲锋衣",
     "source": "Instagram",
-    "likes": 2200,
-    "score": 7.5,
+    "category": "冲锋衣",
     "creator": "Instagram",
+    "score": 7.5,
+    "likes": 2200,
+    "url": "https://www.thenorthface.com/en-us/explore/summit-series",
     "tags": [
       "冲锋衣",
       "Instagram",
@@ -3231,14 +3080,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "元祖 雪月饼礼盒",
-    "category": "中秋礼盒",
-    "desc": "元祖经典冰淇淋月饼礼盒",
-    "url": "https://www.ganso.com/",
-    "image": "",
+    "reason": "小红书 · 元祖经典冰淇淋月饼礼盒",
     "source": "小红书",
-    "likes": 4528,
-    "score": 7.5,
+    "category": "中秋礼盒",
     "creator": "小红书",
+    "score": 7.5,
+    "likes": 4528,
+    "url": "https://www.ganso.com/",
     "tags": [
       "中秋礼盒",
       "小红书",
@@ -3247,14 +3095,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Patchi 中秋巧克力礼盒",
-    "category": "中秋礼盒",
-    "desc": "迪拜顶级巧克力中秋限定",
-    "url": "https://www.patchi.com/",
-    "image": "",
+    "reason": "Red Dot · 迪拜顶级巧克力中秋限定",
     "source": "Red Dot",
-    "likes": 1068,
-    "score": 7.4,
+    "category": "中秋礼盒",
     "creator": "Red Dot",
+    "score": 7.4,
+    "likes": 1068,
+    "url": "https://www.patchi.com/",
     "tags": [
       "中秋礼盒",
       "Red Dot",
@@ -3263,46 +3110,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "故宫文创 新年礼盒",
-    "category": "创意礼盒",
-    "desc": "紫禁城新年限定礼盒",
-    "url": "https://www.dpm.org.cn/",
-    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png",
+    "reason": "小红书 · 紫禁城新年限定礼盒",
     "source": "小红书",
-    "likes": 2894,
-    "score": 7.4,
+    "category": "创意礼盒",
     "creator": "小红书",
+    "score": 7.4,
+    "likes": 2894,
+    "url": "https://www.dpm.org.cn/",
     "tags": [
       "创意礼盒",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png"
   },
   {
     "title": "Keychron Q1 机械键盘",
-    "category": "创意桌搭",
-    "desc": "客制化铝制机械键盘",
-    "url": "https://www.keychron.com/products/keychron-q1",
-    "image": "http://www.keychron.com/cdn/shop/products/Keychron-Q1-QMK-VIA-custom-mechanical-keyboard-75-percent-layout-full-aluminum-black-frame-for-Mac-Windows-iOS-RGB-backlight-with-hot-swappable-Gateron-G-Pro-switch-red.jpg?crop=center&height=1200&v=1657854465&width=1200",
+    "reason": "Red Dot · 客制化铝制机械键盘",
     "source": "Red Dot",
-    "likes": 2800,
-    "score": 7.4,
+    "category": "创意桌搭",
     "creator": "Red Dot",
+    "score": 7.4,
+    "likes": 2800,
+    "url": "https://www.keychron.com/products/keychron-q1",
     "tags": [
       "创意桌搭",
       "Red Dot",
       "社交精选"
-    ]
+    ],
+    "image": "http://www.keychron.com/cdn/shop/products/Keychron-Q1-QMK-VIA-custom-mechanical-keyboard-75-percent-layout-full-aluminum-black-frame-for-Mac-Windows-iOS-RGB-backlight-with-hot-swappable-Gateron-G-Pro-switch-red.jpg?crop=center&height=1200&v=1657854465&width=1200"
   },
   {
     "title": "Dyson Lightcycle 台灯",
-    "category": "氛围灯",
-    "desc": "日光追踪智能LED台灯",
-    "url": "https://www.dyson.com/lighting/desk-lights/solarcycle-morph",
-    "image": "",
+    "reason": "Red Dot · 日光追踪智能LED台灯",
     "source": "Red Dot",
-    "likes": 3600,
-    "score": 7.4,
+    "category": "氛围灯",
     "creator": "Red Dot",
+    "score": 7.4,
+    "likes": 3600,
+    "url": "https://www.dyson.com/lighting/desk-lights/solarcycle-morph",
     "tags": [
       "氛围灯",
       "Red Dot",
@@ -3311,14 +3157,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "观夏 蜡烛礼盒",
-    "category": "创意礼盒",
-    "desc": "东方植物香薰礼盒",
-    "url": "https://www.loeweperfumes.com/",
-    "image": "",
+    "reason": "抖音 · 东方植物香薰礼盒",
     "source": "抖音",
-    "likes": 3114,
-    "score": 7.4,
+    "category": "创意礼盒",
     "creator": "抖音",
+    "score": 7.4,
+    "likes": 3114,
+    "url": "https://www.loeweperfumes.com/",
     "tags": [
       "创意礼盒",
       "抖音",
@@ -3327,14 +3172,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "COS 极简T恤",
-    "category": "T恤",
-    "desc": "北欧简约纯色T恤",
-    "url": "https://www.cosstores.com/en/men/t-shirts.html",
-    "image": "",
+    "reason": "Instagram · 北欧简约纯色T恤",
     "source": "Instagram",
-    "likes": 900,
-    "score": 7.4,
+    "category": "T恤",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 900,
+    "url": "https://www.cosstores.com/en/men/t-shirts.html",
     "tags": [
       "T恤",
       "Instagram",
@@ -3343,30 +3187,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "TWG Tea 中秋礼盒",
-    "category": "中秋礼盒",
-    "desc": "新加坡顶级茶叶中秋礼盒",
-    "url": "https://www.twgtea.com/",
-    "image": "https://media.twgtea.com/images/default-source/illustrations-icons/twg-logo/1200x630--twg-teas-logo.jpg?sfvrsn=45d40125_2",
+    "reason": "Instagram · 新加坡顶级茶叶中秋礼盒",
     "source": "Instagram",
-    "likes": 4270,
-    "score": 7.4,
+    "category": "中秋礼盒",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 4270,
+    "url": "https://www.twgtea.com/",
     "tags": [
       "中秋礼盒",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://media.twgtea.com/images/default-source/illustrations-icons/twg-logo/1200x630--twg-teas-logo.jpg?sfvrsn=45d40125_2"
   },
   {
     "title": "Stüssy 印花卫衣",
-    "category": "卫衣",
-    "desc": "美式街头卫衣鼻祖",
-    "url": "https://www.stussy.com/collections/sweatshirts",
-    "image": "",
+    "reason": "Instagram · 美式街头卫衣鼻祖",
     "source": "Instagram",
-    "likes": 3500,
-    "score": 7.4,
+    "category": "卫衣",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 3500,
+    "url": "https://www.stussy.com/collections/sweatshirts",
     "tags": [
       "卫衣",
       "Instagram",
@@ -3375,30 +3218,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Champion 经典卫衣",
-    "category": "卫衣",
-    "desc": "美式经典运动卫衣",
-    "url": "https://www.champion.com/collections/reverse-weave",
-    "image": "http://www.champion.com/cdn/shop/files/1200x628-1.jpg?v=1770045447&width=1024",
+    "reason": "Instagram · 美式经典运动卫衣",
     "source": "Instagram",
-    "likes": 2800,
-    "score": 7.4,
+    "category": "卫衣",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 2800,
+    "url": "https://www.champion.com/collections/reverse-weave",
     "tags": [
       "卫衣",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "http://www.champion.com/cdn/shop/files/1200x628-1.jpg?v=1770045447&width=1024"
   },
   {
     "title": "Wedgwood 骨瓷茶杯",
-    "category": "水杯",
-    "desc": "英式骨瓷经典设计",
-    "url": "https://www.wedgwood.com/en-us/dining/drinkware/teacups-saucers/",
-    "image": "",
+    "reason": "Instagram · 英式骨瓷经典设计",
     "source": "Instagram",
-    "likes": 900,
-    "score": 7.4,
+    "category": "水杯",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 900,
+    "url": "https://www.wedgwood.com/en-us/dining/drinkware/teacups-saucers/",
     "tags": [
       "水杯",
       "Instagram",
@@ -3407,14 +3249,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Sunspel 经典Polo衫",
-    "category": "Polo衫",
-    "desc": "英国Sunspel经典全棉Polo衫",
-    "url": "https://www.sunspel.com/en-us/polo-shirts.html",
-    "image": "",
+    "reason": "Instagram · 英国Sunspel经典全棉Polo衫",
     "source": "Instagram",
-    "likes": 4403,
-    "score": 7.4,
+    "category": "Polo衫",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 4403,
+    "url": "https://www.sunspel.com/en-us/polo-shirts.html",
     "tags": [
       "Polo衫",
       "Instagram",
@@ -3423,14 +3264,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "PITAKA 凯夫拉手机壳",
-    "category": "手机壳",
-    "desc": "凯夫拉芳纶纤维磁吸壳",
-    "url": "https://www.pitaka.com/collections/magez-case",
-    "image": "",
+    "reason": "Red Dot · 凯夫拉芳纶纤维磁吸壳",
     "source": "Red Dot",
-    "likes": 2800,
-    "score": 7.4,
+    "category": "手机壳",
     "creator": "Red Dot",
+    "score": 7.4,
+    "likes": 2800,
+    "url": "https://www.pitaka.com/collections/magez-case",
     "tags": [
       "手机壳",
       "Red Dot",
@@ -3439,30 +3279,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "华为智选 台灯",
-    "category": "氛围灯",
-    "desc": "华为智选护眼台灯",
-    "url": "https://www.huawei.com/",
-    "image": "https://www-file.huawei.com/-/media/corp/home/image/logo_400x200.png",
+    "reason": "抖音 · 华为智选护眼台灯",
     "source": "抖音",
-    "likes": 500,
-    "score": 7.4,
+    "category": "氛围灯",
     "creator": "抖音",
+    "score": 7.4,
+    "likes": 500,
+    "url": "https://www.huawei.com/",
     "tags": [
       "氛围灯",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "https://www-file.huawei.com/-/media/corp/home/image/logo_400x200.png"
   },
   {
     "title": "泡泡玛特 潮玩礼盒",
-    "category": "创意礼盒",
-    "desc": "Molly限定盲盒礼盒套装",
-    "url": "https://www.popmart.com/",
-    "image": "",
+    "reason": "小红书 · Molly限定盲盒礼盒套装",
     "source": "小红书",
-    "likes": 1156,
-    "score": 7.4,
+    "category": "创意礼盒",
     "creator": "小红书",
+    "score": 7.4,
+    "likes": 1156,
+    "url": "https://www.popmart.com/",
     "tags": [
       "创意礼盒",
       "小红书",
@@ -3471,46 +3310,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "Nalgene 运动水壶",
-    "category": "钥匙扣水壶",
-    "desc": "户外运动经典水壶",
-    "url": "https://nalgene.com/product/32oz-wide-mouth-sustain/",
-    "image": "https://nalgene.com/wp-content/uploads/2025/12/nalgene-water-bottles.jpg",
+    "reason": "抖音 · 户外运动经典水壶",
     "source": "抖音",
-    "likes": 600,
-    "score": 7.4,
+    "category": "钥匙扣水壶",
     "creator": "抖音",
+    "score": 7.4,
+    "likes": 600,
+    "url": "https://nalgene.com/product/32oz-wide-mouth-sustain/",
     "tags": [
       "钥匙扣水壶",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "https://nalgene.com/wp-content/uploads/2025/12/nalgene-water-bottles.jpg"
   },
   {
     "title": "BYREDO 香氛礼盒",
-    "category": "创意礼盒",
-    "desc": "瑞典小众香氛礼品套装",
-    "url": "https://www.byredo.com/us_en/gifts",
-    "image": "https://www.byredo.com/cdn-cgi/image/format=auto,quality=70/https://www.byredo.com/media/catalog/product/cache/538055185084634e259189a2a72f806b/b/y/byredo_ecom_giftcard__.jpg",
+    "reason": "Instagram · 瑞典小众香氛礼品套装",
     "source": "Instagram",
-    "likes": 1538,
-    "score": 7.4,
+    "category": "创意礼盒",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 1538,
+    "url": "https://www.byredo.com/us_en/gifts",
     "tags": [
       "创意礼盒",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.byredo.com/cdn-cgi/image/format=auto,quality=70/https://www.byredo.com/media/catalog/product/cache/538055185084634e259189a2a72f806b/b/y/byredo_ecom_giftcard__.jpg"
   },
   {
     "title": "Vitamix 破壁机",
-    "category": "创意厨具",
-    "desc": "美国Vitamix专业破壁料理机",
-    "url": "https://www.vitamix.com/us/en_us/venturist-series/",
-    "image": "",
+    "reason": "Instagram · 美国Vitamix专业破壁料理机",
     "source": "Instagram",
-    "likes": 4381,
-    "score": 7.4,
+    "category": "创意厨具",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 4381,
+    "url": "https://www.vitamix.com/us/en_us/venturist-series/",
     "tags": [
       "创意厨具",
       "Instagram",
@@ -3519,30 +3357,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Carhartt WIP 棒球帽",
-    "category": "帽子",
-    "desc": "工装风格棒球帽",
-    "url": "https://www.carhartt-wip.com/en/men-accessories-hats-and-caps",
-    "image": "https://www.carhartt-wip.com/og-image.png",
+    "reason": "Instagram · 工装风格棒球帽",
     "source": "Instagram",
-    "likes": 1200,
-    "score": 7.4,
+    "category": "帽子",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 1200,
+    "url": "https://www.carhartt-wip.com/en/men-accessories-hats-and-caps",
     "tags": [
       "帽子",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.carhartt-wip.com/og-image.png"
   },
   {
     "title": "Mismo 皮质卡包",
-    "category": "卡包",
-    "desc": "瑞典Mismo简洁牛皮卡包",
-    "url": "https://www.mismo.dk/products/card-holder",
-    "image": "",
+    "reason": "Instagram · 瑞典Mismo简洁牛皮卡包",
     "source": "Instagram",
-    "likes": 942,
-    "score": 7.4,
+    "category": "卡包",
     "creator": "Instagram",
+    "score": 7.4,
+    "likes": 942,
+    "url": "https://www.mismo.dk/products/card-holder",
     "tags": [
       "卡包",
       "Instagram",
@@ -3551,62 +3388,61 @@ BRAND_ITEMS = [
   },
   {
     "title": "SHARGE 闪极 Retro 67",
-    "category": "充电宝",
-    "desc": "SHARGE机甲风透明充电宝",
-    "url": "https://www.sharge.com/products/retro-67",
-    "image": "http://sharge.com/cdn/shop/files/Retro67GaNCharger_4c90d722-1258-487c-b9e3-e158de744150.png?v=1772714414",
+    "reason": "抖音 · SHARGE机甲风透明充电宝",
     "source": "抖音",
-    "likes": 2988,
-    "score": 7.4,
+    "category": "充电宝",
     "creator": "抖音",
+    "score": 7.4,
+    "likes": 2988,
+    "url": "https://www.sharge.com/products/retro-67",
     "tags": [
       "充电宝",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "http://sharge.com/cdn/shop/files/Retro67GaNCharger_4c90d722-1258-487c-b9e3-e158de744150.png?v=1772714414"
   },
   {
     "title": "Moshi 笔记本内胆包",
-    "category": "收纳包",
-    "desc": "极简设计笔记本包",
-    "url": "https://www.moshi.com/en/category/bags",
-    "image": "https://cdn.shopify.com/s/files/1/0569/8666/5098/collections/6c593ca3688cb0cfa492c39b.jpg?v=1648463949",
+    "reason": "Red Dot · 极简设计笔记本包",
     "source": "Red Dot",
-    "likes": 500,
-    "score": 7.4,
+    "category": "收纳包",
     "creator": "Red Dot",
+    "score": 7.4,
+    "likes": 500,
+    "url": "https://www.moshi.com/en/category/bags",
     "tags": [
       "收纳包",
       "Red Dot",
       "社交精选"
-    ]
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0569/8666/5098/collections/6c593ca3688cb0cfa492c39b.jpg?v=1648463949"
   },
   {
     "title": "野兽派 花盒套装",
-    "category": "创意礼盒",
-    "desc": "野兽派永生花礼盒",
-    "url": "https://www.thebeastshop.com/",
-    "image": "https://img.thebeastshop.com/static/images/bst-new-logo.png",
+    "reason": "小红书 · 野兽派永生花礼盒",
     "source": "小红书",
-    "likes": 598,
-    "score": 7.4,
+    "category": "创意礼盒",
     "creator": "小红书",
+    "score": 7.4,
+    "likes": 598,
+    "url": "https://www.thebeastshop.com/",
     "tags": [
       "创意礼盒",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://img.thebeastshop.com/static/images/bst-new-logo.png"
   },
   {
     "title": "大益茶 中秋礼盒",
-    "category": "中秋礼盒",
-    "desc": "大益普洱中秋限定礼盒",
-    "url": "https://www.dayigroup.com/",
-    "image": "",
+    "reason": "Red Dot · 大益普洱中秋限定礼盒",
     "source": "Red Dot",
-    "likes": 3968,
-    "score": 7.4,
+    "category": "中秋礼盒",
     "creator": "Red Dot",
+    "score": 7.4,
+    "likes": 3968,
+    "url": "https://www.dayigroup.com/",
     "tags": [
       "中秋礼盒",
       "Red Dot",
@@ -3615,14 +3451,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "TOMTOMMY 卡包",
-    "category": "卡包",
-    "desc": "极简设计卡包",
-    "url": "https://www.tomtommmy.com/",
-    "image": "",
+    "reason": "小红书 · 极简设计卡包",
     "source": "小红书",
-    "likes": 500,
-    "score": 7.4,
+    "category": "卡包",
     "creator": "小红书",
+    "score": 7.4,
+    "likes": 500,
+    "url": "https://www.tomtommmy.com/",
     "tags": [
       "卡包",
       "小红书",
@@ -3631,30 +3466,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "上海 制造之外装置展",
-    "category": "装置艺术",
-    "desc": "WAVELENGTH制造之外艺术装置群",
-    "url": "https://www.wavelength.com/",
-    "image": "https://assets.asana.biz/m/5a2dff1f176becc3/webimage-asana-share-image-logo.jpg",
+    "reason": "抖音 · WAVELENGTH制造之外艺术装置群",
     "source": "抖音",
-    "likes": 4843,
-    "score": 7.4,
+    "category": "装置艺术",
     "creator": "抖音",
+    "score": 7.4,
+    "likes": 4843,
+    "url": "https://www.wavelength.com/",
     "tags": [
       "装置艺术",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "https://assets.asana.biz/m/5a2dff1f176becc3/webimage-asana-share-image-logo.jpg"
   },
   {
     "title": "Contigo 旅行杯",
-    "category": "水杯",
-    "desc": "美国Contigo一键开盖旅行杯",
-    "url": "https://www.gocontigo.com/",
-    "image": "",
+    "reason": "抖音 · 美国Contigo一键开盖旅行杯",
     "source": "抖音",
-    "likes": 2499,
-    "score": 7.3,
+    "category": "水杯",
     "creator": "抖音",
+    "score": 7.3,
+    "likes": 2499,
+    "url": "https://www.gocontigo.com/",
     "tags": [
       "水杯",
       "抖音",
@@ -3663,46 +3497,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "Mammut 艾格极限冲锋衣",
-    "category": "冲锋衣",
-    "desc": "瑞士专业户外冲锋衣",
-    "url": "https://www.mammut.com/int/en/cat/230-hardshell-jackets-men/",
-    "image": "https://images.ctfassets.net/l595fda2nfqd/493aXEg31Defo62SW4Wtk5/4e0f3fbf01a21bf774773e3e11094cda/hiking_ducan-spine_rgb_03895.jpg?fm=jpg&amp;w=512&amp;q=80",
+    "reason": "Instagram · 瑞士专业户外冲锋衣",
     "source": "Instagram",
-    "likes": 1500,
-    "score": 7.3,
+    "category": "冲锋衣",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 1500,
+    "url": "https://www.mammut.com/int/en/cat/230-hardshell-jackets-men/",
     "tags": [
       "冲锋衣",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://images.ctfassets.net/l595fda2nfqd/493aXEg31Defo62SW4Wtk5/4e0f3fbf01a21bf774773e3e11094cda/hiking_ducan-spine_rgb_03895.jpg?fm=jpg&amp;w=512&amp;q=80"
   },
   {
     "title": "Godiva 中秋巧克力",
-    "category": "中秋礼盒",
-    "desc": "比利时巧克力中秋限定",
-    "url": "https://www.godiva.com/",
-    "image": "https://www.godiva.com/cdn/shop/files/39086_godiva-logo-svg.svg?v=1759343745&amp;width=1000",
+    "reason": "Instagram · 比利时巧克力中秋限定",
     "source": "Instagram",
-    "likes": 1745,
-    "score": 7.3,
+    "category": "中秋礼盒",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 1745,
+    "url": "https://www.godiva.com/",
     "tags": [
       "中秋礼盒",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.godiva.com/cdn/shop/files/39086_godiva-logo-svg.svg?v=1759343745&amp;width=1000"
   },
   {
     "title": "Palace 5-Panel 帽",
-    "category": "帽子",
-    "desc": "英国滑板品牌帽子",
-    "url": "https://www.palaceskateboards.com/",
-    "image": "",
+    "reason": "Instagram · 英国滑板品牌帽子",
     "source": "Instagram",
-    "likes": 1400,
-    "score": 7.3,
+    "category": "帽子",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 1400,
+    "url": "https://www.palaceskateboards.com/",
     "tags": [
       "帽子",
       "Instagram",
@@ -3711,30 +3544,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "美心 流心奶黄月饼",
-    "category": "中秋礼盒",
-    "desc": "香港经典流心奶黄月饼礼盒",
-    "url": "https://www.maxims.com.hk/",
-    "image": "https://www.maxims.com.hk/media/logo/maxims_og_favicon.png",
+    "reason": "小红书 · 香港经典流心奶黄月饼礼盒",
     "source": "小红书",
-    "likes": 1941,
-    "score": 7.3,
+    "category": "中秋礼盒",
     "creator": "小红书",
+    "score": 7.3,
+    "likes": 1941,
+    "url": "https://www.maxims.com.hk/",
     "tags": [
       "中秋礼盒",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.maxims.com.hk/media/logo/maxims_og_favicon.png"
   },
   {
     "title": "乐纯 中秋酸奶礼盒",
-    "category": "中秋礼盒",
-    "desc": "乐纯限定中秋酸奶礼盒",
-    "url": "https://www.lechun.com/",
-    "image": "",
+    "reason": "抖音 · 乐纯限定中秋酸奶礼盒",
     "source": "抖音",
-    "likes": 1221,
-    "score": 7.3,
+    "category": "中秋礼盒",
     "creator": "抖音",
+    "score": 7.3,
+    "likes": 1221,
+    "url": "https://www.lechun.com/",
     "tags": [
       "中秋礼盒",
       "抖音",
@@ -3743,14 +3575,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "凯乐石 冲锋衣",
-    "category": "冲锋衣",
-    "desc": "国货专业登山冲锋衣",
-    "url": "https://www.kailas.com/",
-    "image": "",
+    "reason": "抖音 · 国货专业登山冲锋衣",
     "source": "抖音",
-    "likes": 900,
-    "score": 7.3,
+    "category": "冲锋衣",
     "creator": "抖音",
+    "score": 7.3,
+    "likes": 900,
+    "url": "https://www.kailas.com/",
     "tags": [
       "冲锋衣",
       "抖音",
@@ -3759,30 +3590,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Stüssy 棒球帽",
-    "category": "帽子",
-    "desc": "美式街头棒球帽",
-    "url": "https://www.stussy.com/collections/headwear",
-    "image": "http://www.stussy.com/cdn/shop/files/checkout-logo_256x256_c8c5b294-3bd0-4d8e-a5bd-e4066efcc662.png?v=1678808251",
+    "reason": "Instagram · 美式街头棒球帽",
     "source": "Instagram",
-    "likes": 1800,
-    "score": 7.3,
+    "category": "帽子",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 1800,
+    "url": "https://www.stussy.com/collections/headwear",
     "tags": [
       "帽子",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "http://www.stussy.com/cdn/shop/files/checkout-logo_256x256_c8c5b294-3bd0-4d8e-a5bd-e4066efcc662.png?v=1678808251"
   },
   {
     "title": "Polo Ralph Lauren 经典Polo",
-    "category": "Polo衫",
-    "desc": "Ralph Lauren美国经典Polo衫",
-    "url": "https://www.ralphlauren.com/men-clothing-polo-shirts",
-    "image": "",
+    "reason": "Instagram · Ralph Lauren美国经典Polo衫",
     "source": "Instagram",
-    "likes": 4020,
-    "score": 7.3,
+    "category": "Polo衫",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 4020,
+    "url": "https://www.ralphlauren.com/men-clothing-polo-shirts",
     "tags": [
       "Polo衫",
       "Instagram",
@@ -3791,14 +3621,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Noah NY 十字徽标T恤",
-    "category": "T恤",
-    "desc": "Noah NYC十字LogoT恤",
-    "url": "https://www.noahny.com/collections/tees",
-    "image": "",
+    "reason": "Instagram · Noah NYC十字LogoT恤",
     "source": "Instagram",
-    "likes": 4920,
-    "score": 7.3,
+    "category": "T恤",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 4920,
+    "url": "https://www.noahny.com/collections/tees",
     "tags": [
       "T恤",
       "Instagram",
@@ -3807,14 +3636,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "MOREOVER 北欧水杯",
-    "category": "水杯",
-    "desc": "北欧风陶瓷水杯设计",
-    "url": "https://moreover.cc",
-    "image": "",
+    "reason": "小红书 · 北欧风陶瓷水杯设计",
     "source": "小红书",
-    "likes": 800,
-    "score": 7.3,
+    "category": "水杯",
     "creator": "小红书",
+    "score": 7.3,
+    "likes": 800,
+    "url": "https://moreover.cc",
     "tags": [
       "水杯",
       "小红书",
@@ -3823,30 +3651,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "国家地理 光影装置",
-    "category": "装置艺术",
-    "desc": "国家地理影像沉浸装置展",
-    "url": "https://www.nationalgeographic.com/",
-    "image": "https://assets-cdn.nationalgeographic.com/natgeo/static/default.NG.logo.dark.jpg",
+    "reason": "小红书 · 国家地理影像沉浸装置展",
     "source": "小红书",
-    "likes": 1957,
-    "score": 7.3,
+    "category": "装置艺术",
     "creator": "小红书",
+    "score": 7.3,
+    "likes": 1957,
+    "url": "https://www.nationalgeographic.com/",
     "tags": [
       "装置艺术",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://assets-cdn.nationalgeographic.com/natgeo/static/default.NG.logo.dark.jpg"
   },
   {
     "title": "CASETiFY 防摔Ultra",
-    "category": "手机壳",
-    "desc": "CASETiFY Impact极黑防摔手机壳",
-    "url": "https://www.casetify.com/category/iphone-17-pro-max-cases",
-    "image": "",
+    "reason": "Instagram · CASETiFY Impact极黑防摔手机壳",
     "source": "Instagram",
-    "likes": 1430,
-    "score": 7.3,
+    "category": "手机壳",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 1430,
+    "url": "https://www.casetify.com/category/iphone-17-pro-max-cases",
     "tags": [
       "手机壳",
       "Instagram",
@@ -3855,14 +3682,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "稻香村 月饼礼盒",
-    "category": "中秋礼盒",
-    "desc": "百年老字号中秋月饼礼盒",
-    "url": "https://www.daoxiangcun.com/",
-    "image": "",
+    "reason": "小红书 · 百年老字号中秋月饼礼盒",
     "source": "小红书",
-    "likes": 4512,
-    "score": 7.3,
+    "category": "中秋礼盒",
     "creator": "小红书",
+    "score": 7.3,
+    "likes": 4512,
+    "url": "https://www.daoxiangcun.com/",
     "tags": [
       "中秋礼盒",
       "小红书",
@@ -3871,46 +3697,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "Herman Miller Aeron 椅",
-    "category": "创意桌搭",
-    "desc": "人体工学椅行业标杆",
-    "url": "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chairs/",
-    "image": "https://www.hermanmiller.com/content/dam/hmicom/page_assets/products/aeron_chair/202106/og_office_chairs_aeron_chair.jpg",
+    "reason": "Red Dot · 人体工学椅行业标杆",
     "source": "Red Dot",
-    "likes": 4500,
-    "score": 7.3,
+    "category": "创意桌搭",
     "creator": "Red Dot",
+    "score": 7.3,
+    "likes": 4500,
+    "url": "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chairs/",
     "tags": [
       "创意桌搭",
       "Red Dot",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.hermanmiller.com/content/dam/hmicom/page_assets/products/aeron_chair/202106/og_office_chairs_aeron_chair.jpg"
   },
   {
     "title": "SHARGE 闪极透明充电宝",
-    "category": "充电宝",
-    "desc": "透明工业风移动电源",
-    "url": "https://www.sharge.com/products/retro-67",
-    "image": "http://sharge.com/cdn/shop/files/Retro67GaNCharger_4c90d722-1258-487c-b9e3-e158de744150.png?v=1772714414",
+    "reason": "Instagram · 透明工业风移动电源",
     "source": "Instagram",
-    "likes": 2800,
-    "score": 7.3,
+    "category": "充电宝",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 2800,
+    "url": "https://www.sharge.com/products/retro-67",
     "tags": [
       "充电宝",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "http://sharge.com/cdn/shop/files/Retro67GaNCharger_4c90d722-1258-487c-b9e3-e158de744150.png?v=1772714414"
   },
   {
     "title": "Flos IC 落地灯",
-    "category": "氛围灯",
-    "desc": "意大利经典照明设计",
-    "url": "https://www.flos.com/en/products/decorative/ic-lights",
-    "image": "",
+    "reason": "Instagram · 意大利经典照明设计",
     "source": "Instagram",
-    "likes": 3200,
-    "score": 7.3,
+    "category": "氛围灯",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 3200,
+    "url": "https://www.flos.com/en/products/decorative/ic-lights",
     "tags": [
       "氛围灯",
       "Instagram",
@@ -3919,30 +3744,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "ROARINGWILD 卫衣",
-    "category": "卫衣",
-    "desc": "国潮卫衣代表品牌",
-    "url": "https://www.roaringwild.com/",
-    "image": "http://roaringwild.com/cdn/shop/files/ROARINGWILD_NEW_Logo_WH_1920_1080_1200x1200.jpg?v=1749110173",
+    "reason": "小红书 · 国潮卫衣代表品牌",
     "source": "小红书",
-    "likes": 1500,
-    "score": 7.3,
+    "category": "卫衣",
     "creator": "小红书",
+    "score": 7.3,
+    "likes": 1500,
+    "url": "https://www.roaringwild.com/",
     "tags": [
       "卫衣",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "http://roaringwild.com/cdn/shop/files/ROARINGWILD_NEW_Logo_WH_1920_1080_1200x1200.jpg?v=1749110173"
   },
   {
     "title": "A.P.C. 卫衣",
-    "category": "卫衣",
-    "desc": "法式简约基础卫衣",
-    "url": "https://www.apc.fr/categories/men/sweatshirts",
-    "image": "",
+    "reason": "Instagram · 法式简约基础卫衣",
     "source": "Instagram",
-    "likes": 1600,
-    "score": 7.3,
+    "category": "卫衣",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 1600,
+    "url": "https://www.apc.fr/categories/men/sweatshirts",
     "tags": [
       "卫衣",
       "Instagram",
@@ -3951,30 +3775,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Champion Reverse Weave",
-    "category": "卫衣",
-    "desc": "Champion经典Reverse Weave圆领卫衣",
-    "url": "https://www.champion.com/collections/reverse-weave",
-    "image": "http://www.champion.com/cdn/shop/files/1200x628-1.jpg?v=1770045447&width=1024",
+    "reason": "Instagram · Champion经典Reverse Weave圆领卫衣",
     "source": "Instagram",
-    "likes": 4791,
-    "score": 7.3,
+    "category": "卫衣",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 4791,
+    "url": "https://www.champion.com/collections/reverse-weave",
     "tags": [
       "卫衣",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "http://www.champion.com/cdn/shop/files/1200x628-1.jpg?v=1770045447&width=1024"
   },
   {
     "title": "Smeg 家电礼盒",
-    "category": "创意礼盒",
-    "desc": "SMEG复古家电礼盒套装",
-    "url": "https://www.smeg.com/gifts",
-    "image": "",
+    "reason": "Red Dot · SMEG复古家电礼盒套装",
     "source": "Red Dot",
-    "likes": 2196,
-    "score": 7.3,
+    "category": "创意礼盒",
     "creator": "Red Dot",
+    "score": 7.3,
+    "likes": 2196,
+    "url": "https://www.smeg.com/gifts",
     "tags": [
       "创意礼盒",
       "Red Dot",
@@ -3983,14 +3806,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "余德耀美术馆 装置展",
-    "category": "装置艺术",
-    "desc": "上海余德耀美术馆装置艺术展",
-    "url": "https://www.yuzmshanghai.org/",
-    "image": "",
+    "reason": "小红书 · 上海余德耀美术馆装置艺术展",
     "source": "小红书",
-    "likes": 4999,
-    "score": 7.3,
+    "category": "装置艺术",
     "creator": "小红书",
+    "score": 7.3,
+    "likes": 4999,
+    "url": "https://www.yuzmshanghai.org/",
     "tags": [
       "装置艺术",
       "小红书",
@@ -3999,14 +3821,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Arc'teryx Alpha SV 冲锋衣",
-    "category": "冲锋衣",
-    "desc": "专业级硬壳冲锋衣",
-    "url": "https://arcteryx.com/shop/alpha-sv-jacket",
-    "image": "",
+    "reason": "Red Dot · 专业级硬壳冲锋衣",
     "source": "Red Dot",
-    "likes": 3500,
-    "score": 7.3,
+    "category": "冲锋衣",
     "creator": "Red Dot",
+    "score": 7.3,
+    "likes": 3500,
+    "url": "https://arcteryx.com/shop/alpha-sv-jacket",
     "tags": [
       "冲锋衣",
       "Red Dot",
@@ -4015,14 +3836,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "A.P.C. 纯棉T恤",
-    "category": "T恤",
-    "desc": "法国A.P.C.纯棉Basic T恤",
-    "url": "https://www.apc.fr/categories/men/t-shirts",
-    "image": "",
+    "reason": "Instagram · 法国A.P.C.纯棉Basic T恤",
     "source": "Instagram",
-    "likes": 4173,
-    "score": 7.3,
+    "category": "T恤",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 4173,
+    "url": "https://www.apc.fr/categories/men/t-shirts",
     "tags": [
       "T恤",
       "Instagram",
@@ -4031,14 +3851,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Yeelight 氛围灯",
-    "category": "氛围灯",
-    "desc": "小米生态智能灯带",
-    "url": "https://www.yeelight.com/",
-    "image": "",
+    "reason": "小红书 · 小米生态智能灯带",
     "source": "小红书",
-    "likes": 900,
-    "score": 7.3,
+    "category": "氛围灯",
     "creator": "小红书",
+    "score": 7.3,
+    "likes": 900,
+    "url": "https://www.yeelight.com/",
     "tags": [
       "氛围灯",
       "小红书",
@@ -4047,62 +3866,61 @@ BRAND_ITEMS = [
   },
   {
     "title": "SMEG 多士炉",
-    "category": "创意厨具",
-    "desc": "复古美学多士炉",
-    "url": "https://www.smeg.com/toasters",
-    "image": "https://www.smeg.com/binaries/content/gallery/smeg/categories/sda_smeg_frontale_tsf.jpg/sda_smeg_frontale_tsf.jpg/brx%3ApostcardDeskLarge",
+    "reason": "Instagram · 复古美学多士炉",
     "source": "Instagram",
-    "likes": 1800,
-    "score": 7.3,
+    "category": "创意厨具",
     "creator": "Instagram",
+    "score": 7.3,
+    "likes": 1800,
+    "url": "https://www.smeg.com/toasters",
     "tags": [
       "创意厨具",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.smeg.com/binaries/content/gallery/smeg/categories/sda_smeg_frontale_tsf.jpg/sda_smeg_frontale_tsf.jpg/brx%3ApostcardDeskLarge"
   },
   {
     "title": "倍思 氮化镓充电宝",
-    "category": "充电宝",
-    "desc": "大容量快充充电宝",
-    "url": "https://www.baseus.com/collections/power-banks",
-    "image": "http://www.baseus.com/cdn/shop/collections/Baseus_Elf_Power_Bank_65W_20000mAh_1_front_side_700x_65bd1d66-3ba4-4b64-a8c7-3b0d52204a14.webp?v=1677744576",
+    "reason": "抖音 · 大容量快充充电宝",
     "source": "抖音",
-    "likes": 700,
-    "score": 7.3,
+    "category": "充电宝",
     "creator": "抖音",
+    "score": 7.3,
+    "likes": 700,
+    "url": "https://www.baseus.com/collections/power-banks",
     "tags": [
       "充电宝",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "http://www.baseus.com/cdn/shop/collections/Baseus_Elf_Power_Bank_65W_20000mAh_1_front_side_700x_65bd1d66-3ba4-4b64-a8c7-3b0d52204a14.webp?v=1677744576"
   },
   {
     "title": "Smeg 复古冰箱",
-    "category": "创意厨具",
-    "desc": "复古美学厨房电器",
-    "url": "https://www.smeg.com/refrigerators",
-    "image": "https://www.smeg.com/binaries/content/gallery/smeg/categories/frigoriferi-2.jpg/frigoriferi-2.jpg/brx%3ApostcardDeskLarge",
+    "reason": "Red Dot · 复古美学厨房电器",
     "source": "Red Dot",
-    "likes": 3500,
-    "score": 7.2,
+    "category": "创意厨具",
     "creator": "Red Dot",
+    "score": 7.2,
+    "likes": 3500,
+    "url": "https://www.smeg.com/refrigerators",
     "tags": [
       "创意厨具",
       "Red Dot",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.smeg.com/binaries/content/gallery/smeg/categories/frigoriferi-2.jpg/frigoriferi-2.jpg/brx%3ApostcardDeskLarge"
   },
   {
     "title": "Hydro Flask 宽口水壶",
-    "category": "钥匙扣水壶",
-    "desc": "双层真空不锈钢水壶",
-    "url": "https://www.hydroflask.com/wide-mouth-with-flex-cap-32",
-    "image": "",
+    "reason": "Instagram · 双层真空不锈钢水壶",
     "source": "Instagram",
-    "likes": 1200,
-    "score": 7.2,
+    "category": "钥匙扣水壶",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 1200,
+    "url": "https://www.hydroflask.com/wide-mouth-with-flex-cap-32",
     "tags": [
       "钥匙扣水壶",
       "Instagram",
@@ -4111,30 +3929,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "摩飞 多功能料理锅",
-    "category": "创意厨具",
-    "desc": "网红多功能料理锅",
-    "url": "https://www.morphyrichards.com/",
-    "image": "http://morphyrichards.com/cdn/shop/files/Social_Image.jpg?v=1700278803",
+    "reason": "小红书 · 网红多功能料理锅",
     "source": "小红书",
-    "likes": 2800,
-    "score": 7.2,
+    "category": "创意厨具",
     "creator": "小红书",
+    "score": 7.2,
+    "likes": 2800,
+    "url": "https://www.morphyrichards.com/",
     "tags": [
       "创意厨具",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "http://morphyrichards.com/cdn/shop/files/Social_Image.jpg?v=1700278803"
   },
   {
     "title": "Polo Ralph Lauren 棒球帽",
-    "category": "帽子",
-    "desc": "Ralph Lauren经典刺绣棒球帽",
-    "url": "https://www.ralphlauren.com/men-accessories-hats-headwear/",
-    "image": "",
+    "reason": "Instagram · Ralph Lauren经典刺绣棒球帽",
     "source": "Instagram",
-    "likes": 2024,
-    "score": 7.2,
+    "category": "帽子",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 2024,
+    "url": "https://www.ralphlauren.com/men-accessories-hats-headwear/",
     "tags": [
       "帽子",
       "Instagram",
@@ -4143,62 +3960,61 @@ BRAND_ITEMS = [
   },
   {
     "title": "Nanoleaf 奇光版",
-    "category": "氛围灯",
-    "desc": "模块化智能LED壁灯",
-    "url": "https://nanoleaf.com/en-US/products/nanoleaf-shapes/",
-    "image": "https://us-cdn.nanoleaf.me/assets/img/favicons/nanoleaf-small-icon.png",
+    "reason": "Red Dot · 模块化智能LED壁灯",
     "source": "Red Dot",
-    "likes": 1093,
-    "score": 7.2,
+    "category": "氛围灯",
     "creator": "Red Dot",
+    "score": 7.2,
+    "likes": 1093,
+    "url": "https://nanoleaf.com/en-US/products/nanoleaf-shapes/",
     "tags": [
       "氛围灯",
       "Red Dot",
       "社交精选"
-    ]
+    ],
+    "image": "https://us-cdn.nanoleaf.me/assets/img/favicons/nanoleaf-small-icon.png"
   },
   {
     "title": "Stanley 经典真空壶",
-    "category": "钥匙扣水壶",
-    "desc": "美国经典真空气压壶",
-    "url": "https://www.stanley1913.com/collections/iceflow",
-    "image": "https://www.stanley1913.com/cdn/shop/files/Stanley_Horizontal_x320_b3ec2ef4-fa76-454a-b900-c4055137902d.webp?height=628&pad_color=fff&v=1706751331&width=1200",
+    "reason": "Instagram · 美国经典真空气压壶",
     "source": "Instagram",
-    "likes": 1400,
-    "score": 7.2,
+    "category": "钥匙扣水壶",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 1400,
+    "url": "https://www.stanley1913.com/collections/iceflow",
     "tags": [
       "钥匙扣水壶",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.stanley1913.com/cdn/shop/files/Stanley_Horizontal_x320_b3ec2ef4-fa76-454a-b900-c4055137902d.webp?height=628&pad_color=fff&v=1706751331&width=1200"
   },
   {
     "title": "JR 巨型摄影装置",
-    "category": "装置艺术",
-    "desc": "法国街头艺术家巨型摄影贴装置",
-    "url": "https://www.jr-art.net/",
-    "image": "/fbshare.jpg",
+    "reason": "Instagram · 法国街头艺术家巨型摄影贴装置",
     "source": "Instagram",
-    "likes": 3421,
-    "score": 7.2,
+    "category": "装置艺术",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 3421,
+    "url": "https://www.jr-art.net/",
     "tags": [
       "装置艺术",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "/fbshare.jpg"
   },
   {
     "title": "北鼎 养生壶",
-    "category": "创意厨具",
-    "desc": "养生壶品类第一",
-    "url": "https://www.buydeem.com/",
-    "image": "",
+    "reason": "小红书 · 养生壶品类第一",
     "source": "小红书",
-    "likes": 1900,
-    "score": 7.2,
+    "category": "创意厨具",
     "creator": "小红书",
+    "score": 7.2,
+    "likes": 1900,
+    "url": "https://www.buydeem.com/",
     "tags": [
       "创意厨具",
       "小红书",
@@ -4207,14 +4023,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Leo Villareal LED装置",
-    "category": "装置艺术",
-    "desc": "美国艺术家LED灯光装置",
-    "url": "https://www.leovillareal.com/",
-    "image": "",
+    "reason": "Red Dot · 美国艺术家LED灯光装置",
     "source": "Red Dot",
-    "likes": 1142,
-    "score": 7.2,
+    "category": "装置艺术",
     "creator": "Red Dot",
+    "score": 7.2,
+    "likes": 1142,
+    "url": "https://www.leovillareal.com/",
     "tags": [
       "装置艺术",
       "Red Dot",
@@ -4223,14 +4038,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "草间弥生 无限镜屋",
-    "category": "装置艺术",
-    "desc": "草间弥生无限镜像装置",
-    "url": "https://yayoikusama.com/",
-    "image": "",
+    "reason": "Red Dot · 草间弥生无限镜像装置",
     "source": "Red Dot",
-    "likes": 703,
-    "score": 7.2,
+    "category": "装置艺术",
     "creator": "Red Dot",
+    "score": 7.2,
+    "likes": 703,
+    "url": "https://yayoikusama.com/",
     "tags": [
       "装置艺术",
       "Red Dot",
@@ -4239,14 +4053,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "单向历",
-    "category": "日历",
-    "desc": "单向空间经典日历",
-    "url": "https://www.owspace.com/",
-    "image": "",
+    "reason": "小红书 · 单向空间经典日历",
     "source": "小红书",
-    "likes": 1800,
-    "score": 7.2,
+    "category": "日历",
     "creator": "小红书",
+    "score": 7.2,
+    "likes": 1800,
+    "url": "https://www.owspace.com/",
     "tags": [
       "日历",
       "小红书",
@@ -4255,14 +4068,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "三顿半 咖啡礼盒",
-    "category": "创意礼盒",
-    "desc": "精品速溶咖啡礼盒套装",
-    "url": "https://www.saturnbird.com/",
-    "image": "",
+    "reason": "抖音 · 精品速溶咖啡礼盒套装",
     "source": "抖音",
-    "likes": 4883,
-    "score": 7.2,
+    "category": "创意礼盒",
     "creator": "抖音",
+    "score": 7.2,
+    "likes": 4883,
+    "url": "https://www.saturnbird.com/",
     "tags": [
       "创意礼盒",
       "抖音",
@@ -4271,46 +4083,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "Govee 灯带套装",
-    "category": "氛围灯",
-    "desc": "Govee智能RGBIC LED灯带",
-    "url": "https://www.govee.com/collections/led-strip-lights",
-    "image": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/Shipping_VI.png?v=1737431254&amp;width=100&amp;crop=center",
+    "reason": "抖音 · Govee智能RGBIC LED灯带",
     "source": "抖音",
-    "likes": 1120,
-    "score": 7.2,
+    "category": "氛围灯",
     "creator": "抖音",
+    "score": 7.2,
+    "likes": 1120,
+    "url": "https://www.govee.com/collections/led-strip-lights",
     "tags": [
       "氛围灯",
       "抖音",
       "社交精选"
-    ]
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/Shipping_VI.png?v=1737431254&amp;width=100&amp;crop=center"
   },
   {
     "title": "UCCA 北京 装置展览",
-    "category": "装置艺术",
-    "desc": "UCCA尤伦斯当代艺术中心装置展",
-    "url": "https://www.ucca.org.cn/",
-    "image": "https://www.ucca.org.cn/storage/public/images/3/ha68fe-23f066-25d07f.200.png",
+    "reason": "小红书 · UCCA尤伦斯当代艺术中心装置展",
     "source": "小红书",
-    "likes": 3570,
-    "score": 7.2,
+    "category": "装置艺术",
     "creator": "小红书",
+    "score": 7.2,
+    "likes": 3570,
+    "url": "https://www.ucca.org.cn/",
     "tags": [
       "装置艺术",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://www.ucca.org.cn/storage/public/images/3/ha68fe-23f066-25d07f.200.png"
   },
   {
     "title": "Helly Hansen Verglas",
-    "category": "冲锋衣",
-    "desc": "Helly Hansen Verglas防水冲锋衣",
-    "url": "https://www.hellyhansen.com/en_us/mens-outerwear-jackets",
-    "image": "",
+    "reason": "抖音 · Helly Hansen Verglas防水冲锋衣",
     "source": "抖音",
-    "likes": 3235,
-    "score": 7.2,
+    "category": "冲锋衣",
     "creator": "抖音",
+    "score": 7.2,
+    "likes": 3235,
+    "url": "https://www.hellyhansen.com/en_us/mens-outerwear-jackets",
     "tags": [
       "冲锋衣",
       "抖音",
@@ -4319,14 +4130,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "泡泡玛特联名保温杯",
-    "category": "水杯",
-    "desc": "盲盒IP跨界保温杯",
-    "url": "https://www.popmart.com/",
-    "image": "",
+    "reason": "小红书 · 盲盒IP跨界保温杯",
     "source": "小红书",
-    "likes": 1800,
-    "score": 7.2,
+    "category": "水杯",
     "creator": "小红书",
+    "score": 7.2,
+    "likes": 1800,
+    "url": "https://www.popmart.com/",
     "tags": [
       "水杯",
       "小红书",
@@ -4335,14 +4145,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Zwiesel 水晶酒杯礼盒",
-    "category": "创意礼盒",
-    "desc": "德国Zwiesel水晶玻璃酒杯组合",
-    "url": "https://www.zwiesel.com/en/corporate-gifts/",
-    "image": "",
+    "reason": "Red Dot · 德国Zwiesel水晶玻璃酒杯组合",
     "source": "Red Dot",
-    "likes": 2460,
-    "score": 7.2,
+    "category": "创意礼盒",
     "creator": "Red Dot",
+    "score": 7.2,
+    "likes": 2460,
+    "url": "https://www.zwiesel.com/en/corporate-gifts/",
     "tags": [
       "创意礼盒",
       "Red Dot",
@@ -4351,14 +4160,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Native Union 编织充电宝",
-    "category": "充电宝",
-    "desc": "编织线缆无线充电宝",
-    "url": "https://www.nativeunion.com/collections/power",
-    "image": "",
+    "reason": "Instagram · 编织线缆无线充电宝",
     "source": "Instagram",
-    "likes": 600,
-    "score": 7.2,
+    "category": "充电宝",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 600,
+    "url": "https://www.nativeunion.com/collections/power",
     "tags": [
       "充电宝",
       "Instagram",
@@ -4367,14 +4175,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Mophie Powerstation",
-    "category": "充电宝",
-    "desc": "苹果认证充电宝",
-    "url": "https://www.mophie.com/collections/portable-power",
-    "image": "",
+    "reason": "Instagram · 苹果认证充电宝",
     "source": "Instagram",
-    "likes": 800,
-    "score": 7.2,
+    "category": "充电宝",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 800,
+    "url": "https://www.mophie.com/collections/portable-power",
     "tags": [
       "充电宝",
       "Instagram",
@@ -4383,14 +4190,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Aēsop 护肤礼盒",
-    "category": "创意礼盒",
-    "desc": "伊索旅行套装礼盒",
-    "url": "https://www.aesop.com/us/gifts/",
-    "image": "",
+    "reason": "Instagram · 伊索旅行套装礼盒",
     "source": "Instagram",
-    "likes": 1273,
-    "score": 7.2,
+    "category": "创意礼盒",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 1273,
+    "url": "https://www.aesop.com/us/gifts/",
     "tags": [
       "创意礼盒",
       "Instagram",
@@ -4399,14 +4205,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Maison Margiela 香氛礼盒",
-    "category": "创意礼盒",
-    "desc": "Replica香水礼品套装",
-    "url": "https://www.maisonmargiela-fragrances.com/us/gifts",
-    "image": "",
+    "reason": "Instagram · Replica香水礼品套装",
     "source": "Instagram",
-    "likes": 3658,
-    "score": 7.2,
+    "category": "创意礼盒",
     "creator": "Instagram",
+    "score": 7.2,
+    "likes": 3658,
+    "url": "https://www.maisonmargiela-fragrances.com/us/gifts",
     "tags": [
       "创意礼盒",
       "Instagram",
@@ -4415,14 +4220,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "MUJI 收纳盒",
-    "category": "收纳包",
-    "desc": "极简收纳系列",
-    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107010101",
-    "image": "",
+    "reason": "Instagram · 极简收纳系列",
     "source": "Instagram",
-    "likes": 600,
-    "score": 7.1,
+    "category": "收纳包",
     "creator": "Instagram",
+    "score": 7.1,
+    "likes": 600,
+    "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107010101",
     "tags": [
       "收纳包",
       "Instagram",
@@ -4431,14 +4235,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Le Creuset 珐琅马克杯",
-    "category": "水杯",
-    "desc": "法式彩色珐琅马克杯",
-    "url": "https://www.lecreuset.com/coffee-and-tea/mugs-cups/",
-    "image": "",
+    "reason": "Instagram · 法式彩色珐琅马克杯",
     "source": "Instagram",
-    "likes": 1200,
-    "score": 7.1,
+    "category": "水杯",
     "creator": "Instagram",
+    "score": 7.1,
+    "likes": 1200,
+    "url": "https://www.lecreuset.com/coffee-and-tea/mugs-cups/",
     "tags": [
       "水杯",
       "Instagram",
@@ -4447,14 +4250,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Sony 晶雅音管 LSPX-S3",
-    "category": "氛围灯",
-    "desc": "玻璃管音箱与氛围灯结合",
-    "url": "https://www.sony.com/en/articles/product-specifications-lspx-s3",
-    "image": "",
+    "reason": "Red Dot · 玻璃管音箱与氛围灯结合",
     "source": "Red Dot",
-    "likes": 2400,
-    "score": 7.1,
+    "category": "氛围灯",
     "creator": "Red Dot",
+    "score": 7.1,
+    "likes": 2400,
+    "url": "https://www.sony.com/en/articles/product-specifications-lspx-s3",
     "tags": [
       "氛围灯",
       "Red Dot",
@@ -4463,30 +4265,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "故宫端午礼盒",
-    "category": "端午礼盒",
-    "desc": "故宫博物院端午文创礼盒",
-    "url": "https://www.dpm.org.cn/",
-    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png",
+    "reason": "小红书 · 故宫博物院端午文创礼盒",
     "source": "小红书",
-    "likes": 1098,
-    "score": 7.1,
+    "category": "端午礼盒",
     "creator": "小红书",
+    "score": 7.1,
+    "likes": 1098,
+    "url": "https://www.dpm.org.cn/",
     "tags": [
       "端午礼盒",
       "小红书",
       "社交精选"
-    ]
+    ],
+    "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png"
   },
   {
     "title": "Philips Hue 灯泡套装",
-    "category": "氛围灯",
-    "desc": "飞利浦Hue智能照明入门套装",
-    "url": "https://www.philips-hue.com/en-us/p/hue-white-and-color-ambiance/",
-    "image": "",
+    "reason": "Red Dot · 飞利浦Hue智能照明入门套装",
     "source": "Red Dot",
-    "likes": 3951,
-    "score": 7.1,
+    "category": "氛围灯",
     "creator": "Red Dot",
+    "score": 7.1,
+    "likes": 3951,
+    "url": "https://www.philips-hue.com/en-us/p/hue-white-and-color-ambiance/",
     "tags": [
       "氛围灯",
       "Red Dot",
@@ -4495,14 +4296,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "德龙 ECAM 咖啡机",
-    "category": "创意厨具",
-    "desc": "意式全自动咖啡机",
-    "url": "https://www.delonghi.com/en-us/coffee/coffee-machines/automatic-coffee-machines/",
-    "image": "",
+    "reason": "Instagram · 意式全自动咖啡机",
     "source": "Instagram",
-    "likes": 1500,
-    "score": 7.1,
+    "category": "创意厨具",
     "creator": "Instagram",
+    "score": 7.1,
+    "likes": 1500,
+    "url": "https://www.delonghi.com/en-us/coffee/coffee-machines/automatic-coffee-machines/",
     "tags": [
       "创意厨具",
       "Instagram",
@@ -4511,30 +4311,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "Daniel Arsham 侵蚀装置",
-    "category": "装置艺术",
-    "desc": "未来考古学侵蚀石膏装置",
-    "url": "https://www.danielarsham.com/",
-    "image": "http://static1.squarespace.com/static/596e2ce46b8f5b88b9f39254/t/642cb55dae6e4d399558b1c2/1680651613945/AASoloLogoAsset+1.png?format=1500w",
+    "reason": "Instagram · 未来考古学侵蚀石膏装置",
     "source": "Instagram",
-    "likes": 3588,
-    "score": 7.1,
+    "category": "装置艺术",
     "creator": "Instagram",
+    "score": 7.1,
+    "likes": 3588,
+    "url": "https://www.danielarsham.com/",
     "tags": [
       "装置艺术",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "http://static1.squarespace.com/static/596e2ce46b8f5b88b9f39254/t/642cb55dae6e4d399558b1c2/1680651613945/AASoloLogoAsset+1.png?format=1500w"
   },
   {
     "title": "Flos Snoopy 台灯",
-    "category": "氛围灯",
-    "desc": "意大利设计经典台灯",
-    "url": "https://www.flos.com/en/products/decorative/snoopy",
-    "image": "",
+    "reason": "Instagram · 意大利设计经典台灯",
     "source": "Instagram",
-    "likes": 2000,
-    "score": 7.1,
+    "category": "氛围灯",
     "creator": "Instagram",
+    "score": 7.1,
+    "likes": 2000,
+    "url": "https://www.flos.com/en/products/decorative/snoopy",
     "tags": [
       "氛围灯",
       "Instagram",
@@ -4543,14 +4342,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "知味观 端午礼盒",
-    "category": "端午礼盒",
-    "desc": "杭州老字号端午礼盒",
-    "url": "https://www.zhiweiguan.com/",
-    "image": "",
+    "reason": "抖音 · 杭州老字号端午礼盒",
     "source": "抖音",
-    "likes": 3667,
-    "score": 7.1,
+    "category": "端午礼盒",
     "creator": "抖音",
+    "score": 7.1,
+    "likes": 3667,
+    "url": "https://www.zhiweiguan.com/",
     "tags": [
       "端午礼盒",
       "抖音",
@@ -4559,14 +4357,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "诸老大 端午礼盒",
-    "category": "端午礼盒",
-    "desc": "经典江南粽子礼盒",
-    "url": "https://www.zgld.com/",
-    "image": "",
+    "reason": "小红书 · 经典江南粽子礼盒",
     "source": "小红书",
-    "likes": 3643,
-    "score": 7.1,
+    "category": "端午礼盒",
     "creator": "小红书",
+    "score": 7.1,
+    "likes": 3643,
+    "url": "https://www.zgld.com/",
     "tags": [
       "端午礼盒",
       "小红书",
@@ -4575,30 +4372,29 @@ BRAND_ITEMS = [
   },
   {
     "title": "CASETiFY 防摔手机壳",
-    "category": "手机壳",
-    "desc": "联名艺术防摔手机壳",
-    "url": "https://www.casetify.com/",
-    "image": "https://ctgimage1.s3.amazonaws.com/cms/image/6fa327bd55bdbbba4d13e3339edadbdd.png",
+    "reason": "Red Dot · 联名艺术防摔手机壳",
     "source": "Red Dot",
-    "likes": 4200,
-    "score": 7.1,
+    "category": "手机壳",
     "creator": "Red Dot",
+    "score": 7.1,
+    "likes": 4200,
+    "url": "https://www.casetify.com/",
     "tags": [
       "手机壳",
       "Red Dot",
       "社交精选"
-    ]
+    ],
+    "image": "https://ctgimage1.s3.amazonaws.com/cms/image/6fa327bd55bdbbba4d13e3339edadbdd.png"
   },
   {
     "title": "双立人 刀具套装",
-    "category": "创意厨具",
-    "desc": "德国厨刀标杆",
-    "url": "https://www.zwilling.com/us/cutlery/knives/",
-    "image": "",
+    "reason": "抖音 · 德国厨刀标杆",
     "source": "抖音",
-    "likes": 700,
-    "score": 7.1,
+    "category": "创意厨具",
     "creator": "抖音",
+    "score": 7.1,
+    "likes": 700,
+    "url": "https://www.zwilling.com/us/cutlery/knives/",
     "tags": [
       "创意厨具",
       "抖音",
@@ -4607,14 +4403,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "LACOSTE L.12.12 Polo衫",
-    "category": "Polo衫",
-    "desc": "法国经典网眼Polo衫",
-    "url": "https://www.lacoste.com/us/men/clothing/polo-shirts/",
-    "image": "",
+    "reason": "Instagram · 法国经典网眼Polo衫",
     "source": "Instagram",
-    "likes": 1500,
-    "score": 7.1,
+    "category": "Polo衫",
     "creator": "Instagram",
+    "score": 7.1,
+    "likes": 1500,
+    "url": "https://www.lacoste.com/us/men/clothing/polo-shirts/",
     "tags": [
       "Polo衫",
       "Instagram",
@@ -4623,46 +4418,45 @@ BRAND_ITEMS = [
   },
   {
     "title": "Anker GaN 充电器",
-    "category": "充电宝",
-    "desc": "氮化镓快充充电器",
-    "url": "https://www.anker.com/collections/chargers",
-    "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/collections/screenshot-20250225-162633_2c0a754b-03a0-4585-97e8-6da8c4049f43.png?v=1740472040",
+    "reason": "Red Dot · 氮化镓快充充电器",
     "source": "Red Dot",
-    "likes": 1500,
-    "score": 7.1,
+    "category": "充电宝",
     "creator": "Red Dot",
+    "score": 7.1,
+    "likes": 1500,
+    "url": "https://www.anker.com/collections/chargers",
     "tags": [
       "充电宝",
       "Red Dot",
       "社交精选"
-    ]
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/collections/screenshot-20250225-162633_2c0a754b-03a0-4585-97e8-6da8c4049f43.png?v=1740472040"
   },
   {
     "title": "&Tradition 花苞灯",
-    "category": "氛围灯",
-    "desc": "丹麦经典台灯设计",
-    "url": "https://www.andtradition.com/products/flowerpot-vp3",
-    "image": "https://wp.andtradition.com/wp-content/uploads/2025/11/133084A568_Flowerpot-VP3_Steel-Blue_Front_ON-1200x1200.jpg",
+    "reason": "Instagram · 丹麦经典台灯设计",
     "source": "Instagram",
-    "likes": 2600,
-    "score": 7.0,
+    "category": "氛围灯",
     "creator": "Instagram",
+    "score": 7.0,
+    "likes": 2600,
+    "url": "https://www.andtradition.com/products/flowerpot-vp3",
     "tags": [
       "氛围灯",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://wp.andtradition.com/wp-content/uploads/2025/11/133084A568_Flowerpot-VP3_Steel-Blue_Front_ON-1200x1200.jpg"
   },
   {
     "title": "蔡国强 火药装置",
-    "category": "装置艺术",
-    "desc": "中国艺术家火药爆破装置",
-    "url": "https://www.caiguoqiang.com/",
-    "image": "",
+    "reason": "Instagram · 中国艺术家火药爆破装置",
     "source": "Instagram",
-    "likes": 2822,
-    "score": 7.0,
+    "category": "装置艺术",
     "creator": "Instagram",
+    "score": 7.0,
+    "likes": 2822,
+    "url": "https://www.caiguoqiang.com/",
     "tags": [
       "装置艺术",
       "Instagram",
@@ -4671,14 +4465,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Grovemade 实木显示器架",
-    "category": "创意桌搭",
-    "desc": "俄勒冈实木胡桃木显示器架",
-    "url": "https://grovemade.com/shop/desk-accessories/",
-    "image": "",
+    "reason": "Instagram · 俄勒冈实木胡桃木显示器架",
     "source": "Instagram",
-    "likes": 4087,
-    "score": 7.0,
+    "category": "创意桌搭",
     "creator": "Instagram",
+    "score": 7.0,
+    "likes": 4087,
+    "url": "https://grovemade.com/shop/desk-accessories/",
     "tags": [
       "创意桌搭",
       "Instagram",
@@ -4687,14 +4480,13 @@ BRAND_ITEMS = [
   },
   {
     "title": "Mackintosh 防水Polo",
-    "category": "Polo衫",
-    "desc": "英国Mackintosh经典胶面Polo",
-    "url": "https://www.mackintosh.com/en/category/all-polo-shirts/",
-    "image": "",
+    "reason": "Instagram · 英国Mackintosh经典胶面Polo",
     "source": "Instagram",
-    "likes": 777,
-    "score": 7.0,
+    "category": "Polo衫",
     "creator": "Instagram",
+    "score": 7.0,
+    "likes": 777,
+    "url": "https://www.mackintosh.com/en/category/all-polo-shirts/",
     "tags": [
       "Polo衫",
       "Instagram",
@@ -4703,35 +4495,88 @@ BRAND_ITEMS = [
   },
   {
     "title": "Mammut Nordwand Pro",
-    "category": "冲锋衣",
-    "desc": "Mammut Nordwand高山冲锋衣",
-    "url": "https://www.mammut.com/int/en/cat/230-hardshell-jackets-men/",
-    "image": "https://images.ctfassets.net/l595fda2nfqd/493aXEg31Defo62SW4Wtk5/4e0f3fbf01a21bf774773e3e11094cda/hiking_ducan-spine_rgb_03895.jpg?fm=jpg&amp;w=512&amp;q=80",
+    "reason": "Instagram · Mammut Nordwand高山冲锋衣",
     "source": "Instagram",
-    "likes": 1184,
-    "score": 7.0,
+    "category": "冲锋衣",
     "creator": "Instagram",
+    "score": 7.0,
+    "likes": 1184,
+    "url": "https://www.mammut.com/int/en/cat/230-hardshell-jackets-men/",
     "tags": [
       "冲锋衣",
       "Instagram",
       "社交精选"
-    ]
+    ],
+    "image": "https://images.ctfassets.net/l595fda2nfqd/493aXEg31Defo62SW4Wtk5/4e0f3fbf01a21bf774773e3e11094cda/hiking_ducan-spine_rgb_03895.jpg?fm=jpg&amp;w=512&amp;q=80"
   }
 ]
 
+# ======================================================================
+# 网络爬虫：随机UA + 重试机制 + 多级降级提取
+# ======================================================================
 
-def fetch_url(url, timeout=8):
+import urllib.parse, time
+
+USER_AGENTS = [
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
+]
+
+def rnd_ua():
+    return USER_AGENTS[random.randint(0, len(USER_AGENTS) - 1)]
+
+
+def fetch_url(url, timeout=8, retries=2):
+    """抓取URL，支持重试和随机UA"""
+    last_err = ""
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={
+                'User-Agent': rnd_ua(),
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
+            })
+            resp = urllib.request.urlopen(req, timeout=timeout, context=ctx)
+            return resp.read(300000).decode('utf-8', errors='ignore')
+        except Exception as e:
+            last_err = str(e)[:60]
+            if attempt < retries:
+                time.sleep(1 + random.random())
+    print(f"    \u26a0\ufe0f fetch失败(重试{retries}次): {url[:50]}... {last_err}")
+    return None
+
+
+def safe_og_image(url, timeout=6):
+    """获取OG图片: og:image > twitter:image > 首张img"""
     try:
-        req = urllib.request.Request(url, headers={
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-            'Accept': 'text/html,application/xhtml+xml',
-        })
-        resp = urllib.request.urlopen(req, timeout=timeout, context=ctx)
-        return resp.read(300000).decode('utf-8', errors='ignore')
+        html = fetch_url(url, timeout=timeout, retries=1)
+        if not html:
+            return ""
+        # Level 1: og:image (property)
+        m = re.search(r'<meta[^>]+property=[\"'']og:image[\"''][^>]+content=[\"'']([^\"'']+)[\"'']', html)
+        if m: return m.group(1)
+        # Level 2: og:image reversed attr
+        m = re.search(r'<meta[^>]+content=[\"'']([^\"'']+)[\"''][^>]+property=[\"'']og:image[\"'']', html)
+        if m: return m.group(1)
+        # Level 3: twitter:image
+        m = re.search(r'<meta[^>]+name=[\"'']twitter:image[\"''][^>]+content=[\"'']([^\"'']+)[\"'']', html)
+        if m: return m.group(1)
+        # Level 4: first img
+        m = re.search(r'<img[^>]+src=[\"'']([^\"'']+)[\"''][^>]*>', html)
+        if m:
+            img = m.group(1)
+            if img.startswith("//"): img = "https:" + img
+            if img.startswith("http"): return img
+        return ""
     except:
-        return None
+        return ""
 
-import urllib.parse
+
+# ======================================================================
+# Pinterest 爬虫：多级降级提取
+# ======================================================================
 
 PINTEREST_KW = [
     ("creative cup design","水杯"),("ambient light design","氛围灯"),
@@ -4746,6 +4591,68 @@ PINTEREST_KW = [
     ("storage organizer","收纳包"),("tea set design","水杯"),
 ]
 
+def scrape_pinterest(max_total=60):
+    results = []
+    seen = set()
+    for kw, cat in PINTEREST_KW:
+        if len(results) >= max_total:
+            break
+        url = f"https://www.pinterest.com/search/pins/?q={urllib.parse.quote(kw)}"
+        html = fetch_url(url)
+        if not html:
+            continue
+        pins = set()
+        # Level 1: JSON-LD
+        for m in re.finditer(r'<script[^>]*type=[\"'']application/ld\+json[\"''][^>]*>(.*?)</script>', html, re.DOTALL):
+            try:
+                ld = json.loads(m.group(1))
+                if isinstance(ld, dict):
+                    for key in ("name", "headline"):
+                        val = ld.get(key, "")
+                        if isinstance(val, str) and len(val) > 5 and val not in seen:
+                            pins.add(val)
+                elif isinstance(ld, list):
+                    for item in ld:
+                        if isinstance(item, dict):
+                            val = item.get("name", "")
+                            if isinstance(val, str) and len(val) > 5 and val not in seen:
+                                pins.add(val)
+            except:
+                pass
+        # Level 2: pin_title
+        for m in re.finditer(r'\"pin_title\":\"([^\"]+)\"', html):
+            t = m.group(1)
+            if len(t) > 4 and t not in seen:
+                pins.add(t)
+        # Level 3: alt text
+        for m in re.finditer(r'<img[^>]+alt=[\"'']([^\"'']+)[\"'']', html):
+            alt = m.group(1)
+            if len(alt) > 8 and len(alt) < 80 and alt not in seen:
+                pins.add(alt)
+        if pins:
+            print(f"    \U0001f4cc Pinterest [{kw}]: {len(pins)} 条")
+        for title in list(pins)[:8]:
+            clean = title.replace("\\u0026", "&").replace("\\n", " ")[:45]
+            if clean in seen:
+                continue
+            seen.add(clean)
+            score = 7.5 + (random.random() - 0.3) * 0.8
+            results.append({
+                "title": f"Pinterest \u00b7 {clean}",
+                "category": cat,
+                "desc": f"来自Pinterest的设计灵感: {title[:60]}",
+                "url": f"https://www.pinterest.com/search/pins/?q={urllib.parse.quote(title[:30])}",
+                "source": "Pinterest", "likes": random.randint(300, 3000),
+                "score": round(min(score, 9.3), 1), "creator": "Pinterest",
+                "tags": [cat, "Pinterest", "社交精选"], "image": ""
+            })
+    return results
+
+
+# ======================================================================
+# Behance 爬虫：多级降级提取
+# ======================================================================
+
 BEHANCE_KW = [
     ("packaging design","创意礼盒"),("industrial design","创意礼盒"),
     ("water bottle design","水杯"),("lighting design","氛围灯"),
@@ -4754,80 +4661,86 @@ BEHANCE_KW = [
     ("phone case","手机壳"),("power bank","充电宝"),
     ("wallet design","卡包"),("calendar design","日历"),
     ("kitchen design","创意厨具"),("festival packaging","中秋礼盒"),
+    ("gift box","创意礼盒"),("minimalist product","创意礼盒"),
+    ("outdoor jacket","冲锋衣"),("polo shirt","Polo衫"),
+    ("hat collection","帽子"),("storage design","收纳包"),
 ]
 
-
-def scrape_pinterest():
+def scrape_behance(max_total=40):
     results = []
-    for kw, cat in PINTEREST_KW:
-        if len(results) >= 60:
-            break
-        try:
-            url = f"https://www.pinterest.com/search/pins/?q={urllib.parse.quote(kw)}"
-            html = fetch_url(url)
-            if not html:
-                continue
-            for m in re.finditer(r'"pin_title":"([^"]+)"', html):
-                title = m.group(1)
-                if len(title) > 4 and not any(i["title"] == f"Pinterest · {title[:45]}" for i in results):
-                    score = 7.5 + (random.random() - 0.3) * 0.8
-                    results.append({
-                        "title": f"Pinterest · {title[:45]}",
-                        "category": cat,
-                        "desc": f"Pinterest设计灵感: {title[:60]}",
-                        "url": f"https://www.pinterest.com/search/pins/?q={urllib.parse.quote(title[:30])}",
-                        "source": "Pinterest", "likes": random.randint(300,3000),
-                        "score": round(min(score,9.3),1), "creator": "Pinterest",
-                        "tags": [cat, "Pinterest", "社交精选"], "image": ""
-                    })
-        except:
-            continue
-    return results
-
-
-def scrape_behance():
-    results = []
+    seen = set()
     for kw, cat in BEHANCE_KW:
-        if len(results) >= 40:
+        if len(results) >= max_total:
             break
-        try:
-            url = f"https://www.behance.net/search/projects/?search={urllib.parse.quote(kw)}"
-            html = fetch_url(url)
-            if not html:
-                continue
-            for m in re.finditer(r'"projectName":"([^"]+)"', html):
-                name = m.group(1)
-                if len(name) > 4 and not any(i["title"] == f"Behance · {name[:45]}" for i in results):
-                    score = 7.3 + (random.random() - 0.3) * 0.7
-                    results.append({
-                        "title": f"Behance · {name[:45]}",
-                        "category": cat,
-                        "desc": f"Behance设计项目: {name[:60]}",
-                        "url": url,
-                        "source": "Behance", "likes": random.randint(200,2000),
-                        "score": round(min(score,9.2),1), "creator": "Behance",
-                        "tags": [cat, "Behance", "设计项目"], "image": ""
-                    })
-        except:
+        url = f"https://www.behance.net/search/projects/?search={urllib.parse.quote(kw)}"
+        html = fetch_url(url)
+        if not html:
             continue
+        projects = set()
+        # Level 1: projectName (API JSON)
+        for m in re.finditer(r'\"projectName\":\"([^\"]+)\"', html):
+            name = m.group(1)
+            if len(name) > 4 and name not in seen:
+                projects.add(name)
+        # Level 2: ProjectCoverNeue-title (SSR)
+        for m in re.finditer(r'ProjectCoverNeue-title[^>]*>(.*?)<', html):
+            name = re.sub(r'<[^>]+>', '', m.group(1)).strip()
+            if len(name) > 4 and name not in seen:
+                projects.add(name)
+        if projects:
+            print(f"    \U0001f3af Behance [{kw}]: {len(projects)} 条")
+        for name in list(projects)[:6]:
+            clean = name.replace("\\u0026", "&").replace("\\n", " ")[:45]
+            if clean in seen:
+                continue
+            seen.add(clean)
+            score = 7.3 + (random.random() - 0.3) * 0.7
+            results.append({
+                "title": f"Behance \u00b7 {clean}",
+                "category": cat,
+                "desc": f"来自Behance的设计项目: {name[:60]}",
+                "url": url,
+                "source": "Behance", "likes": random.randint(200, 2000),
+                "score": round(min(score, 9.2), 1), "creator": "Behance",
+                "tags": [cat, "Behance", "设计项目"], "image": ""
+            })
     return results
 
+
+# ======================================================================
+# 主函数
+# ======================================================================
 
 def main():
     items = list(BRAND_ITEMS)
-    fresh_p = fresh_b = 0
+    fresh_p = 0
+    fresh_b = 0
 
     if os.environ.get("GITHUB_ACTIONS") == "true":
-        print("📡 GitHub Actions: 实时爬取中...")
-        for p in scrape_pinterest():
-            if not any(i["title"] == p["title"] for i in items):
-                items.append(p); fresh_p += 1
-        for b in scrape_behance():
-            if not any(i["title"] == b["title"] for i in items):
-                items.append(b); fresh_b += 1
-        print(f"  +Pinterest: {fresh_p}  +Behance: {fresh_b}")
+        print("\U0001f4e1 GitHub Actions 模式: 开始实时爬取...")
+        print("  \U0001f4cc 爬取 Pinterest...")
+        try:
+            pins = scrape_pinterest(60)
+            for p in pins:
+                if not any(i["title"] == p["title"] for i in items):
+                    items.append(p)
+                    fresh_p += 1
+        except Exception as e:
+            print(f"  \u274c Pinterest 爬取失败: {e}")
+
+        print("  \U0001f3af 爬取 Behance...")
+        try:
+            bh = scrape_behance(40)
+            for b in bh:
+                if not any(i["title"] == b["title"] for i in items):
+                    items.append(b)
+                    fresh_b += 1
+        except Exception as e:
+            print(f"  \u274c Behance 爬取失败: {e}")
+
+        print(f"  \u2705 爬取结果: +{fresh_p}Pinterest +{fresh_b}Behance 共{len(items)}条")
     else:
-        print("🏠 本地环境: 仅品牌数据（跳过在线爬取）")
+        print("\U0001f3e0 本地环境: 仅品牌数据（跳过在线爬取）")
 
     random.shuffle(items)
     items.sort(key=lambda x: x.get("score", 0), reverse=True)
@@ -4849,7 +4762,7 @@ def main():
     with open(os.path.join(os.path.dirname(__file__), "data.js"), "w") as f:
         f.write(f"const digestData = {json.dumps(result, ensure_ascii=False)};")
 
-    print(f"✅ {len(items)}条 {len(src_c)}来源 {len(cat_c)}品类 {has_img}有图 +{fresh_p}P +{fresh_b}B")
+    print(f"\u2705 完成! {len(items)}条 {len(src_c)}来源 {len(cat_c)}品类 {has_img}有图 +{fresh_p}P +{fresh_b}B")
     for s, n in sorted(src_c.items(), key=lambda x: -x[1]):
         print(f"   {s}: {n}")
 
