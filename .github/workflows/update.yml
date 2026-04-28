@@ -1,0 +1,37 @@
+name: 🎨 Daily Design Digest 自动更新
+on:
+  schedule:
+    # 每天3次：早上8点、下午3点、晚上10点（北京时间）
+    - cron: '0 0 * * *'    # 08:00 CST
+    - cron: '0 7 * * *'    # 15:00 CST
+    - cron: '0 14 * * *'   # 22:00 CST
+  workflow_dispatch:  # 也支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v3
+
+      - name: 设置 Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 生成最新的设计灵感数据
+        run: python3 generate.py
+
+      - name: 检查是否有变化
+        id: check
+        run: |
+          git diff --quiet data/latest.json data.js || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: 提交并推送更新
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "design-digest-bot"
+          git config user.email "bot@design-digest"
+          git add data/latest.json data.js
+          git commit -m "🔄 每日设计灵感数据自动更新 $(date +'%Y-%m-%d %H:%M')"
+          git push

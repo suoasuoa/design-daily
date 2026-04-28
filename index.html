@@ -108,6 +108,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   </div>
 </div>
 
+<script src="data.js"></script>
 <script>
 let data = { items: [], stats: {} };
 let activeSource = '全部';
@@ -117,16 +118,35 @@ let searchQuery = '';
 async function loadData() {
   const dot = document.getElementById('serverDot');
   const status = document.getElementById('serverStatus');
+  
+  // Try 1: embedded data.js (GitHub Pages mode)
+  if (typeof digestData !== 'undefined' && digestData && digestData.items && digestData.items.length > 10) {
+    data = digestData;
+    dot.className = 'server-dot';
+    status.innerHTML = '<span class="server-dot"></span> 📦 每日更新 · ' + data.items.length + '条';
+    render();
+    return;
+  }
+  
+  // Try 2: local server API
   try {
     const resp = await fetch('/api/digest');
     if (!resp.ok) throw new Error();
     data = await resp.json();
     dot.className = 'server-dot';
-    status.innerHTML = '<span class="server-dot"></span> 实时数据';
+    status.innerHTML = '<span class="server-dot"></span> 🚀 本地实时数据';
   } catch(e) {
-    data = getDemoData();
-    dot.className = 'server-dot offline';
-    status.innerHTML = '<span class="server-dot offline"></span> 离线模式（示例数据）';
+    // Try 3: fetch latest.json directly
+    try {
+      const resp = await fetch('data/latest.json');
+      data = await resp.json();
+      dot.className = 'server-dot';
+      status.innerHTML = '<span class="server-dot"></span> 📂 静态数据';
+    } catch(e2) {
+      data = getDemoData();
+      dot.className = 'server-dot offline';
+      status.innerHTML = '<span class="server-dot offline"></span> 离线模式（示例数据）';
+    }
   }
   render();
 }
