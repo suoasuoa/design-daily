@@ -32,11 +32,11 @@ CTX.verify_mode = ssl.CERT_NONE
 #   exclude_keywords: 排除包含这些词的结果
 
 CATEGORY_RULES = [
-    ("文创文具", {
+    ("创意礼盒", {
         "any": ["stationery", "文具", "pen", "pencil", "notebook", "note book",
                 "planner", "desk accessory", "paper", "journal", "办公用品",
                 "letter", "envelope", "stamp", "fountain", "sketchbook",
-                "胶带", "贴纸", "便签", "订书机", "剪刀"],
+                "胶带", "贴纸", "便签", "订书机", "剪刀", "stationary"],
         "exclude": ["digital", "app", "software", "game", "music"]
     }),
     ("创意厨具", {
@@ -286,13 +286,13 @@ def fetch_gmark(max_items=50):
         "Tableware": "创意厨具",
         "Lighting": "氛围灯",
         "Home Accessories": "收纳包",
-        "Stationery": "文创文具",
+        "Stationery": "创意礼盒",
         "Furniture": "创意桌搭",
-        "Personal Accessories": "文创文具",
+        "Personal Accessories": "创意礼盒",
         "Home Electronics": "创意桌搭",
         "Sports & Hobbies": "冲锋衣",
-        "Kids & Education": "文创文具",
-        "Health & Beauty": "文创文具",
+        "Kids & Education": "创意礼盒",
+        "Health & Beauty": "创意礼盒",
         "Smartphone": "手机壳",
         "Computer & Peripherals": "创意桌搭",
         "Audio Equipment": "创意厨具",
@@ -301,7 +301,7 @@ def fetch_gmark(max_items=50):
         "Bedding": "收纳包",
         "Garden & Outdoor": "冲锋衣",
         "Office Equipment": "创意桌搭",
-        "Toy & Hobby": "文创文具",
+        "Toy & Hobby": "创意礼盒",
     }
     
     seen_urls = set()
