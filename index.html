@@ -50,6 +50,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .card .badge{position:absolute;top:12px;right:12px;font-size:10px;padding:3px 8px;border-radius:6px;font-weight:600;z-index:1}
 .badge-score{background:#6366f1;color:#fff}
 .badge-top3{background:#f59e0b;color:#fff}
+.badge-high{background:#6366f1;color:#fff}
+.badge-med{background:#10b981;color:#fff}
+.badge-low{background:#8b8b93;color:#fff}
 .card h3{font-size:14px;font-weight:600;margin-bottom:5px;line-height:1.4;padding-right:40px}
 .card h3 a{color:#1d1d1f;text-decoration:none}
 .card h3 a:hover{color:#6366f1}
@@ -89,7 +92,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 <div class="container">
   <div class="header">
     <h1>🎯 Daily Design Digest</h1>
-    <p id="subtitle">7个设计平台 · 15个品类 · 每日更新</p>
+    <p id="subtitle">12个设计来源 · 19个品类 · 实时更新</p>
   </div>
 
   <div class="stats" id="stats"></div>
@@ -184,7 +187,7 @@ function render() {
   document.getElementById('subtitle').textContent = 
     filtered.length !== total
       ? `筛选后 ${filtered.length} 条 / 共 ${total} 条`
-      : `${total} 条设计灵感 · 7个来源 · 15个品类`;
+      : `${total} 条设计灵感 · 12个来源 · 19个品类`;
   document.getElementById('footerTime').textContent =
     data.timestamp ? `更新于 ${new Date(data.timestamp).toLocaleString('zh-CN')}` : '';
 }
@@ -245,11 +248,12 @@ function renderGrid(items) {
 
   grid.innerHTML = items.map((item, i) => {
     const isTop3 = i < 3 && activeSource === '全部' && activeCategory === '全部' && !searchQuery;
-    const sc = item.score || 7;
+    const sc = item._score_total || item.score || 0;
+    const scClass = sc >= 45 ? 'badge-high' : sc >= 35 ? 'badge-med' : 'badge-low';
     const srcClass = colors[item.source] || '';
     const hasImg = item.image && item.image.startsWith('http');
     return `<div class="card">
-      <span class="badge ${isTop3?'badge-top3':'badge-score'}">${isTop3?'⭐':''} ${sc.toFixed(1)}</span>
+      <span class="badge ${isTop3?'badge-top3':scClass}">${sc >= 45 ? '⭐' : ''} ${sc}分</span>
       ${hasImg ? `<a href="${item.url||'#'}" target="_blank" rel="noopener"><img class="card-img" src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.classList.add('no-img')"></a>` : ''}
       <div class="card-body">
         <span class="tag src-tag ${srcClass}">${item.source||'未知'}</span>

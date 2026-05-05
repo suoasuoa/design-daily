@@ -7,13 +7,13 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: '生成模式: daily=每日抽取(默认) / all=全部展示'
+        description: '展示模式: all=全部展示(默认) / daily=每日精选'
         required: true
-        default: 'daily'
+        default: 'all'
         type: choice
         options:
-          - daily
           - all
+          - daily
       deepseek:
         description: 'DeepSeek 精细化评分 (默认开启)'
         required: true
@@ -59,10 +59,11 @@ jobs:
 
       - name: Generate data
         run: |
-          if [[ "${{ github.event.inputs.mode }}" == "all" ]]; then
-            python3 generate.py
-          else
+          # schedule可手動觸發默認值不同，所以統一判斷
+          if [[ "${{ github.event.inputs.mode || 'all' }}" == "daily" ]]; then
             python3 generate.py --daily
+          else
+            python3 generate.py
           fi
 
       - name: Commit and push
