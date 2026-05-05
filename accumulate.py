@@ -167,6 +167,121 @@ CATEGORY_RULES = [
 ]
 
 
+# ─── 选品评分模块 ──────────────────────────────────────
+# 5 个维度，每项 0~10 分，总分 < 35 过滤
+# 当前阶段：关键词规则初筛（文本评分占位）
+# 后续阶段：接入 DeepSeek + Playwright 精细化评分
+
+SCORE_DIMENSIONS = ["intuitive", "broad_appeal", "usefulness", "creativity", "emotional"]
+
+SCORE_LABELS = {
+    "intuitive": "直观度",
+    "broad_appeal": "打击面",
+    "usefulness": "实用性",
+    "creativity": "创意价值",
+    "emotional": "情绪价值",
+}
+
+# 各维度产品/描述关键词（匹配到任意一个即加分）
+SCORE_HIGH = {
+    "intuitive": [
+        # 常见产品名词——有具体可见形态
+        "cup", "mug", "bottle", "lamp", "light", "bag", "hat", "cap",
+        "t-shirt", "hoodie", "sweatshirt", "chair", "table", "shelf",
+        "clock", "watch", "wallet", "case", "keychain", "charger",
+        "pen", "pencil", "calendar", "backpack", "speaker", "glass",
+        "水杯", "杯子", "灯", "包", "帽子", "手机壳", "钱包", "灯",
+        "马克杯", "保温杯", "背包", "时钟", "充电宝", "扬声器", "音箱",
+        "pouch", "organizer", "tote", "kettle", "teapot", "mug",
+    ],
+    "broad_appeal": [
+        # 大众高频产品——每个人都会用到的
+        "cup", "bottle", "water", "bag", "hat", "t-shirt", "hoodie",
+        "phone", "charger", "wallet", "keychain", "chair", "table",
+        "lamp", "light", "clock", "pen", "pencil", "paper", "box",
+        "packaging", "pack", "bag", "shoe", "jacket", "backpack",
+        "水杯", "水瓶", "包", "帽子", "T恤", "手机", "充电器", "钱包",
+        "灯", "灯", "椅子", "桌子", "笔", "本", "盒", "包装",
+        "tea", "coffee", "水壶", "茶具", "水杯", "收纳",
+    ],
+    "usefulness": [
+        # 实用相关的词——功能、便携、收纳、工具
+        "organizer", "storage", "holder", "stand", "rack", "tool",
+        "portable", "lightweight", "foldable", "adjustable", "compact",
+        "kitchen", "cookware", "tool", "utensil", "container", "tray",
+        "收纳", "整理", "支架", "座", "架", "工具", "便携", "折叠",
+        "可调节", "多功能", "收纳盒", "置物架", "分格", "配",
+        "built-in", "integrated", "reusable", "easy", "quick", "convenient",
+        "多合一", "套装", "两用", "模块化", "模块",
+    ],
+    "creativity": [
+        # 创意价值——奖项、创新词、有趣的设计描述
+        "award", "award-winning", "award winning", "innovative", "unique",
+        "creative", "original", "breakthrough", "patented", "design",
+        "limited edition", "handcrafted", "handmade", "artisan",
+        "iF design", "red dot", "good design", "winner", "gold",
+        "奖", "获奖", "金奖", "iF", "创新", "独特", "创意",
+        "recycled", "sustainable", "eco-friendly", "环保", "可持续",
+        "collapsible", "transforms", "converts", "modular", "customizable",
+        "minimalist", "modern", "organic", "natural", "sculptural",
+    ],
+    "emotional": [
+        # 情绪价值——温馨、幽默、惊喜、美感
+        "warm", "cozy", "cute", "fun", "funny", "delight", "playful",
+        "surprising", "beautiful", "elegant", "charming", "sweet",
+        "peaceful", "calm", "zen", "relax", "soothing", "gentle",
+        "nostalgic", "retro", "vintage", "classic", "timeless",
+        "温馨", "可爱", "有趣", "幽默", "惊喜", "温暖", "治愈",
+        "治愈系", "暖心", "心动", "优雅", "精致", "美",
+        "luxurious", "premium", "质感", "高级", "好看",
+    ],
+}
+
+SCORE_LOW = {
+    "intuitive": ["installation", "sculpture", "abstract", "conceptual",
+                  "装置", "抽象"],
+    "broad_appeal": ["industrial", "medical", "surgical", "laboratory",
+                     "factory", "工业", "医疗", "实验室"],
+    "usefulness": ["decorative", "ornamental", "sculpture", "art",
+                   "装饰", "纯装饰"],
+    "creativity": [],
+    "emotional": [],
+}
+
+
+def score_item(title="", desc=""):
+    """对产品进行5维评分，返回 {dim: score, total: int}
+    
+    每维默认 6 分（略高于中性），按关键词 ± 调整。
+    过滤线：总分 < 35（5维 × 7 的平均水平）
+    """
+    text = (title + " " + desc).lower()
+    scores = {}
+    
+    for dim in SCORE_DIMENSIONS:
+        base = 6  # 默认中等偏上
+        # 每命中一个 high 关键词 +1.5 分（最多+4分）
+        high_hits = sum(1 for w in SCORE_HIGH[dim] if w.lower() in text)
+        base += min(int(high_hits * 1.5), 4)
+        # low 关键词 -1.5 分（最多-3分）
+        low_hits = sum(1 for w in SCORE_LOW[dim] if w.lower() in text)
+        base -= min(int(low_hits * 1.5), 3)
+        # 钳制到 0-10
+        scores[dim] = max(0, min(10, base))
+    
+    scores["total"] = sum(scores[d] for d in SCORE_DIMENSIONS)
+    return scores
+
+
+def score_to_emoji(total):
+    """把总分转为 Emoji 标签"""
+    if total >= 45: return "⭐"
+    if total >= 40: return "👍"
+    if total >= 35: return "✅"
+    if total >= 27: return "👀"
+    return "❌"
+
+
 def guess_category(title, desc=""):
     """根据标题+描述关键词猜测品类"""
     text = (title + " " + desc).lower()
@@ -257,6 +372,11 @@ def rss_item_to_brand(item, source_name):
     if not cat:
         return None
     
+    # 评分
+    sc = score_item(item["title"], item["desc"])
+    if sc["total"] < 35:
+        return None  # 总分不足，过滤
+    
     # 生成唯一 ID（用于去重）
     uid = hashlib.md5(f"{source_name}:{item['url']}".encode()).hexdigest()[:12]
     
@@ -267,12 +387,15 @@ def rss_item_to_brand(item, source_name):
         "source": source_name,
         "category": cat,
         "creator": source_name,
-        "score": 7.0,
+        "score": round(sc["total"] / 5, 1),  # 平均分转回 0-10 标尺
         "likes": 0,
         "url": item["url"],
         "image": "",
         "tags": [cat, source_name, "设计文章"],
         "added": datetime.date.today().isoformat(),
+        # 保留评分明细（供后续分析用）
+        "_scores": {SCORE_LABELS[d]: sc[d] for d in SCORE_DIMENSIONS},
+        "_score_total": sc["total"],
     }
     return brand
 
@@ -343,18 +466,25 @@ def fetch_gmark(max_items=50):
                 
                 img = f"https://award-attachments.g-mark.io/winners/{c['year']}/{uid}/main.jpg?size=medium"
                 
+                # 评分
+                sc = score_item(proper, f"{gm_cat} {company} {c.get('outline','')}")
+                if sc["total"] < 35:
+                    continue  # 过滤低分
+                
                 items.append({
                     "title": proper[:80],
                     "reason": f"Good Design Award · {gm_cat} · {company}"[:200],
                     "source": "Good Design Award",
                     "category": mapped,
                     "creator": company or "Good Design Award",
-                    "score": 8.5,
+                    "score": round(sc["total"] / 5, 1),
                     "likes": 0,
                     "url": f"https://www.g-mark.org/gallery/winners/{uid}?years={c['year']}",
                     "image": img,
                     "tags": [mapped, "Good Design Award", "获奖设计"],
                     "added": datetime.date.today().isoformat(),
+                    "_scores": {SCORE_LABELS[d]: sc[d] for d in SCORE_DIMENSIONS},
+                    "_score_total": sc["total"],
                 })
             
             total_pages = data.get("page", {}).get("totalPages", 1)
@@ -473,6 +603,22 @@ def main():
     print("\n品类分布:")
     for c, n in sorted(cat_count.items(), key=lambda x: -x[1]):
         print(f"  {c}: {n}")
+    
+    # 评分分布
+    if all_new:
+        score_buckets = {"⭐ ≥45": 0, "👍 40-44": 0, "✅ 35-39": 0}
+        for item in all_new:
+            total = item.get("_score_total", 40)
+            if total >= 45:
+                score_buckets["⭐ ≥45"] += 1
+            elif total >= 40:
+                score_buckets["👍 40-44"] += 1
+            else:
+                score_buckets["✅ 35-39"] += 1
+        print(f"\n评分分布:")
+        for label, n in score_buckets.items():
+            bar = "█" * max(1, n * 40 // max(1, max(score_buckets.values())))
+            print(f"  {label}: {n:>4}  {bar}")
     
     if dry_run:
         print(f"\n🔍 预览模式，不写入")
