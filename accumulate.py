@@ -528,7 +528,7 @@ def main():
             existing_urls.add(item["url"])
             # 提取 G-Mark 奖项 ID
             if "g-mark.org/gallery/winners/" in item["url"]:
-                import re
+
                 m = re.search(r'/winners/(\d+)', item["url"])
                 if m:
                     existing_gmark_ids.add(m.group(1))
@@ -581,7 +581,7 @@ def main():
         if item["url"] in existing_urls:
             continue
         # 按奖项ID去重（防止URL格式差异）
-        import re
+
         mid = re.search(r'/winners/(\d+)', item["url"])
         if mid and mid.group(1) in existing_gmark_ids:
             continue
@@ -591,6 +591,21 @@ def main():
             existing_gmark_ids.add(mid.group(1))
         gmark_new += 1
     print(f"  🏆 G-Mark: {len(gmark_items)}条 → 新增{gmark_new}条")
+    
+    # ─── DeepSeek 精细化评分 ───────────────
+    use_deepseek = "--deepseek" in sys.argv
+    if use_deepseek and all_new:
+        print()
+        try:
+            from deepseek_scorer import score_batch
+            use_playwright = "--no-playwright" not in sys.argv
+            all_new = score_batch(all_new, use_playwright=use_playwright, report_every=20)
+        except ImportError as e:
+            print(f"  ⚠️  deepseek_scorer 未加载: {e}")
+            print(f"  继续使用关键词评分")
+        except Exception as e:
+            print(f"  ⚠️ DeepSeek 评分异常: {e}")
+            print(f"  继续使用关键词评分")
     
     # ─── 结果 ───────────────────────────────
     print(f"\n{'='*40}")
@@ -606,6 +621,9 @@ def main():
     
     # 评分分布
     if all_new:
+        # 区分 DeepSeek 和 关键词评分
+        has_deepseek = any("_deepseek" in item for item in all_new)
+        mode = "🔮 DeepSeek" if has_deepseek else "📊 关键词"
         score_buckets = {"⭐ ≥45": 0, "👍 40-44": 0, "✅ 35-39": 0}
         for item in all_new:
             total = item.get("_score_total", 40)
@@ -615,7 +633,7 @@ def main():
                 score_buckets["👍 40-44"] += 1
             else:
                 score_buckets["✅ 35-39"] += 1
-        print(f"\n评分分布:")
+        print(f"\n评分分布 ({mode}):")
         for label, n in score_buckets.items():
             bar = "█" * max(1, n * 40 // max(1, max(score_buckets.values())))
             print(f"  {label}: {n:>4}  {bar}")

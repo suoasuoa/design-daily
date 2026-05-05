@@ -14,6 +14,14 @@ on:
         options:
           - daily
           - all
+      deepseek:
+        description: 'DeepSeek 精细化评分 (默认开启)'
+        required: true
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 permissions:
   contents: write
@@ -31,10 +39,22 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Accumulate new data
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          python -m playwright install chromium --with-deps
+        shell: bash
+
+      - name: Accumulate new data (with DeepSeek scoring)
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           echo "📥 Accumulating new data from RSS + G-Mark API..."
-          python3 accumulate.py
+          if [[ "${{ github.event.inputs.deepseek }}" == "false" ]]; then
+            python3 accumulate.py
+          else
+            python3 accumulate.py --deepseek
+          fi
           echo "✅ Accumulation complete"
 
       - name: Generate data
@@ -51,6 +71,8 @@ jobs:
           git config user.email "bot@design-digest.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add brand_pool.json data.js data/latest.json data/
+          # 也可能有 deepseek_scorer.py 变更
+          git add deepseek_scorer.py
           if ! git diff --staged --quiet; then
             git commit -m "📊 数据自动积累 $(date +%Y-%m-%dT%H:%M)"
             git push
