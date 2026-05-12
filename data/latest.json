@@ -1,8 +1,8 @@
 {
   "date": "2026-05-12",
-  "timestamp": "2026-05-12T02:29:47.065986",
+  "timestamp": "2026-05-12T10:30:40.774447",
   "stats": {
-    "total": 1121,
+    "total": 1123,
     "by_source": {
       "Pinterest": 43,
       "Behance": 35,
@@ -15,13 +15,13 @@
       "Good Design Award": 443,
       "Design Milk": 11,
       "Yanko Design": 30,
-      "Dezeen": 22
+      "Dezeen": 24
     },
     "by_category": {
-      "创意厨具": 111,
+      "创意厨具": 112,
       "创意桌搭": 197,
       "装置艺术": 54,
-      "氛围灯": 83,
+      "氛围灯": 84,
       "卡包": 27,
       "帽子": 47,
       "卫衣": 26,
@@ -21168,6 +21168,76 @@
         "creativity": 7,
         "emotional": 4,
         "total": 25,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "ee8f22992b71",
+      "title": "Metamorphoses wall covering by Oliver Laric and Ceramiche Refin",
+      "reason": "Dezeen Showroom: Italian company Ceramiche Refin worked with artist Oliver Laric on large-scale porcelain stoneware wall coverings that change appearance depending on viewing angle. The Metamorphoses ",
+      "source": "Dezeen",
+      "category": "创意厨具",
+      "creator": "Dezeen",
+      "score": 6.0,
+      "likes": 0,
+      "url": "https://www.dezeen.com/2026/05/12/metamorphoses-wall-covering-oliver-laric-ceramiche-refin-dezeen-showroom/",
+      "image": "",
+      "tags": [
+        "创意厨具",
+        "Dezeen",
+        "设计文章"
+      ],
+      "added": "2026-05-12",
+      "_scores": {
+        "直观度": 6,
+        "打击面": 4,
+        "实用性": 5,
+        "创意价值": 8,
+        "情绪价值": 7
+      },
+      "_score_total": 30,
+      "_deepseek": {
+        "intuitive": 6,
+        "broad_appeal": 4,
+        "usefulness": 5,
+        "creativity": 8,
+        "emotional": 7,
+        "total": 30,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "fc570527b74d",
+      "title": "Ten DesignMarch highlights that encapsulate Iceland's eclectic creative scene",
+      "reason": "From a fish-skin lamp to housing wrapped in road barriers, here are Dezeen's picks of the top exhibits at this year's DesignMarch in Iceland. Held in Reykjavik from 6 to 10 May, the 18th edition of th",
+      "source": "Dezeen",
+      "category": "氛围灯",
+      "creator": "Dezeen",
+      "score": 5.2,
+      "likes": 0,
+      "url": "https://www.dezeen.com/2026/05/12/designmarch-highlights-2026/",
+      "image": "",
+      "tags": [
+        "氛围灯",
+        "Dezeen",
+        "设计文章"
+      ],
+      "added": "2026-05-12",
+      "_scores": {
+        "直观度": 5,
+        "打击面": 4,
+        "实用性": 3,
+        "创意价值": 8,
+        "情绪价值": 6
+      },
+      "_score_total": 26,
+      "_deepseek": {
+        "intuitive": 5,
+        "broad_appeal": 4,
+        "usefulness": 3,
+        "creativity": 8,
+        "emotional": 6,
+        "total": 26,
         "source": "deepseek"
       }
     }
