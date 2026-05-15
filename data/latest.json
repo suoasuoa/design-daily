@@ -1,8 +1,8 @@
 {
   "date": "2026-05-15",
-  "timestamp": "2026-05-15T10:16:57.943125",
+  "timestamp": "2026-05-15T17:24:34.117241",
   "stats": {
-    "total": 1146,
+    "total": 1148,
     "by_source": {
       "Pinterest": 43,
       "Behance": 35,
@@ -14,16 +14,16 @@
       "抖音": 76,
       "Good Design Award": 443,
       "Design Milk": 13,
-      "Yanko Design": 44,
-      "Dezeen": 31
+      "Yanko Design": 45,
+      "Dezeen": 32
     },
     "by_category": {
-      "创意厨具": 113,
+      "创意厨具": 114,
       "创意桌搭": 197,
       "装置艺术": 54,
       "氛围灯": 91,
       "卡包": 27,
-      "帽子": 55,
+      "帽子": 56,
       "卫衣": 26,
       "创意礼盒": 160,
       "日历": 17,
@@ -22043,6 +22043,76 @@
         "creativity": 9,
         "emotional": 7,
         "total": 34,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "bf4e1190b9d6",
+      "title": "Tiny Kitchen Green Line by Neuvermoebelt",
+      "reason": "Dezeen Showroom: Austrian design brand Neuvermoebelt has released a modular system comprising tall, base and curved units for creating compact yet design-forward kitchens. Just like the wider Home Com",
+      "source": "Dezeen",
+      "category": "创意厨具",
+      "creator": "Dezeen",
+      "score": 6.2,
+      "likes": 0,
+      "url": "https://www.dezeen.com/2026/05/15/tiny-kitchen-green-line-neuvermoebelt-dezeen-showroom/",
+      "image": "",
+      "tags": [
+        "创意厨具",
+        "Dezeen",
+        "设计文章"
+      ],
+      "added": "2026-05-15",
+      "_scores": {
+        "直观度": 6,
+        "打击面": 4,
+        "实用性": 7,
+        "创意价值": 8,
+        "情绪价值": 6
+      },
+      "_score_total": 31,
+      "_deepseek": {
+        "intuitive": 6,
+        "broad_appeal": 4,
+        "usefulness": 7,
+        "creativity": 8,
+        "emotional": 6,
+        "total": 31,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "2a112456b03c",
+      "title": "The $50 SHELL Treats Your Keys and Wallet as Things Worth Displaying",
+      "reason": "The $50 SHELL Treats Your Keys and Wallet as Things Worth DisplayingMost entryway organizers fall somewhere between two unsatisfying extremes: purely functional things that look like afterthoughts, or",
+      "source": "Yanko Design",
+      "category": "帽子",
+      "creator": "Yanko Design",
+      "score": 7.2,
+      "likes": 0,
+      "url": "https://www.yankodesign.com/2026/05/15/the-50-shell-treats-your-keys-and-wallet-as-things-worth-displaying/?utm_source=rss&utm_medium=rss&utm_campaign=the-50-shell-treats-your-keys-and-wallet-as-things-worth-displaying",
+      "image": "",
+      "tags": [
+        "帽子",
+        "Yanko Design",
+        "设计文章"
+      ],
+      "added": "2026-05-15",
+      "_scores": {
+        "直观度": 8,
+        "打击面": 7,
+        "实用性": 8,
+        "创意价值": 7,
+        "情绪价值": 6
+      },
+      "_score_total": 36,
+      "_deepseek": {
+        "intuitive": 8,
+        "broad_appeal": 7,
+        "usefulness": 8,
+        "creativity": 7,
+        "emotional": 6,
+        "total": 36,
         "source": "deepseek"
       }
     }
