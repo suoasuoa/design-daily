@@ -1,8 +1,8 @@
 {
-  "date": "2026-05-15",
-  "timestamp": "2026-05-15T17:24:34.117241",
+  "date": "2026-05-16",
+  "timestamp": "2026-05-16T02:27:09.601813",
   "stats": {
-    "total": 1148,
+    "total": 1151,
     "by_source": {
       "Pinterest": 43,
       "Behance": 35,
@@ -14,14 +14,14 @@
       "抖音": 76,
       "Good Design Award": 443,
       "Design Milk": 13,
-      "Yanko Design": 45,
-      "Dezeen": 32
+      "Yanko Design": 47,
+      "Dezeen": 33
     },
     "by_category": {
-      "创意厨具": 114,
-      "创意桌搭": 197,
+      "创意厨具": 115,
+      "创意桌搭": 198,
       "装置艺术": 54,
-      "氛围灯": 91,
+      "氛围灯": 92,
       "卡包": 27,
       "帽子": 56,
       "卫衣": 26,
@@ -22112,6 +22112,111 @@
         "usefulness": 8,
         "creativity": 7,
         "emotional": 6,
+        "total": 36,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "48249893bd47",
+      "title": "Ten products that make for design-forward bathrooms and kitchens",
+      "reason": "Dezeen Showroom: perfume bottle-informed tapware and an extractor fan controlled using physical dials are among recent kitchen and bathroom products listed on Dezeen Showroom. Recently we've published",
+      "source": "Dezeen",
+      "category": "创意厨具",
+      "creator": "Dezeen",
+      "score": 6.4,
+      "likes": 0,
+      "url": "https://www.dezeen.com/2026/05/15/bathrooms-kitchens-products-furnishings-accessories-dezeen-showroom/",
+      "image": "",
+      "tags": [
+        "创意厨具",
+        "Dezeen",
+        "设计文章"
+      ],
+      "added": "2026-05-16",
+      "_scores": {
+        "直观度": 6,
+        "打击面": 5,
+        "实用性": 7,
+        "创意价值": 8,
+        "情绪价值": 6
+      },
+      "_score_total": 32,
+      "_deepseek": {
+        "intuitive": 6,
+        "broad_appeal": 5,
+        "usefulness": 7,
+        "creativity": 8,
+        "emotional": 6,
+        "total": 32,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "f361bb38cd9f",
+      "title": "The Memdock G3 Is the 13-Port Dock You Don’t Have to Hide Anymore",
+      "reason": "The Memdock G3 Is the 13-Port Dock You Don&#8217;t Have to Hide AnymoreModern desks have never looked better. Sit-stand tables, cable management trays, and ultra-thin laptops have turned the average w",
+      "source": "Yanko Design",
+      "category": "创意桌搭",
+      "creator": "Yanko Design",
+      "score": 7.4,
+      "likes": 0,
+      "url": "https://www.yankodesign.com/2026/05/15/the-memdock-g3-is-the-13-port-dock-you-dont-have-to-hide-anymore/?utm_source=rss&utm_medium=rss&utm_campaign=the-memdock-g3-is-the-13-port-dock-you-dont-have-to-hide-anymore",
+      "image": "",
+      "tags": [
+        "创意桌搭",
+        "Yanko Design",
+        "设计文章"
+      ],
+      "added": "2026-05-16",
+      "_scores": {
+        "直观度": 8,
+        "打击面": 7,
+        "实用性": 9,
+        "创意价值": 7,
+        "情绪价值": 6
+      },
+      "_score_total": 37,
+      "_deepseek": {
+        "intuitive": 8,
+        "broad_appeal": 7,
+        "usefulness": 9,
+        "creativity": 7,
+        "emotional": 6,
+        "total": 37,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "673c686ff21d",
+      "title": "Woven by Hand in the Philippines, Sold in Milan",
+      "reason": "Woven by Hand in the Philippines, Sold in MilanMost lamps just sit there. They do their job, emit their light, and fade into the background of a room. Mirei Monticelli&#8217;s lamps are the...",
+      "source": "Yanko Design",
+      "category": "氛围灯",
+      "creator": "Yanko Design",
+      "score": 7.2,
+      "likes": 0,
+      "url": "https://www.yankodesign.com/2026/05/15/woven-by-hand-in-the-philippines-sold-in-milan/?utm_source=rss&utm_medium=rss&utm_campaign=woven-by-hand-in-the-philippines-sold-in-milan",
+      "image": "",
+      "tags": [
+        "氛围灯",
+        "Yanko Design",
+        "设计文章"
+      ],
+      "added": "2026-05-16",
+      "_scores": {
+        "直观度": 7,
+        "打击面": 5,
+        "实用性": 7,
+        "创意价值": 9,
+        "情绪价值": 8
+      },
+      "_score_total": 36,
+      "_deepseek": {
+        "intuitive": 7,
+        "broad_appeal": 5,
+        "usefulness": 7,
+        "creativity": 9,
+        "emotional": 8,
         "total": 36,
         "source": "deepseek"
       }
