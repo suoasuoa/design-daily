@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "design-insight-bot"
           git config user.email "bot@design-digest.com"
-          git add data/raw/ data/products.json data/dedupe_index.json data/published.json data/trends.json insight/
+          git add index.html data/raw/ data/products.json data/dedupe_index.json data/published.json data/trends.json insight/
           if ! git diff --staged --quiet; then
             git commit -m "Update insight pool $(date +%Y-%m-%d)"
             git push
