@@ -1,0 +1,56 @@
+name: Insight Pool
+
+on:
+  schedule:
+    # Daily at 09:20 Beijing time.
+    - cron: "20 1 * * *"
+  workflow_dispatch:
+    inputs:
+      score_limit:
+        description: "Maximum products to score this run"
+        required: true
+        default: "200"
+
+permissions:
+  contents: write
+
+jobs:
+  build-insight-pool:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Collect public leads
+        run: python3 scripts/collect_public.py
+
+      - name: Dedupe product pool
+        run: python3 scripts/dedupe.py
+
+      - name: Score products
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python3 scripts/score.py --limit "${{ github.event.inputs.score_limit || '200' }}"
+
+      - name: Generate trend report
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python3 scripts/trend_agent.py --limit 100
+
+      - name: Build static insight dashboard
+        run: python3 scripts/build_site.py
+
+      - name: Commit data and dashboard
+        run: |
+          git config user.name "design-insight-bot"
+          git config user.email "bot@design-digest.com"
+          git add data/raw/ data/products.json data/dedupe_index.json data/published.json data/trends.json insight/
+          if ! git diff --staged --quiet; then
+            git commit -m "Update insight pool $(date +%Y-%m-%d)"
+            git push
+          else
+            echo "No insight pool changes"
+          fi

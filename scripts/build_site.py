@@ -1,0 +1,623 @@
+#!/usr/bin/env python3
+"""Build a Daily Design Digest-style dashboard for the insight pool."""
+
+from collections import Counter, defaultdict
+import json
+
+from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
+
+
+USEFUL_WORDS = ["收纳", "整理", "便携", "折叠", "多功能", "防水", "模块", "磁吸", "省空间", "工具", "organizer", "portable", "foldable", "storage"]
+FREQUENCY_WORDS = ["水杯", "灯", "桌", "键盘", "手机", "包", "厨", "日历", "充电", "杯", "wallet", "desk", "kitchen", "phone", "bag"]
+BROAD_WORDS = ["水杯", "收纳", "桌搭", "厨具", "灯", "手机壳", "充电", "礼盒", "bag", "cup", "lamp", "desk", "kitchen"]
+FUNCTION_WORDS = ["防水", "耐用", "可调", "模块", "磁吸", "折叠", "收纳", "便携", "一体", "portable", "adjustable", "modular", "magnetic"]
+RISK_WORDS = ["概念", "装置", "艺术", "汽车", "耳机", "大型", "chair", "car", "concept", "installation"]
+
+
+def sorted_products(products):
+    return sorted(
+        products,
+        key=lambda item: (
+            int(item.get("selection_score") or 0),
+            int(item.get("seen_count") or 0),
+            item.get("last_seen") or "",
+        ),
+        reverse=True,
+    )
+
+
+def clamp(value, low=0, high=10):
+    return max(low, min(high, int(round(value))))
+
+
+def hits(text, words):
+    text = text.lower()
+    return sum(1 for word in words if word.lower() in text)
+
+
+def fallback_display_scores(item):
+    text = " ".join(
+        [
+            item.get("title", ""),
+            item.get("summary", ""),
+            item.get("category", ""),
+            " ".join(item.get("tags", [])),
+            " ".join(item.get("trend_tags", [])),
+        ]
+    )
+    source_bonus = min(2, max(0, int(item.get("seen_count") or 1) - 1))
+    risk = hits(text, RISK_WORDS)
+    return {
+        "utility": clamp(5 + hits(text, USEFUL_WORDS) * 1.2 - risk),
+        "frequency": clamp(5 + hits(text, FREQUENCY_WORDS) * 1.1 - risk),
+        "broad_appeal": clamp(5 + hits(text, BROAD_WORDS) + source_bonus - risk),
+        "functionality": clamp(6 + hits(text, FUNCTION_WORDS) * 0.8 - hits(text, ["概念", "concept", "装置"])),
+    }
+
+
+def ensure_display_scores(products):
+    for item in products:
+        scores = item.get("selection_scores") or {}
+        fallback = fallback_display_scores(item)
+        display = {}
+        for key in ["utility", "frequency", "broad_appeal", "functionality"]:
+            value = scores.get(key)
+            display[key] = value if isinstance(value, int) and value > 0 else fallback[key]
+        item["display_scores"] = display
+    return products
+
+
+def build_payload(products):
+    products = ensure_display_scores(sorted_products(products))
+    by_category = Counter(item.get("category") or "未分类" for item in products)
+    by_source = Counter()
+    by_status = Counter(item.get("review_status") or item.get("status") or "raw" for item in products)
+    tag_counter = Counter()
+    daily_added = defaultdict(int)
+
+    for item in products:
+        daily_added[item.get("last_seen") or "unknown"] += 1
+        for source in item.get("sources", []):
+            by_source[source.get("source") or "未知来源"] += 1
+        for tag in item.get("trend_tags", []) or item.get("tags", []):
+            tag_counter[tag] += 1
+
+    return {
+        "generated_at": now_iso(),
+        "stats": {
+            "total_products": len(products),
+            "total_source_records": sum(len(item.get("sources", [])) for item in products),
+            "by_category": dict(by_category.most_common()),
+            "by_source": dict(by_source.most_common()),
+            "by_status": dict(by_status.most_common()),
+            "top_tags": dict(tag_counter.most_common(30)),
+            "daily_added": dict(sorted(daily_added.items(), reverse=True)[:30]),
+        },
+        "items": products,
+    }
+
+
+HTML = """<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Design Digest</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f5f8;
+      --card: #ffffff;
+      --ink: #20242c;
+      --muted: #858994;
+      --line: #e3e5ec;
+      --purple: #6764f1;
+      --purple-soft: #efefff;
+      --amber: #f4a629;
+      --green: #36bd69;
+      --red: #c94d4d;
+      --shadow: 0 8px 22px rgba(28, 32, 42, .07);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    .wrap {
+      width: min(1560px, calc(100vw - 44px));
+      margin: 0 auto;
+      padding: 72px 0 44px;
+    }
+    .hero {
+      text-align: center;
+      padding: 8px 0 26px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 800;
+      letter-spacing: 0;
+      color: var(--purple);
+    }
+    .mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: inline-block;
+      background: linear-gradient(135deg, #7463ef, #9b5df5);
+      position: relative;
+      flex: 0 0 auto;
+    }
+    .mark:before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 7px;
+      border-radius: 7px 7px 0 0;
+      background: #7463ef;
+      transform: rotate(-35deg);
+      right: -5px;
+      top: -4px;
+    }
+    .subtitle {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+      font-weight: 650;
+    }
+    .stats {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 22px auto 28px;
+      max-width: 1320px;
+    }
+    .stat {
+      width: 126px;
+      min-height: 104px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      color: var(--muted);
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      text-align: center;
+      padding: 12px;
+    }
+    .stat:hover { transform: translateY(-2px); border-color: #c7c8ff; }
+    .stat.active {
+      border: 3px solid var(--purple);
+      background: var(--purple-soft);
+      box-shadow: none;
+    }
+    .stat strong {
+      display: block;
+      color: var(--purple);
+      font-size: 31px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+    .stat span {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      word-break: break-word;
+    }
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) auto auto;
+      gap: 14px;
+      align-items: center;
+      margin-top: 16px;
+    }
+    .search {
+      height: 56px;
+      border: 1px solid #dfe2ea;
+      border-radius: 14px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(28, 32, 42, .03);
+      padding: 0 18px;
+    }
+    .search input {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .search span { color: #8c95a3; font-size: 22px; margin-right: 10px; }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      height: 42px;
+      white-space: nowrap;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--green);
+      display: inline-block;
+    }
+    .refresh {
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: #f1f3f8;
+      color: #38404d;
+      padding: 0 18px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .filter-btn {
+      min-height: 42px;
+      border: 1px solid #dfe2ea;
+      border-radius: 22px;
+      background: #fff;
+      color: #151922;
+      padding: 0 22px;
+      font: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(28, 32, 42, .04);
+    }
+    .filter-btn:hover { border-color: #bebfff; color: var(--purple); }
+    .filter-btn.active {
+      background: var(--purple);
+      color: #fff;
+      border-color: var(--purple);
+      box-shadow: none;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ebedf2;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(28, 32, 42, .05);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .thumb {
+      width: 100%;
+      aspect-ratio: 16 / 10.5;
+      object-fit: cover;
+      background: linear-gradient(135deg, #e7eaf2, #f6f7fb);
+      display: block;
+    }
+    .badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      min-width: 58px;
+      height: 34px;
+      border-radius: 9px;
+      background: var(--amber);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 0 10px;
+    }
+    .body {
+      padding: 16px 18px 18px;
+      display: grid;
+      gap: 10px;
+      flex: 1;
+    }
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      min-height: 22px;
+      border-radius: 5px;
+      padding: 2px 8px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--purple);
+      background: #f0f0ff;
+    }
+    .cat-tag { color: #19774b; background: #e9f7ef; }
+    .price-tag { color: #8a5300; background: #fff4dc; }
+    .src-social_signal { color: #b33131; background: #fdecec; }
+    .src-editorial_source { color: #5d43b6; background: #f1edff; }
+    .src-verified_official { color: #1c6d54; background: #e8f5ef; }
+    .card h3 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.38;
+      letter-spacing: 0;
+      padding-right: 44px;
+    }
+    .card h3 a { color: #1c2029; text-decoration: none; }
+    .card h3 a:hover { color: var(--purple); }
+    .summary {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .score-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 6px;
+      color: #6c7280;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .score-chip {
+      background: #f5f6fa;
+      border-radius: 7px;
+      padding: 5px 6px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .empty {
+      grid-column: 1 / -1;
+      min-height: 180px;
+      border: 1px dashed #ccd1dc;
+      border-radius: 16px;
+      background: #fff;
+      color: var(--muted);
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    @media (max-width: 760px) {
+      .wrap { width: min(100vw - 24px, 1560px); padding-top: 36px; }
+      .toolbar { grid-template-columns: 1fr; }
+      .status { justify-content: center; }
+      .refresh { width: 100%; }
+      .stat { width: 104px; min-height: 90px; }
+      .stat strong { font-size: 25px; }
+      .filter-btn { padding: 0 15px; font-size: 14px; }
+      .grid { grid-template-columns: 1fr; }
+      .score-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1 class="brand"><span class="mark"></span>Daily Design Digest</h1>
+      <p class="subtitle" id="subtitle">产品线索池加载中</p>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="toolbar">
+      <label class="search">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="搜索标题、品类、标签...">
+      </label>
+      <div class="status"><span class="dot"></span><span id="statusText">每日更新</span></div>
+      <button class="refresh" type="button" onclick="window.location.reload()">刷新数据</button>
+    </section>
+
+    <nav class="filters" id="sourceFilters"></nav>
+    <nav class="filters" id="categoryFilters"></nav>
+
+    <section class="grid" id="grid"></section>
+  </div>
+
+  <script src="./data.json"></script>
+  <script>
+    const payload = window.__INSIGHT_DATA__;
+    const state = { source: "全部", category: "全部", query: "" };
+    const $ = id => document.getElementById(id);
+    const scoreLabels = {
+      utility: "实用",
+      frequency: "高频",
+      broad_appeal: "打击面",
+      functionality: "功能",
+      price_power: "价格",
+      clarity: "3秒懂",
+      emotion: "情绪"
+    };
+
+    function shortSource(name) {
+      return name
+        .replace(" Design Award", "")
+        .replace("设计奖", "奖")
+        .replace("Yanko Design", "Yanko Design")
+        .replace("Good Design Award", "Good");
+    }
+
+    function sourceClass(item) {
+      const source = item.sources && item.sources[0];
+      return source ? `src-${source.source_type}` : "";
+    }
+
+    function priceText(value) {
+      if (value === "likely_over_35") return ">35";
+      if (value === "risk_under_35") return "低价风险";
+      return "价格未知";
+    }
+
+    function itemText(item) {
+      return [
+        item.title, item.summary, item.category,
+        ...(item.tags || []), ...(item.trend_tags || []),
+        ...(item.sources || []).map(s => s.source)
+      ].join(" ").toLowerCase();
+    }
+
+    function matches(item) {
+      if (state.source !== "全部" && !(item.sources || []).some(s => s.source === state.source)) return false;
+      if (state.category !== "全部" && item.category !== state.category) return false;
+      if (state.query && !itemText(item).includes(state.query.toLowerCase())) return false;
+      return true;
+    }
+
+    function button(label, count, active, onClick) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `filter-btn${active ? " active" : ""}`;
+      btn.textContent = count == null ? label : `${label}`;
+      btn.title = count == null ? label : `${label} · ${count}`;
+      btn.addEventListener("click", onClick);
+      return btn;
+    }
+
+    function renderStats() {
+      const stats = $("stats");
+      stats.innerHTML = "";
+      const total = payload.stats.total_products;
+      const all = document.createElement("button");
+      all.type = "button";
+      all.className = `stat${state.source === "全部" ? " active" : ""}`;
+      all.innerHTML = `<strong>${total}</strong><span>全部</span>`;
+      all.addEventListener("click", () => { state.source = "全部"; render(); });
+      stats.appendChild(all);
+
+      Object.entries(payload.stats.by_source).forEach(([name, count]) => {
+        const item = document.createElement("button");
+        item.type = "button";
+        item.className = `stat${state.source === name ? " active" : ""}`;
+        item.innerHTML = `<strong>${count}</strong><span>${shortSource(name)}</span>`;
+        item.addEventListener("click", () => { state.source = name; render(); });
+        stats.appendChild(item);
+      });
+    }
+
+    function renderFilters() {
+      const sourceEl = $("sourceFilters");
+      const categoryEl = $("categoryFilters");
+      sourceEl.innerHTML = "";
+      categoryEl.innerHTML = "";
+      sourceEl.appendChild(button("全部", null, state.source === "全部", () => { state.source = "全部"; render(); }));
+      Object.keys(payload.stats.by_source).forEach(name => {
+        sourceEl.appendChild(button(name, payload.stats.by_source[name], state.source === name, () => {
+          state.source = name;
+          render();
+        }));
+      });
+      categoryEl.appendChild(button("全部", null, state.category === "全部", () => { state.category = "全部"; render(); }));
+      Object.keys(payload.stats.by_category).forEach(name => {
+        categoryEl.appendChild(button(name, payload.stats.by_category[name], state.category === name, () => {
+          state.category = name;
+          render();
+        }));
+      });
+    }
+
+    function renderGrid() {
+      const items = payload.items.filter(matches);
+      $("subtitle").textContent = `${items.length} 条设计灵感 · ${Object.keys(payload.stats.by_source).length}个来源 · ${Object.keys(payload.stats.by_category).length}个品类`;
+      $("statusText").textContent = `每日更新 · ${payload.stats.total_products}条`;
+      const grid = $("grid");
+      if (!items.length) {
+        grid.innerHTML = `<div class="empty">没有找到匹配的内容</div>`;
+        return;
+      }
+      grid.innerHTML = items.map(item => {
+        const source = item.sources && item.sources[0] ? item.sources[0] : { source: "未知来源", source_type: "" };
+        const url = item.url || source.url || "#";
+        const image = item.image ? `<img class="thumb" src="${item.image}" loading="lazy" alt="">` : `<div class="thumb"></div>`;
+        const score = Math.round((item.selection_score || 0) / 10 * 10) / 10;
+        const tags = [...(item.trend_tags || []), ...(item.tags || [])].slice(0, 4).map(tag => `<span class="tag">${tag}</span>`).join("");
+        const scoreSource = item.display_scores || item.selection_scores || {};
+        const scores = Object.entries(scoreLabels).slice(0, 4).map(([key, label]) => {
+          const value = Number.isFinite(scoreSource[key]) ? scoreSource[key] : 0;
+          return `<span class="score-chip">${label} ${value}</span>`;
+        }).join("");
+        return `<article class="card">
+          ${image}
+          <span class="badge">${score}分</span>
+          <div class="body">
+            <div class="meta">
+              <span class="tag ${sourceClass(item)}">${source.source}</span>
+              <span class="tag cat-tag">${item.category || "未分类"}</span>
+              <span class="tag price-tag">${priceText(item.price_gate)}</span>
+            </div>
+            <h3><a href="${url}" target="_blank" rel="noopener">${item.title}</a></h3>
+            <p class="summary">${item.ai_reason || item.summary || ""}</p>
+            <div class="score-row">${scores}</div>
+            <div class="meta">${tags}</div>
+          </div>
+        </article>`;
+      }).join("");
+    }
+
+    function render() {
+      renderStats();
+      renderFilters();
+      renderGrid();
+    }
+
+    $("search").addEventListener("input", event => {
+      state.query = event.target.value.trim();
+      renderGrid();
+    });
+
+    render();
+  </script>
+</body>
+</html>
+"""
+
+
+def main():
+    ensure_dirs()
+    products = load_json(DATA_DIR / "products.json", [])
+    payload = build_payload(products)
+    write_json(DATA_DIR / "published.json", payload)
+    write_json(INSIGHT_DIR / "data.raw.json", payload)
+    data_js = "window.__INSIGHT_DATA__ = " + json.dumps(payload, ensure_ascii=False) + ";\n"
+    (INSIGHT_DIR / "data.json").write_text(data_js, encoding="utf-8")
+    (INSIGHT_DIR / "index.html").write_text(HTML, encoding="utf-8")
+    print(f"built insight/index.html products={len(products)}")
+
+
+if __name__ == "__main__":
+    main()

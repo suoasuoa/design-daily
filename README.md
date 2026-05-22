@@ -22,6 +22,24 @@
 
 修改数据前请查看 `CHECK.md`，里面有详细的部署检查清单和历史踩坑记录。
 
+## Insight Pool MVP
+
+新版产品线索池在 `insight/` 下生成，目标是长期积累可去重、可评分、可筛选的选品方向。
+
+```bash
+python3 scripts/dedupe.py
+python3 scripts/score.py --limit 200
+python3 scripts/build_site.py
+```
+
+或直接运行智能体流程：
+
+```bash
+python3 scripts/agent_update.py --score-limit 200 --trend-limit 80
+```
+
+详情见 `INSIGHT_POOL.md`。
+
 ### 快速开始
 ```bash
 # 重新生成前端数据
