@@ -26,6 +26,7 @@ def main():
     if not args.skip_collect:
         run([py, "scripts/collect_public.py"])
     run([py, "scripts/dedupe.py"])
+    run([py, "scripts/review_categories.py"])
     score_cmd = [py, "scripts/score.py", "--limit", str(args.score_limit)]
     if args.force_score:
         score_cmd.append("--force")

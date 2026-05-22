@@ -30,6 +30,11 @@ jobs:
       - name: Dedupe product pool
         run: python3 scripts/dedupe.py
 
+      - name: Review category fit
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python3 scripts/review_categories.py --batch-size 20
+
       - name: Score products
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -47,7 +52,7 @@ jobs:
         run: |
           git config user.name "design-insight-bot"
           git config user.email "bot@design-digest.com"
-          git add index.html data/raw/ data/products.json data/dedupe_index.json data/published.json data/trends.json insight/
+          git add index.html data/raw/ data/products.json data/dedupe_index.json data/category_review.json data/rejected_category.json data/published.json data/trends.json insight/
           if ! git diff --staged --quiet; then
             git commit -m "Update insight pool $(date +%Y-%m-%d)"
             git push

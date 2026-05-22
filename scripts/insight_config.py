@@ -23,6 +23,28 @@ CATEGORIES = [
     "钥匙扣水壶",
 ]
 
+CATEGORY_REVIEW_RULES = {
+    "水杯": "Only drinkware: cups, mugs, bottles, tumblers, flasks, thermos products, and clearly related drink containers.",
+    "氛围灯": "Only lighting products for ambience or daily use: table lamps, night lights, decorative lamps, lanterns, light fixtures.",
+    "创意礼盒": "Only gift boxes, gift sets, creative packaging sets, boxed gift products, and reusable gift packaging.",
+    "装置艺术": "Only purchasable or inspiration-worthy installation art objects, public art, sculptural installations, or immersive art pieces.",
+    "创意厨具": "Only kitchen tools, cookware, cooking utensils, food preparation tools, tableware tools, or kitchen appliances.",
+    "中秋礼盒": "Only Mid-Autumn Festival gift boxes, mooncake packaging, mooncake sets, or clearly Mid-Autumn themed gifts.",
+    "帽子": "Only hats and headwear: caps, beanies, bucket hats, helmets only when clearly sold as fashion/headwear rather than sports gear.",
+    "创意桌搭": "Only desk setup products: desk accessories, monitor/keyboard/mouse accessories, cable management, desktop storage, work desk objects.",
+    "端午礼盒": "Only Dragon Boat Festival gift boxes, zongzi packaging, zongzi sets, or clearly Dragon Boat themed gifts.",
+    "充电宝": "Only power banks, portable chargers, battery packs, and portable power stations.",
+    "日历": "Only calendars, planners, desktop calendars, wall calendars, and calendar-like date display products.",
+    "T恤": "Only T-shirts and short-sleeve tee apparel.",
+    "卫衣": "Only hoodies, sweatshirts, pullovers, and sweatshirt-like apparel.",
+    "卡包": "Only card holders, slim wallets, card cases, passport/card organizers, and small card storage goods.",
+    "手机壳": "Only phone cases, phone covers, phone protection shells, and direct phone case accessories.",
+    "收纳包": "Only storage bags, organizer pouches, daily carry pouches, travel organizers, packing bags, and product cases meant mainly for storage.",
+    "Polo衫": "Only polo shirts.",
+    "冲锋衣": "Only outdoor jackets, shell jackets, windbreakers, rain jackets, sun-protection jackets, and functional outerwear. Reject shoes, gloves, tents, binoculars, sports balls, general outdoor gear, pet products, and unrelated sports equipment.",
+    "钥匙扣水壶": "Only keychains, key rings, small hanging accessories, mini bottles attached to keychains, carabiner-like key accessories, or clearly keychain bottle products.",
+}
+
 SOURCE_TYPES = {
     "小红书": "social_signal",
     "抖音": "social_signal",

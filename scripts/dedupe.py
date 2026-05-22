@@ -148,6 +148,12 @@ def build_published(products):
     }
 
 
+def refresh_published_from_products(products):
+    published = build_published({item["id"]: item for item in products})
+    write_json(DATA_DIR / "published.json", published)
+    return published
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--legacy", default="brand_pool.json", help="Legacy JSON pool to import.")
