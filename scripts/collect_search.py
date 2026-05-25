@@ -61,6 +61,29 @@ def clean_duck_url(url):
     return url
 
 
+def is_product_like_url(url):
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return False
+    host = parsed.netloc.lower()
+    path = parsed.path.lower().strip("/")
+    query = urllib.parse.parse_qs(parsed.query)
+    if any(host.endswith(domain) for domain in ["duckduckgo.com", "google.com", "bing.com", "baidu.com"]):
+        return False
+    if any(key in query for key in ["q", "query", "keyword", "search", "s", "wd"]):
+        return False
+    bad_segments = {
+        "search", "tag", "tags", "category", "categories", "collections", "topics",
+        "explore", "discover", "feed", "archive", "page", "pages",
+    }
+    segments = [segment for segment in path.split("/") if segment]
+    if segments and segments[-1] in bad_segments:
+        return False
+    if any(segment in bad_segments for segment in segments[:2]) and len(segments) <= 3:
+        return False
+    return True
+
+
 def fetch_results(query, timeout=25):
     url = "https://duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
     req = urllib.request.Request(
@@ -120,7 +143,7 @@ def collect(jobs, limit_jobs=40, per_job=4, sleep=1.0, offset=None):
     collected = []
     for job in rotate_jobs(jobs, limit_jobs, offset):
         try:
-            results = fetch_results(job["query"])[:per_job]
+            results = [result for result in fetch_results(job["query"]) if is_product_like_url(result.get("url", ""))][:per_job]
             leads = [lead_from_result(job, result) for result in results if result.get("title") and result.get("url")]
             collected.extend(leads)
             print(f"{job['category']} | {job['query']}: {len(leads)}")

@@ -7,6 +7,7 @@ import re
 from urllib.parse import urlparse
 
 from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
+from insight_config import CATEGORIES
 
 
 FUNCTION_WORDS = [
@@ -127,11 +128,31 @@ def clean_image_url(value):
     return value
 
 
+def clean_product_url(value):
+    value = (value or "").strip()
+    parsed = urlparse(value)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return ""
+    host = parsed.netloc.lower()
+    path = parsed.path.lower().strip("/")
+    query = value.lower()
+    if any(host.endswith(domain) for domain in ["duckduckgo.com", "google.com", "bing.com", "baidu.com"]):
+        return ""
+    bad_segments = {"search", "tag", "tags", "category", "categories", "collections", "topics", "explore", "discover"}
+    segments = [segment for segment in path.split("/") if segment]
+    if any(segment in bad_segments for segment in segments[:2]) and len(segments) <= 3:
+        return ""
+    if any(token in query for token in ["search=", "keyword=", "query=", "?q=", "&q=", "?s=", "&s="]):
+        return ""
+    return value
+
+
 def record(item):
     source = (item.get("sources") or [{}])[0]
     axes = inspiration_axes(item)
     review = item.get("category_review") or {}
     image = clean_image_url(item.get("image", ""))
+    url = clean_product_url(item.get("url") or source.get("url") or "")
     return {
         "id": item.get("id"),
         "title": item.get("title", ""),
@@ -140,7 +161,7 @@ def record(item):
         "score": int(item.get("selection_score") or 0),
         "price_gate": item.get("price_gate", "unknown"),
         "image": image,
-        "url": item.get("url") or source.get("url") or "#",
+        "url": url,
         "source_name": source.get("source", item.get("source_primary", "未知来源")),
         "source_family": source_family(item),
         "source_type": source.get("source_type", ""),
@@ -175,6 +196,7 @@ def compact_weekly_report(report):
     for item in report.get("recommendations", []):
         cleaned = dict(item)
         cleaned["image"] = clean_image_url(cleaned.get("image", ""))
+        cleaned["url"] = clean_product_url(cleaned.get("url", ""))
         recommendations.append(cleaned)
     return {
         "generated_at": report.get("generated_at", ""),
@@ -249,6 +271,7 @@ def build_payload(products, trends, weekly_report=None, weekly_groups=None):
         "weekly_report": compact_weekly_report(weekly_report),
         "weekly_groups": [compact_weekly_report(report) for report in (weekly_groups or []) if report],
         "daily_groups": build_daily_groups(items),
+        "configured_categories": CATEGORIES,
         "items": items,
     }
 
@@ -333,7 +356,7 @@ HTML = """<!doctype html>
     .toolbar {
       margin-top: 16px;
       display: grid;
-      grid-template-columns: minmax(260px, 1fr) auto;
+      grid-template-columns: 1fr;
       gap: 12px;
       align-items: center;
     }
@@ -348,7 +371,7 @@ HTML = """<!doctype html>
       padding: 0 14px;
     }
     .search input { width: 100%; border: 0; outline: 0; background: transparent; font: inherit; color: var(--ink); }
-    .filters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; }
     .chip {
       min-height: 34px;
       border: 1px solid var(--line);
@@ -499,6 +522,10 @@ HTML = """<!doctype html>
   <script src="./data.json"></script>
   <script>
     const payload = window.__INSIGHT_DATA__;
+    const configuredCategories = payload.configured_categories || [
+      "水杯", "氛围灯", "创意礼盒", "装置艺术", "创意厨具", "中秋礼盒", "帽子", "创意桌搭", "端午礼盒", "充电宝",
+      "日历", "T恤", "卫衣", "卡包", "手机壳", "收纳包", "Polo衫", "冲锋衣", "钥匙扣水壶"
+    ];
     const state = {
       tab: "daily",
       q: "",
@@ -645,11 +672,15 @@ HTML = """<!doctype html>
 
     function renderFilters(items) {
       const root = $("filters");
-      const categories = [...new Set(items.map(item => item.category).filter(Boolean))].slice(0, 18);
+      const itemCategories = new Set(items.map(item => item.category).filter(Boolean));
+      const categories = [
+        ...configuredCategories,
+        ...[...itemCategories].filter(category => !configuredCategories.includes(category))
+      ];
       const sources = [...new Set(items.map(item => item.source_family).filter(Boolean))];
       root.innerHTML = "";
       root.appendChild(chip("全部品类", state.category === "全部", () => { state.category = "全部"; render(); }));
-      categories.slice(0, 8).forEach(category => root.appendChild(chip(category, state.category === category, () => { state.category = category; render(); })));
+      categories.forEach(category => root.appendChild(chip(`${category}${itemCategories.has(category) ? "" : " 0"}`, state.category === category, () => { state.category = category; render(); })));
       root.appendChild(chip("全部来源", state.source === "全部", () => { state.source = "全部"; render(); }));
       sources.forEach(source => root.appendChild(chip(source, state.source === source, () => { state.source = source; render(); })));
     }
@@ -667,6 +698,9 @@ HTML = """<!doctype html>
       const image = item.image
         ? `<img class="thumb" src="${item.image}" alt="" loading="lazy">`
         : `<div class="thumb">${item.category || "灵感"}<br>${sourceText(item)}<br>待补图</div>`;
+      const title = item.url
+        ? `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>`
+        : `${item.title}`;
       return `<article class="card">
         ${image}
         <div class="body">
@@ -675,7 +709,7 @@ HTML = """<!doctype html>
             <span class="pill green">${item.category || "未分类"}</span>
             <span class="pill blue">${scoreText(item)}分</span>
           </div>
-          <h3><a href="${item.url || "#"}" target="_blank" rel="noopener">${item.title}</a></h3>
+          <h3>${title}</h3>
           <p class="summary">${item.summary || item.next_action || item.review_reason || ""}</p>
           <div class="tags">
             ${(item.axes || []).slice(0, 2).map(axis => `<span class="pill gray">${axis}</span>`).join("")}
