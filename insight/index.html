@@ -9,703 +9,275 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f4f6f8;
-      --panel: rgba(255, 255, 255, 0.92);
-      --card: #ffffff;
-      --ink: #23211c;
-      --muted: #667085;
-      --line: rgba(35, 45, 60, 0.12);
+      --bg: #f5f7fa;
+      --panel: #ffffff;
+      --soft: #f0f3f7;
+      --ink: #1f2430;
+      --muted: #687184;
+      --line: #dfe4ec;
       --accent: #d66b2c;
-      --accent-deep: #9c4b1c;
-      --sage: #4f8063;
-      --mustard: #d5a540;
-      --sky: #527fa3;
-      --shadow: 0 18px 40px rgba(31, 41, 55, 0.08);
+      --green: #4f8063;
+      --blue: #527fa3;
+      --shadow: 0 16px 34px rgba(31, 41, 55, 0.08);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: "Manrope", "Noto Sans SC", sans-serif;
+      background: linear-gradient(180deg, #fafbfc 0%, var(--bg) 100%);
       color: var(--ink);
-      background:
-        linear-gradient(135deg, rgba(82,127,163,0.10), transparent 34%),
-        linear-gradient(315deg, rgba(214,107,44,0.08), transparent 30%),
-        linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
-      min-height: 100vh;
     }
-    .shell {
-      width: min(1520px, calc(100vw - 32px));
-      margin: 0 auto;
-      padding: 28px 0 48px;
-    }
-    .hero {
+    .shell { width: min(1480px, calc(100vw - 32px)); margin: 0 auto; padding: 28px 0 48px; }
+    .topbar {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 22px;
-      align-items: stretch;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
     }
-    .hero-main, .hero-side, .panel, .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      backdrop-filter: blur(10px);
-      box-shadow: var(--shadow);
-    }
-    .hero-main {
-      padding: 30px 30px 26px;
-      overflow: hidden;
-      position: relative;
-    }
-    .hero-main:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(135deg, rgba(82,127,163,0.14), transparent 40%),
-        linear-gradient(315deg, rgba(214,107,44,0.12), transparent 38%);
-      pointer-events: none;
-    }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      font-weight: 800;
-      color: var(--accent-deep);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .eyebrow span {
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
-      background: var(--accent);
-    }
-    h1 {
-      margin: 18px 0 10px;
-      font-size: clamp(34px, 6vw, 66px);
-      line-height: 0.98;
-      letter-spacing: -0.03em;
-      max-width: 10ch;
-    }
-    .lead {
-      margin: 0;
-      max-width: 48ch;
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 1.65;
-      position: relative;
-      z-index: 1;
-    }
-    .hero-stats {
-      margin-top: 22px;
+    .eyebrow { color: var(--accent); font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0; }
+    h1 { margin: 8px 0 8px; font-size: clamp(34px, 4.6vw, 58px); line-height: 1.02; letter-spacing: 0; }
+    .lead { margin: 0; max-width: 760px; color: var(--muted); font-size: 16px; line-height: 1.65; }
+    .generated { color: var(--muted); font-size: 13px; font-weight: 700; white-space: nowrap; }
+    .metrics {
+      margin-top: 18px;
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
-      position: relative;
-      z-index: 1;
     }
-    .hero-stat {
-      background: rgba(255,255,255,0.7);
-      border: 1px solid rgba(84, 70, 52, 0.1);
-      border-radius: 18px;
-      padding: 14px;
-      min-height: 94px;
-    }
-    .hero-stat strong {
-      display: block;
-      font-size: 28px;
-      line-height: 1;
-    }
-    .hero-stat span {
-      display: block;
-      margin-top: 8px;
-      font-size: 12px;
-      color: var(--muted);
-      font-weight: 700;
-    }
-    .hero-side {
-      padding: 24px;
-      display: grid;
-      gap: 18px;
-    }
-    .side-block h2 {
-      margin: 0 0 12px;
-      font-size: 15px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-    }
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      min-height: 34px;
-      padding: 0 12px;
-      border-radius: 999px;
-      background: #fff;
+    .metric {
+      background: var(--panel);
       border: 1px solid var(--line);
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--ink);
-      cursor: pointer;
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 90px;
+      box-shadow: var(--shadow);
     }
-    .chip.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-    }
-    .chip.muted {
-      cursor: default;
-    }
-    .toolbar {
+    .metric strong { display: block; font-size: 30px; line-height: 1; }
+    .metric span { display: block; margin-top: 9px; color: var(--muted); font-size: 13px; font-weight: 700; }
+    .tabs {
       margin-top: 18px;
       display: grid;
-      grid-template-columns: minmax(240px, 1fr) auto;
-      gap: 14px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 6px;
+    }
+    .tab {
+      min-height: 48px;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .tab.active { background: var(--panel); color: var(--ink); box-shadow: 0 4px 14px rgba(31,41,55,.08); }
+    .toolbar {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) auto;
+      gap: 12px;
       align-items: center;
     }
     .search {
+      height: 48px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
       display: flex;
       align-items: center;
       gap: 10px;
-      height: 54px;
+      padding: 0 14px;
+    }
+    .search input { width: 100%; border: 0; outline: 0; background: transparent; font: inherit; color: var(--ink); }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .chip {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel);
+      color: var(--muted);
+      padding: 0 12px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .chip.active { background: var(--ink); border-color: var(--ink); color: #fff; }
+    .content {
+      margin-top: 18px;
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 0 16px;
+      border-radius: 8px;
       box-shadow: var(--shadow);
-    }
-    .search input {
-      width: 100%;
-      border: 0;
-      outline: 0;
-      background: transparent;
-      font: inherit;
-      font-size: 16px;
-      color: var(--ink);
-    }
-    .timestamp {
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-    .grid-section {
-      margin-top: 26px;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 22px;
-      align-items: start;
-    }
-    .panel {
       padding: 20px;
     }
-    .panel h3 {
-      margin: 0 0 14px;
-      font-size: 22px;
-      letter-spacing: -0.02em;
-    }
-    .lane-row {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 10px;
-    }
-    .lane-card {
-      border-radius: 20px;
-      padding: 16px;
-      min-height: 150px;
-      color: #fff;
-      cursor: pointer;
-      transition: transform .18s ease;
-    }
-    .lane-card:hover { transform: translateY(-2px); }
-    .lane-card.buy { background: linear-gradient(135deg, #cf6f39, #edb24c); }
-    .lane-card.adapt { background: linear-gradient(135deg, #6d8d76, #9db58f); }
-    .lane-card.reference { background: linear-gradient(135deg, #5b7989, #8fb2c2); }
-    .lane-card strong {
+    .section-head {
       display: block;
-      font-size: 14px;
-      opacity: 0.9;
-    }
-    .lane-card em {
-      display: block;
-      margin-top: 10px;
-      font-style: normal;
-      font-size: 32px;
-      line-height: 1;
-      font-weight: 800;
-    }
-    .lane-card p {
-      margin: 12px 0 0;
-      font-size: 13px;
-      line-height: 1.5;
-      opacity: 0.94;
-    }
-    .trend-list, .queue-list {
-      display: grid;
-      gap: 10px;
-    }
-    .trend-item, .queue-item {
-      display: grid;
-      gap: 5px;
-      border-top: 1px solid var(--line);
-      padding-top: 10px;
-    }
-    .trend-item:first-child, .queue-item:first-child {
-      border-top: 0;
-      padding-top: 0;
-    }
-    .trend-item strong, .queue-item strong {
-      font-size: 15px;
-    }
-    .trend-item span, .queue-item span {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.55;
-    }
-    .group-panel {
-      margin-top: 24px;
-      padding: 22px;
-    }
-    .group-head {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 14px;
-      align-items: start;
       margin-bottom: 16px;
     }
-    .group-head h3 {
-      margin: 0;
-      font-size: 26px;
-      letter-spacing: -0.02em;
-    }
-    .group-meta {
-      margin: 8px 0 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.6;
-    }
-    .group-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: flex-end;
-    }
-    .group-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 14px;
-    }
-    .group-card {
+    .section-head h2 { margin: 0; font-size: 25px; line-height: 1.2; letter-spacing: 0; }
+    .section-note { margin: 7px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .selector { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; margin-top: 14px; }
+    .lane-switch { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(252px, 1fr)); gap: 14px; }
+    .card {
       background: #fff;
       border: 1px solid var(--line);
-      border-radius: 18px;
+      border-radius: 8px;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
       min-height: 100%;
-    }
-    .group-thumb {
-      width: 100%;
-      aspect-ratio: 1.18 / 0.8;
-      object-fit: cover;
-      display: grid;
-      place-items: center;
-      padding: 18px;
-      background: linear-gradient(135deg, #e6edf3, #f8fafc);
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 800;
-      text-align: center;
-    }
-    .group-body {
-      padding: 13px;
-      display: grid;
-      gap: 8px;
-      flex: 1;
-    }
-    .group-card h4 {
-      margin: 0;
-      font-size: 17px;
-      line-height: 1.28;
-    }
-    .group-card h4 a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .group-card h4 a:hover { color: var(--accent-deep); }
-    .group-copy {
-      margin: 0;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      min-height: 58px;
-    }
-    .filters {
-      margin-top: 24px;
-      display: grid;
-      gap: 12px;
-    }
-    .filter-row {
-      display: grid;
-      gap: 8px;
-    }
-    .filter-row strong {
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .card-grid {
-      margin-top: 24px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      overflow: hidden;
-      background: var(--card);
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
       display: flex;
       flex-direction: column;
     }
     .thumb {
       width: 100%;
-      aspect-ratio: 1.08 / 0.84;
+      aspect-ratio: 1.18 / .82;
       object-fit: cover;
-      background: linear-gradient(135deg, #e6edf3, #f8fafc);
-    }
-    .body {
-      padding: 16px;
+      background: linear-gradient(135deg, #e9eef5, #f8fafc);
       display: grid;
-      gap: 10px;
-      flex: 1;
+      place-items: center;
+      padding: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-align: center;
     }
-    .meta {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
+    .body { padding: 13px; display: grid; gap: 8px; flex: 1; }
+    .meta, .tags { display: flex; flex-wrap: wrap; gap: 7px; }
     .pill {
+      min-height: 24px;
       display: inline-flex;
       align-items: center;
-      min-height: 26px;
-      padding: 0 10px;
       border-radius: 999px;
-      background: #fff4e8;
-      color: var(--accent-deep);
+      padding: 0 8px;
       font-size: 11px;
       font-weight: 800;
-      border: 1px solid rgba(200,99,42,0.12);
+      background: #fff4e8;
+      color: #9c4b1c;
     }
-    .pill.sage { background: #edf5ee; color: #507155; border-color: rgba(108,136,112,0.16); }
-    .pill.sky { background: #edf5f8; color: #4c6c7b; border-color: rgba(109,149,167,0.16); }
-    .pill.gray { background: #f5f2ec; color: #6b645b; border-color: rgba(84,70,52,0.1); }
-    .title {
-      margin: 0;
-      font-size: 28px;
-      line-height: 1.06;
-      letter-spacing: -0.03em;
-    }
-    .title a { color: inherit; text-decoration: none; }
-    .title a:hover { color: var(--accent-deep); }
+    .pill.green { background: #edf5ee; color: var(--green); }
+    .pill.blue { background: #edf5f8; color: var(--blue); }
+    .pill.gray { background: #f2f4f7; color: #667085; }
+    .card h3 { margin: 0; font-size: 18px; line-height: 1.28; letter-spacing: 0; }
+    .card h3 a { color: inherit; text-decoration: none; }
+    .card h3 a:hover { color: var(--accent); }
     .summary {
       margin: 0;
       color: var(--muted);
-      font-size: 14px;
-      line-height: 1.62;
-      min-height: 68px;
-    }
-    .scoreline {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .score {
-      font-size: 30px;
-      font-weight: 800;
-      line-height: 1;
-    }
-    .source {
-      color: var(--muted);
       font-size: 13px;
-      font-weight: 700;
-      text-align: right;
-    }
-    .tags {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
+      line-height: 1.5;
+      min-height: 58px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     .empty {
-      margin-top: 24px;
-      padding: 40px 20px;
-      background: var(--panel);
-      border: 1px dashed var(--line);
-      border-radius: 20px;
-      text-align: center;
+      min-height: 180px;
+      display: grid;
+      place-items: center;
       color: var(--muted);
-      font-weight: 700;
+      background: var(--soft);
+      border-radius: 8px;
+      font-weight: 800;
+      text-align: center;
+      padding: 24px;
     }
-    @media (max-width: 1100px) {
-      .hero, .grid-section { grid-template-columns: 1fr; }
-      .group-head { grid-template-columns: 1fr; }
-      .group-tabs { justify-content: flex-start; }
+    @media (max-width: 900px) {
+      .topbar, .toolbar { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tabs { grid-template-columns: 1fr; }
+      .filters, .selector { justify-content: flex-start; }
     }
-    @media (max-width: 760px) {
-      .shell { width: min(100vw - 20px, 1520px); padding-top: 16px; }
-      .hero-main, .hero-side, .panel { padding: 18px; }
-      .hero-stats, .lane-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .toolbar { grid-template-columns: 1fr; }
-      .title { font-size: 24px; }
-      .card-grid { grid-template-columns: 1fr; }
+    @media (max-width: 620px) {
+      .shell { width: min(100vw - 20px, 1480px); padding-top: 18px; }
+      .metrics { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <div class="shell">
-    <section class="hero">
-      <div class="hero-main">
-        <div class="eyebrow"><span></span>Selection Signal Desk</div>
-        <h1>给选品团队看的灵感工作台</h1>
-        <p class="lead">这版不再把所有内容塞进一个杂池里，而是先回答三件事：这条东西适不适合买样、值不值得改造、它给我们的启发更偏功能、包装、结构还是情绪。</p>
-        <div class="hero-stats" id="heroStats"></div>
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Selection Signal Desk</div>
+        <h1>选品情报工作台</h1>
+        <p class="lead">每日看新增，每周看推荐，完整池只做搜索追溯。让团队打开一个页面就知道今天系统收集了什么，以及本周最值得讨论的 100 个方向。</p>
       </div>
-      <aside class="hero-side">
-        <div class="side-block">
-          <h2>当前热点</h2>
-          <div class="chips" id="topAxisChips"></div>
-        </div>
-        <div class="side-block">
-          <h2>来源结构</h2>
-          <div class="chips" id="sourceFamilyChips"></div>
-        </div>
-        <div class="side-block">
-          <h2>图片状态</h2>
-          <div class="chips" id="imageStateChips"></div>
-        </div>
-      </aside>
-    </section>
+      <div class="generated" id="generatedAt"></div>
+    </header>
+
+    <section class="metrics" id="metrics"></section>
+
+    <nav class="tabs">
+      <button class="tab active" type="button" data-tab="daily">今日新增</button>
+      <button class="tab" type="button" data-tab="weekly">本周推荐</button>
+      <button class="tab" type="button" data-tab="pool">全部灵感池</button>
+    </nav>
 
     <section class="toolbar">
       <label class="search">
         <span>⌕</span>
-        <input id="search" type="search" placeholder="搜索标题、品类、启发方式、来源...">
+        <input id="search" type="search" placeholder="搜索标题、品类、来源、启发类型">
       </label>
-      <div class="timestamp" id="timestamp"></div>
+      <div class="filters" id="filters"></div>
     </section>
 
-    <section class="grid-section">
-      <div class="panel">
-        <h3>本周优先看</h3>
-        <div class="lane-row" id="laneCards"></div>
-      </div>
-      <div class="panel">
-        <h3>趋势摘要</h3>
-        <div class="trend-list" id="trendList"></div>
-      </div>
-    </section>
-
-    <section class="panel group-panel">
-      <div class="group-head">
+    <main class="content">
+      <div class="section-head">
         <div>
-          <h3 id="weeklyGroupTitle">本周 100 条选品推荐</h3>
-          <p class="group-meta" id="weeklyGroupMeta"></p>
+          <h2 id="viewTitle"></h2>
+          <p class="section-note" id="viewNote"></p>
         </div>
-        <div class="group-tabs" id="weeklyTabs"></div>
+        <div class="selector" id="groupSelector"></div>
       </div>
-      <div class="group-grid" id="weeklyGrid"></div>
-    </section>
-
-    <section class="panel group-panel">
-      <div class="group-head">
-        <div>
-          <h3 id="dailyGroupTitle">每日情报收集</h3>
-          <p class="group-meta" id="dailyGroupMeta"></p>
-        </div>
-        <div class="group-tabs" id="dailyTabs"></div>
-      </div>
-      <div class="group-grid" id="dailyGrid"></div>
-    </section>
-
-    <section class="filters">
-      <div class="filter-row">
-        <strong>动作路径</strong>
-        <div class="chips" id="laneFilters"></div>
-      </div>
-      <div class="filter-row">
-        <strong>启发类型</strong>
-        <div class="chips" id="axisFilters"></div>
-      </div>
-      <div class="filter-row">
-        <strong>品类</strong>
-        <div class="chips" id="categoryFilters"></div>
-      </div>
-      <div class="filter-row">
-        <strong>来源分层</strong>
-        <div class="chips" id="sourceFilters"></div>
-      </div>
-    </section>
-
-    <section class="panel" style="margin-top:24px;">
-      <h3>完整灵感池</h3>
-      <div class="queue-list" id="queueList"></div>
-    </section>
-
-    <section class="card-grid" id="cardGrid"></section>
-    <div class="empty" id="emptyState" hidden>当前筛选下没有内容。</div>
+      <div class="lane-switch" id="laneSwitch"></div>
+      <section class="grid" id="grid"></section>
+      <div class="empty" id="emptyState" hidden>当前筛选下没有内容。</div>
+    </main>
   </div>
 
   <script src="./data.json"></script>
   <script>
     const payload = window.__INSIGHT_DATA__;
     const state = {
+      tab: "daily",
       q: "",
       lane: "全部",
-      axis: "全部",
       category: "全部",
       source: "全部",
-      weeklyGroup: "",
-      dailyGroup: ""
+      dailyGroup: "",
+      weeklyGroup: ""
     };
     const $ = id => document.getElementById(id);
 
-    function num(v) { return Number(v || 0); }
-
-    function timestampText(value) {
-      const date = new Date(value.replace(" ", "T"));
-      if (Number.isNaN(date.getTime())) return value;
-      return `最近生成 ${date.toLocaleString("zh-CN", { hour12: false })}`;
+    function groupsDaily() {
+      return (payload.daily_groups || []).filter(group => group.items && group.items.length);
     }
 
-    function cardClass(lane) {
-      if (lane === "可直接买样") return "buy";
-      if (lane === "适合改造") return "adapt";
-      return "reference";
-    }
-
-    function chip(label, active, onClick, extraClass = "") {
-      const el = document.createElement("button");
-      el.type = "button";
-      el.className = `chip ${extraClass}`.trim();
-      if (active) el.classList.add("active");
-      el.textContent = label;
-      if (onClick) el.addEventListener("click", onClick);
-      else el.classList.add("muted");
-      return el;
-    }
-
-    function renderHero() {
-      const total = payload.stats.total_items;
-      const byLane = payload.stats.by_lane;
-      const weeklyCount = (payload.weekly_report && payload.weekly_report.actual_count) || 0;
-      const stats = [
-        [total, "当前可看灵感"],
-        [weeklyCount, "本周推荐"],
-        [byLane["可直接买样"] || 0, "可直接买样"],
-        [byLane["适合改造"] || 0, "适合改造"]
-      ];
-      $("heroStats").innerHTML = stats.map(([value, label]) => `<div class="hero-stat"><strong>${value}</strong><span>${label}</span></div>`).join("");
-      $("timestamp").textContent = timestampText(payload.generated_at);
-
-      const topAxis = Object.entries(payload.stats.by_axis).slice(0, 6);
-      $("topAxisChips").innerHTML = "";
-      topAxis.forEach(([name, count]) => $("topAxisChips").appendChild(chip(`${name} ${count}`, false, null, "gray")));
-
-      const families = Object.entries(payload.stats.by_source_family);
-      $("sourceFamilyChips").innerHTML = "";
-      families.forEach(([name, count]) => $("sourceFamilyChips").appendChild(chip(`${name} ${count}`, false, null, "gray")));
-
-      const imageStates = Object.entries(payload.stats.by_image_state);
-      $("imageStateChips").innerHTML = "";
-      imageStates.forEach(([name, count]) => $("imageStateChips").appendChild(chip(`${name} ${count}`, false, null, "gray")));
-    }
-
-    function weeklyGroups() {
+    function groupsWeekly() {
       const groups = payload.weekly_groups && payload.weekly_groups.length
         ? payload.weekly_groups
         : (payload.weekly_report && payload.weekly_report.recommendations ? [payload.weekly_report] : []);
-      return groups.filter(group => group && group.recommendations && group.recommendations.length);
+      return groups.filter(group => group.recommendations && group.recommendations.length);
     }
 
-    function activeWeeklyGroup() {
-      const groups = weeklyGroups();
+    function activeDaily() {
+      const groups = groupsDaily();
+      if (!groups.length) return null;
+      if (!state.dailyGroup) state.dailyGroup = groups[0].group_id || groups[0].date;
+      return groups.find(group => (group.group_id || group.date) === state.dailyGroup) || groups[0];
+    }
+
+    function activeWeekly() {
+      const groups = groupsWeekly();
       if (!groups.length) return null;
       if (!state.weeklyGroup) state.weeklyGroup = groups[0].group_id || groups[0].week;
       return groups.find(group => (group.group_id || group.week) === state.weeklyGroup) || groups[0];
-    }
-
-    function dailyGroups() {
-      return (payload.daily_groups || []).filter(group => group && group.items && group.items.length);
-    }
-
-    function activeDailyGroup() {
-      const groups = dailyGroups();
-      if (!groups.length) return null;
-      if (!state.dailyGroup) state.dailyGroup = groups[0].group_id || groups[0].date;
-      return groups.find(group => group.group_id === state.dailyGroup || group.date === state.dailyGroup) || groups[0];
-    }
-
-    function renderLaneCards() {
-      const descriptions = {
-        "可直接买样": "更接近已经成立的消费品，适合快速买样验证。",
-        "适合改造": "方向成立，但更值得拿来二次设计或换结构做法。",
-        "方向参考": "更偏趋势、语言和方向，不建议直接推进。"
-      };
-      const order = ["可直接买样", "适合改造", "方向参考"];
-      $("laneCards").innerHTML = order.map(name => `
-        <button class="lane-card ${cardClass(name)}" type="button" data-lane="${name}">
-          <strong>${name}</strong>
-          <em>${payload.stats.by_lane[name] || 0}</em>
-          <p>${descriptions[name]}</p>
-        </button>
-      `).join("");
-      Array.from(document.querySelectorAll(".lane-card")).forEach(el => {
-        el.addEventListener("click", () => {
-          state.lane = el.dataset.lane;
-          renderFilters();
-          renderMain();
-        });
-      });
-    }
-
-    function renderTrendList() {
-      const trends = payload.trends || {};
-      const list = [];
-      (trends.recommended_directions || []).slice(0, 4).forEach(item => list.push([item, "方向"]));
-      (trends.hot_signals || []).slice(0, 3).forEach(item => list.push([item, "信号"]));
-      const fallback = Object.entries(payload.stats.by_category).slice(0, 6).map(([name, count]) => `${name} · ${count}`);
-      if (!list.length) {
-        $("trendList").innerHTML = fallback.map(text => `<div class="trend-item"><strong>${text}</strong><span>当前可见池子里相对更密集的品类。</span></div>`).join("");
-        return;
-      }
-      $("trendList").innerHTML = list.map(([text, label]) => `<div class="trend-item"><strong>${label} · ${text}</strong></div>`).join("");
-    }
-
-    function renderQueue() {
-      const weekly = payload.weekly_report && payload.weekly_report.recommendations;
-      const queue = state.lane === "全部" && weekly && weekly.length
-        ? weekly
-        : payload.featured.lanes[state.lane === "全部" ? "可直接买样" : state.lane] || [];
-      $("queueList").innerHTML = queue.slice(0, 5).map(item => `
-        <div class="queue-item">
-          <strong>${item.title}</strong>
-          <span>${item.action_lane} · ${item.category} · ${item.source_name || item.source}</span>
-        </div>
-      `).join("");
     }
 
     function sourceText(item) {
@@ -717,160 +289,180 @@
       return ((item.score || 0) / 10).toFixed(1);
     }
 
-    function groupCard(item) {
-      const img = item.image
-        ? `<img class="group-thumb" src="${item.image}" alt="" loading="lazy">`
-        : `<div class="group-thumb">${item.category || "灵感"}<br>${sourceText(item)}<br>待补图</div>`;
-      return `
-        <article class="group-card">
-          ${img}
-          <div class="group-body">
-            <div class="meta">
-              <span class="pill">${item.action_lane}</span>
-              <span class="pill sage">${item.category}</span>
-              <span class="pill sky">${scoreText(item)}分</span>
-            </div>
-            <h4><a href="${item.url || "#"}" target="_blank" rel="noopener">${item.title}</a></h4>
-            <p class="group-copy">${item.summary || item.next_action || item.review_reason || ""}</p>
-            <div class="tags">
-              ${(item.axes || []).slice(0, 2).map(axis => `<span class="pill gray">${axis}</span>`).join("")}
-              <span class="pill gray">${sourceText(item)}</span>
-            </div>
-          </div>
-        </article>
-      `;
+    function textFor(item) {
+      return [
+        item.title, item.category, item.summary, sourceText(item),
+        item.action_lane, item.source_family, ...(item.axes || []), ...(item.tags || [])
+      ].join(" ").toLowerCase();
     }
 
-    function renderWeeklyGroup() {
-      const groups = weeklyGroups();
-      const active = activeWeeklyGroup();
-      $("weeklyTabs").innerHTML = "";
-      groups.forEach(group => {
-        const id = group.group_id || group.week;
-        $("weeklyTabs").appendChild(chip(`${group.week} · ${group.actual_count || group.recommendations.length}`, id === (active && (active.group_id || active.week)), () => {
-          state.weeklyGroup = id;
-          renderWeeklyGroup();
-        }));
-      });
-      if (!active) {
-        $("weeklyGroupTitle").textContent = "本周推荐组等待生成";
-        $("weeklyGroupMeta").textContent = "下一次自动化运行后，这里会出现按周打包的 100 条选品推荐。";
-        $("weeklyGrid").innerHTML = "";
-        return;
-      }
-      const stats = active.stats && active.stats.by_lane ? Object.entries(active.stats.by_lane).map(([name, count]) => `${name} ${count}`).join(" / ") : "";
-      $("weeklyGroupTitle").textContent = `${active.week} 选品推荐组`;
-      $("weeklyGroupMeta").textContent = `${active.date_label || "本周"} · ${active.actual_count || active.recommendations.length} 条 · 已去重 · ${stats}`;
-      $("weeklyGrid").innerHTML = active.recommendations.filter(match).slice(0, 100).map(groupCard).join("");
-    }
-
-    function renderDailyGroup() {
-      const groups = dailyGroups();
-      const active = activeDailyGroup();
-      $("dailyTabs").innerHTML = "";
-      groups.slice(0, 14).forEach(group => {
-        const id = group.group_id || group.date;
-        $("dailyTabs").appendChild(chip(`${group.date} · ${group.actual_count}`, id === (active && (active.group_id || active.date)), () => {
-          state.dailyGroup = id;
-          renderDailyGroup();
-        }));
-      });
-      if (!active) {
-        $("dailyGroupTitle").textContent = "每日情报收集等待生成";
-        $("dailyGroupMeta").textContent = "每天自动收集后，这里会按日期展示当天进入池子的前 30 条去重情报。";
-        $("dailyGrid").innerHTML = "";
-        return;
-      }
-      const stats = active.stats && active.stats.by_source_family ? Object.entries(active.stats.by_source_family).map(([name, count]) => `${name} ${count}`).join(" / ") : "";
-      $("dailyGroupTitle").textContent = `${active.date} 每日情报收集`;
-      $("dailyGroupMeta").textContent = `${active.actual_count} 条 · 每日分组 · 已去重 · ${stats}`;
-      $("dailyGrid").innerHTML = active.items.filter(match).slice(0, 30).map(groupCard).join("");
-    }
-
-    function renderFilters() {
-      const filters = [
-        ["laneFilters", "lane", ["全部", ...Object.keys(payload.stats.by_lane)]],
-        ["axisFilters", "axis", ["全部", ...Object.keys(payload.stats.by_axis)]],
-        ["categoryFilters", "category", ["全部", ...Object.keys(payload.stats.by_category)]],
-        ["sourceFilters", "source", ["全部", ...Object.keys(payload.stats.by_source_family)]]
-      ];
-      filters.forEach(([id, key, options]) => {
-        const root = $(id);
-        root.innerHTML = "";
-        options.forEach(option => root.appendChild(chip(option, state[key] === option, () => {
-          state[key] = option;
-          renderFilters();
-          renderMain();
-        })));
-      });
-    }
-
-    function match(item) {
+    function matches(item) {
       if (state.lane !== "全部" && item.action_lane !== state.lane) return false;
-      if (state.axis !== "全部" && !(item.axes || []).includes(state.axis)) return false;
       if (state.category !== "全部" && item.category !== state.category) return false;
       if (state.source !== "全部" && item.source_family !== state.source) return false;
-      if (state.q) {
-        const text = [
-          item.title, item.category, item.summary, sourceText(item),
-          item.action_lane, item.source_family, ...(item.axes || []), ...(item.tags || [])
-        ].join(" ").toLowerCase();
-        if (!text.includes(state.q.toLowerCase())) return false;
-      }
+      if (state.q && !textFor(item).includes(state.q.toLowerCase())) return false;
       return true;
     }
 
-    function priceText(value) {
-      if (value === "likely_over_35") return ">35";
-      if (value === "risk_under_35") return "低价风险";
-      return "价格未知";
+    function chip(label, active, onClick) {
+      const el = document.createElement("button");
+      el.type = "button";
+      el.className = `chip${active ? " active" : ""}`;
+      el.textContent = label;
+      el.addEventListener("click", onClick);
+      return el;
     }
 
-    function renderCards() {
-      const items = payload.items.filter(match);
-      $("emptyState").hidden = items.length > 0;
-      $("cardGrid").innerHTML = items.map(item => `
-        <article class="card">
-          ${item.image ? `<img class="thumb" src="${item.image}" alt="" loading="lazy">` : `<div class="thumb group-thumb">${item.category}<br>${sourceText(item)}<br>待补图</div>`}
-          <div class="body">
-            <div class="meta">
-              <span class="pill">${item.action_lane}</span>
-              <span class="pill sage">${item.category}</span>
-              <span class="pill sky">${priceText(item.price_gate)}</span>
-              <span class="pill gray">${item.image_state}</span>
-            </div>
-            <h2 class="title"><a href="${item.url}" target="_blank" rel="noopener">${item.title}</a></h2>
-            <p class="summary">${item.summary || item.review_reason || ""}</p>
-            <div class="scoreline">
-              <div class="score">${(item.score / 10).toFixed(1)}</div>
-              <div class="source">${item.source_name}<br>${item.source_family}</div>
-            </div>
-            <div class="tags">
-              ${item.axes.map(axis => `<span class="pill gray">${axis}</span>`).join("")}
-              ${(item.tags || []).slice(0, 3).map(tag => `<span class="pill gray">${tag}</span>`).join("")}
-            </div>
+    function renderMetrics() {
+      const daily = groupsDaily()[0];
+      const weekly = activeWeekly();
+      const metrics = [
+        [daily ? daily.actual_count : 0, "今日新增"],
+        [weekly ? weekly.actual_count : 0, "本周推荐"],
+        [payload.stats.total_items || 0, "完整灵感池"],
+        [payload.stats.by_image_state && payload.stats.by_image_state["已对齐"] || 0, "已带图内容"]
+      ];
+      $("metrics").innerHTML = metrics.map(([value, label]) => `<div class="metric"><strong>${value}</strong><span>${label}</span></div>`).join("");
+      $("generatedAt").textContent = `最近生成 ${String(payload.generated_at || "").replace("T", " ")}`;
+    }
+
+    function currentItems() {
+      if (state.tab === "daily") {
+        const group = activeDaily();
+        return group ? group.items : [];
+      }
+      if (state.tab === "weekly") {
+        const group = activeWeekly();
+        return group ? group.recommendations : [];
+      }
+      return payload.items || [];
+    }
+
+    function currentTitle() {
+      if (state.tab === "daily") {
+        const group = activeDaily();
+        return group ? `${group.date} 今日新增` : "今日新增";
+      }
+      if (state.tab === "weekly") {
+        const group = activeWeekly();
+        return group ? `${group.week} 本周推荐` : "本周推荐";
+      }
+      return "全部灵感池";
+    }
+
+    function currentNote() {
+      if (state.tab === "daily") {
+        const group = activeDaily();
+        if (!group) return "每天自动收集后，这里会按日期显示当天前 30 条去重情报。";
+        const source = Object.entries(group.stats.by_source_family || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
+        return `${group.actual_count} 条 · 每日分组 · 已去重${source ? " · " + source : ""}`;
+      }
+      if (state.tab === "weekly") {
+        const group = activeWeekly();
+        if (!group) return "每周自动生成 100 条推荐，并按买样、改造、方向参考分流。";
+        const lane = Object.entries(group.stats.by_lane || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
+        return `${group.date_label || ""} · ${group.actual_count} 条 · 已去重${lane ? " · " + lane : ""}`;
+      }
+      return "完整池用于搜索、追溯和检查历史线索，不作为每日默认入口。";
+    }
+
+    function renderGroupSelector() {
+      const root = $("groupSelector");
+      root.innerHTML = "";
+      if (state.tab === "daily") {
+        groupsDaily().slice(0, 14).forEach(group => {
+          const id = group.group_id || group.date;
+          root.appendChild(chip(`${group.date} · ${group.actual_count}`, id === (activeDaily() && (activeDaily().group_id || activeDaily().date)), () => {
+            state.dailyGroup = id;
+            render();
+          }));
+        });
+      } else if (state.tab === "weekly") {
+        groupsWeekly().slice(0, 12).forEach(group => {
+          const id = group.group_id || group.week;
+          root.appendChild(chip(`${group.week} · ${group.actual_count}`, id === (activeWeekly() && (activeWeekly().group_id || activeWeekly().week)), () => {
+            state.weeklyGroup = id;
+            render();
+          }));
+        });
+      }
+    }
+
+    function renderFilters(items) {
+      const root = $("filters");
+      const categories = [...new Set(items.map(item => item.category).filter(Boolean))].slice(0, 18);
+      const sources = [...new Set(items.map(item => item.source_family).filter(Boolean))];
+      root.innerHTML = "";
+      root.appendChild(chip("全部品类", state.category === "全部", () => { state.category = "全部"; render(); }));
+      categories.slice(0, 8).forEach(category => root.appendChild(chip(category, state.category === category, () => { state.category = category; render(); })));
+      root.appendChild(chip("全部来源", state.source === "全部", () => { state.source = "全部"; render(); }));
+      sources.forEach(source => root.appendChild(chip(source, state.source === source, () => { state.source = source; render(); })));
+    }
+
+    function renderLaneSwitch() {
+      const root = $("laneSwitch");
+      root.innerHTML = "";
+      if (state.tab !== "weekly") return;
+      ["全部", "可直接买样", "适合改造", "方向参考"].forEach(lane => {
+        root.appendChild(chip(lane, state.lane === lane, () => { state.lane = lane; render(); }));
+      });
+    }
+
+    function card(item) {
+      const image = item.image
+        ? `<img class="thumb" src="${item.image}" alt="" loading="lazy">`
+        : `<div class="thumb">${item.category || "灵感"}<br>${sourceText(item)}<br>待补图</div>`;
+      return `<article class="card">
+        ${image}
+        <div class="body">
+          <div class="meta">
+            <span class="pill">${item.action_lane}</span>
+            <span class="pill green">${item.category || "未分类"}</span>
+            <span class="pill blue">${scoreText(item)}分</span>
           </div>
-        </article>
-      `).join("");
+          <h3><a href="${item.url || "#"}" target="_blank" rel="noopener">${item.title}</a></h3>
+          <p class="summary">${item.summary || item.next_action || item.review_reason || ""}</p>
+          <div class="tags">
+            ${(item.axes || []).slice(0, 2).map(axis => `<span class="pill gray">${axis}</span>`).join("")}
+            <span class="pill gray">${sourceText(item)}</span>
+          </div>
+        </div>
+      </article>`;
     }
 
-    function renderMain() {
-      renderQueue();
-      renderWeeklyGroup();
-      renderDailyGroup();
-      renderCards();
+    function renderGrid() {
+      const base = currentItems();
+      const items = base.filter(matches);
+      $("emptyState").hidden = items.length > 0;
+      $("grid").innerHTML = items.map(card).join("");
+      renderFilters(base);
     }
 
+    function render() {
+      renderMetrics();
+      renderGroupSelector();
+      renderLaneSwitch();
+      $("viewTitle").textContent = currentTitle();
+      $("viewNote").textContent = currentNote();
+      renderGrid();
+      document.querySelectorAll(".tab").forEach(tab => tab.classList.toggle("active", tab.dataset.tab === state.tab));
+    }
+
+    document.querySelectorAll(".tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        state.tab = tab.dataset.tab;
+        state.lane = "全部";
+        state.category = "全部";
+        state.source = "全部";
+        render();
+      });
+    });
     $("search").addEventListener("input", event => {
       state.q = event.target.value.trim();
-      renderCards();
+      renderGrid();
     });
 
-    renderHero();
-    renderLaneCards();
-    renderTrendList();
-    renderFilters();
-    renderMain();
+    render();
   </script>
 </body>
 </html>
