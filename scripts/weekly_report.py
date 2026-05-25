@@ -4,6 +4,7 @@
 import argparse
 from collections import Counter, defaultdict
 import datetime as dt
+import re
 
 from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
 
@@ -16,6 +17,33 @@ def week_id(day=None):
     day = day or dt.date.today()
     iso = day.isocalendar()
     return f"{iso.year}-W{iso.week:02d}"
+
+
+def week_range(day=None):
+    day = day or dt.date.today()
+    start = day - dt.timedelta(days=day.weekday())
+    end = start + dt.timedelta(days=6)
+    return {
+        "start": start.isoformat(),
+        "end": end.isoformat(),
+        "label": f"{start.isoformat()} 至 {end.isoformat()}",
+    }
+
+
+def normalize_key(value):
+    value = (value or "").lower()
+    value = re.sub(r"https?://", "", value)
+    value = re.sub(r"www\\.", "", value)
+    value = re.sub(r"[^a-z0-9\\u4e00-\\u9fff]+", "", value)
+    return value[:120]
+
+
+def dedupe_keys(item):
+    return {
+        item.get("id") or "",
+        normalize_key(item.get("url")),
+        normalize_key(item.get("title")),
+    } - {""}
 
 
 def product_score(item):
@@ -33,6 +61,7 @@ def normalize_item(item):
     score = int(item.get("score") or item.get("selection_score") or 0)
     return {
         "id": item.get("id"),
+        "product_key": item.get("product_key"),
         "title": item.get("title", ""),
         "category": item.get("category", "未分类"),
         "action_lane": item.get("action_lane", "方向参考"),
@@ -70,21 +99,21 @@ def pick_balanced(items, limit=100):
         by_lane[item.get("action_lane", "方向参考")].append(item)
 
     picked = []
-    seen_ids = set()
+    seen_keys = set()
     category_counts = Counter()
 
     def add_from_lane(lane, quota):
         for item in by_lane.get(lane, []):
             if len([x for x in picked if x.get("action_lane") == lane]) >= quota:
                 break
-            item_id = item.get("id") or item.get("title")
-            if item_id in seen_ids:
+            keys = dedupe_keys(item)
+            if keys & seen_keys:
                 continue
             category = item.get("category", "未分类")
             if category_counts[category] >= 12 and len(picked) < limit * 0.8:
                 continue
             picked.append(item)
-            seen_ids.add(item_id)
+            seen_keys.update(keys)
             category_counts[category] += 1
 
     for lane in LANE_ORDER:
@@ -92,11 +121,11 @@ def pick_balanced(items, limit=100):
 
     if len(picked) < limit:
         for item in sorted(items, key=product_score, reverse=True):
-            item_id = item.get("id") or item.get("title")
-            if item_id in seen_ids:
+            keys = dedupe_keys(item)
+            if keys & seen_keys:
                 continue
             picked.append(item)
-            seen_ids.add(item_id)
+            seen_keys.update(keys)
             if len(picked) >= limit:
                 break
 
@@ -110,9 +139,14 @@ def build_report(payload, limit=100):
     by_category = Counter(item["category"] for item in picks)
     by_axis = Counter(axis for item in picks for axis in item["axes"])
 
+    dates = week_range()
     return {
         "generated_at": now_iso(),
         "week": week_id(),
+        "group_id": week_id(),
+        "date_start": dates["start"],
+        "date_end": dates["end"],
+        "date_label": dates["label"],
         "title": f"{week_id()} 选品机会周报",
         "target_count": limit,
         "actual_count": len(picks),
@@ -121,6 +155,10 @@ def build_report(payload, limit=100):
             "by_lane": dict(by_lane.most_common()),
             "by_category": dict(by_category.most_common(20)),
             "by_axis": dict(by_axis.most_common()),
+        },
+        "dedupe": {
+            "method": "product id + canonical url + normalized title",
+            "unique_recommendations": len({item.get("id") or item.get("url") or item.get("title") for item in picks}),
         },
         "recommendations": picks,
     }

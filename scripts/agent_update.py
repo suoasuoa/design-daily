@@ -34,6 +34,7 @@ def main():
         run([py, "scripts/collect_search.py", "--limit-jobs", str(args.search_jobs), "--per-job", str(args.search_results)])
     run([py, "scripts/dedupe.py"])
     run([py, "scripts/review_categories.py"])
+    run([py, "scripts/enrich_images.py", "--limit", "80"])
     score_cmd = [py, "scripts/score.py", "--limit", str(args.score_limit)]
     if args.force_score:
         score_cmd.append("--force")

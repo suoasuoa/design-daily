@@ -1,6 +1,10 @@
 {
-  "generated_at": "2026-05-25T02:38:10",
+  "generated_at": "2026-05-25T11:17:40",
   "week": "2026-W22",
+  "group_id": "2026-W22",
+  "date_start": "2026-05-25",
+  "date_end": "2026-05-31",
+  "date_label": "2026-05-25 至 2026-05-31",
   "title": "2026-W22 选品机会周报",
   "target_count": 100,
   "actual_count": 100,
@@ -37,9 +41,14 @@
       "情绪启发": 15
     }
   },
+  "dedupe": {
+    "method": "product id + canonical url + normalized title",
+    "unique_recommendations": 100
+  },
   "recommendations": [
     {
       "id": "db9daf8c19e1",
+      "product_key": null,
       "title": "半島酒店 中秋奶黄月饼",
       "category": "中秋礼盒",
       "action_lane": "可直接买样",
@@ -62,6 +71,7 @@
     },
     {
       "id": "6969e57e06c6",
+      "product_key": null,
       "title": "中秋礼盒包装项目",
       "category": "中秋礼盒",
       "action_lane": "可直接买样",
@@ -73,7 +83,7 @@
       "source": "Behance",
       "source_family": "社交灵感",
       "url": "https://www.behance.net/search/projects?search=mooncake+packaging",
-      "image": "",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/e1628a247055039.Y3JvcCw4MDgsNjMyLDAsMA.png",
       "summary": "Behance · 新式中秋月饼礼盒包装设计",
       "risk": "明确属于中秋礼盒品类",
       "next_action": "买样看材质、尺寸、成本和差评点",
@@ -84,6 +94,7 @@
     },
     {
       "id": "c33ebf6c6dd7",
+      "product_key": null,
       "title": "香薰蜡烛礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
@@ -106,6 +117,7 @@
     },
     {
       "id": "340fecac43c0",
+      "product_key": null,
       "title": "盲盒收纳展示盒",
       "category": "创意桌搭",
       "action_lane": "可直接买样",
@@ -130,6 +142,7 @@
     },
     {
       "id": "5bbce620bca9",
+      "product_key": null,
       "title": "大益 端午限定茶礼",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -152,6 +165,7 @@
     },
     {
       "id": "ef738cff39b6",
+      "product_key": null,
       "title": "杏花楼 粽意礼盒",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -174,6 +188,7 @@
     },
     {
       "id": "1205fcee37e7",
+      "product_key": null,
       "title": "元祖 中秋礼盒",
       "category": "中秋礼盒",
       "action_lane": "可直接买样",
@@ -196,6 +211,7 @@
     },
     {
       "id": "f43a9f930efa",
+      "product_key": null,
       "title": "Burton AK 冲锋衣",
       "category": "冲锋衣",
       "action_lane": "可直接买样",
@@ -218,6 +234,7 @@
     },
     {
       "id": "34b304cf62f3",
+      "product_key": null,
       "title": "Sunspel 英国Polo衫",
       "category": "Polo衫",
       "action_lane": "可直接买样",
@@ -240,6 +257,7 @@
     },
     {
       "id": "b450434e0cd5",
+      "product_key": null,
       "title": "JURA 全自动咖啡机",
       "category": "创意厨具",
       "action_lane": "可直接买样",
@@ -262,6 +280,7 @@
     },
     {
       "id": "13abc06b76ca",
+      "product_key": null,
       "title": "星巴克 端午礼盒",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -284,6 +303,7 @@
     },
     {
       "id": "c660f09955a4",
+      "product_key": null,
       "title": "Harney & Sons 端午茶",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -306,6 +326,7 @@
     },
     {
       "id": "d281c50f62a4",
+      "product_key": null,
       "title": "Diptyque 限定礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
@@ -328,6 +349,7 @@
     },
     {
       "id": "f07c0ed123fe",
+      "product_key": null,
       "title": "奈雪の茶 中秋联名",
       "category": "中秋礼盒",
       "action_lane": "可直接买样",
@@ -350,6 +372,7 @@
     },
     {
       "id": "b5821b071dea",
+      "product_key": null,
       "title": "气味图书馆 礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
@@ -372,6 +395,7 @@
     },
     {
       "id": "b2399acd3049",
+      "product_key": null,
       "title": "杨聘号 端午茶礼盒",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -394,6 +418,7 @@
     },
     {
       "id": "5b2cbb771d58",
+      "product_key": null,
       "title": "陈升号 端午茶礼",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -416,6 +441,7 @@
     },
     {
       "id": "dc69418b56a0",
+      "product_key": null,
       "title": "Theory 修身Polo衫",
       "category": "Polo衫",
       "action_lane": "可直接买样",
@@ -438,6 +464,7 @@
     },
     {
       "id": "ea34c7643707",
+      "product_key": null,
       "title": "永璞 咖啡联名礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
@@ -460,6 +487,7 @@
     },
     {
       "id": "7613db9d0ea4",
+      "product_key": null,
       "title": "Jo Malone 圣诞礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
@@ -482,6 +510,7 @@
     },
     {
       "id": "db74f8c2f77c",
+      "product_key": null,
       "title": "Ronnefeldt 端午茶礼",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -504,6 +533,7 @@
     },
     {
       "id": "e6097dc90dd2",
+      "product_key": null,
       "title": "广州酒家 端午礼盒",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -526,6 +556,7 @@
     },
     {
       "id": "83efc161c8f5",
+      "product_key": null,
       "title": "元祖 雪月饼礼盒",
       "category": "中秋礼盒",
       "action_lane": "可直接买样",
@@ -548,6 +579,7 @@
     },
     {
       "id": "83c43c5670ee",
+      "product_key": null,
       "title": "观夏 蜡烛礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
@@ -570,6 +602,7 @@
     },
     {
       "id": "1df693a9c8ad",
+      "product_key": null,
       "title": "TWG Tea 中秋礼盒",
       "category": "中秋礼盒",
       "action_lane": "可直接买样",
@@ -592,6 +625,7 @@
     },
     {
       "id": "280a792c0c52",
+      "product_key": null,
       "title": "BYREDO 香氛礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
@@ -614,6 +648,7 @@
     },
     {
       "id": "ec44cb5f1768",
+      "product_key": null,
       "title": "华源茶业 端午定制礼",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -636,6 +671,7 @@
     },
     {
       "id": "1ca8dea5fe87",
+      "product_key": null,
       "title": "安佳 端午礼盒",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -658,6 +694,7 @@
     },
     {
       "id": "10abdc27bf76",
+      "product_key": null,
       "title": "Massimo Dutti Polo衫",
       "category": "Polo衫",
       "action_lane": "可直接买样",
@@ -680,6 +717,7 @@
     },
     {
       "id": "5615a119a037",
+      "product_key": null,
       "title": "LINDOR 端午礼盒",
       "category": "端午礼盒",
       "action_lane": "可直接买样",
@@ -702,6 +740,7 @@
     },
     {
       "id": "ec8d91a42e5e",
+      "product_key": null,
       "title": "Refik Anadol AI装置",
       "category": "装置艺术",
       "action_lane": "适合改造",
@@ -713,7 +752,7 @@
       "source": "Behance",
       "source_family": "社交灵感",
       "url": "https://refikanadol.com",
-      "image": "",
+      "image": "https://refikanadol.com/wp-content/themes/refikanadol/img/ra-og.png",
       "summary": "Refik Anadol AI数据雕塑装置艺术",
       "risk": "产品明确为装置艺术",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -724,6 +763,7 @@
     },
     {
       "id": "2ac162994ffd",
+      "product_key": null,
       "title": "草間彌生 无限镜屋",
       "category": "装置艺术",
       "action_lane": "适合改造",
@@ -735,7 +775,7 @@
       "source": "Instagram",
       "source_family": "社交灵感",
       "url": "https://www.yayoi-kusama.jp",
-      "image": "",
+      "image": "https://yayoi-kusama.jp/imgs/ogp.jpg",
       "summary": "草间弥生无限镜屋装置系列",
       "risk": "明确为装置艺术镜屋",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -746,6 +786,7 @@
     },
     {
       "id": "1af43f7fb659",
+      "product_key": null,
       "title": "Microcomputer rice cooker EP2S01 / EP2S02",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -768,6 +809,7 @@
     },
     {
       "id": "0d2a074e1503",
+      "product_key": null,
       "title": "TOSHIBA JAPANDI RICECOOKER",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -790,6 +832,7 @@
     },
     {
       "id": "b996280cac79",
+      "product_key": null,
       "title": "NAMACRICH",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -812,6 +855,7 @@
     },
     {
       "id": "b0aa3df12c2f",
+      "product_key": null,
       "title": "Panasonic Bread Maker SD-CB1",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -834,6 +878,7 @@
     },
     {
       "id": "fc898366959f",
+      "product_key": null,
       "title": "Built-In Fully Automatic Coffee Machine",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -856,6 +901,7 @@
     },
     {
       "id": "977e95fc028e",
+      "product_key": null,
       "title": "DINING ROBATA",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -878,6 +924,7 @@
     },
     {
       "id": "0d7f9bc5c2e4",
+      "product_key": null,
       "title": "SAKE BOTTLE OPENER",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -900,6 +947,7 @@
     },
     {
       "id": "47db44f71337",
+      "product_key": null,
       "title": "Peak Design Tech Pouch",
       "category": "收纳包",
       "action_lane": "适合改造",
@@ -912,7 +960,7 @@
       "source": "Instagram",
       "source_family": "社交灵感",
       "url": "https://www.peakdesign.com/products/tech-pouch",
-      "image": "",
+      "image": "https://cdn.shopify.com/s/files/1/2986/1172/files/smalltechpouch-black-159A0505_10187358-9116-45c9-bf04-93a326319830.jpg?v=1762275795",
       "summary": "美国专业摄影收纳包",
       "risk": "明确为收纳包产品",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
@@ -923,6 +971,7 @@
     },
     {
       "id": "cc1c1e3af006",
+      "product_key": null,
       "title": "Stanley 保温水壶",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -934,7 +983,7 @@
       "source": "Instagram",
       "source_family": "社交灵感",
       "url": "https://www.stanley1913.com",
-      "image": "",
+      "image": "https://www.stanley1913.com/cdn/shop/files/Stanley_Horizontal_x320_b3ec2ef4-fa76-454a-b900-c4055137902d.webp?height=628&pad_color=fff&v=1706751331&width=1200",
       "summary": "Stanley经典经典锤纹保温壶",
       "risk": "保温壶明确属于水杯",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -945,6 +994,7 @@
     },
     {
       "id": "8408747ce650",
+      "product_key": null,
       "title": "Le Creuset 珐琅锅",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -967,6 +1017,7 @@
     },
     {
       "id": "5e380a9eac72",
+      "product_key": null,
       "title": "Staub 圆形珐琅锅",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -978,7 +1029,7 @@
       "source": "Red Dot",
       "source_family": "奖项案例",
       "url": "https://www.staub.com",
-      "image": "",
+      "image": "http://www.staub.com/assets/realnames-d16faf4acbadf290c1f6803fea1f393df2d5b7228d3089780d4b02bb3ebb4b30.png",
       "summary": "法国Staub经典圆形珐琅铸铁锅",
       "risk": "圆形珐琅锅，属于厨具",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
@@ -989,6 +1040,7 @@
     },
     {
       "id": "aae491f9a69d",
+      "product_key": null,
       "title": "Logitech MX Master 3",
       "category": "创意桌搭",
       "action_lane": "适合改造",
@@ -1000,7 +1052,7 @@
       "source": "Red Dot",
       "source_family": "奖项案例",
       "url": "https://www.logitech.com/en-us/products/mice/mx-master-3s.html",
-      "image": "",
+      "image": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/homepage/delorean-hp/logitech-global-og-image.png",
       "summary": "Logitech MX Master 3S高端鼠标",
       "risk": "鼠标属于创意桌搭",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
@@ -1011,6 +1063,7 @@
     },
     {
       "id": "d2f58615f28c",
+      "product_key": null,
       "title": "Presso SmartShot",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -1033,6 +1086,7 @@
     },
     {
       "id": "07e48ef5dbf5",
+      "product_key": null,
       "title": "M01",
       "category": "创意厨具",
       "action_lane": "适合改造",
@@ -1055,6 +1109,7 @@
     },
     {
       "id": "f5732cc2c595",
+      "product_key": null,
       "title": "Double-Wall Carafe",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1077,6 +1132,7 @@
     },
     {
       "id": "7719ce04f485",
+      "product_key": null,
       "title": "ZOJIRUSHI Stainless Tumbler SX-LA72H.89H",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1099,6 +1155,7 @@
     },
     {
       "id": "c71201235a20",
+      "product_key": null,
       "title": "ZOJIRUSHI Stainless Mug SM-RS50.65",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1121,6 +1178,7 @@
     },
     {
       "id": "0d1953ec1afe",
+      "product_key": null,
       "title": "ZOJIRUSHI Stainless Mug SU-AA36.48",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1144,6 +1202,7 @@
     },
     {
       "id": "0f05cfd905a5",
+      "product_key": null,
       "title": "USURAI",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1167,6 +1226,7 @@
     },
     {
       "id": "dce423856800",
+      "product_key": null,
       "title": "360°Tumbler・Cup",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1189,6 +1249,7 @@
     },
     {
       "id": "928ed5983e47",
+      "product_key": null,
       "title": "A sturdy sugarcane cup that you can reuse many times and still throw away with burnable waste.",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1211,6 +1272,7 @@
     },
     {
       "id": "bfcd86d6c3df",
+      "product_key": null,
       "title": "1616/arita japan MANZ \"Contour\" collection",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1233,6 +1295,7 @@
     },
     {
       "id": "216e8812c317",
+      "product_key": null,
       "title": "ZOJIRUSHI Stainless Mug SU-BA36.48",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1255,6 +1318,7 @@
     },
     {
       "id": "d3ce3952d128",
+      "product_key": null,
       "title": "Handit Simple Thermo Bottle 350ml/500ml",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1278,6 +1342,7 @@
     },
     {
       "id": "7811b3674d7f",
+      "product_key": null,
       "title": "BambooScroll+",
       "category": "创意礼盒",
       "action_lane": "适合改造",
@@ -1301,6 +1366,7 @@
     },
     {
       "id": "db0b9753cf96",
+      "product_key": null,
       "title": "Honeycomb Lifting LED Light Box",
       "category": "氛围灯",
       "action_lane": "适合改造",
@@ -1324,6 +1390,7 @@
     },
     {
       "id": "4ce7186a95f7",
+      "product_key": null,
       "title": "Nature bamboo fiber cup",
       "category": "水杯",
       "action_lane": "适合改造",
@@ -1346,6 +1413,7 @@
     },
     {
       "id": "909ad22a30e8",
+      "product_key": null,
       "title": "LAN GUI",
       "category": "创意礼盒",
       "action_lane": "适合改造",
@@ -1368,6 +1436,7 @@
     },
     {
       "id": "e2bb52c04481",
+      "product_key": null,
       "title": "Desktop wizard",
       "category": "创意桌搭",
       "action_lane": "适合改造",
@@ -1390,6 +1459,7 @@
     },
     {
       "id": "73f284ddd6cd",
+      "product_key": null,
       "title": "Flo Monitor Arm",
       "category": "创意桌搭",
       "action_lane": "适合改造",
@@ -1412,6 +1482,7 @@
     },
     {
       "id": "9a916b969a39",
+      "product_key": null,
       "title": "RFID防护卡包",
       "category": "卡包",
       "action_lane": "适合改造",
@@ -1434,6 +1505,7 @@
     },
     {
       "id": "e5301641e95f",
+      "product_key": null,
       "title": "超薄充电宝",
       "category": "充电宝",
       "action_lane": "适合改造",
@@ -1445,7 +1517,7 @@
       "source": "Pinterest",
       "source_family": "社交灵感",
       "url": "https://www.anker.com/collections/chargers",
-      "image": "",
+      "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/collections/screenshot-20250225-162633_2c0a754b-03a0-4585-97e8-6da8c4049f43.png?v=1740472040",
       "summary": "Pinterest · Anker超薄磁吸充电宝",
       "risk": "明确属于充电宝品类",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -1456,6 +1528,7 @@
     },
     {
       "id": "8d9bdd3c1fba",
+      "product_key": null,
       "title": "极简Logo Tee",
       "category": "T恤",
       "action_lane": "适合改造",
@@ -1478,6 +1551,7 @@
     },
     {
       "id": "8f536fc8b12d",
+      "product_key": null,
       "title": "极简纸灯",
       "category": "氛围灯",
       "action_lane": "适合改造",
@@ -1500,6 +1574,7 @@
     },
     {
       "id": "8403116229bf",
+      "product_key": null,
       "title": "实木显示器架",
       "category": "创意桌搭",
       "action_lane": "适合改造",
@@ -1522,6 +1597,7 @@
     },
     {
       "id": "21ad0c2334b0",
+      "product_key": null,
       "title": "翻页日历",
       "category": "日历",
       "action_lane": "适合改造",
@@ -1544,6 +1620,7 @@
     },
     {
       "id": "3713796de76a",
+      "product_key": null,
       "title": "桌面收纳系统设计",
       "category": "创意桌搭",
       "action_lane": "适合改造",
@@ -1567,6 +1644,7 @@
     },
     {
       "id": "44fa670e6228",
+      "product_key": null,
       "title": "复古充电宝",
       "category": "充电宝",
       "action_lane": "适合改造",
@@ -1589,6 +1667,7 @@
     },
     {
       "id": "45bca549c65e",
+      "product_key": null,
       "title": "移动电源设计",
       "category": "充电宝",
       "action_lane": "适合改造",
@@ -1611,6 +1690,7 @@
     },
     {
       "id": "0140a3abd3e8",
+      "product_key": null,
       "title": "日历设计项目",
       "category": "日历",
       "action_lane": "适合改造",
@@ -1633,6 +1713,7 @@
     },
     {
       "id": "731cd326c77a",
+      "product_key": null,
       "title": "Tom Bihn 旅行收纳包",
       "category": "收纳包",
       "action_lane": "适合改造",
@@ -1656,6 +1737,7 @@
     },
     {
       "id": "82447ad3a50f",
+      "product_key": null,
       "title": "The North Face 冲锋衣",
       "category": "冲锋衣",
       "action_lane": "适合改造",
@@ -1678,6 +1760,7 @@
     },
     {
       "id": "d656c4da9da8",
+      "product_key": null,
       "title": "Montbell 雨舞者冲锋衣",
       "category": "冲锋衣",
       "action_lane": "适合改造",
@@ -1700,6 +1783,7 @@
     },
     {
       "id": "a47078aba9f0",
+      "product_key": null,
       "title": "Talking Tree",
       "category": "装置艺术",
       "action_lane": "方向参考",
@@ -1722,6 +1806,7 @@
     },
     {
       "id": "51974726be26",
+      "product_key": null,
       "title": "Tidy-Up Box／Organize Pouch",
       "category": "收纳包",
       "action_lane": "方向参考",
@@ -1746,6 +1831,7 @@
     },
     {
       "id": "14ddb1291eee",
+      "product_key": null,
       "title": "Arc'teryx 军规冲锋衣",
       "category": "冲锋衣",
       "action_lane": "方向参考",
@@ -1768,6 +1854,7 @@
     },
     {
       "id": "41d8a7a3292e",
+      "product_key": null,
       "title": "New Era MLB 棒球帽",
       "category": "帽子",
       "action_lane": "方向参考",
@@ -1779,7 +1866,7 @@
       "source": "Red Dot",
       "source_family": "奖项案例",
       "url": "https://www.neweracap.com",
-      "image": "",
+      "image": "http://www.neweracap.com/cdn/shop/files/neweracap_logo.png?v=1739820739",
       "summary": "MLB官方New Era 59FIFTY经典棒球帽",
       "risk": "明确属于帽子品类",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
@@ -1790,6 +1877,7 @@
     },
     {
       "id": "9e8cf4683f06",
+      "product_key": null,
       "title": "Nanoleaf 智能灯板",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -1803,7 +1891,7 @@
       "source": "Red Dot",
       "source_family": "奖项案例",
       "url": "https://nanoleaf.me",
-      "image": "",
+      "image": "https://us-cdn.nanoleaf.me/assets/img/favicons/nanoleaf-small-icon.png",
       "summary": "加拿大Nanoleaf模块化智能LED灯板",
       "risk": "智能灯板属于氛围灯",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
@@ -1814,6 +1902,7 @@
     },
     {
       "id": "6cdd2e2efd4f",
+      "product_key": null,
       "title": "Anish Kapoor 云门",
       "category": "装置艺术",
       "action_lane": "方向参考",
@@ -1836,6 +1925,7 @@
     },
     {
       "id": "7b989f632e94",
+      "product_key": null,
       "title": "Thermal Goose Down-Filled Long-Sleeve T-Shirt",
       "category": "T恤",
       "action_lane": "方向参考",
@@ -1858,6 +1948,7 @@
     },
     {
       "id": "f7f4aedf95f4",
+      "product_key": null,
       "title": "Ekster Cardholder",
       "category": "卡包",
       "action_lane": "方向参考",
@@ -1880,6 +1971,7 @@
     },
     {
       "id": "1c608cbbb261",
+      "product_key": null,
       "title": "Cardprotector+",
       "category": "卡包",
       "action_lane": "方向参考",
@@ -1902,6 +1994,7 @@
     },
     {
       "id": "52652ad43481",
+      "product_key": null,
       "title": "Unbounded Dual-core Outdoor Two-in-One Jacket",
       "category": "冲锋衣",
       "action_lane": "方向参考",
@@ -1924,6 +2017,7 @@
     },
     {
       "id": "5281d0222b98",
+      "product_key": null,
       "title": "Dragon Tooth Wind Falcon Ultralight Sun Jacket",
       "category": "冲锋衣",
       "action_lane": "方向参考",
@@ -1946,6 +2040,7 @@
     },
     {
       "id": "36125db54f11",
+      "product_key": null,
       "title": "BOSIDENG 3-IN-1 \"DIBIAN\" DOWN JACKET",
       "category": "冲锋衣",
       "action_lane": "方向参考",
@@ -1968,6 +2063,7 @@
     },
     {
       "id": "8c07c72d5663",
+      "product_key": null,
       "title": "Straw",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -1991,6 +2087,7 @@
     },
     {
       "id": "db9635942971",
+      "product_key": null,
       "title": "Philips Hue Play wall washer",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2014,6 +2111,7 @@
     },
     {
       "id": "f0e1baccc182",
+      "product_key": null,
       "title": "Buddy",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2036,6 +2134,7 @@
     },
     {
       "id": "7712f58403b0",
+      "product_key": null,
       "title": "TILE",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2058,6 +2157,7 @@
     },
     {
       "id": "35f5ecc92d04",
+      "product_key": null,
       "title": "ora bolas",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2080,6 +2180,7 @@
     },
     {
       "id": "46e1f4938b6d",
+      "product_key": null,
       "title": "Philips AI BrightMate Table Lamp",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2102,6 +2203,7 @@
     },
     {
       "id": "78c03c07e990",
+      "product_key": null,
       "title": "Astral Mate Light",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2125,6 +2227,7 @@
     },
     {
       "id": "e6f278a56e1d",
+      "product_key": null,
       "title": "Venia Series",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2148,6 +2251,7 @@
     },
     {
       "id": "dbc8df6b8b22",
+      "product_key": null,
       "title": "Scoiattolo",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2170,6 +2274,7 @@
     },
     {
       "id": "e7a65d76e6a6",
+      "product_key": null,
       "title": "Ribeira",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2192,6 +2297,7 @@
     },
     {
       "id": "a3ba600a327d",
+      "product_key": null,
       "title": "LEDVANCE AI Companion Lighting Robot",
       "category": "氛围灯",
       "action_lane": "方向参考",
@@ -2214,6 +2320,7 @@
     },
     {
       "id": "7aafd798b0d5",
+      "product_key": null,
       "title": "Infinity",
       "category": "装置艺术",
       "action_lane": "方向参考",
@@ -2236,6 +2343,7 @@
     },
     {
       "id": "0deed30c9377",
+      "product_key": null,
       "title": "Chinese National Geography MAGZONE",
       "category": "装置艺术",
       "action_lane": "方向参考",

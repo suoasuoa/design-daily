@@ -269,6 +269,88 @@
       font-size: 13px;
       line-height: 1.55;
     }
+    .group-panel {
+      margin-top: 24px;
+      padding: 22px;
+    }
+    .group-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+    .group-head h3 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: -0.02em;
+    }
+    .group-meta {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .group-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+    .group-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 14px;
+    }
+    .group-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .group-thumb {
+      width: 100%;
+      aspect-ratio: 1.18 / 0.8;
+      object-fit: cover;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      background: linear-gradient(135deg, #e6edf3, #f8fafc);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-align: center;
+    }
+    .group-body {
+      padding: 13px;
+      display: grid;
+      gap: 8px;
+      flex: 1;
+    }
+    .group-card h4 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.28;
+    }
+    .group-card h4 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .group-card h4 a:hover { color: var(--accent-deep); }
+    .group-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 58px;
+    }
     .filters {
       margin-top: 24px;
       display: grid;
@@ -380,6 +462,8 @@
     }
     @media (max-width: 1100px) {
       .hero, .grid-section { grid-template-columns: 1fr; }
+      .group-head { grid-template-columns: 1fr; }
+      .group-tabs { justify-content: flex-start; }
     }
     @media (max-width: 760px) {
       .shell { width: min(100vw - 20px, 1520px); padding-top: 16px; }
@@ -435,6 +519,28 @@
       </div>
     </section>
 
+    <section class="panel group-panel">
+      <div class="group-head">
+        <div>
+          <h3 id="weeklyGroupTitle">本周 100 条选品推荐</h3>
+          <p class="group-meta" id="weeklyGroupMeta"></p>
+        </div>
+        <div class="group-tabs" id="weeklyTabs"></div>
+      </div>
+      <div class="group-grid" id="weeklyGrid"></div>
+    </section>
+
+    <section class="panel group-panel">
+      <div class="group-head">
+        <div>
+          <h3 id="dailyGroupTitle">每日情报收集</h3>
+          <p class="group-meta" id="dailyGroupMeta"></p>
+        </div>
+        <div class="group-tabs" id="dailyTabs"></div>
+      </div>
+      <div class="group-grid" id="dailyGrid"></div>
+    </section>
+
     <section class="filters">
       <div class="filter-row">
         <strong>动作路径</strong>
@@ -455,7 +561,7 @@
     </section>
 
     <section class="panel" style="margin-top:24px;">
-      <h3>推荐队列</h3>
+      <h3>完整灵感池</h3>
       <div class="queue-list" id="queueList"></div>
     </section>
 
@@ -471,7 +577,9 @@
       lane: "全部",
       axis: "全部",
       category: "全部",
-      source: "全部"
+      source: "全部",
+      weeklyGroup: "",
+      dailyGroup: ""
     };
     const $ = id => document.getElementById(id);
 
@@ -526,6 +634,31 @@
       imageStates.forEach(([name, count]) => $("imageStateChips").appendChild(chip(`${name} ${count}`, false, null, "gray")));
     }
 
+    function weeklyGroups() {
+      const groups = payload.weekly_groups && payload.weekly_groups.length
+        ? payload.weekly_groups
+        : (payload.weekly_report && payload.weekly_report.recommendations ? [payload.weekly_report] : []);
+      return groups.filter(group => group && group.recommendations && group.recommendations.length);
+    }
+
+    function activeWeeklyGroup() {
+      const groups = weeklyGroups();
+      if (!groups.length) return null;
+      if (!state.weeklyGroup) state.weeklyGroup = groups[0].group_id || groups[0].week;
+      return groups.find(group => (group.group_id || group.week) === state.weeklyGroup) || groups[0];
+    }
+
+    function dailyGroups() {
+      return (payload.daily_groups || []).filter(group => group && group.items && group.items.length);
+    }
+
+    function activeDailyGroup() {
+      const groups = dailyGroups();
+      if (!groups.length) return null;
+      if (!state.dailyGroup) state.dailyGroup = groups[0].group_id || groups[0].date;
+      return groups.find(group => group.group_id === state.dailyGroup || group.date === state.dailyGroup) || groups[0];
+    }
+
     function renderLaneCards() {
       const descriptions = {
         "可直接买样": "更接近已经成立的消费品，适合快速买样验证。",
@@ -575,6 +708,85 @@
       `).join("");
     }
 
+    function sourceText(item) {
+      return item.source_name || item.source || "未知来源";
+    }
+
+    function scoreText(item) {
+      if (item.score_label) return item.score_label;
+      return ((item.score || 0) / 10).toFixed(1);
+    }
+
+    function groupCard(item) {
+      const img = item.image
+        ? `<img class="group-thumb" src="${item.image}" alt="" loading="lazy">`
+        : `<div class="group-thumb">${item.category || "灵感"}<br>${sourceText(item)}<br>待补图</div>`;
+      return `
+        <article class="group-card">
+          ${img}
+          <div class="group-body">
+            <div class="meta">
+              <span class="pill">${item.action_lane}</span>
+              <span class="pill sage">${item.category}</span>
+              <span class="pill sky">${scoreText(item)}分</span>
+            </div>
+            <h4><a href="${item.url || "#"}" target="_blank" rel="noopener">${item.title}</a></h4>
+            <p class="group-copy">${item.summary || item.next_action || item.review_reason || ""}</p>
+            <div class="tags">
+              ${(item.axes || []).slice(0, 2).map(axis => `<span class="pill gray">${axis}</span>`).join("")}
+              <span class="pill gray">${sourceText(item)}</span>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderWeeklyGroup() {
+      const groups = weeklyGroups();
+      const active = activeWeeklyGroup();
+      $("weeklyTabs").innerHTML = "";
+      groups.forEach(group => {
+        const id = group.group_id || group.week;
+        $("weeklyTabs").appendChild(chip(`${group.week} · ${group.actual_count || group.recommendations.length}`, id === (active && (active.group_id || active.week)), () => {
+          state.weeklyGroup = id;
+          renderWeeklyGroup();
+        }));
+      });
+      if (!active) {
+        $("weeklyGroupTitle").textContent = "本周推荐组等待生成";
+        $("weeklyGroupMeta").textContent = "下一次自动化运行后，这里会出现按周打包的 100 条选品推荐。";
+        $("weeklyGrid").innerHTML = "";
+        return;
+      }
+      const stats = active.stats && active.stats.by_lane ? Object.entries(active.stats.by_lane).map(([name, count]) => `${name} ${count}`).join(" / ") : "";
+      $("weeklyGroupTitle").textContent = `${active.week} 选品推荐组`;
+      $("weeklyGroupMeta").textContent = `${active.date_label || "本周"} · ${active.actual_count || active.recommendations.length} 条 · 已去重 · ${stats}`;
+      $("weeklyGrid").innerHTML = active.recommendations.filter(match).slice(0, 100).map(groupCard).join("");
+    }
+
+    function renderDailyGroup() {
+      const groups = dailyGroups();
+      const active = activeDailyGroup();
+      $("dailyTabs").innerHTML = "";
+      groups.slice(0, 14).forEach(group => {
+        const id = group.group_id || group.date;
+        $("dailyTabs").appendChild(chip(`${group.date} · ${group.actual_count}`, id === (active && (active.group_id || active.date)), () => {
+          state.dailyGroup = id;
+          renderDailyGroup();
+        }));
+      });
+      if (!active) {
+        $("dailyGroupTitle").textContent = "每日情报收集等待生成";
+        $("dailyGroupMeta").textContent = "每天自动收集后，这里会按日期展示当天进入池子的前 30 条去重情报。";
+        $("dailyGrid").innerHTML = "";
+        return;
+      }
+      const stats = active.stats && active.stats.by_source_family ? Object.entries(active.stats.by_source_family).map(([name, count]) => `${name} ${count}`).join(" / ") : "";
+      $("dailyGroupTitle").textContent = `${active.date} 每日情报收集`;
+      $("dailyGroupMeta").textContent = `${active.actual_count} 条 · 每日分组 · 已去重 · ${stats}`;
+      $("dailyGrid").innerHTML = active.items.filter(match).slice(0, 30).map(groupCard).join("");
+    }
+
     function renderFilters() {
       const filters = [
         ["laneFilters", "lane", ["全部", ...Object.keys(payload.stats.by_lane)]],
@@ -595,13 +807,13 @@
 
     function match(item) {
       if (state.lane !== "全部" && item.action_lane !== state.lane) return false;
-      if (state.axis !== "全部" && !item.axes.includes(state.axis)) return false;
+      if (state.axis !== "全部" && !(item.axes || []).includes(state.axis)) return false;
       if (state.category !== "全部" && item.category !== state.category) return false;
       if (state.source !== "全部" && item.source_family !== state.source) return false;
       if (state.q) {
         const text = [
-          item.title, item.category, item.summary, item.source_name,
-          item.action_lane, item.source_family, ...item.axes, ...(item.tags || [])
+          item.title, item.category, item.summary, sourceText(item),
+          item.action_lane, item.source_family, ...(item.axes || []), ...(item.tags || [])
         ].join(" ").toLowerCase();
         if (!text.includes(state.q.toLowerCase())) return false;
       }
@@ -619,7 +831,7 @@
       $("emptyState").hidden = items.length > 0;
       $("cardGrid").innerHTML = items.map(item => `
         <article class="card">
-          ${item.image ? `<img class="thumb" src="${item.image}" alt="" loading="lazy">` : `<div class="thumb"></div>`}
+          ${item.image ? `<img class="thumb" src="${item.image}" alt="" loading="lazy">` : `<div class="thumb group-thumb">${item.category}<br>${sourceText(item)}<br>待补图</div>`}
           <div class="body">
             <div class="meta">
               <span class="pill">${item.action_lane}</span>
@@ -644,6 +856,8 @@
 
     function renderMain() {
       renderQueue();
+      renderWeeklyGroup();
+      renderDailyGroup();
       renderCards();
     }
 
