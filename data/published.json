@@ -1,229 +1,86 @@
 {
-  "generated_at": "2026-05-25T10:32:31",
+  "generated_at": "2026-05-25T02:38:11",
   "stats": {
-    "total_items": 562,
+    "total_items": 577,
     "by_category": {
-      "创意厨具": 125,
-      "氛围灯": 69,
+      "创意厨具": 126,
+      "氛围灯": 70,
       "水杯": 54,
-      "装置艺术": 39,
+      "装置艺术": 41,
+      "充电宝": 27,
       "冲锋衣": 25,
-      "充电宝": 25,
+      "日历": 25,
       "创意礼盒": 24,
       "帽子": 23,
       "卡包": 23,
       "T恤": 21,
-      "日历": 20,
       "手机壳": 19,
       "Polo衫": 19,
-      "收纳包": 16,
-      "创意桌搭": 16,
+      "收纳包": 18,
+      "创意桌搭": 17,
       "端午礼盒": 16,
       "卫衣": 15,
-      "中秋礼盒": 13
+      "中秋礼盒": 13,
+      "钥匙扣水壶": 1
     },
     "by_lane": {
-      "适合改造": 422,
-      "方向参考": 96,
-      "可直接买样": 44
+      "适合改造": 427,
+      "方向参考": 105,
+      "可直接买样": 45
     },
     "by_axis": {
-      "功能启发": 242,
-      "视觉启发": 135,
-      "情绪启发": 94,
-      "结构启发": 86,
-      "包装启发": 74
+      "功能启发": 248,
+      "视觉启发": 139,
+      "情绪启发": 95,
+      "结构启发": 93,
+      "包装启发": 78
     },
     "by_source_family": {
       "社交灵感": 299,
       "奖项案例": 225,
-      "媒体案例": 34,
-      "其他来源": 4
+      "媒体案例": 45,
+      "其他来源": 8
     },
     "by_image_state": {
-      "缺图": 350,
+      "缺图": 365,
       "已对齐": 212
     }
   },
   "trends": {
-    "generated_at": "2026-05-25T10:30:27",
-    "source": "local_summary",
-    "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
-    "hot_categories": {
-      "创意厨具": 125,
-      "氛围灯": 69,
-      "水杯": 54,
-      "装置艺术": 39,
-      "充电宝": 25,
-      "冲锋衣": 25,
-      "创意礼盒": 24,
-      "卡包": 23,
-      "帽子": 23,
-      "T恤": 21,
-      "日历": 20,
-      "手机壳": 19
-    },
-    "hot_sources": {
-      "Instagram": 117,
-      "Good Design Award": 113,
-      "小红书": 69,
-      "iF设计奖": 57,
-      "抖音": 53,
-      "Red Dot": 40,
-      "Pinterest": 38,
-      "Behance": 22,
-      "Yanko Design": 18,
-      "A' Design Award": 16,
-      "Dezeen": 12,
-      "Design Milk": 4
-    },
-    "hot_tags": {
-      "社交精选": 174,
-      "获奖": 134,
-      "Good Design Award": 113,
-      "创意厨具": 95,
-      "获奖设计": 72,
-      "氛围灯": 66,
-      "Instagram": 61,
-      "iF获奖": 57,
-      "iF Design Award": 50,
-      "创意桌搭": 47,
-      "装置艺术": 39,
-      "Pinterest": 38,
-      "GOOD DESIGN AWARD": 37,
-      "冲锋衣": 35,
-      "设计文章": 31,
-      "创意礼盒": 30,
-      "帽子": 26,
-      "水杯": 25,
-      "收纳包": 25,
-      "抖音": 24
-    },
-    "recommended": [
-      {
-        "title": "Talking Tree",
-        "category": "装置艺术",
-        "score": 92,
-        "reason": "iF Design Award · As humanity becomes more disconnected from nature, Agency for Nature’s Talking Tree is a groundbreakin"
-      },
-      {
-        "title": "Refik Anadol AI装置",
-        "category": "装置艺术",
-        "score": 90,
-        "reason": "Refik Anadol AI数据雕塑装置艺术"
-      },
-      {
-        "title": "草間彌生 无限镜屋",
-        "category": "装置艺术",
-        "score": 86,
-        "reason": "草间弥生无限镜屋装置系列"
-      },
-      {
-        "title": "Tidy-Up Box／Organize Pouch",
-        "category": "收纳包",
-        "score": 86,
-        "reason": "Good Design Award · Home Accessories · Like-it Co., Ltd."
-      },
-      {
-        "title": "Microcomputer rice cooker EP2S01 / EP2S02",
-        "category": "创意厨具",
-        "score": 86,
-        "reason": "Good Design Award · Home Electronics · NITORI Co.,Ltd"
-      },
-      {
-        "title": "TOSHIBA JAPANDI RICECOOKER",
-        "category": "创意厨具",
-        "score": 86,
-        "reason": "Good Design Award · Home Electronics · Foshan Shunde Midea Electrical Heating Appliances Manufacturing Co., Ltd."
-      },
-      {
-        "title": "NAMACRICH",
-        "category": "创意厨具",
-        "score": 86,
-        "reason": "Good Design Award · Home Electronics · kai corporation."
-      },
-      {
-        "title": "Panasonic Bread Maker SD-CB1",
-        "category": "创意厨具",
-        "score": 86,
-        "reason": "Good Design Award · Home Electronics · Panasonic Corporation"
-      },
-      {
-        "title": "Built-In Fully Automatic Coffee Machine",
-        "category": "创意厨具",
-        "score": 86,
-        "reason": "Good Design Award · Home Electronics · Guangdong Midea Consumer Electric Manufacturing Co.,Ltd."
-      },
-      {
-        "title": "DINING ROBATA",
-        "category": "创意厨具",
-        "score": 86,
-        "reason": "Good Design Award · Home Electronics · THE PEACOCK VACUUM BOTTLE CO., LTD."
-      },
-      {
-        "title": "SAKE BOTTLE OPENER",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of it"
-      },
-      {
-        "title": "半島酒店 中秋奶黄月饼",
-        "category": "中秋礼盒",
-        "score": 84,
-        "reason": "香港半岛酒店中秋经典礼盒"
-      },
-      {
-        "title": "Peak Design Tech Pouch",
-        "category": "收纳包",
-        "score": 84,
-        "reason": "美国专业摄影收纳包"
-      },
-      {
-        "title": "Arc'teryx 军规冲锋衣",
-        "category": "冲锋衣",
-        "score": 84,
-        "reason": "加拿大始祖鸟Alpha SV军规级冲锋衣"
-      },
-      {
-        "title": "New Era MLB 棒球帽",
-        "category": "帽子",
-        "score": 84,
-        "reason": "MLB官方New Era 59FIFTY经典棒球帽"
-      },
-      {
-        "title": "Nanoleaf 智能灯板",
-        "category": "氛围灯",
-        "score": 84,
-        "reason": "加拿大Nanoleaf模块化智能LED灯板"
-      },
-      {
-        "title": "Anish Kapoor 云门",
-        "category": "装置艺术",
-        "score": 84,
-        "reason": "Anish Kapoor芝加哥Cloud Gate镜面雕塑"
-      },
-      {
-        "title": "Stanley 保温水壶",
-        "category": "水杯",
-        "score": 84,
-        "reason": "Stanley经典经典锤纹保温壶"
-      },
-      {
-        "title": "Le Creuset 珐琅锅",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "法国Le Creuset经典珐琅铸铁锅"
-      },
-      {
-        "title": "Staub 圆形珐琅锅",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "法国Staub经典圆形珐琅铸铁锅"
-      }
-    ]
+    "summary": "产品样本以获奖设计为主，涵盖装置艺术、创意厨具、水杯、氛围灯等品类，但多数为概念性或高端产品，实用性和高频需求不足。创意厨具类（如电饭煲、咖啡机、收纳容器）相对更贴近日常使用，且部分产品售价可能超过35元，具备选品潜力。装置艺术和氛围灯类偏向情绪价值，需谨慎评估。",
+    "hot_categories": [
+      "创意厨具",
+      "水杯",
+      "收纳包"
+    ],
+    "hot_signals": [
+      "Good Design Award获奖",
+      "iF Design Award获奖",
+      "多功能设计",
+      "便携性",
+      "环保材料"
+    ],
+    "recommended_directions": [
+      "多功能收纳包/收纳盒（如Tidy-Up Box、Peak Design Tech Pouch）",
+      "便携保温杯/水壶（如Stanley、ZOJIRUSHI系列）",
+      "实用厨房小工具（如多功能磁性刀套、可折叠量勺）"
+    ],
+    "avoid_or_watch": [
+      "装置艺术类（如Talking Tree、Refik Anadol装置）——概念性强，实用价值低",
+      "高价厨电（如全自动咖啡机、面包机）——单价可能过高，打击面窄",
+      "情绪价值主导产品（如氛围灯、艺术装置）——需功能成立后再叠加"
+    ],
+    "next_search_keywords": [
+      "便携收纳包 多功能",
+      "保温杯 大容量 便携",
+      "厨房小工具 实用 获奖",
+      "环保水杯 设计奖"
+    ],
+    "generated_at": "2026-05-25T02:38:10",
+    "source": "deepseek"
   },
   "weekly_report": {
-    "generated_at": "2026-05-25T10:30:27",
+    "generated_at": "2026-05-25T02:38:10",
     "week": "2026-W22",
     "title": "2026-W22 选品机会周报",
     "target_count": 100,
@@ -12786,6 +12643,32 @@
       ]
     },
     {
+      "id": "2411a3b38e0e",
+      "title": "Gantri’s Helia Finally Makes Wireless Lamps Worth Buying",
+      "category": "氛围灯",
+      "summary": "Gantri’s Helia Finally Makes Wireless Lamps Worth BuyingEvery lamp in your home is tethered to a wall. Most of us have made peace with that, tucking cords under rugs, running them behind...",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/22/gantris-helia-finally-makes-wireless-lamps-worth-buying",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-23",
+      "review_reason": "明确是无线灯具，属于氛围灯",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "氛围灯"
+      ]
+    },
+    {
       "id": "1e77c9f13314",
       "title": "The Lamp That Nine Artisans Built by Hand",
       "category": "氛围灯",
@@ -16462,6 +16345,90 @@
       ]
     },
     {
+      "id": "457f979bb17e",
+      "title": "OXO沙拉甩干器",
+      "category": "创意厨具",
+      "summary": "沙拉甩干器实用性强，解决洗菜后沥水痛点，功能明确无短板，3秒可看懂用途。但使用频率中等（非每日必用），受众以健康饮食人群为主，价格可能低于35元，情绪价值一般。",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.oxo.com/kitchen-tools/salad-spinners",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品为沙拉甩干器，属于厨房工具，符合创意厨具定义。",
+      "review_confidence": 1,
+      "tags": [
+        "创意厨具",
+        "厨房神器",
+        "沙拉工具",
+        "Pinterest",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "15cdd4b03482",
+      "title": "桌面线材收纳",
+      "category": "创意桌搭",
+      "summary": "桌面线材收纳解决常见杂乱问题，实用性强；日常使用频率高；适用人群广；磁吸设计功能明确，无明显短板；预估售价可能超过35元；3秒可理解；情绪价值中等，但功能成立。",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://nomadgoods.com/collections/cables",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品为桌面线材收纳管理器，属于桌搭用品，符合创意桌搭定义。",
+      "review_confidence": 1,
+      "tags": [
+        "Pinterest",
+        "创意桌搭",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "dbbf716e9c33",
+      "title": "Crewneck卫衣设计",
+      "category": "卫衣",
+      "summary": "卫衣是基础款，实用性强，高频需求，受众广，但价格未知且功能简单，情绪价值一般。",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.uniqlo.com/us/en/c/crewneck-sweatshirts",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "明确属于卫衣品类",
+      "review_confidence": 0,
+      "tags": [
+        "Pinterest",
+        "卫衣",
+        "社交精选"
+      ]
+    },
+    {
       "id": "9db5f3227844",
       "title": "Contigo 旅行杯",
       "category": "水杯",
@@ -17793,6 +17760,61 @@
       ]
     },
     {
+      "id": "87258cb68e2b",
+      "title": "A “Modular Bento Box” for Your Desk Gear: Meet Orbitkey’s $42 Grid Organizer",
+      "category": "收纳包",
+      "summary": "A “Modular Bento Box” for Your Desk Gear: Meet Orbitkey’s $42 Grid OrganizerOrbitkey’s design story has always revolved around everyday friction, the loose keys in a pocket, th",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/23/a-modular-bento-box-for-your-desk-gear-meet-orbitkeys-42-grid-organizer",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-24",
+      "review_reason": "明确是桌面收纳整理器，属于收纳包",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "收纳包"
+      ]
+    },
+    {
+      "id": "bf1672639ecc",
+      "title": "A 10mm Tech Pouch That Finally Replaces 5 Things in Your Bag",
+      "category": "收纳包",
+      "summary": "A 10mm Tech Pouch That Finally Replaces 5 Things in Your BagEvery time I travel for work or even just settle into a coffee shop for a few hours, I find myself unpacking the same small...",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/22/a-10mm-tech-pouch-that-finally-replaces-5-things-in-your-bag",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-22",
+      "review_reason": "明确是收纳包产品，标题和描述一致",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "收纳包"
+      ]
+    },
+    {
       "id": "1e2dc9be6f3d",
       "title": "Gantri Goes Wireless for the First Time",
       "category": "氛围灯",
@@ -17974,6 +17996,92 @@
       "tags": [
         "Good Design Award",
         "收纳包"
+      ]
+    },
+    {
+      "id": "4358f1382cce",
+      "title": "Fear of God Essentials",
+      "category": "卫衣",
+      "summary": "卫衣是基础款，实用且高频，A' Design Award增加信任感，价格可能超35，但设计风格偏小众，打击面中等。",
+      "score": 71,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://fearofgod.com/collections/essentials",
+      "source_name": "A' Design Award",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品为高级街头基础款卫衣，属于卫衣。",
+      "review_confidence": 1,
+      "tags": [
+        "A' Design Award",
+        "卫衣",
+        "获奖"
+      ]
+    },
+    {
+      "id": "a5f0b5e1d459",
+      "title": "极简桌面日历",
+      "category": "日历",
+      "summary": "极简桌面日历实用性强，高频使用，受众广，功能简单无短板，但价格可能低于35元，情绪价值一般。",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.papierplatz.com",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "明确属于日历品类",
+      "review_confidence": 0,
+      "tags": [
+        "极简",
+        "桌面日历",
+        "Pinterest",
+        "日历",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "b2e8b6bff1f4",
+      "title": "BALMUDA The Pot 手冲壶",
+      "category": "创意厨具",
+      "summary": "产品实用性强，满足手冲咖啡高频需求，但价格较高限制受众广度；功能无明显短板，设计获奖提升情绪价值，3秒可识别为手冲壶。",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "https://www.balmuda.com/jp/pot/img/og/index.jpg",
+      "url": "https://www.balmuda.com/jp/pot",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "手冲壶属于厨房工具",
+      "review_confidence": 1,
+      "tags": [
+        "iF设计奖",
+        "工业设计",
+        "手冲壶",
+        "创意厨具",
+        "iF Design Award",
+        "iF获奖"
       ]
     },
     {
@@ -18447,6 +18555,32 @@
       ]
     },
     {
+      "id": "3d730e940d45",
+      "title": "5 Best Japanese Kitchen Gadgets That Make Cooking Feel Like a Meditation Ritual",
+      "category": "创意厨具",
+      "summary": "5 Best Japanese Kitchen Gadgets That Make Cooking Feel Like a Meditation RitualJapanese kitchen tools operate differently from their Western counterparts. They don’t promise to speed things up o",
+      "score": 70,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/23/5-best-japanese-kitchen-gadgets-that-make-cooking-feel-like-a-meditation-ritual",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-24",
+      "review_reason": "明确是厨房工具，属于创意厨具",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "创意厨具"
+      ]
+    },
+    {
       "id": "626cb5e3a440",
       "title": "Natural Material Studio crafts lighting from leftover seaweed at Sticks n Sushi",
       "category": "氛围灯",
@@ -18604,33 +18738,6 @@
       ]
     },
     {
-      "id": "686e253df22c",
-      "title": "磁吸锅铲套装",
-      "category": "创意厨具",
-      "summary": "Pinterest · 磁吸收纳锅铲套装",
-      "score": 68,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.peugeot-saveurs.com",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "产品为磁吸收纳锅铲套装，属于厨房工具，符合创意厨具定义。",
-      "review_confidence": 1,
-      "tags": [
-        "Pinterest",
-        "创意厨具"
-      ]
-    },
-    {
       "id": "4607d5911cba",
       "title": "三丽鸥 充电宝",
       "category": "充电宝",
@@ -18684,30 +18791,86 @@
       ]
     },
     {
-      "id": "15cdd4b03482",
-      "title": "桌面线材收纳",
-      "category": "创意桌搭",
-      "summary": "Pinterest · 磁吸式桌面线材收纳管理器",
-      "score": 66,
-      "price_gate": "unknown",
+      "id": "ab9f9437ef5d",
+      "title": "巧克力礼盒装",
+      "category": "创意礼盒",
+      "summary": "巧克力礼盒作为礼品，实用性和高频需求中等，但打击面广，功能明确（送礼），价格超过35元，3秒可识别，情绪价值高。",
+      "score": 67,
+      "price_gate": "likely_over_35",
       "image": "",
-      "url": "https://nomadgoods.com/collections/cables",
+      "url": "https://www.laderach.com/en/chocolate-gifts",
       "source_name": "Pinterest",
       "source_family": "社交灵感",
       "source_type": "social_signal",
-      "action_lane": "适合改造",
+      "action_lane": "可直接买样",
       "axes": [
-        "功能启发",
-        "结构启发"
+        "包装启发"
       ],
       "image_state": "缺图",
       "seen_count": 1,
       "last_seen": "2026-05-25",
-      "review_reason": "产品为桌面线材收纳管理器，属于桌搭用品，符合创意桌搭定义。",
+      "review_reason": "巧克力礼盒属于礼品套装",
       "review_confidence": 1,
       "tags": [
         "Pinterest",
-        "创意桌搭"
+        "创意礼盒",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "85a3d28ddc0f",
+      "title": "Philips 千禧台灯",
+      "category": "氛围灯",
+      "summary": "台灯实用性强，但氛围灯定位降低实用评分；照明为高频需求，但氛围灯非必需；iF获奖增加吸引力，但价格可能偏高；功能无明显短板，3秒可看懂；情绪价值通过设计奖体现，但未明确功能成立后叠加。",
+      "score": 66,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.philips.com/c-m/lighting/led-lights",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "台灯属于氛围灯",
+      "review_confidence": 1,
+      "tags": [
+        "iF设计奖",
+        "氛围灯",
+        "LED照明",
+        "iF获奖",
+        "获奖"
+      ]
+    },
+    {
+      "id": "bce1b4b1692a",
+      "title": "Floral 蜡烛香味礼盒",
+      "category": "创意礼盒",
+      "summary": "蜡烛香氛具有实用性和情绪价值，获奖设计提升吸引力，但非高频消耗品，价格可能偏高。",
+      "score": 66,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.yankeecandle.com/gifts",
+      "source_name": "A' Design Award",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "香氛蜡烛礼盒属于创意礼盒",
+      "review_confidence": 1,
+      "tags": [
+        "A' Design Award",
+        "创意礼盒",
+        "获奖"
       ]
     },
     {
@@ -18816,6 +18979,34 @@
       ]
     },
     {
+      "id": "686e253df22c",
+      "title": "磁吸锅铲套装",
+      "category": "创意厨具",
+      "summary": "磁吸锅铲套装解决收纳痛点，实用性强；烹饪高频但非每日必用；受众广但厨具竞争激烈；功能无明显短板；预估售价超35元；3秒看懂；情绪价值一般。",
+      "score": 65,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.peugeot-saveurs.com",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品为磁吸收纳锅铲套装，属于厨房工具，符合创意厨具定义。",
+      "review_confidence": 1,
+      "tags": [
+        "Pinterest",
+        "创意厨具",
+        "社交精选"
+      ]
+    },
+    {
       "id": "38d4af98e8ec",
       "title": "Fung+Bedford folds origami lighting from eight-metre-long sheet",
       "category": "氛围灯",
@@ -18870,6 +19061,63 @@
       ]
     },
     {
+      "id": "1f9b0d5405cc",
+      "title": "蘑菇氛围灯",
+      "category": "氛围灯",
+      "summary": "蘑菇造型可爱，氛围灯实用，但价格可能低于35元，来源次数少，风险中等。",
+      "score": 63,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.artemide.com/en/products/table/nessino",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品为蘑菇造型小夜灯，属于氛围灯。",
+      "review_confidence": 1,
+      "tags": [
+        "Pinterest",
+        "氛围灯",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "27ed731976ce",
+      "title": "手工编织帽",
+      "category": "帽子",
+      "summary": "手工编织帽实用遮阳，夏季高频需求，但风格偏女性化，打击面有限；功能无明显短板，售价可能低于35元，3秒可看懂，情绪价值中等。",
+      "score": 63,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.etsy.com/market/handmade_straw_hat",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品为手工稻草编织遮阳帽，属于帽子。",
+      "review_confidence": 1,
+      "tags": [
+        "手工",
+        "天然",
+        "遮阳帽",
+        "Pinterest",
+        "帽子",
+        "社交精选"
+      ]
+    },
+    {
       "id": "0332e23a77bf",
       "title": "Ringo lighting by Joan Gaspar for Marset",
       "category": "氛围灯",
@@ -18893,84 +19141,6 @@
       "tags": [
         "Dezeen",
         "氛围灯"
-      ]
-    },
-    {
-      "id": "0dd4fb9dd4d4",
-      "title": "Alessi 外星人榨汁机",
-      "category": "创意厨具",
-      "summary": "A' Design Award · 后现代设计经典厨具",
-      "score": 60,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.alessi.com/products/juicy-salif",
-      "source_name": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "榨汁机属于厨房工具",
-      "review_confidence": 1,
-      "tags": [
-        "A' Design Award",
-        "创意厨具"
-      ]
-    },
-    {
-      "id": "85a3d28ddc0f",
-      "title": "Philips 千禧台灯",
-      "category": "氛围灯",
-      "summary": "iF设计奖 · LED照明设计创新之作",
-      "score": 60,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.philips.com/c-m/lighting/led-lights",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "台灯属于氛围灯",
-      "review_confidence": 1,
-      "tags": [
-        "iF获奖",
-        "iF设计奖"
-      ]
-    },
-    {
-      "id": "b2e8b6bff1f4",
-      "title": "BALMUDA The Pot 手冲壶",
-      "category": "创意厨具",
-      "summary": "iF设计奖 · 极致工业设计手冲电水壶",
-      "score": 60,
-      "price_gate": "likely_over_35",
-      "image": "https://www.balmuda.com/jp/pot/img/og/index.jpg",
-      "url": "https://www.balmuda.com/jp/pot",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "手冲壶属于厨房工具",
-      "review_confidence": 1,
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
       ]
     },
     {
@@ -19078,219 +19248,11 @@
       ]
     },
     {
-      "id": "a5f0b5e1d459",
-      "title": "极简桌面日历",
-      "category": "日历",
-      "summary": "Pinterest · PAPIER PLATZ极简桌面日历",
-      "score": 59,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.papierplatz.com",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "明确属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "Pinterest",
-        "日历"
-      ]
-    },
-    {
-      "id": "457f979bb17e",
-      "title": "OXO沙拉甩干器",
-      "category": "创意厨具",
-      "summary": "Pinterest · OXO Good Grips沙拉脱水器",
-      "score": 58,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.oxo.com/kitchen-tools/salad-spinners",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "产品为沙拉甩干器，属于厨房工具，符合创意厨具定义。",
-      "review_confidence": 1,
-      "tags": [
-        "Pinterest",
-        "创意厨具"
-      ]
-    },
-    {
-      "id": "1f9b0d5405cc",
-      "title": "蘑菇氛围灯",
-      "category": "氛围灯",
-      "summary": "Pinterest · 可爱蘑菇造型小夜灯",
-      "score": 58,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.artemide.com/en/products/table/nessino",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "产品为蘑菇造型小夜灯，属于氛围灯。",
-      "review_confidence": 1,
-      "tags": [
-        "Pinterest",
-        "氛围灯"
-      ]
-    },
-    {
-      "id": "6d935b212c85",
-      "title": "Tom Dixon 设计礼盒",
-      "category": "创意礼盒",
-      "summary": "A' Design Award · 英国设计师品牌家居礼品",
-      "score": 58,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.tomdixon.net/en/gifts.html",
-      "source_name": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "设计师品牌家居礼品，明确为礼盒",
-      "review_confidence": 1,
-      "tags": [
-        "A' Design Award",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "ab9f9437ef5d",
-      "title": "巧克力礼盒装",
-      "category": "创意礼盒",
-      "summary": "Pinterest · 精品松露巧克力礼盒",
-      "score": 58,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.laderach.com/en/chocolate-gifts",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "巧克力礼盒属于礼品套装",
-      "review_confidence": 1,
-      "tags": [
-        "Pinterest",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "bce1b4b1692a",
-      "title": "Floral 蜡烛香味礼盒",
-      "category": "创意礼盒",
-      "summary": "A' Design Award · 天然植物香氛蜡烛套装",
-      "score": 58,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.yankeecandle.com/gifts",
-      "source_name": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "香氛蜡烛礼盒属于创意礼盒",
-      "review_confidence": 1,
-      "tags": [
-        "A' Design Award",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "b2ec13b47df3",
-      "title": "永生花礼盒",
-      "category": "创意礼盒",
-      "summary": "Pinterest · 永生花玻璃罩礼盒套装",
-      "score": 58,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.thebeastshop.com",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "明确属于创意礼盒品类",
-      "review_confidence": 0,
-      "tags": [
-        "Pinterest",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "4358f1382cce",
-      "title": "Fear of God Essentials",
-      "category": "卫衣",
-      "summary": "A' Design Award · 高级街头基础款卫衣",
-      "score": 57,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://fearofgod.com/collections/essentials",
-      "source_name": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "产品为高级街头基础款卫衣，属于卫衣。",
-      "review_confidence": 1,
-      "tags": [
-        "A' Design Award",
-        "卫衣"
-      ]
-    },
-    {
       "id": "922c02a20ba3",
       "title": "极简卡包设计",
       "category": "卡包",
-      "summary": "Behance · 商务极简卡包产品设计项目",
-      "score": 56,
+      "summary": "卡包实用，但需求频率中等，受众有限；极简设计易看懂，功能无短板但价格未知；情绪价值一般。",
+      "score": 58,
       "price_gate": "unknown",
       "image": "",
       "url": "https://www.behance.net/search/projects?search=card+holder+design",
@@ -19307,8 +19269,11 @@
       "review_reason": "产品为商务极简卡包，属于卡包。",
       "review_confidence": 1,
       "tags": [
+        "极简",
+        "商务",
+        "卡包",
         "Behance",
-        "卡包"
+        "社交精选"
       ]
     },
     {
@@ -19335,58 +19300,6 @@
       "tags": [
         "Dezeen",
         "氛围灯"
-      ]
-    },
-    {
-      "id": "27ed731976ce",
-      "title": "手工编织帽",
-      "category": "帽子",
-      "summary": "Pinterest · 手工天然稻草编织遮阳帽",
-      "score": 54,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.etsy.com/market/handmade_straw_hat",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "产品为手工稻草编织遮阳帽，属于帽子。",
-      "review_confidence": 1,
-      "tags": [
-        "Pinterest",
-        "帽子"
-      ]
-    },
-    {
-      "id": "dbbf716e9c33",
-      "title": "Crewneck卫衣设计",
-      "category": "卫衣",
-      "summary": "Pinterest · 经典圆领卫衣宽松版型设计",
-      "score": 54,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.uniqlo.com/us/en/c/crewneck-sweatshirts",
-      "source_name": "Pinterest",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "last_seen": "2026-05-25",
-      "review_reason": "明确属于卫衣品类",
-      "review_confidence": 0,
-      "tags": [
-        "Pinterest",
-        "卫衣"
       ]
     },
     {
@@ -19442,28 +19355,83 @@
       ]
     },
     {
-      "id": "c4e226b41ead",
-      "title": "NONOTAK 光音装置",
-      "category": "装置艺术",
-      "summary": "A' Design Award · 法国光与声媒体装置",
-      "score": 42,
+      "id": "b2ec13b47df3",
+      "title": "永生花礼盒",
+      "category": "创意礼盒",
+      "summary": "永生花礼盒作为礼品，实用性和高频需求较低，但打击面广，功能无明显短板，价格超过35元，3秒可看懂，情绪价值高。",
+      "score": 47,
       "price_gate": "likely_over_35",
-      "image": "https://assets.cdn.cargocollective.com/408512/435754190620483103326993812115427328/arrow-up.svg?f3a4624d93",
-      "url": "https://www.nonotak.com",
+      "image": "",
+      "url": "https://www.thebeastshop.com",
+      "source_name": "Pinterest",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "明确属于创意礼盒品类",
+      "review_confidence": 0,
+      "tags": [
+        "Pinterest",
+        "创意礼盒",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "0dd4fb9dd4d4",
+      "title": "Alessi 外星人榨汁机",
+      "category": "创意厨具",
+      "summary": "设计经典，情绪价值高，但实用性一般，榨汁功能有短板，价格高，受众窄。",
+      "score": 44,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.alessi.com/products/juicy-salif",
       "source_name": "A' Design Award",
       "source_family": "奖项案例",
       "source_type": "verified_official",
-      "action_lane": "方向参考",
+      "action_lane": "适合改造",
       "axes": [
-        "结构启发"
+        "功能启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "last_seen": "2026-05-25",
-      "review_reason": "明确属于装置艺术品类",
-      "review_confidence": 0,
+      "review_reason": "榨汁机属于厨房工具",
+      "review_confidence": 1,
       "tags": [
         "A' Design Award",
+        "创意厨具",
+        "获奖"
+      ]
+    },
+    {
+      "id": "6d935b212c85",
+      "title": "Tom Dixon 设计礼盒",
+      "category": "创意礼盒",
+      "summary": "设计感强，但实用性一般，非高频需求，受众偏窄，价格较高，功能无明显短板，3秒可识别为礼盒，情绪价值高。",
+      "score": 41,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.tomdixon.net/en/gifts.html",
+      "source_name": "A' Design Award",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "设计师品牌家居礼品，明确为礼盒",
+      "review_confidence": 1,
+      "tags": [
+        "A' Design Award",
+        "创意礼盒",
         "获奖"
       ]
     },
@@ -19471,8 +19439,8 @@
       "id": "ecf9995de5e7",
       "title": "光影装置",
       "category": "装置艺术",
-      "summary": "Pinterest · LED光影互动艺术装置",
-      "score": 40,
+      "summary": "光影装置属于艺术装饰品，实用性和高频需求较低，但视觉冲击力强，适合特定场景（如展览、网红店），打击面有限。功能上无明显短板，但价格可能较高，3秒内能看懂其光影效果，情绪价值较高。",
+      "score": 37,
       "price_gate": "unknown",
       "image": "",
       "url": "https://www.teamlab.art",
@@ -19490,15 +19458,46 @@
       "review_confidence": 1,
       "tags": [
         "Pinterest",
+        "LED",
+        "光影互动",
+        "装置艺术",
         "社交精选"
+      ]
+    },
+    {
+      "id": "c4e226b41ead",
+      "title": "NONOTAK 光音装置",
+      "category": "装置艺术",
+      "summary": "产品为获奖装置艺术，实用性和高频需求低，但情绪价值和价格潜力高，功能成立后情绪价值突出。",
+      "score": 34,
+      "price_gate": "likely_over_35",
+      "image": "https://assets.cdn.cargocollective.com/408512/435754190620483103326993812115427328/arrow-up.svg?f3a4624d93",
+      "url": "https://www.nonotak.com",
+      "source_name": "A' Design Award",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "明确属于装置艺术品类",
+      "review_confidence": 0,
+      "tags": [
+        "装置艺术",
+        "A' Design Award",
+        "光与声",
+        "获奖"
       ]
     },
     {
       "id": "d75abc2794af",
       "title": "镜面装置",
       "category": "装置艺术",
-      "summary": "Pinterest · 镜面不锈钢反射装置艺术",
-      "score": 40,
+      "summary": "镜面装置作为装饰品，实用性较低，但视觉冲击力强，适合特定场景；需求频次低，受众窄；功能单一，但美观性可弥补；价格可能较高，但受众接受度有限；3秒内可识别其装饰属性；情绪价值较高，但功能基础薄弱。",
+      "score": 31,
       "price_gate": "unknown",
       "image": "",
       "url": "https://www.anishkapoor.com",
@@ -19516,6 +19515,8 @@
       "review_confidence": 1,
       "tags": [
         "Pinterest",
+        "装置艺术",
+        "镜面不锈钢",
         "社交精选"
       ]
     },
@@ -19523,8 +19524,8 @@
       "id": "bb54988a8970",
       "title": "互动装置设计",
       "category": "装置艺术",
-      "summary": "Behance · 互动式数字艺术装置项目",
-      "score": 40,
+      "summary": "互动装置艺术属于小众领域，实用性和高频需求低，但艺术价值和情绪价值较高。价格未知且通常较高，但难以规模化。",
+      "score": 26,
       "price_gate": "unknown",
       "image": "",
       "url": "https://www.behance.net/search/projects?search=interactive+installation",
@@ -19541,8 +19542,63 @@
       "review_reason": "互动数字艺术装置属于装置艺术",
       "review_confidence": 1,
       "tags": [
+        "装置艺术",
+        "互动设计",
+        "数字艺术",
         "Behance",
         "社交精选"
+      ]
+    },
+    {
+      "id": "93831db39357",
+      "title": "This Magnetic Keychain Has A Three-Level Locking System So It’s Impossible To Drop Your Keys",
+      "category": "钥匙扣水壶",
+      "summary": "This Magnetic Keychain Has A Three-Level Locking System So It’s Impossible To Drop Your Keys The spring inside a conventional keychain carabiner is arguably the least-considered component in everyday carry, a tiny coiled wire doing the same",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/24/this-magnetic-keychain-has-a-three-level-locking-system-so-its-impossible-to-drop-your-keys",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品是磁性钥匙扣，符合钥匙扣水壶定义",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "96bfc13fe9dd",
+      "title": "UGREEN’s 45W Power Bank is Giving Peak 2000s ‘Blobject’ Energy",
+      "category": "充电宝",
+      "summary": "UGREEN’s 45W Power Bank is Giving Peak 2000s ‘Blobject’ Energy The blobject had its moment, and then the world decided sharp edges were more serious. Hartmut Esslinger’s organic curves gave way to chamfered aluminum rectangles,...",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/24/ugreens-45w-power-bank-is-giving-peak-2000s-blobject-energy",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品是充电宝，符合品类定义",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "充电宝"
       ]
     },
     {
@@ -19600,14 +19656,69 @@
       ]
     },
     {
-      "id": "91f1d3c23bed",
-      "title": "Desk Calendars | Shop Amazon.com",
+      "id": "e69935d556ec",
+      "title": "Free Calendar Templates | Adobe Express",
       "category": "日历",
-      "summary": "Discover our great selection of Desk Calendars on Amazon.com. Over 4,900 Desk Calendars Great Selection & Price Free Shipping on Prime eligible orders",
+      "summary": "Choose from dozens of online calendar template ideas from Adobe Express to help you easily create your own free calendar. All creative skill levels are welcome.",
       "score": 0,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.amazon.com/Desk-Calendars/b?node=1069470",
+      "url": "https://www.adobe.com/express/templates/calendar",
+      "source_name": "adobe.com",
+      "source_family": "其他来源",
+      "source_type": "public_web",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品是日历模板，符合日历定义",
+      "review_confidence": 0,
+      "tags": [
+        "open_web",
+        "公开搜索"
+      ]
+    },
+    {
+      "id": "7c218764b1fc",
+      "title": "Custom Calendar Templates — 324+ Free & Editable Designs - Kapwing",
+      "category": "日历",
+      "summary": "How do custom calendar templates differ from regular calendars? Custom calendar templates offer complete creative control over the design, layout, and content of your calendar. Unlike standard calendars, you can personalize every element including colors, font",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.kapwing.com/templates/calendar/custom",
+      "source_name": "kapwing.com",
+      "source_family": "其他来源",
+      "source_type": "public_web",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品是日历模板，符合日历定义",
+      "review_confidence": 0,
+      "tags": [
+        "open_web",
+        "公开搜索"
+      ]
+    },
+    {
+      "id": "18a6e49729e2",
+      "title": "Amazon.com: Desk Calendar: Office Products",
+      "category": "日历",
+      "summary": "Forvencer Desk Calendar 2026-2027, 21 Months Calendar Runs from April 2026 to December 2027, 17\" x 12\" Large 2026 Wall Calendar Monthly Planner with Plastic Cover for Home School Office 800+ bought in past month Add to cart",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.amazon.com/desk-calendar-Office-Products/s?k=desk+calendar&rh=n%3A1064954",
       "source_name": "amazon.com",
       "source_family": "其他来源",
       "source_type": "public_web",
@@ -19618,8 +19729,8 @@
       "image_state": "缺图",
       "seen_count": 1,
       "last_seen": "2026-05-25",
-      "review_reason": "local fallback kept",
-      "review_confidence": 3,
+      "review_reason": "产品是桌面日历，符合日历定义",
+      "review_confidence": 0,
       "tags": [
         "open_web",
         "公开搜索"
@@ -19649,6 +19760,189 @@
       "tags": [
         "open_web",
         "公开搜索"
+      ]
+    },
+    {
+      "id": "449f51d96b5f",
+      "title": "Desk Calendars - Office Depot",
+      "category": "日历",
+      "summary": "Stay organized and plan your days efficiently with our selection of desk calendars. Perfect for taking quick notes or viewing your month at a glance, our desk calendars are a great companion for both professionals and students. Discover our diverse range, feat",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.officedepot.com/b/calendars/Product_Type--Desk_Calendar/N-1131208",
+      "source_name": "officedepot.com",
+      "source_family": "其他来源",
+      "source_type": "public_web",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品是桌面日历，符合日历定义",
+      "review_confidence": 0,
+      "tags": [
+        "open_web",
+        "公开搜索"
+      ]
+    },
+    {
+      "id": "3b7cfe9d3bcc",
+      "title": "Desk Top Calendars - Staples",
+      "category": "日历",
+      "summary": "Buy Desk Calendars at Staples and get Free next-day delivery when you spend $35+.",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.staples.com/Desk-Calendars/cat_CL166389/6vu06",
+      "source_name": "staples.com",
+      "source_family": "其他来源",
+      "source_type": "public_web",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-25",
+      "review_reason": "产品是桌面日历，符合日历定义",
+      "review_confidence": 0,
+      "tags": [
+        "open_web",
+        "公开搜索"
+      ]
+    },
+    {
+      "id": "7b35da5cfc5d",
+      "title": "10 Minimalist Desk Accessories That Earn Their Footprint",
+      "category": "创意桌搭",
+      "summary": "10 Minimalist Desk Accessories That Earn Their Footprint The minimalist desk setup has become one of the most documented trends in home office design, particularly as hybrid work continues pushing people to invest...",
+      "score": 0,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/23/10-minimalist-desk-accessories-that-earn-their-footprint",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-24",
+      "review_reason": "产品是桌面配件，符合创意桌搭定义",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "d85df7a06b1d",
+      "title": "JR engulfs Paris's oldest bridge with giant cavernous inflatable",
+      "category": "装置艺术",
+      "summary": "French street artist JR has transformed Pont Neuf, the oldest bridge in Paris, with an inflatable cave-like installation that pays homage to the work of artists Christo and Jeanne-Claude. Named La Caverne du Pont Neuf, the giant installatio",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.dezeen.com/2026/05/22/jr-la-caverne-du-pont-neuf",
+      "source_name": "Dezeen",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-23",
+      "review_reason": "明确是公共艺术装置，属于装置艺术",
+      "review_confidence": 0,
+      "tags": [
+        "Dezeen",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "814ea28af401",
+      "title": "Six installations from the inaugural Global Design Forum Istanbul",
+      "category": "装置艺术",
+      "summary": "An ancient room soaked entirely in red and a plywood gateway based on a lost Roman arena were among the installations erected across the Turkish capital for Global Design Forum Istanbul. Global Design Forum is the talks platform of London D",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.dezeen.com/2026/05/22/global-design-forum-istanbul-installations",
+      "source_name": "Dezeen",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-23",
+      "review_reason": "明确是艺术装置，属于装置艺术",
+      "review_confidence": 0,
+      "tags": [
+        "Dezeen",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "2ecd0a07b5d4",
+      "title": "Momentum Studio’s Perpetual Calendar Clicks Into Each Day Like a Gear",
+      "category": "日历",
+      "summary": "Momentum Studio’s Perpetual Calendar Clicks Into Each Day Like a Gear Most people check the date by glancing at a phone, a laptop corner, or a watch. There’s no shortage of ways to know what day...",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/22/momentum-studios-perpetual-calendar-clicks-into-each-day-like-a-gear",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-23",
+      "review_reason": "产品是日历，原品类帽子错误，修正为日历",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "0cb9f4306008",
+      "title": "Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both",
+      "category": "充电宝",
+      "summary": "Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both Travel chargers have always been a bit of a negotiation. You pack a power bank for the long haul, then stuff a wall adapter in...",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.yankodesign.com/2026/05/22/stop-packing-two-chargers-trozks-50-binary-star-does-both",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "last_seen": "2026-05-23",
+      "review_reason": "产品是充电宝，符合品类定义",
+      "review_confidence": 0,
+      "tags": [
+        "Yanko Design",
+        "充电宝"
       ]
     },
     {
