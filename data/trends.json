@@ -1,38 +1,177 @@
 {
-  "summary": "产品样本中，创意厨具、水杯、氛围灯等品类出现频率高，且多为获奖设计，但部分品类如装置艺术、冲锋衣等实用性或高频需求不足。充电宝、收纳包等实用品类得分高，符合选品标准。",
-  "hot_categories": [
-    "创意厨具",
-    "水杯",
-    "氛围灯",
-    "充电宝",
-    "收纳包"
-  ],
-  "hot_signals": [
-    "Good Design Award获奖",
-    "iF Design Award获奖",
-    "实用性强",
-    "高频需求",
-    "售价高于35元"
-  ],
-  "recommended_directions": [
-    "便携式充电宝",
-    "多功能收纳包",
-    "智能保温杯",
-    "模块化氛围灯",
-    "创意厨具（如电饭煲、咖啡机）"
-  ],
-  "avoid_or_watch": [
-    "装置艺术（实用性低）",
-    "冲锋衣（受众窄、价格高）",
-    "中秋礼盒（季节性）"
-  ],
-  "next_search_keywords": [
-    "便携充电宝 2024",
-    "多功能收纳包 爆款",
-    "智能保温杯 趋势",
-    "氛围灯 桌面",
-    "创意厨具 实用"
-  ],
-  "generated_at": "2026-05-24T05:21:59",
-  "source": "deepseek"
+  "generated_at": "2026-05-25T10:30:27",
+  "source": "local_summary",
+  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
+  "hot_categories": {
+    "创意厨具": 125,
+    "氛围灯": 69,
+    "水杯": 54,
+    "装置艺术": 39,
+    "充电宝": 25,
+    "冲锋衣": 25,
+    "创意礼盒": 24,
+    "卡包": 23,
+    "帽子": 23,
+    "T恤": 21,
+    "日历": 20,
+    "手机壳": 19
+  },
+  "hot_sources": {
+    "Instagram": 117,
+    "Good Design Award": 113,
+    "小红书": 69,
+    "iF设计奖": 57,
+    "抖音": 53,
+    "Red Dot": 40,
+    "Pinterest": 38,
+    "Behance": 22,
+    "Yanko Design": 18,
+    "A' Design Award": 16,
+    "Dezeen": 12,
+    "Design Milk": 4
+  },
+  "hot_tags": {
+    "社交精选": 174,
+    "获奖": 134,
+    "Good Design Award": 113,
+    "创意厨具": 95,
+    "获奖设计": 72,
+    "氛围灯": 66,
+    "Instagram": 61,
+    "iF获奖": 57,
+    "iF Design Award": 50,
+    "创意桌搭": 47,
+    "装置艺术": 39,
+    "Pinterest": 38,
+    "GOOD DESIGN AWARD": 37,
+    "冲锋衣": 35,
+    "设计文章": 31,
+    "创意礼盒": 30,
+    "帽子": 26,
+    "水杯": 25,
+    "收纳包": 25,
+    "抖音": 24
+  },
+  "recommended": [
+    {
+      "title": "Talking Tree",
+      "category": "装置艺术",
+      "score": 92,
+      "reason": "iF Design Award · As humanity becomes more disconnected from nature, Agency for Nature’s Talking Tree is a groundbreakin"
+    },
+    {
+      "title": "Refik Anadol AI装置",
+      "category": "装置艺术",
+      "score": 90,
+      "reason": "Refik Anadol AI数据雕塑装置艺术"
+    },
+    {
+      "title": "草間彌生 无限镜屋",
+      "category": "装置艺术",
+      "score": 86,
+      "reason": "草间弥生无限镜屋装置系列"
+    },
+    {
+      "title": "Tidy-Up Box／Organize Pouch",
+      "category": "收纳包",
+      "score": 86,
+      "reason": "Good Design Award · Home Accessories · Like-it Co., Ltd."
+    },
+    {
+      "title": "Microcomputer rice cooker EP2S01 / EP2S02",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Good Design Award · Home Electronics · NITORI Co.,Ltd"
+    },
+    {
+      "title": "TOSHIBA JAPANDI RICECOOKER",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Good Design Award · Home Electronics · Foshan Shunde Midea Electrical Heating Appliances Manufacturing Co., Ltd."
+    },
+    {
+      "title": "NAMACRICH",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Good Design Award · Home Electronics · kai corporation."
+    },
+    {
+      "title": "Panasonic Bread Maker SD-CB1",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Good Design Award · Home Electronics · Panasonic Corporation"
+    },
+    {
+      "title": "Built-In Fully Automatic Coffee Machine",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Good Design Award · Home Electronics · Guangdong Midea Consumer Electric Manufacturing Co.,Ltd."
+    },
+    {
+      "title": "DINING ROBATA",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Good Design Award · Home Electronics · THE PEACOCK VACUUM BOTTLE CO., LTD."
+    },
+    {
+      "title": "SAKE BOTTLE OPENER",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of it"
+    },
+    {
+      "title": "半島酒店 中秋奶黄月饼",
+      "category": "中秋礼盒",
+      "score": 84,
+      "reason": "香港半岛酒店中秋经典礼盒"
+    },
+    {
+      "title": "Peak Design Tech Pouch",
+      "category": "收纳包",
+      "score": 84,
+      "reason": "美国专业摄影收纳包"
+    },
+    {
+      "title": "Arc'teryx 军规冲锋衣",
+      "category": "冲锋衣",
+      "score": 84,
+      "reason": "加拿大始祖鸟Alpha SV军规级冲锋衣"
+    },
+    {
+      "title": "New Era MLB 棒球帽",
+      "category": "帽子",
+      "score": 84,
+      "reason": "MLB官方New Era 59FIFTY经典棒球帽"
+    },
+    {
+      "title": "Nanoleaf 智能灯板",
+      "category": "氛围灯",
+      "score": 84,
+      "reason": "加拿大Nanoleaf模块化智能LED灯板"
+    },
+    {
+      "title": "Anish Kapoor 云门",
+      "category": "装置艺术",
+      "score": 84,
+      "reason": "Anish Kapoor芝加哥Cloud Gate镜面雕塑"
+    },
+    {
+      "title": "Stanley 保温水壶",
+      "category": "水杯",
+      "score": 84,
+      "reason": "Stanley经典经典锤纹保温壶"
+    },
+    {
+      "title": "Le Creuset 珐琅锅",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "法国Le Creuset经典珐琅铸铁锅"
+    },
+    {
+      "title": "Staub 圆形珐琅锅",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "法国Staub经典圆形珐琅铸铁锅"
+    }
+  ]
 }

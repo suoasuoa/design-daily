@@ -10,6 +10,10 @@ on:
         description: "Maximum products to score this run"
         required: true
         default: "200"
+      search_jobs:
+        description: "Open-web search jobs to run"
+        required: true
+        default: "40"
 
 permissions:
   contents: write
@@ -26,6 +30,12 @@ jobs:
 
       - name: Collect public leads
         run: python3 scripts/collect_public.py
+
+      - name: Generate search job matrix
+        run: python3 scripts/search_jobs.py
+
+      - name: Collect open-web search leads
+        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '40' }}" --per-job 4 --sleep 1.2
 
       - name: Dedupe product pool
         run: python3 scripts/dedupe.py
@@ -48,11 +58,17 @@ jobs:
       - name: Build static insight dashboard
         run: python3 scripts/build_site.py
 
+      - name: Generate weekly 100-pick report
+        run: python3 scripts/weekly_report.py --limit 100
+
+      - name: Rebuild dashboard with weekly report
+        run: python3 scripts/build_site.py
+
       - name: Commit data and dashboard
         run: |
           git config user.name "design-insight-bot"
           git config user.email "bot@design-digest.com"
-          git add index.html data/raw/ data/products.json data/dedupe_index.json data/category_review.json data/rejected_category.json data/published.json data/trends.json insight/
+          git add index.html data/raw/ data/reports/ data/search_jobs.json data/products.json data/dedupe_index.json data/category_review.json data/rejected_category.json data/published.json data/trends.json data/weekly_report.json insight/
           if ! git diff --staged --quiet; then
             git commit -m "Update insight pool $(date +%Y-%m-%d)"
             git push

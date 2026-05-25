@@ -121,3 +121,55 @@ SOCIAL_SEARCH_TEMPLATES = {
     "xiaohongshu": "https://www.xiaohongshu.com/search_result?keyword={query}",
     "douyin": "https://www.douyin.com/search/{query}",
 }
+
+SEARCH_INTENTS = {
+    "buy_sample": "更接近现成消费品，适合买样验证",
+    "adapt": "适合做结构、包装、功能或外观改造",
+    "trend": "适合作为趋势、内容爆点或方向参考",
+}
+
+SEARCH_QUERY_PATTERNS = {
+    "水杯": ["new water bottle design", "creative tumbler", "便携 水杯 新品", "保温杯 创意 设计"],
+    "氛围灯": ["cute night light", "ambient table lamp", "氛围灯 礼物", "小夜灯 创意"],
+    "创意礼盒": ["creative gift box packaging", "gift set packaging idea", "创意礼盒 包装", "礼盒 设计 灵感"],
+    "装置艺术": ["small installation art object", "interactive light installation", "装置艺术 商业 空间", "光影装置 灵感"],
+    "创意厨具": ["new kitchen gadget", "creative kitchen tool", "厨房神器 新品", "创意厨具"],
+    "中秋礼盒": ["mooncake gift box packaging", "mid autumn gift set design", "中秋礼盒 包装", "月饼礼盒 创意"],
+    "帽子": ["creative cap design", "cute hat trend", "帽子 创意 设计", "棒球帽 新品"],
+    "创意桌搭": ["desk organizer design", "creative desk accessory", "桌搭 收纳 新品", "桌面好物 创意"],
+    "端午礼盒": ["dragon boat festival gift box", "zongzi packaging design", "端午礼盒 包装", "粽子礼盒 创意"],
+    "充电宝": ["portable power bank design", "cute power bank", "充电宝 创意", "移动电源 新品"],
+    "日历": ["creative calendar design", "desk calendar product", "日历 创意", "台历 设计"],
+    "T恤": ["graphic t shirt trend", "creative tee design", "T恤 图案 趋势", "短袖 创意"],
+    "卫衣": ["hoodie design trend", "creative sweatshirt", "卫衣 图案 趋势", "连帽卫衣 创意"],
+    "卡包": ["card holder design", "slim wallet product", "卡包 创意", "卡夹 新品"],
+    "手机壳": ["phone case trend", "creative iphone case", "手机壳 创意", "手机壳 爆款"],
+    "收纳包": ["organizer pouch design", "travel storage bag", "收纳包 创意", "便携收纳 新品"],
+    "Polo衫": ["polo shirt design trend", "creative polo shirt", "Polo衫 设计", "Polo衫 新品"],
+    "冲锋衣": ["lightweight shell jacket trend", "packable rain jacket", "冲锋衣 新品", "防晒衣 创意"],
+    "钥匙扣水壶": ["keychain bottle", "creative keychain accessory", "钥匙扣 水壶", "钥匙扣 创意"],
+}
+
+SEARCH_SOURCE_GROUPS = {
+    "global_web": [
+        "site:trendhunter.com",
+        "site:kickstarter.com",
+        "site:indiegogo.com",
+        "site:producthunt.com",
+        "site:designboom.com",
+        "site:core77.com",
+        "site:thegadgetflow.com",
+    ],
+    "brand_and_shop": [
+        "site:amazon.com",
+        "site:etsy.com",
+        "site:uncommongoods.com",
+        "site:urbanoutfitters.com",
+        "site:muji.com",
+    ],
+    "china_reference": [
+        "site:smzdm.com",
+        "site:1688.com",
+        "site:taobao.com",
+    ],
+}

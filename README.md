@@ -26,6 +26,8 @@
 
 新版产品线索池在 `insight/` 下生成，目标是长期积累可去重、可评分、可筛选的选品方向。
 
+现在这套流程已经升级为“选品情报站”：每天收集公开来源和轮换的公开网页搜索结果，每周生成 100 条选品推荐。
+
 ```bash
 python3 scripts/dedupe.py
 python3 scripts/score.py --limit 200
@@ -36,6 +38,13 @@ python3 scripts/build_site.py
 
 ```bash
 python3 scripts/agent_update.py --score-limit 200 --trend-limit 80
+```
+
+周报输出：
+
+```text
+insight/weekly.md
+data/weekly_report.json
 ```
 
 详情见 `INSIGHT_POOL.md`。

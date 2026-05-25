@@ -14,9 +14,14 @@
 
 ```bash
 python3 scripts/collect_public.py
+python3 scripts/search_jobs.py
+python3 scripts/collect_search.py --limit-jobs 40 --per-job 4
 python3 scripts/dedupe.py
+python3 scripts/review_categories.py --batch-size 20
 python3 scripts/score.py --limit 200
 python3 scripts/trend_agent.py --limit 80
+python3 scripts/build_site.py
+python3 scripts/weekly_report.py --limit 100
 python3 scripts/build_site.py
 ```
 
@@ -25,6 +30,37 @@ python3 scripts/build_site.py
 ```bash
 python3 scripts/agent_update.py --score-limit 200 --trend-limit 80
 ```
+
+## 持续搜索与周报
+
+系统现在按 `19 个品类 x 中英文关键词 x 重点公开来源` 生成搜索任务矩阵：
+
+```bash
+python3 scripts/search_jobs.py
+```
+
+搜索任务会保存到：
+
+```text
+data/search_jobs.json
+```
+
+公开网页搜索采集会把结果先放进原始线索池：
+
+```text
+data/raw/search-YYYY-MM-DD.json
+```
+
+之后统一走 `dedupe -> category review -> score -> trend -> weekly report -> build site`。周报固定输出到：
+
+```text
+data/weekly_report.json
+data/reports/weekly-YYYY-WW.json
+insight/weekly.json
+insight/weekly.md
+```
+
+默认周报目标是每周 100 条，按 `可直接买样 / 适合改造 / 方向参考` 做平衡推荐。
 
 生成后打开：
 

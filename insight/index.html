@@ -3,380 +3,609 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Design Digest</title>
+  <title>Selection Signal Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      color-scheme: light;
-      --bg: #f5f5f8;
+      --bg: #f4f6f8;
+      --panel: rgba(255, 255, 255, 0.92);
       --card: #ffffff;
-      --ink: #20242c;
-      --muted: #858994;
-      --line: #e3e5ec;
-      --purple: #6764f1;
-      --purple-soft: #efefff;
-      --amber: #f4a629;
-      --green: #36bd69;
-      --red: #c94d4d;
-      --shadow: 0 8px 22px rgba(28, 32, 42, .07);
+      --ink: #23211c;
+      --muted: #667085;
+      --line: rgba(35, 45, 60, 0.12);
+      --accent: #d66b2c;
+      --accent-deep: #9c4b1c;
+      --sage: #4f8063;
+      --mustard: #d5a540;
+      --sky: #527fa3;
+      --shadow: 0 18px 40px rgba(31, 41, 55, 0.08);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
+      font-family: "Manrope", "Noto Sans SC", sans-serif;
       color: var(--ink);
-      line-height: 1.45;
+      background:
+        linear-gradient(135deg, rgba(82,127,163,0.10), transparent 34%),
+        linear-gradient(315deg, rgba(214,107,44,0.08), transparent 30%),
+        linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
+      min-height: 100vh;
     }
-    .wrap {
-      width: min(1560px, calc(100vw - 44px));
+    .shell {
+      width: min(1520px, calc(100vw - 32px));
       margin: 0 auto;
-      padding: 72px 0 44px;
+      padding: 28px 0 48px;
     }
     .hero {
-      text-align: center;
-      padding: 8px 0 26px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+      align-items: stretch;
     }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin: 0;
-      font-size: clamp(32px, 4vw, 52px);
-      font-weight: 800;
-      letter-spacing: 0;
-      color: var(--purple);
+    .hero-main, .hero-side, .panel, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
     }
-    .mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: inline-block;
-      background: linear-gradient(135deg, #7463ef, #9b5df5);
+    .hero-main {
+      padding: 30px 30px 26px;
+      overflow: hidden;
       position: relative;
-      flex: 0 0 auto;
     }
-    .mark:before {
+    .hero-main:before {
       content: "";
       position: absolute;
-      width: 13px;
-      height: 7px;
-      border-radius: 7px 7px 0 0;
-      background: #7463ef;
-      transform: rotate(-35deg);
-      right: -5px;
-      top: -4px;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(82,127,163,0.14), transparent 40%),
+        linear-gradient(315deg, rgba(214,107,44,0.12), transparent 38%);
+      pointer-events: none;
     }
-    .subtitle {
-      margin: 12px 0 0;
-      color: var(--muted);
-      font-size: 20px;
-      font-weight: 650;
-    }
-    .stats {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 22px auto 28px;
-      max-width: 1320px;
-    }
-    .stat {
-      width: 126px;
-      min-height: 104px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: var(--card);
-      box-shadow: var(--shadow);
-      color: var(--muted);
-      cursor: pointer;
-      transition: transform .15s ease, border-color .15s ease, background .15s ease;
-      display: grid;
-      align-content: center;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
       gap: 8px;
-      text-align: center;
-      padding: 12px;
-    }
-    .stat:hover { transform: translateY(-2px); border-color: #c7c8ff; }
-    .stat.active {
-      border: 3px solid var(--purple);
-      background: var(--purple-soft);
-      box-shadow: none;
-    }
-    .stat strong {
-      display: block;
-      color: var(--purple);
-      font-size: 31px;
-      line-height: 1;
+      font-size: 13px;
       font-weight: 800;
-      letter-spacing: 0;
+      color: var(--accent-deep);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
-    .stat span {
+    .eyebrow span {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(34px, 6vw, 66px);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      max-width: 10ch;
+    }
+    .lead {
+      margin: 0;
+      max-width: 48ch;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.65;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-stats {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-stat {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(84, 70, 52, 0.1);
+      border-radius: 18px;
+      padding: 14px;
+      min-height: 94px;
+    }
+    .hero-stat strong {
       display: block;
-      font-size: 14px;
+      font-size: 28px;
+      line-height: 1;
+    }
+    .hero-stat span {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--muted);
       font-weight: 700;
-      word-break: break-word;
+    }
+    .hero-side {
+      padding: 24px;
+      display: grid;
+      gap: 18px;
+    }
+    .side-block h2 {
+      margin: 0 0 12px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .chip.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .chip.muted {
+      cursor: default;
     }
     .toolbar {
+      margin-top: 18px;
       display: grid;
-      grid-template-columns: minmax(240px, 1fr) auto auto;
+      grid-template-columns: minmax(240px, 1fr) auto;
       gap: 14px;
       align-items: center;
-      margin-top: 16px;
     }
     .search {
-      height: 56px;
-      border: 1px solid #dfe2ea;
-      border-radius: 14px;
-      background: #fff;
       display: flex;
       align-items: center;
-      box-shadow: 0 2px 10px rgba(28, 32, 42, .03);
-      padding: 0 18px;
+      gap: 10px;
+      height: 54px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 0 16px;
+      box-shadow: var(--shadow);
     }
     .search input {
       width: 100%;
-      height: 100%;
       border: 0;
       outline: 0;
       background: transparent;
-      color: var(--ink);
-      font: inherit;
-      font-size: 18px;
-      font-weight: 600;
-    }
-    .search span { color: #8c95a3; font-size: 22px; margin-right: 10px; }
-    .status {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      height: 42px;
-      white-space: nowrap;
-      color: var(--muted);
-      font-weight: 700;
-    }
-    .dot {
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      background: var(--green);
-      display: inline-block;
-    }
-    .refresh {
-      height: 44px;
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      background: #f1f3f8;
-      color: #38404d;
-      padding: 0 18px;
-      font: inherit;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-    .filter-btn {
-      min-height: 42px;
-      border: 1px solid #dfe2ea;
-      border-radius: 22px;
-      background: #fff;
-      color: #151922;
-      padding: 0 22px;
       font: inherit;
       font-size: 16px;
+      color: var(--ink);
+    }
+    .timestamp {
+      color: var(--muted);
+      font-size: 13px;
       font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 1px 4px rgba(28, 32, 42, .04);
+      white-space: nowrap;
     }
-    .filter-btn:hover { border-color: #bebfff; color: var(--purple); }
-    .filter-btn.active {
-      background: var(--purple);
-      color: #fff;
-      border-color: var(--purple);
-      box-shadow: none;
-    }
-    .grid {
+    .grid-section {
+      margin-top: 26px;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 22px;
-      margin-top: 20px;
+      align-items: start;
+    }
+    .panel {
+      padding: 20px;
+    }
+    .panel h3 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+    .lane-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .lane-card {
+      border-radius: 20px;
+      padding: 16px;
+      min-height: 150px;
+      color: #fff;
+      cursor: pointer;
+      transition: transform .18s ease;
+    }
+    .lane-card:hover { transform: translateY(-2px); }
+    .lane-card.buy { background: linear-gradient(135deg, #cf6f39, #edb24c); }
+    .lane-card.adapt { background: linear-gradient(135deg, #6d8d76, #9db58f); }
+    .lane-card.reference { background: linear-gradient(135deg, #5b7989, #8fb2c2); }
+    .lane-card strong {
+      display: block;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    .lane-card em {
+      display: block;
+      margin-top: 10px;
+      font-style: normal;
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .lane-card p {
+      margin: 12px 0 0;
+      font-size: 13px;
+      line-height: 1.5;
+      opacity: 0.94;
+    }
+    .trend-list, .queue-list {
+      display: grid;
+      gap: 10px;
+    }
+    .trend-item, .queue-item {
+      display: grid;
+      gap: 5px;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+    .trend-item:first-child, .queue-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .trend-item strong, .queue-item strong {
+      font-size: 15px;
+    }
+    .trend-item span, .queue-item span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .filters {
+      margin-top: 24px;
+      display: grid;
+      gap: 12px;
+    }
+    .filter-row {
+      display: grid;
+      gap: 8px;
+    }
+    .filter-row strong {
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .card-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
     }
     .card {
-      background: #fff;
-      border: 1px solid #ebedf2;
-      border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 4px 14px rgba(28, 32, 42, .05);
-      position: relative;
+      background: var(--card);
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
       display: flex;
       flex-direction: column;
-      min-height: 100%;
     }
     .thumb {
       width: 100%;
-      aspect-ratio: 16 / 10.5;
+      aspect-ratio: 1.08 / 0.84;
       object-fit: cover;
-      background: linear-gradient(135deg, #e7eaf2, #f6f7fb);
-      display: block;
-    }
-    .badge {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      min-width: 58px;
-      height: 34px;
-      border-radius: 9px;
-      background: var(--amber);
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 15px;
-      padding: 0 10px;
+      background: linear-gradient(135deg, #e6edf3, #f8fafc);
     }
     .body {
-      padding: 16px 18px 18px;
+      padding: 16px;
       display: grid;
       gap: 10px;
       flex: 1;
     }
     .meta {
       display: flex;
-      align-items: center;
-      gap: 6px;
+      gap: 8px;
       flex-wrap: wrap;
     }
-    .tag {
-      min-height: 22px;
-      border-radius: 5px;
-      padding: 2px 8px;
+    .pill {
       display: inline-flex;
       align-items: center;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--purple);
-      background: #f0f0ff;
+      min-height: 26px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: #fff4e8;
+      color: var(--accent-deep);
+      font-size: 11px;
+      font-weight: 800;
+      border: 1px solid rgba(200,99,42,0.12);
     }
-    .cat-tag { color: #19774b; background: #e9f7ef; }
-    .price-tag { color: #8a5300; background: #fff4dc; }
-    .src-social_signal { color: #b33131; background: #fdecec; }
-    .src-editorial_source { color: #5d43b6; background: #f1edff; }
-    .src-verified_official { color: #1c6d54; background: #e8f5ef; }
-    .card h3 {
+    .pill.sage { background: #edf5ee; color: #507155; border-color: rgba(108,136,112,0.16); }
+    .pill.sky { background: #edf5f8; color: #4c6c7b; border-color: rgba(109,149,167,0.16); }
+    .pill.gray { background: #f5f2ec; color: #6b645b; border-color: rgba(84,70,52,0.1); }
+    .title {
       margin: 0;
-      font-size: 17px;
-      line-height: 1.38;
-      letter-spacing: 0;
-      padding-right: 44px;
+      font-size: 28px;
+      line-height: 1.06;
+      letter-spacing: -0.03em;
     }
-    .card h3 a { color: #1c2029; text-decoration: none; }
-    .card h3 a:hover { color: var(--purple); }
+    .title a { color: inherit; text-decoration: none; }
+    .title a:hover { color: var(--accent-deep); }
     .summary {
       margin: 0;
       color: var(--muted);
+      font-size: 14px;
+      line-height: 1.62;
+      min-height: 68px;
+    }
+    .scoreline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .score {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .source {
+      color: var(--muted);
       font-size: 13px;
-      line-height: 1.55;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .score-row {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 6px;
-      color: #6c7280;
-      font-size: 11px;
       font-weight: 700;
+      text-align: right;
     }
-    .score-chip {
-      background: #f5f6fa;
-      border-radius: 7px;
-      padding: 5px 6px;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
     }
     .empty {
-      grid-column: 1 / -1;
-      min-height: 180px;
-      border: 1px dashed #ccd1dc;
-      border-radius: 16px;
-      background: #fff;
+      margin-top: 24px;
+      padding: 40px 20px;
+      background: var(--panel);
+      border: 1px dashed var(--line);
+      border-radius: 20px;
+      text-align: center;
       color: var(--muted);
-      display: grid;
-      place-items: center;
-      font-size: 18px;
       font-weight: 700;
     }
+    @media (max-width: 1100px) {
+      .hero, .grid-section { grid-template-columns: 1fr; }
+    }
     @media (max-width: 760px) {
-      .wrap { width: min(100vw - 24px, 1560px); padding-top: 36px; }
+      .shell { width: min(100vw - 20px, 1520px); padding-top: 16px; }
+      .hero-main, .hero-side, .panel { padding: 18px; }
+      .hero-stats, .lane-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .toolbar { grid-template-columns: 1fr; }
-      .status { justify-content: center; }
-      .refresh { width: 100%; }
-      .stat { width: 104px; min-height: 90px; }
-      .stat strong { font-size: 25px; }
-      .filter-btn { padding: 0 15px; font-size: 14px; }
-      .grid { grid-template-columns: 1fr; }
-      .score-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .title { font-size: 24px; }
+      .card-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header class="hero">
-      <h1 class="brand"><span class="mark"></span>Daily Design Digest</h1>
-      <p class="subtitle" id="subtitle">产品线索池加载中</p>
-    </header>
-
-    <section class="stats" id="stats"></section>
+  <div class="shell">
+    <section class="hero">
+      <div class="hero-main">
+        <div class="eyebrow"><span></span>Selection Signal Desk</div>
+        <h1>给选品团队看的灵感工作台</h1>
+        <p class="lead">这版不再把所有内容塞进一个杂池里，而是先回答三件事：这条东西适不适合买样、值不值得改造、它给我们的启发更偏功能、包装、结构还是情绪。</p>
+        <div class="hero-stats" id="heroStats"></div>
+      </div>
+      <aside class="hero-side">
+        <div class="side-block">
+          <h2>当前热点</h2>
+          <div class="chips" id="topAxisChips"></div>
+        </div>
+        <div class="side-block">
+          <h2>来源结构</h2>
+          <div class="chips" id="sourceFamilyChips"></div>
+        </div>
+        <div class="side-block">
+          <h2>图片状态</h2>
+          <div class="chips" id="imageStateChips"></div>
+        </div>
+      </aside>
+    </section>
 
     <section class="toolbar">
       <label class="search">
         <span>⌕</span>
-        <input id="search" type="search" placeholder="搜索标题、品类、标签...">
+        <input id="search" type="search" placeholder="搜索标题、品类、启发方式、来源...">
       </label>
-      <div class="status"><span class="dot"></span><span id="statusText">每日更新</span></div>
-      <button class="refresh" type="button" onclick="window.location.reload()">刷新数据</button>
+      <div class="timestamp" id="timestamp"></div>
     </section>
 
-    <nav class="filters" id="sourceFilters"></nav>
-    <nav class="filters" id="categoryFilters"></nav>
+    <section class="grid-section">
+      <div class="panel">
+        <h3>本周优先看</h3>
+        <div class="lane-row" id="laneCards"></div>
+      </div>
+      <div class="panel">
+        <h3>趋势摘要</h3>
+        <div class="trend-list" id="trendList"></div>
+      </div>
+    </section>
 
-    <section class="grid" id="grid"></section>
+    <section class="filters">
+      <div class="filter-row">
+        <strong>动作路径</strong>
+        <div class="chips" id="laneFilters"></div>
+      </div>
+      <div class="filter-row">
+        <strong>启发类型</strong>
+        <div class="chips" id="axisFilters"></div>
+      </div>
+      <div class="filter-row">
+        <strong>品类</strong>
+        <div class="chips" id="categoryFilters"></div>
+      </div>
+      <div class="filter-row">
+        <strong>来源分层</strong>
+        <div class="chips" id="sourceFilters"></div>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:24px;">
+      <h3>推荐队列</h3>
+      <div class="queue-list" id="queueList"></div>
+    </section>
+
+    <section class="card-grid" id="cardGrid"></section>
+    <div class="empty" id="emptyState" hidden>当前筛选下没有内容。</div>
   </div>
 
   <script src="./data.json"></script>
   <script>
     const payload = window.__INSIGHT_DATA__;
-    const state = { source: "全部", category: "全部", query: "" };
-    const $ = id => document.getElementById(id);
-    const scoreLabels = {
-      utility: "实用",
-      frequency: "高频",
-      broad_appeal: "打击面",
-      functionality: "功能",
-      price_power: "价格",
-      clarity: "3秒懂",
-      emotion: "情绪"
+    const state = {
+      q: "",
+      lane: "全部",
+      axis: "全部",
+      category: "全部",
+      source: "全部"
     };
+    const $ = id => document.getElementById(id);
 
-    function shortSource(name) {
-      return name
-        .replace(" Design Award", "")
-        .replace("设计奖", "奖")
-        .replace("Yanko Design", "Yanko Design")
-        .replace("Good Design Award", "Good");
+    function num(v) { return Number(v || 0); }
+
+    function timestampText(value) {
+      const date = new Date(value.replace(" ", "T"));
+      if (Number.isNaN(date.getTime())) return value;
+      return `最近生成 ${date.toLocaleString("zh-CN", { hour12: false })}`;
     }
 
-    function sourceClass(item) {
-      const source = item.sources && item.sources[0];
-      return source ? `src-${source.source_type}` : "";
+    function cardClass(lane) {
+      if (lane === "可直接买样") return "buy";
+      if (lane === "适合改造") return "adapt";
+      return "reference";
+    }
+
+    function chip(label, active, onClick, extraClass = "") {
+      const el = document.createElement("button");
+      el.type = "button";
+      el.className = `chip ${extraClass}`.trim();
+      if (active) el.classList.add("active");
+      el.textContent = label;
+      if (onClick) el.addEventListener("click", onClick);
+      else el.classList.add("muted");
+      return el;
+    }
+
+    function renderHero() {
+      const total = payload.stats.total_items;
+      const byLane = payload.stats.by_lane;
+      const weeklyCount = (payload.weekly_report && payload.weekly_report.actual_count) || 0;
+      const stats = [
+        [total, "当前可看灵感"],
+        [weeklyCount, "本周推荐"],
+        [byLane["可直接买样"] || 0, "可直接买样"],
+        [byLane["适合改造"] || 0, "适合改造"]
+      ];
+      $("heroStats").innerHTML = stats.map(([value, label]) => `<div class="hero-stat"><strong>${value}</strong><span>${label}</span></div>`).join("");
+      $("timestamp").textContent = timestampText(payload.generated_at);
+
+      const topAxis = Object.entries(payload.stats.by_axis).slice(0, 6);
+      $("topAxisChips").innerHTML = "";
+      topAxis.forEach(([name, count]) => $("topAxisChips").appendChild(chip(`${name} ${count}`, false, null, "gray")));
+
+      const families = Object.entries(payload.stats.by_source_family);
+      $("sourceFamilyChips").innerHTML = "";
+      families.forEach(([name, count]) => $("sourceFamilyChips").appendChild(chip(`${name} ${count}`, false, null, "gray")));
+
+      const imageStates = Object.entries(payload.stats.by_image_state);
+      $("imageStateChips").innerHTML = "";
+      imageStates.forEach(([name, count]) => $("imageStateChips").appendChild(chip(`${name} ${count}`, false, null, "gray")));
+    }
+
+    function renderLaneCards() {
+      const descriptions = {
+        "可直接买样": "更接近已经成立的消费品，适合快速买样验证。",
+        "适合改造": "方向成立，但更值得拿来二次设计或换结构做法。",
+        "方向参考": "更偏趋势、语言和方向，不建议直接推进。"
+      };
+      const order = ["可直接买样", "适合改造", "方向参考"];
+      $("laneCards").innerHTML = order.map(name => `
+        <button class="lane-card ${cardClass(name)}" type="button" data-lane="${name}">
+          <strong>${name}</strong>
+          <em>${payload.stats.by_lane[name] || 0}</em>
+          <p>${descriptions[name]}</p>
+        </button>
+      `).join("");
+      Array.from(document.querySelectorAll(".lane-card")).forEach(el => {
+        el.addEventListener("click", () => {
+          state.lane = el.dataset.lane;
+          renderFilters();
+          renderMain();
+        });
+      });
+    }
+
+    function renderTrendList() {
+      const trends = payload.trends || {};
+      const list = [];
+      (trends.recommended_directions || []).slice(0, 4).forEach(item => list.push([item, "方向"]));
+      (trends.hot_signals || []).slice(0, 3).forEach(item => list.push([item, "信号"]));
+      const fallback = Object.entries(payload.stats.by_category).slice(0, 6).map(([name, count]) => `${name} · ${count}`);
+      if (!list.length) {
+        $("trendList").innerHTML = fallback.map(text => `<div class="trend-item"><strong>${text}</strong><span>当前可见池子里相对更密集的品类。</span></div>`).join("");
+        return;
+      }
+      $("trendList").innerHTML = list.map(([text, label]) => `<div class="trend-item"><strong>${label} · ${text}</strong></div>`).join("");
+    }
+
+    function renderQueue() {
+      const weekly = payload.weekly_report && payload.weekly_report.recommendations;
+      const queue = state.lane === "全部" && weekly && weekly.length
+        ? weekly
+        : payload.featured.lanes[state.lane === "全部" ? "可直接买样" : state.lane] || [];
+      $("queueList").innerHTML = queue.slice(0, 5).map(item => `
+        <div class="queue-item">
+          <strong>${item.title}</strong>
+          <span>${item.action_lane} · ${item.category} · ${item.source_name || item.source}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderFilters() {
+      const filters = [
+        ["laneFilters", "lane", ["全部", ...Object.keys(payload.stats.by_lane)]],
+        ["axisFilters", "axis", ["全部", ...Object.keys(payload.stats.by_axis)]],
+        ["categoryFilters", "category", ["全部", ...Object.keys(payload.stats.by_category)]],
+        ["sourceFilters", "source", ["全部", ...Object.keys(payload.stats.by_source_family)]]
+      ];
+      filters.forEach(([id, key, options]) => {
+        const root = $(id);
+        root.innerHTML = "";
+        options.forEach(option => root.appendChild(chip(option, state[key] === option, () => {
+          state[key] = option;
+          renderFilters();
+          renderMain();
+        })));
+      });
+    }
+
+    function match(item) {
+      if (state.lane !== "全部" && item.action_lane !== state.lane) return false;
+      if (state.axis !== "全部" && !item.axes.includes(state.axis)) return false;
+      if (state.category !== "全部" && item.category !== state.category) return false;
+      if (state.source !== "全部" && item.source_family !== state.source) return false;
+      if (state.q) {
+        const text = [
+          item.title, item.category, item.summary, item.source_name,
+          item.action_lane, item.source_family, ...item.axes, ...(item.tags || [])
+        ].join(" ").toLowerCase();
+        if (!text.includes(state.q.toLowerCase())) return false;
+      }
+      return true;
     }
 
     function priceText(value) {
@@ -385,123 +614,49 @@
       return "价格未知";
     }
 
-    function itemText(item) {
-      return [
-        item.title, item.summary, item.category,
-        ...(item.tags || []), ...(item.trend_tags || []),
-        ...(item.sources || []).map(s => s.source)
-      ].join(" ").toLowerCase();
-    }
-
-    function matches(item) {
-      if (state.source !== "全部" && !(item.sources || []).some(s => s.source === state.source)) return false;
-      if (state.category !== "全部" && item.category !== state.category) return false;
-      if (state.query && !itemText(item).includes(state.query.toLowerCase())) return false;
-      return true;
-    }
-
-    function button(label, count, active, onClick) {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = `filter-btn${active ? " active" : ""}`;
-      btn.textContent = count == null ? label : `${label}`;
-      btn.title = count == null ? label : `${label} · ${count}`;
-      btn.addEventListener("click", onClick);
-      return btn;
-    }
-
-    function renderStats() {
-      const stats = $("stats");
-      stats.innerHTML = "";
-      const total = payload.stats.total_products;
-      const all = document.createElement("button");
-      all.type = "button";
-      all.className = `stat${state.source === "全部" ? " active" : ""}`;
-      all.innerHTML = `<strong>${total}</strong><span>全部</span>`;
-      all.addEventListener("click", () => { state.source = "全部"; render(); });
-      stats.appendChild(all);
-
-      Object.entries(payload.stats.by_source).forEach(([name, count]) => {
-        const item = document.createElement("button");
-        item.type = "button";
-        item.className = `stat${state.source === name ? " active" : ""}`;
-        item.innerHTML = `<strong>${count}</strong><span>${shortSource(name)}</span>`;
-        item.addEventListener("click", () => { state.source = name; render(); });
-        stats.appendChild(item);
-      });
-    }
-
-    function renderFilters() {
-      const sourceEl = $("sourceFilters");
-      const categoryEl = $("categoryFilters");
-      sourceEl.innerHTML = "";
-      categoryEl.innerHTML = "";
-      sourceEl.appendChild(button("全部", null, state.source === "全部", () => { state.source = "全部"; render(); }));
-      Object.keys(payload.stats.by_source).forEach(name => {
-        sourceEl.appendChild(button(name, payload.stats.by_source[name], state.source === name, () => {
-          state.source = name;
-          render();
-        }));
-      });
-      categoryEl.appendChild(button("全部", null, state.category === "全部", () => { state.category = "全部"; render(); }));
-      Object.keys(payload.stats.by_category).forEach(name => {
-        categoryEl.appendChild(button(name, payload.stats.by_category[name], state.category === name, () => {
-          state.category = name;
-          render();
-        }));
-      });
-    }
-
-    function renderGrid() {
-      const items = payload.items.filter(matches);
-      $("subtitle").textContent = `${items.length} 条设计灵感 · ${Object.keys(payload.stats.by_source).length}个来源 · ${Object.keys(payload.stats.by_category).length}个品类`;
-      $("statusText").textContent = `每日更新 · ${payload.stats.total_products}条`;
-      const grid = $("grid");
-      if (!items.length) {
-        grid.innerHTML = `<div class="empty">没有找到匹配的内容</div>`;
-        return;
-      }
-      grid.innerHTML = items.map(item => {
-        const source = item.sources && item.sources[0] ? item.sources[0] : { source: "未知来源", source_type: "" };
-        const url = item.url || source.url || "#";
-        const image = item.image ? `<img class="thumb" src="${item.image}" loading="lazy" alt="">` : `<div class="thumb"></div>`;
-        const score = Math.round((item.selection_score || 0) / 10 * 10) / 10;
-        const tags = [...(item.trend_tags || []), ...(item.tags || [])].slice(0, 4).map(tag => `<span class="tag">${tag}</span>`).join("");
-        const scoreSource = item.display_scores || item.selection_scores || {};
-        const scores = Object.entries(scoreLabels).slice(0, 4).map(([key, label]) => {
-          const value = Number.isFinite(scoreSource[key]) ? scoreSource[key] : 0;
-          return `<span class="score-chip">${label} ${value}</span>`;
-        }).join("");
-        return `<article class="card">
-          ${image}
-          <span class="badge">${score}分</span>
+    function renderCards() {
+      const items = payload.items.filter(match);
+      $("emptyState").hidden = items.length > 0;
+      $("cardGrid").innerHTML = items.map(item => `
+        <article class="card">
+          ${item.image ? `<img class="thumb" src="${item.image}" alt="" loading="lazy">` : `<div class="thumb"></div>`}
           <div class="body">
             <div class="meta">
-              <span class="tag ${sourceClass(item)}">${source.source}</span>
-              <span class="tag cat-tag">${item.category || "未分类"}</span>
-              <span class="tag price-tag">${priceText(item.price_gate)}</span>
+              <span class="pill">${item.action_lane}</span>
+              <span class="pill sage">${item.category}</span>
+              <span class="pill sky">${priceText(item.price_gate)}</span>
+              <span class="pill gray">${item.image_state}</span>
             </div>
-            <h3><a href="${url}" target="_blank" rel="noopener">${item.title}</a></h3>
-            <p class="summary">${item.ai_reason || item.summary || ""}</p>
-            <div class="score-row">${scores}</div>
-            <div class="meta">${tags}</div>
+            <h2 class="title"><a href="${item.url}" target="_blank" rel="noopener">${item.title}</a></h2>
+            <p class="summary">${item.summary || item.review_reason || ""}</p>
+            <div class="scoreline">
+              <div class="score">${(item.score / 10).toFixed(1)}</div>
+              <div class="source">${item.source_name}<br>${item.source_family}</div>
+            </div>
+            <div class="tags">
+              ${item.axes.map(axis => `<span class="pill gray">${axis}</span>`).join("")}
+              ${(item.tags || []).slice(0, 3).map(tag => `<span class="pill gray">${tag}</span>`).join("")}
+            </div>
           </div>
-        </article>`;
-      }).join("");
+        </article>
+      `).join("");
     }
 
-    function render() {
-      renderStats();
-      renderFilters();
-      renderGrid();
+    function renderMain() {
+      renderQueue();
+      renderCards();
     }
 
     $("search").addEventListener("input", event => {
-      state.query = event.target.value.trim();
-      renderGrid();
+      state.q = event.target.value.trim();
+      renderCards();
     });
 
-    render();
+    renderHero();
+    renderLaneCards();
+    renderTrendList();
+    renderFilters();
+    renderMain();
   </script>
 </body>
 </html>
