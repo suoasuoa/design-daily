@@ -1,8 +1,8 @@
 {
   "date": "2026-05-25",
-  "timestamp": "2026-05-25T02:50:44.839930",
+  "timestamp": "2026-05-25T11:48:55.281015",
   "stats": {
-    "total": 1192,
+    "total": 1193,
     "by_source": {
       "Pinterest": 43,
       "Behance": 35,
@@ -15,10 +15,10 @@
       "Good Design Award": 443,
       "Design Milk": 14,
       "Yanko Design": 80,
-      "Dezeen": 40
+      "Dezeen": 41
     },
     "by_category": {
-      "创意厨具": 118,
+      "创意厨具": 119,
       "创意桌搭": 199,
       "装置艺术": 55,
       "氛围灯": 103,
@@ -23652,6 +23652,41 @@
         "usefulness": 7,
         "creativity": 8,
         "emotional": 9,
+        "total": 35,
+        "source": "deepseek"
+      }
+    },
+    {
+      "id": "c54622fdf0d4",
+      "title": "Veritas desk by Hulala Home",
+      "reason": "Dezeen Showroom: electric standing desk meets nested expanding worktable in the Veritas desk by American brand Hulala Home, designed for modern home offices. The Veritas desk combines a height-adjusta",
+      "source": "Dezeen",
+      "category": "创意厨具",
+      "creator": "Dezeen",
+      "score": 7.0,
+      "likes": 0,
+      "url": "https://www.dezeen.com/2026/05/25/veritas-desk-hulala-home-dezeen-showroom/",
+      "image": "",
+      "tags": [
+        "创意厨具",
+        "Dezeen",
+        "设计文章"
+      ],
+      "added": "2026-05-25",
+      "_scores": {
+        "直观度": 7,
+        "打击面": 6,
+        "实用性": 8,
+        "创意价值": 8,
+        "情绪价值": 6
+      },
+      "_score_total": 35,
+      "_deepseek": {
+        "intuitive": 7,
+        "broad_appeal": 6,
+        "usefulness": 8,
+        "creativity": 8,
+        "emotional": 6,
         "total": 35,
         "source": "deepseek"
       }
