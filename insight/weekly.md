@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-05-26T05:17:39
+- 生成时间：2026-05-26T10:33:01
 
 ## 行动分布
 
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.zwilling.com/us/cutlery/knives
 
-双立人品牌知名度高，刀具套装实用性强，满足高频烹饪需求，适用人群广，功能成熟无短板，价格超35元，3秒可识别品牌价值，情绪价值来自品牌信任感。
+双立人品牌知名度高，刀具套装实用性强，满足高频烹饪需求，适用人群广，功能成熟，价格高于35元，产品外观易识别，品牌本身带有情绪价值。
 
 ### 3. 大益 端午限定茶礼
 
@@ -49,19 +49,7 @@
 
 大益茶业端午佳节限定礼盒
 
-### 4. Govee 灯带套装
-
-- 品类：氛围灯
-- 路径：可直接买样
-- 启发：包装启发、情绪启发
-- 分数：7.9
-- 来源：抖音
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：#
-
-灯带实用性强，可装饰多种场景；氛围灯需求高频，尤其年轻群体；适用人群广；功能齐全（智能控制、多彩）；价格超35元；3秒可理解；情绪价值高（营造氛围）。
-
-### 5. 元祖 中秋礼盒
+### 4. 元祖 中秋礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -73,7 +61,7 @@
 
 台湾百年老店中秋限定礼盒
 
-### 6. Burton AK 冲锋衣
+### 5. Burton AK 冲锋衣
 
 - 品类：冲锋衣
 - 路径：可直接买样
@@ -85,7 +73,7 @@
 
 单板滑雪Burton高端AK系列冲锋衣
 
-### 7. Sunspel 英国Polo衫
+### 6. Sunspel 英国Polo衫
 
 - 品类：Polo衫
 - 路径：可直接买样
@@ -97,7 +85,7 @@
 
 英国百年高端Polo衫品牌
 
-### 8. JURA 全自动咖啡机
+### 7. JURA 全自动咖啡机
 
 - 品类：创意厨具
 - 路径：可直接买样
@@ -109,7 +97,7 @@
 
 瑞士JURA全自动咖啡机
 
-### 9. 星巴克 端午礼盒
+### 8. 星巴克 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -120,6 +108,18 @@
 - 链接：https://www.starbucks.com
 
 星巴克端午限定星冰粽礼盒
+
+### 9. 三顿半 咖啡礼盒
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：包装启发
+- 分数：7.7
+- 来源：抖音
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.saturnbird.com
+
+咖啡是高频消费品，礼盒形式适合送礼，实用性强，价格超过35元，3秒可识别为咖啡礼盒，功能明确，情绪价值体现在社交送礼场景。
 
 ### 10. 杨聘号 端午茶礼盒
 
@@ -215,33 +215,21 @@ Theory高端商务休闲Polo衫
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.popmart.com
 
-盲盒收纳展示盒满足实用收纳需求，盲盒爱好者高频使用，受众广，功能明确，售价通常超35元，3秒可理解，兼具展示和情绪价值。
+盲盒收纳展示盒实用性强，满足收纳和展示需求；盲盒爱好者高频使用；受众广，尤其年轻人；功能明确，无短板；预估售价超35元；3秒可理解用途；情绪价值高，兼具展示和社交属性。
 
-### 18. 三顿半 咖啡礼盒
+### 18. Govee 灯带套装
 
-- 品类：创意礼盒
+- 品类：氛围灯
 - 路径：可直接买样
-- 启发：包装启发
-- 分数：7.3
+- 启发：包装启发、情绪启发
+- 分数：7.2
 - 来源：抖音
 - 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.saturnbird.com
+- 链接：#
 
-咖啡为高频刚需，礼盒形式适合送礼，价格超35元，3秒可识别为咖啡礼盒，功能明确，情绪价值高。
+灯带实用性强，可装饰多种场景；氛围灯需求高频；适用人群广；功能齐全，智能控制；价格超35元；3秒看懂；情绪价值通过灯光氛围体现。
 
-### 19. 磁吸锅铲套装
-
-- 品类：创意厨具
-- 路径：可直接买样
-- 启发：功能启发、包装启发
-- 分数：7.2
-- 来源：Pinterest
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.peugeot-saveurs.com
-
-磁吸锅铲套装解决收纳痛点，实用性强；烹饪高频；适用人群广；功能简单但磁吸可能不够牢固；预估售价超35元；3秒看懂；情绪价值一般。
-
-### 20. 守兴昌 端午茶礼
+### 19. 守兴昌 端午茶礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -253,7 +241,7 @@ Theory高端商务休闲Polo衫
 
 守兴昌号普洱茶端午礼盒
 
-### 21. FERRERO ROCHER 端午
+### 20. FERRERO ROCHER 端午
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -265,7 +253,7 @@ Theory高端商务休闲Polo衫
 
 费列罗端午金莎礼盒
 
-### 22. 华美 端午礼盒
+### 21. 华美 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -277,17 +265,29 @@ Theory高端商务休闲Polo衫
 
 华美食品端午礼盒系列
 
-### 23. 巧克力礼盒装
+### 22. 巧克力礼盒装
 
 - 品类：创意礼盒
 - 路径：可直接买样
 - 启发：包装启发
-- 分数：6.8
+- 分数：6.7
 - 来源：Pinterest
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.laderach.com/en/chocolate-gifts
 
-巧克力礼盒作为礼品实用性强，节日或社交场景需求较高，受众广泛；产品功能明确（食用+送礼），无明显短板；预估售价超过35元；3秒内可识别为巧克力礼盒；情绪价值体现在送礼和精致包装上。
+巧克力礼盒作为礼品实用性强，节日或社交场景需求高频，受众广泛；产品功能明确（送礼/自用），无明显短板；预估售价超35元，3秒可识别为礼盒；情绪价值高，适合送礼场景。
+
+### 23. 广州酒家 端午礼盒
+
+- 品类：端午礼盒
+- 路径：可直接买样
+- 启发：包装启发
+- 分数：6.7
+- 来源：抖音
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.gzjj.com
+
+端午礼盒实用性强，节日送礼需求高，广式粽子受众广，价格超35元，产品功能明确，3秒可识别，但季节性明显，非高频需求。
 
 ### 24. 香薰蜡烛礼盒
 
@@ -299,45 +299,33 @@ Theory高端商务休闲Polo衫
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.diptyqueparis.com/en/candles
 
-香薰蜡烛礼盒实用且高频，适合送礼和自用，价格超过35元，3秒可懂，情绪价值高，但功能上无火香薰可能不如有火蜡烛氛围感强。
+香薰蜡烛礼盒兼具实用与情绪价值，高频需求（送礼/自用），打击面广（男女皆宜），功能无明显短板，售价通常超35元，3秒可识别为礼盒，情绪价值高。
 
-### 25. 广州酒家 端午礼盒
-
-- 品类：端午礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：6.5
-- 来源：抖音
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.gzjj.com
-
-粽子作为节日食品，实用性强，但端午礼盒为季节性产品，非高频需求；广式粽子受众广，功能明确，价格通常高于35元，3秒可识别为礼盒；情绪价值体现在节日送礼场景。
-
-### 26. 稻香村 月饼礼盒
+### 25. 稻香村 月饼礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
 - 启发：包装启发
-- 分数：6.5
+- 分数：6.6
 - 来源：小红书
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.daoxiangcun.com
 
-月饼礼盒实用性强，但中秋为季节性高频需求，打击面广，功能无明显短板，价格超35元，3秒看懂，老字号品牌自带情绪价值。
+月饼礼盒实用性强，但中秋为季节性高频需求，打击面广，功能无明显短板，价格超35元，3秒可识别，情绪价值高（送礼、社交）。
 
-### 27. 观夏 蜡烛礼盒
+### 26. 磁吸锅铲套装
 
-- 品类：创意礼盒
+- 品类：创意厨具
 - 路径：可直接买样
-- 启发：包装启发
-- 分数：6.4
-- 来源：抖音
+- 启发：功能启发、包装启发
+- 分数：6.5
+- 来源：Pinterest
 - 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.loeweperfumes.com
+- 链接：https://www.peugeot-saveurs.com
 
-香薰蜡烛具有实用性和情绪价值，但非高频消耗品；东方植物香调受众广，价格超35元，3秒可看懂；功能成立，情绪价值突出。
+磁吸锅铲套装解决收纳痛点，实用性强；日常烹饪高频使用；适用人群广；功能明确无短板；预估售价超35元；3秒可理解；情绪价值中等。
 
-### 28. 诸老大 端午礼盒
+### 27. 杏花楼 粽意礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -345,11 +333,23 @@ Theory高端商务休闲Polo衫
 - 分数：6.3
 - 来源：小红书
 - 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.zgld.com
+- 链接：https://www.xinghualou.com
 
-粽子礼盒实用性强，但端午为季节性节日，非高频需求；受众较广，功能明确，价格超35元，3秒可识别，情绪价值通过礼盒包装体现。
+端午礼盒实用性强，节日送礼需求高，但非高频；老字号品牌有广泛受众，价格超35元，产品功能明确，3秒可识别，情绪价值来自节日和品牌。
 
-### 29. 永璞 咖啡联名礼盒
+### 28. 永璞 咖啡联名礼盒
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：包装启发
+- 分数：6.3
+- 来源：抖音
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.yongpu.com
+
+咖啡是高频消费品，联名礼盒兼具实用与社交属性，价格超35元，功能明确，情绪价值高。但来源次数仅1次，需验证市场热度。
+
+### 29. 观夏 蜡烛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -357,9 +357,9 @@ Theory高端商务休闲Polo衫
 - 分数：6.1
 - 来源：抖音
 - 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.yongpu.com
+- 链接：https://www.loeweperfumes.com
 
-咖啡是高频消费品，联名礼盒兼具实用与社交属性，价格超过35元，但受众相对窄，功能无短板但非刚需。
+香薰蜡烛具有实用性和情绪价值，但非高频消耗品；价格超过35元，3秒可看懂；功能成立，但受众相对窄。
 
 ### 30. 气味图书馆 礼盒
 
@@ -371,7 +371,7 @@ Theory高端商务休闲Polo衫
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.scenllab.com
 
-气味图书馆礼盒作为创意礼盒，实用性和功能尚可，但非高频需求；价格超过35元，3秒可看懂，情绪价值较高，但打击面一般。
+气味图书馆礼盒作为创意礼盒，具有一定的实用性和情感价值，但非高频需求；价格超过35元，符合条件；产品功能（香氛）无明显短板，但需依赖品牌认知；3秒内可理解是礼盒产品。
 
 ### 31. Refik Anadol AI装置
 
@@ -407,7 +407,7 @@ Refik Anadol AI数据雕塑装置艺术
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：#
 
-手机壳是高频刚需，防摔功能实用，品牌有社交背书，但价格可能偏高，且功能单一无额外情绪价值。
+手机壳是高频刚需，防摔功能实用，品牌知名度高，但价格可能偏高，且市场竞争激烈。
 
 ### 34. 草間彌生 无限镜屋
 
@@ -505,31 +505,7 @@ Good Design Award · Home Electronics · THE PEACOCK VACUUM BOTTLE CO., LTD.
 
 iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of its tightly pressed and varied corks—closures unlike those on wine or beer. No universal opener exists for this diversity, making the first step of dr
 
-### 42. BOTTLED JOY 吨吨桶
-
-- 品类：水杯
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：抖音
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://bottledjoy.com
-
-水杯是高频刚需，大容量设计实用，抖音网红属性带来情绪价值，但价格可能低于35元，功能无短板但非创新。
-
-### 43. Anker 能量棒充电宝
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：Instagram
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：#
-
-充电宝实用性强，高频需求，适用人群广，功能成熟，价格通常高于35元，产品形态直观易懂，品牌有情绪价值。
-
-### 44. Peak Design Tech Pouch
+### 42. Peak Design Tech Pouch
 
 - 品类：收纳包
 - 路径：适合改造
@@ -541,7 +517,7 @@ iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed
 
 美国专业摄影收纳包
 
-### 45. Stanley 保温水壶
+### 43. Stanley 保温水壶
 
 - 品类：水杯
 - 路径：适合改造
@@ -553,7 +529,7 @@ iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed
 
 Stanley经典经典锤纹保温壶
 
-### 46. Le Creuset 珐琅锅
+### 44. Le Creuset 珐琅锅
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -565,7 +541,7 @@ Stanley经典经典锤纹保温壶
 
 法国Le Creuset经典珐琅铸铁锅
 
-### 47. Staub 圆形珐琅锅
+### 45. Staub 圆形珐琅锅
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -577,7 +553,7 @@ Stanley经典经典锤纹保温壶
 
 法国Staub经典圆形珐琅铸铁锅
 
-### 48. Logitech MX Master 3
+### 46. Logitech MX Master 3
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -589,7 +565,7 @@ Stanley经典经典锤纹保温壶
 
 Logitech MX Master 3S高端鼠标
 
-### 49. Double-Wall Carafe
+### 47. Double-Wall Carafe
 
 - 品类：水杯
 - 路径：适合改造
@@ -601,7 +577,7 @@ Logitech MX Master 3S高端鼠标
 
 Good Design Award · The simple form of this double-walled carafe is designed for holding directly in your hand when containing hot beverages and pouring that. It also prevents condensation when containing cold beverages.
 
-### 50. ZOJIRUSHI Stainless Tumbler SX-LA72H.89H
+### 48. ZOJIRUSHI Stainless Tumbler SX-LA72H.89H
 
 - 品类：水杯
 - 路径：适合改造
@@ -613,7 +589,7 @@ Good Design Award · The simple form of this double-walled carafe is designed fo
 
 Good Design Award · This is a portable, leak-proof, carry-on tumbler. This large capacity size is mainly targeted at Southeast Asia, Taiwan, and North America areas. It can be used like a tableware indoors and can be easily sealed and carried when going outside.
 
-### 51. ZOJIRUSHI Stainless Mug SM-RS50.65
+### 49. ZOJIRUSHI Stainless Mug SM-RS50.65
 
 - 品类：水杯
 - 路径：适合改造
@@ -625,7 +601,7 @@ Good Design Award · This is a portable, leak-proof, carry-on tumbler. This larg
 
 Good Design Award · A stainless steel mug with a handle and vacuum-insulated double walls. Ideal for carrying by hand without a bag or bringing hand with other items while on the move. Features a "seamless seal" cap and dishwasher compatibility for easy cleaning, addres
 
-### 52. ZOJIRUSHI Stainless Mug SU-AA36.48
+### 50. ZOJIRUSHI Stainless Mug SU-AA36.48
 
 - 品类：水杯
 - 路径：适合改造
@@ -637,7 +613,7 @@ Good Design Award · A stainless steel mug with a handle and vacuum-insulated do
 
 Good Design Award · A stainless steel mug with a vacuum-insulated double wall, perfect for those on the go who want to carry their favorite drink or stay hydrated throughout the day. Its innovative thermoring structure maintains ideal beverage temperatures. Featuring a
 
-### 53. USURAI
+### 51. USURAI
 
 - 品类：水杯
 - 路径：适合改造
@@ -649,7 +625,7 @@ Good Design Award · A stainless steel mug with a vacuum-insulated double wall, 
 
 Good Design Award · USURAI is a thin glass that has both delicacy and strength. The thin-walled design ensures nice feel to your lips and light feel in your hand, and the unique full-surface ion-toughening treatment makes it hard to break and highly durable enough to be
 
-### 54. 360°Tumbler・Cup
+### 52. 360°Tumbler・Cup
 
 - 品类：水杯
 - 路径：适合改造
@@ -661,7 +637,7 @@ Good Design Award · USURAI is a thin glass that has both delicacy and strength.
 
 Good Design Award · This tumbler and cup allows one to drink from any position without removing the lid. The rim made with a soft shape that is pleasant to the mouth. The dual-layer vacuum design retains beverage temperature. Enjoy your beverage even while doing anythin
 
-### 55. A sturdy sugarcane cup that you can reuse many times and still throw away with burnable waste.
+### 53. A sturdy sugarcane cup that you can reuse many times and still throw away with burnable waste.
 
 - 品类：水杯
 - 路径：适合改造
@@ -673,7 +649,7 @@ Good Design Award · This tumbler and cup allows one to drink from any position 
 
 Good Design Award · The returnable, or Biodegradable Cup that is petroleum-free, plant-based plastic, the thinnest PLA injection-molded cup in the world (thickness: 0.53 mm), strong and non-deformable. It feels good by thin thickness when drinking beverage. The materia
 
-### 56. 1616/arita japan MANZ "Contour" collection
+### 54. 1616/arita japan MANZ "Contour" collection
 
 - 品类：水杯
 - 路径：适合改造
@@ -685,7 +661,7 @@ Good Design Award · The returnable, or Biodegradable Cup that is petroleum-free
 
 Good Design Award · 1616/arita japan presents the Tea and Hojicha Cup-2 enduring designs by Danish ceramicist Richard Manz.Intertwining principles of Scandinavian design with Japanese craftsmanship, these intuitively appealing vessels honour Manz's legacy and exhibit an
 
-### 57. ZOJIRUSHI Stainless Mug SU-BA36.48
+### 55. ZOJIRUSHI Stainless Mug SU-BA36.48
 
 - 品类：水杯
 - 路径：适合改造
@@ -697,7 +673,7 @@ Good Design Award · 1616/arita japan presents the Tea and Hojicha Cup-2 endurin
 
 Good Design Award · This one-touch stainless steel mug is designed for easy one-handed use. It features a "seamless lid" that integrates the lid and gasket, so there's no need to disassemble the spout. The mug can be split into two parts for dishwasher cleaning. Availab
 
-### 58. Handit Simple Thermo Bottle 350ml/500ml
+### 56. Handit Simple Thermo Bottle 350ml/500ml
 
 - 品类：水杯
 - 路径：适合改造
@@ -709,7 +685,7 @@ Good Design Award · This one-touch stainless steel mug is designed for easy one
 
 Good Design Award · An original stainless steel thermos bottle that is not only easy to carry, but also easy to wash thanks to its unique packing structure.
 
-### 59. Elthy™ Series
+### 57. Elthy™ Series
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -721,7 +697,7 @@ Good Design Award · An original stainless steel thermos bottle that is not only
 
 iF Design Award · The Elthy™ Series packaging is designed to embody the brand vision — a playground for adults. It experiments with bold material ideas using recycled paper pulp as the core structure, forming both its tactile and symbolic character. The design embrac
 
-### 60. Dwell Dripper for Verve Coffee Roasters
+### 58. Dwell Dripper for Verve Coffee Roasters
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -733,7 +709,7 @@ iF Design Award · The Elthy™ Series packaging is designed to embody the brand
 
 iF Design Award · The Dwell Dripper packaging is a clever cardboard structure for Verve Coffee’s first ever coffee brewing product, the silicone Dwell Dripper. Released in seven colors with matching coffee scoops, the Dripper is 100% silicone for durability, ease-of-
 
-### 61. BambooScroll+
+### 59. BambooScroll+
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -745,7 +721,7 @@ iF Design Award · The Dwell Dripper packaging is a clever cardboard structure f
 
 iF Design Award · This is a flat-pack gift box, made from bamboo near our production base—a true gift from nature. Blending modern design with traditional bamboo slip structure, it works as electronic product packaging and recaptures authentic bamboo slips: unfold or
 
-### 62. Honeycomb Lifting LED Light Box
+### 60. Honeycomb Lifting LED Light Box
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -757,7 +733,19 @@ iF Design Award · This is a flat-pack gift box, made from bamboo near our produ
 
 iF Design Award · This is a multi-functional light box that integrates eco-friendliness, reusability, and a creative opening method. The entire packaging adopts 100% naturally degradable corrugated cardboard combined with honeycomb paper. It features a minimalist stru
 
-### 63. Eco-friendly Packaging for Cloud Erosion Whisky
+### 61. Nature bamboo fiber cup
+
+- 品类：水杯
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.4
+- 来源：iF设计奖
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://ifdesign.com/en/winner-ranking/project/nature-bamboo-fiber-cup/764769
+
+iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to nature" through sustainable design. Crafted from natural bamboo fiber, recycled coffee grounds, and plant-based starch, it is free from plastics and synthetic polymers, certified plastic-fr
+
+### 62. Eco-friendly Packaging for Cloud Erosion Whisky
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -769,7 +757,7 @@ iF Design Award · This is a multi-functional light box that integrates eco-frie
 
 iF Design Award · "Mist Carving" whisky packaging embodies Yunnan's terroir through sustainable innovation, transforming distiller's grains into elegant bio-based materials that mirror the region's mist-sculpted landscapes. The design fuses frosted glass with relief c
 
-### 64. LAN GUI
+### 63. LAN GUI
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -781,7 +769,7 @@ iF Design Award · "Mist Carving" whisky packaging embodies Yunnan's terroir thr
 
 iF Design Award · Inspired by Su Shi’s Red Cliff Ode (a masterpiece by China's most iconic poet), LAN GUI is a luxury tea set celebrating the "Paired Elegance" of Orchid (Black) and Osmanthus (Gold). The design magnifies microscopic tea stem cells into radial patterns
 
-### 65. Desktop wizard
+### 64. Desktop wizard
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -793,7 +781,7 @@ iF Design Award · Inspired by Su Shi’s Red Cliff Ode (a masterpiece by China'
 
 Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
-### 66. Flo Monitor Arm
+### 65. Flo Monitor Arm
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -805,17 +793,29 @@ Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
 Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
-### 67. PITAKA 凯夫拉手机壳
+### 66. Anker 能量棒充电宝
 
-- 品类：手机壳
+- 品类：充电宝
 - 路径：适合改造
 - 启发：功能启发
-- 分数：8.2
-- 来源：Red Dot
+- 分数：8.3
+- 来源：Instagram
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：#
 
-手机壳是高频刚需，凯夫拉材质高端且实用，Red Dot设计奖增加信任，但价格可能偏高，且仅一次来源需验证。
+充电宝实用且高频，Anker品牌有口碑，但价格可能低于35元，且功能无短板但缺乏情绪价值。
+
+### 67. CASETiFY 防摔手机壳
+
+- 品类：手机壳
+- 路径：适合改造
+- 启发：视觉启发
+- 分数：8.2
+- 来源：Red Dot
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.casetify.com
+
+手机壳是高频刚需，防摔功能实用，Red Dot和联名提升情绪价值，但价格可能偏高，打击面受限于品牌溢价。
 
 ### 68. Tom Bihn 旅行收纳包
 
