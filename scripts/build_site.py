@@ -18,6 +18,13 @@ PACKAGING_WORDS = ["包装", "packaging", "box", "gift", "礼盒", "套装", "mo
 STRUCTURE_WORDS = ["结构", "structure", "支架", "frame", "fold", "hinge", "assembly", "模块", "shelf"]
 EMOTION_WORDS = ["可爱", "cute", "温暖", "warm", "治愈", "playful", "surprise", "惊喜", "趣味", "幽默", "氛围"]
 VISUAL_WORDS = ["纹理", "texture", "color", "颜色", "graphic", "图形", "surface", "材质", "finish"]
+DAILY_SOURCE_QUOTAS = {
+    "奖项案例": 10,
+    "媒体案例": 8,
+    "包装专项": 5,
+    "设计社区": 5,
+    "市场信号": 2,
+}
 
 
 def sorted_products(products):
@@ -231,14 +238,34 @@ def build_daily_groups(items, per_day=30, max_days=30):
     for day in sorted(by_day.keys(), reverse=True)[:max_days]:
         seen = set()
         picks = []
-        for item in sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True):
+        ranked = sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
+
+        for family, quota in DAILY_SOURCE_QUOTAS.items():
+            for item in ranked:
+                if len([pick for pick in picks if pick["source_family"] == family]) >= quota:
+                    break
+                if item["source_family"] != family:
+                    continue
+                key = dedupe_key(item)
+                if key in seen:
+                    continue
+                seen.add(key)
+                picks.append(item)
+                if len(picks) >= per_day:
+                    break
+            if len(picks) >= per_day:
+                break
+
+        for item in ranked:
+            if len(picks) >= per_day:
+                break
             key = dedupe_key(item)
             if key in seen:
                 continue
             seen.add(key)
             picks.append(item)
-            if len(picks) >= per_day:
-                break
+
+        by_source = Counter(item["source_family"] for item in picks)
         groups.append(
             {
                 "date": day,
@@ -249,7 +276,12 @@ def build_daily_groups(items, per_day=30, max_days=30):
                 "stats": {
                     "by_lane": dict(Counter(item["action_lane"] for item in picks).most_common()),
                     "by_category": dict(Counter(item["category"] for item in picks).most_common(12)),
-                    "by_source_family": dict(Counter(item["source_family"] for item in picks).most_common()),
+                    "by_source_family": dict(by_source.most_common()),
+                    "source_quota": DAILY_SOURCE_QUOTAS,
+                    "source_quota_fill": {
+                        family: min(by_source.get(family, 0), quota)
+                        for family, quota in DAILY_SOURCE_QUOTAS.items()
+                    },
                 },
                 "items": picks,
             }
