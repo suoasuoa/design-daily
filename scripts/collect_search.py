@@ -11,6 +11,7 @@ import urllib.parse
 import urllib.request
 
 from insight_common import RAW_DIR, ensure_dirs, load_json, stable_hash, strip_html, write_json
+from insight_config import SOURCE_DOMAIN_META
 
 
 SSL_CONTEXT = ssl._create_unverified_context()
@@ -61,7 +62,17 @@ def clean_duck_url(url):
     return url
 
 
+def source_meta_for_url(url):
+    host = urllib.parse.urlparse(url).netloc.lower().replace("www.", "")
+    for domain, meta in SOURCE_DOMAIN_META.items():
+        if host == domain or host.endswith("." + domain):
+            return meta
+    return None
+
+
 def is_product_like_url(url):
+    if not source_meta_for_url(url):
+        return False
     parsed = urllib.parse.urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
         return False
@@ -104,10 +115,11 @@ def lead_from_result(job, result):
     title = strip_html(result.get("title", "")).strip()
     snippet = strip_html(result.get("snippet", "")).strip()
     url = result.get("url", "")
-    source = urllib.parse.urlparse(url).netloc.replace("www.", "") or "Open Web Search"
+    meta = source_meta_for_url(url) or {}
+    source = meta.get("source") or urllib.parse.urlparse(url).netloc.replace("www.", "") or "Curated Web Search"
     tags = [
         job.get("category", ""),
-        "公开搜索",
+        "白名单来源",
         job.get("intent_note", ""),
         job.get("source_group", ""),
     ]
@@ -116,8 +128,9 @@ def lead_from_result(job, result):
         "title": re.sub(r"\s+", " ", title)[:160],
         "reason": snippet[:260] or f"Open web search result for {job.get('query')}",
         "source": source,
+        "source_type": meta.get("source_type", ""),
         "category": job.get("category"),
-        "creator": "open web search",
+        "creator": source,
         "score": 0,
         "likes": 0,
         "url": url,
@@ -125,6 +138,8 @@ def lead_from_result(job, result):
         "tags": [tag for tag in tags if tag],
         "search_query": job.get("query"),
         "search_intent": job.get("intent"),
+        "source_group": job.get("source_group"),
+        "quality_tier": job.get("quality_tier", "curated"),
         "added": dt.date.today().isoformat(),
         "collected_at": dt.date.today().isoformat(),
     }

@@ -54,10 +54,52 @@ SOURCE_TYPES = {
     "Dezeen": "editorial_source",
     "Design Milk": "editorial_source",
     "Yanko Design": "editorial_source",
+    "Core77": "editorial_source",
+    "Designboom": "editorial_source",
+    "TrendHunter": "trend_source",
+    "The Dieline": "packaging_source",
+    "Packaging of the World": "packaging_source",
+    "Pentawards": "packaging_source",
     "Good Design Award": "verified_official",
     "iF设计奖": "verified_official",
     "Red Dot": "verified_official",
+    "DIA 中国设计智造大奖": "verified_official",
     "A' Design Award": "verified_official",
+    "IDEA": "verified_official",
+    "站酷": "design_community",
+    "普象网": "design_community",
+    "设计癖": "design_community",
+    "数英": "design_community",
+    "Threadless": "market_reference",
+    "Kickstarter": "market_reference",
+    "Indiegogo": "market_reference",
+    "Product Hunt": "market_reference",
+}
+
+SOURCE_DOMAIN_META = {
+    "dezeen.com": {"source": "Dezeen", "source_type": "editorial_source"},
+    "design-milk.com": {"source": "Design Milk", "source_type": "editorial_source"},
+    "yankodesign.com": {"source": "Yanko Design", "source_type": "editorial_source"},
+    "core77.com": {"source": "Core77", "source_type": "editorial_source"},
+    "designboom.com": {"source": "Designboom", "source_type": "editorial_source"},
+    "trendhunter.com": {"source": "TrendHunter", "source_type": "trend_source"},
+    "thedieline.com": {"source": "The Dieline", "source_type": "packaging_source"},
+    "packagingoftheworld.com": {"source": "Packaging of the World", "source_type": "packaging_source"},
+    "pentawards.com": {"source": "Pentawards", "source_type": "packaging_source"},
+    "red-dot.org": {"source": "Red Dot", "source_type": "verified_official"},
+    "ifdesign.com": {"source": "iF设计奖", "source_type": "verified_official"},
+    "g-mark.org": {"source": "Good Design Award", "source_type": "verified_official"},
+    "di-award.org": {"source": "DIA 中国设计智造大奖", "source_type": "verified_official"},
+    "idsa.org": {"source": "IDEA", "source_type": "verified_official"},
+    "zcool.com.cn": {"source": "站酷", "source_type": "design_community"},
+    "puxiang.com": {"source": "普象网", "source_type": "design_community"},
+    "shejipi.com": {"source": "设计癖", "source_type": "design_community"},
+    "digitaling.com": {"source": "数英", "source_type": "design_community"},
+    "behance.net": {"source": "Behance", "source_type": "social_signal"},
+    "threadless.com": {"source": "Threadless", "source_type": "market_reference"},
+    "kickstarter.com": {"source": "Kickstarter", "source_type": "market_reference"},
+    "indiegogo.com": {"source": "Indiegogo", "source_type": "market_reference"},
+    "producthunt.com": {"source": "Product Hunt", "source_type": "market_reference"},
 }
 
 SELECTION_WEIGHTS = {
@@ -92,6 +134,22 @@ RSS_FEEDS = [
     {
         "source": "Yanko Design",
         "url": "https://www.yankodesign.com/feed/",
+    },
+    {
+        "source": "Core77",
+        "url": "https://www.core77.com/rss/all.xml",
+    },
+    {
+        "source": "Designboom",
+        "url": "https://www.designboom.com/feed/",
+    },
+    {
+        "source": "The Dieline",
+        "url": "https://thedieline.com/feed/",
+    },
+    {
+        "source": "Packaging of the World",
+        "url": "https://packagingoftheworld.com/feed/",
     },
 ]
 
@@ -151,25 +209,53 @@ SEARCH_QUERY_PATTERNS = {
 }
 
 SEARCH_SOURCE_GROUPS = {
-    "global_web": [
+    "editorial_main": [
+        "site:dezeen.com/design",
+        "site:yankodesign.com",
+        "site:design-milk.com",
+        "site:core77.com",
+        "site:designboom.com/design",
+    ],
+    "award_gallery": [
+        "site:red-dot.org/project",
+        "site:ifdesign.com/en/winner-ranking/project",
+        "site:g-mark.org/en/gallery/winners",
+        "site:di-award.org",
+        "site:idsa.org/awards",
+    ],
+    "packaging_specialist": [
+        "site:thedieline.com",
+        "site:packagingoftheworld.com",
+        "site:pentawards.com",
+        "site:zcool.com.cn/work 包装",
+        "site:digitaling.com/projects 礼盒",
+    ],
+    "design_community": [
+        "site:zcool.com.cn/work",
+        "site:puxiang.com",
+        "site:shejipi.com",
+        "site:behance.net/gallery",
+        "site:digitaling.com/projects",
+    ],
+    "market_signal": [
         "site:trendhunter.com",
         "site:kickstarter.com",
         "site:indiegogo.com",
         "site:producthunt.com",
-        "site:designboom.com",
-        "site:core77.com",
-        "site:thegadgetflow.com",
+        "site:threadless.com",
     ],
-    "brand_and_shop": [
-        "site:amazon.com",
-        "site:etsy.com",
-        "site:uncommongoods.com",
-        "site:urbanoutfitters.com",
-        "site:muji.com",
-    ],
-    "china_reference": [
-        "site:smzdm.com",
-        "site:1688.com",
-        "site:taobao.com",
-    ],
+}
+
+CATEGORY_SOURCE_GROUPS = {
+    "创意礼盒": ["packaging_specialist", "design_community", "award_gallery", "editorial_main"],
+    "中秋礼盒": ["packaging_specialist", "design_community", "award_gallery"],
+    "端午礼盒": ["packaging_specialist", "design_community", "award_gallery"],
+    "装置艺术": ["editorial_main", "award_gallery", "design_community"],
+    "T恤": ["design_community", "market_signal"],
+    "卫衣": ["design_community", "market_signal"],
+    "Polo衫": ["design_community", "market_signal"],
+    "帽子": ["design_community", "market_signal", "editorial_main"],
+    "手机壳": ["market_signal", "design_community", "award_gallery"],
+    "充电宝": ["market_signal", "award_gallery", "editorial_main"],
+    "收纳包": ["editorial_main", "award_gallery", "market_signal"],
 }

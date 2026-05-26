@@ -37,7 +37,7 @@ TRACKING_PARAMS = {
 }
 
 SOURCE_PREFIX_RE = re.compile(
-    r"^(pinterest|behance|instagram|dezeen|design milk|yanko design|小红书|抖音|red dot|good design award|if设计奖|a' design award)\s*[·:\-|]\s*",
+    r"^(pinterest|behance|instagram|dezeen|design milk|yanko design|core77|designboom|trendhunter|the dieline|packaging of the world|pentawards|小红书|抖音|red dot|good design award|if设计奖|dia 中国设计智造大奖|a' design award|站酷|普象网|设计癖|数英)\s*[·:\-|]\s*",
     re.IGNORECASE,
 )
 
@@ -193,7 +193,7 @@ def make_source_record(item):
     source = item.get("source") or item.get("platform") or "未知来源"
     return {
         "source": source,
-        "source_type": source_type(source),
+        "source_type": item.get("source_type") or source_type(source),
         "url": url,
         "title": clean_title(item.get("title", "")),
         "image": item.get("image", ""),

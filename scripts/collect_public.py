@@ -22,6 +22,28 @@ def child_text(node, names):
     return ""
 
 
+def child_image(node, description=""):
+    for child in list(node):
+        tag = child.tag.lower()
+        if tag.endswith("thumbnail") or tag.endswith("content"):
+            url = child.attrib.get("url", "")
+            if url and (url.startswith("http://") or url.startswith("https://")):
+                return url
+        if tag.endswith("enclosure"):
+            url = child.attrib.get("url", "")
+            media_type = child.attrib.get("type", "")
+            if url and media_type.startswith("image/"):
+                return url
+    match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', description or "", re.IGNORECASE)
+    if match:
+        image = match.group(1).strip()
+        if image.startswith("//"):
+            image = "https:" + image
+        if image.startswith(("http://", "https://")):
+            return image
+    return ""
+
+
 def collect_feed(feed, timeout=30):
     req = urllib.request.Request(feed["url"], headers={"User-Agent": "DesignDailyInsight/1.0"})
     with urllib.request.urlopen(req, timeout=timeout, context=CTX) as resp:
@@ -49,6 +71,7 @@ def collect_feed(feed, timeout=30):
                 "{http://purl.org/rss/1.0/modules/content/}encoded",
             ],
         )
+        image = child_image(node, description)
         description = strip_html(description)
         if not title or not link:
             continue
@@ -66,7 +89,7 @@ def collect_feed(feed, timeout=30):
                 "score": 0,
                 "likes": 0,
                 "url": link,
-                "image": "",
+                "image": image,
                 "tags": [category, feed["source"], "公开来源"],
                 "added": dt.date.today().isoformat(),
                 "collected_at": dt.date.today().isoformat(),

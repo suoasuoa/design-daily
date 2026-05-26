@@ -6,7 +6,7 @@ import datetime as dt
 import urllib.parse
 
 from insight_common import DATA_DIR, ensure_dirs, write_json
-from insight_config import CATEGORIES, SEARCH_INTENTS, SEARCH_QUERY_PATTERNS, SEARCH_SOURCE_GROUPS
+from insight_config import CATEGORIES, CATEGORY_SOURCE_GROUPS, SEARCH_INTENTS, SEARCH_QUERY_PATTERNS, SEARCH_SOURCE_GROUPS
 
 
 def intent_for_query(category, query):
@@ -28,7 +28,7 @@ def build_jobs(categories=None, per_category=4):
     today = dt.date.today().isoformat()
     for category in categories:
         base_queries = SEARCH_QUERY_PATTERNS.get(category, [category])
-        for query in base_queries[:per_category]:
+        for query in base_queries[: max(1, min(per_category, 2))]:
             intent = intent_for_query(category, query)
             jobs.append(
                 {
@@ -37,13 +37,19 @@ def build_jobs(categories=None, per_category=4):
                     "query": query,
                     "intent": intent,
                     "intent_note": SEARCH_INTENTS[intent],
-                    "source_group": "open_web",
+                    "source_group": "curated_keyword",
+                    "quality_tier": "curated",
                     "search_url": search_url(query),
                     "created_at": today,
                 }
             )
-        for group_name, sites in SEARCH_SOURCE_GROUPS.items():
-            for site in sites[:2]:
+        group_names = CATEGORY_SOURCE_GROUPS.get(
+            category,
+            ["editorial_main", "award_gallery", "design_community", "market_signal"],
+        )
+        for group_name in group_names:
+            sites = SEARCH_SOURCE_GROUPS.get(group_name, [])
+            for site in sites[:3]:
                 query = f"{category} {site}"
                 intent = intent_for_query(category, query)
                 jobs.append(
@@ -54,6 +60,7 @@ def build_jobs(categories=None, per_category=4):
                         "intent": intent,
                         "intent_note": SEARCH_INTENTS[intent],
                         "source_group": group_name,
+                        "quality_tier": "curated",
                         "search_url": search_url(query),
                         "created_at": today,
                     }

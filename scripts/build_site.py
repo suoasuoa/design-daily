@@ -46,6 +46,14 @@ def source_family(item):
         return "奖项案例"
     if source_type == "editorial_source":
         return "媒体案例"
+    if source_type == "packaging_source":
+        return "包装专项"
+    if source_type == "design_community":
+        return "设计社区"
+    if source_type == "market_reference":
+        return "市场信号"
+    if source_type == "trend_source":
+        return "趋势观察"
     return "其他来源"
 
 
@@ -70,7 +78,7 @@ def action_lane(item):
         return "适合改造"
     if hits(text, PACKAGING_WORDS) >= 2 or category in {"创意礼盒", "中秋礼盒", "端午礼盒"}:
         return "适合改造"
-    if source_type == "verified_official" or source_type == "editorial_source":
+    if source_type in {"verified_official", "editorial_source", "packaging_source", "design_community"}:
         return "方向参考"
     return "适合改造"
 
