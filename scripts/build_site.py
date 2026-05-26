@@ -19,11 +19,12 @@ STRUCTURE_WORDS = ["结构", "structure", "支架", "frame", "fold", "hinge", "a
 EMOTION_WORDS = ["可爱", "cute", "温暖", "warm", "治愈", "playful", "surprise", "惊喜", "趣味", "幽默", "氛围"]
 VISUAL_WORDS = ["纹理", "texture", "color", "颜色", "graphic", "图形", "surface", "材质", "finish"]
 DAILY_SOURCE_QUOTAS = {
-    "奖项案例": 10,
-    "媒体案例": 8,
+    "奖项案例": 8,
+    "媒体案例": 6,
     "包装专项": 5,
     "设计社区": 5,
-    "市场信号": 2,
+    "市场信号": 3,
+    "社交灵感": 3,
 }
 
 
@@ -256,9 +257,15 @@ def build_daily_groups(items, per_day=30, max_days=30):
             if len(picks) >= per_day:
                 break
 
+        quota_families = set(DAILY_SOURCE_QUOTAS)
         for item in ranked:
             if len(picks) >= per_day:
                 break
+            family = item["source_family"]
+            if family in quota_families:
+                by_source_count = len([pick for pick in picks if pick["source_family"] == family])
+                if by_source_count >= DAILY_SOURCE_QUOTAS[family]:
+                    continue
             key = dedupe_key(item)
             if key in seen:
                 continue
