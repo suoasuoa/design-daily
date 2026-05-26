@@ -20,6 +20,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: insight-pool-main
+  cancel-in-progress: false
+
 jobs:
   build-insight-pool:
     runs-on: ubuntu-latest
