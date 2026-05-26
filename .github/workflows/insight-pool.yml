@@ -4,6 +4,8 @@ on:
   schedule:
     # Daily at 09:20 Beijing time.
     - cron: "20 1 * * *"
+    # Backup run at 14:20 Beijing time in case GitHub drops/delays the first scheduled run.
+    - cron: "20 6 * * *"
   workflow_dispatch:
     inputs:
       score_limit:

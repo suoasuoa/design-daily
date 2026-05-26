@@ -1,9 +1,6 @@
 name: Daily Design Digest
 
 on:
-  schedule:
-    # 每天3次: UTC 0/8/16 = CST 08:00/16:00/00:00(次日)
-    - cron: '0 0,8,16 * * *'
   workflow_dispatch:
     inputs:
       mode:
