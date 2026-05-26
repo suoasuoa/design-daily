@@ -2,6 +2,7 @@
 """Generate the recurring search job matrix for weekly product discovery."""
 
 import argparse
+from collections import defaultdict, deque
 import datetime as dt
 import urllib.parse
 
@@ -68,13 +69,45 @@ def build_jobs(categories=None, per_category=4):
     return jobs
 
 
+def balanced_jobs(jobs):
+    """Interleave jobs across source groups and categories so early limits stay diverse."""
+    buckets = defaultdict(deque)
+    for job in jobs:
+        key = (job.get("source_group") or "unknown", job.get("category") or "未分类")
+        buckets[key].append(job)
+
+    group_order = [
+        "packaging_specialist",
+        "design_community",
+        "market_signal",
+        "editorial_main",
+        "award_gallery",
+        "curated_keyword",
+    ]
+    ordered = []
+    while any(buckets.values()):
+        for category in CATEGORIES:
+            for group_name in group_order:
+                bucket = buckets.get((group_name, category))
+                if bucket:
+                    ordered.append(bucket.popleft())
+        for key in sorted(buckets):
+            group_name, _category = key
+            if group_name in group_order:
+                continue
+            bucket = buckets[key]
+            if bucket:
+                ordered.append(bucket.popleft())
+    return ordered
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--per-category", type=int, default=4, help="Base keyword queries per category.")
     args = parser.parse_args()
 
     ensure_dirs()
-    jobs = build_jobs(per_category=args.per_category)
+    jobs = balanced_jobs(build_jobs(per_category=args.per_category))
     payload = {
         "generated_at": dt.datetime.now().replace(microsecond=0).isoformat(),
         "total_jobs": len(jobs),

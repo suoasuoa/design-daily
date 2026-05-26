@@ -185,6 +185,7 @@ def record(item):
         "axes": axes,
         "image_state": image_state(item),
         "seen_count": int(item.get("seen_count") or 0),
+        "first_seen": item.get("first_seen", ""),
         "last_seen": item.get("last_seen", ""),
         "review_reason": review.get("reason", ""),
         "review_confidence": review.get("confidence", 0),
@@ -233,7 +234,7 @@ def compact_weekly_report(report):
 def build_daily_groups(items, per_day=30, max_days=30):
     by_day = defaultdict(list)
     for item in items:
-        by_day[item.get("last_seen") or "unknown"].append(item)
+        by_day[item.get("first_seen") or item.get("last_seen") or "unknown"].append(item)
 
     groups = []
     for day in sorted(by_day.keys(), reverse=True)[:max_days]:
