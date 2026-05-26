@@ -56,7 +56,19 @@ NOISE_WORDS = [
     "design",
     "product",
     "review",
+    "award",
+    "winner",
+    "official",
+    "site",
+    "官网",
+    "获奖",
+    "案例",
 ]
+WEAK_FINGERPRINT_TOKENS = {
+    "a", "an", "and", "the", "for", "with", "from", "official", "site",
+    "design", "product", "award", "winner", "project", "case", "new",
+    "创意", "设计", "产品", "新品", "官网", "获奖", "案例", "灵感",
+}
 
 
 def ensure_dirs():
@@ -151,6 +163,34 @@ def normalize_text(value):
     return value
 
 
+def content_tokens(*values):
+    normalized = normalize_text(" ".join(str(value or "") for value in values))
+    raw_tokens = re.findall(r"[a-z0-9]+|[\u4e00-\u9fff]{2,}", normalized)
+    tokens = []
+    for token in raw_tokens:
+        if token in WEAK_FINGERPRINT_TOKENS:
+            continue
+        if len(token) < 2:
+            continue
+        tokens.append(token)
+    return tokens
+
+
+def content_fingerprint(item):
+    """Return a category-aware fingerprint for cross-date duplicate suppression."""
+    title = item.get("title") or ""
+    reason = item.get("reason") or item.get("summary") or ""
+    creator = item.get("creator") or item.get("source_primary") or ""
+    category = item.get("category") or guess_category(title, reason) or "未分类"
+    tokens = content_tokens(title, creator)
+    if len(tokens) < 2:
+        tokens = content_tokens(title, reason, creator)
+    compact = "".join(tokens[:8]) if tokens else normalize_text(title)
+    if not compact:
+        compact = item.get("url") or title
+    return f"{category}:{stable_hash(compact, 16)}"
+
+
 def guess_category(title, text=""):
     haystack = normalize_text(f"{title} {text}")
     best_category = None
@@ -166,8 +206,7 @@ def guess_category(title, text=""):
 def product_key(item):
     title = item.get("title") or ""
     category = item.get("category") or guess_category(title, item.get("reason", ""))
-    normalized = normalize_text(title)
-    tokens = normalized.split()
+    tokens = content_tokens(title)
     compact = "".join(tokens[:8]) if tokens else stable_hash(title)
     return f"{category or '未分类'}:{stable_hash(compact, 16)}"
 

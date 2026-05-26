@@ -10,6 +10,7 @@ from insight_common import (
     RAW_DIR,
     canonical_url,
     clean_title,
+    content_fingerprint,
     ensure_dirs,
     infer_price_power,
     lead_from_legacy,
@@ -22,6 +23,8 @@ from insight_common import (
     today,
     write_json,
 )
+
+SEEN_FINGERPRINTS_PATH = DATA_DIR / "seen_fingerprints.json"
 
 
 def load_raw_leads():
@@ -43,14 +46,24 @@ def load_legacy_pool(path):
     return [lead_from_legacy(item) for item in payload if isinstance(item, dict)]
 
 
-def empty_product(item, key):
+def load_seen_fingerprints():
+    payload = load_json(SEEN_FINGERPRINTS_PATH, {})
+    if isinstance(payload, dict):
+        return payload.get("fingerprints", {})
+    return {}
+
+
+def empty_product(item, key, seen_fingerprints=None):
     url = canonical_url(item.get("url", ""))
-    created = item.get("added") or today()
+    fingerprint = content_fingerprint(item)
+    seen_fingerprints = seen_fingerprints or {}
+    created = seen_fingerprints.get(fingerprint) or item.get("added") or today()
     source_record = make_source_record(item)
     base_score = item.get("_score_total") or int(float(item.get("score") or 0) * 5)
     return {
         "id": stable_hash(key),
         "product_key": key,
+        "content_fingerprint": fingerprint,
         "title": clean_title(item.get("title", "")),
         "category": item.get("category") or "未分类",
         "summary": item.get("reason", ""),
@@ -89,12 +102,15 @@ def merge_product(product, item):
     incoming_score = item.get("_score_total") or int(float(item.get("score") or 0) * 5)
     product["selection_score"] = max(int(product.get("selection_score") or 0), min(100, int(incoming_score or 0) * 2))
     product["updated_at"] = now_iso()
+    product["content_fingerprint"] = product.get("content_fingerprint") or content_fingerprint(item)
 
 
-def build_pool(leads):
+def build_pool(leads, seen_fingerprints=None):
     products = {}
     url_index = {}
     product_index = {}
+    content_index = {}
+    seen_fingerprints = seen_fingerprints or {}
 
     for item in leads:
         url = canonical_url(item.get("url", ""))
@@ -104,21 +120,46 @@ def build_pool(leads):
             product_id = url_index[url]
         elif key in product_index:
             product_id = product_index[key]
+        elif content_fingerprint(item) in content_index:
+            product_id = content_index[content_fingerprint(item)]
         else:
-            product = empty_product(item, key)
+            product = empty_product(item, key, seen_fingerprints)
             product_id = product["id"]
             products[product_id] = product
             product_index[key] = product_id
+            content_index[product["content_fingerprint"]] = product_id
 
         if url:
             url_index[url] = product_id
         if key:
             product_index[key] = product_id
+        fingerprint = content_fingerprint(item)
+        if fingerprint:
+            content_index[fingerprint] = product_id
 
         if products[product_id]["sources"][0].get("url") != url:
             merge_product(products[product_id], item)
 
     return products, url_index, product_index
+
+
+def write_seen_fingerprints(products, existing=None):
+    fingerprints = dict(existing or {})
+    for item in products.values():
+        fingerprint = item.get("content_fingerprint")
+        first_seen = item.get("first_seen") or today()
+        if not fingerprint:
+            continue
+        previous = fingerprints.get(fingerprint)
+        if not previous or first_seen < previous:
+            fingerprints[fingerprint] = first_seen
+    write_json(
+        SEEN_FINGERPRINTS_PATH,
+        {
+            "generated_at": now_iso(),
+            "fingerprints": dict(sorted(fingerprints.items())),
+        },
+    )
 
 
 def build_published(products):
@@ -168,8 +209,10 @@ def main():
             leads.extend(load_legacy_pool(legacy_path))
     leads.extend(load_raw_leads())
 
-    products, url_index, product_index = build_pool(leads)
+    seen_fingerprints = load_seen_fingerprints()
+    products, url_index, product_index = build_pool(leads, seen_fingerprints)
     published = build_published(products)
+    write_seen_fingerprints(products, seen_fingerprints)
 
     write_json(DATA_DIR / "products.json", list(products.values()))
     write_json(
@@ -178,6 +221,11 @@ def main():
             "generated_at": now_iso(),
             "url_index": url_index,
             "product_index": product_index,
+            "content_index": {
+                item.get("content_fingerprint"): item.get("id")
+                for item in products.values()
+                if item.get("content_fingerprint")
+            },
         },
     )
     write_json(DATA_DIR / "published.json", published)
