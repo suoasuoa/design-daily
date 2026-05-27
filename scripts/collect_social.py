@@ -12,7 +12,7 @@ import datetime as dt
 import json
 import urllib.parse
 
-from insight_common import RAW_DIR, ensure_dirs, stable_hash, write_json
+from insight_common import RAW_DIR, ensure_dirs, stable_hash, today, write_json
 from insight_config import CATEGORIES, SOCIAL_SEARCH_TEMPLATES
 
 
@@ -28,7 +28,7 @@ def template_items(source, per_category):
         for index in range(per_category):
             items.append(
                 {
-                    "id": stable_hash(f"{source}|{category}|{dt.date.today().isoformat()}|{index}"),
+                    "id": stable_hash(f"{source}|{category}|{today()}|{index}"),
                     "title": "",
                     "reason": "",
                     "source": "小红书" if source == "xiaohongshu" else "抖音",
@@ -39,8 +39,8 @@ def template_items(source, per_category):
                     "url": "",
                     "image": "",
                     "tags": [category, "社交采样"],
-                    "added": dt.date.today().isoformat(),
-                    "collected_at": dt.date.today().isoformat(),
+                    "added": today(),
+                    "collected_at": today(),
                     "_search_url": search_url,
                     "_note": "填入你在平台搜索时确认过的产品线索。空标题会在导入前被忽略。",
                 }
@@ -62,7 +62,7 @@ def main():
 
     items = template_items(args.source, args.per_category)
     source_name = "xiaohongshu" if args.source == "xiaohongshu" else "douyin"
-    path = RAW_DIR / f"social-{source_name}-{dt.date.today().isoformat()}.json"
+    path = RAW_DIR / f"social-{source_name}-{today()}.json"
     existing = path.exists()
     if existing:
         print(f"exists={path}; not overwriting")

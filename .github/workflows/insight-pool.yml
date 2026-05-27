@@ -2,20 +2,20 @@ name: Insight Pool
 
 on:
   schedule:
-    # Daily at 09:20 Beijing time.
-    - cron: "20 1 * * *"
-    # Backup run at 14:20 Beijing time in case GitHub drops/delays the first scheduled run.
-    - cron: "20 6 * * *"
+    # 08:30, 13:30, and 20:30 Beijing time.
+    - cron: "30 0 * * *"
+    - cron: "30 5 * * *"
+    - cron: "30 12 * * *"
   workflow_dispatch:
     inputs:
       score_limit:
         description: "Maximum products to score this run"
         required: true
-        default: "200"
+        default: "260"
       search_jobs:
         description: "Open-web search jobs to run"
         required: true
-        default: "120"
+        default: "260"
 
 permissions:
   contents: write
@@ -41,7 +41,7 @@ jobs:
         run: python3 scripts/search_jobs.py
 
       - name: Collect open-web search leads
-        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '120' }}" --per-job 5 --sleep 1.0
+        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '260' }}" --per-job 6 --sleep 0.8
 
       - name: Dedupe product pool
         run: python3 scripts/dedupe.py
@@ -52,12 +52,12 @@ jobs:
         run: python3 scripts/review_categories.py --batch-size 20
 
       - name: Enrich missing product images
-        run: python3 scripts/enrich_images.py --limit 80
+        run: python3 scripts/enrich_images.py --limit 140
 
       - name: Score products
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python3 scripts/score.py --limit "${{ github.event.inputs.score_limit || '200' }}"
+        run: python3 scripts/score.py --limit "${{ github.event.inputs.score_limit || '260' }}"
 
       - name: Generate trend report
         env:
@@ -77,10 +77,10 @@ jobs:
         run: |
           git config user.name "design-insight-bot"
           git config user.email "bot@design-digest.com"
+          git pull --rebase origin main
           git add index.html data/raw/ data/reports/ data/search_jobs.json data/products.json data/dedupe_index.json data/seen_fingerprints.json data/category_review.json data/rejected_category.json data/published.json data/trends.json data/weekly_report.json insight/
           if ! git diff --staged --quiet; then
             git commit -m "Update insight pool $(date +%Y-%m-%d)"
-            git pull --rebase origin main
             git push
           else
             echo "No insight pool changes"

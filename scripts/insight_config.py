@@ -56,10 +56,15 @@ SOURCE_TYPES = {
     "Yanko Design": "editorial_source",
     "Core77": "editorial_source",
     "Designboom": "editorial_source",
+    "DesignWanted": "editorial_source",
+    "NOTCOT": "editorial_source",
+    "Wallpaper": "editorial_source",
     "TrendHunter": "trend_source",
     "The Dieline": "packaging_source",
     "Packaging of the World": "packaging_source",
     "Pentawards": "packaging_source",
+    "BP&O": "packaging_source",
+    "Lovely Package": "packaging_source",
     "Good Design Award": "verified_official",
     "iF设计奖": "verified_official",
     "Red Dot": "verified_official",
@@ -74,6 +79,12 @@ SOURCE_TYPES = {
     "Kickstarter": "market_reference",
     "Indiegogo": "market_reference",
     "Product Hunt": "market_reference",
+    "Uncrate": "market_reference",
+    "Cool Material": "market_reference",
+    "Gear Patrol": "market_reference",
+    "ThisIsWhyImBroke": "market_reference",
+    "The Grommet": "market_reference",
+    "Etsy": "market_reference",
 }
 
 SOURCE_DOMAIN_META = {
@@ -82,10 +93,15 @@ SOURCE_DOMAIN_META = {
     "yankodesign.com": {"source": "Yanko Design", "source_type": "editorial_source"},
     "core77.com": {"source": "Core77", "source_type": "editorial_source"},
     "designboom.com": {"source": "Designboom", "source_type": "editorial_source"},
+    "designwanted.com": {"source": "DesignWanted", "source_type": "editorial_source"},
+    "notcot.org": {"source": "NOTCOT", "source_type": "editorial_source"},
+    "wallpaper.com": {"source": "Wallpaper", "source_type": "editorial_source"},
     "trendhunter.com": {"source": "TrendHunter", "source_type": "trend_source"},
     "thedieline.com": {"source": "The Dieline", "source_type": "packaging_source"},
     "packagingoftheworld.com": {"source": "Packaging of the World", "source_type": "packaging_source"},
     "pentawards.com": {"source": "Pentawards", "source_type": "packaging_source"},
+    "bpando.org": {"source": "BP&O", "source_type": "packaging_source"},
+    "lovelypackage.com": {"source": "Lovely Package", "source_type": "packaging_source"},
     "red-dot.org": {"source": "Red Dot", "source_type": "verified_official"},
     "ifdesign.com": {"source": "iF设计奖", "source_type": "verified_official"},
     "g-mark.org": {"source": "Good Design Award", "source_type": "verified_official"},
@@ -100,6 +116,12 @@ SOURCE_DOMAIN_META = {
     "kickstarter.com": {"source": "Kickstarter", "source_type": "market_reference"},
     "indiegogo.com": {"source": "Indiegogo", "source_type": "market_reference"},
     "producthunt.com": {"source": "Product Hunt", "source_type": "market_reference"},
+    "uncrate.com": {"source": "Uncrate", "source_type": "market_reference"},
+    "coolmaterial.com": {"source": "Cool Material", "source_type": "market_reference"},
+    "gearpatrol.com": {"source": "Gear Patrol", "source_type": "market_reference"},
+    "thisiswhyimbroke.com": {"source": "ThisIsWhyImBroke", "source_type": "market_reference"},
+    "thegrommet.com": {"source": "The Grommet", "source_type": "market_reference"},
+    "etsy.com": {"source": "Etsy", "source_type": "market_reference"},
 }
 
 SELECTION_WEIGHTS = {
@@ -150,6 +172,14 @@ RSS_FEEDS = [
     {
         "source": "Packaging of the World",
         "url": "https://packagingoftheworld.com/feed/",
+    },
+    {
+        "source": "DesignWanted",
+        "url": "https://designwanted.com/feed/",
+    },
+    {
+        "source": "Uncrate",
+        "url": "https://uncrate.com/feed/",
     },
 ]
 
@@ -215,6 +245,9 @@ SEARCH_SOURCE_GROUPS = {
         "site:design-milk.com",
         "site:core77.com",
         "site:designboom.com/design",
+        "site:designwanted.com",
+        "site:notcot.org",
+        "site:wallpaper.com/design",
     ],
     "award_gallery": [
         "site:red-dot.org/project",
@@ -227,6 +260,8 @@ SEARCH_SOURCE_GROUPS = {
         "site:thedieline.com",
         "site:packagingoftheworld.com",
         "site:pentawards.com",
+        "site:bpando.org",
+        "site:lovelypackage.com",
         "site:zcool.com.cn/work 包装",
         "site:digitaling.com/projects 礼盒",
     ],
@@ -243,6 +278,12 @@ SEARCH_SOURCE_GROUPS = {
         "site:indiegogo.com",
         "site:producthunt.com",
         "site:threadless.com",
+        "site:uncrate.com",
+        "site:coolmaterial.com",
+        "site:gearpatrol.com",
+        "site:thisiswhyimbroke.com",
+        "site:thegrommet.com",
+        "site:etsy.com/listing",
     ],
 }
 
@@ -250,12 +291,12 @@ CATEGORY_SOURCE_GROUPS = {
     "创意礼盒": ["packaging_specialist", "design_community", "award_gallery", "editorial_main"],
     "中秋礼盒": ["packaging_specialist", "design_community", "award_gallery"],
     "端午礼盒": ["packaging_specialist", "design_community", "award_gallery"],
-    "装置艺术": ["editorial_main", "award_gallery", "design_community"],
-    "T恤": ["design_community", "market_signal"],
-    "卫衣": ["design_community", "market_signal"],
-    "Polo衫": ["design_community", "market_signal"],
+    "装置艺术": ["editorial_main", "award_gallery", "design_community", "market_signal"],
+    "T恤": ["design_community", "market_signal", "editorial_main"],
+    "卫衣": ["design_community", "market_signal", "editorial_main"],
+    "Polo衫": ["design_community", "market_signal", "editorial_main"],
     "帽子": ["design_community", "market_signal", "editorial_main"],
     "手机壳": ["market_signal", "design_community", "award_gallery"],
     "充电宝": ["market_signal", "award_gallery", "editorial_main"],
-    "收纳包": ["editorial_main", "award_gallery", "market_signal"],
+    "收纳包": ["editorial_main", "award_gallery", "market_signal", "design_community"],
 }

@@ -5,10 +5,12 @@ import argparse
 from collections import defaultdict, deque
 import datetime as dt
 import urllib.parse
+from zoneinfo import ZoneInfo
 
-from insight_common import DATA_DIR, ensure_dirs, write_json
+from insight_common import DATA_DIR, ensure_dirs, today, write_json
 from insight_config import CATEGORIES, CATEGORY_SOURCE_GROUPS, SEARCH_INTENTS, SEARCH_QUERY_PATTERNS, SEARCH_SOURCE_GROUPS
 
+LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 
 def intent_for_query(category, query):
     text = f"{category} {query}".lower()
@@ -26,10 +28,10 @@ def search_url(query):
 def build_jobs(categories=None, per_category=4):
     categories = categories or CATEGORIES
     jobs = []
-    today = dt.date.today().isoformat()
+    current_day = today()
     for category in categories:
         base_queries = SEARCH_QUERY_PATTERNS.get(category, [category])
-        for query in base_queries[: max(1, min(per_category, 2))]:
+        for query in base_queries[: max(1, min(per_category, 3))]:
             intent = intent_for_query(category, query)
             jobs.append(
                 {
@@ -41,7 +43,7 @@ def build_jobs(categories=None, per_category=4):
                     "source_group": "curated_keyword",
                     "quality_tier": "curated",
                     "search_url": search_url(query),
-                    "created_at": today,
+                    "created_at": current_day,
                 }
             )
         group_names = CATEGORY_SOURCE_GROUPS.get(
@@ -50,7 +52,7 @@ def build_jobs(categories=None, per_category=4):
         )
         for group_name in group_names:
             sites = SEARCH_SOURCE_GROUPS.get(group_name, [])
-            for site in sites[:3]:
+            for site in sites:
                 query = f"{category} {site}"
                 intent = intent_for_query(category, query)
                 jobs.append(
@@ -63,7 +65,7 @@ def build_jobs(categories=None, per_category=4):
                         "source_group": group_name,
                         "quality_tier": "curated",
                         "search_url": search_url(query),
-                        "created_at": today,
+                        "created_at": current_day,
                     }
                 )
     return jobs
@@ -109,7 +111,7 @@ def main():
     ensure_dirs()
     jobs = balanced_jobs(build_jobs(per_category=args.per_category))
     payload = {
-        "generated_at": dt.datetime.now().replace(microsecond=0).isoformat(),
+        "generated_at": dt.datetime.now(LOCAL_TZ).replace(microsecond=0).isoformat(),
         "total_jobs": len(jobs),
         "jobs": jobs,
     }

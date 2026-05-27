@@ -10,6 +10,7 @@ import re
 import unicodedata
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from zoneinfo import ZoneInfo
 
 from insight_config import CATEGORY_KEYWORDS, SOURCE_TYPES
 
@@ -18,6 +19,7 @@ DATA_DIR = ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
 PROCESSED_DIR = DATA_DIR / "processed"
 INSIGHT_DIR = ROOT / "insight"
+LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 
 TRACKING_PARAMS = {
     "utm_source",
@@ -97,11 +99,11 @@ def load_env(path=None):
 
 
 def today():
-    return dt.date.today().isoformat()
+    return dt.datetime.now(LOCAL_TZ).date().isoformat()
 
 
 def now_iso():
-    return dt.datetime.now().replace(microsecond=0).isoformat()
+    return dt.datetime.now(LOCAL_TZ).replace(microsecond=0).isoformat()
 
 
 def load_json(path, default):

@@ -9,12 +9,14 @@ import ssl
 import time
 import urllib.parse
 import urllib.request
+from zoneinfo import ZoneInfo
 
-from insight_common import RAW_DIR, ensure_dirs, load_json, stable_hash, strip_html, write_json
+from insight_common import RAW_DIR, ensure_dirs, load_json, stable_hash, strip_html, today, write_json
 from insight_config import SOURCE_DOMAIN_META
 
 
 SSL_CONTEXT = ssl._create_unverified_context()
+LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 
 
 class DuckDuckGoParser(HTMLParser):
@@ -140,8 +142,8 @@ def lead_from_result(job, result):
         "search_intent": job.get("intent"),
         "source_group": job.get("source_group"),
         "quality_tier": job.get("quality_tier", "curated"),
-        "added": dt.date.today().isoformat(),
-        "collected_at": dt.date.today().isoformat(),
+        "added": today(),
+        "collected_at": today(),
     }
 
 
@@ -149,7 +151,9 @@ def rotate_jobs(jobs, limit_jobs, offset=None):
     if not jobs:
         return []
     if offset is None:
-        offset = (dt.date.today().timetuple().tm_yday * limit_jobs) % len(jobs)
+        now = dt.datetime.now(LOCAL_TZ)
+        run_bucket = 0 if now.hour < 11 else 1 if now.hour < 17 else 2
+        offset = ((now.timetuple().tm_yday * 3 + run_bucket) * limit_jobs) % len(jobs)
     ordered = jobs[offset:] + jobs[:offset]
     return ordered[:limit_jobs]
 
@@ -184,7 +188,7 @@ def main():
         raise SystemExit("No search jobs found. Run scripts/search_jobs.py first.")
 
     leads = collect(jobs, args.limit_jobs, args.per_job, args.sleep, args.offset)
-    path = RAW_DIR / f"search-{dt.date.today().isoformat()}.json"
+    path = RAW_DIR / f"search-{today()}.json"
     write_json(path, leads)
     print(f"saved={path} items={len(leads)}")
 

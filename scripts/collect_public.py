@@ -8,7 +8,7 @@ import ssl
 import urllib.request
 from xml.etree import ElementTree
 
-from insight_common import RAW_DIR, ensure_dirs, guess_category, stable_hash, strip_html, write_json
+from insight_common import RAW_DIR, ensure_dirs, guess_category, stable_hash, strip_html, today, write_json
 from insight_config import RSS_FEEDS
 
 CTX = ssl._create_unverified_context()
@@ -91,8 +91,8 @@ def collect_feed(feed, timeout=30):
                 "url": link,
                 "image": image,
                 "tags": [category, feed["source"], "公开来源"],
-                "added": dt.date.today().isoformat(),
-                "collected_at": dt.date.today().isoformat(),
+                "added": today(),
+                "collected_at": today(),
             }
         )
     return items
@@ -115,7 +115,7 @@ def main():
 
     if args.limit:
         collected = collected[: args.limit]
-    path = RAW_DIR / f"public-{dt.date.today().isoformat()}.json"
+    path = RAW_DIR / f"public-{today()}.json"
     write_json(path, collected)
     print(f"saved={path} items={len(collected)}")
 

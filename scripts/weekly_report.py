@@ -6,7 +6,7 @@ from collections import Counter, defaultdict
 import datetime as dt
 import re
 
-from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
+from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, today, write_json
 
 
 LANE_ORDER = ["可直接买样", "适合改造", "方向参考"]
@@ -14,13 +14,13 @@ LANE_QUOTAS = {"可直接买样": 30, "适合改造": 45, "方向参考": 25}
 
 
 def week_id(day=None):
-    day = day or dt.date.today()
+    day = day or dt.date.fromisoformat(today())
     iso = day.isocalendar()
     return f"{iso.year}-W{iso.week:02d}"
 
 
 def week_range(day=None):
-    day = day or dt.date.today()
+    day = day or dt.date.fromisoformat(today())
     start = day - dt.timedelta(days=day.weekday())
     end = start + dt.timedelta(days=6)
     return {
