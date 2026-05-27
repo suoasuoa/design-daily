@@ -42,7 +42,7 @@ jobs:
 
       - name: Collect open-web search leads
         timeout-minutes: 45
-        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '320' }}" --per-job 6 --sleep 0.25
+        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '320' }}" --per-job 6 --sleep 0.05 --workers 8
 
       - name: Dedupe product pool
         run: python3 scripts/dedupe.py

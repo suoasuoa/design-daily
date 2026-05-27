@@ -2,6 +2,7 @@
 """Collect open-web search results from the configured search job matrix."""
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import datetime as dt
 from html.parser import HTMLParser
 import re
@@ -158,18 +159,37 @@ def rotate_jobs(jobs, limit_jobs, offset=None):
     return ordered[:limit_jobs]
 
 
-def collect(jobs, limit_jobs=40, per_job=4, sleep=1.0, offset=None):
+def collect_one(job, per_job=4):
+    try:
+        results = [result for result in fetch_results(job["query"]) if is_product_like_url(result.get("url", ""))][:per_job]
+        leads = [lead_from_result(job, result) for result in results if result.get("title") and result.get("url")]
+        return leads, f"{job['category']} | {job['query']}: {len(leads)}"
+    except Exception as exc:
+        return [], f"{job.get('query')}: failed ({exc})"
+
+
+def collect(jobs, limit_jobs=40, per_job=4, sleep=1.0, offset=None, workers=8):
     collected = []
-    for job in rotate_jobs(jobs, limit_jobs, offset):
-        try:
-            results = [result for result in fetch_results(job["query"]) if is_product_like_url(result.get("url", ""))][:per_job]
-            leads = [lead_from_result(job, result) for result in results if result.get("title") and result.get("url")]
+    selected_jobs = rotate_jobs(jobs, limit_jobs, offset)
+    if workers <= 1:
+        for job in selected_jobs:
+            leads, message = collect_one(job, per_job)
             collected.extend(leads)
-            print(f"{job['category']} | {job['query']}: {len(leads)}")
-        except Exception as exc:
-            print(f"{job.get('query')}: failed ({exc})")
-        if sleep:
-            time.sleep(sleep)
+            print(message, flush=True)
+            if sleep:
+                time.sleep(sleep)
+        return collected
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = []
+        for job in selected_jobs:
+            futures.append(executor.submit(collect_one, job, per_job))
+            if sleep:
+                time.sleep(sleep)
+        for future in as_completed(futures):
+            leads, message = future.result()
+            collected.extend(leads)
+            print(message, flush=True)
     return collected
 
 
@@ -179,6 +199,7 @@ def main():
     parser.add_argument("--per-job", type=int, default=4, help="Maximum search results per job.")
     parser.add_argument("--sleep", type=float, default=1.0, help="Delay between search requests.")
     parser.add_argument("--offset", type=int, default=None, help="Optional start offset in the search job matrix.")
+    parser.add_argument("--workers", type=int, default=8, help="Concurrent search workers.")
     args = parser.parse_args()
 
     ensure_dirs()
@@ -187,7 +208,7 @@ def main():
     if not jobs:
         raise SystemExit("No search jobs found. Run scripts/search_jobs.py first.")
 
-    leads = collect(jobs, args.limit_jobs, args.per_job, args.sleep, args.offset)
+    leads = collect(jobs, args.limit_jobs, args.per_job, args.sleep, args.offset, args.workers)
     path = RAW_DIR / f"search-{today()}.json"
     write_json(path, leads)
     print(f"saved={path} items={len(leads)}")
