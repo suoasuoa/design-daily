@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T10:33:01",
+  "generated_at": "2026-05-27T10:31:57+08:00",
   "week": "2026-W22",
   "group_id": "2026-W22",
   "date_start": "2026-05-25",
@@ -18,28 +18,27 @@
     "by_category": {
       "氛围灯": 14,
       "创意厨具": 12,
-      "端午礼盒": 12,
       "水杯": 12,
-      "创意礼盒": 11,
+      "端午礼盒": 11,
+      "创意礼盒": 10,
+      "中秋礼盒": 7,
       "冲锋衣": 7,
       "装置艺术": 5,
       "创意桌搭": 4,
       "收纳包": 4,
       "卡包": 4,
-      "中秋礼盒": 3,
       "Polo衫": 3,
       "充电宝": 3,
-      "手机壳": 2,
+      "手机壳": 1,
       "卫衣": 1,
-      "日历": 1,
       "帽子": 1,
       "T恤": 1
     },
     "by_axis": {
       "功能启发": 37,
       "包装启发": 32,
-      "视觉启发": 20,
       "结构启发": 20,
+      "视觉启发": 18,
       "情绪启发": 15
     }
   },
@@ -72,31 +71,6 @@
       ]
     },
     {
-      "id": "521307c85082",
-      "product_key": null,
-      "title": "双立人 刀具套装",
-      "category": "创意厨具",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.zwilling.com/us/cutlery/knives",
-      "image": "",
-      "summary": "双立人品牌知名度高，刀具套装实用性强，满足高频烹饪需求，适用人群广，功能成熟，价格高于35元，产品外观易识别，品牌本身带有情绪价值。",
-      "risk": "双立人刀具套装，厨房工具",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意厨具",
-        "抖音",
-        "社交精选"
-      ]
-    },
-    {
       "id": "5bbce620bca9",
       "product_key": null,
       "title": "大益 端午限定茶礼",
@@ -110,7 +84,7 @@
       "source": "抖音",
       "source_family": "社交灵感",
       "url": "https://www.dayitea.com",
-      "image": "https://dayitea.com/web/image/website/1/logo?unique=7d3befc",
+      "image": "https://www.dayitea.com/web/image/website/1/logo?unique=7d3befc",
       "summary": "大益茶业端午佳节限定礼盒",
       "risk": "明确为端午限定茶礼",
       "next_action": "买样看材质、尺寸、成本和差评点",
@@ -133,7 +107,7 @@
       "source": "小红书",
       "source_family": "社交灵感",
       "url": "#",
-      "image": "",
+      "image": "https://picasso-static.xiaohongshu.com/fe-platform/e6214e4fbfae2cf14d634d4296916e8a5eaefdf4.png",
       "summary": "台湾百年老店中秋限定礼盒",
       "risk": "明确为中秋限定礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
@@ -156,7 +130,7 @@
       "source": "Instagram",
       "source_family": "社交灵感",
       "url": "https://www.burton.com",
-      "image": "",
+      "image": "https://www.burton.com/static/content/2026/images/open-graph/burton-dot-com-open-graph.jpg",
       "summary": "单板滑雪Burton高端AK系列冲锋衣",
       "risk": "滑雪冲锋衣，属于冲锋衣",
       "next_action": "买样看材质、尺寸、成本和差评点",
@@ -235,30 +209,6 @@
       ]
     },
     {
-      "id": "980af6baa7db",
-      "product_key": null,
-      "title": "三顿半 咖啡礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 77,
-      "score_label": "7.7",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.saturnbird.com",
-      "image": "",
-      "summary": "咖啡是高频消费品，礼盒形式适合送礼，实用性强，价格超过35元，3秒可识别为咖啡礼盒，功能明确，情绪价值体现在社交送礼场景。",
-      "risk": "咖啡礼盒套装",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "抖音",
-        "社交精选"
-      ]
-    },
-    {
       "id": "b2399acd3049",
       "product_key": null,
       "title": "杨聘号 端午茶礼盒",
@@ -325,6 +275,144 @@
       "tags": [
         "Polo衫",
         "商务"
+      ]
+    },
+    {
+      "id": "db74f8c2f77c",
+      "product_key": null,
+      "title": "Ronnefeldt 端午茶礼",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.ronnefeldt.com",
+      "image": "https://www.ronnefeldt.com/userdata/images/social_media_banners/390_smb_vorschaubild_teeshop_x.jpg",
+      "summary": "Instagram · 德国顶级茶叶端午限定",
+      "risk": "明确是端午主题礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "e6097dc90dd2",
+      "product_key": null,
+      "title": "广州酒家 端午礼盒",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.gzjj.com",
+      "image": "",
+      "summary": "抖音 · 广式粽子礼盒",
+      "risk": "明确属于端午礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "抖音",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "83efc161c8f5",
+      "product_key": null,
+      "title": "元祖 雪月饼礼盒",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "url": "https://www.ganso.com",
+      "image": "",
+      "summary": "小红书 · 元祖经典冰淇淋月饼礼盒",
+      "risk": "明确属于中秋礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "小红书"
+      ]
+    },
+    {
+      "id": "83c43c5670ee",
+      "product_key": null,
+      "title": "观夏 蜡烛礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.loeweperfumes.com",
+      "image": "",
+      "summary": "抖音 · 东方植物香薰礼盒",
+      "risk": "明确属于创意礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "抖音"
+      ]
+    },
+    {
+      "id": "1df693a9c8ad",
+      "product_key": null,
+      "title": "TWG Tea 中秋礼盒",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.twgtea.com",
+      "image": "https://media.twgtea.com/images/default-source/illustrations-icons/twg-logo/1200x630--twg-teas-logo.jpg?sfvrsn=45d40125_2",
+      "summary": "Instagram · 新加坡顶级茶叶中秋礼盒",
+      "risk": "产品标题为中秋礼盒，符合品类定义。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "中秋礼盒"
+      ]
+    },
+    {
+      "id": "280a792c0c52",
+      "product_key": null,
+      "title": "BYREDO 香氛礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.byredo.com/us_en/gifts",
+      "image": "https://www.byredo.com/cdn-cgi/image/format=auto,quality=70/https://www.byredo.com/media/catalog/product/cache/538055185084634e259189a2a72f806b/b/y/byredo_ecom_giftcard__.jpg",
+      "summary": "Instagram · 瑞典小众香氛礼品套装",
+      "risk": "香氛礼盒属于创意礼盒品类。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "创意礼盒"
       ]
     },
     {
@@ -436,13 +524,105 @@
       "source_family": "社交灵感",
       "url": "https://www.popmart.com",
       "image": "",
-      "summary": "盲盒收纳展示盒实用性强，满足收纳和展示需求；盲盒爱好者高频使用；受众广，尤其年轻人；功能明确，无短板；预估售价超35元；3秒可理解用途；情绪价值高，兼具展示和社交属性。",
+      "summary": "盲盒收纳展示盒实用性强，满足收纳和展示需求；盲盒爱好者高频使用；受众广，覆盖盲盒玩家和桌搭爱好者；功能明确，无短板；预估售价超35元；3秒可理解；情绪价值高，兼具展示和社交属性。",
       "risk": "盲盒亚克力展示收纳盒，属于桌面展示收纳，归为创意桌搭",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "Pinterest",
         "创意礼盒",
         "社交精选"
+      ]
+    },
+    {
+      "id": "b2ac0d259114",
+      "product_key": null,
+      "title": "Godiva 中秋巧克力",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.godiva.com",
+      "image": "https://www.godiva.com/cdn/shop/files/39086_godiva-logo-svg.svg?v=1759343745&amp;width=1000",
+      "summary": "Instagram · 比利时巧克力中秋限定",
+      "risk": "中秋限定巧克力礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "中秋礼盒"
+      ]
+    },
+    {
+      "id": "9fa7c88b68f4",
+      "product_key": null,
+      "title": "乐纯 中秋酸奶礼盒",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.lechun.com",
+      "image": "",
+      "summary": "抖音 · 乐纯限定中秋酸奶礼盒",
+      "risk": "中秋酸奶礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "抖音"
+      ]
+    },
+    {
+      "id": "96c400a7c334",
+      "product_key": null,
+      "title": "稻香村 月饼礼盒",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "url": "https://www.daoxiangcun.com",
+      "image": "",
+      "summary": "小红书 · 百年老字号中秋月饼礼盒",
+      "risk": "明确是中秋月饼礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "小红书"
+      ]
+    },
+    {
+      "id": "980af6baa7db",
+      "product_key": null,
+      "title": "三顿半 咖啡礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.saturnbird.com",
+      "image": "",
+      "summary": "抖音 · 精品速溶咖啡礼盒套装",
+      "risk": "咖啡礼盒套装",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "抖音"
       ]
     },
     {
@@ -461,13 +641,58 @@
       "source_family": "社交灵感",
       "url": "#",
       "image": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/Shipping_VI.png?v=1737431254&amp;width=100&amp;crop=center",
-      "summary": "灯带实用性强，可装饰多种场景；氛围灯需求高频；适用人群广；功能齐全，智能控制；价格超35元；3秒看懂；情绪价值通过灯光氛围体现。",
+      "summary": "抖音 · Govee智能RGBIC LED灯带",
       "risk": "智能RGBIC灯带",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "抖音",
-        "氛围灯",
-        "社交精选"
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "043da7a7b2c9",
+      "product_key": null,
+      "title": "Aēsop 护肤礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.aesop.com/us/gifts",
+      "image": "",
+      "summary": "Instagram · 伊索旅行套装礼盒",
+      "risk": "护肤礼盒属于创意礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "创意礼盒"
+      ]
+    },
+    {
+      "id": "e4edcae68bc8",
+      "product_key": null,
+      "title": "Maison Margiela 香氛礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.maisonmargiela-fragrances.com/us/gifts",
+      "image": "",
+      "summary": "Instagram · Replica香水礼品套装",
+      "risk": "香水礼品套装",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "创意礼盒"
       ]
     },
     {
@@ -517,251 +742,6 @@
       ]
     },
     {
-      "id": "196fa2a24a29",
-      "product_key": null,
-      "title": "华美 端午礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 70,
-      "score_label": "7.0",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.huameifood.com",
-      "image": "",
-      "summary": "华美食品端午礼盒系列",
-      "risk": "华美端午礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "端午礼盒",
-        "老字号"
-      ]
-    },
-    {
-      "id": "ab9f9437ef5d",
-      "product_key": null,
-      "title": "巧克力礼盒装",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 67,
-      "score_label": "6.7",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "https://www.laderach.com/en/chocolate-gifts",
-      "image": "https://laderach.com/media/og_image/default/full-logo_1_.jpg",
-      "summary": "巧克力礼盒作为礼品实用性强，节日或社交场景需求高频，受众广泛；产品功能明确（送礼/自用），无明显短板；预估售价超35元，3秒可识别为礼盒；情绪价值高，适合送礼场景。",
-      "risk": "巧克力礼盒属于礼品套装",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意礼盒",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "e6097dc90dd2",
-      "product_key": null,
-      "title": "广州酒家 端午礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 67,
-      "score_label": "6.7",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.gzjj.com",
-      "image": "",
-      "summary": "端午礼盒实用性强，节日送礼需求高，广式粽子受众广，价格超35元，产品功能明确，3秒可识别，但季节性明显，非高频需求。",
-      "risk": "明确属于端午礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "端午礼盒",
-        "广式粽子",
-        "社交精选",
-        "抖音"
-      ]
-    },
-    {
-      "id": "c33ebf6c6dd7",
-      "product_key": null,
-      "title": "香薰蜡烛礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 66,
-      "score_label": "6.6",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "https://www.diptyqueparis.com/en/candles",
-      "image": "",
-      "summary": "香薰蜡烛礼盒兼具实用与情绪价值，高频需求（送礼/自用），打击面广（男女皆宜），功能无明显短板，售价通常超35元，3秒可识别为礼盒，情绪价值高。",
-      "risk": "属于创意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意礼盒",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "96c400a7c334",
-      "product_key": null,
-      "title": "稻香村 月饼礼盒",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 66,
-      "score_label": "6.6",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "url": "https://www.daoxiangcun.com",
-      "image": "",
-      "summary": "月饼礼盒实用性强，但中秋为季节性高频需求，打击面广，功能无明显短板，价格超35元，3秒可识别，情绪价值高（送礼、社交）。",
-      "risk": "明确是中秋月饼礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "中秋礼盒",
-        "小红书",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "686e253df22c",
-      "product_key": null,
-      "title": "磁吸锅铲套装",
-      "category": "创意厨具",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "score": 65,
-      "score_label": "6.5",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "https://www.peugeot-saveurs.com",
-      "image": "",
-      "summary": "磁吸锅铲套装解决收纳痛点，实用性强；日常烹饪高频使用；适用人群广；功能明确无短板；预估售价超35元；3秒可理解；情绪价值中等。",
-      "risk": "产品为磁吸收纳锅铲套装，属于厨房工具，符合创意厨具定义。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意厨具",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "ef738cff39b6",
-      "product_key": null,
-      "title": "杏花楼 粽意礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 63,
-      "score_label": "6.3",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "url": "https://www.xinghualou.com",
-      "image": "",
-      "summary": "端午礼盒实用性强，节日送礼需求高，但非高频；老字号品牌有广泛受众，价格超35元，产品功能明确，3秒可识别，情绪价值来自节日和品牌。",
-      "risk": "端午粽意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "端午礼盒",
-        "上海老字号",
-        "小红书",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "ea34c7643707",
-      "product_key": null,
-      "title": "永璞 咖啡联名礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 63,
-      "score_label": "6.3",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.yongpu.com",
-      "image": "",
-      "summary": "咖啡是高频消费品，联名礼盒兼具实用与社交属性，价格超35元，功能明确，情绪价值高。但来源次数仅1次，需验证市场热度。",
-      "risk": "明确是礼盒套装",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "咖啡",
-        "联名",
-        "礼盒",
-        "社交",
-        "创意礼盒",
-        "抖音"
-      ]
-    },
-    {
-      "id": "83c43c5670ee",
-      "product_key": null,
-      "title": "观夏 蜡烛礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 61,
-      "score_label": "6.1",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.loeweperfumes.com",
-      "image": "",
-      "summary": "香薰蜡烛具有实用性和情绪价值，但非高频消耗品；价格超过35元，3秒可看懂；功能成立，但受众相对窄。",
-      "risk": "明确属于创意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "抖音",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "b5821b071dea",
-      "product_key": null,
-      "title": "气味图书馆 礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 60,
-      "score_label": "6.0",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "url": "https://www.scenllab.com",
-      "image": "",
-      "summary": "气味图书馆礼盒作为创意礼盒，具有一定的实用性和情感价值，但非高频需求；价格超过35元，符合条件；产品功能（香氛）无明显短板，但需依赖品牌认知；3秒内可理解是礼盒产品。",
-      "risk": "明确属于礼盒品类",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "小红书",
-        "社交精选"
-      ]
-    },
-    {
       "id": "ec8d91a42e5e",
       "product_key": null,
       "title": "Refik Anadol AI装置",
@@ -785,30 +765,6 @@
       ]
     },
     {
-      "id": "7c32acb327fc",
-      "product_key": null,
-      "title": "罗马仕 充电宝",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 87,
-      "score_label": "8.7",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.romoss.com",
-      "image": "",
-      "summary": "充电宝实用性强，高频需求，受众广，功能成熟，价格通常高于35元，产品直观易懂，品牌有情绪价值。",
-      "risk": "明确为充电宝",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "充电宝",
-        "抖音",
-        "社交精选"
-      ]
-    },
-    {
       "id": "4ed7619e53dd",
       "product_key": null,
       "title": "RHINOSHIELD 犀牛盾壳",
@@ -823,7 +779,7 @@
       "source_family": "社交灵感",
       "url": "#",
       "image": "",
-      "summary": "手机壳是高频刚需，防摔功能实用，品牌知名度高，但价格可能偏高，且市场竞争激烈。",
+      "summary": "手机壳是高频刚需，防摔功能实用，品牌有社交背书，但价格可能低于35元，且功能单一，情绪价值有限。",
       "risk": "明确是手机壳",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
@@ -994,6 +950,30 @@
       ]
     },
     {
+      "id": "7c32acb327fc",
+      "product_key": null,
+      "title": "罗马仕 充电宝",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.romoss.com",
+      "image": "",
+      "summary": "充电宝实用性强，高频需求，受众广，功能成熟，价格通常高于35元，产品直观易懂，品牌知名度高但情绪价值一般。",
+      "risk": "明确为充电宝",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "充电宝",
+        "抖音",
+        "社交精选"
+      ]
+    },
+    {
       "id": "0d7f9bc5c2e4",
       "product_key": null,
       "title": "SAKE BOTTLE OPENER",
@@ -1130,6 +1110,52 @@
       "tags": [
         "创意桌搭",
         "获奖"
+      ]
+    },
+    {
+      "id": "d2f58615f28c",
+      "product_key": null,
+      "title": "Presso SmartShot",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "url": "https://www.g-mark.org/gallery/winners/27092?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/27092/main.jpg?size=medium",
+      "summary": "Good Design Award · The Presso SmartShot is a planet-friendly, manually operated espresso machine for use within the home. Using any coffee grounds and hot water, users simply apply the necessary pressure to create great espresso. Customers can choose their favourite c",
+      "risk": "手动浓缩咖啡机，属于厨房工具",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "07e48ef5dbf5",
+      "product_key": null,
+      "title": "M01",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "url": "https://www.g-mark.org/gallery/winners/21128?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/21128/main.jpg?size=medium",
+      "summary": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radical new \"Pineapple burr\" design for faster, more consistent grinding. M01 also brings a host of usability improvements, such as a larger catch cup, drop",
+      "risk": "手摇磨豆机，属于厨房工具",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
       ]
     },
     {
@@ -1592,38 +1618,12 @@
       "source_family": "社交灵感",
       "url": "#",
       "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/collections/Portable_Power.jpg?v=1625458091",
-      "summary": "充电宝实用且高频，Anker品牌有口碑，但价格可能低于35元，且功能无短板但缺乏情绪价值。",
+      "summary": "充电宝实用且高频，Anker品牌有口碑，但价格可能低于35元，情绪价值一般。",
       "risk": "明确为充电宝",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "Instagram",
         "充电宝",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "44bad2f6e18b",
-      "product_key": null,
-      "title": "CASETiFY 防摔手机壳",
-      "category": "手机壳",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "url": "https://www.casetify.com",
-      "image": "https://ctgimage1.s3.amazonaws.com/cms/image/6fa327bd55bdbbba4d13e3339edadbdd.png",
-      "summary": "手机壳是高频刚需，防摔功能实用，Red Dot和联名提升情绪价值，但价格可能偏高，打击面受限于品牌溢价。",
-      "risk": "防摔手机壳",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Red Dot",
-        "联名",
-        "防摔",
-        "手机壳",
         "社交精选"
       ]
     },
@@ -1688,7 +1688,7 @@
       "source": "小红书",
       "source_family": "社交灵感",
       "url": "https://www.montbell.com",
-      "image": "https://www.montbell.com/_assets/img/apple-touch-icon.png",
+      "image": "",
       "summary": "日本Montbell雨舞者冲锋衣",
       "risk": "雨舞者冲锋衣，属于冲锋衣",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -1787,29 +1787,6 @@
       "tags": [
         "充电宝",
         "机甲"
-      ]
-    },
-    {
-      "id": "6b5b5b4b2008",
-      "product_key": null,
-      "title": "日历 单向历",
-      "category": "日历",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://picasso-static.xiaohongshu.com/fe-platform/e6214e4fbfae2cf14d634d4296916e8a5eaefdf4.png",
-      "summary": "单向空间经典撕历设计",
-      "risk": "明确是日历产品",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "文创",
-        "文艺"
       ]
     },
     {
