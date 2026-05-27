@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-05-27T10:31:57+08:00
+- 生成时间：2026-05-27T10:54:35+08:00
 
 ## 行动分布
 
@@ -97,7 +97,31 @@
 
 星巴克端午限定星冰粽礼盒
 
-### 8. 杨聘号 端午茶礼盒
+### 8. 奈雪の茶 中秋联名
+
+- 品类：中秋礼盒
+- 路径：可直接买样
+- 启发：包装启发
+- 分数：7.6
+- 来源：小红书
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.naixue.com
+
+小红书 · 奈雪中秋设计师联名礼盒
+
+### 9. 气味图书馆 礼盒
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：包装启发
+- 分数：7.6
+- 来源：小红书
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.scenllab.com
+
+小红书 · 气味图书馆城市系列礼盒
+
+### 10. 杨聘号 端午茶礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -109,7 +133,7 @@
 
 杨聘號普洱端午限定礼盒
 
-### 9. 陈升号 端午茶礼
+### 11. 陈升号 端午茶礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -121,7 +145,7 @@
 
 陈升号普洱茶端午礼盒
 
-### 10. Theory 修身Polo衫
+### 12. Theory 修身Polo衫
 
 - 品类：Polo衫
 - 路径：可直接买样
@@ -133,7 +157,31 @@
 
 Theory高端商务休闲Polo衫
 
-### 11. Ronnefeldt 端午茶礼
+### 13. 永璞 咖啡联名礼盒
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：包装启发
+- 分数：7.4
+- 来源：抖音
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.yongpu.com
+
+抖音 · 永璞咖啡设计师联名套装
+
+### 14. Jo Malone 圣诞礼盒
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：包装启发
+- 分数：7.4
+- 来源：Instagram
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.jomalone.com/gifts
+
+Instagram · 祖玛珑限定圣诞礼盒
+
+### 15. Ronnefeldt 端午茶礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -145,7 +193,7 @@ Theory高端商务休闲Polo衫
 
 Instagram · 德国顶级茶叶端午限定
 
-### 12. 广州酒家 端午礼盒
+### 16. 广州酒家 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -157,7 +205,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 广式粽子礼盒
 
-### 13. 元祖 雪月饼礼盒
+### 17. 元祖 雪月饼礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -169,7 +217,7 @@ Instagram · 德国顶级茶叶端午限定
 
 小红书 · 元祖经典冰淇淋月饼礼盒
 
-### 14. 观夏 蜡烛礼盒
+### 18. 观夏 蜡烛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -181,7 +229,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 东方植物香薰礼盒
 
-### 15. TWG Tea 中秋礼盒
+### 19. TWG Tea 中秋礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -193,7 +241,7 @@ Instagram · 德国顶级茶叶端午限定
 
 Instagram · 新加坡顶级茶叶中秋礼盒
 
-### 16. BYREDO 香氛礼盒
+### 20. BYREDO 香氛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -205,7 +253,7 @@ Instagram · 新加坡顶级茶叶中秋礼盒
 
 Instagram · 瑞典小众香氛礼品套装
 
-### 17. 华源茶业 端午定制礼
+### 21. 华源茶业 端午定制礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -217,7 +265,7 @@ Instagram · 瑞典小众香氛礼品套装
 
 华源茶业端午礼品装设计
 
-### 18. 安佳 端午礼盒
+### 22. 安佳 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -229,7 +277,7 @@ Instagram · 瑞典小众香氛礼品套装
 
 新西兰乳品品牌端午限定礼盒
 
-### 19. Massimo Dutti Polo衫
+### 23. Massimo Dutti Polo衫
 
 - 品类：Polo衫
 - 路径：可直接买样
@@ -241,7 +289,7 @@ Instagram · 瑞典小众香氛礼品套装
 
 西班牙高端休闲Polo衫
 
-### 20. LINDOR 端午礼盒
+### 24. LINDOR 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -253,7 +301,7 @@ Instagram · 瑞典小众香氛礼品套装
 
 瑞士莲Lindor端午限定巧克力
 
-### 21. 盲盒收纳展示盒
+### 25. 盲盒收纳展示盒
 
 - 品类：创意桌搭
 - 路径：可直接买样
@@ -263,9 +311,9 @@ Instagram · 瑞典小众香氛礼品套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.popmart.com
 
-盲盒收纳展示盒实用性强，满足收纳和展示需求；盲盒爱好者高频使用；受众广，覆盖盲盒玩家和桌搭爱好者；功能明确，无短板；预估售价超35元；3秒可理解；情绪价值高，兼具展示和社交属性。
+盲盒收纳展示盒实用性强，满足盲盒玩家收纳和展示需求，高频使用，受众广，功能明确，价格超35元，3秒看懂，且能提供情绪价值（展示收藏）。
 
-### 22. Godiva 中秋巧克力
+### 26. Godiva 中秋巧克力
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -277,7 +325,7 @@ Instagram · 瑞典小众香氛礼品套装
 
 Instagram · 比利时巧克力中秋限定
 
-### 23. 乐纯 中秋酸奶礼盒
+### 27. 乐纯 中秋酸奶礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -289,7 +337,7 @@ Instagram · 比利时巧克力中秋限定
 
 抖音 · 乐纯限定中秋酸奶礼盒
 
-### 24. 稻香村 月饼礼盒
+### 28. 稻香村 月饼礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -301,7 +349,7 @@ Instagram · 比利时巧克力中秋限定
 
 小红书 · 百年老字号中秋月饼礼盒
 
-### 25. 三顿半 咖啡礼盒
+### 29. 三顿半 咖啡礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -313,7 +361,7 @@ Instagram · 比利时巧克力中秋限定
 
 抖音 · 精品速溶咖啡礼盒套装
 
-### 26. Govee 灯带套装
+### 30. Govee 灯带套装
 
 - 品类：氛围灯
 - 路径：可直接买样
@@ -324,54 +372,6 @@ Instagram · 比利时巧克力中秋限定
 - 链接：#
 
 抖音 · Govee智能RGBIC LED灯带
-
-### 27. Aēsop 护肤礼盒
-
-- 品类：创意礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：7.2
-- 来源：Instagram
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.aesop.com/us/gifts
-
-Instagram · 伊索旅行套装礼盒
-
-### 28. Maison Margiela 香氛礼盒
-
-- 品类：创意礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：7.2
-- 来源：Instagram
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.maisonmargiela-fragrances.com/us/gifts
-
-Instagram · Replica香水礼品套装
-
-### 29. 守兴昌 端午茶礼
-
-- 品类：端午礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：7.2
-- 来源：抖音
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.shouxingchangtea.com
-
-守兴昌号普洱茶端午礼盒
-
-### 30. FERRERO ROCHER 端午
-
-- 品类：端午礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：7.2
-- 来源：抖音
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.ferrero.com
-
-费列罗端午金莎礼盒
 
 ### 31. Refik Anadol AI装置
 
@@ -385,17 +385,17 @@ Instagram · Replica香水礼品套装
 
 Refik Anadol AI数据雕塑装置艺术
 
-### 32. RHINOSHIELD 犀牛盾壳
+### 32. BOTTLED JOY 吨吨桶
 
-- 品类：手机壳
+- 品类：水杯
 - 路径：适合改造
-- 启发：视觉启发
+- 启发：功能启发
 - 分数：8.6
-- 来源：Instagram
+- 来源：抖音
 - 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：#
+- 链接：https://bottledjoy.com
 
-手机壳是高频刚需，防摔功能实用，品牌有社交背书，但价格可能低于35元，且功能单一，情绪价值有限。
+水杯是高频刚需，大容量设计满足运动、户外等场景，抖音网红属性带来情绪价值，价格通常高于35元，功能简单易懂。
 
 ### 33. 草間彌生 无限镜屋
 
@@ -757,19 +757,7 @@ iF Design Award · This is a flat-pack gift box, made from bamboo near our produ
 
 iF Design Award · This is a multi-functional light box that integrates eco-friendliness, reusability, and a creative opening method. The entire packaging adopts 100% naturally degradable corrugated cardboard combined with honeycomb paper. It features a minimalist stru
 
-### 63. Nature bamboo fiber cup
-
-- 品类：水杯
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：iF设计奖
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://ifdesign.com/en/winner-ranking/project/nature-bamboo-fiber-cup/764769
-
-iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to nature" through sustainable design. Crafted from natural bamboo fiber, recycled coffee grounds, and plant-based starch, it is free from plastics and synthetic polymers, certified plastic-fr
-
-### 64. Eco-friendly Packaging for Cloud Erosion Whisky
+### 63. Eco-friendly Packaging for Cloud Erosion Whisky
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -781,7 +769,7 @@ iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to 
 
 iF Design Award · "Mist Carving" whisky packaging embodies Yunnan's terroir through sustainable innovation, transforming distiller's grains into elegant bio-based materials that mirror the region's mist-sculpted landscapes. The design fuses frosted glass with relief c
 
-### 65. LAN GUI
+### 64. LAN GUI
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -793,7 +781,7 @@ iF Design Award · "Mist Carving" whisky packaging embodies Yunnan's terroir thr
 
 iF Design Award · Inspired by Su Shi’s Red Cliff Ode (a masterpiece by China's most iconic poet), LAN GUI is a luxury tea set celebrating the "Paired Elegance" of Orchid (Black) and Osmanthus (Gold). The design magnifies microscopic tea stem cells into radial patterns
 
-### 66. Desktop wizard
+### 65. Desktop wizard
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -805,7 +793,7 @@ iF Design Award · Inspired by Su Shi’s Red Cliff Ode (a masterpiece by China'
 
 Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
-### 67. Flo Monitor Arm
+### 66. Flo Monitor Arm
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -817,7 +805,7 @@ Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
 Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
-### 68. Anker 能量棒充电宝
+### 67. Anker 能量棒充电宝
 
 - 品类：充电宝
 - 路径：适合改造
@@ -827,9 +815,9 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：#
 
-充电宝实用且高频，Anker品牌有口碑，但价格可能低于35元，情绪价值一般。
+充电宝实用且高频，Anker品牌有口碑，但价格可能低于35元，且功能无短板但缺乏情绪价值。
 
-### 69. Tom Bihn 旅行收纳包
+### 68. Tom Bihn 旅行收纳包
 
 - 品类：收纳包
 - 路径：适合改造
@@ -841,7 +829,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 美国Tom Bihn专业旅行收纳系统
 
-### 70. The North Face 冲锋衣
+### 69. The North Face 冲锋衣
 
 - 品类：冲锋衣
 - 路径：适合改造
@@ -853,7 +841,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 北面1994经典复刻冲锋衣
 
-### 71. Montbell 雨舞者冲锋衣
+### 70. Montbell 雨舞者冲锋衣
 
 - 品类：冲锋衣
 - 路径：适合改造
@@ -865,7 +853,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 日本Montbell雨舞者冲锋衣
 
-### 72. BAPE 鲨鱼卫衣
+### 71. BAPE 鲨鱼卫衣
 
 - 品类：卫衣
 - 路径：适合改造
@@ -877,7 +865,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 日本A Bathing Ape经典鲨鱼卫衣
 
-### 73. LV 长款钱包
+### 72. LV 长款钱包
 
 - 品类：卡包
 - 路径：适合改造
@@ -889,7 +877,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 Louis Vuitton Monogram经典长款钱包
 
-### 74. Hermès 卡包
+### 73. Hermès 卡包
 
 - 品类：卡包
 - 路径：适合改造
@@ -901,7 +889,7 @@ Louis Vuitton Monogram经典长款钱包
 
 爱马仕经典Togo皮卡包
 
-### 75. Shargeek 透明充电宝
+### 74. Shargeek 透明充电宝
 
 - 品类：充电宝
 - 路径：适合改造
@@ -912,6 +900,18 @@ Louis Vuitton Monogram经典长款钱包
 - 链接：https://sharge.com
 
 Sharge透明机甲风充电宝
+
+### 75. 日历 单向历
+
+- 品类：日历
+- 路径：适合改造
+- 启发：视觉启发
+- 分数：8.2
+- 来源：小红书
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：#
+
+单向空间经典撕历设计
 
 ### 76. Talking Tree
 
