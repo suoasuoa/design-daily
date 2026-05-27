@@ -258,15 +258,10 @@ def build_daily_groups(items, per_day=30, max_days=30):
             if len(picks) >= per_day:
                 break
 
-        quota_families = set(DAILY_SOURCE_QUOTAS)
         for item in ranked:
             if len(picks) >= per_day:
                 break
             family = item["source_family"]
-            if family in quota_families:
-                by_source_count = len([pick for pick in picks if pick["source_family"] == family])
-                if by_source_count >= DAILY_SOURCE_QUOTAS[family]:
-                    continue
             key = dedupe_key(item)
             if key in seen:
                 continue
