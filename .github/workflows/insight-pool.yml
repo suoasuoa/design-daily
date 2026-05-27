@@ -15,7 +15,7 @@ on:
       search_jobs:
         description: "Open-web search jobs to run"
         required: true
-        default: "260"
+        default: "320"
 
 permissions:
   contents: write
@@ -41,7 +41,8 @@ jobs:
         run: python3 scripts/search_jobs.py
 
       - name: Collect open-web search leads
-        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '260' }}" --per-job 6 --sleep 0.8
+        timeout-minutes: 45
+        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '320' }}" --per-job 6 --sleep 0.25
 
       - name: Dedupe product pool
         run: python3 scripts/dedupe.py

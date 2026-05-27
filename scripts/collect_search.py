@@ -97,7 +97,7 @@ def is_product_like_url(url):
     return True
 
 
-def fetch_results(query, timeout=25):
+def fetch_results(query, timeout=6):
     url = "https://duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
     req = urllib.request.Request(
         url,
