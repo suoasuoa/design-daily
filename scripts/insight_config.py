@@ -80,6 +80,7 @@ SOURCE_TYPES = {
     "Indiegogo": "market_reference",
     "Product Hunt": "market_reference",
     "Uncrate": "market_reference",
+    "Uncrate Shop": "market_reference",
     "Cool Material": "market_reference",
     "Gear Patrol": "market_reference",
     "ThisIsWhyImBroke": "market_reference",
@@ -117,6 +118,7 @@ SOURCE_DOMAIN_META = {
     "indiegogo.com": {"source": "Indiegogo", "source_type": "market_reference"},
     "producthunt.com": {"source": "Product Hunt", "source_type": "market_reference"},
     "uncrate.com": {"source": "Uncrate", "source_type": "market_reference"},
+    "shop.uncrate.com": {"source": "Uncrate Shop", "source_type": "market_reference"},
     "coolmaterial.com": {"source": "Cool Material", "source_type": "market_reference"},
     "gearpatrol.com": {"source": "Gear Patrol", "source_type": "market_reference"},
     "thisiswhyimbroke.com": {"source": "ThisIsWhyImBroke", "source_type": "market_reference"},
@@ -180,6 +182,18 @@ RSS_FEEDS = [
     {
         "source": "Uncrate",
         "url": "https://uncrate.com/feed/",
+    },
+    {
+        "source": "Cool Material",
+        "url": "https://coolmaterial.com/gear/feed/",
+    },
+    {
+        "source": "ThisIsWhyImBroke",
+        "url": "https://www.thisiswhyimbroke.com/feed/",
+    },
+    {
+        "source": "Product Hunt",
+        "url": "https://www.producthunt.com/feed",
     },
 ]
 

@@ -37,6 +37,9 @@ jobs:
       - name: Collect public leads
         run: python3 scripts/collect_public.py
 
+      - name: Collect curated product pages
+        run: python3 scripts/collect_curated_pages.py --limit 120
+
       - name: Generate search job matrix
         run: python3 scripts/search_jobs.py
 
