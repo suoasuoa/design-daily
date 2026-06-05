@@ -151,6 +151,8 @@ def lead_from_result(job, result):
 def rotate_jobs(jobs, limit_jobs, offset=None):
     if not jobs:
         return []
+    if limit_jobs <= 0 or limit_jobs >= len(jobs):
+        limit_jobs = len(jobs)
     if offset is None:
         now = dt.datetime.now(LOCAL_TZ)
         run_bucket = 0 if now.hour < 11 else 1 if now.hour < 17 else 2
@@ -193,9 +195,26 @@ def collect(jobs, limit_jobs=40, per_job=4, sleep=1.0, offset=None, workers=8):
     return collected
 
 
+def merge_daily_leads(path, leads):
+    existing = load_json(path, [])
+    if isinstance(existing, dict):
+        existing = existing.get("items", [])
+    merged = []
+    seen = set()
+    for item in list(existing) + list(leads):
+        if not isinstance(item, dict):
+            continue
+        key = item.get("id") or item.get("url") or item.get("title")
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        merged.append(item)
+    return merged, len(existing), len(merged) - len(existing)
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit-jobs", type=int, default=40, help="Maximum search jobs to run.")
+    parser.add_argument("--limit-jobs", type=int, default=40, help="Maximum search jobs to run. Use 0 to run all jobs.")
     parser.add_argument("--per-job", type=int, default=4, help="Maximum search results per job.")
     parser.add_argument("--sleep", type=float, default=1.0, help="Delay between search requests.")
     parser.add_argument("--offset", type=int, default=None, help="Optional start offset in the search job matrix.")
@@ -210,8 +229,9 @@ def main():
 
     leads = collect(jobs, args.limit_jobs, args.per_job, args.sleep, args.offset, args.workers)
     path = RAW_DIR / f"search-{today()}.json"
-    write_json(path, leads)
-    print(f"saved={path} items={len(leads)}")
+    merged, existing_count, added_count = merge_daily_leads(path, leads)
+    write_json(path, merged)
+    print(f"saved={path} fetched={len(leads)} existing={existing_count} added={added_count} total={len(merged)}")
 
 
 if __name__ == "__main__":
