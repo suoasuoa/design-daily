@@ -8,7 +8,7 @@ import ssl
 import urllib.request
 from xml.etree import ElementTree
 
-from insight_common import RAW_DIR, ensure_dirs, guess_category, stable_hash, strip_html, today, write_json
+from insight_common import RAW_DIR, ensure_dirs, guess_category, load_json, stable_hash, strip_html, today, write_json
 from insight_config import RSS_FEEDS
 
 CTX = ssl._create_unverified_context()
@@ -98,6 +98,25 @@ def collect_feed(feed, timeout=30):
     return items
 
 
+def merge_daily_leads(path, leads):
+    existing = []
+    if path.exists():
+        existing = load_json(path, [])
+        if isinstance(existing, dict):
+            existing = existing.get("items", [])
+    merged = []
+    seen = set()
+    for item in list(existing) + list(leads):
+        if not isinstance(item, dict):
+            continue
+        key = item.get("id") or item.get("url") or item.get("title")
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        merged.append(item)
+    return merged, len(existing), len(merged) - len(existing)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=0, help="Maximum items to save.")
@@ -116,8 +135,9 @@ def main():
     if args.limit:
         collected = collected[: args.limit]
     path = RAW_DIR / f"public-{today()}.json"
-    write_json(path, collected)
-    print(f"saved={path} items={len(collected)}")
+    merged, existing_count, added_count = merge_daily_leads(path, collected)
+    write_json(path, merged)
+    print(f"saved={path} fetched={len(collected)} existing={existing_count} added={added_count} total={len(merged)}")
 
 
 if __name__ == "__main__":
