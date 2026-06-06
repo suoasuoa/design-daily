@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T16:41:16+08:00",
+  "generated_at": "2026-06-06T22:51:00+08:00",
   "week": "2026-W23",
   "group_id": "2026-W23",
   "date_start": "2026-06-01",
@@ -11,35 +11,35 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 51,
+      "适合改造": 52,
       "方向参考": 25,
-      "可直接买样": 24
+      "可直接买样": 23
     },
     "by_category": {
-      "创意厨具": 18,
+      "创意厨具": 19,
       "氛围灯": 14,
       "水杯": 12,
       "创意礼盒": 11,
-      "端午礼盒": 8,
       "装置艺术": 8,
+      "端午礼盒": 7,
       "创意桌搭": 5,
       "Polo衫": 4,
       "冲锋衣": 4,
-      "手机壳": 3,
-      "充电宝": 3,
       "帽子": 3,
+      "T恤": 3,
+      "充电宝": 2,
+      "手机壳": 2,
       "收纳包": 2,
       "卡包": 2,
       "中秋礼盒": 1,
-      "卫衣": 1,
-      "T恤": 1
+      "卫衣": 1
     },
     "by_axis": {
       "功能启发": 42,
-      "包装启发": 27,
-      "结构启发": 22,
-      "情绪启发": 17,
-      "视觉启发": 16
+      "包装启发": 26,
+      "结构启发": 21,
+      "视觉启发": 17,
+      "情绪启发": 17
     }
   },
   "dedupe": {
@@ -63,7 +63,7 @@
       "source_family": "社交灵感",
       "url": "https://www.zwilling.com/us/cutlery/knives",
       "image": "",
-      "summary": "双立人品牌知名度高，刀具套装实用性强，满足高频烹饪需求，适用人群广，功能成熟，价格超过35元，产品外观易识别，品牌本身带有情绪价值。",
+      "summary": "双立人品牌知名度高，刀具套装实用性强，满足高频烹饪需求，适用人群广，功能成熟，价格高于35元，产品外观易识别，品牌本身带有情绪价值。",
       "risk": "双立人刀具套装，厨房工具",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -116,6 +116,30 @@
       "tags": [
         "咖啡",
         "星巴克"
+      ]
+    },
+    {
+      "id": "980af6baa7db",
+      "product_key": null,
+      "title": "三顿半 咖啡礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 77,
+      "score_label": "7.7",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.saturnbird.com",
+      "image": "",
+      "summary": "咖啡是高频刚需，礼盒形式适合送礼，价格超过35元，3秒可识别为咖啡礼盒，功能明确，情绪价值通过礼盒包装体现。",
+      "risk": "咖啡礼盒套装",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "抖音",
+        "社交精选"
       ]
     },
     {
@@ -181,7 +205,7 @@
       "source_family": "社交灵感",
       "url": "https://www.popmart.com",
       "image": "",
-      "summary": "盲盒收纳展示盒实用性强，满足收纳和展示需求；盲盒爱好者高频使用；受众广，尤其年轻人；功能明确，无短板；预估售价超35元；3秒看懂用途；可叠加情绪价值（展示收藏、社交分享）。",
+      "summary": "盲盒收纳展示盒满足实用收纳需求，盲盒爱好者高频使用，受众广泛，功能明确，售价通常超过35元，3秒可理解，且能提供展示和情绪价值。",
       "risk": "盲盒亚克力展示收纳盒，属于桌面展示收纳，归为创意桌搭",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -191,26 +215,27 @@
       ]
     },
     {
-      "id": "980af6baa7db",
+      "id": "0073b00bf9d3",
       "product_key": null,
-      "title": "三顿半 咖啡礼盒",
-      "category": "创意礼盒",
+      "title": "Govee 灯带套装",
+      "category": "氛围灯",
       "action_lane": "可直接买样",
       "axes": [
-        "包装启发"
+        "包装启发",
+        "情绪启发"
       ],
       "score": 73,
       "score_label": "7.3",
       "source": "抖音",
       "source_family": "社交灵感",
-      "url": "https://www.saturnbird.com",
-      "image": "",
-      "summary": "咖啡是高频消费品，礼盒形式适合送礼，功能明确，价格超过35元，3秒可识别为咖啡礼盒，情绪价值体现在社交和礼品属性。",
-      "risk": "咖啡礼盒套装",
+      "url": "#",
+      "image": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/Shipping_VI.png?v=1737431254&amp;width=100&amp;crop=center",
+      "summary": "灯带实用性强，可装饰多种场景；氛围灯需求高频；受众广；功能齐全；价格超35元；3秒看懂；情绪价值高。",
+      "risk": "智能RGBIC灯带",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意礼盒",
         "抖音",
+        "氛围灯",
         "社交精选"
       ]
     },
@@ -229,7 +254,7 @@
       "source_family": "社交灵感",
       "url": "https://www.massimodutti.com",
       "image": "",
-      "summary": "Polo衫是经典单品，实用性强，适合多种场合；但作为高端品牌，价格可能限制部分用户，且非高频消耗品。",
+      "summary": "Polo衫是经典实用单品，商务休闲场景高频，受众广；功能无明显短板，售价通常超35元；设计简洁易识别；但情绪价值一般，需结合面料或设计提升。",
       "risk": "明确为Polo衫",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -237,31 +262,6 @@
         "高端基础款",
         "Polo衫",
         "商务"
-      ]
-    },
-    {
-      "id": "0073b00bf9d3",
-      "product_key": null,
-      "title": "Govee 灯带套装",
-      "category": "氛围灯",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发",
-        "情绪启发"
-      ],
-      "score": 72,
-      "score_label": "7.2",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/Shipping_VI.png?v=1737431254&amp;width=100&amp;crop=center",
-      "summary": "灯带实用性强，可装饰多种场景；智能控制满足高频需求；受众广泛；功能全面；价格超35元；3秒可理解；情绪价值通过灯光氛围实现。",
-      "risk": "智能RGBIC灯带",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "抖音",
-        "氛围灯",
-        "社交精选"
       ]
     },
     {
@@ -319,13 +319,13 @@
       "axes": [
         "视觉启发"
       ],
-      "score": 68,
-      "score_label": "6.8",
+      "score": 69,
+      "score_label": "6.9",
       "source": "Instagram",
       "source_family": "社交灵感",
       "url": "https://www.sunspel.com",
       "image": "",
-      "summary": "Polo衫是经典单品，实用性强，但高端定位限制受众，价格超过35元，3秒可识别品牌风格，功能无明显短板，情绪价值来自品牌历史与英伦风格。",
+      "summary": "Polo衫是经典单品，实用性强，但高频需求一般；品牌知名度高，打击面较广；功能无明显短板；预估售价超35元；3秒可识别；品牌历史提供情绪价值。",
       "risk": "明确为Polo衫",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -343,13 +343,13 @@
       "axes": [
         "包装启发"
       ],
-      "score": 67,
-      "score_label": "6.7",
+      "score": 68,
+      "score_label": "6.8",
       "source": "Pinterest",
       "source_family": "社交灵感",
       "url": "https://www.laderach.com/en/chocolate-gifts",
       "image": "https://laderach.com/media/og_image/default/full-logo_1_.jpg",
-      "summary": "巧克力礼盒作为礼品实用性强，节日或社交场景需求较高，受众广泛；产品功能明确（食用+送礼），无明显短板；预估售价超过35元；3秒内可识别为巧克力礼盒；情绪价值高，适合送礼场景。",
+      "summary": "巧克力礼盒作为礼品实用性强，节日或社交场景需求较高，受众广泛；产品功能明确（食用+送礼），无明显短板；预估售价超过35元；3秒内可识别为巧克力礼盒；情绪价值体现在送礼和精致包装上。",
       "risk": "巧克力礼盒属于礼品套装",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -373,7 +373,7 @@
       "source_family": "社交灵感",
       "url": "https://www.diptyqueparis.com/en/candles",
       "image": "",
-      "summary": "香薰蜡烛礼盒兼具实用与情绪价值，高频送礼需求，价格超过35元，外观易理解，但功能上无火香薰存在使用场景限制。",
+      "summary": "香薰蜡烛礼盒兼具实用与情绪价值，高频送礼场景，外观易吸引人，价格通常高于35元，但功能上无火香薰可能不如有火蜡烛氛围感强，且市场同质化竞争激烈。",
       "risk": "属于创意礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -383,9 +383,9 @@
       ]
     },
     {
-      "id": "ea34c7643707",
+      "id": "83c43c5670ee",
       "product_key": null,
-      "title": "永璞 咖啡联名礼盒",
+      "title": "观夏 蜡烛礼盒",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
       "axes": [
@@ -395,18 +395,15 @@
       "score_label": "6.6",
       "source": "抖音",
       "source_family": "社交灵感",
-      "url": "https://www.yongpu.com",
+      "url": "https://www.loeweperfumes.com",
       "image": "",
-      "summary": "咖啡是高频消费品，联名礼盒兼具实用与社交属性，价格超35元，设计感强易理解，但功能上咖啡本身无短板，情绪价值高。",
-      "risk": "明确是礼盒套装",
+      "summary": "香薰蜡烛具有实用性和情绪价值，但非高频消耗品；东方植物香调受众广，价格超35元，3秒可看懂；功能成立，情绪价值突出。",
+      "risk": "明确属于创意礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "咖啡",
-        "联名",
-        "礼盒",
-        "社交",
         "创意礼盒",
-        "抖音"
+        "抖音",
+        "社交精选"
       ]
     },
     {
@@ -425,38 +422,13 @@
       "source_family": "社交灵感",
       "url": "https://www.peugeot-saveurs.com",
       "image": "",
-      "summary": "磁吸锅铲套装解决收纳痛点，实用性强；烹饪高频但非每日必需；受众为家庭主妇/煮夫，较广；功能基本满足，但磁吸可能不够牢固；预估售价>35元；3秒看懂；情绪价值一般，缺乏额外情感设计。",
+      "summary": "磁吸锅铲套装解决收纳痛点，实用性强；烹饪高频但非每日；受众广但非刚需；功能无明显短板；预估售价超35元；3秒看懂；情绪价值一般。",
       "risk": "产品为磁吸收纳锅铲套装，属于厨房工具，符合创意厨具定义。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "Pinterest",
         "创意厨具",
         "社交精选"
-      ]
-    },
-    {
-      "id": "ef738cff39b6",
-      "product_key": null,
-      "title": "杏花楼 粽意礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 65,
-      "score_label": "6.5",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "url": "https://www.xinghualou.com",
-      "image": "",
-      "summary": "端午礼盒实用性强，节日送礼需求高，老字号品牌有信任感，价格超过35元，产品功能明确，情绪价值高。但季节性明显，非高频需求。",
-      "risk": "端午粽意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "端午礼盒",
-        "上海老字号",
-        "社交精选",
-        "小红书"
       ]
     },
     {
@@ -474,7 +446,7 @@
       "source_family": "社交灵感",
       "url": "https://www.gzjj.com",
       "image": "",
-      "summary": "端午礼盒实用性强，节日送礼需求高，广式粽子受众广，价格超35元，3秒可识别，情绪价值高，但非高频日常品。",
+      "summary": "粽子是端午节高频实用食品，广式品牌有口碑，礼盒形式适合送礼，价格通常超过35元，产品功能明确，情绪价值高。但季节性明显，非高频需求。",
       "risk": "明确属于端午礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -499,11 +471,36 @@
       "source_family": "社交灵感",
       "url": "https://www.daoxiangcun.com",
       "image": "",
-      "summary": "月饼礼盒实用性强，节日送礼需求高，但非高频；老字号品牌认知广，功能明确，价格通常高于35元，3秒可识别，情绪价值高。",
+      "summary": "月饼礼盒实用性强，但中秋为季节性高频，非日常高频；打击面广，适合送礼；功能无明显短板；价格通常超35元；3秒看懂；老字号品牌有情绪价值。",
       "risk": "明确是中秋月饼礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "中秋礼盒",
+        "小红书",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "ef738cff39b6",
+      "product_key": null,
+      "title": "杏花楼 粽意礼盒",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 63,
+      "score_label": "6.3",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "url": "https://www.xinghualou.com",
+      "image": "",
+      "summary": "端午礼盒实用性强，节日送礼需求高，但非高频；老字号品牌有广泛受众，功能明确，价格超35元，3秒可识别，情绪价值来自节日和品牌。",
+      "risk": "端午粽意礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "端午礼盒",
+        "上海老字号",
         "小红书",
         "社交精选"
       ]
@@ -517,43 +514,19 @@
       "axes": [
         "包装启发"
       ],
-      "score": 65,
-      "score_label": "6.5",
+      "score": 63,
+      "score_label": "6.3",
       "source": "小红书",
       "source_family": "社交灵感",
       "url": "https://www.zgld.com",
       "image": "",
-      "summary": "粽子礼盒实用性强，但端午为季节性节日，非高频需求；受众较广但受限于节日；功能明确，无明显短板；价格通常高于35元；产品一目了然；情绪价值通过礼盒包装和节日氛围体现。",
+      "summary": "粽子礼盒实用性强，节日送礼高频但非日常，受众较广但受限于节日，功能明确无短板，价格超35元，3秒可识别为礼盒，情绪价值来自节日氛围和社交属性。",
       "risk": "诸老大江南粽子礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "端午礼盒",
         "社交精选",
         "小红书"
-      ]
-    },
-    {
-      "id": "83c43c5670ee",
-      "product_key": null,
-      "title": "观夏 蜡烛礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 64,
-      "score_label": "6.4",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.loeweperfumes.com",
-      "image": "",
-      "summary": "香薰蜡烛具有实用性和情绪价值，但非高频消耗品；东方植物香调受众广，价格超35元，3秒可看懂；功能无明显短板，但需注意香薰非刚需。",
-      "risk": "明确属于创意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "抖音",
-        "社交精选"
       ]
     },
     {
@@ -571,7 +544,7 @@
       "source_family": "社交灵感",
       "url": "https://www.burton.com",
       "image": "https://www.burton.com/static/content/2026/images/open-graph/burton-dot-com-open-graph.jpg",
-      "summary": "专业滑雪冲锋衣，功能性强，但使用场景局限，非高频需求，受众窄。",
+      "summary": "专业冲锋衣实用性强，但滑雪为低频需求，受众窄；价格高，功能完善，品牌溢价带来情绪价值。",
       "risk": "滑雪冲锋衣，属于冲锋衣",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
@@ -580,6 +553,33 @@
         "高端",
         "专业",
         "冲锋衣"
+      ]
+    },
+    {
+      "id": "ea34c7643707",
+      "product_key": null,
+      "title": "永璞 咖啡联名礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 61,
+      "score_label": "6.1",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.yongpu.com",
+      "image": "",
+      "summary": "咖啡是高频消费品，联名礼盒兼具实用与社交属性，价格超过35元，但受众相对细分，非大众刚需。",
+      "risk": "明确是礼盒套装",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "咖啡",
+        "联名",
+        "礼盒",
+        "社交",
+        "创意礼盒",
+        "抖音"
       ]
     },
     {
@@ -597,39 +597,13 @@
       "source_family": "社交灵感",
       "url": "https://www.aesop.com/us/gifts",
       "image": "",
-      "summary": "护肤礼盒实用性强，但作为礼盒非高频需求；受众较广但非大众；功能无明显短板；价格超35元；3秒可识别为礼盒；情绪价值高，适合送礼。",
+      "summary": "护肤礼盒实用性强，但高频需求一般，打击面中等，功能无明显短板，价格超过35元，3秒可看懂，情绪价值较高。",
       "risk": "护肤礼盒属于创意礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "Instagram",
         "创意礼盒",
         "社交精选"
-      ]
-    },
-    {
-      "id": "9160023defc5",
-      "product_key": null,
-      "title": "守兴昌 端午茶礼",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 60,
-      "score_label": "6.0",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.shouxingchangtea.com",
-      "image": "",
-      "summary": "普洱茶作为礼品实用性强，端午送礼是高频场景，但受众偏中老年，年轻人接受度一般。产品功能明确，价格超过35元，3秒可识别为礼盒。情绪价值通过节日和品牌加持。",
-      "risk": "明确为端午茶礼",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "端午礼盒",
-        "普洱茶",
-        "送礼",
-        "守兴昌",
-        "普洱"
       ]
     },
     {
@@ -656,26 +630,26 @@
       ]
     },
     {
-      "id": "4ed7619e53dd",
+      "id": "7c32acb327fc",
       "product_key": null,
-      "title": "RHINOSHIELD 犀牛盾壳",
-      "category": "手机壳",
+      "title": "罗马仕 充电宝",
+      "category": "充电宝",
       "action_lane": "适合改造",
       "axes": [
-        "视觉启发"
+        "功能启发"
       ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Instagram",
+      "score": 87,
+      "score_label": "8.7",
+      "source": "抖音",
       "source_family": "社交灵感",
-      "url": "#",
+      "url": "https://www.romoss.com",
       "image": "",
-      "summary": "手机壳是高频刚需，防摔功能实用，品牌知名度高，但价格可能偏高，且市场竞争激烈。",
-      "risk": "明确是手机壳",
+      "summary": "充电宝实用性强，高频需求，受众广，功能成熟，价格通常高于35元，产品直观易懂，品牌有情绪价值。",
+      "risk": "明确为充电宝",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "Instagram",
-        "手机壳",
+        "充电宝",
+        "抖音",
         "社交精选"
       ]
     },
@@ -841,10 +815,10 @@
       ]
     },
     {
-      "id": "7c32acb327fc",
+      "id": "9ebda00230e6",
       "product_key": null,
-      "title": "罗马仕 充电宝",
-      "category": "充电宝",
+      "title": "BOTTLED JOY 吨吨桶",
+      "category": "水杯",
       "action_lane": "适合改造",
       "axes": [
         "功能启发"
@@ -853,14 +827,17 @@
       "score_label": "8.5",
       "source": "抖音",
       "source_family": "社交灵感",
-      "url": "https://www.romoss.com",
-      "image": "",
-      "summary": "充电宝实用性强，高频需求，受众广，功能成熟，价格通常高于35元，产品直观易懂，品牌知名度高但情绪价值一般。",
-      "risk": "明确为充电宝",
+      "url": "https://bottledjoy.com",
+      "image": "http://bottledjoy.com/cdn/shop/files/5b6u5L_h5Zu_54mHXzIwMjMwNjEzMTY0NTMzLnBuZw.png?v=1686880714",
+      "summary": "水杯是高频刚需，大容量设计实用，抖音网红属性带来情绪价值，价格通常高于35元，功能简单易懂。",
+      "risk": "运动水壶属于水杯",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "充电宝",
         "抖音",
+        "网红",
+        "大容量",
+        "运动水壶",
+        "水杯",
         "社交精选"
       ]
     },
@@ -885,6 +862,31 @@
       "tags": [
         "Good Design Award",
         "iF Design Award"
+      ]
+    },
+    {
+      "id": "2c8eb4a5c0cd",
+      "product_key": null,
+      "title": "VIABECO 不锈钢保温杯",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.viabeco.com",
+      "image": "",
+      "summary": "保温杯实用性强，日常高频使用，受众广，功能明确，3秒可懂，北欧极简风格可叠加情绪价值，但价格未知，预估可能高于35元。",
+      "risk": "明确为保温杯，属于水杯品类",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "北欧",
+        "极简",
+        "保温杯",
+        "水杯"
       ]
     },
     {
@@ -1189,30 +1191,6 @@
       ]
     },
     {
-      "id": "d3ce3952d128",
-      "product_key": null,
-      "title": "Handit Simple Thermo Bottle 350ml/500ml",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "url": "https://www.g-mark.org/gallery/winners/31664?years=2025",
-      "image": "https://award-attachments.g-mark.io/winners/2025/31664/main.jpg?size=medium",
-      "summary": "Good Design Award · An original stainless steel thermos bottle that is not only easy to carry, but also easy to wash thanks to its unique packing structure.",
-      "risk": "thermo bottle, drinkware",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "GOOD DESIGN AWARD",
-        "Good Design Award"
-      ]
-    },
-    {
       "id": "100a91c8a510",
       "product_key": null,
       "title": "Elthy™ Series",
@@ -1303,29 +1281,6 @@
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/779917/740151/77b87bf7-b2ef-4090-b7fc-eb1591f94cf3/1.jpg",
       "summary": "iF Design Award · This is a multi-functional light box that integrates eco-friendliness, reusability, and a creative opening method. The entire packaging adopts 100% naturally degradable corrugated cardboard combined with honeycomb paper. It features a minimalist stru",
       "risk": "多功能LED灯箱，属于氛围灯品类，而非礼盒。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "4ce7186a95f7",
-      "product_key": null,
-      "title": "Nature bamboo fiber cup",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "url": "https://ifdesign.com/en/winner-ranking/project/nature-bamboo-fiber-cup/764769",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/779836/764769/10f1493e-b49b-4007-ae16-1a37bcf066ea/l2204223___.jpg",
-      "summary": "iF Design Award · The Bamboo Fiber Cup embodies the principle of \"returning to nature\" through sustainable design. Crafted from natural bamboo fiber, recycled coffee grounds, and plant-based starch, it is free from plastics and synthetic polymers, certified plastic-fr",
-      "risk": "Bamboo fiber cup, clearly drinkware; corrected from 创意厨具.",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "iF Design Award",
@@ -1449,30 +1404,6 @@
       ]
     },
     {
-      "id": "a4143e79f702",
-      "product_key": null,
-      "title": "RAVPower 充电宝",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "url": "https://www.ravpower.com",
-      "image": "",
-      "summary": "充电宝实用性强，高频需求，受众广，功能明确，价格可能超35元，3秒看懂，但情绪价值一般。",
-      "risk": "明确为充电宝",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "便携",
-        "快充",
-        "充电宝"
-      ]
-    },
-    {
       "id": "e76fc3cbf10e",
       "product_key": null,
       "title": "PITAKA 凯夫拉手机壳",
@@ -1487,37 +1418,11 @@
       "source_family": "奖项案例",
       "url": "#",
       "image": "",
-      "summary": "手机壳是高频刚需，凯夫拉材质耐用且轻便，Red Dot设计奖增加信任感，但价格可能偏高，且功能单一（保护+磁吸），情绪价值有限。",
+      "summary": "手机壳是高频刚需，凯夫拉材质提供保护且轻薄，设计获奖，但价格可能较高，功能无短板，3秒可看懂。",
       "risk": "产品明确为手机壳，符合品类定义。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "Red Dot",
-        "手机壳",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "44bad2f6e18b",
-      "product_key": null,
-      "title": "CASETiFY 防摔手机壳",
-      "category": "手机壳",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "url": "https://www.casetify.com",
-      "image": "https://ctgimage1.s3.amazonaws.com/cms/image/6fa327bd55bdbbba4d13e3339edadbdd.png",
-      "summary": "手机壳是高频刚需，防摔功能实用，Red Dot和联名提升情绪价值，但价格可能偏高，打击面受限于品牌溢价。",
-      "risk": "防摔手机壳",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Red Dot",
-        "联名",
-        "防摔",
         "手机壳",
         "社交精选"
       ]
@@ -1590,6 +1495,32 @@
       "tags": [
         "卫衣",
         "户外"
+      ]
+    },
+    {
+      "id": "44bad2f6e18b",
+      "product_key": null,
+      "title": "CASETiFY 防摔手机壳",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "url": "https://www.casetify.com",
+      "image": "https://ctgimage1.s3.amazonaws.com/cms/image/6fa327bd55bdbbba4d13e3339edadbdd.png",
+      "summary": "手机壳是高频刚需，防摔功能实用，联名设计增加情绪价值，但价格可能偏高，且市场竞争激烈。",
+      "risk": "防摔手机壳",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Red Dot",
+        "联名",
+        "防摔",
+        "手机壳",
+        "社交精选"
       ]
     },
     {
@@ -1682,6 +1613,52 @@
       "tags": [
         "中国",
         "装置艺术"
+      ]
+    },
+    {
+      "id": "cb1c667730ff",
+      "product_key": null,
+      "title": "Stussy T恤",
+      "category": "T恤",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.stussy.com",
+      "image": "http://www.stussy.com/cdn/shop/files/checkout-logo_256x256_c8c5b294-3bd0-4d8e-a5bd-e4066efcc662.png?v=1678808251",
+      "summary": "Stussy经典世界Logo T恤",
+      "risk": "经典T恤",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "T恤",
+        "美式"
+      ]
+    },
+    {
+      "id": "529125322767",
+      "product_key": null,
+      "title": "Acne Studios T恤",
+      "category": "T恤",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.acnestudios.com",
+      "image": "https://cdn.acnestudios.com/static/fallback-image/AcneStudios.png",
+      "summary": "瑞典Acne Studios笑脸T恤",
+      "risk": "笑脸T恤",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "T恤",
+        "北欧"
       ]
     },
     {
@@ -2400,6 +2377,29 @@
       "url": "https://www.g-mark.org/gallery/winners/20806?years=2024",
       "image": "https://award-attachments.g-mark.io/winners/2024/20806/main.jpg?size=medium",
       "summary": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses and citrus fruit but also frequently-used ingredients such as ginger or garlic. The spatula-shaped end of the blade cover allows you to collect grated",
+      "risk": "明确属于创意厨具",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "f2292cb86779",
+      "product_key": null,
+      "title": "WMF Flexi Whisk",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "url": "https://www.g-mark.org/gallery/winners/24324?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/24324/main.jpg?size=medium",
+      "summary": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wires and 11 balls of different sizes at the tips. The varying wire lengths allow for reaching into container corners and edges, ensuring thorough and qu",
       "risk": "明确属于创意厨具",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
