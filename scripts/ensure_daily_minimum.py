@@ -33,6 +33,8 @@ def main():
     parser.add_argument("--review-batch-size", type=int, default=20)
     parser.add_argument("--sleep", type=float, default=0.05)
     parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--curated-limit", type=int, default=220)
+    parser.add_argument("--shopify-pages", type=int, default=3)
     args = parser.parse_args()
 
     total_jobs = job_count()
@@ -60,6 +62,18 @@ def main():
                 str(args.sleep),
                 "--workers",
                 str(args.workers),
+            ]
+        )
+        run(
+            [
+                sys.executable,
+                "scripts/collect_curated_pages.py",
+                "--limit",
+                str(args.curated_limit),
+                "--shopify-pages",
+                str(args.shopify_pages),
+                "--page-offset",
+                str(index * args.shopify_pages),
             ]
         )
         run([sys.executable, "scripts/dedupe.py"])
