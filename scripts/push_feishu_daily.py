@@ -153,7 +153,18 @@ def markdown_escape(text):
     return str(text or "").replace("[", "［").replace("]", "］")
 
 
-def card_elements(group, items, total_count):
+def clean_image_url(value):
+    value = (value or "").strip()
+    if value.startswith("//"):
+        value = "https:" + value
+    if not value.startswith(("http://", "https://")):
+        return ""
+    if any(token in value.lower() for token in ["placeholder", "blank.gif", "transparent.gif"]):
+        return ""
+    return value
+
+
+def card_elements(group, items, total_count, include_images=True):
     date = group.get("date") or "今日"
     elements = [
         {
@@ -161,7 +172,7 @@ def card_elements(group, items, total_count):
             "text": {
                 "tag": "lark_md",
                 "content": (
-                    f"**{date} 每日情报已更新**\\n"
+                    f"**{date} 每日情报已更新**\n"
                     f"从当天 {total_count} 条去重选品里，优先推荐下面 5 个。"
                 ),
             },
@@ -176,15 +187,18 @@ def card_elements(group, items, total_count):
         reason = markdown_escape(truncate(recommend_reason(item), 86))
         score = recommendation_score(item)
         url = item_link(item)
+        image = clean_image_url(item.get("image", ""))
+        image_md = f"![{title}]({image})\n" if include_images and image else ""
         elements.append(
             {
                 "tag": "div",
                 "text": {
                     "tag": "lark_md",
-                    "content": (
-                        f"**{index}. {title}**\\n"
-                        f"`{category}`  推荐指数 **{score}/100**  来源：{source}\\n"
-                        f"推荐理由：{reason}\\n"
+                    "content": image_md
+                    + (
+                        f"**{index}. {title}**\n"
+                        f"`{category}`  推荐指数 **{score}/100**  来源：{source}\n"
+                        f"推荐理由：{reason}\n"
                         f"[打开原链接]({url})"
                     ),
                 },
@@ -279,6 +293,7 @@ def main():
     parser.add_argument("--top-limit", type=int, default=5, help="Number of highlighted picks in the card.")
     parser.add_argument("--chunk-size", type=int, default=10, help="Items per Feishu message.")
     parser.add_argument("--format", choices=["card", "post"], default="card", help="Feishu message format.")
+    parser.add_argument("--no-images", action="store_true", help="Disable external image elements in Feishu cards.")
     parser.add_argument("--dry-run", action="store_true", help="Print messages instead of sending.")
     args = parser.parse_args()
 
@@ -300,7 +315,7 @@ def main():
     highlighted = top_items(items, args.top_limit)
     title_prefix = f"Design Daily｜{date} 最推荐 5 个选品"
     if args.dry_run:
-        print(json.dumps({"title": title_prefix, "card": card_elements(group, highlighted, total)}, ensure_ascii=False, indent=2))
+        print(json.dumps({"title": title_prefix, "card": card_elements(group, highlighted, total, not args.no_images)}, ensure_ascii=False, indent=2))
         return
 
     if not webhook_url:
@@ -317,7 +332,7 @@ def main():
             ]
             result = send_post(webhook_url, secret, title_prefix, fallback)
         else:
-            result = send_card(webhook_url, secret, title_prefix, card_elements(group, highlighted, total))
+            result = send_card(webhook_url, secret, title_prefix, card_elements(group, highlighted, total, not args.no_images))
         print(f"feishu_push=sent format={args.format} top={len(highlighted)} result={result}")
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError) as exc:
         raise SystemExit(f"feishu_push=failed error={exc}") from exc
