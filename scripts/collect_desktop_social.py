@@ -113,7 +113,7 @@ def valid_platform_url(platform, url):
     host = urllib.parse.urlsplit(url).netloc.lower()
     if not any(token in host for token in PLATFORM_META[platform]["host_tokens"]):
         return ""
-    if platform == "douyin" and not re.search(r"/(video|note|user|search|discover)/|/share/", url):
+    if platform == "douyin" and not re.search(r"/(video|note)/[0-9]+|/share/", url):
         return ""
     if platform == "instagram" and not re.search(r"/(p|reel|reels|tv)/", urllib.parse.urlsplit(url).path):
         return ""
@@ -121,6 +121,32 @@ def valid_platform_url(platform, url):
 
 
 def extract_candidates(page, platform):
+    if platform == "douyin":
+        return page.evaluate(
+            r"""() => {
+              const imageFrom = (el) => {
+                const img = el.querySelector('img');
+                if (img && (img.currentSrc || img.src)) return img.currentSrc || img.src;
+                const bg = Array.from(el.querySelectorAll('*')).map(node => getComputedStyle(node).backgroundImage || '').find(value => value.includes('url('));
+                if (!bg) return '';
+                const match = bg.match(/url\(["']?(.*?)["']?\)/);
+                return match ? match[1] : '';
+              };
+              return Array.from(document.querySelectorAll('[id^="waterfall_item_"]')).map(card => {
+                const id = (card.id || '').replace('waterfall_item_', '');
+                const titleEl = card.querySelector('.BjLsdJMi') || card.querySelector('[class*="title"]');
+                const authorEl = card.querySelector('.WldPmwm5');
+                const text = (card.innerText || '').trim();
+                const title = (titleEl ? titleEl.innerText : text).trim();
+                const author = authorEl ? '@' + authorEl.innerText.trim() : '';
+                return {
+                  href: id ? `https://www.douyin.com/video/${id}` : '',
+                  title: [title, author].filter(Boolean).join(' · '),
+                  image: imageFrom(card),
+                };
+              }).filter(item => item.href && item.title);
+            }"""
+        )
     return page.evaluate(
         """(platform) => {
           const out = [];
@@ -189,6 +215,22 @@ def collect_platform(page, platform, categories, per_category, delay, state, max
         url = search_url(platform, category, suffix)
         print(f"search platform={platform} category={category} url={url}")
         page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        if platform == "douyin":
+            try:
+                page.wait_for_selector('[id^="waterfall_item_"]', timeout=15000)
+            except Exception:
+                title = page.title()
+                body = ""
+                try:
+                    body = page.locator("body").inner_text(timeout=3000)
+                except Exception:
+                    body = ""
+                if "验证码" in title or "验证码" in body or not body.strip():
+                    debug_path = ROOT / "logs" / f"douyin-blocked-{today()}.png"
+                    debug_path.parent.mkdir(exist_ok=True)
+                    page.screenshot(path=str(debug_path), full_page=True)
+                    print(f"blocked platform=douyin category={category} title={title} screenshot={debug_path}")
+                    break
         time.sleep(delay)
         for _ in range(2):
             page.mouse.wheel(0, 1200)
@@ -241,7 +283,7 @@ def main():
     args = parser.parse_args()
 
     ensure_dirs()
-    platforms = args.platform or ["douyin", "instagram"]
+    platforms = args.platform or ["douyin"]
     categories = args.category or CATEGORIES
     max_per_platform = max(1, args.target_total // len(platforms))
     state_path = Path(args.state_file)

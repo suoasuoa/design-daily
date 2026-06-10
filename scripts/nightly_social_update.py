@@ -125,8 +125,6 @@ def main():
         "scripts/collect_desktop_social.py",
         "--platform",
         "douyin",
-        "--platform",
-        "instagram",
         "--target-total",
         str(args.target_total),
         "--min-social",

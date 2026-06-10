@@ -220,15 +220,43 @@ python3 scripts/push_feishu_daily.py --dry-run
 FEISHU_WEBHOOK_URL="你的 webhook" python3 scripts/push_feishu_daily.py
 ```
 
-## 本地社媒夜间采集
+## 社媒公开索引采集
+
+项目会通过公开搜索索引补充社媒来源，不直接登录或操作社媒账号。
+
+当前覆盖：
+
+- 抖音公开视频页：`douyin.com/video`
+- 小红书公开笔记页：`xiaohongshu.com/explore`、`xiaohongshu.com/discovery/item`
+- Instagram 公开帖子页：`instagram.com/p`、`instagram.com/reel`
+
+这类采集只保留具体内容页，搜索页、用户页、话题页、合集页会被过滤。进入数据池前还会按选品标准继续审核：
+
+```text
+实用为先 / 高频需求 / 功能点清晰 / 打击面广 / 价格带大概率 >35 元 / 3 秒看懂 / 情绪价值只能作为加分
+```
+
+注意：公开索引不是平台内全量搜索，只能覆盖被搜索引擎收录的公开内容。它的定位是低风险社媒补充来源。
+
+如果要提高社媒公开索引的稳定性，可以配置 Tavily 搜索 API：
+
+```text
+TAVILY_API_KEY
+```
+
+没有配置时，脚本会继续使用免费搜索页作为兜底，但覆盖率和稳定性会更弱。Tavily 只负责找候选链接，最终是否入池仍然由品类审核和选品评分决定。
+
+## 本地社媒夜间采集（备用）
 
 抖音、Instagram 这类社媒平台不适合放在 GitHub Actions 里直接采集。项目提供了一个本地桌面采集器，用你电脑上的可见浏览器，在登录状态下按品类搜索并保存线索。
 
+这个方式容易遇到验证码或账号风控，目前只作为备用，不建议作为默认方案。第一版默认只采集抖音。Instagram 采集能力保留在脚本里，但不进入夜间定时任务，避免账号风险。
+
 默认策略：
 
-- 平台：抖音、Instagram
+- 平台：抖音
 - 时间：建议每天凌晨 00:30
-- 目标：每天从两个平台采集不少于 10 条社媒候选
+- 目标：每天从抖音采集不少于 10 条社媒候选
 - 方式：正常打开网页搜索，不绕过登录、验证码或平台限制
 - 输出：`data/raw/social-desktop-YYYY-MM-DD.json`
 - 后续：自动去重、审核、评分、构建网站，并推回 GitHub
@@ -240,10 +268,10 @@ python3 -m pip install playwright
 python3 -m playwright install chromium
 ```
 
-第一次建议先手动跑一遍，并在打开的浏览器里登录抖音和 Instagram：
+第一次建议先手动跑一遍，并在打开的浏览器里登录抖音：
 
 ```bash
-python3 scripts/collect_desktop_social.py --target-total 20 --min-social 2
+python3 scripts/collect_desktop_social.py --platform douyin --target-total 20 --min-social 2
 ```
 
 确认能采集后，运行完整夜间流程：
@@ -265,7 +293,7 @@ logs/nightly-social.out.log
 logs/nightly-social.err.log
 ```
 
-如果某天抖音或 Instagram 要求重新登录、验证码或安全验证，采集器会停在可见浏览器页面上。处理完后重新运行夜间流程即可。
+如果某天抖音要求重新登录、验证码或安全验证，采集器会停在可见浏览器页面上。处理完后重新运行夜间流程即可。
 
 ## 这个工具适合怎么用
 

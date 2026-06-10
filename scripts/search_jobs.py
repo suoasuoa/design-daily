@@ -50,6 +50,8 @@ def build_jobs(categories=None, per_category=4):
             category,
             ["editorial_main", "award_gallery", "design_community", "market_signal"],
         )
+        if "social_public_index" not in group_names:
+            group_names = list(group_names) + ["social_public_index"]
         for group_name in group_names:
             sites = SEARCH_SOURCE_GROUPS.get(group_name, [])
             for site in sites:
@@ -82,6 +84,7 @@ def balanced_jobs(jobs):
         "packaging_specialist",
         "design_community",
         "market_signal",
+        "social_public_index",
         "editorial_main",
         "award_gallery",
         "curated_keyword",

@@ -113,6 +113,9 @@ SOURCE_DOMAIN_META = {
     "shejipi.com": {"source": "设计癖", "source_type": "design_community"},
     "digitaling.com": {"source": "数英", "source_type": "design_community"},
     "behance.net": {"source": "Behance", "source_type": "social_signal"},
+    "douyin.com": {"source": "抖音", "source_type": "social_signal"},
+    "xiaohongshu.com": {"source": "小红书", "source_type": "social_signal"},
+    "instagram.com": {"source": "Instagram", "source_type": "social_signal"},
     "threadless.com": {"source": "Threadless", "source_type": "market_reference"},
     "kickstarter.com": {"source": "Kickstarter", "source_type": "market_reference"},
     "indiegogo.com": {"source": "Indiegogo", "source_type": "market_reference"},
@@ -298,6 +301,14 @@ SEARCH_SOURCE_GROUPS = {
         "site:thisiswhyimbroke.com",
         "site:thegrommet.com",
         "site:etsy.com/listing",
+    ],
+    "social_public_index": [
+        "site:douyin.com 好物",
+        "site:douyin.com 种草",
+        "site:xiaohongshu.com 好物",
+        "site:xiaohongshu.com 种草",
+        "site:instagram.com product design",
+        "site:instagram.com gift ideas",
     ],
 }
 

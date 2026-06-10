@@ -45,6 +45,8 @@ jobs:
 
       - name: Collect open-web search leads
         timeout-minutes: 60
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '480' }}" --per-job 8 --sleep 0.05 --workers 8
 
       - name: Dedupe product pool
