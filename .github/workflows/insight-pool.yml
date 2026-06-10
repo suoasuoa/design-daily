@@ -82,6 +82,13 @@ jobs:
       - name: Rebuild dashboard with weekly report
         run: python3 scripts/build_site.py
 
+      - name: Push daily picks to Feishu group
+        continue-on-error: true
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
+        run: python3 scripts/push_feishu_daily.py --limit 30 --chunk-size 10
+
       - name: Commit data and dashboard
         run: |
           git config user.name "design-insight-bot"
