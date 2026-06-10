@@ -220,6 +220,53 @@ python3 scripts/push_feishu_daily.py --dry-run
 FEISHU_WEBHOOK_URL="你的 webhook" python3 scripts/push_feishu_daily.py
 ```
 
+## 本地社媒夜间采集
+
+抖音、Instagram 这类社媒平台不适合放在 GitHub Actions 里直接采集。项目提供了一个本地桌面采集器，用你电脑上的可见浏览器，在登录状态下按品类搜索并保存线索。
+
+默认策略：
+
+- 平台：抖音、Instagram
+- 时间：建议每天凌晨 00:30
+- 目标：每天从两个平台采集不少于 10 条社媒候选
+- 方式：正常打开网页搜索，不绕过登录、验证码或平台限制
+- 输出：`data/raw/social-desktop-YYYY-MM-DD.json`
+- 后续：自动去重、审核、评分、构建网站，并推回 GitHub
+
+第一次使用前安装 Playwright：
+
+```bash
+python3 -m pip install playwright
+python3 -m playwright install chromium
+```
+
+第一次建议先手动跑一遍，并在打开的浏览器里登录抖音和 Instagram：
+
+```bash
+python3 scripts/collect_desktop_social.py --target-total 20 --min-social 2
+```
+
+确认能采集后，运行完整夜间流程：
+
+```bash
+python3 scripts/nightly_social_update.py --target-total 80 --min-social 10
+```
+
+安装 macOS 每天凌晨 00:30 自动运行：
+
+```bash
+python3 scripts/install_nightly_social_launchd.py --hour 0 --minute 30
+```
+
+日志位置：
+
+```text
+logs/nightly-social.out.log
+logs/nightly-social.err.log
+```
+
+如果某天抖音或 Instagram 要求重新登录、验证码或安全验证，采集器会停在可见浏览器页面上。处理完后重新运行夜间流程即可。
+
 ## 这个工具适合怎么用
 
 建议团队把它当作“选品会前的情报输入”：
