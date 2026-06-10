@@ -23,7 +23,8 @@ LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 SOCIAL_HOSTS = {"douyin.com", "xiaohongshu.com", "instagram.com"}
 PRODUCT_SIGNAL_WORDS = [
     "好物", "种草", "开箱", "测评", "推荐", "新品", "同款", "礼物", "礼盒", "包装",
-    "收纳", "便携", "高颜值", "实用", "神器", "设计", "创意", "product", "design",
+    "收纳", "便携", "高颜值", "实用", "神器", "设计", "创意", "有趣", "好看", "爆款",
+    "概念", "手作", "自制", "改造", "diy", "prototype", "concept", "product", "design",
     "unboxing", "review", "gift", "packaging", "gadget", "organizer", "setup", "accessory",
     "case", "bottle", "cup", "lamp", "bag", "wallet", "charger", "calendar", "hoodie", "shirt",
 ]
