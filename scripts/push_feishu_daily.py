@@ -164,7 +164,7 @@ def clean_image_url(value):
     return value
 
 
-def card_elements(group, items, total_count, include_images=True):
+def card_elements(group, items, total_count, include_images=False):
     date = group.get("date") or "今日"
     elements = [
         {
@@ -188,7 +188,7 @@ def card_elements(group, items, total_count, include_images=True):
         score = recommendation_score(item)
         url = item_link(item)
         image = clean_image_url(item.get("image", ""))
-        image_md = f"![{title}]({image})\n" if include_images and image else ""
+        image_md = ""
         elements.append(
             {
                 "tag": "div",

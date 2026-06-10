@@ -102,4 +102,4 @@ jobs:
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
-        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --format card
+        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --format card --no-images
