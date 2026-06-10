@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Push the latest daily 30-pick group to a Feishu custom bot webhook."""
+"""Push the latest daily picks to a Feishu custom bot webhook."""
 
 import argparse
 import base64
@@ -54,6 +54,14 @@ PRICE_LABELS = {
     "unknown": "价格待人工确认",
     "risk_under_35": "价格可能偏低",
 }
+SOURCE_BONUS = {
+    "社交灵感": 12,
+    "市场信号": 10,
+    "媒体案例": 8,
+    "奖项案例": 7,
+    "包装专项": 7,
+    "设计社区": 6,
+}
 
 
 def item_link(item):
@@ -96,6 +104,44 @@ def recommend_reason(item):
     return f"{lead}，当前更适合走“{lane}”，{price}。"
 
 
+def recommendation_score(item):
+    score = int(item.get("score") or 0)
+    if score > 0:
+        return score
+    category = item.get("category") or ""
+    axes = item.get("axes") or []
+    value = 45
+    if category in DAILY_DEMAND_CATEGORIES:
+        value += 12
+    if category in BROAD_CATEGORIES:
+        value += 10
+    if category in FUNCTION_CATEGORIES or "功能启发" in axes:
+        value += 8
+    if category in EMOTION_CATEGORIES or "情绪启发" in axes:
+        value += 5
+    if item.get("price_gate") == "likely_over_35":
+        value += 8
+    if item.get("image"):
+        value += 5
+    if item_link(item) != SITE_URL:
+        value += 4
+    value += SOURCE_BONUS.get(item.get("source_family"), 3)
+    return min(value, 95)
+
+
+def top_items(items, limit):
+    return sorted(
+        items,
+        key=lambda item: (
+            recommendation_score(item),
+            1 if item.get("image") else 0,
+            item.get("source_family") or "",
+            item.get("title") or "",
+        ),
+        reverse=True,
+    )[:limit]
+
+
 def truncate(text, limit):
     text = " ".join(str(text or "").split())
     if len(text) <= limit:
@@ -103,24 +149,64 @@ def truncate(text, limit):
     return text[: limit - 1] + "…"
 
 
-def line_blocks(items, start_index):
-    blocks = []
-    for offset, item in enumerate(items, start_index):
-        title = truncate(item.get("title") or "未命名产品", 70)
+def markdown_escape(text):
+    return str(text or "").replace("[", "［").replace("]", "］")
+
+
+def card_elements(group, items, total_count):
+    date = group.get("date") or "今日"
+    elements = [
+        {
+            "tag": "div",
+            "text": {
+                "tag": "lark_md",
+                "content": (
+                    f"**{date} 每日情报已更新**\\n"
+                    f"从当天 {total_count} 条去重选品里，优先推荐下面 5 个。"
+                ),
+            },
+        },
+        {"tag": "hr"},
+    ]
+
+    for index, item in enumerate(items, 1):
+        title = markdown_escape(truncate(item.get("title") or "未命名产品", 52))
         category = item.get("category") or "未分类"
-        score = item.get("score") or 0
-        source = truncate(source_label(item), 32)
-        reason = truncate(recommend_reason(item), 90)
-        blocks.append(
-            [
-                {"tag": "text", "text": f"{offset}. {title}\n"},
-                {"tag": "text", "text": f"品类：{category}｜评分：{score}｜来源：{source}\n"},
-                {"tag": "text", "text": f"推荐理由：{reason}\n"},
-                {"tag": "a", "text": "打开原链接", "href": item_link(item)},
-                {"tag": "text", "text": "\n"},
-            ]
+        source = markdown_escape(truncate(source_label(item), 24))
+        reason = markdown_escape(truncate(recommend_reason(item), 86))
+        score = recommendation_score(item)
+        url = item_link(item)
+        elements.append(
+            {
+                "tag": "div",
+                "text": {
+                    "tag": "lark_md",
+                    "content": (
+                        f"**{index}. {title}**\\n"
+                        f"`{category}`  推荐指数 **{score}/100**  来源：{source}\\n"
+                        f"推荐理由：{reason}\\n"
+                        f"[打开原链接]({url})"
+                    ),
+                },
+            }
         )
-    return blocks
+        if index < len(items):
+            elements.append({"tag": "hr"})
+
+    elements.append(
+        {
+            "tag": "action",
+            "actions": [
+                {
+                    "tag": "button",
+                    "text": {"tag": "plain_text", "content": "查看完整 30 条"},
+                    "url": SITE_URL,
+                    "type": "primary",
+                }
+            ],
+        }
+    )
+    return elements
 
 
 def sign_payload(secret):
@@ -160,6 +246,25 @@ def send_post(webhook_url, secret, title, blocks):
     return post_payload(webhook_url, payload)
 
 
+def send_card(webhook_url, secret, title, elements):
+    payload = {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {
+                "template": "turquoise",
+                "title": {"tag": "plain_text", "content": title},
+            },
+            "elements": elements,
+        },
+    }
+    if secret:
+        timestamp, sign = sign_payload(secret)
+        payload["timestamp"] = timestamp
+        payload["sign"] = sign
+    return post_payload(webhook_url, payload)
+
+
 def latest_daily_group(data):
     groups = data.get("daily_groups") or []
     if not groups:
@@ -171,7 +276,9 @@ def main():
     load_env()
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=30, help="Maximum daily picks to push.")
+    parser.add_argument("--top-limit", type=int, default=5, help="Number of highlighted picks in the card.")
     parser.add_argument("--chunk-size", type=int, default=10, help="Items per Feishu message.")
+    parser.add_argument("--format", choices=["card", "post"], default="card", help="Feishu message format.")
     parser.add_argument("--dry-run", action="store_true", help="Print messages instead of sending.")
     args = parser.parse_args()
 
@@ -190,20 +297,10 @@ def main():
 
     date = group.get("date") or "今日"
     total = len(items)
-    header = [
-        [
-            {"tag": "text", "text": f"{date} 每日选品情报已更新，共 {total} 条。\n"},
-            {"tag": "text", "text": "每条推荐语按实用、高频、功能、打击面、价格空间和来源可信度生成。\n"},
-            {"tag": "a", "text": "打开完整数据池", "href": SITE_URL},
-        ]
-    ]
-
-    title_prefix = f"Design Daily｜{date} 每日 30 个选品推荐"
+    highlighted = top_items(items, args.top_limit)
+    title_prefix = f"Design Daily｜{date} 最推荐 5 个选品"
     if args.dry_run:
-        print(json.dumps({"title": title_prefix, "header": header}, ensure_ascii=False, indent=2))
-        for start in range(0, total, args.chunk_size):
-            chunk = items[start : start + args.chunk_size]
-            print(json.dumps({"chunk": start // args.chunk_size + 1, "content": line_blocks(chunk, start + 1)}, ensure_ascii=False, indent=2))
+        print(json.dumps({"title": title_prefix, "card": card_elements(group, highlighted, total)}, ensure_ascii=False, indent=2))
         return
 
     if not webhook_url:
@@ -211,13 +308,17 @@ def main():
         return
 
     try:
-        send_post(webhook_url, secret, title_prefix, header)
-        for start in range(0, total, args.chunk_size):
-            chunk = items[start : start + args.chunk_size]
-            chunk_title = f"{title_prefix}（{start + 1}-{start + len(chunk)}）"
-            result = send_post(webhook_url, secret, chunk_title, line_blocks(chunk, start + 1))
-            print(f"feishu_push=sent chunk={start // args.chunk_size + 1} result={result}")
-            time.sleep(0.4)
+        if args.format == "post":
+            fallback = [
+                [
+                    {"tag": "text", "text": f"{date} 最推荐 5 个选品已更新，请打开完整数据池查看：\n"},
+                    {"tag": "a", "text": "打开完整数据池", "href": SITE_URL},
+                ]
+            ]
+            result = send_post(webhook_url, secret, title_prefix, fallback)
+        else:
+            result = send_card(webhook_url, secret, title_prefix, card_elements(group, highlighted, total))
+        print(f"feishu_push=sent format={args.format} top={len(highlighted)} result={result}")
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError) as exc:
         raise SystemExit(f"feishu_push=failed error={exc}") from exc
 
