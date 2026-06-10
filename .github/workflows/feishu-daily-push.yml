@@ -1,0 +1,30 @@
+name: Feishu Daily Push
+
+on:
+  schedule:
+    # 18:00 Beijing time.
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: feishu-daily-push-main
+  cancel-in-progress: false
+
+jobs:
+  push-feishu-daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Push daily Top 5 to Feishu group
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
+        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --format card --no-images

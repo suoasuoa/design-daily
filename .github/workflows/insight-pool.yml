@@ -2,10 +2,10 @@ name: Insight Pool
 
 on:
   schedule:
-    # 08:30, 13:30, and 20:30 Beijing time.
+    # 08:30, 13:30, and 17:30 Beijing time.
     - cron: "30 0 * * *"
     - cron: "30 5 * * *"
-    - cron: "30 12 * * *"
+    - cron: "30 9 * * *"
   workflow_dispatch:
     inputs:
       score_limit:
@@ -96,10 +96,3 @@ jobs:
           else
             echo "No insight pool changes"
           fi
-
-      - name: Push daily picks to Feishu group
-        continue-on-error: true
-        env:
-          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-          FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
-        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --format card --no-images
