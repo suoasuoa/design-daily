@@ -7,6 +7,7 @@ import hashlib
 import hmac
 import json
 import os
+import ssl
 import time
 import urllib.error
 import urllib.request
@@ -15,6 +16,7 @@ from insight_common import INSIGHT_DIR, load_env, load_json
 
 
 SITE_URL = "https://suoasuoa.github.io/design-daily/insight/"
+SSL_CONTEXT = ssl._create_unverified_context()
 DAILY_DEMAND_CATEGORIES = {
     "水杯",
     "氛围灯",
@@ -135,7 +137,7 @@ def post_payload(webhook_url, payload):
         headers={"Content-Type": "application/json"},
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=30) as response:
+    with urllib.request.urlopen(req, timeout=30, context=SSL_CONTEXT) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
