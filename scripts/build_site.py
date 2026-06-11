@@ -7,7 +7,7 @@ import re
 from urllib.parse import urlparse
 
 from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
-from insight_config import CATEGORIES
+from insight_config import CATEGORIES, CATEGORY_KEYWORDS
 
 
 FUNCTION_WORDS = [
@@ -19,12 +19,12 @@ STRUCTURE_WORDS = ["结构", "structure", "支架", "frame", "fold", "hinge", "a
 EMOTION_WORDS = ["可爱", "cute", "温暖", "warm", "治愈", "playful", "surprise", "惊喜", "趣味", "幽默", "氛围"]
 VISUAL_WORDS = ["纹理", "texture", "color", "颜色", "graphic", "图形", "surface", "材质", "finish"]
 DAILY_SOURCE_QUOTAS = {
-    "社交灵感": 10,
+    "社交灵感": 5,
     "市场信号": 6,
-    "媒体案例": 5,
-    "奖项案例": 4,
-    "设计社区": 3,
-    "包装专项": 2,
+    "媒体案例": 6,
+    "奖项案例": 5,
+    "设计社区": 4,
+    "包装专项": 4,
 }
 
 
@@ -206,6 +206,24 @@ def dedupe_key(item):
     return item.get("id") or normalize_key(item.get("url")) or normalize_key(item.get("title"))
 
 
+def social_display_eligible(item):
+    if item.get("source_family") != "社交灵感":
+        return True
+    text = " ".join(
+        [
+            item.get("title", ""),
+            item.get("summary", ""),
+            " ".join(item.get("tags", [])),
+        ]
+    ).lower()
+    category = item.get("category", "")
+    words = [category] + CATEGORY_KEYWORDS.get(category, [])
+    if not any(word.lower() in text for word in words if word):
+        return False
+    weak_titles = ["gift idea", "daily gifts", "好浪漫", "wonderful year"]
+    return not any(token in text for token in weak_titles)
+
+
 def compact_weekly_report(report):
     if not report:
         return {}
@@ -240,7 +258,11 @@ def build_daily_groups(items, per_day=30, max_days=30):
     for day in sorted(by_day.keys(), reverse=True)[:max_days]:
         seen = set()
         picks = []
-        ranked = sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
+        ranked = [
+            item
+            for item in sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
+            if social_display_eligible(item)
+        ]
 
         for family, quota in DAILY_SOURCE_QUOTAS.items():
             for item in ranked:

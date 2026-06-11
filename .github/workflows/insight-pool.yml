@@ -11,11 +11,15 @@ on:
       score_limit:
         description: "Maximum products to score this run"
         required: true
-        default: "260"
+        default: "120"
       search_jobs:
         description: "Open-web search jobs to run"
         required: true
-        default: "480"
+        default: "120"
+      use_tavily:
+        description: "Use Tavily credits for this manual deep run"
+        required: true
+        default: "false"
 
 permissions:
   contents: write
@@ -39,15 +43,28 @@ jobs:
           case "${{ github.event.schedule }}" in
             "30 0 * * *")
               echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=4" >> "$GITHUB_ENV"
+              echo "SOCIAL_TARGET=2" >> "$GITHUB_ENV"
+              echo "SEARCH_JOBS=60" >> "$GITHUB_ENV"
+              echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
+              echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               ;;
             "30 5 * * *")
               echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=7" >> "$GITHUB_ENV"
+              echo "SOCIAL_TARGET=3" >> "$GITHUB_ENV"
+              echo "SEARCH_JOBS=80" >> "$GITHUB_ENV"
+              echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
+              echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               ;;
             *)
               echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=10" >> "$GITHUB_ENV"
+              echo "SOCIAL_TARGET=5" >> "$GITHUB_ENV"
+              echo "SEARCH_JOBS=${{ github.event.inputs.search_jobs || '120' }}" >> "$GITHUB_ENV"
+              echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '120' }}" >> "$GITHUB_ENV"
+              if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
+                echo "USE_TAVILY_SEARCH=1" >> "$GITHUB_ENV"
+              else
+                echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
+              fi
               ;;
           esac
 
@@ -64,7 +81,7 @@ jobs:
         timeout-minutes: 60
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: python3 scripts/collect_search.py --limit-jobs "${{ github.event.inputs.search_jobs || '480' }}" --per-job 8 --sleep 0.05 --workers 8
+        run: python3 scripts/collect_search.py --limit-jobs "$SEARCH_JOBS" --per-job 4 --sleep 0.1 --workers 4
 
       - name: Dedupe product pool
         run: python3 scripts/dedupe.py
@@ -78,13 +95,13 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: python3 scripts/ensure_daily_social_minimum.py --target "$SOCIAL_TARGET" --batch-jobs 140 --per-job 8 --max-passes 4 --sleep 0.05 --workers 8
+        run: python3 scripts/ensure_daily_social_minimum.py --target "$SOCIAL_TARGET" --batch-jobs 50 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
 
       - name: Ensure phased daily accepted picks
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: python3 scripts/ensure_daily_minimum.py --target "$DAILY_TARGET" --batch-jobs 260 --per-job 8 --max-passes 4 --sleep 0.05 --workers 8
+        run: python3 scripts/ensure_daily_minimum.py --target "$DAILY_TARGET" --batch-jobs 80 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
 
       - name: Enrich missing product images
         run: python3 scripts/enrich_images.py --limit 140
@@ -92,7 +109,7 @@ jobs:
       - name: Score products
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python3 scripts/score.py --limit "${{ github.event.inputs.score_limit || '260' }}"
+        run: python3 scripts/score.py --limit "$SCORE_LIMIT"
 
       - name: Generate trend report
         env:

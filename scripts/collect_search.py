@@ -15,7 +15,7 @@ import urllib.request
 from zoneinfo import ZoneInfo
 
 from insight_common import RAW_DIR, ensure_dirs, load_json, stable_hash, strip_html, today, write_json
-from insight_config import SOURCE_DOMAIN_META
+from insight_config import CATEGORY_KEYWORDS, SOURCE_DOMAIN_META
 
 
 SSL_CONTEXT = ssl._create_unverified_context()
@@ -111,7 +111,13 @@ def is_social_content_url(url):
 
 
 def passes_selection_signal(job, result):
-    text = " ".join(
+    result_text = " ".join(
+        [
+            result.get("title", ""),
+            result.get("snippet", ""),
+        ]
+    ).lower()
+    full_text = " ".join(
         [
             job.get("category", ""),
             job.get("query", ""),
@@ -119,12 +125,17 @@ def passes_selection_signal(job, result):
             result.get("snippet", ""),
         ]
     ).lower()
-    if any(word.lower() in text for word in LOW_VALUE_WORDS):
+    if any(word.lower() in result_text for word in LOW_VALUE_WORDS):
         return False
     category = job.get("category", "")
-    if category and category.lower() in text:
+    category_words = [category] + CATEGORY_KEYWORDS.get(category, [])
+    category_hit = any(word.lower() in result_text for word in category_words if word)
+    if social_host(result.get("url", "")):
+        product_hit = any(word.lower() in result_text for word in PRODUCT_SIGNAL_WORDS)
+        return category_hit and product_hit
+    if category_hit:
         return True
-    return any(word.lower() in text for word in PRODUCT_SIGNAL_WORDS)
+    return any(word.lower() in full_text for word in PRODUCT_SIGNAL_WORDS)
 
 
 def is_product_like_url(url):
@@ -157,7 +168,8 @@ def is_product_like_url(url):
 
 def fetch_results(query, timeout=6):
     tavily_key = os.environ.get("TAVILY_API_KEY", "").strip()
-    if tavily_key:
+    use_tavily = os.environ.get("USE_TAVILY_SEARCH", "").strip().lower() in {"1", "true", "yes"}
+    if tavily_key and use_tavily:
         return fetch_tavily_results(query, tavily_key, timeout=max(15, timeout))
     url = "https://duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
     req = urllib.request.Request(
