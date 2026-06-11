@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-11T13:32:02+08:00",
+  "generated_at": "2026-06-11T13:40:16+08:00",
   "stats": {
-    "total_items": 1877,
+    "total_items": 1878,
     "by_category": {
       "创意厨具": 189,
       "氛围灯": 146,
@@ -21,16 +21,16 @@
       "充电宝": 66,
       "创意桌搭": 60,
       "冲锋衣": 57,
-      "钥匙扣水壶": 37
+      "钥匙扣水壶": 38
     },
     "by_lane": {
-      "适合改造": 1583,
-      "方向参考": 245,
-      "可直接买样": 49
+      "适合改造": 1579,
+      "方向参考": 246,
+      "可直接买样": 53
     },
     "by_axis": {
       "功能启发": 593,
-      "视觉启发": 565,
+      "视觉启发": 566,
       "包装启发": 541,
       "结构启发": 507,
       "情绪启发": 286
@@ -40,51 +40,50 @@
       "市场信号": 493,
       "奖项案例": 233,
       "媒体案例": 158,
-      "设计社区": 111,
+      "设计社区": 112,
       "其他来源": 25,
       "包装专项": 24,
       "趋势观察": 5
     },
     "by_image_state": {
-      "缺图": 1346,
+      "缺图": 1347,
       "已对齐": 531
     }
   },
   "trends": {
-    "summary": "产品样本以创意厨具和装置艺术为主，但装置艺术类产品（如Talking Tree、9:28 am）偏向艺术装置，实用性和高频需求不足，不符合选品标准。创意厨具类产品（如OXO沙拉甩干器、磁吸锅铲套装）实用性强，但部分产品售价可能低于35元。收纳包、氛围灯、水杯等品类中，部分产品（如Peak Design Tech Pouch、Nanoleaf智能灯板）功能明确、使用场景广，且售价可能达标。整体来看，实用且高频的品类如收纳、水杯、氛围灯值得关注，而装置艺术类应避免。",
+    "summary": "产品样本以创意厨具和装置艺术为主，但装置艺术类（如Talking Tree）实用性低、售价高，不符合选品标准。创意厨具类（如OXO沙拉甩干器、磁吸锅铲套装）实用性强、高频使用，但部分售价可能低于35元。收纳类（如桌面线材收纳、Tidy-Up Box）和氛围灯（如蘑菇氛围灯）符合实用、高频、易理解的特点。整体来看，实用型厨具、收纳用品和氛围灯是值得关注的趋势方向。",
     "hot_categories": [
       "创意厨具",
       "收纳包",
-      "水杯",
       "氛围灯"
     ],
     "hot_signals": [
-      "获奖设计（Good Design Award、iF Design Award）",
-      "社交平台高热度（Pinterest、Behance）",
-      "功能创新（如磁吸、真空、智能）"
+      "Good Design Award获奖",
+      "iF Design Award获奖",
+      "Pinterest社交精选"
     ],
     "recommended_directions": [
-      "多功能收纳解决方案（如桌面线材收纳、磁吸收纳）",
-      "便携水杯/保温壶（如Stanley、ZOJIRUSHI）",
-      "智能氛围灯（如Nanoleaf）",
-      "实用厨具小工具（如OXO沙拉甩干器、磁吸锅铲）"
+      "多功能厨房工具（如磁吸锅铲套装、可折叠量勺）",
+      "桌面收纳解决方案（如磁吸线材管理器）",
+      "便携保温杯/水壶（如ZOJIRUSHI不锈钢杯）",
+      "智能氛围灯（如Nanoleaf灯板）"
     ],
     "avoid_or_watch": [
-      "装置艺术类（如Talking Tree、Refik Anadol）",
-      "高价但低频的礼盒（如半岛月饼、Tom Dixon礼盒）",
-      "功能不明确的装饰品（如蘑菇氛围灯可能偏装饰）"
+      "装置艺术类（如Talking Tree、Refik Anadol）因实用性低、售价高需规避",
+      "高价厨具（如Le Creuset锅具）需关注性价比"
     ],
     "next_search_keywords": [
-      "桌面收纳 磁吸",
-      "便携保温杯 智能",
-      "智能灯板 模块化",
-      "厨房小工具 磁吸"
+      "磁吸收纳厨房工具",
+      "桌面理线器",
+      "便携保温杯",
+      "智能LED灯",
+      "多功能量勺"
     ],
-    "generated_at": "2026-06-11T13:32:01+08:00",
+    "generated_at": "2026-06-11T13:40:15+08:00",
     "source": "deepseek"
   },
   "weekly_report": {
-    "generated_at": "2026-06-11T13:32:02+08:00",
+    "generated_at": "2026-06-11T13:40:16+08:00",
     "week": "2026-W24",
     "group_id": "2026-W24",
     "date_start": "2026-06-08",
@@ -245,34 +244,6 @@
         ]
       },
       {
-        "id": "d34f66817e8e",
-        "product_key": null,
-        "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
-        "category": "充电宝",
-        "action_lane": "可直接买样",
-        "axes": [
-          "功能启发",
-          "包装启发"
-        ],
-        "score": 81,
-        "score_label": "8.1",
-        "source": "Instagram",
-        "source_family": "社交灵感",
-        "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
-        "image": "",
-        "summary": "充电宝是高频刚需，定制化增加情感价值，多接口和快充功能实用，价格超过35元，3秒可理解，但定制可能增加成本且受众相对细分。",
-        "risk": "明确为定制充电宝，符合品类。",
-        "next_action": "买样看材质、尺寸、成本和差评点",
-        "tags": [
-          "充电宝",
-          "定制",
-          "快充",
-          "多接口",
-          "social_public_index",
-          "白名单来源"
-        ]
-      },
-      {
         "id": "c33ebf6c6dd7",
         "product_key": null,
         "title": "香薰蜡烛礼盒",
@@ -341,6 +312,33 @@
         "tags": [
           "大益",
           "端午礼盒"
+        ]
+      },
+      {
+        "id": "d34f66817e8e",
+        "product_key": null,
+        "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
+        "category": "充电宝",
+        "action_lane": "可直接买样",
+        "axes": [
+          "功能启发",
+          "包装启发"
+        ],
+        "score": 78,
+        "score_label": "7.8",
+        "source": "Instagram",
+        "source_family": "社交灵感",
+        "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
+        "image": "",
+        "summary": "充电宝实用高频，定制化增加社交属性，价格超35元，功能无明显短板，但情绪价值需依赖定制设计，存在审美风险。",
+        "risk": "明确为定制充电宝，符合品类。",
+        "next_action": "买样看材质、尺寸、成本和差评点",
+        "tags": [
+          "充电宝",
+          "定制",
+          "社交货币",
+          "social_public_index",
+          "白名单来源"
         ]
       },
       {
@@ -497,7 +495,7 @@
         "source_family": "社交灵感",
         "url": "https://www.instagram.com/reel/DY6m417SW5k",
         "image": "",
-        "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格超35元，3秒看懂，功能明确，情绪价值中等。",
+        "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格大概率超35元，3秒看懂，功能无短板，但情绪价值一般。",
         "risk": "明确为定制充电宝，符合品类。",
         "next_action": "买样看材质、尺寸、成本和差评点",
         "tags": [
@@ -686,13 +684,14 @@
         "source_family": "社交灵感",
         "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
         "image": "",
-        "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广，但需注意定制门槛；功能无明显短板；预估售价超35元；3秒看懂操作；情绪价值中等，主要依赖礼品场景。",
+        "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景，受众广；功能无明显短板，售价预计超35元；3秒看懂操作，情绪价值中等，主要依赖功能本身。",
         "risk": "折叠盒定制，明确为创意礼盒",
         "next_action": "买样看材质、尺寸、成本和差评点",
         "tags": [
           "创意礼盒",
           "折叠盒",
-          "包装定制",
+          "定制包装",
+          "礼品包装",
           "social_public_index",
           "白名单来源"
         ]
@@ -2465,7 +2464,7 @@
   },
   "weekly_groups": [
     {
-      "generated_at": "2026-06-11T13:32:02+08:00",
+      "generated_at": "2026-06-11T13:40:16+08:00",
       "week": "2026-W24",
       "group_id": "2026-W24",
       "date_start": "2026-06-08",
@@ -2626,34 +2625,6 @@
           ]
         },
         {
-          "id": "d34f66817e8e",
-          "product_key": null,
-          "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
-          "category": "充电宝",
-          "action_lane": "可直接买样",
-          "axes": [
-            "功能启发",
-            "包装启发"
-          ],
-          "score": 81,
-          "score_label": "8.1",
-          "source": "Instagram",
-          "source_family": "社交灵感",
-          "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
-          "image": "",
-          "summary": "充电宝是高频刚需，定制化增加情感价值，多接口和快充功能实用，价格超过35元，3秒可理解，但定制可能增加成本且受众相对细分。",
-          "risk": "明确为定制充电宝，符合品类。",
-          "next_action": "买样看材质、尺寸、成本和差评点",
-          "tags": [
-            "充电宝",
-            "定制",
-            "快充",
-            "多接口",
-            "social_public_index",
-            "白名单来源"
-          ]
-        },
-        {
           "id": "c33ebf6c6dd7",
           "product_key": null,
           "title": "香薰蜡烛礼盒",
@@ -2722,6 +2693,33 @@
           "tags": [
             "大益",
             "端午礼盒"
+          ]
+        },
+        {
+          "id": "d34f66817e8e",
+          "product_key": null,
+          "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
+          "category": "充电宝",
+          "action_lane": "可直接买样",
+          "axes": [
+            "功能启发",
+            "包装启发"
+          ],
+          "score": 78,
+          "score_label": "7.8",
+          "source": "Instagram",
+          "source_family": "社交灵感",
+          "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
+          "image": "",
+          "summary": "充电宝实用高频，定制化增加社交属性，价格超35元，功能无明显短板，但情绪价值需依赖定制设计，存在审美风险。",
+          "risk": "明确为定制充电宝，符合品类。",
+          "next_action": "买样看材质、尺寸、成本和差评点",
+          "tags": [
+            "充电宝",
+            "定制",
+            "社交货币",
+            "social_public_index",
+            "白名单来源"
           ]
         },
         {
@@ -2878,7 +2876,7 @@
           "source_family": "社交灵感",
           "url": "https://www.instagram.com/reel/DY6m417SW5k",
           "image": "",
-          "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格超35元，3秒看懂，功能明确，情绪价值中等。",
+          "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格大概率超35元，3秒看懂，功能无短板，但情绪价值一般。",
           "risk": "明确为定制充电宝，符合品类。",
           "next_action": "买样看材质、尺寸、成本和差评点",
           "tags": [
@@ -3067,13 +3065,14 @@
           "source_family": "社交灵感",
           "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
           "image": "",
-          "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广，但需注意定制门槛；功能无明显短板；预估售价超35元；3秒看懂操作；情绪价值中等，主要依赖礼品场景。",
+          "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景，受众广；功能无明显短板，售价预计超35元；3秒看懂操作，情绪价值中等，主要依赖功能本身。",
           "risk": "折叠盒定制，明确为创意礼盒",
           "next_action": "买样看材质、尺寸、成本和差评点",
           "tags": [
             "创意礼盒",
             "折叠盒",
-            "包装定制",
+            "定制包装",
+            "礼品包装",
             "social_public_index",
             "白名单来源"
           ]
@@ -9672,10 +9671,11 @@
         "by_category": {
           "T恤": 7,
           "创意礼盒": 6,
-          "充电宝": 5,
+          "充电宝": 4,
           "手机壳": 4,
           "氛围灯": 4,
           "装置艺术": 2,
+          "水杯": 1,
           "卡包": 1,
           "端午礼盒": 1
         },
@@ -9706,75 +9706,11 @@
       },
       "items": [
         {
-          "id": "d34f66817e8e",
-          "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
-          "category": "充电宝",
-          "summary": "充电宝是高频刚需，定制化增加情感价值，多接口和快充功能实用，价格超过35元，3秒可理解，但定制可能增加成本且受众相对细分。",
-          "score": 81,
-          "price_gate": "likely_over_35",
-          "image": "",
-          "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
-          "source_name": "Instagram",
-          "source_family": "社交灵感",
-          "source_type": "social_signal",
-          "action_lane": "可直接买样",
-          "axes": [
-            "功能启发",
-            "包装启发"
-          ],
-          "image_state": "缺图",
-          "seen_count": 1,
-          "first_seen": "2026-06-11",
-          "last_seen": "2026-06-11",
-          "review_reason": "明确为定制充电宝，符合品类。",
-          "review_confidence": 5,
-          "tags": [
-            "充电宝",
-            "定制",
-            "快充",
-            "多接口",
-            "social_public_index",
-            "白名单来源"
-          ]
-        },
-        {
-          "id": "bb1afdbb80ce",
-          "title": "Christmas gifts that just make sense. No mugs, no ... - Instagram",
-          "category": "充电宝",
-          "summary": "充电宝是高频刚需，自带双数据线兼容苹果安卓，实用性强；10000mAh容量和22.5W快充功能主流；3秒看懂卖点；但价格未知，情绪价值一般。",
-          "score": 78,
-          "price_gate": "unknown",
-          "image": "",
-          "url": "https://www.instagram.com/p/DSM4BtzDfma",
-          "source_name": "Instagram",
-          "source_family": "社交灵感",
-          "source_type": "social_signal",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "包装启发"
-          ],
-          "image_state": "缺图",
-          "seen_count": 1,
-          "first_seen": "2026-06-11",
-          "last_seen": "2026-06-11",
-          "review_reason": "明确为充电宝产品，符合品类。",
-          "review_confidence": 5,
-          "tags": [
-            "充电宝",
-            "便携",
-            "快充",
-            "双数据线",
-            "social_public_index",
-            "白名单来源"
-          ]
-        },
-        {
           "id": "7b6c3275842a",
           "title": "实用，也可以很有心 定制专属充电宝 企业定制福利首选 ... - Instagram",
           "category": "充电宝",
-          "summary": "充电宝实用性强，高频需求，受众广，功能成熟，但价格可能低于35元，定制化增加情绪价值。",
-          "score": 78,
+          "summary": "充电宝实用性强，高频使用，受众广，功能成熟，但价格可能低于35元，需确认。3秒看懂，情绪价值通过定制和颜值体现。",
+          "score": 79,
           "price_gate": "unknown",
           "image": "",
           "url": "https://www.instagram.com/p/DOdrvaBE-FQ",
@@ -9803,8 +9739,8 @@
           "id": "99bfa9ab6a46",
           "title": "图案、logo、文字都可以自由定制，做成自己的专属版本 A gift that ...",
           "category": "充电宝",
-          "summary": "充电宝实用性强，高频使用，受众广；定制功能增加独特性，但价格可能低于35元，功能无短板但非创新；3秒看懂，情绪价值中等。",
-          "score": 76,
+          "summary": "充电宝实用性强，高频使用，受众广；功能无短板；定制化增加情绪价值；但价格可能低于35元，需确认。",
+          "score": 78,
           "price_gate": "unknown",
           "image": "",
           "url": "https://www.instagram.com/p/DR90HwvEmf1",
@@ -9823,17 +9759,49 @@
           "review_reason": "明确为定制充电宝，符合品类。",
           "review_confidence": 5,
           "tags": [
-            "social_public_index",
+            "定制礼品",
             "充电宝",
-            "白名单来源",
-            "社媒公开索引"
+            "个性化",
+            "social_public_index",
+            "白名单来源"
+          ]
+        },
+        {
+          "id": "d34f66817e8e",
+          "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
+          "category": "充电宝",
+          "summary": "充电宝实用高频，定制化增加社交属性，价格超35元，功能无明显短板，但情绪价值需依赖定制设计，存在审美风险。",
+          "score": 78,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
+          "source_name": "Instagram",
+          "source_family": "社交灵感",
+          "source_type": "social_signal",
+          "action_lane": "可直接买样",
+          "axes": [
+            "功能启发",
+            "包装启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-06-11",
+          "last_seen": "2026-06-11",
+          "review_reason": "明确为定制充电宝，符合品类。",
+          "review_confidence": 5,
+          "tags": [
+            "充电宝",
+            "定制",
+            "社交货币",
+            "social_public_index",
+            "白名单来源"
           ]
         },
         {
           "id": "ff98e1438ef4",
           "title": "谁会想到充电宝也能定制？ 名字 Logo 图案 人物画像都能变 ...",
           "category": "充电宝",
-          "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格超35元，3秒看懂，功能明确，情绪价值中等。",
+          "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格大概率超35元，3秒看懂，功能无短板，但情绪价值一般。",
           "score": 76,
           "price_gate": "likely_over_35",
           "image": "",
@@ -9858,6 +9826,37 @@
             "社媒爆款",
             "social_public_index",
             "充电宝"
+          ]
+        },
+        {
+          "id": "068f1b456617",
+          "title": "Who needs a gift box when your Jug is the gift box? Holiday hack ...",
+          "category": "水杯",
+          "summary": "水杯实用性强，日常高频使用，受众广；保冷功能明确，无短板；标题突出礼品属性，3秒可懂；价格未知但水杯通常可超35元；情绪价值通过礼品场景体现。",
+          "score": 75,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.instagram.com/reel/DRpCulUk_bs",
+          "source_name": "Instagram",
+          "source_family": "社交灵感",
+          "source_type": "social_signal",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "包装启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-06-11",
+          "last_seen": "2026-06-11",
+          "review_reason": "水杯作为礼物包装，产品本身是水杯，符合水杯品类。",
+          "review_confidence": 5,
+          "tags": [
+            "水杯",
+            "社媒公开索引",
+            "适合作为趋势、内容爆点或方向参考",
+            "social_public_index",
+            "白名单来源"
           ]
         },
         {
@@ -23933,38 +23932,6 @@
       ]
     },
     {
-      "id": "d34f66817e8e",
-      "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
-      "category": "充电宝",
-      "summary": "充电宝是高频刚需，定制化增加情感价值，多接口和快充功能实用，价格超过35元，3秒可理解，但定制可能增加成本且受众相对细分。",
-      "score": 81,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为定制充电宝，符合品类。",
-      "review_confidence": 5,
-      "tags": [
-        "充电宝",
-        "定制",
-        "快充",
-        "多接口",
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
       "id": "4d127d76ee72",
       "title": "星星投影灯",
       "category": "氛围灯",
@@ -25210,43 +25177,11 @@
       ]
     },
     {
-      "id": "bb1afdbb80ce",
-      "title": "Christmas gifts that just make sense. No mugs, no ... - Instagram",
-      "category": "充电宝",
-      "summary": "充电宝是高频刚需，自带双数据线兼容苹果安卓，实用性强；10000mAh容量和22.5W快充功能主流；3秒看懂卖点；但价格未知，情绪价值一般。",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DSM4BtzDfma",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为充电宝产品，符合品类。",
-      "review_confidence": 5,
-      "tags": [
-        "充电宝",
-        "便携",
-        "快充",
-        "双数据线",
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
       "id": "7b6c3275842a",
       "title": "实用，也可以很有心 定制专属充电宝 企业定制福利首选 ... - Instagram",
       "category": "充电宝",
-      "summary": "充电宝实用性强，高频需求，受众广，功能成熟，但价格可能低于35元，定制化增加情绪价值。",
-      "score": 78,
+      "summary": "充电宝实用性强，高频使用，受众广，功能成熟，但价格可能低于35元，需确认。3秒看懂，情绪价值通过定制和颜值体现。",
+      "score": 79,
       "price_gate": "unknown",
       "image": "",
       "url": "https://www.instagram.com/p/DOdrvaBE-FQ",
@@ -25267,6 +25202,68 @@
         "充电宝",
         "企业定制",
         "礼品",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "99bfa9ab6a46",
+      "title": "图案、logo、文字都可以自由定制，做成自己的专属版本 A gift that ...",
+      "category": "充电宝",
+      "summary": "充电宝实用性强，高频使用，受众广；功能无短板；定制化增加情绪价值；但价格可能低于35元，需确认。",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DR90HwvEmf1",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为定制充电宝，符合品类。",
+      "review_confidence": 5,
+      "tags": [
+        "定制礼品",
+        "充电宝",
+        "个性化",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "d34f66817e8e",
+      "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
+      "category": "充电宝",
+      "summary": "充电宝实用高频，定制化增加社交属性，价格超35元，功能无明显短板，但情绪价值需依赖定制设计，存在审美风险。",
+      "score": 78,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为定制充电宝，符合品类。",
+      "review_confidence": 5,
+      "tags": [
+        "充电宝",
+        "定制",
+        "社交货币",
         "social_public_index",
         "白名单来源"
       ]
@@ -26815,40 +26812,10 @@
       ]
     },
     {
-      "id": "99bfa9ab6a46",
-      "title": "图案、logo、文字都可以自由定制，做成自己的专属版本 A gift that ...",
-      "category": "充电宝",
-      "summary": "充电宝实用性强，高频使用，受众广；定制功能增加独特性，但价格可能低于35元，功能无短板但非创新；3秒看懂，情绪价值中等。",
-      "score": 76,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DR90HwvEmf1",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为定制充电宝，符合品类。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "充电宝",
-        "白名单来源",
-        "社媒公开索引"
-      ]
-    },
-    {
       "id": "ff98e1438ef4",
       "title": "谁会想到充电宝也能定制？ 名字 Logo 图案 人物画像都能变 ...",
       "category": "充电宝",
-      "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格超35元，3秒看懂，功能明确，情绪价值中等。",
+      "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格大概率超35元，3秒看懂，功能无短板，但情绪价值一般。",
       "score": 76,
       "price_gate": "likely_over_35",
       "image": "",
@@ -28854,10 +28821,100 @@
       ]
     },
     {
+      "id": "068f1b456617",
+      "title": "Who needs a gift box when your Jug is the gift box? Holiday hack ...",
+      "category": "水杯",
+      "summary": "水杯实用性强，日常高频使用，受众广；保冷功能明确，无短板；标题突出礼品属性，3秒可懂；价格未知但水杯通常可超35元；情绪价值通过礼品场景体现。",
+      "score": 75,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DRpCulUk_bs",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "水杯作为礼物包装，产品本身是水杯，符合水杯品类。",
+      "review_confidence": 5,
+      "tags": [
+        "水杯",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "e8eeb92f87f9",
+      "title": "挖到一只宝藏卡包 巴掌大的尺寸，居然这么能装？？ 卡位多到安全感 ...",
+      "category": "卡包",
+      "summary": "卡包实用性强，高频使用，受众广，功能无明显短板，3秒看懂，但价格未知，情绪价值中等。",
+      "score": 75,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DYtEw17SetB",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为卡包产品，符合品类定义。",
+      "review_confidence": 5,
+      "tags": [
+        "卡包",
+        "轻便",
+        "大容量",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "e0e8b2f9c8a8",
+      "title": "Can a wallet be a meaningful gift? We think yes. Because it's ...",
+      "category": "卡包",
+      "summary": "卡包实用性强，日常高频使用，受众广，功能明确，3秒可理解，可定制化增加情感价值，但价格可能低于35元，需确认。",
+      "score": 75,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DObjtM9iohR",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为卡包/钱包，符合品类定义",
+      "review_confidence": 0,
+      "tags": [
+        "social_public_index",
+        "卡包",
+        "白名单来源",
+        "社媒公开索引"
+      ]
+    },
+    {
       "id": "d1358f98f303",
       "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
       "category": "创意礼盒",
-      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广，但需注意定制门槛；功能无明显短板；预估售价超35元；3秒看懂操作；情绪价值中等，主要依赖礼品场景。",
+      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景，受众广；功能无明显短板，售价预计超35元；3秒看懂操作，情绪价值中等，主要依赖功能本身。",
       "score": 74,
       "price_gate": "likely_over_35",
       "image": "",
@@ -28880,9 +28937,103 @@
       "tags": [
         "创意礼盒",
         "折叠盒",
-        "包装定制",
+        "定制包装",
+        "礼品包装",
         "social_public_index",
         "白名单来源"
+      ]
+    },
+    {
+      "id": "bf9fc3653b79",
+      "title": "Still thinking of Christmas Gift ideas? Amazing brands ... - Instagram",
+      "category": "创意厨具",
+      "summary": "厨具实用性强，高频使用，受众广，功能成熟，但价格判断未知，情绪价值一般。",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/CIxiproDAXB",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "厨具品牌促销，明确属于创意厨具",
+      "review_confidence": 0,
+      "tags": [
+        "创意厨具",
+        "社媒公开索引",
+        "适合做结构、包装、功能或外观改造",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "f1685979d784",
+      "title": "Leather Wallet Gift Ideas for Men - Instagram",
+      "category": "卡包",
+      "summary": "卡包实用性强，高频使用，受众广，功能明确，但价格可能低于35元，情绪价值一般。",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DYgzNIykzFL",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为钱包/卡包礼品推荐，产品明确",
+      "review_confidence": 5,
+      "tags": [
+        "leather wallet",
+        "gift for men",
+        "handmade",
+        "social_public_index",
+        "卡包"
+      ]
+    },
+    {
+      "id": "69aab6e99318",
+      "title": "SECRID on Instagram: \"In a world addicted to new, the best gifts are ...",
+      "category": "卡包",
+      "summary": "卡包实用，可装15张卡和现金，高频使用，功能无明显短板，3秒可看懂，但价格未知，预估可能高于35RMB，情绪价值通过送礼场景体现。",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DRh2DKoDY_O",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为卡包/钱包产品，可容纳卡片",
+      "review_confidence": 5,
+      "tags": [
+        "卡包",
+        "社媒公开索引",
+        "白名单来源",
+        "social_public_index",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
@@ -30673,6 +30824,69 @@
       ]
     },
     {
+      "id": "bb1afdbb80ce",
+      "title": "Christmas gifts that just make sense. No mugs, no ... - Instagram",
+      "category": "充电宝",
+      "summary": "充电宝实用性强，高频需求，兼容苹果安卓覆盖面广，10000mAh和22.5W快充功能无明显短板，预估售价可能超35元，3秒看懂，但情绪价值一般。",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DSM4BtzDfma",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为充电宝产品，符合品类。",
+      "review_confidence": 5,
+      "tags": [
+        "充电宝",
+        "便携",
+        "快充",
+        "双数据线",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "1ecec3b5e534",
+      "title": "Sometimes a gift card is the perfect gift - Instagram",
+      "category": "卡包",
+      "summary": "卡包实用性强，高频使用，受众广，功能简单无短板，但售价可能低于35元，3秒可看懂，情绪价值一般。",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DRx9Zu-krjl",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为卡包/卡夹制作教程，产品明确",
+      "review_confidence": 5,
+      "tags": [
+        "social_public_index",
+        "卡包",
+        "白名单来源",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
+        "需人工复核"
+      ]
+    },
+    {
       "id": "9db5f3227844",
       "title": "Contigo 旅行杯",
       "category": "水杯",
@@ -32303,72 +32517,39 @@
       ]
     },
     {
-      "id": "50dd57f9d43e",
-      "title": "Simple LOVE CUP gift idea for your ladies Perfect for teachers ...",
-      "category": "水杯",
-      "summary": "水杯实用性强，日常高频使用，受众广；功能无明显短板；3秒看懂；情绪价值高（礼物、教师节等）；但价格判断未知，可能低于35元。",
+      "id": "4f9ccf2f3ad5",
+      "title": "Shopping for the whole group chat? Find custom gifts that'll earn ...",
+      "category": "手机壳",
+      "summary": "手机壳实用性强，高频需求，受众广，但功能有短板（仅保护），价格可能低于35元，3秒可看懂，情绪价值高（定制礼物）。",
       "score": 71,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.instagram.com/reel/DTrJcnHjXmL",
+      "url": "https://www.instagram.com/p/DRADodeFF4d",
       "source_name": "Instagram",
       "source_family": "社交灵感",
       "source_type": "social_signal",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发",
         "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 2,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "杯子作为礼物主体，产品是杯子，符合水杯品类。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "水杯",
-        "白名单来源",
-        "社媒公开索引"
-      ]
-    },
-    {
-      "id": "bf9fc3653b79",
-      "title": "Still thinking of Christmas Gift ideas? Amazing brands ... - Instagram",
-      "category": "创意厨具",
-      "summary": "厨具实用且高频，但标题和摘要未明确产品具体功能，价格未知，3秒看懂难度中等，情绪价值来自折扣但非产品本身。",
-      "score": 71,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/CIxiproDAXB",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
       ],
       "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
-      "review_reason": "厨具品牌促销，明确属于创意厨具",
+      "review_reason": "手机壳作为礼物，属于手机壳品类",
       "review_confidence": 0,
       "tags": [
-        "创意厨具",
-        "社媒公开索引",
-        "适合做结构、包装、功能或外观改造",
         "social_public_index",
-        "白名单来源"
+        "手机壳",
+        "白名单来源",
+        "社媒公开索引"
       ]
     },
     {
       "id": "30794eb566f8",
       "title": "坐在泰國街頭的路邊攤，在花花桌上吃飯，好浪漫(´∀` )人 又或是初 ...",
       "category": "创意桌搭",
-      "summary": "产品实用性强，可升降至很低高度，满足坐地办公需求；高频使用场景（办公、休闲）；打击面广（居家办公、客厅多功能化）；功能无明显短板；3秒看懂（低矮升降桌）；情绪价值高（浪漫、放松、牛马自嘲）。但价格未知，可能低于35元。",
+      "summary": "产品实用性强，可坐可躺办公，满足居家办公高频需求；但目标用户偏小众（创意工作者），打击面一般；功能无明显短板，但价格可能较高（升降桌通常>35RMB）；3秒看懂，情绪价值高（浪漫、放松氛围）。",
       "score": 70,
       "price_gate": "unknown",
       "image": "",
@@ -32399,7 +32580,7 @@
       "id": "d4d7cf9c21d1",
       "title": "Photo calendar #custamizedgifts #varahicustomgifts #photobottle ...",
       "category": "日历",
-      "summary": "个性化照片日历实用性强，适合送礼，需求频率中等，受众广，功能明确，3秒可理解，情绪价值高，但价格可能低于35元，需确认。",
+      "summary": "产品实用性强，满足记录日期和送礼需求；高频使用（每日看日历）；受众广（各年龄段）；功能简单无短板；价格可能低于35元（需确认）；3秒看懂；情感价值高（个性化照片）。",
       "score": 70,
       "price_gate": "unknown",
       "image": "",
@@ -32419,10 +32600,73 @@
       "review_reason": "产品为照片日历，明确属于日历品类。",
       "review_confidence": 0,
       "tags": [
-        "social_public_index",
         "日历",
-        "白名单来源",
-        "社媒公开索引"
+        "个性化礼物",
+        "照片日历",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "70d74834b6fa",
+      "title": "与众不同的定制礼品 —— 定制充电宝 ⚡️ 最近一直有人问有没有更 ...",
+      "category": "充电宝",
+      "summary": "充电宝实用性强，高频使用，受众广；定制功能增加情感价值，但价格可能低于35元，功能无短板但非创新，3秒可理解。",
+      "score": 70,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/banbannn.studio/p/DR90HwvEmf1?hl=de",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为定制充电宝，属于充电宝品类。",
+      "review_confidence": 5,
+      "tags": [
+        "定制礼品",
+        "充电宝",
+        "社交礼品",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "a092afb0354b",
+      "title": "Thank you for trusting us with your gifts! We are so glad ... - Instagram",
+      "category": "充电宝",
+      "summary": "充电宝实用性强，高频使用，定制化增加情感价值，但价格可能低于35元，功能无短板但同质化严重。",
+      "score": 70,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DZMo-lnmQ1H",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为定制充电宝，属于充电宝品类。",
+      "review_confidence": 5,
+      "tags": [
+        "定制礼物",
+        "充电宝",
+        "客制化",
+        "social_public_index",
+        "白名单来源"
       ]
     },
     {
@@ -33104,63 +33348,93 @@
       ]
     },
     {
-      "id": "70d74834b6fa",
-      "title": "与众不同的定制礼品 —— 定制充电宝 ⚡️ 最近一直有人问有没有更 ...",
-      "category": "充电宝",
-      "summary": "充电宝实用性强，高频使用，受众广；定制功能增加独特性，但价格可能低于35元，功能无短板但非创新，情绪价值中等。",
+      "id": "da6fd2376114",
+      "title": "Introducing the FLOW card holder, designed for the modern ...",
+      "category": "卡包",
+      "summary": "卡包实用，可装8卡和现金，高频使用；设计有特色但非大众化；功能无明显短板；价格未知但预估可能超35元；3秒可看懂；情绪价值来自手工和河流设计。",
       "score": 69,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.instagram.com/banbannn.studio/p/DR90HwvEmf1?hl=de",
+      "url": "https://www.instagram.com/p/DNATKXuTxyb",
       "source_name": "Instagram",
       "source_family": "社交灵感",
       "source_type": "social_signal",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为卡包产品，符合品类定义。",
+      "review_confidence": 5,
+      "tags": [
+        "卡包",
+        "白名单来源",
+        "社媒公开索引",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "4ebf91cacff3",
+      "title": "This Valentine's gift smarter. A wallet he'll carry every day - Instagram",
+      "category": "卡包",
+      "summary": "卡包实用性强，日常高频使用，目标用户广（男性），功能明确（收纳卡片），3秒看懂，售价可能超35元，但情绪价值一般（仅靠节日促销）。",
+      "score": 69,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DUipk8AD9XG",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
         "包装启发"
       ],
       "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
-      "review_reason": "明确为定制充电宝，属于充电宝品类。",
+      "review_reason": "明确为钱包/卡包礼品推荐，产品明确",
       "review_confidence": 5,
       "tags": [
-        "定制礼品",
-        "充电宝",
-        "社交属性",
+        "卡包",
+        "男士钱包",
+        "情人节礼物",
+        "父亲节礼物",
         "social_public_index",
         "白名单来源"
       ]
     },
     {
-      "id": "a092afb0354b",
-      "title": "Thank you for trusting us with your gifts! We are so glad ... - Instagram",
-      "category": "充电宝",
-      "summary": "充电宝实用性强，高频使用，定制化增加情感价值，但价格可能低于35元，功能无短板但非创新。",
+      "id": "372a44983a92",
+      "title": "Hidesign | Some gifts are for the moment, A wallet is for the journey.",
+      "category": "卡包",
+      "summary": "卡包实用且高频，设计简洁易理解，但价格未知且功能单一，情绪价值通过文案体现。",
       "score": 69,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.instagram.com/p/DZMo-lnmQ1H",
+      "url": "https://www.instagram.com/p/DWOlYXVGIUA",
       "source_name": "Instagram",
       "source_family": "社交灵感",
       "source_type": "social_signal",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发",
-        "包装启发"
+        "包装启发",
+        "结构启发"
       ],
       "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
-      "review_reason": "明确为定制充电宝，属于充电宝品类。",
+      "review_reason": "明确为钱包产品，有具体描述",
       "review_confidence": 5,
       "tags": [
-        "定制",
-        "充电宝",
-        "礼物",
+        "卡包",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
         "social_public_index",
         "白名单来源"
       ]
@@ -33169,7 +33443,7 @@
       "id": "26ed5f5b2ff1",
       "title": "Canvas Of Life by Afreen Perothian - Instagram",
       "category": "手机壳",
-      "summary": "手机壳是高频实用品，个性化定制满足情感需求，但价格可能低于35元，功能无短板但非刚需。",
+      "summary": "手机壳是高频需求，实用性强，但功能上保护性可能一般；个性化定制打击面广，但价格可能低于35元；3秒看懂，情绪价值高。",
       "score": 68,
       "price_gate": "unknown",
       "image": "",
@@ -33191,7 +33465,7 @@
         "custom phone case",
         "personalized phone case",
         "aesthetic phone case",
-        "memory phone case",
+        "photo phone case",
         "social_public_index",
         "手机壳"
       ]
@@ -33283,7 +33557,7 @@
       "id": "260dd237d9e8",
       "title": "功能同實用性都係TASTY廚具嘅主打 。TASTY易潔鑊煲系列,有專利 ...",
       "category": "创意厨具",
-      "summary": "产品主打实用性和功能性，专利量油刻度设计解决烹饪痛点，易洁材质提升体验，但价格未知且情绪价值不足，外观可能不够吸引人。",
+      "summary": "产品主打实用性和功能性，专利量油刻度设计解决烹饪痛点，易洁材质高频使用，但价格未知且外观可能不够突出，情绪价值一般。",
       "score": 67,
       "price_gate": "unknown",
       "image": "",
@@ -33312,42 +33586,10 @@
       ]
     },
     {
-      "id": "b6462091f7d3",
-      "title": "The North Face and INVINCIBLE unveil a new collaborative ...",
-      "category": "冲锋衣",
-      "summary": "加热功能实用，续航10小时满足户外需求；联名款有话题性，但价格可能较高；功能明确，但需确认售价是否超35RMB。",
-      "score": 66,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DC9HvfUPVAy",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 2,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "联名冲锋衣产品",
-      "review_confidence": 0,
-      "tags": [
-        "冲锋衣",
-        "加热夹克",
-        "联名款",
-        "科技服饰",
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
       "id": "73b59b212d9f",
       "title": "以法國經典工藝，為母親節增添優雅！ Le Creuset 呈獻 ... - Instagram",
       "category": "创意厨具",
-      "summary": "Le Creuset 铸铁锅实用性强，功能无短板，但高频需求低（非日常消耗品），价格高，3秒可识别品牌，情绪价值高（母亲节送礼）。",
+      "summary": "Le Creuset 铸铁锅实用性强、功能无短板，但高频需求低（非日常消耗品），价格高，3秒看懂需品牌认知，情绪价值高适合送礼。",
       "score": 66,
       "price_gate": "unknown",
       "image": "",
@@ -33379,7 +33621,7 @@
       "id": "328cfde0f8a7",
       "title": "Diy Phone Case Idea Diy valentines day gift Diy cute gift ... - Instagram",
       "category": "手机壳",
-      "summary": "手机壳是高频需求，DIY创意有社交传播潜力，但功能上仅为装饰，无实用创新，价格未知但DIY材料成本低，可能低于35元。",
+      "summary": "产品为DIY手机壳，属于个性化定制，实用性和高频需求中等，但打击面广（适合送礼和自用）。功能上手机壳保护性一般，但创意和情绪价值高。价格未知，但DIY材料成本可能低于35元。3秒看懂，情绪价值突出。",
       "score": 66,
       "price_gate": "unknown",
       "image": "",
@@ -33403,6 +33645,129 @@
         "手机壳",
         "情人节礼物",
         "手工礼物",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "562ee580bf00",
+      "title": "香港本地設計品牌@papermomentshk 製作2025年日曆 ... - Instagram",
+      "category": "日历",
+      "summary": "日历实用性强，高频需求（每年更新），打击面广（大众市场），功能完整（尺寸重量明确），售价可能超35元（设计品牌），3秒看懂（日历直观），情绪价值来自设计品牌和手工感。",
+      "score": 66,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DBxN8X2Maw-",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "2025年日历，属于日历品类",
+      "review_confidence": 0,
+      "tags": [
+        "日历",
+        "香港设计",
+        "2025年日历",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "2c4a2171a4a9",
+      "title": "Meet the Envelope Wallet Original in Ballet. A timeless design ...",
+      "category": "卡包",
+      "summary": "卡包实用，高频使用，设计经典但受众偏窄，价格可能较高，功能无短板，3秒可懂，情绪价值来自材质和工艺。",
+      "score": 66,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DXwsLtGiJui",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为钱包/卡包，符合品类定义。",
+      "review_confidence": 5,
+      "tags": [
+        "卡包",
+        "欧洲皮革",
+        "荷兰制造",
+        "极简设计",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "24d5dd822bbd",
+      "title": "端午粽子礼盒｜暖心送礼首选今年端午，把满满心意送给家人朋友 ...",
+      "category": "端午礼盒",
+      "summary": "粽子礼盒实用性强，节日送礼高频但非日常，受众较广，功能齐全，价格超35元，3秒看懂，情绪价值高。",
+      "score": 66,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/DY8pQ39zuAM",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午粽子礼盒，包含具体内容",
+      "review_confidence": 5,
+      "tags": [
+        "端午礼盒",
+        "送礼",
+        "定制",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "ef8f3f6d90d1",
+      "title": "The cutest kind of gift is the one that quietly becomes ... - Instagram",
+      "category": "卡包",
+      "summary": "卡包实用且高频，定制化增加情感价值，但价格可能低于35元，功能单一无短板，3秒看懂，情绪价值高。",
+      "score": 66,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DXB5rpwTD1V",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为定制卡包/钱包，产品明确",
+      "review_confidence": 5,
+      "tags": [
+        "卡包",
+        "定制礼品",
+        "情侣礼物",
+        "生日礼物",
         "social_public_index",
         "白名单来源"
       ]
@@ -33493,7 +33858,7 @@
       "id": "8e200e951bcd",
       "title": "A55734｜3D立体米奇卫衣胸围135cm 长度62cm PRICE｜RM79 ...",
       "category": "卫衣",
-      "summary": "3D立体米奇设计有视觉冲击力，卫衣品类实用且高频，价格RM79约合120RMB，超过35RMB，3秒可看懂。但功能上无明显短板，情绪价值中等。",
+      "summary": "3D立体米奇设计有视觉冲击力，卫衣品类实用且高频，胸围135cm适合多种体型，价格RM79约合人民币130元，高于35元门槛，但需注意马来西亚市场与国内差异。",
       "score": 65,
       "price_gate": "unknown",
       "image": "",
@@ -33521,18 +33886,49 @@
       ]
     },
     {
-      "id": "4f9ccf2f3ad5",
-      "title": "Shopping for the whole group chat? Find custom gifts that'll earn ...",
-      "category": "手机壳",
-      "summary": "手机壳实用且高频，但功能单一；定制化有情绪价值，但价格未知，可能低于35元；3秒看懂，但功能有短板（仅保护）。",
-      "score": 65,
+      "id": "fefa9d18b914",
+      "title": "【Winner Series | DFAA 2023 – Fashion & Accessory Design",
+      "category": "卡包",
+      "summary": "产品采用环保无纺布材料，耐用防水可机洗，功能性强；卡包属于日常高频使用品，但设计感较强可能限制受众；价格未知，但环保材质和设计奖背景可能支撑较高售价；3秒内可理解产品用途。",
+      "score": 64,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.instagram.com/p/DRADodeFF4d",
+      "url": "https://www.instagram.com/p/C3jvdPPMQMY",
       "source_name": "Instagram",
       "source_family": "社交灵感",
       "source_type": "social_signal",
       "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为卡包产品，符合品类定义。",
+      "review_confidence": 5,
+      "tags": [
+        "环保",
+        "防水",
+        "可机洗",
+        "DFA设计奖",
+        "social_public_index",
+        "卡包"
+      ]
+    },
+    {
+      "id": "9703307d3034",
+      "title": "你更喜欢哪一款？我还挺好奇大家的选择。#端午礼盒#包装设计#礼盒 ...",
+      "category": "端午礼盒",
+      "summary": "端午礼盒属于节日性产品，实用性和功能性强，设计完整，价格超过35元，3秒可看懂，但需求频次低，仅限端午期间。",
+      "score": 64,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DWkwupqAhI0",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "可直接买样",
       "axes": [
         "包装启发"
       ],
@@ -33540,13 +33936,44 @@
       "seen_count": 1,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
-      "review_reason": "手机壳作为礼物，属于手机壳品类",
+      "review_reason": "明确为端午礼盒设计，包含礼袋、礼盒等",
+      "review_confidence": 5,
+      "tags": [
+        "端午礼盒",
+        "包装设计",
+        "送礼",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "583877f2b840",
+      "title": "Sweet Zong Love 粽情蜜意｜端午限定礼盒 端午节，当然要有一点 ...",
+      "category": "端午礼盒",
+      "summary": "产品为端午限定礼盒，实用性强（粽子、艾草饼等），功能无明显短板，价格超过35元，3秒可看懂，情绪价值高（团圆祝福），但高频需求仅限端午期间，打击面广但受节日限制。",
+      "score": 64,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/DYwoveSGDYU?img_index=4",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午礼盒，含粽子等",
       "review_confidence": 0,
       "tags": [
+        "端午礼盒",
+        "节日限定",
+        "社交礼品",
         "social_public_index",
-        "手机壳",
-        "白名单来源",
-        "社媒公开索引"
+        "白名单来源"
       ]
     },
     {
@@ -33664,7 +34091,7 @@
       "id": "5965db5c8fe6",
       "title": "pacdora - Instagram",
       "category": "帽子",
-      "summary": "产品为帽子定制3D预览工具，实用性强，但非实物产品；需求频次中等；面向定制市场，受众较广；功能无明显短板；价格未知，但定制服务通常高于35元；3D预览直观易懂；情绪价值体现在个性化定制。",
+      "summary": "产品为帽子定制3D预览工具，实用性强，但非实物产品；高频需求中等；打击面广，适合品牌和设计师；功能无明显短板；价格未知，但工具类可能低于35元；3秒看懂；情绪价值中等。",
       "score": 63,
       "price_gate": "unknown",
       "image": "",
@@ -33691,10 +34118,40 @@
       ]
     },
     {
+      "id": "50dd57f9d43e",
+      "title": "Simple LOVE CUP gift idea for your ladies Perfect for teachers ...",
+      "category": "水杯",
+      "summary": "水杯实用且高频，但设计偏女性化，打击面有限；功能无明显短板，但价格可能低于35元；3秒看懂，情绪价值通过礼物概念体现。",
+      "score": 62,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DTrJcnHjXmL",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "杯子作为礼物主体，产品是杯子，符合水杯品类。",
+      "review_confidence": 5,
+      "tags": [
+        "social_public_index",
+        "水杯",
+        "白名单来源",
+        "社媒公开索引"
+      ]
+    },
+    {
       "id": "1daa6fca9d62",
       "title": "送禮- 一直送不到心坎裡? 想找一份既實用又特別的禮物嗎 ... - Instagram",
       "category": "创意厨具",
-      "summary": "产品为餐具套装，实用性强，适合送礼，但价格未知，功能无明显短板，3秒可看懂，情绪价值中等。",
+      "summary": "产品为创意厨具套装，包含餐具，实用且适合送礼，但价格未知，功能无明显短板，3秒可看懂，情绪价值中等。",
       "score": 62,
       "price_gate": "unknown",
       "image": "",
@@ -33720,69 +34177,6 @@
         "cutlery set",
         "social_public_index",
         "创意厨具"
-      ]
-    },
-    {
-      "id": "887fe3587ff9",
-      "title": "Viral Pinteresty flower calendar diy 🗓️ I enjoyed ... - Instagram",
-      "category": "日历",
-      "summary": "产品为手工迷你台历，实用且美观，适合送礼或自用；需求频率中等，但手工DIY有社交传播潜力；功能完整，但价格可能低于35元；3秒内可理解；情绪价值通过手工和装饰性体现。",
-      "score": 62,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DS43YBcCff8",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "产品为DIY迷你桌面日历，明确属于日历品类。",
-      "review_confidence": 0,
-      "tags": [
-        "手工",
-        "日历",
-        "DIY",
-        "桌面装饰",
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
-      "id": "0998cf3cbeb4",
-      "title": "Cute Matching Phone Case Valentine's Day gift idea ✨️ Painted ...",
-      "category": "手机壳",
-      "summary": "手机壳实用且高频，DIY手绘有情绪价值，但功能有短板（保护性一般），售价可能超35元，3秒易懂。",
-      "score": 62,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DT-PJ0Hjz2-",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为DIY手机壳，属于手机壳品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "手机壳",
-        "白名单来源",
-        "社媒公开索引",
-        "适合作为趋势、内容爆点或方向参考",
-        "需人工复核"
       ]
     },
     {
@@ -33816,7 +34210,7 @@
       "id": "ca8d773e9e9b",
       "title": "Efforts matter . . . . . . . #love #diyphonecase #kiss #giftideas #foryou",
       "category": "手机壳",
-      "summary": "手机壳是高频需求，但该产品主打DIY和情感定制，实用性一般；3秒看懂，情绪价值高；价格未知，预估可能低于35元；功能有短板（仅装饰）。",
+      "summary": "手机壳实用且高频，DIY情侣主题打击面广，3秒看懂，但功能无突出亮点，价格未知，情绪价值高。",
       "score": 60,
       "price_gate": "unknown",
       "image": "",
@@ -33844,18 +34238,81 @@
       ]
     },
     {
-      "id": "c634a1bb1ded",
-      "title": "Diy phone case idea for him🕸️🕷️ #diy #kissstand ... - Instagram",
-      "category": "手机壳",
-      "summary": "DIY手机壳具有实用性和个性化，适合送礼，但功能单一，价格可能低于35元，需确认售价。",
+      "id": "db16fae08e55",
+      "title": "I was obsessing over every detail when I designed the calendar and ...",
+      "category": "日历",
+      "summary": "日历是实用品，但数字日历需求频率中等；设计细节和UI/UX有吸引力，但价格未知且功能可能不如实体日历直观；3秒看懂较好，情绪价值通过设计体现。",
       "score": 60,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.instagram.com/reel/DTqBFbYilsv",
+      "url": "https://www.instagram.com/reel/DY4eL1ARLjU",
       "source_name": "Instagram",
       "source_family": "社交灵感",
       "source_type": "social_signal",
       "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "日历设计，属于日历品类",
+      "review_confidence": 0,
+      "tags": [
+        "日历",
+        "UI/UX设计",
+        "智能日历",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "0f1c528681ca",
+      "title": "A gift idea that's like sunshine in a cup☀️Comment “SUN” to get all ...",
+      "category": "水杯",
+      "summary": "水杯是高频实用品，但该产品更侧重礼品属性，搭配防晒、洗手液等，功能分散，实用性一般；3秒看懂，情绪价值高；价格未知，但组合装可能超35元。",
+      "score": 60,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DW3zTGxESwr",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "杯子作为礼物，产品是杯子，符合水杯品类。",
+      "review_confidence": 5,
+      "tags": [
+        "水杯",
+        "礼品",
+        "防晒",
+        "色彩搭配",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "06010b652870",
+      "title": "Artprint Studio | 端午节系列上线啦送礼包装细节，也是一种节日仪式 ...",
+      "category": "端午礼盒",
+      "summary": "产品为端午礼盒设计服务，实用性强，但需求季节性明显，打击面中等。功能明确，价格超过35元，3秒可理解，情绪价值通过节日仪式感体现。",
+      "score": 60,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/DY32YoEieSw",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "可直接买样",
       "axes": [
         "包装启发"
       ],
@@ -33863,15 +34320,14 @@
       "seen_count": 1,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
-      "review_reason": "DIY手机壳，属于手机壳品类",
-      "review_confidence": 0,
+      "review_reason": "明确为端午节系列包装设计，包含卡片等",
+      "review_confidence": 5,
       "tags": [
-        "DIY",
-        "手机壳",
-        "礼物",
-        "个性化",
+        "端午礼盒",
+        "节日限定",
+        "送礼包装",
         "social_public_index",
-        "白名单来源"
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
@@ -33986,7 +34442,7 @@
       "id": "77e449b4791b",
       "title": "Christmas Gift Ideas 選Le Creuset的陶瓷餐具 ...",
       "category": "创意厨具",
-      "summary": "Le Creuset陶瓷餐具实用且耐用，但作为礼品，高频需求一般；品牌知名度高，打击面较广；功能无明显短板；预估售价远高于35RMB；产品外观易识别，3秒看懂；情绪价值高，适合送礼。",
+      "summary": "Le Creuset陶瓷餐具实用且耐用，但作为礼品，高频需求一般；价格较高，符合大于35RMB；功能无明显短板，但3秒看懂需依赖品牌认知；情绪价值较高，但需先确认功能成立。",
       "score": 59,
       "price_gate": "unknown",
       "image": "",
@@ -34014,42 +34470,40 @@
       ]
     },
     {
-      "id": "be6ef3c0bc69",
-      "title": "均可享加購優惠，以8 折選購指定款式「4.8 公升特色攪拌碗」一隻 ...",
-      "category": "创意厨具",
-      "summary": "产品为KitchenAid搅拌碗，品牌溢价高，预估售价超35元；功能明确，但属于厨房配件，非高频需求；外观设计有情绪价值，但需搭配主机使用，打击面有限。",
+      "id": "619506b0f59c",
+      "title": "Your Logo Our Hats The most common question we get ... - Instagram",
+      "category": "帽子",
+      "summary": "帽子作为实用品，需求高频，但该产品强调定制logo，可能限制受众；价格未知，但定制帽子通常高于35元；3秒可看懂；功能成立，但情绪价值一般。",
       "score": 59,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.instagram.com/reel/ClYZoBOBrZx",
+      "url": "https://www.instagram.com/reel/DYXc4ZIRrFA",
       "source_name": "Instagram",
       "source_family": "社交灵感",
       "source_type": "social_signal",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
+        "情绪启发"
       ],
       "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
-      "review_reason": "KitchenAid搅拌碗，属于创意厨具",
-      "review_confidence": 0,
+      "review_reason": "明确为帽子设计生产，符合品类。",
+      "review_confidence": 5,
       "tags": [
-        "创意厨具",
-        "白名单来源",
+        "帽子",
         "社媒公开索引",
+        "白名单来源",
         "social_public_index",
-        "适合做结构、包装、功能或外观改造"
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
       "id": "83e7400328f1",
       "title": "DIY phone cover . Perfect gift idea - Instagram",
       "category": "手机壳",
-      "summary": "DIY手机壳满足个性化需求，但非刚需；社交平台热度高，但来源次数仅1次，需验证趋势；功能简单无短板，但售价不确定；3秒可看懂，情绪价值较高。",
+      "summary": "DIY手机壳满足个性化需求，但实用性和功能有短板（保护性可能不足），价格未知但DIY材料成本低，3秒看懂，情绪价值高（礼物、社交分享）。",
       "score": 59,
       "price_gate": "unknown",
       "image": "",
@@ -34077,11 +34531,533 @@
       ]
     },
     {
+      "id": "0998cf3cbeb4",
+      "title": "Cute Matching Phone Case Valentine's Day gift idea ✨️ Painted ...",
+      "category": "手机壳",
+      "summary": "手机壳实用且高频，DIY绘画有创意但功能有短板（保护性一般），价格可能低于35元，3秒看懂，情绪价值高。",
+      "score": 59,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DT-PJ0Hjz2-",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为DIY手机壳，属于手机壳品类",
+      "review_confidence": 0,
+      "tags": [
+        "social_public_index",
+        "手机壳",
+        "白名单来源",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
+        "需人工复核"
+      ]
+    },
+    {
+      "id": "7b19810d892d",
+      "title": "好日曆與你的2026 Type | Packaging Year | 2025 - Instagram",
+      "category": "日历",
+      "summary": "日历具有实用性和高频需求，但打击面受限于设计风格；功能无明显短板，售价可能高于35元；3秒看懂，情绪价值较高。",
+      "score": 59,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DSmMj2PD7S2",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "日历设计，属于日历品类",
+      "review_confidence": 0,
+      "tags": [
+        "日历",
+        "设计",
+        "情绪价值",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "ef69ee80e1fd",
+      "title": "These little spring gift cups turned out SO cute! Perfect ... - Instagram",
+      "category": "水杯",
+      "summary": "水杯是实用品，但作为礼品杯功能单一；高频需求中等；打击面广（教师、闺蜜、青少年）；功能无短板但无突出；价格未知但可能低于35元；3秒看懂；情绪价值高（可爱、送礼）。",
+      "score": 59,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DV1Gu5lDibU",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "杯子作为礼物容器，产品是杯子，符合水杯品类。",
+      "review_confidence": 5,
+      "tags": [
+        "水杯",
+        "礼品",
+        "社交分享",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "cb92ee1cf77b",
+      "title": "WEI YI | New arrivals ⭐️ 藝術卡包Art print card holder ... - Instagram",
+      "category": "卡包",
+      "summary": "卡包实用，高频使用，艺术设计有情绪价值，但价格未知，功能无短板，3秒可看懂。",
+      "score": 58,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DW0nSXlmCFk",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为艺术卡包，符合品类定义。",
+      "review_confidence": 5,
+      "tags": [
+        "艺术卡包",
+        "卡包",
+        "设计",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "80b174a0f962",
+      "title": "端午粽子礼盒设计 - Instagram",
+      "category": "端午礼盒",
+      "summary": "产品为端午礼盒设计，实用性强，但需求季节性明显，非高频。打击面中等，功能完整，预估售价超35元，设计直观易懂，情绪价值较高。",
+      "score": 58,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/DY3m4c0lCPL",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午粽子礼盒设计，包含礼盒、礼袋等",
+      "review_confidence": 5,
+      "tags": [
+        "端午礼盒",
+        "粽子礼盒设计",
+        "节日礼品",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "c26a21a31257",
+      "title": "端午节粽子礼盒 Dragon Boat Festival Gift Set auf Instagram",
+      "category": "端午礼盒",
+      "summary": "粽子礼盒实用性强，但端午为季节性节日，非高频需求；受众广泛但受限于节日；功能无明显短板；预估售价超35元；产品概念清晰易懂；情绪价值高，适合送礼。",
+      "score": 58,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/DYQglUajp4J?hl=de",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午节礼盒，包含粽子等",
+      "review_confidence": 0,
+      "tags": [
+        "端午礼盒",
+        "社媒公开索引",
+        "白名单来源",
+        "social_public_index",
+        "适合作为趋势、内容爆点或方向参考"
+      ]
+    },
+    {
+      "id": "4176cfce29ee",
+      "title": "必唯你最“粽”要。 用心挑的端午节礼盒，TA一定会喜欢 ... - Instagram",
+      "category": "端午礼盒",
+      "summary": "产品为端午礼盒，包含粽子、燕窝、养生茶等，实用性强，但节日属性导致高频需求有限；价格超过35元，功能组合无明显短板，3秒可看懂；情绪价值通过礼盒包装和节日寓意体现。",
+      "score": 58,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/reel/C6YZfYnxrAz",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午礼盒，含粽子等",
+      "review_confidence": 0,
+      "tags": [
+        "端午礼盒",
+        "节日礼品",
+        "社交送礼",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "b6462091f7d3",
+      "title": "The North Face and INVINCIBLE unveil a new collaborative ...",
+      "category": "冲锋衣",
+      "summary": "加热功能实用，但冲锋衣品类非高频需求；联名款有情绪价值，但价格可能较高；功能有短板（需充电），3秒能看懂但需说明。",
+      "score": 57,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DC9HvfUPVAy",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "联名冲锋衣产品",
+      "review_confidence": 0,
+      "tags": [
+        "冲锋衣",
+        "加热夹克",
+        "联名款",
+        "科技服饰",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "be6ef3c0bc69",
+      "title": "均可享加購優惠，以8 折選購指定款式「4.8 公升特色攪拌碗」一隻 ...",
+      "category": "创意厨具",
+      "summary": "产品为知名品牌KitchenAid的搅拌碗配件，功能明确，但属于厨房辅助工具，非高频使用；价格较高，有加购优惠；外观设计有情绪价值，但需搭配主机使用，受众有限。",
+      "score": 57,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/ClYZoBOBrZx",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "KitchenAid搅拌碗，属于创意厨具",
+      "review_confidence": 0,
+      "tags": [
+        "创意厨具",
+        "厨房电器",
+        "搅拌碗",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "887fe3587ff9",
+      "title": "Viral Pinteresty flower calendar diy 🗓️ I enjoyed ... - Instagram",
+      "category": "日历",
+      "summary": "产品为手工DIY桌面日历，实用性和高频需求中等，但打击面广（适合送礼、装饰），功能简单无短板，但预估售价可能低于35元，3秒可看懂，情绪价值来自手工和个性化。",
+      "score": 57,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DS43YBcCff8",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "产品为DIY迷你桌面日历，明确属于日历品类。",
+      "review_confidence": 0,
+      "tags": [
+        "手工",
+        "日历",
+        "DIY",
+        "桌面装饰",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "79243d2310f7",
+      "title": "Ever wondered how a custom hat goes from an idea to a ... - Instagram",
+      "category": "帽子",
+      "summary": "帽子是实用品，但定制帽子需求频率中等，受众较广；功能上无明显短板，但预估售价可能低于35元；3秒看懂度一般，需看视频；情绪价值中等。",
+      "score": 57,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DVq9kipDy5k",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为帽子定制过程，符合品类。",
+      "review_confidence": 5,
+      "tags": [
+        "帽子",
+        "定制",
+        "社媒公开索引",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "dad134b18cdd",
+      "title": "身為開啟台灣小日曆市場的Five Metal Shop 五金行日曆計劃 - Instagram",
+      "category": "日历",
+      "summary": "产品为设计日历，实用性和高频需求中等，但打击面较窄（偏向设计爱好者），功能无明显短板，价格未知但设计日历通常高于35元，3秒可看懂，情绪价值较高。",
+      "score": 57,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/CjImn49Pdo2",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "日历计划，属于日历品类",
+      "review_confidence": 0,
+      "tags": [
+        "日历",
+        "文创",
+        "设计",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "f3c7969f4d3c",
+      "title": "-work | Xtraseal 产品目录手册/日历产品目录和日历的相结合, 实属于 ...",
+      "category": "日历",
+      "summary": "产品将日历与产品目录结合，有一定实用性，但需求频率中等，受众可能限于B2B客户。功能设计合理，但价格未知，情绪价值较低。",
+      "score": 57,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/CwBweq8pwJJ",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "日历产品目录，属于日历品类",
+      "review_confidence": 0,
+      "tags": [
+        "日历",
+        "产品目录",
+        "B2B",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "2a495c7965d6",
+      "title": "Not your average Christmas mug! This mug is so fun to gift. So fun ...",
+      "category": "水杯",
+      "summary": "产品作为圣诞主题马克杯，具有节日礼品属性，实用性和高频需求中等；但价格未知且可能低于35元，价格力低；3秒看懂，情绪价值高，但功能有短板（仅杯子）。",
+      "score": 57,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DRTGwFNjyOm",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "圣诞主题杯子，产品是杯子，符合水杯品类。",
+      "review_confidence": 5,
+      "tags": [
+        "social_public_index",
+        "水杯",
+        "白名单来源",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
+        "需人工复核"
+      ]
+    },
+    {
+      "id": "80c6b27f6304",
+      "title": "呈現出一幅和諧的端午美好氛圍。 產品資訊卡上延續了外盒的粽子 ...",
+      "category": "端午礼盒",
+      "summary": "端午礼盒具有节日实用性和情绪价值，但高频需求仅限端午期间，打击面中等。功能上包装设计完整，价格大概率超35元，3秒能看懂是礼盒。",
+      "score": 57,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/C0nqkuxrTV3",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午粽子礼盒设计，包含包装结构",
+      "review_confidence": 5,
+      "tags": [
+        "端午礼盒",
+        "节日礼品",
+        "包装设计",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "cb2c184bba63",
+      "title": "端午节不只是卖粽子，也可以做成一整套有记忆点的节日品牌 ...",
+      "category": "端午礼盒",
+      "summary": "产品为端午礼盒设计服务，实用性强但非实物商品；节日性需求频率低；目标客户为企业品牌，打击面有限；功能完整，包含礼袋、礼盒、标签等；预估售价高于35元；设计概念易懂；情绪价值通过完整品牌体验实现。",
+      "score": 57,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/DZBimTNDc3i",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午礼盒设计，包含礼袋、礼盒等",
+      "review_confidence": 5,
+      "tags": [
+        "端午礼盒",
+        "品牌设计",
+        "节日营销",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "04b6fed27871",
+      "title": "一份安康。 在粽叶清香里， 把团圆与思念，慢慢传递。 端午限定",
+      "category": "端午礼盒",
+      "summary": "产品为端午礼盒，包含多种食品，实用性强，但节日属性导致高频需求有限；价格预估超过35元，符合要求；3秒内可识别为端午礼盒，功能明确；情绪价值高，但需注意节日后需求下降。",
+      "score": 57,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/DYoPx0rSwui",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午礼盒，含粽子等",
+      "review_confidence": 0,
+      "tags": [
+        "端午礼盒",
+        "节日限定",
+        "社交送礼",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
       "id": "73dd0fd12113",
       "title": "TA一定会喜欢！ 隆粽登场！GIFTBABE端午礼盒【乐在其 ... - Instagram",
       "category": "端午礼盒",
-      "summary": "端午礼盒具有节日实用性和情绪价值，但需求频次低，受众有限。产品功能组合完整，价格超过35元，3秒可识别为礼盒。",
-      "score": 58,
+      "summary": "端午礼盒具有节日实用性和情绪价值，但属于季节性低频需求；内含多种物品功能较全，但部分如艾草锤、浴饼等非日常高频；价格预估超35元，符合要求；产品概念清晰，3秒可懂；情绪价值通过礼盒包装和节日氛围体现。",
+      "score": 56,
       "price_gate": "likely_over_35",
       "image": "",
       "url": "https://www.instagram.com/p/C6AQ7UayOrU",
@@ -34110,8 +35086,8 @@
       "id": "284f1c43508e",
       "title": "Thank you for another wonderful year We hope you enjoy warm ...",
       "category": "创意厨具",
-      "summary": "产品为木质厨具，实用且高频，但价格未知，功能可能单一，情绪价值高（跨年、礼物），需人工复核。",
-      "score": 57,
+      "summary": "产品为木质厨具，实用且高频，但标题和摘要模糊，3秒内难以看懂具体功能；价格未知，预估可能低于35元；情绪价值通过节日和美学传递，但功能不明确。",
+      "score": 56,
       "price_gate": "unknown",
       "image": "",
       "url": "https://www.instagram.com/reel/DS651yJAVAk",
@@ -34143,7 +35119,7 @@
       "id": "a347e453a6cb",
       "title": "Advent Calendar Packaging ❤️ - Instagram",
       "category": "日历",
-      "summary": "产品为圣诞日历包装，实用性和功能性较好，但使用频率低（仅圣诞季），打击面中等，价格可能高于35元，3秒可看懂，情绪价值高。",
+      "summary": "产品为圣诞日历包装，实用性强但使用频率低（一年一次），受众较广但受节日限制，功能明确无短板，预估售价高于35元，3秒可识别为日历包装，情绪价值高（节日氛围、送礼），但需注意季节性风险。",
       "score": 56,
       "price_gate": "likely_over_35",
       "image": "",
@@ -34175,7 +35151,7 @@
       "id": "26e32f380799",
       "title": "One of my other hats I wear is product designer for my lifestyle brand ...",
       "category": "帽子",
-      "summary": "帽子作为日常配饰，实用性和频率中等，但该产品来自生活方式品牌，可能设计独特，但价格未知，功能无明显短板，3秒可看懂，情绪价值一般。",
+      "summary": "帽子作为日常配饰，实用性和高频需求中等，但该产品来自生活方式品牌，可能设计独特，但价格未知，功能无明显短板，3秒可看懂，情绪价值一般。",
       "score": 56,
       "price_gate": "unknown",
       "image": "",
@@ -34196,7 +35172,7 @@
       "tags": [
         "帽子",
         "生活方式品牌",
-        "社媒公开索引",
+        "家居产品",
         "social_public_index",
         "更接近现成消费品，适合买样验证"
       ]
@@ -34205,7 +35181,7 @@
       "id": "867b355e781d",
       "title": "“Daily Gifts”2026 Calendar 2026日历以金色花纹点缀的小马造型呈现 ...",
       "category": "日历",
-      "summary": "日历实用性强，但非高频需求（一年一次）；设计美观，3秒可看懂；功能无短板；价格可能超35元；情绪价值高，但需功能成立后叠加。",
+      "summary": "日历实用性强，但非高频需求；设计美观，3秒可看懂；功能无短板，但售价可能低于35元；情绪价值高，适合送礼。",
       "score": 55,
       "price_gate": "unknown",
       "image": "",
@@ -34236,7 +35212,7 @@
       "id": "8380b1a78cf6",
       "title": "这是一个关于中国传统24 节气的日历设计项目。客户的 ... - Instagram",
       "category": "日历",
-      "summary": "产品结合日历与插画，功能清晰，3秒可懂；节气主题有文化价值，但需求频次低（一年12次），受众偏窄；售价可能超35元，但需确认；无明显短板，但情绪价值依赖插画质量。",
+      "summary": "产品结合日历与插画，功能清晰，3秒可懂，但节气日历使用频率低（一年24次），受众偏传统文化爱好者，价格可能高于35元，情绪价值较高。",
       "score": 55,
       "price_gate": "unknown",
       "image": "",
@@ -34255,8 +35231,8 @@
       "review_reason": "明确为日历设计项目，属于日历品类",
       "review_confidence": 0,
       "tags": [
-        "24节气",
         "日历",
+        "24节气",
         "插画",
         "家居装饰",
         "social_public_index",
@@ -34264,41 +35240,101 @@
       ]
     },
     {
-      "id": "79243d2310f7",
-      "title": "Ever wondered how a custom hat goes from an idea to a ... - Instagram",
-      "category": "帽子",
-      "summary": "产品为定制帽子，实用性中等，需求频率一般，受众较广但功能有短板（定制流程复杂），价格未知但定制通常高于35元，3秒内不易看懂，情绪价值较低。",
-      "score": 54,
+      "id": "5d157e8ac182",
+      "title": "Five Metal Shop on Instagram: \"Calendar Project 2017-2020 Since ...",
+      "category": "日历",
+      "summary": "日历具有实用性和一定的高频需求，但打击面有限；设计感强，功能无明显短板；价格可能超过35元；3秒可看懂；情绪价值较高。",
+      "score": 55,
       "price_gate": "unknown",
       "image": "",
-      "url": "https://www.instagram.com/reel/DVq9kipDy5k",
+      "url": "https://www.instagram.com/p/CJveKAmnsgW",
       "source_name": "Instagram",
       "source_family": "社交灵感",
       "source_type": "social_signal",
       "action_lane": "适合改造",
       "axes": [
-        "情绪启发",
         "视觉启发"
       ],
       "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
-      "review_reason": "明确为帽子定制过程，符合品类。",
-      "review_confidence": 5,
+      "review_reason": "日历项目，属于日历品类",
+      "review_confidence": 0,
       "tags": [
-        "帽子",
-        "定制",
-        "社媒公开索引",
+        "日历",
+        "设计",
+        "文创",
         "social_public_index",
         "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "eef39d61a15e",
+      "title": "【 類聚出品，質感保證】2026最美日曆 ｜#GrandProduct 上次的 ...",
+      "category": "日历",
+      "summary": "日历实用但非高频，设计感强但受众有限，价格未知，3秒易懂，情绪价值高。",
+      "score": 55,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DOlL1UZkygC",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "2026年日历，属于日历品类",
+      "review_confidence": 0,
+      "tags": [
+        "设计",
+        "日历",
+        "交换礼物",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "a5c636dcbaa8",
+      "title": "MumMum Handmade | 拼豆小男孩钥匙扣｜可定制 两面都有不同 ...",
+      "category": "钥匙扣水壶",
+      "summary": "产品为手工拼豆钥匙扣，实用性和高频需求一般，但打击面较广（可作多种装饰），功能无明显短板，3秒可看懂，但预估售价可能低于35元，情绪价值中等。",
+      "score": 54,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/p/DZC29nOj3ss",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为钥匙扣挂件，可定制，属于钥匙扣水壶品类",
+      "review_confidence": 0,
+      "tags": [
+        "social_public_index",
+        "白名单来源",
+        "社媒公开索引",
+        "钥匙扣水壶",
+        "更接近现成消费品，适合买样验证",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
       "id": "f598c2702855",
       "title": "Five creative Japanese new year calendars, from bento recipe cards ...",
       "category": "日历",
-      "summary": "产品为创意日历，具有防水、美观特点，但日历为低频需求，受众有限，价格未知但可能低于35元，功能无明显短板但实用性一般。",
+      "summary": "产品为创意日历，防水且色彩好，有一定实用性，但日历非高频需求，受众较窄。价格未知，但创意设计可能支撑35元以上。3秒能看懂，情绪价值中等。",
       "score": 53,
       "price_gate": "unknown",
       "image": "",
@@ -34322,7 +35358,37 @@
         "日历",
         "创意",
         "防水",
-        "礼物",
+        "日本",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "c634a1bb1ded",
+      "title": "Diy phone case idea for him🕸️🕷️ #diy #kissstand ... - Instagram",
+      "category": "手机壳",
+      "summary": "DIY手机壳有一定实用性和个性化需求，但功能单一，受众偏窄，价格可能低于35元，需人工复核。",
+      "score": 53,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/DTqBFbYilsv",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "DIY手机壳，属于手机壳品类",
+      "review_confidence": 0,
+      "tags": [
+        "手机壳",
+        "DIY",
+        "社媒爆款",
         "social_public_index",
         "白名单来源"
       ]
@@ -34355,40 +35421,10 @@
       ]
     },
     {
-      "id": "619506b0f59c",
-      "title": "Your Logo Our Hats The most common question we get ... - Instagram",
-      "category": "帽子",
-      "summary": "帽子作为实用品，但定制化需求可能限制高频使用；社交属性强但功能单一；价格未知但可能高于35元；3秒看懂；情绪价值依赖定制化。",
-      "score": 51,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DYXc4ZIRrFA",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为帽子设计生产，符合品类。",
-      "review_confidence": 5,
-      "tags": [
-        "帽子",
-        "社媒公开索引",
-        "白名单来源",
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
       "id": "c225fbb8983c",
       "title": "Trying to design a new cap with my Gen Z colleague - Instagram",
       "category": "帽子",
-      "summary": "帽子是常见消费品，但设计款可能受众有限，价格未知，功能无明显短板，3秒可看懂，情绪价值中等。",
+      "summary": "帽子是常见消费品，但设计款可能受众有限，功能无短板但无突出优势，价格未知，3秒可看懂，情绪价值中等。",
       "score": 51,
       "price_gate": "unknown",
       "image": "",
@@ -34442,71 +35478,10 @@
       ]
     },
     {
-      "id": "50bfcfb7c977",
-      "title": "produkthunter That's a big hat - Instagram",
-      "category": "帽子",
-      "summary": "产品为夸张大帽子，视觉冲击强，3秒可看懂，适合社交媒体传播；但实用性一般，非高频需求，受众较窄，价格未知但可能低于35元。",
-      "score": 49,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/C3m6nRzIsex",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为帽子设计，符合品类。",
-      "review_confidence": 5,
-      "tags": [
-        "帽子",
-        "大帽子",
-        "Instagram爆款",
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "a5c636dcbaa8",
-      "title": "MumMum Handmade | 拼豆小男孩钥匙扣｜可定制 两面都有不同 ...",
-      "category": "钥匙扣水壶",
-      "summary": "产品为手工拼豆钥匙扣，实用性和高频需求一般，但打击面较广（可作多种装饰），功能无明显短板，预估售价可能低于35元，3秒内可看懂，情绪价值较高（手工定制、可爱）。",
-      "score": 48,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DZC29nOj3ss",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 2,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为钥匙扣挂件，可定制，属于钥匙扣水壶品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "白名单来源",
-        "社媒公开索引",
-        "钥匙扣水壶",
-        "更接近现成消费品，适合买样验证",
-        "适合作为趋势、内容爆点或方向参考"
-      ]
-    },
-    {
       "id": "02c5664e97e9",
       "title": "真的很棒。滑動看看裡面有什麼吧… Our Wreath Advent Calendar ...",
       "category": "日历",
-      "summary": "产品为花环降临日历，结合了送礼和购物体验，有一定实用性和情绪价值，但使用频率低（一年一次），受众较窄，价格未知但可能较高。",
+      "summary": "产品为花环降临日历，结合送礼和购物体验，有一定实用性和情绪价值，但使用频率低（一年一次），受众有限，价格未知但可能较高。",
       "score": 47,
       "price_gate": "unknown",
       "image": "",
@@ -34537,7 +35512,7 @@
       "id": "e8ce8bbbfdc7",
       "title": "NY NOW Winter Brand Spotlight - Easy Living Hats ELH is an Ithaca ...",
       "category": "帽子",
-      "summary": "帽子品类实用且高频，但标题和摘要信息不足，价格未知，3秒内难以看懂产品核心卖点。",
+      "summary": "帽子品类实用但非高频，价格未知且标题摘要信息不足，3秒内难以看懂，情绪价值一般。",
       "score": 43,
       "price_gate": "unknown",
       "image": "",
@@ -34567,7 +35542,7 @@
       "id": "9e0d52639d44",
       "title": "Touching Studio的年度客户礼盒设计rainreinreign为 ... - Instagram",
       "category": "创意礼盒",
-      "summary": "产品以'便当'为灵感，具有情绪价值和创意，但实用性和高频需求较低，打击面有限，功能上作为礼盒无明显短板，价格预估超过35元，3秒内可理解其概念。",
+      "summary": "产品以'便当'为灵感，具有情感价值和创意，但实用性较低，非高频需求，受众较窄。价格可能超过35元，但功能上作为礼盒无明显短板，3秒内可理解其概念。",
       "score": 41,
       "price_gate": "likely_over_35",
       "image": "",
@@ -34587,8 +35562,8 @@
       "review_confidence": 5,
       "tags": [
         "创意礼盒",
-        "品牌礼盒",
-        "便当灵感",
+        "品牌定制",
+        "情感价值",
         "social_public_index",
         "更接近现成消费品，适合买样验证"
       ]
@@ -34597,7 +35572,7 @@
       "id": "e03858535552",
       "title": "CNY2026 Pudding Box-set Design for Shangri-la Group Client",
       "category": "创意礼盒",
-      "summary": "产品为节日礼盒，实用性和高频需求较低，但打击面较广，功能无明显短板，预估售价超35元，设计清晰，情绪价值较高。",
+      "summary": "产品为定制礼盒，实用性和高频需求较低，但设计感强，适合送礼场景，价格可能超过35元，功能完整，情绪价值较高。",
       "score": 41,
       "price_gate": "likely_over_35",
       "image": "",
@@ -34624,11 +35599,101 @@
       ]
     },
     {
+      "id": "82c36954f6dc",
+      "title": "［ Design Project｜ 粽久久端午禮盒設計］ 以長久的粽型植栽為發想",
+      "category": "端午礼盒",
+      "summary": "产品为端午礼盒，主打粽型植栽和蒸笼造型，情绪价值高，但实用性一般（植栽非必需品），高频需求低（节日限定），打击面中等（送礼场景），功能无明显短板但非刚需，预估售价可能超35元，3秒内可理解造型，情绪价值突出。",
+      "score": 41,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/CwO5WUOPHpx",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午礼盒设计，包含礼盒造型",
+      "review_confidence": 5,
+      "tags": [
+        "端午礼盒",
+        "创意礼品",
+        "植栽",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "50bfcfb7c977",
+      "title": "produkthunter That's a big hat - Instagram",
+      "category": "帽子",
+      "summary": "帽子作为实用品，但大帽子非日常高频，打击面中等；功能简单无短板，售价可能超35元；3秒看懂，情绪价值来自社交属性。",
+      "score": 40,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.instagram.com/reel/C3m6nRzIsex",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为帽子设计，符合品类。",
+      "review_confidence": 5,
+      "tags": [
+        "帽子",
+        "大帽子",
+        "Instagram爆款",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "d484375f6e12",
+      "title": "浩漢設計NOVA DESIGN on Instagram: \"【設計，充滿我們的每一天 ...",
+      "category": "端午礼盒",
+      "summary": "产品为端午礼盒腰封，属于节日礼品，实用性和高频需求低，但设计感强，价格可能超过35元，功能成立后叠加情绪价值。",
+      "score": 34,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.instagram.com/p/C73U4TJNxZp",
+      "source_name": "Instagram",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确为端午礼盒腰封设计",
+      "review_confidence": 5,
+      "tags": [
+        "端午礼盒",
+        "企业礼品",
+        "设计感",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
       "id": "7aca72d48fcf",
       "title": "Diy phonecase idea #diy #kissstand #lipstain #phone ... - Instagram",
       "category": "手机壳",
-      "summary": "产品为DIY手机壳，实用性和功能一般，但具有情绪价值和社交传播潜力，价格未知，需人工复核。",
-      "score": 28,
+      "summary": "产品为DIY手机壳，实用性和功能性一般，但具有审美和情绪价值；来源次数少，需人工复核；价格未知但预估可超35元。",
+      "score": 33,
       "price_gate": "unknown",
       "image": "",
       "url": "https://www.instagram.com/reel/DRUqwAPj2r7",
@@ -36185,195 +37250,6 @@
       ]
     },
     {
-      "id": "dad134b18cdd",
-      "title": "身為開啟台灣小日曆市場的Five Metal Shop 五金行日曆計劃 - Instagram",
-      "category": "日历",
-      "summary": "... designs as each product line grows. ​ 透過利落灑脫的主視覺F ，表現產品成份誠實透明的核心；接近極簡的排版搭配飽滿的色彩組合，讓FamiCollection",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/CjImn49Pdo2",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "日历计划，属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "日历"
-      ]
-    },
-    {
-      "id": "7b19810d892d",
-      "title": "好日曆與你的2026 Type | Packaging Year | 2025 - Instagram",
-      "category": "日历",
-      "summary": "2022 DAILY CALENDAR DESIGN 《AWAKEN YOURSELF, GENTLY.》由HENRY LIAO 與ONE THIRD DESIGN 於2022 年共同打造的日曆：用最溫柔的方式，把自己打醒。",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DSmMj2PD7S2",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "日历设计，属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "日历"
-      ]
-    },
-    {
-      "id": "562ee580bf00",
-      "title": "香港本地設計品牌@papermomentshk 製作2025年日曆 ... - Instagram",
-      "category": "日历",
-      "summary": "... Design: NOWMATTERS Size: 133 (W) x 272 (H) x 39 (D) mm Net weight: 515g ... products/2025-clip-imagining-calendar\".",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DBxN8X2Maw-",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "2025年日历，属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "日历"
-      ]
-    },
-    {
-      "id": "5d157e8ac182",
-      "title": "Five Metal Shop on Instagram: \"Calendar Project 2017-2020 Since ...",
-      "category": "日历",
-      "summary": "Office for Product Design 是獲獎無數的產品設計工作室，也是Five Metal Shop 最重要的專案夥伴。兩位攝影師同時是優秀的產品設計師，每年翻著五金行",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/CJveKAmnsgW",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "日历项目，属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "日历"
-      ]
-    },
-    {
-      "id": "f3c7969f4d3c",
-      "title": "-work | Xtraseal 产品目录手册/日历产品目录和日历的相结合, 实属于 ...",
-      "category": "日历",
-      "summary": "潜在客户既可以利用精心排版的日历作出行程规划; 同时还能借由每月份高质量的产品图片展示, 清晰掌握重要的产品信息。但在着手进行相关设计的时候, 尤其",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/CwBweq8pwJJ",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "日历产品目录，属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "日历"
-      ]
-    },
-    {
-      "id": "eef39d61a15e",
-      "title": "【 類聚出品，質感保證】2026最美日曆 ｜#GrandProduct 上次的 ...",
-      "category": "日历",
-      "summary": "... design #calendar #好日曆#交換禮物#設計#GrandProduct #日曆 ... Product Page Design, Event main visual, Corporate Identity and Packaging",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DOlL1UZkygC",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "2026年日历，属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "日历"
-      ]
-    },
-    {
-      "id": "db16fae08e55",
-      "title": "I was obsessing over every detail when I designed the calendar and ...",
-      "category": "日历",
-      "summary": "... calendar to preserve the same intentionality physical product offers. ... UI/UX DESIGN Smart Calendar, Smarter You. Stay organized. Never miss",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DY4eL1ARLjU",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "日历设计，属于日历品类",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "日历"
-      ]
-    },
-    {
       "id": "cdbf9974fbf8",
       "title": "Bike Polo Is Okay | Men's T-Shirt Classic | a13lan's Shop - Threadless",
       "category": "T恤",
@@ -36707,120 +37583,6 @@
       "tags": [
         "packaging_specialist",
         "中秋礼盒"
-      ]
-    },
-    {
-      "id": "068f1b456617",
-      "title": "Who needs a gift box when your Jug is the gift box? Holiday hack ...",
-      "category": "水杯",
-      "summary": "The perfect gift! This water bottle keeps drinks ice-cold for hours, so no more watered-down sips. Staying hydrated just got a whole lot",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DRpCulUk_bs",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "水杯作为礼物包装，产品本身是水杯，符合水杯品类。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "水杯"
-      ]
-    },
-    {
-      "id": "ef69ee80e1fd",
-      "title": "These little spring gift cups turned out SO cute! Perfect ... - Instagram",
-      "category": "水杯",
-      "summary": "These little spring gift cups turned out SO cute! Perfect for teachers, besties, or teens. Just fill a cute cup with a few goodies like",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DV1Gu5lDibU",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "杯子作为礼物容器，产品是杯子，符合水杯品类。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "水杯"
-      ]
-    },
-    {
-      "id": "2a495c7965d6",
-      "title": "Not your average Christmas mug! This mug is so fun to gift. So fun ...",
-      "category": "水杯",
-      "summary": "These are only a dollar and I love adding people's favorite candy to gifts. I also put in some hand sanitizer. I love the size of this one, it's",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DRTGwFNjyOm",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "圣诞主题杯子，产品是杯子，符合水杯品类。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "水杯"
-      ]
-    },
-    {
-      "id": "0f1c528681ca",
-      "title": "A gift idea that's like sunshine in a cup☀️Comment “SUN” to get all ...",
-      "category": "水杯",
-      "summary": "Is it just me or are gifts so much cuter when they are color coordinated? I added some of our favorite sunscreen and lotions, hand sanitizers—",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DW3zTGxESwr",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "杯子作为礼物，产品是杯子，符合水杯品类。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "水杯"
       ]
     },
     {
@@ -37435,141 +38197,6 @@
       ]
     },
     {
-      "id": "fefa9d18b914",
-      "title": "【Winner Series | DFAA 2023 – Fashion & Accessory Design",
-      "category": "卡包",
-      "summary": "... 包及卡包系列猿創(香港)有限公司/ 香港產品採用環保的無紡布材料，模仿了經典的硫酸鹽紙，不僅耐用和防水，還可以機洗。 DFA設計獎網上展廳︰https",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/C3jvdPPMQMY",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为卡包产品，符合品类定义。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "cb92ee1cf77b",
-      "title": "WEI YI | New arrivals ⭐️ 藝術卡包Art print card holder ... - Instagram",
-      "category": "卡包",
-      "summary": "New arrivals ⭐️ 藝術卡包Art print card holder #art #cardholder #wallet #design #painting ... GNL NEW PRODUCT CARD FOLDER PACK PACKSALE SALE",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DW0nSXlmCFk",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为艺术卡包，符合品类定义。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "da6fd2376114",
-      "title": "Introducing the FLOW card holder, designed for the modern ...",
-      "category": "卡包",
-      "summary": "With its river-inspired pocket design , burnished edges, and meticulous hand-stitching, this wallet holds up to 8 cards and folded cash.",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DNATKXuTxyb",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为卡包产品，符合品类定义。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "2c4a2171a4a9",
-      "title": "Meet the Envelope Wallet Original in Ballet. A timeless design ...",
-      "category": "卡包",
-      "summary": "Carefully made in the Netherlands, with European leather. Finished to perfection. Soft to the touch. A wallet that fits perfectly in your",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DXwsLtGiJui",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为钱包/卡包，符合品类定义。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "e8eeb92f87f9",
-      "title": "挖到一只宝藏卡包 巴掌大的尺寸，居然这么能装？？ 卡位多到安全感 ...",
-      "category": "卡包",
-      "summary": "... - 重点是！真的很轻！放口袋或是小包包都毫无负担 https://rachelsmith.com.my/products/lily-zipper-card-holder\".",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DYtEw17SetB",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为卡包产品，符合品类定义。",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
       "id": "f4683160ea15",
       "title": "Adobe × LxU：2021联名日历，牛到外太空 - 数英网",
       "category": "日历",
@@ -37675,522 +38302,6 @@
       "tags": [
         "design_community",
         "日历"
-      ]
-    },
-    {
-      "id": "80b174a0f962",
-      "title": "端午粽子礼盒设计 - Instagram",
-      "category": "端午礼盒",
-      "summary": "而是让整套产品看起来更完整、更有送礼价值 ✓ 本次设计包含： ▫️ 礼袋设计▫️ 三角礼盒设计▫️ 方形礼盒设计▫️ 粽子吊牌/ 标签▫️ 品牌小周边视觉延伸 适合： 粽子",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/DY3m4c0lCPL",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午粽子礼盒设计，包含礼盒、礼袋等",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "80c6b27f6304",
-      "title": "呈現出一幅和諧的端午美好氛圍。 產品資訊卡上延續了外盒的粽子 ...",
-      "category": "端午礼盒",
-      "summary": "項目內容/ 包裝結構規劃+平面圖像設計+印刷成品監製 端午悠揚，粽情無窮。 Maison de Print今年端午精心呈獻的粽子禮盒設計，以溫暖色彩為基調，巧妙運用豐富",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/C0nqkuxrTV3",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午粽子礼盒设计，包含包装结构",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "9703307d3034",
-      "title": "你更喜欢哪一款？我还挺好奇大家的选择。#端午礼盒#包装设计#礼盒 ...",
-      "category": "端午礼盒",
-      "summary": "统一用墨绿色、米白色和金色去打造高级节日感✨ 不是只把Logo 放上去， 而是让整套产品看起来更完整、更有送礼价值 ✓ 本次设计包含： ▫️ 礼袋设计▫️ 三角礼盒",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DWkwupqAhI0",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午礼盒设计，包含礼袋、礼盒等",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "cb2c184bba63",
-      "title": "端午节不只是卖粽子，也可以做成一整套有记忆点的节日品牌 ...",
-      "category": "端午礼盒",
-      "summary": "不是只把Logo 放上去， 而是让整套产品看起来更完整、更有送礼价值 ✓ 本次设计包含： ▫️ 礼袋设计▫️ 三角礼盒设计▫️ 方形礼盒设计▫️ 粽子吊牌/ 标签▫️ 品牌小",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/DZBimTNDc3i",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午礼盒设计，包含礼袋、礼盒等",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "82c36954f6dc",
-      "title": "［ Design Project｜ 粽久久端午禮盒設計］ 以長久的粽型植栽為發想",
-      "category": "端午礼盒",
-      "summary": "［ Design Project｜ 粽久久端午禮盒設計］ 以長久的粽型植栽為發想，粽久久又諧音“種久久” 禮盒造型取自傳統蒸籠，雙層設計採取上下開蓋的方式與主題long long",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/CwO5WUOPHpx",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午礼盒设计，包含礼盒造型",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "24d5dd822bbd",
-      "title": "端午粽子礼盒｜暖心送礼首选今年端午，把满满心意送给家人朋友 ...",
-      "category": "端午礼盒",
-      "summary": "搭配精致礼盒设计，送礼更显心意与品味。 礼盒内含： ✨ 2粒客家鲜肉粽✨ 2粒五谷杂粮粽✨ 2个野生艾草饼✨ 铁观音茶✨ 人参糖 免费定制木牌雕刻Logo / 名字",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/DY8pQ39zuAM",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午粽子礼盒，包含具体内容",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "06010b652870",
-      "title": "Artprint Studio | 端午节系列上线啦送礼包装细节，也是一种节日仪式 ...",
-      "category": "端午礼盒",
-      "summary": "让产品看起来更精致，也更有“节日限定”的感觉。 ✓ 本次设计包含： ▫️ 端午节异形卡片设计▫️ 产品名称/ 价格/ 卖点排版▫️ 适合印刷成桌牌、柜台牌、档口展示牌▫️",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/DY32YoEieSw",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午节系列包装设计，包含卡片等",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "d484375f6e12",
-      "title": "浩漢設計NOVA DESIGN on Instagram: \"【設計，充滿我們的每一天 ...",
-      "category": "端午礼盒",
-      "summary": "公司今年送給員工的端午禮物有我們設計師特別設計的禮盒腰封耶！ 端午節慶文字與龍舟巧妙生動地結合再將NOVA DESIGN的LOGO變成一道河象徵NOVA團隊將發揮",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/C73U4TJNxZp",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午礼盒腰封设计",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "1ecec3b5e534",
-      "title": "Sometimes a gift card is the perfect gift - Instagram",
-      "category": "卡包",
-      "summary": "This easy fabric card holder wallet is beginner-friendly, takes about an hour to make, and is perfect for gifts or everyday use. Step-by-step",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DRx9Zu-krjl",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为卡包/卡夹制作教程，产品明确",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "f1685979d784",
-      "title": "Leather Wallet Gift Ideas for Men - Instagram",
-      "category": "卡包",
-      "summary": "When choosing a leather wallet gift for men, focus on quality, durability, storage space, and classic design. Handmade genuine leather wallets",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DYgzNIykzFL",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为钱包/卡包礼品推荐，产品明确",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "ef8f3f6d90d1",
-      "title": "The cutest kind of gift is the one that quietly becomes ... - Instagram",
-      "category": "卡包",
-      "summary": "Comment “DFY” to order Customized wallet card, personalized gifts, aesthetic gifts, couple gifts, birthday gifts, memory gifts, photo wallet",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DXB5rpwTD1V",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为定制卡包/钱包，产品明确",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "69aab6e99318",
-      "title": "SECRID on Instagram: \"In a world addicted to new, the best gifts are ...",
-      "category": "卡包",
-      "summary": "Gift your loved ones with this modern & secure wallet that can hold 15 cards + cash to enable them to stay organized! Every time they use",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DRh2DKoDY_O",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为卡包/钱包产品，可容纳卡片",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "4ebf91cacff3",
-      "title": "This Valentine's gift smarter. A wallet he'll carry every day - Instagram",
-      "category": "卡包",
-      "summary": "Shop all men's wallets and enjoy 25% off for a limited time. 1 day ago. OCR. FATHER'S DAY GIFT IDEAS: WALLETS CARDHOLDER CARD HOLDER CARANL 2IN1",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DUipk8AD9XG",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为钱包/卡包礼品推荐，产品明确",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "372a44983a92",
-      "title": "Hidesign | Some gifts are for the moment, A wallet is for the journey.",
-      "category": "卡包",
-      "summary": "3 Fold Wallet Pocket size perfection✨ “Say goodbye to heavy pockets” •Crafted with precision •Designed for those who appreciate timeless",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/p/DWOlYXVGIUA",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为钱包产品，有具体描述",
-      "review_confidence": 5,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "e0e8b2f9c8a8",
-      "title": "Can a wallet be a meaningful gift? We think yes. Because it's ...",
-      "category": "卡包",
-      "summary": "... gift for mom and dad, custom leather wallet, name engraved wallet, handmade personalized gifts, useful gift ideas). May 24. OCR. POV : You",
-      "score": 0,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.instagram.com/reel/DObjtM9iohR",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为卡包/钱包，符合品类定义",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "卡包"
-      ]
-    },
-    {
-      "id": "c26a21a31257",
-      "title": "端午节粽子礼盒 Dragon Boat Festival Gift Set auf Instagram",
-      "category": "端午礼盒",
-      "summary": "1 x Artisan gift box 精美木礼盒 4 x Traditional rice dumplings 传统粽子 1 x Da Hong Pao tea bags 大红袍茶 1 x Pu Er tea dumplings 粽子茶 1 x",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/DYQglUajp4J?hl=de",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午节礼盒，包含粽子等",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
-      "id": "4176cfce29ee",
-      "title": "必唯你最“粽”要。 用心挑的端午节礼盒，TA一定会喜欢 ... - Instagram",
-      "category": "端午礼盒",
-      "summary": "用心挑的端午节礼盒，TA一定会喜欢！ 隆粽登场！GIFTBABE端午礼盒【乐在其粽】 ： 内含： 1.传统娘惹粽x2 2.红豆粽x2 3.燕窝x2 4.养生茶x3 5.手提竹编包包（可",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/reel/C6YZfYnxrAz",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午礼盒，含粽子等",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
-      "id": "04b6fed27871",
-      "title": "一份安康。 在粽叶清香里， 把团圆与思念，慢慢传递。 端午限定",
-      "category": "端午礼盒",
-      "summary": "🌿 端午限定,即将上线。 2 客家鲜肉粽🌾 2 五谷杂粮粽🌿 2 野生艾草饼🍬 8颗人参糖🍵 3 包 2 罐燕窝🪵. Gift 今年推出两款端午节礼盒",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/DYoPx0rSwui",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午礼盒，含粽子等",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
-      "id": "583877f2b840",
-      "title": "Sweet Zong Love 粽情蜜意｜端午限定礼盒 端午节，当然要有一点 ...",
-      "category": "端午礼盒",
-      "summary": "粽香入夏，端午安康把团圆与祝福装进礼盒 礼盒内容： 2 客家鲜肉粽 2 五谷杂粮粽 2 瑶柱蛋黄粽 2 野生艾草饼 人参糖 茉莉花茶 2 罐燕窝 艾草锤",
-      "score": 0,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.instagram.com/p/DYwoveSGDYU?img_index=4",
-      "source_name": "Instagram",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "明确为端午礼盒，含粽子等",
-      "review_confidence": 0,
-      "tags": [
-        "social_public_index",
-        "白名单来源"
       ]
     },
     {
@@ -57963,6 +58074,33 @@
       "tags": [
         "market_signal",
         "手机壳"
+      ]
+    },
+    {
+      "id": "5f8c5b5fcea8",
+      "title": "Blue Bottle Coffee：蓝瓶内地首辆咖啡车，就在杭州西子湖畔",
+      "category": "钥匙扣水壶",
+      "summary": "此外，经典的列日华夫也有同步供应。 蓝瓶咖啡车钥匙扣以及其它周边产品也将在咖啡车上发售。 蓝瓶咖啡车 杭州西湖湖滨站 地址：浙江省杭州市上城区湖滨步行街东坡路邮电路口 日期：12 月 10 日起 9:00-20:00（周一至周日）",
+      "score": 0,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.digitaling.com/projects/273706.html",
+      "source_name": "数英",
+      "source_family": "设计社区",
+      "source_type": "design_community",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "明确提到蓝瓶咖啡车钥匙扣及周边产品，属于钥匙扣水壶品类。",
+      "review_confidence": 0,
+      "tags": [
+        "design_community",
+        "白名单来源"
       ]
     },
     {
