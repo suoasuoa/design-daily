@@ -10,7 +10,7 @@ import time
 import urllib.error
 import urllib.request
 
-from insight_common import DATA_DIR, load_env, load_json, now_iso, write_json
+from insight_common import DATA_DIR, load_env, load_json, now_iso, today, write_json
 from insight_config import SCORING_PRINCIPLES, SELECTION_WEIGHTS
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
@@ -158,10 +158,26 @@ def deepseek_score(product, api_key):
     return result
 
 
+def score_priority(product):
+    current_day = today()
+    source = (product.get("sources") or [{}])[0]
+    has_score = bool(product.get("selection_scores"))
+    review_ok = product.get("review_status") in {"accepted", "auto", None, ""}
+    return (
+        0 if has_score else 1,
+        1 if product.get("first_seen") == current_day else 0,
+        1 if review_ok else 0,
+        1 if source.get("source_type") == "social_signal" else 0,
+        int(product.get("seen_count") or 0),
+        product.get("last_seen") or "",
+    )
+
+
 def score_products(products, limit=0, force=False, sleep=0.6):
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     scored = 0
-    for product in products:
+    queue = products if force else sorted(products, key=score_priority, reverse=True)
+    for product in queue:
         if limit and scored >= limit:
             break
         if product.get("selection_scores") and not force:
