@@ -181,7 +181,12 @@ DEEPSEEK_API_KEY
 
 每次都会先继续收集新线索，再做去重和审核；如果当前阶段的抖音/小红书/Instagram 公开内容页不足，会低量补采社媒公开索引；最后再按阶段目标刷新页面。手动运行用于修复当天数据，会直接按 30 条和 5 条社媒目标执行。
 
-日常自动化默认不消耗 Tavily credits，优先使用 RSS、白名单网站和免费公开搜索。只有手动运行工作流并把 `use_tavily` 设置为 `true` 时，才会使用 Tavily 做深度搜索。
+日常自动化默认不消耗 Tavily credits，优先使用 RSS、白名单网站和免费元搜索。搜索后端优先级是：
+
+1. `SEARXNG_BASE_URL`：如果配置了自托管 SearXNG，就优先走自己的搜索中台。
+2. `ddgs`：默认免费元搜索后端，由 GitHub Actions 自动安装。
+3. DuckDuckGo HTML：最后兜底。
+4. `TAVILY_API_KEY`：只有手动运行工作流并把 `use_tavily` 设置为 `true` 时才会启用。
 
 这意味着 08:30、13:30、17:30 不是三次重复推送，而是三次数据积累和刷新。18:00 的飞书群推送只读取当天已经完成的 30 条，并选出 Top 5。
 
@@ -191,6 +196,7 @@ DEEPSEEK_API_KEY
 
 - `score_limit`：本轮最多评分多少个产品
 - `search_jobs`：本轮跑多少个公开网页搜索任务
+- `use_tavily`：是否使用 Tavily credits 做手动深搜，默认 `false`
 
 自动化成功后会把数据、周报和页面提交回 `main` 分支，并通过 GitHub Pages 发布。
 
@@ -261,6 +267,14 @@ FEISHU_WEBHOOK_URL="你的 webhook" python3 scripts/push_feishu_daily.py
 社媒内容的口径会更开放一些：热度高、好看、有趣、种草、概念性产品、DIY/手作/改造内容都可以进入候选池，但必须能看出明确物件、明确使用场景，或对包装、结构、功能、外观有可转化启发。纯娱乐、纯生活记录、无明确物件的内容不会入池。
 
 注意：公开索引不是平台内全量搜索，只能覆盖被搜索引擎收录的公开内容。系统会把社媒公开索引作为每日补充配额，但不会为了凑数牺牲品类准确性。如果当天公开索引找不到足够多的真实内容页，脚本会保留真实结果并打印 warning，不会伪造链接或把搜索页当成产品。
+
+如果要让公开搜索更稳定，推荐配置自托管 SearXNG：
+
+```text
+SEARXNG_BASE_URL=https://你的-searxng-地址
+```
+
+不配置 SearXNG 也可以运行，GitHub Actions 会自动安装 `ddgs` 作为免费元搜索后端。
 
 如果要做手动深度搜索，可以配置 Tavily 搜索 API：
 

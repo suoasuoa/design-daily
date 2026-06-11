@@ -167,10 +167,21 @@ def is_product_like_url(url):
 
 
 def fetch_results(query, timeout=6):
+    searxng_url = os.environ.get("SEARXNG_BASE_URL", "").strip()
+    if searxng_url:
+        try:
+            return fetch_searxng_results(query, searxng_url, timeout=max(10, timeout))
+        except Exception as exc:
+            print(f"searxng fallback for {query}: {exc}", flush=True)
+
     tavily_key = os.environ.get("TAVILY_API_KEY", "").strip()
     use_tavily = os.environ.get("USE_TAVILY_SEARCH", "").strip().lower() in {"1", "true", "yes"}
     if tavily_key and use_tavily:
         return fetch_tavily_results(query, tavily_key, timeout=max(15, timeout))
+    try:
+        return fetch_ddgs_results(query, timeout=max(10, timeout))
+    except Exception as exc:
+        print(f"ddgs fallback for {query}: {exc}", flush=True)
     url = "https://duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
     req = urllib.request.Request(
         url,
@@ -184,6 +195,53 @@ def fetch_results(query, timeout=6):
     parser = DuckDuckGoParser()
     parser.feed(html)
     return parser.results
+
+
+def fetch_searxng_results(query, base_url, timeout=10):
+    base_url = base_url.rstrip("/")
+    url = base_url + "/search?" + urllib.parse.urlencode(
+        {
+            "q": query,
+            "format": "json",
+            "language": "zh-CN",
+            "safesearch": 1,
+        }
+    )
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 DesignDailyInsight/1.0",
+            "Accept": "application/json",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=timeout, context=SSL_CONTEXT) as resp:
+        payload = json.loads(resp.read().decode("utf-8", errors="replace"))
+    results = []
+    for item in payload.get("results", []):
+        results.append(
+            {
+                "url": item.get("url", ""),
+                "title": item.get("title", ""),
+                "snippet": item.get("content", ""),
+            }
+        )
+    return results
+
+
+def fetch_ddgs_results(query, timeout=10):
+    from ddgs import DDGS
+
+    results = []
+    with DDGS(timeout=timeout, verify=False) as ddgs:
+        for item in ddgs.text(query, region="cn-zh", safesearch="moderate", max_results=8):
+            results.append(
+                {
+                    "url": item.get("href") or item.get("url") or "",
+                    "title": item.get("title", ""),
+                    "snippet": item.get("body") or item.get("snippet") or "",
+                }
+            )
+    return results
 
 
 def fetch_tavily_results(query, api_key, timeout=20):
