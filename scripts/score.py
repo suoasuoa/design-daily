@@ -161,11 +161,12 @@ def deepseek_score(product, api_key):
 def score_priority(product):
     current_day = today()
     source = (product.get("sources") or [{}])[0]
-    has_score = bool(product.get("selection_scores"))
+    score_value = int(product.get("selection_score") or 0)
+    needs_score = not product.get("selection_scores") or score_value <= 0
     review_ok = product.get("review_status") in {"accepted", "auto", None, ""}
     return (
-        0 if has_score else 1,
         1 if product.get("first_seen") == current_day else 0,
+        1 if needs_score else 0,
         1 if review_ok else 0,
         1 if source.get("source_type") == "social_signal" else 0,
         int(product.get("seen_count") or 0),
@@ -180,7 +181,9 @@ def score_products(products, limit=0, force=False, sleep=0.6):
     for product in queue:
         if limit and scored >= limit:
             break
-        if product.get("selection_scores") and not force:
+        current_day = today()
+        score_value = int(product.get("selection_score") or 0)
+        if product.get("selection_scores") and score_value > 0 and not force:
             continue
         try:
             if api_key:
