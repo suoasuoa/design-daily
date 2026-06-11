@@ -19,12 +19,12 @@ STRUCTURE_WORDS = ["结构", "structure", "支架", "frame", "fold", "hinge", "a
 EMOTION_WORDS = ["可爱", "cute", "温暖", "warm", "治愈", "playful", "surprise", "惊喜", "趣味", "幽默", "氛围"]
 VISUAL_WORDS = ["纹理", "texture", "color", "颜色", "graphic", "图形", "surface", "材质", "finish"]
 DAILY_SOURCE_QUOTAS = {
-    "社交灵感": 5,
+    "社交灵感": 0,
     "市场信号": 6,
     "媒体案例": 6,
     "奖项案例": 5,
     "设计社区": 4,
-    "包装专项": 4,
+    "包装专项": 9,
 }
 
 
