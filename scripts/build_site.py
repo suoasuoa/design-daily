@@ -37,6 +37,7 @@ DAILY_SOURCE_QUOTAS = {
 }
 DAILY_CATEGORY_CAPS = {
     "T恤": 2,
+    "Polo衫": 2,
     "装置艺术": 3,
 }
 DEFAULT_DAILY_CATEGORY_CAP = 4
@@ -249,8 +250,8 @@ def category_under_cap(picks, category, relaxed=False):
     return Counter(pick["category"] for pick in picks).get(category, 0) < cap
 
 
-def t_shirt_display_eligible(item):
-    if item.get("category") != "T恤":
+def apparel_top_display_eligible(item):
+    if item.get("category") not in {"T恤", "Polo衫"}:
         return True
     text = " ".join(
         [
@@ -268,7 +269,7 @@ def t_shirt_display_eligible(item):
 def display_eligible(item):
     if not social_display_eligible(item):
         return False
-    if not t_shirt_display_eligible(item):
+    if not apparel_top_display_eligible(item):
         return False
     return True
 
