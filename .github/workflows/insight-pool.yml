@@ -57,9 +57,16 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python3 scripts/review_categories.py --batch-size 20
 
+      - name: Ensure daily 10 public social picks
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+        run: python3 scripts/ensure_daily_social_minimum.py --target 10 --batch-jobs 140 --per-job 8 --max-passes 4 --sleep 0.05 --workers 8
+
       - name: Ensure daily 30 accepted picks
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: python3 scripts/ensure_daily_minimum.py --target 30 --batch-jobs 260 --per-job 8 --max-passes 4 --sleep 0.05 --workers 8
 
       - name: Enrich missing product images

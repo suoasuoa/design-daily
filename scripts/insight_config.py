@@ -303,12 +303,15 @@ SEARCH_SOURCE_GROUPS = {
         "site:etsy.com/listing",
     ],
     "social_public_index": [
-        "site:douyin.com 好物",
-        "site:douyin.com 种草",
-        "site:xiaohongshu.com 好物",
-        "site:xiaohongshu.com 种草",
-        "site:instagram.com product design",
-        "site:instagram.com gift ideas",
+        "site:douyin.com/video 好物",
+        "site:douyin.com/video 种草",
+        "site:douyin.com/video 开箱",
+        "site:xiaohongshu.com/explore 好物",
+        "site:xiaohongshu.com/explore 种草",
+        "site:xiaohongshu.com/discovery/item 好物",
+        "site:instagram.com/p product design",
+        "site:instagram.com/reel product ideas",
+        "site:instagram.com/reel gift ideas",
     ],
 }
 
