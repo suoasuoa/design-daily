@@ -74,6 +74,10 @@ def main():
     args = parser.parse_args()
 
     ensure_dirs()
+    if args.target <= 0:
+        print("social_minimum skipped target=0", flush=True)
+        return
+
     jobs = social_jobs()
     if not jobs:
         raise SystemExit("No social_public_index jobs found. Run scripts/search_jobs.py first.")
