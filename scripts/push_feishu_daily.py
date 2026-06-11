@@ -291,6 +291,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=30, help="Maximum daily picks to push.")
     parser.add_argument("--top-limit", type=int, default=5, help="Number of highlighted picks in the card.")
+    parser.add_argument("--min-count", type=int, default=1, help="Skip push unless the latest daily group has at least this many items.")
     parser.add_argument("--chunk-size", type=int, default=10, help="Items per Feishu message.")
     parser.add_argument("--format", choices=["card", "post"], default="card", help="Feishu message format.")
     parser.add_argument("--no-images", action="store_true", help="Disable external image elements in Feishu cards.")
@@ -308,6 +309,9 @@ def main():
     items = (group.get("items") or [])[: args.limit]
     if not items:
         print("feishu_push=skipped reason=no_items")
+        return
+    if len(items) < args.min_count:
+        print(f"feishu_push=skipped reason=below_min_count items={len(items)} min_count={args.min_count}")
         return
 
     date = group.get("date") or "今日"
