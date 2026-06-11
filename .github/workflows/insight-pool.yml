@@ -43,21 +43,21 @@ jobs:
           case "${{ github.event.schedule }}" in
             "30 0 * * *")
               echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=2" >> "$GITHUB_ENV"
+              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=60" >> "$GITHUB_ENV"
               echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               ;;
             "30 5 * * *")
               echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=3" >> "$GITHUB_ENV"
+              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=80" >> "$GITHUB_ENV"
               echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               ;;
             *)
               echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=5" >> "$GITHUB_ENV"
+              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=${{ github.event.inputs.search_jobs || '120' }}" >> "$GITHUB_ENV"
               echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '45' }}" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
