@@ -18,6 +18,15 @@ PACKAGING_WORDS = ["包装", "packaging", "box", "gift", "礼盒", "套装", "mo
 STRUCTURE_WORDS = ["结构", "structure", "支架", "frame", "fold", "hinge", "assembly", "模块", "shelf"]
 EMOTION_WORDS = ["可爱", "cute", "温暖", "warm", "治愈", "playful", "surprise", "惊喜", "趣味", "幽默", "氛围"]
 VISUAL_WORDS = ["纹理", "texture", "color", "颜色", "graphic", "图形", "surface", "材质", "finish"]
+TEE_FEATURE_WORDS = [
+    "graphic", "图案", "印花", "print", "联名", "collab", "collaboration", "限量", "limited",
+    "结构", "cut", "材质", "material", "recycled", "反光", "reflective", "3d", "立体",
+    "interactive", "互动", "custom", "定制", "humor", "幽默", "concept", "概念",
+]
+TEE_REJECT_WORDS = [
+    "basic", "plain", "crew", "crewneck", "short sleeve", "短袖", "基础", "纯色",
+    "clip", "blank", "logo tee", "regular fit",
+]
 DAILY_SOURCE_QUOTAS = {
     "社交灵感": 0,
     "市场信号": 6,
@@ -26,6 +35,11 @@ DAILY_SOURCE_QUOTAS = {
     "设计社区": 4,
     "包装专项": 9,
 }
+DAILY_CATEGORY_CAPS = {
+    "T恤": 2,
+    "装置艺术": 3,
+}
+DEFAULT_DAILY_CATEGORY_CAP = 4
 
 
 def sorted_products(products):
@@ -224,6 +238,41 @@ def social_display_eligible(item):
     return not any(token in text for token in weak_titles)
 
 
+def category_display_cap(category):
+    return DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP)
+
+
+def category_under_cap(picks, category, relaxed=False):
+    cap = category_display_cap(category)
+    if relaxed and category not in DAILY_CATEGORY_CAPS:
+        cap += 2
+    return Counter(pick["category"] for pick in picks).get(category, 0) < cap
+
+
+def t_shirt_display_eligible(item):
+    if item.get("category") != "T恤":
+        return True
+    text = " ".join(
+        [
+            item.get("title", ""),
+            item.get("summary", ""),
+            " ".join(item.get("tags", [])),
+        ]
+    ).lower()
+    score = int(item.get("score") or 0)
+    if any(word.lower() in text for word in TEE_REJECT_WORDS):
+        return False
+    return score >= 72 and any(word.lower() in text for word in TEE_FEATURE_WORDS)
+
+
+def display_eligible(item):
+    if not social_display_eligible(item):
+        return False
+    if not t_shirt_display_eligible(item):
+        return False
+    return True
+
+
 def compact_weekly_report(report):
     if not report:
         return {}
@@ -261,7 +310,7 @@ def build_daily_groups(items, per_day=30, max_days=30):
         ranked = [
             item
             for item in sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
-            if social_display_eligible(item)
+            if display_eligible(item)
         ]
 
         for family, quota in DAILY_SOURCE_QUOTAS.items():
@@ -272,6 +321,8 @@ def build_daily_groups(items, per_day=30, max_days=30):
                     continue
                 key = dedupe_key(item)
                 if key in seen:
+                    continue
+                if not category_under_cap(picks, item["category"]):
                     continue
                 seen.add(key)
                 picks.append(item)
@@ -288,6 +339,22 @@ def build_daily_groups(items, per_day=30, max_days=30):
                 continue
             key = dedupe_key(item)
             if key in seen:
+                continue
+            if not category_under_cap(picks, item["category"]):
+                continue
+            seen.add(key)
+            picks.append(item)
+
+        for item in ranked:
+            if len(picks) >= per_day:
+                break
+            family = item["source_family"]
+            if family == "社交灵感" and len([pick for pick in picks if pick["source_family"] == family]) >= DAILY_SOURCE_QUOTAS[family]:
+                continue
+            key = dedupe_key(item)
+            if key in seen:
+                continue
+            if not category_under_cap(picks, item["category"], relaxed=True):
                 continue
             seen.add(key)
             picks.append(item)
