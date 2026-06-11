@@ -104,7 +104,7 @@ jobs:
         run: python3 scripts/ensure_daily_minimum.py --target "$DAILY_TARGET" --batch-jobs 80 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
 
       - name: Enrich missing product images
-        run: python3 scripts/enrich_images.py --limit 140
+        run: python3 scripts/enrich_images.py --limit 50
 
       - name: Score products
         env:
