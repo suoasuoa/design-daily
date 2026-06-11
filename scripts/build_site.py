@@ -284,6 +284,8 @@ def build_daily_groups(items, per_day=30, max_days=30):
             if len(picks) >= per_day:
                 break
             family = item["source_family"]
+            if family == "社交灵感" and len([pick for pick in picks if pick["source_family"] == family]) >= DAILY_SOURCE_QUOTAS[family]:
+                continue
             key = dedupe_key(item)
             if key in seen:
                 continue
