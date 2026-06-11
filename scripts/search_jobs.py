@@ -4,6 +4,7 @@
 import argparse
 from collections import defaultdict, deque
 import datetime as dt
+import os
 import urllib.parse
 from zoneinfo import ZoneInfo
 
@@ -29,6 +30,7 @@ def build_jobs(categories=None, per_category=4):
     categories = categories or CATEGORIES
     jobs = []
     current_day = today()
+    enable_social = os.environ.get("ENABLE_SOCIAL_PUBLIC_SEARCH", "").strip().lower() in {"1", "true", "yes"}
     for category in categories:
         base_queries = SEARCH_QUERY_PATTERNS.get(category, [category])
         for query in base_queries[: max(1, min(per_category, 3))]:
@@ -50,7 +52,7 @@ def build_jobs(categories=None, per_category=4):
             category,
             ["editorial_main", "award_gallery", "design_community", "market_signal"],
         )
-        if "social_public_index" not in group_names:
+        if enable_social and "social_public_index" not in group_names:
             group_names = list(group_names) + ["social_public_index"]
         for group_name in group_names:
             sites = SEARCH_SOURCE_GROUPS.get(group_name, [])
