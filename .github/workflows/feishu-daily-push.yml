@@ -5,6 +5,9 @@ on:
     # 18:00 Beijing time.
     - cron: "0 10 * * *"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Insight Pool"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -15,6 +18,12 @@ concurrency:
 
 jobs:
   push-feishu-daily:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (
+        github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.event == 'schedule'
+      )
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,4 +36,4 @@ jobs:
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
-        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --format card --no-images
+        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --min-count 30 --format card --no-images
