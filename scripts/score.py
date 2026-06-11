@@ -174,10 +174,36 @@ def score_priority(product):
     )
 
 
+def daily_display_ids(products):
+    try:
+        from build_site import build_daily_groups, record, sorted_products
+    except Exception:
+        return set()
+    try:
+        items = [record(item) for item in sorted_products(products)]
+        groups = build_daily_groups(items, per_day=30, max_days=1)
+    except Exception:
+        return set()
+    if not groups:
+        return set()
+    return {item.get("id") for item in groups[0].get("items", []) if item.get("id")}
+
+
 def score_products(products, limit=0, force=False, sleep=0.6):
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     scored = 0
-    queue = products if force else sorted(products, key=score_priority, reverse=True)
+    if force:
+        queue = products
+    else:
+        priority_ids = daily_display_ids(products)
+        queue = sorted(
+            products,
+            key=lambda product: (
+                1 if product.get("id") in priority_ids else 0,
+                *score_priority(product),
+            ),
+            reverse=True,
+        )
     for product in queue:
         if limit and scored >= limit:
             break
