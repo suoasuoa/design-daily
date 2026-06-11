@@ -11,7 +11,7 @@ on:
       score_limit:
         description: "Maximum products to score this run"
         required: true
-        default: "120"
+        default: "45"
       search_jobs:
         description: "Open-web search jobs to run"
         required: true
@@ -59,7 +59,7 @@ jobs:
               echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=5" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=${{ github.event.inputs.search_jobs || '120' }}" >> "$GITHUB_ENV"
-              echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '120' }}" >> "$GITHUB_ENV"
+              echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '45' }}" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
                 echo "USE_TAVILY_SEARCH=1" >> "$GITHUB_ENV"
               else
