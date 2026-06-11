@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T13:40:16+08:00",
+  "generated_at": "2026-06-11T13:47:02+08:00",
   "week": "2026-W24",
   "group_id": "2026-W24",
   "date_start": "2026-06-08",
@@ -16,30 +16,30 @@
       "方向参考": 25
     },
     "by_category": {
+      "氛围灯": 13,
       "创意厨具": 12,
       "创意礼盒": 12,
-      "氛围灯": 12,
       "水杯": 12,
       "装置艺术": 9,
       "端午礼盒": 8,
-      "中秋礼盒": 5,
+      "中秋礼盒": 6,
       "创意桌搭": 5,
       "冲锋衣": 5,
       "卡包": 4,
-      "充电宝": 3,
       "收纳包": 3,
       "T恤": 3,
       "Polo衫": 2,
       "帽子": 2,
       "卫衣": 2,
-      "日历": 1
+      "日历": 1,
+      "充电宝": 1
     },
     "by_axis": {
-      "功能启发": 38,
-      "包装启发": 31,
-      "结构启发": 23,
+      "功能启发": 36,
+      "包装启发": 30,
+      "结构启发": 22,
       "视觉启发": 17,
-      "情绪启发": 14
+      "情绪启发": 15
     }
   },
   "dedupe": {
@@ -235,33 +235,6 @@
       ]
     },
     {
-      "id": "d34f66817e8e",
-      "product_key": null,
-      "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
-      "category": "充电宝",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "score": 78,
-      "score_label": "7.8",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
-      "image": "",
-      "summary": "充电宝实用高频，定制化增加社交属性，价格超35元，功能无明显短板，但情绪价值需依赖定制设计，存在审美风险。",
-      "risk": "明确为定制充电宝，符合品类。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "充电宝",
-        "定制",
-        "社交货币",
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
       "id": "ef738cff39b6",
       "product_key": null,
       "title": "杏花楼 粽意礼盒",
@@ -397,33 +370,6 @@
       "tags": [
         "咖啡",
         "星巴克"
-      ]
-    },
-    {
-      "id": "ff98e1438ef4",
-      "product_key": null,
-      "title": "谁会想到充电宝也能定制？ 名字 Logo 图案 人物画像都能变 ...",
-      "category": "充电宝",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "score": 76,
-      "score_label": "7.6",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "url": "https://www.instagram.com/reel/DY6m417SW5k",
-      "image": "",
-      "summary": "充电宝实用性强，高频使用，定制化满足企业礼品和个性化需求，价格大概率超35元，3秒看懂，功能无短板，但情绪价值一般。",
-      "risk": "明确为定制充电宝，符合品类。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "定制化",
-        "企业礼品",
-        "社媒爆款",
-        "social_public_index",
-        "充电宝"
       ]
     },
     {
@@ -604,13 +550,13 @@
       "source_family": "社交灵感",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景，受众广；功能无明显短板，售价预计超35元；3秒看懂操作，情绪价值中等，主要依赖功能本身。",
+      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景，受众广；功能明确无短板；预估售价超35元；3秒可理解成型方式；情绪价值中等，但功能优先。",
       "risk": "折叠盒定制，明确为创意礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "创意礼盒",
         "折叠盒",
-        "定制包装",
+        "包装定制",
         "礼品包装",
         "social_public_index",
         "白名单来源"
@@ -752,6 +698,52 @@
       "tags": [
         "创意礼盒",
         "抖音"
+      ]
+    },
+    {
+      "id": "1df693a9c8ad",
+      "product_key": null,
+      "title": "TWG Tea 中秋礼盒",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.twgtea.com",
+      "image": "https://media.twgtea.com/images/default-source/illustrations-icons/twg-logo/1200x630--twg-teas-logo.jpg?sfvrsn=45d40125_2",
+      "summary": "Instagram · 新加坡顶级茶叶中秋礼盒",
+      "risk": "产品标题为中秋礼盒，符合品类定义。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "中秋礼盒"
+      ]
+    },
+    {
+      "id": "280a792c0c52",
+      "product_key": null,
+      "title": "BYREDO 香氛礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.byredo.com/us_en/gifts",
+      "image": "https://www.byredo.com/cdn-cgi/image/format=auto,quality=70/https://www.byredo.com/media/catalog/product/cache/538055185084634e259189a2a72f806b/b/y/byredo_ecom_giftcard__.jpg",
+      "summary": "Instagram · 瑞典小众香氛礼品套装",
+      "risk": "香氛礼盒属于创意礼盒品类。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Instagram",
+        "创意礼盒"
       ]
     },
     {
@@ -1588,30 +1580,6 @@
       ]
     },
     {
-      "id": "100a91c8a510",
-      "product_key": null,
-      "title": "Elthy™ Series",
-      "category": "创意礼盒",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "url": "https://ifdesign.com/en/winner-ranking/project/elthy-series/768588",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1164274/768588/3591f237-f59c-4a68-9f68-4d94a36b6001/elthy-my_days.co_2.jpg",
-      "summary": "iF Design Award · The Elthy™ Series packaging is designed to embody the brand vision — a playground for adults. It experiments with bold material ideas using recycled paper pulp as the core structure, forming both its tactile and symbolic character. The design embrac",
-      "risk": "包装系列属于创意礼盒",
-      "next_action": "拆解包装结构和开箱动线，做二次主题化",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
       "id": "db0b9753cf96",
       "product_key": null,
       "title": "Honeycomb Lifting LED Light Box",
@@ -1794,6 +1762,29 @@
       "tags": [
         "Behance",
         "T恤"
+      ]
+    },
+    {
+      "id": "8f536fc8b12d",
+      "product_key": null,
+      "title": "极简纸灯",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "url": "https://www.muji.com/jp/ja/store/cmdty/section/S106010102",
+      "image": "",
+      "summary": "Pinterest · 日本和纸极简落地灯",
+      "risk": "明确属于氛围灯品类",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Pinterest",
+        "氛围灯"
       ]
     },
     {
