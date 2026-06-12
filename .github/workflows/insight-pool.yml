@@ -6,11 +6,10 @@ on:
     - cron: "30 0 * * *"
     - cron: "30 5 * * *"
     - cron: "30 9 * * *"
-    # Backup runs: 09:10, 14:10, 18:10, and 21:10 Beijing time.
+    # Backup checks for the same three phases. They skip if the phase target is already met.
     - cron: "10 1 * * *"
     - cron: "10 6 * * *"
     - cron: "10 10 * * *"
-    - cron: "10 13 * * *"
   workflow_dispatch:
     inputs:
       score_limit:
@@ -60,7 +59,7 @@ jobs:
               echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               ;;
-            "30 9 * * *"|"10 10 * * *"|"10 13 * * *")
+            "30 9 * * *"|"10 10 * * *")
               echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=120" >> "$GITHUB_ENV"
