@@ -2,10 +2,15 @@ name: Insight Pool
 
 on:
   schedule:
-    # 08:30, 13:30, and 17:30 Beijing time.
+    # Main runs: 08:30, 13:30, and 17:30 Beijing time.
     - cron: "30 0 * * *"
     - cron: "30 5 * * *"
     - cron: "30 9 * * *"
+    # Backup runs: 09:10, 14:10, 18:10, and 21:10 Beijing time.
+    - cron: "10 1 * * *"
+    - cron: "10 6 * * *"
+    - cron: "10 10 * * *"
+    - cron: "10 13 * * *"
   workflow_dispatch:
     inputs:
       score_limit:
@@ -41,18 +46,25 @@ jobs:
       - name: Set phased daily targets
         run: |
           case "${{ github.event.schedule }}" in
-            "30 0 * * *")
+            "30 0 * * *"|"10 1 * * *")
               echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=60" >> "$GITHUB_ENV"
               echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               ;;
-            "30 5 * * *")
+            "30 5 * * *"|"10 6 * * *")
               echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=80" >> "$GITHUB_ENV"
               echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
+              echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
+              ;;
+            "30 9 * * *"|"10 10 * * *"|"10 13 * * *")
+              echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
+              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
+              echo "SEARCH_JOBS=120" >> "$GITHUB_ENV"
+              echo "SCORE_LIMIT=45" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               ;;
             *)
@@ -68,19 +80,58 @@ jobs:
               ;;
           esac
 
+      - name: Skip completed scheduled phase
+        run: |
+          python3 - <<'PY'
+          import datetime as dt
+          import json
+          import os
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          target = int(os.environ.get("DAILY_TARGET", "30"))
+          event_name = os.environ.get("GITHUB_EVENT_NAME", "")
+          today = dt.datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+          skip = False
+          reason = "manual_or_incomplete"
+
+          if event_name == "schedule":
+              path = Path("insight/data.raw.json")
+              if path.exists():
+                  data = json.loads(path.read_text(encoding="utf-8"))
+                  group = (data.get("daily_groups") or [{}])[0]
+                  actual = int(group.get("actual_count") or len(group.get("items") or []))
+                  if group.get("date") == today and actual >= target:
+                      skip = True
+                      reason = f"today_target_already_met date={today} actual={actual} target={target}"
+                  else:
+                      reason = f"needs_run date={group.get('date')} actual={actual} target={target} today={today}"
+              else:
+                  reason = "no_existing_dashboard_data"
+
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as f:
+              f.write(f"SKIP_INSIGHT={'1' if skip else '0'}\n")
+          print(f"skip_insight={skip} reason={reason}")
+          PY
+
       - name: Collect public leads
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/collect_public.py
 
       - name: Collect curated product pages
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/collect_curated_pages.py --limit 120
 
       - name: Generate search job matrix
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/search_jobs.py
 
       - name: Install free search backend
+        if: env.SKIP_INSIGHT != '1'
         run: python3 -m pip install -q ddgs
 
       - name: Collect open-web search leads
+        if: env.SKIP_INSIGHT != '1'
         timeout-minutes: 60
         env:
           SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
@@ -88,14 +139,17 @@ jobs:
         run: python3 scripts/collect_search.py --limit-jobs "$SEARCH_JOBS" --per-job 4 --sleep 0.1 --workers 4
 
       - name: Dedupe product pool
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/dedupe.py
 
       - name: Review category fit
+        if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python3 scripts/review_categories.py --batch-size 20
 
       - name: Ensure phased public social picks
+        if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
@@ -103,6 +157,7 @@ jobs:
         run: python3 scripts/ensure_daily_social_minimum.py --target "$SOCIAL_TARGET" --batch-jobs 50 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
 
       - name: Ensure phased daily accepted picks
+        if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
@@ -110,28 +165,35 @@ jobs:
         run: python3 scripts/ensure_daily_minimum.py --target "$DAILY_TARGET" --batch-jobs 80 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
 
       - name: Enrich missing product images
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/enrich_images.py --limit 50
 
       - name: Score products
+        if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python3 scripts/score.py --limit "$SCORE_LIMIT"
 
       - name: Generate trend report
+        if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python3 scripts/trend_agent.py --limit 100
 
       - name: Build static insight dashboard
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/build_site.py
 
       - name: Generate weekly 100-pick report
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/weekly_report.py --limit 100
 
       - name: Rebuild dashboard with weekly report
+        if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/build_site.py
 
       - name: Commit data and dashboard
+        if: env.SKIP_INSIGHT != '1'
         run: |
           git config user.name "design-insight-bot"
           git config user.email "bot@design-digest.com"
