@@ -9,6 +9,8 @@ import json
 import os
 import ssl
 import time
+import datetime as dt
+from zoneinfo import ZoneInfo
 import urllib.error
 import urllib.request
 
@@ -292,6 +294,7 @@ def main():
     parser.add_argument("--limit", type=int, default=30, help="Maximum daily picks to push.")
     parser.add_argument("--top-limit", type=int, default=5, help="Number of highlighted picks in the card.")
     parser.add_argument("--min-count", type=int, default=1, help="Skip push unless the latest daily group has at least this many items.")
+    parser.add_argument("--require-today", action="store_true", help="Skip push unless the latest daily group date is today in Asia/Shanghai.")
     parser.add_argument("--chunk-size", type=int, default=10, help="Items per Feishu message.")
     parser.add_argument("--format", choices=["card", "post"], default="card", help="Feishu message format.")
     parser.add_argument("--no-images", action="store_true", help="Disable external image elements in Feishu cards.")
@@ -306,6 +309,13 @@ def main():
         print("feishu_push=skipped reason=no_daily_group")
         return
 
+    date = group.get("date") or "今日"
+    if args.require_today:
+        current_day = dt.datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+        if date != current_day:
+            print(f"feishu_push=skipped reason=not_today date={date} today={current_day}")
+            return
+
     items = (group.get("items") or [])[: args.limit]
     if not items:
         print("feishu_push=skipped reason=no_items")
@@ -314,7 +324,6 @@ def main():
         print(f"feishu_push=skipped reason=below_min_count items={len(items)} min_count={args.min_count}")
         return
 
-    date = group.get("date") or "今日"
     total = len(items)
     highlighted = top_items(items, args.top_limit)
     title_prefix = f"Design Daily｜{date} 最推荐 5 个选品"
