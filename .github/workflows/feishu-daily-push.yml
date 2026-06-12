@@ -2,11 +2,8 @@ name: Feishu Daily Push
 
 on:
   schedule:
-    # 18:00 Beijing time.
-    - cron: "0 10 * * *"
-    # Backup windows in case GitHub delays or misses the first schedule.
+    # 18:30 Beijing time.
     - cron: "30 10 * * *"
-    - cron: "20 13 * * *"
   workflow_dispatch:
 
 permissions:
