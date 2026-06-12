@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 import urllib.error
 import urllib.request
 
-from insight_common import INSIGHT_DIR, load_env, load_json
+from insight_common import INSIGHT_DIR, load_env, load_json, write_json
 
 
 SITE_URL = "https://suoasuoa.github.io/design-daily/insight/"
@@ -295,6 +295,8 @@ def main():
     parser.add_argument("--top-limit", type=int, default=5, help="Number of highlighted picks in the card.")
     parser.add_argument("--min-count", type=int, default=1, help="Skip push unless the latest daily group has at least this many items.")
     parser.add_argument("--require-today", action="store_true", help="Skip push unless the latest daily group date is today in Asia/Shanghai.")
+    parser.add_argument("--not-before-hour", type=int, default=None, help="Skip push before this Asia/Shanghai hour.")
+    parser.add_argument("--sent-log", default="", help="JSON file used to skip duplicate same-day pushes.")
     parser.add_argument("--chunk-size", type=int, default=10, help="Items per Feishu message.")
     parser.add_argument("--format", choices=["card", "post"], default="card", help="Feishu message format.")
     parser.add_argument("--no-images", action="store_true", help="Disable external image elements in Feishu cards.")
@@ -310,10 +312,21 @@ def main():
         return
 
     date = group.get("date") or "今日"
+    now = dt.datetime.now(ZoneInfo("Asia/Shanghai"))
+    if args.not_before_hour is not None and now.hour < args.not_before_hour:
+        print(f"feishu_push=skipped reason=before_window hour={now.hour} not_before_hour={args.not_before_hour}")
+        return
     if args.require_today:
-        current_day = dt.datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+        current_day = now.date().isoformat()
         if date != current_day:
             print(f"feishu_push=skipped reason=not_today date={date} today={current_day}")
+            return
+
+    sent_log = {}
+    if args.sent_log:
+        sent_log = load_json(args.sent_log, {})
+        if sent_log.get(date, {}).get("sent"):
+            print(f"feishu_push=skipped reason=already_sent date={date} sent_at={sent_log[date].get('sent_at', '')}")
             return
 
     items = (group.get("items") or [])[: args.limit]
@@ -346,6 +359,15 @@ def main():
             result = send_post(webhook_url, secret, title_prefix, fallback)
         else:
             result = send_card(webhook_url, secret, title_prefix, card_elements(group, highlighted, total, not args.no_images))
+        if args.sent_log:
+            sent_log[date] = {
+                "sent": True,
+                "sent_at": now.isoformat(timespec="seconds"),
+                "format": args.format,
+                "top_limit": len(highlighted),
+                "total": total,
+            }
+            write_json(args.sent_log, sent_log)
         print(f"feishu_push=sent format={args.format} top={len(highlighted)} result={result}")
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError) as exc:
         raise SystemExit(f"feishu_push=failed error={exc}") from exc
