@@ -5,6 +5,7 @@ import argparse
 import subprocess
 import sys
 
+from build_site import build_daily_groups, record, sorted_products
 from insight_common import DATA_DIR, load_json, today
 
 
@@ -16,7 +17,12 @@ def run(cmd):
 def today_count():
     products = load_json(DATA_DIR / "products.json", [])
     current_day = today()
-    return sum(1 for item in products if item.get("first_seen") == current_day)
+    items = [record(item) for item in sorted_products(products)]
+    groups = build_daily_groups(items, per_day=30, max_days=1)
+    for group in groups:
+        if group.get("date") == current_day:
+            return int(group.get("actual_count") or len(group.get("items") or []))
+    return 0
 
 
 def job_count():
