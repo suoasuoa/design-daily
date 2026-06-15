@@ -44,29 +44,7 @@ jobs:
 
       - name: Set phased daily targets
         run: |
-          case "${{ github.event.schedule }}" in
-            "30 0 * * *"|"10 1 * * *")
-              echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
-              echo "SEARCH_JOBS=60" >> "$GITHUB_ENV"
-              echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
-              echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
-              ;;
-            "30 5 * * *"|"10 6 * * *")
-              echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
-              echo "SEARCH_JOBS=80" >> "$GITHUB_ENV"
-              echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
-              echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
-              ;;
-            "30 9 * * *"|"10 10 * * *")
-              echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
-              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
-              echo "SEARCH_JOBS=120" >> "$GITHUB_ENV"
-              echo "SCORE_LIMIT=45" >> "$GITHUB_ENV"
-              echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
-              ;;
-            *)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
               echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "SEARCH_JOBS=${{ github.event.inputs.search_jobs || '120' }}" >> "$GITHUB_ENV"
@@ -76,8 +54,25 @@ jobs:
               else
                 echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               fi
-              ;;
-          esac
+          else
+              bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
+              if [ "$bj_hm" -lt 1200 ]; then
+                echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
+                echo "SEARCH_JOBS=60" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
+              elif [ "$bj_hm" -lt 1700 ]; then
+                echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
+                echo "SEARCH_JOBS=80" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
+              else
+                echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
+                echo "SEARCH_JOBS=120" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=45" >> "$GITHUB_ENV"
+              fi
+              echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
+              echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
+              echo "PHASE_CLOCK=$bj_hm" >> "$GITHUB_ENV"
+          fi
 
       - name: Skip completed scheduled phase
         run: |
