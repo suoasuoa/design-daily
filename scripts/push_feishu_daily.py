@@ -288,6 +288,20 @@ def latest_daily_group(data):
     return groups[0]
 
 
+def parse_clock_time(value):
+    if not value:
+        return None
+    try:
+        hour_text, minute_text = value.split(":", 1)
+        hour = int(hour_text)
+        minute = int(minute_text)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("expected HH:MM") from exc
+    if hour < 0 or hour > 23 or minute < 0 or minute > 59:
+        raise argparse.ArgumentTypeError("expected HH:MM in 24-hour time")
+    return dt.time(hour, minute)
+
+
 def main():
     load_env()
     parser = argparse.ArgumentParser()
@@ -296,6 +310,8 @@ def main():
     parser.add_argument("--min-count", type=int, default=1, help="Skip push unless the latest daily group has at least this many items.")
     parser.add_argument("--require-today", action="store_true", help="Skip push unless the latest daily group date is today in Asia/Shanghai.")
     parser.add_argument("--not-before-hour", type=int, default=None, help="Skip push before this Asia/Shanghai hour.")
+    parser.add_argument("--window-start", type=parse_clock_time, default=None, help="Skip push before this Asia/Shanghai HH:MM time.")
+    parser.add_argument("--window-end", type=parse_clock_time, default=None, help="Skip push after this Asia/Shanghai HH:MM time.")
     parser.add_argument("--sent-log", default="", help="JSON file used to skip duplicate same-day pushes.")
     parser.add_argument("--chunk-size", type=int, default=10, help="Items per Feishu message.")
     parser.add_argument("--format", choices=["card", "post"], default="card", help="Feishu message format.")
@@ -315,6 +331,13 @@ def main():
     now = dt.datetime.now(ZoneInfo("Asia/Shanghai"))
     if args.not_before_hour is not None and now.hour < args.not_before_hour:
         print(f"feishu_push=skipped reason=before_window hour={now.hour} not_before_hour={args.not_before_hour}")
+        return
+    current_time = now.time().replace(second=0, microsecond=0)
+    if args.window_start and current_time < args.window_start:
+        print(f"feishu_push=skipped reason=before_send_window now={current_time.isoformat(timespec='minutes')} window_start={args.window_start.isoformat(timespec='minutes')}")
+        return
+    if args.window_end and current_time > args.window_end:
+        print(f"feishu_push=skipped reason=after_send_window now={current_time.isoformat(timespec='minutes')} window_end={args.window_end.isoformat(timespec='minutes')}")
         return
     if args.require_today:
         current_day = now.date().isoformat()
