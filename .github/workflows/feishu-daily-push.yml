@@ -1,6 +1,9 @@
 name: Feishu Daily Push
 
 on:
+  workflow_run:
+    workflows: ["Insight Pool"]
+    types: [completed]
   schedule:
     # Try several times in the 18:25-19:10 Beijing send window.
     - cron: "25 10 * * *"
@@ -21,6 +24,7 @@ concurrency:
 
 jobs:
   push-feishu-daily:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
