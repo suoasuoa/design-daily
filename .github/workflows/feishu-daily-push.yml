@@ -5,7 +5,8 @@ on:
     workflows: ["Insight Pool"]
     types: [completed]
   schedule:
-    # Try several times in the 18:25-19:10 Beijing send window.
+    # Try several times in the 18:20-19:10 Beijing send window.
+    - cron: "20 10 * * *"
     - cron: "25 10 * * *"
     - cron: "30 10 * * *"
     - cron: "35 10 * * *"
@@ -37,7 +38,7 @@ jobs:
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
-        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --min-count 30 --require-today --window-start 18:25 --window-end 19:10 --sent-log data/feishu_push_log.json --format card --no-images
+        run: python3 scripts/push_feishu_daily.py --limit 30 --top-limit 5 --min-count 30 --require-today --window-start 18:20 --window-end 19:10 --sent-log data/feishu_push_log.json --format card --no-images
 
       - name: Commit push log
         run: |
