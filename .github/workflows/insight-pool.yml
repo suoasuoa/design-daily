@@ -2,14 +2,14 @@ name: Insight Pool
 
 on:
   schedule:
-    # Main runs: 08:30, 13:30, and 17:30 Beijing time.
-    - cron: "30 0 * * *"
-    - cron: "30 5 * * *"
-    - cron: "30 9 * * *"
+    # Main runs: 07:30, 11:30, and 15:30 Beijing time.
+    - cron: "30 23 * * *"
+    - cron: "30 3 * * *"
+    - cron: "30 7 * * *"
     # Backup checks for the same three phases. They skip if the phase target is already met.
-    - cron: "10 1 * * *"
-    - cron: "10 6 * * *"
-    - cron: "10 10 * * *"
+    - cron: "10 0 * * *"
+    - cron: "10 4 * * *"
+    - cron: "10 8 * * *"
   workflow_dispatch:
     inputs:
       score_limit:
@@ -56,11 +56,11 @@ jobs:
               fi
           else
               bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
-              if [ "$bj_hm" -lt 1200 ]; then
+              if [ "$bj_hm" -lt 1100 ]; then
                 echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
                 echo "SEARCH_JOBS=60" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
-              elif [ "$bj_hm" -lt 1700 ]; then
+              elif [ "$bj_hm" -lt 1500 ]; then
                 echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
                 echo "SEARCH_JOBS=80" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
