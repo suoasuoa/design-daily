@@ -186,6 +186,8 @@ def record(item):
     url = clean_product_url(item.get("url") or source.get("url") or "")
     return {
         "id": item.get("id"),
+        "product_key": item.get("product_key", ""),
+        "content_fingerprint": item.get("content_fingerprint", ""),
         "title": item.get("title", ""),
         "category": item.get("category", ""),
         "summary": item.get("ai_reason") or item.get("summary", ""),
@@ -219,6 +221,22 @@ def normalize_key(value):
 
 def dedupe_key(item):
     return item.get("id") or normalize_key(item.get("url")) or normalize_key(item.get("title"))
+
+
+def product_identity_keys(item):
+    keys = set()
+    category = item.get("category") or "未分类"
+    for field in ["id", "product_key", "content_fingerprint"]:
+        value = normalize_key(item.get(field, ""))
+        if value:
+            keys.add(f"{field}:{value}")
+    url_key = normalize_key(item.get("url", ""))
+    if url_key:
+        keys.add(f"url:{url_key}")
+    title_key = normalize_key(item.get("title", ""))
+    if len(title_key) >= 6:
+        keys.add(f"title:{category}:{title_key}")
+    return keys or {dedupe_key(item)}
 
 
 def social_display_eligible(item):
@@ -305,9 +323,12 @@ def build_daily_groups(items, per_day=30, max_days=30):
         by_day[item.get("first_seen") or item.get("last_seen") or "unknown"].append(item)
 
     groups = []
-    for day in sorted(by_day.keys(), reverse=True)[:max_days]:
+    published_history = set()
+    for day in sorted(by_day.keys()):
+        historical_keys = set(published_history)
         seen = set()
         picks = []
+        skipped_history_duplicates = 0
         ranked = [
             item
             for item in sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
@@ -320,12 +341,15 @@ def build_daily_groups(items, per_day=30, max_days=30):
                     break
                 if item["source_family"] != family:
                     continue
-                key = dedupe_key(item)
-                if key in seen:
+                keys = product_identity_keys(item)
+                if keys & historical_keys:
+                    skipped_history_duplicates += 1
+                    continue
+                if keys & seen:
                     continue
                 if not category_under_cap(picks, item["category"]):
                     continue
-                seen.add(key)
+                seen.update(keys)
                 picks.append(item)
                 if len(picks) >= per_day:
                     break
@@ -338,12 +362,15 @@ def build_daily_groups(items, per_day=30, max_days=30):
             family = item["source_family"]
             if family == "社交灵感" and len([pick for pick in picks if pick["source_family"] == family]) >= DAILY_SOURCE_QUOTAS[family]:
                 continue
-            key = dedupe_key(item)
-            if key in seen:
+            keys = product_identity_keys(item)
+            if keys & historical_keys:
+                skipped_history_duplicates += 1
+                continue
+            if keys & seen:
                 continue
             if not category_under_cap(picks, item["category"]):
                 continue
-            seen.add(key)
+            seen.update(keys)
             picks.append(item)
 
         for item in ranked:
@@ -352,13 +379,19 @@ def build_daily_groups(items, per_day=30, max_days=30):
             family = item["source_family"]
             if family == "社交灵感" and len([pick for pick in picks if pick["source_family"] == family]) >= DAILY_SOURCE_QUOTAS[family]:
                 continue
-            key = dedupe_key(item)
-            if key in seen:
+            keys = product_identity_keys(item)
+            if keys & historical_keys:
+                skipped_history_duplicates += 1
+                continue
+            if keys & seen:
                 continue
             if not category_under_cap(picks, item["category"], relaxed=True):
                 continue
-            seen.add(key)
+            seen.update(keys)
             picks.append(item)
+
+        for item in picks:
+            published_history.update(product_identity_keys(item))
 
         by_source = Counter(item["source_family"] for item in picks)
         groups.append(
@@ -377,11 +410,12 @@ def build_daily_groups(items, per_day=30, max_days=30):
                         family: min(by_source.get(family, 0), quota)
                         for family, quota in DAILY_SOURCE_QUOTAS.items()
                     },
+                    "skipped_history_duplicates": skipped_history_duplicates,
                 },
                 "items": picks,
             }
         )
-    return groups
+    return list(reversed(groups))[:max_days]
 
 
 def build_payload(products, trends, weekly_report=None, weekly_groups=None):
