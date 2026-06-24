@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T09:32:45+08:00",
+  "generated_at": "2026-06-24T12:40:28+08:00",
   "week": "2026-W26",
   "group_id": "2026-W26",
   "date_start": "2026-06-22",
@@ -16,9 +16,9 @@
       "方向参考": 25
     },
     "by_category": {
-      "氛围灯": 13,
       "创意厨具": 12,
       "创意礼盒": 12,
+      "氛围灯": 12,
       "水杯": 12,
       "装置艺术": 9,
       "端午礼盒": 8,
@@ -26,8 +26,8 @@
       "创意桌搭": 5,
       "冲锋衣": 5,
       "卡包": 4,
+      "T恤": 4,
       "收纳包": 3,
-      "T恤": 3,
       "Polo衫": 2,
       "帽子": 2,
       "卫衣": 2,
@@ -37,9 +37,9 @@
     "by_axis": {
       "功能启发": 36,
       "包装启发": 30,
-      "结构启发": 22,
+      "结构启发": 23,
       "视觉启发": 17,
-      "情绪启发": 15
+      "情绪启发": 14
     }
   },
   "dedupe": {
@@ -373,35 +373,6 @@
       ]
     },
     {
-      "id": "d1358f98f303",
-      "product_key": "创意礼盒:04822a5543fbccce",
-      "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 76,
-      "score_label": "7.6",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
-      "image": "",
-      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；目标用户广泛；功能完整无短板；预估售价超35元；3秒看懂操作；情绪价值体现在高档礼品包装的仪式感。",
-      "risk": "折叠盒定制，明确为创意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "折叠盒",
-        "包装定制",
-        "礼品包装",
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
       "id": "c660f09955a4",
       "product_key": "端午礼盒:b0c603982a703355",
       "title": "Harney & Sons 端午茶",
@@ -560,6 +531,35 @@
       "tags": [
         "Polo衫",
         "商务"
+      ]
+    },
+    {
+      "id": "d1358f98f303",
+      "product_key": "创意礼盒:04822a5543fbccce",
+      "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
+      "image": "",
+      "summary": "产品实用性强，一秒成型和打平功能突出，高频用于礼品包装，适用场景广，价格预估超35元，3秒看懂，但情绪价值一般，需进一步叠加情感设计。",
+      "risk": "折叠盒定制，明确为创意礼盒",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "折叠盒",
+        "包装定制",
+        "礼品包装",
+        "social_public_index",
+        "白名单来源"
       ]
     },
     {
@@ -1673,6 +1673,32 @@
       ]
     },
     {
+      "id": "d41b402911ed",
+      "product_key": "T恤:803074dade15dcd9",
+      "title": "180G 纯棉T恤成人款 - Etsy",
+      "category": "T恤",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Etsy",
+      "source_family": "市场信号",
+      "url": "https://www.etsy.com/listing/4525815117/180g-chun-miant-xu-cheng-ren-kun",
+      "image": "",
+      "summary": "产品实用性强，高频需求，适用人群广，功能描述清晰，无明显短板，价格可能超过35元，但情绪价值一般。",
+      "risk": "明确为纯棉T恤，符合T恤品类定义",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "基础款",
+        "纯棉",
+        "四季百搭",
+        "T恤",
+        "market_signal"
+      ]
+    },
+    {
       "id": "9a916b969a39",
       "product_key": "卡包:fe5b2dada5e68517",
       "title": "RFID防护卡包",
@@ -1762,29 +1788,6 @@
       "tags": [
         "Behance",
         "T恤"
-      ]
-    },
-    {
-      "id": "8f536fc8b12d",
-      "product_key": "氛围灯:7c6661a286f15391",
-      "title": "极简纸灯",
-      "category": "氛围灯",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "https://www.muji.com/jp/ja/store/cmdty/section/S106010102",
-      "image": "",
-      "summary": "Pinterest · 日本和纸极简落地灯",
-      "risk": "明确属于氛围灯品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "氛围灯"
       ]
     },
     {
