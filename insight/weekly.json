@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T12:29:28+08:00",
+  "generated_at": "2026-06-25T16:00:37+08:00",
   "week": "2026-W26",
   "group_id": "2026-W26",
   "date_start": "2026-06-22",
@@ -18,8 +18,8 @@
     "by_category": {
       "创意厨具": 12,
       "创意礼盒": 12,
-      "氛围灯": 12,
       "水杯": 12,
+      "氛围灯": 11,
       "端午礼盒": 9,
       "装置艺术": 9,
       "中秋礼盒": 6,
@@ -31,15 +31,15 @@
       "Polo衫": 2,
       "帽子": 2,
       "卫衣": 2,
-      "日历": 1,
-      "充电宝": 1
+      "充电宝": 2,
+      "日历": 1
     },
     "by_axis": {
       "功能启发": 35,
-      "包装启发": 31,
-      "结构启发": 22,
+      "包装启发": 32,
+      "结构启发": 23,
       "视觉启发": 17,
-      "情绪启发": 14
+      "情绪启发": 13
     }
   },
   "dedupe": {
@@ -1308,7 +1308,7 @@
       "source": "Instagram",
       "source_family": "社交灵感",
       "url": "https://www.stanley1913.com",
-      "image": "https://www.stanley1913.com/cdn/shop/files/Stanley_Horizontal_x320_b3ec2ef4-fa76-454a-b900-c4055137902d.webp?height=628&pad_color=fff&v=1706751331&width=1200",
+      "image": "",
       "summary": "Stanley经典经典锤纹保温壶",
       "risk": "保温壶明确属于水杯",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -1842,7 +1842,7 @@
       "source": "A' Design Award",
       "source_family": "奖项案例",
       "url": "#",
-      "image": "http://fearofgod.com/cdn/shop/files/fg_meta_logo_08cf4839-b5d7-4772-997b-1055367603d1.jpg?v=1772577294",
+      "image": "",
       "summary": "A' Design Award · 高级街头基础款卫衣",
       "risk": "产品为高级街头基础款卫衣，属于卫衣。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
@@ -1874,6 +1874,33 @@
       "tags": [
         "Good Design Award",
         "收纳包"
+      ]
+    },
+    {
+      "id": "6f1482178db2",
+      "product_key": "日历:23790cc8b2f91704",
+      "title": "iF Design - Daofeng power bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "url": "https://ifdesign.com/en/winner-ranking/project/daofeng-power-bank/697672",
+      "image": "",
+      "summary": "充电宝实用性强，20000mAh大容量且165W快充满足高频需求，适用人群广；功能无明显短板，价格超35元，3秒看懂；iF设计奖加持可叠加情绪价值。",
+      "risk": "Daofeng充电宝，明确属于充电宝品类。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "日历",
+        "白名单来源",
+        "适合做结构、包装、功能或外观改造"
       ]
     },
     {
@@ -1959,7 +1986,7 @@
       "source": "Red Dot",
       "source_family": "奖项案例",
       "url": "https://www.neweracap.com",
-      "image": "http://www.neweracap.com/cdn/shop/files/neweracap_logo.png?v=1739820739",
+      "image": "",
       "summary": "MLB官方New Era 59FIFTY经典棒球帽",
       "risk": "明确属于帽子品类",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
@@ -2336,30 +2363,6 @@
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1169990/740058/e6dcfe32-6d03-449b-bf51-5b20bb694513/1.jpg",
       "summary": "iF Design Award · Astral Mate is an interactive ambient light that uses magnetic induction. Its innovative switch design is inspired by the gravitational pull between celestial bodies. A metal sphere glides naturally along the track, driven by gravity, and as it appro",
       "risk": "交互式氛围灯",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "e6f278a56e1d",
-      "product_key": "氛围灯:53cbe486764acc5e",
-      "title": "Venia Series",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "url": "https://ifdesign.com/en/winner-ranking/project/venia-series/755356",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/117935/755356/019aa6b3-0068-4e6c-b3ef-026cbd88bf3d/s5.png",
-      "summary": "iF Design Award · Venia Series redefines ceiling lighting. Its retractable head fixes traditional spotlights' inflexibility—press to pop out for rotation, like track lights. Sleek when retracted, dynamic when extended. Modular, it fits setups: single circular-cutout o",
-      "risk": "天花板照明灯具，属于日常照明",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
