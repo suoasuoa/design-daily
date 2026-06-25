@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-06-24T12:40:28+08:00
+- 生成时间：2026-06-25T09:40:12+08:00
 
 ## 行动分布
 
@@ -275,7 +275,7 @@ Theory高端商务休闲Polo衫
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-产品实用性强，一秒成型和打平功能突出，高频用于礼品包装，适用场景广，价格预估超35元，3秒看懂，但情绪价值一般，需进一步叠加情感设计。
+产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；目标用户广泛；功能完整无短板；预估售价超35元；3秒内可理解折叠成型原理；情绪价值中等，需结合定制设计提升。
 
 ### 23. 永璞 咖啡联名礼盒
 
@@ -853,19 +853,7 @@ Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
 Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
-### 71. 180G 纯棉T恤成人款 - Etsy
-
-- 品类：T恤
-- 路径：适合改造
-- 启发：结构启发
-- 分数：8.3
-- 来源：Etsy
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.etsy.com/listing/4525815117/180g-chun-miant-xu-cheng-ren-kun
-
-产品实用性强，高频需求，适用人群广，功能描述清晰，无明显短板，价格可能超过35元，但情绪价值一般。
-
-### 72. RFID防护卡包
+### 71. RFID防护卡包
 
 - 品类：卡包
 - 路径：适合改造
@@ -877,7 +865,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 Pinterest · RFID防射频极薄卡片包
 
-### 73. 超薄充电宝
+### 72. 超薄充电宝
 
 - 品类：充电宝
 - 路径：适合改造
@@ -889,7 +877,7 @@ Pinterest · RFID防射频极薄卡片包
 
 Pinterest · Anker超薄磁吸充电宝
 
-### 74. 极简Logo Tee
+### 73. 极简Logo Tee
 
 - 品类：T恤
 - 路径：适合改造
@@ -901,7 +889,7 @@ Pinterest · Anker超薄磁吸充电宝
 
 Pinterest · A.P.C.经典极简Logo白T恤
 
-### 75. T恤图案设计
+### 74. T恤图案设计
 
 - 品类：T恤
 - 路径：适合改造
@@ -912,6 +900,18 @@ Pinterest · A.P.C.经典极简Logo白T恤
 - 链接：#
 
 Behance · 原创T恤图案印花设计项目
+
+### 75. 极简纸灯
+
+- 品类：氛围灯
+- 路径：适合改造
+- 启发：情绪启发
+- 分数：8.2
+- 来源：Pinterest
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.muji.com/jp/ja/store/cmdty/section/S106010102
+
+Pinterest · 日本和纸极简落地灯
 
 ### 76. Talking Tree
 
