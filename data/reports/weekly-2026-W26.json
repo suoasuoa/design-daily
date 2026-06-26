@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T09:43:54+08:00",
+  "generated_at": "2026-06-26T15:13:35+08:00",
   "week": "2026-W26",
   "group_id": "2026-W26",
   "date_start": "2026-06-22",
@@ -18,13 +18,13 @@
     "by_category": {
       "创意厨具": 12,
       "创意礼盒": 12,
-      "氛围灯": 12,
       "水杯": 12,
+      "氛围灯": 11,
       "端午礼盒": 9,
       "装置艺术": 9,
       "中秋礼盒": 6,
+      "冲锋衣": 6,
       "创意桌搭": 5,
-      "冲锋衣": 5,
       "卡包": 4,
       "收纳包": 3,
       "T恤": 3,
@@ -39,7 +39,7 @@
       "包装启发": 31,
       "结构启发": 22,
       "视觉启发": 17,
-      "情绪启发": 14
+      "情绪启发": 13
     }
   },
   "dedupe": {
@@ -154,7 +154,7 @@
       "source": "Behance",
       "source_family": "社交灵感",
       "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/326655235579459.Y3JvcCwxMTkyLDkzMywxNDcsMA.png",
+      "image": "",
       "summary": "Behance · 新式中秋月饼礼盒包装设计",
       "risk": "明确属于中秋礼盒品类",
       "next_action": "买样看材质、尺寸、成本和差评点",
@@ -870,7 +870,7 @@
       "source": "Behance",
       "source_family": "社交灵感",
       "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/5c0fcf169153375.Y3JvcCwxNTQ1LDEyMDksNzYsMA.jpg",
+      "image": "",
       "summary": "Behance · 商务极简卡包产品设计项目",
       "risk": "产品为商务极简卡包，属于卡包。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -1192,7 +1192,7 @@
       "source": "Behance",
       "source_family": "社交灵感",
       "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/64867d241399453.Y3JvcCwxMDA3LDc4OCwwLDA.gif",
+      "image": "",
       "summary": "Behance · 互动式数字艺术装置项目",
       "risk": "互动数字艺术装置属于装置艺术",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -1773,7 +1773,7 @@
       "source": "Behance",
       "source_family": "社交灵感",
       "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/d07056248293505.69ee74798dd37.jpg",
+      "image": "",
       "summary": "Behance · 原创T恤图案印花设计项目",
       "risk": "T恤图案设计属于T恤品类",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
@@ -1874,6 +1874,33 @@
       "tags": [
         "Good Design Award",
         "收纳包"
+      ]
+    },
+    {
+      "id": "5c9e216240a4",
+      "product_key": "冲锋衣:73842ba2af8d1738",
+      "title": "天猫运动户外：用冲锋衣，打开秋冬的n种可能 - 数英",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "数英",
+      "source_family": "设计社区",
+      "url": "https://www.digitaling.com/projects/228780.html",
+      "image": "",
+      "summary": "冲锋衣实用性强，满足户外与日常需求；秋冬高频使用；覆盖男女老少；六边形标准无短板；均价超35元；设计直观；情绪价值来自户外探索与时尚感。",
+      "risk": "明确关于冲锋衣标准与推荐",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "冲锋衣",
+        "户外",
+        "秋冬穿搭",
+        "功能面料",
+        "design_community",
+        "白名单来源"
       ]
     },
     {
@@ -2336,30 +2363,6 @@
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1169990/740058/e6dcfe32-6d03-449b-bf51-5b20bb694513/1.jpg",
       "summary": "iF Design Award · Astral Mate is an interactive ambient light that uses magnetic induction. Its innovative switch design is inspired by the gravitational pull between celestial bodies. A metal sphere glides naturally along the track, driven by gravity, and as it appro",
       "risk": "交互式氛围灯",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "e6f278a56e1d",
-      "product_key": "氛围灯:53cbe486764acc5e",
-      "title": "Venia Series",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "url": "https://ifdesign.com/en/winner-ranking/project/venia-series/755356",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/117935/755356/019aa6b3-0068-4e6c-b3ef-026cbd88bf3d/s5.png",
-      "summary": "iF Design Award · Venia Series redefines ceiling lighting. Its retractable head fixes traditional spotlights' inflexibility—press to pop out for rotation, like track lights. Sleek when retracted, dynamic when extended. Modular, it fits setups: single circular-cutout o",
-      "risk": "天花板照明灯具，属于日常照明",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",

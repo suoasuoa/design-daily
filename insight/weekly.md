@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-06-26T09:43:54+08:00
+- 生成时间：2026-06-26T15:13:35+08:00
 
 ## 行动分布
 
@@ -961,7 +961,19 @@ A' Design Award · 高级街头基础款卫衣
 
 Good Design Award · Home Accessories · Like-it Co., Ltd.
 
-### 80. Philips 千禧台灯
+### 80. 天猫运动户外：用冲锋衣，打开秋冬的n种可能 - 数英
+
+- 品类：冲锋衣
+- 路径：方向参考
+- 启发：功能启发
+- 分数：8.4
+- 来源：数英
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.digitaling.com/projects/228780.html
+
+冲锋衣实用性强，满足户外与日常需求；秋冬高频使用；覆盖男女老少；六边形标准无短板；均价超35元；设计直观；情绪价值来自户外探索与时尚感。
+
+### 81. Philips 千禧台灯
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -973,7 +985,7 @@ Good Design Award · Home Accessories · Like-it Co., Ltd.
 
 iF设计奖 · LED照明设计创新之作
 
-### 81. NONOTAK 光音装置
+### 82. NONOTAK 光音装置
 
 - 品类：装置艺术
 - 路径：方向参考
@@ -985,7 +997,7 @@ iF设计奖 · LED照明设计创新之作
 
 A' Design Award · 法国光与声媒体装置
 
-### 82. Arc'teryx 军规冲锋衣
+### 83. Arc'teryx 军规冲锋衣
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -997,7 +1009,7 @@ A' Design Award · 法国光与声媒体装置
 
 加拿大始祖鸟Alpha SV军规级冲锋衣
 
-### 83. New Era MLB 棒球帽
+### 84. New Era MLB 棒球帽
 
 - 品类：帽子
 - 路径：方向参考
@@ -1009,7 +1021,7 @@ A' Design Award · 法国光与声媒体装置
 
 MLB官方New Era 59FIFTY经典棒球帽
 
-### 84. Nanoleaf 智能灯板
+### 85. Nanoleaf 智能灯板
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1021,7 +1033,7 @@ MLB官方New Era 59FIFTY经典棒球帽
 
 加拿大Nanoleaf模块化智能LED灯板
 
-### 85. Anish Kapoor 云门
+### 86. Anish Kapoor 云门
 
 - 品类：装置艺术
 - 路径：方向参考
@@ -1033,7 +1045,7 @@ MLB官方New Era 59FIFTY经典棒球帽
 
 Anish Kapoor芝加哥Cloud Gate镜面雕塑
 
-### 86. Thermal Goose Down-Filled Long-Sleeve T-Shirt
+### 87. Thermal Goose Down-Filled Long-Sleeve T-Shirt
 
 - 品类：T恤
 - 路径：方向参考
@@ -1045,7 +1057,7 @@ Anish Kapoor芝加哥Cloud Gate镜面雕塑
 
 iF Design Award · This product breaks the inherent perception of traditional categories by boldly combining “goose down” with “knit T-shirt”, making the brand the Frost & Sullivan-certified “Trailblazer of China’s Goose-Down T-Shirt”. It features a zoned design: the b
 
-### 87. P+L Dual Backpack
+### 88. P+L Dual Backpack
 
 - 品类：收纳包
 - 路径：方向参考
@@ -1057,7 +1069,7 @@ iF Design Award · This product breaks the inherent perception of traditional ca
 
 iF Design Award · Each year, only about one-fifth of the 30 billion tons of PET produced worldwide is recycled into rPET. In Taiwan, PET recovery reaches 97% with an 83.7% reuse rate, led by Far Eastern Group’s circular initiatives. Studio Smoll and Far Eastern Group
 
-### 88. Ekster Cardholder
+### 89. Ekster Cardholder
 
 - 品类：卡包
 - 路径：方向参考
@@ -1069,7 +1081,7 @@ iF Design Award · Each year, only about one-fifth of the 30 billion tons of PET
 
 iF Design Award · Ekster’s Cardholder 5 is a compact, repairable cardholder made from 100% recycled aluminum. Designed to simplify your everyday carry, it holds up to 7 cards and features an upgraded ejection mechanism for smoother operation. With MagSafe compatibilit
 
-### 89. Cardprotector+
+### 90. Cardprotector+
 
 - 品类：卡包
 - 路径：方向参考
@@ -1081,7 +1093,7 @@ iF Design Award · Ekster’s Cardholder 5 is a compact, repairable cardholder m
 
 iF Design Award · The Cardprotector+ is the pocket-sized evolution of the original Cardprotector introduced in 2009. Our patented auto-lock mechanism securely holds all cards, including recently introduced heavier metal bank cards, while maintaining easy accessibility
 
-### 90. Unbounded Dual-core Outdoor Two-in-One Jacket
+### 91. Unbounded Dual-core Outdoor Two-in-One Jacket
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1093,7 +1105,7 @@ iF Design Award · The Cardprotector+ is the pocket-sized evolution of the origi
 
 iF Design Award · Designed to handle complex and unpredictable outdoor environments, the Unbounded Dual-core Outdoor Two-in-One Jacket combines a protective outer jacket with waterproof, windproof, and abrasion-resistant properties, and an inner jacket with down insul
 
-### 91. Dragon Tooth Wind Falcon Ultralight Sun Jacket
+### 92. Dragon Tooth Wind Falcon Ultralight Sun Jacket
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1105,7 +1117,7 @@ iF Design Award · Designed to handle complex and unpredictable outdoor environm
 
 iF Design Award · The Dragon Tooth Wind Falcon Ultra-Light Sun Protection Jacket addresses the common discomfort of traditional sunwear that traps heat and restricts airflow. Made with Dragon Tooth’s self-developed ultra-light Wind Tunnel Technology fabric, it achieve
 
-### 92. BOSIDENG 3-IN-1 "DIBIAN" DOWN JACKET
+### 93. BOSIDENG 3-IN-1 "DIBIAN" DOWN JACKET
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1117,7 +1129,7 @@ iF Design Award · The Dragon Tooth Wind Falcon Ultra-Light Sun Protection Jacke
 
 iF Design Award · The 3-in-1 down jacket is engineered for urban leisure outdoor scenarios, ideal for temperature and weather changes, daily commutes, and frequent business travel. It is innovative for the back down channel structure inspired by how birds' wings and f
 
-### 93. Straw
+### 94. Straw
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1129,7 +1141,7 @@ iF Design Award · The 3-in-1 down jacket is engineered for urban leisure outdoo
 
 iF Design Award · Inspired by a retro tube light refined with a contemporary linear design, mixed with the latest light technology, with added modularity and light effect. Versatility, customization, and a lot of WOW. As it’s office-compliant, Straw’s intense and bea
 
-### 94. Philips Hue Play wall washer
+### 95. Philips Hue Play wall washer
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1141,7 +1153,7 @@ iF Design Award · Inspired by a retro tube light refined with a contemporary li
 
 iF Design Award · Philips Hue Play wall washer merges advanced optical precision with a clean, unobtrusive design. Its precisely engineered lenses wash the wall with a seamless gradient of (colored) light, delivering an uncompromised light effect at any distance from
 
-### 95. Buddy
+### 96. Buddy
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1153,7 +1165,7 @@ iF Design Award · Philips Hue Play wall washer merges advanced optical precisio
 
 iF Design Award · In an age of overstimulation, Buddy redefines how light restores presence and mindfulness in daily life. Designed as companions, they feature a tactile analog gesture that reintroduces play into everyday routines and gradient illumination informed by
 
-### 96. TILE
+### 97. TILE
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1165,7 +1177,7 @@ iF Design Award · In an age of overstimulation, Buddy redefines how light resto
 
 iF Design Award · Tile redefines light through the dialogue between tradition and innovation. Inspired by the architectural tile, it transforms an everyday element into a sculptural object that radiates warmth and serenity. The fusion of ceramic and metal embodies con
 
-### 97. ora bolas
+### 98. ora bolas
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1177,7 +1189,7 @@ iF Design Award · Tile redefines light through the dialogue between tradition a
 
 iF Design Award · Ora Bolas collection, designed by Fernando Prado, proposes a play of contrasts between matter and light, density and suspension, geometry and chance. Far from being mere table lamps, these objects behave like small architectures, where the relationsh
 
-### 98. Philips AI BrightMate Table Lamp
+### 99. Philips AI BrightMate Table Lamp
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1189,7 +1201,7 @@ iF Design Award · Ora Bolas collection, designed by Fernando Prado, proposes a 
 
 iF Design Award · BrightMate is a playful AI lighting companion that blends functionality, entertainment, and companionship for an emotionally engaging home experience. Beyond hundreds of preset lighting scenes, it uses generative AI to create unlimited light effects
 
-### 99. Astral Mate Light
+### 100. Astral Mate Light
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1200,15 +1212,3 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 - 链接：https://ifdesign.com/en/winner-ranking/project/astral-mate-light/740058
 
 iF Design Award · Astral Mate is an interactive ambient light that uses magnetic induction. Its innovative switch design is inspired by the gravitational pull between celestial bodies. A metal sphere glides naturally along the track, driven by gravity, and as it appro
-
-### 100. Venia Series
-
-- 品类：氛围灯
-- 路径：方向参考
-- 启发：功能启发、情绪启发
-- 分数：8.4
-- 来源：iF设计奖
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://ifdesign.com/en/winner-ranking/project/venia-series/755356
-
-iF Design Award · Venia Series redefines ceiling lighting. Its retractable head fixes traditional spotlights' inflexibility—press to pop out for rotation, like track lights. Sleek when retracted, dynamic when extended. Modular, it fits setups: single circular-cutout o
