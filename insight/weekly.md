@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-06-26T15:13:35+08:00
+- 生成时间：2026-06-27T09:36:26+08:00
 
 ## 行动分布
 
@@ -181,7 +181,19 @@ Pinterest · 盲盒亚克力展示收纳盒
 
 星巴克端午限定星冰粽礼盒
 
-### 15. Harney & Sons 端午茶
+### 15. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：功能启发、包装启发、结构启发
+- 分数：7.6
+- 来源：Instagram
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.instagram.com/reel/DWpmFr-iWrO
+
+产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；目标用户广泛；功能完整无短板；预估售价超35元；3秒看懂操作；情绪价值体现在高档礼品包装的仪式感。
+
+### 16. Harney & Sons 端午茶
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -193,7 +205,7 @@ Pinterest · 盲盒亚克力展示收纳盒
 
 Instagram · 美国高端散茶端午礼盒
 
-### 16. Diptyque 限定礼盒
+### 17. Diptyque 限定礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -205,7 +217,7 @@ Instagram · 美国高端散茶端午礼盒
 
 Instagram · 法国香氛蜡烛礼品套装
 
-### 17. 奈雪の茶 中秋联名
+### 18. 奈雪の茶 中秋联名
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -217,7 +229,7 @@ Instagram · 法国香氛蜡烛礼品套装
 
 小红书 · 奈雪中秋设计师联名礼盒
 
-### 18. 气味图书馆 礼盒
+### 19. 气味图书馆 礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -229,7 +241,7 @@ Instagram · 法国香氛蜡烛礼品套装
 
 小红书 · 气味图书馆城市系列礼盒
 
-### 19. 杨聘号 端午茶礼盒
+### 20. 杨聘号 端午茶礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -241,7 +253,7 @@ Instagram · 法国香氛蜡烛礼品套装
 
 杨聘號普洱端午限定礼盒
 
-### 20. 陈升号 端午茶礼
+### 21. 陈升号 端午茶礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -253,7 +265,7 @@ Instagram · 法国香氛蜡烛礼品套装
 
 陈升号普洱茶端午礼盒
 
-### 21. Theory 修身Polo衫
+### 22. Theory 修身Polo衫
 
 - 品类：Polo衫
 - 路径：可直接买样
@@ -265,7 +277,7 @@ Instagram · 法国香氛蜡烛礼品套装
 
 Theory高端商务休闲Polo衫
 
-### 22. 永璞 咖啡联名礼盒
+### 23. 永璞 咖啡联名礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -277,7 +289,7 @@ Theory高端商务休闲Polo衫
 
 抖音 · 永璞咖啡设计师联名套装
 
-### 23. Jo Malone 圣诞礼盒
+### 24. Jo Malone 圣诞礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -289,7 +301,7 @@ Theory高端商务休闲Polo衫
 
 Instagram · 祖玛珑限定圣诞礼盒
 
-### 24. Ronnefeldt 端午茶礼
+### 25. Ronnefeldt 端午茶礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -301,7 +313,7 @@ Instagram · 祖玛珑限定圣诞礼盒
 
 Instagram · 德国顶级茶叶端午限定
 
-### 25. 广州酒家 端午礼盒
+### 26. 广州酒家 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -313,7 +325,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 广式粽子礼盒
 
-### 26. 元祖 雪月饼礼盒
+### 27. 元祖 雪月饼礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -325,7 +337,7 @@ Instagram · 德国顶级茶叶端午限定
 
 小红书 · 元祖经典冰淇淋月饼礼盒
 
-### 27. 观夏 蜡烛礼盒
+### 28. 观夏 蜡烛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -337,7 +349,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 东方植物香薰礼盒
 
-### 28. TWG Tea 中秋礼盒
+### 29. TWG Tea 中秋礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -349,7 +361,7 @@ Instagram · 德国顶级茶叶端午限定
 
 Instagram · 新加坡顶级茶叶中秋礼盒
 
-### 29. BYREDO 香氛礼盒
+### 30. BYREDO 香氛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -360,18 +372,6 @@ Instagram · 新加坡顶级茶叶中秋礼盒
 - 链接：https://www.byredo.com/us_en/gifts
 
 Instagram · 瑞典小众香氛礼品套装
-
-### 30. 华源茶业 端午定制礼
-
-- 品类：端午礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：7.4
-- 来源：抖音
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.huayuan-tea.com
-
-华源茶业端午礼品装设计
 
 ### 31. Refik Anadol AI装置
 
@@ -805,19 +805,7 @@ Good Design Award · This one-touch stainless steel mug is designed for easy one
 
 Good Design Award · An original stainless steel thermos bottle that is not only easy to carry, but also easy to wash thanks to its unique packing structure.
 
-### 67. Elthy™ Series
-
-- 品类：创意礼盒
-- 路径：适合改造
-- 启发：包装启发、结构启发
-- 分数：8.4
-- 来源：iF设计奖
-- 下一步：拆解包装结构和开箱动线，做二次主题化
-- 链接：https://ifdesign.com/en/winner-ranking/project/elthy-series/768588
-
-iF Design Award · The Elthy™ Series packaging is designed to embody the brand vision — a playground for adults. It experiments with bold material ideas using recycled paper pulp as the core structure, forming both its tactile and symbolic character. The design embrac
-
-### 68. Honeycomb Lifting LED Light Box
+### 67. Honeycomb Lifting LED Light Box
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -829,7 +817,7 @@ iF Design Award · The Elthy™ Series packaging is designed to embody the brand
 
 iF Design Award · This is a multi-functional light box that integrates eco-friendliness, reusability, and a creative opening method. The entire packaging adopts 100% naturally degradable corrugated cardboard combined with honeycomb paper. It features a minimalist stru
 
-### 69. Nature bamboo fiber cup
+### 68. Nature bamboo fiber cup
 
 - 品类：水杯
 - 路径：适合改造
@@ -841,7 +829,7 @@ iF Design Award · This is a multi-functional light box that integrates eco-frie
 
 iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to nature" through sustainable design. Crafted from natural bamboo fiber, recycled coffee grounds, and plant-based starch, it is free from plastics and synthetic polymers, certified plastic-fr
 
-### 70. Desktop wizard
+### 69. Desktop wizard
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -853,7 +841,7 @@ iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to 
 
 Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
-### 71. Flo Monitor Arm
+### 70. Flo Monitor Arm
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -865,7 +853,7 @@ Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
 Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
-### 72. RFID防护卡包
+### 71. RFID防护卡包
 
 - 品类：卡包
 - 路径：适合改造
@@ -877,7 +865,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 Pinterest · RFID防射频极薄卡片包
 
-### 73. 超薄充电宝
+### 72. 超薄充电宝
 
 - 品类：充电宝
 - 路径：适合改造
@@ -889,7 +877,7 @@ Pinterest · RFID防射频极薄卡片包
 
 Pinterest · Anker超薄磁吸充电宝
 
-### 74. 极简Logo Tee
+### 73. 极简Logo Tee
 
 - 品类：T恤
 - 路径：适合改造
@@ -901,7 +889,7 @@ Pinterest · Anker超薄磁吸充电宝
 
 Pinterest · A.P.C.经典极简Logo白T恤
 
-### 75. T恤图案设计
+### 74. T恤图案设计
 
 - 品类：T恤
 - 路径：适合改造
@@ -912,6 +900,18 @@ Pinterest · A.P.C.经典极简Logo白T恤
 - 链接：#
 
 Behance · 原创T恤图案印花设计项目
+
+### 75. 极简纸灯
+
+- 品类：氛围灯
+- 路径：适合改造
+- 启发：情绪启发
+- 分数：8.2
+- 来源：Pinterest
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.muji.com/jp/ja/store/cmdty/section/S106010102
+
+Pinterest · 日本和纸极简落地灯
 
 ### 76. Talking Tree
 
@@ -961,19 +961,7 @@ A' Design Award · 高级街头基础款卫衣
 
 Good Design Award · Home Accessories · Like-it Co., Ltd.
 
-### 80. 天猫运动户外：用冲锋衣，打开秋冬的n种可能 - 数英
-
-- 品类：冲锋衣
-- 路径：方向参考
-- 启发：功能启发
-- 分数：8.4
-- 来源：数英
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.digitaling.com/projects/228780.html
-
-冲锋衣实用性强，满足户外与日常需求；秋冬高频使用；覆盖男女老少；六边形标准无短板；均价超35元；设计直观；情绪价值来自户外探索与时尚感。
-
-### 81. Philips 千禧台灯
+### 80. Philips 千禧台灯
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -985,7 +973,7 @@ Good Design Award · Home Accessories · Like-it Co., Ltd.
 
 iF设计奖 · LED照明设计创新之作
 
-### 82. NONOTAK 光音装置
+### 81. NONOTAK 光音装置
 
 - 品类：装置艺术
 - 路径：方向参考
@@ -997,7 +985,7 @@ iF设计奖 · LED照明设计创新之作
 
 A' Design Award · 法国光与声媒体装置
 
-### 83. Arc'teryx 军规冲锋衣
+### 82. Arc'teryx 军规冲锋衣
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1009,7 +997,7 @@ A' Design Award · 法国光与声媒体装置
 
 加拿大始祖鸟Alpha SV军规级冲锋衣
 
-### 84. New Era MLB 棒球帽
+### 83. New Era MLB 棒球帽
 
 - 品类：帽子
 - 路径：方向参考
@@ -1021,7 +1009,7 @@ A' Design Award · 法国光与声媒体装置
 
 MLB官方New Era 59FIFTY经典棒球帽
 
-### 85. Nanoleaf 智能灯板
+### 84. Nanoleaf 智能灯板
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1033,7 +1021,7 @@ MLB官方New Era 59FIFTY经典棒球帽
 
 加拿大Nanoleaf模块化智能LED灯板
 
-### 86. Anish Kapoor 云门
+### 85. Anish Kapoor 云门
 
 - 品类：装置艺术
 - 路径：方向参考
@@ -1045,7 +1033,7 @@ MLB官方New Era 59FIFTY经典棒球帽
 
 Anish Kapoor芝加哥Cloud Gate镜面雕塑
 
-### 87. Thermal Goose Down-Filled Long-Sleeve T-Shirt
+### 86. Thermal Goose Down-Filled Long-Sleeve T-Shirt
 
 - 品类：T恤
 - 路径：方向参考
@@ -1057,7 +1045,7 @@ Anish Kapoor芝加哥Cloud Gate镜面雕塑
 
 iF Design Award · This product breaks the inherent perception of traditional categories by boldly combining “goose down” with “knit T-shirt”, making the brand the Frost & Sullivan-certified “Trailblazer of China’s Goose-Down T-Shirt”. It features a zoned design: the b
 
-### 88. P+L Dual Backpack
+### 87. P+L Dual Backpack
 
 - 品类：收纳包
 - 路径：方向参考
@@ -1069,7 +1057,7 @@ iF Design Award · This product breaks the inherent perception of traditional ca
 
 iF Design Award · Each year, only about one-fifth of the 30 billion tons of PET produced worldwide is recycled into rPET. In Taiwan, PET recovery reaches 97% with an 83.7% reuse rate, led by Far Eastern Group’s circular initiatives. Studio Smoll and Far Eastern Group
 
-### 89. Ekster Cardholder
+### 88. Ekster Cardholder
 
 - 品类：卡包
 - 路径：方向参考
@@ -1081,7 +1069,7 @@ iF Design Award · Each year, only about one-fifth of the 30 billion tons of PET
 
 iF Design Award · Ekster’s Cardholder 5 is a compact, repairable cardholder made from 100% recycled aluminum. Designed to simplify your everyday carry, it holds up to 7 cards and features an upgraded ejection mechanism for smoother operation. With MagSafe compatibilit
 
-### 90. Cardprotector+
+### 89. Cardprotector+
 
 - 品类：卡包
 - 路径：方向参考
@@ -1093,7 +1081,7 @@ iF Design Award · Ekster’s Cardholder 5 is a compact, repairable cardholder m
 
 iF Design Award · The Cardprotector+ is the pocket-sized evolution of the original Cardprotector introduced in 2009. Our patented auto-lock mechanism securely holds all cards, including recently introduced heavier metal bank cards, while maintaining easy accessibility
 
-### 91. Unbounded Dual-core Outdoor Two-in-One Jacket
+### 90. Unbounded Dual-core Outdoor Two-in-One Jacket
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1105,7 +1093,7 @@ iF Design Award · The Cardprotector+ is the pocket-sized evolution of the origi
 
 iF Design Award · Designed to handle complex and unpredictable outdoor environments, the Unbounded Dual-core Outdoor Two-in-One Jacket combines a protective outer jacket with waterproof, windproof, and abrasion-resistant properties, and an inner jacket with down insul
 
-### 92. Dragon Tooth Wind Falcon Ultralight Sun Jacket
+### 91. Dragon Tooth Wind Falcon Ultralight Sun Jacket
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1117,7 +1105,7 @@ iF Design Award · Designed to handle complex and unpredictable outdoor environm
 
 iF Design Award · The Dragon Tooth Wind Falcon Ultra-Light Sun Protection Jacket addresses the common discomfort of traditional sunwear that traps heat and restricts airflow. Made with Dragon Tooth’s self-developed ultra-light Wind Tunnel Technology fabric, it achieve
 
-### 93. BOSIDENG 3-IN-1 "DIBIAN" DOWN JACKET
+### 92. BOSIDENG 3-IN-1 "DIBIAN" DOWN JACKET
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1129,7 +1117,7 @@ iF Design Award · The Dragon Tooth Wind Falcon Ultra-Light Sun Protection Jacke
 
 iF Design Award · The 3-in-1 down jacket is engineered for urban leisure outdoor scenarios, ideal for temperature and weather changes, daily commutes, and frequent business travel. It is innovative for the back down channel structure inspired by how birds' wings and f
 
-### 94. Straw
+### 93. Straw
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1141,7 +1129,7 @@ iF Design Award · The 3-in-1 down jacket is engineered for urban leisure outdoo
 
 iF Design Award · Inspired by a retro tube light refined with a contemporary linear design, mixed with the latest light technology, with added modularity and light effect. Versatility, customization, and a lot of WOW. As it’s office-compliant, Straw’s intense and bea
 
-### 95. Philips Hue Play wall washer
+### 94. Philips Hue Play wall washer
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1153,7 +1141,7 @@ iF Design Award · Inspired by a retro tube light refined with a contemporary li
 
 iF Design Award · Philips Hue Play wall washer merges advanced optical precision with a clean, unobtrusive design. Its precisely engineered lenses wash the wall with a seamless gradient of (colored) light, delivering an uncompromised light effect at any distance from
 
-### 96. Buddy
+### 95. Buddy
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1165,7 +1153,7 @@ iF Design Award · Philips Hue Play wall washer merges advanced optical precisio
 
 iF Design Award · In an age of overstimulation, Buddy redefines how light restores presence and mindfulness in daily life. Designed as companions, they feature a tactile analog gesture that reintroduces play into everyday routines and gradient illumination informed by
 
-### 97. TILE
+### 96. TILE
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1177,7 +1165,7 @@ iF Design Award · In an age of overstimulation, Buddy redefines how light resto
 
 iF Design Award · Tile redefines light through the dialogue between tradition and innovation. Inspired by the architectural tile, it transforms an everyday element into a sculptural object that radiates warmth and serenity. The fusion of ceramic and metal embodies con
 
-### 98. ora bolas
+### 97. ora bolas
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1189,7 +1177,7 @@ iF Design Award · Tile redefines light through the dialogue between tradition a
 
 iF Design Award · Ora Bolas collection, designed by Fernando Prado, proposes a play of contrasts between matter and light, density and suspension, geometry and chance. Far from being mere table lamps, these objects behave like small architectures, where the relationsh
 
-### 99. Philips AI BrightMate Table Lamp
+### 98. Philips AI BrightMate Table Lamp
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1201,7 +1189,7 @@ iF Design Award · Ora Bolas collection, designed by Fernando Prado, proposes a 
 
 iF Design Award · BrightMate is a playful AI lighting companion that blends functionality, entertainment, and companionship for an emotionally engaging home experience. Beyond hundreds of preset lighting scenes, it uses generative AI to create unlimited light effects
 
-### 100. Astral Mate Light
+### 99. Astral Mate Light
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1212,3 +1200,15 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 - 链接：https://ifdesign.com/en/winner-ranking/project/astral-mate-light/740058
 
 iF Design Award · Astral Mate is an interactive ambient light that uses magnetic induction. Its innovative switch design is inspired by the gravitational pull between celestial bodies. A metal sphere glides naturally along the track, driven by gravity, and as it appro
+
+### 100. Venia Series
+
+- 品类：氛围灯
+- 路径：方向参考
+- 启发：功能启发、情绪启发
+- 分数：8.4
+- 来源：iF设计奖
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://ifdesign.com/en/winner-ranking/project/venia-series/755356
+
+iF Design Award · Venia Series redefines ceiling lighting. Its retractable head fixes traditional spotlights' inflexibility—press to pop out for rotation, like track lights. Sleek when retracted, dynamic when extended. Modular, it fits setups: single circular-cutout o
