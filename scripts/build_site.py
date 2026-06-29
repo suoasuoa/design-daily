@@ -7,7 +7,7 @@ import re
 from urllib.parse import urlparse
 
 from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
-from insight_config import CATEGORIES, CATEGORY_KEYWORDS
+from insight_config import CATEGORIES
 
 
 FUNCTION_WORDS = [
@@ -18,29 +18,30 @@ PACKAGING_WORDS = ["包装", "packaging", "box", "gift", "礼盒", "套装", "mo
 STRUCTURE_WORDS = ["结构", "structure", "支架", "frame", "fold", "hinge", "assembly", "模块", "shelf"]
 EMOTION_WORDS = ["可爱", "cute", "温暖", "warm", "治愈", "playful", "surprise", "惊喜", "趣味", "幽默", "氛围"]
 VISUAL_WORDS = ["纹理", "texture", "color", "颜色", "graphic", "图形", "surface", "材质", "finish"]
-TEE_FEATURE_WORDS = [
-    "graphic", "图案", "印花", "print", "联名", "collab", "collaboration", "限量", "limited",
-    "结构", "cut", "材质", "material", "recycled", "反光", "reflective", "3d", "立体",
-    "interactive", "互动", "custom", "定制", "humor", "幽默", "concept", "概念",
-]
-TEE_REJECT_WORDS = [
-    "basic", "plain", "crew", "crewneck", "short sleeve", "短袖", "基础", "纯色",
-    "clip", "blank", "logo tee", "regular fit",
-]
 DAILY_SOURCE_QUOTAS = {
-    "社交灵感": 0,
-    "市场信号": 6,
+    "奖项案例": 8,
     "媒体案例": 6,
-    "奖项案例": 5,
-    "设计社区": 4,
-    "包装专项": 9,
+    "包装专项": 5,
+    "设计社区": 5,
+    "市场信号": 3,
+    "社交灵感": 3,
 }
 DAILY_CATEGORY_CAPS = {
+    "收纳包": 2,
     "T恤": 2,
+    "卫衣": 2,
     "Polo衫": 2,
-    "装置艺术": 3,
+    "帽子": 2,
+    "手机壳": 2,
+    "卡包": 2,
+    "钥匙扣水壶": 2,
+    "充电宝": 3,
+    "水杯": 3,
+    "创意桌搭": 3,
+    "中秋礼盒": 3,
+    "端午礼盒": 3,
 }
-DEFAULT_DAILY_CATEGORY_CAP = 4
+DEFAULT_DAILY_CATEGORY_CAP = 3
 
 
 def sorted_products(products):
@@ -171,6 +172,9 @@ def clean_product_url(value):
         return ""
     bad_segments = {"search", "tag", "tags", "category", "categories", "collections", "topics", "explore", "discover"}
     segments = [segment for segment in path.split("/") if segment]
+    if host.endswith("etsy.com"):
+        if not segments or segments[0] != "listing":
+            return ""
     if any(segment in bad_segments for segment in segments[:2]) and len(segments) <= 3:
         return ""
     if any(token in query for token in ["search=", "keyword=", "query=", "?q=", "&q=", "?s=", "&s="]):
@@ -186,8 +190,6 @@ def record(item):
     url = clean_product_url(item.get("url") or source.get("url") or "")
     return {
         "id": item.get("id"),
-        "product_key": item.get("product_key", ""),
-        "content_fingerprint": item.get("content_fingerprint", ""),
         "title": item.get("title", ""),
         "category": item.get("category", ""),
         "summary": item.get("ai_reason") or item.get("summary", ""),
@@ -223,71 +225,22 @@ def dedupe_key(item):
     return item.get("id") or normalize_key(item.get("url")) or normalize_key(item.get("title"))
 
 
-def product_identity_keys(item):
-    keys = set()
-    category = item.get("category") or "未分类"
-    for field in ["id", "product_key", "content_fingerprint"]:
-        value = normalize_key(item.get(field, ""))
-        if value:
-            keys.add(f"{field}:{value}")
-    url_key = normalize_key(item.get("url", ""))
-    if url_key:
-        keys.add(f"url:{url_key}")
-    title_key = normalize_key(item.get("title", ""))
-    if len(title_key) >= 6:
-        keys.add(f"title:{category}:{title_key}")
-    return keys or {dedupe_key(item)}
-
-
-def social_display_eligible(item):
-    if item.get("source_family") != "社交灵感":
-        return True
-    text = " ".join(
-        [
-            item.get("title", ""),
-            item.get("summary", ""),
-            " ".join(item.get("tags", [])),
-        ]
-    ).lower()
-    category = item.get("category", "")
-    words = [category] + CATEGORY_KEYWORDS.get(category, [])
-    if not any(word.lower() in text for word in words if word):
-        return False
-    weak_titles = ["gift idea", "daily gifts", "好浪漫", "wonderful year"]
-    return not any(token in text for token in weak_titles)
-
-
-def category_display_cap(category):
-    return DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP)
+STRICT_CATEGORY_CAPS = {"收纳包", "T恤", "卫衣", "Polo衫", "帽子"}
 
 
 def category_under_cap(picks, category, relaxed=False):
-    cap = category_display_cap(category)
-    if relaxed and category not in DAILY_CATEGORY_CAPS:
-        cap += 2
-    return Counter(pick["category"] for pick in picks).get(category, 0) < cap
-
-
-def apparel_top_display_eligible(item):
-    if item.get("category") not in {"T恤", "Polo衫"}:
-        return True
-    text = " ".join(
-        [
-            item.get("title", ""),
-            item.get("summary", ""),
-            " ".join(item.get("tags", [])),
-        ]
-    ).lower()
-    score = int(item.get("score") or 0)
-    if any(word.lower() in text for word in TEE_REJECT_WORDS):
-        return False
-    return score >= 72 and any(word.lower() in text for word in TEE_FEATURE_WORDS)
+    category = (category or "").strip()
+    cap = DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP)
+    if relaxed and category not in STRICT_CATEGORY_CAPS:
+        cap += 1
+    current = sum(1 for item in picks if item.get("category") == category)
+    return current < cap
 
 
 def display_eligible(item):
-    if not social_display_eligible(item):
+    if not item.get("title"):
         return False
-    if not apparel_top_display_eligible(item):
+    if item.get("source_family") == "市场信号" and not item.get("url"):
         return False
     return True
 
@@ -323,12 +276,9 @@ def build_daily_groups(items, per_day=30, max_days=30):
         by_day[item.get("first_seen") or item.get("last_seen") or "unknown"].append(item)
 
     groups = []
-    published_history = set()
-    for day in sorted(by_day.keys()):
-        historical_keys = set(published_history)
+    for day in sorted(by_day.keys(), reverse=True)[:max_days]:
         seen = set()
         picks = []
-        skipped_history_duplicates = 0
         ranked = [
             item
             for item in sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
@@ -341,15 +291,12 @@ def build_daily_groups(items, per_day=30, max_days=30):
                     break
                 if item["source_family"] != family:
                     continue
-                keys = product_identity_keys(item)
-                if keys & historical_keys:
-                    skipped_history_duplicates += 1
+                key = dedupe_key(item)
+                if key in seen:
                     continue
-                if keys & seen:
+                if not category_under_cap(picks, item.get("category")):
                     continue
-                if not category_under_cap(picks, item["category"]):
-                    continue
-                seen.update(keys)
+                seen.add(key)
                 picks.append(item)
                 if len(picks) >= per_day:
                     break
@@ -360,38 +307,25 @@ def build_daily_groups(items, per_day=30, max_days=30):
             if len(picks) >= per_day:
                 break
             family = item["source_family"]
-            if family == "社交灵感" and len([pick for pick in picks if pick["source_family"] == family]) >= DAILY_SOURCE_QUOTAS[family]:
+            key = dedupe_key(item)
+            if key in seen:
                 continue
-            keys = product_identity_keys(item)
-            if keys & historical_keys:
-                skipped_history_duplicates += 1
+            if not category_under_cap(picks, item.get("category")):
                 continue
-            if keys & seen:
-                continue
-            if not category_under_cap(picks, item["category"]):
-                continue
-            seen.update(keys)
+            seen.add(key)
             picks.append(item)
 
         for item in ranked:
             if len(picks) >= per_day:
                 break
             family = item["source_family"]
-            if family == "社交灵感" and len([pick for pick in picks if pick["source_family"] == family]) >= DAILY_SOURCE_QUOTAS[family]:
+            key = dedupe_key(item)
+            if key in seen:
                 continue
-            keys = product_identity_keys(item)
-            if keys & historical_keys:
-                skipped_history_duplicates += 1
+            if not category_under_cap(picks, item.get("category"), relaxed=True):
                 continue
-            if keys & seen:
-                continue
-            if not category_under_cap(picks, item["category"], relaxed=True):
-                continue
-            seen.update(keys)
+            seen.add(key)
             picks.append(item)
-
-        for item in picks:
-            published_history.update(product_identity_keys(item))
 
         by_source = Counter(item["source_family"] for item in picks)
         groups.append(
@@ -410,12 +344,11 @@ def build_daily_groups(items, per_day=30, max_days=30):
                         family: min(by_source.get(family, 0), quota)
                         for family, quota in DAILY_SOURCE_QUOTAS.items()
                     },
-                    "skipped_history_duplicates": skipped_history_duplicates,
                 },
                 "items": picks,
             }
         )
-    return list(reversed(groups))[:max_days]
+    return groups
 
 
 def build_payload(products, trends, weekly_report=None, weekly_groups=None):
