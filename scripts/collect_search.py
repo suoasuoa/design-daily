@@ -5,8 +5,6 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import datetime as dt
 from html.parser import HTMLParser
-import json
-import os
 import re
 import ssl
 import time
@@ -15,23 +13,11 @@ import urllib.request
 from zoneinfo import ZoneInfo
 
 from insight_common import RAW_DIR, ensure_dirs, load_json, stable_hash, strip_html, today, write_json
-from insight_config import CATEGORY_KEYWORDS, SOURCE_DOMAIN_META
+from insight_config import SOURCE_DOMAIN_META
 
 
 SSL_CONTEXT = ssl._create_unverified_context()
 LOCAL_TZ = ZoneInfo("Asia/Shanghai")
-SOCIAL_HOSTS = {"douyin.com", "xiaohongshu.com", "instagram.com"}
-PRODUCT_SIGNAL_WORDS = [
-    "好物", "种草", "开箱", "测评", "推荐", "新品", "同款", "礼物", "礼盒", "包装",
-    "收纳", "便携", "高颜值", "实用", "神器", "设计", "创意", "有趣", "好看", "爆款",
-    "概念", "手作", "自制", "改造", "diy", "prototype", "concept", "product", "design",
-    "unboxing", "review", "gift", "packaging", "gadget", "organizer", "setup", "accessory",
-    "case", "bottle", "cup", "lamp", "bag", "wallet", "charger", "calendar", "hoodie", "shirt",
-]
-LOW_VALUE_WORDS = [
-    "招聘", "下载", "登录", "账号", "隐私", "协议", "直播", "合集", "主页", "个人页",
-    "challenge", "profile", "login", "download", "privacy", "terms",
-]
 
 
 class DuckDuckGoParser(HTMLParser):
@@ -87,60 +73,8 @@ def source_meta_for_url(url):
     return None
 
 
-def social_host(url):
-    host = urllib.parse.urlparse(url).netloc.lower().replace("www.", "")
-    for domain in SOCIAL_HOSTS:
-        if host == domain or host.endswith("." + domain):
-            return domain
-    return ""
-
-
-def is_social_content_url(url):
-    domain = social_host(url)
-    if not domain:
-        return False
-    parsed = urllib.parse.urlparse(url)
-    path = parsed.path.lower()
-    if domain == "douyin.com":
-        return bool(re.search(r"/video/[0-9]+", path))
-    if domain == "xiaohongshu.com":
-        return bool(re.search(r"/(explore|discovery/item)/[0-9a-z]+", path))
-    if domain == "instagram.com":
-        return bool(re.search(r"/(p|reel|reels)/[a-z0-9_-]+", path))
-    return False
-
-
-def passes_selection_signal(job, result):
-    result_text = " ".join(
-        [
-            result.get("title", ""),
-            result.get("snippet", ""),
-        ]
-    ).lower()
-    full_text = " ".join(
-        [
-            job.get("category", ""),
-            job.get("query", ""),
-            result.get("title", ""),
-            result.get("snippet", ""),
-        ]
-    ).lower()
-    if any(word.lower() in result_text for word in LOW_VALUE_WORDS):
-        return False
-    category = job.get("category", "")
-    category_words = [category] + CATEGORY_KEYWORDS.get(category, [])
-    category_hit = any(word.lower() in result_text for word in category_words if word)
-    if social_host(result.get("url", "")):
-        product_hit = any(word.lower() in result_text for word in PRODUCT_SIGNAL_WORDS)
-        return category_hit and product_hit
-    if category_hit:
-        return True
-    return any(word.lower() in full_text for word in PRODUCT_SIGNAL_WORDS)
-
-
 def is_product_like_url(url):
-    meta = source_meta_for_url(url)
-    if not meta:
+    if not source_meta_for_url(url):
         return False
     parsed = urllib.parse.urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
@@ -150,8 +84,6 @@ def is_product_like_url(url):
     query = urllib.parse.parse_qs(parsed.query)
     if any(host.endswith(domain) for domain in ["duckduckgo.com", "google.com", "bing.com", "baidu.com"]):
         return False
-    if social_host(url):
-        return is_social_content_url(url)
     if any(key in query for key in ["q", "query", "keyword", "search", "s", "wd"]):
         return False
     bad_segments = {
@@ -159,6 +91,10 @@ def is_product_like_url(url):
         "explore", "discover", "feed", "archive", "page", "pages",
     }
     segments = [segment for segment in path.split("/") if segment]
+    if host.endswith("etsy.com"):
+        # Etsy market pages are browse/search landings, not concrete products.
+        if not segments or segments[0] != "listing":
+            return False
     if segments and segments[-1] in bad_segments:
         return False
     if any(segment in bad_segments for segment in segments[:2]) and len(segments) <= 3:
@@ -167,21 +103,6 @@ def is_product_like_url(url):
 
 
 def fetch_results(query, timeout=6):
-    searxng_url = os.environ.get("SEARXNG_BASE_URL", "").strip()
-    if searxng_url:
-        try:
-            return fetch_searxng_results(query, searxng_url, timeout=max(10, timeout))
-        except Exception as exc:
-            print(f"searxng fallback for {query}: {exc}", flush=True)
-
-    tavily_key = os.environ.get("TAVILY_API_KEY", "").strip()
-    use_tavily = os.environ.get("USE_TAVILY_SEARCH", "").strip().lower() in {"1", "true", "yes"}
-    if tavily_key and use_tavily:
-        return fetch_tavily_results(query, tavily_key, timeout=max(15, timeout))
-    try:
-        return fetch_ddgs_results(query, timeout=max(10, timeout))
-    except Exception as exc:
-        print(f"ddgs fallback for {query}: {exc}", flush=True)
     url = "https://duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
     req = urllib.request.Request(
         url,
@@ -197,85 +118,6 @@ def fetch_results(query, timeout=6):
     return parser.results
 
 
-def fetch_searxng_results(query, base_url, timeout=10):
-    base_url = base_url.rstrip("/")
-    url = base_url + "/search?" + urllib.parse.urlencode(
-        {
-            "q": query,
-            "format": "json",
-            "language": "zh-CN",
-            "safesearch": 1,
-        }
-    )
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 DesignDailyInsight/1.0",
-            "Accept": "application/json",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=timeout, context=SSL_CONTEXT) as resp:
-        payload = json.loads(resp.read().decode("utf-8", errors="replace"))
-    results = []
-    for item in payload.get("results", []):
-        results.append(
-            {
-                "url": item.get("url", ""),
-                "title": item.get("title", ""),
-                "snippet": item.get("content", ""),
-            }
-        )
-    return results
-
-
-def fetch_ddgs_results(query, timeout=10):
-    from ddgs import DDGS
-
-    results = []
-    with DDGS(timeout=timeout, verify=False) as ddgs:
-        for item in ddgs.text(query, region="cn-zh", safesearch="moderate", max_results=8):
-            results.append(
-                {
-                    "url": item.get("href") or item.get("url") or "",
-                    "title": item.get("title", ""),
-                    "snippet": item.get("body") or item.get("snippet") or "",
-                }
-            )
-    return results
-
-
-def fetch_tavily_results(query, api_key, timeout=20):
-    body = {
-        "query": query,
-        "topic": "general",
-        "search_depth": "basic",
-        "max_results": 8,
-        "include_answer": False,
-        "include_raw_content": False,
-    }
-    req = urllib.request.Request(
-        "https://api.tavily.com/search",
-        data=json.dumps(body).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=timeout, context=SSL_CONTEXT) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
-    results = []
-    for item in payload.get("results", []):
-        results.append(
-            {
-                "url": item.get("url", ""),
-                "title": item.get("title", ""),
-                "snippet": item.get("content", ""),
-            }
-        )
-    return results
-
-
 def lead_from_result(job, result):
     title = strip_html(result.get("title", "")).strip()
     snippet = strip_html(result.get("snippet", "")).strip()
@@ -288,12 +130,10 @@ def lead_from_result(job, result):
         job.get("intent_note", ""),
         job.get("source_group", ""),
     ]
-    if social_host(url):
-        tags.extend(["社媒公开索引", "需人工复核"])
     return {
         "id": stable_hash(f"{job.get('id')}|{url}|{title}"),
         "title": re.sub(r"\s+", " ", title)[:160],
-        "reason": snippet[:260] or f"公开社媒索引命中：{job.get('query')}。需按实用、高频、功能、打击面和价格空间复核。",
+        "reason": snippet[:260] or f"Open web search result for {job.get('query')}",
         "source": source,
         "source_type": meta.get("source_type", ""),
         "category": job.get("category"),
@@ -327,11 +167,7 @@ def rotate_jobs(jobs, limit_jobs, offset=None):
 
 def collect_one(job, per_job=4):
     try:
-        results = [
-            result
-            for result in fetch_results(job["query"])
-            if is_product_like_url(result.get("url", "")) and passes_selection_signal(job, result)
-        ][:per_job]
+        results = [result for result in fetch_results(job["query"]) if is_product_like_url(result.get("url", ""))][:per_job]
         leads = [lead_from_result(job, result) for result in results if result.get("title") and result.get("url")]
         return leads, f"{job['category']} | {job['query']}: {len(leads)}"
     except Exception as exc:
