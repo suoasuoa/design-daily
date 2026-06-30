@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T12:30:39+08:00",
+  "generated_at": "2026-06-30T15:15:00+08:00",
   "reviews": {
     "457f979bb17e": {
       "keep": true,
@@ -59959,6 +59959,30 @@
       "confidence": 0,
       "reason": "产品是钛合金国际象棋套装，不属于任何指定品类，创意礼盒仅限礼盒包装类，不适用",
       "reviewed_at": "2026-06-30T12:23:35+08:00",
+      "source": "deepseek"
+    },
+    "cf634af161e6": {
+      "keep": true,
+      "category": "水杯",
+      "confidence": 0,
+      "reason": "产品是玻璃酒瓶，属于水杯品类中的容器类，但更接近酒瓶，严格来说不属于水杯，但品类定义中水杯包括flasks，故保留。",
+      "reviewed_at": "2026-06-30T15:07:57+08:00",
+      "source": "deepseek"
+    },
+    "247ae6cfcc67": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "标题为Midway Chat，无摘要，无法判断是否为帽子产品，且来源Product Hunt多为软件，不明确属于帽子品类。",
+      "reviewed_at": "2026-06-30T15:07:57+08:00",
+      "source": "deepseek"
+    },
+    "d9494d3fe8c7": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "标题为Foresight by Lightning Rod，无摘要，无法判断是否为氛围灯产品，且来源Product Hunt多为软件，不明确属于氛围灯品类。",
+      "reviewed_at": "2026-06-30T15:07:57+08:00",
       "source": "deepseek"
     }
   }
