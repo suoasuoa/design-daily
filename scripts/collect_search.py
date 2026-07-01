@@ -4,7 +4,6 @@
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import datetime as dt
-from html.parser import HTMLParser
 import re
 import ssl
 import time
@@ -15,42 +14,14 @@ from zoneinfo import ZoneInfo
 from insight_common import RAW_DIR, ensure_dirs, load_json, stable_hash, strip_html, today, write_json
 from insight_config import SOURCE_DOMAIN_META
 
+try:
+    from ddgs import DDGS
+except Exception:  # pragma: no cover - fallback path for environments without ddgs
+    DDGS = None
+
 
 SSL_CONTEXT = ssl._create_unverified_context()
 LOCAL_TZ = ZoneInfo("Asia/Shanghai")
-
-
-class DuckDuckGoParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.results = []
-        self.current = None
-        self.capture_title = False
-        self.capture_snippet = False
-
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-        classes = attrs.get("class", "")
-        if tag == "a" and "result__a" in classes:
-            self.current = {"url": clean_duck_url(attrs.get("href", "")), "title": "", "snippet": ""}
-            self.capture_title = True
-        elif self.current and tag in {"a", "div"} and "result__snippet" in classes:
-            self.capture_snippet = True
-
-    def handle_data(self, data):
-        if self.current and self.capture_title:
-            self.current["title"] += data
-        elif self.current and self.capture_snippet:
-            self.current["snippet"] += data
-
-    def handle_endtag(self, tag):
-        if self.current and self.capture_title and tag == "a":
-            self.capture_title = False
-            if self.current.get("title") and self.current.get("url"):
-                self.results.append(self.current)
-        if self.current and self.capture_snippet and tag in {"a", "div"}:
-            self.capture_snippet = False
-            self.current = None
 
 
 def clean_duck_url(url):
@@ -103,6 +74,21 @@ def is_product_like_url(url):
 
 
 def fetch_results(query, timeout=6):
+    if DDGS is not None:
+        try:
+            results = []
+            with DDGS(timeout=timeout) as ddgs:
+                for row in ddgs.text(query, max_results=12):
+                    title = strip_html(row.get("title", "")).strip()
+                    url = row.get("href", "") or row.get("url", "")
+                    snippet = strip_html(row.get("body", "") or row.get("snippet", "")).strip()
+                    if title and url:
+                        results.append({"url": url, "title": title, "snippet": snippet})
+            if results:
+                return results
+        except Exception:
+            pass
+
     url = "https://duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
     req = urllib.request.Request(
         url,
@@ -113,9 +99,20 @@ def fetch_results(query, timeout=6):
     )
     with urllib.request.urlopen(req, timeout=timeout, context=SSL_CONTEXT) as resp:
         html = resp.read().decode("utf-8", errors="replace")
-    parser = DuckDuckGoParser()
-    parser.feed(html)
-    return parser.results
+    results = []
+    for match in re.finditer(
+        r'<a[^>]*class="result__a"[^>]*href="(?P<href>[^"]+)"[^>]*>(?P<title>.*?)</a>.*?<a[^>]*class="result__snippet"[^>]*>(?P<snippet>.*?)</a>',
+        html,
+        re.S,
+    ):
+        results.append(
+            {
+                "url": clean_duck_url(match.group("href")),
+                "title": strip_html(match.group("title")).strip(),
+                "snippet": strip_html(match.group("snippet")).strip(),
+            }
+        )
+    return results
 
 
 def lead_from_result(job, result):
