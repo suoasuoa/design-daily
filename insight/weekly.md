@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-04T15:18:51+08:00
+- 生成时间：2026-07-05T12:34:48+08:00
 
 ## 行动分布
 
@@ -265,7 +265,19 @@ Instagram · 法国香氛蜡烛礼品套装
 
 Theory高端商务休闲Polo衫
 
-### 22. 永璞 咖啡联名礼盒
+### 22. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：功能启发、包装启发、结构启发
+- 分数：7.5
+- 来源：Instagram
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.instagram.com/reel/DWpmFr-iWrO
+
+产品实用性强，一秒成型和打平设计解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；功能完整无短板；3秒看懂操作；预估售价超35元；情绪价值中等，需结合定制设计提升。
+
+### 23. 永璞 咖啡联名礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -277,7 +289,7 @@ Theory高端商务休闲Polo衫
 
 抖音 · 永璞咖啡设计师联名套装
 
-### 23. Jo Malone 圣诞礼盒
+### 24. Jo Malone 圣诞礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -289,7 +301,7 @@ Theory高端商务休闲Polo衫
 
 Instagram · 祖玛珑限定圣诞礼盒
 
-### 24. Ronnefeldt 端午茶礼
+### 25. Ronnefeldt 端午茶礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -301,7 +313,7 @@ Instagram · 祖玛珑限定圣诞礼盒
 
 Instagram · 德国顶级茶叶端午限定
 
-### 25. 广州酒家 端午礼盒
+### 26. 广州酒家 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -313,7 +325,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 广式粽子礼盒
 
-### 26. 元祖 雪月饼礼盒
+### 27. 元祖 雪月饼礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -325,7 +337,7 @@ Instagram · 德国顶级茶叶端午限定
 
 小红书 · 元祖经典冰淇淋月饼礼盒
 
-### 27. 观夏 蜡烛礼盒
+### 28. 观夏 蜡烛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -337,7 +349,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 东方植物香薰礼盒
 
-### 28. TWG Tea 中秋礼盒
+### 29. TWG Tea 中秋礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -349,7 +361,7 @@ Instagram · 德国顶级茶叶端午限定
 
 Instagram · 新加坡顶级茶叶中秋礼盒
 
-### 29. BYREDO 香氛礼盒
+### 30. BYREDO 香氛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -360,18 +372,6 @@ Instagram · 新加坡顶级茶叶中秋礼盒
 - 链接：https://www.byredo.com/us_en/gifts
 
 Instagram · 瑞典小众香氛礼品套装
-
-### 30. 华源茶业 端午定制礼
-
-- 品类：端午礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：7.4
-- 来源：抖音
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.huayuan-tea.com
-
-华源茶业端午礼品装设计
 
 ### 31. Refik Anadol AI装置
 
@@ -805,19 +805,7 @@ Good Design Award · This one-touch stainless steel mug is designed for easy one
 
 Good Design Award · An original stainless steel thermos bottle that is not only easy to carry, but also easy to wash thanks to its unique packing structure.
 
-### 67. Elthy™ Series
-
-- 品类：创意礼盒
-- 路径：适合改造
-- 启发：包装启发、结构启发
-- 分数：8.4
-- 来源：iF设计奖
-- 下一步：拆解包装结构和开箱动线，做二次主题化
-- 链接：https://ifdesign.com/en/winner-ranking/project/elthy-series/768588
-
-iF Design Award · The Elthy™ Series packaging is designed to embody the brand vision — a playground for adults. It experiments with bold material ideas using recycled paper pulp as the core structure, forming both its tactile and symbolic character. The design embrac
-
-### 68. Honeycomb Lifting LED Light Box
+### 67. Honeycomb Lifting LED Light Box
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -829,7 +817,7 @@ iF Design Award · The Elthy™ Series packaging is designed to embody the brand
 
 iF Design Award · This is a multi-functional light box that integrates eco-friendliness, reusability, and a creative opening method. The entire packaging adopts 100% naturally degradable corrugated cardboard combined with honeycomb paper. It features a minimalist stru
 
-### 69. Nature bamboo fiber cup
+### 68. Nature bamboo fiber cup
 
 - 品类：水杯
 - 路径：适合改造
@@ -841,7 +829,7 @@ iF Design Award · This is a multi-functional light box that integrates eco-frie
 
 iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to nature" through sustainable design. Crafted from natural bamboo fiber, recycled coffee grounds, and plant-based starch, it is free from plastics and synthetic polymers, certified plastic-fr
 
-### 70. Desktop wizard
+### 69. Desktop wizard
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -853,7 +841,7 @@ iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to 
 
 Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
-### 71. Flo Monitor Arm
+### 70. Flo Monitor Arm
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -865,19 +853,7 @@ Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
 Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
-### 72. Multi Device Charging Hub | 105W wireless power | Grommet
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.2
-- 来源：The Grommet
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://thegrommet.com/product/gadgets/flexhub-charging-station
-
-产品解决多设备充电痛点，实用性强；日常高频使用；覆盖手机、平板、耳机等多用户；功能全面但无线充电功率可能受限；预估售价可能超35元；3秒看懂；情绪价值中等。
-
-### 73. RFID防护卡包
+### 71. RFID防护卡包
 
 - 品类：卡包
 - 路径：适合改造
@@ -889,7 +865,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 Pinterest · RFID防射频极薄卡片包
 
-### 74. 超薄充电宝
+### 72. 超薄充电宝
 
 - 品类：充电宝
 - 路径：适合改造
@@ -901,7 +877,7 @@ Pinterest · RFID防射频极薄卡片包
 
 Pinterest · Anker超薄磁吸充电宝
 
-### 75. 极简Logo Tee
+### 73. 极简Logo Tee
 
 - 品类：T恤
 - 路径：适合改造
@@ -912,6 +888,30 @@ Pinterest · Anker超薄磁吸充电宝
 - 链接：#
 
 Pinterest · A.P.C.经典极简Logo白T恤
+
+### 74. T恤图案设计
+
+- 品类：T恤
+- 路径：适合改造
+- 启发：视觉启发
+- 分数：8.2
+- 来源：Behance
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：#
+
+Behance · 原创T恤图案印花设计项目
+
+### 75. 极简纸灯
+
+- 品类：氛围灯
+- 路径：适合改造
+- 启发：情绪启发
+- 分数：8.2
+- 来源：Pinterest
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.muji.com/jp/ja/store/cmdty/section/S106010102
+
+Pinterest · 日本和纸极简落地灯
 
 ### 76. Talking Tree
 
