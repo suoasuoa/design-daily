@@ -6,6 +6,8 @@ on:
     types: [completed]
   schedule:
     # Keep retrying across the evening so GitHub schedule drift does not skip the push.
+    # The 18:30 Beijing run ("30 10 * * *") acts as a hard backstop:
+    # if today's digest has not been sent yet, it bypasses the time window and sends once.
     - cron: "0 9 * * *"
     - cron: "10 9 * * *"
     - cron: "20 9 * * *"
@@ -66,6 +68,9 @@ jobs:
           FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
         run: |
           WINDOW_ARGS="--window-start 17:00 --window-end 23:30"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "30 10 * * *" ]; then
+            WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
+          fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_send || 'false' }}" = "true" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
           fi
