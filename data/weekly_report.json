@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:44:24+08:00",
+  "generated_at": "2026-07-06T16:05:24+08:00",
   "week": "2026-W28",
   "group_id": "2026-W28",
   "date_start": "2026-07-06",
@@ -16,12 +16,12 @@
       "方向参考": 25
     },
     "by_category": {
-      "氛围灯": 13,
       "创意厨具": 12,
       "创意礼盒": 12,
+      "氛围灯": 12,
       "水杯": 12,
+      "端午礼盒": 9,
       "装置艺术": 9,
-      "端午礼盒": 8,
       "中秋礼盒": 6,
       "创意桌搭": 5,
       "冲锋衣": 5,
@@ -35,11 +35,11 @@
       "充电宝": 1
     },
     "by_axis": {
-      "功能启发": 36,
-      "包装启发": 30,
+      "功能启发": 35,
+      "包装启发": 31,
       "结构启发": 22,
       "视觉启发": 17,
-      "情绪启发": 15
+      "情绪启发": 14
     }
   },
   "dedupe": {
@@ -534,34 +534,6 @@
       ]
     },
     {
-      "id": "d1358f98f303",
-      "product_key": null,
-      "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
-      "image": "",
-      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景，打击面较广；功能无短板，3秒看懂；预估售价超35元；情绪价值中等，但功能成立后可通过定制提升。",
-      "risk": "折叠盒定制，明确为创意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "折叠盒",
-        "包装定制",
-        "social_public_index",
-        "白名单来源"
-      ]
-    },
-    {
       "id": "ea34c7643707",
       "product_key": null,
       "title": "永璞 咖啡联名礼盒",
@@ -743,6 +715,29 @@
       "tags": [
         "Instagram",
         "创意礼盒"
+      ]
+    },
+    {
+      "id": "ec44cb5f1768",
+      "product_key": null,
+      "title": "华源茶业 端午定制礼",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.huayuan-tea.com",
+      "image": "",
+      "summary": "华源茶业端午礼品装设计",
+      "risk": "明确为端午礼品装",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "华源",
+        "端午礼盒"
       ]
     },
     {
@@ -1579,6 +1574,30 @@
       ]
     },
     {
+      "id": "100a91c8a510",
+      "product_key": null,
+      "title": "Elthy™ Series",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "url": "https://ifdesign.com/en/winner-ranking/project/elthy-series/768588",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1164274/768588/3591f237-f59c-4a68-9f68-4d94a36b6001/elthy-my_days.co_2.jpg",
+      "summary": "iF Design Award · The Elthy™ Series packaging is designed to embody the brand vision — a playground for adults. It experiments with bold material ideas using recycled paper pulp as the core structure, forming both its tactile and symbolic character. The design embrac",
+      "risk": "包装系列属于创意礼盒",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
       "id": "db0b9753cf96",
       "product_key": null,
       "title": "Honeycomb Lifting LED Light Box",
@@ -1761,29 +1780,6 @@
       "tags": [
         "Behance",
         "T恤"
-      ]
-    },
-    {
-      "id": "8f536fc8b12d",
-      "product_key": null,
-      "title": "极简纸灯",
-      "category": "氛围灯",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "https://www.muji.com/jp/ja/store/cmdty/section/S106010102",
-      "image": "",
-      "summary": "Pinterest · 日本和纸极简落地灯",
-      "risk": "明确属于氛围灯品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "氛围灯"
       ]
     },
     {
