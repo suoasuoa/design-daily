@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T18:28:39+08:00",
+  "generated_at": "2026-07-08T18:54:00+08:00",
   "reviews": {
     "457f979bb17e": {
       "keep": true,
@@ -73727,6 +73727,102 @@
       "confidence": 0,
       "reason": "内容为着装指南，未明确具体产品，不属于卫衣",
       "reviewed_at": "2026-07-08T17:59:10+08:00",
+      "source": "deepseek"
+    },
+    "2a678d1a2445": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "Architecture renovation, not a hat product.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "91a9507177ca": {
+      "keep": true,
+      "category": "氛围灯",
+      "confidence": 3,
+      "reason": "Collection includes lamps, clearly ambience lighting.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "1b3e8cba389d": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "Museum architecture, not a drinkware product.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "0134a6a36706": {
+      "keep": true,
+      "category": "装置艺术",
+      "confidence": 4,
+      "reason": "Public art installation, clearly installation art.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "4e9575067b1b": {
+      "keep": true,
+      "category": "端午礼盒",
+      "confidence": 4,
+      "reason": "Mid-Autumn? Actually title says '财富礼盒' but tags and source indicate 端午礼盒; however summary mentions 端午礼盒, so keep as 端午礼盒.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "7903bbd19142": {
+      "keep": true,
+      "category": "端午礼盒",
+      "confidence": 4,
+      "reason": "Title says 龙年礼盒 but summary mentions 端午礼盒 design, clearly Dragon Boat Festival gift box.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "5b2bf35370c0": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "Industrial designer spotlight, no product.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "5be1387fdf18": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "Confectionery packaging design, not 端午礼盒.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "3900da421ff4": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "Confectionery packaging, not 端午礼盒.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "fd45a57eb9be": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "Alcoholic drinks packaging, not 端午礼盒.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "bf6cbcc588d7": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "T-shirt product, not power bank.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
+      "source": "deepseek"
+    },
+    "a475fcfccd7a": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "T-shirt product, not power bank.",
+      "reviewed_at": "2026-07-08T18:54:00+08:00",
       "source": "deepseek"
     }
   }
