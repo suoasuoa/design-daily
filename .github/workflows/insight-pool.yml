@@ -194,7 +194,7 @@ jobs:
           git add index.html data/raw/ data/reports/ data/search_jobs.json data/products.json data/dedupe_index.json data/seen_fingerprints.json data/category_review.json data/rejected_category.json data/published.json data/trends.json data/weekly_report.json insight/
           if ! git diff --staged --quiet; then
             git commit -m "Update insight pool $(date +%Y-%m-%d)"
-            git pull --rebase origin main
+            git pull --rebase -X theirs origin main
             git push
           else
             echo "No insight pool changes"
