@@ -6,7 +6,7 @@ import json
 import re
 from urllib.parse import urlparse
 
-from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
 from insight_config import CATEGORIES
 
 
@@ -27,21 +27,26 @@ DAILY_SOURCE_QUOTAS = {
     "社交灵感": 3,
 }
 DAILY_CATEGORY_CAPS = {
+    "创意礼盒": 3,
+    "装置艺术": 3,
+    "创意厨具": 3,
+    "创意桌搭": 3,
+    "氛围灯": 3,
+    "水杯": 3,
+    "中秋礼盒": 2,
+    "端午礼盒": 2,
     "收纳包": 2,
-    "T恤": 2,
-    "卫衣": 2,
-    "Polo衫": 2,
-    "帽子": 2,
+    "T恤": 1,
+    "卫衣": 1,
+    "Polo衫": 1,
+    "帽子": 1,
     "手机壳": 2,
     "卡包": 2,
-    "钥匙扣水壶": 2,
-    "充电宝": 3,
-    "水杯": 3,
-    "创意桌搭": 3,
-    "中秋礼盒": 3,
-    "端午礼盒": 3,
+    "钥匙扣水壶": 1,
+    "充电宝": 2,
+    "冲锋衣": 2,
 }
-DEFAULT_DAILY_CATEGORY_CAP = 3
+DEFAULT_DAILY_CATEGORY_CAP = 2
 
 
 def sorted_products(products):
@@ -161,25 +166,7 @@ def clean_image_url(value):
 
 
 def clean_product_url(value):
-    value = (value or "").strip()
-    parsed = urlparse(value)
-    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
-        return ""
-    host = parsed.netloc.lower()
-    path = parsed.path.lower().strip("/")
-    query = value.lower()
-    if any(host.endswith(domain) for domain in ["duckduckgo.com", "google.com", "bing.com", "baidu.com"]):
-        return ""
-    bad_segments = {"search", "tag", "tags", "category", "categories", "collections", "topics", "explore", "discover"}
-    segments = [segment for segment in path.split("/") if segment]
-    if host.endswith("etsy.com"):
-        if not segments or segments[0] != "listing":
-            return ""
-    if any(segment in bad_segments for segment in segments[:2]) and len(segments) <= 3:
-        return ""
-    if any(token in query for token in ["search=", "keyword=", "query=", "?q=", "&q=", "?s=", "&s="]):
-        return ""
-    return value
+    return clean_direct_product_url(value)
 
 
 def record(item):
@@ -226,12 +213,13 @@ def dedupe_key(item):
 
 
 STRICT_CATEGORY_CAPS = {"收纳包", "T恤", "卫衣", "Polo衫", "帽子"}
+RELAXABLE_CATEGORIES = {"创意礼盒", "装置艺术", "创意厨具", "创意桌搭", "氛围灯", "水杯"}
 
 
 def category_under_cap(picks, category, relaxed=False):
     category = (category or "").strip()
     cap = DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP)
-    if relaxed and category not in STRICT_CATEGORY_CAPS:
+    if relaxed and category in RELAXABLE_CATEGORIES:
         cap += 1
     current = sum(1 for item in picks if item.get("category") == category)
     return current < cap
@@ -240,9 +228,42 @@ def category_under_cap(picks, category, relaxed=False):
 def display_eligible(item):
     if not item.get("title"):
         return False
-    if item.get("source_family") == "市场信号" and not item.get("url"):
+    if not item.get("url"):
         return False
     return True
+
+
+def balanced_ranked_items(ranked, picks, seen):
+    category_counts = Counter(item.get("category") or "未分类" for item in picks)
+    family_counts = Counter(item.get("source_family") or "其他来源" for item in picks)
+
+    def key(item):
+        return (
+            category_counts[item.get("category") or "未分类"],
+            family_counts[item.get("source_family") or "其他来源"],
+            -(item.get("score") or 0),
+            -(item.get("seen_count") or 0),
+            item.get("title") or "",
+        )
+
+    return sorted(
+        [item for item in ranked if dedupe_key(item) not in seen],
+        key=key,
+    )
+
+
+def append_balanced_fill(ranked, picks, seen, per_day, relaxed=False):
+    while len(picks) < per_day:
+        chosen = None
+        for item in balanced_ranked_items(ranked, picks, seen):
+            if not category_under_cap(picks, item.get("category"), relaxed=relaxed):
+                continue
+            chosen = item
+            break
+        if not chosen:
+            return
+        seen.add(dedupe_key(chosen))
+        picks.append(chosen)
 
 
 def compact_weekly_report(report):
@@ -303,29 +324,8 @@ def build_daily_groups(items, per_day=30, max_days=30):
             if len(picks) >= per_day:
                 break
 
-        for item in ranked:
-            if len(picks) >= per_day:
-                break
-            family = item["source_family"]
-            key = dedupe_key(item)
-            if key in seen:
-                continue
-            if not category_under_cap(picks, item.get("category")):
-                continue
-            seen.add(key)
-            picks.append(item)
-
-        for item in ranked:
-            if len(picks) >= per_day:
-                break
-            family = item["source_family"]
-            key = dedupe_key(item)
-            if key in seen:
-                continue
-            if not category_under_cap(picks, item.get("category"), relaxed=True):
-                continue
-            seen.add(key)
-            picks.append(item)
+        append_balanced_fill(ranked, picks, seen, per_day, relaxed=False)
+        append_balanced_fill(ranked, picks, seen, per_day, relaxed=True)
 
         by_source = Counter(item["source_family"] for item in picks)
         groups.append(
