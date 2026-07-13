@@ -6,7 +6,7 @@ from collections import Counter, defaultdict
 import datetime as dt
 import re
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, today, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, source_quality, source_type, today, write_json
 
 
 LANE_ORDER = ["可直接买样", "适合改造", "方向参考"]
@@ -60,6 +60,14 @@ def normalize_item(item):
         source = item["sources"][0].get("source", "")
     score = int(item.get("score") or item.get("selection_score") or 0)
     url = clean_direct_product_url(item.get("url") or "")
+    source_type_value = item.get("source_type", "") or source_type(source or "")
+    source_group = item.get("source_group", "")
+    quality = item.get("source_quality") or source_quality(
+        source=source or "",
+        source_type_value=source_type_value,
+        source_group=source_group,
+        quality_tier=item.get("quality_tier", ""),
+    )
     return {
         "id": item.get("id"),
         "product_key": item.get("product_key"),
@@ -71,6 +79,7 @@ def normalize_item(item):
         "score_label": f"{score / 10:.1f}",
         "source": source or "未知来源",
         "source_family": item.get("source_family", "其他来源"),
+        "source_quality": quality,
         "url": url,
         "image": item.get("image", ""),
         "summary": item.get("summary") or item.get("ai_reason") or "",
@@ -99,6 +108,11 @@ def pick_balanced(items, limit=100):
     for item in sorted(items, key=product_score, reverse=True):
         if not item.get("url"):
             continue
+        if item.get("source_quality") == "weak":
+            if not item.get("image") or int(item.get("score") or 0) < 82:
+                continue
+            if item.get("category") in {"T恤", "卫衣", "Polo衫", "帽子"}:
+                continue
         by_lane[item.get("action_lane", "方向参考")].append(item)
 
     picked = []
