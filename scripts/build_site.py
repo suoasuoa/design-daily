@@ -6,7 +6,7 @@ import json
 import re
 from urllib.parse import urlparse
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, source_quality, source_type, write_json
 from insight_config import CATEGORIES
 
 
@@ -24,6 +24,7 @@ DAILY_SOURCE_QUOTAS = {
     "包装专项": 5,
     "设计社区": 5,
     "市场信号": 3,
+    "弱市场信号": 1,
     "社交灵感": 3,
 }
 DAILY_CATEGORY_CAPS = {
@@ -68,22 +69,40 @@ def hits(text, words):
 
 def source_family(item):
     source = (item.get("sources") or [{}])[0]
-    source_type = source.get("source_type", "")
-    if source_type == "social_signal":
+    source_type_value = source.get("source_type", "") or source_type(source.get("source", ""))
+    quality = source_quality(
+        source=source.get("source", ""),
+        source_type_value=source_type_value,
+        source_group=source.get("source_group", ""),
+        quality_tier=source.get("quality_tier", "") or source.get("source_quality", ""),
+    )
+    if source_type_value == "social_signal":
         return "社交灵感"
-    if source_type == "verified_official":
+    if source_type_value == "verified_official":
         return "奖项案例"
-    if source_type == "editorial_source":
+    if source_type_value == "editorial_source":
         return "媒体案例"
-    if source_type == "packaging_source":
+    if source_type_value == "packaging_source":
         return "包装专项"
-    if source_type == "design_community":
+    if source_type_value == "design_community":
         return "设计社区"
-    if source_type == "market_reference":
+    if source_type_value == "market_reference":
+        if quality == "weak":
+            return "弱市场信号"
         return "市场信号"
-    if source_type == "trend_source":
-        return "趋势观察"
+    if source_type_value == "trend_source":
+        return "弱市场信号" if quality == "weak" else "趋势观察"
     return "其他来源"
+
+
+def source_quality_label(item):
+    source = (item.get("sources") or [{}])[0]
+    return source_quality(
+        source=source.get("source", ""),
+        source_type_value=source.get("source_type", "") or source_type(source.get("source", "")),
+        source_group=source.get("source_group", ""),
+        quality_tier=source.get("quality_tier", "") or source.get("source_quality", ""),
+    )
 
 
 def action_lane(item):
@@ -186,7 +205,8 @@ def record(item):
         "url": url,
         "source_name": source.get("source", item.get("source_primary", "未知来源")),
         "source_family": source_family(item),
-        "source_type": source.get("source_type", ""),
+        "source_type": source.get("source_type", "") or source_type(source.get("source", "")),
+        "source_quality": source_quality_label(item),
         "action_lane": action_lane(item),
         "axes": axes,
         "image_state": image_state(item),
@@ -230,17 +250,26 @@ def display_eligible(item):
         return False
     if not item.get("url"):
         return False
+    if item.get("source_quality") == "weak":
+        if not item.get("image"):
+            return False
+        if int(item.get("score") or 0) < 78:
+            return False
+        if item.get("category") in {"T恤", "卫衣", "Polo衫", "帽子"}:
+            return False
     return True
 
 
 def balanced_ranked_items(ranked, picks, seen):
     category_counts = Counter(item.get("category") or "未分类" for item in picks)
     family_counts = Counter(item.get("source_family") or "其他来源" for item in picks)
+    quality_rank = {"premium": 0, "standard": 1, "weak": 2}
 
     def key(item):
         return (
             category_counts[item.get("category") or "未分类"],
             family_counts[item.get("source_family") or "其他来源"],
+            quality_rank.get(item.get("source_quality") or "standard", 1),
             -(item.get("score") or 0),
             -(item.get("seen_count") or 0),
             item.get("title") or "",
