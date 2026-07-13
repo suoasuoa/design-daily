@@ -4,12 +4,11 @@
 import argparse
 from collections import defaultdict, deque
 import datetime as dt
-import os
 import urllib.parse
 from zoneinfo import ZoneInfo
 
 from insight_common import DATA_DIR, ensure_dirs, today, write_json
-from insight_config import CATEGORIES, CATEGORY_SOURCE_GROUPS, SEARCH_INTENTS, SEARCH_QUERY_PATTERNS, SEARCH_SOURCE_GROUPS
+from insight_config import CATEGORIES, CATEGORY_SOURCE_GROUPS, SEARCH_INTENTS, SEARCH_QUERY_PATTERNS, SEARCH_SOURCE_GROUPS, SOURCE_GROUP_QUALITY
 
 LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 
@@ -30,7 +29,6 @@ def build_jobs(categories=None, per_category=4):
     categories = categories or CATEGORIES
     jobs = []
     current_day = today()
-    enable_social = os.environ.get("ENABLE_SOCIAL_PUBLIC_SEARCH", "").strip().lower() in {"1", "true", "yes"}
     for category in categories:
         base_queries = SEARCH_QUERY_PATTERNS.get(category, [category])
         for query in base_queries[: max(1, min(per_category, 3))]:
@@ -41,19 +39,17 @@ def build_jobs(categories=None, per_category=4):
                     "category": category,
                     "query": query,
                     "intent": intent,
-                    "intent_note": SEARCH_INTENTS[intent],
-                    "source_group": "curated_keyword",
-                    "quality_tier": "curated",
-                    "search_url": search_url(query),
-                    "created_at": current_day,
-                }
+                        "intent_note": SEARCH_INTENTS[intent],
+                        "source_group": "curated_keyword",
+                        "quality_tier": SOURCE_GROUP_QUALITY.get("curated_keyword", "standard"),
+                        "search_url": search_url(query),
+                        "created_at": current_day,
+                    }
             )
         group_names = CATEGORY_SOURCE_GROUPS.get(
             category,
-            ["editorial_main", "award_gallery", "design_community", "market_signal"],
+            ["award_gallery", "editorial_main", "design_community", "market_signal_strong", "market_signal_weak"],
         )
-        if enable_social and "social_public_index" not in group_names:
-            group_names = list(group_names) + ["social_public_index"]
         for group_name in group_names:
             sites = SEARCH_SOURCE_GROUPS.get(group_name, [])
             for site in sites:
@@ -67,7 +63,7 @@ def build_jobs(categories=None, per_category=4):
                         "intent": intent,
                         "intent_note": SEARCH_INTENTS[intent],
                         "source_group": group_name,
-                        "quality_tier": "curated",
+                        "quality_tier": SOURCE_GROUP_QUALITY.get(group_name, "standard"),
                         "search_url": search_url(query),
                         "created_at": current_day,
                     }
@@ -83,13 +79,13 @@ def balanced_jobs(jobs):
         buckets[key].append(job)
 
     group_order = [
+        "award_gallery",
+        "editorial_main",
         "packaging_specialist",
         "design_community",
-        "market_signal",
-        "social_public_index",
-        "editorial_main",
-        "award_gallery",
+        "market_signal_strong",
         "curated_keyword",
+        "market_signal_weak",
     ]
     ordered = []
     while any(buckets.values()):
