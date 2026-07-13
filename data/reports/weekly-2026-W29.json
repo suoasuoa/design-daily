@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T12:02:51+08:00",
+  "generated_at": "2026-07-13T15:30:19+08:00",
   "week": "2026-W29",
   "group_id": "2026-W29",
   "date_start": "2026-07-13",
@@ -16,29 +16,29 @@
       "方向参考": 25
     },
     "by_category": {
-      "氛围灯": 13,
+      "氛围灯": 14,
       "创意厨具": 12,
       "创意礼盒": 12,
       "水杯": 12,
-      "装置艺术": 9,
-      "端午礼盒": 8,
-      "中秋礼盒": 6,
+      "端午礼盒": 9,
+      "装置艺术": 8,
+      "冲锋衣": 7,
       "创意桌搭": 5,
-      "冲锋衣": 5,
-      "卡包": 4,
-      "收纳包": 3,
-      "T恤": 3,
-      "Polo衫": 2,
-      "帽子": 2,
+      "中秋礼盒": 4,
+      "收纳包": 4,
+      "Polo衫": 3,
+      "卡包": 3,
+      "日历": 2,
       "卫衣": 2,
-      "日历": 1,
-      "充电宝": 1
+      "充电宝": 1,
+      "帽子": 1,
+      "T恤": 1
     },
     "by_axis": {
       "功能启发": 36,
-      "包装启发": 30,
+      "包装启发": 29,
       "结构启发": 22,
-      "视觉启发": 17,
+      "视觉启发": 18,
       "情绪启发": 15
     }
   },
@@ -141,29 +141,6 @@
       ]
     },
     {
-      "id": "6969e57e06c6",
-      "product_key": null,
-      "title": "中秋礼盒包装项目",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/c04940249410409.Y3JvcCwzOTk5LDMxMjgsMCw5NTA.png",
-      "summary": "Behance · 新式中秋月饼礼盒包装设计",
-      "risk": "明确属于中秋礼盒品类",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Behance",
-        "中秋礼盒"
-      ]
-    },
-    {
       "id": "c33ebf6c6dd7",
       "product_key": null,
       "title": "香薰蜡烛礼盒",
@@ -255,29 +232,6 @@
       "tags": [
         "小红书",
         "社交精选"
-      ]
-    },
-    {
-      "id": "1205fcee37e7",
-      "product_key": null,
-      "title": "元祖 中秋礼盒",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 78,
-      "score_label": "7.8",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "",
-      "summary": "台湾百年老店中秋限定礼盒",
-      "risk": "明确为中秋限定礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "中秋礼盒",
-        "老字号"
       ]
     },
     {
@@ -550,12 +504,13 @@
       "source_family": "社交灵感",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广泛；功能无明显短板；预估售价超35元；3秒看懂操作；情绪价值中等，需结合定制设计提升。",
+      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广泛；功能无明显短板；预估售价超35元；3秒可看懂折叠成型原理；情绪价值中等，但功能已成立。",
       "risk": "折叠盒定制，明确为创意礼盒",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "创意礼盒",
         "折叠盒",
+        "包装定制",
         "礼品包装",
         "social_public_index",
         "白名单来源"
@@ -746,6 +701,52 @@
       ]
     },
     {
+      "id": "ec44cb5f1768",
+      "product_key": null,
+      "title": "华源茶业 端午定制礼",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "url": "https://www.huayuan-tea.com",
+      "image": "",
+      "summary": "华源茶业端午礼品装设计",
+      "risk": "明确为端午礼品装",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "华源",
+        "端午礼盒"
+      ]
+    },
+    {
+      "id": "a8df1b64476e",
+      "product_key": null,
+      "title": "Massimo Dutti Polo衫",
+      "category": "Polo衫",
+      "action_lane": "可直接买样",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "url": "https://www.massimodutti.com",
+      "image": "",
+      "summary": "西班牙高端休闲Polo衫",
+      "risk": "明确为Polo衫",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Polo衫",
+        "商务"
+      ]
+    },
+    {
       "id": "ec8d91a42e5e",
       "product_key": null,
       "title": "Refik Anadol AI装置",
@@ -792,30 +793,6 @@
       ]
     },
     {
-      "id": "15cdd4b03482",
-      "product_key": null,
-      "title": "桌面线材收纳",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://cdn.shopify.com/s/files/1/0384/6721/files/apple-watch-natural-metal-band-front.jpg?v=1728060667&width=1280&height=630",
-      "summary": "Pinterest · 磁吸式桌面线材收纳管理器",
-      "risk": "产品为桌面线材收纳管理器，属于桌搭用品，符合创意桌搭定义。",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Pinterest",
-        "创意桌搭"
-      ]
-    },
-    {
       "id": "ecf9995de5e7",
       "product_key": null,
       "title": "光影装置",
@@ -859,52 +836,6 @@
       "tags": [
         "Pinterest",
         "氛围灯"
-      ]
-    },
-    {
-      "id": "922c02a20ba3",
-      "product_key": null,
-      "title": "极简卡包设计",
-      "category": "卡包",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/5c0fcf169153375.Y3JvcCwxNTQ1LDEyMDksNzYsMA.jpg",
-      "summary": "Behance · 商务极简卡包产品设计项目",
-      "risk": "产品为商务极简卡包，属于卡包。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Behance",
-        "卡包"
-      ]
-    },
-    {
-      "id": "27ed731976ce",
-      "product_key": null,
-      "title": "手工编织帽",
-      "category": "帽子",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "",
-      "summary": "Pinterest · 手工天然稻草编织遮阳帽",
-      "risk": "产品为手工稻草编织遮阳帽，属于帽子。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "帽子"
       ]
     },
     {
@@ -1181,29 +1112,6 @@
       "tags": [
         "iF Design Award",
         "iF获奖"
-      ]
-    },
-    {
-      "id": "bb54988a8970",
-      "product_key": null,
-      "title": "互动装置设计",
-      "category": "装置艺术",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/168787183554915.Y3JvcCwyNDg2LDE5NDQsMCw0NDM.png",
-      "summary": "Behance · 互动式数字艺术装置项目",
-      "risk": "互动数字艺术装置属于装置艺术",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Behance",
-        "社交精选"
       ]
     },
     {
@@ -1695,75 +1603,6 @@
       ]
     },
     {
-      "id": "e5301641e95f",
-      "product_key": null,
-      "title": "超薄充电宝",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/collections/screenshot-20250225-162633_2c0a754b-03a0-4585-97e8-6da8c4049f43.png?v=1740472040",
-      "summary": "Pinterest · Anker超薄磁吸充电宝",
-      "risk": "明确属于充电宝品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "充电宝"
-      ]
-    },
-    {
-      "id": "8d9bdd3c1fba",
-      "product_key": null,
-      "title": "极简Logo Tee",
-      "category": "T恤",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "",
-      "summary": "Pinterest · A.P.C.经典极简Logo白T恤",
-      "risk": "明确属于T恤品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "T恤"
-      ]
-    },
-    {
-      "id": "4e36ab9bcf13",
-      "product_key": null,
-      "title": "T恤图案设计",
-      "category": "T恤",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "url": "#",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/808/d07056248293505.69ee74798dd37.jpg",
-      "summary": "Behance · 原创T恤图案印花设计项目",
-      "risk": "T恤图案设计属于T恤品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Behance",
-        "T恤"
-      ]
-    },
-    {
       "id": "8f536fc8b12d",
       "product_key": null,
       "title": "极简纸灯",
@@ -1784,6 +1623,168 @@
       "tags": [
         "Pinterest",
         "氛围灯"
+      ]
+    },
+    {
+      "id": "8403116229bf",
+      "product_key": null,
+      "title": "实木显示器架",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "url": "https://grovemade.com/shop/desk-accessories",
+      "image": "",
+      "summary": "Pinterest · 北美黑胡桃木实木显示器架",
+      "risk": "明确属于创意桌搭品类",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Pinterest",
+        "创意桌搭"
+      ]
+    },
+    {
+      "id": "21ad0c2334b0",
+      "product_key": null,
+      "title": "翻页日历",
+      "category": "日历",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107030204",
+      "image": "",
+      "summary": "Pinterest · MUJI经典翻页桌面日历",
+      "risk": "明确属于日历品类",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Pinterest",
+        "日历"
+      ]
+    },
+    {
+      "id": "44fa670e6228",
+      "product_key": null,
+      "title": "复古充电宝",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "url": "https://www.sharge.com/products/retro-67",
+      "image": "",
+      "summary": "Pinterest · 复古游戏机造型充电宝",
+      "risk": "复古游戏机造型充电宝明确属于充电宝",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Pinterest",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "731cd326c77a",
+      "product_key": null,
+      "title": "Tom Bihn 旅行收纳包",
+      "category": "收纳包",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.tombihn.com",
+      "image": "https://cdn.shopify.com/s/files/1/1089/8530/files/Synik_30_Burnt_Orange.jpg?v=1764198553",
+      "summary": "美国Tom Bihn专业旅行收纳系统",
+      "risk": "明确为收纳包产品",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "收纳包",
+        "旅行"
+      ]
+    },
+    {
+      "id": "4c808fb51bcb",
+      "product_key": null,
+      "title": "The North Face 冲锋衣",
+      "category": "冲锋衣",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.thenorthface.com/en-us",
+      "image": "",
+      "summary": "北面1994经典复刻冲锋衣",
+      "risk": "明确为冲锋衣",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "冲锋衣",
+        "户外"
+      ]
+    },
+    {
+      "id": "d656c4da9da8",
+      "product_key": null,
+      "title": "Montbell 雨舞者冲锋衣",
+      "category": "冲锋衣",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "url": "https://www.montbell.com",
+      "image": "",
+      "summary": "日本Montbell雨舞者冲锋衣",
+      "risk": "雨舞者冲锋衣，属于冲锋衣",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "冲锋衣",
+        "日本"
+      ]
+    },
+    {
+      "id": "a3e6077251de",
+      "product_key": null,
+      "title": "BAPE 鲨鱼卫衣",
+      "category": "卫衣",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "url": "https://www.bape.com",
+      "image": "",
+      "summary": "日本A Bathing Ape经典鲨鱼卫衣",
+      "risk": "经典卫衣，属于卫衣品类",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "卫衣",
+        "日式"
       ]
     },
     {
@@ -1830,29 +1831,6 @@
       "tags": [
         "iF Design Award",
         "iF获奖"
-      ]
-    },
-    {
-      "id": "4358f1382cce",
-      "product_key": null,
-      "title": "Fear of God Essentials",
-      "category": "卫衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "A' Design Award",
-      "source_family": "奖项案例",
-      "url": "#",
-      "image": "http://fearofgod.com/cdn/shop/files/fg_meta_logo_08cf4839-b5d7-4772-997b-1055367603d1.jpg?v=1772577294",
-      "summary": "A' Design Award · 高级街头基础款卫衣",
-      "risk": "产品为高级街头基础款卫衣，属于卫衣。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "A' Design Award",
-        "卫衣"
       ]
     },
     {
@@ -2364,6 +2342,29 @@
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/117935/755356/019aa6b3-0068-4e6c-b3ef-026cbd88bf3d/s5.png",
       "summary": "iF Design Award · Venia Series redefines ceiling lighting. Its retractable head fixes traditional spotlights' inflexibility—press to pop out for rotation, like track lights. Sleek when retracted, dynamic when extended. Modular, it fits setups: single circular-cutout o",
       "risk": "天花板照明灯具，属于日常照明",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "dbc8df6b8b22",
+      "product_key": null,
+      "title": "Scoiattolo",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "url": "https://ifdesign.com/en/winner-ranking/project/scoiattolo/745825",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/14235/745825/47c2f21d-a803-4e82-a8bf-8714a9b8130c/scoiattoloa13-sbieco-murales.jpg",
+      "summary": "iF Design Award · Scoiattolo is a dynamic lighting system that freely travels through space like a squirrel jumping from branch to branch. The main element of the system is the 4-pole cable that acts as a carrier element and carries the current wherever you want, even",
+      "risk": "动态照明系统，装饰性氛围灯",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
