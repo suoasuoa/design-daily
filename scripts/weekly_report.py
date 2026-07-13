@@ -6,7 +6,7 @@ from collections import Counter, defaultdict
 import datetime as dt
 import re
 
-from insight_common import DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, today, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, today, write_json
 
 
 LANE_ORDER = ["可直接买样", "适合改造", "方向参考"]
@@ -59,6 +59,7 @@ def normalize_item(item):
     if not source and item.get("sources"):
         source = item["sources"][0].get("source", "")
     score = int(item.get("score") or item.get("selection_score") or 0)
+    url = clean_direct_product_url(item.get("url") or "")
     return {
         "id": item.get("id"),
         "product_key": item.get("product_key"),
@@ -70,7 +71,7 @@ def normalize_item(item):
         "score_label": f"{score / 10:.1f}",
         "source": source or "未知来源",
         "source_family": item.get("source_family", "其他来源"),
-        "url": item.get("url") or "#",
+        "url": url,
         "image": item.get("image", ""),
         "summary": item.get("summary") or item.get("ai_reason") or "",
         "risk": item.get("ai_risk") or item.get("review_reason") or "",
@@ -96,6 +97,8 @@ def next_action(item):
 def pick_balanced(items, limit=100):
     by_lane = defaultdict(list)
     for item in sorted(items, key=product_score, reverse=True):
+        if not item.get("url"):
+            continue
         by_lane[item.get("action_lane", "方向参考")].append(item)
 
     picked = []
@@ -133,8 +136,8 @@ def pick_balanced(items, limit=100):
 
 
 def build_report(payload, limit=100):
-    raw_items = payload.get("items", [])
-    picks = [normalize_item(item) for item in pick_balanced(raw_items, limit)]
+    raw_items = [normalize_item(item) for item in payload.get("items", [])]
+    picks = pick_balanced(raw_items, limit)
     by_lane = Counter(item["action_lane"] for item in picks)
     by_category = Counter(item["category"] for item in picks)
     by_axis = Counter(axis for item in picks for axis in item["axes"])
