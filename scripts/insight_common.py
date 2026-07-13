@@ -38,6 +38,36 @@ TRACKING_PARAMS = {
     "timestamp",
 }
 
+DIRECT_LINK_QUERY_KEYS = {
+    "q",
+    "query",
+    "keyword",
+    "keywords",
+    "search",
+    "s",
+    "wd",
+    "k",
+}
+
+DIRECT_LINK_BLOCKED_SEGMENTS = {
+    "search",
+    "tag",
+    "tags",
+    "category",
+    "categories",
+    "collection",
+    "collections",
+    "topic",
+    "topics",
+    "explore",
+    "discover",
+    "feed",
+    "archive",
+    "page",
+    "pages",
+    "market",
+}
+
 SOURCE_PREFIX_RE = re.compile(
     r"^(pinterest|behance|instagram|dezeen|design milk|yanko design|core77|designboom|trendhunter|the dieline|packaging of the world|pentawards|小红书|抖音|red dot|good design award|if设计奖|dia 中国设计智造大奖|a' design award|站酷|普象网|设计癖|数英)\s*[·:\-|]\s*",
     re.IGNORECASE,
@@ -148,6 +178,46 @@ def canonical_url(url):
         if key not in TRACKING_PARAMS and not key.startswith("utm_")
     ]
     return urlunsplit((scheme, netloc, path, urlencode(query, doseq=True), ""))
+
+
+def clean_direct_product_url(url):
+    canonical = canonical_url(url)
+    if not canonical:
+        return ""
+
+    parts = urlsplit(canonical)
+    if parts.scheme not in {"http", "https"} or not parts.netloc:
+        return ""
+
+    host = parts.netloc.lower()
+    path = parts.path.lower().strip("/")
+    query = dict(parse_qsl(parts.query, keep_blank_values=False))
+    segments = [segment for segment in path.split("/") if segment]
+
+    if any(host.endswith(domain) for domain in ["duckduckgo.com", "google.com", "bing.com", "baidu.com"]):
+        return ""
+
+    if any(key.lower() in DIRECT_LINK_QUERY_KEYS for key in query):
+        return ""
+
+    if segments and segments[-1] in DIRECT_LINK_BLOCKED_SEGMENTS:
+        return ""
+
+    if any(segment in DIRECT_LINK_BLOCKED_SEGMENTS for segment in segments[:2]) and len(segments) <= 3:
+        return ""
+
+    if host.endswith("etsy.com"):
+        if len(segments) < 2 or segments[0] != "listing" or not segments[1].isdigit():
+            return ""
+
+    if host.endswith("producthunt.com"):
+        if segments[:1] not in (["posts"], ["products"]):
+            return ""
+
+    if host.endswith("threadless.com") and segments[:1] == ["search"]:
+        return ""
+
+    return canonical
 
 
 def stable_hash(value, length=12):
