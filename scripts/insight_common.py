@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
-from insight_config import CATEGORY_KEYWORDS, SOURCE_TYPES
+from insight_config import CATEGORY_KEYWORDS, SOURCE_QUALITY_BY_SOURCE, SOURCE_TYPES
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -287,6 +287,29 @@ def source_type(source):
     return SOURCE_TYPES.get(source or "", "public_web")
 
 
+def source_quality(source="", source_type_value="", source_group="", quality_tier=""):
+    direct = (quality_tier or "").strip().lower()
+    if direct in {"premium", "standard", "weak"}:
+        return direct
+    group = (source_group or "").strip().lower()
+    if "weak" in group:
+        return "weak"
+    if "strong" in group:
+        return "standard"
+    by_name = SOURCE_QUALITY_BY_SOURCE.get(source or "")
+    if by_name:
+        return by_name
+    if source_type_value == "verified_official":
+        return "premium"
+    if source_type_value in {"editorial_source", "packaging_source"}:
+        return "premium"
+    if source_type_value in {"design_community", "social_signal", "market_reference"}:
+        return "standard"
+    if source_type_value == "trend_source":
+        return "weak"
+    return "standard"
+
+
 def infer_price_power(item):
     """Return a rough price gate status without inventing exact pricing."""
     text = f"{item.get('title', '')} {item.get('reason', '')} {' '.join(item.get('tags', []) or [])}".lower()
@@ -302,9 +325,18 @@ def infer_price_power(item):
 def make_source_record(item):
     url = canonical_url(item.get("url", ""))
     source = item.get("source") or item.get("platform") or "未知来源"
+    source_type_value = item.get("source_type") or source_type(source)
     return {
         "source": source,
-        "source_type": item.get("source_type") or source_type(source),
+        "source_type": source_type_value,
+        "source_group": item.get("source_group", ""),
+        "quality_tier": item.get("quality_tier", ""),
+        "source_quality": source_quality(
+            source=source,
+            source_type_value=source_type_value,
+            source_group=item.get("source_group", ""),
+            quality_tier=item.get("quality_tier", ""),
+        ),
         "url": url,
         "title": clean_title(item.get("title", "")),
         "image": item.get("image", ""),
@@ -331,6 +363,8 @@ def lead_from_legacy(item):
         "image": item.get("image", ""),
         "tags": item.get("tags", []) or [],
         "added": item.get("added") or today(),
+        "source_group": item.get("source_group", ""),
+        "quality_tier": item.get("quality_tier", ""),
         "_score_total": item.get("_score_total"),
         "_deepseek": item.get("_deepseek"),
         "_scores": item.get("_scores"),
