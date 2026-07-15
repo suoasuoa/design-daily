@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-15T17:47:39+08:00
+- 生成时间：2026-07-15T18:33:22+08:00
 
 ## 行动分布
 
@@ -505,19 +505,7 @@ Good Design Award · Home Electronics · Guangdong Midea Consumer Electric Manuf
 
 Good Design Award · Home Electronics · THE PEACOCK VACUUM BOTTLE CO., LTD.
 
-### 42. Enameled Cast Iron Dutch Oven
-
-- 品类：创意厨具
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.5
-- 来源：Uncrate Shop
-- 下一步：提取结构或功能点，换材质/场景重新组合
-- 链接：https://shop.uncrate.com/products/5-9-quart-enameled-cast-iron-dutch-oven
-
-Enameled cast iron Dutch oven is highly practical for everyday cooking, high frequency use in kitchen, broad appeal to home cooks and chefs, no major functional flaws, price $128 well above $35, instantly recognizable as a versatile pot, and emotional value from durability and aesthetics.
-
-### 43. SAKE BOTTLE OPENER
+### 42. SAKE BOTTLE OPENER
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -529,7 +517,7 @@ Enameled cast iron Dutch oven is highly practical for everyday cooking, high fre
 
 iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of its tightly pressed and varied corks—closures unlike those on wine or beer. No universal opener exists for this diversity, making the first step of dr
 
-### 44. 镜面装置
+### 43. 镜面装置
 
 - 品类：装置艺术
 - 路径：适合改造
@@ -541,7 +529,7 @@ iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed
 
 Pinterest · 镜面不锈钢反射装置艺术
 
-### 45. Alessi 外星人榨汁机
+### 44. Alessi 外星人榨汁机
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -553,7 +541,7 @@ Pinterest · 镜面不锈钢反射装置艺术
 
 A' Design Award · 后现代设计经典厨具
 
-### 46. Tom Dixon 设计礼盒
+### 45. Tom Dixon 设计礼盒
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -564,6 +552,18 @@ A' Design Award · 后现代设计经典厨具
 - 链接：https://www.tomdixon.net/en/gifts.html
 
 A' Design Award · 英国设计师品牌家居礼品
+
+### 46. BALMUDA The Pot 手冲壶
+
+- 品类：创意厨具
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.4
+- 来源：iF设计奖
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://www.balmuda.com/jp/pot
+
+iF设计奖 · 极致工业设计手冲电水壶
 
 ### 47. Floral 蜡烛香味礼盒
 

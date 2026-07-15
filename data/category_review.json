@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T17:44:00+08:00",
+  "generated_at": "2026-07-15T18:29:37+08:00",
   "reviews": {
     "457f979bb17e": {
       "keep": true,
@@ -80727,6 +80727,22 @@
       "confidence": 1,
       "reason": "Gym bag is a storage bag.",
       "reviewed_at": "2026-07-15T17:40:34+08:00",
+      "source": "deepseek"
+    },
+    "9df364a22f91": {
+      "keep": true,
+      "category": "水杯",
+      "confidence": 0,
+      "reason": "产品是手工吹制玻璃杯，属于水杯品类，原分类帽子错误。",
+      "reviewed_at": "2026-07-15T18:15:47+08:00",
+      "source": "deepseek"
+    },
+    "963c33c68034": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "产品是冲浪板改造的啤酒龙头，不属于任何指定品类。",
+      "reviewed_at": "2026-07-15T18:15:47+08:00",
       "source": "deepseek"
     }
   }
