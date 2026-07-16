@@ -156,7 +156,7 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: python3 scripts/ensure_daily_minimum.py --target "$DAILY_TARGET" --batch-jobs 180 --per-job 6 --max-passes 4 --sleep 0.1 --workers 4 --curated-limit 180 --shopify-pages 1
+        run: python3 scripts/ensure_daily_minimum.py --target "$DAILY_TARGET" --batch-jobs 80 --per-job 6 --max-passes 1 --sleep 0.1 --workers 6 --curated-limit 90 --shopify-pages 1
 
       - name: Enrich missing product images
         if: env.SKIP_INSIGHT != '1'
