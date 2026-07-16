@@ -356,7 +356,11 @@
     function currentTitle() {
       if (state.tab === "daily") {
         const group = activeDaily();
-        return group ? `${group.date} 今日新增` : "今日新增";
+        if (!group) return "今日新增";
+        const latest = groupsDaily()[0];
+        return group.date === (latest && latest.date)
+          ? `${group.date} 今日新增`
+          : `${group.date} 历史情报`;
       }
       if (state.tab === "weekly") {
         const group = activeWeekly();
