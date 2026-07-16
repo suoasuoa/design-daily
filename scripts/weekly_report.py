@@ -69,6 +69,7 @@ def normalize_item(item):
         source_group=source_group,
         quality_tier=item.get("quality_tier", ""),
     )
+    review = item.get("category_review") or {}
     return {
         "id": item.get("id"),
         "product_key": item.get("product_key"),
@@ -85,6 +86,8 @@ def normalize_item(item):
         "image": item.get("image", ""),
         "summary": item.get("summary") or item.get("ai_reason") or "",
         "risk": item.get("ai_risk") or item.get("review_reason") or "",
+        "review_confidence": int(item.get("review_confidence") or review.get("confidence") or 0),
+        "review_reason": item.get("review_reason") or review.get("reason") or "",
         "next_action": next_action(item),
         "tags": (item.get("tags") or item.get("trend_tags") or [])[:6],
     }
@@ -108,6 +111,11 @@ def pick_balanced(items, limit=100):
     by_lane = defaultdict(list)
     for item in sorted(items, key=product_score, reverse=True):
         if item.get("category") in RETIRED_CATEGORIES:
+            continue
+        review_text = f"{item.get('summary', '')} {item.get('review_reason', '')}".lower()
+        if any(word in review_text for word in ["不匹配", "与品类无关", "不属于", "内容不符", "off-category", "fallback"]):
+            continue
+        if int(item.get("score") or 0) < 60 or int(item.get("review_confidence") or 0) < 4:
             continue
         if not item.get("url"):
             continue
@@ -141,7 +149,14 @@ def pick_balanced(items, limit=100):
 
     if len(picked) < limit:
         for item in sorted(items, key=product_score, reverse=True):
-            if item.get("category") in RETIRED_CATEGORIES or not item.get("url"):
+            review_text = f"{item.get('summary', '')} {item.get('review_reason', '')}".lower()
+            if (
+                item.get("category") in RETIRED_CATEGORIES
+                or not item.get("url")
+                or int(item.get("score") or 0) < 60
+                or int(item.get("review_confidence") or 0) < 4
+                or any(word in review_text for word in ["不匹配", "与品类无关", "不属于", "内容不符", "off-category", "fallback"])
+            ):
                 continue
             keys = dedupe_keys(item)
             if keys & seen_keys:
