@@ -370,7 +370,8 @@
         const group = activeDaily();
         if (!group) return "每天自动收集后，这里会按日期显示当天前 30 条去重情报。";
         const source = Object.entries(group.stats.by_source_family || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
-        return `${group.actual_count} 条 · 每日分组 · 已去重${source ? " · " + source : ""}`;
+        const backfill = Number((group.stats || {}).backfill_count || 0);
+        return `${group.actual_count} 条 · 每日分组 · 已去重${backfill ? ` · 历史补录 ${backfill}` : ""}${source ? " · " + source : ""}`;
       }
       if (state.tab === "weekly") {
         const group = activeWeekly();
@@ -472,6 +473,7 @@
             <span class="pill">${item.action_lane}</span>
             <span class="pill green">${item.category || "未分类"}</span>
             <span class="pill blue">${scoreText(item)}分</span>
+            ${item.is_backfill ? `<span class="pill gray">历史补录</span>` : ""}
           </div>
           <h3>${title}</h3>
           <p class="summary">${item.summary || item.next_action || item.review_reason || ""}</p>
