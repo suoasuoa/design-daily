@@ -121,7 +121,18 @@
     }
     .section-head h2 { margin: 0; font-size: 25px; line-height: 1.2; letter-spacing: 0; }
     .section-note { margin: 7px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
-    .selector { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; margin-top: 14px; }
+    .selector { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; align-items: center; margin-top: 14px; }
+    .history-select {
+      min-height: 38px;
+      padding: 0 34px 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      cursor: pointer;
+    }
+    .history-range { color: var(--muted); font-size: 13px; }
     .lane-switch { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(252px, 1fr)); gap: 14px; }
     .card {
@@ -374,13 +385,44 @@
       const root = $("groupSelector");
       root.innerHTML = "";
       if (state.tab === "daily") {
-        groupsDaily().slice(0, 14).forEach(group => {
+        const groups = groupsDaily();
+        const active = activeDaily();
+        const activeId = active && (active.group_id || active.date);
+        groups.slice(0, 14).forEach(group => {
           const id = group.group_id || group.date;
-          root.appendChild(chip(`${group.date} · ${group.actual_count}`, id === (activeDaily() && (activeDaily().group_id || activeDaily().date)), () => {
+          root.appendChild(chip(`${group.date} · ${group.actual_count}`, id === activeId, () => {
             state.dailyGroup = id;
             render();
           }));
         });
+        const olderGroups = groups.slice(14);
+        if (olderGroups.length) {
+          const select = document.createElement("select");
+          select.className = "history-select";
+          select.setAttribute("aria-label", "选择更早日期");
+          const placeholder = document.createElement("option");
+          placeholder.value = "";
+          placeholder.textContent = `更早日期（${olderGroups.length}）`;
+          placeholder.selected = !olderGroups.some(group => (group.group_id || group.date) === activeId);
+          select.appendChild(placeholder);
+          olderGroups.forEach(group => {
+            const option = document.createElement("option");
+            option.value = group.group_id || group.date;
+            option.textContent = `${group.date} · ${group.actual_count} 条`;
+            option.selected = option.value === activeId;
+            select.appendChild(option);
+          });
+          select.addEventListener("change", () => {
+            if (!select.value) return;
+            state.dailyGroup = select.value;
+            render();
+          });
+          root.appendChild(select);
+          const range = document.createElement("span");
+          range.className = "history-range";
+          range.textContent = `历史保留至 ${groups[groups.length - 1].date}`;
+          root.appendChild(range);
+        }
       } else if (state.tab === "weekly") {
         groupsWeekly().slice(0, 12).forEach(group => {
           const id = group.group_id || group.week;
