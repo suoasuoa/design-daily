@@ -356,27 +356,64 @@ def build_daily_groups(items, per_day=30, max_days=90):
         append_balanced_fill(ranked, picks, seen, per_day, relaxed=False)
         append_balanced_fill(ranked, picks, seen, per_day, relaxed=True)
 
-        by_source = Counter(item["source_family"] for item in picks)
         groups.append(
             {
                 "date": day,
                 "group_id": f"daily-{day}",
                 "title": f"{day} 每日情报收集",
                 "target_count": per_day,
-                "actual_count": len(picks),
-                "stats": {
-                    "by_lane": dict(Counter(item["action_lane"] for item in picks).most_common()),
-                    "by_category": dict(Counter(item["category"] for item in picks).most_common(12)),
-                    "by_source_family": dict(by_source.most_common()),
-                    "source_quota": DAILY_SOURCE_QUOTAS,
-                    "source_quota_fill": {
-                        family: min(by_source.get(family, 0), quota)
-                        for family, quota in DAILY_SOURCE_QUOTAS.items()
-                    },
-                },
                 "items": picks,
             }
         )
+
+    # Historical groups are immutable daily snapshots. When stricter display rules
+    # leave an old group short, fill it from eligible pool items that have never
+    # appeared in any daily group. Keep the original first_seen value for audit.
+    globally_seen = {
+        dedupe_key(item)
+        for group in groups
+        for item in group["items"]
+    }
+    reserve = [
+        item
+        for item in sorted(items, key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
+        if display_eligible(item) and dedupe_key(item) not in globally_seen
+    ]
+    backfill_date = now_iso()[:10]
+    for group in groups[1:]:
+        picks = group["items"]
+        while len(picks) < per_day:
+            chosen = None
+            for item in balanced_ranked_items(reserve, picks, globally_seen):
+                if not category_under_cap(picks, item.get("category"), relaxed=True):
+                    continue
+                chosen = item
+                break
+            if not chosen:
+                break
+            key = dedupe_key(chosen)
+            globally_seen.add(key)
+            archived = dict(chosen)
+            archived["is_backfill"] = True
+            archived["backfilled_at"] = backfill_date
+            archived["original_first_seen"] = chosen.get("first_seen", "")
+            picks.append(archived)
+
+    for group in groups:
+        picks = group["items"]
+        by_source = Counter(item["source_family"] for item in picks)
+        group["actual_count"] = len(picks)
+        group["stats"] = {
+            "by_lane": dict(Counter(item["action_lane"] for item in picks).most_common()),
+            "by_category": dict(Counter(item["category"] for item in picks).most_common(12)),
+            "by_source_family": dict(by_source.most_common()),
+            "source_quota": DAILY_SOURCE_QUOTAS,
+            "source_quota_fill": {
+                family: min(by_source.get(family, 0), quota)
+                for family, quota in DAILY_SOURCE_QUOTAS.items()
+            },
+            "backfill_count": sum(1 for item in picks if item.get("is_backfill")),
+        }
     return groups
 
 
@@ -779,7 +816,8 @@ HTML = """<!doctype html>
         const group = activeDaily();
         if (!group) return "每天自动收集后，这里会按日期显示当天前 30 条去重情报。";
         const source = Object.entries(group.stats.by_source_family || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
-        return `${group.actual_count} 条 · 每日分组 · 已去重${source ? " · " + source : ""}`;
+        const backfill = Number((group.stats || {}).backfill_count || 0);
+        return `${group.actual_count} 条 · 每日分组 · 已去重${backfill ? ` · 历史补录 ${backfill}` : ""}${source ? " · " + source : ""}`;
       }
       if (state.tab === "weekly") {
         const group = activeWeekly();
@@ -881,6 +919,7 @@ HTML = """<!doctype html>
             <span class="pill">${item.action_lane}</span>
             <span class="pill green">${item.category || "未分类"}</span>
             <span class="pill blue">${scoreText(item)}分</span>
+            ${item.is_backfill ? `<span class="pill gray">历史补录</span>` : ""}
           </div>
           <h3>${title}</h3>
           <p class="summary">${item.summary || item.next_action || item.review_reason || ""}</p>
