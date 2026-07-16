@@ -7,6 +7,7 @@ import datetime as dt
 import re
 
 from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, source_quality, source_type, today, write_json
+from insight_config import RETIRED_CATEGORIES
 
 
 LANE_ORDER = ["可直接买样", "适合改造", "方向参考"]
@@ -106,6 +107,8 @@ def next_action(item):
 def pick_balanced(items, limit=100):
     by_lane = defaultdict(list)
     for item in sorted(items, key=product_score, reverse=True):
+        if item.get("category") in RETIRED_CATEGORIES:
+            continue
         if not item.get("url"):
             continue
         if item.get("source_quality") == "weak":
@@ -138,6 +141,8 @@ def pick_balanced(items, limit=100):
 
     if len(picked) < limit:
         for item in sorted(items, key=product_score, reverse=True):
+            if item.get("category") in RETIRED_CATEGORIES or not item.get("url"):
+                continue
             keys = dedupe_keys(item)
             if keys & seen_keys:
                 continue
