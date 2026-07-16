@@ -7,7 +7,7 @@ import re
 from urllib.parse import urlparse
 
 from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, source_quality, source_type, write_json
-from insight_config import CATEGORIES
+from insight_config import CATEGORIES, RETIRED_CATEGORIES
 
 
 FUNCTION_WORDS = [
@@ -440,6 +440,7 @@ def build_payload(products, trends, weekly_report=None, weekly_groups=None):
         "weekly_groups": [compact_weekly_report(report) for report in (weekly_groups or []) if report],
         "daily_groups": build_daily_groups(items),
         "configured_categories": CATEGORIES,
+        "retired_categories": sorted(RETIRED_CATEGORIES),
         "items": items,
     }
 
@@ -702,9 +703,10 @@ HTML = """<!doctype html>
   <script>
     const payload = window.__INSIGHT_DATA__;
     const configuredCategories = payload.configured_categories || [
-      "水杯", "氛围灯", "创意礼盒", "装置艺术", "创意厨具", "中秋礼盒", "帽子", "创意桌搭", "端午礼盒", "充电宝",
-      "日历", "T恤", "卫衣", "卡包", "手机壳", "收纳包", "Polo衫", "冲锋衣", "钥匙扣水壶"
+      "水杯", "氛围灯", "创意礼盒", "装置艺术", "创意厨具", "中秋礼盒", "创意桌搭", "端午礼盒", "充电宝",
+      "日历", "手机壳", "冲锋衣", "钥匙扣水壶"
     ];
+    const retiredCategories = new Set(payload.retired_categories || ["T恤", "帽子", "卫衣", "Polo衫", "收纳包", "卡包"]);
     const state = {
       tab: "daily",
       q: "",
@@ -890,7 +892,7 @@ HTML = """<!doctype html>
       const itemCategories = new Set(items.map(item => item.category).filter(Boolean));
       const categories = [
         ...configuredCategories,
-        ...[...itemCategories].filter(category => !configuredCategories.includes(category))
+        ...[...itemCategories].filter(category => !configuredCategories.includes(category) && !retiredCategories.has(category))
       ];
       const sources = [...new Set(items.map(item => item.source_family).filter(Boolean))];
       root.innerHTML = "";
