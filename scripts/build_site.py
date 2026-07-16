@@ -37,10 +37,10 @@ DAILY_CATEGORY_CAPS = {
     "中秋礼盒": 2,
     "端午礼盒": 2,
     "收纳包": 2,
-    "T恤": 1,
-    "卫衣": 1,
-    "Polo衫": 1,
-    "帽子": 1,
+    "T恤": 2,
+    "卫衣": 2,
+    "Polo衫": 2,
+    "帽子": 2,
     "手机壳": 2,
     "卡包": 2,
     "钥匙扣水壶": 1,
@@ -232,8 +232,7 @@ def dedupe_key(item):
     return item.get("id") or normalize_key(item.get("url")) or normalize_key(item.get("title"))
 
 
-STRICT_CATEGORY_CAPS = {"收纳包", "T恤", "卫衣", "Polo衫", "帽子"}
-RELAXABLE_CATEGORIES = {"创意礼盒", "装置艺术", "创意厨具", "创意桌搭", "氛围灯", "水杯"}
+RELAXABLE_CATEGORIES = set(DAILY_CATEGORY_CAPS)
 
 
 def category_under_cap(picks, category, relaxed=False):
@@ -253,9 +252,10 @@ def display_eligible(item):
     if item.get("source_quality") == "weak":
         if not item.get("image"):
             return False
-        if int(item.get("score") or 0) < 78:
+        score = int(item.get("score") or 0)
+        if score < 72:
             return False
-        if item.get("category") in {"T恤", "卫衣", "Polo衫", "帽子"}:
+        if item.get("category") in {"T恤", "卫衣", "Polo衫", "帽子"} and score < 84:
             return False
     return True
 
@@ -320,7 +320,7 @@ def compact_weekly_report(report):
     }
 
 
-def build_daily_groups(items, per_day=30, max_days=30):
+def build_daily_groups(items, per_day=30, max_days=90):
     by_day = defaultdict(list)
     for item in items:
         by_day[item.get("first_seen") or item.get("last_seen") or "unknown"].append(item)
@@ -530,7 +530,18 @@ HTML = """<!doctype html>
     }
     .section-head h2 { margin: 0; font-size: 25px; line-height: 1.2; letter-spacing: 0; }
     .section-note { margin: 7px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
-    .selector { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; margin-top: 14px; }
+    .selector { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; align-items: center; margin-top: 14px; }
+    .history-select {
+      min-height: 38px;
+      padding: 0 34px 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      cursor: pointer;
+    }
+    .history-range { color: var(--muted); font-size: 13px; }
     .lane-switch { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(252px, 1fr)); gap: 14px; }
     .card {
@@ -783,13 +794,44 @@ HTML = """<!doctype html>
       const root = $("groupSelector");
       root.innerHTML = "";
       if (state.tab === "daily") {
-        groupsDaily().slice(0, 14).forEach(group => {
+        const groups = groupsDaily();
+        const active = activeDaily();
+        const activeId = active && (active.group_id || active.date);
+        groups.slice(0, 14).forEach(group => {
           const id = group.group_id || group.date;
-          root.appendChild(chip(`${group.date} · ${group.actual_count}`, id === (activeDaily() && (activeDaily().group_id || activeDaily().date)), () => {
+          root.appendChild(chip(`${group.date} · ${group.actual_count}`, id === activeId, () => {
             state.dailyGroup = id;
             render();
           }));
         });
+        const olderGroups = groups.slice(14);
+        if (olderGroups.length) {
+          const select = document.createElement("select");
+          select.className = "history-select";
+          select.setAttribute("aria-label", "选择更早日期");
+          const placeholder = document.createElement("option");
+          placeholder.value = "";
+          placeholder.textContent = `更早日期（${olderGroups.length}）`;
+          placeholder.selected = !olderGroups.some(group => (group.group_id || group.date) === activeId);
+          select.appendChild(placeholder);
+          olderGroups.forEach(group => {
+            const option = document.createElement("option");
+            option.value = group.group_id || group.date;
+            option.textContent = `${group.date} · ${group.actual_count} 条`;
+            option.selected = option.value === activeId;
+            select.appendChild(option);
+          });
+          select.addEventListener("change", () => {
+            if (!select.value) return;
+            state.dailyGroup = select.value;
+            render();
+          });
+          root.appendChild(select);
+          const range = document.createElement("span");
+          range.className = "history-range";
+          range.textContent = `历史保留至 ${groups[groups.length - 1].date}`;
+          root.appendChild(range);
+        }
       } else if (state.tab === "weekly") {
         groupsWeekly().slice(0, 12).forEach(group => {
           const id = group.group_id || group.week;
