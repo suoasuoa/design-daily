@@ -12,9 +12,10 @@ import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from insight_common import DATA_DIR, load_env, load_json, now_iso, write_json
+from insight_common import DATA_DIR, load_env, load_json, now_iso, today, write_json
 from insight_config import (
     CATEGORIES,
+    CATEGORY_KEYWORDS,
     CATEGORY_REVIEW_RULES,
     RETIRED_CATEGORIES,
     RETIRED_CATEGORY_CUTOFF,
@@ -24,30 +25,24 @@ DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
 
 
-def is_historical_retired_item(item):
-    if item.get("category") not in RETIRED_CATEGORIES:
-        return False
-    seen_date = str(item.get("first_seen") or item.get("last_seen") or "")[:10]
-    if seen_date:
-        return seen_date <= RETIRED_CATEGORY_CUTOFF
-    return (item.get("category_review") or {}).get("status") == "approved"
-
-
 def retirement_review(item):
-    historical = is_historical_retired_item(item)
     return {
         "id": item.get("id"),
-        "keep": historical,
-        "category": item.get("category") if historical else "",
+        "keep": False,
+        "category": "",
         "confidence": 10,
-        "reason": (
-            f"历史数据保留，品类自 {RETIRED_CATEGORY_CUTOFF} 后停止收集"
-            if historical
-            else f"品类已于 {RETIRED_CATEGORY_CUTOFF} 停止收集"
-        ),
+        "reason": f"品类已于 {RETIRED_CATEGORY_CUTOFF} 停止收集，原记录转入审核归档",
         "reviewed_at": now_iso(),
         "source": "retirement_policy",
     }
+
+
+def trusted_cached_review(review):
+    if not review or not review.get("keep") or review.get("category") not in CATEGORIES:
+        return False
+    reason = str(review.get("reason") or "").lower()
+    suspicious = ["fallback", "不匹配", "无关", "不属于", "内容不符", "off-category"]
+    return int(review.get("confidence") or 0) >= 4 and not any(word in reason for word in suspicious)
 
 
 def deepseek_model():
@@ -163,17 +158,16 @@ def local_fallback(item):
     category = item.get("category")
     if category in RETIRED_CATEGORIES:
         return retirement_review(item)
+    keywords = CATEGORY_KEYWORDS.get(category, [])
     title = item.get("title", "").lower()
-    summary = item.get("summary", "").lower()
-    text = f"{title} {summary} {' '.join(item.get('tags') or [])}".lower()
-    reject_words = [
-        "baseball", "glove", "shoe", "shoes", "cleat", "binocular", "toilet",
-        "urine", "pet", "camera", "rangefinder", "spoon", "golf", "hockey",
-        "wrapping toilet", "马桶", "棒球", "望远镜", "球鞋", "宠物", "尿",
-    ]
-    if category == "冲锋衣" and any(word in text for word in reject_words):
-        return {"id": item.get("id"), "keep": False, "category": category, "confidence": 8, "reason": "local reject obvious off-category"}
-    return {"id": item.get("id"), "keep": True, "category": category, "confidence": 3, "reason": "local fallback kept"}
+    matched = [word for word in keywords if word.lower() in title]
+    return {
+        "id": item.get("id"),
+        "keep": False,
+        "category": "",
+        "confidence": 0,
+        "reason": "AI 审核失败，已隔离等待重试" + (f"；标题命中 {matched[:2]}" if matched else ""),
+    }
 
 
 def review_one_batch(batch, api_key):
@@ -216,7 +210,11 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
         item
         for item in products
         if item.get("category") not in RETIRED_CATEGORIES
-        and (force or item.get("id") not in reviews)
+        and (
+            force
+            or item.get("first_seen") == today()
+            or not trusted_cached_review(reviews.get(item.get("id")))
+        )
     ]
 
     batches = [todo[start : start + batch_size] for start in range(0, len(todo), batch_size)]
@@ -247,10 +245,7 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
     changed = 0
     for item in products:
         review = reviews.get(item.get("id")) or local_fallback(item)
-        category_allowed = review.get("category") in CATEGORIES or (
-            review.get("category") == item.get("category") and is_historical_retired_item(item)
-        )
-        if review.get("keep") and category_allowed:
+        if review.get("keep") and review.get("category") in CATEGORIES:
             if item.get("category") != review["category"]:
                 item["category_review_original"] = item.get("category")
                 item["category"] = review["category"]
@@ -274,7 +269,13 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
             rejected.append(clone)
 
     write_json(DATA_DIR / "category_review.json", {"generated_at": now_iso(), "reviews": reviews})
-    write_json(DATA_DIR / "rejected_category.json", rejected)
+    rejected_by_id = {
+        item.get("id"): item
+        for item in load_json(DATA_DIR / "rejected_category.json", [])
+        if item.get("id")
+    }
+    rejected_by_id.update({item.get("id"): item for item in rejected if item.get("id")})
+    write_json(DATA_DIR / "rejected_category.json", list(rejected_by_id.values()))
     write_json(DATA_DIR / "products.json", kept)
     write_json(DATA_DIR / "published.json", build_published(kept))
     print(f"category_review kept={len(kept)} rejected={len(rejected)} recategorized={changed}")
