@@ -13,10 +13,41 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from insight_common import DATA_DIR, load_env, load_json, now_iso, write_json
-from insight_config import CATEGORIES, CATEGORY_REVIEW_RULES
+from insight_config import (
+    CATEGORIES,
+    CATEGORY_REVIEW_RULES,
+    RETIRED_CATEGORIES,
+    RETIRED_CATEGORY_CUTOFF,
+)
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
+
+
+def is_historical_retired_item(item):
+    if item.get("category") not in RETIRED_CATEGORIES:
+        return False
+    seen_date = str(item.get("first_seen") or item.get("last_seen") or "")[:10]
+    if seen_date:
+        return seen_date <= RETIRED_CATEGORY_CUTOFF
+    return (item.get("category_review") or {}).get("status") == "approved"
+
+
+def retirement_review(item):
+    historical = is_historical_retired_item(item)
+    return {
+        "id": item.get("id"),
+        "keep": historical,
+        "category": item.get("category") if historical else "",
+        "confidence": 10,
+        "reason": (
+            f"历史数据保留，品类自 {RETIRED_CATEGORY_CUTOFF} 后停止收集"
+            if historical
+            else f"品类已于 {RETIRED_CATEGORY_CUTOFF} 停止收集"
+        ),
+        "reviewed_at": now_iso(),
+        "source": "retirement_policy",
+    }
 
 
 def deepseek_model():
@@ -75,7 +106,7 @@ def review_batch(batch, api_key):
 你是严格的产品品类审核员。目标是清洗选品数据池，只保留明确属于指定品类的产品。
 
 审核规则：
-1. 只允许以下 19 个品类，不允许新增品类。
+1. 只允许以下 {len(CATEGORIES)} 个品类，不允许新增品类。
 2. 如果产品不明确属于任何一个指定品类，keep=false。
 3. 如果原品类错了但产品明确属于另一个指定品类，keep=true 并修正 category。
 4. 对泛户外、运动器材、鞋、手套、望远镜、棒球用品、宠物用品、马桶、检测耗材、家具、家电、汽车、相机等，不要因为出现 outdoor/shell/bag/case 就硬归入冲锋衣/收纳包/手机壳。
@@ -130,6 +161,8 @@ def review_batch(batch, api_key):
 
 def local_fallback(item):
     category = item.get("category")
+    if category in RETIRED_CATEGORIES:
+        return retirement_review(item)
     title = item.get("title", "").lower()
     summary = item.get("summary", "").lower()
     text = f"{title} {summary} {' '.join(item.get('tags') or [])}".lower()
@@ -176,7 +209,15 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     existing = load_json(DATA_DIR / "category_review.json", {})
     reviews = {} if force else dict(existing.get("reviews", {}))
-    todo = [item for item in products if force or item.get("id") not in reviews]
+    for item in products:
+        if item.get("category") in RETIRED_CATEGORIES:
+            reviews[item.get("id")] = retirement_review(item)
+    todo = [
+        item
+        for item in products
+        if item.get("category") not in RETIRED_CATEGORIES
+        and (force or item.get("id") not in reviews)
+    ]
 
     batches = [todo[start : start + batch_size] for start in range(0, len(todo), batch_size)]
     workers = max(1, int(os.environ.get("CATEGORY_REVIEW_WORKERS", "1")))
@@ -206,7 +247,10 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
     changed = 0
     for item in products:
         review = reviews.get(item.get("id")) or local_fallback(item)
-        if review.get("keep") and review.get("category") in CATEGORIES:
+        category_allowed = review.get("category") in CATEGORIES or (
+            review.get("category") == item.get("category") and is_historical_retired_item(item)
+        )
+        if review.get("keep") and category_allowed:
             if item.get("category") != review["category"]:
                 item["category_review_original"] = item.get("category")
                 item["category"] = review["category"]
