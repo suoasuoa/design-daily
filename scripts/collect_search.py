@@ -18,6 +18,13 @@ from insight_config import SOURCE_DOMAIN_META
 
 SSL_CONTEXT = ssl._create_unverified_context()
 LOCAL_TZ = ZoneInfo("Asia/Shanghai")
+DDGS_AVAILABLE = False
+
+try:
+    from ddgs import DDGS  # type: ignore
+    DDGS_AVAILABLE = True
+except Exception:
+    DDGS_AVAILABLE = False
 
 
 class DuckDuckGoParser(HTMLParser):
@@ -80,6 +87,21 @@ def is_product_like_url(url):
 
 
 def fetch_results(query, timeout=6):
+    if DDGS_AVAILABLE:
+        try:
+            with DDGS(timeout=timeout) as ddgs:
+                results = []
+                for row in ddgs.text(query, max_results=12, safesearch="off"):
+                    url = clean_duck_url(row.get("href") or row.get("url") or "")
+                    title = row.get("title") or ""
+                    snippet = row.get("body") or row.get("snippet") or ""
+                    if title and url:
+                        results.append({"url": url, "title": title, "snippet": snippet})
+                if results:
+                    return results
+        except Exception:
+            pass
+
     url = "https://duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
     req = urllib.request.Request(
         url,
