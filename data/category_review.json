@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T09:10:49+08:00",
+  "generated_at": "2026-07-16T11:47:10+08:00",
   "reviews": {
     "457f979bb17e": {
       "keep": true,
@@ -80975,6 +80975,22 @@
       "confidence": 0,
       "reason": "明确为T恤，属于指定品类",
       "reviewed_at": "2026-07-16T09:00:46+08:00",
+      "source": "deepseek"
+    },
+    "4bd46900f4eb": {
+      "keep": true,
+      "category": "装置艺术",
+      "confidence": 0,
+      "reason": "明确讨论公共艺术装置，如充气迷宫和悬挂网，属于装置艺术范畴。",
+      "reviewed_at": "2026-07-16T11:33:31+08:00",
+      "source": "deepseek"
+    },
+    "51d74f824a7e": {
+      "keep": false,
+      "category": "",
+      "confidence": 0,
+      "reason": "产品是沐浴露瓶，不属于水杯品类，且无明确指定品类归属。",
+      "reviewed_at": "2026-07-16T11:33:31+08:00",
       "source": "deepseek"
     }
   }
