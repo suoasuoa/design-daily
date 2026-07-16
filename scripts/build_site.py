@@ -680,7 +680,7 @@ HTML = """<!doctype html>
       <div>
         <div class="eyebrow">Selection Signal Desk</div>
         <h1>选品情报工作台</h1>
-        <p class="lead">每日看新增，每周看推荐，完整池只做搜索追溯。让团队打开一个页面就知道今天系统收集了什么，以及本周最值得讨论的 100 个方向。</p>
+        <p class="lead">每日看新增，每周看推荐，通过池只保留品类相关且达到选品质量线的内容。让团队打开一个页面就知道今天系统真正筛出了什么。</p>
       </div>
       <div class="generated" id="generatedAt"></div>
     </header>
@@ -690,7 +690,7 @@ HTML = """<!doctype html>
     <nav class="tabs">
       <button class="tab active" type="button" data-tab="daily">今日新增</button>
       <button class="tab" type="button" data-tab="weekly">本周推荐</button>
-      <button class="tab" type="button" data-tab="pool">全部灵感池</button>
+      <button class="tab" type="button" data-tab="pool">审核通过池</button>
     </nav>
 
     <section class="toolbar">
@@ -798,7 +798,7 @@ HTML = """<!doctype html>
       const metrics = [
         [daily ? daily.actual_count : 0, "今日新增"],
         [weekly ? weekly.actual_count : 0, "本周推荐"],
-        [payload.stats.total_items || 0, "完整灵感池"],
+        [payload.stats.total_items || 0, "审核通过池"],
         [payload.stats.by_image_state && payload.stats.by_image_state["已对齐"] || 0, "已带图内容"]
       ];
       $("metrics").innerHTML = metrics.map(([value, label]) => `<div class="metric"><strong>${value}</strong><span>${label}</span></div>`).join("");
@@ -830,7 +830,7 @@ HTML = """<!doctype html>
         const group = activeWeekly();
         return group ? `${group.week} 本周推荐` : "本周推荐";
       }
-      return "全部灵感池";
+      return "审核通过池";
     }
 
     function currentNote() {
@@ -847,7 +847,7 @@ HTML = """<!doctype html>
         const lane = Object.entries(group.stats.by_lane || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
         return `${group.date_label || ""} · ${group.actual_count} 条 · 已去重${lane ? " · " + lane : ""}`;
       }
-      return "完整池用于搜索、追溯和检查历史线索，不作为每日默认入口。";
+      return "这里只展示通过品类相关性、基础质量和创意增量审核的线索；未通过内容保留在审核归档中。";
     }
 
     function renderGroupSelector() {
