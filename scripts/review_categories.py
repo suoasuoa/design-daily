@@ -46,13 +46,18 @@ def retirement_review(item):
         "reason": f"品类已于 {RETIRED_CATEGORY_CUTOFF} 停止收集，原记录转入审核归档",
         "reviewed_at": now_iso(),
         "source": "retirement_policy",
+        "policy_version": REVIEW_POLICY_VERSION,
     }
 
 
 def trusted_cached_review(review):
-    if not review or not review.get("keep") or review.get("category") not in CATEGORIES:
+    if not review:
         return False
     if int(review.get("policy_version") or 0) != REVIEW_POLICY_VERSION:
+        return False
+    if not review.get("keep"):
+        return True
+    if review.get("category") not in CATEGORIES:
         return False
     reason = str(review.get("reason") or "").lower()
     suspicious = ["fallback", "不匹配", "无关", "不属于", "内容不符", "off-category"]
