@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-15T18:33:22+08:00
+- 生成时间：2026-07-16T09:14:55+08:00
 
 ## 行动分布
 
@@ -241,7 +241,19 @@ Instagram · 法国香氛蜡烛礼品套装
 
 Theory高端商务休闲Polo衫
 
-### 20. 永璞 咖啡联名礼盒
+### 20. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
+
+- 品类：创意礼盒
+- 路径：可直接买样
+- 启发：功能启发、包装启发、结构启发
+- 分数：7.4
+- 来源：Instagram
+- 下一步：买样看材质、尺寸、成本和差评点
+- 链接：https://www.instagram.com/reel/DWpmFr-iWrO
+
+产品实用性强，一秒成型和打平功能解决收纳痛点；高频需求体现在礼品包装场景；适用香水、化妆品等广泛品类；功能无明显短板；预估售价超35元；3秒看懂折叠成型原理；情绪价值中等，但功能成立后可通过定制设计提升。
+
+### 21. 永璞 咖啡联名礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -253,7 +265,7 @@ Theory高端商务休闲Polo衫
 
 抖音 · 永璞咖啡设计师联名套装
 
-### 21. Jo Malone 圣诞礼盒
+### 22. Jo Malone 圣诞礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -265,7 +277,7 @@ Theory高端商务休闲Polo衫
 
 Instagram · 祖玛珑限定圣诞礼盒
 
-### 22. Ronnefeldt 端午茶礼
+### 23. Ronnefeldt 端午茶礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -277,7 +289,7 @@ Instagram · 祖玛珑限定圣诞礼盒
 
 Instagram · 德国顶级茶叶端午限定
 
-### 23. 广州酒家 端午礼盒
+### 24. 广州酒家 端午礼盒
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -289,7 +301,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 广式粽子礼盒
 
-### 24. 元祖 雪月饼礼盒
+### 25. 元祖 雪月饼礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -301,7 +313,7 @@ Instagram · 德国顶级茶叶端午限定
 
 小红书 · 元祖经典冰淇淋月饼礼盒
 
-### 25. 观夏 蜡烛礼盒
+### 26. 观夏 蜡烛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -313,7 +325,7 @@ Instagram · 德国顶级茶叶端午限定
 
 抖音 · 东方植物香薰礼盒
 
-### 26. TWG Tea 中秋礼盒
+### 27. TWG Tea 中秋礼盒
 
 - 品类：中秋礼盒
 - 路径：可直接买样
@@ -325,7 +337,7 @@ Instagram · 德国顶级茶叶端午限定
 
 Instagram · 新加坡顶级茶叶中秋礼盒
 
-### 27. BYREDO 香氛礼盒
+### 28. BYREDO 香氛礼盒
 
 - 品类：创意礼盒
 - 路径：可直接买样
@@ -337,7 +349,7 @@ Instagram · 新加坡顶级茶叶中秋礼盒
 
 Instagram · 瑞典小众香氛礼品套装
 
-### 28. 华源茶业 端午定制礼
+### 29. 华源茶业 端午定制礼
 
 - 品类：端午礼盒
 - 路径：可直接买样
@@ -349,7 +361,7 @@ Instagram · 瑞典小众香氛礼品套装
 
 华源茶业端午礼品装设计
 
-### 29. Massimo Dutti Polo衫
+### 30. Massimo Dutti Polo衫
 
 - 品类：Polo衫
 - 路径：可直接买样
@@ -360,18 +372,6 @@ Instagram · 瑞典小众香氛礼品套装
 - 链接：https://www.massimodutti.com
 
 西班牙高端休闲Polo衫
-
-### 30. LINDOR 端午礼盒
-
-- 品类：端午礼盒
-- 路径：可直接买样
-- 启发：包装启发
-- 分数：7.4
-- 来源：抖音
-- 下一步：买样看材质、尺寸、成本和差评点
-- 链接：https://www.lindt.com
-
-瑞士莲Lindor端午限定巧克力
 
 ### 31. Refik Anadol AI装置
 
@@ -757,19 +757,7 @@ Good Design Award · This one-touch stainless steel mug is designed for easy one
 
 Good Design Award · An original stainless steel thermos bottle that is not only easy to carry, but also easy to wash thanks to its unique packing structure.
 
-### 63. Elthy™ Series
-
-- 品类：创意礼盒
-- 路径：适合改造
-- 启发：包装启发、结构启发
-- 分数：8.4
-- 来源：iF设计奖
-- 下一步：拆解包装结构和开箱动线，做二次主题化
-- 链接：https://ifdesign.com/en/winner-ranking/project/elthy-series/768588
-
-iF Design Award · The Elthy™ Series packaging is designed to embody the brand vision — a playground for adults. It experiments with bold material ideas using recycled paper pulp as the core structure, forming both its tactile and symbolic character. The design embrac
-
-### 64. Honeycomb Lifting LED Light Box
+### 63. Honeycomb Lifting LED Light Box
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -781,7 +769,7 @@ iF Design Award · The Elthy™ Series packaging is designed to embody the brand
 
 iF Design Award · This is a multi-functional light box that integrates eco-friendliness, reusability, and a creative opening method. The entire packaging adopts 100% naturally degradable corrugated cardboard combined with honeycomb paper. It features a minimalist stru
 
-### 65. Nature bamboo fiber cup
+### 64. Nature bamboo fiber cup
 
 - 品类：水杯
 - 路径：适合改造
@@ -793,7 +781,7 @@ iF Design Award · This is a multi-functional light box that integrates eco-frie
 
 iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to nature" through sustainable design. Crafted from natural bamboo fiber, recycled coffee grounds, and plant-based starch, it is free from plastics and synthetic polymers, certified plastic-fr
 
-### 66. Desktop wizard
+### 65. Desktop wizard
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -805,7 +793,7 @@ iF Design Award · The Bamboo Fiber Cup embodies the principle of "returning to 
 
 Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
-### 67. Flo Monitor Arm
+### 66. Flo Monitor Arm
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -817,7 +805,7 @@ Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.
 
 Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
-### 68. RFID防护卡包
+### 67. RFID防护卡包
 
 - 品类：卡包
 - 路径：适合改造
@@ -829,7 +817,7 @@ Good Design Award · Office Equipment · Colebrook Bosson Saunders
 
 Pinterest · RFID防射频极薄卡片包
 
-### 69. 极简纸灯
+### 68. 极简纸灯
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -841,7 +829,7 @@ Pinterest · RFID防射频极薄卡片包
 
 Pinterest · 日本和纸极简落地灯
 
-### 70. 实木显示器架
+### 69. 实木显示器架
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -853,7 +841,7 @@ Pinterest · 日本和纸极简落地灯
 
 Pinterest · 北美黑胡桃木实木显示器架
 
-### 71. 翻页日历
+### 70. 翻页日历
 
 - 品类：日历
 - 路径：适合改造
@@ -865,7 +853,7 @@ Pinterest · 北美黑胡桃木实木显示器架
 
 Pinterest · MUJI经典翻页桌面日历
 
-### 72. 复古充电宝
+### 71. 复古充电宝
 
 - 品类：充电宝
 - 路径：适合改造
@@ -877,7 +865,7 @@ Pinterest · MUJI经典翻页桌面日历
 
 Pinterest · 复古游戏机造型充电宝
 
-### 73. Tom Bihn 旅行收纳包
+### 72. Tom Bihn 旅行收纳包
 
 - 品类：收纳包
 - 路径：适合改造
@@ -889,7 +877,7 @@ Pinterest · 复古游戏机造型充电宝
 
 美国Tom Bihn专业旅行收纳系统
 
-### 74. The North Face 冲锋衣
+### 73. The North Face 冲锋衣
 
 - 品类：冲锋衣
 - 路径：适合改造
@@ -901,7 +889,7 @@ Pinterest · 复古游戏机造型充电宝
 
 北面1994经典复刻冲锋衣
 
-### 75. Montbell 雨舞者冲锋衣
+### 74. Montbell 雨舞者冲锋衣
 
 - 品类：冲锋衣
 - 路径：适合改造
@@ -912,6 +900,18 @@ Pinterest · 复古游戏机造型充电宝
 - 链接：https://www.montbell.com
 
 日本Montbell雨舞者冲锋衣
+
+### 75. BAPE 鲨鱼卫衣
+
+- 品类：卫衣
+- 路径：适合改造
+- 启发：视觉启发
+- 分数：8.2
+- 来源：Instagram
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.bape.com
+
+日本A Bathing Ape经典鲨鱼卫衣
 
 ### 76. Talking Tree
 
