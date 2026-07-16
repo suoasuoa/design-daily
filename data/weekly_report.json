@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T17:37:35+08:00",
+  "generated_at": "2026-07-16T19:51:48+08:00",
   "week": "2026-W29",
   "group_id": "2026-W29",
   "date_start": "2026-07-13",
@@ -11,29 +11,30 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 45,
-      "可直接买样": 30,
-      "方向参考": 25
+      "适合改造": 53,
+      "方向参考": 25,
+      "可直接买样": 22
     },
     "by_category": {
-      "氛围灯": 18,
-      "创意厨具": 12,
+      "氛围灯": 23,
+      "创意厨具": 20,
       "创意礼盒": 12,
-      "装置艺术": 12,
       "水杯": 12,
-      "端午礼盒": 10,
-      "中秋礼盒": 7,
-      "冲锋衣": 7,
-      "创意桌搭": 6,
-      "日历": 2,
-      "充电宝": 2
+      "充电宝": 6,
+      "中秋礼盒": 5,
+      "创意桌搭": 5,
+      "冲锋衣": 5,
+      "端午礼盒": 4,
+      "日历": 4,
+      "手机壳": 3,
+      "钥匙扣水壶": 1
     },
     "by_axis": {
-      "功能启发": 32,
-      "包装启发": 32,
-      "结构启发": 23,
-      "情绪启发": 18,
-      "视觉启发": 9
+      "功能启发": 48,
+      "包装启发": 35,
+      "情绪启发": 27,
+      "结构启发": 17,
+      "视觉启发": 10
     }
   },
   "dedupe": {
@@ -42,246 +43,34 @@
   },
   "recommendations": [
     {
-      "id": "686e253df22c",
+      "id": "d34f66817e8e",
       "product_key": null,
-      "title": "磁吸锅铲套装",
-      "category": "创意厨具",
+      "title": "Personalized Hyperfast Charging Powerbank This gift is a ...",
+      "category": "充电宝",
       "action_lane": "可直接买样",
       "axes": [
         "功能启发",
         "包装启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.peugeot-saveurs.com",
-      "image": "",
-      "summary": "Pinterest · 磁吸收纳锅铲套装",
-      "risk": "产品为磁吸收纳锅铲套装，属于厨房工具，符合创意厨具定义。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意厨具"
-      ]
-    },
-    {
-      "id": "ab9f9437ef5d",
-      "product_key": null,
-      "title": "巧克力礼盒装",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.laderach.com/en/chocolate-gifts",
-      "image": "https://laderach.com/media/og_image/default/full-logo_1_.jpg",
-      "summary": "Pinterest · 精品松露巧克力礼盒",
-      "risk": "巧克力礼盒属于礼品套装",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "b2ec13b47df3",
-      "product_key": null,
-      "title": "永生花礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.thebeastshop.com",
-      "image": "",
-      "summary": "Pinterest · 永生花玻璃罩礼盒套装",
-      "risk": "明确属于创意礼盒品类",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "db9daf8c19e1",
-      "product_key": null,
-      "title": "半島酒店 中秋奶黄月饼",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.peninsula.com/en/hong-kong/hotel-fine-dining/celebrations/mooncakes",
-      "image": "",
-      "summary": "香港半岛酒店中秋经典礼盒",
-      "risk": "明确为中秋礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "中秋礼盒",
-        "奢华"
-      ]
-    },
-    {
-      "id": "c33ebf6c6dd7",
-      "product_key": null,
-      "title": "香薰蜡烛礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.diptyqueparis.com/en/candles",
-      "image": "",
-      "summary": "Pinterest · 极简无火香薰蜡烛礼盒",
-      "risk": "属于创意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "340fecac43c0",
-      "product_key": null,
-      "title": "盲盒收纳展示盒",
-      "category": "创意桌搭",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.popmart.com",
-      "image": "",
-      "summary": "Pinterest · 盲盒亚克力展示收纳盒",
-      "risk": "盲盒亚克力展示收纳盒，属于桌面展示收纳，归为创意桌搭",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Pinterest",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "5bbce620bca9",
-      "product_key": null,
-      "title": "大益 端午限定茶礼",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.dayitea.com",
-      "image": "",
-      "summary": "大益茶业端午佳节限定礼盒",
-      "risk": "明确为端午限定茶礼",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "大益",
-        "端午礼盒"
-      ]
-    },
-    {
-      "id": "ef738cff39b6",
-      "product_key": null,
-      "title": "杏花楼 粽意礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 78,
-      "score_label": "7.8",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.xinghualou.com",
-      "image": "",
-      "summary": "小红书 · 上海老字号端午礼盒",
-      "risk": "端午粽意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "小红书",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "f43a9f930efa",
-      "product_key": null,
-      "title": "Burton AK 冲锋衣",
-      "category": "冲锋衣",
-      "action_lane": "可直接买样",
-      "axes": [
-        "视觉启发"
-      ],
       "score": 78,
       "score_label": "7.8",
       "source": "Instagram",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.burton.com",
+      "url": "https://www.instagram.com/reel/DRY57CeE_eQ",
       "image": "",
-      "summary": "单板滑雪Burton高端AK系列冲锋衣",
-      "risk": "滑雪冲锋衣，属于冲锋衣",
+      "summary": "充电宝实用高频，定制化增加吸引力，多接口和LED灯功能齐全，价格超35元，3秒可看懂，但情绪价值一般。",
+      "risk": "Personalized hyperfast charging powerbank with LED display, clear product, innovative in customization, fits category.",
+      "review_confidence": 9,
+      "review_reason": "Personalized hyperfast charging powerbank with LED display, clear product, innovative in customization, fits category.",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "专业",
-        "冲锋衣"
-      ]
-    },
-    {
-      "id": "b450434e0cd5",
-      "product_key": null,
-      "title": "JURA 全自动咖啡机",
-      "category": "创意厨具",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 78,
-      "score_label": "7.8",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.jura.com",
-      "image": "",
-      "summary": "瑞士JURA全自动咖啡机",
-      "risk": "全自动咖啡机，属于厨房电器",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意厨具",
-        "瑞士"
+        "social_public_index",
+        "充电宝",
+        "白名单来源",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
+        "需人工复核"
       ]
     },
     {
@@ -299,9 +88,11 @@
       "source_family": "社交灵感",
       "source_quality": "standard",
       "url": "https://www.starbucks.com",
-      "image": "",
+      "image": "https://www.starbucks.com/next_static/icons/summary_square.png",
       "summary": "星巴克端午限定星冰粽礼盒",
-      "risk": "星冰粽端午礼盒",
+      "risk": "星巴克端午限定礼盒，品牌知名度高，创新一般但符合标准。",
+      "review_confidence": 9,
+      "review_reason": "星巴克端午限定礼盒，品牌知名度高，创新一般但符合标准。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "咖啡",
@@ -309,12 +100,13 @@
       ]
     },
     {
-      "id": "c660f09955a4",
+      "id": "ff98e1438ef4",
       "product_key": null,
-      "title": "Harney & Sons 端午茶",
-      "category": "端午礼盒",
+      "title": "谁会想到充电宝也能定制？ 名字 Logo 图案 人物画像都能变 ...",
+      "category": "充电宝",
       "action_lane": "可直接买样",
       "axes": [
+        "功能启发",
         "包装启发"
       ],
       "score": 76,
@@ -322,38 +114,18 @@
       "source": "Instagram",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.harney.com",
-      "image": "https://www.harney.com/cdn/shop/files/ht-english-breakfast-tins_46.jpg?v=1722953544",
-      "summary": "Instagram · 美国高端散茶端午礼盒",
-      "risk": "端午主题茶礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Instagram",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "d281c50f62a4",
-      "product_key": null,
-      "title": "Diptyque 限定礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 76,
-      "score_label": "7.6",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.diptyqueparis.com/en/gifts",
+      "url": "https://www.instagram.com/reel/DY6m417SW5k",
       "image": "",
-      "summary": "Instagram · 法国香氛蜡烛礼品套装",
-      "risk": "香氛蜡烛礼品套装",
+      "summary": "充电宝实用性强，高频需求，受众广，功能明确，价格超35元，3秒看懂，定制化可叠加情绪价值，但需人工复核趋势性。",
+      "risk": "Customizable power bank with name/logo/pattern, clear product, innovative in personalization, fits category.",
+      "review_confidence": 9,
+      "review_reason": "Customizable power bank with name/logo/pattern, clear product, innovative in personalization, fits category.",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "Instagram",
-        "创意礼盒"
+        "social_public_index",
+        "充电宝",
+        "白名单来源",
+        "社媒公开索引"
       ]
     },
     {
@@ -373,7 +145,9 @@
       "url": "https://www.naixue.com",
       "image": "",
       "summary": "小红书 · 奈雪中秋设计师联名礼盒",
-      "risk": "奈雪中秋联名礼盒明确为中秋礼盒",
+      "risk": "奈雪中秋设计师联名礼盒，具体产品，品类正确，联名设计有创新，满足基本要求。",
+      "review_confidence": 8,
+      "review_reason": "奈雪中秋设计师联名礼盒，具体产品，品类正确，联名设计有创新，满足基本要求。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "中秋礼盒",
@@ -381,651 +155,558 @@
       ]
     },
     {
-      "id": "b5821b071dea",
+      "id": "12530ac39cc3",
       "product_key": null,
-      "title": "气味图书馆 礼盒",
-      "category": "创意礼盒",
+      "title": "Introducing our Changeable Photo Phone Case How you can ...",
+      "category": "手机壳",
       "action_lane": "可直接买样",
       "axes": [
         "包装启发"
       ],
-      "score": 76,
-      "score_label": "7.6",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.scenllab.com",
-      "image": "",
-      "summary": "小红书 · 气味图书馆城市系列礼盒",
-      "risk": "明确属于礼盒品类",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "小红书"
-      ]
-    },
-    {
-      "id": "b2399acd3049",
-      "product_key": null,
-      "title": "杨聘号 端午茶礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 76,
-      "score_label": "7.6",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.yangpinhao.com",
-      "image": "",
-      "summary": "杨聘號普洱端午限定礼盒",
-      "risk": "明确为端午茶礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "普洱",
-        "杨聘号"
-      ]
-    },
-    {
-      "id": "5b2cbb771d58",
-      "product_key": null,
-      "title": "陈升号 端午茶礼",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 76,
-      "score_label": "7.6",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.chengshengtea.com",
-      "image": "",
-      "summary": "陈升号普洱茶端午礼盒",
-      "risk": "明确为端午茶礼",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "普洱",
-        "端午礼盒"
-      ]
-    },
-    {
-      "id": "ea34c7643707",
-      "product_key": null,
-      "title": "永璞 咖啡联名礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.yongpu.com",
-      "image": "",
-      "summary": "抖音 · 永璞咖啡设计师联名套装",
-      "risk": "明确是礼盒套装",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "抖音"
-      ]
-    },
-    {
-      "id": "7613db9d0ea4",
-      "product_key": null,
-      "title": "Jo Malone 圣诞礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
+      "score": 75,
+      "score_label": "7.5",
       "source": "Instagram",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.jomalone.com/gifts",
+      "url": "https://www.instagram.com/reel/DUAXDNNjGWN",
       "image": "",
-      "summary": "Instagram · 祖玛珑限定圣诞礼盒",
-      "risk": "明确是圣诞礼盒",
+      "summary": "手机壳是高频实用品，可更换照片设计满足个性化需求，打击面广，价格可能超35元，功能简单易懂，情绪价值高。但功能上可能因定制流程稍显复杂，且需人工复核。",
+      "risk": "可更换照片的手机壳，结构创新，交互新颖，符合手机壳品类。",
+      "review_confidence": 8,
+      "review_reason": "可更换照片的手机壳，结构创新，交互新颖，符合手机壳品类。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "Instagram",
-        "创意礼盒"
+        "social_public_index",
+        "手机壳",
+        "白名单来源",
+        "社媒公开索引"
       ]
     },
     {
-      "id": "db74f8c2f77c",
+      "id": "d1358f98f303",
       "product_key": null,
-      "title": "Ronnefeldt 端午茶礼",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.ronnefeldt.com",
-      "image": "https://www.ronnefeldt.com/userdata/images/social_media_banners/390_smb_vorschaubild_teeshop_x.jpg",
-      "summary": "Instagram · 德国顶级茶叶端午限定",
-      "risk": "明确是端午主题礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Instagram",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "e6097dc90dd2",
-      "product_key": null,
-      "title": "广州酒家 端午礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.gzjj.com",
-      "image": "",
-      "summary": "抖音 · 广式粽子礼盒",
-      "risk": "明确属于端午礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "抖音",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "83efc161c8f5",
-      "product_key": null,
-      "title": "元祖 雪月饼礼盒",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.ganso.com",
-      "image": "",
-      "summary": "小红书 · 元祖经典冰淇淋月饼礼盒",
-      "risk": "明确属于中秋礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "中秋礼盒",
-        "小红书"
-      ]
-    },
-    {
-      "id": "83c43c5670ee",
-      "product_key": null,
-      "title": "观夏 蜡烛礼盒",
+      "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
       "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.loeweperfumes.com",
-      "image": "",
-      "summary": "抖音 · 东方植物香薰礼盒",
-      "risk": "明确属于创意礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "抖音"
-      ]
-    },
-    {
-      "id": "1df693a9c8ad",
-      "product_key": null,
-      "title": "TWG Tea 中秋礼盒",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.twgtea.com",
-      "image": "https://media.twgtea.com/images/default-source/illustrations-icons/twg-logo/1200x630--twg-teas-logo.jpg?sfvrsn=45d40125_2",
-      "summary": "Instagram · 新加坡顶级茶叶中秋礼盒",
-      "risk": "产品标题为中秋礼盒，符合品类定义。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Instagram",
-        "中秋礼盒"
-      ]
-    },
-    {
-      "id": "280a792c0c52",
-      "product_key": null,
-      "title": "BYREDO 香氛礼盒",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.byredo.com/us_en/gifts",
-      "image": "https://www.byredo.com/cdn-cgi/image/format=auto,quality=70/https://www.byredo.com/media/catalog/product/cache/538055185084634e259189a2a72f806b/b/y/byredo_ecom_giftcard__.jpg",
-      "summary": "Instagram · 瑞典小众香氛礼品套装",
-      "risk": "香氛礼盒属于创意礼盒品类。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Instagram",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "ec44cb5f1768",
-      "product_key": null,
-      "title": "华源茶业 端午定制礼",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.huayuan-tea.com",
-      "image": "",
-      "summary": "华源茶业端午礼品装设计",
-      "risk": "明确为端午礼品装",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "华源",
-        "端午礼盒"
-      ]
-    },
-    {
-      "id": "5615a119a037",
-      "product_key": null,
-      "title": "LINDOR 端午礼盒",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 74,
-      "score_label": "7.4",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.lindt.com",
-      "image": "",
-      "summary": "瑞士莲Lindor端午限定巧克力",
-      "risk": "端午限定巧克力礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "巧克力",
-        "瑞士"
-      ]
-    },
-    {
-      "id": "b2ac0d259114",
-      "product_key": null,
-      "title": "Godiva 中秋巧克力",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 72,
-      "score_label": "7.2",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.godiva.com",
-      "image": "https://www.godiva.com/cdn/shop/files/39086_godiva-logo-svg.svg?v=1759343745&amp;width=1000",
-      "summary": "Instagram · 比利时巧克力中秋限定",
-      "risk": "中秋限定巧克力礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "Instagram",
-        "中秋礼盒"
-      ]
-    },
-    {
-      "id": "9fa7c88b68f4",
-      "product_key": null,
-      "title": "乐纯 中秋酸奶礼盒",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 72,
-      "score_label": "7.2",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.lechun.com",
-      "image": "",
-      "summary": "抖音 · 乐纯限定中秋酸奶礼盒",
-      "risk": "中秋酸奶礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "中秋礼盒",
-        "抖音"
-      ]
-    },
-    {
-      "id": "96c400a7c334",
-      "product_key": null,
-      "title": "稻香村 月饼礼盒",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 72,
-      "score_label": "7.2",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.daoxiangcun.com",
-      "image": "",
-      "summary": "小红书 · 百年老字号中秋月饼礼盒",
-      "risk": "明确是中秋月饼礼盒",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "中秋礼盒",
-        "小红书"
-      ]
-    },
-    {
-      "id": "ec8d91a42e5e",
-      "product_key": null,
-      "title": "Refik Anadol AI装置",
-      "category": "装置艺术",
-      "action_lane": "适合改造",
-      "axes": [
+        "功能启发",
+        "包装启发",
         "结构启发"
       ],
-      "score": 90,
-      "score_label": "9.0",
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
+      "image": "",
+      "summary": "产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广泛；功能无明显短板；预估售价超35元；3秒看懂操作；情绪价值中等，但功能已成立。",
+      "risk": "折叠盒结构创新，一秒成型可打平，结构创新明显，满足礼盒创新要求。",
+      "review_confidence": 8,
+      "review_reason": "折叠盒结构创新，一秒成型可打平，结构创新明显，满足礼盒创新要求。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "折叠盒",
+        "礼品包装",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "c7ae9f13c7f3",
+      "product_key": null,
+      "title": "Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance",
+      "category": "氛围灯",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
       "source": "Behance",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://refikanadol.com",
-      "image": "https://refikanadol.com/wp-content/themes/refikanadol/img/ra-og.png",
-      "summary": "Refik Anadol AI数据雕塑装置艺术",
-      "risk": "产品明确为装置艺术",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "url": "https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars",
+      "image": "",
+      "summary": "产品实用性强，满足游戏场景高频需求，外观科幻易理解，功能完整，价格超35元，但打击面限于游戏玩家，情绪价值通过氛围营造实现。",
+      "risk": "Govee游戏氛围灯套装，具体产品，RGB IC灯柱，适合桌搭氛围，创新性高。",
+      "review_confidence": 9,
+      "review_reason": "Govee游戏氛围灯套装，具体产品，RGB IC灯柱，适合桌搭氛围，创新性高。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "AI",
-        "数据"
+        "游戏氛围灯",
+        "桌搭",
+        "RGB灯",
+        "Govee",
+        "design_community",
+        "创意桌搭"
       ]
     },
     {
-      "id": "457f979bb17e",
+      "id": "279d2eeef479",
       "product_key": null,
-      "title": "OXO沙拉甩干器",
+      "title": "Premium Ceramic Wok by ACE COOK. Non-Toxic ... - Instagram",
       "category": "创意厨具",
-      "action_lane": "适合改造",
+      "action_lane": "可直接买样",
       "axes": [
         "功能启发"
       ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Pinterest",
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Instagram",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.oxo.com/kitchen-tools/salad-spinners",
+      "url": "https://www.instagram.com/p/DVAtitjFQ8Q",
       "image": "",
-      "summary": "Pinterest · OXO Good Grips沙拉脱水器",
-      "risk": "产品为沙拉甩干器，属于厨房工具，符合创意厨具定义。",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "summary": "陶瓷炒锅实用性强，高频使用，适用人群广，功能无明显短板，价格可能超35元，3秒可看懂，但情绪价值一般。",
+      "risk": "Premium Ceramic Wok，可堆叠设计，无毒陶瓷，具体产品",
+      "review_confidence": 8,
+      "review_reason": "Premium Ceramic Wok，可堆叠设计，无毒陶瓷，具体产品",
+      "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "Pinterest",
-        "创意厨具"
+        "创意厨具",
+        "白名单来源",
+        "社媒公开索引",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
-      "id": "ecf9995de5e7",
+      "id": "11110df88b9a",
       "product_key": null,
-      "title": "光影装置",
-      "category": "装置艺术",
-      "action_lane": "适合改造",
+      "title": "打造年味十足的开箱体验Create a Gift Box That Feels Like Chinese ...",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
       "axes": [
-        "结构启发"
+        "包装启发",
+        "结构启发",
+        "视觉启发"
       ],
-      "score": 86,
-      "score_label": "8.6",
+      "score": 73,
+      "score_label": "7.3",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DQbUAH7E_y2",
+      "image": "",
+      "summary": "产品主打年味礼盒，实用性强，适合节日送礼场景；春节为高频需求，受众广泛；功能无明显短板，预估售价超35元；3秒看懂，情绪价值高。",
+      "risk": "年味主题礼盒，结合红金主调、插画、烫金等，有结构叙事创新，满足礼盒创新要求。",
+      "review_confidence": 8,
+      "review_reason": "年味主题礼盒，结合红金主调、插画、烫金等，有结构叙事创新，满足礼盒创新要求。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "social_public_index",
+        "创意礼盒",
+        "白名单来源",
+        "社媒公开索引"
+      ]
+    },
+    {
+      "id": "340fecac43c0",
+      "product_key": null,
+      "title": "盲盒收纳展示盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 73,
+      "score_label": "7.3",
       "source": "Pinterest",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.teamlab.art",
+      "url": "https://www.popmart.com",
       "image": "",
-      "summary": "Pinterest · LED光影互动艺术装置",
-      "risk": "产品为LED光影互动艺术装置，属于装置艺术。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "summary": "盲盒收纳展示盒满足实用收纳需求，盲盒爱好者高频使用，受众广泛（盲盒玩家），功能明确（展示+收纳），价格通常超过35元，3秒可理解用途，情绪价值来自展示收藏品。",
+      "risk": "具体产品，盲盒收纳展示盒，结构创新",
+      "review_confidence": 8,
+      "review_reason": "具体产品，盲盒收纳展示盒，结构创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "Pinterest",
+        "创意礼盒",
         "社交精选"
       ]
     },
     {
-      "id": "1f9b0d5405cc",
+      "id": "1f4902154daa",
       "product_key": null,
-      "title": "蘑菇氛围灯",
-      "category": "氛围灯",
-      "action_lane": "适合改造",
+      "title": "Flat When You Ship. Fabulous When They Open. Save on freight ...",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
       "axes": [
-        "情绪启发"
+        "包装启发"
       ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.artemide.com/en/products/table/nessino",
-      "image": "",
-      "summary": "Pinterest · 可爱蘑菇造型小夜灯",
-      "risk": "产品为蘑菇造型小夜灯，属于氛围灯。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "氛围灯"
-      ]
-    },
-    {
-      "id": "2ac162994ffd",
-      "product_key": null,
-      "title": "草間彌生 无限镜屋",
-      "category": "装置艺术",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
+      "score": 72,
+      "score_label": "7.2",
       "source": "Instagram",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.yayoi-kusama.jp",
-      "image": "https://yayoi-kusama.jp/imgs/ogp.jpg",
-      "summary": "草间弥生无限镜屋装置系列",
-      "risk": "明确为装置艺术镜屋",
+      "url": "https://www.instagram.com/reel/DWG0uhwj22i",
+      "image": "",
+      "summary": "产品为滑盖礼盒，实用性强，适合送礼场景；高频需求体现在节日、庆典等；打击面广，覆盖个人和企业客户；功能无明显短板，设计巧妙；预估售价超35元；3秒看懂其滑盖开箱效果；情绪价值中等，需结合定制内容。",
+      "risk": "扁平运输展开惊艳的礼盒，结构创新，具体产品",
+      "review_confidence": 8,
+      "review_reason": "扁平运输展开惊艳的礼盒，结构创新，具体产品",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "社媒公开索引",
+        "白名单来源",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "980af6baa7db",
+      "product_key": null,
+      "title": "三顿半 咖啡礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.saturnbird.com",
+      "image": "",
+      "summary": "抖音 · 精品速溶咖啡礼盒套装",
+      "risk": "咖啡礼盒套装，具体产品，礼盒品类正确，创新在包装与产品组合。",
+      "review_confidence": 8,
+      "review_reason": "咖啡礼盒套装，具体产品，礼盒品类正确，创新在包装与产品组合。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "抖音"
+      ]
+    },
+    {
+      "id": "d8d1570965ca",
+      "product_key": null,
+      "title": "FLUR just won a 2026 Red Dot Design Award. I'm still ... - Instagram",
+      "category": "水杯",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 69,
+      "score_label": "6.9",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DXM6ot8Dl0P",
+      "image": "",
+      "summary": "水杯为高频日用品，红点奖提升信任感，手工杯座增加视觉亮点，但功能上无显著创新，且情绪价值需进一步验证。",
+      "risk": "FLUR水杯，手工彩色杯座，获得红点奖，创新在手工工艺和视觉设计。",
+      "review_confidence": 8,
+      "review_reason": "FLUR水杯，手工彩色杯座，获得红点奖，创新在手工工艺和视觉设计。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "红点奖",
+        "手工杯座",
+        "家庭套装",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "95cb34ee7ec9",
+      "product_key": null,
+      "title": "小日子，需要一点可爱的陪伴。 轻巧随身水壶，萌萌登场！ 不管是上班",
+      "category": "钥匙扣水壶",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "情绪启发"
+      ],
+      "score": 68,
+      "score_label": "6.8",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DIiXb8qTvf8",
+      "image": "",
+      "summary": "产品实用性强，可随身携带水壶，满足高频饮水需求；钥匙扣设计扩大使用场景，打击面广；功能无明显短板，单手开盖、磁吸、客制化名字等；预估售价超35元；3秒看懂产品形态；情绪价值通过可爱外观和礼盒包装体现。",
+      "risk": "明确钥匙扣水壶产品，带磁吸、便携扣环、客制化名字，功能与交互创新，满足条件。",
+      "review_confidence": 9,
+      "review_reason": "明确钥匙扣水壶产品，带磁吸、便携扣环、客制化名字，功能与交互创新，满足条件。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "social_public_index",
+        "白名单来源",
+        "社媒公开索引",
+        "钥匙扣水壶",
+        "适合作为趋势、内容爆点或方向参考",
+        "需人工复核"
+      ]
+    },
+    {
+      "id": "0dc3da7fe8a1",
+      "product_key": null,
+      "title": "要送就送最特别的！高级又好看！ 目前市面上的中秋节木礼盒千千万 ...",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 68,
+      "score_label": "6.8",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/CwwT7jguIue",
+      "image": "",
+      "summary": "产品包含保温杯和食品，实用性强；中秋送礼高频需求；设计独特，有情绪价值；价格预估超35元；功能组合无明显短板；3秒能看懂是礼盒。",
+      "risk": "中秋礼盒含保温杯、凤梨酥等，设计独特，内容具体，创新性中等，符合品类。",
+      "review_confidence": 8,
+      "review_reason": "中秋礼盒含保温杯、凤梨酥等，设计独特，内容具体，创新性中等，符合品类。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "c33ebf6c6dd7",
+      "product_key": null,
+      "title": "香薰蜡烛礼盒",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 66,
+      "score_label": "6.6",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.diptyqueparis.com/en/candles",
+      "image": "",
+      "summary": "香薰蜡烛礼盒兼具实用与情绪价值，高频送礼场景，设计简洁易理解，价格通常超过35元，但功能上无火香薰可能存在扩香不足的短板。",
+      "risk": "具体产品，香薰蜡烛礼盒，有包装创新",
+      "review_confidence": 8,
+      "review_reason": "具体产品，香薰蜡烛礼盒，有包装创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Pinterest",
+        "创意礼盒",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "24d5dd822bbd",
+      "product_key": null,
+      "title": "端午粽子礼盒｜暖心送礼首选今年端午，把满满心意送给家人朋友 ...",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 65,
+      "score_label": "6.5",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DY8pQ39zuAM",
+      "image": "",
+      "summary": "产品实用性强（粽子、艾草饼等食品），但端午为节令性需求，频率低；打击面广（送礼场景），功能无明显短板，售价预估超35元，3秒看懂（礼盒+粽子），情绪价值高（定制木牌、送礼心意）。",
+      "risk": "明确端午礼盒，含粽子、艾草饼、茶等，内容完整，符合端午礼盒品类。",
+      "review_confidence": 9,
+      "review_reason": "明确端午礼盒，含粽子、艾草饼、茶等，内容完整，符合端午礼盒品类。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "端午礼盒",
+        "送礼",
+        "定制",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "686e253df22c",
+      "product_key": null,
+      "title": "磁吸锅铲套装",
+      "category": "创意厨具",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 65,
+      "score_label": "6.5",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.peugeot-saveurs.com",
+      "image": "",
+      "summary": "磁吸锅铲套装解决收纳痛点，实用性强；烹饪高频但非每日必用；目标用户为家庭主妇/煮夫，覆盖面中等；功能基本满足，但磁吸强度可能不足；预估售价超35元；3秒看懂设计；情绪价值一般。",
+      "risk": "具体产品，磁吸收纳锅铲套装，创新在于磁吸结构，功能完整，符合厨具品类。",
+      "review_confidence": 9,
+      "review_reason": "具体产品，磁吸收纳锅铲套装，创新在于磁吸结构，功能完整，符合厨具品类。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Pinterest",
+        "创意厨具",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "a9f8a0e504b0",
+      "product_key": null,
+      "title": "“福满八珍”中秋礼盒包装设计产品设计品牌设计 :: Behance",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 64,
+      "score_label": "6.4",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/234232095/_",
+      "image": "",
+      "summary": "礼盒设计融合传统文化与现代审美，实用性强，适合送礼；中秋为高频节日，受众广；功能完整，价格预计超35元；设计直观易懂；情绪价值高，但需注意市场同质化风险。",
+      "risk": "明确的中秋礼盒设计，以八边形食盒为结构创新，结合玉兔等传统元素，有具体产品形态，适合讨论转化。",
+      "review_confidence": 9,
+      "review_reason": "明确的中秋礼盒设计，以八边形食盒为结构创新，结合玉兔等传统元素，有具体产品形态，适合讨论转化。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "传统文化",
+        "设计感",
+        "design_community",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "b350185d3aef",
+      "product_key": null,
+      "title": "现在很多人送礼，其实最怕一种情况 ‍ 礼盒收了、吃完了，最后什么 ...",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 64,
+      "score_label": "6.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/DYRlgCHPLX5",
+      "image": "",
+      "summary": "产品实用性强（粽子+艾草用品），功能无明显短板，3秒看懂是端午礼盒，预估售价超35元，但端午为季节性节日，高频需求低。",
+      "risk": "具体端午礼盒，内含粽子、艾草锤等，结构创新，有文化内涵，实用性强。",
+      "review_confidence": 9,
+      "review_reason": "具体端午礼盒，内含粽子、艾草锤等，结构创新，有文化内涵，实用性强。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "端午礼盒",
+        "送礼",
+        "艾草",
+        "健康",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "a85541c45224",
+      "product_key": null,
+      "title": "木牌上还可以刻上你送的对象姓名 每一个细节帮你安排好，送给客户 ...",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "情绪启发"
+      ],
+      "score": 61,
+      "score_label": "6.1",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/C9tIze5SORM?hl=ar",
+      "image": "",
+      "summary": "产品实用性强（可刻字送礼），高频需求（中秋送礼），打击面广（送礼场景），功能无明显短板，预估售价超35元，3秒看懂（古风礼盒），情绪价值高（定制化、惊艳感）。",
+      "risk": "木质古风中秋礼盒，可定制姓名，结构有花开富贵打开方式，创新在材质和开盒体验，符合礼盒创新要求。",
+      "review_confidence": 8,
+      "review_reason": "木质古风中秋礼盒，可定制姓名，结构有花开富贵打开方式，创新在材质和开盒体验，符合礼盒创新要求。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "客制化",
+        "古风",
+        "高颜值",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "cf9b565e1671",
+      "product_key": null,
+      "title": "今天的工厂满满都是粽子的香气 一颗颗饱满出炉 端午礼盒接单中 ...",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "情绪启发"
+      ],
+      "score": 61,
+      "score_label": "6.1",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DZXSHFPNuem",
+      "image": "",
+      "summary": "端午礼盒是季节性高频需求，但非日常；打击面广，适合送礼场景；功能上无明显短板，但需注意保质期；预估售价超35元；3秒可看懂是粽子礼盒；情绪价值通过节日氛围和定制化体现。",
+      "risk": "具体端午礼盒产品，工厂生产，信息完整。",
+      "review_confidence": 8,
+      "review_reason": "具体端午礼盒产品，工厂生产，信息完整。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "端午礼盒",
+        "节日礼品",
+        "定制蛋糕",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
+      ]
+    },
+    {
+      "id": "9ebda00230e6",
+      "product_key": null,
+      "title": "BOTTLED JOY 吨吨桶",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://bottledjoy.com",
+      "image": "http://bottledjoy.com/cdn/shop/files/5b6u5L_h5Zu_54mHXzIwMjMwNjEzMTY0NTMzLnBuZw.png?v=1686880714",
+      "summary": "水杯是高频实用品，大容量满足运动补水需求，抖音网红属性带来情绪价值，价格通常高于35元，功能简单易懂。",
+      "risk": "网红大容量运动水壶，具体产品，品类正确，创新在于大容量和社交属性，满足基本要求。",
+      "review_confidence": 8,
+      "review_reason": "网红大容量运动水壶，具体产品，品类正确，创新在于大容量和社交属性，满足基本要求。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "波点",
-        "装置艺术"
-      ]
-    },
-    {
-      "id": "1af43f7fb659",
-      "product_key": null,
-      "title": "Microcomputer rice cooker EP2S01 / EP2S02",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/23070?years=2024",
-      "image": "https://award-attachments.g-mark.io/winners/2024/23070/main.jpg?size=medium",
-      "summary": "Good Design Award · Home Electronics · NITORI Co.,Ltd",
-      "risk": "Microcomputer rice cooker, a kitchen appliance, belongs to creative kitchenware.",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Good Design Award",
-        "创意桌搭"
-      ]
-    },
-    {
-      "id": "0d2a074e1503",
-      "product_key": null,
-      "title": "TOSHIBA JAPANDI RICECOOKER",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/26942?years=2024",
-      "image": "https://award-attachments.g-mark.io/winners/2024/26942/main.jpg?size=medium",
-      "summary": "Good Design Award · Home Electronics · Foshan Shunde Midea Electrical Heating Appliances Manufacturing Co., Ltd.",
-      "risk": "Rice cooker, kitchen appliance, belongs to creative kitchenware.",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Good Design Award",
-        "创意桌搭"
-      ]
-    },
-    {
-      "id": "b996280cac79",
-      "product_key": null,
-      "title": "NAMACRICH",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/20811?years=2024",
-      "image": "https://award-attachments.g-mark.io/winners/2024/20811/main.jpg?size=medium",
-      "summary": "Good Design Award · Home Electronics · kai corporation.",
-      "risk": "Product name unclear but from home electronics category and brand kai corporation likely a kitchen appliance; belongs to creative kitchenware.",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Good Design Award",
-        "创意桌搭"
-      ]
-    },
-    {
-      "id": "b0aa3df12c2f",
-      "product_key": null,
-      "title": "Panasonic Bread Maker SD-CB1",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/26096?years=2024",
-      "image": "https://award-attachments.g-mark.io/winners/2024/26096/main.jpg?size=medium",
-      "summary": "Good Design Award · Home Electronics · Panasonic Corporation",
-      "risk": "Bread maker, kitchen appliance, belongs to creative kitchenware.",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Good Design Award",
-        "创意桌搭"
-      ]
-    },
-    {
-      "id": "fc898366959f",
-      "product_key": null,
-      "title": "Built-In Fully Automatic Coffee Machine",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/21641?years=2024",
-      "image": "https://award-attachments.g-mark.io/winners/2024/21641/main.jpg?size=medium",
-      "summary": "Good Design Award · Home Electronics · Guangdong Midea Consumer Electric Manufacturing Co.,Ltd.",
-      "risk": "嵌入式全自动咖啡机，属于厨房电器",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Good Design Award",
-        "创意桌搭"
-      ]
-    },
-    {
-      "id": "977e95fc028e",
-      "product_key": null,
-      "title": "DINING ROBATA",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/24211?years=2024",
-      "image": "https://award-attachments.g-mark.io/winners/2024/24211/main.jpg?size=medium",
-      "summary": "Good Design Award · Home Electronics · THE PEACOCK VACUUM BOTTLE CO., LTD.",
-      "risk": "DINING ROBATA围炉烤炉，属于厨房电器",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Good Design Award",
-        "创意桌搭"
+        "抖音",
+        "水杯",
+        "社交精选"
       ]
     },
     {
@@ -1045,83 +726,13 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/sake-bottle-opener/753577",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1121215/753577/14a8d278-c9dc-4179-9750-7f78e46ef961/_2mb_swd228-1.jpg",
       "summary": "iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of its tightly pressed and varied corks—closures unlike those on wine or beer. No universal opener exists for this diversity, making the first step of dr",
-      "risk": "Sake bottle opener, kitchen tool.",
+      "risk": "清酒开瓶器，解决特定痛点，结构创新",
+      "review_confidence": 9,
+      "review_reason": "清酒开瓶器，解决特定痛点，结构创新",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "Good Design Award",
         "iF Design Award"
-      ]
-    },
-    {
-      "id": "d75abc2794af",
-      "product_key": null,
-      "title": "镜面装置",
-      "category": "装置艺术",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.anishkapoor.com",
-      "image": "",
-      "summary": "Pinterest · 镜面不锈钢反射装置艺术",
-      "risk": "产品为镜面不锈钢反射装置艺术，属于装置艺术。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "社交精选"
-      ]
-    },
-    {
-      "id": "0dd4fb9dd4d4",
-      "product_key": null,
-      "title": "Alessi 外星人榨汁机",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.alessi.com/products/juicy-salif",
-      "image": "",
-      "summary": "A' Design Award · 后现代设计经典厨具",
-      "risk": "榨汁机属于厨房工具",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "A' Design Award",
-        "创意厨具"
-      ]
-    },
-    {
-      "id": "6d935b212c85",
-      "product_key": null,
-      "title": "Tom Dixon 设计礼盒",
-      "category": "创意礼盒",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.tomdixon.net/en/gifts.html",
-      "image": "",
-      "summary": "A' Design Award · 英国设计师品牌家居礼品",
-      "risk": "设计师品牌家居礼品，明确为礼盒",
-      "next_action": "拆解包装结构和开箱动线，做二次主题化",
-      "tags": [
-        "A' Design Award",
-        "创意礼盒"
       ]
     },
     {
@@ -1141,7 +752,9 @@
       "url": "https://www.balmuda.com/jp/pot",
       "image": "https://www.balmuda.com/jp/pot/img/og/index.jpg",
       "summary": "iF设计奖 · 极致工业设计手冲电水壶",
-      "risk": "手冲壶属于咖啡器具，明确为创意厨具",
+      "risk": "具体产品，BALMUDA手冲壶，设计创新，功能明确，符合厨具品类。",
+      "review_confidence": 9,
+      "review_reason": "具体产品，BALMUDA手冲壶，设计创新，功能明确，符合厨具品类。",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "iF Design Award",
@@ -1149,106 +762,114 @@
       ]
     },
     {
-      "id": "bce1b4b1692a",
+      "id": "d2f58615f28c",
       "product_key": null,
-      "title": "Floral 蜡烛香味礼盒",
-      "category": "创意礼盒",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.yankeecandle.com/gifts",
-      "image": "",
-      "summary": "A' Design Award · 天然植物香氛蜡烛套装",
-      "risk": "香氛蜡烛礼盒属于创意礼盒",
-      "next_action": "拆解包装结构和开箱动线，做二次主题化",
-      "tags": [
-        "A' Design Award",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "a5f0b5e1d459",
-      "product_key": null,
-      "title": "极简桌面日历",
-      "category": "日历",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.papierplatz.com",
-      "image": "",
-      "summary": "Pinterest · PAPIER PLATZ极简桌面日历",
-      "risk": "明确属于日历品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "日历"
-      ]
-    },
-    {
-      "id": "cc1c1e3af006",
-      "product_key": null,
-      "title": "Stanley 保温水壶",
-      "category": "水杯",
+      "title": "Presso SmartShot",
+      "category": "创意厨具",
       "action_lane": "适合改造",
       "axes": [
         "功能启发"
       ],
       "score": 84,
       "score_label": "8.4",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.stanley1913.com",
-      "image": "https://www.stanley1913.com/cdn/shop/files/Stanley_Horizontal_x320_b3ec2ef4-fa76-454a-b900-c4055137902d.webp?height=628&pad_color=fff&v=1706751331&width=1200",
-      "summary": "Stanley经典经典锤纹保温壶",
-      "risk": "保温壶明确属于水杯",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/27092?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/27092/main.jpg?size=medium",
+      "summary": "Good Design Award · The Presso SmartShot is a planet-friendly, manually operated espresso machine for use within the home. Using any coffee grounds and hot water, users simply apply the necessary pressure to create great espresso. Customers can choose their favourite c",
+      "risk": "手动意式咖啡机，创新结构，环保理念，符合创意厨具。",
+      "review_confidence": 9,
+      "review_reason": "手动意式咖啡机，创新结构，环保理念，符合创意厨具。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
-        "户外",
-        "经典"
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
       ]
     },
     {
-      "id": "af18ddffc29f",
+      "id": "07e48ef5dbf5",
       "product_key": null,
-      "title": "Logitech MX Master 3",
-      "category": "创意桌搭",
+      "title": "M01",
+      "category": "创意厨具",
       "action_lane": "适合改造",
       "axes": [
-        "结构启发"
+        "功能启发"
       ],
       "score": 84,
       "score_label": "8.4",
-      "source": "Red Dot",
+      "source": "Good Design Award",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://www.logitech.com/en-us/products/mice/mx-master-3s.html",
-      "image": "",
-      "summary": "Logitech MX Master 3S高端鼠标",
-      "risk": "高端鼠标，属于桌面配件",
+      "url": "https://www.g-mark.org/gallery/winners/21128?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/21128/main.jpg?size=medium",
+      "summary": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radical new \"Pineapple burr\" design for faster, more consistent grinding. M01 also brings a host of usability improvements, such as a larger catch cup, drop",
+      "risk": "创新菠萝锥形磨刀，竞赛级手摇磨豆机，结构创新明显。",
+      "review_confidence": 9,
+      "review_reason": "创新菠萝锥形磨刀，竞赛级手摇磨豆机，结构创新明显。",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
-        "创意桌搭",
-        "获奖"
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "7871c1e4a030",
+      "product_key": null,
+      "title": "ceramic blade coffee grinder",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/22447?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/22447/main.jpg?size=medium",
+      "summary": "Good Design Award · A genuine coffee grinder made with coffee specialists that satisfies even advanced users and is easy for beginners to use.",
+      "risk": "陶瓷刀片咖啡研磨机，材质创新，但描述较泛，创新一般。",
+      "review_confidence": 9,
+      "review_reason": "陶瓷刀片咖啡研磨机，材质创新，但描述较泛，创新一般。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "4dc7a7932e72",
+      "product_key": null,
+      "title": "Nano bubble shaker",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/25294?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/25294/main.jpg?size=medium",
+      "summary": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving penetration and absorption. Ease of drinking, using, and cleaning have been pursued down to the last detail, resulting in a design that blends into eve",
+      "risk": "纳米气泡摇摇杯，功能创新，提升蛋白质溶解吸收。",
+      "review_confidence": 9,
+      "review_reason": "纳米气泡摇摇杯，功能创新，提升蛋白质溶解吸收。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
       ]
     },
     {
       "id": "f5732cc2c595",
       "product_key": null,
       "title": "Double-Wall Carafe",
-      "category": "水杯",
+      "category": "创意厨具",
       "action_lane": "适合改造",
       "axes": [
         "功能启发"
@@ -1261,8 +882,89 @@
       "url": "https://www.g-mark.org/gallery/winners/21256?years=2024",
       "image": "https://award-attachments.g-mark.io/winners/2024/21256/main.jpg?size=medium",
       "summary": "Good Design Award · The simple form of this double-walled carafe is designed for holding directly in your hand when containing hot beverages and pouring that. It also prevents condensation when containing cold beverages.",
-      "risk": "双壁玻璃瓶属于水杯品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "risk": "双层玻璃水瓶，隔热防冷凝，结构创新但较常见。",
+      "review_confidence": 9,
+      "review_reason": "双层玻璃水瓶，隔热防冷凝，结构创新但较常见。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "f665dd0eb6b5",
+      "product_key": null,
+      "title": "SELECT100 grater",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/20806?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/20806/main.jpg?size=medium",
+      "summary": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses and citrus fruit but also frequently-used ingredients such as ginger or garlic. The spatula-shaped end of the blade cover allows you to collect grated",
+      "risk": "多功能刨丝器，紧凑易存，铲形刀盖设计，功能创新。",
+      "review_confidence": 9,
+      "review_reason": "多功能刨丝器，紧凑易存，铲形刀盖设计，功能创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "f2292cb86779",
+      "product_key": null,
+      "title": "WMF Flexi Whisk",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/24324?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/24324/main.jpg?size=medium",
+      "summary": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wires and 11 balls of different sizes at the tips. The varying wire lengths allow for reaching into container corners and edges, ensuring thorough and qu",
+      "risk": "柔性打蛋器，不同长度钢丝和球头，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "柔性打蛋器，不同长度钢丝和球头，结构创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "d8d99be718f4",
+      "product_key": null,
+      "title": "Multi-Functional Magnetic Knife Sheath",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/26724?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/26724/main.jpg?size=medium",
+      "summary": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prevent the user from being cut during taking the knife outside. Additionally, It can be fold into a knife holder to display the knife. The magnetic adhe",
+      "risk": "变形磁性刀套，可折叠成刀架，结构创新，多功能。",
+      "review_confidence": 9,
+      "review_reason": "变形磁性刀套，可折叠成刀架，结构创新，多功能。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "GOOD DESIGN AWARD",
         "Good Design Award"
@@ -1285,7 +987,9 @@
       "url": "https://www.g-mark.org/gallery/winners/20877?years=2024",
       "image": "https://award-attachments.g-mark.io/winners/2024/20877/main.jpg?size=medium",
       "summary": "Good Design Award · This is a portable, leak-proof, carry-on tumbler. This large capacity size is mainly targeted at Southeast Asia, Taiwan, and North America areas. It can be used like a tableware indoors and can be easily sealed and carried when going outside.",
-      "risk": "不锈钢便携杯，属于水杯而非厨具",
+      "risk": "便携防漏大容量不锈钢杯，可室内外使用，创新在密封与便携设计。",
+      "review_confidence": 9,
+      "review_reason": "便携防漏大容量不锈钢杯，可室内外使用，创新在密封与便携设计。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "GOOD DESIGN AWARD",
@@ -1309,7 +1013,9 @@
       "url": "https://www.g-mark.org/gallery/winners/20874?years=2024",
       "image": "https://award-attachments.g-mark.io/winners/2024/20874/main.jpg?size=medium",
       "summary": "Good Design Award · A stainless steel mug with a handle and vacuum-insulated double walls. Ideal for carrying by hand without a bag or bringing hand with other items while on the move. Features a \"seamless seal\" cap and dishwasher compatibility for easy cleaning, addres",
-      "risk": "不锈钢保温杯，属于水杯",
+      "risk": "带手柄真空不锈钢杯，无缝密封盖，创新在便携与密封性。",
+      "review_confidence": 9,
+      "review_reason": "带手柄真空不锈钢杯，无缝密封盖，创新在便携与密封性。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "GOOD DESIGN AWARD",
@@ -1334,7 +1040,9 @@
       "url": "https://www.g-mark.org/gallery/winners/20878?years=2024",
       "image": "https://award-attachments.g-mark.io/winners/2024/20878/main.jpg?size=medium",
       "summary": "Good Design Award · A stainless steel mug with a vacuum-insulated double wall, perfect for those on the go who want to carry their favorite drink or stay hydrated throughout the day. Its innovative thermoring structure maintains ideal beverage temperatures. Featuring a",
-      "risk": "不锈钢双层杯，属于水杯",
+      "risk": "真空不锈钢杯，创新热环结构保持最佳温度，便携设计。",
+      "review_confidence": 9,
+      "review_reason": "真空不锈钢杯，创新热环结构保持最佳温度，便携设计。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "GOOD DESIGN AWARD",
@@ -1359,7 +1067,9 @@
       "url": "https://www.g-mark.org/gallery/winners/20970?years=2024",
       "image": "https://award-attachments.g-mark.io/winners/2024/20970/main.jpg?size=medium",
       "summary": "Good Design Award · USURAI is a thin glass that has both delicacy and strength. The thin-walled design ensures nice feel to your lips and light feel in your hand, and the unique full-surface ion-toughening treatment makes it hard to break and highly durable enough to be",
-      "risk": "薄壁玻璃杯，属于水杯",
+      "risk": "超薄玻璃杯，全表面离子强化，薄而坚固，创新在材料工艺。",
+      "review_confidence": 9,
+      "review_reason": "超薄玻璃杯，全表面离子强化，薄而坚固，创新在材料工艺。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "GOOD DESIGN AWARD",
@@ -1383,7 +1093,9 @@
       "url": "https://www.g-mark.org/gallery/winners/21340?years=2024",
       "image": "https://award-attachments.g-mark.io/winners/2024/21340/main.jpg?size=medium",
       "summary": "Good Design Award · This tumbler and cup allows one to drink from any position without removing the lid. The rim made with a soft shape that is pleasant to the mouth. The dual-layer vacuum design retains beverage temperature. Enjoy your beverage even while doing anythin",
-      "risk": "360度饮用杯，属于水杯",
+      "risk": "360度可饮杯，无需开盖任意角度饮用，创新在饮用方式。",
+      "review_confidence": 9,
+      "review_reason": "360度可饮杯，无需开盖任意角度饮用，创新在饮用方式。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "GOOD DESIGN AWARD",
@@ -1407,7 +1119,9 @@
       "url": "https://www.g-mark.org/gallery/winners/28734?years=2025",
       "image": "https://award-attachments.g-mark.io/winners/2025/28734/main.jpg?size=medium",
       "summary": "Good Design Award · The returnable, or Biodegradable Cup that is petroleum-free, plant-based plastic, the thinnest PLA injection-molded cup in the world (thickness: 0.53 mm), strong and non-deformable. It feels good by thin thickness when drinking beverage. The materia",
-      "risk": "甘蔗杯属于水杯",
+      "risk": "甘蔗渣可重复使用杯，最薄PLA注塑杯，创新在环保材料与薄壁工艺。",
+      "review_confidence": 9,
+      "review_reason": "甘蔗渣可重复使用杯，最薄PLA注塑杯，创新在环保材料与薄壁工艺。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "GOOD DESIGN AWARD",
@@ -1431,96 +1145,23 @@
       "url": "https://www.g-mark.org/gallery/winners/33646?years=2025",
       "image": "https://award-attachments.g-mark.io/winners/2025/33646/main.jpg?size=medium",
       "summary": "Good Design Award · 1616/arita japan presents the Tea and Hojicha Cup-2 enduring designs by Danish ceramicist Richard Manz.Intertwining principles of Scandinavian design with Japanese craftsmanship, these intuitively appealing vessels honour Manz's legacy and exhibit an",
-      "risk": "Tea and Hojicha cups for drinking.",
+      "risk": "茶杯与焙茶杯，斯堪的纳维亚与日本工艺结合，创新在跨文化设计。",
+      "review_confidence": 9,
+      "review_reason": "茶杯与焙茶杯，斯堪的纳维亚与日本工艺结合，创新在跨文化设计。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "GOOD DESIGN AWARD",
         "Good Design Award"
-      ]
-    },
-    {
-      "id": "216e8812c317",
-      "product_key": null,
-      "title": "ZOJIRUSHI Stainless Mug SU-BA36.48",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/27926?years=2025",
-      "image": "https://award-attachments.g-mark.io/winners/2025/27926/main.jpg?size=medium",
-      "summary": "Good Design Award · This one-touch stainless steel mug is designed for easy one-handed use. It features a \"seamless lid\" that integrates the lid and gasket, so there's no need to disassemble the spout. The mug can be split into two parts for dishwasher cleaning. Availab",
-      "risk": "stainless steel mug, drinkware",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "GOOD DESIGN AWARD",
-        "Good Design Award"
-      ]
-    },
-    {
-      "id": "d3ce3952d128",
-      "product_key": null,
-      "title": "Handit Simple Thermo Bottle 350ml/500ml",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/31664?years=2025",
-      "image": "https://award-attachments.g-mark.io/winners/2025/31664/main.jpg?size=medium",
-      "summary": "Good Design Award · An original stainless steel thermos bottle that is not only easy to carry, but also easy to wash thanks to its unique packing structure.",
-      "risk": "thermo bottle, drinkware",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "GOOD DESIGN AWARD",
-        "Good Design Award"
-      ]
-    },
-    {
-      "id": "100a91c8a510",
-      "product_key": null,
-      "title": "Elthy™ Series",
-      "category": "创意礼盒",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/elthy-series/768588",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1164274/768588/3591f237-f59c-4a68-9f68-4d94a36b6001/elthy-my_days.co_2.jpg",
-      "summary": "iF Design Award · The Elthy™ Series packaging is designed to embody the brand vision — a playground for adults. It experiments with bold material ideas using recycled paper pulp as the core structure, forming both its tactile and symbolic character. The design embrac",
-      "risk": "包装系列属于创意礼盒",
-      "next_action": "拆解包装结构和开箱动线，做二次主题化",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
       ]
     },
     {
       "id": "db0b9753cf96",
       "product_key": null,
       "title": "Honeycomb Lifting LED Light Box",
-      "category": "氛围灯",
+      "category": "创意礼盒",
       "action_lane": "适合改造",
       "axes": [
-        "包装启发",
-        "情绪启发"
+        "包装启发"
       ],
       "score": 84,
       "score_label": "8.4",
@@ -1530,8 +1171,10 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/honeycomb-lifting-led-light-box/740151",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/779917/740151/77b87bf7-b2ef-4090-b7fc-eb1591f94cf3/1.jpg",
       "summary": "iF Design Award · This is a multi-functional light box that integrates eco-friendliness, reusability, and a creative opening method. The entire packaging adopts 100% naturally degradable corrugated cardboard combined with honeycomb paper. It features a minimalist stru",
-      "risk": "多功能LED灯箱，属于氛围灯品类，而非礼盒。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "risk": "多功能灯箱包装，可复用，结构创新，兼具氛围灯功能",
+      "review_confidence": 8,
+      "review_reason": "多功能灯箱包装，可复用，结构创新，兼具氛围灯功能",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
       "tags": [
         "iF Design Award",
         "iF获奖"
@@ -1554,7 +1197,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/nature-bamboo-fiber-cup/764769",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/779836/764769/10f1493e-b49b-4007-ae16-1a37bcf066ea/l2204223___.jpg",
       "summary": "iF Design Award · The Bamboo Fiber Cup embodies the principle of \"returning to nature\" through sustainable design. Crafted from natural bamboo fiber, recycled coffee grounds, and plant-based starch, it is free from plastics and synthetic polymers, certified plastic-fr",
-      "risk": "Bamboo fiber cup, clearly drinkware; corrected from 创意厨具.",
+      "risk": "竹纤维杯，材料创新，可持续，可修正为水杯",
+      "review_confidence": 8,
+      "review_reason": "竹纤维杯，材料创新，可持续，可修正为水杯",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "iF Design Award",
@@ -1562,9 +1207,168 @@
       ]
     },
     {
-      "id": "e2bb52c04481",
+      "id": "da128f4c1c04",
       "product_key": null,
-      "title": "Desktop wizard",
+      "title": "Smart Thermal Bottle",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/smart-thermal-bottle/741137",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1146670/741137/43547867-aa79-4028-8338-3f7484ce4b76/1.jpg",
+      "summary": "iF Design Award · This smart insulated bottle is designed for data-driven hydration management. With a focus on intelligence, it features a dedicated app that analyzes user biometrics (such as age and gender) to create personalized hydration plans. The app also tracks",
+      "risk": "智能保温杯，APP个性化补水，创新交互，品类应为水杯",
+      "review_confidence": 9,
+      "review_reason": "智能保温杯，APP个性化补水，创新交互，品类应为水杯",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "44b96335bcca",
+      "product_key": null,
+      "title": "On The Go collection",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/on-the-go-collection/764521",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1009142/764521/b4364f04-dafa-481c-91bb-297b7447b843/mango_product_design_-_le_creuset-_1.jpg",
+      "summary": "iF Design Award · The Le Creuset On the Go Collection celebrates 100 years of craftsmanship through a modern, sustainable line of portable food and beverage containers. Designed to accompany users wherever life takes them, the range includes a lunchbox, food flask, tr",
+      "risk": "Le Creuset便携食物饮料容器，品牌溢价，创新一般但实用，品类应为水杯",
+      "review_confidence": 8,
+      "review_reason": "Le Creuset便携食物饮料容器，品牌溢价，创新一般但实用，品类应为水杯",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "909ad22a30e8",
+      "product_key": null,
+      "title": "LAN GUI",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/lan-gui/745763",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1171653/745763/2f30b879-31e6-4d5b-b77e-78165231c890/langui01b.jpg",
+      "summary": "iF Design Award · Inspired by Su Shi’s Red Cliff Ode (a masterpiece by China's most iconic poet), LAN GUI is a luxury tea set celebrating the \"Paired Elegance\" of Orchid (Black) and Osmanthus (Gold). The design magnifies microscopic tea stem cells into radial patterns",
+      "risk": "Luxury tea set with poetic narrative and dual-color design; clear gift box product with structural and visual innovation.",
+      "review_confidence": 8,
+      "review_reason": "Luxury tea set with poetic narrative and dual-color design; clear gift box product with structural and visual innovation.",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "0428ab54df13",
+      "product_key": null,
+      "title": "Childhood Sweethearts Plum Wine",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/childhood-sweethearts-plum-wine/761990",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1086390/761990/021b20b2-2668-4452-be63-8243e7affb7e/1107.jpg",
+      "summary": "iF Design Award · The “Childhood Sweethearts” design centers on emotional growth, using the layered structure of a bamboo-jointed vase to symbolize the journey from youthful innocence to enduring companionship. The vase's form echoes bamboo joints while its hue evokes",
+      "risk": "Plum wine gift set with bamboo-jointed vase symbolizing emotional growth; structural and narrative innovation.",
+      "review_confidence": 8,
+      "review_reason": "Plum wine gift set with bamboo-jointed vase symbolizing emotional growth; structural and narrative innovation.",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "ef3168b7b116",
+      "product_key": null,
+      "title": "Artisanal Paper-Based Red Wine Packaging",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/artisanal-paper-based-red-wine-packaging/745283",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/779917/745283/e7d94574-f4e4-4cdb-b79d-3f23dc1f36cb/1.jpg",
+      "summary": "iF Design Award · The innovative one-piece forming structure is realized through the design of a single sheet of corrugated paper, reducing material usage. Leveraging cross-mechanics, a left-right cross-support structure is designed to ensure load-bearing stability. T",
+      "risk": "One-piece corrugated paper wine packaging with cross-mechanics; strong structural innovation and sustainability.",
+      "review_confidence": 9,
+      "review_reason": "One-piece corrugated paper wine packaging with cross-mechanics; strong structural innovation and sustainability.",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "a1db63225cc7",
+      "product_key": null,
+      "title": "Ten degree tour-mountain & water tea",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/ten-degree-tour-mountain-water-tea/754443",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/54444/754443/ba00d895-c707-4e4d-a63a-a4d0ba047aa9/007-__.jpg",
+      "summary": "iF Design Award · The rock tea packaging for Hangzhou’s \"Ten degree tour\" Oriental club includes two sizes and supporting materials (brochures, cards)—all recycled eco-friendly paper. The large box has a white tea bowl cutout showing inverted landscapes; inner box lin",
+      "risk": "Rock tea packaging with tea bowl cutout and eco-friendly paper; structural and visual innovation.",
+      "review_confidence": 8,
+      "review_reason": "Rock tea packaging with tea bowl cutout and eco-friendly paper; structural and visual innovation.",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "d11253daf629",
+      "product_key": null,
+      "title": "Murora Distributed Intelligent Voice Panel",
       "category": "创意桌搭",
       "action_lane": "适合改造",
       "axes": [
@@ -1575,10 +1379,38 @@
       "source": "Good Design Award",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://www.g-mark.org/gallery/winners/31013?years=2025",
-      "image": "https://award-attachments.g-mark.io/winners/2025/31013/main.jpg?size=medium",
-      "summary": "Good Design Award · Office Equipment · Shenzhen Sunricher Technology Co.,Ltd.",
-      "risk": "桌面配件，属于创意桌搭",
+      "url": "https://www.g-mark.org/gallery/winners/28998?years=2025",
+      "image": "https://award-attachments.g-mark.io/winners/2025/28998/main.jpg?size=medium",
+      "summary": "Good Design Award · Furniture · Goneo Group Co., Ltd. [ Goneo Group Co., Ltd.: Niu Gong ]",
+      "risk": "Distributed intelligent voice panel, innovative desk accessory with voice control.",
+      "review_confidence": 8,
+      "review_reason": "Distributed intelligent voice panel, innovative desk accessory with voice control.",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Good Design Award",
+        "创意桌搭"
+      ]
+    },
+    {
+      "id": "5b83d3818fbc",
+      "product_key": null,
+      "title": "Extreme Realm Track Socket",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/29804?years=2025",
+      "image": "https://award-attachments.g-mark.io/winners/2025/29804/main.jpg?size=medium",
+      "summary": "Good Design Award · Furniture · Goneo Group Co., Ltd.",
+      "risk": "Track socket, innovative power solution for desk.",
+      "review_confidence": 8,
+      "review_reason": "Track socket, innovative power solution for desk.",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "Good Design Award",
@@ -1602,155 +1434,13 @@
       "url": "https://www.g-mark.org/gallery/winners/30599?years=2025",
       "image": "https://award-attachments.g-mark.io/winners/2025/30599/main.jpg?size=medium",
       "summary": "Good Design Award · Office Equipment · Colebrook Bosson Saunders",
-      "risk": "产品是显示器支架，明确属于桌面配件，符合创意桌搭定义。",
+      "risk": "Monitor arm, classic desk accessory with good functionality.",
+      "review_confidence": 9,
+      "review_reason": "Monitor arm, classic desk accessory with good functionality.",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "Good Design Award",
         "创意桌搭"
-      ]
-    },
-    {
-      "id": "8f536fc8b12d",
-      "product_key": null,
-      "title": "极简纸灯",
-      "category": "氛围灯",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.muji.com/jp/ja/store/cmdty/section/S106010102",
-      "image": "",
-      "summary": "Pinterest · 日本和纸极简落地灯",
-      "risk": "明确属于氛围灯品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "氛围灯"
-      ]
-    },
-    {
-      "id": "8403116229bf",
-      "product_key": null,
-      "title": "实木显示器架",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://grovemade.com/shop/desk-accessories",
-      "image": "",
-      "summary": "Pinterest · 北美黑胡桃木实木显示器架",
-      "risk": "明确属于创意桌搭品类",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Pinterest",
-        "创意桌搭"
-      ]
-    },
-    {
-      "id": "21ad0c2334b0",
-      "product_key": null,
-      "title": "翻页日历",
-      "category": "日历",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.muji.com/jp/ja/store/cmdty/section/S107030204",
-      "image": "",
-      "summary": "Pinterest · MUJI经典翻页桌面日历",
-      "risk": "明确属于日历品类",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "日历"
-      ]
-    },
-    {
-      "id": "44fa670e6228",
-      "product_key": null,
-      "title": "复古充电宝",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.sharge.com/products/retro-67",
-      "image": "",
-      "summary": "Pinterest · 复古游戏机造型充电宝",
-      "risk": "复古游戏机造型充电宝明确属于充电宝",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "Pinterest",
-        "充电宝"
-      ]
-    },
-    {
-      "id": "4c808fb51bcb",
-      "product_key": null,
-      "title": "The North Face 冲锋衣",
-      "category": "冲锋衣",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.thenorthface.com/en-us",
-      "image": "",
-      "summary": "北面1994经典复刻冲锋衣",
-      "risk": "明确为冲锋衣",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "冲锋衣",
-        "户外"
-      ]
-    },
-    {
-      "id": "d656c4da9da8",
-      "product_key": null,
-      "title": "Montbell 雨舞者冲锋衣",
-      "category": "冲锋衣",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "小红书",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.montbell.com",
-      "image": "",
-      "summary": "日本Montbell雨舞者冲锋衣",
-      "risk": "雨舞者冲锋衣，属于冲锋衣",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "冲锋衣",
-        "日本"
       ]
     },
     {
@@ -1768,9 +1458,11 @@
       "source_family": "社交灵感",
       "source_quality": "standard",
       "url": "https://sharge.com",
-      "image": "",
+      "image": "http://sharge.com/cdn/shop/files/31a0784cce3883498068716cffd3264c_7e9d7db5-ef7b-4bb1-ba70-47838d1d938a.jpg?v=1763619605",
       "summary": "Sharge透明机甲风充电宝",
-      "risk": "明确是充电宝产品",
+      "risk": "透明机甲风充电宝，外观创新，视觉独特，符合创新>=6",
+      "review_confidence": 9,
+      "review_reason": "透明机甲风充电宝，外观创新，视觉独特，符合创新>=6",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "充电宝",
@@ -1778,195 +1470,418 @@
       ]
     },
     {
-      "id": "61d5cfc66c50",
+      "id": "5bd02354d263",
       "product_key": null,
-      "title": "Logitech MX Key",
-      "category": "创意桌搭",
+      "title": "Your phone, your rules. With the RHINOSHIELD DYO ... - Instagram",
+      "category": "手机壳",
       "action_lane": "适合改造",
       "axes": [
-        "结构启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.logitech.com/en-us/products/keyboards/mx-keys.html",
-      "image": "",
-      "summary": "Logitech MX Keys高端蓝牙键盘",
-      "risk": "键盘属于创意桌搭",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "创意桌搭",
-        "获奖"
-      ]
-    },
-    {
-      "id": "4d127d76ee72",
-      "product_key": null,
-      "title": "星星投影灯",
-      "category": "氛围灯",
-      "action_lane": "适合改造",
-      "axes": [
-        "情绪启发"
+        "视觉启发"
       ],
       "score": 80,
       "score_label": "8.0",
-      "source": "Pinterest",
+      "source": "Instagram",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.twinkly.com",
+      "url": "https://www.instagram.com/p/DXlz0-aDghg",
       "image": "",
-      "summary": "Pinterest · 卧室星空投影氛围灯",
-      "risk": "属于氛围灯",
+      "summary": "手机壳是高频刚需，受众广，功能明确（保护手机），DIY定制增加情绪价值，但价格可能低于35元，需确认。",
+      "risk": "具体手机壳产品，可定制设计，有创新。",
+      "review_confidence": 8,
+      "review_reason": "具体手机壳产品，可定制设计，有创新。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "Pinterest",
-        "氛围灯"
+        "手机壳",
+        "DIY",
+        "定制",
+        "social_public_index",
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
-      "id": "0025d5b7648d",
+      "id": "51ec61e0d633",
       "product_key": null,
-      "title": "日落投影灯",
-      "category": "氛围灯",
+      "title": "Ladurée 中秋礼盒",
+      "category": "中秋礼盒",
       "action_lane": "适合改造",
       "axes": [
-        "情绪启发"
+        "包装启发"
       ],
       "score": 80,
       "score_label": "8.0",
-      "source": "Pinterest",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://nanoleaf.com/en-US/products/nanoleaf-aurora",
-      "image": "",
-      "summary": "Pinterest · 智能日落渐变投影氛围灯",
-      "risk": "日落投影灯是氛围灯产品",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "source": "A' Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.laduree.com",
+      "image": "http://laduree.com/cdn/shop/files/og-share.jpg?v=1741119817&width=1024",
+      "summary": "A' Design Award · 法国Ladurée马卡龙中秋礼盒",
+      "risk": "具体产品，中秋礼盒，有文化创新",
+      "review_confidence": 9,
+      "review_reason": "具体产品，中秋礼盒，有文化创新",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
       "tags": [
-        "Pinterest",
-        "氛围灯"
+        "A' Design Award",
+        "中秋礼盒"
       ]
     },
     {
-      "id": "a47078aba9f0",
+      "id": "4d1403155579",
       "product_key": null,
-      "title": "Talking Tree",
-      "category": "装置艺术",
-      "action_lane": "方向参考",
+      "title": "Muji Gift 精选礼盒",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
       "axes": [
-        "结构启发"
+        "包装启发"
       ],
-      "score": 92,
-      "score_label": "9.2",
+      "score": 80,
+      "score_label": "8.0",
       "source": "iF设计奖",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/talking-tree/764905",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1153751/764905/5fd25158-eedb-42ae-a6c3-5345eafaedcd/talkingtree_frame5.jpg",
-      "summary": "iF Design Award · As humanity becomes more disconnected from nature, Agency for Nature’s Talking Tree is a groundbreaking experiment using the newest intelligence, AI, in service of the oldest intelligence, nature, to reconnect people with their natural surroundings.",
-      "risk": "产品为装置艺术实验，属于装置艺术",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "7a81a6c9d675",
-      "product_key": null,
-      "title": "9:28 am - Eternal Love in Light",
-      "category": "装置艺术",
-      "action_lane": "方向参考",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 92,
-      "score_label": "9.2",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/928-am-eternal-love-in-light/758256",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1178057/758256/eecab49e-3936-46ce-b40a-5091da78b1d8/eternal_love_in_light_04.jpg",
-      "summary": "iF Design Award · “9:28 am – Eternal Love in Light” is a commemorative lighting installation honoring the victims of Taiwan’s 2021 Taroko train disaster. Spanning Heren, Qingshui, and Chongde tunnels, the design transforms a site of tragedy into a symbolic journey of",
-      "risk": "纪念性灯光装置，属于装置艺术",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "85a3d28ddc0f",
-      "product_key": null,
-      "title": "Philips 千禧台灯",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.philips.com/c-m/lighting/led-lights",
-      "image": "",
-      "summary": "iF设计奖 · LED照明设计创新之作",
-      "risk": "台灯属于氛围灯",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "url": "https://www.muji.com/jp/ja/store/cmdty/section/S10801",
+      "image": "https://www.muji.com/public/media/img/item/4548076074229_org.jpg?im=Resize%2Ctype%3Ddownsize%2Cwidth%3D160",
+      "summary": "iF设计奖 · 无印良品精选礼物套装",
+      "risk": "具体产品，精选礼盒，有包装创新",
+      "review_confidence": 8,
+      "review_reason": "具体产品，精选礼盒，有包装创新",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
       "tags": [
         "iF获奖",
         "iF设计奖"
       ]
     },
     {
-      "id": "c4e226b41ead",
+      "id": "bb1afdbb80ce",
       "product_key": null,
-      "title": "NONOTAK 光音装置",
-      "category": "装置艺术",
-      "action_lane": "方向参考",
+      "title": "Christmas gifts that just make sense. No mugs, no ... - Instagram",
+      "category": "充电宝",
+      "action_lane": "适合改造",
       "axes": [
-        "结构启发"
+        "功能启发",
+        "包装启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "A' Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.nonotak.com",
-      "image": "https://assets.cdn.cargocollective.com/408512/435754190620483103326993812115427328/arrow-up.svg?f3a4624d93",
-      "summary": "A' Design Award · 法国光与声媒体装置",
-      "risk": "明确属于装置艺术品类",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "score": 78,
+      "score_label": "7.8",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DSM4BtzDfma",
+      "image": "",
+      "summary": "充电宝实用性强，高频需求，适用人群广；自带双线、10000mAh、22.5W快充功能齐全；3秒看懂；但价格未知，情绪价值一般。",
+      "risk": "Tiven Mini power bank with dual cables and digital display, clear product, innovative in built-in cables, fits category.",
+      "review_confidence": 9,
+      "review_reason": "Tiven Mini power bank with dual cables and digital display, clear product, innovative in built-in cables, fits category.",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "A' Design Award",
-        "获奖"
+        "充电宝",
+        "快充",
+        "大容量",
+        "双数据线",
+        "social_public_index",
+        "白名单来源"
       ]
     },
     {
-      "id": "14ddb1291eee",
+      "id": "99bfa9ab6a46",
       "product_key": null,
-      "title": "Arc'teryx 军规冲锋衣",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
+      "title": "图案、logo、文字都可以自由定制，做成自己的专属版本 A gift that ...",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 77,
+      "score_label": "7.7",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DR90HwvEmf1",
+      "image": "",
+      "summary": "充电宝实用性强，高频需求，受众广；功能无短板但定制可能影响容量；价格未知但定制款通常高于35元；3秒看懂；情绪价值通过定制实现。",
+      "risk": "Customizable power bank with pattern/logo/text, clear product, innovative in personalization, fits category.",
+      "review_confidence": 9,
+      "review_reason": "Customizable power bank with pattern/logo/text, clear product, innovative in personalization, fits category.",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "定制礼品",
+        "充电宝",
+        "个性化",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "1dfa7ff51103",
+      "product_key": null,
+      "title": "好可爱又实用的万年日历❤️ 居然可以用上一辈子！ 适合送给教师/医生",
+      "category": "日历",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "情绪启发"
+      ],
+      "score": 77,
+      "score_label": "7.7",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/DINWpx1yU7X",
+      "image": "",
+      "summary": "万年历实用且高频，可长期使用，适合送礼，但价格可能低于35元，功能简单无短板，3秒看懂，情绪价值高。",
+      "risk": "万年日历，可永久使用，设计可爱，有实用性和情感价值，适合买样。",
+      "review_confidence": 8,
+      "review_reason": "万年日历，可永久使用，设计可爱，有实用性和情感价值，适合买样。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "日历",
+        "万年历",
+        "送礼",
+        "教师",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "a092afb0354b",
+      "product_key": null,
+      "title": "Thank you for trusting us with your gifts! We are so glad ... - Instagram",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DZMo-lnmQ1H",
+      "image": "",
+      "summary": "充电宝实用且高频，定制化增加情绪价值，但功能无短板，价格可能超35元，3秒看懂。",
+      "risk": "Customizable power bank with name/logo/pattern, clear product, innovative in personalization, fits category.",
+      "review_confidence": 9,
+      "review_reason": "Customizable power bank with name/logo/pattern, clear product, innovative in personalization, fits category.",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "定制",
+        "充电宝",
+        "礼物",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "468036395fe0",
+      "product_key": null,
+      "title": "故宫日历 2025",
+      "category": "日历",
+      "action_lane": "适合改造",
       "axes": [
         "视觉启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.arcteryx.com",
-      "image": "",
-      "summary": "加拿大始祖鸟Alpha SV军规级冲锋衣",
-      "risk": "专业冲锋衣品牌，明确属于冲锋衣",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "score": 76,
+      "score_label": "7.6",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.dpm.org.cn",
+      "image": "https://img.dpm.org.cn/static/themes_wap/image/wechat_share1.png",
+      "summary": "故宫日历具有实用性和文化价值，高频使用，受众广泛，功能明确，售价通常高于35元，设计清晰易懂，情绪价值高。",
+      "risk": "故宫日历2025，经典产品，品类正确，创新在文化内容，满足普通产品标准。",
+      "review_confidence": 9,
+      "review_reason": "故宫日历2025，经典产品，品类正确，创新在文化内容，满足普通产品标准。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "GORE-TEX",
-        "专业"
+        "故宫",
+        "日历",
+        "文创",
+        "小红书",
+        "社交精选"
+      ]
+    },
+    {
+      "id": "5c55fff2243c",
+      "product_key": null,
+      "title": "小米 床头灯",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.mi.com",
+      "image": "https://i01.appmifile.com/webfile/globalimg/mobile/logo/mi.png",
+      "summary": "抖音 · 高性价比智能床头灯",
+      "risk": "小米智能床头灯，具体产品，品类正确，智能功能有创新，满足基本要求。",
+      "review_confidence": 8,
+      "review_reason": "小米智能床头灯，具体产品，品类正确，智能功能有创新，满足基本要求。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "抖音",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "dbaef8df2ad2",
+      "product_key": null,
+      "title": "几光 智能灯",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://ezvalo.com",
+      "image": "",
+      "summary": "小红书 · 国货智能氛围灯设计",
+      "risk": "国货智能氛围灯，具体产品，品类正确，智能设计有创新，满足基本要求。",
+      "review_confidence": 7,
+      "review_reason": "国货智能氛围灯，具体产品，品类正确，智能设计有创新，满足基本要求。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "小红书",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "32e638bdc1ce",
+      "product_key": null,
+      "title": "Patagonia Torrentshell",
+      "category": "冲锋衣",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.patagonia.com/product/mens-torrentshell-3l-rain-jacket/85241.html",
+      "image": "https://www.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw7138ee44/images/hi-res/85241_GEMG.jpg?sw=256&amp;sh=256&amp;sfrm=png&amp;q=95&amp;bgcolor=f3f4ef",
+      "summary": "Instagram · 环保户外冲锋衣",
+      "risk": "Patagonia环保户外冲锋衣，具体产品，品类正确，环保材料有创新，满足基本要求。",
+      "review_confidence": 9,
+      "review_reason": "Patagonia环保户外冲锋衣，具体产品，品类正确，环保材料有创新，满足基本要求。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Instagram",
+        "冲锋衣"
+      ]
+    },
+    {
+      "id": "b27578d29b33",
+      "product_key": null,
+      "title": "乐歌 E5 升降桌",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.loctek.com",
+      "image": "",
+      "summary": "小红书 · 国货电动升降桌",
+      "risk": "乐歌电动升降桌，具体产品，品类正确，电动升降功能有创新，满足基本要求。",
+      "review_confidence": 8,
+      "review_reason": "乐歌电动升降桌，具体产品，品类正确，电动升降功能有创新，满足基本要求。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "创意桌搭",
+        "小红书"
+      ]
+    },
+    {
+      "id": "6b49cab85e2a",
+      "product_key": null,
+      "title": "豆瓣电影日历",
+      "category": "日历",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "小红书",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.douban.com",
+      "image": "",
+      "summary": "小红书 · 豆瓣经典电影日历",
+      "risk": "豆瓣经典电影日历，具体产品，品类正确，电影主题有创新，满足基本要求。",
+      "review_confidence": 9,
+      "review_reason": "豆瓣经典电影日历，具体产品，品类正确，电影主题有创新，满足基本要求。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "小红书",
+        "日历"
+      ]
+    },
+    {
+      "id": "a031b741f266",
+      "product_key": null,
+      "title": "Rhinoshield 防摔手机壳",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.rhinoshield.tw",
+      "image": "",
+      "summary": "台湾犀牛盾军规防摔手机壳",
+      "risk": "军规防摔手机壳，功能明确，创新在材料防护，符合手机壳品类",
+      "review_confidence": 9,
+      "review_reason": "军规防摔手机壳，功能明确，创新在材料防护，符合手机壳品类",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "台湾",
+        "手机壳"
+      ]
+    },
+    {
+      "id": "421b4be75168",
+      "product_key": null,
+      "title": "Muuto 桌面收纳",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.muuto.com",
+      "image": "",
+      "summary": "丹麦Muuto现代桌面收纳系统",
+      "risk": "具体桌面收纳产品，属于创意桌搭，有设计感但创新一般。",
+      "review_confidence": 8,
+      "review_reason": "具体桌面收纳产品，属于创意桌搭，有设计感但创新一般。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "创意桌搭",
+        "北欧"
       ]
     },
     {
@@ -1988,35 +1903,13 @@
       "url": "https://nanoleaf.me",
       "image": "",
       "summary": "加拿大Nanoleaf模块化智能LED灯板",
-      "risk": "智能灯板属于氛围灯",
+      "risk": "模块化智能灯板，交互创新，满足条件",
+      "review_confidence": 9,
+      "review_reason": "模块化智能灯板，交互创新，满足条件",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "智能",
         "氛围灯"
-      ]
-    },
-    {
-      "id": "6cdd2e2efd4f",
-      "product_key": null,
-      "title": "Anish Kapoor 云门",
-      "category": "装置艺术",
-      "action_lane": "方向参考",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://anishkapoor.com",
-      "image": "",
-      "summary": "Anish Kapoor芝加哥Cloud Gate镜面雕塑",
-      "risk": "明确为装置艺术镜面雕塑",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "获奖",
-        "装置艺术"
       ]
     },
     {
@@ -2036,7 +1929,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/unbounded-dual-core-outdoor-two-in-one-jacket/745896",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1171604/745896/a1a9bdaa-3f98-474e-9f15-05bec010c958/1.jpg",
       "summary": "iF Design Award · Designed to handle complex and unpredictable outdoor environments, the Unbounded Dual-core Outdoor Two-in-One Jacket combines a protective outer jacket with waterproof, windproof, and abrasion-resistant properties, and an inner jacket with down insul",
-      "risk": "明确为户外两合一夹克，属于冲锋衣",
+      "risk": "两件套户外夹克，防水防风耐磨，创新双核心设计",
+      "review_confidence": 9,
+      "review_reason": "两件套户外夹克，防水防风耐磨，创新双核心设计",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2060,7 +1955,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/dragon-tooth-wind-falcon-ultralight-sun-jacket/761800",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1179503/761800/354185b4-e670-4c44-a3e8-90550879e158/1.jpg",
       "summary": "iF Design Award · The Dragon Tooth Wind Falcon Ultra-Light Sun Protection Jacket addresses the common discomfort of traditional sunwear that traps heat and restricts airflow. Made with Dragon Tooth’s self-developed ultra-light Wind Tunnel Technology fabric, it achieve",
-      "risk": "超轻防晒外套属于功能性外衣，符合冲锋衣定义",
+      "risk": "超轻防晒夹克，自研透气面料，创新风道技术",
+      "review_confidence": 9,
+      "review_reason": "超轻防晒夹克，自研透气面料，创新风道技术",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2084,7 +1981,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/bosideng-3-in-1-dibian-down-jacket/758476",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1140743/758476/af871e74-a530-436b-b7a1-1e684971057f/1.jpg",
       "summary": "iF Design Award · The 3-in-1 down jacket is engineered for urban leisure outdoor scenarios, ideal for temperature and weather changes, daily commutes, and frequent business travel. It is innovative for the back down channel structure inspired by how birds' wings and f",
-      "risk": "三合一羽绒夹克属于冲锋衣",
+      "risk": "三合一羽绒夹克，背部羽绒通道结构创新，适合城市户外",
+      "review_confidence": 9,
+      "review_reason": "三合一羽绒夹克，背部羽绒通道结构创新，适合城市户外",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2109,7 +2008,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/straw/740741",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/96656/740741/ff92b37d-439b-4a00-899d-64804fae8e03/video_still_straw_02.jpg",
       "summary": "iF Design Award · Inspired by a retro tube light refined with a contemporary linear design, mixed with the latest light technology, with added modularity and light effect. Versatility, customization, and a lot of WOW. As it’s office-compliant, Straw’s intense and bea",
-      "risk": "模块化管状灯具属于装饰照明，符合氛围灯定义",
+      "risk": "模块化线性灯，可定制光效，创新模块化设计",
+      "review_confidence": 9,
+      "review_reason": "模块化线性灯，可定制光效，创新模块化设计",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2134,7 +2035,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/philips-hue-play-wall-washer/744111",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/5738/744111/f22cd4b2-1c98-4126-a862-e1f62dad44f5/01key_8720169339651-929003837601-hue-play-wall-washer-white-eu-uk-app-02.jpg",
       "summary": "iF Design Award · Philips Hue Play wall washer merges advanced optical precision with a clean, unobtrusive design. Its precisely engineered lenses wash the wall with a seamless gradient of (colored) light, delivering an uncompromised light effect at any distance from",
-      "risk": "壁灯提供彩色光渐变，属于氛围灯",
+      "risk": "Hue洗墙灯，光学精度高，创新渐变光效",
+      "review_confidence": 9,
+      "review_reason": "Hue洗墙灯，光学精度高，创新渐变光效",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2158,55 +2061,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/buddy/760398",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1178605/760398/68de3e22-99f4-44d4-92b9-fdb33c76623a/buddy_portable_mood_lamp_collection_760398_photo1.jpg",
       "summary": "iF Design Award · In an age of overstimulation, Buddy redefines how light restores presence and mindfulness in daily life. Designed as companions, they feature a tactile analog gesture that reintroduces play into everyday routines and gradient illumination informed by",
-      "risk": "触觉互动灯具，属于氛围灯",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "7712f58403b0",
-      "product_key": null,
-      "title": "TILE",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/tile/767308",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/799734/767308/7f18f04e-1312-490b-a243-db7304a3b549/01_tile.jpg",
-      "summary": "iF Design Award · Tile redefines light through the dialogue between tradition and innovation. Inspired by the architectural tile, it transforms an everyday element into a sculptural object that radiates warmth and serenity. The fusion of ceramic and metal embodies con",
-      "risk": "雕塑感瓷砖灯具，属于氛围灯",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "35f5ecc92d04",
-      "product_key": null,
-      "title": "ora bolas",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/ora-bolas/746142",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/46241/746142/4841735a-3dcb-4e2d-8235-651343fd5388/oras_bolas_t3_bateria_perspectiva-edit.png",
-      "summary": "iF Design Award · Ora Bolas collection, designed by Fernando Prado, proposes a play of contrasts between matter and light, density and suspension, geometry and chance. Far from being mere table lamps, these objects behave like small architectures, where the relationsh",
-      "risk": "明确为台灯，属于氛围灯",
+      "risk": "便携情绪灯，触觉模拟手势，创新交互方式",
+      "review_confidence": 9,
+      "review_reason": "便携情绪灯，触觉模拟手势，创新交互方式",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2230,7 +2087,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/philips-ai-brightmate-table-lamp/744020",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/5738/744020/adbb32dc-5e06-4866-9dbf-299d88f99356/philips_ai_brightmate_table_lamp_1_key.jpg",
       "summary": "iF Design Award · BrightMate is a playful AI lighting companion that blends functionality, entertainment, and companionship for an emotionally engaging home experience. Beyond hundreds of preset lighting scenes, it uses generative AI to create unlimited light effects",
-      "risk": "AI台灯，属于氛围灯",
+      "risk": "AI台灯，生成式AI创建灯光场景，创新交互与功能",
+      "review_confidence": 9,
+      "review_reason": "AI台灯，生成式AI创建灯光场景，创新交互与功能",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2255,80 +2114,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/astral-mate-light/740058",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1169990/740058/e6dcfe32-6d03-449b-bf51-5b20bb694513/1.jpg",
       "summary": "iF Design Award · Astral Mate is an interactive ambient light that uses magnetic induction. Its innovative switch design is inspired by the gravitational pull between celestial bodies. A metal sphere glides naturally along the track, driven by gravity, and as it appro",
-      "risk": "交互式氛围灯",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "e6f278a56e1d",
-      "product_key": null,
-      "title": "Venia Series",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/venia-series/755356",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/117935/755356/019aa6b3-0068-4e6c-b3ef-026cbd88bf3d/s5.png",
-      "summary": "iF Design Award · Venia Series redefines ceiling lighting. Its retractable head fixes traditional spotlights' inflexibility—press to pop out for rotation, like track lights. Sleek when retracted, dynamic when extended. Modular, it fits setups: single circular-cutout o",
-      "risk": "天花板照明灯具，属于日常照明",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "dbc8df6b8b22",
-      "product_key": null,
-      "title": "Scoiattolo",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/scoiattolo/745825",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/14235/745825/47c2f21d-a803-4e82-a8bf-8714a9b8130c/scoiattoloa13-sbieco-murales.jpg",
-      "summary": "iF Design Award · Scoiattolo is a dynamic lighting system that freely travels through space like a squirrel jumping from branch to branch. The main element of the system is the 4-pole cable that acts as a carrier element and carries the current wherever you want, even",
-      "risk": "动态照明系统，装饰性氛围灯",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "e7a65d76e6a6",
-      "product_key": null,
-      "title": "Ribeira",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/ribeira/742717",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1111680/742717/4d781b20-2072-4716-809f-1f9476de7dae/new_ribeira_210_frame_bianca.jpg",
-      "summary": "iF Design Award · Ribeira embodies the harmony between form and light. Its refined geometry, high visual comfort and versatile installation options make it ideal for outdoor hospitality and residential spaces. Designed without glues or silicones, it is fully disassemb",
-      "risk": "明确为灯具产品，属于氛围灯",
+      "risk": "交互式氛围灯，磁感应开关，创新性强，功能完整，适合桌面氛围。",
+      "review_confidence": 9,
+      "review_reason": "交互式氛围灯，磁感应开关，创新性强，功能完整，适合桌面氛围。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2352,7 +2140,9 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/ledvance-ai-companion-lighting-robot/763544",
       "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1180348/763544/5905cf6b-0f65-46df-bb36-75b88e158abd/1_ai_companion_lighting_robot.jpeg",
       "summary": "iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of intelligent, responsive luminaires by combining six-axis robotics, AI vision, and affective computing. It proactively adapts to five key user activities with optimized beam distribution, arm",
-      "risk": "智能照明机器人，属于氛围灯",
+      "risk": "AI机器人氛围灯，六轴机械臂+视觉识别，创新极高，功能强大，但价格可能高。",
+      "review_confidence": 9,
+      "review_reason": "AI机器人氛围灯，六轴机械臂+视觉识别，创新极高，功能强大，但价格可能高。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "iF Design Award",
@@ -2360,99 +2150,609 @@
       ]
     },
     {
-      "id": "7aafd798b0d5",
+      "id": "b4d6005413ac",
       "product_key": null,
-      "title": "Infinity",
-      "category": "装置艺术",
+      "title": "Artemide Tolomeo 台灯",
+      "category": "氛围灯",
       "action_lane": "方向参考",
       "axes": [
-        "结构启发"
+        "情绪启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
+      "score": 82,
+      "score_label": "8.2",
+      "source": "A' Design Award",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/infinity/741714",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1170633/741714/2ccab3ab-dd79-4a24-bf81-399f016517ba/01.jpg",
-      "summary": "iF Design Award · Infinity, a public art installation at the Kanting incineration plant in Pingtung, was co-created by Lin Xi-Jun, Tsai Kun-Lin, and Cheng Chia-Chiao. Composed of three chapters—Departure, Reflection, and Core—it traces a journey from waste to rebirth.",
-      "risk": "公共艺术装置，符合装置艺术定义",
+      "url": "https://www.artemide.com/en/products/table/tolomeo",
+      "image": "",
+      "summary": "A' Design Award · 意大利经典机械臂台灯",
+      "risk": "具体产品，经典机械臂台灯，结构创新",
+      "review_confidence": 9,
+      "review_reason": "具体产品，经典机械臂台灯，结构创新",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "iF Design Award",
-        "iF获奖"
+        "A' Design Award",
+        "氛围灯"
       ]
     },
     {
-      "id": "0deed30c9377",
+      "id": "a29f4ce8958d",
       "product_key": null,
-      "title": "Chinese National Geography MAGZONE",
-      "category": "装置艺术",
+      "title": "Philips Hue 灯带",
+      "category": "氛围灯",
       "action_lane": "方向参考",
       "axes": [
-        "结构启发"
+        "情绪启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Red Dot",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/chinese-national-geography-magzone/766039",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1181400/766039/d92726c8-7051-4846-ac57-102e25aceb40/1.jpg",
-      "summary": "iF Design Award · MAGZONE, a \"three-dimensional magazine space\" derived from \"Magazine\" and \"Zone\", is the first multi-sensory immersive space curated and launched by Chinese National Geography, transforming 75 years of two-dimensional magazine content into a three-di",
-      "risk": "沉浸式空间，属于装置艺术",
+      "url": "https://www.philips-hue.com",
+      "image": "https://www.philips-hue.com/content/dam/hue/philips-hue-lights-home-16-9.jpg",
+      "summary": "飞利浦Hue智能灯带氛围系统",
+      "risk": "智能灯带系统，交互创新，满足条件",
+      "review_confidence": 9,
+      "review_reason": "智能灯带系统，交互创新，满足条件",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "iF Design Award",
-        "iF获奖"
+        "智能",
+        "氛围灯"
       ]
     },
     {
-      "id": "8ff06153d10f",
+      "id": "ede63a492618",
       "product_key": null,
-      "title": "2025 Hua Chenyu Mars concert",
-      "category": "装置艺术",
+      "title": "Arc'teryx Alpha SV 冲锋衣",
+      "category": "冲锋衣",
       "action_lane": "方向参考",
       "axes": [
-        "结构启发"
+        "视觉启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "iF设计奖",
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Red Dot",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/2025-hua-chenyu-mars-concert/741184",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1137976/741184/cd74ed70-a247-4fb1-a964-32b4b2a76036/1.jpg",
-      "summary": "iF Design Award · The 2025 Hua Chenyu Mars concert stage is a four-sided stage, which was meticulously tailored to the proportions of the open-air stadium venue. Its main structure measures 47.5 meters in length, 27.5 meters in width, and 22 meters in height, with a t",
-      "risk": "演唱会舞台设计，属于沉浸式装置艺术",
+      "url": "https://arcteryx.com/shop/alpha-sv-jacket",
+      "image": "",
+      "summary": "Red Dot · 专业级硬壳冲锋衣",
+      "risk": "专业硬壳冲锋衣，品类正确，功能完整，创新在面料技术。",
+      "review_confidence": 9,
+      "review_reason": "专业硬壳冲锋衣，品类正确，功能完整，创新在面料技术。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "iF Design Award",
-        "iF获奖"
+        "Red Dot",
+        "冲锋衣"
       ]
     },
     {
-      "id": "60df0fb86e04",
+      "id": "35a6891a92b9",
       "product_key": null,
-      "title": "House of Shinsegae Heritage Exhibition",
-      "category": "装置艺术",
+      "title": "Woven by Hand in the Philippines, Sold in Milan",
+      "category": "氛围灯",
       "action_lane": "方向参考",
       "axes": [
+        "情绪启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/15/woven-by-hand-in-the-philippines-sold-in-milan",
+      "image": "",
+      "summary": "Woven by Hand in the Philippines, Sold in MilanMost lamps just sit there. They do their job, emit their light, and fade into the background of a room. Mirei Monticelli’s lamps are the...",
+      "risk": "具体灯具产品，手工编织，材料创新，氛围灯品类正确。",
+      "review_confidence": 8,
+      "review_reason": "具体灯具产品，手工编织，材料创新，氛围灯品类正确。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Yanko Design",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "b79471aeb804",
+      "product_key": null,
+      "title": "Gantri Goes Wireless for the First Time",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/gantri-goes-wireless-for-the-first-time",
+      "image": "",
+      "summary": "Gantri and Ammunition Group take the party outside with Gantri Wireless, offering portable lighting for modern life.",
+      "risk": "具体便携无线灯具，功能创新，氛围灯品类正确。",
+      "review_confidence": 9,
+      "review_reason": "具体便携无线灯具，功能创新，氛围灯品类正确。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Design Milk",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "83bdf910a510",
+      "product_key": null,
+      "title": "Sony 晶雅音管 LSPX-S3",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.sony.com/en/articles/product-specifications-lspx-s3",
+      "image": "",
+      "summary": "Red Dot · 玻璃管音箱与氛围灯结合",
+      "risk": "音箱与氛围灯结合，创新高，品类正确",
+      "review_confidence": 9,
+      "review_reason": "音箱与氛围灯结合，创新高，品类正确",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Red Dot",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "393d576d2a59",
+      "product_key": null,
+      "title": "Arieto Studio’s ILO Lamp Is Ready to Rally and Beautiful at Rest",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/the-ilo-lamp-is-ready-to-rally-and-beautiful-at-rest",
+      "image": "",
+      "summary": "Ready to take the party outside? The ILO Lamp from Arieto Studio charges passively, detaching completely for a portable lighting solution.",
+      "risk": "便携式氛围灯，可拆卸充电，户外使用，创新在无线便携和场景切换",
+      "review_confidence": 9,
+      "review_reason": "便携式氛围灯，可拆卸充电，户外使用，创新在无线便携和场景切换",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Design Milk",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "852917ec603a",
+      "product_key": null,
+      "title": "Endless Flat Studio’s Sculptural Lighting Series Marries Traditional Techniques",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/endless-flat-studios-sculptural-lighting-series-marries-traditional-techniques-with-modern-gestures",
+      "image": "",
+      "summary": "Endless Flat Studio presents their first lighting collection, an ode to the paper lamps that have guided us through centuries.",
+      "risk": "雕塑感纸灯系列，融合传统工艺与现代造型，创新在材料和结构",
+      "review_confidence": 9,
+      "review_reason": "雕塑感纸灯系列，融合传统工艺与现代造型，创新在材料和结构",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Design Milk",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "5687f3cb1976",
+      "product_key": null,
+      "title": "Natural Material Studio crafts lighting from leftover seaweed at Sticks n Sushi",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2026/05/18/natural-material-studio-lighting-leftover-seaweed-sticks-n-sushi-restaurant",
+      "image": "",
+      "summary": "Copenhagen-based Natural Material Studio has created speckled pendant lighting out of kelp waste, salvaged from miso soup that would otherwise be thrown away at Sticks n Sushi in Lyngby, Denmark. The",
+      "risk": "具体吊灯，材料创新（海藻废料），氛围灯品类正确。",
+      "review_confidence": 8,
+      "review_reason": "具体吊灯，材料创新（海藻废料），氛围灯品类正确。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Dezeen",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "0096a2144c59",
+      "product_key": null,
+      "title": "This Sculptural Lamp Treats Light as Secondary and its Decorative Shell as Prima",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 66,
+      "score_label": "6.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/05/this-sculptural-lamp-treats-light-as-secondary-and-its-decorative-shell-as-primary",
+      "image": "",
+      "summary": "This Sculptural Lamp Treats Light as Secondary and its Decorative Shell as PrimaryFloor lamps typically exist in your peripheral vision. They illuminate a corner, frame a reading chair, or cast ambien",
+      "risk": "Sculptural floor lamp with decorative shell as primary, clear product innovation.",
+      "review_confidence": 9,
+      "review_reason": "Sculptural floor lamp with decorative shell as primary, clear product innovation.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Yanko Design",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "eb4f451679e3",
+      "product_key": null,
+      "title": "Fung+Bedford folds origami lighting from eight-metre-long sheet",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 64,
+      "score_label": "6.4",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2026/05/20/fung-and-bedford-resonance-origami-lighting",
+      "image": "",
+      "summary": "Design studio Fung+Bedford has used its signature paper-folding technique to create a trio of twisted pendant lights, suspended in the nave of a historic church for Clerkenwell Design Week. Set in one",
+      "risk": "具体折纸吊灯，结构创新，氛围灯品类正确。",
+      "review_confidence": 8,
+      "review_reason": "具体折纸吊灯，结构创新，氛围灯品类正确。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Dezeen",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "3f296009aedb",
+      "product_key": null,
+      "title": "Ringo lighting by Joan Gaspar for Marset",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 62,
+      "score_label": "6.2",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2026/05/06/ringo-lighting-joan-gaspar-marset-dezeen-showroom",
+      "image": "",
+      "summary": "Dezeen Showroom: designer Joan Gaspar and Spanish brand Marset created this ice block-like light from a material that the company describes as \"astonishing\". The Ringo light is made from transparent p",
+      "risk": "Ice block-like pendant light with transparent material, clear product.",
+      "review_confidence": 9,
+      "review_reason": "Ice block-like pendant light with transparent material, clear product.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Dezeen",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "853bdcde15a4",
+      "product_key": null,
+      "title": "iF Design - LIFE CLOCK",
+      "category": "日历",
+      "action_lane": "方向参考",
+      "axes": [
+        "包装启发",
         "结构启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
+      "score": 60,
+      "score_label": "6.0",
       "source": "iF设计奖",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/house-of-shinsegae-heritage-exhibition/765932",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1181367/765932/03b37b23-984a-4015-a8dc-9f828c24602c/1.jpg",
-      "summary": "iF Design Award · House of Shinsegae Heritage’s exhibition and tea-dessert salon reinterpret Korean cultural heritage as a living room experience. Located within a restored former bank building in Myeong-dong, Seoul, the Heritage exhibition connects past and present u",
-      "risk": "文化遗产展览，属于装置艺术",
+      "url": "https://ifdesign.com/en/winner-ranking/project/life-clock/237109",
+      "image": "",
+      "summary": "产品概念独特，将灾难主题融入日常用品，但实用性中等，非高频需求，受众有限。功能设计有亮点，价格可能超过35元，3秒内可理解。情绪价值通过设计体现，但整体风险在于市场接受度。",
+      "risk": "Life Clock is a disaster preparedness calendar/clock; innovative concept combining time display with emergency info.",
+      "review_confidence": 9,
+      "review_reason": "Life Clock is a disaster preparedness calendar/clock; innovative concept combining time display with emergency info.",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "iF Design Award",
-        "iF获奖"
+        "日历",
+        "白名单来源",
+        "适合做结构、包装、功能或外观改造",
+        "award_gallery"
+      ]
+    },
+    {
+      "id": "b6ecfa9787b4",
+      "product_key": null,
+      "title": "Heirloom pendant light by Buoyant",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 60,
+      "score_label": "6.0",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2026/05/08/heirloom-pendant-light-buoyant-dezeen-showroom",
+      "image": "",
+      "summary": "Dezeen Showroom: cast glass, metal and leather meet in this handcrafted pendant light created by American designer Josh Neretin for his company Buoyant. The Heirloom pendant centres on a sculptural, c",
+      "risk": "Handcrafted pendant light with cast glass, metal, leather; clear product.",
+      "review_confidence": 9,
+      "review_reason": "Handcrafted pendant light with cast glass, metal, leather; clear product.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Dezeen",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "06d6cdc7c092",
+      "product_key": null,
+      "title": "Becharan Maalouf displays lamps informed by Lebanese window guards",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 60,
+      "score_label": "6.0",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2026/05/19/becharan-maalouf-lamps-lebanese-heritage-nyc-design-week",
+      "image": "",
+      "summary": "New York fashion retailer Komune has displayed laser-cut metal lamps on recycled-wood bases by local designer Becharan Maalouf in a slim gallery during NYC design week, informed by the intricate windo",
+      "risk": "具体灯具，激光切割金属，文化灵感，氛围灯品类正确。",
+      "review_confidence": 8,
+      "review_reason": "具体灯具，激光切割金属，文化灵感，氛围灯品类正确。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Dezeen",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "67246539076a",
+      "product_key": null,
+      "title": "Louis",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/27283?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/27283/main.jpg?size=medium",
+      "summary": "Good Design Award · It is a steak knife that, by notching part of the blade, creates a function that makes it easy to sharpen, difficult to touch the blade and easy to place, resulting in a steak knife that cuts well, is safe and beautiful at the same time. This is an o",
+      "risk": "牛排刀，刀口缺口设计便于磨刀和安全放置，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "牛排刀，刀口缺口设计便于磨刀和安全放置，结构创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "874f9b9b7507",
+      "product_key": null,
+      "title": "360KYUSU",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/23452?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/23452/main.jpg?size=medium",
+      "summary": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Japanese tea culture. The slits in the lid serve as a tea strainer, allowing you to pour from any angle around the 360-degree circumference. It is also d",
+      "risk": "360度茶壶，盖子缝隙可滤茶，任意角度倒茶，交互创新。",
+      "review_confidence": 9,
+      "review_reason": "360度茶壶，盖子缝隙可滤茶，任意角度倒茶，交互创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "606c5f7b4a67",
+      "product_key": null,
+      "title": "The T-Pot",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/20842?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/20842/main.jpg?size=medium",
+      "summary": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbreaking lid mechanism ensures a secure fit, while the integrated handle design provides unparalleled stability. Elevate every pour with this functional o",
+      "risk": "茶壶，创新盖子机制和手柄设计，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "茶壶，创新盖子机制和手柄设计，结构创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "abb2e16f80a1",
+      "product_key": null,
+      "title": "VERMICULAR OVEN POT２ & Recraft program",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/20691?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/20691/main.jpg?size=medium",
+      "summary": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and sustainability: 1. Enhanced searing performance while retaining its waterless cooking capability utilizing the pot's precision seal. 2. Address the drawba",
+      "risk": "创新珐琅铸铁锅，提升煎烤性能并保持无水烹饪，可持续性设计，功能与创新兼备。",
+      "review_confidence": 9,
+      "review_reason": "创新珐琅铸铁锅，提升煎烤性能并保持无水烹饪，可持续性设计，功能与创新兼备。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "0dbea22d154e",
+      "product_key": null,
+      "title": "PETARI Shallow Pot",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/27459?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/27459/main.jpg?size=medium",
+      "summary": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called a \"Toban\". This product can be used over an open flame, in a microwave, or in an oven. The minimal design makes it easy to store and reduces the amou",
+      "risk": "浅锅设计，可明火、微波、烤箱使用，多用途且造型简约，创新在于材质与功能结合。",
+      "review_confidence": 9,
+      "review_reason": "浅锅设计，可明火、微波、烤箱使用，多用途且造型简约，创新在于材质与功能结合。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "6b44fe284cd1",
+      "product_key": null,
+      "title": "ARAHI",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/22787?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/22787/main.jpg?size=medium",
+      "summary": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of professional chefs, even with the heat of a standard household gas stove.",
+      "risk": "家用羽釜，专业级米饭烹饪，创新在于家用炉灶实现专业效果。",
+      "review_confidence": 9,
+      "review_reason": "家用羽釜，专业级米饭烹饪，创新在于家用炉灶实现专业效果。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "61ec559d4e5e",
+      "product_key": null,
+      "title": "Cassette Feu“KIWAMI”",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/22241?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/22241/main.jpg?size=medium",
+      "summary": "Good Design Award · The Cassette Feu series, a dining icon for over 50 years, presents Kiwami-the apex of this line, targeting high-end, professional, and global customers. Striving for excellence, we've revamped our packaging and manufacturing, achieving a minimalist y",
+      "risk": "卡式炉系列旗舰款，包装与制造革新，高端定位，创新在细节优化。",
+      "review_confidence": 9,
+      "review_reason": "卡式炉系列旗舰款，包装与制造革新，高端定位，创新在细节优化。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN AWARD",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "41579404c148",
+      "product_key": null,
+      "title": "Zaru-ya no bon zaru （Flat strainer）",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/27448?years=2024",
+      "image": "https://award-attachments.g-mark.io/winners/2024/27448/main.jpg?size=medium",
+      "summary": "Good Design Award · The flattening of the colander allows foodstuffs to be placed side by side without overlapping. By placing the ingredients side by side, the colander can be used not only for draining water, but also for removing rough heat, draining oil, draining ho",
+      "risk": "扁平滤篮，食材可平铺不重叠，创新结构提升沥水与处理效率。",
+      "review_confidence": 9,
+      "review_reason": "扁平滤篮，食材可平铺不重叠，创新结构提升沥水与处理效率。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN BEST 100, GOOD DESIGN AWARD",
+        "Good Design Award"
       ]
     }
   ]
