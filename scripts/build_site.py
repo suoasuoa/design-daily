@@ -245,9 +245,22 @@ def category_under_cap(picks, category, relaxed=False):
 
 
 def display_eligible(item):
+    if item.get("category") in RETIRED_CATEGORIES:
+        return False
     if not item.get("title"):
         return False
     if not item.get("url"):
+        return False
+    text = f"{item.get('summary', '')} {item.get('review_reason', '')}".lower()
+    mismatch_signals = [
+        "不匹配", "与品类无关", "不属于", "内容不符", "品类不符",
+        "off-category", "local fallback", "ai 审核失败",
+    ]
+    if any(signal in text for signal in mismatch_signals):
+        return False
+    if int(item.get("review_confidence") or 0) < 4 and int(item.get("score") or 0) < 60:
+        return False
+    if str(item.get("summary") or "").lower().startswith("open web search result for") and int(item.get("score") or 0) < 60:
         return False
     if item.get("source_quality") == "weak":
         if not item.get("image"):
@@ -385,6 +398,9 @@ def build_daily_groups(items, per_day=30, max_days=90):
         while len(picks) < per_day:
             chosen = None
             for item in balanced_ranked_items(reserve, picks, globally_seen):
+                item_date = item.get("first_seen") or item.get("last_seen") or ""
+                if item_date and item_date > group["date"]:
+                    continue
                 if not category_under_cap(picks, item.get("category"), relaxed=True):
                     continue
                 chosen = item
