@@ -11,6 +11,7 @@ import urllib.request
 from collections import Counter
 
 from insight_common import DATA_DIR, load_env, load_json, now_iso, write_json
+from insight_config import RETIRED_CATEGORIES
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
@@ -155,7 +156,11 @@ def main():
     parser.add_argument("--limit", type=int, default=80, help="How many top products to summarize.")
     args = parser.parse_args()
 
-    products = load_json(DATA_DIR / "products.json", [])
+    products = [
+        item
+        for item in load_json(DATA_DIR / "products.json", [])
+        if item.get("category") not in RETIRED_CATEGORIES
+    ]
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     try:
         report = deepseek_report(products, api_key, args.limit) if api_key else local_report(products, args.limit)
