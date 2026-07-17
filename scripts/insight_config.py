@@ -28,19 +28,19 @@ CATEGORIES = [
 ]
 
 CATEGORY_REVIEW_RULES = {
-    "水杯": "Only drinkware: cups, mugs, bottles, tumblers, flasks, thermos products, and clearly related drink containers.",
-    "氛围灯": "Only lighting products for ambience or daily use: table lamps, night lights, decorative lamps, lanterns, light fixtures.",
-    "创意礼盒": "Only gift boxes, gift sets, creative packaging sets, boxed gift products, and reusable gift packaging.",
-    "装置艺术": "Only purchasable or inspiration-worthy installation art objects, public art, sculptural installations, or immersive art pieces.",
-    "创意厨具": "Only kitchen tools, cookware, cooking utensils, food preparation tools, tableware tools, or kitchen appliances.",
-    "中秋礼盒": "Only Mid-Autumn Festival gift boxes, mooncake packaging, mooncake sets, or clearly Mid-Autumn themed gifts.",
-    "创意桌搭": "Only desk setup products: desk accessories, monitor/keyboard/mouse accessories, cable management, desktop storage, work desk objects.",
-    "端午礼盒": "Only Dragon Boat Festival gift boxes, zongzi packaging, zongzi sets, or clearly Dragon Boat themed gifts.",
-    "充电宝": "Only power banks, portable chargers, battery packs, and portable power stations.",
-    "日历": "Only calendars, planners, desktop calendars, wall calendars, and calendar-like date display products.",
-    "手机壳": "Only phone cases, phone covers, phone protection shells, and direct phone case accessories.",
-    "冲锋衣": "Only outdoor jackets, shell jackets, windbreakers, rain jackets, sun-protection jackets, and functional outerwear. Reject shoes, gloves, tents, binoculars, sports balls, general outdoor gear, pet products, and unrelated sports equipment.",
-    "钥匙扣水壶": "Only keychains, key rings, small hanging accessories, mini bottles attached to keychains, carabiner-like key accessories, or clearly keychain bottle products.",
+    "水杯": "必须是可直接饮用的杯、瓶、随行杯、保温杯、酒壶或水壶。排除电热水壶、咖啡机、茶具套装、花瓶、普通餐具和仅含 cup/bottle 字样的文章。必须有结构、便携、清洁、保温、交互或材料创新，普通基础杯不收。",
+    "氛围灯": "必须是明确的可使用灯具单品，如台灯、夜灯、提灯、壁灯或吊灯。排除建筑照明新闻、展览报道、纯灯光装置、常规灯具和只有造型变化却无使用价值的作品。",
+    "创意礼盒": "必须是明确礼盒或礼赠包装，且有结构、开箱、复用、材料或叙事创新。排除普通套装、玩具/模型/商品组合、仅做平面换肤的盒子以及没有展示包装设计的品牌新闻。",
+    "装置艺术": "必须是边界清楚的互动、光影、机械、材料或雕塑装置，并能提炼成产品启发。排除建筑、室内空间、汽车、活动新闻、纯公共工程和无法转化的宏大概念。",
+    "创意厨具": "必须直接用于烹饪、备餐、盛取、清洁或厨房操作。排除纸扇、摆件、普通餐盘、家居装饰及仅因材料好看而没有功能创新的基础厨具。",
+    "中秋礼盒": "必须是明确的中秋/月饼礼盒，并具有包装结构、开箱、复用、材料或节日叙事创新。排除普通月饼盒、仅换插画或品牌联名贴图的产品。",
+    "创意桌搭": "必须直接服务桌面工作、整理、输入、显示、充电或收纳。排除普通文具、手电筒、传统通讯录、泛家居摆件及无法说明桌面价值的产品。",
+    "端午礼盒": "必须是明确的端午/粽子礼盒，并具有包装结构、开箱、复用、材料或节日叙事创新。排除普通粽子盒、仅换插画或品牌联名贴图的产品。",
+    "充电宝": "必须是面向日常携带的充电宝、移动电源或便携电池产品。排除充电线、墙充、普通插座、大型户外电站及没有便携产品创新的基础款。",
+    "日历": "必须以日期展示或日程规划为核心，并有机械、交互、内容、材料或可持续创新。排除普通台历、过期年份基础日历、纯记事本和只有印刷图案变化的产品。",
+    "手机壳": "必须是直接安装在手机上的保护壳/外壳，并有结构、功能、材料或交互创新。排除 AirTag 配件、手机包、支架、挂绳、普通皮壳、普通印花壳及泛 case 产品。",
+    "冲锋衣": "必须是可穿着的功能外套，如硬壳、软壳、防风、防雨或防晒夹克，并有材料、结构、收纳、透气或场景创新。排除鞋、手套、帐篷、望远镜、球类、包具和其他户外装备，也排除普通品牌基础款。",
+    "钥匙扣水壶": "必须是把饮水容器与钥匙扣、挂环或迷你随身结构真正结合的产品。排除普通钥匙扣、AirTag 套、登山扣、多功能工具、挂件和不具备饮水容器功能的饰品。",
 }
 
 SOURCE_TYPES = {
