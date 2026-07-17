@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T13:16:29+08:00",
+  "generated_at": "2026-07-17T13:34:44+08:00",
   "week": "2026-W29",
   "group_id": "2026-W29",
   "date_start": "2026-07-13",
@@ -16,24 +16,24 @@
       "可直接买样": 10
     },
     "by_category": {
-      "充电宝": 27,
+      "充电宝": 25,
       "创意厨具": 12,
       "氛围灯": 12,
       "水杯": 11,
+      "手机壳": 9,
+      "创意桌搭": 8,
+      "日历": 8,
       "冲锋衣": 8,
-      "创意桌搭": 7,
-      "日历": 7,
-      "手机壳": 7,
       "创意礼盒": 5,
-      "钥匙扣水壶": 3,
-      "中秋礼盒": 1
+      "中秋礼盒": 1,
+      "钥匙扣水壶": 1
     },
     "by_axis": {
-      "功能启发": 60,
-      "结构启发": 33,
-      "包装启发": 27,
+      "功能启发": 58,
+      "结构启发": 34,
+      "包装启发": 28,
       "情绪启发": 17,
-      "视觉启发": 15
+      "视觉启发": 16
     }
   },
   "dedupe": {
@@ -708,32 +708,6 @@
       ]
     },
     {
-      "id": "b04d5c319c2b",
-      "product_key": null,
-      "title": "Rush Charge Universe | All-in-One Fast Charger | Grommet",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "The Grommet",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://thegrommet.com/product/gadgets/rush-charge-universe",
-      "image": "",
-      "summary": "Stay connected with Rush Charge Universe. Enjoy 3-in-1 charging, 26+ hours of power, and pass-through tech for simultaneous charging. Compact and stylish. Save 20% on Grommet.",
-      "risk": "3合1充电，26+小时电量，直通技术可同时充电，功能集成创新",
-      "review_confidence": 9,
-      "review_reason": "3合1充电，26+小时电量，直通技术可同时充电，功能集成创新",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "market_signal",
-        "充电宝"
-      ]
-    },
-    {
       "id": "b9b2c9823cc3",
       "product_key": null,
       "title": "World’s Most Powerful 310W 20,000mAh Power Bank - Indiegogo",
@@ -1080,6 +1054,32 @@
       ]
     },
     {
+      "id": "cf49d380d10e",
+      "product_key": null,
+      "title": "Anker Nano MagSafe Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/anker-nano-power-bank-5k-maggo-slim",
+      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/A1665H11_RI_TD01_US_V2.png?v=1763745119",
+      "summary": "The iPhone Air is a marvel of modern engineering. Thanks to its thinness, it also needs a little power boost some days to make it from sunrise to sunset. The Anker Nano MagSafe Power Bank is compatible with all Qi2-charg Listed price signal: $109.98.",
+      "risk": "MagSafe磁吸充电宝，Qi2兼容，超薄设计，创新在于磁吸无线充与便携结合。",
+      "review_confidence": 9,
+      "review_reason": "MagSafe磁吸充电宝，Qi2兼容，超薄设计，创新在于磁吸无线充与便携结合。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Anker"
+      ]
+    },
+    {
       "id": "2d8cbfb001b8",
       "product_key": null,
       "title": "Joseph Joseph砧板",
@@ -1103,32 +1103,6 @@
       "tags": [
         "Pinterest",
         "创意厨具"
-      ]
-    },
-    {
-      "id": "6ec15edcda8d",
-      "product_key": null,
-      "title": "The Memdock G3 Is the 13-Port Dock You Don’t Have to Hide Anymore",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/05/15/the-memdock-g3-is-the-13-port-dock-you-dont-have-to-hide-anymore",
-      "image": "https://www.yankodesign.com/images/design_news/2026/05/the-memdock-g3-is-the-13-port-dock-you-dont-have-to-hide-anymore/Memdock_13-in-1_Docking_Station_Redefining_Your_Workspace_hero.jpg",
-      "summary": "The Memdock G3 Is the 13-Port Dock You Don’t Have to Hide AnymoreModern desks have never looked better. Sit-stand tables, cable management trays, and ultra-thin laptops have turned the average w",
-      "risk": "13端口扩展坞，可能具有创新线缆管理或隐藏设计。",
-      "review_confidence": 8,
-      "review_reason": "13端口扩展坞，可能具有创新线缆管理或隐藏设计。",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "Yanko Design",
-        "创意桌搭"
       ]
     },
     {
@@ -1501,6 +1475,32 @@
       ]
     },
     {
+      "id": "7ba6e8c2ee6d",
+      "product_key": null,
+      "title": "FlexiSpot 升降桌",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 81,
+      "score_label": "8.1",
+      "source": "抖音",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.flexispot.com",
+      "image": "https://s3.springbeetle.eu/dev-de-s3-flexispot/commodity/item/logo20260311-161729_20260311_U8Cfepoq.jpg",
+      "summary": "FlexiSpot智能电动升降桌",
+      "risk": "电动升降桌，坐站交替健康办公，功能明确且实用",
+      "review_confidence": 9,
+      "review_reason": "电动升降桌，坐站交替健康办公，功能明确且实用",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "创意桌搭",
+        "办公"
+      ]
+    },
+    {
       "id": "a3ba600a327d",
       "product_key": null,
       "title": "LEDVANCE AI Companion Lighting Robot",
@@ -1602,33 +1602,6 @@
       "tags": [
         "iF Design Award",
         "iF获奖"
-      ]
-    },
-    {
-      "id": "f14dbac1b36b",
-      "product_key": null,
-      "title": "27-Inch Digital Wall Calendar Shows Schedules, Then Switches ...",
-      "category": "日历",
-      "action_lane": "方向参考",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/01/21/27-inch-digital-wall-calendar-shows-schedules-then-switches-to-photos",
-      "image": "https://www.yankodesign.com/images/design_news/2026/01/27-inch-digital-wall-calendar-shows-schedules-then-switches-to-photos/skylight-cal-max-digital-wall-calendar-14.jpg",
-      "summary": "Jan 21, 2026 · Shared calendars scatter across phones, sticky notes live on the fridge, and whiteboards never quite get updated. Most attempts to centralize family logistics involve smart displays that look like tablets or small TVs bolted to the wall, clashin",
-      "risk": "27英寸数字墙日历，可显示日程并切换照片，交互创新",
-      "review_confidence": 9,
-      "review_reason": "27英寸数字墙日历，可显示日程并切换照片，交互创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "editorial_main",
-        "日历"
       ]
     },
     {
@@ -1763,6 +1736,33 @@
       "tags": [
         "Design Milk",
         "氛围灯"
+      ]
+    },
+    {
+      "id": "f14dbac1b36b",
+      "product_key": null,
+      "title": "27-Inch Digital Wall Calendar Shows Schedules, Then Switches ...",
+      "category": "日历",
+      "action_lane": "方向参考",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/01/21/27-inch-digital-wall-calendar-shows-schedules-then-switches-to-photos",
+      "image": "https://www.yankodesign.com/images/design_news/2026/01/27-inch-digital-wall-calendar-shows-schedules-then-switches-to-photos/skylight-cal-max-digital-wall-calendar-14.jpg",
+      "summary": "Jan 21, 2026 · Shared calendars scatter across phones, sticky notes live on the fridge, and whiteboards never quite get updated. Most attempts to centralize family logistics involve smart displays that look like tablets or small TVs bolted to the wall, clashin",
+      "risk": "27英寸数字墙日历，可显示日程并切换照片，交互创新",
+      "review_confidence": 9,
+      "review_reason": "27英寸数字墙日历，可显示日程并切换照片，交互创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "日历"
       ]
     },
     {
@@ -2034,32 +2034,6 @@
       ]
     },
     {
-      "id": "898b48eb161d",
-      "product_key": null,
-      "title": "罗马仕夏日营销：最懂这届年轻人的强者挂件 - 数英",
-      "category": "钥匙扣水壶",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 76,
-      "score_label": "7.6",
-      "source": "数英",
-      "source_family": "设计社区",
-      "source_quality": "standard",
-      "url": "https://www.digitaling.com/projects/304765.html",
-      "image": "",
-      "summary": "罗马仕官方抢先发布了通过一组清新的夏日时尚大片来演绎产品卖点——Mini能量棒被巧妙地设计为小巧便捷的“钥匙扣”样式，或拎在手上，或挂在包上，让出行更加轻盈简单。 人们在享受户外踏青的同时，也能轻松解决手机电量不足的困扰。",
-      "risk": "罗马仕Mini能量棒设计为钥匙扣样式，便携充电宝与钥匙扣结合",
-      "review_confidence": 8,
-      "review_reason": "罗马仕Mini能量棒设计为钥匙扣样式，便携充电宝与钥匙扣结合",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "design_community",
-        "白名单来源"
-      ]
-    },
-    {
       "id": "64ac180835c0",
       "product_key": null,
       "title": "Red Dot Design Award: Arctic Patrol H2Flow Parka",
@@ -2164,29 +2138,29 @@
       ]
     },
     {
-      "id": "a940c48d4802",
+      "id": "34bd07d27975",
       "product_key": null,
-      "title": "Hitch: Your bottle and cup belong together | Product HuntBest of Product Hunt: Week of January 29, 2024 | Product HuntTen One Design: Ten One Design creates one",
-      "category": "钥匙扣水壶",
-      "action_lane": "适合改造",
+      "title": "方正字库2023「回车历」：Enter一下，自动弹射发出! - 数英",
+      "category": "日历",
+      "action_lane": "方向参考",
       "axes": [
-        "视觉启发"
+        "结构启发"
       ],
-      "score": 88,
-      "score_label": "8.8",
-      "source": "Product Hunt",
-      "source_family": "弱市场信号",
-      "source_quality": "weak",
-      "url": "https://www.producthunt.com/products/hitch-6",
+      "score": 74,
+      "score_label": "7.4",
+      "source": "数英",
+      "source_family": "设计社区",
+      "source_quality": "standard",
+      "url": "https://www.digitaling.com/projects/232644.html",
       "image": "",
-      "summary": "Hitch is a full-size water bottle with a removable barista-approved cup hidden inside. Go zero waste & carry better. 🌎 Explore the top products launched on Product Hunt during the week of january 29, 2024. Ten One Design is a design firm based in Montclair, NJ",
-      "risk": "Hitch水瓶内置可拆卸咖啡杯，二合一结构创新，便携实用",
+      "summary": "新的一年有好礼! 你见过按压发射的日历吗？ 近日，方正字库与文创品牌@聯邦走馬 独家联合开发方正字库2023年「回车历」。 突破人们对传统日历的想象，采用别致的复古键盘设计，日历的整体外形为键盘\"ENTER\"按键，机械结构还原了键盘打字的过程。",
+      "risk": "键盘ENTER按键造型，按压发射结构，机械交互创新",
       "review_confidence": 9,
-      "review_reason": "Hitch水瓶内置可拆卸咖啡杯，二合一结构创新，便携实用",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "review_reason": "键盘ENTER按键造型，按压发射结构，机械交互创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "market_signal",
-        "更接近现成消费品，适合买样验证"
+        "design_community",
+        "日历"
       ]
     },
     {
@@ -2200,17 +2174,17 @@
         "包装启发",
         "结构启发"
       ],
-      "score": 86,
-      "score_label": "8.6",
+      "score": 85,
+      "score_label": "8.5",
       "source": "Yanko Design",
       "source_family": "媒体案例",
       "source_quality": "premium",
       "url": "https://www.yankodesign.com/2026/03/02/a-6mm-5000-mah-power-bank-xiaomi-built-one-thinner-than-any-phone",
       "image": "https://www.yankodesign.com/images/design_news/2026/03/a-6mm-power-bank-xiaomi-built-one-thinner-than-any-phone/mi-01.jpg",
       "summary": "Mar 2, 2026 · I’ve carried a lot of power banks over the years. Bulky ones that weigh down my pockets, chunky bricks that barely fit in a crossbody bag, and a few “compact” options that still felt like lugging around a deck of cards. So when Xiaomi announced a",
-      "risk": "6mm超薄5000mAh充电宝，厚度创新",
+      "risk": "6mm超薄5000mAh充电宝，结构创新，打破厚度与容量矛盾",
       "review_confidence": 9,
-      "review_reason": "6mm超薄5000mAh充电宝，厚度创新",
+      "review_reason": "6mm超薄5000mAh充电宝，结构创新，打破厚度与容量矛盾",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "editorial_main",
@@ -2326,55 +2300,30 @@
       ]
     },
     {
-      "id": "d60008fa5bae",
+      "id": "8ebc1ed06436",
       "product_key": null,
-      "title": "STATIK Snap N Charge | Uncrate",
+      "title": "Omnicharge: Power Anything Anywhere by Omnicharge - Indiegogo",
       "category": "充电宝",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发"
+        "功能启发",
+        "视觉启发"
       ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Uncrate",
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Indiegogo",
       "source_family": "市场信号",
-      "source_quality": "premium",
-      "url": "https://uncrate.com/statik-snap-n-charge",
+      "source_quality": "standard",
+      "url": "https://www.indiegogo.com/en/projects/omnicharge/omnicharge-power-anything-anywhere",
       "image": "",
-      "summary": "STATIK Snap N Charge The Snap-N-Charge revolutionizes portable charging with its ultra-compact design. Featuring universal compatibility and three magnetic charging tips (Apple, micro-USB, and USB-C), it seamlessly powers phones, controllers, headphones, and m",
-      "risk": "超紧凑设计，集成三种磁吸充电头（Apple、micro-USB、USB-C），兼容多设备，便携创新。",
+      "summary": "Omnicharge's power experts put consumers first from concept design all the way to the finished product. All of Omnicharge's products come equipped with intelligent charging management technology to bring portable power to the next level and beyond. It's produc",
+      "risk": "智能充电管理技术，多设备兼容，便携电源创新",
       "review_confidence": 9,
-      "review_reason": "超紧凑设计，集成三种磁吸充电头（Apple、micro-USB、USB-C），兼容多设备，便携创新。",
+      "review_reason": "智能充电管理技术，多设备兼容，便携电源创新",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "market_signal",
+        "market_signal_strong",
         "充电宝"
-      ]
-    },
-    {
-      "id": "cf49d380d10e",
-      "product_key": null,
-      "title": "Anker Nano MagSafe Power Bank",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Uncrate Shop",
-      "source_family": "市场信号",
-      "source_quality": "premium",
-      "url": "https://shop.uncrate.com/products/anker-nano-power-bank-5k-maggo-slim",
-      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/A1665H11_RI_TD01_US_V2.png?v=1763745119",
-      "summary": "The iPhone Air is a marvel of modern engineering. Thanks to its thinness, it also needs a little power boost some days to make it from sunrise to sunset. The Anker Nano MagSafe Power Bank is compatible with all Qi2-charg Listed price signal: $109.98.",
-      "risk": "MagSafe磁吸充电宝，Qi2兼容，超薄设计，创新在于磁吸无线充与便携结合。",
-      "review_confidence": 9,
-      "review_reason": "MagSafe磁吸充电宝，Qi2兼容，超薄设计，创新在于磁吸无线充与便携结合。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        ">35",
-        "Anker"
       ]
     },
     {
@@ -2484,32 +2433,6 @@
       ]
     },
     {
-      "id": "8ec297de8df1",
-      "product_key": null,
-      "title": "This Stealthy Charger Promises Endless iPhone Battery Life",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Gear Patrol",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.gearpatrol.com/tech/swippitt-charging-system",
-      "image": "",
-      "summary": "Jan 10, 2025 · Without a doubt, one of the standout gadgets unveiled at CES 2025 was Swippitt. It’s a smartphone charger that looks like an oversized toaster but, uniquely, promises to fully recharge your iPhone or Android smartphone in a matter of seconds. No",
-      "risk": "类似烤面包机的快速换电系统，实现数秒内充满手机，交互与结构创新。",
-      "review_confidence": 9,
-      "review_reason": "类似烤面包机的快速换电系统，实现数秒内充满手机，交互与结构创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "market_signal",
-        "充电宝"
-      ]
-    },
-    {
       "id": "558f5535a928",
       "product_key": null,
       "title": "Selfix iPhone Case - ThisIsWhyImBroke",
@@ -2558,33 +2481,6 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "Pinterest",
-        "充电宝"
-      ]
-    },
-    {
-      "id": "618e74274554",
-      "product_key": null,
-      "title": "星石 - 获奖作品 - 中国设计智造大奖（DIA）官方网站 - Design Intelligence Award",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "DIA 中国设计智造大奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.di-award.org/zh/collections/detail/258.html.html?page_size=1000",
-      "image": "",
-      "summary": "设计灵感源于星球中最美丽的石头——流星 流星划过夜空的时间只有短短一瞬 却让身体的微光在迷失的宇宙中 在抵达的那一刻 绽放炽热的光芒 外观为圆润的鹅卵石造型， 大小合适，方便握持，使用者可以尝试更多不同角度不同部位的体验。具有仿人体肌肤三层机构， 核心为ABS硬塑料结构模拟人体骨骼、中层为柔软的低零度硅胶模拟人体皮下组织，外层为柔软度为45度的硅胶模拟肌肤的表面触感（两种硅胶皆为食品级硅胶，无味，安全）。同时按键为二合一结构设计，除了具备开机和模式切换功能外，还可以用于充电，大大简化了外观设计。",
-      "risk": "仿生肌肤三层结构充电宝，材料创新：食品级硅胶模拟人体组织",
-      "review_confidence": 9,
-      "review_reason": "仿生肌肤三层结构充电宝，材料创新：食品级硅胶模拟人体组织",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
         "充电宝"
       ]
     },
@@ -2642,32 +2538,6 @@
       ]
     },
     {
-      "id": "7ba6e8c2ee6d",
-      "product_key": null,
-      "title": "FlexiSpot 升降桌",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "抖音",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.flexispot.com",
-      "image": "https://s3.springbeetle.eu/dev-de-s3-flexispot/commodity/item/logo20260311-161729_20260311_U8Cfepoq.jpg",
-      "summary": "FlexiSpot智能电动升降桌",
-      "risk": "电动升降桌，坐站交替健康办公，功能明确且实用",
-      "review_confidence": 9,
-      "review_reason": "电动升降桌，坐站交替健康办公，功能明确且实用",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "创意桌搭",
-        "办公"
-      ]
-    },
-    {
       "id": "44ef2ee82911",
       "product_key": null,
       "title": "KitKat reimagines packaging as signal-blocking smartphone pouch",
@@ -2691,6 +2561,137 @@
       "tags": [
         "Dezeen",
         "创意礼盒"
+      ]
+    },
+    {
+      "id": "1abdb2ddd6a9",
+      "product_key": null,
+      "title": "This Dual-Sided Philips Monitor Lets You Share One Screen With Clients Without Sacrificing Desk Space",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 81,
+      "score_label": "8.1",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/25/this-dual-sided-philips-monitor-lets-you-share-one-screen-with-clients-without-sacrificing-desk-space",
+      "image": "https://www.yankodesign.com/images/design_news/2026/05/this-dual-sided-philips-monitor-lets-you-share-one-screen-with-clients-without-sacrificing-desk-space/Philips-dual-screen-monitor-3.jpg",
+      "summary": "This Dual-Sided Philips Monitor Lets You Share One Screen With Clients Without Sacrificing Desk Space The business monitor market rarely sees truly original ideas, but Philips may have found one with the new Philips 24B2D5300. Instead of ch",
+      "risk": "双面显示器，可共享屏幕给客户，节省桌面空间",
+      "review_confidence": 9,
+      "review_reason": "双面显示器，可共享屏幕给客户，节省桌面空间",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "2e1d8adb8e66",
+      "product_key": null,
+      "title": "Angry Miao | AM Emptiness Phone Case :: Behance",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/189925657/am-emptiness-phonecase",
+      "image": "",
+      "summary": "束下蔓延生长于手机表面。 以 iPhone 15 Pro 为基础，我们分析并确定了手机跌落易损的部位，分别是四角与摄像头，手机壳仅需要对...",
+      "risk": "基于跌落分析仅保护四角和摄像头，结构创新，减少材料浪费。",
+      "review_confidence": 8,
+      "review_reason": "基于跌落分析仅保护四角和摄像头，结构创新，减少材料浪费。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "design_community",
+        "手机壳"
+      ]
+    },
+    {
+      "id": "96aee4935cdb",
+      "product_key": null,
+      "title": "Red Dot Design Award: M10 3-in-1 Wireless Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/m10-3-in-1-wireless-power-bank-89355",
+      "image": "",
+      "summary": "The compact M10 3-in1 Wireless Power Bank enables the simultaneous charging of three devices, featuring magnetic wireless charging for a smartphone and Apple Watch, alongside wired fast charging via an integrated Type-C cable. The double-sided magnetic...",
+      "risk": "三合一无线充电宝，双面设计，集成线缆，创新在紧凑多设备充电",
+      "review_confidence": 9,
+      "review_reason": "三合一无线充电宝，双面设计，集成线缆，创新在紧凑多设备充电",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "a49d09ac35ee",
+      "product_key": null,
+      "title": "Red Dot Design Award: BANG!CASE",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/bangcase-82077",
+      "image": "",
+      "summary": "The BANG!CASE is a smartphone case designed for iPhone models 14 to 16 Pro/Pro Max. Its highlight is the integrated Bluetooth button, which supports customisable gestures such as single tap, double tap and long press, enabling seamless access to key iOS...",
+      "risk": "集成蓝牙按钮，支持自定义手势操作",
+      "review_confidence": 9,
+      "review_reason": "集成蓝牙按钮，支持自定义手势操作",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "award_gallery",
+        "手机壳"
+      ]
+    },
+    {
+      "id": "aededf7bd733",
+      "product_key": null,
+      "title": "AYANEO Retro Mini PC AM01 :: Behance",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/185553851/AYANEO-Retro-Mini-PC-AM01",
+      "image": "",
+      "summary": "它不仅是一台迷你电脑主机，同时还兼具装饰的桌搭属性，首次为 Mini PC 赋予「潮玩精品」属性，让 Mini PC 从此迈进复古潮玩精品时代。",
+      "risk": "复古迷你电脑主机兼具桌搭属性，赋予Mini PC潮玩精品定位",
+      "review_confidence": 9,
+      "review_reason": "复古迷你电脑主机兼具桌搭属性，赋予Mini PC潮玩精品定位",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "design_community",
+        "创意桌搭"
       ]
     }
   ]
