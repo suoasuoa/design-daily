@@ -2,6 +2,7 @@
 """Score products with DeepSeek when available, otherwise use local heuristics."""
 
 import argparse
+import http.client
 import json
 import os
 import re
@@ -124,38 +125,47 @@ def deepseek_score(product, api_key):
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.1,
-        "max_tokens": 700,
+        "max_tokens": 1400,
         "response_format": {"type": "json_object"},
     }
-    payload = json.dumps(body).encode("utf-8")
-    req = urllib.request.Request(
-        DEEPSEEK_URL,
-        data=payload,
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-        method="POST",
+    recoverable = (
+        urllib.error.URLError,
+        urllib.error.HTTPError,
+        TimeoutError,
+        json.JSONDecodeError,
+        KeyError,
+        ValueError,
+        ConnectionError,
+        OSError,
+        http.client.HTTPException,
     )
-    try:
-        with urllib.request.urlopen(req, timeout=40, context=SSL_CONTEXT) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        if exc.code != 400:
-            raise
-        body.pop("response_format", None)
+    last_error = None
+    for attempt in range(1, 4):
         req = urllib.request.Request(
             DEEPSEEK_URL,
             data=json.dumps(body).encode("utf-8"),
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
             method="POST",
         )
-        with urllib.request.urlopen(req, timeout=40, context=SSL_CONTEXT) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
-    content = payload["choices"][0]["message"]["content"]
-    result = parse_json_response(content)
-    for key in SELECTION_WEIGHTS:
-        result[key] = clamp(result.get(key, 0))
-    result["trend_tags"] = result.get("trend_tags", [])[:8]
-    result["source"] = "deepseek"
-    return result
+        try:
+            with urllib.request.urlopen(req, timeout=60, context=SSL_CONTEXT) as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+            content = payload["choices"][0]["message"]["content"]
+            result = parse_json_response(content)
+            for key in SELECTION_WEIGHTS:
+                result[key] = clamp(result.get(key, 0))
+            result["trend_tags"] = result.get("trend_tags", [])[:8]
+            result["source"] = "deepseek"
+            return result
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code == 400 and body.pop("response_format", None):
+                continue
+        except recoverable as exc:
+            last_error = exc
+        if attempt < 3:
+            time.sleep(attempt * 2)
+    raise RuntimeError(f"DeepSeek scoring failed after retries: {last_error}")
 
 
 def score_priority(product):
@@ -217,7 +227,7 @@ def score_products(products, limit=0, force=False, sleep=0.6):
                 time.sleep(sleep)
             else:
                 scores = local_score(product)
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError) as exc:
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError, RuntimeError) as exc:
             print(f"fallback local score: {product.get('title')} ({exc})")
             scores = local_score(product)
         product["selection_scores"] = scores
