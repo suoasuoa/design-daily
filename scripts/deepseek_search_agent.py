@@ -547,7 +547,7 @@ def run_agent(args):
 def main():
     load_env()
     parser = argparse.ArgumentParser()
-    parser.add_argument("--target", type=int, default=30)
+    parser.add_argument("--target", type=int, default=40)
     parser.add_argument("--round", type=int, default=0)
     parser.add_argument("--query-count", type=int, default=60)
     parser.add_argument("--per-query", type=int, default=10)
