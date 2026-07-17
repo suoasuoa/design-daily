@@ -36,7 +36,7 @@ def main():
     parser.add_argument("--batch-jobs", type=int, default=180, help="Deprecated fixed-search compatibility option.")
     parser.add_argument("--per-job", type=int, default=6, help="Search results per DeepSeek-planned query.")
     parser.add_argument("--max-passes", type=int, default=3, help="Maximum DeepSeek agent top-up rounds.")
-    parser.add_argument("--review-batch-size", type=int, default=20)
+    parser.add_argument("--review-batch-size", type=int, default=10)
     parser.add_argument("--sleep", type=float, default=0.05)
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--curated-limit", type=int, default=320)
