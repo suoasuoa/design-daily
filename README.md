@@ -1,12 +1,12 @@
 # Design Daily
 
-Design Daily 是给选品团队使用的自动化创意情报工具。它持续发现真实产品和设计案例，经过去重、页面校验与 AI 审核后，每天留下 30 条可供人工筛选的选品方向。
+Design Daily 是给选品团队使用的自动化创意情报工具。它持续发现真实产品和设计案例，经过去重、页面校验与 AI 审核后，每个工作日留下 40 条可供人工筛选的选品方向。
 
 - [线上选品情报工作台](https://suoasuoa.github.io/design-daily/insight/)
 
 ## 核心能力
 
-- 每天分三阶段收集，逐步完成 `10 -> 20 -> 30` 条新选品。
+- 周一至周五分三阶段收集，逐步完成 `15 -> 30 -> 40` 条新选品；周末不运行。
 - DeepSeek V4 Flash 根据当日缺口、品类分布和历史结果动态规划搜索词。
 - 真实搜索后端负责返回网页，DeepSeek 不生成产品链接。
 - 只保留白名单来源中的具体产品页或具体案例页，过滤搜索页、合集页和泛文章。
@@ -54,7 +54,7 @@ RSS/精选页面采集
 -> DeepSeek 候选预筛
 -> 全库去重
 -> DeepSeek 严格品类终审
--> 不足 30 条时换搜索角度继续补量
+-> 不足 40 条时换搜索角度继续补量
 -> 评分、趋势与周报
 -> GitHub Pages 更新
 -> 飞书 Top 5 推送
@@ -78,13 +78,14 @@ Kickstarter / Indiegogo / Uncrate / Cool Material / Gear Patrol
 
 ## 每日时间
 
-GitHub Actions 按北京时间运行：
+GitHub Actions 仅在周一至周五按北京时间运行：
 
-- `07:30`：第一阶段，目标累计 10 条。
-- `11:30`：第二阶段，目标累计 20 条。
-- `15:30`：第三阶段，目标累计 30 条。
+- `07:30`：第一阶段，目标累计 15 条。
+- `11:30`：第二阶段，目标累计 30 条。
+- `15:30`：第三阶段，目标累计 40 条。
 - 每个阶段约 40 分钟后有一次漏跑检查，已经达标则自动跳过。
-- 飞书日报由独立工作流在约定时间读取当天 30 条，并推送 Top 5。
+- `17:00` 起飞书每 10 分钟检查一次，满 40 条后推送 Top 5；`18:00` 是强制检查点，但仍必须满 40 条。
+- 周六、周日不收集、不更新当日分组，也不发送飞书。
 
 三个阶段只收集数据库里从未出现过的新内容，不会把旧池内容改成今天日期。
 
@@ -105,14 +106,14 @@ DEEPSEEK_MODEL=deepseek-v4-flash
 
 ```bash
 python3 -m pip install ddgs
-python3 scripts/agent_update.py --daily-target 30 --agent-queries 70 --agent-pages 320
+python3 scripts/agent_update.py --daily-target 40 --agent-queries 90 --agent-pages 420
 ```
 
 只运行一轮 DeepSeek 搜索智能体：
 
 ```bash
 python3 scripts/search_jobs.py
-python3 scripts/deepseek_search_agent.py --target 30 --query-count 70 --per-query 10 --max-pages 320
+python3 scripts/deepseek_search_agent.py --target 40 --query-count 90 --per-query 10 --max-pages 420
 ```
 
 只生成和预览页面：
@@ -157,7 +158,7 @@ TAVILY_API_KEY
 ```text
 scripts/deepseek_search_agent.py       DeepSeek 搜索智能体
 scripts/review_categories.py           严格品类终审
-scripts/ensure_daily_minimum.py         当日 30 条补量循环
+scripts/ensure_daily_minimum.py         工作日 40 条补量循环
 scripts/insight_config.py               品类、来源与选品规则
 data/products.json                      当前严格通过的产品池
 data/rejected_category.json             淘汰归档
@@ -167,4 +168,4 @@ insight/index.html                       选品工作台
 
 ## 飞书推送
 
-配置 `FEISHU_WEBHOOK_URL` 后，飞书工作流会从当天 30 条中选择综合评分最高的 5 条，以卡片形式发送标题、品类、推荐指数、推荐理由、图片和原链接。没有可靠图片时不展示图片，不会用其他产品图片代替。
+配置 `FEISHU_WEBHOOK_URL` 后，飞书工作流会从工作日当天 40 条中选择综合评分最高的 5 条，以卡片形式发送标题、品类、推荐指数、推荐理由、图片和原链接。没有可靠图片时不展示图片，不会用其他产品图片代替。
