@@ -71,7 +71,7 @@ jobs:
           MIN_COUNT="30"
           if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "30 10 * * *" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
-            MIN_COUNT="20"
+            MIN_COUNT="30"
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_send || 'false' }}" = "true" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
