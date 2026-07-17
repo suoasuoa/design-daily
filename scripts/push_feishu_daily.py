@@ -215,7 +215,7 @@ def card_elements(group, items, total_count, include_images=False):
             "actions": [
                 {
                     "tag": "button",
-                    "text": {"tag": "plain_text", "content": "查看完整 30 条"},
+                    "text": {"tag": "plain_text", "content": f"查看完整 {total_count} 条"},
                     "url": SITE_URL,
                     "type": "primary",
                 }
@@ -305,7 +305,7 @@ def parse_clock_time(value):
 def main():
     load_env()
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=30, help="Maximum daily picks to push.")
+    parser.add_argument("--limit", type=int, default=40, help="Maximum daily picks to push.")
     parser.add_argument("--top-limit", type=int, default=5, help="Number of highlighted picks in the card.")
     parser.add_argument("--min-count", type=int, default=1, help="Skip push unless the latest daily group has at least this many items.")
     parser.add_argument("--require-today", action="store_true", help="Skip push unless the latest daily group date is today in Asia/Shanghai.")
