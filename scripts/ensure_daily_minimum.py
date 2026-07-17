@@ -33,14 +33,17 @@ def job_count():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=30, help="Required same-day accepted products.")
-    parser.add_argument("--batch-jobs", type=int, default=180, help="Search jobs per top-up pass.")
-    parser.add_argument("--per-job", type=int, default=6, help="Search results per job.")
-    parser.add_argument("--max-passes", type=int, default=4, help="Maximum top-up passes.")
+    parser.add_argument("--batch-jobs", type=int, default=180, help="Deprecated fixed-search compatibility option.")
+    parser.add_argument("--per-job", type=int, default=6, help="Search results per DeepSeek-planned query.")
+    parser.add_argument("--max-passes", type=int, default=3, help="Maximum DeepSeek agent top-up rounds.")
     parser.add_argument("--review-batch-size", type=int, default=20)
     parser.add_argument("--sleep", type=float, default=0.05)
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--curated-limit", type=int, default=320)
     parser.add_argument("--shopify-pages", type=int, default=6)
+    parser.add_argument("--agent-queries", type=int, default=60)
+    parser.add_argument("--agent-pages", type=int, default=280)
+    parser.add_argument("--agent-screen-workers", type=int, default=6)
     args = parser.parse_args()
 
     total_jobs = job_count()
@@ -53,21 +56,24 @@ def main():
         return
 
     for index in range(args.max_passes):
-        offset = ((index + 1) * args.batch_jobs) % total_jobs
         run(
             [
                 sys.executable,
-                "scripts/collect_search.py",
-                "--limit-jobs",
-                str(args.batch_jobs),
-                "--per-job",
+                "scripts/deepseek_search_agent.py",
+                "--target",
+                str(args.target),
+                "--round",
+                str(index + 1),
+                "--query-count",
+                str(args.agent_queries),
+                "--per-query",
                 str(args.per_job),
-                "--offset",
-                str(offset),
-                "--sleep",
-                str(args.sleep),
-                "--workers",
+                "--max-pages",
+                str(args.agent_pages),
+                "--search-workers",
                 str(args.workers),
+                "--screen-workers",
+                str(args.agent_screen_workers),
             ]
         )
         run(
