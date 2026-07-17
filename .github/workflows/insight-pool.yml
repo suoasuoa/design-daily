@@ -159,7 +159,7 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
           CATEGORY_REVIEW_WORKERS: "4"
-        run: python3 scripts/review_categories.py --batch-size 20
+        run: python3 scripts/review_categories.py --batch-size 10
 
       - name: Ensure phased public social picks
         if: env.SKIP_INSIGHT != '1'
