@@ -46,6 +46,11 @@ UNCERTAINTY_SIGNALS = (
     "possibly",
     "perhaps",
 )
+GENERIC_TITLE_PATTERNS = (
+    re.compile(r"^(the\s+)?best\s+", re.IGNORECASE),
+    re.compile(r"^top\s+\d+\b", re.IGNORECASE),
+    re.compile(r"\b(buying guide|gift guide|product roundup|our favorites)\b", re.IGNORECASE),
+)
 STRICT_ENTITY_TERMS = {
     "水杯": ("cup", "mug", "bottle", "tumbler", "flask", "thermos", "drinkware", "pint glass", "水杯", "杯", "瓶", "壶", "饮水", "饮用"),
     "氛围灯": ("lamp", "light", "lighting", "lantern", "chandelier", "灯", "燈", "照明"),
@@ -78,7 +83,7 @@ def trusted_cached_review(review):
     policy_version = int(review.get("policy_version") or 0)
     if not review.get("keep"):
         source = review.get("source") or ""
-        if source in {"retirement_policy", "direct_link_policy", "deterministic_entity_policy"}:
+        if source in {"retirement_policy", "direct_link_policy", "deterministic_entity_policy", "generic_content_policy"}:
             return True
         # A stricter policy cannot turn a previously rejected item into an
         # approval. Reuse confident v2/v3 DeepSeek rejections to avoid paying
@@ -139,6 +144,24 @@ def invalid_link_review(item):
         "source": "direct_link_policy",
         "policy_version": REVIEW_POLICY_VERSION,
     }
+
+
+def generic_content_review(item):
+    return {
+        "id": item.get("id"),
+        "keep": False,
+        "category": "",
+        "confidence": 10,
+        "reason": "内容是榜单、购买指南或泛合集，没有唯一明确的产品指向",
+        "reviewed_at": now_iso(),
+        "source": "generic_content_policy",
+        "policy_version": REVIEW_POLICY_VERSION,
+    }
+
+
+def is_generic_content(item):
+    title = str(item.get("title") or "").strip()
+    return any(pattern.search(title) for pattern in GENERIC_TITLE_PATTERNS)
 
 
 def deterministic_evidence_gate(item, review, category):
@@ -371,23 +394,32 @@ def apply_batch_reviews(batch, result, reviews):
             reviews[item.get("id")] = local_fallback(item)
 
 
-def review_products(products, batch_size=20, force=False, sleep=0.5):
+def review_products(products, batch_size=10, force=False, sleep=0.5):
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     existing = load_json(DATA_DIR / "category_review.json", {})
     reviews = {} if force else dict(existing.get("reviews", {}))
     for item in products:
+        cleaned_url = clean_direct_product_url(item.get("url") or "")
+        if cleaned_url:
+            original_url = item.get("url") or ""
+            item["url"] = cleaned_url
+            for source in item.get("sources") or []:
+                if source.get("url") == original_url:
+                    source["url"] = cleaned_url
         if item.get("category") in RETIRED_CATEGORIES:
             reviews[item.get("id")] = retirement_review(item)
-        elif not clean_direct_product_url(item.get("url") or ""):
+        elif not cleaned_url:
             reviews[item.get("id")] = invalid_link_review(item)
+        elif is_generic_content(item):
+            reviews[item.get("id")] = generic_content_review(item)
     todo = [
         item
         for item in products
         if item.get("category") not in RETIRED_CATEGORIES
         and clean_direct_product_url(item.get("url") or "")
+        and not is_generic_content(item)
         and (
             force
-            or item.get("first_seen") == today()
             or not trusted_cached_review(reviews.get(item.get("id")))
         )
     ]
@@ -509,7 +541,7 @@ def build_published(products):
 def main():
     load_env()
     parser = argparse.ArgumentParser()
-    parser.add_argument("--batch-size", type=int, default=20)
+    parser.add_argument("--batch-size", type=int, default=10)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--workers", type=int, default=int(os.environ.get("CATEGORY_REVIEW_WORKERS", "1")))
     args = parser.parse_args()
