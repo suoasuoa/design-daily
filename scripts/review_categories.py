@@ -174,7 +174,7 @@ def deterministic_evidence_gate(item, review, category):
 
 
 def deepseek_model():
-    raw = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat").strip()
+    raw = os.environ.get("DEEPSEEK_MODEL", "deepseek-v4-flash").strip()
     aliases = {
         "deepseek-v4-flash": "deepseek-v4-flash",
         "deepseek-v4-pro": "deepseek-v4-pro",
