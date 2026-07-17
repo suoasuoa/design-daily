@@ -65,7 +65,6 @@ def trusted_cached_review(review):
         return (
             policy_version >= 2
             and source == "deepseek"
-            and int(review.get("confidence") or 0) >= 7
         )
     if policy_version != REVIEW_POLICY_VERSION:
         return False
