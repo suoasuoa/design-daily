@@ -3,12 +3,12 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-17T09:11:47+08:00
+- 生成时间：2026-07-17T11:46:36+08:00
 
 ## 行动分布
 
-- 适合改造: 79
-- 方向参考: 13
+- 适合改造: 78
+- 方向参考: 14
 - 可直接买样: 8
 
 ## 推荐清单
@@ -83,7 +83,7 @@ Pinterest · 盲盒亚克力展示收纳盒
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广泛；功能无明显短板；预估售价超35元；3秒看懂操作；情绪价值中等，但功能已成立。
+产品实用性强，一秒成型和打平功能解决存储和运输痛点；适用于香水、化妆品等高频礼品场景；受众广泛；功能无明显短板；预估售价超35元；3秒看懂操作；情绪价值中等，需进一步强化设计感。
 
 ### 7. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -95,7 +95,7 @@ Pinterest · 盲盒亚克力展示收纳盒
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars
 
-产品实用性强，满足游戏场景高频需求，外观科幻易理解，价格超过35元，功能无明显短板，情绪价值通过沉浸式氛围体现。
+产品实用性强，满足游戏场景高频需求，外观科幻易理解，价格超过35元，功能无明显短板，情绪价值高。
 
 ### 8. 三顿半 咖啡礼盒
 
@@ -750,12 +750,12 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 - 品类：充电宝
 - 路径：方向参考
 - 启发：功能启发、结构启发
-- 分数：7.7
+- 分数：7.9
 - 来源：DIA 中国设计智造大奖
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.di-award.org/zh/collections/detail/258.html.html?page_size=1000
 
-充电宝是高频刚需，设计独特且具有情感价值，但价格可能偏高，功能无短板但非极致。
+充电宝是高频实用产品，设计独特且具有情感价值，但功能上无突破性创新，价格可能偏高。
 
 ### 63. Arc'teryx Alpha SV 冲锋衣
 
@@ -769,7 +769,19 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 Red Dot · 专业级硬壳冲锋衣
 
-### 64. This Titanium EDC Keychain Has 20 Tools Inside and Looks Exactly Like a Regular
+### 64. 27-Inch Digital Wall Calendar Shows Schedules, Then Switches ...
+
+- 品类：日历
+- 路径：方向参考
+- 启发：包装启发、结构启发
+- 分数：6.9
+- 来源：Yanko Design
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.yankodesign.com/2026/01/21/27-inch-digital-wall-calendar-shows-schedules-then-switches-to-photos
+
+产品解决家庭日程同步痛点，实用性强；每日查看日历为高频需求；适用家庭场景，打击面广；功能集成日程显示，但可能依赖手机同步，存在短板；预估售价可能高于35元；3秒看懂概念；情绪价值体现在减少家庭混乱，但需功能成立后叠加。
+
+### 65. This Titanium EDC Keychain Has 20 Tools Inside and Looks Exactly Like a Regular
 
 - 品类：钥匙扣水壶
 - 路径：方向参考
@@ -781,7 +793,7 @@ Red Dot · 专业级硬壳冲锋衣
 
 This Titanium EDC Keychain Has 20 Tools Inside and Looks Exactly Like a Regular KeyKeys are the only objects humans carry with religious consistency. Wallet habits change, phone pockets shift, watches
 
-### 65. Louis
+### 66. Louis
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -793,7 +805,7 @@ This Titanium EDC Keychain Has 20 Tools Inside and Looks Exactly Like a Regular 
 
 Good Design Award · It is a steak knife that, by notching part of the blade, creates a function that makes it easy to sharpen, difficult to touch the blade and easy to place, resulting in a steak knife that cuts well, is safe and beautiful at the same time. This is an o
 
-### 66. 360KYUSU
+### 67. 360KYUSU
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -805,7 +817,7 @@ Good Design Award · It is a steak knife that, by notching part of the blade, cr
 
 Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Japanese tea culture. The slits in the lid serve as a tea strainer, allowing you to pour from any angle around the 360-degree circumference. It is also d
 
-### 67. The T-Pot
+### 68. The T-Pot
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -817,7 +829,7 @@ Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way
 
 Good Design Award · "The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbreaking lid mechanism ensures a secure fit, while the integrated handle design provides unparalleled stability. Elevate every pour with this functional o
 
-### 68. VERMICULAR OVEN POT２ & Recraft program
+### 69. VERMICULAR OVEN POT２ & Recraft program
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -829,7 +841,7 @@ Good Design Award · "The T-POT redefines tea preparation with innovative featur
 
 Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and sustainability: 1. Enhanced searing performance while retaining its waterless cooking capability utilizing the pot's precision seal. 2. Address the drawba
 
-### 69. PETARI Shallow Pot
+### 70. PETARI Shallow Pot
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -841,7 +853,7 @@ Good Design Award · A new era of enameled cast iron pots, merging innovative co
 
 Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called a "Toban". This product can be used over an open flame, in a microwave, or in an oven. The minimal design makes it easy to store and reduces the amou
 
-### 70. ARAHI
+### 71. ARAHI
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -853,7 +865,7 @@ Good Design Award · This product is a cooking utensil and a vessel, made in the
 
 Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of professional chefs, even with the heat of a standard household gas stove.
 
-### 71. Cassette Feu“KIWAMI”
+### 72. Cassette Feu“KIWAMI”
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -865,7 +877,7 @@ Good Design Award · A household hagama developed to cook rice deliciously. It e
 
 Good Design Award · The Cassette Feu series, a dining icon for over 50 years, presents Kiwami-the apex of this line, targeting high-end, professional, and global customers. Striving for excellence, we've revamped our packaging and manufacturing, achieving a minimalist y
 
-### 72. Zaru-ya no bon zaru （Flat strainer）
+### 73. Zaru-ya no bon zaru （Flat strainer）
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -877,7 +889,7 @@ Good Design Award · The Cassette Feu series, a dining icon for over 50 years, p
 
 Good Design Award · The flattening of the colander allows foodstuffs to be placed side by side without overlapping. By placing the ingredients side by side, the colander can be used not only for draining water, but also for removing rough heat, draining oil, draining ho
 
-### 73. "hitorizen hassun" hardwood plate with glass coating
+### 74. "hitorizen hassun" hardwood plate with glass coating
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -889,7 +901,7 @@ Good Design Award · The flattening of the colander allows foodstuffs to be plac
 
 Good Design Award · A wooden plate made from a Hardwood with ears.Features a unique texture.The unique glass coating process improves stain resistance without impairing the texture of the wood, so you can continue to use it cleanly without getting oil stains even when f
 
-### 74. PackStaff FITLOCK
+### 75. PackStaff FITLOCK
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -901,7 +913,7 @@ Good Design Award · A wooden plate made from a Hardwood with ears.Features a un
 
 Good Design Award · The food storage container that closes tightly but It is easy to open.It has a high level of airtightness, but the lid can be opened easily by simply pinching it with one hand.
 
-### 75. seiseisha uzra series
+### 76. seiseisha uzra series
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -913,7 +925,7 @@ Good Design Award · The food storage container that closes tightly but It is ea
 
 Good Design Award · "Uzura" is a series of Hizen Yoshida ware that uses a new environmentally friendly material called "Seido". It can be fired without using glaze, reducing CO2 emissions by about 40%. Iron powder, which is often considered a defect, is also including
 
-### 76. MARUKEI Two-Tone smart-cream
+### 77. MARUKEI Two-Tone smart-cream
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -925,7 +937,7 @@ Good Design Award · "Uzura" is a series of Hizen Yoshida ware that uses a new e
 
 Good Design Award · The Two-Tone institutional tableware series is made from recycled plastic yet achieves a light two-color molding overcoming the conventional limitation to dark monotones. With a ceramic-like texture crafted by a modeler, the series combines simple sh
 
-### 77. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
+### 78. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -937,7 +949,7 @@ Good Design Award · The Two-Tone institutional tableware series is made from re
 
 Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to do so by changing their diet. It makes lightly seasoned meals healthier and more enjoyable. The tableware and cutlery act as tools to help start and ma
 
-### 78. Stilla
+### 79. Stilla
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -949,7 +961,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 Good Design Award · This commercial-use cutlery was redesigned based on feedback from end users, considering both user and service provider perspectives. The head is narrowed and the bowl's tip shifted back for a smoother mouthfeel. Its lightweight, arched handle offers
 
-### 79. irogami chopsticks and chopstick rest, cleaning brush, chopstick wrapper
+### 80. irogami chopsticks and chopstick rest, cleaning brush, chopstick wrapper
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -961,7 +973,7 @@ Good Design Award · This commercial-use cutlery was redesigned based on feedbac
 
 Good Design Award · These chopsticks and chopstick rests inherit the irogami concept, bringing vivid color and a subtle metallic sheen to the table. The set includes a carrying pouch and a cleaning brush, thoughtfully designed for ease of use. Created for design-conscio
 
-### 80. \ ouyouki /
+### 81. \ ouyouki /
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -973,7 +985,7 @@ Good Design Award · These chopsticks and chopstick rests inherit the irogami co
 
 Good Design Award · This wooden tableware set includes a dish, bowl, and cup that stack together compactly and can be used according to purpose or volume. Suitable for both daily use and outdoor activities like camping or hiking, it features a design that blends practic
 
-### 81. Table Stove
+### 82. Table Stove
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -985,7 +997,7 @@ Good Design Award · This wooden tableware set includes a dish, bowl, and cup th
 
 Good Design Award · Table Stove is a portable gas cartridge stove designed to elevate tabletop cooking. The ultra-thin and wide design allows you to cook and serve with ease using large and heavy pots for everyone at the table. The design blends into modern dining scene
 
-### 82. VERMICULAR YUKIHIRA
+### 83. VERMICULAR YUKIHIRA
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -997,7 +1009,7 @@ Good Design Award · Table Stove is a portable gas cartridge stove designed to e
 
 Good Design Award · YUKIHIRA is an innovative enameled cast iron saucepan combining exceptional cooking performance, ease of use, and sustainability. Its enamel features Instant Evaporation technology enhanced by a unique hammered texture. With a lightweight build for o
 
-### 83. Rice Cooker Duo
+### 84. Rice Cooker Duo
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1009,7 +1021,7 @@ Good Design Award · YUKIHIRA is an innovative enameled cast iron saucepan combi
 
 Good Design Award · As meals become more and more diverse, we developed the 4w1h brand in pursuit of the question, What is the optimal rice cooker for the modern age? The 4w1h brand reorganizes kitchen tools from the perspective of 5w1h minus where (kitchen) to 4w1h (wh
 
-### 84. Gutsu-Gutsu by Kōshū Ironworks
+### 85. Gutsu-Gutsu by Kōshū Ironworks
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1021,7 +1033,7 @@ Good Design Award · As meals become more and more diverse, we developed the 4w1
 
 Good Design Award · This cast iron pot was developed to adapt "Hoto," a traditional dish symbolizing Yamanashi's food culture, to modern life. Its variable thickness-4mm at the base and just 1.5mm at the rim, the limit of casting-achieves 30% less weight than similar it
 
-### 85. Flock
+### 86. Flock
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1033,7 +1045,7 @@ Good Design Award · This cast iron pot was developed to adapt "Hoto," a traditi
 
 iF Design Award · Flock is a fermentation container that improves the usability of traditional kimchi jars. In Korea, gas valves are commonly used to regulate fermentation, but become inaccessible when containers are stacked. Flock features a sloped base that position
 
-### 86. Polygons flat 3-in-1 Measuring Spoon
+### 87. Polygons flat 3-in-1 Measuring Spoon
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1045,7 +1057,7 @@ iF Design Award · Flock is a fermentation container that improves the usability
 
 iF Design Award · After 3000 years, the humble spoon has been reinvented. Polygons flattens an entire measuring spoon set into an origami sheet just 0.1 inch thin. Pinch it to form the 3 volumes cooks use most (½ Tbsp, 1 Tbsp, 2 Tbsp on the big spoon - and ¼ Tsp, ½
 
-### 87. Glasslock Vacuum
+### 88. Glasslock Vacuum
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1057,7 +1069,7 @@ iF Design Award · After 3000 years, the humble spoon has been reinvented. Polyg
 
 iF Design Award · The Glasslock Vacuum Food Storage Set enhances freshness and preservation by combining airtight sealing with vacuum technology. Using a dedicated one-touch device, it removes air from the container to minimize oxygen exposure and slow food deteriorat
 
-### 88. 2050® Edible Cutlery
+### 89. 2050® Edible Cutlery
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1069,7 +1081,7 @@ iF Design Award · The Glasslock Vacuum Food Storage Set enhances freshness and 
 
 iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly tableware made from grain by-products like broken rice and wheat. It contains no additives or plastic, is safe to eat as a snack, and breaks down completely in the environment within just 14
 
-### 89. LocknLock Fresh Maestro Vacuum Set
+### 90. LocknLock Fresh Maestro Vacuum Set
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1081,7 +1093,7 @@ iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly t
 
 iF Design Award · As interest in healthy living grows, demand for fresh ingredients and tailored storage solutions is increasing. LocknLock’s Fresh Maestro features a 3-step vacuum pressure system that preserves aroma (Step 1), maintains moisture (Step 2), and prevent
 
-### 90. EcoDeli Meal Purse
+### 91. EcoDeli Meal Purse
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1093,7 +1105,7 @@ iF Design Award · As interest in healthy living grows, demand for fresh ingredi
 
 iF Design Award · A patented, versatile solution enhancing food preparation, carrying, consumption, and cleaning while being eco-friendly. Its wide opening allows for easy food prep and consumption and is simple to clean. Made from durable silicone and recycled ABS,
 
-### 91. LOCKIT
+### 92. LOCKIT
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1105,7 +1117,7 @@ iF Design Award · A patented, versatile solution enhancing food preparation, ca
 
 iF Design Award · LOCKIT redefines modular storage for a generation that values space, order, and adaptability. Designed for modern, mobile lifestyles, its innovative clip mechanism securely joins containers of different sizes—allowing users to build, rearrange, and p
 
-### 92. Glasslock Range Cook-Rice for The Blind
+### 93. Glasslock Range Cook-Rice for The Blind
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1117,7 +1129,7 @@ iF Design Award · LOCKIT redefines modular storage for a generation that values
 
 iF Design Award · Glasslock Range Cook-Rice for The Blind combines universal design with sustainable functionality. It addresses microplastic and microwave-safety issues of plastic containers while ensuring independence and safety for visually impaired users. The hea
 
-### 93. Teeter-Top Series
+### 94. Teeter-Top Series
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1129,7 +1141,7 @@ iF Design Award · Glasslock Range Cook-Rice for The Blind combines universal de
 
 iF Design Award · The Teeter-Top Storage Jar is designed to allow users to easily open the lid and access ingredients even when both hands are occupied in the kitchen. Its unique “teeter-totter” beveled base structure applies smart mechanics—by gently pressing the cir
 
-### 94. Astral Mate Light
+### 95. Astral Mate Light
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1141,7 +1153,7 @@ iF Design Award · The Teeter-Top Storage Jar is designed to allow users to easi
 
 iF Design Award · Astral Mate is an interactive ambient light that uses magnetic induction. Its innovative switch design is inspired by the gravitational pull between celestial bodies. A metal sphere glides naturally along the track, driven by gravity, and as it appro
 
-### 95. LEDVANCE AI Companion Lighting Robot
+### 96. LEDVANCE AI Companion Lighting Robot
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1153,7 +1165,7 @@ iF Design Award · Astral Mate is an interactive ambient light that uses magneti
 
 iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of intelligent, responsive luminaires by combining six-axis robotics, AI vision, and affective computing. It proactively adapts to five key user activities with optimized beam distribution, arm
 
-### 96. Vacuum Insulated Bottle MKR-W
+### 97. Vacuum Insulated Bottle MKR-W
 
 - 品类：水杯
 - 路径：适合改造
@@ -1165,7 +1177,7 @@ iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of i
 
 Good Design Award · Sports & Hobbies · TIGER CORPORATION
 
-### 97. Vacuum Insulated Bottle MTR-W
+### 98. Vacuum Insulated Bottle MTR-W
 
 - 品类：水杯
 - 路径：适合改造
@@ -1177,7 +1189,7 @@ Good Design Award · Sports & Hobbies · TIGER CORPORATION
 
 Good Design Award · Sports & Hobbies · TIGER CORPORATION
 
-### 98. Chef Tweezers
+### 99. Chef Tweezers
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1189,7 +1201,7 @@ Good Design Award · Sports & Hobbies · TIGER CORPORATION
 
 Good Design Award · Kitchen & Cookware · SUWADA Blacksmith Works, Inc.
 
-### 99. SEKIMAGOROKU Stainless Steel Grater
+### 100. SEKIMAGOROKU Stainless Steel Grater
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1200,15 +1212,3 @@ Good Design Award · Kitchen & Cookware · SUWADA Blacksmith Works, Inc.
 - 链接：https://www.g-mark.org/gallery/winners/30069?years=2025
 
 Good Design Award · Kitchen & Cookware · kai corporation co., ltd.
-
-### 100. JK-04 EVEROROSHI
-
-- 品类：创意厨具
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：Good Design Award
-- 下一步：提取结构或功能点，换材质/场景重新组合
-- 链接：https://www.g-mark.org/gallery/winners/30536?years=2025
-
-Good Design Award · Kitchen & Cookware · IIDA Co., Ltd.
