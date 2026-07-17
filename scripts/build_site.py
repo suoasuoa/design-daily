@@ -28,26 +28,27 @@ DAILY_SOURCE_QUOTAS = {
     "社交灵感": 3,
 }
 DAILY_CATEGORY_CAPS = {
-    "创意礼盒": 3,
-    "装置艺术": 3,
-    "创意厨具": 3,
-    "创意桌搭": 3,
-    "氛围灯": 3,
-    "水杯": 3,
-    "中秋礼盒": 2,
-    "端午礼盒": 2,
+    "创意礼盒": 4,
+    "装置艺术": 4,
+    "创意厨具": 4,
+    "创意桌搭": 4,
+    "氛围灯": 4,
+    "水杯": 4,
+    "中秋礼盒": 3,
+    "端午礼盒": 3,
     "收纳包": 2,
     "T恤": 2,
     "卫衣": 2,
     "Polo衫": 2,
     "帽子": 2,
-    "手机壳": 2,
+    "手机壳": 4,
     "卡包": 2,
-    "钥匙扣水壶": 1,
-    "充电宝": 2,
-    "冲锋衣": 2,
+    "钥匙扣水壶": 2,
+    "充电宝": 4,
+    "日历": 4,
+    "冲锋衣": 4,
 }
-DEFAULT_DAILY_CATEGORY_CAP = 2
+DEFAULT_DAILY_CATEGORY_CAP = 3
 
 
 def effective_score(item):
@@ -348,13 +349,14 @@ def compact_weekly_report(report):
     }
 
 
-def build_daily_groups(items, per_day=30, max_days=90):
+def build_daily_groups(items, per_day=40, max_days=90):
     by_day = defaultdict(list)
     for item in items:
         by_day[item.get("first_seen") or item.get("last_seen") or "unknown"].append(item)
 
     groups = []
-    for day in sorted(by_day.keys(), reverse=True)[:max_days]:
+    for day_index, day in enumerate(sorted(by_day.keys(), reverse=True)[:max_days]):
+        day_limit = per_day if day_index == 0 else min(per_day, 30)
         seen = set()
         picks = []
         ranked = [
@@ -376,20 +378,20 @@ def build_daily_groups(items, per_day=30, max_days=90):
                     continue
                 seen.add(key)
                 picks.append(item)
-                if len(picks) >= per_day:
+                if len(picks) >= day_limit:
                     break
-            if len(picks) >= per_day:
+            if len(picks) >= day_limit:
                 break
 
-        append_balanced_fill(ranked, picks, seen, per_day, relaxed=False)
-        append_balanced_fill(ranked, picks, seen, per_day, relaxed=True)
+        append_balanced_fill(ranked, picks, seen, day_limit, relaxed=False)
+        append_balanced_fill(ranked, picks, seen, day_limit, relaxed=True)
 
         groups.append(
             {
                 "date": day,
                 "group_id": f"daily-{day}",
                 "title": f"{day} 每日情报收集",
-                "target_count": per_day,
+                "target_count": day_limit,
                 "items": picks,
             }
         )
@@ -410,7 +412,8 @@ def build_daily_groups(items, per_day=30, max_days=90):
     backfill_date = now_iso()[:10]
     for group in groups[1:]:
         picks = group["items"]
-        while len(picks) < per_day:
+        historical_target = int(group.get("target_count") or 30)
+        while len(picks) < historical_target:
             chosen = None
             for item in balanced_ranked_items(reserve, picks, globally_seen):
                 item_date = item.get("first_seen") or item.get("last_seen") or ""
@@ -851,7 +854,7 @@ HTML = """<!doctype html>
     function currentNote() {
       if (state.tab === "daily") {
         const group = activeDaily();
-        if (!group) return "每天自动收集后，这里会按日期显示当天前 30 条去重情报。";
+        if (!group) return "工作日自动收集后，这里会按日期显示当天前 40 条去重情报。";
         const source = Object.entries(group.stats.by_source_family || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
         const backfill = Number((group.stats || {}).backfill_count || 0);
         return `${group.actual_count} 条 · 每日分组 · 已去重${backfill ? ` · 历史补录 ${backfill}` : ""}${source ? " · " + source : ""}`;
