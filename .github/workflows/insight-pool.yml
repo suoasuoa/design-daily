@@ -16,10 +16,14 @@ on:
         description: "Maximum products to score this run"
         required: true
         default: "45"
-      search_jobs:
-        description: "Open-web search jobs to run"
+      agent_queries:
+        description: "DeepSeek-planned searches per round"
         required: true
-        default: "120"
+        default: "70"
+      agent_pages:
+        description: "Fresh pages screened per round"
+        required: true
+        default: "320"
       use_tavily:
         description: "Use Tavily credits for this manual deep run"
         required: true
@@ -47,8 +51,9 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
               echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
-              echo "SEARCH_JOBS=${{ github.event.inputs.search_jobs || '120' }}" >> "$GITHUB_ENV"
               echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '45' }}" >> "$GITHUB_ENV"
+              echo "AGENT_QUERIES=${{ github.event.inputs.agent_queries || '70' }}" >> "$GITHUB_ENV"
+              echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '320' }}" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
                 echo "USE_TAVILY_SEARCH=1" >> "$GITHUB_ENV"
               else
@@ -58,16 +63,19 @@ jobs:
               bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
               if [ "$bj_hm" -lt 1100 ]; then
                 echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
-                echo "SEARCH_JOBS=60" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=40" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=180" >> "$GITHUB_ENV"
               elif [ "$bj_hm" -lt 1500 ]; then
                 echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
-                echo "SEARCH_JOBS=80" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=55" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=240" >> "$GITHUB_ENV"
               else
                 echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
-                echo "SEARCH_JOBS=120" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=45" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=70" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=320" >> "$GITHUB_ENV"
               fi
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
@@ -124,13 +132,22 @@ jobs:
         if: env.SKIP_INSIGHT != '1'
         run: python3 -m pip install -q ddgs
 
-      - name: Collect open-web search leads
+      - name: Run DeepSeek search agent
         if: env.SKIP_INSIGHT != '1'
-        timeout-minutes: 60
+        timeout-minutes: 90
         env:
-          SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: python3 scripts/collect_search.py --limit-jobs "$SEARCH_JOBS" --per-job 6 --sleep 0.1 --workers 6
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
+        run: >-
+          python3 scripts/deepseek_search_agent.py
+          --target "$DAILY_TARGET"
+          --round 0
+          --query-count "$AGENT_QUERIES"
+          --per-query 10
+          --max-pages "$AGENT_PAGES"
+          --search-workers 10
+          --page-workers 12
+          --screen-workers 6
 
       - name: Dedupe product pool
         if: env.SKIP_INSIGHT != '1'
@@ -140,6 +157,7 @@ jobs:
         if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
           CATEGORY_REVIEW_WORKERS: "4"
         run: python3 scripts/review_categories.py --batch-size 20
 
@@ -147,6 +165,7 @@ jobs:
         if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
           SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: python3 scripts/ensure_daily_social_minimum.py --target "$SOCIAL_TARGET" --batch-jobs 50 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
@@ -155,9 +174,20 @@ jobs:
         if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
           SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-        run: python3 scripts/ensure_daily_minimum.py --target "$DAILY_TARGET" --batch-jobs 80 --per-job 6 --max-passes 1 --sleep 0.1 --workers 6 --curated-limit 90 --shopify-pages 1
+        run: >-
+          python3 scripts/ensure_daily_minimum.py
+          --target "$DAILY_TARGET"
+          --per-job 10
+          --max-passes 3
+          --workers 10
+          --agent-queries "$AGENT_QUERIES"
+          --agent-pages "$AGENT_PAGES"
+          --agent-screen-workers 6
+          --curated-limit 90
+          --shopify-pages 1
 
       - name: Enrich missing product images
         if: env.SKIP_INSIGHT != '1'
@@ -167,12 +197,14 @@ jobs:
         if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
         run: python3 scripts/score.py --limit "$SCORE_LIMIT"
 
       - name: Generate trend report
         if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
         run: python3 scripts/trend_agent.py --limit 100
 
       - name: Build static insight dashboard
