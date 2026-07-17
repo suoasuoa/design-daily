@@ -18,7 +18,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--skip-collect", action="store_true", help="Skip public RSS collection.")
     parser.add_argument("--skip-search", action="store_true", help="Skip DeepSeek open-web discovery.")
-    parser.add_argument("--daily-target", type=int, default=30, help="Required accepted products for today.")
+    parser.add_argument("--daily-target", type=int, default=40, help="Required accepted products for today.")
     parser.add_argument("--agent-queries", type=int, default=70, help="DeepSeek-planned searches per round.")
     parser.add_argument("--agent-pages", type=int, default=320, help="Maximum fresh pages screened per round.")
     parser.add_argument("--search-results", type=int, default=10, help="Search results inspected per query.")
