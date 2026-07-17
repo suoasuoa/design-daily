@@ -2,6 +2,7 @@
 """Review whether products fit the configured categories before publishing."""
 
 import argparse
+import http.client
 import json
 import os
 import re
@@ -53,10 +54,21 @@ def retirement_review(item):
 def trusted_cached_review(review):
     if not review:
         return False
-    if int(review.get("policy_version") or 0) != REVIEW_POLICY_VERSION:
-        return False
+    policy_version = int(review.get("policy_version") or 0)
     if not review.get("keep"):
-        return True
+        source = review.get("source") or ""
+        if source in {"retirement_policy", "direct_link_policy"}:
+            return True
+        # A stricter policy cannot turn a previously rejected item into an
+        # approval. Reuse confident v2/v3 DeepSeek rejections to avoid paying
+        # for the same negative decision on every policy upgrade.
+        return (
+            policy_version >= 2
+            and source == "deepseek"
+            and int(review.get("confidence") or 0) >= 7
+        )
+    if policy_version != REVIEW_POLICY_VERSION:
+        return False
     if review.get("category") not in CATEGORIES:
         return False
     reason = str(review.get("reason") or "").lower()
@@ -247,15 +259,37 @@ def local_fallback(item):
         "category": "",
         "confidence": 0,
         "reason": "AI 审核失败，已隔离等待重试" + (f"；标题命中 {matched[:2]}" if matched else ""),
+        "reviewed_at": now_iso(),
+        "source": "local_fallback",
+        "policy_version": REVIEW_POLICY_VERSION,
     }
 
 
 def review_one_batch(batch, api_key):
-    try:
-        return review_batch(batch, api_key) if api_key else [local_fallback(item) for item in batch]
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError) as exc:
-        print(f"fallback local category review ({exc})", flush=True)
+    if not api_key:
         return [local_fallback(item) for item in batch]
+    recoverable = (
+        urllib.error.URLError,
+        urllib.error.HTTPError,
+        TimeoutError,
+        json.JSONDecodeError,
+        KeyError,
+        ValueError,
+        ConnectionError,
+        OSError,
+        http.client.HTTPException,
+    )
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            return review_batch(batch, api_key)
+        except recoverable as exc:
+            last_error = exc
+            print(f"retry category review attempt={attempt}/3 ({exc})", flush=True)
+            if attempt < 3:
+                time.sleep(attempt * 2)
+    print(f"fallback local category review after retries ({last_error})", flush=True)
+    return [local_fallback(item) for item in batch]
 
 
 def apply_batch_reviews(batch, result, reviews):
@@ -277,7 +311,7 @@ def apply_batch_reviews(batch, result, reviews):
             "quality_score": total,
             "reason": str(row.get("reason") or "")[:320],
             "reviewed_at": now_iso(),
-            "source": "deepseek" if os.environ.get("DEEPSEEK_API_KEY", "") else "local_fallback",
+            "source": row.get("source") or ("deepseek" if os.environ.get("DEEPSEEK_API_KEY", "") else "local_fallback"),
             "policy_version": REVIEW_POLICY_VERSION,
         }
     for item in batch:
