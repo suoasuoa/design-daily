@@ -12,7 +12,7 @@ import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from insight_common import DATA_DIR, load_env, load_json, now_iso, today, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, load_env, load_json, now_iso, today, write_json
 from insight_config import (
     CATEGORIES,
     CATEGORY_KEYWORDS,
@@ -23,7 +23,7 @@ from insight_config import (
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
-REVIEW_POLICY_VERSION = 2
+REVIEW_POLICY_VERSION = 3
 QUALITY_WEIGHTS = {
     "utility": 0.22,
     "frequency": 0.18,
@@ -62,9 +62,10 @@ def trusted_cached_review(review):
     reason = str(review.get("reason") or "").lower()
     suspicious = ["fallback", "不匹配", "无关", "不属于", "内容不符", "off-category"]
     return (
-        int(review.get("confidence") or 0) >= 7
-        and int(review.get("quality_score") or 0) >= 65
-        and int(review.get("innovation") or 0) >= 6
+        int(review.get("confidence") or 0) >= 8
+        and int(review.get("quality_score") or 0) >= 70
+        and int(review.get("innovation") or 0) >= 7
+        and int(review.get("relevance") or 0) >= 8
         and not any(word in reason for word in suspicious)
     )
 
@@ -84,15 +85,28 @@ def quality_gate(row, category):
     clarity = clamp_score(row.get("clarity"))
     price_power = clamp_score(row.get("price_power"))
     total = quality_score(row)
-    installation_exception = category == "装置艺术" and innovation >= 8 and clarity >= 5
+    installation_exception = category == "装置艺术" and innovation >= 8 and clarity >= 6
     return (
-        relevance >= 7
-        and total >= 65
-        and innovation >= 6
-        and functionality >= 5
-        and clarity >= 5
+        relevance >= 8
+        and total >= 70
+        and innovation >= 7
+        and functionality >= 6
+        and clarity >= 6
         and (price_power >= 5 or installation_exception)
     )
+
+
+def invalid_link_review(item):
+    return {
+        "id": item.get("id"),
+        "keep": False,
+        "category": "",
+        "confidence": 10,
+        "reason": "不是可直达具体产品/案例的链接，已隔离搜索页、合集页或无效地址",
+        "reviewed_at": now_iso(),
+        "source": "direct_link_policy",
+        "policy_version": REVIEW_POLICY_VERSION,
+    }
 
 
 def deepseek_model():
@@ -164,16 +178,17 @@ def review_batch(batch, api_key):
 你是严格的产品选品审核员。目标不是凑数量，而是只保留品类正确、真实具体、值得团队讨论的创意产品。
 
 审核规则：
-1. 只允许以下 {len(CATEGORIES)} 个品类；相关性 relevance 低于 7 必须 keep=false。
+1. 只允许以下 {len(CATEGORIES)} 个品类；相关性 relevance 低于 8 必须 keep=false。必须按实体和实际用途归类，禁止只凭标题关键词归类。
 2. 必须是明确、具体的产品或可转化物件。建筑新闻、汽车、宠物用品、泛设计文章、合集、搜索页、话题页、用户页、首页、纯概念叙事必须删除。
 3. 原品类错误但明确属于另一个允许品类时可以修正；不能因为标题或搜索词出现 bag、case、outdoor、lamp 等单词就硬归类。
 4. 分别评估实用性、高频需求、打击面、功能完整度、创新增量、价格空间、3 秒看懂、情绪价值，所有分数 0-10。
-5. 创新增量必须清楚：至少在功能、结构、材料、交互、视觉、包装或使用场景中有一项明显不同。普通基础款、只换颜色/图案/品牌、没有亮点的常规产品，innovation 不得超过 5 且 keep=false。
-6. 普通产品必须同时满足：quality_score >= 65、innovation >= 6、functionality >= 5、clarity >= 5、price_power >= 5。
-7. 装置艺术只作为方向参考：必须 innovation >= 8，并能明确提炼为产品结构、交互、光影、材料或内容创意；单纯建筑或大型公共项目不保留。
+5. 创新增量必须清楚：至少在功能、结构、材料、交互、视觉、包装或使用场景中有一项明显不同。普通基础款、只换颜色/图案/品牌、常规联名、没有亮点的常规产品，innovation 不得超过 5 且 keep=false。
+6. 普通产品必须同时满足：quality_score >= 70、innovation >= 7、functionality >= 6、clarity >= 6、price_power >= 5、confidence >= 8。刚好踩线但说不清创新证据时必须删除。
+7. 装置艺术只作为方向参考：必须 innovation >= 8、clarity >= 6，并能明确提炼为产品结构、交互、光影、材料或内容创意；单纯建筑或大型公共项目不保留。
 8. 礼盒与包装必须有明确的结构、开箱、复用、材料或叙事创新；只有平面视觉或普通盒型不保留。
 9. 社媒内容可保留高热度、好看、有趣、种草、DIY/手作/改造或概念原型，但仍必须有明确物件和可转化启发。
-10. 宁可少收，也不要为了达到数量保留弱相关、低创新、信息不完整的内容。
+10. reason 必须指出一项具体创新证据，不能只写“设计创新”“材质创新”“视觉创新”。信息不足以验证时 keep=false。
+11. 宁可少收，也不要为了达到数量保留弱相关、低创新、信息不完整的内容。
 
 品类定义：
 {rules}
@@ -277,10 +292,13 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
     for item in products:
         if item.get("category") in RETIRED_CATEGORIES:
             reviews[item.get("id")] = retirement_review(item)
+        elif not clean_direct_product_url(item.get("url") or ""):
+            reviews[item.get("id")] = invalid_link_review(item)
     todo = [
         item
         for item in products
         if item.get("category") not in RETIRED_CATEGORIES
+        and clean_direct_product_url(item.get("url") or "")
         and (
             force
             or item.get("first_seen") == today()
@@ -327,8 +345,8 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
                 "reason": review.get("reason", ""),
                 "reviewed_at": review.get("reviewed_at", now_iso()),
                 "quality_score": review.get("quality_score", 0),
-                "innovation": review.get("innovation", 0),
                 "relevance": review.get("relevance", 0),
+                **{key: review.get(key, 0) for key in QUALITY_FIELDS},
                 "policy_version": review.get("policy_version", REVIEW_POLICY_VERSION),
             }
             kept.append(item)
@@ -341,8 +359,8 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
                 "reason": review.get("reason", ""),
                 "reviewed_at": review.get("reviewed_at", now_iso()),
                 "quality_score": review.get("quality_score", 0),
-                "innovation": review.get("innovation", 0),
                 "relevance": review.get("relevance", 0),
+                **{key: review.get(key, 0) for key in QUALITY_FIELDS},
                 "policy_version": review.get("policy_version", REVIEW_POLICY_VERSION),
             }
             rejected.append(clone)
