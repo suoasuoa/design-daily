@@ -217,6 +217,12 @@ def clean_direct_product_url(url):
     if host.endswith("threadless.com") and segments[:1] == ["search"]:
         return ""
 
+    if host.endswith("kickstarter.com") and segments[:1] == ["projects"] and len(segments) > 3:
+        if segments[3] in {"comments", "community", "description", "faqs", "posts", "updates"}:
+            original_segments = [segment for segment in parts.path.strip("/").split("/") if segment]
+            parts = parts._replace(path="/" + "/".join(original_segments[:3]), query="")
+            return urlunsplit(parts)
+
     return canonical
 
 
