@@ -50,11 +50,16 @@ DAILY_CATEGORY_CAPS = {
 DEFAULT_DAILY_CATEGORY_CAP = 2
 
 
+def effective_score(item):
+    review = item.get("category_review") or {}
+    return int(review.get("quality_score") or item.get("selection_score") or 0)
+
+
 def sorted_products(products):
     return sorted(
         products,
         key=lambda item: (
-            int(item.get("selection_score") or 0),
+            effective_score(item),
             int(item.get("seen_count") or 0),
             item.get("last_seen") or "",
         ),
@@ -110,7 +115,7 @@ def action_lane(item):
     source = (item.get("sources") or [{}])[0]
     source_type = source.get("source_type", "")
     price_gate = item.get("price_gate")
-    score = int(item.get("selection_score") or 0)
+    score = effective_score(item)
     text = " ".join(
         [
             item.get("title", ""),
@@ -199,7 +204,7 @@ def record(item):
         "title": item.get("title", ""),
         "category": item.get("category", ""),
         "summary": item.get("ai_reason") or item.get("summary", ""),
-        "score": int(item.get("selection_score") or 0),
+        "score": effective_score(item),
         "price_gate": item.get("price_gate", "unknown"),
         "image": image,
         "url": url,
@@ -215,6 +220,10 @@ def record(item):
         "last_seen": item.get("last_seen", ""),
         "review_reason": review.get("reason", ""),
         "review_confidence": review.get("confidence", 0),
+        "review_policy_version": int(review.get("policy_version") or 0),
+        "quality_score": int(review.get("quality_score") or 0),
+        "innovation": int(review.get("innovation") or 0),
+        "relevance": int(review.get("relevance") or 0),
         "tags": (item.get("trend_tags") or [])[:4]
         + [tag for tag in (item.get("tags") or [])[:6] if tag not in (item.get("trend_tags") or [])][:2],
     }
@@ -250,6 +259,12 @@ def display_eligible(item):
     if not item.get("title"):
         return False
     if not item.get("url"):
+        return False
+    if int(item.get("review_policy_version") or 0) < 3:
+        return False
+    if int(item.get("quality_score") or 0) < 70:
+        return False
+    if int(item.get("innovation") or 0) < 7 or int(item.get("relevance") or 0) < 8:
         return False
     text = f"{item.get('summary', '')} {item.get('review_reason', '')}".lower()
     mismatch_signals = [
