@@ -2,28 +2,29 @@ name: Insight Pool
 
 on:
   schedule:
-    # Main runs: 07:30, 11:30, and 15:30 Beijing time.
-    - cron: "30 23 * * *"
-    - cron: "30 3 * * *"
-    - cron: "30 7 * * *"
+    # Main runs on Beijing weekdays at 07:30, 11:30, and 15:30.
+    # The first cron is Sunday-Thursday UTC because it is the previous UTC day.
+    - cron: "30 23 * * 0-4"
+    - cron: "30 3 * * 1-5"
+    - cron: "30 7 * * 1-5"
     # Backup checks for the same three phases. They skip if the phase target is already met.
-    - cron: "10 0 * * *"
-    - cron: "10 4 * * *"
-    - cron: "10 8 * * *"
+    - cron: "10 0 * * 1-5"
+    - cron: "10 4 * * 1-5"
+    - cron: "10 8 * * 1-5"
   workflow_dispatch:
     inputs:
       score_limit:
         description: "Maximum products to score this run"
         required: true
-        default: "45"
+        default: "60"
       agent_queries:
         description: "DeepSeek-planned searches per round"
         required: true
-        default: "70"
+        default: "90"
       agent_pages:
         description: "Fresh pages screened per round"
         required: true
-        default: "320"
+        default: "420"
       use_tavily:
         description: "Use Tavily credits for this manual deep run"
         required: true
@@ -49,11 +50,11 @@ jobs:
       - name: Set phased daily targets
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-              echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
+              echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
-              echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '45' }}" >> "$GITHUB_ENV"
-              echo "AGENT_QUERIES=${{ github.event.inputs.agent_queries || '70' }}" >> "$GITHUB_ENV"
-              echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '320' }}" >> "$GITHUB_ENV"
+              echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '60' }}" >> "$GITHUB_ENV"
+              echo "AGENT_QUERIES=${{ github.event.inputs.agent_queries || '90' }}" >> "$GITHUB_ENV"
+              echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
                 echo "USE_TAVILY_SEARCH=1" >> "$GITHUB_ENV"
               else
@@ -62,20 +63,20 @@ jobs:
           else
               bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
               if [ "$bj_hm" -lt 1100 ]; then
-                echo "DAILY_TARGET=10" >> "$GITHUB_ENV"
+                echo "DAILY_TARGET=15" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
-                echo "AGENT_QUERIES=40" >> "$GITHUB_ENV"
-                echo "AGENT_PAGES=180" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=50" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=220" >> "$GITHUB_ENV"
               elif [ "$bj_hm" -lt 1500 ]; then
-                echo "DAILY_TARGET=20" >> "$GITHUB_ENV"
-                echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
-                echo "AGENT_QUERIES=55" >> "$GITHUB_ENV"
-                echo "AGENT_PAGES=240" >> "$GITHUB_ENV"
-              else
                 echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
-                echo "SCORE_LIMIT=45" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=70" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=320" >> "$GITHUB_ENV"
+              else
+                echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=90" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=420" >> "$GITHUB_ENV"
               fi
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
@@ -91,7 +92,7 @@ jobs:
           from pathlib import Path
           from zoneinfo import ZoneInfo
 
-          target = int(os.environ.get("DAILY_TARGET", "30"))
+          target = int(os.environ.get("DAILY_TARGET", "40"))
           event_name = os.environ.get("GITHUB_EVENT_NAME", "")
           today = dt.datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
           skip = False
