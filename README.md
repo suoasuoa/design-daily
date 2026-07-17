@@ -1,339 +1,170 @@
 # Design Daily
 
-Design Daily 是一个面向选品团队的自动化选品情报工具。
+Design Daily 是给选品团队使用的自动化创意情报工具。它持续发现真实产品和设计案例，经过去重、页面校验与 AI 审核后，每天留下 30 条可供人工筛选的选品方向。
 
-它不是传统意义上的设计图库，也不是把所有链接堆在一起的数据仓库。它的目标是持续从公开来源里发现产品线索，经过去重、品类审核、AI 评分和趋势分析后，每周生成一份可以直接进入选品会讨论的推荐清单。
+- [线上选品情报工作台](https://suoasuoa.github.io/design-daily/insight/)
 
-线上入口：
+## 核心能力
 
-- [选品情报工作台](https://suoasuoa.github.io/design-daily/insight/)
+- 每天分三阶段收集，逐步完成 `10 -> 20 -> 30` 条新选品。
+- DeepSeek V4 Flash 根据当日缺口、品类分布和历史结果动态规划搜索词。
+- 真实搜索后端负责返回网页，DeepSeek 不生成产品链接。
+- 只保留白名单来源中的具体产品页或具体案例页，过滤搜索页、合集页和泛文章。
+- 校验页面标题、摘要、主图和 canonical URL，图片无法确认时允许留空，链接必须可追溯。
+- 对 URL、标题、产品指纹和历史淘汰池去重，同一产品不会换日期重复出现。
+- DeepSeek 先做候选预筛，再由严格品类审核做终审；数量不足时自动换角度继续搜索。
+- 每周从完整池中生成 100 条去重推荐，并在飞书群推送当天 Top 5。
 
-## 它能做什么
+## 选品标准
 
-- 每天北京时间 08:30、13:30、17:30 分三次自动收集公开设计媒体、产品媒体、包装站、奖项案例、设计社区和市场信号。
-- 按 19 个重点品类持续搜索新品、创意、包装、结构和趋势信号。
-- 自动合并重复产品，避免同一个产品反复入池。
-- 用 AI 审核内容是否真的属于目标品类。
-- 按选品标准给产品打分：实用、高频、打击面广、功能完整、价格大于 35 RMB、3 秒看懂、情绪价值。
-- 把内容分成 `可直接买样`、`适合改造`、`方向参考` 三条路径。
-- 每周生成 100 条选品推荐，给团队做人工筛选和选品讨论。
-- 每天生成一个日期分组，默认展示当天前 30 条去重情报。社媒公开搜索默认不进入主榜，避免低质量公开索引内容干扰选品判断。
-- 可选接入飞书群机器人，每天把最新 30 条选品情报推送到团队群。
-
-## 工作流
+内容必须先属于目标品类，再判断是否值得进入数据池。
 
 ```text
-公开来源采集（三次/天）
--> 搜索任务矩阵
--> 原始线索池
--> 去重合并
--> 品类审核
--> 当天总量补足 30 条
--> AI 评分
--> 趋势分析
--> 周报 100 条推荐
--> GitHub Pages 工作台
--> 飞书群日报推送（可选）
+1. 实用为先，解决明确问题
+2. 高频需求，覆盖人群足够广
+3. 功能成立且没有明显短板
+4. 有结构、功能、材料、交互或使用场景创新
+5. 预估售价大于 35 RMB
+6. 三秒能看懂产品与核心卖点
+7. 情绪价值只能在功能成立后加分
 ```
+
+普通基础款、只换颜色/图案、普通联名、无法确认具体产品、链接指向搜索结果或品类集合的内容会被拒绝。
+
+## 当前品类
+
+```text
+水杯 / 氛围灯 / 创意礼盒 / 装置艺术 / 创意厨具
+中秋礼盒 / 创意桌搭 / 端午礼盒 / 充电宝 / 日历
+手机壳 / 冲锋衣 / 钥匙扣水壶
+```
+
+`T恤、帽子、卫衣、Polo衫、收纳包、卡包` 已于 2026-07-16 停止新增，历史内容仍保留在归档中。
+
+品类边界与审核规则统一配置在 `scripts/insight_config.py`。
+
+## 自动流程
+
+```text
+RSS/精选页面采集
+-> DeepSeek 分析当日缺口并规划搜索词
+-> 免费搜索后端执行真实网页搜索
+-> 白名单与详情页过滤
+-> 页面标题/摘要/主图校验
+-> DeepSeek 候选预筛
+-> 全库去重
+-> DeepSeek 严格品类终审
+-> 不足 30 条时换搜索角度继续补量
+-> 评分、趋势与周报
+-> GitHub Pages 更新
+-> 飞书 Top 5 推送
+```
+
+搜索审计会写入 `data/reports/deepseek-search-agent-YYYY-MM-DD.json`，可以看到每一轮的搜索词数量、真实结果数、预筛数、保留数和品类分布。
 
 ## 数据来源
 
-当前自动化来源以可追溯、相对稳定的公开网页为主。
-
-公开内容源：
-
-- Dezeen
-- Design Milk
-- Yanko Design
-
-公开网页搜索：
-
-- 按 19 个品类生成中英文搜索任务
-- 覆盖产品新品、包装设计、众筹平台、趋势媒体、品牌和电商参考
-- 搜索结果先进入原始线索池，再经过 AI 审核和去重
-
-社媒公开索引目前默认关闭，不进入每日主榜。原因是抖音、小红书、Instagram 的公开搜索索引经常返回广告词、标签页、穿搭泛内容或上下文不足的帖子，质量不稳定。后续如果接入人工确认过的种子账号、关键词或平台 API，可以再作为单独的“社媒待筛池”开启。
-
-## 选品品类
-
-当前重点品类：
+主池优先使用可追溯的设计奖项、专业设计媒体、包装网站、设计社区、众筹和高质量商品案例，包括：
 
 ```text
-水杯 / 氛围灯 / 创意礼盒 / 装置艺术 / 创意厨具 / 中秋礼盒 / 帽子
-创意桌搭 / 端午礼盒 / 充电宝 / 日历 / T恤 / 卫衣 / 卡包
-手机壳 / 收纳包 / Polo衫 / 冲锋衣 / 钥匙扣水壶
+Good Design Award / iF / Red Dot / IDEA / DIA
+Dezeen / Design Milk / Yanko Design / Core77 / Designboom / DesignWanted
+The Dieline / Packaging of the World / Pentawards / BP&O / Lovely Package
+站酷 / 普象网 / 设计癖 / 数英 / Behance
+Kickstarter / Indiegogo / Uncrate / Cool Material / Gear Patrol
 ```
 
-品类和搜索关键词配置在：
+弱来源会被降权；Etsy 搜索页、标签页、集合页不会进入主池。社媒自动采集目前关闭，后续应作为独立待筛池接入。
 
-```text
-scripts/insight_config.py
-```
+## 每日时间
 
-## 输出内容
+GitHub Actions 按北京时间运行：
 
-主要输出：
+- `07:30`：第一阶段，目标累计 10 条。
+- `11:30`：第二阶段，目标累计 20 条。
+- `15:30`：第三阶段，目标累计 30 条。
+- 每个阶段约 40 分钟后有一次漏跑检查，已经达标则自动跳过。
+- 飞书日报由独立工作流在约定时间读取当天 30 条，并推送 Top 5。
 
-```text
-insight/index.html       选品情报工作台
-insight/data.json        前端数据
-insight/weekly.md        本周推荐的 Markdown 备用导出
-insight/weekly.json      周报结构化数据
-```
-
-数据文件：
-
-```text
-data/raw/                原始采集结果
-data/products.json       去重后的产品池
-data/search_jobs.json    搜索任务矩阵
-data/trends.json         趋势报告
-data/weekly_report.json  当前周报
-data/reports/            历史周报
-```
+三个阶段只收集数据库里从未出现过的新内容，不会把旧池内容改成今天日期。
 
 ## 本地运行
 
-完整运行一次自动化流程：
-
-```bash
-python3 scripts/agent_update.py --score-limit 200 --trend-limit 100 --weekly-limit 100
-```
-
-只重新生成页面：
-
-```bash
-python3 scripts/build_site.py
-```
-
-本地预览：
-
-```bash
-python3 -m http.server 8765
-```
-
-然后打开：
-
-```text
-http://127.0.0.1:8765/insight/
-```
-
-## 分步命令
-
-```bash
-python3 scripts/collect_public.py
-python3 scripts/search_jobs.py
-python3 scripts/collect_search.py --limit-jobs 40 --per-job 4
-python3 scripts/dedupe.py
-python3 scripts/review_categories.py --batch-size 20
-python3 scripts/ensure_daily_social_minimum.py --target 10
-python3 scripts/ensure_daily_minimum.py --target 30
-python3 scripts/score.py --limit 200
-python3 scripts/trend_agent.py --limit 100
-python3 scripts/build_site.py
-python3 scripts/weekly_report.py --limit 100
-python3 scripts/build_site.py
-```
-
-## DeepSeek 配置
-
-本地使用时可以复制 `.env.example`：
+复制环境变量文件并填写 DeepSeek API Key：
 
 ```bash
 cp .env.example .env
 ```
 
-然后填入：
-
 ```text
 DEEPSEEK_API_KEY=你的 API Key
-DEEPSEEK_MODEL=deepseek-chat
+DEEPSEEK_MODEL=deepseek-v4-flash
 ```
 
-GitHub Actions 使用仓库 Secret：
+安装免费搜索后端并完整运行：
+
+```bash
+python3 -m pip install ddgs
+python3 scripts/agent_update.py --daily-target 30 --agent-queries 70 --agent-pages 320
+```
+
+只运行一轮 DeepSeek 搜索智能体：
+
+```bash
+python3 scripts/search_jobs.py
+python3 scripts/deepseek_search_agent.py --target 30 --query-count 70 --per-query 10 --max-pages 320
+```
+
+只生成和预览页面：
+
+```bash
+python3 scripts/build_site.py
+python3 -m http.server 8765
+```
+
+打开 `http://127.0.0.1:8765/insight/`。
+
+## GitHub 配置
+
+仓库 `Settings -> Secrets and variables -> Actions` 至少需要：
 
 ```text
 DEEPSEEK_API_KEY
 ```
 
-没有 API Key 时，部分脚本会退回本地启发式逻辑，流程不会中断，但 AI 判断质量会下降。
-
-## GitHub Actions
-
-工作流文件：
+可选配置：
 
 ```text
-.github/workflows/insight-pool.yml
-```
-
-默认每天北京时间 08:30、13:30、17:30 自动运行一次。三次运行是分段累积，不是每次都重新凑满 30 条：
-
-- 08:30：当天目标 10 条。
-- 13:30：当天目标 20 条。
-- 17:30：当天目标 30 条。
-
-每次都会先继续收集新线索，再做去重和审核；最后再按阶段目标刷新页面。手动运行用于修复当天数据，会直接按 30 条目标执行。
-
-日常自动化默认不消耗 Tavily credits，优先使用 RSS、白名单网站和免费元搜索。搜索后端优先级是：
-
-1. `SEARXNG_BASE_URL`：如果配置了自托管 SearXNG，就优先走自己的搜索中台。
-2. `ddgs`：默认免费元搜索后端，由 GitHub Actions 自动安装。
-3. DuckDuckGo HTML：最后兜底。
-4. `TAVILY_API_KEY`：只有手动运行工作流并把 `use_tavily` 设置为 `true` 时才会启用。
-
-这意味着 08:30、13:30、17:30 不是三次重复推送，而是三次数据积累和刷新。18:00 的飞书群推送只读取当天已经完成的 30 条，并选出 Top 5。
-
-飞书群日报单独在北京时间 18:00 推送一次，只推当天 Top 5，不跟随三次数据更新重复推送。
-
-也可以在 GitHub Actions 页面手动运行，并调整：
-
-- `score_limit`：本轮最多评分多少个产品
-- `search_jobs`：本轮跑多少个公开网页搜索任务
-- `use_tavily`：是否使用 Tavily credits 做手动深搜，默认 `false`
-
-自动化成功后会把数据、周报和页面提交回 `main` 分支，并通过 GitHub Pages 发布。
-
-## 飞书群推送
-
-项目支持飞书“自定义机器人”群推送。配置后，GitHub Actions 每天北京时间 18:00 会从当天 30 条情报里挑出最值得优先看的 5 个，推送到指定飞书群。
-
-推送内容包括：
-
-- 当天日期和完整数据池入口。
-- 最推荐的 5 个选品，使用飞书卡片展示。
-- 每条包含标题、品类、评分、来源、原链接。
-- 每条自动生成一句推荐语，说明为什么值得看。
-
-推荐语会参考这些标准：
-
-```text
-实用为先 / 高频需求 / 功能点清晰 / 打击面广 / 价格带大概率 >35 元 / 情绪或视觉钩子 / 来源可信度
-```
-
-### 配置方法
-
-1. 在飞书群里添加“自定义机器人”。
-2. 复制机器人 Webhook 地址。
-3. 打开 GitHub 仓库 `Settings -> Secrets and variables -> Actions`。
-4. 新增仓库 Secret：
-
-```text
-FEISHU_WEBHOOK_URL=飞书机器人 Webhook 地址
-```
-
-如果飞书机器人开启了“签名校验”，再新增：
-
-```text
-FEISHU_WEBHOOK_SECRET=飞书机器人签名密钥
-```
-
-没有配置 `FEISHU_WEBHOOK_URL` 时，推送脚本会自动跳过，不影响每日数据更新。
-
-本地测试推送内容：
-
-```bash
-python3 scripts/push_feishu_daily.py --dry-run
-```
-
-本地真实推送：
-
-```bash
-FEISHU_WEBHOOK_URL="你的 webhook" python3 scripts/push_feishu_daily.py
-```
-
-## 社媒公开索引采集
-
-社媒公开索引目前是可选能力，不默认进入每日主榜。项目不会直接登录或操作社媒账号，也不会绕过平台限制。
-
-当前覆盖：
-
-- 抖音公开视频页：`douyin.com/video`
-- 小红书公开笔记页：`xiaohongshu.com/explore`、`xiaohongshu.com/discovery/item`
-- Instagram 公开帖子页：`instagram.com/p`、`instagram.com/reel`
-
-这类采集只保留具体内容页，搜索页、用户页、话题页、合集页会被过滤。即便开启，也建议先进入“社媒待筛池”，不要直接混进每日主榜。进入数据池前还会按选品标准继续审核：
-
-```text
-实用为先 / 高频需求 / 功能点清晰 / 打击面广 / 价格带大概率 >35 元 / 3 秒看懂 / 情绪价值只能作为加分
-```
-
-社媒内容的口径会更开放一些：热度高、好看、有趣、种草、概念性产品、DIY/手作/改造内容都可以进入候选池，但必须能看出明确物件、明确使用场景，或对包装、结构、功能、外观有可转化启发。纯娱乐、纯生活记录、无明确物件的内容不会入池。
-
-注意：公开索引不是平台内全量搜索，只能覆盖被搜索引擎收录的公开内容。它更适合作为灵感候选，不适合作为自动主推来源。系统不会为了凑数牺牲品类准确性，也不会伪造链接或把搜索页当成产品。
-
-如果要让公开搜索更稳定，推荐配置自托管 SearXNG：
-
-```text
-SEARXNG_BASE_URL=https://你的-searxng-地址
-```
-
-不配置 SearXNG 也可以运行，GitHub Actions 会自动安装 `ddgs` 作为免费元搜索后端。
-
-如果要做手动深度搜索，可以配置 Tavily 搜索 API：
-
-```text
+FEISHU_WEBHOOK_URL
+FEISHU_WEBHOOK_SECRET
+SEARXNG_BASE_URL
 TAVILY_API_KEY
 ```
 
-日常定时任务默认不会使用 Tavily。Tavily 只负责在手动深搜时找候选链接，最终是否入池仍然由品类审核和选品评分决定。
+日常搜索优先使用自托管 SearXNG 或免费的 `ddgs`，Tavily 默认关闭。DeepSeek API 缺失时只能退回固定搜索词，无法执行 AI 预筛，因此正式自动化必须配置 `DEEPSEEK_API_KEY`。
 
-## 本地社媒夜间采集（备用）
+手动运行 `.github/workflows/insight-pool.yml` 时可以调整：
 
-抖音、Instagram 这类社媒平台不适合放在 GitHub Actions 里直接采集。项目提供了一个本地桌面采集器，用你电脑上的可见浏览器，在登录状态下按品类搜索并保存线索。
+- `score_limit`：本轮最多评分多少条。
+- `agent_queries`：DeepSeek 每轮规划多少条搜索词。
+- `agent_pages`：每轮最多读取并预筛多少个新页面。
+- `use_tavily`：是否临时启用 Tavily，默认关闭。
 
-这个方式容易遇到验证码或账号风控，目前只作为备用，不建议作为默认方案。第一版默认只采集抖音。Instagram 采集能力保留在脚本里，但不进入夜间定时任务，避免账号风险。
+自动化会提交数据与静态页面到 `main`，GitHub Pages 随后更新。
 
-默认策略：
-
-- 平台：抖音
-- 时间：建议每天凌晨 00:30
-- 目标：每天从抖音采集不少于 10 条社媒候选
-- 方式：正常打开网页搜索，不绕过登录、验证码或平台限制
-- 输出：`data/raw/social-desktop-YYYY-MM-DD.json`
-- 后续：自动去重、审核、评分、构建网站，并推回 GitHub
-
-第一次使用前安装 Playwright：
-
-```bash
-python3 -m pip install playwright
-python3 -m playwright install chromium
-```
-
-第一次建议先手动跑一遍，并在打开的浏览器里登录抖音：
-
-```bash
-python3 scripts/collect_desktop_social.py --platform douyin --target-total 20 --min-social 2
-```
-
-确认能采集后，运行完整夜间流程：
-
-```bash
-python3 scripts/nightly_social_update.py --target-total 80 --min-social 10
-```
-
-安装 macOS 每天凌晨 00:30 自动运行：
-
-```bash
-python3 scripts/install_nightly_social_launchd.py --hour 0 --minute 30
-```
-
-日志位置：
+## 主要文件
 
 ```text
-logs/nightly-social.out.log
-logs/nightly-social.err.log
+scripts/deepseek_search_agent.py       DeepSeek 搜索智能体
+scripts/review_categories.py           严格品类终审
+scripts/ensure_daily_minimum.py         当日 30 条补量循环
+scripts/insight_config.py               品类、来源与选品规则
+data/products.json                      当前严格通过的产品池
+data/rejected_category.json             淘汰归档
+data/reports/                            搜索与清理审计
+insight/index.html                       选品工作台
 ```
 
-如果某天抖音要求重新登录、验证码或安全验证，采集器会停在可见浏览器页面上。处理完后重新运行夜间流程即可。
+## 飞书推送
 
-## 这个工具适合怎么用
-
-建议团队把它当作“选品会前的情报输入”：
-
-1. 每天先看工作台里的“每日情报收集”日期分组。
-2. 每周再看工作台里的“选品推荐组”100 条推荐。
-3. 对感兴趣的内容进入原链接查看细节。
-4. 按 `可直接买样 / 适合改造 / 方向参考` 决定下一步动作。
-5. 人工筛选后再进入团队正式选品池。
-
-这个项目负责扩大灵感来源、降低初筛成本、保持长期稳定收集；最终判断仍然交给团队完成。
+配置 `FEISHU_WEBHOOK_URL` 后，飞书工作流会从当天 30 条中选择综合评分最高的 5 条，以卡片形式发送标题、品类、推荐指数、推荐理由、图片和原链接。没有可靠图片时不展示图片，不会用其他产品图片代替。
