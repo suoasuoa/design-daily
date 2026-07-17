@@ -191,7 +191,7 @@ def daily_display_ids(products):
         return set()
     try:
         items = [record(item) for item in sorted_products(products)]
-        groups = build_daily_groups(items, per_day=30, max_days=1)
+        groups = build_daily_groups(items, per_day=40, max_days=1)
     except Exception:
         return set()
     if not groups:
