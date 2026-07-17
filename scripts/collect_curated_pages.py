@@ -11,6 +11,7 @@ from urllib.parse import urlencode, urljoin
 import urllib.request
 
 from insight_common import RAW_DIR, ensure_dirs, guess_category, load_json, stable_hash, today, write_json
+from insight_config import CATEGORIES
 
 CTX = ssl._create_unverified_context()
 
@@ -273,7 +274,7 @@ def collect_uncrate(page):
         if "assets_c" not in image and "/p/" not in image:
             continue
         category = strict_category(title, title)
-        if not category:
+        if category not in CATEGORIES:
             continue
         key = f"{page['source']}|{url}|{title}"
         if key in seen:
@@ -321,7 +322,7 @@ def collect_shopify_collection(page):
         if not title or not image:
             continue
         category = page.get("category") or strict_category(title, title)
-        if not category:
+        if category not in CATEGORIES:
             continue
         key = f"{page['source']}|{url}|{title}"
         if key in seen:
@@ -386,7 +387,7 @@ def collect_shopify_json(endpoint, page_number):
         if not title or not product_url or not image:
             continue
         category = endpoint.get("category") or strict_category(title, f"{body} {' '.join(tags)}")
-        if not category:
+        if category not in CATEGORIES:
             continue
         key = f"{endpoint['source']}|{product_url}|{title}"
         if key in seen:
