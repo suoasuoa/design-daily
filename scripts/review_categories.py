@@ -36,6 +36,27 @@ QUALITY_WEIGHTS = {
     "emotion": 0.02,
 }
 QUALITY_FIELDS = tuple(QUALITY_WEIGHTS)
+UNCERTAINTY_SIGNALS = (
+    "可能",
+    "需确认",
+    "信息不足",
+    "无法确认",
+    "unclear",
+    "not enough information",
+    "possibly",
+    "perhaps",
+)
+STRICT_ENTITY_TERMS = {
+    "水杯": ("cup", "mug", "bottle", "tumbler", "flask", "thermos", "drinkware", "pint glass", "水杯", "杯", "瓶", "壶", "饮水", "饮用"),
+    "氛围灯": ("lamp", "light", "lighting", "lantern", "chandelier", "灯", "燈", "照明"),
+    "创意礼盒": ("gift", "box", "packaging", "package", "礼盒", "包装", "礼赠", "开箱"),
+    "装置艺术": ("installation", "sculpture", "interactive art", "装置", "雕塑", "互动艺术"),
+    "中秋礼盒": ("mid-autumn", "mid autumn", "mooncake", "中秋", "月饼"),
+    "端午礼盒": ("dragon boat", "zongzi", "端午", "粽"),
+    "充电宝": ("power bank", "powerbank", "battery pack", "portable power", "portable charger", "移动电源", "充电宝", "mah", "预充电", "应急充电"),
+    "日历": ("calendar", "date display", "planner", "日历", "台历", "年历", "日期", "节气", "撕历"),
+    "冲锋衣": ("jacket", "windbreaker", "shell jacket", "outerwear", "parka", "vest", "冲锋衣", "夹克", "外套", "防晒衣", "背心", "保温衣", "羽绒服"),
+}
 
 
 def retirement_review(item):
@@ -57,7 +78,7 @@ def trusted_cached_review(review):
     policy_version = int(review.get("policy_version") or 0)
     if not review.get("keep"):
         source = review.get("source") or ""
-        if source in {"retirement_policy", "direct_link_policy"}:
+        if source in {"retirement_policy", "direct_link_policy", "deterministic_entity_policy"}:
             return True
         # A stricter policy cannot turn a previously rejected item into an
         # approval. Reuse confident v2/v3 DeepSeek rejections to avoid paying
@@ -118,6 +139,38 @@ def invalid_link_review(item):
         "source": "direct_link_policy",
         "policy_version": REVIEW_POLICY_VERSION,
     }
+
+
+def deterministic_evidence_gate(item, review, category):
+    reason = str(review.get("reason") or "").lower()
+    if any(signal in reason for signal in UNCERTAINTY_SIGNALS):
+        return False, "审核理由含有‘可能/需确认/信息不足’，没有足够证据证明产品价值"
+
+    text = " ".join(
+        [
+            str(item.get("title") or ""),
+            str(item.get("summary") or ""),
+            reason,
+        ]
+    ).lower()
+    if category == "手机壳":
+        matched = (
+            "手机壳" in text
+            or "保护壳" in text
+            or "smartcase" in text
+            or ("case" in text and any(token in text for token in ("phone", "iphone", "smartphone", "magsafe")))
+        )
+    elif category == "钥匙扣水壶":
+        hydration = any(token in text for token in ("bottle", "flask", "water container", "水瓶", "水壶", "饮水", "杯"))
+        attachment = any(token in text for token in ("keychain", "key chain", "carabiner", "clip-on", "挂环", "挂扣", "钥匙扣"))
+        matched = hydration and attachment
+    else:
+        terms = STRICT_ENTITY_TERMS.get(category)
+        matched = not terms or any(token in text for token in terms)
+
+    if not matched:
+        return False, f"缺少能够证明其属于‘{category}’实体品类的明确证据"
+    return True, ""
 
 
 def deepseek_model():
@@ -367,7 +420,21 @@ def review_products(products, batch_size=20, force=False, sleep=0.5):
     changed = 0
     for item in products:
         review = reviews.get(item.get("id")) or local_fallback(item)
-        if review.get("keep") and review.get("category") in CATEGORIES:
+        approved = bool(review.get("keep")) and review.get("category") in CATEGORIES
+        if approved:
+            approved, deterministic_reason = deterministic_evidence_gate(item, review, review["category"])
+            if not approved:
+                review = {
+                    **review,
+                    "keep": False,
+                    "category": "",
+                    "reason": f"{deterministic_reason}；原审核：{review.get('reason', '')}"[:320],
+                    "reviewed_at": now_iso(),
+                    "source": "deterministic_entity_policy",
+                    "policy_version": REVIEW_POLICY_VERSION,
+                }
+                reviews[item.get("id")] = review
+        if approved:
             if item.get("category") != review["category"]:
                 item["category_review_original"] = item.get("category")
                 item["category"] = review["category"]
