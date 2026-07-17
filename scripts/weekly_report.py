@@ -59,7 +59,8 @@ def normalize_item(item):
     source = item.get("source_name") or item.get("source_primary") or ""
     if not source and item.get("sources"):
         source = item["sources"][0].get("source", "")
-    score = int(item.get("score") or item.get("selection_score") or 0)
+    review = item.get("category_review") or {}
+    score = int(review.get("quality_score") or item.get("score") or item.get("selection_score") or 0)
     url = clean_direct_product_url(item.get("url") or "")
     source_type_value = item.get("source_type", "") or source_type(source or "")
     source_group = item.get("source_group", "")
@@ -69,7 +70,6 @@ def normalize_item(item):
         source_group=source_group,
         quality_tier=item.get("quality_tier", ""),
     )
-    review = item.get("category_review") or {}
     return {
         "id": item.get("id"),
         "product_key": item.get("product_key"),
