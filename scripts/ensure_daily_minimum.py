@@ -14,11 +14,11 @@ def run(cmd):
     subprocess.run(cmd, check=True)
 
 
-def today_count():
+def today_count(target=40):
     products = load_json(DATA_DIR / "products.json", [])
     current_day = today()
     items = [record(item) for item in sorted_products(products)]
-    groups = build_daily_groups(items, per_day=30, max_days=1)
+    groups = build_daily_groups(items, per_day=max(40, target), max_days=1)
     for group in groups:
         if group.get("date") == current_day:
             return int(group.get("actual_count") or len(group.get("items") or []))
@@ -32,7 +32,7 @@ def job_count():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--target", type=int, default=30, help="Required same-day accepted products.")
+    parser.add_argument("--target", type=int, default=40, help="Required same-day accepted products.")
     parser.add_argument("--batch-jobs", type=int, default=180, help="Deprecated fixed-search compatibility option.")
     parser.add_argument("--per-job", type=int, default=6, help="Search results per DeepSeek-planned query.")
     parser.add_argument("--max-passes", type=int, default=3, help="Maximum DeepSeek agent top-up rounds.")
@@ -50,7 +50,7 @@ def main():
     if total_jobs <= 0:
         raise SystemExit("No search jobs found. Run scripts/search_jobs.py first.")
 
-    count = today_count()
+    count = today_count(args.target)
     print(f"daily_minimum initial={count} target={args.target} jobs={total_jobs}", flush=True)
     if count >= args.target:
         return
@@ -91,7 +91,7 @@ def main():
         run([sys.executable, "scripts/dedupe.py"])
         run([sys.executable, "scripts/review_categories.py", "--batch-size", str(args.review_batch_size)])
 
-        count = today_count()
+        count = today_count(args.target)
         print(f"daily_minimum pass={index + 1} count={count} target={args.target}", flush=True)
         if count >= args.target:
             return
