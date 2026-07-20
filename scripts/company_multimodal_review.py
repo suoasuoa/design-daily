@@ -188,6 +188,17 @@ def apply_reviews(products, decisions, review_date):
                 item["category"] = decision["category"]
                 recategorized += 1
             item["company_multimodal_review"] = decision
+            item["selection_scores"] = {
+                **{key: decision.get(key, 0) for key in QUALITY_FIELDS},
+                "source": COMPANY_REVIEW_SOURCE,
+                "reason": decision.get("reason", ""),
+                "visual_evidence": decision.get("visual_evidence", ""),
+                "title_image_match": decision.get("title_image_match", 0),
+            }
+            item["selection_score"] = decision.get("quality_score", 0)
+            item["ai_reason"] = decision.get("reason", "")
+            item["status"] = "scored"
+            item["updated_at"] = now_iso()
             kept.append(item)
         else:
             clone = dict(item)
