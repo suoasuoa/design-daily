@@ -373,7 +373,7 @@
     function currentNote() {
       if (state.tab === "daily") {
         const group = activeDaily();
-        if (!group) return "每天自动收集后，这里会按日期显示当天前 30 条去重情报。";
+        if (!group) return "工作日自动收集后，这里会按日期显示当天前 40 条去重情报。";
         const source = Object.entries(group.stats.by_source_family || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
         const backfill = Number((group.stats || {}).backfill_count || 0);
         return `${group.actual_count} 条 · 每日分组 · 已去重${backfill ? ` · 历史补录 ${backfill}` : ""}${source ? " · " + source : ""}`;

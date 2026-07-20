@@ -1,0 +1,2739 @@
+{
+  "generated_at": "2026-07-20T11:02:46+08:00",
+  "week": "2026-W30",
+  "group_id": "2026-W30",
+  "date_start": "2026-07-20",
+  "date_end": "2026-07-26",
+  "date_label": "2026-07-20 至 2026-07-26",
+  "title": "2026-W30 选品机会周报",
+  "target_count": 100,
+  "actual_count": 100,
+  "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
+  "stats": {
+    "by_lane": {
+      "适合改造": 60,
+      "方向参考": 30,
+      "可直接买样": 10
+    },
+    "by_category": {
+      "充电宝": 25,
+      "水杯": 15,
+      "创意厨具": 13,
+      "氛围灯": 12,
+      "冲锋衣": 11,
+      "手机壳": 7,
+      "创意桌搭": 6,
+      "日历": 5,
+      "创意礼盒": 4,
+      "中秋礼盒": 1,
+      "钥匙扣水壶": 1
+    },
+    "by_axis": {
+      "功能启发": 65,
+      "结构启发": 36,
+      "包装启发": 24,
+      "情绪启发": 17,
+      "视觉启发": 15
+    }
+  },
+  "dedupe": {
+    "method": "product id + canonical url + normalized title",
+    "unique_recommendations": 100
+  },
+  "recommendations": [
+    {
+      "id": "a7ca7680e34e",
+      "product_key": null,
+      "title": "Moonlit Delights 中秋禮盒設計］ 當法式點心化為蔚然綻放的花，表現 ...",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "情绪启发"
+      ],
+      "score": 75,
+      "score_label": "7.5",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/Cw3_PyNvVeX",
+      "image": "",
+      "summary": "摺疊形式的外包裝俐落地包覆賀卡及紅包，拆封後可逐一組裝成立體旋轉木馬，透過鑲嵌卡榫結構使木馬得以撥動旋轉。由平面賀卡轉化為桌上型趣味月曆，讓收禮者",
+      "risk": "折叠包装可组装成立体旋转木马，卡榫结构可拨动旋转",
+      "review_confidence": 9,
+      "review_reason": "折叠包装可组装成立体旋转木马，卡榫结构可拨动旋转",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "social_public_index",
+        "中秋礼盒"
+      ]
+    },
+    {
+      "id": "c7ae9f13c7f3",
+      "product_key": null,
+      "title": "Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance",
+      "category": "创意桌搭",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars",
+      "image": "",
+      "summary": "产品针对游戏玩家高频场景，功能明确，外观吸睛，售价远超35元，适合改造升级。",
+      "risk": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
+      "review_confidence": 8,
+      "review_reason": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "游戏配件",
+        "氛围灯",
+        "桌搭",
+        "RGB",
+        "design_community",
+        "创意桌搭"
+      ]
+    },
+    {
+      "id": "d1358f98f303",
+      "product_key": null,
+      "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
+      "image": "",
+      "summary": "产品为折叠礼盒，一秒成型，方便收纳，实用性强；需求集中于礼品包装场景，频率中等；受众广泛但非大众日常品；功能无显著短板；价格易达35元以上；展示直观易懂；情绪价值中等。",
+      "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
+      "review_confidence": 8,
+      "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "折叠盒",
+        "包装设计",
+        "手工DIY",
+        "social_public_index",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "e227c1fc446d",
+      "product_key": null,
+      "title": "Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA",
+      "category": "日历",
+      "action_lane": "可直接买样",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/p/DVcdTXnk4_6",
+      "image": "",
+      "summary": "随着时间的推移，不断扩展和演变，展现出生命般的活力和繁茂。就像一块吸收了能量的海绵，不断吸收周围的灵感和资源，变得更加充实和丰富。与之匹配的Newone",
+      "risk": "编织结构日历，随时间演变形态，材料与结构创新",
+      "review_confidence": 8,
+      "review_reason": "编织结构日历，随时间演变形态，材料与结构创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "social_public_index",
+        "日历"
+      ]
+    },
+    {
+      "id": "73b4c404a7e8",
+      "product_key": null,
+      "title": "This One-Second Luxury Gift Box From China Is Going Viral",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/DR16K1HDoG-",
+      "image": "",
+      "summary": "想定制创意性礼盒，这款滑盖盒千万别错过。 English Transcript. It ... because customers see your packaging first, not your product... and box ideas",
+      "risk": "滑盖结构礼盒，开箱体验创新",
+      "review_confidence": 8,
+      "review_reason": "滑盖结构礼盒，开箱体验创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "social_public_index",
+        "创意礼盒"
+      ]
+    },
+    {
+      "id": "1f4902154daa",
+      "product_key": null,
+      "title": "Flat When You Ship. Fabulous When They Open. Save on freight ...",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/DWG0uhwj22i",
+      "image": "",
+      "summary": "It's always satisfying to see a packaging idea become a real product. ... 想定制创意性礼盒，这款滑盖盒千万别错过。 English Transcript. It",
+      "risk": "扁平运输、展开成型的结构创新",
+      "review_confidence": 8,
+      "review_reason": "扁平运输、展开成型的结构创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "social_public_index",
+        "创意礼盒"
+      ]
+    },
+    {
+      "id": "686e253df22c",
+      "product_key": null,
+      "title": "磁吸锅铲套装",
+      "category": "创意厨具",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.peugeot-saveurs.com",
+      "image": "",
+      "summary": "Pinterest · 磁吸收纳锅铲套装",
+      "risk": "磁吸锅铲套装通过磁吸收纳实现厨具直立存放，结构创新节省台面空间",
+      "review_confidence": 8,
+      "review_reason": "磁吸锅铲套装通过磁吸收纳实现厨具直立存放，结构创新节省台面空间",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "Pinterest",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "12530ac39cc3",
+      "product_key": null,
+      "title": "Introducing our Changeable Photo Phone Case How you can ...",
+      "category": "手机壳",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 71,
+      "score_label": "7.1",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.instagram.com/reel/DUAXDNNjGWN",
+      "image": "",
+      "summary": "✨ Because ordinary gifts are boring Make gifts extra special with our premium customized mobile covers by ThebaeGift Here we have something",
+      "risk": "可更换照片的手机壳，交互与个性化创新",
+      "review_confidence": 8,
+      "review_reason": "可更换照片的手机壳，交互与个性化创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "social_public_index",
+        "手机壳"
+      ]
+    },
+    {
+      "id": "8e245cfe953e",
+      "product_key": null,
+      "title": "The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance",
+      "category": "日历",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar",
+      "image": "",
+      "summary": "概念新颖但实用性低，使用频率低，目标受众窄，种子发芽有不确定性。",
+      "risk": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
+      "review_confidence": 8,
+      "review_reason": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "design_community",
+        "日历",
+        "白名单来源",
+        "适合作为趋势、内容爆点或方向参考"
+      ]
+    },
+    {
+      "id": "217f67c19e2c",
+      "product_key": null,
+      "title": "趣香七夕表白礼盒创意设计 :: Behance",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/229023437/_",
+      "image": "",
+      "summary": "Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。",
+      "risk": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
+      "review_confidence": 8,
+      "review_reason": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "design_community",
+        "创意礼盒"
+      ]
+    },
+    {
+      "id": "c98039aed72e",
+      "product_key": null,
+      "title": "DiFOLD designs the collapsible and reusable 'origami bottle'",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Designboom",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.designboom.com/design/difold-collapsible-reusable-origami-bottle-06-18-2020",
+      "image": "",
+      "summary": "Jun 18, 2020 · devised around the principle idea of reducing packaging waste while creating a stylish water flask, the team at DiFOLD has designed the origami bottle. foldable, reusable, and recyclable, the ...",
+      "risk": "DiFOLD可折叠水瓶，origami结构创新，可重复使用",
+      "review_confidence": 9,
+      "review_reason": "DiFOLD可折叠水瓶，origami结构创新，可重复使用",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "editorial_main",
+        "水杯"
+      ]
+    },
+    {
+      "id": "1f6b4bc40413",
+      "product_key": null,
+      "title": "Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/gallery/winners/33632?years=2025",
+      "image": "https://award-attachments.g-mark.io/winners/2025/33632/main.jpg?size=medium",
+      "summary": "Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to do so by changing their diet. It makes lightly seasoned meals healthier and more enjoyable. The tableware and cutlery act as tools to help start and ma",
+      "risk": "通过电刺激增强咸味感知，帮助减盐饮食，功能与交互创新。",
+      "review_confidence": 9,
+      "review_reason": "通过电刺激增强咸味感知，帮助减盐饮食，功能与交互创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "GOOD DESIGN GOLD AWARD, GOOD DESIGN BEST 100",
+        "Good Design Award"
+      ]
+    },
+    {
+      "id": "89a5d49c0c4c",
+      "product_key": null,
+      "title": "LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/livelarq/quartz-bottle",
+      "image": "",
+      "summary": "LARQ Bottle采用UV-C LED自清洁和净水技术，可消灭99.9999%生物污染物，创新点明确。。页面证据：No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.",
+      "risk": "UV-C LED净水与自清洁功能，消灭99.9999%生物污染物",
+      "review_confidence": 9,
+      "review_reason": "UV-C LED净水与自清洁功能，消灭99.9999%生物污染物",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "44c7bf29c64e",
+      "product_key": null,
+      "title": "LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/livelarq/larq-bottle-purevis-2-purify-track-self-cleaning",
+      "image": "",
+      "summary": "LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，技术创新明显。。页面证据：The smarter and better self-cleaning bottle with two-stage purification and new app integration for hydration tracking and reminders.",
+      "risk": "两级净化和App跟踪，自清洁功能升级，智能化",
+      "review_confidence": 9,
+      "review_reason": "两级净化和App跟踪，自清洁功能升级，智能化",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "d560c879735f",
+      "product_key": null,
+      "title": "Turn any mug into a travel mug - Yanko Design",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2019/01/31/turn-any-mug-into-a-travel-mug",
+      "image": "https://www.yankodesign.com/images/design_news/2019/01/turn-any-mug-into-a-travel-mug/portavia_universal_lid_layout.jpg",
+      "summary": "通用旅行杯盖PortaVia，可适配任何杯子，防溅便携，结构创新。页面证据：https://youtu.be/i5LMSBxFX18 The PortaVia Universal To-Go Lid does something quite marvelous. It retrofits onto the top of any drinking vessel (mugs, cups, glasses, usually have roughly the same diameter at the lip) and instantly turns it into a travel cup that you can carry around with you without splashing your drink. It covers the mouth of",
+      "risk": "通用杯盖适配任何杯子，防溅便携，结构创新明确",
+      "review_confidence": 9,
+      "review_reason": "通用杯盖适配任何杯子，防溅便携，结构创新明确",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "54d1d8b6e05d",
+      "product_key": null,
+      "title": "LARQ Bottle is a sustainable and travel-friendly bottle ...",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "DesignWanted",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://designwanted.com/larq-bottle-water-purifier-uv-light",
+      "image": "",
+      "summary": "Sep 20, 2019 · The LARQ Bottle is a reusable, stainless-steel and self-cleaning water bottle, which purifies drinking water killing bacteria, using UV light tech.",
+      "risk": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
+      "review_confidence": 9,
+      "review_reason": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "editorial_main",
+        "水杯"
+      ]
+    },
+    {
+      "id": "363e1710fd8c",
+      "product_key": null,
+      "title": "This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/07/05/this-presenter-remote-will-replace-your-mouse-mic-ai-translator-and-usb-c-hub",
+      "image": "https://www.yankodesign.com/images/design_news/2026/07/this-presenter-remote-will-replace-your-mouse-mic-ai-translator-and-usb-c-hub/PowerRider_GPT_5_Powered_Presenter_Endless_Possibilities_hero.jpg",
+      "summary": "This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub The modern workflow is often a series of disconnected actions; typing in one window, clicking in another, and plugging in peripherals just to get started....",
+      "risk": "Presenter Remote 集成鼠标、麦克风、AI翻译和USB-C Hub，创新在于多功能一体化。",
+      "review_confidence": 9,
+      "review_reason": "Presenter Remote 集成鼠标、麦克风、AI翻译和USB-C Hub，创新在于多功能一体化。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "1385098d1e59",
+      "product_key": null,
+      "title": "This 100% plastic-free bottle comes with a reusable filter that can ...",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2021/10/25/this-100-plastic-free-bottle-comes-with-a-reusable-filter-that-can-literally-purify-water-forever",
+      "image": "",
+      "summary": "To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro",
+      "risk": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
+      "review_confidence": 9,
+      "review_reason": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "editorial_main",
+        "水杯"
+      ]
+    },
+    {
+      "id": "651a6b508452",
+      "product_key": null,
+      "title": "Update 1: We Did It Again! · Devoshub Ultra-Thin Power bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/duoslim/devoshub-ultra-thin-power-bank",
+      "image": "",
+      "summary": "超薄磁吸设计配合内置线材，实用且创新，但Kickstarter项目存在发货和容量风险。",
+      "risk": "0.19英寸超薄，磁吸设计，内置双向USB-C线，便携与功能创新",
+      "review_confidence": 9,
+      "review_reason": "0.19英寸超薄，磁吸设计，内置双向USB-C线，便携与功能创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "便携充电宝",
+        "磁吸充电宝",
+        "超薄充电宝",
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "ba3d5604d3d7",
+      "product_key": null,
+      "title": "elio: The water bottle that disappears in your pocket by Max Gunawan — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/elioeveryday/elio-waterbottle",
+      "image": "",
+      "summary": "实用性强（可折叠节省空间），高频需求（饮水），多功能（防漏、洗碗机安全），结构创新易理解；但目标人群可能偏小（旅行/户外爱好者），价格未知，情绪价值一般。",
+      "risk": "可折叠扁平设计，750ml容量压扁至3cm，防漏且洗碗机安全",
+      "review_confidence": 9,
+      "review_reason": "可折叠扁平设计，750ml容量压扁至3cm，防漏且洗碗机安全",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent",
+        "market_signal_strong",
+        "水杯"
+      ]
+    },
+    {
+      "id": "124cf4c0fb52",
+      "product_key": null,
+      "title": "The Luma Bottle | A Self-Cleaning Reusable Water... — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/lumabottle/the-luma-bottle-a-self-cleaning-reusable-water-bot",
+      "image": "",
+      "summary": "Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细菌，在材料或功能上有明确创新。。页面证据：A reusable water bottle that harnesses the power of digital UV-C light to kill 99.999% of bacteria in your water and bottle.",
+      "risk": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
+      "review_confidence": 9,
+      "review_reason": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "6268223abab5",
+      "product_key": null,
+      "title": "HYDAWAY. The world’s most collapsible water bottle",
+      "category": "钥匙扣水壶",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Indiegogo",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.indiegogo.com/en/projects/nikisinglaub/hydaway-the-world-s-most-collapsible-water-bottle--2",
+      "image": "",
+      "summary": "Meet HYDAWAY. The Collapsible, Ultra-Stashable, Planet-Friendly, Go-Anywhere Way to Stay Hydrated!",
+      "risk": "可折叠至极小体积，便携挂环设计，结构创新实现超压缩",
+      "review_confidence": 9,
+      "review_reason": "可折叠至极小体积，便携挂环设计，结构创新实现超压缩",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "b6cb634d9bfd",
+      "product_key": null,
+      "title": "xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/if%25252525252525252525252525252525252525252525252525252525252525252528now%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529=sysdate%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529,sleep%2525252525252525252525252525252525252525252525252525252525252525252815%25252525252525252525252525252525252525252525252525252525252525252529,0%25252525252525252525252525252525252525252525252525252525252525252529/xcool-3-in-1-power-bank",
+      "image": "",
+      "summary": "Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C",
+      "risk": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
+      "review_confidence": 9,
+      "review_reason": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "51fcb61d06c2",
+      "product_key": null,
+      "title": "Cooksy AI烹饪助手 | Uncrate",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://uncrate.com/cn/article/cooksy-ai-cooking-assistant",
+      "image": "",
+      "summary": "Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很大程度上取决于您的经验以及谁在帮忙。 Cooksy是一个全新的烹饪助手，它是您会发现的最佳厨房合作伙伴之一。小型设备安装在炉灶上方，每次引导您做饭。该设备使用视频和热成像技术来检测您正在烹饪的食物，并提供直接投射到手机上 ...",
+      "risk": "AI cooking assistant using video and thermal imaging to guide cooking, projects onto phone.",
+      "review_confidence": 9,
+      "review_reason": "AI cooking assistant using video and thermal imaging to guide cooking, projects onto phone.",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "market_signal",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "aad41e19ed94",
+      "product_key": null,
+      "title": "Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/30/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work",
+      "image": "https://www.yankodesign.com/images/design_news/2026/05/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work/trash-bag-00.jpg",
+      "summary": "Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have a drawer, a cabinet corner, or a crumpled bag stuffed inside another bag where we hoard the thin plastic produce bags...",
+      "risk": "利用塑料袋收纳，解决厨房塑料袋杂乱问题，功能与场景创新",
+      "review_confidence": 9,
+      "review_reason": "利用塑料袋收纳，解决厨房塑料袋杂乱问题，功能与场景创新",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "998e5b17c9cd",
+      "product_key": null,
+      "title": "Ember Mug 2 Black 10 oz",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/ember-mug-2",
+      "image": "https://shop.uncrate.com/cdn/shop/files/ember_CM1910_00-black.jpg?v=1764003003&width=533",
+      "summary": "Uncrate Shop product listing. Direct shop product page with product image and premium price signal.",
+      "risk": "Ember Mug 2，智能温控杯，在功能上有明显创新（APP控温）。",
+      "review_confidence": 9,
+      "review_reason": "Ember Mug 2，智能温控杯，在功能上有明显创新（APP控温）。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Uncrate Shop"
+      ]
+    },
+    {
+      "id": "9c408082aded",
+      "product_key": null,
+      "title": "Ember Cup Slate Black 14 oz",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/ember-cup",
+      "image": "https://shop.uncrate.com/cdn/shop/files/ember_CM21C_17-slate-lid.jpg?v=1764366586&width=533",
+      "summary": "Uncrate Shop product listing. Direct shop product page with product image and premium price signal.",
+      "risk": "Ember Cup，智能温控杯，在功能上有明显创新（APP控温）。",
+      "review_confidence": 9,
+      "review_reason": "Ember Cup，智能温控杯，在功能上有明显创新（APP控温）。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Uncrate Shop"
+      ]
+    },
+    {
+      "id": "1303bfa42924",
+      "product_key": null,
+      "title": "TotalBoost Mini Pro Power Bank | Pocket-Sized, Wireless ...",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/@@JXUyG/totalboost-mini-pro-2",
+      "image": "",
+      "summary": "Stay charged anywhere with a compact 5,000mAh power bank that magnetically attaches, displays battery life, and works with nearly any device. Includes kickstand, flashlight & travel case.",
+      "risk": "5000mAh磁吸无线充电宝，带支架、手电筒和旅行盒，功能集成创新",
+      "review_confidence": 9,
+      "review_reason": "5000mAh磁吸无线充电宝，带支架、手电筒和旅行盒，功能集成创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "04310998ced5",
+      "product_key": null,
+      "title": "The Reversible ALTI Desk Mat Includes Wireless Charging",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Cool Material",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://coolmaterial.com/lifestyle/home/the-reversible-alti-desk-mat-includes-wireless-charging",
+      "image": "",
+      "summary": "ALTI无线充电桌垫，双面材质（皮革/毛毡），内置无线充电，实用创新。页面证据：While our previous favorites were standard cutting mats, those were quickly replaced once we found out about the ALTI Wireless Charging Desk Mat. The ALTI features a premium vegan leather surface on one side and plush felt on the other, with a built-in wireless charging panel capable |.",
+      "risk": "无线充电集成于双面桌垫（皮革/毛毡），功能与材质创新",
+      "review_confidence": 9,
+      "review_reason": "无线充电集成于双面桌垫（皮革/毛毡），功能与材质创新",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "8820577a6e13",
+      "product_key": null,
+      "title": "Nestout 10000mAh Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/10000mah-power-bank",
+      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/nestout-10K-compact-portable-power-bank-waterproof-battery-outdoor-gear-DE-NEST10000ABE-hero-shot.jpg?v=1765293275",
+      "summary": "Compact, tough, and built to roam, this 10,000mAh power bank brings waterproof, dustproof, and shockproof protection to your everyday carry. Weighing just half a pound, it delivers fast USB-C charging with enough capacit Listed price signal: $49.99.",
+      "risk": "10000mAh，防水防尘防震，半磅重，USB-C快充，户外耐用设计",
+      "review_confidence": 8,
+      "review_reason": "10000mAh，防水防尘防震，半磅重，USB-C快充，户外耐用设计",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Joe"
+      ]
+    },
+    {
+      "id": "b92e31a81dee",
+      "product_key": null,
+      "title": "Nestout 15000mAh Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/15000mah-power-bank",
+      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/nestout-15K-compact-portable-power-bank-waterproof-battery-outdoor-gear-DE-NEST15000ABE-hero-shot.jpg?v=1765984924",
+      "summary": "Built for the wild but refined enough for the city, this 15,000mAh power bank shrugs off water, dust, and impact with a shock-absorbent core wrapped in a rugged shell. Compact at just 0.8 pounds, it delivers 32W of fast Listed price signal: $59.99.",
+      "risk": "15000mAh，32W快充，防水防震，0.8磅轻量，户外耐用",
+      "review_confidence": 8,
+      "review_reason": "15000mAh，32W快充，防水防震，0.8磅轻量，户外耐用",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Joe"
+      ]
+    },
+    {
+      "id": "d6e1cb7cf717",
+      "product_key": null,
+      "title": "Nestout 5000mAh Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/5000mah-power-bank",
+      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/nestout-5K-compact-portable-power-bank-waterproof-battery-outdoor-gear-DE-NEST5000AMA-hero-shot.jpg?v=1765293269",
+      "summary": "This rugged, waterproof portable charger from NESTOUT is built to keep your devices powered no matter where your adventures take you. It easily fits in your pack or pocket, while its resilient design features a hard exte Listed price signal: $39.99.",
+      "risk": "5000mAh，防水防震，硬质外壳，口袋大小，户外便携",
+      "review_confidence": 8,
+      "review_reason": "5000mAh，防水防震，硬质外壳，口袋大小，户外便携",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Joe"
+      ]
+    },
+    {
+      "id": "b9b2c9823cc3",
+      "product_key": null,
+      "title": "World’s Most Powerful 310W 20,000mAh Power Bank - Indiegogo",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Indiegogo",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.indiegogo.com/en/projects/aohiteam/world-s-most-powerful-310w-20-000mah-power-bank",
+      "image": "",
+      "summary": "Meet the world's most powerful 20,000mAh power bank with groundbreaking 310W output. It can charge a MacBook Pro 16\" to 50% in 30 minutes while simultaneously powering other devices with dual 140W USB-C ports. With lightning-fast 180W self-charging, you'll spe",
+      "risk": "310W输出20000mAh充电宝，双140W USB-C口，180W自充，功率创新。",
+      "review_confidence": 9,
+      "review_reason": "310W输出20000mAh充电宝，双140W USB-C口，180W自充，功率创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "9e5b8d7f455f",
+      "product_key": null,
+      "title": "JuiceBank Pro 5-in-1 Power Bank - Grommet",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/gadgets/juicebank-pro-5-in-1-power-bank",
+      "image": "",
+      "summary": "Running low on battery while you’re on the go shouldn’t slow you down. The JuiceBank Pro is a compact 10,000 mAh 5-in-1 charger designed to handle all of your daily devices at once. Place your phone or earbuds onto the larger MagSafe-compatible wireless chargi",
+      "risk": "10000mAh 5合1充电器，MagSafe兼容，可同时充手机和耳机，功能集成创新",
+      "review_confidence": 9,
+      "review_reason": "10000mAh 5合1充电器，MagSafe兼容，可同时充手机和耳机，功能集成创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "9b37adc7e8d0",
+      "product_key": null,
+      "title": "Red Dot Design Award: Chefdeluxe",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/chefdeluxe-48451",
+      "image": "",
+      "summary": "Chefdeluxe brings a fresh and new cooking experience to busy individuals. It is designed to be cost, space, time and energy-efficient, as well as to reduce food waste. Chefdeluxe combines multiple kitchen appliances into one self-cleaning, sleek and...",
+      "risk": "多合一自清洁烹饪设备，节省空间、时间和能源",
+      "review_confidence": 9,
+      "review_reason": "多合一自清洁烹饪设备，节省空间、时间和能源",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "award_gallery",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "074e588293c8",
+      "product_key": null,
+      "title": "Drop-proof, under 28 grams, and finally beautiful: Benks’ new Kevlar iPhone cases put aesthetics first",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/26/drop-proof-under-28-grams-and-finally-beautiful-benks-new-kevlar-iphone-cases-put-aesthetics-first",
+      "image": "https://www.yankodesign.com/images/design_news/2026/05/drop-proof-27-grams-and-finally-beautiful-benks-new-kevlar-iphone-cases-put-aesthetics-first/BENKS_ArmorEdge_Cover_05.jpg",
+      "summary": "Drop-proof, under 28 grams, and finally beautiful: Benks’ new Kevlar iPhone cases put aesthetics first There is a reason Kevlar keeps showing up in premium phone accessories. The material brings a rare combination of low weight, tactile ric",
+      "risk": "Kevlar材质，防摔且重量低于28克，材料与轻量化创新",
+      "review_confidence": 9,
+      "review_reason": "Kevlar材质，防摔且重量低于28克，材料与轻量化创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "da3fed59263e",
+      "product_key": null,
+      "title": "Anker 无线充电宝",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Instagram",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.anker.com/products/a1647",
+      "image": "",
+      "summary": "Anker 633 MagGo无线充电宝",
+      "risk": "磁吸无线充电宝，兼容MagSafe，便携与无线功能结合",
+      "review_confidence": 9,
+      "review_reason": "磁吸无线充电宝，兼容MagSafe，便携与无线功能结合",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "充电宝",
+        "无线"
+      ]
+    },
+    {
+      "id": "9d1ffadf82a9",
+      "product_key": null,
+      "title": "Cable Cradle - by Andrew Ferrier / Core77 Design Awards",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Core77",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://designawards.core77.com/home-living/85999/Cable-Cradle",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/899986_lead_400_85999__sharing.jpg",
+      "summary": "Cable Cradle线缆管理系统替换传统插座面板，直接解决桌面线缆整理问题，具有结构创新。。页面证据：Core77 Design Awards 2019. Results Announced for Community Choice Prize See All Winners. Cable Cradle. Cable Cradle is a general cable management solution that replaces your conventional electrical outlet faceplates.",
+      "risk": "替换传统插座面板，集成线缆管理，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "替换传统插座面板，集成线缆管理，结构创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "9a51a4f77203",
+      "product_key": null,
+      "title": "Shargeek 300: The Next Gen Power Beast - Kickstarter",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/edc-power-bank/shargeek300",
+      "image": "",
+      "summary": "产品性能卓越，设计独特，但价格较高，目标用户偏高端数码爱好者，大众市场接受度可能有限。",
+      "risk": "透明铝合金机身搭配RGB灯光自定义，300W超高功率",
+      "review_confidence": 8,
+      "review_reason": "透明铝合金机身搭配RGB灯光自定义，300W超高功率",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "高功率充电宝",
+        "透明设计",
+        "RGB定制",
+        "大容量",
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "956b99b41486",
+      "product_key": null,
+      "title": "This bottle is your ultimate all-in-one kitchen tool! - Yanko Design",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2018/04/16/this-bottle-is-your-ultimate-all-in-one-kitchen-tool",
+      "image": "https://www.yankodesign.com/images/design_news/2018/04/auto-draft/bin_8_1.jpg",
+      "summary": "Bin 8 combines eight kitchen tools (funnel, measuring cup, etc.) into a wine bottle form. Structural and functional innovation.。页面证据：https://youtu.be/9eqHhhp3gyg?t=2 While it occupies the exact footprint of a wine bottle on your kitchen shelf, the Bin 8 is actually pretty much all the kitchen accessories you need, combined into one 'Swiss Army Bottle' of sorts. A prime example of utilitarian, artistic, and thoughtful Japanese design, the Bin 8 is a combination of eight kitchen",
+      "risk": "八种厨房工具集成于酒瓶形，结构创新节省空间",
+      "review_confidence": 9,
+      "review_reason": "八种厨房工具集成于酒瓶形，结构创新节省空间",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "03069518ca0d",
+      "product_key": null,
+      "title": "Voltiva GO: 4-in-1 Foldable Wireless 10000mAh Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/voltivago/voltiva-go-4-in-1-wireless-charger-and-10000mah-power-bank",
+      "image": "",
+      "summary": "Voltiva Go is raising funds for Voltiva GO: 4-in-1 Foldable Wireless 10000mAh Power Bank on Kickstarter! Charge your Phone, Watch, and Buds simultaneously. 10000mAh capacity, 27W PD, digital power display & a sleek zinc alloy hidden stand.",
+      "risk": "折叠式无线充电宝，可同时充手机、手表、耳机，带隐藏支架，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "折叠式无线充电宝，可同时充手机、手表、耳机，带隐藏支架，结构创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "e8f9acfbc616",
+      "product_key": null,
+      "title": "Misenware: Everything-Safe Food Containers by Misen — Kickstarter",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/misenkitchen/misenware",
+      "image": "",
+      "summary": "Universally stackable stainless steel containers. Safe for microwave (!), grill, oven, freezer, dishwasher—and anywhere else food goes.",
+      "risk": "不锈钢食品容器可堆叠且适用于微波炉、烤箱、冰箱等多种场景，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "不锈钢食品容器可堆叠且适用于微波炉、烤箱、冰箱等多种场景，结构创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "market_signal",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "411bdccde47a",
+      "product_key": null,
+      "title": "This Compact Grill Plate Cooks a Perfect Steak Over Any Heat Source & Packs Flat When You’re Done",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/06/27/this-compact-grill-plate-cooks-a-perfect-steak-over-any-heat-source-packs-flat-when-youre-done",
+      "image": "https://www.yankodesign.com/images/design_news/2026/06/this-compact-grill-plate-cooks-a-perfect-steak-over-any-heat-source-packs-flat-when-youre-done/Folding-Plate_Frying-Pan_grill_camping-3.jpg",
+      "summary": "This Compact Grill Plate Cooks a Perfect Steak Over Any Heat Source & Packs Flat When You’re Done Some grill pans spend their days at the back of a cabinet, too heavy to bother with and too uneven to trust. Then there are...",
+      "risk": "可折叠平放收纳的烤盘，结构创新解决便携与烹饪需求",
+      "review_confidence": 9,
+      "review_reason": "可折叠平放收纳的烤盘，结构创新解决便携与烹饪需求",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "b839b052767a",
+      "product_key": null,
+      "title": "KEEGO Squeezable Metal Water Bottle | Cool Material",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Cool Material",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://coolmaterial.com/gear/keego-squeezable-metal-water-bottle",
+      "image": "",
+      "summary": "Mar 13, 2018 · People have turned to metal water bottles to avoid potential health risks associated with cheap plastic versions. Those are great for sitting on your desk, but they aren’t ideal for sport. KEEGO is the metal water bottle perfect for biking, runn",
+      "risk": "金属水瓶可挤压，适合运动使用，材料与结构创新",
+      "review_confidence": 9,
+      "review_reason": "金属水瓶可挤压，适合运动使用，材料与结构创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "水杯"
+      ]
+    },
+    {
+      "id": "3a3b4ea05e50",
+      "product_key": null,
+      "title": "SlimCharge | Ultra-Slim Magnetic Power Bank | Grommet",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/gadgets/slimcharge",
+      "image": "",
+      "summary": "Ultra-slim magnetic power bank with hands-free charging, built-in cable, and pocket-ready design for everyday phone power. Save 20% on Grommet",
+      "risk": "超薄磁吸充电宝，内置线缆，免提充电，口袋设计，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "超薄磁吸充电宝，内置线缆，免提充电，口袋设计，结构创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "be432caaec18",
+      "product_key": null,
+      "title": "Coleman 4 合 1 便携式丙烷烹饪系统 | Uncrate",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://uncrate.com/cn/article/coleman-4-in-1-portable-propane-cooking-system",
+      "image": "",
+      "summary": "在为海滩、露营地或体育场停车场打包行李时，空间通常非常宝贵。 Coleman 的 4 合 1 便携式烹饪系统结合了炒锅、烤架、煎锅、炉子，在您的装载中占有一席之地。丙烷系统可产生高达 7,000 BTU 的烹饪功率，并使用 Instastart 按钮点火装置提供无与伦比的照明。最多可提供 100 平方英寸的烹饪区域 ...",
+      "risk": "4-in-1 portable propane cooking system combining wok, grill, griddle, stove with Instastart ignition.",
+      "review_confidence": 9,
+      "review_reason": "4-in-1 portable propane cooking system combining wok, grill, griddle, stove with Instastart ignition.",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "market_signal",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "8b16905cde58",
+      "product_key": null,
+      "title": "Kalar Kitchen活力午餐杯- 获奖作品- 中国设计智造大奖（DIA）官方网站",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "DIA 中国设计智造大奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.di-award.org/user/logout?redirect_url=%2Fcollections%2Fdetail%2F201.html.html%3Fpage_size%3D1000",
+      "image": "",
+      "summary": "都一一可以满足；饭盒顶盖即杯盖，可以直接做水杯，最大限度一物多用；铂金硅胶餐垫设计，餐垫是硅胶的，防水、防油、防滑，还很好清洗。即可以做外带包装，又可以做餐 ...",
+      "risk": "饭盒顶盖可作水杯，一物多用，硅胶餐垫设计，结构创新",
+      "review_confidence": 9,
+      "review_reason": "饭盒顶盖可作水杯，一物多用，硅胶餐垫设计，结构创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "award_gallery",
+        "水杯"
+      ]
+    },
+    {
+      "id": "2d8cbfb001b8",
+      "product_key": null,
+      "title": "Joseph Joseph砧板",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.josephjoseph.com/products/chopping-boards",
+      "image": "",
+      "summary": "Pinterest · Joseph Joseph分类菜板，卫生设计",
+      "risk": "Joseph Joseph分类菜板采用颜色编码和倾斜收纳架，卫生与收纳结构创新",
+      "review_confidence": 9,
+      "review_reason": "Joseph Joseph分类菜板采用颜色编码和倾斜收纳架，卫生与收纳结构创新",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Pinterest",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "7e8d1ef00630",
+      "product_key": null,
+      "title": "SnapPower GuideLight Outlet Lights | Grommet",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/home-garden/guidelight-2-plus",
+      "image": "",
+      "summary": "SnapPower's GuideLight offers built-in LED lights in an outlet cover plate. Activated at night and turns off in the morning. Get 20% off GuideLight on Grommet.",
+      "risk": "Built-in LED lights in an outlet cover plate that activate at night and turn off in morning, a structural and functional innovation for night lighting.",
+      "review_confidence": 9,
+      "review_reason": "Built-in LED lights in an outlet cover plate that activate at night and turn off in morning, a structural and functional innovation for night lighting.",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "2db7181fbbf4",
+      "product_key": null,
+      "title": "Obsoless Lightning to USB-C iPhone Case | Uncrate",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://uncrate.com/obsoless-lightning-to-usb-c-iphone-case",
+      "image": "https://uncrate.com/p/2025/07/obsoless-usb-c-case-1.jpg",
+      "summary": "产品解决旧iPhone用户USB-C需求，实用创新但适用面窄，功能有短板（厚度、转换损耗），价格未知但预期偏高。",
+      "risk": "为Lightning接口iPhone增加USB-C端口，功能改造创新",
+      "review_confidence": 9,
+      "review_reason": "为Lightning接口iPhone增加USB-C端口，功能改造创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "tech",
+        "iphone accessories",
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "d8dcff102c9b",
+      "product_key": null,
+      "title": "Comments » OviStand Up, the Ultralight Foldable Monitor Stand",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/ovilli/ovistand-up-the-ultralight-foldable-monitor-riser",
+      "image": "",
+      "summary": "产品便携且实用，设计易于理解，但目标用户群体较窄，且可能存在稳定性风险。",
+      "risk": "超轻可折叠显示器支架，世界最轻最薄，折叠便携",
+      "review_confidence": 9,
+      "review_reason": "超轻可折叠显示器支架，世界最轻最薄，折叠便携",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "便携",
+        "折叠",
+        "显示器支架",
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "02dc75bb08fb",
+      "product_key": null,
+      "title": "Meet IKEA’s Sjömärke – a gadget that turns any desk/table into an invisible wireless charging surface! - Yanko Design",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2021/09/20/meet-ikeas-sjomarke-a-gadget-that-turns-any-desk-table-into-an-invisible-wireless-charging-surface",
+      "image": "https://www.yankodesign.com/images/design_news/2021/09/ikea-sjomarke-turns-any-desk-or-side-table-into-an-invisible-wireless-charging-surface/IKEA-Sjomarke-Wireless-Charger_gadgets-Hero2.jpg",
+      "summary": "IKEA Sjömärke隐形无线充电表面，可嵌入桌面实现隔空充电，创新桌面充电解决方案。。页面证据：https://www.youtube.com/watch?v=K0IvUXG-8wQ&ab_channel=IKEANederland Looking for a minimalist accessory that can turn your boring desk or side table into a wireless charging hub? A gadget that hides away from plain sight and charges gadgets just by placing them on the furniture surface? It’s a fact, no one likes the mess of cluttered wires. Reason enough for wireless charging",
+      "risk": "隐形无线充电表面，嵌入桌面实现隔空充电",
+      "review_confidence": 9,
+      "review_reason": "隐形无线充电表面，嵌入桌面实现隔空充电",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "faab3c8b64e3",
+      "product_key": null,
+      "title": "The Secret to the Ultimate iPhone 17 Pro Case Was Hiding in Your Running Shoes… - Yanko Design",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/09/13/the-secret-to-the-ultimate-iphone-17-pro-case-was-hiding-in-your-running-shoes",
+      "image": "https://www.yankodesign.com/images/design_news/2025/09/draft-torras/TORRAS_Q3_Air_iPhone_Cover_hero.jpg",
+      "summary": "TORRAS Q3 Air 手机壳集成360度旋转支架技术，属于第三代支架设计，功能创新明确。。页面证据：https://youtu.be/MhYLPrs2r28 Phone cases have become predictably boring. Walk into any electronics store and you will find rows of generic plastic shells that do little more than prevent scratches. Even Apple has its own case line, but it feels less like a consciously designed product and more like an afterthought. But TORRAS has taken a completely",
+      "risk": "集成360度旋转支架，第三代支架设计，功能创新明确",
+      "review_confidence": 9,
+      "review_reason": "集成360度旋转支架，第三代支架设计，功能创新明确",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "8f5112898e1d",
+      "product_key": null,
+      "title": "PICDANCE 会跳舞的动态手机壳- 普象网",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "普象网",
+      "source_family": "设计社区",
+      "source_quality": "standard",
+      "url": "https://www.puxiang.com/galleries/0816d5186535f8532748ce210dc7a3e5",
+      "image": "",
+      "summary": "2023-2024年期间，KIWIDESIGN与PICDANCE团队共同设计开发了该品牌同名手机壳。PICDANCE手机壳通过超高集成度的LED矩阵屏幕技术方案在仅3.6MM的厚度空间实现了随心换图自由 ...",
+      "risk": "LED矩阵屏幕在3.6mm厚度内实现动态图案显示",
+      "review_confidence": 9,
+      "review_reason": "LED矩阵屏幕在3.6mm厚度内实现动态图案显示",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "design_community",
+        "手机壳"
+      ]
+    },
+    {
+      "id": "bbc27068c6cb",
+      "product_key": null,
+      "title": "纳米箱电池续命iPhone手机壳 - Uncrate",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://uncrate.com/cn/article/nanocase-battery-extending-iphone-case",
+      "image": "",
+      "summary": "纳米箱可以通过冷却来帮你延长你的电池手机壳中,它配有一个很薄的石墨烯层,可以驱散你的手机背面的热量",
+      "risk": "内置石墨烯散热层，通过冷却延长电池寿命，功能创新明确",
+      "review_confidence": 9,
+      "review_reason": "内置石墨烯散热层，通过冷却延长电池寿命，功能创新明确",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "手机壳"
+      ]
+    },
+    {
+      "id": "a3ba600a327d",
+      "product_key": null,
+      "title": "LEDVANCE AI Companion Lighting Robot",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/ledvance-ai-companion-lighting-robot/763544",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1180348/763544/5905cf6b-0f65-46df-bb36-75b88e158abd/1_ai_companion_lighting_robot.jpeg",
+      "summary": "iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of intelligent, responsive luminaires by combining six-axis robotics, AI vision, and affective computing. It proactively adapts to five key user activities with optimized beam distribution, arm",
+      "risk": "Combines six-axis robotics, AI vision, and affective computing to proactively adapt lighting to user activities.",
+      "review_confidence": 9,
+      "review_reason": "Combines six-axis robotics, AI vision, and affective computing to proactively adapt lighting to user activities.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "6fea4188d13f",
+      "product_key": null,
+      "title": "Not enough pockets to carry your stuff? This outdoor jacket can instantly transform into a 35L backpack - Yanko Design",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.yankodesign.com/2022/02/15/not-enough-pockets-to-carry-your-stuff-this-outdoor-jacket-can-instantly-transform-into-a-35l-backpack",
+      "image": "https://www.yankodesign.com/images/design_news/2022/02/versatile_jacket_morphs_into_a_35L_backpack_hero.jpg",
+      "summary": "产品创新地将外套与背包结合，实用性强，适合旅行和户外活动。但变形机构的复杂性和市场教育可能成为障碍，潜在风险包括耐用性和用户适应度。",
+      "risk": "外套可翻转变形为35L背包，结构创新，防水透气。",
+      "review_confidence": 9,
+      "review_reason": "外套可翻转变形为35L背包，结构创新，防水透气。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "户外",
+        "多功能",
+        "变形",
+        "背包",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "c6a5ff77f696",
+      "product_key": null,
+      "title": "Remember Aerogel? This insulated outdoor jacket has an aerogel layer, giving you -40°F protection - Yanko Design",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.yankodesign.com/2024/02/28/remember-aerogel-this-insulated-outdoor-jacket-has-an-aerogel-layer-giving-you-40f-protection",
+      "image": "https://www.yankodesign.com/images/design_news/2024/02/remember-aerogel-this-insulated-outdoor-jacket-has-an-aerogel-layer-giving-you-40f-protection/Aerogel_Insulated_3_in_1_Jacket_with_20_Pockets_layout.jpg",
+      "summary": "气凝胶隔热材料极具创新，适合极寒环境，实用性高，但目标受众窄，频率低。价格符合要求，功能无明显短板，但需市场教育。",
+      "risk": "内层气凝胶隔热层，提供-40°F防护，材料创新。",
+      "review_confidence": 9,
+      "review_reason": "内层气凝胶隔热层，提供-40°F防护，材料创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "design_community",
+        "冲锋衣",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "c54961925b73",
+      "product_key": null,
+      "title": "The $99 Gadget That Clears 3 Devices Off Your Nightstand",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/07/01/the-99-gadget-that-clears-3-devices-off-your-nightstand",
+      "image": "https://www.yankodesign.com/images/design_news/2026/07/the-99-gadget-that-clears-3-devices-off-your-nightstand/divoom-flowtoo-bedside-speaker-alarm-clock-05.jpg",
+      "summary": "The $99 Gadget That Clears 3 Devices Off Your Nightstand The nightstand has become a staging ground for technology. Between a phone, a white noise machine, a lamp, and whatever book you’re pretending to read...",
+      "risk": "多功能床头设备集成音箱、闹钟、夜灯，功能融合创新",
+      "review_confidence": 9,
+      "review_reason": "多功能床头设备集成音箱、闹钟、夜灯，功能融合创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
+      ]
+    },
+    {
+      "id": "0849fb2e8b5f",
+      "product_key": null,
+      "title": "Loop 大理石万年历：以地月为灵感，永不翻页的永续桌面日历！",
+      "category": "日历",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "普象网",
+      "source_family": "设计社区",
+      "source_quality": "standard",
+      "url": "https://www.puxiang.com/galleries/9467bb326146c76b5e101bd0bdcd0194",
+      "image": "",
+      "summary": "Loop万年历采用深浅双色同心大理石环结构，深色内环雕刻月份标识，浅色外环刻日期，双环可独立旋转，依靠纯机械结构实现万年历功能，无需纸张、电子元件。石材设计兼顾环保痛点：天然石材开采仅 25%-30% 能制成成品，其余多沦为废料，这件作品将石材废料转化为长久耐用器物；天然大理石 ...",
+      "risk": "双环旋转纯机械万年历，利用大理石废料，结构创新且可持续",
+      "review_confidence": 9,
+      "review_reason": "双环旋转纯机械万年历，利用大理石废料，结构创新且可持续",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "design_community",
+        "日历"
+      ]
+    },
+    {
+      "id": "46e1f4938b6d",
+      "product_key": null,
+      "title": "Philips AI BrightMate Table Lamp",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/philips-ai-brightmate-table-lamp/744020",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/5738/744020/adbb32dc-5e06-4866-9dbf-299d88f99356/philips_ai_brightmate_table_lamp_1_key.jpg",
+      "summary": "iF Design Award · BrightMate is a playful AI lighting companion that blends functionality, entertainment, and companionship for an emotionally engaging home experience. Beyond hundreds of preset lighting scenes, it uses generative AI to create unlimited light effects",
+      "risk": "Generative AI creates custom lighting scenes based on user input, blending functionality with emotional companionship.",
+      "review_confidence": 9,
+      "review_reason": "Generative AI creates custom lighting scenes based on user input, blending functionality with emotional companionship.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "a7fcc4a99f39",
+      "product_key": null,
+      "title": "Red Dot Design Award: LightStrip",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 81,
+      "score_label": "8.1",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/lightstrip-37206",
+      "image": "",
+      "summary": "LightStrip台灯，通过抬臂开关，360度旋转臂，触控调光，交互方式创新。。页面证据：This table lamp allows interactive control: in order to turn it on, the arm of the lamp is pivoted up and then adjusted as needed. The 360-degree rotatable arm offers a wide range of illumination angles. The light can be dimmed via touch control. Thanks...",
+      "risk": "抬臂开关交互，360度旋转臂，触控调光。",
+      "review_confidence": 9,
+      "review_reason": "抬臂开关交互，360度旋转臂，触控调光。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "68d4782c87b6",
+      "product_key": null,
+      "title": "This modern, minimalist lamp recreates the gentle, calming flicker of the candlestick - Yanko Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.yankodesign.com/2021/10/20/this-modern-minimalist-lamp-recreates-the-gentle-calming-flicker-of-the-candlestick",
+      "image": "https://www.yankodesign.com/images/design_news/2021/10/auto-draft/ambientec_hymn_lamp_1.jpg",
+      "summary": "产品主打氛围和情绪价值，实用性和高频需求较低，但设计感强、功能简单清晰，目标用户为追求生活品质的小众群体。",
+      "risk": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
+      "review_confidence": 9,
+      "review_reason": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community",
+        "trend",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "48db698060de",
+      "product_key": null,
+      "title": "This convertible full-body jacket was designed to give you 100% protection from the outdoor elements - Yanko Design",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2020/07/20/this-convertible-full-body-jacket-was-designed-to-give-you-100-protection-from-the-outdoor-elements",
+      "image": "https://www.yankodesign.com/images/design_news/2020/07/this-full-body-jacket-was-designed-to-give-you-100-protection-from-the-outdoor-elements/IWOM_convertible_all_purpose_jacket_layout.jpg",
+      "summary": "具体产品：IWOM Convertible All-Purpose Jacket 2.0。创新证据：可变形式设计，从夹克延伸至风衣长度，全密封防水防风，适应不同天气。。页面证据：https://www.kickstarter.com/projects/iwomouterwear/iwom-convertible-all-purpose-jacket-20 Cleverly named the IWOM (pronounced I-Warm), this jacket was designed to be able to shapeshift based on your needs. On a regular windy day, the IWOM serves as a jacket, if it begins drizzling, you can simply extend its base down to your knees like a parka, and when the weather gets out of",
+      "risk": "可变形结构设计，从夹克延伸至风衣，全密封防水防风",
+      "review_confidence": 9,
+      "review_reason": "可变形结构设计，从夹克延伸至风衣，全密封防水防风",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "f21b04c71284",
+      "product_key": null,
+      "title": "拒绝APP！Buddy 发条式复古氛围灯~ - 普象网",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "普象网",
+      "source_family": "设计社区",
+      "source_quality": "standard",
+      "url": "https://www.puxiang.com/galleries/cb59425510c29ed3b7754e4b7e6640bd",
+      "image": "",
+      "summary": "2026年5月27日 · Buddy Design 便携式氛围灯，获2026 iF 设计奖。摒弃APP 与蓝牙，仅靠尾部发条旋钮控制：长按开机、短按切换3 档亮度、旋转切换8 种渐变光色（基于色彩 ...",
+      "risk": "发条旋钮控制，无APP/蓝牙，创新交互方式",
+      "review_confidence": 9,
+      "review_reason": "发条旋钮控制，无APP/蓝牙，创新交互方式",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "design_community",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "db9635942971",
+      "product_key": null,
+      "title": "Philips Hue Play wall washer",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发",
+        "视觉启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/philips-hue-play-wall-washer/744111",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/5738/744111/f22cd4b2-1c98-4126-a862-e1f62dad44f5/01key_8720169339651-929003837601-hue-play-wall-washer-white-eu-uk-app-02.jpg",
+      "summary": "iF Design Award · Philips Hue Play wall washer merges advanced optical precision with a clean, unobtrusive design. Its precisely engineered lenses wash the wall with a seamless gradient of (colored) light, delivering an uncompromised light effect at any distance from",
+      "risk": "Precision-engineered lenses for seamless gradient wall washing with colored light, merging optical precision with unobtrusive design.",
+      "review_confidence": 9,
+      "review_reason": "Precision-engineered lenses for seamless gradient wall washing with colored light, merging optical precision with unobtrusive design.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "f0e1baccc182",
+      "product_key": null,
+      "title": "Buddy",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/buddy/760398",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1178605/760398/68de3e22-99f4-44d4-92b9-fdb33c76623a/buddy_portable_mood_lamp_collection_760398_photo1.jpg",
+      "summary": "iF Design Award · In an age of overstimulation, Buddy redefines how light restores presence and mindfulness in daily life. Designed as companions, they feature a tactile analog gesture that reintroduces play into everyday routines and gradient illumination informed by",
+      "risk": "Tactile analog gesture interaction for mindfulness, redefining light as a companion with playful analog control.",
+      "review_confidence": 9,
+      "review_reason": "Tactile analog gesture interaction for mindfulness, redefining light as a companion with playful analog control.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "78c03c07e990",
+      "product_key": null,
+      "title": "Astral Mate Light",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/astral-mate-light/740058",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1169990/740058/e6dcfe32-6d03-449b-bf51-5b20bb694513/1.jpg",
+      "summary": "iF Design Award · Astral Mate is an interactive ambient light that uses magnetic induction. Its innovative switch design is inspired by the gravitational pull between celestial bodies. A metal sphere glides naturally along the track, driven by gravity, and as it appro",
+      "risk": "Magnetic induction switch with a metal sphere gliding along a track, inspired by celestial gravity, for interactive ambient lighting.",
+      "review_confidence": 9,
+      "review_reason": "Magnetic induction switch with a metal sphere gliding along a track, inspired by celestial gravity, for interactive ambient lighting.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "b79471aeb804",
+      "product_key": null,
+      "title": "Gantri Goes Wireless for the First Time",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/gantri-goes-wireless-for-the-first-time",
+      "image": "https://design-milk.com/images/2026/04/Gantri-Wireless-Lamp-0.jpg",
+      "summary": "Gantri and Ammunition Group take the party outside with Gantri Wireless, offering portable lighting for modern life.",
+      "risk": "Gantri Helia无线灯，首次实现无线便携，在交互和使用场景上有明显创新。",
+      "review_confidence": 9,
+      "review_reason": "Gantri Helia无线灯，首次实现无线便携，在交互和使用场景上有明显创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Design Milk",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "0fb54d449db1",
+      "product_key": null,
+      "title": "World’s only weather-proof jacket that’s made out of 100% merino wool - Yanko Design",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2020/05/27/worlds-only-weather-proof-jacket-thats-made-out-of-100-merino-wool",
+      "image": "https://www.yankodesign.com/images/design_news/2020/05/NatureDry_the_100_merino_all_weather_jacket.jpg",
+      "summary": "Woolly NatureDry Jacket，100%美利奴羊毛通过紧密编织实现防风防水，材料创新突破。。页面证据：https://www.kickstarter.com/projects/woollynaturedry/woolly-merino-naturedry Yes, I'm just as baffled as you probably are. Wool isn't the hardiest textile. Yes, it provides warmth, but you can't wear a woolen sweater out in a blizzard or the rain. Even indoors, wool requires loads of care, from carefully selecting the water temperature and detergent-type while doing a wash, to just being",
+      "risk": "100%美利奴羊毛紧密编织实现防风防水，材料创新",
+      "review_confidence": 9,
+      "review_reason": "100%美利奴羊毛紧密编织实现防风防水，材料创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "6560dbe82d34",
+      "product_key": null,
+      "title": "Caterpillar: A Flexible Memory Light by Fabien Roy - Design Milk",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/caterpillar-a-flexible-memory-light-by-fabien-roy",
+      "image": "",
+      "summary": "It might look like a vacuum hose, but the Caterpillar flexible memory light by Fabien Roy is cleverly designed and easily customized to direct light wherever you want it.",
+      "risk": "柔性记忆灯管可任意弯曲定型，结构创新实现定向照明",
+      "review_confidence": 9,
+      "review_reason": "柔性记忆灯管可任意弯曲定型，结构创新实现定向照明",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "氛围灯"
+      ]
+    },
+    {
+      "id": "4e2c931053b3",
+      "product_key": null,
+      "title": "jaekeun lee’s spiral calendar reimagines time as circular motion",
+      "category": "日历",
+      "action_lane": "方向参考",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Designboom",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.designboom.com/design/jaekeun-lee-spiral-calendar-globe-beads-time-circular-motion-05-19-2025",
+      "image": "",
+      "summary": "May 19, 2025 · jaekeun lee’s spiral timepiece, a 12-month calendar, approaches time through a curving form that allows for both return and change.",
+      "risk": "螺旋形时间显示，圆形运动重新诠释时间，结构创新",
+      "review_confidence": 9,
+      "review_reason": "螺旋形时间显示，圆形运动重新诠释时间，结构创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "日历"
+      ]
+    },
+    {
+      "id": "5ffc0a3519c4",
+      "product_key": null,
+      "title": "Good stuff, Gatherer Jacket adapts to unexpected climate changes - Core77",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "Core77",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.core77.com/posts/10365/good-stuff-gatherer-jacket-adapts-to-unexpected-climate-changes-10365",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_10365_.jpg",
+      "summary": "Merrell Gatherer Jacket，轻量夹克，通过填充口袋内材料调节保暖，创新保暖机制，明确功能外套。。页面证据：Merrell's new lightweight Gather Jacket helps hikers and climbers adapt to rapid temperature changes by filling pockets throughout the jacket with any found materials for increased insulation. It's nice to actually see this concept realized after years of student projects presenting similar solutions for helping the homeless survive cold nights....",
+      "risk": "通过填充口袋内材料调节保暖，创新保暖机制",
+      "review_confidence": 9,
+      "review_reason": "通过填充口袋内材料调节保暖，创新保暖机制",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "7e4190bcd321",
+      "product_key": null,
+      "title": "耐克 Therma-Fit Air Milano：15 秒充气的创新羽绒服！ - 普象网",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "普象网",
+      "source_family": "设计社区",
+      "source_quality": "standard",
+      "url": "https://www.puxiang.com/galleries/8c352ad49133cba56f3140b5075a7799",
+      "image": "",
+      "summary": "Apr 6, 2026 · 耐克推出全新 Therma-Fit Air Milano 充气羽绒服，这款被品牌称作技术含量最高的服饰单品，搭载独家 A.I.R.（Adapt. Inflate. Regulate.）充气技术，颠覆了传统羽绒服的填充与设计逻辑。它摒弃羽绒或人造填充物，以空气作为保暖层，通过专属小型充气泵可在 15 秒内完成充气，放气后可压缩至轻薄防风衣大小 ...",
+      "risk": "Uses air inflation instead of traditional insulation, with 15-second inflation and compact deflation; novel thermal regulation.",
+      "review_confidence": 9,
+      "review_reason": "Uses air inflation instead of traditional insulation, with 15-second inflation and compact deflation; novel thermal regulation.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "design_community",
+        "冲锋衣"
+      ]
+    },
+    {
+      "id": "5c2fa07d1ec6",
+      "product_key": null,
+      "title": "Revolutionary Transparent Jacket Uses Infrared to Keep You Warm",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2024/10/24/revolutionary-transparent-jacket-uses-infrared-to-keep-you-warm",
+      "image": "",
+      "summary": "Aptly named Solament, a combination word comprising \"solar\" and \"element,\" this is made of near-infrared ray absorbing nanoparticles. The material absorbs the rays present in sunlight and utilizes them to generate heat. Tsumura has used the material properties",
+      "risk": "透明材质利用红外线加热，材料创新",
+      "review_confidence": 9,
+      "review_reason": "透明材质利用红外线加热，材料创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "冲锋衣"
+      ]
+    },
+    {
+      "id": "52652ad43481",
+      "product_key": null,
+      "title": "Unbounded Dual-core Outdoor Two-in-One Jacket",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/unbounded-dual-core-outdoor-two-in-one-jacket/745896",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1171604/745896/a1a9bdaa-3f98-474e-9f15-05bec010c958/1.jpg",
+      "summary": "iF Design Award · Designed to handle complex and unpredictable outdoor environments, the Unbounded Dual-core Outdoor Two-in-One Jacket combines a protective outer jacket with waterproof, windproof, and abrasion-resistant properties, and an inner jacket with down insul",
+      "risk": "Dual-core two-in-one design with waterproof, windproof, and abrasion-resistant outer combined with inner layer for complex outdoor environments.",
+      "review_confidence": 9,
+      "review_reason": "Dual-core two-in-one design with waterproof, windproof, and abrasion-resistant outer combined with inner layer for complex outdoor environments.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "5281d0222b98",
+      "product_key": null,
+      "title": "Dragon Tooth Wind Falcon Ultralight Sun Jacket",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/dragon-tooth-wind-falcon-ultralight-sun-jacket/761800",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1179503/761800/354185b4-e670-4c44-a3e8-90550879e158/1.jpg",
+      "summary": "iF Design Award · The Dragon Tooth Wind Falcon Ultra-Light Sun Protection Jacket addresses the common discomfort of traditional sunwear that traps heat and restricts airflow. Made with Dragon Tooth’s self-developed ultra-light Wind Tunnel Technology fabric, it achieve",
+      "risk": "Self-developed ultra-light Wind Tunnel fabric for breathability and sun protection, addressing heat and airflow issues in traditional sunwear.",
+      "review_confidence": 9,
+      "review_reason": "Self-developed ultra-light Wind Tunnel fabric for breathability and sun protection, addressing heat and airflow issues in traditional sunwear.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "f0322d36ce36",
+      "product_key": null,
+      "title": "BOSIDENG 3-IN-1 \"DIBIAN\" DOWN JACKET",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/bosideng-3-in-1-dibian-down-jacket/758476",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1140743/758476/af871e74-a530-436b-b7a1-1e684971057f/1.jpg",
+      "summary": "iF Design Award · The 3-in-1 down jacket is engineered for urban leisure outdoor scenarios, ideal for temperature and weather changes, daily commutes, and frequent business travel. It is innovative for the back down channel structure inspired by how birds' wings and f",
+      "risk": "3-in-1 down jacket with innovative back down channel structure inspired by terrain for urban leisure and travel.",
+      "review_confidence": 9,
+      "review_reason": "3-in-1 down jacket with innovative back down channel structure inspired by terrain for urban leisure and travel.",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "5fb08a5bc0a5",
+      "product_key": null,
+      "title": "Calendar Tells Me EVERYTHING - Yanko Design",
+      "category": "日历",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 77,
+      "score_label": "7.7",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2008/11/25/calendar-tells-me-everything",
+      "image": "https://www.yankodesign.com/images/design_news/2021/09/yd.jpg",
+      "summary": "Living Concept 2009 calendar shows weeks, months, holidays, and time at a glance using mechanical hands. Display innovation.。页面证据：The Living Concept 2009 was created specially for project newave.com.ua. What separates this calendar from your traditional fair is the ability to show weeks, months, holidays, and time all at a glance. A large hand shows a current day (and month too), thus doing a complete turn during 365 days. A little hand shows the",
+      "risk": "机械指针显示日期、周、月、假日，交互创新",
+      "review_confidence": 8,
+      "review_reason": "机械指针显示日期、周、月、假日，交互创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "a960c4e0a737",
+      "product_key": null,
+      "title": "This dual-sided jacket blocks UV rays in the day, and increases visibility at night! - Yanko Design",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 77,
+      "score_label": "7.7",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2019/08/22/this-dual-sided-jacket-blocks-uv-rays-in-the-day-and-increases-visibility-at-night",
+      "image": "https://www.yankodesign.com/images/design_news/2019/08/duotek_ultralight_reflective_reversible_jacket_layout.jpg",
+      "summary": "具体产品：DuoTek Ultralight Reversible and Reflective Jacket。创新证据：双面穿戴设计，一面防紫外线，一面高可见反光，超轻材料。。页面证据：https://www.kickstarter.com/projects/ffd/duotek-the-ultralight-reversible-and-reflective-jacket Twice as awesome as your favorite hoodie, the DuoTek serves different purposes in the day and at night. With a dual-fabric construction, the DuoTek can be worn both regularly as well as inside out. One side of the jacket serves as your classic black hoodie, but with the ability to block UV rays, while",
+      "risk": "双面穿戴设计，一面防紫外线，一面高可见反光",
+      "review_confidence": 9,
+      "review_reason": "双面穿戴设计，一面防紫外线，一面高可见反光",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "6f5362a9f419",
+      "product_key": null,
+      "title": "A 6mm 5,000 mAh Power Bank: Xiaomi Built One Thinner Than Any ...",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/03/02/a-6mm-5000-mah-power-bank-xiaomi-built-one-thinner-than-any-phone",
+      "image": "",
+      "summary": "Mar 2, 2026 · I’ve carried a lot of power banks over the years. Bulky ones that weigh down my pockets, chunky bricks that barely fit in a crossbody bag, and a few “compact” options that still felt like lugging around a deck of cards. So when Xiaomi announced a",
+      "risk": "6mm厚度实现5000mAh容量，超薄设计显著提升便携性",
+      "review_confidence": 10,
+      "review_reason": "6mm厚度实现5000mAh容量，超薄设计显著提升便携性",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "a6c47ded4293",
+      "product_key": null,
+      "title": "Rugged Solar Charger & Flashlight - ThisIsWhyImBrokeTwisting Jello Shot GlassRoll-Up Solar ChargerThor Hammered Meteorite Ring - ThisIsWhyImBrokeFerrari 458 Spe",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "ThisIsWhyImBroke",
+      "source_family": "弱市场信号",
+      "source_quality": "weak",
+      "url": "https://www.thisiswhyimbroke.com/rugged-solar-charger-flashlight",
+      "image": "",
+      "summary": "This rugged solar charger and flashlight is a monster battery designed for those that love the great outdoors. This waterproof charger features a 20,000 mAh capacity that lets you charge 4 USB devices simultaneously and comes with a small light ideal for night",
+      "risk": "太阳能充电与手电筒结合，20000mAh容量，户外适用",
+      "review_confidence": 9,
+      "review_reason": "太阳能充电与手电筒结合，20000mAh容量，户外适用",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "741eb88143f4",
+      "product_key": null,
+      "title": "Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/22/stop-packing-two-chargers-trozks-50-binary-star-does-both",
+      "image": "",
+      "summary": "Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both Travel chargers have always been a bit of a negotiation. You pack a power bank for the long haul, then stuff a wall adapter in...",
+      "risk": "二合一设计，集成充电宝与墙充，减少携带设备数量",
+      "review_confidence": 9,
+      "review_reason": "二合一设计，集成充电宝与墙充，减少携带设备数量",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Yanko Design",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "2f997f9713b4",
+      "product_key": null,
+      "title": "RedMagic Go Power Bank is also a 65W charger for your laptop",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/01/28/redmagic-go-power-bank-is-also-a-65w-charger-for-your-laptop",
+      "image": "",
+      "summary": "Jan 28, 2025 · The third “mode” of this gadget, if you can really call it that, is the aforementioned USB-C cable that saves you time and effort when you only need a quick recharge. The cable also acts as a handle or carrying loop, and its nylon-braided materi",
+      "risk": "充电宝兼65W笔记本充电器，自带USB-C线可作为提手，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "充电宝兼65W笔记本充电器，自带USB-C线可作为提手，结构创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "2945570203a2",
+      "product_key": null,
+      "title": "This MagSafe Wallet + Power Bank + Tracking Device might just be the ...",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2023/09/15/this-magsafe-wallet-power-bank-tracking-device-might-just-be-the-ultimate-iphone-accessory-ever",
+      "image": "",
+      "summary": "The people who say Less Is More clearly didn't come across the Stympro. A 4-in-1 accessory for your iPhone, this bad-boy is a MagSafe Power Bank, a Wallet, a Phone Stand, and a 'Find My' compatible Tracking Device all bundled into one. Quite literally the perf",
+      "risk": "四合一设计：MagSafe充电宝、钱包、手机支架、追踪器，功能集成创新。",
+      "review_confidence": 9,
+      "review_reason": "四合一设计：MagSafe充电宝、钱包、手机支架、追踪器，功能集成创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "be8da4623aaa",
+      "product_key": null,
+      "title": "Anker 移动电源电站 | Uncrate",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://uncrate.com/cn/article/anker-power-bank-power-station",
+      "image": "",
+      "summary": "Anker 的移动电源站解决了这两个问题。 它结合了容量高达 60,000mAh 的电池和可伸缩 LED 灯笼，设计荣获红点奖。 两个 USB-C 和两个 USB-A 端口可保持设备充电...",
+      "risk": "Combines 60000mAh power bank with retractable LED lantern, Red Dot award, multi-port charging.",
+      "review_confidence": 9,
+      "review_reason": "Combines 60000mAh power bank with retractable LED lantern, Red Dot award, multi-port charging.",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "cf49d380d10e",
+      "product_key": null,
+      "title": "Anker Nano MagSafe Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/anker-nano-power-bank-5k-maggo-slim",
+      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/A1665H11_RI_TD01_US_V2.png?v=1763745119",
+      "summary": "The iPhone Air is a marvel of modern engineering. Thanks to its thinness, it also needs a little power boost some days to make it from sunrise to sunset. The Anker Nano MagSafe Power Bank is compatible with all Qi2-charg Listed price signal: $109.98.",
+      "risk": "MagSafe磁吸充电宝，Qi2兼容，超薄设计，创新在于磁吸无线充与便携结合。",
+      "review_confidence": 9,
+      "review_reason": "MagSafe磁吸充电宝，Qi2兼容，超薄设计，创新在于磁吸无线充与便携结合。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Anker"
+      ]
+    },
+    {
+      "id": "b75dbb81f7df",
+      "product_key": null,
+      "title": "Wide Mouth Anti-Bottle | Portable and Durable Bottle | Grommet",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/sports-fitness/wide-mouth-anti-bottle?pid=blog-gobag",
+      "image": "https://dxzihkgog0d85.cloudfront.net/products/37796/200x200_UH4ZFwide-mouth-anti-bottle.jpg",
+      "summary": "产品实用便携，满足高频饮水需求，功能完善无短板，但打击面略窄于普通水杯；价格估计符合要求；3秒易懂性稍弱；情绪价值通过环保和便利实现。",
+      "risk": "可折叠扁平设计，方便携带和储存，BPA-free材料",
+      "review_confidence": 9,
+      "review_reason": "可折叠扁平设计，方便携带和储存，BPA-free材料",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "foldable",
+        "portable",
+        "eco-friendly",
+        "BPA-free",
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "db5f5e65747f",
+      "product_key": null,
+      "title": "Anker’s MagPro Battery Also Works as a Phone Stand | Cool Material",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Cool Material",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://coolmaterial.com/tech/ankers-magpro-battery-phone-stand",
+      "image": "",
+      "summary": "Anker MagPro Battery：MagSafe充电宝，同时可作为手机支架，功能融合创新。。页面证据：We're loving the new MagSafe portable charger from Anker, one of the leaders in mobile tech. In fact, the MagPro Battery doubles as a functional phone stand.Anker’s 548 Power Bank Is Perfect For Your Next Road Trip.",
+      "risk": "MagSafe充电宝同时可作为手机支架，功能融合",
+      "review_confidence": 9,
+      "review_reason": "MagSafe充电宝同时可作为手机支架，功能融合",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "153bb6f1fbb6",
+      "product_key": null,
+      "title": "Remember Apple’s AirPower Mat? Dreame Built A MagSafe Power Bank That Does The Same Thing - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/12/17/remember-apples-airpower-mat-dreame-built-a-magsafe-power-bank-that-does-the-same-thing",
+      "image": "https://www.yankodesign.com/images/design_news/2025/12/draft-dreame-power-bank/dreame_air_power_17_1.jpeg",
+      "summary": "Dreame Air Power 17 MagSafe充电宝，可同时充手机和手表，铝框+AG玻璃，多设备充电创新。。页面证据：Dreame built its name on robot vacuums and smart cleaning stations, but its newest release does not clean your floors at all. Dreame’s Air Power 17 arrives as a magnetic portable power bank with a surprisingly polished feel, pairing an aluminum frame with AG glass and a footprint barely larger than a bank card. It",
+      "risk": "可同时无线充手机和手表，多设备充电",
+      "review_confidence": 9,
+      "review_reason": "可同时无线充手机和手表，多设备充电",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "88f677303b57",
+      "product_key": null,
+      "title": "Grey Ark Tech—Smart Purifying & Sterilising Water... — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/greyark/grey-ark-techsmart-purifying-and-sterilising-water-bottle",
+      "image": "",
+      "summary": "Grey Ark Tech智能净化水瓶，自带UVC LED净化水和清洁瓶身，实现自洁和净水功能。。页面证据：Our brand new, lightweight self-cleaning water bottle comes with its very own water purification system. With the use of a UVC LED light, your bottle can clean both the water and the bottle itself.",
+      "risk": "内置UVC LED实现水净化和瓶身自洁，智能健康饮水",
+      "review_confidence": 9,
+      "review_reason": "内置UVC LED实现水净化和瓶身自洁，智能健康饮水",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "d05f0adf9b92",
+      "product_key": null,
+      "title": "JUMPAC: Your 5-In-1 Ultimate Car Companion by Jumpac ...",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/1026850433/emergency-car-kit",
+      "image": "",
+      "summary": "Jumpac is raising funds for JUMPAC: Your 5-In-1 Ultimate Car Companion🚗 on Kickstarter! Jump Starter, Portable Vacuum, LED Light, Power Bank, Inflator",
+      "risk": "5合1汽车伴侣：应急启动、吸尘、照明、充电宝、充气泵，功能集成创新。",
+      "review_confidence": 9,
+      "review_reason": "5合1汽车伴侣：应急启动、吸尘、照明、充电宝、充气泵，功能集成创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "a1b6f8b4dcac",
+      "product_key": null,
+      "title": "The Ultimate Cutting Board - ThisIsWhyImBroke",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "ThisIsWhyImBroke",
+      "source_family": "弱市场信号",
+      "source_quality": "weak",
+      "url": "https://www.thisiswhyimbroke.com/the-ultimate-cutting-board",
+      "image": "",
+      "summary": "Have everything you need to cook close at hand by preparing your meals on the ultimate cutting board. This Swiss Army knife of cutting boards features everything from knife storage and a removable juicer to a cheese grater and measuring cups.",
+      "risk": "多功能砧板集成刀具收纳、榨汁器、奶酪刨丝器和量杯，功能集成创新",
+      "review_confidence": 9,
+      "review_reason": "多功能砧板集成刀具收纳、榨汁器、奶酪刨丝器和量杯，功能集成创新",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "market_signal",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "c0ec84fc096a",
+      "product_key": null,
+      "title": "JuiceBank Go for MagSafe | Slim Wireless Battery Bank | Grommet",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/gadgets/juicebank-go-for-magsafe",
+      "image": "",
+      "summary": "Stay powered wherever you go with the JuiceBank Go, a slim, lightweight battery bank that wirelessly snaps to your iPhone with a strong MagSafe connection—and also charges other phones, including Android, via Qi wireless technology. Charge two devices at once",
+      "risk": "MagSafe无线充电宝，轻薄便携，磁吸创新",
+      "review_confidence": 9,
+      "review_reason": "MagSafe无线充电宝，轻薄便携，磁吸创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "3e58e5220aab",
+      "product_key": null,
+      "title": "Storm 2 Liquid Power Bank - Cool Material",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Cool Material",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://coolmaterial.com/tech/storm-2-liquid-power-bank",
+      "image": "",
+      "summary": "Mar 14, 2021 · Portable charging power banks are like belly buttons. Everybody has one, and the ones who don't are weird. But unlike belly buttons, all power banks pretty much look the same, except for the new Storm 2 Liquid. Not only is it capacious with its",
+      "risk": "液态外观设计，区别于普通充电宝",
+      "review_confidence": 9,
+      "review_reason": "液态外观设计，区别于普通充电宝",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "558f5535a928",
+      "product_key": null,
+      "title": "Selfix iPhone Case - ThisIsWhyImBroke",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "ThisIsWhyImBroke",
+      "source_family": "弱市场信号",
+      "source_quality": "weak",
+      "url": "https://www.thisiswhyimbroke.com/selfix-iphone-case",
+      "image": "",
+      "summary": "Turn your iPhone into a selfie powerhouse with the Selfix case. A 1.6-inch rear touchscreen lets you frame perfect selfie shots using the main cameras,",
+      "risk": "后置副屏实现主摄像头自拍，交互创新",
+      "review_confidence": 9,
+      "review_reason": "后置副屏实现主摄像头自拍，交互创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "手机壳"
+      ]
+    },
+    {
+      "id": "44fa670e6228",
+      "product_key": null,
+      "title": "复古充电宝",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Pinterest",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.sharge.com/products/retro-67",
+      "image": "",
+      "summary": "Pinterest · 复古游戏机造型充电宝",
+      "risk": "复古游戏机造型充电宝融合游戏机外观与快充功能，视觉与交互创新",
+      "review_confidence": 9,
+      "review_reason": "复古游戏机造型充电宝融合游戏机外观与快充功能，视觉与交互创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Pinterest",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "b75137fa3d8d",
+      "product_key": null,
+      "title": "Polygons flat 3-in-1 Measuring Spoon",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/polygons-flat-3-in-1-measuring-spoon/768978",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1182259/768978/a3573e95-dc22-47c9-9bda-47b8d84a83c6/1.jpg",
+      "summary": "iF Design Award · After 3000 years, the humble spoon has been reinvented. Polygons flattens an entire measuring spoon set into an origami sheet just 0.1 inch thin. Pinch it to form the 3 volumes cooks use most (½ Tbsp, 1 Tbsp, 2 Tbsp on the big spoon - and ¼ Tsp, ½",
+      "risk": "扁平可折叠量勺，一纸成型，三种容量，颠覆传统量勺形态，结构创新显著。",
+      "review_confidence": 9,
+      "review_reason": "扁平可折叠量勺，一纸成型，三种容量，颠覆传统量勺形态，结构创新显著。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "95f3293c6f84",
+      "product_key": null,
+      "title": "Teeter-Top Series",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/teeter-top-series/743805",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/791876/743805/7c76e88b-c3f8-4ead-b3fa-91bcae0b54ec/1.jpg",
+      "summary": "iF Design Award · The Teeter-Top Storage Jar is designed to allow users to easily open the lid and access ingredients even when both hands are occupied in the kitchen. Its unique “teeter-totter” beveled base structure applies smart mechanics—by gently pressing the cir",
+      "risk": "跷跷板式储物罐，斜面底座设计使单手即可开盖，结构创新解决双手被占用痛点。",
+      "review_confidence": 9,
+      "review_reason": "跷跷板式储物罐，斜面底座设计使单手即可开盖，结构创新解决双手被占用痛点。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    },
+    {
+      "id": "042e0fe9d325",
+      "product_key": null,
+      "title": "meori mug",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/meori-mug/768401",
+      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/7988/768401/0fdbce1e-e181-453b-8b1c-efc788f4e474/thermobecher01.jpg",
+      "summary": "iF Design Award · The meori thermal mug combines an innovative, patented locking system with a clear, functional design. The lid can be slightly unscrewed for direct drinking and securely closed again to remain leakproof. The spindle-thread mechanism eliminates comple",
+      "risk": "保温杯，专利锁定系统，旋盖设计实现直饮与防漏，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "保温杯，专利锁定系统，旋盖设计实现直饮与防漏，结构创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "iF Design Award",
+        "iF获奖"
+      ]
+    }
+  ]
+}
