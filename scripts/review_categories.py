@@ -83,7 +83,13 @@ def trusted_cached_review(review):
     policy_version = int(review.get("policy_version") or 0)
     if not review.get("keep"):
         source = review.get("source") or ""
-        if source in {"retirement_policy", "direct_link_policy", "deterministic_entity_policy", "generic_content_policy"}:
+        if source in {
+            "retirement_policy",
+            "direct_link_policy",
+            "deterministic_entity_policy",
+            "generic_content_policy",
+            "company_gpt_multimodal",
+        }:
             return True
         # A stricter policy cannot turn a previously rejected item into an
         # approval. Reuse confident v2/v3 DeepSeek rejections to avoid paying

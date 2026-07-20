@@ -19,6 +19,7 @@ PUBLISH_PATHS = [
     "data/dedupe_index.json",
     "data/seen_fingerprints.json",
     "data/category_review.json",
+    "data/company_multimodal_review.json",
     "data/rejected_category.json",
     "data/published.json",
     "data/trends.json",
