@@ -362,7 +362,7 @@ def main():
 
     total = len(items)
     highlighted = top_items(items, args.top_limit)
-    title_prefix = f"Design Daily｜{date}｜{total_count} 条中最推荐 5 个"
+    title_prefix = f"Design Daily｜{date}｜{total} 条中最推荐 5 个"
     if args.dry_run:
         print(json.dumps({"title": title_prefix, "card": card_elements(group, highlighted, total, not args.no_images)}, ensure_ascii=False, indent=2))
         return
