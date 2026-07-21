@@ -68,7 +68,7 @@ def gh_json(method, endpoint, payload=None):
 def publish_with_github_api(repo, message, files):
     if not files:
         print("publish=skipped reason=no_changes")
-        return
+        return ""
     ref = gh_json("GET", f"repos/{repo}/git/ref/heads/main")
     base_sha = ref["object"]["sha"]
     base_tree = gh_json("GET", f"repos/{repo}/git/commits/{base_sha}")["tree"]["sha"]
@@ -82,11 +82,30 @@ def publish_with_github_api(repo, message, files):
         tree.append({"path": path, "mode": "100644", "type": "blob", "sha": blob_sha})
     if not tree:
         print("publish=skipped reason=no_file_blobs")
-        return
+        return ""
     new_tree = gh_json("POST", f"repos/{repo}/git/trees", {"base_tree": base_tree, "tree": tree})["sha"]
     commit = gh_json("POST", f"repos/{repo}/git/commits", {"message": message, "tree": new_tree, "parents": [base_sha]})
     gh_json("PATCH", f"repos/{repo}/git/refs/heads/main", {"sha": commit["sha"], "force": False})
     print(f"publish=github_api sha={commit['sha']} files={len(tree)}")
+    return commit["sha"]
+
+
+def selected_publish_file(path):
+    return any(path == selected.rstrip("/") or path.startswith(selected) for selected in PUBLISH_PATHS)
+
+
+def publish_api_only(repo, message):
+    files = [path for path in changed_files() if selected_publish_file(path)]
+    if not files:
+        print("publish=skipped reason=no_changes")
+        return
+    commit_sha = publish_with_github_api(repo, message, files)
+    if not commit_sha:
+        return
+    run(["git", "fetch", "origin", "main"])
+    run(["git", "update-ref", "refs/heads/main", commit_sha])
+    run(["git", "read-tree", commit_sha])
+    print(f"publish=local_index_synced sha={commit_sha}")
 
 
 def publish(repo, message):
