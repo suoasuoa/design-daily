@@ -156,6 +156,18 @@ def main():
         count = today_count(target)
         print(f"dual_model_phase date={today()} target={target} after_review={count}", flush=True)
 
+        if now.hour >= 17 and count >= target:
+            local_changes = subprocess.run(
+                ["git", "status", "--porcelain"],
+                cwd=ROOT,
+                text=True,
+                stdout=subprocess.PIPE,
+                check=True,
+            ).stdout.strip()
+            if not local_changes:
+                print(f"dual_model_recovery=healthy date={today()} accepted={count} target={target}")
+                return
+
         for pass_index in range(1, args.max_top_up_passes + 1):
             if count >= target:
                 break
