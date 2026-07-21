@@ -13,11 +13,12 @@ from zoneinfo import ZoneInfo
 from company_gpt import keychain_secret
 from ensure_daily_minimum import today_count
 from insight_common import ROOT, load_env, today
-from nightly_social_update import publish
+from nightly_social_update import publish_api_only
 
 
 LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 DEEPSEEK_KEYCHAIN_SERVICE = "design-daily-deepseek-api-key"
+GITHUB_KEYCHAIN_SERVICE = "design-daily-github-token"
 
 
 def run(cmd, check=True):
@@ -47,11 +48,17 @@ def ensure_secrets():
         secret = keychain_secret(DEEPSEEK_KEYCHAIN_SERVICE)
         if secret:
             os.environ["DEEPSEEK_API_KEY"] = secret
+    if not os.environ.get("GH_TOKEN"):
+        secret = keychain_secret(GITHUB_KEYCHAIN_SERVICE)
+        if secret:
+            os.environ["GH_TOKEN"] = secret
     os.environ.setdefault("DEEPSEEK_MODEL", "deepseek-v4-flash")
     os.environ.setdefault("COMPANY_GPT_MODEL", "gpt-5.5")
     os.environ.setdefault("COMPANY_GPT_BASE_URL", "https://ai-gateway.insta360.cn/v1")
     if not os.environ.get("DEEPSEEK_API_KEY"):
         raise RuntimeError("DeepSeek key is missing from the environment and macOS Keychain")
+    if not os.environ.get("GH_TOKEN"):
+        raise RuntimeError("GitHub token is missing from the environment and macOS Keychain")
 
 
 def run_company_review(workers):
@@ -114,7 +121,7 @@ def rebuild_and_publish(repo, score_limit, skip_publish):
     run([sys.executable, "scripts/weekly_report.py", "--limit", "100"])
     run([sys.executable, "scripts/build_site.py"])
     if not skip_publish:
-        publish(repo, f"Update dual-model insight pool {today()}")
+        publish_api_only(repo, f"Update dual-model insight pool {today()}")
 
 
 def main():
