@@ -2,6 +2,8 @@
 """Shared configuration for the Design Daily insight pool."""
 
 RETIRED_CATEGORY_CUTOFF = "2026-07-16"
+DAILY_TARGET_40_CUTOFF = "2026-07-20"
+LEGACY_DAILY_TARGET = 30
 RETIRED_CATEGORIES = {
     "T恤",
     "帽子",

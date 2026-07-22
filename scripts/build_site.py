@@ -7,7 +7,7 @@ import re
 from urllib.parse import urlparse
 
 from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, source_quality, source_type, write_json
-from insight_config import CATEGORIES, RETIRED_CATEGORIES
+from insight_config import CATEGORIES, DAILY_TARGET_40_CUTOFF, LEGACY_DAILY_TARGET, RETIRED_CATEGORIES
 
 
 FUNCTION_WORDS = [
@@ -349,14 +349,47 @@ def compact_weekly_report(report):
     }
 
 
-def build_daily_groups(items, per_day=40, max_days=90):
+def daily_group_limit(day, per_day):
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", day or "") and day >= DAILY_TARGET_40_CUTOFF:
+        return per_day
+    return min(per_day, LEGACY_DAILY_TARGET)
+
+
+def merge_historical_snapshots(groups, previous_groups, current_date):
+    previous_by_date = {
+        group.get("date"): group
+        for group in (previous_groups or [])
+        if group.get("date")
+    }
+    for group in groups:
+        day = group.get("date", "")
+        previous = previous_by_date.get(day)
+        if not previous or day >= current_date:
+            continue
+
+        target = int(group.get("target_count") or LEGACY_DAILY_TARGET)
+        merged = []
+        seen = set()
+        for item in list(previous.get("items") or []) + list(group.get("items") or []):
+            key = dedupe_key(item)
+            if key in seen:
+                continue
+            seen.add(key)
+            merged.append(item)
+            if len(merged) >= target:
+                break
+        group["items"] = merged
+    return groups
+
+
+def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, current_date=None):
     by_day = defaultdict(list)
     for item in items:
         by_day[item.get("first_seen") or item.get("last_seen") or "unknown"].append(item)
 
     groups = []
-    for day_index, day in enumerate(sorted(by_day.keys(), reverse=True)[:max_days]):
-        day_limit = per_day if day_index == 0 else min(per_day, 30)
+    for day in sorted(by_day.keys(), reverse=True)[:max_days]:
+        day_limit = daily_group_limit(day, per_day)
         seen = set()
         picks = []
         ranked = [
@@ -395,6 +428,9 @@ def build_daily_groups(items, per_day=40, max_days=90):
                 "items": picks,
             }
         )
+
+    current_date = current_date or now_iso()[:10]
+    merge_historical_snapshots(groups, previous_groups, current_date)
 
     # Historical groups are immutable daily snapshots. When stricter display rules
     # leave an old group short, fill it from eligible pool items that have never
@@ -451,7 +487,7 @@ def build_daily_groups(items, per_day=40, max_days=90):
     return groups
 
 
-def build_payload(products, trends, weekly_report=None, weekly_groups=None):
+def build_payload(products, trends, weekly_report=None, weekly_groups=None, previous_daily_groups=None):
     items = [record(item) for item in sorted_products(products)]
     by_category = Counter(item["category"] for item in items)
     by_lane = Counter(item["action_lane"] for item in items)
@@ -472,7 +508,7 @@ def build_payload(products, trends, weekly_report=None, weekly_groups=None):
         "trends": trends,
         "weekly_report": compact_weekly_report(weekly_report),
         "weekly_groups": [compact_weekly_report(report) for report in (weekly_groups or []) if report],
-        "daily_groups": build_daily_groups(items),
+        "daily_groups": build_daily_groups(items, previous_groups=previous_daily_groups),
         "configured_categories": CATEGORIES,
         "retired_categories": sorted(RETIRED_CATEGORIES),
         "items": items,
@@ -1012,6 +1048,7 @@ HTML = """<!doctype html>
 
 def main():
     ensure_dirs()
+    previous_payload = load_json(DATA_DIR / "published.json", {})
     products = load_json(DATA_DIR / "products.json", [])
     trends = load_json(DATA_DIR / "trends.json", {})
     weekly_report = load_json(DATA_DIR / "weekly_report.json", {})
@@ -1022,7 +1059,13 @@ def main():
             weekly_groups.append(load_json(path, {}))
     if weekly_report and not any(group.get("week") == weekly_report.get("week") for group in weekly_groups):
         weekly_groups.insert(0, weekly_report)
-    payload = build_payload(products, trends, weekly_report, weekly_groups[:12])
+    payload = build_payload(
+        products,
+        trends,
+        weekly_report,
+        weekly_groups[:12],
+        previous_daily_groups=previous_payload.get("daily_groups", []),
+    )
     write_json(DATA_DIR / "published.json", payload)
     write_json(INSIGHT_DIR / "data.raw.json", payload)
     data_js = "window.__INSIGHT_DATA__ = " + json.dumps(payload, ensure_ascii=False) + ";\n"
