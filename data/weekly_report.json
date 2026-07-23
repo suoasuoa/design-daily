@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T09:13:02+08:00",
+  "generated_at": "2026-07-23T17:55:56+08:00",
   "week": "2026-W30",
   "group_id": "2026-W30",
   "date_start": "2026-07-20",
@@ -11,28 +11,28 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 59,
-      "方向参考": 30,
-      "可直接买样": 11
+      "适合改造": 60,
+      "方向参考": 28,
+      "可直接买样": 12
     },
     "by_category": {
-      "充电宝": 23,
+      "充电宝": 22,
       "水杯": 17,
-      "氛围灯": 13,
-      "冲锋衣": 10,
-      "创意厨具": 9,
-      "创意桌搭": 9,
-      "手机壳": 8,
+      "氛围灯": 12,
+      "创意桌搭": 10,
+      "冲锋衣": 9,
+      "创意厨具": 8,
+      "创意礼盒": 7,
+      "手机壳": 7,
       "日历": 5,
-      "创意礼盒": 4,
-      "中秋礼盒": 1,
+      "中秋礼盒": 2,
       "钥匙扣水壶": 1
     },
     "by_axis": {
-      "功能启发": 67,
-      "结构启发": 41,
-      "包装启发": 19,
-      "情绪启发": 18,
+      "功能启发": 64,
+      "结构启发": 45,
+      "包装启发": 23,
+      "情绪启发": 16,
       "视觉启发": 13
     }
   },
@@ -85,16 +85,14 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils",
       "image": "",
-      "summary": "产品针对特定人群（手部不便者）设计，手柄人机工程学实用性强，但受众窄，普及度低。",
+      "summary": "Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人体工学，创新在于包容性设计。。页面证据：Feb 6, 2023 · Designed for people with reduced mobility in their hands and wrists, this set of four kitchen tools features ergonomic, angled handles that make cooking easier.",
       "risk": "人体工学斜角手柄，包容性设计",
       "review_confidence": 9,
       "review_reason": "人体工学斜角手柄，包容性设计",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "adapt",
-        "deepseek_search_agent",
-        "design_community",
-        "创意厨具"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -115,15 +113,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars",
       "image": "",
-      "summary": "产品专注游戏场景，外观科幻，情绪价值高，但功能单一，实用性和普适性一般。",
+      "summary": "Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。",
       "risk": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "review_confidence": 8,
       "review_reason": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "游戏氛围灯",
-        "桌搭",
-        "RGB灯光",
         "design_community",
         "创意桌搭"
       ]
@@ -146,16 +141,14 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "产品功能性强，一秒成型/打平的设计有差异化，但需求频次和受众面一般，情绪价值非核心。",
+      "summary": "诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意礼盒",
-        "折叠盒",
         "social_public_index",
-        "白名单来源"
+        "创意礼盒"
       ]
     },
     {
@@ -290,6 +283,36 @@
       ]
     },
     {
+      "id": "88575e14a61c",
+      "product_key": null,
+      "title": "MOONCAKE BOX with board game inside :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3e2fcc88254971.5dd1240e72e70.png",
+      "summary": "结合中秋送礼和棋盘游戏，有创新但受众窄，实用性中等，价格预计高于35元。",
+      "risk": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
+      "review_confidence": 9,
+      "review_reason": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "棋盘游戏",
+        "结构创新",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "8e245cfe953e",
       "product_key": null,
       "title": "The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance",
@@ -305,18 +328,14 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar",
       "image": "",
-      "summary": "产品结合日历与种子种植，功能完整且具有情绪价值，但实用性一般，受众面较窄，种子种植存在失败风险。",
+      "summary": "Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...",
       "risk": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "review_confidence": 8,
       "review_reason": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "设计社区",
-        "日历",
-        "种子日历",
-        "二十四节气",
         "design_community",
-        "白名单来源"
+        "日历"
       ]
     },
     {
@@ -336,18 +355,44 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/229023437/_",
       "image": "",
-      "summary": "产品创意独特，结合地域文化与情感表达，但实用性和适用人群有限，季节性较强。",
+      "summary": "Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。",
       "risk": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
       "review_confidence": 8,
       "review_reason": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "七夕表白",
-        "创意礼盒",
-        "录音",
-        "广式点心",
         "design_community",
-        "白名单来源"
+        "创意礼盒"
+      ]
+    },
+    {
+      "id": "dab7a06e016c",
+      "product_key": null,
+      "title": "This Game-Changing Table Mat Wirelessly Charges your Keyboard, Mouse, Smartphone, and AirPods - Yanko Design",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 89,
+      "score_label": "8.9",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2023/09/09/this-game-changing-table-mat-wirelessly-charges-your-keyboard-mouse-smartphone-and-airpods",
+      "image": "https://www.yankodesign.com/images/design_news/2023/09/this_desk_mat_wirelessly_charges_your_keyboard_mouse_smartphone_AirPods_hero.jpg",
+      "summary": "产品解决了无线充电位置受限的痛点，实用性强，但当下无线充电键盘鼠标普及度不高，且功能可能存在充电效率与兼容性短板。概念清晰，售价预计较高。",
+      "risk": "整张桌垫可任意位置无线充电键盘鼠标手机等，突破定点充电局限",
+      "review_confidence": 9,
+      "review_reason": "整张桌垫可任意位置无线充电键盘鼠标手机等，突破定点充电局限",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "无线充电",
+        "桌面收纳",
+        "创意桌搭",
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -374,6 +419,65 @@
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "1dc388996c9f",
+      "product_key": null,
+      "title": "14 Levels – Packaging Of The World",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Packaging of the World",
+      "source_family": "包装专项",
+      "source_quality": "premium",
+      "url": "https://packagingoftheworld.com/2020/01/14-levels.html",
+      "image": "",
+      "summary": "产品为创意礼盒，实用性一般但送礼场景广泛；高频需求中等；靶向面较大，但非必需品；功能完整无短板；估计售价超35元；视觉上需一点时间理解；情绪价值高，开箱体验独特。",
+      "risk": "包装集成小册子与圆形拉出式插片，开箱结构创新",
+      "review_confidence": 9,
+      "review_reason": "包装集成小册子与圆形拉出式插片，开箱结构创新",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "创意礼盒",
+        "礼品包装",
+        "开箱体验",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "bab5616fb487",
+      "product_key": null,
+      "title": "Illui Truffles – Packaging Of The World",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Packaging of the World",
+      "source_family": "包装专项",
+      "source_quality": "premium",
+      "url": "https://packagingoftheworld.com/2018/07/illui-truffles.html",
+      "image": "",
+      "summary": "包装可复用为托盘，实用性强；但松露礼盒为高端小众礼品，购买频率低，受众窄；设计巧妙无短板，但结构需解释，3秒理解难度中等；价格超35元，情绪价值因复用而提升。",
+      "risk": "包装可展开为托盘，抽屉式结构， sleeves作为托盘腿，兼具复用功能",
+      "review_confidence": 9,
+      "review_reason": "包装可展开为托盘，抽屉式结构， sleeves作为托盘腿，兼具复用功能",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "创意礼盒",
+        "包装设计",
+        "复用功能",
+        "deepseek_search_agent",
+        "packaging_specialist"
       ]
     },
     {
@@ -472,17 +576,77 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/365699445/c03-power-bank-with-plug-dual-head-portable-10000mah",
       "image": "",
-      "summary": "充电宝实用高频，自带墙插创新，适合旅行，价格大概率超35元，功能清晰，情绪价值在于减少携带配件",
+      "summary": "自带墙插设计创新，满足高频充电需求，实用性强，功能全面，价格合理，易于理解，功能驱动情绪价值。",
       "risk": "自带墙插的3合1充电宝，10000mAh，22.5W快充，便携墙插一体化",
       "review_confidence": 9,
       "review_reason": "自带墙插的3合1充电宝，10000mAh，22.5W快充，便携墙插一体化",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "充电宝",
-        "便携",
-        "快充",
+        "buy_sample",
+        "deepseek_search_agent",
+        "market_signal_strong",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "6fa2555aa2db",
+      "product_key": null,
+      "title": "Byredo Infra Luna Scent & Light Diffuser | Uncrate",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://uncrate.com/byredo-infra-luna-scent-light-diffuser",
+      "image": "https://uncrate.com/p/2022/05/byredo-infra-luna-scent-light-diffuser.jpg",
+      "summary": "Byredo高端品牌，香薰灯创新设计，但价格高受众窄，实用性和频率一般。",
+      "risk": "结合香薰扩散功能的台灯，LED加热蜡烛实现香薰，结构创新",
+      "review_confidence": 9,
+      "review_reason": "结合香薰扩散功能的台灯，LED加热蜡烛实现香薰，结构创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "氛围灯",
+        "香薰灯",
+        "设计师联名",
         "buy_sample",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "120663d6e3cc",
+      "product_key": null,
+      "title": "Marie Antoinette – Avant Guillotine – Vin Rouge – Packaging Of The...",
+      "category": "创意礼盒",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Packaging of the World",
+      "source_family": "包装专项",
+      "source_quality": "premium",
+      "url": "https://packagingoftheworld.com/2023/07/marie-antoinette-avant-guillotine-vin-rouge.html",
+      "image": "",
+      "summary": "产品为创意红酒礼盒，结构创新但实用性和需求频率中等，目标人群较窄，即时理解成本高，情绪价值依赖历史主题但功能先行。",
+      "risk": "滑轨抽屉柜结构，内含酒杯酒具，包装结构创新",
+      "review_confidence": 9,
+      "review_reason": "滑轨抽屉柜结构，内含酒杯酒具，包装结构创新",
+      "next_action": "拆解包装结构和开箱动线，做二次主题化",
+      "tags": [
+        "wine gift box",
+        "Marie Antoinette",
+        "novelty packaging",
+        "sliding drawer cabinet",
+        "deepseek_search_agent",
+        "packaging_specialist"
       ]
     },
     {
@@ -715,16 +879,15 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/ample/ample-the-powerbank-reinvented",
       "image": "",
-      "summary": "产品概念清晰，解决携带线缆痛点，高频需求且实用性强；但容量和兼容性可能成为短板，且kickstarter众筹价格通常偏高，需验证实际售价。",
+      "summary": "超薄设计、内置两条侧边线、自动开机、直通充电等实用功能突出，但可能存在容量和充电速度短板；Kickstarter热门项目，市场信号强。",
       "risk": "内置两条侧边线免去外带线缆，超薄设计",
       "review_confidence": 9,
       "review_reason": "内置两条侧边线免去外带线缆，超薄设计",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "充电宝",
-        "超薄",
-        "内置线",
         "buy_sample",
+        "market_signal_strong",
+        "充电宝",
         "deepseek_search_agent"
       ]
     },
@@ -745,16 +908,16 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented",
       "image": "",
-      "summary": "产品超薄便携，支持自定义线缆，实用性和创新性兼具；但容量等性能细节未披露，存在短板。众筹价格符合高价标准，概念易理解，情绪价值有待基础功能验证。",
+      "summary": "超薄便携设计，自选线缆，满足高频需求，定价高。",
       "risk": "内置两条侧边线免去外带线缆，超薄设计",
       "review_confidence": 9,
       "review_reason": "内置两条侧边线免去外带线缆，超薄设计",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
+        "超薄充电宝",
+        "便携充电宝",
         "buy_sample",
-        "deepseek_search_agent",
-        "market_signal_strong",
-        "充电宝"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1073,6 +1236,36 @@
       "tags": [
         ">35",
         "Uncrate Shop"
+      ]
+    },
+    {
+      "id": "3f61af3cc48d",
+      "product_key": null,
+      "title": "M-Light 6: The smallest adjustable motion sensor night... — Kickstarter",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/anifree/m-light-6-the-smallest-adjustable-motion-sensor-ni",
+      "image": "",
+      "summary": "产品实用，功能全面，但市场竞争激烈，价格未知。",
+      "risk": "微型可调运动感应夜灯，创新点在于微型化与运动感应结合，提升夜间使用便利性。",
+      "review_confidence": 9,
+      "review_reason": "微型可调运动感应夜灯，创新点在于微型化与运动感应结合，提升夜间使用便利性。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "智能家居",
+        "夜灯",
+        "运动感应",
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1398,162 +1591,117 @@
       ]
     },
     {
-      "id": "b92e31a81dee",
+      "id": "c0447f701fac",
       "product_key": null,
-      "title": "Nestout 15000mAh Power Bank",
-      "category": "充电宝",
-      "action_lane": "适合改造",
+      "title": "This Lamp Gets Its Glow From a Fashionable Collar Worn 400 Years Ago - Yanko Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
       "axes": [
-        "功能启发"
+        "结构启发",
+        "情绪启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Uncrate Shop",
-      "source_family": "市场信号",
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://shop.uncrate.com/products/15000mah-power-bank",
-      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/nestout-15K-compact-portable-power-bank-waterproof-battery-outdoor-gear-DE-NEST15000ABE-hero-shot.jpg?v=1765984924",
-      "summary": "Built for the wild but refined enough for the city, this 15,000mAh power bank shrugs off water, dust, and impact with a shock-absorbent core wrapped in a rugged shell. Compact at just 0.8 pounds, it delivers 32W of fast Listed price signal: $59.99.",
-      "risk": "15000mAh，32W快充，防水防震，0.8磅轻量，户外耐用",
-      "review_confidence": 8,
-      "review_reason": "15000mAh，32W快充，防水防震，0.8磅轻量，户外耐用",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        ">35",
-        "Joe"
-      ]
-    },
-    {
-      "id": "d6e1cb7cf717",
-      "product_key": null,
-      "title": "Nestout 5000mAh Power Bank",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Uncrate Shop",
-      "source_family": "市场信号",
-      "source_quality": "premium",
-      "url": "https://shop.uncrate.com/products/5000mah-power-bank",
-      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/nestout-5K-compact-portable-power-bank-waterproof-battery-outdoor-gear-DE-NEST5000AMA-hero-shot.jpg?v=1765293269",
-      "summary": "This rugged, waterproof portable charger from NESTOUT is built to keep your devices powered no matter where your adventures take you. It easily fits in your pack or pocket, while its resilient design features a hard exte Listed price signal: $39.99.",
-      "risk": "5000mAh，防水防震，硬质外壳，口袋大小，户外便携",
-      "review_confidence": 8,
-      "review_reason": "5000mAh，防水防震，硬质外壳，口袋大小，户外便携",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        ">35",
-        "Joe"
-      ]
-    },
-    {
-      "id": "b9b2c9823cc3",
-      "product_key": null,
-      "title": "World’s Most Powerful 310W 20,000mAh Power Bank - Indiegogo",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Indiegogo",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.indiegogo.com/en/projects/aohiteam/world-s-most-powerful-310w-20-000mah-power-bank",
-      "image": "",
-      "summary": "Meet the world's most powerful 20,000mAh power bank with groundbreaking 310W output. It can charge a MacBook Pro 16\" to 50% in 30 minutes while simultaneously powering other devices with dual 140W USB-C ports. With lightning-fast 180W self-charging, you'll spe",
-      "risk": "310W输出20000mAh充电宝，双140W USB-C口，180W自充，功率创新。",
+      "url": "https://www.yankodesign.com/2026/04/16/this-lamp-gets-its-glow-from-a-fashionable-collar-worn-400-years-ago",
+      "image": "https://www.yankodesign.com/images/design_news/2026/04/this-lamp-gets-its-glow-from-a-fashionable-collar-worn-400-years-ago/rachel-lamp-01.jpg",
+      "summary": "产品通过反射设计实现漫射照明，功能创新且无短板，但作为氛围灯使用频率不高，目标人群较窄，实用性和大众吸引力中等。预估售价可能较高，但概念易理解，情绪价值可叠加。",
+      "risk": "通过反射设计产生均匀漫射光，不直射眼睛，结构及交互创新",
       "review_confidence": 9,
-      "review_reason": "310W输出20000mAh充电宝，双140W USB-C口，180W自充，功率创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "review_reason": "通过反射设计产生均匀漫射光，不直射眼睛，结构及交互创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "market_signal",
-        "充电宝"
+        "ambient lighting",
+        "design",
+        "diffuse light",
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
-      "id": "9b37adc7e8d0",
+      "id": "91ef19a78bfc",
       "product_key": null,
-      "title": "Red Dot Design Award: Chefdeluxe",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
+      "title": "This portable power bank comes with an attached cord to ensure your phone is never at 1% again! - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2020/08/31/this-portable-power-bank-comes-with-an-attached-cord-to-ensure-your-phone-is-never-at-1-again",
+      "image": "https://www.yankodesign.com/images/design_news/2020/08/275140/09-peel_yankodesign.jpg",
+      "summary": "产品解决忘带充电线的常见痛点，实用性强；充电宝本身是高频需求，但固定线设计可能限制部分用户偏好；产品概念简单，3秒可懂；功能基础无短板，但情绪价值较低，预估售价合理。",
+      "risk": "集成固定线缆，解决忘带线问题，功能结构创新",
+      "review_confidence": 9,
+      "review_reason": "集成固定线缆，解决忘带线问题，功能结构创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "trend",
+        "充电宝",
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "6f5362a9f419",
+      "product_key": null,
+      "title": "A 6mm 5,000 mAh Power Bank: Xiaomi Built One Thinner Than Any ...",
+      "category": "充电宝",
+      "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "包装启发",
         "结构启发"
       ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/chefdeluxe-48451",
-      "image": "",
-      "summary": "Chefdeluxe brings a fresh and new cooking experience to busy individuals. It is designed to be cost, space, time and energy-efficient, as well as to reduce food waste. Chefdeluxe combines multiple kitchen appliances into one self-cleaning, sleek and...",
-      "risk": "多合一自清洁烹饪设备，节省空间、时间和能源",
-      "review_confidence": 9,
-      "review_reason": "多合一自清洁烹饪设备，节省空间、时间和能源",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "award_gallery",
-        "创意厨具"
-      ]
-    },
-    {
-      "id": "074e588293c8",
-      "product_key": null,
-      "title": "Drop-proof, under 28 grams, and finally beautiful: Benks’ new Kevlar iPhone cases put aesthetics first",
-      "category": "手机壳",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
+      "score": 87,
+      "score_label": "8.7",
       "source": "Yanko Design",
       "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/05/26/drop-proof-under-28-grams-and-finally-beautiful-benks-new-kevlar-iphone-cases-put-aesthetics-first",
-      "image": "https://www.yankodesign.com/images/design_news/2026/05/drop-proof-27-grams-and-finally-beautiful-benks-new-kevlar-iphone-cases-put-aesthetics-first/BENKS_ArmorEdge_Cover_05.jpg",
-      "summary": "Drop-proof, under 28 grams, and finally beautiful: Benks’ new Kevlar iPhone cases put aesthetics first There is a reason Kevlar keeps showing up in premium phone accessories. The material brings a rare combination of low weight, tactile ric",
-      "risk": "Kevlar材质，防摔且重量低于28克，材料与轻量化创新",
-      "review_confidence": 9,
-      "review_reason": "Kevlar材质，防摔且重量低于28克，材料与轻量化创新",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "url": "https://www.yankodesign.com/2026/03/02/a-6mm-5000-mah-power-bank-xiaomi-built-one-thinner-than-any-phone",
+      "image": "",
+      "summary": "Mar 2, 2026 · I’ve carried a lot of power banks over the years. Bulky ones that weigh down my pockets, chunky bricks that barely fit in a crossbody bag, and a few “compact” options that still felt like lugging around a deck of cards. So when Xiaomi announced a",
+      "risk": "6mm厚度实现5000mAh容量，超薄设计显著提升便携性",
+      "review_confidence": 10,
+      "review_reason": "6mm厚度实现5000mAh容量，超薄设计显著提升便携性",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "Yanko Design",
-        "公开来源"
+        "editorial_main",
+        "充电宝"
       ]
     },
     {
-      "id": "15d68e67eef6",
+      "id": "43af7c54187c",
       "product_key": null,
-      "title": "BUDU - A modular phone case that adapts to you! by Bruce ...",
-      "category": "手机壳",
-      "action_lane": "适合改造",
+      "title": "iF Design - FLEXTAIL ZERO POWER BANK 10000C",
+      "category": "充电宝",
+      "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "结构启发"
       ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Indiegogo",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.indiegogo.com/en/projects/brucescannell/budu-a-modular-phone-case-that-adapts-to-you/yourpledge",
-      "image": "",
-      "summary": "具体产品为BUDU模块化手机壳，创新在于模块化设计允许用户更换附件以适应不同使用场景。。页面证据：The short answer is no. We wanted to maximize the customizable space for each case, so that makes each attachment unique to its specific phone type. However, the mounts are interchangeable between the two. Manufacturing Updates We are currently manufacturing our first production run for iPhone 6/6s/7 phones. Take a look.",
-      "risk": "模块化设计允许更换附件，显著创新在结构和功能适配",
+      "score": 85,
+      "score_label": "8.5",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/flextail-zero-power-bank-10000c/755983",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "具体产品：FLEXTAIL ZERO POWER BANK 10000C。创新为世界首个使用锻造碳纤维的充电宝，厚度仅9.9mm，重145g，具备IPX4防水，实现超轻量化与高耐久性结合。。页面证据：FLEXTAIL ZERO POWER BANK 10000C is a power bank designed for trail running, redefining portability and durability in extreme outdoor conditions. With a body only 9.9 mm thick and weighing 145 g, it achieves a rare balance between 10,000 mAh capacity and ultra-light structure. As the world’s first power bank using forged carbon fiber, combined with a high-toughness nylon frame, it ensures exceptional strength, puncture resistance, and IPX4 water protection—making outdoor energy carrying lighter and more reliable.",
+      "risk": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
       "review_confidence": 9,
-      "review_reason": "模块化设计允许更换附件，显著创新在结构和功能适配",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "review_reason": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
+        "award_gallery",
+        "buy_sample"
       ]
     },
     {
@@ -1836,17 +1984,16 @@
       "source_quality": "premium",
       "url": "https://www.designboom.com/technology/lego-calendar-by-vitamins-digitally-syncs-to-google-calendar-10-01-2013",
       "image": "https://www.designboom.com/twitterimages/uploads/2013/10/lego-calendar-vitamin-syncs-with-google-calendar-designboom01.jpg",
-      "summary": "产品结合物理LEGO与数字日历，实用且有一定创新性，但LEGO搭建门槛和相对小众的受众限制了广泛吸引力。",
+      "summary": "Product combines LEGO with digital calendar sync, innovative but niche. High price likely acceptable for LEGO fans. Clear concept but limited appeal.",
       "risk": "LEGO积木日历可数字同步Google日历，物理数字交互创新",
       "review_confidence": 9,
       "review_reason": "LEGO积木日历可数字同步Google日历，物理数字交互创新",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "trend",
-        "calendar",
-        "lego",
         "deepseek_search_agent",
-        "editorial_main"
+        "editorial_main",
+        "trend",
+        "日历"
       ]
     },
     {
@@ -1867,13 +2014,15 @@
       "source_quality": "premium",
       "url": "https://www.core77.com/posts/17088/this-just-inbox-in-these-lamps-the-socket-is-the-bulb-17088",
       "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_17088_.jpg",
-      "summary": "创意结构提升实用性，但氛围灯非高频需求，受众较窄；功能无大短板，概念直观，情绪价值通过设计感和互动性体现。",
+      "summary": "产品设计独特，概念易懂，但偏向装饰性，大众需求有限，实用性中等。",
       "risk": "插座直接作为光源，可旋转指向，可更换灯罩",
       "review_confidence": 9,
       "review_reason": "插座直接作为光源，可旋转指向，可更换灯罩",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "trend",
+        "设计感",
+        "创意照明",
+        "氛围灯",
         "deepseek_search_agent",
         "editorial_main"
       ]
@@ -1895,14 +2044,14 @@
       "source_quality": "premium",
       "url": "https://www.core77.com/projects/80288/A-Sleek-Wireless-Portable-Lamp-that-Can-Charge-Your-Devices",
       "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/837472_lead_400_80288_.jpg",
-      "summary": "产品融合无线便携灯与充电功能，设计优雅，但价格可能偏高，目标用户较窄，实用性中等。",
+      "summary": "产品结合氛围灯与无线充电功能，设计创新但市场验证不足，价格可能较高，使用场景相对低频。",
       "risk": "无线便携且可给设备充电，吹制玻璃设计",
       "review_confidence": 9,
       "review_reason": "无线便携且可给设备充电，吹制玻璃设计",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "trend",
-        "氛围灯",
+        "smart lighting",
+        "portable lamp",
         "deepseek_search_agent",
         "editorial_main"
       ]
@@ -1934,58 +2083,6 @@
       ]
     },
     {
-      "id": "5a98a7459cb0",
-      "product_key": null,
-      "title": "LG's Latest Lamp Has a Mini Garden + Grow Light Built Into It",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Design Milk",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://design-milk.com/lgs-latest-lamp-has-a-mini-garden-grow-light-built-into-it",
-      "image": "https://design-milk.com/images/2025/01/lg-indoor-gardening-appliances-2.jpg",
-      "summary": "LG台灯/落地灯内置迷你花园和植物生长灯，融合照明与种植功能。。页面证据：LG is blending technology and nature, with a new lamp that has a mini garden and grow light built right into it.",
-      "risk": "灯体内置迷你花园和植物生长灯，融合种植功能",
-      "review_confidence": 9,
-      "review_reason": "灯体内置迷你花园和植物生长灯，融合种植功能",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "68d4782c87b6",
-      "product_key": null,
-      "title": "This modern, minimalist lamp recreates the gentle, calming flicker of the candlestick - Yanko Design",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2021/10/20/this-modern-minimalist-lamp-recreates-the-gentle-calming-flicker-of-the-candlestick",
-      "image": "https://www.yankodesign.com/images/design_news/2021/10/auto-draft/ambientec_hymn_lamp_1.jpg",
-      "summary": "Ambientec HYMN 台灯以2000K暖光LED和摆锤透镜模拟蜡烛火焰的柔和摇曳，创新地重现了烛光的宁静体验。。页面证据：https://vimeo.com/570792192 Paying tribute to the humble candle-lamp that was as ubiquitous in the past as the flashlight on your smartphone is today, the HYMN lamp by Ambientec recreates the simplistic joy of watching a candle's flickering flame... but it does so without a wick, wax, or even a fire. “The use of fire has led",
-      "risk": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
-      "review_confidence": 9,
-      "review_reason": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "design_community"
-      ]
-    },
-    {
       "id": "48db698060de",
       "product_key": null,
       "title": "This convertible full-body jacket was designed to give you 100% protection from the outdoor elements - Yanko Design",
@@ -2010,33 +2107,6 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "f21b04c71284",
-      "product_key": null,
-      "title": "拒绝APP！Buddy 发条式复古氛围灯~ - 普象网",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "普象网",
-      "source_family": "设计社区",
-      "source_quality": "standard",
-      "url": "https://www.puxiang.com/galleries/cb59425510c29ed3b7754e4b7e6640bd",
-      "image": "",
-      "summary": "2026年5月27日 · Buddy Design 便携式氛围灯，获2026 iF 设计奖。摒弃APP 与蓝牙，仅靠尾部发条旋钮控制：长按开机、短按切换3 档亮度、旋转切换8 种渐变光色（基于色彩 ...",
-      "risk": "发条旋钮控制，无APP/蓝牙，创新交互方式",
-      "review_confidence": 9,
-      "review_reason": "发条旋钮控制，无APP/蓝牙，创新交互方式",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "design_community",
-        "氛围灯"
       ]
     },
     {
@@ -2172,112 +2242,33 @@
       ]
     },
     {
-      "id": "8177fb01aa2c",
+      "id": "5540ca4e45c8",
       "product_key": null,
-      "title": "Red Dot Design Award: GEO TECH® Unbounded Dual-Core Outdoor Two-in-One Jacket",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 78,
-      "score_label": "7.8",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/geo-techr-unbounded-dual-core-outdoor-two-in-one-jacket-87157",
-      "image": "",
-      "summary": "GEO TECH Unbounded Dual-Core Outdoor Two-in-One Jacket: 防水外壳+羽绒内胆两件套，应对多变天气，结构创新。。页面证据：The GEO TECH Unbounded Dual-Core Outdoor Two-in-One Jacket is designed for changeable outdoor weather conditions and combines a weatherproof outer jacket with a warm down inner jacket. Striking coloured surfaces, diagonal lines and bold colour contrasts...",
-      "risk": "防水外壳与羽绒内胆二合一设计，适应多变天气。",
-      "review_confidence": 9,
-      "review_reason": "防水外壳与羽绒内胆二合一设计，适应多变天气。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "buy_sample"
-      ]
-    },
-    {
-      "id": "6c75663bc7ad",
-      "product_key": null,
-      "title": "Snow Peak Just Shrank Its Beloved Hozuki to a $15 Keychain",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 78,
-      "score_label": "7.8",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/07/19/snow-peak-just-shrank-its-beloved-hozuki-to-a-15-keychain",
-      "image": "https://www.yankodesign.com/images/design_news/2026/07/snow-peak-just-shrank-its-beloved-hozuki-to-a-15-keychain/hozuki-00.jpg",
-      "summary": "Snow Peak Just Shrank Its Beloved Hozuki to a $15 Keychain Good design has a way of making you question what you’ve been putting up with. I’ve carried the same clunky keychain flashlight for years, and...",
-      "risk": "原版Hozuki灯笼缩小为钥匙扣尺寸，实现超便携随身照明，结构紧凑且IPX4防水",
-      "review_confidence": 9,
-      "review_reason": "原版Hozuki灯笼缩小为钥匙扣尺寸，实现超便携随身照明，结构紧凑且IPX4防水",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "Yanko Design",
-        "公开来源"
-      ]
-    },
-    {
-      "id": "6f5362a9f419",
-      "product_key": null,
-      "title": "A 6mm 5,000 mAh Power Bank: Xiaomi Built One Thinner Than Any ...",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 87,
-      "score_label": "8.7",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/03/02/a-6mm-5000-mah-power-bank-xiaomi-built-one-thinner-than-any-phone",
-      "image": "",
-      "summary": "Mar 2, 2026 · I’ve carried a lot of power banks over the years. Bulky ones that weigh down my pockets, chunky bricks that barely fit in a crossbody bag, and a few “compact” options that still felt like lugging around a deck of cards. So when Xiaomi announced a",
-      "risk": "6mm厚度实现5000mAh容量，超薄设计显著提升便携性",
-      "review_confidence": 10,
-      "review_reason": "6mm厚度实现5000mAh容量，超薄设计显著提升便携性",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "editorial_main",
-        "充电宝"
-      ]
-    },
-    {
-      "id": "43af7c54187c",
-      "product_key": null,
-      "title": "iF Design - FLEXTAIL ZERO POWER BANK 10000C",
+      "title": "This tiny customizable power bank features swappable modules like a lamp and a replaceable battery - Yanko Design",
       "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "结构启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
+      "score": 78,
+      "score_label": "7.8",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/flextail-zero-power-bank-10000c/755983",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "具体产品：FLEXTAIL ZERO POWER BANK 10000C。创新为世界首个使用锻造碳纤维的充电宝，厚度仅9.9mm，重145g，具备IPX4防水，实现超轻量化与高耐久性结合。。页面证据：FLEXTAIL ZERO POWER BANK 10000C is a power bank designed for trail running, redefining portability and durability in extreme outdoor conditions. With a body only 9.9 mm thick and weighing 145 g, it achieves a rare balance between 10,000 mAh capacity and ultra-light structure. As the world’s first power bank using forged carbon fiber, combined with a high-toughness nylon frame, it ensures exceptional strength, puncture resistance, and IPX4 water protection—making outdoor energy carrying lighter and more reliable.",
-      "risk": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
+      "url": "https://www.yankodesign.com/2023/04/06/this-tiny-customizable-power-bank-features-swappable-modules-like-a-lamp-and-a-replaceable-battery",
+      "image": "https://www.yankodesign.com/images/design_news/2023/04/buddie-power-bank-with-modular-accessories/buddie_power_bank_1.jpg",
+      "summary": "迷你充电宝满足高频充电需求，模块化设计（可换电池、带灯）实用且有趣，体积小易携带，但模块化可能增加成本，市场接受度待验证。",
+      "risk": "可更换锂电池和模块化架构，可互换USB-C头为便携灯",
       "review_confidence": 9,
-      "review_reason": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
+      "review_reason": "可更换锂电池和模块化架构，可互换USB-C头为便携灯",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "award_gallery",
-        "buy_sample"
+        "充电宝",
+        "便携",
+        "模块化",
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -2331,6 +2322,34 @@
       "tags": [
         ">35",
         "Uncrate Shop"
+      ]
+    },
+    {
+      "id": "f04ce4e7aeda",
+      "product_key": null,
+      "title": "Salut! Travel Cup | Cool Material",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Cool Material",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://coolmaterial.com/lifestyle/home/salut-travel-cup",
+      "image": "",
+      "summary": "折叠杯便携实用，适合旅行露营，但用户群体较窄，非日常高频。功能简单无短板，价格有空间。情绪价值中等。",
+      "risk": "不锈钢可折叠旅行杯，可放入口袋，便携结构创新。",
+      "review_confidence": 9,
+      "review_reason": "不锈钢可折叠旅行杯，可放入口袋，便携结构创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "travel",
+        "collapsible",
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -2440,6 +2459,84 @@
       ]
     },
     {
+      "id": "b92e31a81dee",
+      "product_key": null,
+      "title": "Nestout 15000mAh Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/15000mah-power-bank",
+      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/nestout-15K-compact-portable-power-bank-waterproof-battery-outdoor-gear-DE-NEST15000ABE-hero-shot.jpg?v=1765984924",
+      "summary": "Built for the wild but refined enough for the city, this 15,000mAh power bank shrugs off water, dust, and impact with a shock-absorbent core wrapped in a rugged shell. Compact at just 0.8 pounds, it delivers 32W of fast Listed price signal: $59.99.",
+      "risk": "15000mAh，32W快充，防水防震，0.8磅轻量，户外耐用",
+      "review_confidence": 8,
+      "review_reason": "15000mAh，32W快充，防水防震，0.8磅轻量，户外耐用",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Joe"
+      ]
+    },
+    {
+      "id": "d6e1cb7cf717",
+      "product_key": null,
+      "title": "Nestout 5000mAh Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/5000mah-power-bank",
+      "image": "https://cdn.shopify.com/s/files/1/0248/6216/files/nestout-5K-compact-portable-power-bank-waterproof-battery-outdoor-gear-DE-NEST5000AMA-hero-shot.jpg?v=1765293269",
+      "summary": "This rugged, waterproof portable charger from NESTOUT is built to keep your devices powered no matter where your adventures take you. It easily fits in your pack or pocket, while its resilient design features a hard exte Listed price signal: $39.99.",
+      "risk": "5000mAh，防水防震，硬质外壳，口袋大小，户外便携",
+      "review_confidence": 8,
+      "review_reason": "5000mAh，防水防震，硬质外壳，口袋大小，户外便携",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Joe"
+      ]
+    },
+    {
+      "id": "b9b2c9823cc3",
+      "product_key": null,
+      "title": "World’s Most Powerful 310W 20,000mAh Power Bank - Indiegogo",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Indiegogo",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.indiegogo.com/en/projects/aohiteam/world-s-most-powerful-310w-20-000mah-power-bank",
+      "image": "",
+      "summary": "Meet the world's most powerful 20,000mAh power bank with groundbreaking 310W output. It can charge a MacBook Pro 16\" to 50% in 30 minutes while simultaneously powering other devices with dual 140W USB-C ports. With lightning-fast 180W self-charging, you'll spe",
+      "risk": "310W输出20000mAh充电宝，双140W USB-C口，180W自充，功率创新。",
+      "review_confidence": 9,
+      "review_reason": "310W输出20000mAh充电宝，双140W USB-C口，180W自充，功率创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
       "id": "a6c47ded4293",
       "product_key": null,
       "title": "Rugged Solar Charger & Flashlight - ThisIsWhyImBrokeTwisting Jello Shot GlassRoll-Up Solar ChargerThor Hammered Meteorite Ring - ThisIsWhyImBrokeFerrari 458 Spe",
@@ -2489,6 +2586,60 @@
       "tags": [
         "market_signal",
         "充电宝"
+      ]
+    },
+    {
+      "id": "9b37adc7e8d0",
+      "product_key": null,
+      "title": "Red Dot Design Award: Chefdeluxe",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/chefdeluxe-48451",
+      "image": "",
+      "summary": "Chefdeluxe brings a fresh and new cooking experience to busy individuals. It is designed to be cost, space, time and energy-efficient, as well as to reduce food waste. Chefdeluxe combines multiple kitchen appliances into one self-cleaning, sleek and...",
+      "risk": "多合一自清洁烹饪设备，节省空间、时间和能源",
+      "review_confidence": 9,
+      "review_reason": "多合一自清洁烹饪设备，节省空间、时间和能源",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "award_gallery",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "074e588293c8",
+      "product_key": null,
+      "title": "Drop-proof, under 28 grams, and finally beautiful: Benks’ new Kevlar iPhone cases put aesthetics first",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/26/drop-proof-under-28-grams-and-finally-beautiful-benks-new-kevlar-iphone-cases-put-aesthetics-first",
+      "image": "https://www.yankodesign.com/images/design_news/2026/05/drop-proof-27-grams-and-finally-beautiful-benks-new-kevlar-iphone-cases-put-aesthetics-first/BENKS_ArmorEdge_Cover_05.jpg",
+      "summary": "Drop-proof, under 28 grams, and finally beautiful: Benks’ new Kevlar iPhone cases put aesthetics first There is a reason Kevlar keeps showing up in premium phone accessories. The material brings a rare combination of low weight, tactile ric",
+      "risk": "Kevlar材质，防摔且重量低于28克，材料与轻量化创新",
+      "review_confidence": 9,
+      "review_reason": "Kevlar材质，防摔且重量低于28克，材料与轻量化创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
       ]
     },
     {
@@ -2544,6 +2695,33 @@
       ]
     },
     {
+      "id": "15d68e67eef6",
+      "product_key": null,
+      "title": "BUDU - A modular phone case that adapts to you! by Bruce ...",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Indiegogo",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.indiegogo.com/en/projects/brucescannell/budu-a-modular-phone-case-that-adapts-to-you/yourpledge",
+      "image": "",
+      "summary": "具体产品为BUDU模块化手机壳，创新在于模块化设计允许用户更换附件以适应不同使用场景。。页面证据：The short answer is no. We wanted to maximize the customizable space for each case, so that makes each attachment unique to its specific phone type. However, the mounts are interchangeable between the two. Manufacturing Updates We are currently manufacturing our first production run for iPhone 6/6s/7 phones. Take a look.",
+      "risk": "模块化设计允许更换附件，显著创新在结构和功能适配",
+      "review_confidence": 9,
+      "review_reason": "模块化设计允许更换附件，显著创新在结构和功能适配",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "9d1ffadf82a9",
       "product_key": null,
       "title": "Cable Cradle - by Andrew Ferrier / Core77 Design Awards",
@@ -2567,165 +2745,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "baaf90191003",
-      "product_key": null,
-      "title": "Statik SmartCharge Global Magnetic PowerBank | Uncrate Supply",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Uncrate",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://shop.uncrate.com/products/smartcharge-10-000-mah-powerbank",
-      "image": "",
-      "summary": "具体产品Statik SmartCharge Global Magnetic PowerBank，内置USB-C和Lightning线缆、侧面磁吸无线充电、多个端口，具有多格式充电和便携创新。。页面证据：The SmartCharge from Statik provides power whether you're attached to an outlet or not. It has both USB-C and Lightning cables built-in, as well as a magnetic wireless charger on the side, and USB-C and USB-A charging ports.",
-      "risk": "内置USB-C和Lightning线缆、侧面磁吸无线充电，多合一便携设计",
-      "review_confidence": 8,
-      "review_reason": "内置USB-C和Lightning线缆、侧面磁吸无线充电，多合一便携设计",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "e189253e64a8",
-      "product_key": null,
-      "title": "DEXPOLE: Solar Power Bank for Outdoor Life - Kickstarter",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/sfmaker/dexpole-foldable-portable-most-effective-solar-charger",
-      "image": "",
-      "summary": "DEXPOLE太阳能充电宝：24000mAh、PD65W快充、4折太阳能板、24%转换率，创新在于高效太阳能与快充集成。。页面证据：SF Maker is raising funds for DEXPOLE: Solar Power Bank for Outdoor Life on Kickstarter! 24000mAh | PD65W Fast Charging | 4 Panels foldable | 24% Conversion Rate | 24W High Power | Compatible with all USB-devices | Outdoors",
-      "risk": "4折高效太阳能板（24%转换率）集成65W快充",
-      "review_confidence": 9,
-      "review_reason": "4折高效太阳能板（24%转换率）集成65W快充",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "ee57909c600f",
-      "product_key": null,
-      "title": "Solar Energy S：Retractable solar power bank by solarexcel ...",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/solarexcel/solar-energy-s-retractable-solar-power-bank",
-      "image": "",
-      "summary": "Solar Energy S可伸缩太阳能充电宝：40000mAh、120W PD快充、可伸缩太阳能板、口袋大小，创新在于伸缩设计与高功率。。页面证据：Sep 4, 2024 · solarexcel is raising funds for Solar Energy S：Retractable solar power bank on Kickstarter! 40,000 mAh | Full band solar charging| 120W PD fast charging | Pocket size | LCD screen",
-      "risk": "可伸缩太阳能板设计，40000mAh大容量120W快充",
-      "review_confidence": 9,
-      "review_reason": "可伸缩太阳能板设计，40000mAh大容量120W快充",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "6fce5c1096dc",
-      "product_key": null,
-      "title": "This Smart Griddle Just Combined 4 Breakfast Gadgets Into One Device - Yanko Design",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2025/12/12/this-smart-griddle-just-combined-4-breakfast-gadgets-into-one-device",
-      "image": "https://www.yankodesign.com/images/design_news/2025/12/this-smart-griddle-just-combined-4-breakfast-gadgets-into-one-device/briochef-01.jpg",
-      "summary": "智能烤盘组合煎锅、三明治机、烤面包机、华夫饼机四种功能，多功能创新。。页面证据：Look, we need to talk about kitchen appliances. If you're anything like me, you've got a toaster shoved in one corner, a waffle maker collecting dust in a cabinet, and maybe a sandwich press you haven't seen since 2019. The countertop real estate struggle is real, and it's a problem that designer Nikhil Thomas Zachariah",
-      "risk": "集成四种早餐设备功能，节省空间，多功能创新",
-      "review_confidence": 8,
-      "review_reason": "集成四种早餐设备功能，节省空间，多功能创新",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "a520d980589a",
-      "product_key": null,
-      "title": "Case Study: Building a Better Bottle with Replenish, by Jason Foster - Core77",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.core77.com/posts/19519",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_19519_.jpg",
-      "summary": "Replenish可重复使用水瓶，通过浓缩液分配系统减少塑料浪费，结构创新，符合水杯可直接饮用的定义。。页面证据：Five years ago I had an epiphany while I was ironing my shirt. I found myself wondering why it was that my ironing spray had to come in such a big bottle? Why couldn't it come with a concentrate I could dilute myself in one integrated bottle, not two separate...",
-      "risk": "浓缩液分配系统，减少塑料浪费，结构创新",
-      "review_confidence": 9,
-      "review_reason": "浓缩液分配系统，减少塑料浪费，结构创新",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "52f63587fc92",
-      "product_key": null,
-      "title": "iF Design - Mag-Stand Magnetic case with Kickstand",
-      "category": "手机壳",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/mag-stand-magnetic-case-with-kickstand/569985",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "Mag-Stand Magnetic Case是一款带有折叠隐形支架的磁吸手机壳，采用航空铝和塑料复合结构，解决金属支架阻挡磁吸充电问题，支持竖放横放。。页面证据：Mag-Stand Case Series' foldable invisible kickstand is integrated with strong magnetic technology, allowing for easy attachment to all MagSafe accessories. With the unique composite construction of aerospace aluminum alloy and plastic, the patented kickstand solves the industry problem of metal stand failing to support magnetic charging, and it can be placed in portrait or landscape mode stably. The embedded patented N52SH ultra-strong magnets offer stronger magnetism than Apple's, and minimize power loss during charging. The plus points like improved drop protection, slip resistance, and anti-fingerprint tech",
-      "risk": "折叠隐形支架与磁吸技术整合，解决金属支架阻挡无线充电问题，结构交互创新。",
-      "review_confidence": 9,
-      "review_reason": "折叠隐形支架与磁吸技术整合，解决金属支架阻挡无线充电问题，结构交互创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "award_gallery",
-        "buy_sample"
       ]
     }
   ]
