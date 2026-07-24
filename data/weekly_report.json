@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T11:55:05+08:00",
+  "generated_at": "2026-07-24T17:53:51+08:00",
   "week": "2026-W30",
   "group_id": "2026-W30",
   "date_start": "2026-07-20",
@@ -11,18 +11,18 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 60,
+      "适合改造": 59,
       "方向参考": 28,
-      "可直接买样": 12
+      "可直接买样": 13
     },
     "by_category": {
       "充电宝": 22,
       "水杯": 17,
-      "氛围灯": 14,
+      "氛围灯": 13,
       "创意桌搭": 10,
       "冲锋衣": 9,
       "创意厨具": 8,
-      "创意礼盒": 7,
+      "创意礼盒": 8,
       "手机壳": 6,
       "日历": 4,
       "中秋礼盒": 2,
@@ -30,9 +30,9 @@
     },
     "by_axis": {
       "功能启发": 63,
-      "结构启发": 42,
-      "包装启发": 22,
-      "情绪启发": 18,
+      "结构启发": 43,
+      "包装启发": 23,
+      "情绪启发": 17,
       "视觉启发": 14
     }
   },
@@ -280,6 +280,36 @@
       "tags": [
         "social_public_index",
         "手机壳"
+      ]
+    },
+    {
+      "id": "6b3f02fa9fd4",
+      "product_key": null,
+      "title": "Wine box with sliding lid-butler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/56f6ac75055531.5c41d1be7bc1c.jpg",
+      "summary": "滑盖变托盘的创新设计有一定实用性，但受众主要为葡萄酒爱好者和送礼场景，非高频需求；价格超过35元，功能明确但市场接受度可能有限。",
+      "risk": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
+      "review_confidence": 8,
+      "review_reason": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意礼盒",
+        "酒盒",
+        "滑盖设计",
+        "品酒配件",
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1338,7 +1368,7 @@
       "source_quality": "premium",
       "url": "https://www.yankodesign.com/2019/03/05/this-modular-organizer-declutters-your-desk-while-adding-class-to-it",
       "image": "https://www.yankodesign.com/images/design_news/2019/03/auto-draft/reease_modular_desk_organizer_hero.jpg",
-      "summary": "模块化桌面收纳兼具无线充电等11项功能，实用性强且满足高频整理需求；设计美观，适用于办公人群，但功能复杂度略高，3秒理解有一定门槛；众筹价格通常高于35RMB，且先功能后情绪的设计逻辑成立。",
+      "summary": "模块化设计实用且高频，但功能繁多可能削弱核心优势，价格未知但大概率大于35元，3秒内可理解，情绪价值高。",
       "risk": "模块化设计集成11种功能，包括无线充电",
       "review_confidence": 9,
       "review_reason": "模块化设计集成11种功能，包括无线充电",
@@ -1365,12 +1395,15 @@
       "source_quality": "premium",
       "url": "https://www.gearpatrol.com/tech/apple-online-store-new-accessories",
       "image": "",
-      "summary": "内置可伸缩USB-C线方便携带，10000mAh容量适中，数字显示实用；但兼容性仅限USB-C设备，价格未知，市场竞争激烈。",
+      "summary": "实用性强，高频需求，打击面广，功能无明显短板，3秒看懂，内置伸缩线方便且有数字显示，预估售价可能大于35RMB。",
       "risk": "内置可伸缩充电线和数字显示",
       "review_confidence": 9,
       "review_reason": "内置可伸缩充电线和数字显示",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
+        "portable charger",
+        "power bank with cable",
+        "digital display",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -1632,16 +1665,16 @@
       "source_quality": "premium",
       "url": "https://www.yankodesign.com/2026/01/29/this-17-power-bank-20000mah-can-charge-a-macbook-air-and-its-cheaper-than-apples-cleaning-cloth",
       "image": "https://www.yankodesign.com/images/design_news/2026/01/605812/tessan_20k_power_bank_1.jpg",
-      "summary": "高容量、内置线缆、30W充电、性价比极高，适合大众高频需求，功能无明显短板，价格远高于35 RMB，3秒易懂，情绪价值突出（对比苹果擦屏布）。",
+      "summary": "极高性价比，集成线缆方便，但来源仅1次，需更多验证",
       "risk": "内置Lightning和USB-C充电线，30W快充且价格极低，零负担便携",
       "review_confidence": 9,
       "review_reason": "内置Lightning和USB-C充电线，30W快充且价格极低，零负担便携",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "deepseek_search_agent",
         "editorial_main",
         "trend",
-        "充电宝"
+        "充电宝",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1952,7 +1985,7 @@
       "source_quality": "premium",
       "url": "https://www.red-dot.org/de/project/eco-design-circular-lightweight-functional-down-puffer-68268",
       "image": "",
-      "summary": "产品环保设计突出，功能扎实，但受众较窄，非高频需求，售价符合要求。",
+      "summary": "产品功能性强，环保设计有卖点，但名称复杂难以秒懂，受众偏窄。",
       "risk": "生物基尼龙PA510和回收拉链的环保材料创新",
       "review_confidence": 9,
       "review_reason": "生物基尼龙PA510和回收拉链的环保材料创新",
@@ -2087,7 +2120,7 @@
       "source_quality": "premium",
       "url": "https://www.yankodesign.com/2025/10/29/nike-just-made-a-puffer-jacket-you-can-inflate-in-15-seconds",
       "image": "https://www.yankodesign.com/images/design_news/2025/10/nike-just-made-a-puffer-jacket-you-can-inflate-in-15-seconds/airmilano-05.jpg",
-      "summary": "充气保暖概念新颖但实用性存疑（漏气风险、操作麻烦），高频需求（冬季外套）但充气功能非必需；受众偏小众（科技爱好者），价格高（Nike品牌）；功能有短板（需充气、潜在漏气），情绪价值（新奇）但功能尚未成熟。",
+      "summary": "创新充气保暖设计，便携性好，但保温可靠性存疑，价格未知，受众偏户外运动人群，适用场景有限。",
       "risk": "充气式羽绒服，15秒充气，可通过放气压缩携带，提供可调节保温",
       "review_confidence": 9,
       "review_reason": "充气式羽绒服，15秒充气，可通过放气压缩携带，提供可调节保温",
@@ -2154,6 +2187,62 @@
       ]
     },
     {
+      "id": "639c7d6e2290",
+      "product_key": null,
+      "title": "The Power Bank You Never Need To Charge! - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2017/02/08/pocketpower-the-power-bank-you-never-need-to-charge",
+      "image": "https://www.yankodesign.com/images/design_news/2017/02/pocketpower-the-power-bank-you-never-need-to-charge/flexsolar_pocketpower_pledge_cover.jpg",
+      "summary": "太阳能自充电概念新颖，但实际充电效率低，实用性有限；外观简洁易懂，有一定市场吸引力。",
+      "risk": "内置可折叠太阳能板，实现自充电创新",
+      "review_confidence": 9,
+      "review_reason": "内置可折叠太阳能板，实现自充电创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "solar",
+        "power bank",
+        "innovation",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "622b4b56ab05",
+      "product_key": null,
+      "title": "Red Dot Design Award: Magnetosphere Desk Lamp",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/de/project/magnetosphere-desk-lamp-26843",
+      "image": "",
+      "summary": "Magnetosphere Desk Lamp采用磁力球结构，基础球体与木球臂，交互创新，明确台灯。。页面证据：The aim for Magnetosphere Desk Lamp is to create a functional, ergonomic, easy-to-use lamp that is extremely simple, but also playful. The base of the lamp is a metallic hollow sphere and the arm comprises a wooden sphere, a pipe and a wooden disk that...",
+      "risk": "磁力球结构实现多角度调节，交互创新",
+      "review_confidence": 9,
+      "review_reason": "磁力球结构实现多角度调节，交互创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "buy_sample"
+      ]
+    },
+    {
       "id": "818f78d92b74",
       "product_key": null,
       "title": "iF Design - X-BIONIC® SphereWind Run Jacket",
@@ -2177,58 +2266,6 @@
       "tags": [
         "award_gallery",
         "buy_sample"
-      ]
-    },
-    {
-      "id": "ae9cdc568db8",
-      "product_key": null,
-      "title": "CSYS by Jake Dyson | Dezeen",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Dezeen",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.dezeen.com/2011/09/30/csys-by-jake-dyson",
-      "image": "",
-      "summary": "CSYS lamp by Jake Dyson with three-axis adjustment and touch-sensitive dimmer; clear product with mechanical and interaction innovation.。页面证据：February 12, 2022 - The lamp is adjustable on three axis and includes a touch-sensitive dimmer switch with light level memory.",
-      "risk": "Three-axis mechanical adjustment and touch-sensitive dimmer innovation",
-      "review_confidence": 9,
-      "review_reason": "Three-axis mechanical adjustment and touch-sensitive dimmer innovation",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "bbc9006efcd2",
-      "product_key": null,
-      "title": "Light Soy Flex by Heliograf | Dezeen Showroom",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Dezeen",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.dezeen.com/2025/04/17/light-soy-flex-heliograf-dezeen-showroom",
-      "image": "",
-      "summary": "具体产品为Light Soy Flex，创新点在于一灯多用（吊灯/壁灯/台灯）和触摸调光功能。。页面证据：April 17, 2025 - The Light Soy Flex can be plugged into mains power via a two-metre universal cable, allowing it to function as a pendant, wall or table lamp. The new Light Soy Flex is a plug-in version with added features · It also has added features including ...",
-      "risk": "Triple function as pendant, wall, or table lamp with touch dimming",
-      "review_confidence": 9,
-      "review_reason": "Triple function as pendant, wall, or table lamp with touch dimming",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -2679,32 +2716,6 @@
       "tags": [
         "Yanko Design",
         "公开来源"
-      ]
-    },
-    {
-      "id": "da3fed59263e",
-      "product_key": null,
-      "title": "Anker 无线充电宝",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Instagram",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.anker.com/products/a1647",
-      "image": "",
-      "summary": "Anker 633 MagGo无线充电宝",
-      "risk": "磁吸无线充电宝，兼容MagSafe，便携与无线功能结合",
-      "review_confidence": 9,
-      "review_reason": "磁吸无线充电宝，兼容MagSafe，便携与无线功能结合",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "充电宝",
-        "无线"
       ]
     }
   ]
