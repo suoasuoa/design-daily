@@ -117,6 +117,13 @@ jobs:
           print(f"skip_insight={skip} reason={reason}")
           PY
 
+      - name: Sync team feedback
+        if: env.SKIP_INSIGHT != '1'
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: python3 scripts/sync_feedback.py
+
       - name: Build preference profile
         if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/build_preference_profile.py

@@ -59,10 +59,10 @@ GitHub Pages 卡片
 
 ## 上线步骤
 
-1. 在 Supabase 创建反馈表和团队登录。
-2. 部署一个受权限控制的反馈写入接口。
-3. 将接口地址写入 `insight/feedback-config.js`。
-4. 在 GitHub Actions 采集开始前同步反馈事件。
+1. Supabase 使用 `supabase/feedback_schema.sql` 创建反馈表、匿名写入策略和限流。
+2. 网页通过 Publishable Key 直接写入，访客无需登录，反馈内容不可匿名读取。
+3. GitHub Actions 使用 `SUPABASE_URL` 和 `SUPABASE_SECRET_KEY` 同步反馈事件。
+4. 采集开始前运行 `sync_feedback.py` 和 `build_preference_profile.py`。
 5. 小范围试用一周，观察 Pass 原因与点赞方向，再调整相似度权重。
 
 当前功能分支为 `feature/preference-feedback`。稳定回滚点为 `stable-before-feedback-2026-07-27`。

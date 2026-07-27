@@ -97,18 +97,39 @@
   }
 
   async function flush() {
-    if (!config.endpoint) return;
+    const supabaseReady = config.supabaseUrl && config.publishableKey;
+    if (!config.endpoint && !supabaseReady) return;
     const value = load();
     if (!value.pending.length) return;
     const batch = value.pending.slice(0, 50);
     try {
-      const response = await fetch(config.endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ workspace: config.workspace || "design-daily", events: batch }),
-      });
-      if (!response.ok) throw new Error(`feedback sync failed: ${response.status}`);
-      const sent = new Set(batch.map(event => event.event_id));
+      const sent = new Set();
+      if (supabaseReady) {
+        const endpoint = `${config.supabaseUrl.replace(/\/$/, "")}/rest/v1/${config.table || "feedback_events"}`;
+        for (const event of batch) {
+          const response = await fetch(endpoint, {
+            method: "POST",
+            headers: {
+              apikey: config.publishableKey,
+              "Content-Type": "application/json",
+              Prefer: "return=minimal",
+            },
+            body: JSON.stringify(event),
+          });
+          if (!response.ok && response.status !== 409) {
+            throw new Error(`feedback sync failed: ${response.status}`);
+          }
+          sent.add(event.event_id);
+        }
+      } else {
+        const response = await fetch(config.endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ workspace: config.workspace || "design-daily", events: batch }),
+        });
+        if (!response.ok) throw new Error(`feedback sync failed: ${response.status}`);
+        batch.forEach(event => sent.add(event.event_id));
+      }
       const latest = load();
       latest.pending = latest.pending.filter(event => !sent.has(event.event_id));
       save(latest);
@@ -120,4 +141,5 @@
 
   window.FeedbackStore = { decision, record, clear, summary, flush };
   window.addEventListener("online", flush);
+  window.setTimeout(flush, 0);
 })();
