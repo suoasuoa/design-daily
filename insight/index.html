@@ -121,6 +121,33 @@
     }
     .section-head h2 { margin: 0; font-size: 25px; line-height: 1.2; letter-spacing: 0; }
     .section-note { margin: 7px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .review-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 14px 0;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .review-counts { color: var(--muted); font-size: 13px; font-weight: 800; }
+    .review-counts strong { color: var(--ink); }
+    .feedback-switch { display: inline-flex; gap: 4px; padding: 3px; border-radius: 7px; background: #e7ebf1; }
+    .feedback-filter {
+      min-height: 30px;
+      border: 0;
+      border-radius: 5px;
+      padding: 0 10px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .feedback-filter.active { background: var(--panel); color: var(--ink); box-shadow: 0 2px 8px rgba(31, 41, 55, .08); }
     .selector { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start; align-items: center; margin-top: 14px; }
     .history-select {
       min-height: 38px;
@@ -144,6 +171,8 @@
       display: flex;
       flex-direction: column;
     }
+    .card.feedback-like { border-color: #84b698; box-shadow: inset 0 0 0 1px #84b698; }
+    .card.feedback-pass { border-color: #d7a3a3; background: #fbf8f8; }
     .thumb {
       width: 100%;
       aspect-ratio: 1.18 / .82;
@@ -187,6 +216,78 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+    .feedback-actions {
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 7px;
+      align-items: center;
+    }
+    .feedback-action, .feedback-undo {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .feedback-action:hover { border-color: #9ca5b4; background: #f8fafc; }
+    .feedback-action.like.active { border-color: #4f8063; background: #edf5ee; color: #356247; }
+    .feedback-action.pass.active { border-color: #b86969; background: #faeeee; color: #8d4141; }
+    .feedback-undo { width: 36px; padding: 0; color: var(--muted); }
+    .feedback-status {
+      grid-column: 1 / -1;
+      min-height: 18px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .feedback-status.like { color: #356247; }
+    .feedback-status.pass { color: #8d4141; }
+    .reason-dialog {
+      width: min(460px, calc(100vw - 28px));
+      border: 0;
+      border-radius: 8px;
+      padding: 0;
+      color: var(--ink);
+      box-shadow: 0 28px 70px rgba(31, 41, 55, .24);
+    }
+    .reason-dialog::backdrop { background: rgba(31, 36, 48, .42); }
+    .reason-head { padding: 18px 18px 12px; border-bottom: 1px solid var(--line); }
+    .reason-head h3 { margin: 0; font-size: 18px; }
+    .reason-options { display: grid; gap: 8px; padding: 14px 18px; }
+    .reason-option {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 10px;
+      align-items: center;
+      min-height: 38px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .reason-option:has(input:checked) { border-color: #b86969; background: #faeeee; }
+    .reason-actions { display: flex; justify-content: flex-end; gap: 8px; padding: 12px 18px 18px; }
+    .dialog-button {
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 0 14px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .dialog-button.primary { border-color: #a74e4e; background: #a74e4e; color: #fff; }
     .empty {
       min-height: 180px;
       display: grid;
@@ -208,6 +309,7 @@
       .shell { width: min(100vw - 20px, 1480px); padding-top: 18px; }
       .metrics { grid-template-columns: 1fr; }
       .grid { grid-template-columns: 1fr; }
+      .review-strip { align-items: flex-start; flex-direction: column; }
     }
   </style>
 </head>
@@ -246,13 +348,27 @@
         </div>
         <div class="selector" id="groupSelector"></div>
       </div>
+      <div class="review-strip" id="reviewStrip"></div>
       <div class="lane-switch" id="laneSwitch"></div>
       <section class="grid" id="grid"></section>
       <div class="empty" id="emptyState" hidden>当前筛选下没有内容。</div>
     </main>
   </div>
 
+  <dialog class="reason-dialog" id="reasonDialog">
+    <form method="dialog" id="reasonForm">
+      <div class="reason-head"><h3>Pass 原因</h3></div>
+      <div class="reason-options" id="reasonOptions"></div>
+      <div class="reason-actions">
+        <button class="dialog-button" value="cancel" type="submit">取消</button>
+        <button class="dialog-button primary" id="confirmPass" value="confirm" type="submit">确认 Pass</button>
+      </div>
+    </form>
+  </dialog>
+
   <script src="./data.json"></script>
+  <script src="./feedback-config.js"></script>
+  <script src="./feedback-client.js"></script>
   <script>
     const payload = window.__INSIGHT_DATA__;
     const configuredCategories = payload.configured_categories || [
@@ -266,10 +382,20 @@
       lane: "全部",
       category: "全部",
       source: "全部",
+      feedback: "全部",
       dailyGroup: "",
       weeklyGroup: ""
     };
     const $ = id => document.getElementById(id);
+    const passReasons = [
+      ["too_ordinary", "太普通，没有明显创意增量"],
+      ["weak_function", "功能价值弱或需求不高频"],
+      ["wrong_category", "品类错误或与选品范围无关"],
+      ["low_margin", "价格空间或利润不足"],
+      ["hard_to_execute", "难以买样、改造或落地"],
+      ["bad_evidence", "图片、链接或产品证据有问题"]
+    ];
+    let pendingPassItemId = "";
 
     function groupsDaily() {
       return (payload.daily_groups || []).filter(group => group.items && group.items.length);
@@ -300,6 +426,10 @@
       return item.source_name || item.source || "未知来源";
     }
 
+    function feedbackProductId(item) {
+      return String(item.id || item.url || item.title);
+    }
+
     function scoreText(item) {
       if (item.score_label) return item.score_label;
       return ((item.score || 0) / 10).toFixed(1);
@@ -316,6 +446,10 @@
       if (state.lane !== "全部" && item.action_lane !== state.lane) return false;
       if (state.category !== "全部" && item.category !== state.category) return false;
       if (state.source !== "全部" && item.source_family !== state.source) return false;
+      const feedback = FeedbackStore.decision(feedbackProductId(item));
+      if (state.feedback === "未处理" && feedback) return false;
+      if (state.feedback === "已赞" && (!feedback || feedback.action !== "like")) return false;
+      if (state.feedback === "已Pass" && (!feedback || feedback.action !== "pass")) return false;
       if (state.q && !textFor(item).includes(state.q.toLowerCase())) return false;
       return true;
     }
@@ -464,14 +598,34 @@
       });
     }
 
+    function renderReviewStrip(items) {
+      const summary = FeedbackStore.summary(items);
+      const filters = ["全部", "未处理", "已赞", "已Pass"];
+      $("reviewStrip").innerHTML = `
+        <div class="review-counts">
+          已评 <strong>${summary.reviewed}/${items.length}</strong> · 赞 ${summary.like} · Pass ${summary.pass}
+          ${summary.pending ? ` · 待同步 ${summary.pending}` : ""}
+        </div>
+        <div class="feedback-switch" role="group" aria-label="反馈状态">
+          ${filters.map(label => `<button class="feedback-filter${state.feedback === label ? " active" : ""}" type="button" data-feedback-filter="${label}">${label}</button>`).join("")}
+        </div>`;
+    }
+
     function card(item) {
+      const feedback = FeedbackStore.decision(feedbackProductId(item));
+      const feedbackClass = feedback ? ` feedback-${feedback.action}` : "";
+      const status = feedback && feedback.action === "like"
+        ? "已赞：后续会提高相似创意方向的权重"
+        : feedback && feedback.action === "pass"
+          ? `已 Pass：${passReasons.find(row => row[0] === feedback.reason)?.[1] || "已降低相似方向权重"}`
+          : "";
       const image = item.image
         ? `<img class="thumb" src="${item.image}" alt="" loading="lazy">`
         : `<div class="thumb">${item.category || "灵感"}<br>${sourceText(item)}<br>待补图</div>`;
       const title = item.url
         ? `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>`
         : `${item.title}`;
-      return `<article class="card">
+      return `<article class="card${feedbackClass}" data-item-id="${feedbackProductId(item)}">
         ${image}
         <div class="body">
           <div class="meta">
@@ -486,6 +640,12 @@
             ${(item.axes || []).slice(0, 2).map(axis => `<span class="pill gray">${axis}</span>`).join("")}
             <span class="pill gray">${sourceText(item)}</span>
           </div>
+          <div class="feedback-actions">
+            <button class="feedback-action like${feedback && feedback.action === "like" ? " active" : ""}" type="button" data-feedback-action="like" title="赞：值得继续寻找类似创意">赞</button>
+            <button class="feedback-action pass${feedback && feedback.action === "pass" ? " active" : ""}" type="button" data-feedback-action="pass" title="Pass：减少类似产品">Pass</button>
+            <button class="feedback-undo" type="button" data-feedback-action="clear" title="撤销反馈" ${feedback ? "" : "hidden"}>↶</button>
+            <div class="feedback-status${feedback ? ` ${feedback.action}` : ""}">${status}</div>
+          </div>
         </div>
       </article>`;
     }
@@ -496,6 +656,7 @@
       $("emptyState").hidden = items.length > 0;
       $("grid").innerHTML = items.map(card).join("");
       renderFilters(base);
+      renderReviewStrip(base);
     }
 
     function render() {
@@ -521,6 +682,69 @@
       state.q = event.target.value.trim();
       renderGrid();
     });
+    $("reviewStrip").addEventListener("click", event => {
+      const button = event.target.closest("[data-feedback-filter]");
+      if (!button) return;
+      state.feedback = button.dataset.feedbackFilter;
+      renderGrid();
+    });
+    $("grid").addEventListener("click", event => {
+      const button = event.target.closest("[data-feedback-action]");
+      const card = event.target.closest("[data-item-id]");
+      if (!button || !card) return;
+      const item = currentItems().find(row => feedbackProductId(row) === card.dataset.itemId);
+      if (!item) return;
+      const action = button.dataset.feedbackAction;
+      const existing = FeedbackStore.decision(feedbackProductId(item));
+      const context = {
+        tab: state.tab,
+        daily_group: state.dailyGroup,
+        weekly_group: state.weeklyGroup,
+      };
+      if (action === "like") {
+        if (existing && existing.action === "like") {
+          FeedbackStore.clear(feedbackProductId(item));
+        } else {
+          FeedbackStore.record(item, "like", "", context);
+        }
+      } else if (action === "pass") {
+        pendingPassItemId = feedbackProductId(item);
+        document.querySelectorAll('input[name="pass-reason"]').forEach(input => {
+          input.checked = Boolean(existing && existing.action === "pass" && existing.reason === input.value);
+        });
+        $("reasonDialog").showModal();
+      } else if (action === "clear") {
+        FeedbackStore.clear(feedbackProductId(item));
+      }
+    });
+
+    $("reasonOptions").innerHTML = passReasons.map(([value, label]) => `
+      <label class="reason-option">
+        <input type="radio" name="pass-reason" value="${value}">
+        <span>${label}</span>
+      </label>`).join("");
+    $("reasonForm").addEventListener("submit", event => {
+      if (!event.submitter || event.submitter.value !== "confirm") {
+        pendingPassItemId = "";
+        return;
+      }
+      const reason = document.querySelector('input[name="pass-reason"]:checked');
+      if (!reason) {
+        event.preventDefault();
+        return;
+      }
+      const item = currentItems().find(row => feedbackProductId(row) === pendingPassItemId);
+      if (item) {
+        FeedbackStore.record(item, "pass", reason.value, {
+          tab: state.tab,
+          daily_group: state.dailyGroup,
+          weekly_group: state.weeklyGroup,
+        });
+      }
+      pendingPassItemId = "";
+    });
+    window.addEventListener("feedback:change", renderGrid);
+    window.addEventListener("feedback:sync", renderGrid);
 
     render();
   </script>
