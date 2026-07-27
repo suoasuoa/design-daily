@@ -21,6 +21,7 @@ from insight_config import (
     RETIRED_CATEGORIES,
     RETIRED_CATEGORY_CUTOFF,
 )
+from preference_profile import preference_context
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
@@ -73,6 +74,19 @@ def retirement_review(item):
         "reason": f"品类已于 {RETIRED_CATEGORY_CUTOFF} 停止收集，原记录转入审核归档",
         "reviewed_at": now_iso(),
         "source": "retirement_policy",
+        "policy_version": REVIEW_POLICY_VERSION,
+    }
+
+
+def preference_block_review(item):
+    return {
+        "id": item.get("id"),
+        "keep": False,
+        "category": "",
+        "confidence": 10,
+        "reason": "团队 Pass 反馈占多数，同一产品不再进入选品池",
+        "reviewed_at": now_iso(),
+        "source": "team_preference",
         "policy_version": REVIEW_POLICY_VERSION,
     }
 
@@ -267,6 +281,7 @@ def review_batch(batch, api_key):
         ]
     }
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
+    preferences = preference_context()
     prompt = f"""
 你是严格的产品选品审核员。目标不是凑数量，而是只保留品类正确、真实具体、值得团队讨论的创意产品。
 
@@ -282,6 +297,10 @@ def review_batch(batch, api_key):
 9. 社媒内容可保留高热度、好看、有趣、种草、DIY/手作/改造或概念原型，但仍必须有明确物件和可转化启发。
 10. reason 必须指出一项具体创新证据，不能只写“设计创新”“材质创新”“视觉创新”。信息不足以验证时 keep=false。
 11. 宁可少收，也不要为了达到数量保留弱相关、低创新、信息不完整的内容。
+12. 团队偏好只用于同等质量候选的排序和取舍，不能降低前述硬门槛。与 Pass 示例高度相似且没有新增功能、结构或场景价值时 keep=false；同时保留少量新方向探索。
+
+团队偏好记忆：
+{preferences}
 
 品类定义：
 {rules}
@@ -404,6 +423,8 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     existing = load_json(DATA_DIR / "category_review.json", {})
     reviews = {} if force else dict(existing.get("reviews", {}))
+    preference_profile = load_json(DATA_DIR / "preference_profile.json", {})
+    blocked_product_ids = set(preference_profile.get("blocked_product_ids") or [])
     for item in products:
         cleaned_url = clean_direct_product_url(item.get("url") or "")
         if cleaned_url:
@@ -412,7 +433,9 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
             for source in item.get("sources") or []:
                 if source.get("url") == original_url:
                     source["url"] = cleaned_url
-        if item.get("category") in RETIRED_CATEGORIES:
+        if item.get("id") in blocked_product_ids:
+            reviews[item.get("id")] = preference_block_review(item)
+        elif item.get("category") in RETIRED_CATEGORIES:
             reviews[item.get("id")] = retirement_review(item)
         elif not cleaned_url:
             reviews[item.get("id")] = invalid_link_review(item)
@@ -421,7 +444,8 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
     todo = [
         item
         for item in products
-        if item.get("category") not in RETIRED_CATEGORIES
+        if item.get("id") not in blocked_product_ids
+        and item.get("category") not in RETIRED_CATEGORIES
         and clean_direct_product_url(item.get("url") or "")
         and not is_generic_content(item)
         and (

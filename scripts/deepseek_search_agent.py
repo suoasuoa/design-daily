@@ -37,6 +37,7 @@ from insight_config import (
     SOURCE_DOMAIN_META,
     SOURCE_GROUP_QUALITY,
 )
+from preference_profile import preference_context
 
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
@@ -180,6 +181,7 @@ def plan_queries(query_count, target, round_index):
     current_count, current_categories = accepted_today()
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
     domains = ", ".join(allowed_domains())
+    preferences = preference_context()
     schema = {
         "queries": [
             {
@@ -204,6 +206,10 @@ def plan_queries(query_count, target, round_index):
 4. 明确排除普通基础款、换色/印花/普通联名、建筑新闻、汽车、宠物用品、泛科技新闻和已停用品类。
 5. 中英文关键词混合轮换；第二轮以后换产品结构、功能痛点、材料、交互、DIY/概念原型等角度，不要重复上一轮套路。
 6. 水杯、灯、厨具、桌搭等高频品类也要寻找明确功能创新，不要只搜 aesthetic/design。
+7. 结合团队偏好提高点赞方向的搜索覆盖，降低 Pass 方向权重；仍保留约 20% 探索词，不能把反馈变成绝对品类封锁。
+
+团队偏好记忆：
+{preferences}
 
 品类定义：
 {rules}
@@ -371,6 +377,7 @@ def compact_candidate(row):
 
 def screen_batch(batch):
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
+    preferences = preference_context()
     schema = {
         "items": [
             {
@@ -392,6 +399,11 @@ def screen_batch(batch):
 必须拒绝：搜索/合集/分类页、泛文章、建筑/汽车/宠物、标题和摘要无法确认具体产品、普通基础款、仅换颜色图案或联名、创新点只能写成“设计感/材质好看”的内容。
 可以保留：明确单品、可买样产品、功能/结构/材料/交互创新、可转化的 DIY 或概念原型。必须符合指定品类实体边界。
 预筛通过必须同时满足 relevance>=8、innovation>=6、clarity>=7、confidence>=7，并在 reason 中说清楚具体产品和创新证据。不能用“可能、或许、需确认”。
+
+团队偏好记忆：
+{preferences}
+
+偏好只用于同等质量候选之间的优先级。不得因为方向曾被点赞而放宽真实性、品类或创新门槛；与 Pass 示例高度相似且没有新的功能/结构增量时拒绝。
 
 品类定义：
 {rules}
