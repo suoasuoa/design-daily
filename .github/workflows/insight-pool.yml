@@ -2,14 +2,16 @@ name: Insight Pool
 
 on:
   schedule:
-    # Main runs on Beijing weekdays at 07:30, 11:30, and 15:30.
+    # Main runs on Beijing weekdays at 07:30, 11:30, and 13:30 so the 40-pick target has ample deadline headroom.
     # The first cron is Sunday-Thursday UTC because it is the previous UTC day.
     - cron: "30 23 * * 0-4"
     - cron: "30 3 * * 1-5"
-    - cron: "30 7 * * 1-5"
-    # Backup checks for the same three phases. They skip if the phase target is already met.
+    - cron: "30 5 * * 1-5"
+    # Backup checks keep retrying through 16:10 and skip once the phase target is met.
     - cron: "10 0 * * 1-5"
     - cron: "10 4 * * 1-5"
+    - cron: "10 6 * * 1-5"
+    - cron: "10 7 * * 1-5"
     - cron: "10 8 * * 1-5"
   workflow_dispatch:
     inputs:
@@ -67,7 +69,7 @@ jobs:
                 echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=50" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=220" >> "$GITHUB_ENV"
-              elif [ "$bj_hm" -lt 1500 ]; then
+              elif [ "$bj_hm" -lt 1300 ]; then
                 echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=70" >> "$GITHUB_ENV"
@@ -214,6 +216,8 @@ jobs:
 
       - name: Generate trend report
         if: env.SKIP_INSIGHT != '1'
+        timeout-minutes: 12
+        continue-on-error: true
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
