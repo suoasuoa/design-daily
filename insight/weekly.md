@@ -3,12 +3,12 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-29T11:44:52+08:00
+- 生成时间：2026-07-29T14:25:32+08:00
 
 ## 行动分布
 
-- 适合改造: 55
-- 方向参考: 32
+- 适合改造: 54
+- 方向参考: 33
 - 可直接买样: 13
 
 ## 推荐清单
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-产品针对手部不便人群，实用性强但目标用户窄，售价预期较高，设计直观但包容性概念需理解，整体功能性良好。
+Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人体工学，创新在于包容性设计。。页面证据：Feb 6, 2023 · Designed for people with reduced mobility in their hands and wrists, this set of four kitchen tools features ergonomic, angled handles that make cooking easier.
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -59,7 +59,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-产品实用性强，一秒成型方便使用，适用于高档礼品，价格超过35元，功能清晰且无短板，情绪价值可叠加。
+诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平
 
 ### 5. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -131,7 +131,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-产品设计创新，滑动盖变托盘实用性强，适合社交和送礼场景，但需求频率中等，受众相对有限。
+Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...
 
 ### 11. MOONCAKE BOX with board game inside :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad
 
@@ -143,7 +143,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside
 
-结构创新，将月饼盒与棋盘游戏结合，增加互动性和趣味性，适合送礼，但游戏部分可能实用性有限，受众较窄。
+MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘游戏，实现包装结构、开箱和节日叙事的创新，属于结构创新。。页面证据：Mooncake Boxes Series (4) is perfect for gifting loved one and board game lover in Moon festival (Mid-Autumn Festival)
 
 ### 12. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
@@ -515,7 +515,7 @@ CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多�
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-产品功能实用，满足多设备充电高频需求，结构创新易用，但价格未知且可能偏高，情绪价值一般。
+Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity
 
 ### 43. The Reusable LARQ Bottle Cleans Itself and the Water Inside
 
@@ -995,19 +995,19 @@ Merrell Gatherer Jacket，轻量夹克，通过填充口袋内材料调节保暖
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.yankodesign.com/2019/01/03/the-modern-day-discman
 
-创新地将夹克与背包结合，提升实用性和便携性，但目标用户群体相对小众，产品复杂度可能影响可靠性。
+产品将夹克与背包结合，实用但功能折中，价格较高，概念直观但需理解转换机制。
 
-### 83. Tenda Lamp by Benjamin Hubert
+### 83. EMPWR coats double as sleeping bags to keep the homeless warm this winter
 
-- 品类：氛围灯
+- 品类：冲锋衣
 - 路径：方向参考
-- 启发：情绪启发
+- 启发：功能启发、结构启发、情绪启发
 - 分数：7.8
-- 来源：Design Milk
+- 来源：Designboom
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://design-milk.com/tenda-lamp-by-benjamin-hubert
+- 链接：https://www.designboom.com/design/empwr-coat-jacket-homeless-11-29-2016
 
-Tenda系列灯具，采用内衣产业弹性微网作为外层、运动产业莱卡作为内层，多层面料组合实现透光与扩散效果，材料创新。。页面证据：Born from research of materials in the fashion and sports industry, Tenda is a series of lamps made of multi-layered textiles. Designed by Benjamin Hubert, the lamp's convex exterior is made of a quad-directional stretch micro mesh (from the underwear industry), which gives varying illusions of opaqueness. The inside layers consist of a light-diffusing Lycra (from the sports industry) in concave-like curves.
+产品针对无家可归者设计，多功能实用性高但受众窄，概念清晰但批量生产风险未知，情绪价值高。
 
 ### 84. This portable power bank comes with an attached cord to ensure your phone is never at 1% again! - Yanko Design
 
@@ -1045,7 +1045,19 @@ TESSAN 20,000mAh power bank with built-in Lightning and USB-C cables, 30W chargi
 
 Mar 2, 2026 · I’ve carried a lot of power banks over the years. Bulky ones that weigh down my pockets, chunky bricks that barely fit in a crossbody bag, and a few “compact” options that still felt like lugging around a deck of cards. So when Xiaomi announced a
 
-### 87. Auron - Self-Cleaning Water Purifying UV-C Smart Bottle — Kickstarter
+### 87. Red Dot Design Award: Multi-Functional Fast Charging Power Bank-PB7S
+
+- 品类：充电宝
+- 路径：方向参考
+- 启发：功能启发、结构启发
+- 分数：8.5
+- 来源：Red Dot
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.red-dot.org/project/multi-functional-fast-charging-power-bank-pb7s-89325
+
+多功能集成，红点奖加持，实用性高，但价格偏高且需理解折叠结构。
+
+### 88. Auron - Self-Cleaning Water Purifying UV-C Smart Bottle — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -1057,7 +1069,7 @@ Mar 2, 2026 · I’ve carried a lot of power banks over the years. Bulky ones th
 
 Auron自清洁水瓶：内置UV-C光净化系统，自动清洁瓶内，创新在于水质净化与卫生功能。。页面证据：How do you make sure the water in your bottle is pure? You put the purifier inside the bottle. Auron’s UV-C light purification system bathes every inch of the interior of the bottle in UV light .And to experience Auron, the self-cleaning bottle that could change the world.
 
-### 88. iF Design - FLEXTAIL ZERO POWER BANK 10000C
+### 89. iF Design - FLEXTAIL ZERO POWER BANK 10000C
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1069,7 +1081,7 @@ Auron自清洁水瓶：内置UV-C光净化系统，自动清洁瓶内，创新�
 
 具体产品：FLEXTAIL ZERO POWER BANK 10000C。创新为世界首个使用锻造碳纤维的充电宝，厚度仅9.9mm，重145g，具备IPX4防水，实现超轻量化与高耐久性结合。。页面证据：FLEXTAIL ZERO POWER BANK 10000C is a power bank designed for trail running, redefining portability and durability in extreme outdoor conditions. With a body only 9.9 mm thick and weighing 145 g, it achieves a rare balance between 10,000 mAh capacity and ultra-light structure. As the world’s first power bank using forged carbon fiber, combined with a high-toughness nylon frame, it ensures exceptional strength, puncture resistance, and IPX4 water protection—making outdoor energy carrying lighter and more reliable.
 
-### 89. Red Dot Design Award: Anker Zolo Power Bank
+### 90. Red Dot Design Award: Anker Zolo Power Bank
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1081,7 +1093,7 @@ Auron自清洁水瓶：内置UV-C光净化系统，自动清洁瓶内，创新�
 
 Anker Zolo Power Bank，胶囊形状，集成两个可伸缩USB-C线和多功能侧边线，1.3英寸彩色显示屏，75%回收材料，充电便携创新。。页面证据：The capsule-like shape of the Anker Zolo Power Bank integrates a functional structure for mobile use. Two retractable USB-C cables and a multifunctional cable on the side enable organised charging without separate accessories. A 1.3" colour display...
 
-### 90. elio: The water bottle that disappears in your pocket by Max Gunawan — Kickstarter
+### 91. elio: The water bottle that disappears in your pocket by Max Gunawan — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -1093,7 +1105,7 @@ Anker Zolo Power Bank，胶囊形状，集成两个可伸缩USB-C线和多功能
 
 Elio 可折叠扁平水杯，750ml容量，可压扁至3cm，防漏且洗碗机安全，结构创新显著。。页面证据：May 20, 2026 - Max Gunawan is raising funds for elio: The water bottle that disappears in your pocket on Kickstarter! 750ml capacity | Lightweight & Durable | Plastic-free | Twists flat into 3cm hard case | Leakproof | Dishwasher safe | Mix&Match colors
 
-### 91. The Luma Bottle | A Self-Cleaning Reusable Water... — Kickstarter
+### 92. The Luma Bottle | A Self-Cleaning Reusable Water... — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -1105,7 +1117,7 @@ Elio 可折叠扁平水杯，750ml容量，可压扁至3cm，防漏且洗碗机�
 
 Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细菌，在材料或功能上有明确创新。。页面证据：A reusable water bottle that harnesses the power of digital UV-C light to kill 99.999% of bacteria in your water and bottle.
 
-### 92. Ember Mug 2 Black 10 oz
+### 93. Ember Mug 2 Black 10 oz
 
 - 品类：水杯
 - 路径：适合改造
@@ -1117,7 +1129,7 @@ Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细�
 
 Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
 
-### 93. Ember Cup Slate Black 14 oz
+### 94. Ember Cup Slate Black 14 oz
 
 - 品类：水杯
 - 路径：适合改造
@@ -1129,7 +1141,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
 
-### 94. Update 5: Backer Only Update - Black Friday Deals Are Live · LARQ Bottle - Water Purification in a Self-Cleaning Bottle
+### 95. Update 5: Backer Only Update - Black Friday Deals Are Live · LARQ Bottle - Water Purification in a Self-Cleaning Bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -1139,9 +1151,9 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.kickstarter.com/projects/443292702/quartz-bottle
 
-自洁水杯解决异味和细菌问题，实用性强；喝水高频但自洁功能非必需；受众偏健康人群，打击面中等；功能有短板（需充电）；售价预计高；概念简单易懂；情绪价值为健康环保。
+实用性强，高频使用，但售价高、受众有限；功能创新但需充电，存在续航风险；概念简单易懂，情绪价值可叠加健康科技感。
 
-### 95. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
+### 96. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1151,9 +1163,9 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost
 
-信用卡大小超薄设计，磁吸方便，适合旅行轻量化需求，但5000mAh容量较小，仅支持iPhone MagSafe，市场覆盖有限。
+产品设计优秀，超薄便携，但容量仅5000mAh，实用性和覆盖面有限，价格可能较高。
 
-### 96. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
+### 97. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1163,9 +1175,9 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.red-dot.org/project/8-in-1-magnetic-wireless-power-bank-82071
 
-产品集成15W无线充电、手表耳机充电、70cm拉出线及手机支架，多合一功能解决多设备充电痛点，实用性强；充电宝为高频需求，但磁吸无线充电受众略窄；设计获奖提升情绪价值，但功能复杂可能影响稳定性，且售价偏高限制广泛适用。
+8合1磁吸无线充，实用高频，功能全面，覆盖多设备，性价比高
 
-### 97. KickstarterKickstarterKickstarter
+### 98. KickstarterKickstarterKickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -1177,7 +1189,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 Unocup可折叠纸咖啡杯，通过折叠设计消除对塑料盖的需求，结构创新且环保，是明确可买样的产品。。页面证据：Unocup is a foldable, eco-friendly paper coffee cup designed to reduce waste and eliminate the need for plastic lids. Kickstarter Kickstarter
 
-### 98. iF Design - On2Cook: World’s Fastest Cooking Device
+### 99. iF Design - On2Cook: World’s Fastest Cooking Device
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1189,7 +1201,7 @@ Unocup可折叠纸咖啡杯，通过折叠设计消除对塑料盖的需求，�
 
 On2Cook烹饪设备，同时结合电磁、热和微波，缩短70%烹饪时间，节能40%，手机APP互联，集成了多种加热方式创新。。页面证据：The On2Cook: World’s Fastest Cooking Device is a revolutionary appliance that simultaneously combines induction, heat, and microwaves to cook. This patented product cuts cooking time by up to 70% and reduces energy consumption by up to 40%. It also cooks healthier food by retaining water-soluble nutrients and preserving color, texture, and consistency. The app can be used to order groceries, keep inventory, store recipes, and share. It also facilitates Big Data analysis of the buying, cooking, and sharing patterns of consumers. Its functionality and small footprint make it a perfect fit in any kitchen, giving it the potential
 
-### 99. Moonside Neon Lighthouse Is the World’s Most Dynamic Smart Lamp
+### 100. Moonside Neon Lighthouse Is the World’s Most Dynamic Smart Lamp
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -1200,15 +1212,3 @@ On2Cook烹饪设备，同时结合电磁、热和微波，缩短70%烹饪时间�
 - 链接：https://coolmaterial.com/lifestyle/home/moonside-neon-lighthouse-is-the-worlds-most-dynamic-smart-lamp
 
 Moonside Neon Lighthouse是一款动态智能台灯，内置90个可独立寻址全彩RGB LED，支持无限灯光效果，属于明确的可使用灯具单品，在交互和灯光控制上有创新。。页面证据：That changes with the Moonside Neon Lighthouse, a dynamic smart lamp with endless lighting effects. With 90 individually addressable full-color range RGB LED’s built-in...
-
-### 100. The Smallest EDC Power Bank with Kickstand & Charging Cable
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：Kickstarter
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.kickstarter.com/projects/innogocorp/powercube-0?ref=discovery_category
-
-6-in-1 Power Bank with kickstand, built-in cable, and AC plug; multi-function integration innovation.。页面证据：Project video for 6-in-1 Power Bank Charger with AC Plug And Built-in Cables. Gadgets Casper, WY. The 1st Snap-to-Carry, Laptop-Chargeable Wireless Mouse.
