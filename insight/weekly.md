@@ -3,12 +3,12 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-28T18:21:30+08:00
+- 生成时间：2026-07-29T09:10:10+08:00
 
 ## 行动分布
 
-- 适合改造: 57
-- 方向参考: 30
+- 适合改造: 56
+- 方向参考: 31
 - 可直接买样: 13
 
 ## 推荐清单
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人体工学，创新在于包容性设计。。页面证据：Feb 6, 2023 · Designed for people with reduced mobility in their hands and wrists, this set of four kitchen tools features ergonomic, angled handles that make cooking easier.
+产品专为手部活动不便者设计，实用性强且符合人体工学，但目标用户相对小众，打击面有限。价格预计超过35元，功能简洁明了，但缺乏情绪价值附加。
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -47,7 +47,7 @@ Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars
 
-Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。
+产品针对游戏场景，功能完整但竞品多，需差异化设计或品牌赋能
 
 ### 4. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -59,7 +59,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平
+产品作为折叠礼品盒，实用性较高，尤其适合送礼场景；成型简单，3秒可看懂；价格预计超过35元，但需求频次一般，打击面中等，情绪价值有一定但不高。
 
 ### 5. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -131,7 +131,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...
+产品设计创新，滑盖可作为托盘，实用性强；但为礼盒品类，需求频率低，目标用户较窄；定价大概率超35元；结构清晰易懂；功能成立且有一定情绪价值。
 
 ### 11. MOONCAKE BOX with board game inside :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad
 
@@ -143,7 +143,7 @@ Wine box with sliding lid that doubles as a butler for two glasses. Innovation i
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside
 
-MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘游戏，实现包装结构、开箱和节日叙事的创新，属于结构创新。。页面证据：Mooncake Boxes Series (4) is perfect for gifting loved one and board game lover in Moon festival (Mid-Autumn Festival)
+兼具月饼礼盒和棋盘游戏功能，结构创新，但季节性明显，受众较窄。
 
 ### 12. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
@@ -155,7 +155,7 @@ MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar
 
-Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...
+产品结合文化、种植和日历，概念易理解，情绪价值高，但使用频率低，受众偏窄，功能依赖用户养护能力。
 
 ### 13. 趣香七夕表白礼盒创意设计 :: Behance
 
@@ -167,7 +167,7 @@ Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/229023437/_
 
-Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。
+结合地域文化，用点心传递情感，但使用场景局限，节日性较强。
 
 ### 14. Quench Your Thirst and Ditch Plastic Water Bottles Forever
 
@@ -191,7 +191,7 @@ LARQ Black + Clay Bottle Movement，内置UV-C LED灯，可自清洁瓶身和净
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://ifdesign.com/en/winner-ranking/project/rhinoshield-airx/750324
 
-防摔功能突出，安全气囊设计实用；手机壳高频刚需；适用所有手机用户；无功能短板；售价高；概念简单；功能基础上有设计感和环保情绪价值。
+RHINOSHIELD AirX手机壳，内部损伤保护系统（类似安全气囊）、360°环绕空气缓冲、嵌入式按钮、单材料可回收设计，结构创新突出。。页面证据：Engineered for Extreme Protection, Inside and out Internal Damage Protection System acts like an airbag for your phone. Multi-layered protection isolates 81% of impact, reducing the risk of internal damage. 360° wraparound air-cushioning with embedded buttons to soften side-impact damage. 30x extended durability—built to withstand repeated impact without performance decline. Committed to mono-material design for 100% recyclability and full circularity. Material-led, function-shaped—a futuristic expression of air-flux aesthetics. Dual-side pressure relief chambers sculpted for grip — comfort even in extended use.
 
 ### 16. This Game-Changing Table Mat Wirelessly Charges your Keyboard, Mouse, Smartphone, and AirPods - Yanko Design
 
@@ -239,7 +239,7 @@ Sylphene 石墨烯卡片式充电宝，厚度仅3.8mm，号称世界最薄，采
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.yankodesign.com/2024/09/18/casetify-ultra-bounce-iphone-16-series-cases-are-fashioned-with-up-to-32-8-ft-drop-protection
 
-军事级跌落保护，实用性高，但价格较高，受众仅限iPhone 16用户，市场窄。
+具体产品为CASETiFY Ultra Bounce iPhone 16系列保护壳，具备10倍军事级标准和32.8英尺跌落保护，结构创新显著。。页面证据：https://www.youtube.com/watch?v=RAFCMXvgF0s I’m not a big fan of fancy smartphone cases. A simple protective silicone cover does the job for me. But when it comes to a device from the iPhone 16 series per se, you want a cover that protects the guts of your prized possession with military grade standard. Who would know this better
 
 ### 20. 14 Levels – Packaging Of The World
 
@@ -323,7 +323,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.red-dot.org/project/thermo-mug-without-thread-79401
 
-红点奖认证，无螺纹单手按压开盖设计实用创新，高频饮水需求覆盖广泛，功能无短板且易理解，价格超35元，自带解压情绪价值，但无螺纹耐久性需关注。
+Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置锁定防漏，可拆卸硅胶套，结构创新与交互创新明确。。页面证据：This thermo mug without a screw thread features a push-button opening mechanism that can be operated with one hand. A built-in toggle lock prevents accidental spills, while also serving as a fun fidget feature. The smooth rim and removable silicone sleeve...
 
 ### 27. Dream Recorder | Uncrate
 
@@ -503,7 +503,7 @@ To clean the Claysilite filter, all you need to do is put it in boiling water fo
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.indiegogo.com/en/projects/cio/cio-apple-watch-magsafe-compatible-power-bank
 
-产品解决Apple多设备充电痛点，功能创新且实用，但目标用户群相对有限，市场已有竞品，需关注容量和兼容性。
+CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多设备充电痛点，体积小巧，创新在于双功能无线充电。。页面证据：We offer a power bank without a Magnetic function (MagSafe Charger) and kickstand. You usually need to use a separate charger for your Apple Watch and a wireless charger for your iPhone. Power banks with two functions do exist, but they are bulky and too large to carry. CIO's Hybrid Wireless Battery can charge both of these with just one charger.
 
 ### 42. Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa
 
@@ -515,7 +515,7 @@ To clean the Claysilite filter, all you need to do is put it in boiling water fo
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-产品集成度高，功能实用，但来源仅一次，可能处于设计阶段，实际量产和价格待定。
+产品设计创新，功能集成度高（4合1+夜灯+可调角度），来自设计社区，外观有吸引力。但来源次数少，市场验证不足。
 
 ### 43. The Reusable LARQ Bottle Cleans Itself and the Water Inside
 
@@ -695,7 +695,7 @@ M-Light 3微型可调运动感应夜灯，为M-Light 2升级版，同样具备�
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.red-dot.org/de/project/nutri-ai-kitchen-scale-60281
 
-AI自动识别食物并记录营养数据，简化营养追踪，但受众偏窄，价格较高，适合特定人群。
+具体产品：Nutri AI Kitchen Scale AI 厨房秤。创新证据：AI 自动识别食物并记录营养数据，简化营养追踪流程，替代手动查找记录。。页面证据：The Nutri AI Kitchen Scale is an innovative smart nutrition tracking solution for individuals who require detailed records of their daily food intake. It simplifies the nutrition tracking process by automating the laborious manual task of locating,...
 
 ### 58. RMDLO: A Folding, Space-Saving Colander - Core77
 
@@ -731,7 +731,7 @@ Rachel Lamp 紧凑台灯通过反射设计产生均匀漫射光，不直射，�
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.yankodesign.com/2020/08/08/this-smart-nightlight-helps-you-remotely-take-care-of-your-loved-ones-without-any-cameras
 
-产品解决老人照看痛点，非摄像头监测隐私友好，但目标用户群较窄。
+CareAlert smart nightlight: monitors elderly wellness via sensors without cameras, remotely sends alerts, combining lighting with caregiving innovation.。页面证据：https://youtu.be/ssWe7HT1vYE CareAlert is a brilliant example of a design that's extremely aware of its target audience. This night-light helps you monitor and take care of the elderly, but it does so in a way that doesn't require the elderly to be tech-literate, and it doesn't use cameras either. The CareAlert and its wide host of
 
 ### 61. When Your Desk Lamp Becomes Your Study Partner: Check Mate - Yanko Design
 
@@ -1129,7 +1129,31 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
 
-### 94. KickstarterKickstarterKickstarter
+### 94. Update 5: Backer Only Update - Black Friday Deals Are Live · LARQ Bottle - Water Purification in a Self-Cleaning Bottle
+
+- 品类：水杯
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.4
+- 来源：Kickstarter
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.kickstarter.com/projects/443292702/quartz-bottle
+
+Self-cleaning water bottle using UV-C LED, practical for hygiene, high frequency use, broad appeal but higher price point, clear concept.
+
+### 95. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
+
+- 品类：充电宝
+- 路径：方向参考
+- 启发：功能启发
+- 分数：8.4
+- 来源：Yanko Design
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost
+
+超薄信用卡大小，磁吸设计便携，但5000mAh容量较小，适合应急；价格预计合理；易于理解；旅行场景有情绪价值。
+
+### 96. KickstarterKickstarterKickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -1141,7 +1165,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 Unocup可折叠纸咖啡杯，通过折叠设计消除对塑料盖的需求，结构创新且环保，是明确可买样的产品。。页面证据：Unocup is a foldable, eco-friendly paper coffee cup designed to reduce waste and eliminate the need for plastic lids. Kickstarter Kickstarter
 
-### 95. iF Design - On2Cook: World’s Fastest Cooking Device
+### 97. iF Design - On2Cook: World’s Fastest Cooking Device
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -1151,9 +1175,9 @@ Unocup可折叠纸咖啡杯，通过折叠设计消除对塑料盖的需求，�
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://ifdesign.com/en/winner-ranking/project/on2cook-worlds-fastest-cooking-device/295765
 
-产品创新性强，实用价值高，但认知门槛高，价格可能限制普及。
+On2Cook烹饪设备，同时结合电磁、热和微波，缩短70%烹饪时间，节能40%，手机APP互联，集成了多种加热方式创新。。页面证据：The On2Cook: World’s Fastest Cooking Device is a revolutionary appliance that simultaneously combines induction, heat, and microwaves to cook. This patented product cuts cooking time by up to 70% and reduces energy consumption by up to 40%. It also cooks healthier food by retaining water-soluble nutrients and preserving color, texture, and consistency. The app can be used to order groceries, keep inventory, store recipes, and share. It also facilitates Big Data analysis of the buying, cooking, and sharing patterns of consumers. Its functionality and small footprint make it a perfect fit in any kitchen, giving it the potential
 
-### 96. Moonside Neon Lighthouse Is the World’s Most Dynamic Smart Lamp
+### 98. Moonside Neon Lighthouse Is the World’s Most Dynamic Smart Lamp
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -1165,7 +1189,7 @@ Unocup可折叠纸咖啡杯，通过折叠设计消除对塑料盖的需求，�
 
 Moonside Neon Lighthouse是一款动态智能台灯，内置90个可独立寻址全彩RGB LED，支持无限灯光效果，属于明确的可使用灯具单品，在交互和灯光控制上有创新。。页面证据：That changes with the Moonside Neon Lighthouse, a dynamic smart lamp with endless lighting effects. With 90 individually addressable full-color range RGB LED’s built-in...
 
-### 97. The Smallest EDC Power Bank with Kickstand & Charging Cable
+### 99. The Smallest EDC Power Bank with Kickstand & Charging Cable
 
 - 品类：充电宝
 - 路径：适合改造
@@ -1177,7 +1201,7 @@ Moonside Neon Lighthouse是一款动态智能台灯，内置90个可独立寻址
 
 6-in-1 Power Bank with kickstand, built-in cable, and AC plug; multi-function integration innovation.。页面证据：Project video for 6-in-1 Power Bank Charger with AC Plug And Built-in Cables. Gadgets Casper, WY. The 1st Snap-to-Carry, Laptop-Chargeable Wireless Mouse.
 
-### 98. This modular organizer declutters your desk while adding class to it - Yanko Design
+### 100. This modular organizer declutters your desk while adding class to it - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -1188,27 +1212,3 @@ Moonside Neon Lighthouse是一款动态智能台灯，内置90个可独立寻址
 - 链接：https://www.yankodesign.com/2019/03/05/this-modular-organizer-declutters-your-desk-while-adding-class-to-it
 
 Re:ease Modular Desk Organizer, 具有11个功能，包括无线充电，模块化结构创新。。页面证据：https://www.kickstarter.com/projects/marcstueber/re-ease-the-modular-desk-organizer-with-11-feature Here's my desk scenario. I have a pencil holder from Amazon, a stapler from Maped, a hole-punch from Kangaro, and an off-brand planter with a mini succulent in it. It's a collection of products I love individually, but combine them together and they end up making my workspace look like there's a whole lot
-
-### 99. Apple Quietly Started Selling Some Affordable Gadgets for Your iPhone
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：Gear Patrol
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.gearpatrol.com/tech/apple-online-store-new-accessories
-
-Nimble Champ Stretch 充电宝，内置可伸缩USB-C充电线，10,000mAh，数字显示，功能创新。。页面证据：Light blue portable power bank with a built-in charging cable and a digital display on top.Nimble’s Champ Stretch is a portable power bank with a 10,000mAh capacity and an integrated, retractable USB-C charging cable.
-
-### 100. Salut! Travel Cup | Cool Material
-
-- 品类：水杯
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：Cool Material
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://coolmaterial.com/lifestyle/home/salut-travel-cup
-
-Salut! Travel Cup：不锈钢可折叠旅行杯，可放入口袋，便携设计，解决传统酒壶不便携带的问题。。页面证据：Instead of passing a flask around the campfire, consider this cup your classy alternative. Pour your drink like a gentleman into this stainless steel collapsible cup that easily fits right in your pocket.
