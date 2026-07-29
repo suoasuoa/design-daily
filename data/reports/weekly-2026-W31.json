@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T09:10:10+08:00",
+  "generated_at": "2026-07-29T11:44:52+08:00",
   "week": "2026-W31",
   "group_id": "2026-W31",
   "date_start": "2026-07-27",
@@ -11,26 +11,26 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 56,
-      "方向参考": 31,
+      "适合改造": 55,
+      "方向参考": 32,
       "可直接买样": 13
     },
     "by_category": {
       "充电宝": 20,
       "水杯": 19,
       "氛围灯": 14,
-      "冲锋衣": 10,
+      "冲锋衣": 11,
       "创意厨具": 8,
       "创意礼盒": 8,
       "手机壳": 7,
-      "创意桌搭": 6,
+      "创意桌搭": 5,
       "日历": 5,
       "中秋礼盒": 2,
       "钥匙扣水壶": 1
     },
     "by_axis": {
       "功能启发": 62,
-      "结构启发": 40,
+      "结构启发": 41,
       "包装启发": 23,
       "情绪启发": 18,
       "视觉启发": 12
@@ -85,15 +85,17 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils",
       "image": "",
-      "summary": "产品专为手部活动不便者设计，实用性强且符合人体工学，但目标用户相对小众，打击面有限。价格预计超过35元，功能简洁明了，但缺乏情绪价值附加。",
+      "summary": "产品针对手部不便人群，实用性强但目标用户窄，售价预期较高，设计直观但包容性概念需理解，整体功能性良好。",
       "risk": "人体工学斜角手柄，包容性设计",
       "review_confidence": 9,
       "review_reason": "人体工学斜角手柄，包容性设计",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "adapt",
-        "design_community",
+        "包容性设计",
+        "人体工学",
+        "特殊人群工具",
         "创意厨具",
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -115,17 +117,14 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars",
       "image": "",
-      "summary": "产品针对游戏场景，功能完整但竞品多，需差异化设计或品牌赋能",
+      "summary": "Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。",
       "risk": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "review_confidence": 8,
       "review_reason": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意桌搭",
-        "游戏周边",
-        "RGB灯效",
         "design_community",
-        "白名单来源"
+        "创意桌搭"
       ]
     },
     {
@@ -146,16 +145,15 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "产品作为折叠礼品盒，实用性较高，尤其适合送礼场景；成型简单，3秒可看懂；价格预计超过35元，但需求频次一般，打击面中等，情绪价值有一定但不高。",
+      "summary": "产品实用性强，一秒成型方便使用，适用于高档礼品，价格超过35元，功能清晰且无短板，情绪价值可叠加。",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "折叠盒",
         "创意礼盒",
-        "折叠盒子",
         "礼品包装",
-        "定制包装",
         "social_public_index",
         "白名单来源"
       ]
@@ -307,15 +305,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/56f6ac75055531.5c41d1be7bc1c.jpg",
-      "summary": "产品设计创新，滑盖可作为托盘，实用性强；但为礼盒品类，需求频率低，目标用户较窄；定价大概率超35元；结构清晰易懂；功能成立且有一定情绪价值。",
+      "summary": "产品设计创新，滑动盖变托盘实用性强，适合社交和送礼场景，但需求频率中等，受众相对有限。",
       "risk": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "review_confidence": 8,
       "review_reason": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意礼盒",
-        "葡萄酒配件",
-        "家居礼品",
+        "design",
+        "gift_ideas",
+        "home_bar",
+        "creative_packaging",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -337,16 +336,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3e2fcc88254971.5dd1240e72e70.png",
-      "summary": "兼具月饼礼盒和棋盘游戏功能，结构创新，但季节性明显，受众较窄。",
+      "summary": "结构创新，将月饼盒与棋盘游戏结合，增加互动性和趣味性，适合送礼，但游戏部分可能实用性有限，受众较窄。",
       "risk": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "review_confidence": 9,
       "review_reason": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "结构创新",
         "中秋礼盒",
-        "设计创新",
         "棋盘游戏",
-        "礼盒结构",
+        "礼盒设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -367,16 +366,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar",
       "image": "",
-      "summary": "产品结合文化、种植和日历，概念易理解，情绪价值高，但使用频率低，受众偏窄，功能依赖用户养护能力。",
+      "summary": "Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...",
       "risk": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "review_confidence": 8,
       "review_reason": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "文创",
-        "二十四节气",
-        "绿植",
-        "DIY",
         "design_community",
         "日历"
       ]
@@ -398,16 +393,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/229023437/_",
       "image": "",
-      "summary": "结合地域文化，用点心传递情感，但使用场景局限，节日性较强。",
+      "summary": "Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。",
       "risk": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
       "review_confidence": 8,
       "review_reason": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "告白神器",
-        "礼盒",
-        "点心装置",
-        "录音",
         "design_community",
         "创意礼盒"
       ]
@@ -1171,15 +1162,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "产品设计创新，功能集成度高（4合1+夜灯+可调角度），来自设计社区，外观有吸引力。但来源次数少，市场验证不足。",
+      "summary": "产品功能实用，满足多设备充电高频需求，结构创新易用，但价格未知且可能偏高，情绪价值一般。",
       "risk": "可折叠设计集成无线充电与夜灯，结构创新",
       "review_confidence": 8,
       "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
-        "设计社区",
         "创意桌搭",
-        "无线充电",
+        "折叠无线充",
+        "MagSafe",
         "deepseek_search_agent",
         "design_community"
       ]
@@ -2219,6 +2210,35 @@
       ]
     },
     {
+      "id": "f1812da88f9c",
+      "product_key": null,
+      "title": "The Modern Day Discman - Yanko Design",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.yankodesign.com/2019/01/03/the-modern-day-discman",
+      "image": "https://www.yankodesign.com/images/design_news/2019/01/the-modern-day-discman/skinny_discman_layout.jpg",
+      "summary": "创新地将夹克与背包结合，提升实用性和便携性，但目标用户群体相对小众，产品复杂度可能影响可靠性。",
+      "risk": "外套可翻转变成35L背包，结构创新，兼具收纳与便携功能",
+      "review_confidence": 8,
+      "review_reason": "外套可翻转变成35L背包，结构创新，兼具收纳与便携功能",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "design_community",
+        "deepseek_search_agent",
+        "冲锋衣"
+      ]
+    },
+    {
       "id": "1667d1b2d5eb",
       "product_key": null,
       "title": "Tenda Lamp by Benjamin Hubert",
@@ -2242,32 +2262,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "8e236e8fcbc1",
-      "product_key": null,
-      "title": "MagSafe Power Bank with Built-in Ring Light and Kickstand is a Vlogger’s dream-come-true - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 78,
-      "score_label": "7.8",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2025/12/30/magsafe-power-bank-with-built-in-ring-light-and-kickstand-is-a-vloggers-dream-come-true",
-      "image": "https://www.yankodesign.com/images/design_news/2025/12/auto-draft/camera_power_bank_max_1.jpg",
-      "summary": "MagSafe Power Bank with Built-in Ring Light and Kickstand: integrates a power bank, ring light, and kickstand into one portable device for vloggers.。页面证据：You know those 'Shot On iPhone' images and videos you see? What they don't tell you is that they didn't just use an iPhone to shoot the content, they used an entire ecosystem of rigs, lights, lenses, dongles, microphones, stabilizers, and a bunch of other tech alongside the iPhone. 'Shot On iPhone' implies that all",
-      "risk": "MagSafe充电宝集成环形补光灯和支架，专为vlogger设计，功能整合创新",
-      "review_confidence": 9,
-      "review_reason": "MagSafe充电宝集成环形补光灯和支架，专为vlogger设计，功能整合创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -2553,15 +2547,15 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/443292702/quartz-bottle",
       "image": "",
-      "summary": "Self-cleaning water bottle using UV-C LED, practical for hygiene, high frequency use, broad appeal but higher price point, clear concept.",
+      "summary": "自洁水杯解决异味和细菌问题，实用性强；喝水高频但自洁功能非必需；受众偏健康人群，打击面中等；功能有短板（需充电）；售价预计高；概念简单易懂；情绪价值为健康环保。",
       "risk": "集成UV-C自清洁功能，无需化学清洁剂，结构创新",
       "review_confidence": 9,
       "review_reason": "集成UV-C自清洁功能，无需化学清洁剂，结构创新",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "self-cleaning",
-        "UV-C",
-        "smart water bottle",
+        "水杯",
+        "健康",
+        "科技",
         "buy_sample",
         "deepseek_search_agent"
       ]
@@ -2582,17 +2576,46 @@
       "source_quality": "standard",
       "url": "https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost",
       "image": "https://www.yankodesign.com/images/design_news/2024/05/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost/TORRAS_MiniMag_Power_Bank_Ostand_R_hero.jpg",
-      "summary": "超薄信用卡大小，磁吸设计便携，但5000mAh容量较小，适合应急；价格预计合理；易于理解；旅行场景有情绪价值。",
+      "summary": "信用卡大小超薄设计，磁吸方便，适合旅行轻量化需求，但5000mAh容量较小，仅支持iPhone MagSafe，市场覆盖有限。",
       "risk": "信用卡大小超薄设计，磁吸充电，便携性结构创新",
       "review_confidence": 9,
       "review_reason": "信用卡大小超薄设计，磁吸充电，便携性结构创新",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "磁吸充电宝",
+        "MagSafe",
+        "超薄充电宝",
         "便携",
-        "iPhone配件",
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "7f541c5c8c79",
+      "product_key": null,
+      "title": "Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/8-in-1-magnetic-wireless-power-bank-82071",
+      "image": "",
+      "summary": "产品集成15W无线充电、手表耳机充电、70cm拉出线及手机支架，多合一功能解决多设备充电痛点，实用性强；充电宝为高频需求，但磁吸无线充电受众略窄；设计获奖提升情绪价值，但功能复杂可能影响稳定性，且售价偏高限制广泛适用。",
+      "risk": "8-in-1功能集成，自带70cm拉出线和手机支架，创新结构设计",
+      "review_confidence": 9,
+      "review_reason": "8-in-1功能集成，自带70cm拉出线和手机支架，创新结构设计",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery",
+        "deepseek_search_agent",
+        "充电宝"
       ]
     },
     {
@@ -2700,33 +2723,6 @@
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "ece0496de026",
-      "product_key": null,
-      "title": "This modular organizer declutters your desk while adding class to it - Yanko Design",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2019/03/05/this-modular-organizer-declutters-your-desk-while-adding-class-to-it",
-      "image": "https://www.yankodesign.com/images/design_news/2019/03/auto-draft/reease_modular_desk_organizer_hero.jpg",
-      "summary": "Re:ease Modular Desk Organizer, 具有11个功能，包括无线充电，模块化结构创新。。页面证据：https://www.kickstarter.com/projects/marcstueber/re-ease-the-modular-desk-organizer-with-11-feature Here's my desk scenario. I have a pencil holder from Amazon, a stapler from Maped, a hole-punch from Kangaro, and an off-brand planter with a mini succulent in it. It's a collection of products I love individually, but combine them together and they end up making my workspace look like there's a whole lot",
-      "risk": "模块化设计集成11种功能，包括无线充电",
-      "review_confidence": 9,
-      "review_reason": "模块化设计集成11种功能，包括无线充电",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
       ]
     }
   ]
