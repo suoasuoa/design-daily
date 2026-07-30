@@ -3,13 +3,13 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-30T14:38:47+08:00
+- 生成时间：2026-07-30T15:05:16+08:00
 
 ## 行动分布
 
 - 适合改造: 54
-- 方向参考: 32
-- 可直接买样: 14
+- 方向参考: 33
+- 可直接买样: 13
 
 ## 推荐清单
 
@@ -313,7 +313,19 @@ Jun 18, 2020 · devised around the principle idea of reducing packaging waste wh
 
 memobottle扁平水杯，结构创新：扁平形状便于放入包中携带，颠覆传统圆柱水杯形态。。页面证据：memobottle turned the reusable water bottle game upside down in 2014 with their flat water bottles and now you can buy their entire collection!
 
-### 26. TEÏDO™ Drink everywhere with Next-Gen twin tech water bottle
+### 24. This circuit board desk integrates a cabling solution to give you the ultimate wire-free desk setup! - Yanko Design
+
+- 品类：创意桌搭
+- 路径：适合改造
+- 启发：功能启发、结构启发
+- 分数：8.7
+- 来源：Yanko Design
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://www.yankodesign.com/2020/11/30/this-circuit-board-desk-integrates-a-cabling-solution-to-give-you-the-ultimate-wire-free-desk-setup
+
+具体产品为电路板桌，集成线缆管理方案，通过桌面结构创新实现无线桌面。。页面证据：As I write from my desk, a countless number of wires hang on and tangle between my legs: the trio of cables coming from my WiFi Router, the designated spots for my phone and laptop chargers, along with some other wires whose purposes remain unknown to me. Surely, the mess of wires underneath my desk
+
+### 25. TEÏDO™ Drink everywhere with Next-Gen twin tech water bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -325,7 +337,7 @@ memobottle扁平水杯，结构创新：扁平形状便于放入包中携带，�
 
 TEÏDO self-powered water bottle with NASA membrane filtration and UV-C.。页面证据：TEÏDO harness NASA membrane filtration combined to UV-C to bring drinking water in a light self-powered water bottle.
 
-### 27. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
+### 26. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -337,7 +349,7 @@ TEÏDO self-powered water bottle with NASA membrane filtration and UV-C.。页�
 
 Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to do so by changing their diet. It makes lightly seasoned meals healthier and more enjoyable. The tableware and cutlery act as tools to help start and ma
 
-### 28. Red Dot Design Award: Thermo Mug Without Thread
+### 27. Red Dot Design Award: Thermo Mug Without Thread
 
 - 品类：水杯
 - 路径：适合改造
@@ -349,7 +361,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置锁定防漏，可拆卸硅胶套，结构创新与交互创新明确。。页面证据：This thermo mug without a screw thread features a push-button opening mechanism that can be operated with one hand. A built-in toggle lock prevents accidental spills, while also serving as a fun fidget feature. The smooth rim and removable silicone sleeve...
 
-### 29. Dream Recorder | Uncrate
+### 28. Dream Recorder | Uncrate
 
 - 品类：充电宝
 - 路径：适合改造
@@ -361,7 +373,7 @@ Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置�
 
 Native Union (Re)Classic Magnetic Power Bank，号称最薄便携无线充电宝，支持磁吸无线充电，创新点在于超薄设计和磁吸功能。。页面证据：There are plenty of reasons why you might want to replay a dream, but sadly, the best you can do is keep a journal of...
 
-### 30. This iPhone 17 Pro Kevlar® Case is like a Bulletproof Vest for your phone - Yanko Design
+### 29. This iPhone 17 Pro Kevlar® Case is like a Bulletproof Vest for your phone - Yanko Design
 
 - 品类：手机壳
 - 路径：适合改造
@@ -373,7 +385,7 @@ Native Union (Re)Classic Magnetic Power Bank，号称最薄便携无线充电宝
 
 ArmorGrid Kevlar手机壳，采用防弹材料，防护创新。。页面证据：https://www.youtube.com/watch?v=iwocZ3v74a0 The annual ritual of a new iPhone launch brings with it an equally important, almost spiritual, quest for the perfect case. Let’s be frank; the naked device, while a marvel of industrial design, feels unnervingly fragile in a world of concrete sidewalks and crowded coffee shops. The problem is that most protection comes at
 
-### 31. MagInk: AI Customizable Smart E-Ink Power Bank by Tmobi - Indiegogo
+### 30. MagInk: AI Customizable Smart E-Ink Power Bank by Tmobi - Indiegogo
 
 - 品类：充电宝
 - 路径：适合改造
@@ -385,7 +397,7 @@ ArmorGrid Kevlar手机壳，采用防弹材料，防护创新。。页面证据�
 
 明确产品MagInk智能E-Ink充电宝，创新点E-Ink屏幕可自定义，超薄快充。页面证据：MagInk supports 15W wireless and 22.5W wired fast charging, all packed into an ultra-slim design. Charge multiple devices at once—without the bulk.
 
-### 32. VoltGo N31:10000mAh Portable Wall Socket 3-in-1 Power Bank
+### 31. VoltGo N31:10000mAh Portable Wall Socket 3-in-1 Power Bank
 
 - 品类：充电宝
 - 路径：适合改造
@@ -397,7 +409,7 @@ ArmorGrid Kevlar手机壳，采用防弹材料，防护创新。。页面证据�
 
 VoltGo N31 10000mAh充电宝，自带墙插，可同时充3台设备，22.5W快充，创新在于便携墙插一体化设计。。页面证据：VoltGo is raising funds for VoltGo N31:10000mAh Portable Wall Socket 3-in-1 Power Bank on Kickstarter! Portable wall socket / 10000mAh / Multi-brand compatibility / Charge 3 devices at once / 22.5W fast charging
 
-### 33. Byredo Infra Luna Scent & Light Diffuser | Uncrate
+### 32. Byredo Infra Luna Scent & Light Diffuser | Uncrate
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -409,7 +421,7 @@ VoltGo N31 10000mAh充电宝，自带墙插，可同时充3台设备，22.5W快�
 
 Byredo Infra Luna Scent & Light Diffuser 是一款结合香薰扩散功能的台灯，LED加热蜡烛实现香薰，结构创新。。页面证据：In collaboration with French designer and light artist Benoit Lalloz, Byredo has introduced its latest limited-edition Byproduct. The Infra Luna is a lamp that doubles...
 
-### 34. Marie Antoinette – Avant Guillotine – Vin Rouge – Packaging Of The...
+### 33. Marie Antoinette – Avant Guillotine – Vin Rouge – Packaging Of The...
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -421,7 +433,7 @@ Byredo Infra Luna Scent & Light Diffuser 是一款结合香薰扩散功能的台
 
 Marie Antoinette礼品包装采用滑轨抽屉柜结构，内含酒杯及酒具，包装结构创新。。页面证据：This is a gift package that is more like a cabinet with 4 sliding drawers. The top left drawer contains two wine glasses, and the right top drawer has a wine utility set which is a cork screw, T-Shape thermometer, Stopper, Nozzle (with a stopper), and a Neck Ring (to avoid dripping).
 
-### 35. This case deploys an airbag when you drop your phone! - Yanko Design
+### 34. This case deploys an airbag when you drop your phone! - Yanko Design
 
 - 品类：手机壳
 - 路径：适合改造
@@ -433,7 +445,7 @@ Marie Antoinette礼品包装采用滑轨抽屉柜结构，内含酒杯及酒具�
 
 该手机壳在跌落时自动弹出八根金属腿作为气囊缓冲，创新性结构保护手机，属于明确的手机壳单品。。页面证据：The only thing worse than selling a kidney to buy an expensive phone is dropping said expensive phone and having your heart sink as you pick it up to see a crack running across its beautiful screen. Not many people enjoy putting covers on their phones because of the added bulk. It makes much more
 
-### 36. Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77
+### 35. Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77
 
 - 品类：水杯
 - 路径：适合改造
@@ -445,7 +457,7 @@ Marie Antoinette礼品包装采用滑轨抽屉柜结构，内含酒杯及酒具�
 
 可重复使用水瓶，中间可拧开清洁，解决清洗难题，结构创新，明确为水杯。。页面证据：You can show up at your gym drinkless and buy overpriced beverages there, or you can save a few bucks (and the environment) and carry your own refillable bottle. As someone in the latter camp, I haven't been able to find a bottle I can easily clean the inside of,...
 
-### 37. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
+### 36. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -457,7 +469,7 @@ Marie Antoinette礼品包装采用滑轨抽屉柜结构，内含酒杯及酒具�
 
 LARQ Bottle采用UV-C LED自清洁和净水技术，可消灭99.9999%生物污染物，创新点明确。。页面证据：No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.
 
-### 38. LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter
+### 37. LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -469,7 +481,7 @@ LARQ Bottle采用UV-C LED自清洁和净水技术，可消灭99.9999%生物污�
 
 LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，技术创新明显。。页面证据：The smarter and better self-cleaning bottle with two-stage purification and new app integration for hydration tracking and reminders.
 
-### 39. Turn any mug into a travel mug - Yanko Design
+### 38. Turn any mug into a travel mug - Yanko Design
 
 - 品类：水杯
 - 路径：适合改造
@@ -481,7 +493,7 @@ LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，�
 
 通用旅行杯盖PortaVia，可适配任何杯子，防溅便携，结构创新。页面证据：https://youtu.be/i5LMSBxFX18 The PortaVia Universal To-Go Lid does something quite marvelous. It retrofits onto the top of any drinking vessel (mugs, cups, glasses, usually have roughly the same diameter at the lip) and instantly turns it into a travel cup that you can carry around with you without splashing your drink. It covers the mouth of
 
-### 40. LARQ Bottle is a sustainable and travel-friendly bottle ...
+### 39. LARQ Bottle is a sustainable and travel-friendly bottle ...
 
 - 品类：水杯
 - 路径：适合改造
@@ -493,7 +505,7 @@ LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，�
 
 Sep 20, 2019 · The LARQ Bottle is a reusable, stainless-steel and self-cleaning water bottle, which purifies drinking water killing bacteria, using UV light tech.
 
-### 41. This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
+### 40. This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -505,7 +517,7 @@ Sep 20, 2019 · The LARQ Bottle is a reusable, stainless-steel and self-cleaning
 
 This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub The modern workflow is often a series of disconnected actions; typing in one window, clicking in another, and plugging in peripherals just to get started....
 
-### 42. This 100% plastic-free bottle comes with a reusable filter that can ...
+### 41. This 100% plastic-free bottle comes with a reusable filter that can ...
 
 - 品类：水杯
 - 路径：适合改造
@@ -517,7 +529,7 @@ This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
 
 To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro
 
-### 43. NeoPow X25: World's First 285W Solid-State Power Bank by NeoPow — Kickstarter
+### 42. NeoPow X25: World's First 285W Solid-State Power Bank by NeoPow — Kickstarter
 
 - 品类：充电宝
 - 路径：适合改造
@@ -527,9 +539,9 @@ To clean the Claysilite filter, all you need to do is put it in boiling water fo
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.kickstarter.com/projects/neopow/x25-solid-state-power-bank-285w-output-25500mah
 
-创新固态电池技术、高功率输出、防溅防摔，但受众较窄，价格可能过高。
+NeoPow X25 世界首款285W固态充电宝，采用固态电池技术，25500mAh/98Wh，防溅防摔，可同时为多台笔记本和手机快充。。页面证据：January 15, 2026 - NeoPow is raising funds for NeoPow X25: World's First 285W Solid-State Power Bank on Kickstarter! 285W Flash-Charge Multiple Laptops & Phones · 25500mAh / 98Wh Flight-Friendly · Safer Solid-State Tech · Splashproof & Drop-resistant
 
-### 44. SplitGo: Magnetic Modular Power Bank for EDC by SplitGo — Kickstarter
+### 43. SplitGo: Magnetic Modular Power Bank for EDC by SplitGo — Kickstarter
 
 - 品类：充电宝
 - 路径：适合改造
@@ -540,6 +552,18 @@ To clean the Claysilite filter, all you need to do is put it in boiling water fo
 - 链接：https://www.kickstarter.com/projects/splitgo/splitgo-magnetic-modular-power-bank-for-edc
 
 SplitGo磁性模块化充电宝，5000mAh，可附加冷却、照明、雾化等模块，扩展性强，创新模块化设计。。页面证据：A 5000mAh pocket power system with magnetic snap-on modules for charging, cooling, lighting, misting, and daily carry.
+
+### 44. Cantilevered Flatware, Yea or Nay? - Core77
+
+- 品类：创意厨具
+- 路径：适合改造
+- 启发：功能启发、结构启发
+- 分数：8.5
+- 来源：Core77
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://www.core77.com/posts/47835
+
+悬臂式餐具改善卫生，但实用性并非刚需，高频使用但改进有限，受众较广但可能小众，功能无大短板但成本可能高，价格可能超过35RMB，设计直观易理解，情绪价值一般，需进一步验证市场接受度。
 
 ### 45. CIO: Apple Watch & MagSafe Compatible Power Bank by CIO ...
 
@@ -661,7 +685,19 @@ Devoshub超薄充电宝0.19英寸，磁吸设计，内置双向USB-C线，便携
 
 Meet HYDAWAY. The Collapsible, Ultra-Stashable, Planet-Friendly, Go-Anywhere Way to Stay Hydrated!
 
-### 55. Cooksy AI烹饪助手 | Uncrate
+### 55. xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet
+
+- 品类：充电宝
+- 路径：适合改造
+- 启发：功能启发、结构启发
+- 分数：8.5
+- 来源：The Grommet
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://thegrommet.com/product/if%25252525252525252525252525252525252525252525252525252525252525252528now%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529=sysdate%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529,sleep%2525252525252525252525252525252525252525252525252525252525252525252815%25252525252525252525252525252525252525252525252525252525252525252529,0%25252525252525252525252525252525252525252525252525252525252525252529/xcool-3-in-1-power-bank
+
+Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C
+
+### 56. Cooksy AI烹饪助手 | Uncrate
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -673,7 +709,7 @@ Meet HYDAWAY. The Collapsible, Ultra-Stashable, Planet-Friendly, Go-Anywhere Way
 
 Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很大程度上取决于您的经验以及谁在帮忙。 Cooksy是一个全新的烹饪助手，它是您会发现的最佳厨房合作伙伴之一。小型设备安装在炉灶上方，每次引导您做饭。该设备使用视频和热成像技术来检测您正在烹饪的食物，并提供直接投射到手机上 ...
 
-### 56. Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work
+### 57. Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -685,7 +721,7 @@ Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很�
 
 Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have a drawer, a cabinet corner, or a crumpled bag stuffed inside another bag where we hoard the thin plastic produce bags...
 
-### 57. M-Light 6: The smallest adjustable motion sensor night... — Kickstarter
+### 58. M-Light 6: The smallest adjustable motion sensor night... — Kickstarter
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -697,31 +733,7 @@ Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have 
 
 M-Light 3微型可调运动感应夜灯，为M-Light 2升级版，同样具备运动感应、可调节、微型化特点。。页面证据：A motion sensor and light activated, rechargeable battery powered, adjustable light miniature for night bathroom trips, cabinets, etc.
 
-### 58. Red Dot Design Award: Nutri AI Kitchen Scale
-
-- 品类：创意厨具
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：Red Dot
-- 下一步：提取结构或功能点，换材质/场景重新组合
-- 链接：https://www.red-dot.org/de/project/nutri-ai-kitchen-scale-60281
-
-具体产品：Nutri AI Kitchen Scale AI 厨房秤。创新证据：AI 自动识别食物并记录营养数据，简化营养追踪流程，替代手动查找记录。。页面证据：The Nutri AI Kitchen Scale is an innovative smart nutrition tracking solution for individuals who require detailed records of their daily food intake. It simplifies the nutrition tracking process by automating the laborious manual task of locating,...
-
-### 59. RMDLO: A Folding, Space-Saving Colander - Core77
-
-- 品类：创意厨具
-- 路径：适合改造
-- 启发：功能启发、结构启发
-- 分数：8.4
-- 来源：Core77
-- 下一步：提取结构或功能点，换材质/场景重新组合
-- 链接：https://www.core77.com/projects/42428
-
-RMDLO折叠滤水篮，通过机械折叠结构可将体积缩小至使用状态的10%，解决厨房收纳问题，属于明确单品且功能创新。。页面证据：Our houses are shrinking, and with them our kitchens. Today, it doesn't matter if you are a young student flat-sharing or a highly paid couple living in the inner city, you both share a problem—there is no more space left in your kitchen. RMDLO is a colander meant to address
-
-### 60. This Lamp Gets Its Glow From a Fashionable Collar Worn 400 Years Ago - Yanko Design
+### 59. This Lamp Gets Its Glow From a Fashionable Collar Worn 400 Years Ago - Yanko Design
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -769,7 +781,31 @@ CareAlert smart nightlight: monitors elderly wellness via sensors without camera
 
 Detachable 3-in-1 Functional Jacket by Bosideng, featuring innovative quick-detach 5s structure and modular clothing options for adaptability to changing activities and weather.。页面证据：Dank ihrer innovativen, schnell abnehmbaren 5s-Struktur und den modularen Bekleidungsoptionen bietet diese abnehmbare 3-in-1-Funktionsjacke eine optimale Anpassungsfähigkeit an die wechselnde Intensität von Aktivitäten und Wetterbedingungen für eine schnelle Wärmeabgabe und Wärmeisolierung im Kernbereich. Gleichzeitig bietet sie eine neue Möglichkeit für Outdoor-Enthusiasten, die Daunen- und Hardshelljacke zu kombinieren.
 
-### 64. LEDVANCE AI Companion Lighting Robot
+### 63. Red Dot Design Award: Arctic Patrol Modular Parka 2.0
+
+- 品类：冲锋衣
+- 路径：方向参考
+- 启发：功能启发
+- 分数：8.4
+- 来源：Red Dot
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.red-dot.org/zh/project/arctic-patrol-modular-parka-20-62948
+
+产品功能创新且环保，但硬壳冲锋衣受众较窄，日常使用频率一般。
+
+### 64. Red Dot Design Award: Detachable 3-IN-1 Functional Jacket
+
+- 品类：冲锋衣
+- 路径：方向参考
+- 启发：功能启发、结构启发
+- 分数：8.4
+- 来源：Red Dot
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.red-dot.org/project/detachable-3-in-1-functional-jacket-68276
+
+模块化设计实用但稍复杂，Gore-Tex面料确保高性能，价格高于35元，整体功能全面但受众偏户外，3秒理解度中等。
+
+### 65. LEDVANCE AI Companion Lighting Robot
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -781,7 +817,19 @@ Detachable 3-in-1 Functional Jacket by Bosideng, featuring innovative quick-deta
 
 iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of intelligent, responsive luminaires by combining six-axis robotics, AI vision, and affective computing. It proactively adapts to five key user activities with optimized beam distribution, arm
 
-### 65. This BUDDY Portable Lamp is one multi-function lighting solution - Yanko Design
+### 66. Red Dot Design Award: Future Shell Modular Suit
+
+- 品类：冲锋衣
+- 路径：方向参考
+- 启发：功能启发、结构启发
+- 分数：8.2
+- 来源：Red Dot
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.red-dot.org/project/future-shell-modular-suit-68496
+
+产品功能完善，三层模块化设计适应多种天气，获得红点奖，但受众限于儿童，需求频率一般，且价格可能偏高。
+
+### 67. This BUDDY Portable Lamp is one multi-function lighting solution - Yanko Design
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -793,7 +841,7 @@ iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of i
 
 BUDDY便携灯，兼具氛围灯与手电筒功能，双面发光，多功能创新。。页面证据：The term buddy is widely used as it pertains to anyone or anything that can be considered a friend. This new lamp can be a buddy or a friend in times of darkness as it can be many things. The BUDDY Portable Lamp can work as ambient light and as a flashlight. The top light
 
-### 66. Not enough pockets to carry your stuff? This outdoor jacket can instantly transform into a 35L backpack - Yanko Design
+### 68. Not enough pockets to carry your stuff? This outdoor jacket can instantly transform into a 35L backpack - Yanko Design
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -805,7 +853,7 @@ BUDDY便携灯，兼具氛围灯与手电筒功能，双面发光，多功能创
 
 JackBag外套可翻转变形为35L背包，具有结构创新，同时具备防水透气功能。。页面证据：https://www.kickstarter.com/projects/outernative/jackbag-a-hands-free-on-the-go-jacket-and-bag-in-one Offering more space than all the pockets on your regular jacket combined, the JackBag is an outdoor jacket that flips inwards, shapeshifting into a 35L backpack on demand. It's also waterproof, breathable, and comes with 14 different pockets for good measure. Talk about being a Jack(Bag) of all trades! The JackBag serves a unique
 
-### 67. Remember Aerogel? This insulated outdoor jacket has an aerogel layer, giving you -40°F protection - Yanko Design
+### 69. Remember Aerogel? This insulated outdoor jacket has an aerogel layer, giving you -40°F protection - Yanko Design
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -817,7 +865,7 @@ JackBag外套可翻转变形为35L背包，具有结构创新，同时具备防�
 
 内层采用气凝胶隔热层的户外夹克，外层防水防风，提供-40°F防护，材料创新。。页面证据：https://youtu.be/3ii7evbrvp4 Anyone who even vaguely remembers the late 2000s remembers Aerogel, the 'wonder material' that was 99% air, and had the incredible ability to insulate against high heat or cold because of its thermal absorption properties. Aerogel got all the press back in the day, but didn't really see much consumer application because of how
 
-### 68. Red Dot Design Award: WiZ Portrait Desk Lamp
+### 70. Red Dot Design Award: WiZ Portrait Desk Lamp
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -829,7 +877,7 @@ JackBag外套可翻转变形为35L背包，具有结构创新，同时具备防�
 
 WiZ Portrait Desk Lamp with dual light sources and rotatable head; functional innovation for home office flexible lighting.。页面证据：The WiZ Portrait Desk Lamp was specifically designed to meet the needs of people who work from home. It offers flexible lighting thanks to its dual light sources at the top and bottom. Work efficiency is enhanced through targeted light distribution, which...
 
-### 69. The $99 Gadget That Clears 3 Devices Off Your Nightstand
+### 71. The $99 Gadget That Clears 3 Devices Off Your Nightstand
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -841,7 +889,7 @@ WiZ Portrait Desk Lamp with dual light sources and rotatable head; functional in
 
 The $99 Gadget That Clears 3 Devices Off Your Nightstand The nightstand has become a staging ground for technology. Between a phone, a white noise machine, a lamp, and whatever book you’re pretending to read...
 
-### 70. Loop 大理石万年历：以地月为灵感，永不翻页的永续桌面日历！
+### 72. Loop 大理石万年历：以地月为灵感，永不翻页的永续桌面日历！
 
 - 品类：日历
 - 路径：方向参考
@@ -853,7 +901,7 @@ The $99 Gadget That Clears 3 Devices Off Your Nightstand The nightstand has beco
 
 Loop万年历采用深浅双色同心大理石环结构，深色内环雕刻月份标识，浅色外环刻日期，双环可独立旋转，依靠纯机械结构实现万年历功能，无需纸张、电子元件。石材设计兼顾环保痛点：天然石材开采仅 25%-30% 能制成成品，其余多沦为废料，这件作品将石材废料转化为长久耐用器物；天然大理石 ...
 
-### 71. Philips AI BrightMate Table Lamp
+### 73. Philips AI BrightMate Table Lamp
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -865,7 +913,7 @@ Loop万年历采用深浅双色同心大理石环结构，深色内环雕刻月�
 
 iF Design Award · BrightMate is a playful AI lighting companion that blends functionality, entertainment, and companionship for an emotionally engaging home experience. Beyond hundreds of preset lighting scenes, it uses generative AI to create unlimited light effects
 
-### 72. Announcing: The Winners of The 2022 L A M P Competition!
+### 74. Announcing: The Winners of The 2022 L A M P Competition!
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -877,7 +925,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 具体产品：eclipse-inspired floor lamp，创新证据：灯罩可旋转控制光线方向，实现阅读灯与氛围灯切换。。页面证据：Design Milk shares the winning designers + their brilliant designs from the prestigious 2022 L A M P design competition, now in its 8th year!
 
-### 73. Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer
+### 75. Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -889,7 +937,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 明确单品：Eco-design Circular Lightweight Functional Down Puffer 夹克，采用RDS900+FP鹅绒、生物基尼龙PA510面料、回收拉链等环保材料创新。。页面证据：Die Winterjacke Eco-design Circular Lightweight Functional Down Puffer besteht aus nachverfolgbaren RDS900+FP-Gänsedaunen sowie biobasiertem Nylon PA510 als atmungsaktives Außenmaterial. Auch sämtliche Accessoires wie Reißverschlüsse sind aus recyceltem...
 
-### 74. LEGO calendar by vitamins digitally syncs to google calendar
+### 76. LEGO calendar by vitamins digitally syncs to google calendar
 
 - 品类：日历
 - 路径：方向参考
@@ -901,7 +949,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 产品为LEGO日历，由LEGO积木构成，可数字同步Google日历或iCal，实现物理与数字交互创新。。页面证据：made entirely of LEGO bricks, the cloud-based LEGO calendar digitally syncs up with google calendar or iCal.
 
-### 75. This Just Inbox: In these lamps, the socket is the bulb - Core77
+### 77. This Just Inbox: In these lamps, the socket is the bulb - Core77
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -913,7 +961,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 Glint Hero 灯具将光直接从插座射出，无需移动灯具即可指向任意方向，搭配可更换灯罩，结构交互创新。。页面证据：Clever design by Düsseldorf designer Daniel Michel, commenting on the gradual disappearance of the light bulb (at least as we know it). In these lamps, the light pours right out of the socket, which is actually a 10-Watt High Power LED. The socket comes with interchangeable shades, though we'd...
 
-### 76. Nike Just Made a Puffer Jacket You Can Inflate in 15 Seconds - Yanko Design
+### 78. Nike Just Made a Puffer Jacket You Can Inflate in 15 Seconds - Yanko Design
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -925,7 +973,7 @@ Glint Hero 灯具将光直接从插座射出，无需移动灯具即可指向任
 
 Nike Therma-Fit Air Milano inflatable puffer jacket; structural innovation using air insulation with pump, deflatable for portability.。页面证据：Remember when Nike put air bubbles in sneakers and everyone thought it was the coolest thing ever? Well, the Swoosh just did it again, but this time with a jacket that you can literally pump up or deflate like an air mattress. Meet the Therma-Fit Air Milano Jacket, and yes, it's as wild as it
 
-### 77. This convertible full-body jacket was designed to give you 100% protection from the outdoor elements - Yanko Design
+### 79. This convertible full-body jacket was designed to give you 100% protection from the outdoor elements - Yanko Design
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -937,7 +985,7 @@ Nike Therma-Fit Air Milano inflatable puffer jacket; structural innovation using
 
 具体产品：IWOM Convertible All-Purpose Jacket 2.0。创新证据：可变形式设计，从夹克延伸至风衣长度，全密封防水防风，适应不同天气。。页面证据：https://www.kickstarter.com/projects/iwomouterwear/iwom-convertible-all-purpose-jacket-20 Cleverly named the IWOM (pronounced I-Warm), this jacket was designed to be able to shapeshift based on your needs. On a regular windy day, the IWOM serves as a jacket, if it begins drizzling, you can simply extend its base down to your knees like a parka, and when the weather gets out of
 
-### 78. World’s only weather-proof jacket that’s made out of 100% merino wool - Yanko Design
+### 80. World’s only weather-proof jacket that’s made out of 100% merino wool - Yanko Design
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -949,7 +997,19 @@ Nike Therma-Fit Air Milano inflatable puffer jacket; structural innovation using
 
 Woolly NatureDry Jacket，100%美利奴羊毛通过紧密编织实现防风防水，材料创新突破。。页面证据：https://www.kickstarter.com/projects/woollynaturedry/woolly-merino-naturedry Yes, I'm just as baffled as you probably are. Wool isn't the hardiest textile. Yes, it provides warmth, but you can't wear a woolen sweater out in a blizzard or the rain. Even indoors, wool requires loads of care, from carefully selecting the water temperature and detergent-type while doing a wash, to just being
 
-### 79. Red Dot Design Award: DOWN-LESS DOWN JACKET
+### 81. Red Dot Design Award: EnerGeek GT01
+
+- 品类：充电宝
+- 路径：方向参考
+- 启发：功能启发、结构启发
+- 分数：7.9
+- 来源：Red Dot
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.red-dot.org/zh/project/energeek-gt01-82037
+
+EnerGeek GT01充电宝，可拆分为两个独立模块，灵活充电。。页面证据：The EnerGeek GT01 power bank was developed for flexible charging in various scenarios. The portable charger consists of two separate modules. Thanks to its combined construction, it can be used as one unit or split into two individual components: while...
+
+### 82. Red Dot Design Award: DOWN-LESS DOWN JACKET
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -959,57 +1019,9 @@ Woolly NatureDry Jacket，100%美利奴羊毛通过紧密编织实现防风防�
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.red-dot.org/zh/project/down-less-down-jacket-72266
 
-创新材料环保，保暖效果堪比羽绒，但依赖阳光，阴天或夜晚效果受限，功能稳定性存在短板。
+创新材料技术，无需羽绒即可发热保暖，环保且性能优异，但技术成熟度和市场接受度有待验证，价格预估较高。
 
-### 80. iF Design - X-BIONIC® SphereWind Run Jacket
-
-- 品类：冲锋衣
-- 路径：方向参考
-- 启发：视觉启发
-- 分数：7.9
-- 来源：iF设计奖
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://ifdesign.com/en/winner-ranking/project/x-bionic-spherewind-run-jacket/259569
-
-X-BIONIC SphereWind Run Jacket with patented ThermoSyphon technology, preset running sleeves, seamless underarm, ergonomic cuffs, and weatherproof air outlet for improved thermoregulation.。页面证据：The SphereWind jacket by Swiss functional apparel manufacturer X-Bionic has been completely reconstructed. Further improving thermoregulation, the jacket now features the patented ThermoSyphon® technology, which maximises surface area and allows natural thermodynamics to assist with sweat management. The sleeves have been made more ergonomic with the Preset Running Sleeves, the elimination of underarm seams, and the new form of the cuffs that also aid ventilation while improving comfort. A newly devel
-
-### 81. CSYS by Jake Dyson | Dezeen
-
-- 品类：氛围灯
-- 路径：方向参考
-- 启发：情绪启发
-- 分数：7.9
-- 来源：Dezeen
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.dezeen.com/2011/09/30/csys-by-jake-dyson
-
-CSYS lamp by Jake Dyson with three-axis adjustment and touch-sensitive dimmer; clear product with mechanical and interaction innovation.。页面证据：February 12, 2022 - The lamp is adjustable on three axis and includes a touch-sensitive dimmer switch with light level memory.
-
-### 82. Light Soy Flex by Heliograf | Dezeen Showroom
-
-- 品类：氛围灯
-- 路径：方向参考
-- 启发：情绪启发
-- 分数：7.9
-- 来源：Dezeen
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.dezeen.com/2025/04/17/light-soy-flex-heliograf-dezeen-showroom
-
-具体产品为Light Soy Flex，创新点在于一灯多用（吊灯/壁灯/台灯）和触摸调光功能。。页面证据：April 17, 2025 - The Light Soy Flex can be plugged into mains power via a two-metre universal cable, allowing it to function as a pendant, wall or table lamp. The new Light Soy Flex is a plug-in version with added features · It also has added features including ...
-
-### 83. Lex Pott creates transforming lamp for IKEA's latest PS collection
-
-- 品类：氛围灯
-- 路径：方向参考
-- 启发：情绪启发
-- 分数：7.9
-- 来源：Dezeen
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.dezeen.com/2026/04/20/ikea-ps-2026-lamp-lex-pott
-
-IKEA PS 2026 Lamp by Lex Pott, a transforming lamp with structural innovation; clear standalone lighting product.。页面证据：April 22, 2026 - Lex Pott exclusively reveals the PS 2026 Lamp as part of the IKEA's latest PS Collection, which is being unveiled at Milan design week.
-
-### 84. This innovative Power Bank with its own Display has the ability to be MUCH more than just a battery - Yanko Design
+### 83. Belkin’s 10,000mAh power bank with pop-up motion sensing LED delivers 45W output - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1017,9 +1029,21 @@ IKEA PS 2026 Lamp by Lex Pott, a transforming lamp with structural innovation; c
 - 分数：7.9
 - 来源：Yanko Design
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.yankodesign.com/2022/01/27/this-innovative-power-bank-with-its-own-display-has-the-ability-to-be-much-more-than-just-a-battery
+- 链接：https://www.yankodesign.com/2026/07/17/belkins-10000mah-power-bank-with-pop-up-motion-sensing-led-delivers-45w-output
 
-产品：PDGO带显示屏充电宝。创新：内置显示屏，可提供更多功能扩展，如数据线检测、电量显示。。页面证据：Power Banks haven't changed in decades. The PDGO, however, is showing that adding a display could make them MUCH more versatile, and vastly more popular.
+Belkin BoostCharge Pro Power Bank 10K: 10000mAh, pop-up motion-sensing LED light, digital screen for battery percentage, 45W output.。页面证据：Power banks have progressed from mere portable battery backups to devices with many other practical features. To spice the market further, consumer tech company Belkin has launched the BoostCharge Pro Power Bank 10K in China, which includes a pop-up motion-sensing light. The power bank from Belkin is now available for 329 yuan (approximately $49), but
+
+### 84. Red Dot Design Award: M150 & M250
+
+- 品类：充电宝
+- 路径：方向参考
+- 启发：功能启发
+- 分数：9.0
+- 来源：Red Dot
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.red-dot.org/project/m150-m250-70840
+
+产品功能全面，支持最多六设备同时充电、收纳线材与耳机、可作为手机支架，且获得红点奖，实用性强；但价格较高可能限制受众范围。
 
 ### 85. This portable power bank comes with an attached cord to ensure your phone is never at 1% again! - Yanko Design
 
@@ -1129,19 +1153,7 @@ Elio 可折叠扁平水杯，750ml容量，可压扁至3cm，防漏且洗碗机�
 
 Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细菌，在材料或功能上有明确创新。。页面证据：A reusable water bottle that harnesses the power of digital UV-C light to kill 99.999% of bacteria in your water and bottle.
 
-### 94. xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发、结构启发
-- 分数：8.5
-- 来源：The Grommet
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://thegrommet.com/product/if%25252525252525252525252525252525252525252525252525252525252525252528now%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529=sysdate%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529,sleep%2525252525252525252525252525252525252525252525252525252525252525252815%25252525252525252525252525252525252525252525252525252525252525252529,0%25252525252525252525252525252525252525252525252525252525252525252529/xcool-3-in-1-power-bank
-
-Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C
-
-### 95. Ember Mug 2 Black 10 oz
+### 94. Ember Mug 2 Black 10 oz
 
 - 品类：水杯
 - 路径：适合改造
@@ -1153,7 +1165,7 @@ Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 P
 
 Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
 
-### 96. Ember Cup Slate Black 14 oz
+### 95. Ember Cup Slate Black 14 oz
 
 - 品类：水杯
 - 路径：适合改造
@@ -1165,7 +1177,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
 
-### 97. Power bank
+### 96. Power bank
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1177,7 +1189,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 World's first PD-compatible power bank with lithium iron phosphate battery that does not ignite when punctured, safety material innovation and cobalt-free.。页面证据：This product is the world's first PD output-compatible battery with a lithium-ion iron phosphate battery. This product features the use of a safe battery that does not ignite even when a nail is inserted into it, preventing fire accidents. It is also an environmentally friendly product that does not use cobalt in the battery's positive electrode material.
 
-### 98. TotalBoost Mini Pro Power Bank | Pocket-Sized, Wireless & Universal | Grommet
+### 97. TotalBoost Mini Pro Power Bank | Pocket-Sized, Wireless & Universal | Grommet
 
 - 品类：充电宝
 - 路径：适合改造
@@ -1189,7 +1201,31 @@ World's first PD-compatible power bank with lithium iron phosphate battery that 
 
 TotalBoost Mini Pro Power Bank: 5000mAh充电宝，支持磁吸无线充电、电量显示、支架、手电筒，集成多功能，结构创新。。页面证据：Stay charged anywhere with a compact 5,000mAh power bank that magnetically attaches, displays battery life, and works with nearly any device. Includes kickstand, flashlight & travel case.
 
-### 99. Kickstarter >> Ceba RAPI: World’s Fastest Self-Charging Power Bank by EnnoPro
+### 98. Red Dot Design Award: Nutri AI Kitchen Scale
+
+- 品类：创意厨具
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.4
+- 来源：Red Dot
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://www.red-dot.org/de/project/nutri-ai-kitchen-scale-60281
+
+具体产品：Nutri AI Kitchen Scale AI 厨房秤。创新证据：AI 自动识别食物并记录营养数据，简化营养追踪流程，替代手动查找记录。。页面证据：The Nutri AI Kitchen Scale is an innovative smart nutrition tracking solution for individuals who require detailed records of their daily food intake. It simplifies the nutrition tracking process by automating the laborious manual task of locating,...
+
+### 99. RMDLO: A Folding, Space-Saving Colander - Core77
+
+- 品类：创意厨具
+- 路径：适合改造
+- 启发：功能启发、结构启发
+- 分数：8.4
+- 来源：Core77
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://www.core77.com/projects/42428
+
+RMDLO折叠滤水篮，通过机械折叠结构可将体积缩小至使用状态的10%，解决厨房收纳问题，属于明确单品且功能创新。。页面证据：Our houses are shrinking, and with them our kitchens. Today, it doesn't matter if you are a young student flat-sharing or a highly paid couple living in the inner city, you both share a problem—there is no more space left in your kitchen. RMDLO is a colander meant to address
+
+### 100. Kickstarter >> Ceba RAPI: World’s Fastest Self-Charging Power Bank by EnnoPro
 
 - 品类：充电宝
 - 路径：适合改造
@@ -1199,16 +1235,4 @@ TotalBoost Mini Pro Power Bank: 5000mAh充电宝，支持磁吸无线充电、�
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.kickstarter.com/projects/ennoprogroup/ceba-rapi-worlds-fastest-charging-power-bank
 
-充电宝是高频刚需，自充速度极快，但输出功率仅30W，价格可能偏高，整体功能有短板但核心创新突出。
-
-### 100. Update 5: Backer Only Update - Black Friday Deals Are Live · LARQ Bottle - Water Purification in a Self-Cleaning Bottle
-
-- 品类：水杯
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.4
-- 来源：Kickstarter
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.kickstarter.com/projects/443292702/quartz-bottle
-
-LARQ Bottle: self-cleaning water bottle using UV-C LED to eliminate 99.9999% bio-contaminants. Function innovation.。页面证据：October 31, 2019 - Justin Wang is raising funds for LARQ Bottle - Water Purification in a Self-Cleaning Bottle on Kickstarter! No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.
+实用性强（充电宝高频需求），自充电速度极快，但输出功率仅30W，功能有短板；3秒易懂，情绪价值中等。
