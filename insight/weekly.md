@@ -3,12 +3,12 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-30T09:07:12+08:00
+- 生成时间：2026-07-30T11:31:01+08:00
 
 ## 行动分布
 
-- 适合改造: 54
-- 方向参考: 33
+- 适合改造: 53
+- 方向参考: 34
 - 可直接买样: 13
 
 ## 推荐清单
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-专为手部活动不便者设计，人体工学角度手柄，实用性强但目标用户小众，价格符合要求。
+专为手部不便者设计，人体工学手柄，实用性强但目标市场狭窄，价格可能较高，功能清晰但大众吸引力低。
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -47,7 +47,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars
 
-产品设计科幻，功能完整，价格合理，但受众限于游戏玩家，竞争激烈。
+Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。
 
 ### 4. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -59,7 +59,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-产品实用性强，一秒成型和可打平收纳功能突出，价格符合要求，3秒易懂，情绪价值与基础功能结合好。但需求频次和受众广度中等。
+产品实用但需求低频，针对特定礼品市场；功能简单无短板，价格符合预期，但受众有限。
 
 ### 5. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -125,13 +125,13 @@ Pinterest · 磁吸收纳锅铲套装
 
 - 品类：创意礼盒
 - 路径：可直接买样
-- 启发：功能启发、包装启发
+- 启发：包装启发
 - 分数：7.0
 - 来源：Behance
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-产品设计巧妙，滑盖可作托盘，兼具实用与美观，但受众局限于葡萄酒爱好者，需求频次低，价格可能较高。
+产品设计创新，滑盖可作托盘，实用性强，但酒盒非高频需求，受众有限，售价超35元，一目了然，情绪价值中等。
 
 ### 11. MOONCAKE BOX with board game inside :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad
 
@@ -143,7 +143,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside
 
-月饼实用，但游戏功能增加趣味但非必需；中秋季节性产品；受众较窄；结构创新但3秒内不易理解；售价合理；情绪价值中等。
+产品将中秋月饼礼盒与棋盘游戏结合，实现包装结构创新，适合送礼和游戏爱好者，价格高于35元，概念易懂，但需求频率低，受众较窄。
 
 ### 12. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
@@ -155,7 +155,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar
 
-产品结合日历与种植，实用但受众较窄；价格合理；概念易懂；情绪价值来自种植体验
+Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...
 
 ### 13. 趣香七夕表白礼盒创意设计 :: Behance
 
@@ -167,7 +167,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/229023437/_
 
-产品概念新颖，融合广式文化，具有情绪价值，但实用性和普适性有限，功能可实现但存在技术风险。
+Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。
 
 ### 14. Quench Your Thirst and Ditch Plastic Water Bottles Forever
 
@@ -493,7 +493,31 @@ This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
 
 To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro
 
-### 41. CIO: Apple Watch & MagSafe Compatible Power Bank by CIO ...
+### 41. NeoPow X25: World's First 285W Solid-State Power Bank by NeoPow — Kickstarter
+
+- 品类：充电宝
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.5
+- 来源：Kickstarter
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.kickstarter.com/projects/neopow/x25-solid-state-power-bank-285w-output-25500mah
+
+产品功能强大，安全且兼容多种设备，但价格可能较高，受众偏高端。
+
+### 42. SplitGo: Magnetic Modular Power Bank for EDC by SplitGo — Kickstarter
+
+- 品类：充电宝
+- 路径：适合改造
+- 启发：功能启发、结构启发
+- 分数：8.5
+- 来源：Kickstarter
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.kickstarter.com/projects/splitgo/splitgo-magnetic-modular-power-bank-for-edc
+
+模块化设计有创新，但实用性可能受限于额外模块的生态；充电宝本身高频需求，但5000mAh容量偏小；打击面集中于EDC爱好者；功能无大短板，但价格未知；3秒易懂；情绪价值中等。
+
+### 43. CIO: Apple Watch & MagSafe Compatible Power Bank by CIO ...
 
 - 品类：充电宝
 - 路径：适合改造
@@ -505,7 +529,7 @@ To clean the Claysilite filter, all you need to do is put it in boiling water fo
 
 CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多设备充电痛点，体积小巧，创新在于双功能无线充电。。页面证据：We offer a power bank without a Magnetic function (MagSafe Charger) and kickstand. You usually need to use a separate charger for your Apple Watch and a wireless charger for your iPhone. Power banks with two functions do exist, but they are bulky and too large to carry. CIO's Hybrid Wireless Battery can charge both of these with just one charger.
 
-### 42. Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa
+### 44. Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -515,9 +539,9 @@ CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多�
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-产品概念创新，集成四合一充电和夜灯，但来源为Behance设计社区，可能未量产，实用性存疑；价格未知但通常高于35元；3秒内可理解基本功能。
+产品功能明确，解决多设备充电需求，折叠设计增加便携性，但目标用户较窄，价格较高可能影响普及
 
-### 43. The Reusable LARQ Bottle Cleans Itself and the Water Inside
+### 45. The Reusable LARQ Bottle Cleans Itself and the Water Inside
 
 - 品类：水杯
 - 路径：适合改造
@@ -529,7 +553,7 @@ CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多�
 
 LARQ Bottle自清洁水杯，采用UV-C LED技术，可净化水和清洁瓶身，锂电池续航一个月，创新显著。。页面证据：The reusable LARQ water bottle comes with built-in UV-C LED technology that cleans the water inside, as well as the bottle itself so you don't have to.
 
-### 44. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
+### 46. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
 
 - 品类：充电宝
 - 路径：适合改造
@@ -541,7 +565,7 @@ LARQ Bottle自清洁水杯，采用UV-C LED技术，可净化水和清洁瓶身�
 
 Ample超薄充电宝，内置两条侧边线，自动开机，直通充电，无需外接线。。页面证据：Kickstarter's most popular powerbank! Customized with two integrated side cables of your choice.There’s no need to carry additional cables to recharge your Ample powerbank. Ample offers automatic power on and a pass-through charging capability that most powerbanks lack.
 
-### 45. kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented...
+### 47. kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented...
 
 - 品类：充电宝
 - 路径：适合改造
@@ -553,7 +577,7 @@ Ample超薄充电宝，内置两条侧边线，自动开机，直通充电，无
 
 Ample Ultraslim Powerbank 是一款超薄充电宝，支持自选线缆，结构上实现极薄便携，符合充电宝品类创新要求。。页面证据：Pledge €49 or more About US$ 52. Early bird [single pack]. Experience the finest powerbank that ever charged! Save €20 (29% OFF RETAIL). Includes: Ample Ultraslim Powerbank. 2× Cables of your choice.
 
-### 46. A Supersuit for Your Phone Camera - Yanko Design
+### 48. A Supersuit for Your Phone Camera - Yanko Design
 
 - 品类：手机壳
 - 路径：适合改造
@@ -565,7 +589,7 @@ Ample Ultraslim Powerbank 是一款超薄充电宝，支持自选线缆，结构
 
 Lemuro 手机壳可旋入外置镜头，兼具保护与摄影增强功能，属于明确的手机壳单品，结构创新。。页面证据：https://www.kickstarter.com/projects/lemuro/lemuro-transform-your-smartphone-into-a-profession The phone camera isn't going anywhere. We've slowly done away with almost every other element barring the camera and the screen. First the external antenna, then the tactile keyboard, the MicroSD card slot, the headphone jack, the home button, and with wireless charging being adopted everywhere, the charging port may just make its exit
 
-### 47. World's Fastest Graphene Power Bank | Indiegogo
+### 49. World's Fastest Graphene Power Bank | Indiegogo
 
 - 品类：充电宝
 - 路径：适合改造
@@ -577,7 +601,7 @@ Lemuro 手机壳可旋入外置镜头，兼具保护与摄影增强功能，属�
 
 BOLD.2石墨烯充电宝，290W功率，6端口，支持MagSafe和Apple Watch，创新采用石墨烯材料。。页面证据：BOLD.2: The 1st & Fastest 290W Graphene Power Bank MagSafe + Apple Watch6 Ports 100Wh/27, | Check out 'World's Fastest Graphene Power Bank' on Indiegogo.
 
-### 48. The SmartDesk All-In-One 72" Touchscreen Standing Desk Workstation
+### 50. The SmartDesk All-In-One 72" Touchscreen Standing Desk Workstation
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -589,7 +613,7 @@ BOLD.2石墨烯充电宝，290W功率，6端口，支持MagSafe和Apple Watch，
 
 明确产品：SmartDesk一体式72英寸触控升降桌，集成电脑、触控、无线充电、扫描仪，创新点在于多功能一体化。页面证据：Combine the ergonomics of an automatic standing desk with a Windows computer, 72 inches of total screens, multi-touch controls, wireless charging, and a built-in scanner and you've got the $4,000 Cemtrex SmartDesk.
 
-### 49. Update 1: We Did It Again! · Devoshub Ultra-Thin Power bank
+### 51. Update 1: We Did It Again! · Devoshub Ultra-Thin Power bank
 
 - 品类：充电宝
 - 路径：适合改造
@@ -601,7 +625,7 @@ BOLD.2石墨烯充电宝，290W功率，6端口，支持MagSafe和Apple Watch，
 
 Devoshub超薄充电宝0.19英寸，磁吸设计，内置双向USB-C线，便携与功能创新。。页面证据：DevosHub is raising funds for Devoshub Ultra-Thin Power bank on Kickstarter! Thickness of only 0.19"| 65% charge for iPhone & Android | Magnetic design |Built-in bi-directional USB-C cable|Over 500 charge cycles
 
-### 50. HYDAWAY. The world’s most collapsible water bottle
+### 52. HYDAWAY. The world’s most collapsible water bottle
 
 - 品类：钥匙扣水壶
 - 路径：适合改造
@@ -613,7 +637,7 @@ Devoshub超薄充电宝0.19英寸，磁吸设计，内置双向USB-C线，便携
 
 Meet HYDAWAY. The Collapsible, Ultra-Stashable, Planet-Friendly, Go-Anywhere Way to Stay Hydrated!
 
-### 51. xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet
+### 53. xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet
 
 - 品类：充电宝
 - 路径：适合改造
@@ -625,7 +649,7 @@ Meet HYDAWAY. The Collapsible, Ultra-Stashable, Planet-Friendly, Go-Anywhere Way
 
 Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C
 
-### 52. Cooksy AI烹饪助手 | Uncrate
+### 54. Cooksy AI烹饪助手 | Uncrate
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -637,7 +661,7 @@ Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 P
 
 Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很大程度上取决于您的经验以及谁在帮忙。 Cooksy是一个全新的烹饪助手，它是您会发现的最佳厨房合作伙伴之一。小型设备安装在炉灶上方，每次引导您做饭。该设备使用视频和热成像技术来检测您正在烹饪的食物，并提供直接投射到手机上 ...
 
-### 53. Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work
+### 55. Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -649,19 +673,7 @@ Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很�
 
 Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have a drawer, a cabinet corner, or a crumpled bag stuffed inside another bag where we hoard the thin plastic produce bags...
 
-### 54. TotalBoost Mini Pro Power Bank | Pocket-Sized, Wireless & Universal | Grommet
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发、结构启发
-- 分数：8.4
-- 来源：The Grommet
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://thegrommet.com/product/gadgets/totalboost-mini-pro-2
-
-TotalBoost Mini Pro Power Bank: 5000mAh充电宝，支持磁吸无线充电、电量显示、支架、手电筒，集成多功能，结构创新。。页面证据：Stay charged anywhere with a compact 5,000mAh power bank that magnetically attaches, displays battery life, and works with nearly any device. Includes kickstand, flashlight & travel case.
-
-### 55. M-Light 6: The smallest adjustable motion sensor night... — Kickstarter
+### 56. M-Light 6: The smallest adjustable motion sensor night... — Kickstarter
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -672,18 +684,6 @@ TotalBoost Mini Pro Power Bank: 5000mAh充电宝，支持磁吸无线充电、�
 - 链接：https://www.kickstarter.com/projects/anifree/m-light-6-the-smallest-adjustable-motion-sensor-ni
 
 M-Light 3微型可调运动感应夜灯，为M-Light 2升级版，同样具备运动感应、可调节、微型化特点。。页面证据：A motion sensor and light activated, rechargeable battery powered, adjustable light miniature for night bathroom trips, cabinets, etc.
-
-### 56. Power bank
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发、包装启发
-- 分数：8.4
-- 来源：Good Design Award
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.g-mark.org/en/gallery/winners/27994
-
-明确产品：世界首个钠离子移动电池。创新点：钠离子电池降低火灾风险、约5000次循环寿命、外壳回收塑料、无塑料包装。。页面证据：The world's first sodium-ion mobile battery reduces fire risk, environmental damage during production, and labor concerns. Designed for superior safety, this battery features a long lifespan of about 5,000 charge cycles and excellent heat resistance. The casing is made from recycled plastic and packaging is plastic-free, which reduces its environmental impact.
 
 ### 57. Red Dot Design Award: Nutri AI Kitchen Scale
 
@@ -947,7 +947,7 @@ Woolly NatureDry Jacket，100%美利奴羊毛通过紧密编织实现防风防�
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.red-dot.org/zh/project/down-less-down-jacket-72266
 
-创新材料环保但依赖阳光发热，实用性受限；保暖需求高频但接受度有限；环保卖点小众；阳光依赖是明显短板；价格估计合格；概念需解释不直观；环保情绪价值可加分
+材料创新有亮点但技术成熟度未知，保暖功能可靠但透明材质可能影响耐用性和美观，售价预估较高，概念理解需解释。
 
 ### 79. iF Design - X-BIONIC® SphereWind Run Jacket
 
@@ -1141,7 +1141,43 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
 
-### 95. Update 5: Backer Only Update - Black Friday Deals Are Live · LARQ Bottle - Water Purification in a Self-Cleaning Bottle
+### 95. Power bank
+
+- 品类：充电宝
+- 路径：方向参考
+- 启发：功能启发
+- 分数：8.4
+- 来源：Good Design Award
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.g-mark.org/en/gallery/winners/27994
+
+World's first PD-compatible power bank with lithium iron phosphate battery that does not ignite when punctured, safety material innovation and cobalt-free.。页面证据：This product is the world's first PD output-compatible battery with a lithium-ion iron phosphate battery. This product features the use of a safe battery that does not ignite even when a nail is inserted into it, preventing fire accidents. It is also an environmentally friendly product that does not use cobalt in the battery's positive electrode material.
+
+### 96. TotalBoost Mini Pro Power Bank | Pocket-Sized, Wireless & Universal | Grommet
+
+- 品类：充电宝
+- 路径：适合改造
+- 启发：功能启发、结构启发
+- 分数：8.4
+- 来源：The Grommet
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://thegrommet.com/product/gadgets/totalboost-mini-pro-2
+
+TotalBoost Mini Pro Power Bank: 5000mAh充电宝，支持磁吸无线充电、电量显示、支架、手电筒，集成多功能，结构创新。。页面证据：Stay charged anywhere with a compact 5,000mAh power bank that magnetically attaches, displays battery life, and works with nearly any device. Includes kickstand, flashlight & travel case.
+
+### 97. Kickstarter >> Ceba RAPI: World’s Fastest Self-Charging Power Bank by EnnoPro
+
+- 品类：充电宝
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.4
+- 来源：Kickstarter
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.kickstarter.com/projects/ennoprogroup/ceba-rapi-worlds-fastest-charging-power-bank
+
+充电宝实用且高频，但输出仅30W是明显短板，可能不满足用户对快充的预期，影响整体体验。
+
+### 98. Update 5: Backer Only Update - Black Friday Deals Are Live · LARQ Bottle - Water Purification in a Self-Cleaning Bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -1153,7 +1189,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 
 LARQ Bottle: self-cleaning water bottle using UV-C LED to eliminate 99.9999% bio-contaminants. Function innovation.。页面证据：October 31, 2019 - Justin Wang is raising funds for LARQ Bottle - Water Purification in a Self-Cleaning Bottle on Kickstarter! No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.
 
-### 96. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
+### 99. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1165,7 +1201,7 @@ LARQ Bottle: self-cleaning water bottle using UV-C LED to eliminate 99.9999% bio
 
 TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，超薄磁吸设计。。页面证据：https://youtu.be/cJQ3YE5U2xA Picture this, it’s summer, you’ve packed your bags and you’re heading on a Eurotrip (maybe for a nice holiday on the Amalfi coast or to see Taylor Swift perform). In true holiday fashion, you intend on spending the entire day out and about, exploring the city, but you realize an hour in that your
 
-### 97. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
+### 100. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1176,39 +1212,3 @@ TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，�
 - 链接：https://www.red-dot.org/project/8-in-1-magnetic-wireless-power-bank-82071
 
 明确单品：8-in-1 Magnetic Wireless Power Bank，集成15W无线充电、手表耳机充电、70cm拉出线及手机支架，多合一功能创新，实用性强。。页面证据：This multifunctional 10,000 mAh 8-in-1 Magnetic Wireless Power Bank combines a 15-watt wireless charger with dedicated charging areas for watches and headphones, alongside a pull-out 70 cm data cable and a phone stand. It replaces multiple chargers with...
-
-### 98. KickstarterKickstarterKickstarter
-
-- 品类：水杯
-- 路径：适合改造
-- 启发：功能启发、结构启发
-- 分数：8.4
-- 来源：Kickstarter
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.kickstarter.com/projects/unocuptogo/unocup-the-new-foldable-paper-coffee-cup
-
-Unocup可折叠纸咖啡杯，通过折叠设计消除对塑料盖的需求，结构创新且环保，是明确可买样的产品。。页面证据：Unocup is a foldable, eco-friendly paper coffee cup designed to reduce waste and eliminate the need for plastic lids. Kickstarter Kickstarter
-
-### 99. iF Design - On2Cook: World’s Fastest Cooking Device
-
-- 品类：创意厨具
-- 路径：适合改造
-- 启发：功能启发、视觉启发
-- 分数：8.4
-- 来源：iF设计奖
-- 下一步：提取结构或功能点，换材质/场景重新组合
-- 链接：https://ifdesign.com/en/winner-ranking/project/on2cook-worlds-fastest-cooking-device/295765
-
-On2Cook烹饪设备，同时结合电磁、热和微波，缩短70%烹饪时间，节能40%，手机APP互联，集成了多种加热方式创新。。页面证据：The On2Cook: World’s Fastest Cooking Device is a revolutionary appliance that simultaneously combines induction, heat, and microwaves to cook. This patented product cuts cooking time by up to 70% and reduces energy consumption by up to 40%. It also cooks healthier food by retaining water-soluble nutrients and preserving color, texture, and consistency. The app can be used to order groceries, keep inventory, store recipes, and share. It also facilitates Big Data analysis of the buying, cooking, and sharing patterns of consumers. Its functionality and small footprint make it a perfect fit in any kitchen, giving it the potential
-
-### 100. Moonside Neon Lighthouse Is the World’s Most Dynamic Smart Lamp
-
-- 品类：氛围灯
-- 路径：适合改造
-- 启发：情绪启发、视觉启发
-- 分数：8.4
-- 来源：Cool Material
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://coolmaterial.com/lifestyle/home/moonside-neon-lighthouse-is-the-worlds-most-dynamic-smart-lamp
-
-Moonside Neon Lighthouse是一款动态智能台灯，内置90个可独立寻址全彩RGB LED，支持无限灯光效果，属于明确的可使用灯具单品，在交互和灯光控制上有创新。。页面证据：That changes with the Moonside Neon Lighthouse, a dynamic smart lamp with endless lighting effects. With 90 individually addressable full-color range RGB LED’s built-in...
