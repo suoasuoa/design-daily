@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T11:31:01+08:00",
+  "generated_at": "2026-07-30T14:38:47+08:00",
   "week": "2026-W31",
   "group_id": "2026-W31",
   "date_start": "2026-07-27",
@@ -11,17 +11,17 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 53,
-      "方向参考": 34,
-      "可直接买样": 13
+      "适合改造": 54,
+      "方向参考": 32,
+      "可直接买样": 14
     },
     "by_category": {
-      "充电宝": 25,
+      "充电宝": 23,
       "水杯": 18,
-      "氛围灯": 13,
-      "冲锋衣": 10,
+      "氛围灯": 15,
+      "冲锋衣": 9,
+      "创意厨具": 8,
       "创意礼盒": 8,
-      "创意厨具": 7,
       "手机壳": 7,
       "创意桌搭": 5,
       "日历": 4,
@@ -29,10 +29,10 @@
       "钥匙扣水壶": 1
     },
     "by_axis": {
-      "功能启发": 63,
-      "结构启发": 42,
-      "包装启发": 21,
-      "情绪启发": 17,
+      "功能启发": 61,
+      "结构启发": 40,
+      "包装启发": 22,
+      "情绪启发": 19,
       "视觉启发": 10
     }
   },
@@ -85,16 +85,14 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils",
       "image": "",
-      "summary": "专为手部不便者设计，人体工学手柄，实用性强但目标市场狭窄，价格可能较高，功能清晰但大众吸引力低。",
+      "summary": "Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人体工学，创新在于包容性设计。。页面证据：Feb 6, 2023 · Designed for people with reduced mobility in their hands and wrists, this set of four kitchen tools features ergonomic, angled handles that make cooking easier.",
       "risk": "人体工学斜角手柄，包容性设计",
       "review_confidence": 9,
       "review_reason": "人体工学斜角手柄，包容性设计",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "adapt",
-        "deepseek_search_agent",
-        "design_community",
-        "创意厨具"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -126,6 +124,36 @@
       ]
     },
     {
+      "id": "088610a43fc8",
+      "product_key": null,
+      "title": "Lily (Kitchen Utensil & Stand Set) :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ado",
+      "category": "创意厨具",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 73,
+      "score_label": "7.3",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/28236853/Lily-(Kitchen-Utensil-Stand-Set)",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/a3a96928236853.56371c8aea7db.jpg",
+      "summary": "产品结合厨房工具与消毒功能，提升空间效率和卫生性，设计感强。",
+      "risk": "厨具套装集成消毒系统，提升空间效率",
+      "review_confidence": 9,
+      "review_reason": "厨具套装集成消毒系统，提升空间效率",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "创意厨具",
+        "design_community",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "d1358f98f303",
       "product_key": null,
       "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
@@ -143,18 +171,14 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "产品实用但需求低频，针对特定礼品市场；功能简单无短板，价格符合预期，但受众有限。",
+      "summary": "诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意礼盒",
-        "折叠包装",
-        "易用包装",
-        "高档礼品包装",
         "social_public_index",
-        "白名单来源"
+        "创意礼盒"
       ]
     },
     {
@@ -304,15 +328,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/56f6ac75055531.5c41d1be7bc1c.jpg",
-      "summary": "产品设计创新，滑盖可作托盘，实用性强，但酒盒非高频需求，受众有限，售价超35元，一目了然，情绪价值中等。",
+      "summary": "Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...",
       "risk": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "review_confidence": 8,
       "review_reason": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意礼盒",
-        "设计",
-        "家居",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -334,14 +355,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3e2fcc88254971.5dd1240e72e70.png",
-      "summary": "产品将中秋月饼礼盒与棋盘游戏结合，实现包装结构创新，适合送礼和游戏爱好者，价格高于35元，概念易懂，但需求频率低，受众较窄。",
+      "summary": "MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘游戏，实现包装结构、开箱和节日叙事的创新，属于结构创新。。页面证据：Mooncake Boxes Series (4) is perfect for gifting loved one and board game lover in Moon festival (Mid-Autumn Festival)",
       "risk": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "review_confidence": 9,
       "review_reason": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "中秋礼盒",
-        "设计创新",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -526,6 +545,36 @@
       "review_reason": "3.8mm超薄厚度，采用石墨烯技术，形态创新",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "e7b318837ee8",
+      "product_key": null,
+      "title": "IRISX - Fastest Charging Graphene Power Bank by IrisX... - Indiegogo",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Indiegogo",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.indiegogo.com/en/projects/irisxdesigns/irisx-fastest-charging-graphene-power-bank--3",
+      "image": "",
+      "summary": "石墨烯技术实现极速充电，解决用户充电慢的痛点，实用性高且需求广泛。功能明确，但需验证实际效果。",
+      "risk": "采用石墨烯电池技术，30分钟充满10000mAh，材料和充电速度创新。",
+      "review_confidence": 8,
+      "review_reason": "采用石墨烯电池技术，30分钟充满10000mAh，材料和充电速度创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "graphene",
+        "fast_charging",
+        "powerbank",
+        "crowdfunding",
         "buy_sample",
         "deepseek_search_agent"
       ]
@@ -1131,15 +1180,15 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/neopow/x25-solid-state-power-bank-285w-output-25500mah",
       "image": "",
-      "summary": "产品功能强大，安全且兼容多种设备，但价格可能较高，受众偏高端。",
+      "summary": "创新固态电池技术、高功率输出、防溅防摔，但受众较窄，价格可能过高。",
       "risk": "固态电池技术，285W输出，世界首款，创新明显。",
       "review_confidence": 9,
       "review_reason": "固态电池技术，285W输出，世界首款，创新明显。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "充电宝",
-        "固态电池",
-        "快充",
+        "solid-state",
+        "high-power",
+        "kickstarter",
         "buy_sample",
         "deepseek_search_agent"
       ]
@@ -1161,16 +1210,12 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/splitgo/splitgo-magnetic-modular-power-bank-for-edc",
       "image": "",
-      "summary": "模块化设计有创新，但实用性可能受限于额外模块的生态；充电宝本身高频需求，但5000mAh容量偏小；打击面集中于EDC爱好者；功能无大短板，但价格未知；3秒易懂；情绪价值中等。",
+      "summary": "SplitGo磁性模块化充电宝，5000mAh，可附加冷却、照明、雾化等模块，扩展性强，创新模块化设计。。页面证据：A 5000mAh pocket power system with magnetic snap-on modules for charging, cooling, lighting, misting, and daily carry.",
       "risk": "磁性模块化设计，可附加冷却、照明、雾化等扩展模块。",
       "review_confidence": 9,
       "review_reason": "磁性模块化设计，可附加冷却、照明、雾化等扩展模块。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "modular",
-        "magnetic",
-        "EDC",
-        "Kickstarter",
         "buy_sample",
         "deepseek_search_agent"
       ]
@@ -1218,16 +1263,14 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "产品功能明确，解决多设备充电需求，折叠设计增加便携性，但目标用户较窄，价格较高可能影响普及",
+      "summary": "Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity",
       "risk": "可折叠设计集成无线充电与夜灯，结构创新",
       "review_confidence": 8,
       "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
-        "design_community",
-        "trend",
-        "创意桌搭",
-        "deepseek_search_agent"
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -1438,33 +1481,6 @@
       "tags": [
         "market_signal",
         "白名单来源"
-      ]
-    },
-    {
-      "id": "b6cb634d9bfd",
-      "product_key": null,
-      "title": "xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "The Grommet",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://thegrommet.com/product/if%25252525252525252525252525252525252525252525252525252525252525252528now%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529=sysdate%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529,sleep%2525252525252525252525252525252525252525252525252525252525252525252815%25252525252525252525252525252525252525252525252525252525252525252529,0%25252525252525252525252525252525252525252525252525252525252525252529/xcool-3-in-1-power-bank",
-      "image": "",
-      "summary": "Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C",
-      "risk": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
-      "review_confidence": 9,
-      "review_reason": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "market_signal",
-        "充电宝"
       ]
     },
     {
@@ -2120,16 +2136,15 @@
       "source_quality": "premium",
       "url": "https://www.red-dot.org/zh/project/down-less-down-jacket-72266",
       "image": "",
-      "summary": "材料创新有亮点但技术成熟度未知，保暖功能可靠但透明材质可能影响耐用性和美观，售价预估较高，概念理解需解释。",
+      "summary": "创新材料环保，保暖效果堪比羽绒，但依赖阳光，阴天或夜晚效果受限，功能稳定性存在短板。",
       "risk": "无羽绒阳光发热材料，环保创新",
       "review_confidence": 8,
       "review_reason": "无羽绒阳光发热材料，环保创新",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
-        "trend",
-        "环保材料",
         "deepseek_search_agent",
+        "trend",
         "冲锋衣"
       ]
     },
@@ -2160,79 +2175,25 @@
       ]
     },
     {
-      "id": "dcfe2fee0901",
+      "id": "ae9cdc568db8",
       "product_key": null,
-      "title": "This hoodie with a built-in inflatable neck pillow may just be the greatest idea of the decade - Yanko Design",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2020/09/09/this-hoodie-with-a-built-in-inflatable-neck-pillow-may-just-be-the-greatest-idea-of-the-decade",
-      "image": "https://www.yankodesign.com/images/design_news/2020/09/Pillowdy_hoodie_with_a_built_in_inflatable_pillow_layout.jpg",
-      "summary": "具体产品：Pillowdy防风夹克（内置充气颈枕）。创新证据：将充气颈枕集成到风衣中，通过胸前口袋内的阀门充气，实现户外舒适与便携的结合。。页面证据：https://www.kickstarter.com/projects/coversomeone/a-hoodie-and-windbreaker-have-a-built-in-inflatable-pillows As iconic a pairing as peanut butter and jelly, this hoodie + neck pillow is comfort-apparel at its very best! Aptly named the Pillowdy, the apparel comes in two types - a cotton hooded-jacket made for indoor and outdoor wear, and a nylon-spandex windbreaker, designed specifically to bring comfort to your outdoor adventures. Both",
-      "risk": "内置充气颈枕，创新集成于防风夹克，旅行实用",
-      "review_confidence": 9,
-      "review_reason": "内置充气颈枕，创新集成于防风夹克，旅行实用",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "df3128dd73f9",
-      "product_key": null,
-      "title": "Red Dot Design Award: Lamp Blossom",
+      "title": "CSYS by Jake Dyson | Dezeen",
       "category": "氛围灯",
       "action_lane": "方向参考",
       "axes": [
-        "结构启发",
         "情绪启发"
       ],
       "score": 79,
       "score_label": "7.9",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/lamp-blossom-83245",
-      "image": "",
-      "summary": "Lamp Blossom 是一款通过拉动中心环机械开合灯罩来调节光强的氛围灯，兼具功能性与艺术性，创新点在于机械结构与交互方式。。页面证据：Lamp Blossom takes inspiration from blooming flowers to achieve a harmonious balance between functionality and artistry. Gently pulling the central ring gracefully opens or closes the lampshade, adjusting light intensity to shift between ambient and task...",
-      "risk": "通过拉动中心环机械开合灯罩调节光强，交互创新",
-      "review_confidence": 9,
-      "review_reason": "通过拉动中心环机械开合灯罩调节光强，交互创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
-      "id": "c0a96f10ea2e",
-      "product_key": null,
-      "title": "Modular power bank concept uses a series of wireless snap-on battery ‘bookmarks’ to give your phone 30 hours of charge - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Yanko Design",
+      "source": "Dezeen",
       "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2022/01/10/modular-power-bank-concept-uses-a-series-of-wireless-snap-on-battery-bookmarks-to-give-your-phone-30-hours-of-charge",
-      "image": "https://www.yankodesign.com/images/design_news/2022/01/355005/05_batterypods_psdesign_chargingsystem.jpg",
-      "summary": "Battery Pods模块化无线磁吸充电宝概念，通过磁吸电池条提供充电，创新结构。。页面证据：Battery Pods is a smartphone charging system comprised of a smartphone charging case and magnetic battery strips to supply your smartphone with 1400mAh worth of charge. Everyone needs a charger, but no one wants to carry one around. Battery packs are bulkier than your smartphone and wire chargers depend on an outlet to actually work.",
-      "risk": "模块化磁吸充电宝概念，通过磁吸电池条实现无线充电和模块化扩容，结构创新显著。",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2011/09/30/csys-by-jake-dyson",
+      "image": "",
+      "summary": "CSYS lamp by Jake Dyson with three-axis adjustment and touch-sensitive dimmer; clear product with mechanical and interaction innovation.。页面证据：February 12, 2022 - The lamp is adjustable on three axis and includes a touch-sensitive dimmer switch with light level memory.",
+      "risk": "Three-axis mechanical adjustment and touch-sensitive dimmer innovation",
       "review_confidence": 9,
-      "review_reason": "模块化磁吸充电宝概念，通过磁吸电池条实现无线充电和模块化扩容，结构创新显著。",
+      "review_reason": "Three-axis mechanical adjustment and touch-sensitive dimmer innovation",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
@@ -2240,9 +2201,61 @@
       ]
     },
     {
-      "id": "163ce3b9451d",
+      "id": "bbc9006efcd2",
       "product_key": null,
-      "title": "This portable power-station is strong enough to jump-start your car while charging your phone - Yanko Design",
+      "title": "Light Soy Flex by Heliograf | Dezeen Showroom",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2025/04/17/light-soy-flex-heliograf-dezeen-showroom",
+      "image": "",
+      "summary": "具体产品为Light Soy Flex，创新点在于一灯多用（吊灯/壁灯/台灯）和触摸调光功能。。页面证据：April 17, 2025 - The Light Soy Flex can be plugged into mains power via a two-metre universal cable, allowing it to function as a pendant, wall or table lamp. The new Light Soy Flex is a plug-in version with added features · It also has added features including ...",
+      "risk": "Triple function as pendant, wall, or table lamp with touch dimming",
+      "review_confidence": 9,
+      "review_reason": "Triple function as pendant, wall, or table lamp with touch dimming",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "ed343ee7f372",
+      "product_key": null,
+      "title": "Lex Pott creates transforming lamp for IKEA's latest PS collection",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/2026/04/20/ikea-ps-2026-lamp-lex-pott",
+      "image": "",
+      "summary": "IKEA PS 2026 Lamp by Lex Pott, a transforming lamp with structural innovation; clear standalone lighting product.。页面证据：April 22, 2026 - Lex Pott exclusively reveals the PS 2026 Lamp as part of the IKEA's latest PS Collection, which is being unveiled at Milan design week.",
+      "risk": "Transforming structure allows multiple configurations; clear product innovation",
+      "review_confidence": 9,
+      "review_reason": "Transforming structure allows multiple configurations; clear product innovation",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "6c28abf6db38",
+      "product_key": null,
+      "title": "This innovative Power Bank with its own Display has the ability to be MUCH more than just a battery - Yanko Design",
       "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
@@ -2253,16 +2266,16 @@
       "source": "Yanko Design",
       "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2019/12/06/this-portable-power-station-is-strong-enough-to-jump-start-your-car-while-charging-your-phone",
-      "image": "https://www.yankodesign.com/images/design_news/2019/12/this-portable-power-station-is-strong-enough-to-jump-start-your-car-while-charging-your-phone/soulpower_worlds_most_advanced_powerbank1_layout.jpg",
-      "summary": "SOUL Power便携电源站，44300mAh容量，支持15W无线充电、6个充电口、4种充电方式，且能启动汽车，功能集成和容量创新。。页面证据：https://www.youtube.com/watch?v=apbhNEiWfAY Power banks are for smartphones, the SOUL Power station is for literally everything else. Designed to quite literally be the big-daddy of that 10,000 mAh portable charger you carry around with you. SOUL Power can literally supply energy to power up all your devices and more. The rugged power-station comes with an impressive 44,300",
-      "risk": "集成汽车启动功能的便携电源站，44300mAh大容量，支持无线充电和6口输出，功能集成创新。",
+      "url": "https://www.yankodesign.com/2022/01/27/this-innovative-power-bank-with-its-own-display-has-the-ability-to-be-much-more-than-just-a-battery",
+      "image": "https://www.yankodesign.com/images/design_news/2022/01/this-innovative-power-bank-with-its-own-display-has-the-ability-to-be-much-more-than-just-a-battery/pdgo_power_bank_1.jpg",
+      "summary": "产品：PDGO带显示屏充电宝。创新：内置显示屏，可提供更多功能扩展，如数据线检测、电量显示。。页面证据：Power Banks haven't changed in decades. The PDGO, however, is showing that adding a display could make them MUCH more versatile, and vastly more popular.",
+      "risk": "内置显示屏实现数据线检测、电量显示等扩展功能",
       "review_confidence": 9,
-      "review_reason": "集成汽车启动功能的便携电源站，44300mAh大容量，支持无线充电和6口输出，功能集成创新。",
+      "review_reason": "内置显示屏实现数据线检测、电量显示等扩展功能",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "adapt",
-        "deepseek_search_agent"
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -2508,6 +2521,33 @@
       ]
     },
     {
+      "id": "b6cb634d9bfd",
+      "product_key": null,
+      "title": "xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/if%25252525252525252525252525252525252525252525252525252525252525252528now%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529=sysdate%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529,sleep%2525252525252525252525252525252525252525252525252525252525252525252815%25252525252525252525252525252525252525252525252525252525252525252529,0%25252525252525252525252525252525252525252525252525252525252525252529/xcool-3-in-1-power-bank",
+      "image": "",
+      "summary": "Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C",
+      "risk": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
+      "review_confidence": 9,
+      "review_reason": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
       "id": "998e5b17c9cd",
       "product_key": null,
       "title": "Ember Mug 2 Black 10 oz",
@@ -2628,12 +2668,15 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/ennoprogroup/ceba-rapi-worlds-fastest-charging-power-bank",
       "image": "",
-      "summary": "充电宝实用且高频，但输出仅30W是明显短板，可能不满足用户对快充的预期，影响整体体验。",
+      "summary": "充电宝是高频刚需，自充速度极快，但输出功率仅30W，价格可能偏高，整体功能有短板但核心创新突出。",
       "risk": "100W input charges power bank from 0 to 100% in 12 minutes",
       "review_confidence": 8,
       "review_reason": "100W input charges power bank from 0 to 100% in 12 minutes",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
+        "充电宝",
+        "快充",
+        "自充",
         "buy_sample",
         "deepseek_search_agent"
       ]
@@ -2662,59 +2705,6 @@
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "000d9ca41917",
-      "product_key": null,
-      "title": "Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost",
-      "image": "https://www.yankodesign.com/images/design_news/2024/05/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost/TORRAS_MiniMag_Power_Bank_Ostand_R_hero.jpg",
-      "summary": "TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，超薄磁吸设计。。页面证据：https://youtu.be/cJQ3YE5U2xA Picture this, it’s summer, you’ve packed your bags and you’re heading on a Eurotrip (maybe for a nice holiday on the Amalfi coast or to see Taylor Swift perform). In true holiday fashion, you intend on spending the entire day out and about, exploring the city, but you realize an hour in that your",
-      "risk": "信用卡大小超薄设计，磁吸充电，便携性结构创新",
-      "review_confidence": 9,
-      "review_reason": "信用卡大小超薄设计，磁吸充电，便携性结构创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "7f541c5c8c79",
-      "product_key": null,
-      "title": "Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/8-in-1-magnetic-wireless-power-bank-82071",
-      "image": "",
-      "summary": "明确单品：8-in-1 Magnetic Wireless Power Bank，集成15W无线充电、手表耳机充电、70cm拉出线及手机支架，多合一功能创新，实用性强。。页面证据：This multifunctional 10,000 mAh 8-in-1 Magnetic Wireless Power Bank combines a 15-watt wireless charger with dedicated charging areas for watches and headphones, alongside a pull-out 70 cm data cable and a phone stand. It replaces multiple chargers with...",
-      "risk": "8-in-1功能集成，自带70cm拉出线和手机支架，创新结构设计",
-      "review_confidence": 9,
-      "review_reason": "8-in-1功能集成，自带70cm拉出线和手机支架，创新结构设计",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
       ]
     }
   ]
