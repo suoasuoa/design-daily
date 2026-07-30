@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-07-29T14:25:32+08:00
+- 生成时间：2026-07-30T09:07:12+08:00
 
 ## 行动分布
 
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人体工学，创新在于包容性设计。。页面证据：Feb 6, 2023 · Designed for people with reduced mobility in their hands and wrists, this set of four kitchen tools features ergonomic, angled handles that make cooking easier.
+专为手部活动不便者设计，人体工学角度手柄，实用性强但目标用户小众，价格符合要求。
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -47,7 +47,7 @@ Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars
 
-Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。
+产品设计科幻，功能完整，价格合理，但受众限于游戏玩家，竞争激烈。
 
 ### 4. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -59,7 +59,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平
+产品实用性强，一秒成型和可打平收纳功能突出，价格符合要求，3秒易懂，情绪价值与基础功能结合好。但需求频次和受众广度中等。
 
 ### 5. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -125,13 +125,13 @@ Pinterest · 磁吸收纳锅铲套装
 
 - 品类：创意礼盒
 - 路径：可直接买样
-- 启发：包装启发
+- 启发：功能启发、包装启发
 - 分数：7.0
 - 来源：Behance
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...
+产品设计巧妙，滑盖可作托盘，兼具实用与美观，但受众局限于葡萄酒爱好者，需求频次低，价格可能较高。
 
 ### 11. MOONCAKE BOX with board game inside :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad
 
@@ -143,7 +143,7 @@ Wine box with sliding lid that doubles as a butler for two glasses. Innovation i
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside
 
-MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘游戏，实现包装结构、开箱和节日叙事的创新，属于结构创新。。页面证据：Mooncake Boxes Series (4) is perfect for gifting loved one and board game lover in Moon festival (Mid-Autumn Festival)
+月饼实用，但游戏功能增加趣味但非必需；中秋季节性产品；受众较窄；结构创新但3秒内不易理解；售价合理；情绪价值中等。
 
 ### 12. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
@@ -155,7 +155,7 @@ MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar
 
-Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...
+产品结合日历与种植，实用但受众较窄；价格合理；概念易懂；情绪价值来自种植体验
 
 ### 13. 趣香七夕表白礼盒创意设计 :: Behance
 
@@ -167,7 +167,7 @@ Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/229023437/_
 
-Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。
+产品概念新颖，融合广式文化，具有情绪价值，但实用性和普适性有限，功能可实现但存在技术风险。
 
 ### 14. Quench Your Thirst and Ditch Plastic Water Bottles Forever
 
@@ -515,7 +515,7 @@ CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多�
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity
+产品概念创新，集成四合一充电和夜灯，但来源为Behance设计社区，可能未量产，实用性存疑；价格未知但通常高于35元；3秒内可理解基本功能。
 
 ### 43. The Reusable LARQ Bottle Cleans Itself and the Water Inside
 
@@ -853,7 +853,19 @@ Loop万年历采用深浅双色同心大理石环结构，深色内环雕刻月�
 
 iF Design Award · BrightMate is a playful AI lighting companion that blends functionality, entertainment, and companionship for an emotionally engaging home experience. Beyond hundreds of preset lighting scenes, it uses generative AI to create unlimited light effects
 
-### 71. Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer
+### 71. Announcing: The Winners of The 2022 L A M P Competition!
+
+- 品类：氛围灯
+- 路径：方向参考
+- 启发：情绪启发
+- 分数：8.1
+- 来源：Design Milk
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://design-milk.com/announcing-the-winners-of-the-2022-l-a-m-p-competition
+
+具体产品：eclipse-inspired floor lamp，创新证据：灯罩可旋转控制光线方向，实现阅读灯与氛围灯切换。。页面证据：Design Milk shares the winning designers + their brilliant designs from the prestigious 2022 L A M P design competition, now in its 8th year!
+
+### 72. Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -865,7 +877,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 明确单品：Eco-design Circular Lightweight Functional Down Puffer 夹克，采用RDS900+FP鹅绒、生物基尼龙PA510面料、回收拉链等环保材料创新。。页面证据：Die Winterjacke Eco-design Circular Lightweight Functional Down Puffer besteht aus nachverfolgbaren RDS900+FP-Gänsedaunen sowie biobasiertem Nylon PA510 als atmungsaktives Außenmaterial. Auch sämtliche Accessoires wie Reißverschlüsse sind aus recyceltem...
 
-### 72. LEGO calendar by vitamins digitally syncs to google calendar
+### 73. LEGO calendar by vitamins digitally syncs to google calendar
 
 - 品类：日历
 - 路径：方向参考
@@ -877,7 +889,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 产品为LEGO日历，由LEGO积木构成，可数字同步Google日历或iCal，实现物理与数字交互创新。。页面证据：made entirely of LEGO bricks, the cloud-based LEGO calendar digitally syncs up with google calendar or iCal.
 
-### 73. This Just Inbox: In these lamps, the socket is the bulb - Core77
+### 74. This Just Inbox: In these lamps, the socket is the bulb - Core77
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -888,18 +900,6 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 - 链接：https://www.core77.com/posts/17088/this-just-inbox-in-these-lamps-the-socket-is-the-bulb-17088
 
 Glint Hero 灯具将光直接从插座射出，无需移动灯具即可指向任意方向，搭配可更换灯罩，结构交互创新。。页面证据：Clever design by Düsseldorf designer Daniel Michel, commenting on the gradual disappearance of the light bulb (at least as we know it). In these lamps, the light pours right out of the socket, which is actually a 10-Watt High Power LED. The socket comes with interchangeable shades, though we'd...
-
-### 74. A Sleek Wireless, Portable Lamp that Can Charge Your Devices - Core77
-
-- 品类：氛围灯
-- 路径：方向参考
-- 启发：功能启发、情绪启发
-- 分数：8.1
-- 来源：Core77
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.core77.com/projects/80288/A-Sleek-Wireless-Portable-Lamp-that-Can-Charge-Your-Devices
-
-Rise无线便携灯是一款明确的可使用灯具，具有充电功能和吹制玻璃设计，融合氛围营造与实用充电。。页面证据：Benjamin Hubert of experience design agency LAYER has designed a wireless lamp for London-based tech brand nolii. Called Rise, the lamp is the first product in the brand's first collection of wireless tech products, which will launch next year. It has integrated charging capability for up to two devices and
 
 ### 75. Nike Just Made a Puffer Jacket You Can Inflate in 15 Seconds - Yanko Design
 
@@ -937,7 +937,19 @@ Nike Therma-Fit Air Milano inflatable puffer jacket; structural innovation using
 
 Woolly NatureDry Jacket，100%美利奴羊毛通过紧密编织实现防风防水，材料创新突破。。页面证据：https://www.kickstarter.com/projects/woollynaturedry/woolly-merino-naturedry Yes, I'm just as baffled as you probably are. Wool isn't the hardiest textile. Yes, it provides warmth, but you can't wear a woolen sweater out in a blizzard or the rain. Even indoors, wool requires loads of care, from carefully selecting the water temperature and detergent-type while doing a wash, to just being
 
-### 78. iF Design - X-BIONIC® SphereWind Run Jacket
+### 78. Red Dot Design Award: DOWN-LESS DOWN JACKET
+
+- 品类：冲锋衣
+- 路径：方向参考
+- 启发：视觉启发
+- 分数：7.9
+- 来源：Red Dot
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.red-dot.org/zh/project/down-less-down-jacket-72266
+
+创新材料环保但依赖阳光发热，实用性受限；保暖需求高频但接受度有限；环保卖点小众；阳光依赖是明显短板；价格估计合格；概念需解释不直观；环保情绪价值可加分
+
+### 79. iF Design - X-BIONIC® SphereWind Run Jacket
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -949,7 +961,7 @@ Woolly NatureDry Jacket，100%美利奴羊毛通过紧密编织实现防风防�
 
 X-BIONIC SphereWind Run Jacket with patented ThermoSyphon technology, preset running sleeves, seamless underarm, ergonomic cuffs, and weatherproof air outlet for improved thermoregulation.。页面证据：The SphereWind jacket by Swiss functional apparel manufacturer X-Bionic has been completely reconstructed. Further improving thermoregulation, the jacket now features the patented ThermoSyphon® technology, which maximises surface area and allows natural thermodynamics to assist with sweat management. The sleeves have been made more ergonomic with the Preset Running Sleeves, the elimination of underarm seams, and the new form of the cuffs that also aid ventilation while improving comfort. A newly devel
 
-### 79. This hoodie with a built-in inflatable neck pillow may just be the greatest idea of the decade - Yanko Design
+### 80. This hoodie with a built-in inflatable neck pillow may just be the greatest idea of the decade - Yanko Design
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -961,53 +973,41 @@ X-BIONIC SphereWind Run Jacket with patented ThermoSyphon technology, preset run
 
 具体产品：Pillowdy防风夹克（内置充气颈枕）。创新证据：将充气颈枕集成到风衣中，通过胸前口袋内的阀门充气，实现户外舒适与便携的结合。。页面证据：https://www.kickstarter.com/projects/coversomeone/a-hoodie-and-windbreaker-have-a-built-in-inflatable-pillows As iconic a pairing as peanut butter and jelly, this hoodie + neck pillow is comfort-apparel at its very best! Aptly named the Pillowdy, the apparel comes in two types - a cotton hooded-jacket made for indoor and outdoor wear, and a nylon-spandex windbreaker, designed specifically to bring comfort to your outdoor adventures. Both
 
-### 80. jaekeun lee’s spiral calendar reimagines time as circular motion
+### 81. Red Dot Design Award: Lamp Blossom
 
-- 品类：日历
+- 品类：氛围灯
 - 路径：方向参考
-- 启发：包装启发、结构启发
+- 启发：结构启发、情绪启发
 - 分数：7.9
-- 来源：Designboom
+- 来源：Red Dot
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.designboom.com/design/jaekeun-lee-spiral-calendar-globe-beads-time-circular-motion-05-19-2025
+- 链接：https://www.red-dot.org/project/lamp-blossom-83245
 
-May 19, 2025 · jaekeun lee’s spiral timepiece, a 12-month calendar, approaches time through a curving form that allows for both return and change.
+Lamp Blossom 是一款通过拉动中心环机械开合灯罩来调节光强的氛围灯，兼具功能性与艺术性，创新点在于机械结构与交互方式。。页面证据：Lamp Blossom takes inspiration from blooming flowers to achieve a harmonious balance between functionality and artistry. Gently pulling the central ring gracefully opens or closes the lampshade, adjusting light intensity to shift between ambient and task...
 
-### 81. Good stuff, Gatherer Jacket adapts to unexpected climate changes - Core77
+### 82. Modular power bank concept uses a series of wireless snap-on battery ‘bookmarks’ to give your phone 30 hours of charge - Yanko Design
 
-- 品类：冲锋衣
-- 路径：方向参考
-- 启发：视觉启发
-- 分数：7.8
-- 来源：Core77
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.core77.com/posts/10365/good-stuff-gatherer-jacket-adapts-to-unexpected-climate-changes-10365
-
-Merrell Gatherer Jacket，轻量夹克，通过填充口袋内材料调节保暖，创新保暖机制，明确功能外套。。页面证据：Merrell's new lightweight Gather Jacket helps hikers and climbers adapt to rapid temperature changes by filling pockets throughout the jacket with any found materials for increased insulation. It's nice to actually see this concept realized after years of student projects presenting similar solutions for helping the homeless survive cold nights....
-
-### 82. The Modern Day Discman - Yanko Design
-
-- 品类：冲锋衣
+- 品类：充电宝
 - 路径：方向参考
 - 启发：功能启发、结构启发
-- 分数：7.8
+- 分数：7.9
 - 来源：Yanko Design
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.yankodesign.com/2019/01/03/the-modern-day-discman
+- 链接：https://www.yankodesign.com/2022/01/10/modular-power-bank-concept-uses-a-series-of-wireless-snap-on-battery-bookmarks-to-give-your-phone-30-hours-of-charge
 
-产品将夹克与背包结合，实用但功能折中，价格较高，概念直观但需理解转换机制。
+Battery Pods模块化无线磁吸充电宝概念，通过磁吸电池条提供充电，创新结构。。页面证据：Battery Pods is a smartphone charging system comprised of a smartphone charging case and magnetic battery strips to supply your smartphone with 1400mAh worth of charge. Everyone needs a charger, but no one wants to carry one around. Battery packs are bulkier than your smartphone and wire chargers depend on an outlet to actually work.
 
-### 83. EMPWR coats double as sleeping bags to keep the homeless warm this winter
+### 83. This portable power-station is strong enough to jump-start your car while charging your phone - Yanko Design
 
-- 品类：冲锋衣
+- 品类：充电宝
 - 路径：方向参考
-- 启发：功能启发、结构启发、情绪启发
-- 分数：7.8
-- 来源：Designboom
+- 启发：功能启发
+- 分数：7.9
+- 来源：Yanko Design
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.designboom.com/design/empwr-coat-jacket-homeless-11-29-2016
+- 链接：https://www.yankodesign.com/2019/12/06/this-portable-power-station-is-strong-enough-to-jump-start-your-car-while-charging-your-phone
 
-产品针对无家可归者设计，多功能实用性高但受众窄，概念清晰但批量生产风险未知，情绪价值高。
+SOUL Power便携电源站，44300mAh容量，支持15W无线充电、6个充电口、4种充电方式，且能启动汽车，功能集成和容量创新。。页面证据：https://www.youtube.com/watch?v=apbhNEiWfAY Power banks are for smartphones, the SOUL Power station is for literally everything else. Designed to quite literally be the big-daddy of that 10,000 mAh portable charger you carry around with you. SOUL Power can literally supply energy to power up all your devices and more. The rugged power-station comes with an impressive 44,300
 
 ### 84. This portable power bank comes with an attached cord to ensure your phone is never at 1% again! - Yanko Design
 
@@ -1055,7 +1055,7 @@ Mar 2, 2026 · I’ve carried a lot of power banks over the years. Bulky ones th
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.red-dot.org/project/multi-functional-fast-charging-power-bank-pb7s-89325
 
-多功能集成，红点奖加持，实用性高，但价格偏高且需理解折叠结构。
+具体产品：UGREEN All-in-One Magnetic Wireless Power Bank PB7S，创新证据：折叠外壳内含磁吸Qi2.2充电板、集成线缆和接口，可同时为多设备充电并调节支架角度。。页面证据：The UGREEN All-in-One Magnetic Wireless Power Bank series comprises compact charging units that combine a wireless charger and a power bank with stand function in one product. A foldable casing with a magnetic Qi2.2 charging pad as well as integrated...
 
 ### 88. Auron - Self-Cleaning Water Purifying UV-C Smart Bottle — Kickstarter
 
@@ -1151,7 +1151,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.kickstarter.com/projects/443292702/quartz-bottle
 
-实用性强，高频使用，但售价高、受众有限；功能创新但需充电，存在续航风险；概念简单易懂，情绪价值可叠加健康科技感。
+LARQ Bottle: self-cleaning water bottle using UV-C LED to eliminate 99.9999% bio-contaminants. Function innovation.。页面证据：October 31, 2019 - Justin Wang is raising funds for LARQ Bottle - Water Purification in a Self-Cleaning Bottle on Kickstarter! No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.
 
 ### 96. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
 
@@ -1163,7 +1163,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost
 
-产品设计优秀，超薄便携，但容量仅5000mAh，实用性和覆盖面有限，价格可能较高。
+TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，超薄磁吸设计。。页面证据：https://youtu.be/cJQ3YE5U2xA Picture this, it’s summer, you’ve packed your bags and you’re heading on a Eurotrip (maybe for a nice holiday on the Amalfi coast or to see Taylor Swift perform). In true holiday fashion, you intend on spending the entire day out and about, exploring the city, but you realize an hour in that your
 
 ### 97. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
 
@@ -1175,7 +1175,7 @@ Uncrate Shop product listing. Direct shop product page with product image and pr
 - 下一步：保留为趋势语言和内容方向，暂不直接打样
 - 链接：https://www.red-dot.org/project/8-in-1-magnetic-wireless-power-bank-82071
 
-8合1磁吸无线充，实用高频，功能全面，覆盖多设备，性价比高
+明确单品：8-in-1 Magnetic Wireless Power Bank，集成15W无线充电、手表耳机充电、70cm拉出线及手机支架，多合一功能创新，实用性强。。页面证据：This multifunctional 10,000 mAh 8-in-1 Magnetic Wireless Power Bank combines a 15-watt wireless charger with dedicated charging areas for watches and headphones, alongside a pull-out 70 cm data cable and a phone stand. It replaces multiple chargers with...
 
 ### 98. KickstarterKickstarterKickstarter
 
