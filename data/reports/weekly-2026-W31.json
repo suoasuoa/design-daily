@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T15:05:16+08:00",
+  "generated_at": "2026-07-31T09:14:36+08:00",
   "week": "2026-W31",
   "group_id": "2026-W31",
   "date_start": "2026-07-27",
@@ -11,29 +11,29 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 54,
+      "适合改造": 52,
       "方向参考": 33,
-      "可直接买样": 13
+      "可直接买样": 15
     },
     "by_category": {
       "充电宝": 24,
       "水杯": 17,
-      "氛围灯": 12,
-      "冲锋衣": 11,
-      "创意厨具": 8,
+      "氛围灯": 14,
       "创意礼盒": 8,
+      "冲锋衣": 8,
+      "创意厨具": 7,
       "手机壳": 7,
       "创意桌搭": 6,
+      "中秋礼盒": 4,
       "日历": 4,
-      "中秋礼盒": 2,
       "钥匙扣水壶": 1
     },
     "by_axis": {
-      "功能启发": 65,
-      "结构启发": 44,
-      "包装启发": 21,
+      "功能启发": 64,
+      "结构启发": 46,
+      "包装启发": 23,
       "情绪启发": 16,
-      "视觉启发": 9
+      "视觉启发": 8
     }
   },
   "dedupe": {
@@ -85,13 +85,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils",
       "image": "",
-      "summary": "Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人体工学，创新在于包容性设计。。页面证据：Feb 6, 2023 · Designed for people with reduced mobility in their hands and wrists, this set of four kitchen tools features ergonomic, angled handles that make cooking easier.",
+      "summary": "针对手部不便者的包容性设计，实用性高但受众窄，价格适中，功能清晰。",
       "risk": "人体工学斜角手柄，包容性设计",
       "review_confidence": 9,
       "review_reason": "人体工学斜角手柄，包容性设计",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "adapt",
+        "design_community",
+        "创意厨具",
         "deepseek_search_agent"
       ]
     },
@@ -124,31 +126,32 @@
       ]
     },
     {
-      "id": "088610a43fc8",
+      "id": "bbfa4d5b69fd",
       "product_key": null,
-      "title": "Lily (Kitchen Utensil & Stand Set) :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ado",
-      "category": "创意厨具",
+      "title": "Mid-Autumn Festival Campaign 2011 (7) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
+      "category": "中秋礼盒",
       "action_lane": "可直接买样",
       "axes": [
         "功能启发",
         "包装启发",
         "结构启发"
       ],
-      "score": 73,
-      "score_label": "7.3",
+      "score": 72,
+      "score_label": "7.2",
       "source": "Behance",
       "source_family": "社交灵感",
       "source_quality": "standard",
-      "url": "https://www.behance.net/gallery/28236853/Lily-(Kitchen-Utensil-Stand-Set)",
-      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/a3a96928236853.56371c8aea7db.jpg",
-      "summary": "产品结合厨房工具与消毒功能，提升空间效率和卫生性，设计感强。",
-      "risk": "厨具套装集成消毒系统，提升空间效率",
+      "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
+      "summary": "产品设计创新，结构复用（月饼盒可变为灯笼），功能完整，价格超过35元；但属季节性礼品，非高频需求，且需一定理解成本，情绪价值中等。",
+      "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "review_confidence": 9,
-      "review_reason": "厨具套装集成消毒系统，提升空间效率",
+      "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意厨具",
-        "design_community",
+        "中秋礼盒",
+        "设计创意",
+        "月饼盒",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -171,14 +174,50 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平",
+      "summary": "该产品实用性强，折叠设计便于存储和运输，使用简单，一秒成型；适用于多种高档礼品包装，满足高频送礼需求；价格预估超过35元，利润空间充足；视觉上三秒即可理解其功能；情绪价值高，可提升礼品档次和用户体验。",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "创意礼盒",
+        "折叠盒",
+        "包装定制",
+        "送礼包装",
         "social_public_index",
-        "创意礼盒"
+        "白名单来源"
+      ]
+    },
+    {
+      "id": "be6075965394",
+      "product_key": null,
+      "title": "Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 72,
+      "score_label": "7.2",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
+      "summary": "月饼盒可变灯笼，结构创新，兼顾实用与美感，适合中秋礼品市场，但季节性明显。",
+      "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
+      "review_confidence": 9,
+      "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "创意包装",
+        "灯笼",
+        "可持续设计",
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -328,12 +367,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/56f6ac75055531.5c41d1be7bc1c.jpg",
-      "summary": "Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...",
+      "summary": "产品将酒盒与托盘二合一，实用性强，但需求频率和受众广度中等；设计易于理解，价格满足要求，情绪价值可通过送礼场景实现。",
       "risk": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "review_confidence": 8,
       "review_reason": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "创意礼盒",
+        "设计感",
+        "家居礼品",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -355,12 +397,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3e2fcc88254971.5dd1240e72e70.png",
-      "summary": "MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘游戏，实现包装结构、开箱和节日叙事的创新，属于结构创新。。页面证据：Mooncake Boxes Series (4) is perfect for gifting loved one and board game lover in Moon festival (Mid-Autumn Festival)",
+      "summary": "产品结合月饼礼盒与棋盘游戏，功能完整且具节日情绪价值，但目标人群较窄，视觉理解需一定时间。",
       "risk": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "review_confidence": 9,
       "review_reason": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "中秋礼盒",
+        "棋盘游戏",
+        "送礼创新",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -545,36 +590,6 @@
       "review_reason": "3.8mm超薄厚度，采用石墨烯技术，形态创新",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "e7b318837ee8",
-      "product_key": null,
-      "title": "IRISX - Fastest Charging Graphene Power Bank by IrisX... - Indiegogo",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 88,
-      "score_label": "8.8",
-      "source": "Indiegogo",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.indiegogo.com/en/projects/irisxdesigns/irisx-fastest-charging-graphene-power-bank--3",
-      "image": "",
-      "summary": "石墨烯技术实现极速充电，解决用户充电慢的痛点，实用性高且需求广泛。功能明确，但需验证实际效果。",
-      "risk": "采用石墨烯电池技术，30分钟充满10000mAh，材料和充电速度创新。",
-      "review_confidence": 8,
-      "review_reason": "采用石墨烯电池技术，30分钟充满10000mAh，材料和充电速度创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "graphene",
-        "fast_charging",
-        "powerbank",
-        "crowdfunding",
         "buy_sample",
         "deepseek_search_agent"
       ]
@@ -1261,14 +1276,12 @@
       "source_quality": "premium",
       "url": "https://www.core77.com/posts/47835",
       "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/415943_lead_400_47835_.jpg",
-      "summary": "悬臂式餐具改善卫生，但实用性并非刚需，高频使用但改进有限，受众较广但可能小众，功能无大短板但成本可能高，价格可能超过35RMB，设计直观易理解，情绪价值一般，需进一步验证市场接受度。",
+      "summary": "Cantilevered Flatware: 悬臂式餐具，手柄抬高使餐具头不接触桌面，改善卫生，创新在于结构和卫生功能。。页面证据：I'm sure Carson from Downton Abbey would flinch, but this set of Cantilever Flatware can not only be presented face-up, but also face-down. That's because the designers (ILoveHandles, whose work we previously looked at here) have chunked out the handles to keep the business end of the utensils up off",
       "risk": "手柄抬高使餐具头不接触桌面，改善卫生",
       "review_confidence": 10,
       "review_reason": "手柄抬高使餐具头不接触桌面，改善卫生",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
-        "创意厨具",
-        "卫生设计",
         "deepseek_search_agent",
         "editorial_main"
       ]
@@ -1316,12 +1329,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity",
+      "summary": "产品实用且高频，但受众较窄，功能较全但缺乏明显差异化，价格可能偏高，市场已有竞品。",
       "risk": "可折叠设计集成无线充电与夜灯，结构创新",
       "review_confidence": 8,
       "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
+        "创意桌搭",
+        "无线充电",
+        "折叠设计",
         "deepseek_search_agent",
         "design_community"
       ]
@@ -1537,6 +1553,33 @@
       ]
     },
     {
+      "id": "b6cb634d9bfd",
+      "product_key": null,
+      "title": "xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/if%25252525252525252525252525252525252525252525252525252525252525252528now%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529=sysdate%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529,sleep%2525252525252525252525252525252525252525252525252525252525252525252815%25252525252525252525252525252525252525252525252525252525252525252529,0%25252525252525252525252525252525252525252525252525252525252525252529/xcool-3-in-1-power-bank",
+      "image": "",
+      "summary": "Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C",
+      "risk": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
+      "review_confidence": 9,
+      "review_reason": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "market_signal",
+        "充电宝"
+      ]
+    },
+    {
       "id": "51fcb61d06c2",
       "product_key": null,
       "title": "Cooksy AI烹饪助手 | Uncrate",
@@ -1740,16 +1783,14 @@
       "source_quality": "premium",
       "url": "https://www.red-dot.org/zh/project/arctic-patrol-modular-parka-20-62948",
       "image": "",
-      "summary": "产品功能创新且环保，但硬壳冲锋衣受众较窄，日常使用频率一般。",
+      "summary": "Helly Hansen Arctic Patrol Modular Parka 2.0 轻量硬壳冲锋衣，采用创新 LIFA INFINITY 膜（含≥50%回收材料、无化学涂层），PFC-free 防泼水涂层，功能与材料创新明确。。页面证据：To truly understand the strengths of the Arctic Patrol Modular Parka 2.0, you have to wear it in the Arctic, as the name indicates. The designers at the tradition-steeped outdoor specialist Helly Hansen developed the parka in close collaboration with...",
       "risk": "LIFA INFINITY膜采用回收材料且无化学涂层，PFC-free防泼水",
       "review_confidence": 9,
       "review_reason": "LIFA INFINITY膜采用回收材料且无化学涂层，PFC-free防泼水",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
-        "deepseek_search_agent",
-        "trend",
-        "冲锋衣"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1769,16 +1810,14 @@
       "source_quality": "premium",
       "url": "https://www.red-dot.org/project/detachable-3-in-1-functional-jacket-68276",
       "image": "",
-      "summary": "模块化设计实用但稍复杂，Gore-Tex面料确保高性能，价格高于35元，整体功能全面但受众偏户外，3秒理解度中等。",
+      "summary": "Detachable 3-IN-1 Functional Jacket，模块化可拆卸设计，结合Gore-Tex防风防水，结构创新。。页面证据：The Detachable 3-IN-1 Functional Jacket adapts flexibly to changing activity levels and weather conditions. The jacket consists of three modular options that can be worn individually or combined. In cooperation with Gore-Tex, a wind and waterproof,...",
       "risk": "模块化三合一设计，可灵活拆卸应对不同天气",
       "review_confidence": 9,
       "review_reason": "模块化三合一设计，可灵活拆卸应对不同天气",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
-        "deepseek_search_agent",
-        "trend",
-        "冲锋衣"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1824,16 +1863,14 @@
       "source_quality": "premium",
       "url": "https://www.red-dot.org/project/future-shell-modular-suit-68496",
       "image": "",
-      "summary": "产品功能完善，三层模块化设计适应多种天气，获得红点奖，但受众限于儿童，需求频率一般，且价格可能偏高。",
+      "summary": "Future Shell Modular Suit 是一款儿童全天候夹克，由保护层、保暖层和运动层三层组成，可根据天气组合，适应-15°C至+25°C温度范围，模块化设计创新明确。。页面证据：The Future Shell Modular Suit is an all-weather jacket for children. It consists of three layers: a protective layer, a thermal layer and a sportswear layer. These can be combined depending on weather conditions, making the jacket suitable for outdoor...",
       "risk": "三层模块化设计，适应-15°C至+25°C，可组合拆解",
       "review_confidence": 9,
       "review_reason": "三层模块化设计，适应-15°C至+25°C，可组合拆解",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
-        "deepseek_search_agent",
-        "trend",
-        "冲锋衣"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -2153,26 +2190,25 @@
       ]
     },
     {
-      "id": "48db698060de",
+      "id": "5a98a7459cb0",
       "product_key": null,
-      "title": "This convertible full-body jacket was designed to give you 100% protection from the outdoor elements - Yanko Design",
-      "category": "冲锋衣",
+      "title": "LG's Latest Lamp Has a Mini Garden + Grow Light Built Into It",
+      "category": "氛围灯",
       "action_lane": "方向参考",
       "axes": [
-        "功能启发",
         "情绪启发"
       ],
       "score": 80,
       "score_label": "8.0",
-      "source": "Yanko Design",
+      "source": "Design Milk",
       "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2020/07/20/this-convertible-full-body-jacket-was-designed-to-give-you-100-protection-from-the-outdoor-elements",
-      "image": "https://www.yankodesign.com/images/design_news/2020/07/this-full-body-jacket-was-designed-to-give-you-100-protection-from-the-outdoor-elements/IWOM_convertible_all_purpose_jacket_layout.jpg",
-      "summary": "具体产品：IWOM Convertible All-Purpose Jacket 2.0。创新证据：可变形式设计，从夹克延伸至风衣长度，全密封防水防风，适应不同天气。。页面证据：https://www.kickstarter.com/projects/iwomouterwear/iwom-convertible-all-purpose-jacket-20 Cleverly named the IWOM (pronounced I-Warm), this jacket was designed to be able to shapeshift based on your needs. On a regular windy day, the IWOM serves as a jacket, if it begins drizzling, you can simply extend its base down to your knees like a parka, and when the weather gets out of",
-      "risk": "可变形结构设计，从夹克延伸至风衣，全密封防水防风",
+      "url": "https://design-milk.com/lgs-latest-lamp-has-a-mini-garden-grow-light-built-into-it",
+      "image": "https://design-milk.com/images/2025/01/lg-indoor-gardening-appliances-2.jpg",
+      "summary": "LG台灯/落地灯内置迷你花园和植物生长灯，融合照明与种植功能。。页面证据：LG is blending technology and nature, with a new lamp that has a mini garden and grow light built right into it.",
+      "risk": "灯体内置迷你花园和植物生长灯，融合种植功能",
       "review_confidence": 9,
-      "review_reason": "可变形结构设计，从夹克延伸至风衣，全密封防水防风",
+      "review_reason": "灯体内置迷你花园和植物生长灯，融合种植功能",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
@@ -2180,111 +2216,109 @@
       ]
     },
     {
-      "id": "0fb54d449db1",
+      "id": "db0cb1994cc9",
       "product_key": null,
-      "title": "World’s only weather-proof jacket that’s made out of 100% merino wool - Yanko Design",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2020/05/27/worlds-only-weather-proof-jacket-thats-made-out-of-100-merino-wool",
-      "image": "https://www.yankodesign.com/images/design_news/2020/05/NatureDry_the_100_merino_all_weather_jacket.jpg",
-      "summary": "Woolly NatureDry Jacket，100%美利奴羊毛通过紧密编织实现防风防水，材料创新突破。。页面证据：https://www.kickstarter.com/projects/woollynaturedry/woolly-merino-naturedry Yes, I'm just as baffled as you probably are. Wool isn't the hardiest textile. Yes, it provides warmth, but you can't wear a woolen sweater out in a blizzard or the rain. Even indoors, wool requires loads of care, from carefully selecting the water temperature and detergent-type while doing a wash, to just being",
-      "risk": "100%美利奴羊毛紧密编织实现防风防水，材料创新",
-      "review_confidence": 9,
-      "review_reason": "100%美利奴羊毛紧密编织实现防风防水，材料创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "fe96c61c430a",
-      "product_key": null,
-      "title": "Red Dot Design Award: EnerGeek GT01",
+      "title": "iF Design - Anker Nano Power Bank (10K, 45W)",
       "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "结构启发"
       ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Red Dot",
+      "score": 80,
+      "score_label": "8.0",
+      "source": "iF设计奖",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://www.red-dot.org/zh/project/energeek-gt01-82037",
-      "image": "",
-      "summary": "EnerGeek GT01充电宝，可拆分为两个独立模块，灵活充电。。页面证据：The EnerGeek GT01 power bank was developed for flexible charging in various scenarios. The portable charger consists of two separate modules. Thanks to its combined construction, it can be used as one unit or split into two individual components: while...",
-      "risk": "模块化设计，可拆分使用，创新充电场景",
-      "review_confidence": 9,
-      "review_reason": "模块化设计，可拆分使用，创新充电场景",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
-      "id": "18d0b41a1321",
-      "product_key": null,
-      "title": "Red Dot Design Award: DOWN-LESS DOWN JACKET",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/zh/project/down-less-down-jacket-72266",
-      "image": "",
-      "summary": "创新材料技术，无需羽绒即可发热保暖，环保且性能优异，但技术成熟度和市场接受度有待验证，价格预估较高。",
-      "risk": "无羽绒阳光发热材料，环保创新",
+      "url": "https://ifdesign.com/en/winner-ranking/project/anker-nano-power-bank-10k-45w/711403",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "Anker Nano Power Bank 采用伸缩线设计，是行业最小最便携的可伸缩线充电宝，支持手持和挂包使用，结构创新显著。。页面证据：The Anker Nano Power Bank is the smallest and most portable retractable cable power bank in the industry, providing a convenient and fast charging solution for travel. Utilizing IQ3 and IQ2 wired charging modules, it offers users an ultimate experience of fast and safe multi-device simultaneous charging, while being more organized than traditional built-in cable devices. The retractable cable design is neat and easy to use, making it convenient for travel. It features a detachable strap design that supports handheld and bag-hanging use, enhancing usability and convenience in complex scenarios.",
+      "risk": "行业最小可伸缩线充电宝，便携性结构创新",
       "review_confidence": 8,
-      "review_reason": "无羽绒阳光发热材料，环保创新",
+      "review_reason": "行业最小可伸缩线充电宝，便携性结构创新",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
-        "deepseek_search_agent",
-        "trend",
-        "冲锋衣"
+        "buy_sample"
       ]
     },
     {
-      "id": "c73b13368a7e",
+      "id": "c78ccea2f0d4",
       "product_key": null,
-      "title": "Belkin’s 10,000mAh power bank with pop-up motion sensing LED delivers 45W output - Yanko Design",
+      "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device - Yanko Design",
       "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
         "功能启发"
       ],
-      "score": 79,
-      "score_label": "7.9",
+      "score": 80,
+      "score_label": "8.0",
       "source": "Yanko Design",
       "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/07/17/belkins-10000mah-power-bank-with-pop-up-motion-sensing-led-delivers-45w-output",
-      "image": "https://www.yankodesign.com/images/design_news/2026/07/belkins-10000mah-power-bank-with-pop-up-motion-sensing-led-delivers-45w-output/Belkin-BoostCharge-Pro-Power-Bank_0000_Layer-8.jpg",
-      "summary": "Belkin BoostCharge Pro Power Bank 10K: 10000mAh, pop-up motion-sensing LED light, digital screen for battery percentage, 45W output.。页面证据：Power banks have progressed from mere portable battery backups to devices with many other practical features. To spice the market further, consumer tech company Belkin has launched the BoostCharge Pro Power Bank 10K in China, which includes a pop-up motion-sensing light. The power bank from Belkin is now available for 329 yuan (approximately $49), but",
-      "risk": "pop-up运动感应LED灯，数显电池百分比，45W快充",
+      "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
+      "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
+      "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
+      "risk": "信用卡大小太阳能充电宝，集成快充与多端口",
       "review_confidence": 9,
-      "review_reason": "pop-up运动感应LED灯，数显电池百分比，45W快充",
+      "review_reason": "信用卡大小太阳能充电宝，集成快充与多端口",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "d65dd8eb5e18",
+      "product_key": null,
+      "title": "iF Design - PicoGo AR11 Telescopic line mobile power supply",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/picogo-ar11-telescopic-line-mobile-power-supply/759475",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "PicoGo AR11：伸缩线+提手一体化移动电源，结构创新，明确单品。。页面证据：This product is a retractable cord mobile power, the retractable cord and carrying handle structure clever integration, so that the mobile power in travel, commuting, outdoor and other variable scenarios of flexible use. In the era of high-frequency mobility, users' charging behavior has changed from \"desktop behavior\" to \"on-the-go replenishment\". Through the cable integrated telescopic structure + carrying handle fusion design, to realize \"no exposed cable, easy to carry, flexible charging\" comprehensive experience, for the mobile lifestyle born of intelligent energy module.",
+      "risk": "伸缩线+提手一体化结构，便于携带和使用",
+      "review_confidence": 9,
+      "review_reason": "伸缩线+提手一体化结构，便于携带和使用",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
         "award_gallery"
+      ]
+    },
+    {
+      "id": "68d4782c87b6",
+      "product_key": null,
+      "title": "This modern, minimalist lamp recreates the gentle, calming flicker of the candlestick - Yanko Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 80,
+      "score_label": "8.0",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.yankodesign.com/2021/10/20/this-modern-minimalist-lamp-recreates-the-gentle-calming-flicker-of-the-candlestick",
+      "image": "https://www.yankodesign.com/images/design_news/2021/10/auto-draft/ambientec_hymn_lamp_1.jpg",
+      "summary": "Ambientec HYMN 台灯以2000K暖光LED和摆锤透镜模拟蜡烛火焰的柔和摇曳，创新地重现了烛光的宁静体验。。页面证据：https://vimeo.com/570792192 Paying tribute to the humble candle-lamp that was as ubiquitous in the past as the flashlight on your smartphone is today, the HYMN lamp by Ambientec recreates the simplistic joy of watching a candle's flickering flame... but it does so without a wick, wax, or even a fire. “The use of fire has led",
+      "risk": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
+      "review_confidence": 9,
+      "review_reason": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -2303,15 +2337,12 @@
       "source_quality": "premium",
       "url": "https://www.red-dot.org/project/m150-m250-70840",
       "image": "",
-      "summary": "产品功能全面，支持最多六设备同时充电、收纳线材与耳机、可作为手机支架，且获得红点奖，实用性强；但价格较高可能限制受众范围。",
+      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
       "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
       "review_confidence": 9,
       "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "多设备充电",
-        "收纳设计",
-        "红点奖",
         "adapt",
         "award_gallery"
       ]
@@ -2559,33 +2590,6 @@
       ]
     },
     {
-      "id": "b6cb634d9bfd",
-      "product_key": null,
-      "title": "xCool CablePlug Power Bank | Built-In Cable & Plug | Grommet",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "The Grommet",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://thegrommet.com/product/if%25252525252525252525252525252525252525252525252525252525252525252528now%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529=sysdate%25252525252525252525252525252525252525252525252525252525252525252528%25252525252525252525252525252525252525252525252525252525252525252529,sleep%2525252525252525252525252525252525252525252525252525252525252525252815%25252525252525252525252525252525252525252525252525252525252525252529,0%25252525252525252525252525252525252525252525252525252525252525252529/xcool-3-in-1-power-bank",
-      "image": "",
-      "summary": "Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C",
-      "risk": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
-      "review_confidence": 9,
-      "review_reason": "内置USB-C线和折叠插头，三合一设计，结构创新减少携带配件",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "market_signal",
-        "充电宝"
-      ]
-    },
-    {
       "id": "998e5b17c9cd",
       "product_key": null,
       "title": "Ember Mug 2 Black 10 oz",
@@ -2713,62 +2717,6 @@
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "81c528efe073",
-      "product_key": null,
-      "title": "RMDLO: A Folding, Space-Saving Colander - Core77",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.core77.com/projects/42428",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/358428_lead_400_42428_.jpg",
-      "summary": "RMDLO折叠滤水篮，通过机械折叠结构可将体积缩小至使用状态的10%，解决厨房收纳问题，属于明确单品且功能创新。。页面证据：Our houses are shrinking, and with them our kitchens. Today, it doesn't matter if you are a young student flat-sharing or a highly paid couple living in the inner city, you both share a problem—there is no more space left in your kitchen. RMDLO is a colander meant to address",
-      "risk": "折叠结构节省空间，体积缩小至10%",
-      "review_confidence": 9,
-      "review_reason": "折叠结构节省空间，体积缩小至10%",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "8cf570ac533b",
-      "product_key": null,
-      "title": "Kickstarter >> Ceba RAPI: World’s Fastest Self-Charging Power Bank by EnnoPro",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/ennoprogroup/ceba-rapi-worlds-fastest-charging-power-bank",
-      "image": "",
-      "summary": "实用性强（充电宝高频需求），自充电速度极快，但输出功率仅30W，功能有短板；3秒易懂，情绪价值中等。",
-      "risk": "100W input charges power bank from 0 to 100% in 12 minutes",
-      "review_confidence": 8,
-      "review_reason": "100W input charges power bank from 0 to 100% in 12 minutes",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "快速充电",
-        "充电宝",
-        "创新",
-        "buy_sample",
         "deepseek_search_agent"
       ]
     }
