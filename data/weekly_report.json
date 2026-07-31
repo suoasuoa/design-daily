@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T15:10:23+08:00",
+  "generated_at": "2026-07-31T15:55:56+08:00",
   "week": "2026-W31",
   "group_id": "2026-W31",
   "date_start": "2026-07-27",
@@ -11,29 +11,30 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 52,
+      "适合改造": 51,
       "方向参考": 33,
-      "可直接买样": 15
+      "可直接买样": 16
     },
     "by_category": {
-      "充电宝": 24,
+      "充电宝": 26,
       "水杯": 17,
-      "氛围灯": 14,
+      "氛围灯": 13,
       "创意礼盒": 8,
-      "冲锋衣": 8,
-      "创意厨具": 7,
       "手机壳": 7,
+      "冲锋衣": 7,
+      "创意厨具": 6,
       "创意桌搭": 6,
       "中秋礼盒": 4,
       "日历": 4,
+      "端午礼盒": 1,
       "钥匙扣水壶": 1
     },
     "by_axis": {
-      "功能启发": 64,
-      "结构启发": 46,
-      "包装启发": 23,
+      "功能启发": 66,
+      "结构启发": 48,
+      "包装启发": 24,
       "情绪启发": 16,
-      "视觉启发": 8
+      "视觉启发": 9
     }
   },
   "dedupe": {
@@ -141,16 +142,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
-      "summary": "结构复用有创意，但中秋场景低频，需解释才能理解，实用性有限，适合作为设计概念而非大众商品。",
+      "summary": "产品设计独特，结合月饼盒和灯笼，功能与美学兼具，但属节日性产品，需求频率低，市场覆盖面窄。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "中秋礼盒",
-        "创意包装",
-        "可持续设计",
-        "设计社区",
+        "设计创新",
+        "可复用包装",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -173,16 +173,16 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "折叠盒设计便携省空间，四角胶贴一秒成型，功能创新且适合高档礼品场景，但需求偏向定制化细分市场。",
+      "summary": "产品具有可折叠、快速成型的实用功能，适合礼品包装场景，售价预计高于35元，但需求频次中等，需依赖特定场景。",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意礼盒",
         "折叠盒",
+        "创意礼盒",
+        "包装定制",
         "环保包装",
-        "定制包装",
         "social_public_index",
         "白名单来源"
       ]
@@ -205,16 +205,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
-      "summary": "产品为中秋礼盒，可变形为灯笼，结构复用创新，功能与情绪价值兼具，但需求频次低，受众受限。",
+      "summary": "月饼盒可变形为灯笼，结构创新，兼具收纳与装饰功能，适合中秋礼品场景，情绪价值高。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "中秋礼盒",
+        "创意设计",
+        "变形结构",
         "灯笼",
-        "创意包装",
-        "Behance",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -348,6 +348,36 @@
       "tags": [
         "social_public_index",
         "手机壳"
+      ]
+    },
+    {
+      "id": "571729896d9f",
+      "product_key": null,
+      "title": "情有独粽｜端午礼盒设计 :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/145263273/_",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
+      "summary": "端午礼盒作为节日礼品，具备一定的实用性和文化情绪价值，魔方结构增加互动性，定价超过35元，但节日属性导致需求频率低，3秒内理解难度较高。",
+      "risk": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
+      "review_confidence": 9,
+      "review_reason": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "design_community",
+        "trend",
+        "端午礼盒",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1322,16 +1352,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "产品设计创新，功能集成度高，但市场需求可能偏小众，价格未知但大概率超过35元，能快速理解其用途，情绪价值在功能基础上。",
+      "summary": "Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity",
       "risk": "可折叠设计集成无线充电与夜灯，结构创新",
       "review_confidence": 8,
       "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
-        "无线充电",
-        "创意桌搭",
-        "折叠设计",
-        "MagSafe",
         "deepseek_search_agent",
         "design_community"
       ]
@@ -2158,25 +2184,26 @@
       ]
     },
     {
-      "id": "f1cd80593e04",
+      "id": "693cda01a784",
       "product_key": null,
-      "title": "Nike Just Made a Puffer Jacket You Can Inflate in 15 Seconds - Yanko Design",
-      "category": "冲锋衣",
+      "title": "A Sleek Wireless, Portable Lamp that Can Charge Your Devices - Core77",
+      "category": "氛围灯",
       "action_lane": "方向参考",
       "axes": [
-        "视觉启发"
+        "功能启发",
+        "情绪启发"
       ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Yanko Design",
+      "score": 81,
+      "score_label": "8.1",
+      "source": "Core77",
       "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2025/10/29/nike-just-made-a-puffer-jacket-you-can-inflate-in-15-seconds",
-      "image": "https://www.yankodesign.com/images/design_news/2025/10/nike-just-made-a-puffer-jacket-you-can-inflate-in-15-seconds/airmilano-05.jpg",
-      "summary": "Nike Therma-Fit Air Milano inflatable puffer jacket; structural innovation using air insulation with pump, deflatable for portability.。页面证据：Remember when Nike put air bubbles in sneakers and everyone thought it was the coolest thing ever? Well, the Swoosh just did it again, but this time with a jacket that you can literally pump up or deflate like an air mattress. Meet the Therma-Fit Air Milano Jacket, and yes, it's as wild as it",
-      "risk": "充气式羽绒服，15秒充气，可通过放气压缩携带，提供可调节保温",
+      "url": "https://www.core77.com/projects/80288/A-Sleek-Wireless-Portable-Lamp-that-Can-Charge-Your-Devices",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/837472_lead_400_80288_.jpg",
+      "summary": "Rise无线便携灯是一款明确的可使用灯具，具有充电功能和吹制玻璃设计，融合氛围营造与实用充电。。页面证据：Benjamin Hubert of experience design agency LAYER has designed a wireless lamp for London-based tech brand nolii. Called Rise, the lamp is the first product in the brand's first collection of wireless tech products, which will launch next year. It has integrated charging capability for up to two devices and",
+      "risk": "无线便携且可给设备充电，吹制玻璃设计",
       "review_confidence": 9,
-      "review_reason": "充气式羽绒服，15秒充气，可通过放气压缩携带，提供可调节保温",
+      "review_reason": "无线便携且可给设备充电，吹制玻璃设计",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "deepseek_search_agent",
@@ -2184,52 +2211,53 @@
       ]
     },
     {
-      "id": "5a98a7459cb0",
+      "id": "e05428f86506",
       "product_key": null,
-      "title": "LG's Latest Lamp Has a Mini Garden + Grow Light Built Into It",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Design Milk",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://design-milk.com/lgs-latest-lamp-has-a-mini-garden-grow-light-built-into-it",
-      "image": "https://design-milk.com/images/2025/01/lg-indoor-gardening-appliances-2.jpg",
-      "summary": "LG台灯/落地灯内置迷你花园和植物生长灯，融合照明与种植功能。。页面证据：LG is blending technology and nature, with a new lamp that has a mini garden and grow light built right into it.",
-      "risk": "灯体内置迷你花园和植物生长灯，融合种植功能",
-      "review_confidence": 9,
-      "review_reason": "灯体内置迷你花园和植物生长灯，融合种植功能",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "db0cb1994cc9",
-      "product_key": null,
-      "title": "iF Design - Anker Nano Power Bank (10K, 45W)",
+      "title": "The Anker Nano Power Bank may be the LAST perfect Lightning accessory for your iPhone 14 - Yanko Design",
       "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "结构启发"
       ],
-      "score": 80,
-      "score_label": "8.0",
+      "score": 81,
+      "score_label": "8.1",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2023/08/28/the-anker-nano-power-bank-may-be-the-last-perfect-lightning-accessory-for-your-iphone-14",
+      "image": "https://www.yankodesign.com/images/design_news/2023/08/the-anker-nano-power-bank-may-be-the-last-perfect-lightning-accessory-for-your-iphone-14/anker_nano_power_bank_1.jpg",
+      "summary": "Anker Nano充电宝：内置折叠Lightning接口，直插手机无需线缆，结构创新。。页面证据：As Apple is almost certainly going to pivot to the USB-C standard for the iPhone, Anker's compact power bank for the iPhone 14 stands out as one of the best lightning-port accessories for older iPhones, marking an end of a pretty glorious era. With 12W charging capabilities, the Anker Nano (as compact as it is),",
+      "risk": "内置折叠Lightning接口，直插手机无需线缆。",
+      "review_confidence": 9,
+      "review_reason": "内置折叠Lightning接口，直插手机无需线缆。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "eeca3b33be96",
+      "product_key": null,
+      "title": "iF Design - VETA 29",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "视觉启发"
+      ],
+      "score": 81,
+      "score_label": "8.1",
       "source": "iF设计奖",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/anker-nano-power-bank-10k-45w/711403",
+      "url": "https://ifdesign.com/en/winner-ranking/project/veta-29/748757",
       "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "Anker Nano Power Bank 采用伸缩线设计，是行业最小最便携的可伸缩线充电宝，支持手持和挂包使用，结构创新显著。。页面证据：The Anker Nano Power Bank is the smallest and most portable retractable cable power bank in the industry, providing a convenient and fast charging solution for travel. Utilizing IQ3 and IQ2 wired charging modules, it offers users an ultimate experience of fast and safe multi-device simultaneous charging, while being more organized than traditional built-in cable devices. The retractable cable design is neat and easy to use, making it convenient for travel. It features a detachable strap design that supports handheld and bag-hanging use, enhancing usability and convenience in complex scenarios.",
-      "risk": "行业最小可伸缩线充电宝，便携性结构创新",
-      "review_confidence": 8,
-      "review_reason": "行业最小可伸缩线充电宝，便携性结构创新",
+      "summary": "VETA 29 充电宝，15000mAh/140W，内置电缆当手柄，TFT屏幕显示电量温度，无喷涂环保工艺，汽车级电芯，29分钟充满，功能和交互创新。。页面证据：VETA 29 is a 15 000 mAh, 140 W fast-charging power bank made for people who travel or work anywhere. It can charge a laptop, a phone, and a camera at the same time through two Type-C PD 3.1 ports. The built-in 6 A cable also works as a handle, making it easy to carry. A small TFT screen on top shows power and temperature clearly. The body uses a spray-free finish. The color comes straight from the mold, saving cost and avoiding paint waste. It recharges fully in 29 minutes and meets safety standards with automotive-grade cells.",
+      "risk": "内置电缆可作为手柄，TFT屏幕显示电量温度，29分钟快速充电，交互创新。",
+      "review_confidence": 9,
+      "review_reason": "内置电缆可作为手柄，TFT屏幕显示电量温度，29分钟快速充电，交互创新。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
@@ -2237,52 +2265,53 @@
       ]
     },
     {
-      "id": "c78ccea2f0d4",
+      "id": "a4afce3914f2",
       "product_key": null,
-      "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
-      "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
-      "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
-      "risk": "信用卡大小太阳能充电宝，集成快充与多端口",
-      "review_confidence": 9,
-      "review_reason": "信用卡大小太阳能充电宝，集成快充与多端口",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "d65dd8eb5e18",
-      "product_key": null,
-      "title": "iF Design - PicoGo AR11 Telescopic line mobile power supply",
+      "title": "iF Design - Gendome Micro Power Bank 15000mAh",
       "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "结构启发"
       ],
-      "score": 80,
-      "score_label": "8.0",
+      "score": 81,
+      "score_label": "8.1",
       "source": "iF设计奖",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/picogo-ar11-telescopic-line-mobile-power-supply/759475",
+      "url": "https://ifdesign.com/en/winner-ranking/project/gendome-micro-power-bank-15000mah/681405",
       "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "PicoGo AR11：伸缩线+提手一体化移动电源，结构创新，明确单品。。页面证据：This product is a retractable cord mobile power, the retractable cord and carrying handle structure clever integration, so that the mobile power in travel, commuting, outdoor and other variable scenarios of flexible use. In the era of high-frequency mobility, users' charging behavior has changed from \"desktop behavior\" to \"on-the-go replenishment\". Through the cable integrated telescopic structure + carrying handle fusion design, to realize \"no exposed cable, easy to carry, flexible charging\" comprehensive experience, for the mobile lifestyle born of intelligent energy module.",
-      "risk": "伸缩线+提手一体化结构，便于携带和使用",
+      "summary": "明确产品：Gendome Micro Power Bank 15000mAh。创新点：世界首个EV级LiFePO4电池、三接口输出、独特无线充电模块（支持手表耳机）、IP55防护、全金属外壳、可回收。。页面证据：Micro30 is a power bank with the world's first EV - proven LiFePO4 and 3 - interface output for multiple devices. It has a unique wireless charging module for wearables like Apple Watch and wireless headphones, is IP55 dust and waterproof with a full - metal rugged shell for outdoor use. Sold products can be recycled, and qualified LiFePo4 cores are reused in large - scale ESS energy storage equipment to reduce battery - caused environmental pollution.",
+      "risk": "EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
       "review_confidence": 9,
-      "review_reason": "伸缩线+提手一体化结构，便于携带和使用",
+      "review_reason": "EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "buy_sample"
+      ]
+    },
+    {
+      "id": "f1c60d1ce110",
+      "product_key": null,
+      "title": "iF Design - 145W Fast Charging Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "视觉启发"
+      ],
+      "score": 81,
+      "score_label": "8.1",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "145W快充移动电源集成磁吸无线充电和TFT彩屏，功能创新。。页面证据：145W high-power mobile power supply integrates magnetic wireless charging function. Adjustable angle magnetic wireless charging module enhances comfort of use. TFT color screen clearly displays battery level, parameters and UI expression. 1C1A port layout supports simultaneous charging of multiple devices. USB-C port charges the device and powers other devices. Raised silicone pads elevate the bottom space to optimize heat dissipation. The product breaks through traditional desktop wireless charging and use limitations of conventional mobile power supplies, suitable for indoor and outdoor use, powering devices any time anywhere.",
+      "risk": "集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
+      "review_confidence": 8,
+      "review_reason": "集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
@@ -2290,29 +2319,30 @@
       ]
     },
     {
-      "id": "68d4782c87b6",
+      "id": "c3e89dc8f20a",
       "product_key": null,
-      "title": "This modern, minimalist lamp recreates the gentle, calming flicker of the candlestick - Yanko Design",
-      "category": "氛围灯",
+      "title": "Red Dot Design Award: Anker 548 Emergency Power Bank",
+      "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
-        "情绪启发"
+        "功能启发",
+        "结构启发"
       ],
-      "score": 80,
-      "score_label": "8.0",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2021/10/20/this-modern-minimalist-lamp-recreates-the-gentle-calming-flicker-of-the-candlestick",
-      "image": "https://www.yankodesign.com/images/design_news/2021/10/auto-draft/ambientec_hymn_lamp_1.jpg",
-      "summary": "Ambientec HYMN 台灯以2000K暖光LED和摆锤透镜模拟蜡烛火焰的柔和摇曳，创新地重现了烛光的宁静体验。。页面证据：https://vimeo.com/570792192 Paying tribute to the humble candle-lamp that was as ubiquitous in the past as the flashlight on your smartphone is today, the HYMN lamp by Ambientec recreates the simplistic joy of watching a candle's flickering flame... but it does so without a wick, wax, or even a fire. “The use of fire has led",
-      "risk": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
+      "score": 81,
+      "score_label": "8.1",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/anker-548-emergency-power-bank-62470",
+      "image": "",
+      "summary": "Anker 548应急充电站，集成太阳能输入、便携手柄和磷酸铁锂电池，结构创新。。页面证据：The Anker 548 Emergency Power Bank has been specifically developed to power electronic devices in emergencies. The compact charging station is portable, thanks to a flexible handle, and features a solar input that enables the integrated lithium iron...",
+      "risk": "集成太阳能输入、便携手柄和磷酸铁锂电池，应急充电站结构创新。",
       "review_confidence": 9,
-      "review_reason": "摆锤透镜模拟蜡烛火焰摇曳，2000K暖光营造宁静氛围",
+      "review_reason": "集成太阳能输入、便携手柄和磷酸铁锂电池，应急充电站结构创新。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "deepseek_search_agent",
-        "design_community"
+        "adapt",
+        "award_gallery"
       ]
     },
     {
@@ -2685,32 +2715,6 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "64033f9a1af7",
-      "product_key": null,
-      "title": "Red Dot Design Award: Nutri AI Kitchen Scale",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/de/project/nutri-ai-kitchen-scale-60281",
-      "image": "",
-      "summary": "具体产品：Nutri AI Kitchen Scale AI 厨房秤。创新证据：AI 自动识别食物并记录营养数据，简化营养追踪流程，替代手动查找记录。。页面证据：The Nutri AI Kitchen Scale is an innovative smart nutrition tracking solution for individuals who require detailed records of their daily food intake. It simplifies the nutrition tracking process by automating the laborious manual task of locating,...",
-      "risk": "AI自动识别食物并记录营养数据，简化营养追踪",
-      "review_confidence": 9,
-      "review_reason": "AI自动识别食物并记录营养数据，简化营养追踪",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "award_gallery",
         "deepseek_search_agent"
       ]
     }
