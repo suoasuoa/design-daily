@@ -3,6 +3,8 @@
 
 import json
 import os
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -10,7 +12,7 @@ import urllib.request
 WORKSPACE = "design-daily"
 
 
-def request_json(base_url, api_key, params, *, count=False):
+def request_json(base_url, api_key, params, *, count=False, attempts=6):
     endpoint = (
         f"{base_url.rstrip('/')}/rest/v1/feedback_events?"
         + urllib.parse.urlencode(params)
@@ -19,10 +21,22 @@ def request_json(base_url, api_key, params, *, count=False):
     if count:
         headers.update({"Prefer": "count=exact", "Range": "0-0", "Range-Unit": "items"})
     request = urllib.request.Request(endpoint, headers=headers)
-    with urllib.request.urlopen(request, timeout=30) as response:
-        body = json.loads(response.read().decode("utf-8"))
-        content_range = response.headers.get("Content-Range", "")
-    return body, content_range
+    for attempt in range(1, attempts + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                body = json.loads(response.read().decode("utf-8"))
+                content_range = response.headers.get("Content-Range", "")
+            return body, content_range
+        except urllib.error.HTTPError as exc:
+            if exc.code not in {502, 503, 504, 521} or attempt == attempts:
+                raise
+            print(f"feedback_health=retry attempt={attempt} status={exc.code}")
+        except urllib.error.URLError as exc:
+            if attempt == attempts:
+                raise
+            print(f"feedback_health=retry attempt={attempt} reason={exc.reason}")
+        time.sleep(20)
+    raise RuntimeError("Supabase feedback health retry loop exhausted")
 
 
 def count_from_range(content_range):
