@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T18:21:03+08:00",
+  "generated_at": "2026-08-04T19:21:00+08:00",
   "stats": {
     "total_items": 1926,
     "by_category": {
@@ -23,9 +23,9 @@
       "可直接买样": 16
     },
     "by_axis": {
-      "功能启发": 1283,
+      "功能启发": 1282,
       "结构启发": 903,
-      "情绪启发": 413,
+      "情绪启发": 414,
       "视觉启发": 287,
       "包装启发": 245
     },
@@ -46,49 +46,44 @@
     }
   },
   "trends": {
-    "summary": "样本中充电宝、桌面收纳/充电、水杯、实用厨具等品类高频刚需、功能明确，符合选品标准；而纯概念、高价位小众产品需谨慎。",
+    "summary": "从产品样本看，高热度集中于创意厨具、氛围灯、充电宝和创意桌搭，设计驱动和功能集成是核心趋势。实用性与高频需求产品（如多合一充电宝、模块化收纳）评分高，而纯装饰或小众功能产品热度受限。",
     "hot_categories": [
+      "创意厨具",
+      "氛围灯",
       "充电宝",
-      "桌面充电/收纳",
-      "水杯",
-      "实用厨具"
+      "创意桌搭"
     ],
     "hot_signals": [
-      "多合一功能",
-      "线缆收纳",
-      "便携充电",
-      "单手操作",
-      "磁吸设计",
-      "高频刚需",
-      "3秒易懂"
+      "多合一功能集成",
+      "模块化/可折叠设计",
+      "智能+照明组合",
+      "获奖认证加持",
+      "便携/收纳场景"
     ],
     "recommended_directions": [
-      "多合一充电宝",
-      "桌面充电站",
-      "磁吸充电宝",
-      "旋转保温杯",
-      "分类砧板",
-      "便携水杯"
+      "多功能充电设备（集成线缆、支架、AC插头）",
+      "模块化厨房收纳/工具整合",
+      "兼具照明和充电或装饰的桌搭产品",
+      "可折叠或可变形家居用品"
     ],
     "avoid_or_watch": [
-      "纯概念设计",
-      "高价位小众",
-      "功能复杂不易理解",
-      "仅面向特定人群",
-      "价格远超35元但非刚需"
+      "易积水/难清洁结构",
+      "纯装饰低实用灯具",
+      "依赖特定人群的功能（如摄影配件）",
+      "高价但功能冗余的复杂产品"
     ],
     "next_search_keywords": [
-      "多合一充电宝",
-      "桌面充电站",
-      "磁吸充电宝",
-      "便携水杯",
-      "收纳厨具"
+      "模块化收纳 设计奖",
+      "多合一充电宝 趋势",
+      "折叠厨具 空间节省",
+      "氛围灯 无线充电",
+      "桌面理线 高颜值"
     ],
-    "generated_at": "2026-08-04T18:21:01+08:00",
+    "generated_at": "2026-08-04T19:20:58+08:00",
     "source": "deepseek"
   },
   "weekly_report": {
-    "generated_at": "2026-08-04T18:21:03+08:00",
+    "generated_at": "2026-08-04T19:20:59+08:00",
     "week": "2026-W32",
     "group_id": "2026-W32",
     "date_start": "2026-08-03",
@@ -227,15 +222,16 @@
         "source_quality": "standard",
         "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
         "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
-        "summary": "该产品作为中秋礼盒设计，具备月饼收纳与灯笼转化的双重功能，结构新颖，但作为商品，实用性受限于节日场景，且设计复杂度可能影响生产与使用体验。",
+        "summary": "结构创新，月饼盒可展开成梯田展示并转化为灯笼，功能成立且具情绪价值，但需求季节性强、非高频，且结构复杂度可能影响生产与成本。",
         "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
         "review_confidence": 9,
         "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
         "next_action": "买样看材质、尺寸、成本和差评点",
         "tags": [
           "中秋礼盒",
-          "结构创新",
-          "设计转化",
+          "创意包装",
+          "设计感",
+          "节日礼物",
           "adapt",
           "deepseek_search_agent"
         ]
@@ -258,15 +254,16 @@
         "source_quality": "standard",
         "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
         "image": "",
-        "summary": "折叠礼盒一秒成型和打平，使用便捷，适用于高档礼品包装，价格可能超过35元，功能清晰易懂，且兼具创意和情绪价值。",
+        "summary": "折叠盒设计实用，节省存储空间，成型快捷，适用于高档礼品，功能明确且展示直观。",
         "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
         "review_confidence": 8,
         "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
         "next_action": "买样看材质、尺寸、成本和差评点",
         "tags": [
+          "折叠盒定制",
           "创意礼盒",
-          "折叠盒",
-          "定制包装",
+          "包装盒定制",
+          "结构创新",
           "social_public_index",
           "白名单来源"
         ]
@@ -289,16 +286,16 @@
         "source_quality": "standard",
         "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
         "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
-        "summary": "产品将月饼盒与灯笼结合，结构创新，兼具实用性与节日氛围，但受限于中秋场景，需求频率和受众面较窄。",
+        "summary": "月饼盒可变形为灯笼，结构创新，功能实用，兼具美学与情绪价值，但中秋礼盒属节令性消费，频率较低。",
         "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
         "review_confidence": 9,
         "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
         "next_action": "买样看材质、尺寸、成本和差评点",
         "tags": [
-          "中秋礼盒",
-          "创意设计",
-          "可变灯笼",
-          "节日礼盒",
+          "mid-autumn",
+          "mooncake box",
+          "lantern",
+          "creative packaging",
           "adapt",
           "deepseek_search_agent"
         ]
@@ -452,16 +449,16 @@
         "source_quality": "standard",
         "url": "https://www.behance.net/gallery/145263273/_",
         "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
-        "summary": "包装结构创新具有节日趣味，但实用性一般，需求低频，市场接受度存疑。",
+        "summary": "端午礼盒属于节日限定产品，使用频率低，实用性依赖送礼场景，但包装结构创新和情绪价值突出，价格符合预期。",
         "risk": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
         "review_confidence": 9,
         "review_reason": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
         "next_action": "买样看材质、尺寸、成本和差评点",
         "tags": [
+          "design_community",
+          "trend",
           "端午礼盒",
-          "创意包装",
-          "deepseek_search_agent",
-          "design_community"
+          "deepseek_search_agent"
         ]
       },
       {
@@ -958,15 +955,15 @@
         "source_quality": "standard",
         "url": "https://www.kickstarter.com/projects/2107105009/amplyte-6-in-1-smartcharge-power-bank-charger",
         "image": "",
-        "summary": "多合一设计实用性强，充电宝为高频需求，适用于广泛用户，但功能复杂存在潜在短板。标题清晰，售价预计超过35元。",
+        "summary": "多合一充电宝集成无线充、AC插头、双端线、智能手表充电等功能，解决外出充电痛点，实用性和频率需求高；功能覆盖广，但部分用户可能觉得复杂，功能无明显短板；预估售价大概率超35元，3秒看懂主要卖点，情绪价值体现在便携和一体化便利。",
         "risk": "集成AC插头、双端线、无线充电与手机支架，多合一便携结构",
         "review_confidence": 9,
         "review_reason": "集成AC插头、双端线、无线充电与手机支架，多合一便携结构",
         "next_action": "提取可借鉴元素，做同品类差异化改造",
         "tags": [
-          "trend",
-          "market_signal_strong",
           "deepseek_search_agent",
+          "market_signal_strong",
+          "trend",
           "充电宝"
         ]
       },
@@ -1386,7 +1383,7 @@
         "source_quality": "standard",
         "url": "https://www.kickstarter.com/projects/joyroompodix/podix-pr70-240w-power-bank-with-upgraded-dual-tft-displays?ref=f0o23p",
         "image": "",
-        "summary": "产品功能强大，240W输出和双屏显示具有创新性，但高功率和潜在高价格限制了大众市场吸引力，实用性和高频需求虽高，但打击面偏窄。",
+        "summary": "240W大功率、内置双线及双屏显示，功能强大且差异化明显，满足高频充电需求，但高端定位可能使受众相对有限。",
         "risk": "双TFT实时显示屏加两条内置USB-C线，240W总输出，显示与结构创新明确。",
         "review_confidence": 9,
         "review_reason": "双TFT实时显示屏加两条内置USB-C线，240W总输出，显示与结构创新明确。",
@@ -1394,8 +1391,8 @@
         "tags": [
           "trend",
           "market_signal_strong",
-          "deepseek_search_agent",
-          "充电宝"
+          "充电宝",
+          "deepseek_search_agent"
         ]
       },
       {
@@ -2811,7 +2808,7 @@
   },
   "weekly_groups": [
     {
-      "generated_at": "2026-08-04T18:21:03+08:00",
+      "generated_at": "2026-08-04T19:20:59+08:00",
       "week": "2026-W32",
       "group_id": "2026-W32",
       "date_start": "2026-08-03",
@@ -2950,15 +2947,16 @@
           "source_quality": "standard",
           "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
-          "summary": "该产品作为中秋礼盒设计，具备月饼收纳与灯笼转化的双重功能，结构新颖，但作为商品，实用性受限于节日场景，且设计复杂度可能影响生产与使用体验。",
+          "summary": "结构创新，月饼盒可展开成梯田展示并转化为灯笼，功能成立且具情绪价值，但需求季节性强、非高频，且结构复杂度可能影响生产与成本。",
           "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
           "review_confidence": 9,
           "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
           "next_action": "买样看材质、尺寸、成本和差评点",
           "tags": [
             "中秋礼盒",
-            "结构创新",
-            "设计转化",
+            "创意包装",
+            "设计感",
+            "节日礼物",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -2981,15 +2979,16 @@
           "source_quality": "standard",
           "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
           "image": "",
-          "summary": "折叠礼盒一秒成型和打平，使用便捷，适用于高档礼品包装，价格可能超过35元，功能清晰易懂，且兼具创意和情绪价值。",
+          "summary": "折叠盒设计实用，节省存储空间，成型快捷，适用于高档礼品，功能明确且展示直观。",
           "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
           "review_confidence": 8,
           "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
           "next_action": "买样看材质、尺寸、成本和差评点",
           "tags": [
+            "折叠盒定制",
             "创意礼盒",
-            "折叠盒",
-            "定制包装",
+            "包装盒定制",
+            "结构创新",
             "social_public_index",
             "白名单来源"
           ]
@@ -3012,16 +3011,16 @@
           "source_quality": "standard",
           "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
-          "summary": "产品将月饼盒与灯笼结合，结构创新，兼具实用性与节日氛围，但受限于中秋场景，需求频率和受众面较窄。",
+          "summary": "月饼盒可变形为灯笼，结构创新，功能实用，兼具美学与情绪价值，但中秋礼盒属节令性消费，频率较低。",
           "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
           "review_confidence": 9,
           "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
           "next_action": "买样看材质、尺寸、成本和差评点",
           "tags": [
-            "中秋礼盒",
-            "创意设计",
-            "可变灯笼",
-            "节日礼盒",
+            "mid-autumn",
+            "mooncake box",
+            "lantern",
+            "creative packaging",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -3175,16 +3174,16 @@
           "source_quality": "standard",
           "url": "https://www.behance.net/gallery/145263273/_",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
-          "summary": "包装结构创新具有节日趣味，但实用性一般，需求低频，市场接受度存疑。",
+          "summary": "端午礼盒属于节日限定产品，使用频率低，实用性依赖送礼场景，但包装结构创新和情绪价值突出，价格符合预期。",
           "risk": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
           "review_confidence": 9,
           "review_reason": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
           "next_action": "买样看材质、尺寸、成本和差评点",
           "tags": [
+            "design_community",
+            "trend",
             "端午礼盒",
-            "创意包装",
-            "deepseek_search_agent",
-            "design_community"
+            "deepseek_search_agent"
           ]
         },
         {
@@ -3681,15 +3680,15 @@
           "source_quality": "standard",
           "url": "https://www.kickstarter.com/projects/2107105009/amplyte-6-in-1-smartcharge-power-bank-charger",
           "image": "",
-          "summary": "多合一设计实用性强，充电宝为高频需求，适用于广泛用户，但功能复杂存在潜在短板。标题清晰，售价预计超过35元。",
+          "summary": "多合一充电宝集成无线充、AC插头、双端线、智能手表充电等功能，解决外出充电痛点，实用性和频率需求高；功能覆盖广，但部分用户可能觉得复杂，功能无明显短板；预估售价大概率超35元，3秒看懂主要卖点，情绪价值体现在便携和一体化便利。",
           "risk": "集成AC插头、双端线、无线充电与手机支架，多合一便携结构",
           "review_confidence": 9,
           "review_reason": "集成AC插头、双端线、无线充电与手机支架，多合一便携结构",
           "next_action": "提取可借鉴元素，做同品类差异化改造",
           "tags": [
-            "trend",
-            "market_signal_strong",
             "deepseek_search_agent",
+            "market_signal_strong",
+            "trend",
             "充电宝"
           ]
         },
@@ -4109,7 +4108,7 @@
           "source_quality": "standard",
           "url": "https://www.kickstarter.com/projects/joyroompodix/podix-pr70-240w-power-bank-with-upgraded-dual-tft-displays?ref=f0o23p",
           "image": "",
-          "summary": "产品功能强大，240W输出和双屏显示具有创新性，但高功率和潜在高价格限制了大众市场吸引力，实用性和高频需求虽高，但打击面偏窄。",
+          "summary": "240W大功率、内置双线及双屏显示，功能强大且差异化明显，满足高频充电需求，但高端定位可能使受众相对有限。",
           "risk": "双TFT实时显示屏加两条内置USB-C线，240W总输出，显示与结构创新明确。",
           "review_confidence": 9,
           "review_reason": "双TFT实时显示屏加两条内置USB-C线，240W总输出，显示与结构创新明确。",
@@ -4117,8 +4116,8 @@
           "tags": [
             "trend",
             "market_signal_strong",
-            "deepseek_search_agent",
-            "充电宝"
+            "充电宝",
+            "deepseek_search_agent"
           ]
         },
         {
@@ -30341,7 +30340,7 @@
           "id": "9870cca4d8de",
           "title": "iF Design - Mi LED Desk Lamp",
           "category": "氛围灯",
-          "summary": "该产品为小米LED台灯，获得iF设计奖，功能实用：无频闪、可调亮度和色温，单旋钮操作简单，外观简约，适用家庭和办公场景，价格预计超35元，满足标准。",
+          "summary": "小米LED台灯具备实用功能，价格超过35元，设计简洁易于理解，功能创新且无频闪，满足日常照明需求并兼具氛围感。",
           "score": 80,
           "price_gate": "likely_over_35",
           "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
@@ -30367,10 +30366,9 @@
           "innovation": 7,
           "relevance": 9,
           "tags": [
-            "护眼",
-            "无频闪",
-            "智能照明",
-            "设计奖",
+            "智能台灯",
+            "氛围灯",
+            "小米生态链",
             "adapt",
             "award_gallery"
           ]
@@ -30379,7 +30377,7 @@
           "id": "e18da19bc071",
           "title": "iF Design - MUJI LED Desk Light",
           "category": "氛围灯",
-          "summary": "MUJI LED台灯以导光板实现均匀平面发光，消除多重阴影，兼具便携性和设计感，实用性高。价格预计超过35元，功能明确，品牌情绪价值强。但市场竞争激烈，需要突出光学创新和便携优势。",
+          "summary": "MUJI品牌台灯具备实用性和便携性，平面发光消除阴影是亮点，但作为氛围灯使用频率中等，价格超过35元，整体判断可行。",
           "score": 80,
           "price_gate": "likely_over_35",
           "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
@@ -30405,9 +30403,8 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "muji",
-            "led_desk_lamp",
             "award_gallery",
+            "氛围灯",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -30416,7 +30413,7 @@
           "id": "0d7df0ccfc52",
           "title": "Red Dot Design Award: IH Table Cooker",
           "category": "创意厨具",
-          "summary": "移动式双灶电磁炉解决了传统灶台位置固定的痛点，设计感强且有红点奖背书，但使用场景偏特定，对普通家庭可能并非刚需，且价格较高。",
+          "summary": "产品具有明确的结构创新，移动式双灶设计解决户外或餐桌烹饪需求，实用性强；但适用场景偏特定，大众需求频率中等。红点奖加持提升情绪价值，价格远高于35元，功能集成度高。",
           "score": 79,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30442,18 +30439,17 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "红点奖",
-            "移动电磁炉",
-            "双灶",
             "adapt",
-            "award_gallery"
+            "award_gallery",
+            "deepseek_search_agent",
+            "创意厨具"
           ]
         },
         {
           "id": "71ff5d5baefc",
           "title": "Red Dot Design Award: NINJA PILLOW JACKET",
           "category": "冲锋衣",
-          "summary": "功能性极强，集成多种实用设计，适合旅行人群，但大众覆盖有限。",
+          "summary": "集成多种旅行功能，实用性和创新性强，适合旅行场景，价格空间大，但大众需求频率一般。",
           "score": 78,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30479,16 +30475,16 @@
           "relevance": 10,
           "tags": [
             "award_gallery",
-            "deepseek_search_agent",
             "trend",
-            "冲锋衣"
+            "冲锋衣",
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "2fb63addd882",
           "title": "Red Dot Design Award: X-BIONIC® INSTRUCTOR 4.0 JACKET",
           "category": "冲锋衣",
-          "summary": "产品功能明确且技术含量高，但属于专业运动装备，目标用户群较窄，需求频率低。价格高但利润空间大，设计奖项加持提升情绪价值。",
+          "summary": "产品功能强大，适合专业运动场景，但价格高且受众窄，非高频需求，普通消费者难以快速理解其科技价值。",
           "score": 78,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30522,7 +30518,7 @@
           "id": "b5aedb74dbee",
           "title": "Red Dot Design Award: Magic Cube",
           "category": "创意厨具",
-          "summary": "燃气灶为厨房高频刚需，模块化设计解决传统灶具笨重和受热不均痛点，红点奖加持提升信任感。但产品概念需一定理解成本，且模块化可能面临安装标准适配问题。",
+          "summary": "产品解决传统灶具痛点，模块化设计明确，实用性高，但购买频率较低，目标用户为家庭厨房使用者。",
           "score": 76,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30547,9 +30543,9 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "red_dot_design_award",
-            "modular_kitchen",
-            "creative_cooktop",
+            "创意厨具",
+            "red_dot设计奖",
+            "模块化燃气灶",
             "adapt",
             "award_gallery"
           ]
@@ -30558,7 +30554,7 @@
           "id": "c8a769bfcd54",
           "title": "Red Dot Design Award: Prinx-3D Printed Modular Re-entrant structures Lamp",
           "category": "氛围灯",
-          "summary": "设计奖单品，3D打印模块化结构新颖，但实用性一般，概念性强，受众窄，售价可高，但3秒理解困难。",
+          "summary": "模块化3D打印灯，结构创新获红点奖，但实用性一般，高频需求低，概念复杂不易秒懂，价格可能高于35元，情绪价值有限。",
           "score": 73,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30584,7 +30580,9 @@
           "innovation": 9,
           "relevance": 10,
           "tags": [
-            "trend",
+            "3D打印",
+            "设计奖",
+            "模块化",
             "氛围灯",
             "award_gallery",
             "deepseek_search_agent"
@@ -30594,7 +30592,7 @@
           "id": "a0bf542ac862",
           "title": "Red Dot Design Award: Prelude X Series",
           "category": "充电宝",
-          "summary": "充电宝是高频实用产品，MagSafe双向充电和支架功能使其功能明确，价格可能高于35元，设计奖增强吸引力，但主要面向苹果用户，打击面略窄。",
+          "summary": "充电宝属于日常高频刚需，兼具支架功能和双向充电，实用性强，功能无短板，价格大概率高于35元。但3秒内理解需依赖场景演示，情绪价值主要来自设计奖项背书。",
           "score": 72,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30630,7 +30628,7 @@
           "id": "18242d4c5ead",
           "title": "LARQ - by LARQ / Core77 Design Awards",
           "category": "水杯",
-          "summary": "自洁水瓶将净水功能与高频饮水场景结合，UV-C技术有明确创新点，易于理解，且预估售价高于35元，功能成立后具备科技感和环保情绪价值。",
+          "summary": "自洁水瓶通过UV-C LED技术实现即时净水和自我清洁，解决户外饮水卫生痛点，实用性强。喝水属于高频需求，但自洁功能依赖特定场景，普及度有限。水杯市场广泛，但高售价可能限制受众。功能明确，3秒易懂，科技感带来情绪价值。",
           "score": 82,
           "price_gate": "likely_over_35",
           "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/887754_lead_400_85125__sharing.jpg",
@@ -30654,10 +30652,9 @@
           "innovation": 9,
           "relevance": 9,
           "tags": [
-            "self-cleaning bottle",
-            "UV-C LED",
-            "smart hydration",
-            "water bottle",
+            "环保",
+            "科技创新",
+            "健康饮水",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -30666,7 +30663,7 @@
           "id": "be0e862cd3e6",
           "title": "Upside-Downside Cup – YD Select YD Select",
           "category": "水杯",
-          "summary": "2合1设计提升实用性，水杯为高频需求，面向大众，但多功能可能牺牲单一便利性。设计直观易理解，且赋予情侣杯、零食搭配等情绪价值。",
+          "summary": "多功能水杯，2合1设计，实用性强，兼顾防尘和零食收纳，但价格未知。",
           "score": 78,
           "price_gate": "unknown",
           "image": "http://shop.yankodesign.com/cdn/shop/products/upside_downside_cup_2_1200x1200.jpg?v=1665880095",
@@ -30693,7 +30690,8 @@
           "tags": [
             "2-in-1",
             "tumbler",
-            "drinkware",
+            "dust cover",
+            "snack container",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -30702,7 +30700,7 @@
           "id": "119e282402c5",
           "title": "Ever wondered how many calories you eat? This smart cutting board tracks your food’s nutritional value - Yanko Design",
           "category": "创意厨具",
-          "summary": "智能砧板将称重与营养计算结合，功能明确，有一定实用性，但目标人群为关注健康饮食的消费者，并非大众刚需。功能复杂度和价格可能成为门槛，但概念易理解，且健康管理情绪价值能吸引特定用户。",
+          "summary": "智能砧板将称重与营养计算结合，功能明确，对健康管理人群有实用价值，易于理解；但目标用户较窄，使用频率依赖用户习惯，且作为概念产品在耐用性和清洗方面存在隐患，情绪价值一般。",
           "score": 77,
           "price_gate": "unknown",
           "image": "https://www.yankodesign.com/images/design_news/2021/04/Nutrio_smart_cutting_board_that_tracks_your_nutrition.jpg",
@@ -30728,8 +30726,7 @@
           "tags": [
             "智能厨具",
             "健康饮食",
-            "科技感",
-            "厨房神器",
+            "营养追踪",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -30738,7 +30735,7 @@
           "id": "ff7c3ceedad7",
           "title": "The Lon:HUB, a Desk-Clinging Power Strip / Charging Station - Core77",
           "category": "创意桌搭",
-          "summary": "桌面夹式充电站解决桌面充电和线缆收纳实际痛点，功能集成度高，人群覆盖面广，且容易理解，但价格未知且外观吸引力不足。",
+          "summary": "产品解决桌面充电与线缆收纳痛点，功能实用，夹式设计易于理解，目标用户为办公/书桌人群，高频且广泛。功能完整，无明显短板，预估售价符合要求。情绪价值一般，但整体竞争力强。",
           "score": 77,
           "price_gate": "unknown",
           "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1550562_lead_400_132706_.jpg",
@@ -30763,10 +30760,10 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "桌面充电",
+            "桌面充电站",
             "插线板",
-            "收纳",
-            "办公桌",
+            "桌面收纳",
+            "无线充电",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -30775,7 +30772,7 @@
           "id": "4c6607966b3b",
           "title": "ouTask telescopic lantern, the ultimate camping light",
           "category": "氛围灯",
-          "summary": "伸缩提灯以三种形态（1米灯杆、台灯、手电筒）覆盖多种露营照明需求，实用性强且功能创新明显，防水便携加分；露营场景属于中频需求，目标人群明确但不算极广，Kickstarter众筹产品价格预计高于35RMB，功能结构一目了然易于理解。风险在于价格可能偏高或市场受众有限。",
+          "summary": "产品功能创新且实用，但使用场景集中在户外露营，属于低频需求，打击面有限。多功能设计可能增加理解成本，3秒内不易直观看出全部形态优势。价格未知，若定价合理可有竞争力。",
           "score": 75,
           "price_gate": "unknown",
           "image": "https://www.designboom.com/twitterimages/uploads/2022/07/outask-telescopic-lantern-designboom-fb.jpg",
@@ -30801,17 +30798,19 @@
           "innovation": 9,
           "relevance": 10,
           "tags": [
+            "camping",
+            "multifunctional",
+            "innovative",
+            "outdoor",
             "adapt",
-            "deepseek_search_agent",
-            "editorial_main",
-            "氛围灯"
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "394676bd2ef5",
           "title": "abct + inossidabile by knindustrie",
           "category": "创意厨具",
-          "summary": "模块化厨具概念新颖，具备高频使用属性，但功能细节和价格尚未明确，影响普适性和即时理解。",
+          "summary": "模块化厨具具备一定实用性，但需求频次中等，打击面偏窄，功能设计创新但可能存在操作复杂性，价格未知但高端定位可能抑制普及，3秒理解需辅助说明，情绪价值体现在设计感。",
           "score": 75,
           "price_gate": "unknown",
           "image": "",
@@ -30836,9 +30835,10 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "adapt",
-            "editorial_main",
             "创意厨具",
+            "模块化设计",
+            "厨房工具",
+            "adapt",
             "deepseek_search_agent"
           ]
         },
@@ -30846,7 +30846,7 @@
           "id": "81da08fea9c5",
           "title": "AVEDA x 3.1 Phillip Lim Holiday Collaboration – Packaging Of The...",
           "category": "创意礼盒",
-          "summary": "环保创意礼盒，价格高但实用性有限，高频度低。",
+          "summary": "结合环保材料与艺术展示，功能与情绪价值兼备，但季节性明显，受众偏窄。",
           "score": 70,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30870,9 +30870,9 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "环保",
-            "可复用包装",
-            "艺术展示",
+            "环保包装",
+            "联名礼盒",
+            "创意设计",
             "deepseek_search_agent",
             "packaging_specialist"
           ]
@@ -30881,7 +30881,7 @@
           "id": "1421a1249d95",
           "title": "黑格HeyGears G1桌面UV... | 广州多巴胺设计_多巴胺设计-站酷ZCOOL",
           "category": "创意桌搭",
-          "summary": "桌面UV打印机技术先进，功能强大，但针对专业创作者和小型企业，使用频率和受众范围有限，价格可能较高，需一定专业知识才能理解。",
+          "summary": "桌面UV打印机技术先进，精度高，面向创作者和小企业，实用性强，但目标用户窄，非高频需求，功能上无明显短板，价格远超35元，概念需一定理解门槛，作为创意桌搭有情绪价值。",
           "score": 74,
           "price_gate": "unknown",
           "image": "",
@@ -30906,8 +30906,8 @@
           "relevance": 9,
           "tags": [
             "创意桌搭",
-            "桌面打印机",
-            "创作者工具",
+            "UV打印机",
+            "桌面打印",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -30916,7 +30916,7 @@
           "id": "80a19a9a12f9",
           "title": "🏮灯笼高高挂起.月饼香袭人来—高档中秋月饼礼盒_唐思工艺品-站酷ZCOOL",
           "category": "中秋礼盒",
-          "summary": "产品以灯笼造型结合中秋主题，视觉辨识度高，礼盒功能完整，售价预期高于35元，满足节日送礼需求。但季节性极强，使用频率低。",
+          "summary": "灯笼造型中秋礼盒，创意明确，视觉冲击力强，适合节日送礼，但使用频率低且季节性明显，实用性和广谱性中等。",
           "score": 72,
           "price_gate": "likely_over_35",
           "image": "https://img.zcool.cn/community/031ycydw2vjdkztxalmghy53637.png?k=55c1e0d3dce51090a32bbfd750d34522&t=6a735e00",
@@ -30941,19 +30941,17 @@
           "innovation": 7,
           "relevance": 10,
           "tags": [
+            "trend",
+            "design_community",
             "中秋礼盒",
-            "灯笼造型",
-            "礼品设计",
-            "节日送礼",
-            "deepseek_search_agent",
-            "design_community"
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "72f99062e682",
           "title": "MUJI×上海自然博物馆新年礼盒：一份源于自然的心意 - 数英",
           "category": "创意礼盒",
-          "summary": "MUJI与上海自然博物馆的联名扩香晶石礼盒，具备品牌背书和独特设计，功能上作为香薰成立，情绪价值丰富，但实用性一般，需求频次低，目标人群较窄。",
+          "summary": "联名礼盒具备情感叙事，但实用性和频次一般，价格有支撑力。",
           "score": 72,
           "price_gate": "likely_over_35",
           "image": "https://file.digitaling.com/eImg/cover/20260202/20260202111113_25279.png",
@@ -30977,10 +30975,10 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "创意礼盒",
             "联名",
-            "扩香晶石",
-            "自然博物馆",
+            "礼盒",
+            "香薰",
+            "文创",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -30989,7 +30987,7 @@
           "id": "3a9ef3e7fd7b",
           "title": "6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡",
           "category": "充电宝",
-          "summary": "多合一设计实用性强，充电宝为高频需求，适用于广泛用户，但功能复杂存在潜在短板。标题清晰，售价预计超过35元。",
+          "summary": "多合一充电宝集成无线充、AC插头、双端线、智能手表充电等功能，解决外出充电痛点，实用性和频率需求高；功能覆盖广，但部分用户可能觉得复杂，功能无明显短板；预估售价大概率超35元，3秒看懂主要卖点，情绪价值体现在便携和一体化便利。",
           "score": 86,
           "price_gate": "unknown",
           "image": "",
@@ -31014,9 +31012,9 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "trend",
-            "market_signal_strong",
             "deepseek_search_agent",
+            "market_signal_strong",
+            "trend",
             "充电宝"
           ]
         },
@@ -31024,7 +31022,7 @@
           "id": "617039ec18ec",
           "title": "JOYROOM PODIX PR70: 240W Power Bank with Dual... — Kickstarter",
           "category": "充电宝",
-          "summary": "产品功能强大，240W输出和双屏显示具有创新性，但高功率和潜在高价格限制了大众市场吸引力，实用性和高频需求虽高，但打击面偏窄。",
+          "summary": "240W大功率、内置双线及双屏显示，功能强大且差异化明显，满足高频充电需求，但高端定位可能使受众相对有限。",
           "score": 85,
           "price_gate": "unknown",
           "image": "",
@@ -31051,15 +31049,15 @@
           "tags": [
             "trend",
             "market_signal_strong",
-            "deepseek_search_agent",
-            "充电宝"
+            "充电宝",
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "c55baaff08dc",
           "title": "Coulf DeskDock 250W GaN Charger with 4 Retractable Cables",
           "category": "创意桌搭",
-          "summary": "集成可伸缩线缆，解决桌面线缆杂乱问题，功能明确，满足高频充电需求。",
+          "summary": "产品以可伸缩线缆管理替代整理器，实用性与高频充电需求结合，但可伸缩线缆耐久性存在短板。售价大概率超过35元，功能清晰，情绪价值体现在创意桌搭场景。",
           "score": 79,
           "price_gate": "unknown",
           "image": "",
@@ -31084,17 +31082,17 @@
           "innovation": 9,
           "relevance": 10,
           "tags": [
-            "创意桌搭",
             "trend",
-            "deepseek_search_agent",
-            "market_signal_strong"
+            "创意桌搭",
+            "market_signal_strong",
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "e9c430451c0f",
           "title": "Music Moon - Winners - Design Intelligence Award (DIA)",
           "category": "中秋礼盒",
-          "summary": "Music Moon中秋礼盒通过声音、灯光和DIY创新解决节日礼品差异化问题，具备获奖背书，具有较强的节日情绪价值和视觉吸引力，但实用性一般且一年一次需求低频。",
+          "summary": "产品通过声音、灯光、DIY方式解决中秋礼盒差异化问题，功能有创新点且具备设计奖背书，但属于节庆礼品，使用频率低，受众有限，价格判断可能较高但需实际验证。",
           "score": 70,
           "price_gate": "likely_over_35",
           "image": "",
@@ -31128,7 +31126,7 @@
           "id": "6e12e1e46827",
           "title": "A Drip-Free World! - Yanko Design",
           "category": "水杯",
-          "summary": "结构创新解决滴漏痛点，实用性强，对咖啡爱好者及办公场景有吸引力；但功能单一，外观上防滴特性不够直观，清洁可能不便，价格未知但设计品有溢价空间。",
+          "summary": "防滴咖啡杯通过结构设计解决桌面被咖啡滴漏弄脏的痛点，功能明确且直观，但需求场景相对有限，价格未明确，整体具备实用性和情绪价值，但市场覆盖面中等。",
           "score": 74,
           "price_gate": "unknown",
           "image": "https://www.yankodesign.com/images/design_news/2013/05/28/drop_01.jpg",
@@ -31155,9 +31153,8 @@
           "relevance": 9,
           "tags": [
             "coffee",
-            "desk",
             "design",
-            "mug",
+            "drip-free",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -31166,7 +31163,7 @@
           "id": "051a3452e2b5",
           "title": "IVYCable Gen2- Magnetic Cable & Power Bank for New iPhone",
           "category": "充电宝",
-          "summary": "二合一设计兼具实用与创新，兼容多设备，市场需求广泛，但功能或受容量限制，价格定位可能偏高。",
+          "summary": "产品将磁吸充电线与充电宝结合，实用性强，兼容多种设备，需求高频。价格预估较高，功能有一定创新，但可能存在容量小等短板。",
           "score": 78,
           "price_gate": "unknown",
           "image": "",
@@ -31191,19 +31188,17 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "2-in-1",
-            "magnetic cable",
-            "power bank",
-            "iPhone",
             "deepseek_search_agent",
-            "market_signal_strong"
+            "market_signal_strong",
+            "trend",
+            "充电宝"
           ]
         },
         {
           "id": "ba135f14ed61",
           "title": "Loupedeck CT Is an All-In-One Hardware Editing Suite",
           "category": "创意桌搭",
-          "summary": "产品功能强大，专业性高，适合特定创意工作者，但大众需求低，非高频，3秒内不易理解，价格较高。",
+          "summary": "专业编辑控制台，功能强大且价格远超35RMB，但针对小众专业用户，大众认知度低，3秒内难以理解其用途。",
           "score": 76,
           "price_gate": "unknown",
           "image": "",
@@ -31227,17 +31222,18 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
+            "创意桌搭",
+            "专业工具",
+            "硬件编辑",
             "deepseek_search_agent",
-            "market_signal_strong",
-            "trend",
-            "创意桌搭"
+            "market_signal_strong"
           ]
         },
         {
           "id": "8ad415b47112",
           "title": "The Chameleon bottle changes its color with the temperature! - Yanko Design",
           "category": "水杯",
-          "summary": "水杯是高频实用品，变色功能直观有趣，但涂料耐久性和食品安全性存疑，整体市场覆盖面广。",
+          "summary": "产品将变色功能融入日常水杯，直观有趣，兼顾实用与情绪价值，但核心饮水功能创新有限。",
           "score": 73,
           "price_gate": "unknown",
           "image": "https://www.yankodesign.com/images/design_news/2018/12/the-chameleon-bottle-changes-its-color-with-the-temperature/chameleon_bottle_1.jpg",
@@ -31249,6 +31245,7 @@
           "action_lane": "适合改造",
           "axes": [
             "功能启发",
+            "情绪启发",
             "视觉启发"
           ],
           "image_state": "已对齐",
@@ -31263,8 +31260,7 @@
           "relevance": 10,
           "tags": [
             "变色水杯",
-            "创意水杯",
-            "互动体验",
+            "趣味水杯",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -31273,7 +31269,7 @@
           "id": "fb01ff30d174",
           "title": "\"Handle\" Light/THE HANDLE LIGHT - PUXIANG",
           "category": "氛围灯",
-          "summary": "产品将门把手与灯联动，有一定交互创新，但实用性依赖于安装场景，需求频次中等，目标人群偏设计爱好者，价格未知但设计品通常较高，3秒内不易理解功能，情绪价值提供趣味体验。",
+          "summary": "门把手联动灯具有交互创新，实用性中等，但使用频次较低；目标人群广泛但非刚需，功能稳定性待验证；预计售价可能超过35元；概念需一定解释，3秒内理解有障碍；情绪价值有限。",
           "score": 73,
           "price_gate": "unknown",
           "image": "",
@@ -31308,7 +31304,7 @@
           "id": "4165a0efa8f7",
           "title": "Chef Station: Prep, Cook, Serve - Elegantly by Tom Palmer ...",
           "category": "创意厨具",
-          "summary": "模块化磁性备餐台融合备餐、烹饪、上菜功能，设计创新，有一定实用性。但概念需解释，3秒内难以直观理解，且目标人群偏家庭烹饪爱好者，普适性有限。价格未知，但创意厨具通常高于35元，存在可能性。",
+          "summary": "模块化设计具备创新性，备餐-烹饪-上菜一体有一定实用性，但可能并非高频使用，且价格不明确，目标用户范围有限。",
           "score": 83,
           "price_gate": "unknown",
           "image": "",
@@ -31333,10 +31329,9 @@
           "innovation": 9,
           "relevance": 9,
           "tags": [
-            "creative kitchenware",
-            "modular design",
-            "magnetic",
-            "meal prep",
+            "创意厨具",
+            "模块化",
+            "磁性",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -31345,7 +31340,7 @@
           "id": "8010f433940d",
           "title": "Capta: Stick it, Lean it, Wrap it, Attach it. by UDS... — Kickstarter",
           "category": "创意桌搭",
-          "summary": "桌面理线是实用需求，功能多样，但竞争激烈，价格优势不明。",
+          "summary": "桌面理线具有实用价值，面向广泛办公人群，功能多样但可能复杂，价格未知但Kickstarter产品通常偏高，概念清晰易懂，情绪价值相对较弱。",
           "score": 75,
           "price_gate": "unknown",
           "image": "",
@@ -31370,10 +31365,11 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "trend",
-            "market_signal_strong",
             "创意桌搭",
-            "deepseek_search_agent"
+            "桌面理线",
+            "办公整理",
+            "deepseek_search_agent",
+            "market_signal_strong"
           ]
         }
       ],
@@ -32458,7 +32454,7 @@
           "id": "2e1d8adb8e66",
           "title": "Angry Miao | AM Emptiness Phone Case :: Behance",
           "category": "手机壳",
-          "summary": "手机壳是高需求品类，但该产品针对iPhone 15 Pro用户，受众较窄。设计保护四角与摄像头，功能明确，但价格可能偏高。品牌设计感强，情绪价值有一定体现，但3秒内理解需要一定门槛。",
+          "summary": "高端设计手机壳，保护功能扎实，但受众窄，价格高。",
           "score": 80,
           "price_gate": "unknown",
           "image": "",
@@ -33487,7 +33483,7 @@
           "id": "bbfa4d5b69fd",
           "title": "Mid-Autumn Festival Campaign 2011 (7) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
           "category": "中秋礼盒",
-          "summary": "该产品作为中秋礼盒设计，具备月饼收纳与灯笼转化的双重功能，结构新颖，但作为商品，实用性受限于节日场景，且设计复杂度可能影响生产与使用体验。",
+          "summary": "结构创新，月饼盒可展开成梯田展示并转化为灯笼，功能成立且具情绪价值，但需求季节性强、非高频，且结构复杂度可能影响生产与成本。",
           "score": 72,
           "price_gate": "likely_over_35",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
@@ -33514,8 +33510,9 @@
           "relevance": 10,
           "tags": [
             "中秋礼盒",
-            "结构创新",
-            "设计转化",
+            "创意包装",
+            "设计感",
+            "节日礼物",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -33524,7 +33521,7 @@
           "id": "be6075965394",
           "title": "Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
           "category": "中秋礼盒",
-          "summary": "产品将月饼盒与灯笼结合，结构创新，兼具实用性与节日氛围，但受限于中秋场景，需求频率和受众面较窄。",
+          "summary": "月饼盒可变形为灯笼，结构创新，功能实用，兼具美学与情绪价值，但中秋礼盒属节令性消费，频率较低。",
           "score": 72,
           "price_gate": "likely_over_35",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
@@ -33550,10 +33547,10 @@
           "innovation": 9,
           "relevance": 10,
           "tags": [
-            "中秋礼盒",
-            "创意设计",
-            "可变灯笼",
-            "节日礼盒",
+            "mid-autumn",
+            "mooncake box",
+            "lantern",
+            "creative packaging",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -33562,7 +33559,7 @@
           "id": "571729896d9f",
           "title": "情有独粽｜端午礼盒设计 :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
           "category": "端午礼盒",
-          "summary": "包装结构创新具有节日趣味，但实用性一般，需求低频，市场接受度存疑。",
+          "summary": "端午礼盒属于节日限定产品，使用频率低，实用性依赖送礼场景，但包装结构创新和情绪价值突出，价格符合预期。",
           "score": 70,
           "price_gate": "likely_over_35",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
@@ -33588,10 +33585,10 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
+            "design_community",
+            "trend",
             "端午礼盒",
-            "创意包装",
-            "deepseek_search_agent",
-            "design_community"
+            "deepseek_search_agent"
           ]
         },
         {
@@ -33824,7 +33821,7 @@
           "id": "f271df60d403",
           "title": "Auge Light - Fila Night Mood Light :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ado",
           "category": "氛围灯",
-          "summary": "产品设计创新，交互方式独特，但作为氛围灯实用性和需求频率一般，价格可能达标，3秒内可理解其核心玩法。",
+          "summary": "产品具有明确的磁吸交互创新，功能成立后能提供情绪价值，但实用性一般，目标受众较窄，3秒内理解交互机制有难度，价格未知但设计类产品通常溢价。",
           "score": 72,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/30fee3157965717.63a016743f142.jpg",
@@ -33851,7 +33848,8 @@
           "tags": [
             "氛围灯",
             "磁吸",
-            "创意设计",
+            "柔性灯丝",
+            "交互设计",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -34880,7 +34878,7 @@
           "id": "5ebfe7fe9ee2",
           "title": "Lighthouse - Wireless charging lamp :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad",
           "category": "创意桌搭",
-          "summary": "将无线充电与照明功能整合，满足桌面高频需求，概念清晰易懂，但功能深度可能不足，价格可能偏高。",
+          "summary": "将台灯与无线充电器结合，解决桌面照明与充电双重需求，功能实用且高频，造型小巧有辨识度，易理解。价格可能高于35元，但具体未知，存在不确定性。",
           "score": 84,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d9c2d789502607.5e05b86f395a9.jpg",
@@ -34905,9 +34903,10 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "无线充电",
-            "台灯",
             "创意桌搭",
+            "无线充电",
+            "桌面照明",
+            "多功能家居",
             "adapt",
             "deepseek_search_agent"
           ]
@@ -35303,7 +35302,7 @@
           "id": "0a15c1a68972",
           "title": "Multix All-in-One power bank :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, In",
           "category": "充电宝",
-          "summary": "充电宝本身高频实用，多功能集成提升实用性，但模块化设计可能影响普及度，售价预计超35元，功能直观需一定理解成本，情绪价值一般。",
+          "summary": "多功能集成提升实用性，充电宝属高频刚需，覆盖面广但模块化可能增加操作复杂度，功能存在短板风险。预估售价可能超35元，3秒内能理解核心充电功能，设计感提供情绪价值。",
           "score": 83,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/de6b6c83194945.675e5b1ada9b8.png",
@@ -35328,12 +35327,12 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
+            "modular",
+            "magnetic",
+            "wireless charging",
+            "portable power",
             "adapt",
-            "充电宝",
-            "模块化",
-            "无线充电",
-            "deepseek_search_agent",
-            "design_community"
+            "deepseek_search_agent"
           ]
         },
         {
@@ -36239,7 +36238,7 @@
           "id": "c8579eaa2a11",
           "title": "The modular bottle - 3D Motion Product Animation CGI :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pint",
           "category": "水杯",
-          "summary": "模块化水杯设计概念，结构创新但尚不成熟，适用面较广，但价格与实用性有待验证。",
+          "summary": "模块化水杯设计新颖，水杯作为日常高频实用产品，覆盖人群广泛。功能上可能存在结构复杂导致的可靠性风险，但基本饮水功能成立。价格未知，预估可能偏高。3秒内可识别为水杯，但模块化概念需进一步理解。情绪价值未被突出，整体评分中等偏上。",
           "score": 82,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9c8737207624953.66e0d4bb9eafc.png",
@@ -36264,18 +36263,18 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "设计社区",
-            "模块化水杯",
-            "3D动画",
-            "deepseek_search_agent",
-            "design_community"
+            "design_community",
+            "trend",
+            "水杯",
+            "modular_design",
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "014f915f9677",
           "title": "90 DEGREE INSTICNT :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
           "category": "手机壳",
-          "summary": "该产品将手机壳与隐藏三脚架和摄像机手柄功能结合，对摄影爱好者有实用价值，但目标用户群体较窄；功能创新但可能增加体积，影响普通用户日常使用；预估售价可能大于35元，但3秒内不易理解其核心卖点；设计感带来一定情绪价值。",
+          "summary": "将三脚架和手柄集成于手机壳，功能创新实用，但目标用户偏摄影爱好者，日常使用频率较低，且形态不够直观。",
           "score": 80,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b6c4e8180578159.650d20607c25a.jpg",
@@ -36300,17 +36299,16 @@
           "relevance": 10,
           "tags": [
             "design_community",
-            "创意手机壳",
-            "摄影配件",
-            "deepseek_search_agent",
-            "trend"
+            "trend",
+            "手机壳",
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "7cc6444a313d",
           "title": "Aroma Light : Multi-sensory mood lighting :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Faceb",
           "category": "氛围灯",
-          "summary": "结合LED照明与气味扩散，形成多感官体验，功能完整且易于理解。但作为氛围灯，非高频刚需，受众相对小众，价格预估偏高但需确认。",
+          "summary": "产品将氛围灯与香薰结合，概念新颖，功能明确。但目标用户偏小众，需求频率一般，售价未知但设计类产品可能高于35元。功能上灯光与气味融合有一定短板，整体可快速理解，情绪价值较高。",
           "score": 70,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/64f21344983509.58241dc2ebcbe.jpg",
@@ -36335,12 +36333,11 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
+            "design_community",
+            "trend",
             "氛围灯",
-            "多感官",
             "香薰",
-            "情绪照明",
-            "deepseek_search_agent",
-            "design_community"
+            "deepseek_search_agent"
           ]
         },
         {
@@ -36738,7 +36735,7 @@
           "id": "daca72380bf3",
           "title": "3D printed knife block :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
           "category": "创意厨具",
-          "summary": "3D打印刀架以无缝隙设计解决传统木刀架易滋生虫害的痛点，功能创新且实用；刀架属于厨房高频使用工具，但目标人群和场景相对特定，普及度中等；售价受3D打印成本影响可能偏高，但价格不明确；视觉上刀架形态易于理解，但页面标题混乱可能影响直观认知；设计感带来一定情绪价值，但整体仍以功能为主。",
+          "summary": "3D打印刀架解决传统木刀架虫害问题，设计创新，但属小众创意厨具，实用性一般，高频需求不高，功能无明显短板，售价可能较高，外观易懂，情绪价值体现在创新材质与结构设计。",
           "score": 77,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9572b5174753299.64a7b5f06a99a.jpg",
@@ -36763,19 +36760,17 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "3D printed",
-            "knife block",
-            "creative kitchen",
-            "design",
-            "deepseek_search_agent",
-            "design_community"
+            "trend",
+            "design_community",
+            "创意厨具",
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "b81c65240c0d",
           "title": "PowerPlant :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
           "category": "充电宝",
-          "summary": "充电宝为高频实用产品，可更换电池设计解决续航焦虑，LCD显示提升体验，通用性强，覆盖广泛人群，预估售价通常高于35元，功能明确易理解，可叠加户外、应急等情绪价值。",
+          "summary": "可更换电池的通用便携充电宝，实用性强，高频需求，功能明确，LCD显示增加便利性，潜在市场广泛。",
           "score": 77,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2354f378324717.5ca1feceae2fb.jpg",
@@ -36800,8 +36795,7 @@
           "relevance": 9,
           "tags": [
             "充电宝",
-            "可更换电池",
-            "便携充电",
+            "trend",
             "deepseek_search_agent",
             "design_community"
           ]
@@ -36810,7 +36804,7 @@
           "id": "5716802c099c",
           "title": "ION8 PRIMO – Modular Water Bottle Design :: Behance",
           "category": "水杯",
-          "summary": "模块化水杯设计，实用性和灵活性高，满足高频饮水需求，大众接受度较好。功能上无明显短板，但模块结构可能增加复杂性。价格预估可能高于35元，但需市场验证。3秒内能理解模块化概念，但具体细节需进一步说明。情绪价值体现在设计感和个性化，但需建立在功能可靠基础上。",
+          "summary": "模块化水杯设计兼顾实用性与灵活性，满足日常通勤和户外场景，高频使用且受众广泛。功能设计合理，但模块化结构可能增加清洁复杂度。价格未知，但设计感可能支撑溢价。概念直观，易于理解。情绪价值体现在环保、个性化和设计美感。",
           "score": 73,
           "price_gate": "unknown",
           "image": "",
@@ -36835,10 +36829,12 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "design_community",
-            "trend",
-            "水杯",
-            "deepseek_search_agent"
+            "modular",
+            "water bottle",
+            "design",
+            "sustainability",
+            "deepseek_search_agent",
+            "design_community"
           ]
         },
         {
@@ -59368,7 +59364,7 @@
           "id": "d1358f98f303",
           "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
           "category": "创意礼盒",
-          "summary": "折叠礼盒一秒成型和打平，使用便捷，适用于高档礼品包装，价格可能超过35元，功能清晰易懂，且兼具创意和情绪价值。",
+          "summary": "折叠盒设计实用，节省存储空间，成型快捷，适用于高档礼品，功能明确且展示直观。",
           "score": 72,
           "price_gate": "likely_over_35",
           "image": "",
@@ -59394,9 +59390,10 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
+            "折叠盒定制",
             "创意礼盒",
-            "折叠盒",
-            "定制包装",
+            "包装盒定制",
+            "结构创新",
             "social_public_index",
             "白名单来源"
           ]
@@ -63655,7 +63652,7 @@
       "id": "3a9ef3e7fd7b",
       "title": "6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡",
       "category": "充电宝",
-      "summary": "多合一设计实用性强，充电宝为高频需求，适用于广泛用户，但功能复杂存在潜在短板。标题清晰，售价预计超过35元。",
+      "summary": "多合一充电宝集成无线充、AC插头、双端线、智能手表充电等功能，解决外出充电痛点，实用性和频率需求高；功能覆盖广，但部分用户可能觉得复杂，功能无明显短板；预估售价大概率超35元，3秒看懂主要卖点，情绪价值体现在便携和一体化便利。",
       "score": 86,
       "price_gate": "unknown",
       "image": "",
@@ -63680,9 +63677,9 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "trend",
-        "market_signal_strong",
         "deepseek_search_agent",
+        "market_signal_strong",
+        "trend",
         "充电宝"
       ]
     },
@@ -64179,7 +64176,7 @@
       "id": "617039ec18ec",
       "title": "JOYROOM PODIX PR70: 240W Power Bank with Dual... — Kickstarter",
       "category": "充电宝",
-      "summary": "产品功能强大，240W输出和双屏显示具有创新性，但高功率和潜在高价格限制了大众市场吸引力，实用性和高频需求虽高，但打击面偏窄。",
+      "summary": "240W大功率、内置双线及双屏显示，功能强大且差异化明显，满足高频充电需求，但高端定位可能使受众相对有限。",
       "score": 85,
       "price_gate": "unknown",
       "image": "",
@@ -64206,8 +64203,8 @@
       "tags": [
         "trend",
         "market_signal_strong",
-        "deepseek_search_agent",
-        "充电宝"
+        "充电宝",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -65482,7 +65479,7 @@
       "id": "5ebfe7fe9ee2",
       "title": "Lighthouse - Wireless charging lamp :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad",
       "category": "创意桌搭",
-      "summary": "将无线充电与照明功能整合，满足桌面高频需求，概念清晰易懂，但功能深度可能不足，价格可能偏高。",
+      "summary": "将台灯与无线充电器结合，解决桌面照明与充电双重需求，功能实用且高频，造型小巧有辨识度，易理解。价格可能高于35元，但具体未知，存在不确定性。",
       "score": 84,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d9c2d789502607.5e05b86f395a9.jpg",
@@ -65507,9 +65504,10 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "无线充电",
-        "台灯",
         "创意桌搭",
+        "无线充电",
+        "桌面照明",
+        "多功能家居",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -66720,7 +66718,7 @@
       "id": "c3eab9402725",
       "title": "Nosh One Robot Chef | Uncrate",
       "category": "创意厨具",
-      "summary": "自动烹饪500+食谱，高频刚需，功能强大但价格偏高，3秒认知度一般，情绪价值高。",
+      "summary": "产品功能创新且强大，但价格可能较高，目标用户群体有限，日常使用频率可能不如普通厨具。",
       "score": 83,
       "price_gate": "unknown",
       "image": "https://uncrate.com/p/2026/03/nosh_one_robot_chef_2.jpg",
@@ -66744,9 +66742,10 @@
       "innovation": 10,
       "relevance": 10,
       "tags": [
-        "buy_sample",
-        "market_signal_strong",
         "创意厨具",
+        "智能家居",
+        "自动化烹饪",
+        "buy_sample",
         "deepseek_search_agent"
       ]
     },
@@ -66754,7 +66753,7 @@
       "id": "4165a0efa8f7",
       "title": "Chef Station: Prep, Cook, Serve - Elegantly by Tom Palmer ...",
       "category": "创意厨具",
-      "summary": "模块化磁性备餐台融合备餐、烹饪、上菜功能，设计创新，有一定实用性。但概念需解释，3秒内难以直观理解，且目标人群偏家庭烹饪爱好者，普适性有限。价格未知，但创意厨具通常高于35元，存在可能性。",
+      "summary": "模块化设计具备创新性，备餐-烹饪-上菜一体有一定实用性，但可能并非高频使用，且价格不明确，目标用户范围有限。",
       "score": 83,
       "price_gate": "unknown",
       "image": "",
@@ -66779,10 +66778,9 @@
       "innovation": 9,
       "relevance": 9,
       "tags": [
-        "creative kitchenware",
-        "modular design",
-        "magnetic",
-        "meal prep",
+        "创意厨具",
+        "模块化",
+        "磁性",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -67053,7 +67051,7 @@
       "id": "0a15c1a68972",
       "title": "Multix All-in-One power bank :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, In",
       "category": "充电宝",
-      "summary": "充电宝本身高频实用，多功能集成提升实用性，但模块化设计可能影响普及度，售价预计超35元，功能直观需一定理解成本，情绪价值一般。",
+      "summary": "多功能集成提升实用性，充电宝属高频刚需，覆盖面广但模块化可能增加操作复杂度，功能存在短板风险。预估售价可能超35元，3秒内能理解核心充电功能，设计感提供情绪价值。",
       "score": 83,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/de6b6c83194945.675e5b1ada9b8.png",
@@ -67078,12 +67076,12 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
+        "modular",
+        "magnetic",
+        "wireless charging",
+        "portable power",
         "adapt",
-        "充电宝",
-        "模块化",
-        "无线充电",
-        "deepseek_search_agent",
-        "design_community"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -68750,7 +68748,7 @@
       "id": "18242d4c5ead",
       "title": "LARQ - by LARQ / Core77 Design Awards",
       "category": "水杯",
-      "summary": "自洁水瓶将净水功能与高频饮水场景结合，UV-C技术有明确创新点，易于理解，且预估售价高于35元，功能成立后具备科技感和环保情绪价值。",
+      "summary": "自洁水瓶通过UV-C LED技术实现即时净水和自我清洁，解决户外饮水卫生痛点，实用性强。喝水属于高频需求，但自洁功能依赖特定场景，普及度有限。水杯市场广泛，但高售价可能限制受众。功能明确，3秒易懂，科技感带来情绪价值。",
       "score": 82,
       "price_gate": "likely_over_35",
       "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/887754_lead_400_85125__sharing.jpg",
@@ -68774,10 +68772,9 @@
       "innovation": 9,
       "relevance": 9,
       "tags": [
-        "self-cleaning bottle",
-        "UV-C LED",
-        "smart hydration",
-        "water bottle",
+        "环保",
+        "科技创新",
+        "健康饮水",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -69239,7 +69236,7 @@
       "id": "c8579eaa2a11",
       "title": "The modular bottle - 3D Motion Product Animation CGI :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pint",
       "category": "水杯",
-      "summary": "模块化水杯设计概念，结构创新但尚不成熟，适用面较广，但价格与实用性有待验证。",
+      "summary": "模块化水杯设计新颖，水杯作为日常高频实用产品，覆盖人群广泛。功能上可能存在结构复杂导致的可靠性风险，但基本饮水功能成立。价格未知，预估可能偏高。3秒内可识别为水杯，但模块化概念需进一步理解。情绪价值未被突出，整体评分中等偏上。",
       "score": 82,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9c8737207624953.66e0d4bb9eafc.png",
@@ -69264,11 +69261,11 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "设计社区",
-        "模块化水杯",
-        "3D动画",
-        "deepseek_search_agent",
-        "design_community"
+        "design_community",
+        "trend",
+        "水杯",
+        "modular_design",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -71156,7 +71153,7 @@
       "id": "827365f5d1e6",
       "title": "YEELIGHT CUBE: Customizable ARGB Table Lamp by Yeelight - Indiegogo",
       "category": "氛围灯",
-      "summary": "模块化ARGB台灯功能丰富，但实用性和高频需求一般，价格高于35元，概念较直观但需理解。",
+      "summary": "YEELIGHT CUBE作为氛围灯，具备照明实用性与高使用频率，模块化DIY和游戏/音乐同步功能吸引科技与游戏用户，功能完善无明显短板，价格预计远超35元，产品概念直观易理解，情绪价值依托实际功能，整体市场信号强。",
       "score": 81,
       "price_gate": "unknown",
       "image": "",
@@ -71183,8 +71180,8 @@
       "relevance": 9,
       "tags": [
         "trend",
-        "market_signal_strong",
         "氛围灯",
+        "market_signal_strong",
         "deepseek_search_agent"
       ]
     },
@@ -73313,7 +73310,7 @@
       "id": "2e1d8adb8e66",
       "title": "Angry Miao | AM Emptiness Phone Case :: Behance",
       "category": "手机壳",
-      "summary": "手机壳是高需求品类，但该产品针对iPhone 15 Pro用户，受众较窄。设计保护四角与摄像头，功能明确，但价格可能偏高。品牌设计感强，情绪价值有一定体现，但3秒内理解需要一定门槛。",
+      "summary": "高端设计手机壳，保护功能扎实，但受众窄，价格高。",
       "score": 80,
       "price_gate": "unknown",
       "image": "",
@@ -73347,7 +73344,7 @@
       "id": "9870cca4d8de",
       "title": "iF Design - Mi LED Desk Lamp",
       "category": "氛围灯",
-      "summary": "该产品为小米LED台灯，获得iF设计奖，功能实用：无频闪、可调亮度和色温，单旋钮操作简单，外观简约，适用家庭和办公场景，价格预计超35元，满足标准。",
+      "summary": "小米LED台灯具备实用功能，价格超过35元，设计简洁易于理解，功能创新且无频闪，满足日常照明需求并兼具氛围感。",
       "score": 80,
       "price_gate": "likely_over_35",
       "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
@@ -73373,10 +73370,9 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
-        "护眼",
-        "无频闪",
-        "智能照明",
-        "设计奖",
+        "智能台灯",
+        "氛围灯",
+        "小米生态链",
         "adapt",
         "award_gallery"
       ]
@@ -73385,7 +73381,7 @@
       "id": "e18da19bc071",
       "title": "iF Design - MUJI LED Desk Light",
       "category": "氛围灯",
-      "summary": "MUJI LED台灯以导光板实现均匀平面发光，消除多重阴影，兼具便携性和设计感，实用性高。价格预计超过35元，功能明确，品牌情绪价值强。但市场竞争激烈，需要突出光学创新和便携优势。",
+      "summary": "MUJI品牌台灯具备实用性和便携性，平面发光消除阴影是亮点，但作为氛围灯使用频率中等，价格超过35元，整体判断可行。",
       "score": 80,
       "price_gate": "likely_over_35",
       "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
@@ -73411,9 +73407,8 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "muji",
-        "led_desk_lamp",
         "award_gallery",
+        "氛围灯",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -73422,7 +73417,7 @@
       "id": "c36453183477",
       "title": "Everdure 4K木炭烤架 | Uncrate",
       "category": "创意厨具",
-      "summary": "功能创新全面，但定位高端、受众较窄，价格远超35元，实用性高但使用频率一般，情绪价值突出。",
+      "summary": "集快速点火、蓝牙控温于一体，功能创新且实用，但定位高端，受众偏窄。",
       "score": 80,
       "price_gate": "unknown",
       "image": "https://uncrate.com/p/2018/12/everdure-grill1.jpg",
@@ -73446,10 +73441,9 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
-        "创意厨具",
-        "智能家居",
-        "高端烧烤",
-        "蓝牙控温",
+        "智能厨具",
+        "户外烧烤",
+        "便携烤架",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -73950,7 +73944,7 @@
       "id": "014f915f9677",
       "title": "90 DEGREE INSTICNT :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
       "category": "手机壳",
-      "summary": "该产品将手机壳与隐藏三脚架和摄像机手柄功能结合，对摄影爱好者有实用价值，但目标用户群体较窄；功能创新但可能增加体积，影响普通用户日常使用；预估售价可能大于35元，但3秒内不易理解其核心卖点；设计感带来一定情绪价值。",
+      "summary": "将三脚架和手柄集成于手机壳，功能创新实用，但目标用户偏摄影爱好者，日常使用频率较低，且形态不够直观。",
       "score": 80,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b6c4e8180578159.650d20607c25a.jpg",
@@ -73975,10 +73969,9 @@
       "relevance": 10,
       "tags": [
         "design_community",
-        "创意手机壳",
-        "摄影配件",
-        "deepseek_search_agent",
-        "trend"
+        "trend",
+        "手机壳",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -76294,7 +76287,7 @@
       "id": "c55baaff08dc",
       "title": "Coulf DeskDock 250W GaN Charger with 4 Retractable Cables",
       "category": "创意桌搭",
-      "summary": "集成可伸缩线缆，解决桌面线缆杂乱问题，功能明确，满足高频充电需求。",
+      "summary": "产品以可伸缩线缆管理替代整理器，实用性与高频充电需求结合，但可伸缩线缆耐久性存在短板。售价大概率超过35元，功能清晰，情绪价值体现在创意桌搭场景。",
       "score": 79,
       "price_gate": "unknown",
       "image": "",
@@ -76319,17 +76312,17 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
-        "创意桌搭",
         "trend",
-        "deepseek_search_agent",
-        "market_signal_strong"
+        "创意桌搭",
+        "market_signal_strong",
+        "deepseek_search_agent"
       ]
     },
     {
       "id": "0d7df0ccfc52",
       "title": "Red Dot Design Award: IH Table Cooker",
       "category": "创意厨具",
-      "summary": "移动式双灶电磁炉解决了传统灶台位置固定的痛点，设计感强且有红点奖背书，但使用场景偏特定，对普通家庭可能并非刚需，且价格较高。",
+      "summary": "产品具有明确的结构创新，移动式双灶设计解决户外或餐桌烹饪需求，实用性强；但适用场景偏特定，大众需求频率中等。红点奖加持提升情绪价值，价格远高于35元，功能集成度高。",
       "score": 79,
       "price_gate": "likely_over_35",
       "image": "",
@@ -76355,11 +76348,10 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "红点奖",
-        "移动电磁炉",
-        "双灶",
         "adapt",
-        "award_gallery"
+        "award_gallery",
+        "deepseek_search_agent",
+        "创意厨具"
       ]
     },
     {
@@ -80344,7 +80336,7 @@
       "id": "71ff5d5baefc",
       "title": "Red Dot Design Award: NINJA PILLOW JACKET",
       "category": "冲锋衣",
-      "summary": "功能性极强，集成多种实用设计，适合旅行人群，但大众覆盖有限。",
+      "summary": "集成多种旅行功能，实用性和创新性强，适合旅行场景，价格空间大，但大众需求频率一般。",
       "score": 78,
       "price_gate": "likely_over_35",
       "image": "",
@@ -80370,16 +80362,16 @@
       "relevance": 10,
       "tags": [
         "award_gallery",
-        "deepseek_search_agent",
         "trend",
-        "冲锋衣"
+        "冲锋衣",
+        "deepseek_search_agent"
       ]
     },
     {
       "id": "051a3452e2b5",
       "title": "IVYCable Gen2- Magnetic Cable & Power Bank for New iPhone",
       "category": "充电宝",
-      "summary": "二合一设计兼具实用与创新，兼容多设备，市场需求广泛，但功能或受容量限制，价格定位可能偏高。",
+      "summary": "产品将磁吸充电线与充电宝结合，实用性强，兼容多种设备，需求高频。价格预估较高，功能有一定创新，但可能存在容量小等短板。",
       "score": 78,
       "price_gate": "unknown",
       "image": "",
@@ -80404,19 +80396,17 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "2-in-1",
-        "magnetic cable",
-        "power bank",
-        "iPhone",
         "deepseek_search_agent",
-        "market_signal_strong"
+        "market_signal_strong",
+        "trend",
+        "充电宝"
       ]
     },
     {
       "id": "2fb63addd882",
       "title": "Red Dot Design Award: X-BIONIC® INSTRUCTOR 4.0 JACKET",
       "category": "冲锋衣",
-      "summary": "产品功能明确且技术含量高，但属于专业运动装备，目标用户群较窄，需求频率低。价格高但利润空间大，设计奖项加持提升情绪价值。",
+      "summary": "产品功能强大，适合专业运动场景，但价格高且受众窄，非高频需求，普通消费者难以快速理解其科技价值。",
       "score": 78,
       "price_gate": "likely_over_35",
       "image": "",
@@ -80450,7 +80440,7 @@
       "id": "be0e862cd3e6",
       "title": "Upside-Downside Cup – YD Select YD Select",
       "category": "水杯",
-      "summary": "2合1设计提升实用性，水杯为高频需求，面向大众，但多功能可能牺牲单一便利性。设计直观易理解，且赋予情侣杯、零食搭配等情绪价值。",
+      "summary": "多功能水杯，2合1设计，实用性强，兼顾防尘和零食收纳，但价格未知。",
       "score": 78,
       "price_gate": "unknown",
       "image": "http://shop.yankodesign.com/cdn/shop/products/upside_downside_cup_2_1200x1200.jpg?v=1665880095",
@@ -80477,7 +80467,8 @@
       "tags": [
         "2-in-1",
         "tumbler",
-        "drinkware",
+        "dust cover",
+        "snack container",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -86155,7 +86146,7 @@
       "id": "119e282402c5",
       "title": "Ever wondered how many calories you eat? This smart cutting board tracks your food’s nutritional value - Yanko Design",
       "category": "创意厨具",
-      "summary": "智能砧板将称重与营养计算结合，功能明确，有一定实用性，但目标人群为关注健康饮食的消费者，并非大众刚需。功能复杂度和价格可能成为门槛，但概念易理解，且健康管理情绪价值能吸引特定用户。",
+      "summary": "智能砧板将称重与营养计算结合，功能明确，对健康管理人群有实用价值，易于理解；但目标用户较窄，使用频率依赖用户习惯，且作为概念产品在耐用性和清洗方面存在隐患，情绪价值一般。",
       "score": 77,
       "price_gate": "unknown",
       "image": "https://www.yankodesign.com/images/design_news/2021/04/Nutrio_smart_cutting_board_that_tracks_your_nutrition.jpg",
@@ -86181,8 +86172,7 @@
       "tags": [
         "智能厨具",
         "健康饮食",
-        "科技感",
-        "厨房神器",
+        "营养追踪",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -86191,7 +86181,7 @@
       "id": "ff7c3ceedad7",
       "title": "The Lon:HUB, a Desk-Clinging Power Strip / Charging Station - Core77",
       "category": "创意桌搭",
-      "summary": "桌面夹式充电站解决桌面充电和线缆收纳实际痛点，功能集成度高，人群覆盖面广，且容易理解，但价格未知且外观吸引力不足。",
+      "summary": "产品解决桌面充电与线缆收纳痛点，功能实用，夹式设计易于理解，目标用户为办公/书桌人群，高频且广泛。功能完整，无明显短板，预估售价符合要求。情绪价值一般，但整体竞争力强。",
       "score": 77,
       "price_gate": "unknown",
       "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1550562_lead_400_132706_.jpg",
@@ -86216,10 +86206,10 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "桌面充电",
+        "桌面充电站",
         "插线板",
-        "收纳",
-        "办公桌",
+        "桌面收纳",
+        "无线充电",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -86979,7 +86969,7 @@
       "id": "b81c65240c0d",
       "title": "PowerPlant :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
       "category": "充电宝",
-      "summary": "充电宝为高频实用产品，可更换电池设计解决续航焦虑，LCD显示提升体验，通用性强，覆盖广泛人群，预估售价通常高于35元，功能明确易理解，可叠加户外、应急等情绪价值。",
+      "summary": "可更换电池的通用便携充电宝，实用性强，高频需求，功能明确，LCD显示增加便利性，潜在市场广泛。",
       "score": 77,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2354f378324717.5ca1feceae2fb.jpg",
@@ -87004,8 +86994,7 @@
       "relevance": 9,
       "tags": [
         "充电宝",
-        "可更换电池",
-        "便携充电",
+        "trend",
         "deepseek_search_agent",
         "design_community"
       ]
@@ -87046,7 +87035,7 @@
       "id": "daca72380bf3",
       "title": "3D printed knife block :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
       "category": "创意厨具",
-      "summary": "3D打印刀架以无缝隙设计解决传统木刀架易滋生虫害的痛点，功能创新且实用；刀架属于厨房高频使用工具，但目标人群和场景相对特定，普及度中等；售价受3D打印成本影响可能偏高，但价格不明确；视觉上刀架形态易于理解，但页面标题混乱可能影响直观认知；设计感带来一定情绪价值，但整体仍以功能为主。",
+      "summary": "3D打印刀架解决传统木刀架虫害问题，设计创新，但属小众创意厨具，实用性一般，高频需求不高，功能无明显短板，售价可能较高，外观易懂，情绪价值体现在创新材质与结构设计。",
       "score": 77,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9572b5174753299.64a7b5f06a99a.jpg",
@@ -87071,12 +87060,10 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "3D printed",
-        "knife block",
-        "creative kitchen",
-        "design",
-        "deepseek_search_agent",
-        "design_community"
+        "trend",
+        "design_community",
+        "创意厨具",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -90734,7 +90721,7 @@
       "id": "85c8e81cd186",
       "title": "All-Clad Prep & Cook | Uncrate",
       "category": "创意厨具",
-      "summary": "产品明确整合多种厨房电器功能，实用性强且覆盖高频烹饪场景，品牌溢价可能支撑高售价，但集成设计可能牺牲单项性能，价格未知存风险。",
+      "summary": "多功能集成，实用性强，但使用频率中等；All-Clad品牌溢价高，售价远超35元；产品功能有短板风险，但整体定位清晰。",
       "score": 76,
       "price_gate": "unknown",
       "image": "https://uncrate.com/p/2017/03/all-clad-prep-cook.jpg",
@@ -90758,10 +90745,9 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
-        "创意厨具",
-        "多功能",
-        "集成",
         "buy_sample",
+        "market_signal_strong",
+        "创意厨具",
         "deepseek_search_agent"
       ]
     },
@@ -90769,7 +90755,7 @@
       "id": "ba135f14ed61",
       "title": "Loupedeck CT Is an All-In-One Hardware Editing Suite",
       "category": "创意桌搭",
-      "summary": "产品功能强大，专业性高，适合特定创意工作者，但大众需求低，非高频，3秒内不易理解，价格较高。",
+      "summary": "专业编辑控制台，功能强大且价格远超35RMB，但针对小众专业用户，大众认知度低，3秒内难以理解其用途。",
       "score": 76,
       "price_gate": "unknown",
       "image": "",
@@ -90793,17 +90779,18 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "创意桌搭",
+        "专业工具",
+        "硬件编辑",
         "deepseek_search_agent",
-        "market_signal_strong",
-        "trend",
-        "创意桌搭"
+        "market_signal_strong"
       ]
     },
     {
       "id": "b5aedb74dbee",
       "title": "Red Dot Design Award: Magic Cube",
       "category": "创意厨具",
-      "summary": "燃气灶为厨房高频刚需，模块化设计解决传统灶具笨重和受热不均痛点，红点奖加持提升信任感。但产品概念需一定理解成本，且模块化可能面临安装标准适配问题。",
+      "summary": "产品解决传统灶具痛点，模块化设计明确，实用性高，但购买频率较低，目标用户为家庭厨房使用者。",
       "score": 76,
       "price_gate": "likely_over_35",
       "image": "",
@@ -90828,9 +90815,9 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "red_dot_design_award",
-        "modular_kitchen",
-        "creative_cooktop",
+        "创意厨具",
+        "red_dot设计奖",
+        "模块化燃气灶",
         "adapt",
         "award_gallery"
       ]
@@ -90839,7 +90826,7 @@
       "id": "7fd86bfad3af",
       "title": "MotionLight LED Wall Plate | Automatic Pathway Lighting | Grommet",
       "category": "氛围灯",
-      "summary": "产品功能明确，运动感应自动照明实用性强，适合夜间引导，但需求频率一般，目标人群较广，功能无明显短板，价格可能超过35RMB，3秒可理解，但情绪价值仅体现在安全感和科技感上。",
+      "summary": "MotionLight LED Wall Plate作为运动感应壁灯，夜间自动亮灭，实用性强且高频使用，适用家庭广泛，功能简单易懂。价格可能高于35元，具备基础功能的同时带来安全感等情绪价值。",
       "score": 76,
       "price_gate": "unknown",
       "image": "https://dxzihkgog0d85.cloudfront.net/products/29599/200x200_chsT1motionlight-led-wall-plate.jpg",
@@ -97346,7 +97333,7 @@
       "id": "4c6607966b3b",
       "title": "ouTask telescopic lantern, the ultimate camping light",
       "category": "氛围灯",
-      "summary": "伸缩提灯以三种形态（1米灯杆、台灯、手电筒）覆盖多种露营照明需求，实用性强且功能创新明显，防水便携加分；露营场景属于中频需求，目标人群明确但不算极广，Kickstarter众筹产品价格预计高于35RMB，功能结构一目了然易于理解。风险在于价格可能偏高或市场受众有限。",
+      "summary": "产品功能创新且实用，但使用场景集中在户外露营，属于低频需求，打击面有限。多功能设计可能增加理解成本，3秒内不易直观看出全部形态优势。价格未知，若定价合理可有竞争力。",
       "score": 75,
       "price_gate": "unknown",
       "image": "https://www.designboom.com/twitterimages/uploads/2022/07/outask-telescopic-lantern-designboom-fb.jpg",
@@ -97372,17 +97359,19 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
+        "camping",
+        "multifunctional",
+        "innovative",
+        "outdoor",
         "adapt",
-        "deepseek_search_agent",
-        "editorial_main",
-        "氛围灯"
+        "deepseek_search_agent"
       ]
     },
     {
       "id": "8010f433940d",
       "title": "Capta: Stick it, Lean it, Wrap it, Attach it. by UDS... — Kickstarter",
       "category": "创意桌搭",
-      "summary": "桌面理线是实用需求，功能多样，但竞争激烈，价格优势不明。",
+      "summary": "桌面理线具有实用价值，面向广泛办公人群，功能多样但可能复杂，价格未知但Kickstarter产品通常偏高，概念清晰易懂，情绪价值相对较弱。",
       "score": 75,
       "price_gate": "unknown",
       "image": "",
@@ -97407,17 +97396,18 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "trend",
-        "market_signal_strong",
         "创意桌搭",
-        "deepseek_search_agent"
+        "桌面理线",
+        "办公整理",
+        "deepseek_search_agent",
+        "market_signal_strong"
       ]
     },
     {
       "id": "394676bd2ef5",
       "title": "abct + inossidabile by knindustrie",
       "category": "创意厨具",
-      "summary": "模块化厨具概念新颖，具备高频使用属性，但功能细节和价格尚未明确，影响普适性和即时理解。",
+      "summary": "模块化厨具具备一定实用性，但需求频次中等，打击面偏窄，功能设计创新但可能存在操作复杂性，价格未知但高端定位可能抑制普及，3秒理解需辅助说明，情绪价值体现在设计感。",
       "score": 75,
       "price_gate": "unknown",
       "image": "",
@@ -97442,9 +97432,10 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "adapt",
-        "editorial_main",
         "创意厨具",
+        "模块化设计",
+        "厨房工具",
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -98461,7 +98452,7 @@
       "id": "262e91574ef4",
       "title": "Cutting Edge: Magnetic Knife Rack and Sharpener :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest",
       "category": "创意厨具",
-      "summary": "集成刀架与磨刀器，概念直观，但磨刀需求频次较低，磁吸对刀具材质有限制，功能上可能不够专业。",
+      "summary": "磁性刀架与磨刀器集成交互性强，解决厨房收纳与刀具维护双重痛点，实用性高，使用频率高，目标人群广泛，功能集成无明显短板，概念清晰易懂，且能赋予家庭厨房专业感，具有情绪价值。",
       "score": 75,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/bf8266234852339.68cb65bd7110b.jpg",
@@ -98488,6 +98479,8 @@
       "tags": [
         "创意厨具",
         "设计社区",
+        "厨房收纳",
+        "工具集成",
         "deepseek_search_agent",
         "design_community"
       ]
@@ -102047,7 +102040,7 @@
       "id": "b242470c2934",
       "title": "LG UltraGear GX9 Bendable Gaming Monitor | Uncrate",
       "category": "创意桌搭",
-      "summary": "产品解决平面与曲面显示器的选择困难，技术参数清晰，功能创新，但受众限于高端游戏玩家，更换频率低，市场相对小众。",
+      "summary": "可弯曲显示器解决了平面与曲面选择困难，技术参数领先，实用性强，但目标用户偏游戏玩家，打击面较窄。售价远高于35元，满足价格条件。概念直观易理解。",
       "score": 74,
       "price_gate": "unknown",
       "image": "https://uncrate.com/p/2024/12/lg-bendable-monitor-1.jpg",
@@ -102071,10 +102064,10 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
+        "创意桌搭",
         "可弯曲显示器",
         "OLED",
-        "游戏显示器",
-        "创意桌搭",
+        "5K2K",
         "buy_sample",
         "deepseek_search_agent"
       ]
@@ -102083,7 +102076,7 @@
       "id": "6e12e1e46827",
       "title": "A Drip-Free World! - Yanko Design",
       "category": "水杯",
-      "summary": "结构创新解决滴漏痛点，实用性强，对咖啡爱好者及办公场景有吸引力；但功能单一，外观上防滴特性不够直观，清洁可能不便，价格未知但设计品有溢价空间。",
+      "summary": "防滴咖啡杯通过结构设计解决桌面被咖啡滴漏弄脏的痛点，功能明确且直观，但需求场景相对有限，价格未明确，整体具备实用性和情绪价值，但市场覆盖面中等。",
       "score": 74,
       "price_gate": "unknown",
       "image": "https://www.yankodesign.com/images/design_news/2013/05/28/drop_01.jpg",
@@ -102110,9 +102103,8 @@
       "relevance": 9,
       "tags": [
         "coffee",
-        "desk",
         "design",
-        "mug",
+        "drip-free",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -102121,7 +102113,7 @@
       "id": "1421a1249d95",
       "title": "黑格HeyGears G1桌面UV... | 广州多巴胺设计_多巴胺设计-站酷ZCOOL",
       "category": "创意桌搭",
-      "summary": "桌面UV打印机技术先进，功能强大，但针对专业创作者和小型企业，使用频率和受众范围有限，价格可能较高，需一定专业知识才能理解。",
+      "summary": "桌面UV打印机技术先进，精度高，面向创作者和小企业，实用性强，但目标用户窄，非高频需求，功能上无明显短板，价格远超35元，概念需一定理解门槛，作为创意桌搭有情绪价值。",
       "score": 74,
       "price_gate": "unknown",
       "image": "",
@@ -102146,8 +102138,8 @@
       "relevance": 9,
       "tags": [
         "创意桌搭",
-        "桌面打印机",
-        "创作者工具",
+        "UV打印机",
+        "桌面打印",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -107282,7 +107274,7 @@
       "id": "1a1641c06887",
       "title": "The Nomad Collection: Sleek Power Strips with Plug-In Lamps - Core77",
       "category": "创意桌搭",
-      "summary": "实用性强，满足桌面充电与照明双重需求，铝制外壳耐用且环保，设计感提升情绪价值。",
+      "summary": "插排和灯具组合实用性强，桌面充电照明高频需求，铝制外壳有品质感，模块化设计有创新，但价格未知可能偏高，3秒理解需要一点时间。",
       "score": 73,
       "price_gate": "unknown",
       "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1763322_lead_400_138779_.jpg",
@@ -107294,8 +107286,7 @@
       "action_lane": "适合改造",
       "axes": [
         "功能启发",
-        "结构启发",
-        "视觉启发"
+        "结构启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
@@ -107308,10 +107299,9 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
-        "桌搭",
-        "环保材质",
-        "模块化",
-        "充电照明",
+        "创意桌搭",
+        "电源插排",
+        "模块化设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -107320,7 +107310,7 @@
       "id": "8ad415b47112",
       "title": "The Chameleon bottle changes its color with the temperature! - Yanko Design",
       "category": "水杯",
-      "summary": "水杯是高频实用品，变色功能直观有趣，但涂料耐久性和食品安全性存疑，整体市场覆盖面广。",
+      "summary": "产品将变色功能融入日常水杯，直观有趣，兼顾实用与情绪价值，但核心饮水功能创新有限。",
       "score": 73,
       "price_gate": "unknown",
       "image": "https://www.yankodesign.com/images/design_news/2018/12/the-chameleon-bottle-changes-its-color-with-the-temperature/chameleon_bottle_1.jpg",
@@ -107332,6 +107322,7 @@
       "action_lane": "适合改造",
       "axes": [
         "功能启发",
+        "情绪启发",
         "视觉启发"
       ],
       "image_state": "已对齐",
@@ -107346,8 +107337,7 @@
       "relevance": 10,
       "tags": [
         "变色水杯",
-        "创意水杯",
-        "互动体验",
+        "趣味水杯",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -107356,7 +107346,7 @@
       "id": "91ef0bf9b6f3",
       "title": "Interesting Industrial Design Student Work: The No-Shado Desk Lamp - Core77",
       "category": "氛围灯",
-      "summary": "无影台灯概念解决桌面阴影痛点，实用性较强，桌面照明需求高频且用户广泛。概念设计有创新，功能逻辑成立，但受限于安装方式和概念未量产，实际售价和普及度未知。视觉上概念图直观，结合创意桌搭可提升情绪价值。",
+      "summary": "概念台灯设计新颖，解决阴影问题，但属于概念原型，实用性和量产可行性未验证，市场接受度待定。",
       "score": 73,
       "price_gate": "unknown",
       "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1340454_lead_400_118867_.jpg",
@@ -107367,9 +107357,9 @@
       "source_quality": "premium",
       "action_lane": "方向参考",
       "axes": [
-        "功能启发",
         "结构启发",
-        "情绪启发"
+        "情绪启发",
+        "视觉启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
@@ -107382,9 +107372,7 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "无影灯",
-        "创意台灯",
-        "桌面收纳",
+        "创意桌搭",
         "概念设计",
         "adapt",
         "deepseek_search_agent"
@@ -107394,7 +107382,7 @@
       "id": "c8a769bfcd54",
       "title": "Red Dot Design Award: Prinx-3D Printed Modular Re-entrant structures Lamp",
       "category": "氛围灯",
-      "summary": "设计奖单品，3D打印模块化结构新颖，但实用性一般，概念性强，受众窄，售价可高，但3秒理解困难。",
+      "summary": "模块化3D打印灯，结构创新获红点奖，但实用性一般，高频需求低，概念复杂不易秒懂，价格可能高于35元，情绪价值有限。",
       "score": 73,
       "price_gate": "likely_over_35",
       "image": "",
@@ -107420,7 +107408,9 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
-        "trend",
+        "3D打印",
+        "设计奖",
+        "模块化",
         "氛围灯",
         "award_gallery",
         "deepseek_search_agent"
@@ -107430,7 +107420,7 @@
       "id": "fb01ff30d174",
       "title": "\"Handle\" Light/THE HANDLE LIGHT - PUXIANG",
       "category": "氛围灯",
-      "summary": "产品将门把手与灯联动，有一定交互创新，但实用性依赖于安装场景，需求频次中等，目标人群偏设计爱好者，价格未知但设计品通常较高，3秒内不易理解功能，情绪价值提供趣味体验。",
+      "summary": "门把手联动灯具有交互创新，实用性中等，但使用频次较低；目标人群广泛但非刚需，功能稳定性待验证；预计售价可能超过35元；概念需一定解释，3秒内理解有障碍；情绪价值有限。",
       "score": 73,
       "price_gate": "unknown",
       "image": "",
@@ -107465,7 +107455,7 @@
       "id": "367e9c1a975a",
       "title": "mia schmallenbach: meeting knives",
       "category": "创意厨具",
-      "summary": "嵌套刀具有概念创新性，节省空间且安全，但实际使用便利性存疑，可能影响功能完整性。",
+      "summary": "该产品作为厨房刀具的收纳创新，具有节省空间和美学价值，但实用性不足，取用和清洁不便，且功能短板明显，适合作为概念展示而非量产商品。",
       "score": 73,
       "price_gate": "unknown",
       "image": "",
@@ -107490,11 +107480,12 @@
       "innovation": 9,
       "relevance": 9,
       "tags": [
+        "创意厨具",
+        "概念设计",
+        "节省空间",
+        "嵌套结构",
         "adapt",
-        "creative kitchenware",
-        "editorial",
-        "deepseek_search_agent",
-        "editorial_main"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -108252,7 +108243,7 @@
       "id": "5716802c099c",
       "title": "ION8 PRIMO – Modular Water Bottle Design :: Behance",
       "category": "水杯",
-      "summary": "模块化水杯设计，实用性和灵活性高，满足高频饮水需求，大众接受度较好。功能上无明显短板，但模块结构可能增加复杂性。价格预估可能高于35元，但需市场验证。3秒内能理解模块化概念，但具体细节需进一步说明。情绪价值体现在设计感和个性化，但需建立在功能可靠基础上。",
+      "summary": "模块化水杯设计兼顾实用性与灵活性，满足日常通勤和户外场景，高频使用且受众广泛。功能设计合理，但模块化结构可能增加清洁复杂度。价格未知，但设计感可能支撑溢价。概念直观，易于理解。情绪价值体现在环保、个性化和设计美感。",
       "score": 73,
       "price_gate": "unknown",
       "image": "",
@@ -108277,10 +108268,12 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "design_community",
-        "trend",
-        "水杯",
-        "deepseek_search_agent"
+        "modular",
+        "water bottle",
+        "design",
+        "sustainability",
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -112111,7 +112104,7 @@
       "id": "bbfa4d5b69fd",
       "title": "Mid-Autumn Festival Campaign 2011 (7) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
       "category": "中秋礼盒",
-      "summary": "该产品作为中秋礼盒设计，具备月饼收纳与灯笼转化的双重功能，结构新颖，但作为商品，实用性受限于节日场景，且设计复杂度可能影响生产与使用体验。",
+      "summary": "结构创新，月饼盒可展开成梯田展示并转化为灯笼，功能成立且具情绪价值，但需求季节性强、非高频，且结构复杂度可能影响生产与成本。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
@@ -112138,8 +112131,9 @@
       "relevance": 10,
       "tags": [
         "中秋礼盒",
-        "结构创新",
-        "设计转化",
+        "创意包装",
+        "设计感",
+        "节日礼物",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -112312,7 +112306,7 @@
       "id": "d1358f98f303",
       "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
       "category": "创意礼盒",
-      "summary": "折叠礼盒一秒成型和打平，使用便捷，适用于高档礼品包装，价格可能超过35元，功能清晰易懂，且兼具创意和情绪价值。",
+      "summary": "折叠盒设计实用，节省存储空间，成型快捷，适用于高档礼品，功能明确且展示直观。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "",
@@ -112338,9 +112332,10 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "折叠盒定制",
         "创意礼盒",
-        "折叠盒",
-        "定制包装",
+        "包装盒定制",
+        "结构创新",
         "social_public_index",
         "白名单来源"
       ]
@@ -112349,7 +112344,7 @@
       "id": "a0bf542ac862",
       "title": "Red Dot Design Award: Prelude X Series",
       "category": "充电宝",
-      "summary": "充电宝是高频实用产品，MagSafe双向充电和支架功能使其功能明确，价格可能高于35元，设计奖增强吸引力，但主要面向苹果用户，打击面略窄。",
+      "summary": "充电宝属于日常高频刚需，兼具支架功能和双向充电，实用性强，功能无短板，价格大概率高于35元。但3秒内理解需依赖场景演示，情绪价值主要来自设计奖项背书。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "",
@@ -112385,7 +112380,7 @@
       "id": "3322168ea061",
       "title": "Red Dot Design Award: Nest Utensils",
       "category": "创意厨具",
-      "summary": "堆叠设计有效节省空间，实用性强；厨房工具使用频率高但目标人群较窄；功能完整，设计获奖提升溢价；3秒内可理解堆叠卖点；情绪价值来自设计感和红点奖背书。",
+      "summary": "Nest Utensils五件套通过巧妙堆叠设计节省厨房空间，荣获红点设计奖，功能实用，价格定位高端，能满足追求设计感和整洁厨房的消费者需求，情感价值较高。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "",
@@ -112410,9 +112405,9 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
-        "trend",
         "创意厨具",
         "award_gallery",
+        "trend",
         "deepseek_search_agent"
       ]
     },
@@ -112420,7 +112415,7 @@
       "id": "d54283c3780b",
       "title": "Tim Defleur folds a single steel sheet to form PLI & CO lamp",
       "category": "氛围灯",
-      "summary": "A single steel sheet folds into a lamp, offering functional illumination with innovative material use. It's useful but more decorative, with moderate appeal due to unique design and uncertain pricing.",
+      "summary": "设计感突出，功能基本成立，但受众较窄，实用性一般。",
       "score": 72,
       "price_gate": "unknown",
       "image": "",
@@ -112446,18 +112441,17 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "folded steel",
-        "minimalist design",
-        "ambient lighting",
-        "deepseek_search_agent",
-        "editorial_main"
+        "editorial_main",
+        "trend",
+        "氛围灯",
+        "deepseek_search_agent"
       ]
     },
     {
       "id": "80a19a9a12f9",
       "title": "🏮灯笼高高挂起.月饼香袭人来—高档中秋月饼礼盒_唐思工艺品-站酷ZCOOL",
       "category": "中秋礼盒",
-      "summary": "产品以灯笼造型结合中秋主题，视觉辨识度高，礼盒功能完整，售价预期高于35元，满足节日送礼需求。但季节性极强，使用频率低。",
+      "summary": "灯笼造型中秋礼盒，创意明确，视觉冲击力强，适合节日送礼，但使用频率低且季节性明显，实用性和广谱性中等。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "https://img.zcool.cn/community/031ycydw2vjdkztxalmghy53637.png?k=55c1e0d3dce51090a32bbfd750d34522&t=6a735e00",
@@ -112482,19 +112476,17 @@
       "innovation": 7,
       "relevance": 10,
       "tags": [
+        "trend",
+        "design_community",
         "中秋礼盒",
-        "灯笼造型",
-        "礼品设计",
-        "节日送礼",
-        "deepseek_search_agent",
-        "design_community"
+        "deepseek_search_agent"
       ]
     },
     {
       "id": "72f99062e682",
       "title": "MUJI×上海自然博物馆新年礼盒：一份源于自然的心意 - 数英",
       "category": "创意礼盒",
-      "summary": "MUJI与上海自然博物馆的联名扩香晶石礼盒，具备品牌背书和独特设计，功能上作为香薰成立，情绪价值丰富，但实用性一般，需求频次低，目标人群较窄。",
+      "summary": "联名礼盒具备情感叙事，但实用性和频次一般，价格有支撑力。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "https://file.digitaling.com/eImg/cover/20260202/20260202111113_25279.png",
@@ -112518,10 +112510,10 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "创意礼盒",
         "联名",
-        "扩香晶石",
-        "自然博物馆",
+        "礼盒",
+        "香薰",
+        "文创",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -112662,7 +112654,7 @@
       "id": "be6075965394",
       "title": "Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
       "category": "中秋礼盒",
-      "summary": "产品将月饼盒与灯笼结合，结构创新，兼具实用性与节日氛围，但受限于中秋场景，需求频率和受众面较窄。",
+      "summary": "月饼盒可变形为灯笼，结构创新，功能实用，兼具美学与情绪价值，但中秋礼盒属节令性消费，频率较低。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
@@ -112688,10 +112680,10 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
-        "中秋礼盒",
-        "创意设计",
-        "可变灯笼",
-        "节日礼盒",
+        "mid-autumn",
+        "mooncake box",
+        "lantern",
+        "creative packaging",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -112700,7 +112692,7 @@
       "id": "f271df60d403",
       "title": "Auge Light - Fila Night Mood Light :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ado",
       "category": "氛围灯",
-      "summary": "产品设计创新，交互方式独特，但作为氛围灯实用性和需求频率一般，价格可能达标，3秒内可理解其核心玩法。",
+      "summary": "产品具有明确的磁吸交互创新，功能成立后能提供情绪价值，但实用性一般，目标受众较窄，3秒内理解交互机制有难度，价格未知但设计类产品通常溢价。",
       "score": 72,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/30fee3157965717.63a016743f142.jpg",
@@ -112727,7 +112719,8 @@
       "tags": [
         "氛围灯",
         "磁吸",
-        "创意设计",
+        "柔性灯丝",
+        "交互设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -117365,7 +117358,7 @@
       "id": "2636e045e20a",
       "title": "mario tsai's latest lighting series reflects on traditional chinese lanterns",
       "category": "氛围灯",
-      "summary": "Mario Tsai的donut便携照明单元结合传统灯笼设计，功能完善，可室内外使用，但作为设计师产品，受众较窄，实用性中等。",
+      "summary": "产品具备便携性和室内外切换功能，实用性较好；氛围灯使用场景广，但需求频率中等；设计融合传统灯笼元素，有情绪价值，但功能上可能偏向装饰性，无价格信息导致价格力无法评分。",
       "score": 71,
       "price_gate": "unknown",
       "image": "https://www.designboom.com/twitterimages/dbsub/396449/2017-07-25/img_1_1500953170_c4ca4238a0b923820dcc509a6f75849b.jpg",
@@ -117390,10 +117383,9 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
-        "氛围灯",
         "便携灯",
-        "设计师灯具",
-        "传统灯笼",
+        "氛围灯",
+        "传统设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -117402,7 +117394,7 @@
       "id": "43be6424d49e",
       "title": "Totem Axis | Space-Saving Serving Tray | Grommet",
       "category": "创意厨具",
-      "summary": "旋转三层托盘节省桌面空间，功能明确，实用性强；但适用场景偏聚会备餐，日常高频度一般。",
+      "summary": "3层旋转托盘节省空间，实用性强，操作直观，适用场景广，但使用频率中等，情绪价值一般。",
       "score": 71,
       "price_gate": "unknown",
       "image": "https://dxzihkgog0d85.cloudfront.net/products/74501/200x200_LZ6sptotem-axis.jpg",
@@ -117427,10 +117419,10 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
-        "trend",
-        "创意厨具",
+        "deepseek_search_agent",
         "market_signal_strong",
-        "deepseek_search_agent"
+        "trend",
+        "创意厨具"
       ]
     },
     {
@@ -120671,7 +120663,7 @@
       "id": "81da08fea9c5",
       "title": "AVEDA x 3.1 Phillip Lim Holiday Collaboration – Packaging Of The...",
       "category": "创意礼盒",
-      "summary": "环保创意礼盒，价格高但实用性有限，高频度低。",
+      "summary": "结合环保材料与艺术展示，功能与情绪价值兼备，但季节性明显，受众偏窄。",
       "score": 70,
       "price_gate": "likely_over_35",
       "image": "",
@@ -120695,9 +120687,9 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "环保",
-        "可复用包装",
-        "艺术展示",
+        "环保包装",
+        "联名礼盒",
+        "创意设计",
         "deepseek_search_agent",
         "packaging_specialist"
       ]
@@ -120706,7 +120698,7 @@
       "id": "4ca41bad662e",
       "title": "Memo-Blocks by Dave Hakkens",
       "category": "创意桌搭",
-      "summary": "可擦写备忘积木实用环保，替代便利贴满足高频备忘需求，但DIY门槛限制受众且价格不明",
+      "summary": "可擦写备忘积木实用性强，解决桌面杂乱高频需求，但DIY属性限制大众吸引力，功能依赖白板笔，价格未知但DIY概念可能难以支撑高价。",
       "score": 70,
       "price_gate": "unknown",
       "image": "https://design-milk.com/images/2012/11/Hakkens-Memo-Blocks-1.jpg",
@@ -120732,9 +120724,8 @@
       "relevance": 9,
       "tags": [
         "创意桌搭",
-        "DIY",
         "环保",
-        "备忘",
+        "DIY",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -120743,7 +120734,7 @@
       "id": "9df15dc1e911",
       "title": "Lamps by Giles Godwin-Brown",
       "category": "氛围灯",
-      "summary": "氛围灯具有创新结构交互，但实用性一般，价格可能较高，适合小众设计市场。",
+      "summary": "产品设计有结构创新，但实用性一般，应用场景有限，3秒内不易理解其独特卖点，价格未知且可能是高端设计品，市场小众。",
       "score": 70,
       "price_gate": "unknown",
       "image": "https://design-milk.com/images/2011/12/Giles-Nepa-Lamp-1.jpg",
@@ -120770,7 +120761,7 @@
       "tags": [
         "氛围灯",
         "壁挂灯",
-        "极简设计",
+        "设计感",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -120779,7 +120770,7 @@
       "id": "ca0300a70aa7",
       "title": "Coleman Peak1 太阳能充电灯 | Uncrate",
       "category": "氛围灯",
-      "summary": "Coleman品牌，太阳能充电灯，功能全面，防水防摔，适合户外露营，但目标人群相对细分。",
+      "summary": "太阳能充电灯实用性强，防水防摔适合户外，但适用场景较窄，频率中等；售价预计超35元，功能明确易理解，情绪价值一般。",
       "score": 70,
       "price_gate": "unknown",
       "image": "https://uncrate.com/p/2023/04/coleman-lantern-peak1-lightning-solar-charging-lantern-1.jpg",
@@ -120805,18 +120796,17 @@
       "innovation": 7,
       "relevance": 8,
       "tags": [
-        "户外露营",
-        "太阳能",
-        "便携照明",
         "deepseek_search_agent",
-        "market_signal_strong"
+        "market_signal_strong",
+        "trend",
+        "氛围灯"
       ]
     },
     {
       "id": "e9c430451c0f",
       "title": "Music Moon - Winners - Design Intelligence Award (DIA)",
       "category": "中秋礼盒",
-      "summary": "Music Moon中秋礼盒通过声音、灯光和DIY创新解决节日礼品差异化问题，具备获奖背书，具有较强的节日情绪价值和视觉吸引力，但实用性一般且一年一次需求低频。",
+      "summary": "产品通过声音、灯光、DIY方式解决中秋礼盒差异化问题，功能有创新点且具备设计奖背书，但属于节庆礼品，使用频率低，受众有限，价格判断可能较高但需实际验证。",
       "score": 70,
       "price_gate": "likely_over_35",
       "image": "",
@@ -121115,7 +121105,7 @@
       "id": "571729896d9f",
       "title": "情有独粽｜端午礼盒设计 :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
       "category": "端午礼盒",
-      "summary": "包装结构创新具有节日趣味，但实用性一般，需求低频，市场接受度存疑。",
+      "summary": "端午礼盒属于节日限定产品，使用频率低，实用性依赖送礼场景，但包装结构创新和情绪价值突出，价格符合预期。",
       "score": 70,
       "price_gate": "likely_over_35",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
@@ -121141,10 +121131,10 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "design_community",
+        "trend",
         "端午礼盒",
-        "创意包装",
-        "deepseek_search_agent",
-        "design_community"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -121896,7 +121886,7 @@
       "id": "7cc6444a313d",
       "title": "Aroma Light : Multi-sensory mood lighting :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Faceb",
       "category": "氛围灯",
-      "summary": "结合LED照明与气味扩散，形成多感官体验，功能完整且易于理解。但作为氛围灯，非高频刚需，受众相对小众，价格预估偏高但需确认。",
+      "summary": "产品将氛围灯与香薰结合，概念新颖，功能明确。但目标用户偏小众，需求频率一般，售价未知但设计类产品可能高于35元。功能上灯光与气味融合有一定短板，整体可快速理解，情绪价值较高。",
       "score": 70,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/64f21344983509.58241dc2ebcbe.jpg",
@@ -121921,12 +121911,11 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
+        "design_community",
+        "trend",
         "氛围灯",
-        "多感官",
         "香薰",
-        "情绪照明",
-        "deepseek_search_agent",
-        "design_community"
+        "deepseek_search_agent"
       ]
     },
     {
