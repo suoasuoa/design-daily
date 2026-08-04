@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T15:24:53+08:00",
+  "generated_at": "2026-08-04T16:41:16+08:00",
   "week": "2026-W32",
   "group_id": "2026-W32",
   "date_start": "2026-08-03",
@@ -17,13 +17,13 @@
     },
     "by_category": {
       "充电宝": 26,
-      "水杯": 15,
+      "水杯": 17,
       "氛围灯": 13,
       "创意礼盒": 8,
-      "创意厨具": 7,
-      "创意桌搭": 7,
       "手机壳": 7,
       "冲锋衣": 7,
+      "创意厨具": 6,
+      "创意桌搭": 6,
       "中秋礼盒": 4,
       "日历": 4,
       "端午礼盒": 1,
@@ -31,7 +31,7 @@
     },
     "by_axis": {
       "功能启发": 65,
-      "结构启发": 52,
+      "结构启发": 50,
       "包装启发": 24,
       "情绪启发": 16,
       "视觉启发": 9
@@ -142,16 +142,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
-      "summary": "该中秋礼盒在功能上有明显创新：可展开成梯田模块展示月饼，且盒体可转换为蜡烛灯笼，实现复用，结构巧妙且具备情绪价值和仪式感。作为设计款礼盒，售价大概率高于35元，符合中高端礼品定位。但整体需求频次偏低，受节日限制，且结构复杂度可能影响生产组装和成本控制。",
+      "summary": "产品将月饼盒与灯笼功能结合，结构巧妙但实用场景局限于中秋，且需解释才能理解，属于功能成立后的情绪价值叠加。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "中秋礼盒",
-        "创意包装",
-        "灯笼结构",
-        "环保复用",
+        "结构复用",
+        "可持续设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -174,15 +173,16 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "折叠礼盒实用性强，节省空间且快速成型，适用于香水、化妆品等高档礼品，市场广泛。功能设计合理，价格预估超过35元，概念易懂，情绪价值高。",
+      "summary": "产品兼具实用与创新，折叠设计节省空间，一秒成型提升使用便利性，适用于香水、化妆品等高档礼品，覆盖面广。价格超过35元，符合利润要求。外观和功能直观易懂，容易引发兴趣，同时具备情感价值。",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "创意礼盒",
         "折叠盒",
-        "环保包装",
-        "礼品定制",
+        "社交电商",
+        "包装创新",
         "social_public_index",
         "白名单来源"
       ]
@@ -205,15 +205,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
-      "summary": "月饼盒可变形为灯笼，结构创新且实用，兼具礼品与装饰功能，售价大概率高于35元，但中秋限定导致频率偏低，3秒内理解概念有难度。",
+      "summary": "月饼盒可变形成灯笼，结构复用，功能美学兼具，售价高于35元，概念直观，但季节性较强。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "中秋礼盒",
-        "设计",
-        "灯笼",
+        "创意包装",
+        "环保设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -367,17 +367,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/145263273/_",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
-      "summary": "创意的魔方旋转结构提升互动趣味，节日礼盒市场广泛，售价可超35元，但需求低频，实用性一般。",
+      "summary": "端午礼盒为季节性包装设计，魔方开盒互动有趣，但使用频率低、受众窄，售价可能超过35元，功能有亮点但实用性一般。",
       "risk": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
       "review_confidence": 9,
       "review_reason": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "节日礼盒",
-        "互动包装",
-        "结构创新",
         "deepseek_search_agent",
-        "design_community"
+        "design_community",
+        "trend",
+        "端午礼盒"
       ]
     },
     {
@@ -615,36 +614,6 @@
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "41b7fb0a03bf",
-      "product_key": null,
-      "title": "Kenu Stance+ 10-in-1 Smartphone Super Gadget | Grommet",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 88,
-      "score_label": "8.8",
-      "source": "The Grommet",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://thegrommet.com/product/gadgets/stance-10-in-1-smartphone-super-gadget",
-      "image": "https://dxzihkgog0d85.cloudfront.net/products%2F4138%2F1000x1000_jlWReStance%2B-Grommet-Assets-KS-Hero-Stand-It-800x600px+%282%29.jpg",
-      "summary": "产品为10合1手机支架，实用性和高频需求较好，适用人群广泛，但功能复杂导致3秒看懂难度大，且价格可能偏高，情绪价值一般。",
-      "risk": "10-in-1多功能结构，可变为桌面支架、车载支架、机载支架，功能集成创新",
-      "review_confidence": 9,
-      "review_reason": "10-in-1多功能结构，可变为桌面支架、车载支架、机载支架，功能集成创新",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "创意桌搭",
-        "多功能手机支架",
-        "出行配件",
-        "deepseek_search_agent",
-        "market_signal_strong"
       ]
     },
     {
@@ -904,18 +873,16 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/2107105009/amplyte-6-in-1-smartcharge-power-bank-charger",
       "image": "",
-      "summary": "多合一充电宝集成多种充电功能，实用性强，高频需求，目标用户广泛。功能集成度高，但可能存在部分功能短板（如无线充电功率低），售价预计可超35元，3秒内能看懂核心卖点。情绪价值一般，主要是功能驱动。",
+      "summary": "6合1充电宝集成无线充电、AC插头、双端线、智能手表充电和支架，功能全面且便携，满足高频充电需求，标题和摘要清晰易懂，预估售价高于35元，但多合一可能导致部分功能性能不极致。",
       "risk": "集成AC插头、双端线、无线充电与手机支架，多合一便携结构",
       "review_confidence": 9,
       "review_reason": "集成AC插头、双端线、无线充电与手机支架，多合一便携结构",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "6-in-1",
-        "power bank",
-        "wireless charging",
-        "AC plug",
         "deepseek_search_agent",
-        "market_signal_strong"
+        "market_signal_strong",
+        "trend",
+        "充电宝"
       ]
     },
     {
@@ -1334,16 +1301,18 @@
       "source_quality": "standard",
       "url": "https://www.kickstarter.com/projects/joyroompodix/podix-pr70-240w-power-bank-with-upgraded-dual-tft-displays?ref=f0o23p",
       "image": "",
-      "summary": "充电宝本身实用且需求高频，240W输出和内置线功能强大，双屏显示直观，但价格偏高可能限制受众。",
+      "summary": "高功率、创新双屏显示，满足数码爱好者需求，内置线设计提升便利性，但价格较高可能限制大众市场。",
       "risk": "双TFT实时显示屏加两条内置USB-C线，240W总输出，显示与结构创新明确。",
       "review_confidence": 9,
       "review_reason": "双TFT实时显示屏加两条内置USB-C线，240W总输出，显示与结构创新明确。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "trend",
-        "market_signal_strong",
+        "充电宝",
+        "240W",
+        "双屏",
+        "内置线",
         "deepseek_search_agent",
-        "充电宝"
+        "market_signal_strong"
       ]
     },
     {
@@ -1469,18 +1438,18 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "产品功能集成度高，实用性强，无线充电与夜灯是高频需求，但目标用户偏创意桌搭人群，打击面不够广。3秒看懂难度中等，因结构创新需一定理解。价格未知，估计可能超过35元。设计感和功能创新提供情绪价值。风险在于市场验证不足，价格可能偏高。",
+      "summary": "产品集成折叠设计、无线充电、夜灯和MagSafe，功能实用且充电为高频需求，设计感强能提供情绪价值。整体完成度较高，但概念阶段可能影响清晰度。",
       "risk": "可折叠设计集成无线充电与夜灯，结构创新",
       "review_confidence": 8,
       "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "创意桌搭",
-        "3D Art",
-        "3D Modeling",
-        "3D Motion",
+        "无线充电",
+        "折叠设计",
+        "MagSafe",
         "deepseek_search_agent",
-        "trend"
+        "design_community"
       ]
     },
     {
@@ -1665,6 +1634,60 @@
       "tags": [
         "market_signal",
         "白名单来源"
+      ]
+    },
+    {
+      "id": "51fcb61d06c2",
+      "product_key": null,
+      "title": "Cooksy AI烹饪助手 | Uncrate",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://uncrate.com/cn/article/cooksy-ai-cooking-assistant",
+      "image": "",
+      "summary": "Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很大程度上取决于您的经验以及谁在帮忙。 Cooksy是一个全新的烹饪助手，它是您会发现的最佳厨房合作伙伴之一。小型设备安装在炉灶上方，每次引导您做饭。该设备使用视频和热成像技术来检测您正在烹饪的食物，并提供直接投射到手机上 ...",
+      "risk": "AI cooking assistant using video and thermal imaging to guide cooking, projects onto phone.",
+      "review_confidence": 9,
+      "review_reason": "AI cooking assistant using video and thermal imaging to guide cooking, projects onto phone.",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "market_signal",
+        "创意厨具"
+      ]
+    },
+    {
+      "id": "aad41e19ed94",
+      "product_key": null,
+      "title": "Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/30/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work",
+      "image": "https://www.yankodesign.com/images/design_news/2026/05/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work/trash-bag-00.jpg",
+      "summary": "Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have a drawer, a cabinet corner, or a crumpled bag stuffed inside another bag where we hoard the thin plastic produce bags...",
+      "risk": "利用塑料袋收纳，解决厨房塑料袋杂乱问题，功能与场景创新",
+      "review_confidence": 9,
+      "review_reason": "利用塑料袋收纳，解决厨房塑料袋杂乱问题，功能与场景创新",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "Yanko Design",
+        "公开来源"
       ]
     },
     {
@@ -2654,57 +2677,55 @@
       ]
     },
     {
-      "id": "51fcb61d06c2",
+      "id": "998e5b17c9cd",
       "product_key": null,
-      "title": "Cooksy AI烹饪助手 | Uncrate",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Uncrate",
-      "source_family": "市场信号",
-      "source_quality": "premium",
-      "url": "https://uncrate.com/cn/article/cooksy-ai-cooking-assistant",
-      "image": "",
-      "summary": "Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很大程度上取决于您的经验以及谁在帮忙。 Cooksy是一个全新的烹饪助手，它是您会发现的最佳厨房合作伙伴之一。小型设备安装在炉灶上方，每次引导您做饭。该设备使用视频和热成像技术来检测您正在烹饪的食物，并提供直接投射到手机上 ...",
-      "risk": "AI cooking assistant using video and thermal imaging to guide cooking, projects onto phone.",
-      "review_confidence": 9,
-      "review_reason": "AI cooking assistant using video and thermal imaging to guide cooking, projects onto phone.",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "market_signal",
-        "创意厨具"
-      ]
-    },
-    {
-      "id": "aad41e19ed94",
-      "product_key": null,
-      "title": "Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work",
-      "category": "创意厨具",
+      "title": "Ember Mug 2 Black 10 oz",
+      "category": "水杯",
       "action_lane": "适合改造",
       "axes": [
         "功能启发"
       ],
       "score": 85,
       "score_label": "8.5",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
       "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/05/30/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work",
-      "image": "https://www.yankodesign.com/images/design_news/2026/05/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work/trash-bag-00.jpg",
-      "summary": "Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have a drawer, a cabinet corner, or a crumpled bag stuffed inside another bag where we hoard the thin plastic produce bags...",
-      "risk": "利用塑料袋收纳，解决厨房塑料袋杂乱问题，功能与场景创新",
+      "url": "https://shop.uncrate.com/products/ember-mug-2",
+      "image": "https://shop.uncrate.com/cdn/shop/files/ember_CM1910_00-black.jpg?v=1764003003&width=533",
+      "summary": "Uncrate Shop product listing. Direct shop product page with product image and premium price signal.",
+      "risk": "Ember Mug 2，智能温控杯，在功能上有明显创新（APP控温）。",
       "review_confidence": 9,
-      "review_reason": "利用塑料袋收纳，解决厨房塑料袋杂乱问题，功能与场景创新",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "review_reason": "Ember Mug 2，智能温控杯，在功能上有明显创新（APP控温）。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "Yanko Design",
-        "公开来源"
+        ">35",
+        "Uncrate Shop"
+      ]
+    },
+    {
+      "id": "9c408082aded",
+      "product_key": null,
+      "title": "Ember Cup Slate Black 14 oz",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Uncrate Shop",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://shop.uncrate.com/products/ember-cup",
+      "image": "https://shop.uncrate.com/cdn/shop/files/ember_CM21C_17-slate-lid.jpg?v=1764366586&width=533",
+      "summary": "Uncrate Shop product listing. Direct shop product page with product image and premium price signal.",
+      "risk": "Ember Cup，智能温控杯，在功能上有明显创新（APP控温）。",
+      "review_confidence": 9,
+      "review_reason": "Ember Cup，智能温控杯，在功能上有明显创新（APP控温）。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        ">35",
+        "Uncrate Shop"
       ]
     }
   ]
