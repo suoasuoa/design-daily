@@ -1,0 +1,31 @@
+name: Supabase Feedback Health
+
+on:
+  schedule:
+    # 10:15 Beijing time every day. The task performs real feedback reads only.
+    - cron: "15 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: supabase-feedback-health
+  cancel-in-progress: true
+
+jobs:
+  check-feedback-store:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Read feedback health metrics
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: python3 scripts/check_feedback_health.py
