@@ -77,6 +77,7 @@ jobs:
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
             MIN_COUNT="1"
           fi
+          python3 scripts/push_feishu_recovery.py --limit 40 --top-limit 5 --min-count 40 --recover-days 7 --sent-log data/feishu_push_log.json --no-images
           python3 scripts/push_feishu_daily.py --limit 40 --top-limit 5 --min-count "$MIN_COUNT" --require-today $WINDOW_ARGS --sent-log data/feishu_push_log.json --format card --no-images
 
       - name: Commit push log
