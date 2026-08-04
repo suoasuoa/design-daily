@@ -29,6 +29,11 @@ def request_json(base_url, api_key, params, *, count=False, attempts=6):
             return body, content_range
         except urllib.error.HTTPError as exc:
             if exc.code not in {502, 503, 504, 521} or attempt == attempts:
+                error_body = exc.read().decode("utf-8", errors="replace")[:500]
+                print(
+                    f"feedback_health=http_error status={exc.code} "
+                    f"body={error_body}"
+                )
                 raise
             print(f"feedback_health=retry attempt={attempt} status={exc.code}")
         except urllib.error.URLError as exc:
@@ -66,6 +71,13 @@ def main():
     api_key = os.environ.get("SUPABASE_SECRET_KEY", "").strip()
     if not base_url or not api_key:
         raise SystemExit("feedback_health=failed reason=missing_supabase_secret")
+
+    key_type = (
+        "secret" if api_key.startswith("sb_secret_")
+        else "publishable" if api_key.startswith("sb_publishable_")
+        else "legacy_or_unknown"
+    )
+    print(f"feedback_health=credentials key_type={key_type} key_length={len(api_key)}")
 
     latest, _ = request_json(
         base_url,
