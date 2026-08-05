@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-04T19:20:59+08:00
+- 生成时间：2026-08-05T09:32:37+08:00
 
 ## 行动分布
 
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人体工学，创新在于包容性设计。。页面证据：Feb 6, 2023 · Designed for people with reduced mobility in their hands and wrists, this set of four kitchen tools features ergonomic, angled handles that make cooking easier.
+针对手部不便人群的实用设计，功能成立，价格预期高于35元，但受众相对狭窄。
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -47,7 +47,7 @@ Eyra厨房工具套装专为手部活动不便者设计，手柄角度符合人�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars
 
-Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。
+产品为游戏氛围灯，针对游戏场景提供沉浸式氛围，功能明确且外观科幻易理解。但需求偏小众，主要集中在游戏玩家和桌搭爱好者，实用性和频次中等。价格大概率高于35元，具备情绪价值。来源设计社区且适合改造，有一定潜力。
 
 ### 4. Mid-Autumn Festival Campaign 2011 (7) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.
 
@@ -59,7 +59,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407
 
-结构创新，月饼盒可展开成梯田展示并转化为灯笼，功能成立且具情绪价值，但需求季节性强、非高频，且结构复杂度可能影响生产与成本。
+产品功能具有创新性，月饼盒可转化为灯笼，结构复用提升了实用性，但中秋礼盒本身使用频率低，目标人群特定，打击面不广。售价预计高于35元，但设计原理需要一定理解成本，3秒内难以看懂。情绪价值突出，但需基于功能成立。
 
 ### 5. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -71,7 +71,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-折叠盒设计实用，节省存储空间，成型快捷，适用于高档礼品，功能明确且展示直观。
+该产品通过折叠设计实现一秒成型和打平，节省存储空间，功能实用且新颖，适用于礼品包装，预估售价超过35元，满足价格要求。视频演示直观易懂，但需求频率不算高，且情绪价值体现一般。
 
 ### 6. Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.
 
@@ -83,7 +83,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947
 
-月饼盒可变形为灯笼，结构创新，功能实用，兼具美学与情绪价值，但中秋礼盒属节令性消费，频率较低。
+月饼盒可变形为灯笼，功能实用且结构创新，具有情绪价值，但需求频次低（中秋一次），打击面窄，设计年代较早，现代消费者可能不易秒懂。
 
 ### 7. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -155,7 +155,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/145263273/_
 
-端午礼盒属于节日限定产品，使用频率低，实用性依赖送礼场景，但包装结构创新和情绪价值突出，价格符合预期。
+端午礼盒以魔方盒子结构为核心，开启时具有旋转互动，功能创新明确，但受限于节日属性，需求频次低，实用性一般。售价预计高于35元，价格力强；包装结构直观易懂，但情绪价值更多依赖节日场景。整体适合礼品市场，但季节性风险高。
 
 ### 13. Wine box with sliding lid-butler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe
 
@@ -167,7 +167,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...
+滑盖兼作托盘的创新设计兼具实用性与仪式感，适合礼品场景，但受众限于葡萄酒爱好者，使用频率较低。
 
 ### 14. MOONCAKE BOX with board game inside :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Ad
 
@@ -179,7 +179,7 @@ Wine box with sliding lid that doubles as a butler for two glasses. Innovation i
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside
 
-MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘游戏，实现包装结构、开箱和节日叙事的创新，属于结构创新。。页面证据：Mooncake Boxes Series (4) is perfect for gifting loved one and board game lover in Moon festival (Mid-Autumn Festival)
+月饼礼盒本身实用性强，但属于节日性产品，频率较低。棋盘游戏增加了趣味性和情绪价值，但可能影响实用性和受众范围。售价预计高于35元，3秒可理解产品核心。
 
 ### 15. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
@@ -191,7 +191,7 @@ MOONCAKE BOX with board game inside: 明确的中秋月饼礼盒，内嵌棋盘�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar
 
-Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...
+产品创意独特，结合日历与种子种植，但实用性一般，日历功能弱，需要解释说明，面向特定人群。
 
 ### 16. 趣香七夕表白礼盒创意设计 :: Behance
 
@@ -383,7 +383,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.kickstarter.com/projects/2107105009/amplyte-6-in-1-smartcharge-power-bank-charger
 
-多合一充电宝集成无线充、AC插头、双端线、智能手表充电等功能，解决外出充电痛点，实用性和频率需求高；功能覆盖广，但部分用户可能觉得复杂，功能无明显短板；预估售价大概率超35元，3秒看懂主要卖点，情绪价值体现在便携和一体化便利。
+6-in-1 Power Bank Charger 是明确的充电宝单品，集成无线充电、AC插头、双端线、智能手表充电、手机支架等功能，便携且多合一，创新点可明确从标题和描述中确认。。页面证据：Wireless Charging | Super Powerful & Fast Charging | AC Plug & Dual-End Cable | Smartwatch Compatible | Pocket Size | Phone Stand.
 
 ### 32. Red Dot Design Award: Thermo Mug Without Thread
 
@@ -565,7 +565,19 @@ This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
 
 To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro
 
-### 47. JOYROOM PODIX PR70: 240W Power Bank with Dual... — Kickstarter
+### 47. Cloudnola TextTime Flip Clock
+
+- 品类：创意桌搭
+- 路径：适合改造
+- 启发：结构启发
+- 分数：8.5
+- 来源：Uncrate Shop
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://shop.uncrate.com/products/texttime-black-flip-clock-floating-shelf-clock-luxury-text-display-timepiece
+
+产品以文字显示时间，设计独特，具备艺术感和情绪价值，但功能单一且价格昂贵，目标客群小众，实用性一般。
+
+### 48. JOYROOM PODIX PR70: 240W Power Bank with Dual... — Kickstarter
 
 - 品类：充电宝
 - 路径：适合改造
@@ -575,9 +587,9 @@ To clean the Claysilite filter, all you need to do is put it in boiling water fo
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.kickstarter.com/projects/joyroompodix/podix-pr70-240w-power-bank-with-upgraded-dual-tft-displays?ref=f0o23p
 
-240W大功率、内置双线及双屏显示，功能强大且差异化明显，满足高频充电需求，但高端定位可能使受众相对有限。
+JOYROOM PODIX PR70 是双 TFT 显示屏移动电源，内置双 USB-C 线，240W 总输出，100W 快充回充，显示与结构创新明确。。页面证据：Dual Real-Time Displays | 2 Built-in USB-C Cables | 240W Total Output | 4-Port Flexibility | 25,000mAh Airline-Safe |100W Fast Recharge.
 
-### 48. NeoPow X25: World's First 285W Solid-State Power Bank by NeoPow — Kickstarter
+### 49. NeoPow X25: World's First 285W Solid-State Power Bank by NeoPow — Kickstarter
 
 - 品类：充电宝
 - 路径：适合改造
@@ -589,7 +601,7 @@ To clean the Claysilite filter, all you need to do is put it in boiling water fo
 
 NeoPow X25 世界首款285W固态充电宝，采用固态电池技术，25500mAh/98Wh，防溅防摔，可同时为多台笔记本和手机快充。。页面证据：January 15, 2026 - NeoPow is raising funds for NeoPow X25: World's First 285W Solid-State Power Bank on Kickstarter! 285W Flash-Charge Multiple Laptops & Phones · 25500mAh / 98Wh Flight-Friendly · Safer Solid-State Tech · Splashproof & Drop-resistant
 
-### 49. SplitGo: Magnetic Modular Power Bank for EDC by SplitGo — Kickstarter
+### 50. SplitGo: Magnetic Modular Power Bank for EDC by SplitGo — Kickstarter
 
 - 品类：充电宝
 - 路径：适合改造
@@ -601,7 +613,7 @@ NeoPow X25 世界首款285W固态充电宝，采用固态电池技术，25500mAh
 
 SplitGo磁性模块化充电宝，5000mAh，可附加冷却、照明、雾化等模块，扩展性强，创新模块化设计。。页面证据：A 5000mAh pocket power system with magnetic snap-on modules for charging, cooling, lighting, misting, and daily carry.
 
-### 50. Cantilevered Flatware, Yea or Nay? - Core77
+### 51. Cantilevered Flatware, Yea or Nay? - Core77
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -613,7 +625,7 @@ SplitGo磁性模块化充电宝，5000mAh，可附加冷却、照明、雾化等
 
 Cantilevered Flatware: 悬臂式餐具，手柄抬高使餐具头不接触桌面，改善卫生，创新在于结构和卫生功能。。页面证据：I'm sure Carson from Downton Abbey would flinch, but this set of Cantilever Flatware can not only be presented face-up, but also face-down. That's because the designers (ILoveHandles, whose work we previously looked at here) have chunked out the handles to keep the business end of the utensils up off
 
-### 51. CIO: Apple Watch & MagSafe Compatible Power Bank by CIO ...
+### 52. CIO: Apple Watch & MagSafe Compatible Power Bank by CIO ...
 
 - 品类：充电宝
 - 路径：适合改造
@@ -625,7 +637,7 @@ Cantilevered Flatware: 悬臂式餐具，手柄抬高使餐具头不接触桌面
 
 CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多设备充电痛点，体积小巧，创新在于双功能无线充电。。页面证据：We offer a power bank without a Magnetic function (MagSafe Charger) and kickstand. You usually need to use a separate charger for your Apple Watch and a wireless charger for your iPhone. Power banks with two functions do exist, but they are bulky and too large to carry. CIO's Hybrid Wireless Battery can charge both of these with just one charger.
 
-### 52. Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa
+### 53. Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -635,9 +647,9 @@ CIO混合无线充电宝，同时兼容Apple Watch和iPhone MagSafe，解决多�
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity
+可折叠无线充电站集成夜灯和MagSafe充电，功能实用，但受众限于苹果用户，且为概念设计未量产，价格未知。
 
-### 53. The Reusable LARQ Bottle Cleans Itself and the Water Inside
+### 54. The Reusable LARQ Bottle Cleans Itself and the Water Inside
 
 - 品类：水杯
 - 路径：适合改造
@@ -649,7 +661,7 @@ Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站�
 
 LARQ Bottle自清洁水杯，采用UV-C LED技术，可净化水和清洁瓶身，锂电池续航一个月，创新显著。。页面证据：The reusable LARQ water bottle comes with built-in UV-C LED technology that cleans the water inside, as well as the bottle itself so you don't have to.
 
-### 54. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
+### 55. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
 
 - 品类：充电宝
 - 路径：适合改造
@@ -661,7 +673,7 @@ LARQ Bottle自清洁水杯，采用UV-C LED技术，可净化水和清洁瓶身�
 
 Ample超薄充电宝，内置两条侧边线，自动开机，直通充电，无需外接线。。页面证据：Kickstarter's most popular powerbank! Customized with two integrated side cables of your choice.There’s no need to carry additional cables to recharge your Ample powerbank. Ample offers automatic power on and a pass-through charging capability that most powerbanks lack.
 
-### 55. kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented...
+### 56. kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented...
 
 - 品类：充电宝
 - 路径：适合改造
@@ -673,7 +685,7 @@ Ample超薄充电宝，内置两条侧边线，自动开机，直通充电，无
 
 Ample Ultraslim Powerbank 是一款超薄充电宝，支持自选线缆，结构上实现极薄便携，符合充电宝品类创新要求。。页面证据：Pledge €49 or more About US$ 52. Early bird [single pack]. Experience the finest powerbank that ever charged! Save €20 (29% OFF RETAIL). Includes: Ample Ultraslim Powerbank. 2× Cables of your choice.
 
-### 56. A Supersuit for Your Phone Camera - Yanko Design
+### 57. A Supersuit for Your Phone Camera - Yanko Design
 
 - 品类：手机壳
 - 路径：适合改造
@@ -685,7 +697,7 @@ Ample Ultraslim Powerbank 是一款超薄充电宝，支持自选线缆，结构
 
 Lemuro 手机壳可旋入外置镜头，兼具保护与摄影增强功能，属于明确的手机壳单品，结构创新。。页面证据：https://www.kickstarter.com/projects/lemuro/lemuro-transform-your-smartphone-into-a-profession The phone camera isn't going anywhere. We've slowly done away with almost every other element barring the camera and the screen. First the external antenna, then the tactile keyboard, the MicroSD card slot, the headphone jack, the home button, and with wireless charging being adopted everywhere, the charging port may just make its exit
 
-### 57. World's Fastest Graphene Power Bank | Indiegogo
+### 58. World's Fastest Graphene Power Bank | Indiegogo
 
 - 品类：充电宝
 - 路径：适合改造
@@ -697,7 +709,7 @@ Lemuro 手机壳可旋入外置镜头，兼具保护与摄影增强功能，属�
 
 BOLD.2石墨烯充电宝，290W功率，6端口，支持MagSafe和Apple Watch，创新采用石墨烯材料。。页面证据：BOLD.2: The 1st & Fastest 290W Graphene Power Bank MagSafe + Apple Watch6 Ports 100Wh/27, | Check out 'World's Fastest Graphene Power Bank' on Indiegogo.
 
-### 58. The SmartDesk All-In-One 72" Touchscreen Standing Desk Workstation
+### 59. The SmartDesk All-In-One 72" Touchscreen Standing Desk Workstation
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -709,7 +721,7 @@ BOLD.2石墨烯充电宝，290W功率，6端口，支持MagSafe和Apple Watch，
 
 明确产品：SmartDesk一体式72英寸触控升降桌，集成电脑、触控、无线充电、扫描仪，创新点在于多功能一体化。页面证据：Combine the ergonomics of an automatic standing desk with a Windows computer, 72 inches of total screens, multi-touch controls, wireless charging, and a built-in scanner and you've got the $4,000 Cemtrex SmartDesk.
 
-### 59. HYDAWAY. The world’s most collapsible water bottle
+### 60. HYDAWAY. The world’s most collapsible water bottle
 
 - 品类：钥匙扣水壶
 - 路径：适合改造
@@ -721,7 +733,7 @@ BOLD.2石墨烯充电宝，290W功率，6端口，支持MagSafe和Apple Watch，
 
 Meet HYDAWAY. The Collapsible, Ultra-Stashable, Planet-Friendly, Go-Anywhere Way to Stay Hydrated!
 
-### 60. Cooksy AI烹饪助手 | Uncrate
+### 61. Cooksy AI烹饪助手 | Uncrate
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -732,18 +744,6 @@ Meet HYDAWAY. The Collapsible, Ultra-Stashable, Planet-Friendly, Go-Anywhere Way
 - 链接：https://uncrate.com/cn/article/cooksy-ai-cooking-assistant
 
 Cooksy AI烹饪助手 我们中有些人比其他人做得更好，但这在很大程度上取决于您的经验以及谁在帮忙。 Cooksy是一个全新的烹饪助手，它是您会发现的最佳厨房合作伙伴之一。小型设备安装在炉灶上方，每次引导您做饭。该设备使用视频和热成像技术来检测您正在烹饪的食物，并提供直接投射到手机上 ...
-
-### 61. Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work
-
-- 品类：创意厨具
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.5
-- 来源：Yanko Design
-- 下一步：提取结构或功能点，换材质/场景重新组合
-- 链接：https://www.yankodesign.com/2026/05/30/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work
-
-Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have a drawer, a cabinet corner, or a crumpled bag stuffed inside another bag where we hoard the thin plastic produce bags...
 
 ### 62. This Lamp Gets Its Glow From a Fashionable Collar Worn 400 Years Ago - Yanko Design
 
@@ -1189,7 +1189,19 @@ Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细�
 
 Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 Power Bank simplifies your charging routine with everything built right in. This compact 5,000mAh portable charger includes a built-in USB-C cable, a foldable wall plug, and a USB-C
 
-### 99. Ember Mug 2 Black 10 oz
+### 99. Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work
+
+- 品类：创意厨具
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.5
+- 来源：Yanko Design
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://www.yankodesign.com/2026/05/30/japans-cleverest-7-kitchen-gadget-puts-produce-bags-to-work
+
+Japan’s Cleverest $7 Kitchen Gadget Puts Produce Bags to Work Most of us have a drawer, a cabinet corner, or a crumpled bag stuffed inside another bag where we hoard the thin plastic produce bags...
+
+### 100. Ember Mug 2 Black 10 oz
 
 - 品类：水杯
 - 路径：适合改造
@@ -1198,17 +1210,5 @@ Tired of juggling cables, adapters, and wall plugs? The xCool CablePlug 3-in-1 P
 - 来源：Uncrate Shop
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://shop.uncrate.com/products/ember-mug-2
-
-Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
-
-### 100. Ember Cup Slate Black 14 oz
-
-- 品类：水杯
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.5
-- 来源：Uncrate Shop
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://shop.uncrate.com/products/ember-cup
 
 Uncrate Shop product listing. Direct shop product page with product image and premium price signal.
