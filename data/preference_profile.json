@@ -1,16 +1,210 @@
 {
   "version": 1,
-  "generated_at": "2026-08-05T08:56:07+08:00",
+  "generated_at": "2026-08-05T11:27:14+08:00",
   "stats": {
-    "events": 0,
-    "active_decisions": 0,
-    "likes": 0,
-    "passes": 0
+    "events": 8,
+    "active_decisions": 6,
+    "likes": 5,
+    "passes": 1
   },
-  "positive_patterns": {},
-  "negative_patterns": {},
-  "pass_reasons": [],
-  "positive_examples": [],
-  "negative_examples": [],
-  "blocked_product_ids": []
+  "positive_patterns": {
+    "category": [
+      {
+        "name": "创意厨具",
+        "count": 2
+      },
+      {
+        "name": "水杯",
+        "count": 1
+      },
+      {
+        "name": "充电宝",
+        "count": 1
+      },
+      {
+        "name": "创意桌搭",
+        "count": 1
+      }
+    ],
+    "source_family": [
+      {
+        "name": "媒体案例",
+        "count": 2
+      },
+      {
+        "name": "市场信号",
+        "count": 2
+      },
+      {
+        "name": "社交灵感",
+        "count": 1
+      }
+    ],
+    "action_lane": [
+      {
+        "name": "适合改造",
+        "count": 4
+      },
+      {
+        "name": "方向参考",
+        "count": 1
+      }
+    ],
+    "axes": [
+      {
+        "name": "功能启发",
+        "count": 5
+      },
+      {
+        "name": "结构启发",
+        "count": 2
+      },
+      {
+        "name": "视觉启发",
+        "count": 1
+      }
+    ],
+    "tags": [
+      {
+        "name": "deepseek_search_agent",
+        "count": 5
+      },
+      {
+        "name": "editorial_main",
+        "count": 2
+      },
+      {
+        "name": "trend",
+        "count": 1
+      },
+      {
+        "name": "水杯",
+        "count": 1
+      },
+      {
+        "name": "创意厨具",
+        "count": 1
+      },
+      {
+        "name": "户外用品",
+        "count": 1
+      },
+      {
+        "name": "多功能工具",
+        "count": 1
+      },
+      {
+        "name": "buy_sample",
+        "count": 1
+      }
+    ]
+  },
+  "negative_patterns": {
+    "category": [
+      {
+        "name": "充电宝",
+        "count": 1
+      }
+    ],
+    "source_family": [
+      {
+        "name": "市场信号",
+        "count": 1
+      }
+    ],
+    "action_lane": [
+      {
+        "name": "适合改造",
+        "count": 1
+      }
+    ],
+    "axes": [
+      {
+        "name": "功能启发",
+        "count": 1
+      }
+    ],
+    "tags": [
+      {
+        "name": "充电宝",
+        "count": 1
+      },
+      {
+        "name": "无线充电",
+        "count": 1
+      },
+      {
+        "name": "Apple Watch充电",
+        "count": 1
+      },
+      {
+        "name": "MagSafe",
+        "count": 1
+      },
+      {
+        "name": "buy_sample",
+        "count": 1
+      },
+      {
+        "name": "deepseek_search_agent",
+        "count": 1
+      }
+    ]
+  },
+  "pass_reasons": [
+    {
+      "code": "too_ordinary",
+      "label": "太普通，没有明显创意增量",
+      "count": 1
+    }
+  ],
+  "positive_examples": [
+    {
+      "product_id": "07cf7231e76b",
+      "title": "321 Water Bottle",
+      "category": "水杯",
+      "summary": "实用性强，满足即时过滤自来水需求，但功能单一，市场已有类似产品；高频饮水需求，但过滤功能非必需；目标人群相对窄；售价可能超35元；概念易懂但需展示；情绪价值一般。",
+      "reason": ""
+    },
+    {
+      "product_id": "20d41adc4a8f",
+      "title": "EATI | Anti-Bacterial Titanium Utensil Multi-Tool by... — Kickstarter",
+      "category": "创意厨具",
+      "summary": "产品为钛合金多功能餐具，实用性较好但场景局限（户外露营），非高频需求，受众相对窄。功能无明显短板，材质和抗菌设计有亮点，预计售价超过35元。视觉上需稍加理解才能看懂所有功能。情绪价值体现在环保和健康理念，但整体偏实用。",
+      "reason": ""
+    },
+    {
+      "product_id": "f4c411c43186",
+      "title": "Magnetic Charging Cable with a Built-in Power Bank might be the most GENIUS Smartphone Accessory - Yanko Design",
+      "category": "充电宝",
+      "summary": "产品解决有线无电源痛点，实用且高频，概念直观，但价格未知且可能偏高，电池容量和磁吸稳定性存疑。",
+      "reason": ""
+    },
+    {
+      "product_id": "8345d71d3bfe",
+      "title": "Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa",
+      "category": "创意桌搭",
+      "summary": "该产品为可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，功能全面且设计创新，符合创意桌搭趋势。但目标受众相对小众，大众普及度一般。",
+      "reason": ""
+    },
+    {
+      "product_id": "b7357c881927",
+      "title": "Polygons Reinvented the Measuring Spoon | Cool Material",
+      "category": "创意厨具",
+      "summary": "Polygons测量勺，扁平板状可折叠成四种尺寸，材质FDA级PP和TPR，结构创新，明确厨具单品。。页面证据：Throw out all of your measuring spoons, because Polygons reinvented the game. Made of FDA grade and BPA free PP and TPR materials, Polygons are flat, bookmark-sized devices that transform into one of four different sizes based on where you grab it.",
+      "reason": ""
+    }
+  ],
+  "negative_examples": [
+    {
+      "product_id": "275ffefe6459",
+      "title": "CIO: Apple Watch & MagSafe Compatible Power Bank by CIO ...",
+      "category": "充电宝",
+      "summary": "解决多设备无线充电痛点，体积小巧，实用性强，但目标用户限于Apple Watch和iPhone用户，覆盖范围有限。",
+      "reason": "too_ordinary"
+    }
+  ],
+  "blocked_product_ids": [
+    "275ffefe6459"
+  ]
 }
