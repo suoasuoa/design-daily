@@ -31,7 +31,11 @@ def recoverable_groups(data, sent_log, today, recover_days, min_count):
         date = day.isoformat()
         if sent_log.get(date, {}).get("sent"):
             continue
-        if len(group.get("items") or []) < min_count:
+        items = group.get("items") or []
+        if len(items) < min_count:
+            continue
+        backfill_count = int((group.get("stats") or {}).get("backfill_count") or 0)
+        if backfill_count or any(item.get("is_backfill") for item in items):
             continue
         candidates.append((day, group))
     return [group for _, group in sorted(candidates, key=lambda pair: pair[0])]

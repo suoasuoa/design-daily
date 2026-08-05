@@ -147,7 +147,15 @@ def call_deepseek(prompt, max_tokens=7000, attempts=3):
 def accepted_today():
     products = load_json(DATA_DIR / "products.json", [])
     current_day = today()
-    rows = [item for item in products if item.get("first_seen") == current_day]
+    try:
+        from build_site import build_daily_groups, record, sorted_products
+
+        records = [record(item) for item in sorted_products(products)]
+        groups = build_daily_groups(records, per_day=40, max_days=1)
+        group = next((row for row in groups if row.get("date") == current_day), None)
+        rows = (group or {}).get("items") or []
+    except (KeyError, TypeError, ValueError):
+        rows = [item for item in products if item.get("first_seen") == current_day]
     return len(rows), Counter(item.get("category") or "未分类" for item in rows)
 
 
