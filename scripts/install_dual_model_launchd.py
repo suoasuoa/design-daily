@@ -25,7 +25,7 @@ def calendar_intervals(times):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--company-workers", type=int, default=6)
+    parser.add_argument("--company-workers", type=int, default=4)
     parser.add_argument("--company-review-limit", type=int, default=160)
     parser.add_argument("--max-top-up-passes", type=int, default=3)
     args = parser.parse_args()
