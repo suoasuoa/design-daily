@@ -68,6 +68,20 @@ def sorted_products(products):
     )
 
 
+def sorted_daily_items(items):
+    """Keep quota selection intact, then present each daily group by score."""
+    return sorted(
+        items,
+        key=lambda item: (
+            -int(item.get("score") or 0),
+            -int(item.get("quality_score") or 0),
+            -int(item.get("innovation") or 0),
+            -int(item.get("seen_count") or 0),
+            item.get("title") or "",
+        ),
+    )
+
+
 def hits(text, words):
     text = text.lower()
     return sum(1 for word in words if word.lower() in text)
@@ -470,7 +484,8 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
             picks.append(archived)
 
     for group in groups:
-        picks = group["items"]
+        picks = sorted_daily_items(group["items"])
+        group["items"] = picks
         by_source = Counter(item["source_family"] for item in picks)
         group["actual_count"] = len(picks)
         group["stats"] = {
@@ -1027,7 +1042,7 @@ HTML = """<!doctype html>
         if (!group) return "工作日自动收集后，这里会按日期显示当天前 40 条去重情报。";
         const source = Object.entries(group.stats.by_source_family || {}).map(([k, v]) => `${k} ${v}`).join(" / ");
         const backfill = Number((group.stats || {}).backfill_count || 0);
-        return `${group.actual_count} 条 · 每日分组 · 已去重${backfill ? ` · 历史补录 ${backfill}` : ""}${source ? " · " + source : ""}`;
+        return `${group.actual_count} 条 · 按综合评分从高到低 · 已去重${backfill ? ` · 历史补录 ${backfill}` : ""}${source ? " · " + source : ""}`;
       }
       if (state.tab === "weekly") {
         const group = activeWeekly();

@@ -6,7 +6,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_site import daily_group_limit, merge_historical_snapshots
+from build_site import daily_group_limit, merge_historical_snapshots, sorted_daily_items
 
 
 class DailyGroupTargetTests(unittest.TestCase):
@@ -28,6 +28,27 @@ class DailyGroupTargetTests(unittest.TestCase):
 
         self.assertEqual(len(merged[0]["items"]), 40)
         self.assertEqual(merged[0]["items"][:30], previous_items)
+
+    def test_daily_items_are_displayed_by_score_descending(self):
+        items = [
+            {"title": "72", "score": 72, "quality_score": 80, "innovation": 8},
+            {"title": "91", "score": 91, "quality_score": 75, "innovation": 9},
+            {"title": "84", "score": 84, "quality_score": 90, "innovation": 8},
+        ]
+
+        ranked = sorted_daily_items(items)
+
+        self.assertEqual([item["score"] for item in ranked], [91, 84, 72])
+
+    def test_equal_scores_use_quality_then_innovation(self):
+        items = [
+            {"title": "lower-quality", "score": 88, "quality_score": 80, "innovation": 9},
+            {"title": "higher-quality", "score": 88, "quality_score": 90, "innovation": 7},
+        ]
+
+        ranked = sorted_daily_items(items)
+
+        self.assertEqual(ranked[0]["title"], "higher-quality")
 
 
 if __name__ == "__main__":
