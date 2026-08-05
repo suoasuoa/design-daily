@@ -6,10 +6,12 @@ import base64
 import hashlib
 import hmac
 import json
+import mimetypes
 import os
 import ssl
 import time
 import datetime as dt
+import uuid
 from zoneinfo import ZoneInfo
 import urllib.error
 import urllib.request
@@ -19,6 +21,9 @@ from insight_common import INSIGHT_DIR, load_env, load_json, write_json
 
 SITE_URL = "https://suoasuoa.github.io/design-daily/insight/"
 SSL_CONTEXT = ssl._create_unverified_context()
+FEISHU_TOKEN_URL = "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal"
+FEISHU_IMAGE_URL = "https://open.feishu.cn/open-apis/im/v1/images"
+MAX_IMAGE_BYTES = 9 * 1024 * 1024
 DAILY_DEMAND_CATEGORIES = {
     "水杯",
     "氛围灯",
@@ -166,6 +171,106 @@ def clean_image_url(value):
     return value
 
 
+def feishu_tenant_token(app_id, app_secret):
+    payload = json.dumps({"app_id": app_id, "app_secret": app_secret}).encode("utf-8")
+    request = urllib.request.Request(
+        FEISHU_TOKEN_URL,
+        data=payload,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=30, context=SSL_CONTEXT) as response:
+        result = json.loads(response.read().decode("utf-8"))
+    token = result.get("tenant_access_token")
+    if result.get("code") != 0 or not token:
+        raise ValueError(f"tenant token rejected: {result.get('code')} {result.get('msg')}")
+    return token
+
+
+def download_card_image(image_url):
+    request = urllib.request.Request(
+        image_url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (compatible; DesignDailyBot/1.0)",
+            "Accept": "image/avif,image/webp,image/png,image/jpeg,image/*",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30, context=SSL_CONTEXT) as response:
+        content_type = (response.headers.get_content_type() or "").lower()
+        content = response.read(MAX_IMAGE_BYTES + 1)
+    if not content_type.startswith("image/"):
+        raise ValueError(f"not an image: {content_type or 'unknown'}")
+    if not content or len(content) > MAX_IMAGE_BYTES:
+        raise ValueError(f"image size is invalid: {len(content)}")
+    extension = mimetypes.guess_extension(content_type) or ".jpg"
+    return content, content_type, f"daily-pick{extension}"
+
+
+def upload_feishu_image(access_token, content, content_type, filename):
+    boundary = f"----DesignDaily{uuid.uuid4().hex}"
+    boundary_bytes = boundary.encode("ascii")
+    body = b"\r\n".join(
+        [
+            b"--" + boundary_bytes,
+            b'Content-Disposition: form-data; name="image_type"',
+            b"",
+            b"message",
+            b"--" + boundary_bytes,
+            f'Content-Disposition: form-data; name="image"; filename="{filename}"'.encode("utf-8"),
+            f"Content-Type: {content_type}".encode("ascii"),
+            b"",
+            content,
+            b"--" + boundary_bytes + b"--",
+            b"",
+        ]
+    )
+    request = urllib.request.Request(
+        FEISHU_IMAGE_URL,
+        data=body,
+        headers={
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": f"multipart/form-data; boundary={boundary}",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=45, context=SSL_CONTEXT) as response:
+        result = json.loads(response.read().decode("utf-8"))
+    image_key = (result.get("data") or {}).get("image_key")
+    if result.get("code") != 0 or not image_key:
+        raise ValueError(f"image upload rejected: {result.get('code')} {result.get('msg')}")
+    return image_key
+
+
+def prepare_card_images(items, app_id, app_secret):
+    if not app_id or not app_secret:
+        print("feishu_images=skipped reason=missing_FEISHU_APP_ID_or_FEISHU_APP_SECRET")
+        return 0
+    try:
+        access_token = feishu_tenant_token(app_id, app_secret)
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError, json.JSONDecodeError) as exc:
+        print(f"feishu_images=warning stage=token error={exc}")
+        return 0
+
+    uploaded = 0
+    for index, item in enumerate(items, 1):
+        image_url = clean_image_url(item.get("image", ""))
+        if not image_url:
+            continue
+        try:
+            content, content_type, filename = download_card_image(image_url)
+            item["_feishu_image_key"] = upload_feishu_image(
+                access_token,
+                content,
+                content_type,
+                filename,
+            )
+            uploaded += 1
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError, json.JSONDecodeError) as exc:
+            print(f"feishu_images=warning item={index} error={exc}")
+    print(f"feishu_images=ready uploaded={uploaded} requested={len(items)}")
+    return uploaded
+
+
 def card_elements(group, items, total_count, include_images=False):
     date = group.get("date") or "今日"
     elements = [
@@ -190,14 +295,24 @@ def card_elements(group, items, total_count, include_images=False):
         score = recommendation_score(item)
         url = item_link(item)
         image = clean_image_url(item.get("image", ""))
-        image_md = ""
+        image_key = item.get("_feishu_image_key") if include_images else ""
+        if image_key:
+            elements.append(
+                {
+                    "tag": "img",
+                    "img_key": image_key,
+                    "alt": {"tag": "plain_text", "content": title},
+                    "preview": True,
+                    "compact_width": True,
+                    "custom_width": 278,
+                }
+            )
         elements.append(
             {
                 "tag": "div",
                 "text": {
                     "tag": "lark_md",
-                    "content": image_md
-                    + (
+                    "content": (
                         f"**{index}. {title}**\n"
                         f"`{category}`  推荐指数 **{score}/100**  来源：{source}\n"
                         f"推荐理由：{reason}\n"
@@ -370,6 +485,13 @@ def main():
     if not webhook_url:
         print("feishu_push=skipped reason=missing_FEISHU_WEBHOOK_URL")
         return
+
+    if args.format == "card" and not args.no_images:
+        prepare_card_images(
+            highlighted,
+            os.environ.get("FEISHU_APP_ID", "").strip(),
+            os.environ.get("FEISHU_APP_SECRET", "").strip(),
+        )
 
     try:
         if args.format == "post":
