@@ -52,7 +52,7 @@ DEFAULT_DAILY_CATEGORY_CAP = 3
 
 
 def effective_score(item):
-    review = item.get("category_review") or {}
+    review = item.get("company_multimodal_review") or item.get("category_review") or {}
     return int(review.get("quality_score") or item.get("selection_score") or 0)
 
 
@@ -211,7 +211,7 @@ def clean_product_url(value):
 def record(item):
     source = (item.get("sources") or [{}])[0]
     axes = inspiration_axes(item)
-    review = item.get("category_review") or {}
+    review = item.get("company_multimodal_review") or item.get("category_review") or {}
     image = clean_image_url(item.get("image", ""))
     url = clean_product_url(item.get("url") or source.get("url") or "")
     return {
@@ -234,6 +234,7 @@ def record(item):
         "first_seen": item.get("first_seen", ""),
         "last_seen": item.get("last_seen", ""),
         "review_reason": review.get("reason", ""),
+        "review_source": review.get("source", ""),
         "review_confidence": review.get("confidence", 0),
         "review_policy_version": int(review.get("policy_version") or 0),
         "quality_score": int(review.get("quality_score") or 0),
@@ -263,7 +264,7 @@ def category_under_cap(picks, category, relaxed=False):
     category = (category or "").strip()
     cap = DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP)
     if relaxed and category in RELAXABLE_CATEGORIES:
-        cap += 1
+        cap += 2
     current = sum(1 for item in picks if item.get("category") == category)
     return current < cap
 
@@ -277,16 +278,20 @@ def display_eligible(item):
         return False
     if int(item.get("review_policy_version") or 0) < 3:
         return False
-    if int(item.get("quality_score") or 0) < 70:
+    company_reviewed = item.get("review_source") == "company_gpt_multimodal"
+    quality_floor = 65 if company_reviewed else 70
+    innovation_floor = 6 if company_reviewed else 7
+    relevance_floor = 7 if company_reviewed else 8
+    if int(item.get("quality_score") or 0) < quality_floor:
         return False
-    if int(item.get("innovation") or 0) < 7 or int(item.get("relevance") or 0) < 8:
+    if int(item.get("innovation") or 0) < innovation_floor or int(item.get("relevance") or 0) < relevance_floor:
         return False
     text = f"{item.get('summary', '')} {item.get('review_reason', '')}".lower()
     mismatch_signals = [
         "不匹配", "与品类无关", "不属于", "内容不符", "品类不符",
         "off-category", "local fallback", "ai 审核失败",
     ]
-    if any(signal in text for signal in mismatch_signals):
+    if item.get("review_source") != "company_gpt_multimodal" and any(signal in text for signal in mismatch_signals):
         return False
     if int(item.get("review_confidence") or 0) < 4 and int(item.get("score") or 0) < 60:
         return False

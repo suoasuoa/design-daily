@@ -16,6 +16,7 @@ import urllib.parse
 import urllib.request
 
 from collect_search import fetch_results, source_meta_for_url
+from company_gpt import CompanyGPTClient, CompanyGPTError
 from insight_common import (
     DATA_DIR,
     RAW_DIR,
@@ -228,11 +229,29 @@ def plan_queries(query_count, target, round_index):
 只返回 JSON：
 {json.dumps(schema, ensure_ascii=False)}
 """
-    try:
-        rows = call_deepseek(prompt, max_tokens=8000).get("queries", [])
-    except RuntimeError as exc:
-        print(f"query_plan_fallback error={exc}", flush=True)
-        rows = []
+    rows = []
+    if os.environ.get("USE_COMPANY_QUERY_PLANNER") == "1":
+        try:
+            client = CompanyGPTClient(timeout=180)
+            payload, _usage = client.chat_json(
+                [
+                    {"role": "system", "content": "你是严格的选品搜索规划员，只输出合法JSON。"},
+                    {"role": "user", "content": prompt},
+                ],
+                max_tokens=8000,
+                temperature=0,
+                attempts=2,
+            )
+            rows = payload.get("queries", [])
+            print(f"query_plan=company_gpt rows={len(rows)}", flush=True)
+        except (CompanyGPTError, KeyError, TypeError, ValueError) as exc:
+            print(f"company_query_plan_fallback error={exc}", flush=True)
+    if not rows:
+        try:
+            rows = call_deepseek(prompt, max_tokens=8000, attempts=1).get("queries", [])
+        except RuntimeError as exc:
+            print(f"query_plan_fallback error={exc}", flush=True)
+            rows = []
 
     planned = []
     seen = set()
@@ -428,49 +447,63 @@ def screen_batch(batch):
         print(f"screen_batch_failed size={len(batch)} error={exc}", flush=True)
         return []
     by_id = {row.get("id"): row for row in batch}
-    kept = []
+    reviewed = []
     for decision in result:
         candidate = by_id.get(decision.get("id"))
         category = decision.get("category")
-        if not candidate or category not in CATEGORIES or not decision.get("keep"):
+        if not candidate or category not in CATEGORIES:
             continue
         scores = {
             key: max(0, min(10, int(decision.get(key) or 0)))
             for key in ("confidence", "relevance", "innovation", "utility", "clarity")
         }
-        if scores["confidence"] < 7 or scores["relevance"] < 8 or scores["innovation"] < 6 or scores["clarity"] < 7:
-            continue
         reason = str(decision.get("reason") or "").strip()
-        if not reason or any(token in reason.lower() for token in ("可能", "或许", "需确认", "unclear", "perhaps")):
-            continue
+        keep = bool(decision.get("keep"))
+        keep = keep and scores["confidence"] >= 7 and scores["relevance"] >= 8
+        keep = keep and scores["innovation"] >= 6 and scores["clarity"] >= 7
+        keep = keep and bool(reason)
+        keep = keep and not any(
+            token in reason.lower() for token in ("可能", "或许", "需确认", "unclear", "perhaps")
+        )
         candidate = dict(candidate)
         candidate["agent_decision"] = {
             "category": category,
             "reason": reason[:320],
+            "keep": keep,
+            "model_keep": bool(decision.get("keep")),
             **scores,
         }
-        kept.append(candidate)
-    return kept
+        reviewed.append(candidate)
+    return reviewed
 
 
 def screen_candidates(rows, batch_size=20, workers=6):
     batches = [rows[index : index + batch_size] for index in range(0, len(rows), batch_size)]
-    kept = []
+    reviewed = []
     with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = [executor.submit(screen_batch, batch) for batch in batches]
         for future in as_completed(futures):
-            accepted = future.result()
-            kept.extend(accepted)
-            print(f"agent_screen progress_kept={len(kept)}", flush=True)
-    return kept
+            decisions = future.result()
+            reviewed.extend(decisions)
+            kept = sum(bool(row.get("agent_decision", {}).get("keep")) for row in reviewed)
+            print(f"agent_screen progress_reviewed={len(reviewed)} kept={kept}", flush=True)
+    return reviewed
 
 
-def lead_from_candidate(row, round_index):
+def lead_from_candidate(row, round_index, company_candidate=False):
     decision = row["agent_decision"]
     meta = source_meta_for_url(row.get("url") or "") or {}
     title = strip_html(row.get("page_title") or row.get("title") or "").strip()
     description = strip_html(row.get("description") or row.get("snippet") or "").strip()
     reason = f"{decision['reason']}。页面证据：{description}"[:700]
+    tags = [
+        decision["category"],
+        "deepseek_search_agent",
+        row.get("source_group") or "curated_keyword",
+        row.get("intent") or "adapt",
+    ]
+    if company_candidate:
+        tags.append("company_review_candidate")
     return {
         "id": stable_hash(f"deepseek-agent|{row.get('url')}|{title}"),
         "title": title[:180],
@@ -483,16 +516,11 @@ def lead_from_candidate(row, round_index):
         "likes": 0,
         "url": clean_direct_product_url(row.get("url") or ""),
         "image": row.get("image") or "",
-        "tags": [
-            decision["category"],
-            "deepseek_search_agent",
-            row.get("source_group") or "curated_keyword",
-            row.get("intent") or "adapt",
-        ],
+        "tags": tags,
         "search_query": row.get("query"),
         "search_intent": row.get("intent") or "adapt",
         "source_group": row.get("source_group") or "curated_keyword",
-        "quality_tier": row.get("quality_tier") or "standard",
+        "quality_tier": "company_candidate" if company_candidate else (row.get("quality_tier") or "standard"),
         "agent_pre_review": {**decision, "version": PRE_REVIEW_VERSION, "round": round_index + 1},
         "added": today(),
         "collected_at": today(),
@@ -535,7 +563,14 @@ def run_agent(args):
     print(f"agent_search results={len(results)} fresh={len(fresh)} page_limit={args.max_pages}", flush=True)
     enriched = enrich_pages(fresh, args.page_workers)
     screened = screen_candidates(enriched, args.batch_size, args.screen_workers)
-    leads = [lead_from_candidate(row, args.round) for row in screened]
+    approved = [row for row in screened if row.get("agent_decision", {}).get("keep")]
+    rejected = [row for row in screened if not row.get("agent_decision", {}).get("keep")]
+    leads = [lead_from_candidate(row, args.round) for row in approved]
+    staged = []
+    if os.environ.get("STAGE_COMPANY_REVIEW_CANDIDATES") == "1":
+        staged = [lead_from_candidate(row, args.round, company_candidate=True) for row in rejected]
+        staged = [lead for lead in staged if lead.get("url") and lead.get("title")]
+        leads.extend(staged)
     leads = [lead for lead in leads if lead.get("url") and lead.get("title")]
     path = RAW_DIR / f"deepseek-agent-{today()}.json"
     merged, existing, added = merge_leads(path, leads)
@@ -551,14 +586,16 @@ def run_agent(args):
         "fresh_direct_urls": len(fresh),
         "pages_enriched": sum(bool(row.get("description") or row.get("page_title")) for row in enriched),
         "pre_screened": len(enriched),
-        "kept": len(leads),
+        "kept": len(approved),
+        "staged_for_company_review": len(staged),
         "added": added,
         "by_category": dict(by_category.most_common()),
     }
     write_agent_report(stats)
     print(
         f"deepseek_agent saved={path} existing={existing} screened={len(enriched)} "
-        f"kept={len(leads)} added={added} total={len(merged)} categories={dict(by_category)}",
+        f"kept={len(approved)} staged={len(staged)} added={added} total={len(merged)} "
+        f"categories={dict(by_category)}",
         flush=True,
     )
     return stats

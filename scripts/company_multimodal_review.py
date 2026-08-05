@@ -206,6 +206,7 @@ def apply_reviews(products, decisions, review_date):
                 item["category"] = decision["category"]
                 recategorized += 1
             item["company_multimodal_review"] = decision
+            item["category_review"] = decision
             item["selection_scores"] = {
                 **{key: decision.get(key, 0) for key in QUALITY_FIELDS},
                 "source": COMPANY_REVIEW_SOURCE,
@@ -281,35 +282,35 @@ def run_review(
     rejected_pool = load_json(DATA_DIR / "rejected_category.json", [])
     report = load_json(DATA_DIR / "company_multimodal_review.json", {"reviews": {}})
     cached = report.get("reviews", {})
-    candidates = review_candidates(products, rejected_pool, review_date, include_rejected)
+    all_candidates = review_candidates(products, rejected_pool, review_date, include_rejected)
+    candidates = list(all_candidates)
     if not force:
         candidates = [item for item in candidates if not cached_review_is_current(cached.get(item.get("id")))]
     if limit:
         candidates = candidates[:limit]
-    if not candidates:
-        print(f"company_review=skipped date={review_date} reason=no_new_candidates")
-        return {"reviewed": 0, "kept": 0, "rejected": 0, "remaining": len(products)}
-
-    client = CompanyGPTClient()
     decisions = {}
     failures = []
-    with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
-        future_to_item = {executor.submit(review_one, item, client): item for item in candidates}
-        for future in as_completed(future_to_item):
-            item = future_to_item[future]
-            try:
-                decision = future.result()
-                decisions[item.get("id")] = decision
-                print(
-                    f"company_review item={item.get('id')} keep={decision.get('keep')} "
-                    f"category={decision.get('category') or decision.get('suggested_category')} "
-                    f"quality={decision.get('quality_score')} tier={decision.get('recommendation_tier')} "
-                    f"image={decision.get('image_status')}",
-                    flush=True,
-                )
-            except Exception as exc:
-                failures.append({"id": item.get("id"), "error": str(exc)[:300]})
-                print(f"company_review_retry_later item={item.get('id')} error={exc}", flush=True)
+    if candidates:
+        client = CompanyGPTClient()
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
+            future_to_item = {executor.submit(review_one, item, client): item for item in candidates}
+            for future in as_completed(future_to_item):
+                item = future_to_item[future]
+                try:
+                    decision = future.result()
+                    decisions[item.get("id")] = decision
+                    print(
+                        f"company_review item={item.get('id')} keep={decision.get('keep')} "
+                        f"category={decision.get('category') or decision.get('suggested_category')} "
+                        f"quality={decision.get('quality_score')} tier={decision.get('recommendation_tier')} "
+                        f"image={decision.get('image_status')}",
+                        flush=True,
+                    )
+                except Exception as exc:
+                    failures.append({"id": item.get("id"), "error": str(exc)[:300]})
+                    print(f"company_review_retry_later item={item.get('id')} error={exc}", flush=True)
+    else:
+        print(f"company_review=no_new_candidates date={review_date} reapplying_cache=true")
 
     if dry_run:
         summary = {
@@ -321,7 +322,13 @@ def run_review(
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return summary
 
-    kept, rejected, recategorized, rescued = apply_reviews(products, decisions, review_date)
+    decisions_to_apply = {
+        item.get("id"): cached[item.get("id")]
+        for item in all_candidates
+        if item.get("id") and cached_review_is_current(cached.get(item.get("id")))
+    }
+    decisions_to_apply.update(decisions)
+    kept, rejected, recategorized, rescued = apply_reviews(products, decisions_to_apply, review_date)
     summary = {
         "reviewed": len(decisions),
         "kept": sum(bool(row.get("keep")) for row in decisions.values()),
@@ -329,6 +336,7 @@ def run_review(
         "recategorized": recategorized,
         "rescued": rescued,
         "failures": len(failures),
+        "cached_reapplied": len(decisions_to_apply) - len(decisions),
         "remaining": len(kept),
     }
     print("company_review=" + json.dumps(summary, ensure_ascii=False), flush=True)

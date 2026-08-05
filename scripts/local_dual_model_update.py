@@ -56,6 +56,8 @@ def ensure_secrets():
     os.environ.setdefault("DEEPSEEK_MODEL", "deepseek-v4-flash")
     os.environ.setdefault("COMPANY_GPT_MODEL", "gpt-5.5")
     os.environ.setdefault("COMPANY_GPT_BASE_URL", "https://ai-gateway.insta360.cn/v1")
+    os.environ["STAGE_COMPANY_REVIEW_CANDIDATES"] = "1"
+    os.environ["USE_COMPANY_QUERY_PLANNER"] = "1"
     if not os.environ.get("DEEPSEEK_API_KEY"):
         raise RuntimeError("DeepSeek key is missing from the environment and macOS Keychain")
     if not os.environ.get("GH_TOKEN"):
