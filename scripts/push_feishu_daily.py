@@ -24,6 +24,18 @@ SSL_CONTEXT = ssl._create_unverified_context()
 FEISHU_TOKEN_URL = "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal"
 FEISHU_IMAGE_URL = "https://open.feishu.cn/open-apis/im/v1/images"
 MAX_IMAGE_BYTES = 9 * 1024 * 1024
+FEISHU_IMAGE_TYPES = {
+    "image/jpeg",
+    "image/jpg",
+    "image/png",
+    "image/webp",
+    "image/gif",
+    "image/bmp",
+    "image/x-icon",
+    "image/tiff",
+    "image/heic",
+    "image/heif",
+}
 DAILY_DEMAND_CATEGORIES = {
     "水杯",
     "氛围灯",
@@ -192,13 +204,13 @@ def download_card_image(image_url):
         image_url,
         headers={
             "User-Agent": "Mozilla/5.0 (compatible; DesignDailyBot/1.0)",
-            "Accept": "image/avif,image/webp,image/png,image/jpeg,image/*",
+            "Accept": "image/webp,image/png,image/jpeg,image/gif,image/*",
         },
     )
     with urllib.request.urlopen(request, timeout=30, context=SSL_CONTEXT) as response:
         content_type = (response.headers.get_content_type() or "").lower()
         content = response.read(MAX_IMAGE_BYTES + 1)
-    if not content_type.startswith("image/"):
+    if content_type not in FEISHU_IMAGE_TYPES:
         raise ValueError(f"not an image: {content_type or 'unknown'}")
     if not content or len(content) > MAX_IMAGE_BYTES:
         raise ValueError(f"image size is invalid: {len(content)}")
