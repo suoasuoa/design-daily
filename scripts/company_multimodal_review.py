@@ -13,7 +13,7 @@ from insight_config import CATEGORIES, CATEGORY_REVIEW_RULES, RETIRED_CATEGORIES
 from review_categories import QUALITY_FIELDS, REVIEW_POLICY_VERSION, build_published, quality_score
 
 
-COMPANY_REVIEW_VERSION = 1
+COMPANY_REVIEW_VERSION = 2
 COMPANY_REVIEW_SOURCE = "company_gpt_multimodal"
 
 
@@ -173,6 +173,15 @@ def apply_reviews(products, decisions, review_date):
         for item in load_json(DATA_DIR / "rejected_category.json", [])
         if item.get("id")
     }
+    product_ids = {item.get("id") for item in products if item.get("id")}
+    rescued = 0
+    for item_id, decision in decisions.items():
+        if not decision.get("keep") or item_id in product_ids or item_id not in rejected_by_id:
+            continue
+        products.append(dict(rejected_by_id[item_id]))
+        product_ids.add(item_id)
+        rescued += 1
+
     kept = []
     rejected = []
     recategorized = 0
@@ -183,6 +192,7 @@ def apply_reviews(products, decisions, review_date):
             continue
         category_reviews[item.get("id")] = decision
         if decision.get("keep"):
+            rejected_by_id.pop(item.get("id"), None)
             if item.get("category") != decision.get("category"):
                 item["company_review_original_category"] = item.get("category")
                 item["category"] = decision["category"]
@@ -232,16 +242,36 @@ def apply_reviews(products, decisions, review_date):
     report["generated_at"] = now_iso()
     report["policy_version"] = COMPANY_REVIEW_VERSION
     write_json(report_path, report)
-    return kept, rejected, recategorized
+    return kept, rejected, recategorized, rescued
 
 
-def run_review(review_date=None, limit=0, workers=3, force=False, dry_run=False):
+def review_candidates(products, rejected, review_date, include_rejected=False):
+    candidates = [item for item in products if item.get("first_seen") == review_date]
+    if include_rejected:
+        seen = {item.get("id") for item in candidates if item.get("id")}
+        candidates.extend(
+            item
+            for item in rejected
+            if item.get("first_seen") == review_date and item.get("id") not in seen
+        )
+    return candidates
+
+
+def run_review(
+    review_date=None,
+    limit=0,
+    workers=3,
+    force=False,
+    dry_run=False,
+    include_rejected=False,
+):
     load_env()
     review_date = review_date or today()
     products = load_json(DATA_DIR / "products.json", [])
+    rejected_pool = load_json(DATA_DIR / "rejected_category.json", [])
     report = load_json(DATA_DIR / "company_multimodal_review.json", {"reviews": {}})
     cached = report.get("reviews", {})
-    candidates = [item for item in products if item.get("first_seen") == review_date]
+    candidates = review_candidates(products, rejected_pool, review_date, include_rejected)
     if not force:
         candidates = [item for item in candidates if not cached_review_is_current(cached.get(item.get("id")))]
     if limit:
@@ -280,12 +310,13 @@ def run_review(review_date=None, limit=0, workers=3, force=False, dry_run=False)
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return summary
 
-    kept, rejected, recategorized = apply_reviews(products, decisions, review_date)
+    kept, rejected, recategorized, rescued = apply_reviews(products, decisions, review_date)
     summary = {
         "reviewed": len(decisions),
         "kept": sum(bool(row.get("keep")) for row in decisions.values()),
         "rejected": len(rejected),
         "recategorized": recategorized,
+        "rescued": rescued,
         "failures": len(failures),
         "remaining": len(kept),
     }
@@ -300,8 +331,20 @@ def main():
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--include-rejected",
+        action="store_true",
+        help="Also let the company model rescue same-day candidates rejected by the first review.",
+    )
     args = parser.parse_args()
-    run_review(args.date or None, args.limit, args.workers, args.force, args.dry_run)
+    run_review(
+        args.date or None,
+        args.limit,
+        args.workers,
+        args.force,
+        args.dry_run,
+        args.include_rejected,
+    )
 
 
 if __name__ == "__main__":

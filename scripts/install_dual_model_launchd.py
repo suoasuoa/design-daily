@@ -12,20 +12,21 @@ from insight_common import ROOT
 
 
 LABEL = "com.design-daily.dual-model"
-DEFAULT_TIMES = ((8, 45), (12, 45), (16, 15), (17, 20))
+DEFAULT_TIMES = ((10, 0), (14, 50), (17, 10), (17, 35))
 
 
 def calendar_intervals(times):
     return [
         {"Weekday": weekday, "Hour": hour, "Minute": minute}
-        for weekday in range(1, 6)
+        for weekday in range(2, 7)
         for hour, minute in times
     ]
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--company-workers", type=int, default=3)
+    parser.add_argument("--company-workers", type=int, default=6)
+    parser.add_argument("--company-review-limit", type=int, default=160)
     parser.add_argument("--max-top-up-passes", type=int, default=3)
     args = parser.parse_args()
 
@@ -45,6 +46,8 @@ def main():
             str(args.company_workers),
             "--max-top-up-passes",
             str(args.max_top_up_passes),
+            "--company-review-limit",
+            str(args.company_review_limit),
         ],
         "WorkingDirectory": str(ROOT),
         "StartCalendarInterval": calendar_intervals(DEFAULT_TIMES),
@@ -67,7 +70,7 @@ def main():
     subprocess.run(["launchctl", "bootstrap", domain, str(plist_path)], check=True)
     subprocess.run(["launchctl", "enable", f"{domain}/{LABEL}"], check=True)
     print(f"installed={plist_path}")
-    print("schedule=weekdays 08:45, 12:45, 16:15; recovery check 17:20 Asia/Shanghai")
+    print("schedule=weekdays 10:00, 14:50, 17:10; recovery check 17:35 Asia/Shanghai")
     print(f"working_directory={ROOT}")
     print(f"logs={log_dir}")
 

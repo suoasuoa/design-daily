@@ -4,6 +4,7 @@
 import argparse
 import datetime as dt
 import fcntl
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -61,7 +62,33 @@ def ensure_secrets():
         raise RuntimeError("GitHub token is missing from the environment and macOS Keychain")
 
 
-def run_company_review(workers):
+def cloud_insight_active(repo):
+    result = subprocess.run(
+        [
+            "gh",
+            "run",
+            "list",
+            "--repo",
+            repo,
+            "--workflow",
+            "Insight Pool",
+            "--limit",
+            "10",
+            "--json",
+            "status",
+        ],
+        cwd=ROOT,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+    if result.returncode:
+        raise RuntimeError(f"Could not check the cloud Insight Pool state: {result.stderr.strip()}")
+    return any(row.get("status") in {"queued", "in_progress", "waiting", "pending"} for row in json.loads(result.stdout))
+
+
+def run_company_review(workers, review_limit):
     run(
         [
             sys.executable,
@@ -70,11 +97,14 @@ def run_company_review(workers):
             today(),
             "--workers",
             str(workers),
+            "--limit",
+            str(review_limit),
+            "--include-rejected",
         ]
     )
 
 
-def top_up(target, pass_index, workers):
+def top_up(target, pass_index, workers, review_limit):
     reserve = target + max(5, int(round(target * 0.3)))
     if target <= 15:
         queries, pages = 50, 220
@@ -105,7 +135,7 @@ def top_up(target, pass_index, workers):
             "1",
         ]
     )
-    run_company_review(workers)
+    run_company_review(workers, review_limit)
     print(
         f"dual_model_top_up pass={pass_index} target={target} reserve={reserve} "
         f"accepted={today_count(target)}",
@@ -129,10 +159,12 @@ def main():
     parser.add_argument("--target", type=int, choices=(15, 30, 40), default=0)
     parser.add_argument("--max-top-up-passes", type=int, default=3)
     parser.add_argument("--company-workers", type=int, default=3)
+    parser.add_argument("--company-review-limit", type=int, default=160)
     parser.add_argument("--score-limit", type=int, default=100)
     parser.add_argument("--repo", default="suoasuoa/design-daily")
     parser.add_argument("--skip-publish", action="store_true")
     parser.add_argument("--force-weekend", action="store_true")
+    parser.add_argument("--ignore-cloud-busy", action="store_true")
     args = parser.parse_args()
 
     now = dt.datetime.now(LOCAL_TZ)
@@ -150,9 +182,12 @@ def main():
             return
 
         ensure_secrets()
+        if not args.ignore_cloud_busy and cloud_insight_active(args.repo):
+            print("dual_model_update=skipped reason=cloud_insight_active")
+            return
         sync_main()
         target = args.target or phase_target(now)
-        run_company_review(args.company_workers)
+        run_company_review(args.company_workers, args.company_review_limit)
         count = today_count(target)
         print(f"dual_model_phase date={today()} target={target} after_review={count}", flush=True)
 
@@ -171,7 +206,7 @@ def main():
         for pass_index in range(1, args.max_top_up_passes + 1):
             if count >= target:
                 break
-            top_up(target, pass_index, args.company_workers)
+            top_up(target, pass_index, args.company_workers, args.company_review_limit)
             count = today_count(target)
 
         rebuild_and_publish(args.repo, args.score_limit, args.skip_publish)

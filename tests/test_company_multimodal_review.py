@@ -7,7 +7,8 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from company_multimodal_review import normalize_review
+from company_multimodal_review import normalize_review, review_candidates
+from install_dual_model_launchd import calendar_intervals
 from local_dual_model_update import phase_target
 
 
@@ -71,6 +72,22 @@ class CompanyMultimodalReviewTests(unittest.TestCase):
         self.assertEqual(phase_target(dt.datetime(2026, 7, 20, 8, 45)), 15)
         self.assertEqual(phase_target(dt.datetime(2026, 7, 20, 12, 45)), 30)
         self.assertEqual(phase_target(dt.datetime(2026, 7, 20, 16, 15)), 40)
+
+    def test_rejected_candidates_can_be_reviewed_for_rescue(self):
+        products = [{"id": "kept", "first_seen": "2026-08-05"}]
+        rejected = [
+            {"id": "reconsider", "first_seen": "2026-08-05"},
+            {"id": "old", "first_seen": "2026-08-04"},
+        ]
+
+        candidates = review_candidates(products, rejected, "2026-08-05", include_rejected=True)
+
+        self.assertEqual([item["id"] for item in candidates], ["kept", "reconsider"])
+
+    def test_launchd_schedule_is_monday_through_friday(self):
+        intervals = calendar_intervals(((10, 0),))
+
+        self.assertEqual([row["Weekday"] for row in intervals], [2, 3, 4, 5, 6])
 
 
 if __name__ == "__main__":
