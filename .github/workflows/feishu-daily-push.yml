@@ -67,7 +67,7 @@ jobs:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
         run: |
-          WINDOW_ARGS="--window-start 17:00 --window-end 23:30"
+          WINDOW_ARGS="--window-start 18:00 --window-end 23:30"
           MIN_COUNT="40"
           if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 10 * * 1-5" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
