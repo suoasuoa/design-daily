@@ -38,7 +38,7 @@ def recoverable_groups(data, sent_log, today, recover_days, min_count):
 
 
 def main():
-    from push_feishu_daily import card_elements, send_card, top_items
+    from push_feishu_daily import card_elements, prepare_card_images, send_card, top_items
 
     load_env()
     parser = argparse.ArgumentParser()
@@ -80,6 +80,14 @@ def main():
     if not webhook_url:
         print("feishu_recovery=skipped reason=missing_FEISHU_WEBHOOK_URL")
         return
+
+
+    if not args.no_images:
+        prepare_card_images(
+            highlighted,
+            os.environ.get("FEISHU_APP_ID", "").strip(),
+            os.environ.get("FEISHU_APP_SECRET", "").strip(),
+        )
 
     try:
         result = send_card(
