@@ -12,7 +12,7 @@ from insight_common import ROOT
 
 
 LABEL = "com.design-daily.dual-model"
-DEFAULT_TIMES = ((10, 0), (14, 50), (17, 10), (17, 35))
+DEFAULT_TIMES = ((17, 10), (17, 35))
 
 
 def calendar_intervals(times):
@@ -70,7 +70,7 @@ def main():
     subprocess.run(["launchctl", "bootstrap", domain, str(plist_path)], check=True)
     subprocess.run(["launchctl", "enable", f"{domain}/{LABEL}"], check=True)
     print(f"installed={plist_path}")
-    print("schedule=weekdays 10:00, 14:50, 17:10; recovery check 17:35 Asia/Shanghai")
+    print("schedule=weekdays 17:10; recovery check 17:35 Asia/Shanghai")
     print(f"working_directory={ROOT}")
     print(f"logs={log_dir}")
 

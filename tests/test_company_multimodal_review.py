@@ -68,6 +68,36 @@ class CompanyMultimodalReviewTests(unittest.TestCase):
 
         self.assertFalse(normalize_review(item, row)["keep"])
 
+    def test_keeps_usable_non_top_candidate_for_ranking(self):
+        item = {"id": "desk-usable", "image": ""}
+        row = {
+            "id": "desk-usable",
+            "keep": True,
+            "hard_reject": False,
+            "recommendation_tier": "usable",
+            "category": "创意桌搭",
+            "confidence": 8,
+            "relevance": 8,
+            "utility": 7,
+            "frequency": 7,
+            "broad_appeal": 7,
+            "functionality": 6,
+            "innovation": 6,
+            "price_power": 6,
+            "clarity": 7,
+            "emotion": 5,
+            "image_status": "missing",
+            "product_visible": False,
+            "title_image_match": 0,
+            "visual_evidence": "No image was available.",
+            "reason": "The modular cable-routing structure is concrete and reusable.",
+        }
+
+        result = normalize_review(item, row)
+
+        self.assertTrue(result["keep"])
+        self.assertEqual(result["recommendation_tier"], "usable")
+
     def test_phase_targets(self):
         self.assertEqual(phase_target(dt.datetime(2026, 7, 20, 8, 45)), 15)
         self.assertEqual(phase_target(dt.datetime(2026, 7, 20, 12, 45)), 30)
@@ -85,7 +115,7 @@ class CompanyMultimodalReviewTests(unittest.TestCase):
         self.assertEqual([item["id"] for item in candidates], ["kept", "reconsider"])
 
     def test_launchd_schedule_is_monday_through_friday(self):
-        intervals = calendar_intervals(((10, 0),))
+        intervals = calendar_intervals(((17, 10),))
 
         self.assertEqual([row["Weekday"] for row in intervals], [2, 3, 4, 5, 6])
 

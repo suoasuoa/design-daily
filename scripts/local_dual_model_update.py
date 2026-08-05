@@ -105,7 +105,12 @@ def run_company_review(workers, review_limit):
 
 
 def top_up(target, pass_index, workers, review_limit):
-    reserve = target + max(5, int(round(target * 0.3)))
+    if target <= 15:
+        reserve = 30
+    elif target <= 30:
+        reserve = 50
+    else:
+        reserve = 80
     if target <= 15:
         queries, pages = 50, 220
     elif target <= 30:

@@ -13,7 +13,7 @@ from insight_config import CATEGORIES, CATEGORY_REVIEW_RULES, RETIRED_CATEGORIES
 from review_categories import QUALITY_FIELDS, REVIEW_POLICY_VERSION, build_published, quality_score
 
 
-COMPANY_REVIEW_VERSION = 2
+COMPANY_REVIEW_VERSION = 3
 COMPANY_REVIEW_SOURCE = "company_gpt_multimodal"
 
 
@@ -47,6 +47,8 @@ def review_messages(item):
     schema = {
         "id": product["id"],
         "keep": True,
+        "hard_reject": False,
+        "recommendation_tier": "top/usable/weak/reject",
         "category": "one allowed category",
         "confidence": 0,
         "relevance": 0,
@@ -65,18 +67,19 @@ def review_messages(item):
         "reason": "specific product-selection reason or rejection reason",
     }
     prompt = f"""
-你是选品团队的最终多模态审核员。请同时检查产品文字、图片和链接信息，目标是阻止错图、错品类、普通基础款和弱创意进入每日40条。
+你是选品团队的最终多模态审核员。请同时检查产品文字、图片和链接信息，在保证每日40条可用灵感的前提下阻止错图、错品类和普通基础款。
 
 硬规则：
 1. 只允许下列品类。必须按图片中真实物件和实际用途归类，不能按搜索词硬贴标签。
 2. 图片成功加载时，必须确认图片中存在明确产品，且图片与标题匹配；不匹配、纯建筑/汽车/人物/海报或无明确产品时 keep=false。
-3. 必须有可说清楚的功能、结构、材料、交互、包装、视觉机制或使用场景创新。普通基础款、只换色/图案/品牌、常规联名，innovation<=5 且 keep=false。
+3. 必须有可说清楚的功能、结构、材料、交互、包装、视觉机制或使用场景创新。普通基础款、只换色/图案/品牌、常规联名，innovation<=5、recommendation_tier=reject、keep=false。
 4. 实用性、高频需求、功能完整度和广泛受众优先；价格空间原则上应支持人民币35元以上。
 5. 装置艺术只作方向参考，必须能提炼出明确的结构、互动、光影、材料或内容启发。
 6. 社媒、DIY和概念产品可以保留，但必须有明确物件、明显创意和可转化启发。
 7. 图片无法读取时如实填写 image_status=unreadable，不得臆造视觉证据；仍可根据充分的文字证据审核。
 8. reason和visual_evidence必须具体，不能只写“有设计感”“很创新”。
 9. confidence、relevance、title_image_match以及所有选品评分必须输出0到10的整数，禁止使用0到1小数。
+10. 只有错图、错品类、没有明确产品、退休品类或完全没有具体创新机制时 hard_reject=true。具备明确创新、可以作为团队方向参考但并非顶级的产品，应 keep=true、recommendation_tier=usable，并通过较低分数排在后面，不能为了显得严格全部删除。
 
 品类定义：
 {rules}
@@ -107,17 +110,20 @@ def normalize_review(item, row, usage=None):
     product_visible = bool(row.get("product_visible"))
     title_image_match = clamp_score(row.get("title_image_match"))
 
+    tier = str(row.get("recommendation_tier") or "usable").strip().lower()
+    hard_reject = bool(row.get("hard_reject")) or tier == "reject"
     base_gate = (
         bool(row.get("keep"))
+        and not hard_reject
         and bool(category)
         and category not in RETIRED_CATEGORIES
-        and confidence >= 8
-        and relevance >= 8
-        and scores["innovation"] >= 7
-        and scores["functionality"] >= 6
-        and scores["clarity"] >= 6
-        and total >= 70
-        and (scores["price_power"] >= 5 or category == "装置艺术")
+        and confidence >= 7
+        and relevance >= 7
+        and scores["innovation"] >= 6
+        and scores["functionality"] >= 5
+        and scores["clarity"] >= 5
+        and total >= 65
+        and (scores["price_power"] >= 4 or category == "装置艺术")
     )
     visual_gate = True
     if image_status == "loaded":
@@ -131,6 +137,8 @@ def normalize_review(item, row, usage=None):
     return {
         "id": item.get("id"),
         "keep": keep,
+        "hard_reject": hard_reject,
+        "recommendation_tier": tier if keep else "reject",
         "category": category if keep else "",
         "suggested_category": category,
         "confidence": confidence,
@@ -204,6 +212,7 @@ def apply_reviews(products, decisions, review_date):
                 "reason": decision.get("reason", ""),
                 "visual_evidence": decision.get("visual_evidence", ""),
                 "title_image_match": decision.get("title_image_match", 0),
+                "recommendation_tier": decision.get("recommendation_tier", "usable"),
             }
             item["selection_score"] = decision.get("quality_score", 0)
             item["ai_reason"] = decision.get("reason", "")
@@ -237,6 +246,7 @@ def apply_reviews(products, decisions, review_date):
         "reviewed": len(reviewed_today),
         "kept": sum(bool(row.get("keep")) for row in reviewed_today),
         "rejected": sum(not bool(row.get("keep")) for row in reviewed_today),
+        "by_tier": dict(Counter(row.get("recommendation_tier") for row in reviewed_today)),
         "by_category": dict(Counter(row.get("category") for row in reviewed_today if row.get("keep"))),
     }
     report["generated_at"] = now_iso()
@@ -293,7 +303,8 @@ def run_review(
                 print(
                     f"company_review item={item.get('id')} keep={decision.get('keep')} "
                     f"category={decision.get('category') or decision.get('suggested_category')} "
-                    f"quality={decision.get('quality_score')} image={decision.get('image_status')}",
+                    f"quality={decision.get('quality_score')} tier={decision.get('recommendation_tier')} "
+                    f"image={decision.get('image_status')}",
                     flush=True,
                 )
             except Exception as exc:
@@ -314,7 +325,7 @@ def run_review(
     summary = {
         "reviewed": len(decisions),
         "kept": sum(bool(row.get("keep")) for row in decisions.values()),
-        "rejected": len(rejected),
+        "rejected": sum(not bool(row.get("keep")) for row in decisions.values()),
         "recategorized": recategorized,
         "rescued": rescued,
         "failures": len(failures),
