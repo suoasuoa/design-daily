@@ -263,5 +263,73 @@
       "source_family": "市场信号"
     },
     "created_at": "2026-08-04T03:40:18.717+00:00"
+  },
+  {
+    "event_id": "56751a7c-033e-41ea-9ad1-d64b10d204e3",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "09a6b2004cf4",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-05",
+      "weekly_group": "2026-W32"
+    },
+    "item_snapshot": {
+      "url": "https://www.yankodesign.com/2021/05/12/a-single-metal-sheet-and-laser-cutting-helped-one-designer-create-a-lamp-during-the-pandemic",
+      "axes": [
+        "情绪启发"
+      ],
+      "tags": [
+        "氛围灯",
+        "激光切割",
+        "平板灯",
+        "设计师",
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "A single metal sheet and laser cutting helped one designer create a lamp during the pandemic - Yanko Design",
+      "summary": "产品设计独特，由单片金属板激光切割制成，可平板邮寄，集成触摸调光器，功能简洁。作为氛围灯，实用性和需求频次中等，但概念新颖，有设计感，售价可能高于35元。",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-08-05T03:28:11.312+00:00"
+  },
+  {
+    "event_id": "39ca548b-8cce-4193-b49c-51806a159e74",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "09a6b2004cf4",
+    "action": "clear",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-05",
+      "weekly_group": "2026-W32"
+    },
+    "item_snapshot": {
+      "url": "https://www.yankodesign.com/2021/05/12/a-single-metal-sheet-and-laser-cutting-helped-one-designer-create-a-lamp-during-the-pandemic",
+      "axes": [
+        "情绪启发"
+      ],
+      "tags": [
+        "氛围灯",
+        "激光切割",
+        "平板灯",
+        "设计师",
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "A single metal sheet and laser cutting helped one designer create a lamp during the pandemic - Yanko Design",
+      "summary": "产品设计独特，由单片金属板激光切割制成，可平板邮寄，集成触摸调光器，功能简洁。作为氛围灯，实用性和需求频次中等，但概念新颖，有设计感，售价可能高于35元。",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-08-05T03:28:14.394+00:00"
   }
 ]
