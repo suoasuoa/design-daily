@@ -132,6 +132,7 @@ python3 scripts/company_multimodal_review.py --date 2026-07-20 --workers 3
 
 ```bash
 python3 scripts/install_dual_model_launchd.py
+python3 scripts/install_feishu_dispatch_launchd.py
 ```
 
 公司网关只能从内网访问，因此公司 API Key 不配置到 GitHub Actions。Mac 关机或离开内网时，GitHub 上的 DeepSeek 采集仍会运行；GPT-5.5 复核会在 Mac 恢复后继续处理未审核条目。
@@ -181,6 +182,8 @@ scripts/review_categories.py           严格品类终审
 scripts/company_multimodal_review.py   公司 GPT-5.5 图片与质量复核
 scripts/local_dual_model_update.py     Mac 双模型补量、复核与发布
 scripts/install_dual_model_launchd.py  Mac 工作日三阶段调度安装器
+scripts/dispatch_feishu_workflow.py    18:00 主动触发飞书工作流
+scripts/install_feishu_dispatch_launchd.py  飞书 18:00/18:20 本机兜底安装器
 scripts/ensure_daily_minimum.py         工作日 40 条补量循环
 scripts/insight_config.py               品类、来源与选品规则
 data/products.json                      当前严格通过的产品池
