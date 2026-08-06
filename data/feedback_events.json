@@ -331,5 +331,39 @@
       "source_family": "媒体案例"
     },
     "created_at": "2026-08-05T03:28:14.394+00:00"
+  },
+  {
+    "event_id": "2a8cedc7-8cbd-4735-903e-20b299735175",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "06ed1ef54562",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-05",
+      "weekly_group": "2026-W32"
+    },
+    "item_snapshot": {
+      "url": "https://www.yankodesign.com/2026/05/03/bpods-drod-finally-makes-food-storage-worth-showing-off",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "tags": [
+        "创意厨具",
+        "真空储存",
+        "厨房收纳",
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "B!POD’s DRO!D Finally Makes Food Storage Worth Showing Off - Yanko Design",
+      "summary": "产品功能创新且实用，能显著延长食物保鲜时间，设计美观具备情绪价值，但使用频率可能不高，价格可能偏高。",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-08-05T09:02:36.429+00:00"
   }
 ]

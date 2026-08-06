@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "generated_at": "2026-08-05T16:48:23+08:00",
+  "generated_at": "2026-08-06T08:53:33+08:00",
   "stats": {
-    "events": 10,
-    "active_decisions": 6,
-    "likes": 5,
+    "events": 11,
+    "active_decisions": 7,
+    "likes": 6,
     "passes": 1
   },
   "positive_patterns": {
     "category": [
       {
         "name": "创意厨具",
-        "count": 2
+        "count": 3
       },
       {
         "name": "水杯",
@@ -29,7 +29,7 @@
     "source_family": [
       {
         "name": "媒体案例",
-        "count": 2
+        "count": 3
       },
       {
         "name": "市场信号",
@@ -43,7 +43,7 @@
     "action_lane": [
       {
         "name": "适合改造",
-        "count": 4
+        "count": 5
       },
       {
         "name": "方向参考",
@@ -53,11 +53,11 @@
     "axes": [
       {
         "name": "功能启发",
-        "count": 5
+        "count": 6
       },
       {
         "name": "结构启发",
-        "count": 2
+        "count": 3
       },
       {
         "name": "视觉启发",
@@ -67,10 +67,18 @@
     "tags": [
       {
         "name": "deepseek_search_agent",
-        "count": 5
+        "count": 6
       },
       {
         "name": "editorial_main",
+        "count": 2
+      },
+      {
+        "name": "创意厨具",
+        "count": 2
+      },
+      {
+        "name": "adapt",
         "count": 2
       },
       {
@@ -82,19 +90,11 @@
         "count": 1
       },
       {
-        "name": "创意厨具",
-        "count": 1
-      },
-      {
         "name": "户外用品",
         "count": 1
       },
       {
         "name": "多功能工具",
-        "count": 1
-      },
-      {
-        "name": "buy_sample",
         "count": 1
       }
     ]
@@ -192,6 +192,13 @@
       "title": "Polygons Reinvented the Measuring Spoon | Cool Material",
       "category": "创意厨具",
       "summary": "Polygons测量勺，扁平板状可折叠成四种尺寸，材质FDA级PP和TPR，结构创新，明确厨具单品。。页面证据：Throw out all of your measuring spoons, because Polygons reinvented the game. Made of FDA grade and BPA free PP and TPR materials, Polygons are flat, bookmark-sized devices that transform into one of four different sizes based on where you grab it.",
+      "reason": ""
+    },
+    {
+      "product_id": "06ed1ef54562",
+      "title": "B!POD’s DRO!D Finally Makes Food Storage Worth Showing Off - Yanko Design",
+      "category": "创意厨具",
+      "summary": "产品功能创新且实用，能显著延长食物保鲜时间，设计美观具备情绪价值，但使用频率可能不高，价格可能偏高。",
       "reason": ""
     }
   ],
