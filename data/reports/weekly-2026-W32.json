@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T15:07:20+08:00",
+  "generated_at": "2026-08-06T16:50:48+08:00",
   "week": "2026-W32",
   "group_id": "2026-W32",
   "date_start": "2026-08-03",
@@ -11,29 +11,29 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 53,
-      "方向参考": 31,
-      "可直接买样": 16
+      "适合改造": 51,
+      "方向参考": 32,
+      "可直接买样": 17
     },
     "by_category": {
-      "充电宝": 20,
-      "水杯": 19,
-      "氛围灯": 15,
+      "充电宝": 21,
+      "水杯": 18,
+      "氛围灯": 14,
+      "创意桌搭": 9,
       "创意礼盒": 8,
-      "手机壳": 8,
       "冲锋衣": 8,
-      "创意桌搭": 7,
+      "手机壳": 7,
+      "中秋礼盒": 5,
       "创意厨具": 5,
-      "日历": 5,
-      "中秋礼盒": 4,
+      "日历": 4,
       "端午礼盒": 1
     },
     "by_axis": {
-      "功能启发": 63,
-      "结构启发": 55,
-      "包装启发": 23,
-      "情绪启发": 19,
-      "视觉启发": 7
+      "功能启发": 69,
+      "结构启发": 61,
+      "包装启发": 21,
+      "情绪启发": 18,
+      "视觉启发": 4
     }
   },
   "dedupe": {
@@ -141,16 +141,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
-      "summary": "包装可复用为灯笼，功能性强，但节日属性导致频次和受众有限，设计巧妙但需解释，售价预期较高。",
+      "summary": "Mid-Autumn Festival Campaign 2011月饼盒：圆柱形组件可展开成梯田模块展示月饼，并可放入蜡烛转化为灯笼，结构复用创新。。页面证据：The result is a mooncake box that is “functionally aesthetic”. It features a cylindrical component that opens up into a “terraced” module, storing and displaying four mooncakes. The box itself can hold a tealight or a candle, quickly transforming it into a lantern. The soft glow of the light within the box will accentuate the intricate pattern cut into its walls.",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "中秋礼盒",
-        "创意包装",
-        "灯笼设计",
-        "模块化",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -173,18 +169,14 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "折叠礼盒设计实用，便于存储和运输，适用于高端礼品包装，但市场针对性较强。",
+      "summary": "诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "创意礼盒",
-        "折叠包装",
-        "礼品盒",
-        "包装盒定制",
         "social_public_index",
-        "白名单来源"
+        "创意礼盒"
       ]
     },
     {
@@ -205,15 +197,12 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
-      "summary": "月饼盒可变形为灯笼，结构创新且兼顾实用与观赏，但中秋为低频场景，目标客群较窄，定价或高于预期。",
+      "summary": "同dbdfed1b70d4，同一项目不同模块，月饼盒可变形为灯笼，结构复用创新。。页面证据：The result is a mooncake box that is “functionally aesthetic”. It features a cylindrical component that opens up into a “terraced” module, storing and displaying four mooncakes. The box itself can hold a tealight or a candle, quickly transforming it into a lantern. The soft glow of the light within the box will accentuate the intricate pattern cut into its walls.",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "中秋礼盒",
-        "变形",
-        "结构复用",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -324,6 +313,34 @@
       ]
     },
     {
+      "id": "b928c111d0e9",
+      "product_key": null,
+      "title": "黑天鹅 2022 中秋月饼礼盒 :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 71,
+      "score_label": "7.1",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/161108345/-2022-",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf443b161108345.63bfbe2fa57d3.png",
+      "summary": "这是明确的中秋/月饼礼盒，且不是普通插画换肤盒。其核心创新在于开盒动作被设计成黑天鹅展翼的叙事结构，黑色折叠羽翼与中央白色纸浆感月饼盒形成强对比，具备开箱仪式感、结构记忆点和节日礼赠溢价空间，可转化为中秋礼盒的机关式展开、动物意象叙事和内外盒反差设计方向。",
+      "risk": "这是明确的中秋/月饼礼盒，且不是普通插画换肤盒。其核心创新在于开盒动作被设计成黑天鹅展翼的叙事结构，黑色折叠羽翼与中央白色纸浆感月饼盒形成强对比，具备开箱仪式感、结构记忆点和节日礼赠溢价空间，可转化为中秋礼盒的机关式展开、动物意象叙事和内外盒反差设计方向。",
+      "review_confidence": 9,
+      "review_reason": "这是明确的中秋/月饼礼盒，且不是普通插画换肤盒。其核心创新在于开盒动作被设计成黑天鹅展翼的叙事结构，黑色折叠羽翼与中央白色纸浆感月饼盒形成强对比，具备开箱仪式感、结构记忆点和节日礼赠溢价空间，可转化为中秋礼盒的机关式展开、动物意象叙事和内外盒反差设计方向。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "12530ac39cc3",
       "product_key": null,
       "title": "Introducing our Changeable Photo Phone Case How you can ...",
@@ -367,16 +384,14 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/145263273/_",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
-      "summary": "魔方盒子结构具有创新性，旋转互动增加趣味，作为节日礼盒有情感溢价，预估价格可高于35元，但使用频率低，受众限于端午场景。",
+      "summary": "端午礼盒采用魔方盒子结构，开启有旋转互动，增加节日趣味，包装结构创新明确。。页面证据：Branding, Packaging, Graphic Design, Adobe Illustrator, Blender",
       "risk": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
       "review_confidence": 9,
       "review_reason": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "design_community",
-        "trend",
-        "端午礼盒",
-        "deepseek_search_agent"
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -617,6 +632,33 @@
       ]
     },
     {
+      "id": "39d24d86e412",
+      "product_key": null,
+      "title": "Hydration Made More Cool With the Collapsible elio Water Bottle",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/hydration-made-more-cool-with-the-collapsible-elio-water-bottle",
+      "image": "https://design-milk.com/images/2025/10/Elio-Water-Bottle-Lumio-9.jpg",
+      "summary": "属于可直接饮用的水杯/随行瓶，且不是普通基础款；核心创新是从扁平小体积展开到750ml容量的折叠瓶身结构，解决空瓶携带占空间的问题，并配有提挂带提升通勤、旅行、户外随身场景的实用性。图片与标题匹配，功能机制清楚，可作为便携水杯结构创新方向保留。",
+      "risk": "属于可直接饮用的水杯/随行瓶，且不是普通基础款；核心创新是从扁平小体积展开到750ml容量的折叠瓶身结构，解决空瓶携带占空间的问题，并配有提挂带提升通勤、旅行、户外随身场景的实用性。图片与标题匹配，功能机制清楚，可作为便携水杯结构创新方向保留。",
+      "review_confidence": 9,
+      "review_reason": "属于可直接饮用的水杯/随行瓶，且不是普通基础款；核心创新是从扁平小体积展开到750ml容量的折叠瓶身结构，解决空瓶携带占空间的问题，并配有提挂带提升通勤、旅行、户外随身场景的实用性。图片与标题匹配，功能机制清楚，可作为便携水杯结构创新方向保留。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "8daceafb153e",
       "product_key": null,
       "title": "CASETiFY Ultra Bounce iPhone 16 series cases are fashioned with up to 32.8 ft drop protection - Yanko Design",
@@ -748,6 +790,86 @@
       "tags": [
         "award_gallery",
         "company_review_candidate"
+      ]
+    },
+    {
+      "id": "c450533266ba",
+      "product_key": null,
+      "title": "DiFold Origami Bottle | Grommet",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "The Grommet",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://thegrommet.com/product/travel/difold-origami-bottle?pid=email-trendingdiscoveries30september2024",
+      "image": "https://dxzihkgog0d85.cloudfront.net/products%2F2371%2F1000x1000_cy46wHands-Green_1080x.webp",
+      "summary": "符合水杯品类，图片与标题DiFold Origami Bottle高度匹配。产品不是普通水杯，而是通过折纸折线结构实现可完全压扁收纳，解决旅行、户外、通勤中空瓶占空间的问题；植物基塑料、BPA-free、挂环瓶盖和口袋级便携都有明确功能卖点。高频补水场景明确，结构创新强，可作为折叠便携水杯方向的优先灵感。",
+      "risk": "符合水杯品类，图片与标题DiFold Origami Bottle高度匹配。产品不是普通水杯，而是通过折纸折线结构实现可完全压扁收纳，解决旅行、户外、通勤中空瓶占空间的问题；植物基塑料、BPA-free、挂环瓶盖和口袋级便携都有明确功能卖点。高频补水场景明确，结构创新强，可作为折叠便携水杯方向的优先灵感。",
+      "review_confidence": 9,
+      "review_reason": "符合水杯品类，图片与标题DiFold Origami Bottle高度匹配。产品不是普通水杯，而是通过折纸折线结构实现可完全压扁收纳，解决旅行、户外、通勤中空瓶占空间的问题；植物基塑料、BPA-free、挂环瓶盖和口袋级便携都有明确功能卖点。高频补水场景明确，结构创新强，可作为折叠便携水杯方向的优先灵感。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "1643afe32ab7",
+      "product_key": null,
+      "title": "Red Dot Design Award: LARQ Bottle",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/larq-bottle-37007",
+      "image": "",
+      "summary": "标题与文字证据明确指向可直接饮用的随行水瓶，且核心创新是瓶内专利LED紫外线自动净水/自清洁机制，不依赖化学清洁，具备明确功能创新、高频饮水场景和较强价格支撑；虽缺少图片验证，但文字证据充分，符合水杯品类选品要求。",
+      "risk": "标题与文字证据明确指向可直接饮用的随行水瓶，且核心创新是瓶内专利LED紫外线自动净水/自清洁机制，不依赖化学清洁，具备明确功能创新、高频饮水场景和较强价格支撑；虽缺少图片验证，但文字证据充分，符合水杯品类选品要求。",
+      "review_confidence": 8,
+      "review_reason": "标题与文字证据明确指向可直接饮用的随行水瓶，且核心创新是瓶内专利LED紫外线自动净水/自清洁机制，不依赖化学清洁，具备明确功能创新、高频饮水场景和较强价格支撑；虽缺少图片验证，但文字证据充分，符合水杯品类选品要求。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "fc967b1878e2",
+      "product_key": null,
+      "title": "Collapsible Reusable Coffee Cups and Water Bottles - Core77",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Core77",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.core77.com/posts/117744",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1324960_lead_400_117744_.jpg",
+      "summary": "符合水杯品类，图片与标题中的可折叠重复使用咖啡杯/水瓶匹配。产品创新点明确：硅胶柔性瓶身可在空瓶时压缩成更小体积，解决随身水瓶喝完后占包空间的问题；螺纹瓶口和盖带保证饮用与密封功能完整。属于高频饮水场景，受众广，结构创新和便携价值清楚，价格空间也较可能支撑35元以上。",
+      "risk": "符合水杯品类，图片与标题中的可折叠重复使用咖啡杯/水瓶匹配。产品创新点明确：硅胶柔性瓶身可在空瓶时压缩成更小体积，解决随身水瓶喝完后占包空间的问题；螺纹瓶口和盖带保证饮用与密封功能完整。属于高频饮水场景，受众广，结构创新和便携价值清楚，价格空间也较可能支撑35元以上。",
+      "review_confidence": 9,
+      "review_reason": "符合水杯品类，图片与标题中的可折叠重复使用咖啡杯/水瓶匹配。产品创新点明确：硅胶柔性瓶身可在空瓶时压缩成更小体积，解决随身水瓶喝完后占包空间的问题；螺纹瓶口和盖带保证饮用与密封功能完整。属于高频饮水场景，受众广，结构创新和便携价值清楚，价格空间也较可能支撑35元以上。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -954,24 +1076,46 @@
       "source_quality": "standard",
       "url": "https://thegrommet.com/go/featured/tibo",
       "image": "https://clxcdn.com/images/tibo3-1200x628.jpg",
-      "summary": "钛合金砧板主打抗菌、无微塑料，健康和耐用是核心卖点，概念清晰，价格预计高于35RMB。但功能有短板：钛材质偏硬可能伤刀、剁骨体验差，且砧板更换频率低，实用性受质疑。",
+      "summary": "这是明确用于备餐切割的砧板，属于创意厨具。创新点不是单纯外观换色，而是用钛金属板面替代木质/塑料砧板，围绕抗菌、减少微塑料、耐用和易清洁形成清晰材料与卫生卖点；图片也展示了真实切肉场景和防滑包边/手提孔结构。砧板是高频厨房用品，受众广，功能完整，具备较好的选品和样品验证价值。",
       "risk": "这是明确用于备餐切割的砧板，属于创意厨具。创新点不是单纯外观换色，而是用钛金属板面替代木质/塑料砧板，围绕抗菌、减少微塑料、耐用和易清洁形成清晰材料与卫生卖点；图片也展示了真实切肉场景和防滑包边/手提孔结构。砧板是高频厨房用品，受众广，功能完整，具备较好的选品和样品验证价值。",
       "review_confidence": 9,
       "review_reason": "这是明确用于备餐切割的砧板，属于创意厨具。创新点不是单纯外观换色，而是用钛金属板面替代木质/塑料砧板，围绕抗菌、减少微塑料、耐用和易清洁形成清晰材料与卫生卖点；图片也展示了真实切肉场景和防滑包边/手提孔结构。砧板是高频厨房用品，受众广，功能完整，具备较好的选品和样品验证价值。",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
-        "antibacterial",
-        "microplastic-free",
-        "titanium",
-        "kitchen",
         "buy_sample",
         "deepseek_search_agent"
       ]
     },
     {
-      "id": "6f73ceb5ade1",
+      "id": "3ad1008070cc",
       "product_key": null,
-      "title": "Kickstarter >> hug - the insulated collapsible mug by The Huggable Co",
+      "title": "This smart gallon bottle tracks how much water you drink, and can help you maintain hydration consistency - Yanko Design",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2022/07/07/this-smart-gallon-bottle-tracks-how-much-water-you-drink-and-can-help-you-maintain-hydration-consistency",
+      "image": "https://www.yankodesign.com/images/design_news/2022/07/smart_gallon_water_bottle_hero.jpg",
+      "summary": "符合水杯品类，且不是普通基础杯。该产品将大容量饮水容器与底部屏幕、灯环/进度指示和饮水追踪结合，能围绕健身、办公、家庭等高频补水场景提供饮水量和频率提醒，功能机制清晰、可转化性强，价格空间也明显高于普通水杯。",
+      "risk": "符合水杯品类，且不是普通基础杯。该产品将大容量饮水容器与底部屏幕、灯环/进度指示和饮水追踪结合，能围绕健身、办公、家庭等高频补水场景提供饮水量和频率提醒，功能机制清晰、可转化性强，价格空间也明显高于普通水杯。",
+      "review_confidence": 9,
+      "review_reason": "符合水杯品类，且不是普通基础杯。该产品将大容量饮水容器与底部屏幕、灯环/进度指示和饮水追踪结合，能围绕健身、办公、家庭等高频补水场景提供饮水量和频率提醒，功能机制清晰、可转化性强，价格空间也明显高于普通水杯。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "77687645d2ea",
+      "product_key": null,
+      "title": "Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77",
       "category": "水杯",
       "action_lane": "适合改造",
       "axes": [
@@ -980,18 +1124,45 @@
       ],
       "score": 86,
       "score_label": "8.6",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/-hug-/hug-600ml-20oz-double-walled-insulation-in-your-pocket",
-      "image": "",
-      "summary": "hug可折叠保温杯，双壁保温、9档高度、口袋便携、回收材料，明确单品且有结构创新。。页面证据：The Huggable Co is raising funds for hug - the insulated collapsible mug on Kickstarter! Up to 9 height options, double walled insulation, pocket friendly, made from recycled material and climate positive +",
-      "risk": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
-      "review_confidence": 8,
-      "review_reason": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
+      "source": "Core77",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.core77.com/posts/100354/Collapsible-Reusable-Water-Bottle-Gets-500-Funded-on-Kickstarter",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1075642_lead_400_100354_.jpg",
+      "summary": "符合水杯品类，且不是普通基础款。核心创新是折纸折痕瓶身实现展开饮水与压缩收纳两种状态，兼顾可重复使用、便携和空间节省；图片与标题中的 collapsible reusable water bottle 高度匹配，可作为水杯结构创新方向参考和选品灵感。",
+      "risk": "符合水杯品类，且不是普通基础款。核心创新是折纸折痕瓶身实现展开饮水与压缩收纳两种状态，兼顾可重复使用、便携和空间节省；图片与标题中的 collapsible reusable water bottle 高度匹配，可作为水杯结构创新方向参考和选品灵感。",
+      "review_confidence": 9,
+      "review_reason": "符合水杯品类，且不是普通基础款。核心创新是折纸折痕瓶身实现展开饮水与压缩收纳两种状态，兼顾可重复使用、便携和空间节省；图片与标题中的 collapsible reusable water bottle 高度匹配，可作为水杯结构创新方向参考和选品灵感。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "buy_sample",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "dfa8e6daa5b8",
+      "product_key": null,
+      "title": "This Zoom-friendly charging station elevates + charges everything from your iPad to your laptop, making it the complete WFH package! - Yanko Design",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2021/10/14/this-zoom-friendly-charging-station-elevates-charges-everything-from-your-ipad-to-your-laptop-making-it-the-complete-wfh-package",
+      "image": "https://www.yankodesign.com/images/design_news/2021/10/all-in-one_charging_organizer_charging_station_for_all_your_devices.jpg",
+      "summary": "该产品属于直接服务桌面办公、视频会议、设备支撑与充电整理的创意桌搭。它不是普通支架或单一充电座，而是把平板/笔记本抬升、手机无线充电、可穿戴设备收纳充电和视频会议补光整合到一个立式工作站中，解决WFH场景中设备分散、视角不佳和光线不足的问题；功能完整、使用频率高、受众覆盖远程办公和内容创作人群，具备明确结构与场景创新，可作为高价值选品灵感。",
+      "risk": "该产品属于直接服务桌面办公、视频会议、设备支撑与充电整理的创意桌搭。它不是普通支架或单一充电座，而是把平板/笔记本抬升、手机无线充电、可穿戴设备收纳充电和视频会议补光整合到一个立式工作站中，解决WFH场景中设备分散、视角不佳和光线不足的问题；功能完整、使用频率高、受众覆盖远程办公和内容创作人群，具备明确结构与场景创新，可作为高价值选品灵感。",
+      "review_confidence": 9,
+      "review_reason": "该产品属于直接服务桌面办公、视频会议、设备支撑与充电整理的创意桌搭。它不是普通支架或单一充电座，而是把平板/笔记本抬升、手机无线充电、可穿戴设备收纳充电和视频会议补光整合到一个立式工作站中，解决WFH场景中设备分散、视角不佳和光线不足的问题；功能完整、使用频率高、受众覆盖远程办公和内容创作人群，具备明确结构与场景创新，可作为高价值选品灵感。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -1019,59 +1190,6 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "d168777f38f9",
-      "product_key": null,
-      "title": "LARQ - Indiegogo",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Indiegogo",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.indiegogo.com/en/creators/larq",
-      "image": "",
-      "summary": "LARQ PureVis 2自清洁净化水瓶，UV-C净化和自清洁功能，可追踪饮水数据。。页面证据：LARQ Bottle PureVis 2: Purify.Track.Self-cleaning. by LARQ $847,687 total funding 2.2k",
-      "risk": "文字证据显示该产品是可直接饮用的水瓶，具备 UV-C 净化、自清洁和饮水数据追踪功能，属于水杯品类中的功能型创新产品；净水、自清洁和饮水记录是高频饮水场景的明确痛点，具备较强实用性和价格承载力。因图片缺失，无法完成图文匹配和外观验证，降为 usable，但不构成硬拒。",
-      "review_confidence": 8,
-      "review_reason": "文字证据显示该产品是可直接饮用的水瓶，具备 UV-C 净化、自清洁和饮水数据追踪功能，属于水杯品类中的功能型创新产品；净水、自清洁和饮水记录是高频饮水场景的明确痛点，具备较强实用性和价格承载力。因图片缺失，无法完成图文匹配和外观验证，降为 usable，但不构成硬拒。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "c08e96dcc07e",
-      "product_key": null,
-      "title": "Red Dot Design Award: Thermo Mug Without Thread",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/thermo-mug-without-thread-79401",
-      "image": "",
-      "summary": "Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置锁定防漏，可拆卸硅胶套，结构创新与交互创新明确。。页面证据：This thermo mug without a screw thread features a push-button opening mechanism that can be operated with one hand. A built-in toggle lock prevents accidental spills, while also serving as a fun fidget feature. The smooth rim and removable silicone sleeve...",
-      "risk": "无螺纹按压开盖单手操作，内置锁定防漏",
-      "review_confidence": 9,
-      "review_reason": "无螺纹按压开盖单手操作，内置锁定防漏",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "award_gallery",
         "deepseek_search_agent"
       ]
     },
@@ -1260,85 +1378,6 @@
       ]
     },
     {
-      "id": "38700a30bb1c",
-      "product_key": null,
-      "title": "Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.core77.com/posts/27915",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_27915_.jpg",
-      "summary": "可重复使用水瓶，中间可拧开清洁，解决清洗难题，结构创新，明确为水杯。。页面证据：You can show up at your gym drinkless and buy overpriced beverages there, or you can save a few bucks (and the environment) and carry your own refillable bottle. As someone in the latter camp, I haven't been able to find a bottle I can easily clean the inside of,...",
-      "risk": "中间可拧开结构，便于彻底清洁",
-      "review_confidence": 9,
-      "review_reason": "中间可拧开结构，便于彻底清洁",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "89a5d49c0c4c",
-      "product_key": null,
-      "title": "LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/livelarq/quartz-bottle",
-      "image": "",
-      "summary": "LARQ Bottle采用UV-C LED自清洁和净水技术，可消灭99.9999%生物污染物，创新点明确。。页面证据：No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.",
-      "risk": "UV-C LED净水与自清洁功能，消灭99.9999%生物污染物",
-      "review_confidence": 9,
-      "review_reason": "UV-C LED净水与自清洁功能，消灭99.9999%生物污染物",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "44c7bf29c64e",
-      "product_key": null,
-      "title": "LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/livelarq/larq-bottle-purevis-2-purify-track-self-cleaning",
-      "image": "",
-      "summary": "LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，技术创新明显。。页面证据：The smarter and better self-cleaning bottle with two-stage purification and new app integration for hydration tracking and reminders.",
-      "risk": "两级净化和App跟踪，自清洁功能升级，智能化",
-      "review_confidence": 9,
-      "review_reason": "两级净化和App跟踪，自清洁功能升级，智能化",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "363e1710fd8c",
       "product_key": null,
       "title": "This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub",
@@ -1380,16 +1419,67 @@
       "source_quality": "standard",
       "url": "https://www.indiegogo.com/en/projects/ire5/ire5-built-in-storage-expansion-iphone-case",
       "image": "",
-      "summary": "产品创新点明确：手机壳内置存储扩展，解决iPhone存储不足痛点，但需额外购买microSD卡，且传输速度受接口限制，实用性有折扣。手机壳本身高频，但扩展存储需求用户群体较窄。定价可能高于普通壳，但功能价值支撑尚可。概念易懂，但存在厚度增加、兼容性等短板。情绪价值一般，功能性驱动为主。",
+      "summary": "文字证据明确指向可直接安装在 iPhone 上的手机壳，并非普通印花壳或基础保护壳；其核心创新是将 microSD 卡槽与 USB-C/Lightning 扩展口集成进手机壳，用于扩展 iPhone 存储，具备清晰的结构和功能创新。该功能对应高频的手机拍摄、文件存储和容量不足痛点，实用性强、受众广，且价格空间通常可支撑人民币35元以上。因缺少图片，不能验证实物与标题匹配，但文字证据充分，保留为高优先级选品方向。",
       "risk": "文字证据明确指向可直接安装在 iPhone 上的手机壳，并非普通印花壳或基础保护壳；其核心创新是将 microSD 卡槽与 USB-C/Lightning 扩展口集成进手机壳，用于扩展 iPhone 存储，具备清晰的结构和功能创新。该功能对应高频的手机拍摄、文件存储和容量不足痛点，实用性强、受众广，且价格空间通常可支撑人民币35元以上。因缺少图片，不能验证实物与标题匹配，但文字证据充分，保留为高优先级选品方向。",
       "review_confidence": 8,
       "review_reason": "文字证据明确指向可直接安装在 iPhone 上的手机壳，并非普通印花壳或基础保护壳；其核心创新是将 microSD 卡槽与 USB-C/Lightning 扩展口集成进手机壳，用于扩展 iPhone 存储，具备清晰的结构和功能创新。该功能对应高频的手机拍摄、文件存储和容量不足痛点，实用性强、受众广，且价格空间通常可支撑人民币35元以上。因缺少图片，不能验证实物与标题匹配，但文字证据充分，保留为高优先级选品方向。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "手机壳",
-        "存储扩展",
-        "众筹",
         "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "42a6918bad13",
+      "product_key": null,
+      "title": "AOHi 280W GaN+ Desktop Charger—The Ultimate 6-Port Power Hub",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/aohi/aohi-280w-gan-desktop-chargerthe-ultimate-6-port-power-hub",
+      "image": "",
+      "summary": "属于桌面工作与多设备充电场景的创意桌搭产品，文字证据明确包含280W总输出、240W单口快充、6口同时充电、实时LCD屏幕和APP控制，具备功能集成、交互显示和桌面线缆/电源管理价值，不是普通基础充电器。图片缺失导致视觉匹配无法确认，但文字信息充分且品类相关，适合作为高功率桌面电源集成方向参考。",
+      "risk": "属于桌面工作与多设备充电场景的创意桌搭产品，文字证据明确包含280W总输出、240W单口快充、6口同时充电、实时LCD屏幕和APP控制，具备功能集成、交互显示和桌面线缆/电源管理价值，不是普通基础充电器。图片缺失导致视觉匹配无法确认，但文字信息充分且品类相关，适合作为高功率桌面电源集成方向参考。",
+      "review_confidence": 8,
+      "review_reason": "属于桌面工作与多设备充电场景的创意桌搭产品，文字证据明确包含280W总输出、240W单口快充、6口同时充电、实时LCD屏幕和APP控制，具备功能集成、交互显示和桌面线缆/电源管理价值，不是普通基础充电器。图片缺失导致视觉匹配无法确认，但文字信息充分且品类相关，适合作为高功率桌面电源集成方向参考。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "a34c5172573a",
+      "product_key": null,
+      "title": "This modular desk lets you design every element to create the perfect work setup that meets your changing needs! - Yanko Design",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2020/12/07/this-modular-desk-lets-you-design-every-element-to-create-the-perfect-work-setup-that-meets-your-changing-needs",
+      "image": "https://www.yankodesign.com/images/design_news/2020/11/design-your-own-workspace-with-this-modular-desktop-it-might-be-the-last-desk-youll-ever-need/01_LastDesk_FrameCPH_ModularDesk_hero.jpg",
+      "summary": "属于创意桌搭。该产品不是普通书桌，文字信息显示其为LastDesk模块化书桌，可定制桌面元素，并集成无线充电模块、坐站OLED控制器和内置60W USB充电口，直接服务桌面工作、充电、显示器走线和坐站调节等高频办公需求。图片与标题匹配，产品明确，具备结构模块化、桌面供电和人机工学交互创新，适合作为可转化的桌搭选品方向。",
+      "risk": "属于创意桌搭。该产品不是普通书桌，文字信息显示其为LastDesk模块化书桌，可定制桌面元素，并集成无线充电模块、坐站OLED控制器和内置60W USB充电口，直接服务桌面工作、充电、显示器走线和坐站调节等高频办公需求。图片与标题匹配，产品明确，具备结构模块化、桌面供电和人机工学交互创新，适合作为可转化的桌搭选品方向。",
+      "review_confidence": 9,
+      "review_reason": "属于创意桌搭。该产品不是普通书桌，文字信息显示其为LastDesk模块化书桌，可定制桌面元素，并集成无线充电模块、坐站OLED控制器和内置60W USB充电口，直接服务桌面工作、充电、显示器走线和坐站调节等高频办公需求。图片与标题匹配，产品明确，具备结构模块化、桌面供电和人机工学交互创新，适合作为可转化的桌搭选品方向。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -1608,82 +1698,29 @@
       ]
     },
     {
-      "id": "47fa34f21332",
+      "id": "968d9e17cd2a",
       "product_key": null,
-      "title": "Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter",
+      "title": "Red Dot Design Award: M150 & M250",
       "category": "充电宝",
-      "action_lane": "适合改造",
+      "action_lane": "方向参考",
       "axes": [
         "功能启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/ample/ample-the-powerbank-reinvented",
+      "score": 90,
+      "score_label": "9.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/m150-m250-70840",
       "image": "",
-      "summary": "Ample超薄充电宝，内置两条侧边线，自动开机，直通充电，无需外接线。。页面证据：Kickstarter's most popular powerbank! Customized with two integrated side cables of your choice.There’s no need to carry additional cables to recharge your Ample powerbank. Ample offers automatic power on and a pass-through charging capability that most powerbanks lack.",
-      "risk": "内置两条侧边线免去外带线缆，超薄设计",
+      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
+      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
       "review_confidence": 9,
-      "review_reason": "内置两条侧边线免去外带线缆，超薄设计",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "f27c6e6a9455",
-      "product_key": null,
-      "title": "A Supersuit for Your Phone Camera - Yanko Design",
-      "category": "手机壳",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2018/06/12/a-supersuit-for-your-phone-camera",
-      "image": "https://www.yankodesign.com/images/design_news/2018/06/a-supersuit-for-your-phone-camera/lemuro_iphone_case_lens_01.jpg",
-      "summary": "Lemuro 手机壳可旋入外置镜头，兼具保护与摄影增强功能，属于明确的手机壳单品，结构创新。。页面证据：https://www.kickstarter.com/projects/lemuro/lemuro-transform-your-smartphone-into-a-profession The phone camera isn't going anywhere. We've slowly done away with almost every other element barring the camera and the screen. First the external antenna, then the tactile keyboard, the MicroSD card slot, the headphone jack, the home button, and with wireless charging being adopted everywhere, the charging port may just make its exit",
-      "risk": "手机壳可旋入外置镜头，结构创新结合保护与摄影",
-      "review_confidence": 10,
-      "review_reason": "手机壳可旋入外置镜头，结构创新结合保护与摄影",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "e134f8f65c76",
-      "product_key": null,
-      "title": "The SmartDesk All-In-One 72\" Touchscreen Standing Desk Workstation",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Design Milk",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://design-milk.com/smartdesk-ultimate-72-touchscreen-standing-desk",
-      "image": "https://design-milk.com/images/2018/06/Cemtrex-smartdesk-3.jpg",
-      "summary": "明确产品：SmartDesk一体式72英寸触控升降桌，集成电脑、触控、无线充电、扫描仪，创新点在于多功能一体化。页面证据：Combine the ergonomics of an automatic standing desk with a Windows computer, 72 inches of total screens, multi-touch controls, wireless charging, and a built-in scanner and you've got the $4,000 Cemtrex SmartDesk.",
-      "risk": "一体式72寸触控升降桌集成电脑、无线充电、扫描仪，高度集成化",
-      "review_confidence": 9,
-      "review_reason": "一体式72寸触控升降桌集成电脑、无线充电、扫描仪，高度集成化",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
+        "award_gallery"
       ]
     },
     {
@@ -1711,6 +1748,62 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
+      ]
+    },
+    {
+      "id": "d54fc3bc6863",
+      "product_key": null,
+      "title": "Down Jacket",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/en/gallery/winners/9d9e553d-803d-11ed-af7e-0242ac130002?years=2014",
+      "image": "https://award-attachments.g-mark.io/winners/2014/9d9e553d-803d-11ed-af7e-0242ac130002/main.jpg?size=medium",
+      "summary": "该产品属于功能外套/冲锋衣方向，文字证据明确说明其通过无针缝羽绒包与热压粘合工艺减少传统缝线渗水和跑绒问题，使羽绒服可在雨雪环境穿着，具备材料与结构层面的实际创新。图片与标题匹配，产品清晰，实用性和价格空间较强，可作为防水保暖外套结构创新的高价值选品参考。",
+      "risk": "该产品属于功能外套/冲锋衣方向，文字证据明确说明其通过无针缝羽绒包与热压粘合工艺减少传统缝线渗水和跑绒问题，使羽绒服可在雨雪环境穿着，具备材料与结构层面的实际创新。图片与标题匹配，产品清晰，实用性和价格空间较强，可作为防水保暖外套结构创新的高价值选品参考。",
+      "review_confidence": 9,
+      "review_reason": "该产品属于功能外套/冲锋衣方向，文字证据明确说明其通过无针缝羽绒包与热压粘合工艺减少传统缝线渗水和跑绒问题，使羽绒服可在雨雪环境穿着，具备材料与结构层面的实际创新。图片与标题匹配，产品清晰，实用性和价格空间较强，可作为防水保暖外套结构创新的高价值选品参考。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "06a660a79794",
+      "product_key": null,
+      "title": "3-in-1 Frisbee Retractable Lamp - iF Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/3-in-1-frisbee-retractable-lamp/672026",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "文字证据明确指向可使用灯具单品：3合1飞盘可伸缩灯，具有可伸缩高度调节结构，可在桌面、地面等场景切换使用；灯头通过上下磁吸快速拆装，并带内置电池，可脱离电源线使用。该产品在结构调节、模块化拆卸、无线使用和多场景照明上有清晰功能创新，符合氛围灯品类且具备较强选品参考价值。",
+      "risk": "文字证据明确指向可使用灯具单品：3合1飞盘可伸缩灯，具有可伸缩高度调节结构，可在桌面、地面等场景切换使用；灯头通过上下磁吸快速拆装，并带内置电池，可脱离电源线使用。该产品在结构调节、模块化拆卸、无线使用和多场景照明上有清晰功能创新，符合氛围灯品类且具备较强选品参考价值。",
+      "review_confidence": 8,
+      "review_reason": "文字证据明确指向可使用灯具单品：3合1飞盘可伸缩灯，具有可伸缩高度调节结构，可在桌面、地面等场景切换使用；灯头通过上下磁吸快速拆装，并带内置电池，可脱离电源线使用。该产品在结构调节、模块化拆卸、无线使用和多场景照明上有清晰功能创新，符合氛围灯品类且具备较强选品参考价值。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1847,6 +1940,34 @@
       ]
     },
     {
+      "id": "0b38953f8b27",
+      "product_key": null,
+      "title": "Yeelight Cube Smart Lamp - iF Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/yeelight-cube-smart-lamp/608171",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "符合氛围灯品类：文字证据显示这是可使用的桌面智能RGB灯具单品/系统，不是建筑照明或纯装置。创新点明确，包括模块化Cube拼接、聚光/面板/矩阵多灯型互换、15°窄光束以及350°角度调节，兼具桌面照明、氛围营造和交互组合价值；实用性和价格空间均较好。因图片缺失，视觉匹配无法确认，但文字证据充分，可作为高优先级选品灵感保留。",
+      "risk": "符合氛围灯品类：文字证据显示这是可使用的桌面智能RGB灯具单品/系统，不是建筑照明或纯装置。创新点明确，包括模块化Cube拼接、聚光/面板/矩阵多灯型互换、15°窄光束以及350°角度调节，兼具桌面照明、氛围营造和交互组合价值；实用性和价格空间均较好。因图片缺失，视觉匹配无法确认，但文字证据充分，可作为高优先级选品灵感保留。",
+      "review_confidence": 8,
+      "review_reason": "符合氛围灯品类：文字证据显示这是可使用的桌面智能RGB灯具单品/系统，不是建筑照明或纯装置。创新点明确，包括模块化Cube拼接、聚光/面板/矩阵多灯型互换、15°窄光束以及350°角度调节，兼具桌面照明、氛围营造和交互组合价值；实用性和价格空间均较好。因图片缺失，视觉匹配无法确认，但文字证据充分，可作为高优先级选品灵感保留。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "67884dde5c60",
       "product_key": null,
       "title": "Good 20th Century Industrial Design: This West German Perpetual Calendar - Core77",
@@ -1922,6 +2043,62 @@
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "0ca6612f0a22",
+      "product_key": null,
+      "title": "Red Dot Design Award: Light Ball Lamp",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/de/project/light-ball-lamp-40495",
+      "image": "",
+      "summary": "符合氛围灯品类：核心是可使用的家用灯具单品。文字信息提供了明确的结构与交互创新，包括球体光源、磁吸底座、可拆卸移动照明、无线充电，以及可把光和色彩带到不同空间的使用场景；不是普通基础灯或纯造型变化，具备较高转化价值和价格空间。",
+      "risk": "符合氛围灯品类：核心是可使用的家用灯具单品。文字信息提供了明确的结构与交互创新，包括球体光源、磁吸底座、可拆卸移动照明、无线充电，以及可把光和色彩带到不同空间的使用场景；不是普通基础灯或纯造型变化，具备较高转化价值和价格空间。",
+      "review_confidence": 8,
+      "review_reason": "符合氛围灯品类：核心是可使用的家用灯具单品。文字信息提供了明确的结构与交互创新，包括球体光源、磁吸底座、可拆卸移动照明、无线充电，以及可把光和色彩带到不同空间的使用场景；不是普通基础灯或纯造型变化，具备较高转化价值和价格空间。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "f6c81f7d84a1",
+      "product_key": null,
+      "title": "The Most Fun Lamp/Power-bank EVER! - Yanko Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2017/01/27/lunar-the-most-fun-multifunctional-lantern",
+      "image": "https://www.yankodesign.com/images/design_news/2017/01/project_lunar_cover2.jpg",
+      "summary": "该产品属于可使用的便携氛围灯/露营灯，不是纯装置或普通灯具。文字说明提供了模块化灯笼、手电模块与环境光模块替换、可为手机充电等功能证据；图片也显示其在营地和手持照明场景下的双形态使用。具备结构转换、户外便携、照明氛围和移动电源复合功能，实用性和可转化选品价值较强。",
+      "risk": "该产品属于可使用的便携氛围灯/露营灯，不是纯装置或普通灯具。文字说明提供了模块化灯笼、手电模块与环境光模块替换、可为手机充电等功能证据；图片也显示其在营地和手持照明场景下的双形态使用。具备结构转换、户外便携、照明氛围和移动电源复合功能，实用性和可转化选品价值较强。",
+      "review_confidence": 9,
+      "review_reason": "该产品属于可使用的便携氛围灯/露营灯，不是纯装置或普通灯具。文字说明提供了模块化灯笼、手电模块与环境光模块替换、可为手机充电等功能证据；图片也显示其在营地和手持照明场景下的双形态使用。具备结构转换、户外便携、照明氛围和移动电源复合功能，实用性和可转化选品价值较强。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -2032,6 +2209,33 @@
       ]
     },
     {
+      "id": "153bb6f1fbb6",
+      "product_key": null,
+      "title": "Remember Apple’s AirPower Mat? Dreame Built A MagSafe Power Bank That Does The Same Thing - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/12/17/remember-apples-airpower-mat-dreame-built-a-magsafe-power-bank-that-does-the-same-thing",
+      "image": "https://www.yankodesign.com/images/design_news/2025/12/draft-dreame-power-bank/dreame_air_power_17_1.jpeg",
+      "summary": "Dreame Air Power 17 MagSafe充电宝，可同时充手机和手表，铝框+AG玻璃，多设备充电创新。。页面证据：Dreame built its name on robot vacuums and smart cleaning stations, but its newest release does not clean your floors at all. Dreame’s Air Power 17 arrives as a magnetic portable power bank with a surprisingly polished feel, pairing an aluminum frame with AG glass and a footprint barely larger than a bank card. It",
+      "risk": "可同时无线充手机和手表，多设备充电",
+      "review_confidence": 9,
+      "review_reason": "可同时无线充手机和手表，多设备充电",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "c54961925b73",
       "product_key": null,
       "title": "The $99 Gadget That Clears 3 Devices Off Your Nightstand",
@@ -2110,6 +2314,32 @@
       ]
     },
     {
+      "id": "4d5e577d1d4c",
+      "product_key": null,
+      "title": "A portable charger for all batteries! - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 81,
+      "score_label": "8.1",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2017/05/04/a-portable-charger-for-all-batteries",
+      "image": "https://www.yankodesign.com/images/design_news/2017/05/draft-car/car_powerbank_layout.jpg",
+      "summary": "属于日常便携移动电源/充电宝范畴，且不是普通基础款；它将手机USB充电、内置照明和汽车电瓶应急启动夹线集成在一个掌心设备中，功能完整、场景清晰，适合车主和户外应急需求。价格空间大概率可支撑35元以上，但品类已有类似产品，创新不是顶级，作为可用选品方向保留。",
+      "risk": "属于日常便携移动电源/充电宝范畴，且不是普通基础款；它将手机USB充电、内置照明和汽车电瓶应急启动夹线集成在一个掌心设备中，功能完整、场景清晰，适合车主和户外应急需求。价格空间大概率可支撑35元以上，但品类已有类似产品，创新不是顶级，作为可用选品方向保留。",
+      "review_confidence": 9,
+      "review_reason": "属于日常便携移动电源/充电宝范畴，且不是普通基础款；它将手机USB充电、内置照明和汽车电瓶应急启动夹线集成在一个掌心设备中，功能完整、场景清晰，适合车主和户外应急需求。价格空间大概率可支撑35元以上，但品类已有类似产品，创新不是顶级，作为可用选品方向保留。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "af35c41b37b1",
       "product_key": null,
       "title": "vollebak introduces a jacket that mimics the wings of a blue morpho butterfly",
@@ -2126,258 +2356,41 @@
       "source_quality": "premium",
       "url": "https://www.designboom.com/design/vollebak-blue-morpho-jacket-10-10-2019",
       "image": "https://www.designboom.com/twitterimages/uploads/2019/10/vollebak-blue-morpho-jacket-facebook.jpg",
-      "summary": "产品功能创新，防水透湿性能突出，但定位高端小众，受众窄，价格未知但预估远高于35元，3秒内能理解其仿生亮点。",
+      "summary": "属于可穿着的功能外套/冲锋衣，标题和摘要明确其采用模拟蓝闪蝶翅膀结构的三层防水透湿膜面料，并配有五口袋、双向拉链、调节绳等完整户外夹克结构。创新点不是普通换色，而是将仿生结构色与防水透湿材料结合，兼具视觉识别和功能面料启发；实用性、价格空间和转化为高端功能服装方向的价值都较强。",
       "risk": "属于可穿着的功能外套/冲锋衣，标题和摘要明确其采用模拟蓝闪蝶翅膀结构的三层防水透湿膜面料，并配有五口袋、双向拉链、调节绳等完整户外夹克结构。创新点不是普通换色，而是将仿生结构色与防水透湿材料结合，兼具视觉识别和功能面料启发；实用性、价格空间和转化为高端功能服装方向的价值都较强。",
       "review_confidence": 9,
       "review_reason": "属于可穿着的功能外套/冲锋衣，标题和摘要明确其采用模拟蓝闪蝶翅膀结构的三层防水透湿膜面料，并配有五口袋、双向拉链、调节绳等完整户外夹克结构。创新点不是普通换色，而是将仿生结构色与防水透湿材料结合，兼具视觉识别和功能面料启发；实用性、价格空间和转化为高端功能服装方向的价值都较强。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "冲锋衣",
-        "仿生设计",
-        "户外",
         "adapt",
         "deepseek_search_agent"
       ]
     },
     {
-      "id": "b98f671e3fb4",
+      "id": "556697f617d0",
       "product_key": null,
-      "title": "This delicate glass lamp invites you to touch and move it to actually use it - Yanko Design",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2023/01/16/this-delicate-glass-lamp-invites-you-to-touch-and-move-it-to-actually-use-it",
-      "image": "https://www.yankodesign.com/images/design_news/2023/01/this-delicate-glass-lamp-invites-you-to-touch-and-move-it-to-actually-use-it/bolita-glass-lamp-8.jpg",
-      "summary": "明确单品：通过滑动玻璃球调节亮度的灯具。创新证据：无按钮，玻璃球在圆盘上的位置决定亮度，中心最亮、边缘最暗，交互方式独特。。页面证据：When faced with something fine and intricate, our initial and natural reaction would be to stay at a safe distance to look but not touch. Almost like snowflakes, these things of beauty risk being destroyed if not handled properly, which probably applies to the majority of us. There are, however, some rather seemingly fragile objects",
-      "risk": "保留。该产品属于氛围灯，图片与标题和摘要高度匹配；不是普通造型灯，而是把调光交互从按钮/旋钮转化为移动玻璃球在圆盘上的位置，形成触摸、滑动、亮度变化的使用机制。其创新点具体体现在玻璃材质、圆盘轨道/底座、无按钮交互和情绪化光效，适合提炼为桌面夜灯、床头灯或礼品灯方向，具备较强视觉记忆点和可转化价值。",
-      "review_confidence": 9,
-      "review_reason": "保留。该产品属于氛围灯，图片与标题和摘要高度匹配；不是普通造型灯，而是把调光交互从按钮/旋钮转化为移动玻璃球在圆盘上的位置，形成触摸、滑动、亮度变化的使用机制。其创新点具体体现在玻璃材质、圆盘轨道/底座、无按钮交互和情绪化光效，适合提炼为桌面夜灯、床头灯或礼品灯方向，具备较强视觉记忆点和可转化价值。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "1af8f0685ba9",
-      "product_key": null,
-      "title": "Meet the Totem lamp that can be used individually or stacked together to light up any space! - Yanko Design",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2021/06/09/meet-the-totem-lamp-that-can-be-used-individually-or-stacked-together-to-light-up-any-space",
-      "image": "https://www.yankodesign.com/images/design_news/2021/06/auto-draft/Totem-Lamp_Design-Trio_Ren-Hongfei_lighting_yankodesign-4.jpg",
-      "summary": "Totem模块化堆叠灯，可单独或叠加使用，适配不同空间，是可购买的具体灯具单品，模块化结构创新明显。。页面证据：Life in a rental apartment has its cons but one thing that comes to my rescue each time is to set up our lighting! Lighting can make or break a space and a modular solution like Totem Lamp is a solution we all need as it presents a modular solution - adaptable to each room",
-      "risk": "符合氛围灯品类，图片与标题中的Totem可单独或堆叠使用的模块化灯高度匹配。产品不是普通基础灯具，核心创新在于可拆分的双锥形发光模块、纵向堆叠组合结构和半透明纹理灯罩带来的光影层次，可适配租房、桌面、角落和氛围照明等多场景；具备明确产品形态、使用价值和可转化的结构启发。",
-      "review_confidence": 9,
-      "review_reason": "符合氛围灯品类，图片与标题中的Totem可单独或堆叠使用的模块化灯高度匹配。产品不是普通基础灯具，核心创新在于可拆分的双锥形发光模块、纵向堆叠组合结构和半透明纹理灯罩带来的光影层次，可适配租房、桌面、角落和氛围照明等多场景；具备明确产品形态、使用价值和可转化的结构启发。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "b2c12c498df1",
-      "product_key": null,
-      "title": "Red Dot Design Award: Nexode 3 in 1 fast charging power bank",
+      "title": "Red Dot Design Award: Xiaomi UltraThin Magnetic Power Bank 5000 15W",
       "category": "充电宝",
       "action_lane": "方向参考",
       "axes": [
         "功能启发",
-        "结构启发",
-        "视觉启发"
+        "结构启发"
       ],
-      "score": 81,
-      "score_label": "8.1",
+      "score": 88,
+      "score_label": "8.8",
       "source": "Red Dot",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/nexode-3-in-1-fast-charging-power-bank-82031",
+      "url": "https://www.red-dot.org/project/xiaomi-ultrathin-magnetic-power-bank-5000-15w-89435",
       "image": "",
-      "summary": "Nexode 3 in 1 fast charging power bank集成AC插头和USB-C线，实现充电宝与充电器二合一，结构创新。。页面证据：The Nexode 3 in 1 fast charging power bank combines both charger and power bank functionalities in a compact housing with rounded corners and smooth, curved surfaces. With an integrated AC plug and included USB-C cable, it connects directly to power...",
-      "risk": "集成AC插头和USB-C线，充电宝与充电器二合一，结构创新",
-      "review_confidence": 9,
-      "review_reason": "集成AC插头和USB-C线，充电宝与充电器二合一，结构创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
-      "id": "b2fce1d8a355",
-      "product_key": null,
-      "title": "Announcing: The Winners of The 2022 L A M P Competition!",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Design Milk",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://design-milk.com/announcing-the-winners-of-the-2022-l-a-m-p-competition",
-      "image": "https://design-milk.com/images/2022/12/lamp-2022-winners.jpg",
-      "summary": "具体产品：eclipse-inspired floor lamp，创新证据：灯罩可旋转控制光线方向，实现阅读灯与氛围灯切换。。页面证据：Design Milk shares the winning designers + their brilliant designs from the prestigious 2022 L A M P design competition, now in its 8th year!",
-      "risk": "eclipse-inspired落地灯，灯罩可旋转控制光线方向，实现阅读与氛围切换。",
+      "summary": "符合充电宝品类：面向日常携带的磁吸无线移动电源。文字证据显示其具备6mm超薄机身、98g轻量、5000mAh容量、15W磁吸无线充电、双设备并行充电、定时快充以及4369mm²石墨散热片等明确结构与功能创新；高频刚需、便携性强、价格空间大概率超过35元，适合作为轻薄磁吸充电宝方向参考。",
+      "risk": "符合充电宝品类：面向日常携带的磁吸无线移动电源。文字证据显示其具备6mm超薄机身、98g轻量、5000mAh容量、15W磁吸无线充电、双设备并行充电、定时快充以及4369mm²石墨散热片等明确结构与功能创新；高频刚需、便携性强、价格空间大概率超过35元，适合作为轻薄磁吸充电宝方向参考。",
       "review_confidence": 8,
-      "review_reason": "eclipse-inspired落地灯，灯罩可旋转控制光线方向，实现阅读与氛围切换。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "1c19dbee414d",
-      "product_key": null,
-      "title": "Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/de/project/eco-design-circular-lightweight-functional-down-puffer-68268",
-      "image": "",
-      "summary": "明确单品：Eco-design Circular Lightweight Functional Down Puffer 夹克，采用RDS900+FP鹅绒、生物基尼龙PA510面料、回收拉链等环保材料创新。。页面证据：Die Winterjacke Eco-design Circular Lightweight Functional Down Puffer besteht aus nachverfolgbaren RDS900+FP-Gänsedaunen sowie biobasiertem Nylon PA510 als atmungsaktives Außenmaterial. Auch sämtliche Accessoires wie Reißverschlüsse sind aus recyceltem...",
-      "risk": "生物基尼龙PA510和回收拉链的环保材料创新",
-      "review_confidence": 9,
-      "review_reason": "生物基尼龙PA510和回收拉链的环保材料创新",
+      "review_reason": "符合充电宝品类：面向日常携带的磁吸无线移动电源。文字证据显示其具备6mm超薄机身、98g轻量、5000mAh容量、15W磁吸无线充电、双设备并行充电、定时快充以及4369mm²石墨散热片等明确结构与功能创新；高频刚需、便携性强、价格空间大概率超过35元，适合作为轻薄磁吸充电宝方向参考。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "317ef710f55b",
-      "product_key": null,
-      "title": "LEGO calendar by vitamins digitally syncs to google calendar",
-      "category": "日历",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Designboom",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.designboom.com/technology/lego-calendar-by-vitamins-digitally-syncs-to-google-calendar-10-01-2013",
-      "image": "https://www.designboom.com/twitterimages/uploads/2013/10/lego-calendar-vitamin-syncs-with-google-calendar-designboom01.jpg",
-      "summary": "产品为LEGO日历，由LEGO积木构成，可数字同步Google日历或iCal，实现物理与数字交互创新。。页面证据：made entirely of LEGO bricks, the cloud-based LEGO calendar digitally syncs up with google calendar or iCal.",
-      "risk": "LEGO积木日历可数字同步Google日历，物理数字交互创新",
-      "review_confidence": 9,
-      "review_reason": "LEGO积木日历可数字同步Google日历，物理数字交互创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "54aade48850e",
-      "product_key": null,
-      "title": "This Just Inbox: In these lamps, the socket is the bulb - Core77",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "包装启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.core77.com/posts/17088/this-just-inbox-in-these-lamps-the-socket-is-the-bulb-17088",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_17088_.jpg",
-      "summary": "Glint Hero 灯具将光直接从插座射出，无需移动灯具即可指向任意方向，搭配可更换灯罩，结构交互创新。。页面证据：Clever design by Düsseldorf designer Daniel Michel, commenting on the gradual disappearance of the light bulb (at least as we know it). In these lamps, the light pours right out of the socket, which is actually a 10-Watt High Power LED. The socket comes with interchangeable shades, though we'd...",
-      "risk": "插座直接作为光源，可旋转指向，可更换灯罩",
-      "review_confidence": 9,
-      "review_reason": "插座直接作为光源，可旋转指向，可更换灯罩",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "693cda01a784",
-      "product_key": null,
-      "title": "A Sleek Wireless, Portable Lamp that Can Charge Your Devices - Core77",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.core77.com/projects/80288/A-Sleek-Wireless-Portable-Lamp-that-Can-Charge-Your-Devices",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/837472_lead_400_80288_.jpg",
-      "summary": "Rise无线便携灯是一款明确的可使用灯具，具有充电功能和吹制玻璃设计，融合氛围营造与实用充电。。页面证据：Benjamin Hubert of experience design agency LAYER has designed a wireless lamp for London-based tech brand nolii. Called Rise, the lamp is the first product in the brand's first collection of wireless tech products, which will launch next year. It has integrated charging capability for up to two devices and",
-      "risk": "无线便携且可给设备充电，吹制玻璃设计",
-      "review_confidence": 9,
-      "review_reason": "无线便携且可给设备充电，吹制玻璃设计",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "968d9e17cd2a",
-      "product_key": null,
-      "title": "Red Dot Design Award: M150 & M250",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 90,
-      "score_label": "9.0",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/m150-m250-70840",
-      "image": "",
-      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
-      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
-      "review_confidence": 9,
-      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
       ]
     },
     {
@@ -2424,15 +2437,66 @@
       "source_quality": "premium",
       "url": "https://www.red-dot.org/project/3-in-1-travel-portable-charger-89301",
       "image": "",
-      "summary": "Red Dot获奖3合1旅行充电宝，集成移动电源、充电器和伸缩线，功能实用，便携性强，满足高频充电需求，目标人群广泛。45W快充，无明显短板。预估价格高于35元，3秒内可理解其合体概念。获奖增添情绪价值。",
+      "summary": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
       "risk": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
       "review_confidence": 8,
       "review_reason": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "充电宝",
-        "旅行",
-        "3合1",
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "76737ae89826",
+      "product_key": null,
+      "title": "Red Dot Design Award: Baseus NOMOS Kickstand Magnetic Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/baseus-nomos-kickstand-magnetic-power-bank-82039",
+      "image": "",
+      "summary": "文字证据明确为 Baseus NOMOS Kickstand Magnetic Power Bank，属于日常便携移动电源/充电宝品类；其创新点包括磁吸无线充电、集成支架支持边充边用、线缆与无线充电宝组合形成多输入输出场景，并可兼作桌面磁吸充电器，功能完整且适用手机高频充电需求，价格空间预计可支撑35元以上。因图片缺失降低确认度，但文字信息足够具体，适合作为可用选品灵感。",
+      "risk": "文字证据明确为 Baseus NOMOS Kickstand Magnetic Power Bank，属于日常便携移动电源/充电宝品类；其创新点包括磁吸无线充电、集成支架支持边充边用、线缆与无线充电宝组合形成多输入输出场景，并可兼作桌面磁吸充电器，功能完整且适用手机高频充电需求，价格空间预计可支撑35元以上。因图片缺失降低确认度，但文字信息足够具体，适合作为可用选品灵感。",
+      "review_confidence": 8,
+      "review_reason": "文字证据明确为 Baseus NOMOS Kickstand Magnetic Power Bank，属于日常便携移动电源/充电宝品类；其创新点包括磁吸无线充电、集成支架支持边充边用、线缆与无线充电宝组合形成多输入输出场景，并可兼作桌面磁吸充电器，功能完整且适用手机高频充电需求，价格空间预计可支撑35元以上。因图片缺失降低确认度，但文字信息足够具体，适合作为可用选品灵感。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "9d184be43ab1",
+      "product_key": null,
+      "title": "Red Dot Design Award: Anker Nano Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/anker-nano-power-bank-82145",
+      "image": "",
+      "summary": "文字证据明确指向日常便携移动电源品类：Anker Nano Power Bank为超紧凑充电宝，集成可伸缩充电线并配有可拆卸挂绳，解决旅行和外出场景中线材收纳、携带和即时充电问题；具备明确结构创新和高频实用价值，价格空间大概率超过35元，适合作为充电宝方向的可用选品灵感。",
+      "risk": "文字证据明确指向日常便携移动电源品类：Anker Nano Power Bank为超紧凑充电宝，集成可伸缩充电线并配有可拆卸挂绳，解决旅行和外出场景中线材收纳、携带和即时充电问题；具备明确结构创新和高频实用价值，价格空间大概率超过35元，适合作为充电宝方向的可用选品灵感。",
+      "review_confidence": 8,
+      "review_reason": "文字证据明确指向日常便携移动电源品类：Anker Nano Power Bank为超紧凑充电宝，集成可伸缩充电线并配有可拆卸挂绳，解决旅行和外出场景中线材收纳、携带和即时充电问题；具备明确结构创新和高频实用价值，价格空间大概率超过35元，适合作为充电宝方向的可用选品灵感。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
         "award_gallery",
         "deepseek_search_agent"
       ]
@@ -2492,9 +2556,9 @@
       ]
     },
     {
-      "id": "d560c879735f",
+      "id": "6f73ceb5ade1",
       "product_key": null,
-      "title": "Turn any mug into a travel mug - Yanko Design",
+      "title": "Kickstarter >> hug - the insulated collapsible mug by The Huggable Co",
       "category": "水杯",
       "action_lane": "适合改造",
       "axes": [
@@ -2503,127 +2567,15 @@
       ],
       "score": 86,
       "score_label": "8.6",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2019/01/31/turn-any-mug-into-a-travel-mug",
-      "image": "https://www.yankodesign.com/images/design_news/2019/01/turn-any-mug-into-a-travel-mug/portavia_universal_lid_layout.jpg",
-      "summary": "通用旅行杯盖PortaVia，可适配任何杯子，防溅便携，结构创新。页面证据：https://youtu.be/i5LMSBxFX18 The PortaVia Universal To-Go Lid does something quite marvelous. It retrofits onto the top of any drinking vessel (mugs, cups, glasses, usually have roughly the same diameter at the lip) and instantly turns it into a travel cup that you can carry around with you without splashing your drink. It covers the mouth of",
-      "risk": "通用杯盖适配任何杯子，防溅便携，结构创新明确",
-      "review_confidence": 9,
-      "review_reason": "通用杯盖适配任何杯子，防溅便携，结构创新明确",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "54d1d8b6e05d",
-      "product_key": null,
-      "title": "LARQ Bottle is a sustainable and travel-friendly bottle ...",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "DesignWanted",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://designwanted.com/larq-bottle-water-purifier-uv-light",
-      "image": "",
-      "summary": "Sep 20, 2019 · The LARQ Bottle is a reusable, stainless-steel and self-cleaning water bottle, which purifies drinking water killing bacteria, using UV light tech.",
-      "risk": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
-      "review_confidence": 9,
-      "review_reason": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "editorial_main",
-        "水杯"
-      ]
-    },
-    {
-      "id": "1385098d1e59",
-      "product_key": null,
-      "title": "This 100% plastic-free bottle comes with a reusable filter that can ...",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2021/10/25/this-100-plastic-free-bottle-comes-with-a-reusable-filter-that-can-literally-purify-water-forever",
-      "image": "",
-      "summary": "To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro",
-      "risk": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
-      "review_confidence": 9,
-      "review_reason": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "editorial_main",
-        "水杯"
-      ]
-    },
-    {
-      "id": "1a351c76d216",
-      "product_key": null,
-      "title": "Red Dot Design Award: Nomaday UV Drink Flat",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/nomaday-uv-drink-flat-62084",
-      "image": "",
-      "summary": "自消毒饮水瓶具有创新性，但日常使用中消毒需求不强，实用性有限。水杯使用频率高，但自消毒功能可能增加成本，目标人群较窄。功能上除了UV消毒外，保温保冷表现良好，无明显短板。售价可能超过35元，但实际价格未明确。概念易懂但需解释，情绪价值因设计奖有所提升。",
-      "risk": "属于可直接饮用的水杯/饮水瓶品类，文字信息提供了明确产品和实际用途。UV自消毒功能结合保温保冷、食品级内涂层和500ml日常容量，具备清洁维护与通勤饮水场景的功能创新，不是普通基础杯；Red Dot来源和材料/功能描述较清晰，价格空间大概率支持35元以上。因缺少图片，无法进行视觉确认，但文字证据足够作为选品方向保留。",
-      "review_confidence": 8,
-      "review_reason": "属于可直接饮用的水杯/饮水瓶品类，文字信息提供了明确产品和实际用途。UV自消毒功能结合保温保冷、食品级内涂层和500ml日常容量，具备清洁维护与通勤饮水场景的功能创新，不是普通基础杯；Red Dot来源和材料/功能描述较清晰，价格空间大概率支持35元以上。因缺少图片，无法进行视觉确认，但文字证据足够作为选品方向保留。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent",
-        "trend",
-        "水杯"
-      ]
-    },
-    {
-      "id": "a6e4d992e507",
-      "product_key": null,
-      "title": "Kickstarter >> HYDAWAY COLLAPSIBLE DRINK TUMBLER by Niki Singlaub",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
       "source": "Kickstarter",
       "source_family": "市场信号",
       "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/hydaway/hydaway-collapsible-drink-tumbler",
+      "url": "https://www.kickstarter.com/projects/-hug-/hug-600ml-20oz-double-walled-insulation-in-your-pocket",
       "image": "",
-      "summary": "HYDAWAY可折叠保温杯，便携可折叠结构，冷热两用，明确单品，创新证据清晰。。页面证据：Niki Singlaub is raising funds for HYDAWAY COLLAPSIBLE DRINK TUMBLER on Kickstarter! A portable, insulated, hot-and-cold drink tumbler for enjoying any drink, anywhere, all the time.",
-      "risk": "文字证据明确为HYDAWAY可折叠饮用保温杯，属于可直接饮用的水杯/随行杯品类；核心创新点是可折叠便携结构并兼顾冷热饮和保温使用，解决通勤、旅行、户外携带占空间的问题，功能和使用场景清晰，不是普通基础杯。因图片缺失，视觉证据不足但文字信息来自Kickstarter项目页且产品机制明确，可作为高优先级选品灵感保留。",
+      "summary": "hug可折叠保温杯，双壁保温、9档高度、口袋便携、回收材料，明确单品且有结构创新。。页面证据：The Huggable Co is raising funds for hug - the insulated collapsible mug on Kickstarter! Up to 9 height options, double walled insulation, pocket friendly, made from recycled material and climate positive +",
+      "risk": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
       "review_confidence": 8,
-      "review_reason": "文字证据明确为HYDAWAY可折叠饮用保温杯，属于可直接饮用的水杯/随行杯品类；核心创新点是可折叠便携结构并兼顾冷热饮和保温使用，解决通勤、旅行、户外携带占空间的问题，功能和使用场景清晰，不是普通基础杯。因图片缺失，视觉证据不足但文字信息来自Kickstarter项目页且产品机制明确，可作为高优先级选品灵感保留。",
+      "review_reason": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "buy_sample",
@@ -2631,25 +2583,25 @@
       ]
     },
     {
-      "id": "5de28bc4342b",
+      "id": "d168777f38f9",
       "product_key": null,
-      "title": "Vitaloop: Get pure water from any source by Vitaloop Inc ...",
+      "title": "LARQ - Indiegogo",
       "category": "水杯",
       "action_lane": "适合改造",
       "axes": [
         "功能启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
+      "score": 86,
+      "score_label": "8.6",
       "source": "Indiegogo",
       "source_family": "市场信号",
       "source_quality": "standard",
-      "url": "https://www.indiegogo.com/en/projects/vitaloopinc/vitaloop-get-pure-water-from-any-source",
+      "url": "https://www.indiegogo.com/en/creators/larq",
       "image": "",
-      "summary": "Vitaloop 是 Indiegogo 上的便携净水设备，45秒内将湖水、河水、龙头水净化为纯水，一键操作，集成过滤与便携饮水功能，属于水杯品类的功能创新。。页面证据：With Vitaloop you do not have to imagine, nor do you have to carry those dozens of bottles. Why? In just 45 seconds and with a single push of a button, your Vitaloop turns water from a still lake, dirty river, overused spout or hotel sink into a great tasting and pure drinking water.",
-      "risk": "文字信息显示该产品可在45秒内通过一键操作将湖水、河水、龙头水等净化为可饮用水，兼具便携饮水容器与主动净水功能，符合水杯/水瓶方向中的结构与功能创新；相比普通水杯有明确的户外、旅行、应急和酒店用水场景，高频实用性和价格承载空间较强。因缺少图片，外观证据不足，但文字证据充分，不作硬拒。",
+      "summary": "LARQ PureVis 2自清洁净化水瓶，UV-C净化和自清洁功能，可追踪饮水数据。。页面证据：LARQ Bottle PureVis 2: Purify.Track.Self-cleaning. by LARQ $847,687 total funding 2.2k",
+      "risk": "文字证据显示该产品是可直接饮用的水瓶，具备 UV-C 净化、自清洁和饮水数据追踪功能，属于水杯品类中的功能型创新产品；净水、自清洁和饮水记录是高频饮水场景的明确痛点，具备较强实用性和价格承载力。因图片缺失，无法完成图文匹配和外观验证，降为 usable，但不构成硬拒。",
       "review_confidence": 8,
-      "review_reason": "文字信息显示该产品可在45秒内通过一键操作将湖水、河水、龙头水等净化为可饮用水，兼具便携饮水容器与主动净水功能，符合水杯/水瓶方向中的结构与功能创新；相比普通水杯有明确的户外、旅行、应急和酒店用水场景，高频实用性和价格承载空间较强。因缺少图片，外观证据不足，但文字证据充分，不作硬拒。",
+      "review_reason": "文字证据显示该产品是可直接饮用的水瓶，具备 UV-C 净化、自清洁和饮水数据追踪功能，属于水杯品类中的功能型创新产品；净水、自清洁和饮水记录是高频饮水场景的明确痛点，具备较强实用性和价格承载力。因图片缺失，无法完成图文匹配和外观验证，降为 usable，但不构成硬拒。",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "buy_sample",
@@ -2657,82 +2609,108 @@
       ]
     },
     {
-      "id": "4773858b5f9f",
+      "id": "c08e96dcc07e",
       "product_key": null,
-      "title": "Red Dot Design Award: Multi-Functional Fast Charging Power Bank-PB7S",
-      "category": "充电宝",
-      "action_lane": "方向参考",
+      "title": "Red Dot Design Award: Thermo Mug Without Thread",
+      "category": "水杯",
+      "action_lane": "适合改造",
       "axes": [
         "功能启发",
         "结构启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
+      "score": 86,
+      "score_label": "8.6",
       "source": "Red Dot",
       "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/multi-functional-fast-charging-power-bank-pb7s-89325",
+      "url": "https://www.red-dot.org/project/thermo-mug-without-thread-79401",
       "image": "",
-      "summary": "具体产品：UGREEN All-in-One Magnetic Wireless Power Bank PB7S，创新证据：折叠外壳内含磁吸Qi2.2充电板、集成线缆和接口，可同时为多设备充电并调节支架角度。。页面证据：The UGREEN All-in-One Magnetic Wireless Power Bank series comprises compact charging units that combine a wireless charger and a power bank with stand function in one product. A foldable casing with a magnetic Qi2.2 charging pad as well as integrated...",
-      "risk": "折叠外壳集成磁吸无线充、线缆和支架，支持多设备同时充电",
+      "summary": "Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置锁定防漏，可拆卸硅胶套，结构创新与交互创新明确。。页面证据：This thermo mug without a screw thread features a push-button opening mechanism that can be operated with one hand. A built-in toggle lock prevents accidental spills, while also serving as a fun fidget feature. The smooth rim and removable silicone sleeve...",
+      "risk": "无螺纹按压开盖单手操作，内置锁定防漏",
       "review_confidence": 9,
-      "review_reason": "折叠外壳集成磁吸无线充、线缆和支架，支持多设备同时充电",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "review_reason": "无螺纹按压开盖单手操作，内置锁定防漏",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "adapt",
-        "award_gallery"
+        "award_gallery",
+        "deepseek_search_agent"
       ]
     },
     {
-      "id": "111e9705ab8e",
+      "id": "38700a30bb1c",
       "product_key": null,
-      "title": "The Reusable LARQ Bottle Cleans Itself and the Water Inside",
+      "title": "Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Core77",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.core77.com/posts/27915",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_27915_.jpg",
+      "summary": "可重复使用水瓶，中间可拧开清洁，解决清洗难题，结构创新，明确为水杯。。页面证据：You can show up at your gym drinkless and buy overpriced beverages there, or you can save a few bucks (and the environment) and carry your own refillable bottle. As someone in the latter camp, I haven't been able to find a bottle I can easily clean the inside of,...",
+      "risk": "中间可拧开结构，便于彻底清洁",
+      "review_confidence": 9,
+      "review_reason": "中间可拧开结构，便于彻底清洁",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "89a5d49c0c4c",
+      "product_key": null,
+      "title": "LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter",
       "category": "水杯",
       "action_lane": "适合改造",
       "axes": [
         "功能启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Design Milk",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://design-milk.com/the-reusable-larq-bottle-cleans-itself-and-the-water-inside",
-      "image": "https://design-milk.com/images/2020/05/LARQ-Bottle-self-cleaning-water-bottle-1.jpg",
-      "summary": "LARQ Bottle自清洁水杯，采用UV-C LED技术，可净化水和清洁瓶身，锂电池续航一个月，创新显著。。页面证据：The reusable LARQ water bottle comes with built-in UV-C LED technology that cleans the water inside, as well as the bottle itself so you don't have to.",
-      "risk": "UV-C LED技术实现瓶身和水的自清洁，无需手动清洗。",
-      "review_confidence": 9,
-      "review_reason": "UV-C LED技术实现瓶身和水的自清洁，无需手动清洗。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "5f5828269ba8",
-      "product_key": null,
-      "title": "kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented...",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
+      "score": 86,
+      "score_label": "8.6",
       "source": "Kickstarter",
       "source_family": "市场信号",
       "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented",
+      "url": "https://www.kickstarter.com/projects/livelarq/quartz-bottle",
       "image": "",
-      "summary": "Ample Ultraslim Powerbank 是一款超薄充电宝，支持自选线缆，结构上实现极薄便携，符合充电宝品类创新要求。。页面证据：Pledge €49 or more About US$ 52. Early bird [single pack]. Experience the finest powerbank that ever charged! Save €20 (29% OFF RETAIL). Includes: Ample Ultraslim Powerbank. 2× Cables of your choice.",
-      "risk": "内置两条侧边线免去外带线缆，超薄设计",
+      "summary": "LARQ Bottle采用UV-C LED自清洁和净水技术，可消灭99.9999%生物污染物，创新点明确。。页面证据：No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.",
+      "risk": "UV-C LED净水与自清洁功能，消灭99.9999%生物污染物",
       "review_confidence": 9,
-      "review_reason": "内置两条侧边线免去外带线缆，超薄设计",
+      "review_reason": "UV-C LED净水与自清洁功能，消灭99.9999%生物污染物",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
-        "buy_sample",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "44c7bf29c64e",
+      "product_key": null,
+      "title": "LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/livelarq/larq-bottle-purevis-2-purify-track-self-cleaning",
+      "image": "",
+      "summary": "LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，技术创新明显。。页面证据：The smarter and better self-cleaning bottle with two-stage purification and new app integration for hydration tracking and reminders.",
+      "risk": "两级净化和App跟踪，自清洁功能升级，智能化",
+      "review_confidence": 9,
+      "review_reason": "两级净化和App跟踪，自清洁功能升级，智能化",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     }
