@@ -199,15 +199,15 @@ def daily_display_ids(products):
     return {item.get("id") for item in groups[0].get("items", []) if item.get("id")}
 
 
-def score_products(products, limit=0, force=False, sleep=0.6):
+def score_products(products, limit=0, force=False, sleep=0.6, date=""):
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     scored = 0
     if force:
-        queue = products
+        queue = [product for product in products if not date or product.get("first_seen") == date]
     else:
         priority_ids = daily_display_ids(products)
         queue = sorted(
-            products,
+            [product for product in products if not date or product.get("first_seen") == date],
             key=lambda product: (
                 1 if product.get("id") in priority_ids else 0,
                 *score_priority(product),
@@ -248,10 +248,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=0, help="Score at most N unscored products.")
     parser.add_argument("--force", action="store_true", help="Rescore products with existing scores.")
+    parser.add_argument("--date", default="", help="Only score products first seen on this date (YYYY-MM-DD).")
     args = parser.parse_args()
 
     products = load_json(DATA_DIR / "products.json", [])
-    count = score_products(products, args.limit, args.force)
+    count = score_products(products, args.limit, args.force, date=args.date)
     write_json(DATA_DIR / "products.json", products)
     print(f"scored={count} products={len(products)}")
 
