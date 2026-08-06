@@ -6,6 +6,7 @@ import json
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 from insight_common import ROOT, load_env, today
@@ -55,12 +56,19 @@ def gh_json(method, endpoint, payload=None):
             json.dump(payload, f, ensure_ascii=False)
             temp_path = f.name
         cmd.extend(["--input", temp_path])
+    result = None
     try:
-        result = subprocess.run(cmd, cwd=ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        for attempt in range(1, 4):
+            result = subprocess.run(cmd, cwd=ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            if result.returncode == 0:
+                break
+            if attempt < 3:
+                print(f"github_api_retry attempt={attempt}/3 error={result.stderr.strip()}", flush=True)
+                time.sleep(attempt * 3)
     finally:
         if temp_path:
             Path(temp_path).unlink(missing_ok=True)
-    if result.returncode:
+    if result is None or result.returncode:
         raise RuntimeError(result.stderr.strip())
     return json.loads(result.stdout or "{}")
 
