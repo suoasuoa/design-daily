@@ -2,16 +2,14 @@ name: Insight Pool
 
 on:
   schedule:
-    # Main runs on Beijing weekdays at 07:30, 11:30, and 13:30 so the 40-pick target has ample deadline headroom.
+    # Cloud discovery runs on Beijing weekdays at 07:30 and 11:30.
     # The first cron is Sunday-Thursday UTC because it is the previous UTC day.
     - cron: "30 23 * * 0-4"
     - cron: "30 3 * * 1-5"
-    - cron: "30 5 * * 1-5"
-    # Backup checks retry through 14:10 and skip once the phase target is met.
-    # The local company-model final review owns the late-afternoon window.
+    # Backup checks run at 08:10 and 12:10, then the local company model owns
+    # the afternoon window so cloud and local writers cannot overlap.
     - cron: "10 0 * * 1-5"
     - cron: "10 4 * * 1-5"
-    - cron: "10 6 * * 1-5"
   workflow_dispatch:
     inputs:
       score_limit:
