@@ -152,7 +152,7 @@ def top_up(target, pass_index, workers, review_limit):
 
 def rebuild_and_publish(repo, score_limit, skip_publish):
     run([sys.executable, "scripts/enrich_images.py", "--limit", "80"])
-    run([sys.executable, "scripts/score.py", "--limit", str(score_limit)])
+    run([sys.executable, "scripts/score.py", "--limit", str(score_limit), "--date", today()])
     run([sys.executable, "scripts/trend_agent.py", "--limit", "100"])
     run([sys.executable, "scripts/build_site.py"])
     run([sys.executable, "scripts/weekly_report.py", "--limit", "100"])
