@@ -1,177 +1,40 @@
 {
-  "generated_at": "2026-08-06T14:38:30+08:00",
-  "source": "local_summary",
-  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
-  "hot_categories": {
-    "氛围灯": 378,
-    "水杯": 321,
-    "创意厨具": 304,
-    "充电宝": 285,
-    "创意桌搭": 280,
-    "冲锋衣": 167,
-    "手机壳": 148,
-    "日历": 68,
-    "创意礼盒": 53,
-    "中秋礼盒": 31,
-    "端午礼盒": 6,
-    "装置艺术": 5
-  },
-  "hot_sources": {
-    "Yanko Design": 408,
-    "Kickstarter": 374,
-    "Indiegogo": 231,
-    "Red Dot": 219,
-    "Core77": 111,
-    "Design Milk": 89,
-    "Uncrate": 87,
-    "Designboom": 87,
-    "iF设计奖": 85,
-    "Cool Material": 65,
-    "The Grommet": 57,
-    "Behance": 55
-  },
-  "hot_tags": {
-    "deepseek_search_agent": 1549,
-    "editorial_main": 629,
-    "market_signal_strong": 555,
-    "adapt": 547,
-    "trend": 521,
-    "buy_sample": 518,
-    "氛围灯": 365,
-    "水杯": 309,
-    "创意厨具": 305,
-    "award_gallery": 290,
-    "白名单来源": 290,
-    "充电宝": 288,
-    "创意桌搭": 274,
-    "design_community": 203,
-    "适合作为趋势、内容爆点或方向参考": 171,
-    "冲锋衣": 167,
-    "手机壳": 144,
-    "market_signal": 124,
-    "适合做结构、包装、功能或外观改造": 104,
-    "日历": 68
-  },
-  "recommended": [
-    {
-      "title": "PowerPlant :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
-      "category": "充电宝",
-      "score": 88,
-      "reason": "充电宝是刚需，可更换电池设计提升便利性，LCD显示增加实用性，目标用户广泛，功能无明显短板，价格大概率超35元，但产品名称不够直观。"
-    },
-    {
-      "title": "Angry Miao | AM Emptiness Phone Case :: Behance",
-      "category": "手机壳",
-      "score": 86,
-      "reason": "手机壳保护功能针对跌落易损部位，实用性强，高频需求，苹果用户基数大，设计有情绪价值。"
-    },
-    {
-      "title": "OXO沙拉甩干器",
-      "category": "创意厨具",
-      "score": 86,
-      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
-    },
-    {
-      "title": "蘑菇氛围灯",
-      "category": "氛围灯",
-      "score": 86,
-      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
-    },
-    {
-      "title": "iF Design - Mr Charger (CH05)",
-      "category": "充电宝",
-      "score": 84,
-      "reason": "三合一设计覆盖日常充电需求，携带方便，价格合理，功能无明显短板，但需注意市场已有类似产品。"
-    },
-    {
-      "title": "磁吸锅铲套装",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Pinterest · 磁吸收纳锅铲套装"
-    },
-    {
-      "title": "Nanoleaf 智能灯板",
-      "category": "氛围灯",
-      "score": 84,
-      "reason": "加拿大Nanoleaf模块化智能LED灯板"
-    },
-    {
-      "title": "M01",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
-    },
-    {
-      "title": "Nano bubble shaker",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
-    },
-    {
-      "title": "SELECT100 grater",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
-    },
-    {
-      "title": "WMF Flexi Whisk",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
-    },
-    {
-      "title": "Multi-Functional Magnetic Knife Sheath",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
-    },
-    {
-      "title": "360KYUSU",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
-    },
-    {
-      "title": "The T-Pot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
-    },
-    {
-      "title": "VERMICULAR OVEN POT２ & Recraft program",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
-    },
-    {
-      "title": "PETARI Shallow Pot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called"
-    },
-    {
-      "title": "ARAHI",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of"
-    },
-    {
-      "title": "Zaru-ya no bon zaru （Flat strainer）",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The flattening of the colander allows foodstuffs to be placed side by side without overlapping. By p"
-    },
-    {
-      "title": "PackStaff FITLOCK",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The food storage container that closes tightly but It is easy to open.It has a high level of airtigh"
-    },
-    {
-      "title": "360°Tumbler・Cup",
-      "category": "水杯",
-      "score": 84,
-      "reason": "Good Design Award · This tumbler and cup allows one to drink from any position without removing the lid. The rim made wi"
-    }
-  ]
+  "summary": "本次产品线索整体偏向获奖设计和高颜值小物，但真正符合选品标准（实用、高频、广谱、售价>35元、3秒看懂）的核心品类集中在充电宝、手机壳、水杯等日常高频硬需求上。创意厨具和氛围灯虽数量多，但普遍存在场景窄或功能偏装饰的问题，需谨慎筛选。趋势信号包括多功能集成、模块化、便携性、以及设计奖项带来的情绪价值，但功能是否成立仍是首要判断标准。",
+  "hot_categories": [
+    "充电宝",
+    "手机壳",
+    "水杯",
+    "创意厨具"
+  ],
+  "hot_signals": [
+    "多功能集成（如三合一、多合一）",
+    "便携与模块化设计",
+    "高频刚需场景（如充电、手机跌落、饮水）",
+    "3秒可理解的核心卖点",
+    "设计奖项或知名品牌背书"
+  ],
+  "recommended_directions": [
+    "多功能充电宝（集成线缆、快充、应急启动）",
+    "单手操作防摔手机壳（带环扣/支架）",
+    "便携随行水杯（单手开合、茶仓分离）",
+    "高频厨具的创新设计（如磁吸收纳、易清洗、节省空间）",
+    "模块化桌面收纳与插座"
+  ],
+  "avoid_or_watch": [
+    "概念化产品（如AI Jacket、仿生蝴蝶夹克）",
+    "受众过窄的配件（如特定手机型号壳）",
+    "功能冗余复杂、清洁困难的产品",
+    "纯装饰性氛围灯（低频、非刚需）",
+    "价格过高且功能提升有限的产品"
+  ],
+  "next_search_keywords": [
+    "便携充电宝 多功能 集成线缆",
+    "手机壳 单手操作 防摔 环扣",
+    "运动水杯 单手开合 便携",
+    "模块化桌面收纳 插座",
+    "创意厨具 磁吸 折叠 收纳",
+    "智能水杯 高温提醒 喝水"
+  ],
+  "generated_at": "2026-08-06T15:07:19+08:00",
+  "source": "deepseek"
 }
