@@ -116,8 +116,6 @@ def trusted_cached_review(review):
         return False
     if review.get("category") not in CATEGORIES:
         return False
-    if review.get("source") == "company_gpt_multimodal":
-        return True
     reason = str(review.get("reason") or "").lower()
     suspicious = ["fallback", "不匹配", "无关", "不属于", "内容不符", "off-category"]
     return (
