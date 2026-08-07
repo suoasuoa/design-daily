@@ -102,6 +102,8 @@ def run_company_review(workers, review_limit):
             "--limit",
             str(review_limit),
             "--include-rejected",
+            "--lane",
+            "company_gpt",
         ]
     )
 
@@ -119,6 +121,32 @@ def top_up(target, pass_index, workers, review_limit):
         queries, pages = 70, 320
     else:
         queries, pages = 90, 420
+    run(
+        [
+            sys.executable,
+            "scripts/company_search_agent.py",
+            "--target",
+            str(target),
+            "--round",
+            str(pass_index - 1),
+            "--query-count",
+            str(queries),
+            "--max-pages",
+            str(pages),
+            "--screen-workers",
+            str(workers),
+        ]
+    )
+    run([sys.executable, "scripts/dedupe.py"])
+    run_company_review(workers, review_limit)
+    company_count = today_count(target)
+    print(
+        f"company_lane pass={pass_index} target={target} accepted={company_count}",
+        flush=True,
+    )
+    if company_count >= target:
+        return
+
     run([sys.executable, "scripts/collect_public.py"])
     run([sys.executable, "scripts/collect_curated_pages.py", "--limit", "90", "--shopify-pages", "1"])
     run([sys.executable, "scripts/search_jobs.py"])
@@ -142,7 +170,6 @@ def top_up(target, pass_index, workers, review_limit):
             "1",
         ]
     )
-    run_company_review(workers, review_limit)
     print(
         f"dual_model_top_up pass={pass_index} target={target} reserve={reserve} "
         f"accepted={today_count(target)}",

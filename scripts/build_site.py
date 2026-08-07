@@ -41,10 +41,10 @@ DAILY_CATEGORY_CAPS = {
     "卫衣": 2,
     "Polo衫": 2,
     "帽子": 2,
-    "手机壳": 4,
+    "手机壳": 3,
     "卡包": 2,
     "钥匙扣水壶": 2,
-    "充电宝": 4,
+    "充电宝": 3,
     "日历": 4,
     "冲锋衣": 4,
 }
@@ -257,7 +257,8 @@ def dedupe_key(item):
     return item.get("id") or normalize_key(item.get("url")) or normalize_key(item.get("title"))
 
 
-RELAXABLE_CATEGORIES = set(DAILY_CATEGORY_CAPS)
+HARD_DAILY_CATEGORY_CAPS = {"手机壳", "充电宝"}
+RELAXABLE_CATEGORIES = set(DAILY_CATEGORY_CAPS) - HARD_DAILY_CATEGORY_CAPS
 
 
 def category_under_cap(picks, category, relaxed=False):

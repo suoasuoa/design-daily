@@ -6,7 +6,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_site import daily_group_limit, merge_historical_snapshots, sorted_daily_items
+from build_site import category_under_cap, daily_group_limit, merge_historical_snapshots, sorted_daily_items
 
 
 class DailyGroupTargetTests(unittest.TestCase):
@@ -49,6 +49,16 @@ class DailyGroupTargetTests(unittest.TestCase):
         ranked = sorted_daily_items(items)
 
         self.assertEqual(ranked[0]["title"], "higher-quality")
+
+    def test_phone_case_hard_cap_survives_relaxed_fill(self):
+        picks = [{"category": "手机壳"} for _ in range(3)]
+
+        self.assertFalse(category_under_cap(picks, "手机壳", relaxed=True))
+
+    def test_power_bank_hard_cap_survives_relaxed_fill(self):
+        picks = [{"category": "充电宝"} for _ in range(3)]
+
+        self.assertFalse(category_under_cap(picks, "充电宝", relaxed=True))
 
 
 if __name__ == "__main__":

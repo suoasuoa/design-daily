@@ -12,7 +12,7 @@ from insight_common import ROOT
 
 
 LABEL = "com.design-daily.dual-model"
-DEFAULT_TIMES = ((13, 15), (15, 45), (17, 20))
+DEFAULT_TIMES = ((10, 30), (13, 30), (15, 45), (17, 10))
 
 
 def calendar_intervals(times):
@@ -40,6 +40,8 @@ def main():
     payload = {
         "Label": LABEL,
         "ProgramArguments": [
+            "/usr/bin/caffeinate",
+            "-i",
             sys.executable,
             str(ROOT / "scripts" / "local_dual_model_update.py"),
             "--company-workers",
@@ -70,7 +72,7 @@ def main():
     subprocess.run(["launchctl", "bootstrap", domain, str(plist_path)], check=True)
     subprocess.run(["launchctl", "enable", f"{domain}/{LABEL}"], check=True)
     print(f"installed={plist_path}")
-    print("schedule=weekdays 13:15, 15:45; recovery check 17:20 Asia/Shanghai")
+    print("schedule=weekdays 10:30, 13:30, 15:45; recovery check 17:10 Asia/Shanghai")
     print(f"working_directory={ROOT}")
     print(f"logs={log_dir}")
 

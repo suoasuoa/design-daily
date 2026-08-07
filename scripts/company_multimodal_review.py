@@ -256,14 +256,31 @@ def apply_reviews(products, decisions, review_date):
     return kept, rejected, recategorized, rescued
 
 
-def review_candidates(products, rejected, review_date, include_rejected=False):
-    candidates = [item for item in products if item.get("first_seen") == review_date]
+def lane_matches(item, lane):
+    if lane == "all":
+        return True
+    tags = set(item.get("tags") or [])
+    if lane == "company_gpt":
+        return "company_search_agent" in tags
+    if lane == "deepseek":
+        return "deepseek_search_agent" in tags and "company_search_agent" not in tags
+    return False
+
+
+def review_candidates(products, rejected, review_date, include_rejected=False, lane="all"):
+    candidates = [
+        item
+        for item in products
+        if item.get("first_seen") == review_date and lane_matches(item, lane)
+    ]
     if include_rejected:
         seen = {item.get("id") for item in candidates if item.get("id")}
         candidates.extend(
             item
             for item in rejected
-            if item.get("first_seen") == review_date and item.get("id") not in seen
+            if item.get("first_seen") == review_date
+            and item.get("id") not in seen
+            and lane_matches(item, lane)
         )
     return candidates
 
@@ -275,6 +292,7 @@ def run_review(
     force=False,
     dry_run=False,
     include_rejected=False,
+    lane="all",
 ):
     load_env()
     review_date = review_date or today()
@@ -282,7 +300,7 @@ def run_review(
     rejected_pool = load_json(DATA_DIR / "rejected_category.json", [])
     report = load_json(DATA_DIR / "company_multimodal_review.json", {"reviews": {}})
     cached = report.get("reviews", {})
-    all_candidates = review_candidates(products, rejected_pool, review_date, include_rejected)
+    all_candidates = review_candidates(products, rejected_pool, review_date, include_rejected, lane)
     candidates = list(all_candidates)
     if not force:
         candidates = [item for item in candidates if not cached_review_is_current(cached.get(item.get("id")))]
@@ -350,6 +368,7 @@ def main():
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--lane", choices=("all", "company_gpt", "deepseek"), default="all")
     parser.add_argument(
         "--include-rejected",
         action="store_true",
@@ -363,6 +382,7 @@ def main():
         args.force,
         args.dry_run,
         args.include_rejected,
+        args.lane,
     )
 
 

@@ -186,7 +186,7 @@ def fallback_query_jobs(limit, round_index=0):
     return ordered[:limit]
 
 
-def plan_queries(query_count, target, round_index):
+def plan_queries(query_count, target, round_index, planner="auto"):
     current_count, current_categories = accepted_today()
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
     domains = ", ".join(allowed_domains())
@@ -209,7 +209,7 @@ def plan_queries(query_count, target, round_index):
 请生成最多 {query_count} 条高精度搜索词。目标是找到数据库从未收录的具体产品或具体设计案例，不要求当天发布。
 
 硬规则：
-1. 只搜索下面的允许品类，优先今天数量少的品类；同一品类计划不超过总搜索词的 20%。
+1. 只搜索下面的允许品类，优先今天数量少的品类；同一品类计划不超过总搜索词的 20%。手机壳、充电宝分别最多占总搜索词的 8%。
 2. 70% 搜索词必须带 site:白名单域名，优先设计奖、设计媒体、包装网站、众筹和真实商品页。
 3. 搜索词必须指向具体产品页或具体案例页，避免 search、collection、tag、topic、首页和泛文章。
 4. 明确排除普通基础款、换色/印花/普通联名、建筑新闻、汽车、宠物用品、泛科技新闻和已停用品类。
@@ -230,7 +230,10 @@ def plan_queries(query_count, target, round_index):
 {json.dumps(schema, ensure_ascii=False)}
 """
     rows = []
-    if os.environ.get("USE_COMPANY_QUERY_PLANNER") == "1":
+    use_company = planner == "company" or (
+        planner == "auto" and os.environ.get("USE_COMPANY_QUERY_PLANNER") == "1"
+    )
+    if use_company:
         try:
             client = CompanyGPTClient(timeout=180)
             payload, _usage = client.chat_json(
@@ -246,7 +249,7 @@ def plan_queries(query_count, target, round_index):
             print(f"query_plan=company_gpt rows={len(rows)}", flush=True)
         except (CompanyGPTError, KeyError, TypeError, ValueError) as exc:
             print(f"company_query_plan_fallback error={exc}", flush=True)
-    if not rows:
+    if not rows and planner != "company":
         try:
             rows = call_deepseek(prompt, max_tokens=8000, attempts=1).get("queries", [])
         except RuntimeError as exc:
@@ -266,7 +269,7 @@ def plan_queries(query_count, target, round_index):
         seen.add(key)
         planned.append(
             {
-                "id": f"deepseek:{today()}:{round_index}:{index}:{stable_hash(query)}",
+                "id": f"{planner}:{today()}:{round_index}:{index}:{stable_hash(query)}",
                 "category": category,
                 "query": query,
                 "source_group": row.get("source_group") or "curated_keyword",
