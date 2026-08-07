@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "generated_at": "2026-08-07T13:47:55+08:00",
+  "generated_at": "2026-08-07T17:59:59+08:00",
   "stats": {
-    "events": 13,
-    "active_decisions": 9,
-    "likes": 8,
+    "events": 15,
+    "active_decisions": 11,
+    "likes": 10,
     "passes": 1
   },
   "positive_patterns": {
     "category": [
       {
         "name": "创意厨具",
-        "count": 4
+        "count": 5
       },
       {
         "name": "水杯",
-        "count": 1
+        "count": 2
       },
       {
         "name": "充电宝",
@@ -33,11 +33,11 @@
     "source_family": [
       {
         "name": "媒体案例",
-        "count": 4
+        "count": 5
       },
       {
         "name": "市场信号",
-        "count": 3
+        "count": 4
       },
       {
         "name": "社交灵感",
@@ -47,7 +47,7 @@
     "action_lane": [
       {
         "name": "适合改造",
-        "count": 6
+        "count": 8
       },
       {
         "name": "方向参考",
@@ -57,15 +57,15 @@
     "axes": [
       {
         "name": "功能启发",
-        "count": 8
+        "count": 10
       },
       {
         "name": "结构启发",
-        "count": 4
+        "count": 5
       },
       {
         "name": "视觉启发",
-        "count": 1
+        "count": 2
       },
       {
         "name": "包装启发",
@@ -75,11 +75,11 @@
     "tags": [
       {
         "name": "deepseek_search_agent",
-        "count": 7
+        "count": 9
       },
       {
         "name": "adapt",
-        "count": 3
+        "count": 4
       },
       {
         "name": "editorial_main",
@@ -87,6 +87,10 @@
       },
       {
         "name": "创意厨具",
+        "count": 2
+      },
+      {
+        "name": "buy_sample",
         "count": 2
       },
       {
@@ -99,10 +103,6 @@
       },
       {
         "name": "户外用品",
-        "count": 1
-      },
-      {
-        "name": "多功能工具",
         "count": 1
       }
     ]
@@ -221,6 +221,20 @@
       "title": "vollebak introduces a jacket that mimics the wings of a blue morpho butterfly",
       "category": "冲锋衣",
       "summary": "属于可穿着的功能外套/冲锋衣，标题和摘要明确其采用模拟蓝闪蝶翅膀结构的三层防水透湿膜面料，并配有五口袋、双向拉链、调节绳等完整户外夹克结构。创新点不是普通换色，而是将仿生结构色与防水透湿材料结合，兼具视觉识别和功能面料启发；实用性、价格空间和转化为高端功能服装方向的价值都较强。",
+      "reason": ""
+    },
+    {
+      "product_id": "81c464c38943",
+      "title": "Why over 50,000 people have switched to this titanium cutting board",
+      "category": "创意厨具",
+      "summary": "TIBO Titanium Cutting Board采用钛合金材质，宣称避免木质/塑料砧板的细菌隐藏与微塑料问题，主打抗菌、耐用和易清洁，是材料和卫生维度有明显创新点的明确砧板单品。。页面证据：Say goodbye to microplastics & bacteria: here's why titanium is the superior choice for food prep",
+      "reason": ""
+    },
+    {
+      "product_id": "77687645d2ea",
+      "title": "Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77",
+      "category": "水杯",
+      "summary": "DiFOLD Origami Bottle可折叠可重用水杯，通过折纸结构实现收纳体积大幅缩小，Kickstarter众筹超额500%完成，是可买样的明确单品。。页面证据：The DiFOLD Origami Bottle finds success in a crowded market",
       "reason": ""
     }
   ],
