@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T13:38:45+08:00",
+  "generated_at": "2026-08-07T14:13:59+08:00",
   "week": "2026-W32",
   "group_id": "2026-W32",
   "date_start": "2026-08-03",
@@ -30,7 +30,7 @@
     },
     "by_axis": {
       "功能启发": 68,
-      "结构启发": 59,
+      "结构启发": 60,
       "包装启发": 21,
       "情绪启发": 19,
       "视觉启发": 5
@@ -85,16 +85,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils",
       "image": "",
-      "summary": "专为手部活动不便者设计，人体工学角度手柄提升实用性，厨房工具使用频率高，包容性设计赋予情感价值，价格预计超35元，但目标人群相对特定，影响广泛性。",
+      "summary": "专为手部不便者设计的人体工学厨具，实用性高且功能聚焦，但目标人群较窄，大众吸引力有限。价格可能超过35元，概念易懂，包容性设计带来情感价值。",
       "risk": "人体工学斜角手柄，包容性设计",
       "review_confidence": 9,
       "review_reason": "人体工学斜角手柄，包容性设计",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "包容性设计",
-        "人体工学",
-        "创意厨具",
-        "辅助生活",
+        "inclusive_design",
+        "ergonomic",
+        "kitchen_tools",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -117,17 +116,17 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars",
       "image": "",
-      "summary": "产品为游戏场景设计的RGB氛围灯，外观独特，功能成立，实用性和频率中等，但面向游戏人群，打击面有限。售价大概率超过35元，一眼可识别用途，情绪价值较高。",
+      "summary": "产品针对游戏桌搭场景，功能明确且具备情绪价值，但目标用户相对垂直，实用性和高频需求中等，价格显著高于35元，外观易懂。",
       "risk": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "review_confidence": 8,
       "review_reason": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "游戏周边",
-        "RGB灯效",
-        "桌搭",
+        "创意桌搭",
+        "RGB氛围灯",
+        "游戏外设",
         "design_community",
-        "创意桌搭"
+        "白名单来源"
       ]
     },
     {
@@ -148,16 +147,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
-      "summary": "产品设计巧妙，将月饼盒转化为灯笼，实现功能复用，兼具实用与情感价值，但使用场景局限于中秋，且概念理解需要时间，打击面不广。",
+      "summary": "该月饼盒将包装与灯笼功能创意结合，具备节日情绪价值，但结构复杂，大众难以快速理解，且季节性需求强烈，实用性偏窄。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "中秋礼盒",
-        "设计创新",
-        "可复用包装",
-        "灯笼",
+        "creative packaging",
+        "mid-autumn gift box",
+        "multifunctional design",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -180,7 +178,7 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "产品有实用功能，但使用频率低，主要面向礼品包装场景，受众较窄，功能上折叠设计可能牺牲部分坚固性，价格可超35，但需讲解才能理解，情绪价值有一定体现。",
+      "summary": "折叠盒设计巧妙，实用性强，适用于多种高档礼品场景，功能完整，展示清晰，兼具创意与情绪价值。",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
@@ -188,7 +186,7 @@
       "tags": [
         "创意礼盒",
         "折叠盒",
-        "包装定制",
+        "定制包装",
         "social_public_index",
         "白名单来源"
       ]
@@ -211,16 +209,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
-      "summary": "月饼盒可变形为灯笼，结构复用具备功能性和创意，但需要解释才能理解，实用性中等，适合中秋场景。",
+      "summary": "月饼盒可变形为灯笼，结构创新，功能成立后添加情绪价值，但3秒内不易看懂，实用性中等。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "中秋礼盒",
-        "变形灯笼",
-        "结构创新",
-        "礼品包装",
+        "mid-autumn",
+        "gift box",
+        "lantern",
+        "design",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -348,7 +346,7 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161108345/-2022-",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf443b161108345.63bfbe2fa57d3.png",
-      "summary": "黑天鹅2022中秋月饼礼盒以独特开盒仪式和天鹅羽翼结构为核心卖点，情绪价值和设计创新突出，适合节日送礼场景，但时令性强、适用人群有限，实用性一般。",
+      "summary": "黑天鹅2022中秋月饼礼盒以独特的开盒结构设计为核心，情感价值突出，但实用性和使用频率有限，目标受众较窄。售价远超35元，且设计具有话题性。",
       "risk": "这是明确的中秋/月饼礼盒，且不是普通插画换肤盒。其核心创新在于开盒动作被设计成黑天鹅展翼的叙事结构，黑色折叠羽翼与中央白色纸浆感月饼盒形成强对比，具备开箱仪式感、结构记忆点和节日礼赠溢价空间，可转化为中秋礼盒的机关式展开、动物意象叙事和内外盒反差设计方向。",
       "review_confidence": 9,
       "review_reason": "这是明确的中秋/月饼礼盒，且不是普通插画换肤盒。其核心创新在于开盒动作被设计成黑天鹅展翼的叙事结构，黑色折叠羽翼与中央白色纸浆感月饼盒形成强对比，具备开箱仪式感、结构记忆点和节日礼赠溢价空间，可转化为中秋礼盒的机关式展开、动物意象叙事和内外盒反差设计方向。",
@@ -356,8 +354,7 @@
       "tags": [
         "中秋礼盒",
         "包装设计",
-        "创意礼盒",
-        "礼盒开盒体验",
+        "高端礼品",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -406,17 +403,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/145263273/_",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
-      "summary": "端午礼盒为节日限定产品，具有明确的包装结构创新，魔方盒子旋转互动增加趣味，情绪价值高，但实用性和使用频率较低，受众仅限于端午送礼场景。",
+      "summary": "该产品为端午礼盒的创意包装设计，魔方结构增加了互动趣味，但作为商品本身实用性有限，属于节日性低频消费，目标群体偏窄。价格预期高于35元，但包装结构可能过于概念化，量产和使用有风险。3秒内对普通消费者可能不易迅速理解其亮点。情绪价值较高，适合节日送礼场景，可作为设计趋势参考。",
       "risk": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
       "review_confidence": 9,
       "review_reason": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "design_community",
+        "trend",
         "端午礼盒",
-        "包装设计",
-        "节日礼物",
-        "deepseek_search_agent",
-        "design_community"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -426,7 +422,8 @@
       "category": "创意礼盒",
       "action_lane": "可直接买样",
       "axes": [
-        "包装启发"
+        "包装启发",
+        "结构启发"
       ],
       "score": 70,
       "score_label": "7.0",
@@ -435,16 +432,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/56f6ac75055531.5c41d1be7bc1c.jpg",
-      "summary": "产品创意独特，滑动盖作为托盘具有实用功能，但使用场景局限于红酒饮用，市场需求不够高频和广泛。结构设计有创新，但可能影响稳定性。预估售价满足要求，但3秒内理解需要一定说明。",
+      "summary": "产品将酒盒与托盘功能结合，实用性强，解决了携带和递送酒具的痛点，但目标用户偏酒类爱好者或礼品场景，频率中等，打击面有限。结构设计有创新，功能无明显短板，但需验证坚固性。预估售价高于35，符合价格要求。视觉上滑盖打开变托盘的概念易理解，但需展示清楚。情绪价值体现在礼品和定制雕刻上。",
       "risk": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "review_confidence": 8,
       "review_reason": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "红酒礼盒",
-        "创意包装",
-        "家居好物",
-        "送礼佳品",
+        "创意礼盒",
+        "酒具",
+        "激光切割",
+        "结构创新",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -466,15 +463,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/88254971/MOONCAKE-BOX-with-board-game-inside",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3e2fcc88254971.5dd1240e72e70.png",
-      "summary": "礼盒本身实用，但棋盘游戏增加娱乐性，非高频需求；面向送礼场景有广泛吸引力，功能完整，价格预计高于35元，3秒可看懂，情绪价值高。",
+      "summary": "产品将中秋月饼礼盒与棋盘游戏结合，结构创新，兼具送礼和娱乐功能，售价预计高于35元，具备一定的情绪价值和节日氛围，但属于季节性产品，需求频次低，且游戏与食品结合可能带来质量与卫生隐患，适用人群相对有限。",
       "risk": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "review_confidence": 9,
       "review_reason": "月饼盒内嵌棋盘游戏，实现包装与娱乐功能的结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "中秋礼盒",
-        "board game",
+        "棋盘游戏",
         "结构创新",
+        "礼盒设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -495,17 +493,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar",
       "image": "",
-      "summary": "结合日历与种子种植，创意好但实用性一般，目标人群窄，价格可支撑。",
+      "summary": "概念新颖，结合日历与种植，情绪价值较高，但实用性受限于种植周期和成功率，目标人群相对细分。",
       "risk": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "review_confidence": 8,
       "review_reason": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "design_community",
-        "calendar",
-        "whitelist_source",
         "日历",
-        "白名单来源"
+        "白名单来源",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
@@ -1695,7 +1692,7 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "实用性强，集成充电和夜灯，折叠设计节省空间；高频使用场景；但目标人群偏科技爱好者，打击面中等；功能较全面无明显短板；价格可能超35元，但不明；外观和结构有设计感，清晰易懂；情绪价值中等。",
+      "summary": "可折叠无线充电站，集成4合1充电、夜灯、MagSafe充电板，功能实用，设计创新，符合创意桌搭趋势。",
       "risk": "可折叠设计集成无线充电与夜灯，结构创新",
       "review_confidence": 8,
       "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
@@ -1704,7 +1701,6 @@
         "创意桌搭",
         "无线充电",
         "折叠设计",
-        "MagSafe",
         "deepseek_search_agent",
         "design_community"
       ]
