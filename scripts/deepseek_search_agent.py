@@ -223,6 +223,10 @@ def fallback_query_jobs(limit, round_index=0):
 
 def plan_queries(query_count, target, round_index, planner="auto"):
     current_count, current_categories = accepted_today()
+    use_company = planner == "company" or (
+        planner == "auto" and os.environ.get("USE_COMPANY_QUERY_PLANNER") == "1"
+    )
+    model_query_count = query_count if use_company else min(query_count, 25)
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
     domains = ", ".join(allowed_domains())
     preferences = preference_context()
@@ -241,7 +245,7 @@ def plan_queries(query_count, target, round_index, planner="auto"):
 你负责为选品团队制定第 {round_index + 1} 轮真实网页搜索计划。今天已经严格通过 {current_count}/{target} 条，品类分布：
 {json.dumps(dict(current_categories), ensure_ascii=False)}
 
-请生成最多 {query_count} 条高精度搜索词。目标是找到数据库从未收录的具体产品或具体设计案例，不要求当天发布。
+请生成最多 {model_query_count} 条高精度搜索词。目标是找到数据库从未收录的具体产品或具体设计案例，不要求当天发布。
 
 硬规则：
 1. 只搜索下面的允许品类，优先今天数量少的品类；同一品类计划不超过总搜索词的 20%。手机壳、充电宝分别最多占总搜索词的 8%。
@@ -265,9 +269,6 @@ def plan_queries(query_count, target, round_index, planner="auto"):
 {json.dumps(schema, ensure_ascii=False)}
 """
     rows = []
-    use_company = planner == "company" or (
-        planner == "auto" and os.environ.get("USE_COMPANY_QUERY_PLANNER") == "1"
-    )
     if use_company:
         try:
             client = CompanyGPTClient(timeout=180)
@@ -293,15 +294,24 @@ def plan_queries(query_count, target, round_index, planner="auto"):
 
     planned = []
     seen = set()
+    category_counts = Counter()
+    category_limit = max(1, math.ceil(query_count * 0.20))
+    restricted_limit = max(1, math.ceil(query_count * 0.08))
+
+    def category_has_room(category):
+        limit = restricted_limit if category in {"手机壳", "充电宝"} else category_limit
+        return category_counts[category] < limit
+
     for index, row in enumerate(rows):
         category = row.get("category")
         query = re.sub(r"\s+", " ", str(row.get("query") or "")).strip()
-        if category not in CATEGORIES or not query:
+        if category not in CATEGORIES or not query or not category_has_room(category):
             continue
         key = query.lower()
         if key in seen:
             continue
         seen.add(key)
+        category_counts[category] += 1
         planned.append(
             {
                 "id": f"{planner}:{today()}:{round_index}:{index}:{stable_hash(query)}",
@@ -320,9 +330,11 @@ def plan_queries(query_count, target, round_index, planner="auto"):
         if len(planned) >= query_count:
             break
         key = str(job.get("query") or "").lower()
-        if not key or key in seen:
+        category = job.get("category")
+        if not key or key in seen or not category_has_room(category):
             continue
         seen.add(key)
+        category_counts[category] += 1
         planned.append(job)
     return planned
 

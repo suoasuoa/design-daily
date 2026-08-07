@@ -5,7 +5,7 @@ import argparse
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from company_gpt import CompanyGPTClient, company_gateway_available
+from company_gpt import CompanyGPTClient, CompanyGPTError, company_gateway_available
 from company_multimodal_review import review_one
 from deepseek_search_agent import (
     accepted_today,
@@ -54,7 +54,15 @@ def provisional_product(row):
 
 def screen_one(row, client):
     product = provisional_product(row)
-    decision = review_one(product, client)
+    try:
+        decision = review_one(product, client)
+    except CompanyGPTError as exc:
+        if "400" not in str(exc) or not product.get("image"):
+            raise
+        product["image"] = ""
+        decision = review_one(product, client)
+        decision["image_status"] = "unreadable"
+        decision["visual_evidence"] = "图片接口拒绝该资源，本次依据具体页面文字证据审核"
     candidate = dict(row)
     candidate["agent_decision"] = {
         "category": decision.get("category") or decision.get("suggested_category") or "",

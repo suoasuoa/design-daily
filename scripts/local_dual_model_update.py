@@ -185,6 +185,7 @@ def top_up(target, pass_index, workers, review_limit):
         queries, pages = 70, 320
     else:
         queries, pages = 90, 420
+    company_pages = 80 if target <= 15 else (120 if target <= 30 else 160)
     if company_gateway_available():
         run(
             [
@@ -197,7 +198,7 @@ def top_up(target, pass_index, workers, review_limit):
                 "--query-count",
                 str(queries),
                 "--max-pages",
-                str(pages),
+                str(company_pages),
                 "--screen-workers",
                 str(workers),
             ]
