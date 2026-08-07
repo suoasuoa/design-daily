@@ -50,6 +50,8 @@ BAD_REASONS = (
     "未体现",
     "无实物",
     "不完整",
+    "语义去重",
+    "高度相似",
 )
 TITLE_NOISE = re.compile(
     r"\b(yanko design|dieline|uncrate|core77|designboom|design milk|behance|"

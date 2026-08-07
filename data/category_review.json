@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T19:17:23+08:00",
+  "generated_at": "2026-08-07T19:29:25+08:00",
   "policy_version": 3,
   "reviews": {
     "457f979bb17e": {
@@ -176609,8 +176609,8 @@
     },
     "d2e04f052533": {
       "id": "d2e04f052533",
-      "keep": true,
-      "category": "冲锋衣",
+      "keep": false,
+      "category": "",
       "confidence": 9,
       "quality_score": 65,
       "relevance": 9,
@@ -176618,9 +176618,9 @@
       "functionality": 9,
       "clarity": 8,
       "price_power": 5,
-      "reason": "DeepSeek候选复核：双层结构，内层仿皮肤调节体温和排汗，外层由6种材料隔离极寒，材料和结构创新",
-      "reviewed_at": "2026-08-07T19:17:23+08:00",
-      "source": "deepseek_backlog_recheck",
+      "reason": "缺少能够证明其属于‘冲锋衣’实体品类的明确证据；原审核：DeepSeek候选复核：双层结构，内层仿皮肤调节体温和排汗，外层由6种材料隔离极寒，材料和结构创新",
+      "reviewed_at": "2026-08-07T19:29:01+08:00",
+      "source": "deterministic_entity_policy",
       "policy_version": 3
     },
     "8e6a25b85807": {
@@ -195938,7 +195938,7 @@
       "clarity": 8,
       "price_power": 8,
       "reason": "DeepSeek候选复核：滑动打开结构，融合越南中秋符号，包装结构创新。",
-      "reviewed_at": "2026-08-07T19:15:12+08:00",
+      "reviewed_at": "2026-08-07T19:29:25+08:00",
       "source": "deepseek_backlog_recheck",
       "policy_version": 3
     },
@@ -201585,7 +201585,7 @@
       "clarity": 8,
       "price_power": 6,
       "reason": "DeepSeek候选复核：集成3.9mm碳纤维背心，实现全身防刺材料创新",
-      "reviewed_at": "2026-08-07T19:15:12+08:00",
+      "reviewed_at": "2026-08-07T19:29:25+08:00",
       "source": "deepseek_backlog_recheck",
       "policy_version": 3
     },
@@ -245827,7 +245827,7 @@
       "category": "",
       "confidence": 10,
       "reason": "与历史日报产品高度相似，已做语义去重：Red Dot Design Award: Bladeless Fan Light",
-      "reviewed_at": "2026-08-07T19:14:41+08:00",
+      "reviewed_at": "2026-08-07T19:29:01+08:00",
       "source": "semantic_dedupe_policy",
       "policy_version": 3
     },
