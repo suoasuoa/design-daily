@@ -96,11 +96,20 @@ def main():
         if count >= args.target:
             return
 
-    print(
-        f"daily_minimum warning: only {count}/{args.target} same-day accepted products after top-up. "
-        "The dashboard will still publish the best available new products.",
-        flush=True,
+    run(
+        [
+            sys.executable,
+            "scripts/promote_reviewed_backlog.py",
+            "--target",
+            str(args.target),
+        ]
     )
+    count = today_count(args.target)
+    print(f"daily_minimum backlog_count={count} target={args.target}", flush=True)
+    if count < args.target:
+        raise SystemExit(
+            f"daily_minimum failed: only {count}/{args.target} accepted products; refusing partial publish"
+        )
 
 
 if __name__ == "__main__":

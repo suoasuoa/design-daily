@@ -174,7 +174,17 @@ def fallback_query_jobs(limit, round_index=0):
         return []
     start = (round_index * limit) % len(jobs)
     ordered = jobs[start:] + jobs[:start]
-    return ordered[:limit]
+    selected = []
+    category_counts = Counter()
+    for job in ordered:
+        category = job.get("category")
+        if category in {"手机壳", "充电宝"} and category_counts[category] >= 3:
+            continue
+        selected.append(job)
+        category_counts[category] += 1
+        if len(selected) >= limit:
+            break
+    return selected
 
 
 def plan_queries(query_count, target, round_index):

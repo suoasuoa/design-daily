@@ -2,6 +2,7 @@
 """Common helpers for collecting, deduping, and publishing product leads."""
 
 import datetime as dt
+from difflib import SequenceMatcher
 import hashlib
 import html
 import json
@@ -100,6 +101,13 @@ WEAK_FINGERPRINT_TOKENS = {
     "a", "an", "and", "the", "for", "with", "from", "official", "site",
     "design", "product", "award", "winner", "project", "case", "new",
     "创意", "设计", "产品", "新品", "官网", "获奖", "案例", "灵感",
+}
+SEMANTIC_TITLE_NOISE = {
+    "red", "dot", "good", "if", "yanko", "dieline", "uncrate", "core77",
+    "designboom", "behance", "adobe", "inc", "pinterest", "facebook",
+    "susifacebook", "search", "zcool", "站酷", "design", "award", "project",
+    "the", "a", "an", "for", "of", "and", "with", "from", "this", "to",
+    "in", "by", "home",
 }
 
 
@@ -267,6 +275,42 @@ def content_fingerprint(item):
     if not compact:
         compact = item.get("url") or title
     return f"{category}:{stable_hash(compact, 16)}"
+
+
+def semantic_title_tokens(value):
+    """Normalize product titles for conservative same-category near-duplicate checks."""
+    value = unicodedata.normalize("NFKC", value or "").lower()
+    value = re.sub(r"[^a-z0-9\u4e00-\u9fff]+", " ", value)
+    tokens = []
+    for token in value.split():
+        if token in SEMANTIC_TITLE_NOISE:
+            continue
+        if token.endswith("ing") and len(token) > 5:
+            token = token[:-3]
+        elif token.endswith("ies") and len(token) > 5:
+            token = token[:-3] + "y"
+        elif token.endswith("s") and len(token) > 4:
+            token = token[:-1]
+        if token and token not in SEMANTIC_TITLE_NOISE:
+            tokens.append(token)
+    return tokens
+
+
+def semantic_title_duplicate(left, right):
+    left_tokens = semantic_title_tokens(left)
+    right_tokens = semantic_title_tokens(right)
+    left_set = set(left_tokens)
+    right_set = set(right_tokens)
+    if len(left_set) >= 2 and len(right_set) >= 2:
+        overlap = len(left_set & right_set) / len(left_set | right_set)
+        if overlap >= 0.72:
+            return True
+    left_text = " ".join(left_tokens)
+    right_text = " ".join(right_tokens)
+    if len(left_text) < 8 or len(right_text) < 8:
+        return False
+    length_ratio = min(len(left_text), len(right_text)) / max(len(left_text), len(right_text))
+    return length_ratio >= 0.72 and SequenceMatcher(None, left_text, right_text).ratio() >= 0.90
 
 
 def guess_category(title, text=""):

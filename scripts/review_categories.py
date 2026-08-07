@@ -13,7 +13,7 @@ import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from insight_common import clean_direct_product_url, DATA_DIR, load_env, load_json, now_iso, today, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, load_env, load_json, now_iso, semantic_title_duplicate, today, write_json
 from insight_config import (
     CATEGORIES,
     CATEGORY_KEYWORDS,
@@ -102,6 +102,7 @@ def trusted_cached_review(review):
             "direct_link_policy",
             "deterministic_entity_policy",
             "generic_content_policy",
+            "semantic_dedupe_policy",
             "company_gpt_multimodal",
         }:
             return True
@@ -111,6 +112,15 @@ def trusted_cached_review(review):
         return (
             policy_version >= 2
             and source == "deepseek"
+        )
+    if review.get("source") == "deepseek_backlog_recheck":
+        return (
+            policy_version == REVIEW_POLICY_VERSION
+            and review.get("category") in CATEGORIES
+            and int(review.get("confidence") or 0) >= 8
+            and int(review.get("quality_score") or 0) >= 65
+            and int(review.get("innovation") or 0) >= 8
+            and int(review.get("relevance") or 0) >= 8
         )
     if policy_version != REVIEW_POLICY_VERSION:
         return False
@@ -177,6 +187,38 @@ def generic_content_review(item):
         "source": "generic_content_policy",
         "policy_version": REVIEW_POLICY_VERSION,
     }
+
+
+def semantic_duplicate_review(item, matched_title):
+    return {
+        "id": item.get("id"),
+        "keep": False,
+        "category": "",
+        "confidence": 10,
+        "reason": f"与历史日报产品高度相似，已做语义去重：{matched_title}"[:320],
+        "reviewed_at": now_iso(),
+        "source": "semantic_dedupe_policy",
+        "policy_version": REVIEW_POLICY_VERSION,
+    }
+
+
+def previous_daily_items():
+    path = INSIGHT_DIR / "data.json"
+    if not path.exists():
+        return []
+    text = path.read_text(encoding="utf-8").strip()
+    if "=" in text:
+        text = text.split("=", 1)[1].strip().rstrip(";")
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        return []
+    return [
+        item
+        for group in payload.get("daily_groups") or []
+        if group.get("date") != today()
+        for item in group.get("items") or []
+    ]
 
 
 def is_generic_content(item):
@@ -425,6 +467,9 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
     reviews = {} if force else dict(existing.get("reviews", {}))
     preference_profile = load_json(DATA_DIR / "preference_profile.json", {})
     blocked_product_ids = set(preference_profile.get("blocked_product_ids") or [])
+    historical_by_category = {}
+    for historical in previous_daily_items():
+        historical_by_category.setdefault(historical.get("category"), []).append(historical)
     for item in products:
         cleaned_url = clean_direct_product_url(item.get("url") or "")
         if cleaned_url:
@@ -441,6 +486,13 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
             reviews[item.get("id")] = invalid_link_review(item)
         elif is_generic_content(item):
             reviews[item.get("id")] = generic_content_review(item)
+        elif item.get("first_seen") == today():
+            for historical in historical_by_category.get(item.get("category"), []):
+                if historical.get("url") == cleaned_url:
+                    continue
+                if semantic_title_duplicate(item.get("title"), historical.get("title")):
+                    reviews[item.get("id")] = semantic_duplicate_review(item, historical.get("title") or "")
+                    break
     todo = [
         item
         for item in products
@@ -505,6 +557,7 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
                 "status": "approved",
                 "confidence": review.get("confidence", 0),
                 "reason": review.get("reason", ""),
+                "source": review.get("source", ""),
                 "reviewed_at": review.get("reviewed_at", now_iso()),
                 "quality_score": review.get("quality_score", 0),
                 "relevance": review.get("relevance", 0),

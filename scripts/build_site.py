@@ -279,9 +279,12 @@ def display_eligible(item):
         return False
     if int(item.get("review_policy_version") or 0) < 3:
         return False
-    if int(item.get("quality_score") or 0) < 70:
+    review_source = str(item.get("review_source") or "")
+    minimum_quality = 65 if review_source == "deepseek_backlog_recheck" else 70
+    if int(item.get("quality_score") or 0) < minimum_quality:
         return False
-    if int(item.get("innovation") or 0) < 7 or int(item.get("relevance") or 0) < 8:
+    minimum_innovation = 8 if review_source == "deepseek_backlog_recheck" else 7
+    if int(item.get("innovation") or 0) < minimum_innovation or int(item.get("relevance") or 0) < 8:
         return False
     text = f"{item.get('summary', '')} {item.get('review_reason', '')}".lower()
     mismatch_signals = [
