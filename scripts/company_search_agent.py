@@ -5,7 +5,7 @@ import argparse
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from company_gpt import CompanyGPTClient
+from company_gpt import CompanyGPTClient, company_gateway_available
 from company_multimodal_review import review_one
 from deepseek_search_agent import (
     accepted_today,
@@ -113,6 +113,24 @@ def write_report(stats):
 
 def run_agent(args):
     current_count, current_categories = accepted_today()
+    if not company_gateway_available():
+        stats = {
+            "round": args.round + 1,
+            "generated_at": now_iso(),
+            "accepted_before": current_count,
+            "accepted_by_category_before": dict(current_categories),
+            "status": "gateway_unavailable",
+            "queries": 0,
+            "search_results": 0,
+            "fresh_direct_urls": 0,
+            "screened": 0,
+            "kept": 0,
+            "added": 0,
+            "by_category": {},
+        }
+        write_report(stats)
+        print("company_agent=skipped reason=gateway_unavailable", flush=True)
+        return stats
     jobs = plan_queries(args.query_count, args.target, args.round, planner="company")
     print(f"company_agent_plan queries={len(jobs)} current={current_count}/{args.target}", flush=True)
     results = execute_searches(jobs, args.per_query, args.search_workers)

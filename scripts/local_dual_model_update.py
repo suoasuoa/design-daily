@@ -7,14 +7,15 @@ import fcntl
 import json
 import os
 from pathlib import Path
-import shutil
+import ssl
 import subprocess
 import sys
-import tarfile
 import tempfile
+import urllib.parse
+import urllib.request
 from zoneinfo import ZoneInfo
 
-from company_gpt import keychain_secret
+from company_gpt import company_gateway_available, keychain_secret
 from ensure_daily_minimum import today_count
 from insight_common import ROOT, load_env, today
 from nightly_social_update import publish_api_only
@@ -41,36 +42,66 @@ def phase_target(now=None):
 
 
 def sync_main(repo):
-    """Refresh cloud-produced data without relying on the broken local Git transport."""
+    """Refresh cloud-produced JSON without downloading the oversized whole repository."""
+    token = os.environ.get("GH_TOKEN", "").strip()
+    headers = {
+        "Accept": "application/vnd.github.raw+json",
+        "User-Agent": "DesignDailyLocalRunner/1.0",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    context = ssl._create_unverified_context()
+    required = [
+        "data/products.json",
+        "data/dedupe_index.json",
+        "data/seen_fingerprints.json",
+        "data/category_review.json",
+        "data/company_multimodal_review.json",
+        "data/published.json",
+        "data/feedback_events.json",
+        "data/preference_profile.json",
+    ]
+    tree_url = f"https://api.github.com/repos/{repo}/git/trees/main?recursive=1"
+    request = urllib.request.Request(tree_url, headers=headers)
+    with urllib.request.urlopen(request, timeout=90, context=context) as response:
+        tree = json.loads(response.read().decode("utf-8"))
+    date_marker = today()
+    daily_raw = [
+        row.get("path")
+        for row in tree.get("tree", [])
+        if row.get("type") == "blob"
+        and str(row.get("path") or "").startswith("data/raw/")
+        and date_marker in str(row.get("path") or "")
+    ]
+    synced = 0
+    failures = []
     with tempfile.TemporaryDirectory(prefix="design-daily-sync-") as temp_dir:
-        archive_path = Path(temp_dir) / "repo.tar.gz"
-        with archive_path.open("wb") as archive:
-            result = subprocess.run(
-                ["gh", "api", f"repos/{repo}/tarball/main"],
-                cwd=ROOT,
-                stdout=archive,
-                stderr=subprocess.PIPE,
-                check=False,
-            )
-        if result.returncode:
-            raise RuntimeError(f"Could not download the GitHub data snapshot: {result.stderr.decode().strip()}")
-        extract_dir = Path(temp_dir) / "repo"
-        extract_dir.mkdir()
-        with tarfile.open(archive_path, "r:gz") as archive:
-            archive.extractall(extract_dir)
-        roots = [path for path in extract_dir.iterdir() if path.is_dir()]
-        if len(roots) != 1:
-            raise RuntimeError("The GitHub data snapshot had an unexpected layout")
-        snapshot = roots[0]
-        for name in ("data", "insight"):
-            source = snapshot / name
-            destination = ROOT / name
-            if not source.exists():
-                continue
-            if destination.exists():
-                shutil.rmtree(destination)
-            shutil.copytree(source, destination)
-    print(f"sync=github_api_snapshot repo={repo}", flush=True)
+        for path in required + daily_raw:
+            encoded_path = urllib.parse.quote(path, safe="/")
+            url = f"https://api.github.com/repos/{repo}/contents/{encoded_path}?ref=main"
+            request = urllib.request.Request(url, headers=headers)
+            temp_path = Path(temp_dir) / Path(path).name
+            try:
+                with urllib.request.urlopen(request, timeout=180, context=context) as response:
+                    with temp_path.open("wb") as output:
+                        while chunk := response.read(1024 * 1024):
+                            output.write(chunk)
+                if path.endswith(".json"):
+                    json.loads(temp_path.read_text(encoding="utf-8"))
+                destination = ROOT / path
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                temp_path.replace(destination)
+                synced += 1
+            except Exception as exc:
+                failures.append(f"{path}: {str(exc)[:120]}")
+    if not synced:
+        raise RuntimeError("Could not synchronize any GitHub data files")
+    print(
+        f"sync=github_api_files repo={repo} files={synced} failures={len(failures)}",
+        flush=True,
+    )
+    for failure in failures:
+        print(f"sync_warning {failure}", flush=True)
 
 
 def ensure_secrets():
@@ -121,6 +152,9 @@ def cloud_insight_active(repo):
 
 
 def run_company_review(workers, review_limit):
+    if not company_gateway_available():
+        print("company_review=skipped reason=gateway_unavailable", flush=True)
+        return
     run(
         [
             sys.executable,

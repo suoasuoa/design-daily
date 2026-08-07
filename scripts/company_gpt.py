@@ -4,8 +4,10 @@
 import json
 import os
 import re
+import socket
 import subprocess
 import time
+import urllib.parse
 
 
 DEFAULT_BASE_URL = "https://ai-gateway.insta360.cn/v1"
@@ -33,6 +35,17 @@ def keychain_secret(service, account=KEYCHAIN_ACCOUNT):
 
 def company_api_key():
     return os.environ.get("COMPANY_GPT_API_KEY", "").strip() or keychain_secret(KEYCHAIN_SERVICE)
+
+
+def company_gateway_available(base_url=None):
+    base_url = base_url or os.environ.get("COMPANY_GPT_BASE_URL") or DEFAULT_BASE_URL
+    hostname = urllib.parse.urlparse(base_url).hostname
+    if not hostname:
+        return False
+    try:
+        return bool(socket.getaddrinfo(hostname, 443, type=socket.SOCK_STREAM))
+    except socket.gaierror:
+        return False
 
 
 def parse_json_object(text):
