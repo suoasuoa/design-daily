@@ -1,49 +1,177 @@
 {
-  "summary": "样本显示产品线索集中于创意厨具、氛围灯、水杯、充电宝、创意桌搭和冲锋衣。高频出现的设计信号包括：获奖设计（iF/Good Design）、Pinterest社交精选、众筹平台背书、多功能集成与模块化、便携折叠结构、智能交互（如UV-C自清洁、磁吸充电）。整体符合实用为先、高频需求、打击面广的选品方向，但需避免低频节日礼盒和纯装饰性产品。",
-  "hot_categories": [
-    "创意厨具",
-    "氛围灯",
-    "水杯",
-    "充电宝",
-    "创意桌搭",
-    "冲锋衣"
-  ],
-  "hot_signals": [
-    "获奖设计（Good Design, iF, Red Dot）",
-    "Pinterest/社交精选",
-    "众筹平台（Kickstarter/Indiegogo）",
-    "多功能集成/多合一",
-    "便携/折叠设计",
-    "模块化结构",
-    "智能交互（UV-C自清洁、磁吸充电、手势控制）",
-    "环保可持续材料"
-  ],
-  "recommended_directions": [
-    "厨房收纳与多功能厨具（如折叠滤水篮、磁吸锅铲、一体化量勺）",
-    "便携式氛围灯/夜灯（运动感应、可充电、多模式）",
-    "智能水杯（自清洁、保温、饮水提醒）",
-    "多功能充电宝（带线、无线、支架、太阳能）",
-    "模块化服装（三合一夹克、可拆卸系统）",
-    "桌面无线充电与理线整合（一体化桌垫、支架）"
-  ],
-  "avoid_or_watch": [
-    "节日限定礼盒（频次低，非刚需）",
-    "纯装饰性灯具（缺乏实用功能）",
-    "理解成本过高的概念设计（如柔性鼠标）",
-    "售价低于35元的产品（利润空间不足）"
-  ],
-  "next_search_keywords": [
-    "折叠厨房收纳",
-    "磁吸收纳厨具",
-    "便携氛围灯",
-    "智能水杯自清洁",
-    "多功能充电宝",
-    "模块化夹克",
-    "桌面无线充电整合",
-    "折叠水杯",
-    "运动感应夜灯",
-    "多合一厨房工具"
-  ],
-  "generated_at": "2026-08-07T15:16:04+08:00",
-  "source": "deepseek"
+  "generated_at": "2026-08-07T17:17:48+08:00",
+  "source": "local_summary",
+  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
+  "hot_categories": {
+    "氛围灯": 388,
+    "水杯": 335,
+    "创意厨具": 334,
+    "创意桌搭": 300,
+    "充电宝": 290,
+    "冲锋衣": 169,
+    "手机壳": 158,
+    "日历": 69,
+    "创意礼盒": 52,
+    "中秋礼盒": 35,
+    "端午礼盒": 8,
+    "装置艺术": 5
+  },
+  "hot_sources": {
+    "Yanko Design": 420,
+    "Kickstarter": 387,
+    "Indiegogo": 245,
+    "Red Dot": 242,
+    "Core77": 117,
+    "iF设计奖": 91,
+    "Design Milk": 91,
+    "Uncrate": 91,
+    "Designboom": 87,
+    "The Grommet": 69,
+    "Cool Material": 68,
+    "Behance": 61
+  },
+  "hot_tags": {
+    "deepseek_search_agent": 1683,
+    "editorial_main": 666,
+    "market_signal_strong": 593,
+    "adapt": 592,
+    "trend": 572,
+    "buy_sample": 555,
+    "氛围灯": 379,
+    "创意厨具": 336,
+    "水杯": 327,
+    "award_gallery": 324,
+    "创意桌搭": 296,
+    "充电宝": 295,
+    "白名单来源": 291,
+    "design_community": 220,
+    "适合作为趋势、内容爆点或方向参考": 172,
+    "冲锋衣": 167,
+    "手机壳": 156,
+    "market_signal": 124,
+    "适合做结构、包装、功能或外观改造": 105,
+    "日历": 69
+  },
+  "recommended": [
+    {
+      "title": "Red Dot Design Award: Vacuum Bottles",
+      "category": "水杯",
+      "score": 86,
+      "reason": "真空水杯是高频实用产品，设计奖加持提升外观和握感，功能完善，价格有支撑，3秒可识别，情绪价值来自设计美学和户外场景。"
+    },
+    {
+      "title": "OXO沙拉甩干器",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
+    },
+    {
+      "title": "蘑菇氛围灯",
+      "category": "氛围灯",
+      "score": 86,
+      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
+    },
+    {
+      "title": "磁吸锅铲套装",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Pinterest · 磁吸收纳锅铲套装"
+    },
+    {
+      "title": "Nanoleaf 智能灯板",
+      "category": "氛围灯",
+      "score": 84,
+      "reason": "加拿大Nanoleaf模块化智能LED灯板"
+    },
+    {
+      "title": "M01",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
+    },
+    {
+      "title": "Nano bubble shaker",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
+    },
+    {
+      "title": "SELECT100 grater",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
+    },
+    {
+      "title": "WMF Flexi Whisk",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
+    },
+    {
+      "title": "Multi-Functional Magnetic Knife Sheath",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
+    },
+    {
+      "title": "360KYUSU",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
+    },
+    {
+      "title": "The T-Pot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
+    },
+    {
+      "title": "VERMICULAR OVEN POT２ & Recraft program",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
+    },
+    {
+      "title": "PETARI Shallow Pot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called"
+    },
+    {
+      "title": "ARAHI",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of"
+    },
+    {
+      "title": "Zaru-ya no bon zaru （Flat strainer）",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The flattening of the colander allows foodstuffs to be placed side by side without overlapping. By p"
+    },
+    {
+      "title": "PackStaff FITLOCK",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The food storage container that closes tightly but It is easy to open.It has a high level of airtigh"
+    },
+    {
+      "title": "360°Tumbler・Cup",
+      "category": "水杯",
+      "score": 84,
+      "reason": "Good Design Award · This tumbler and cup allows one to drink from any position without removing the lid. The rim made wi"
+    },
+    {
+      "title": "A sturdy sugarcane cup that you can reuse many times and still throw away with burnable waste.",
+      "category": "水杯",
+      "score": 84,
+      "reason": "Good Design Award · The returnable, or Biodegradable Cup that is petroleum-free, plant-based plastic, the thinnest PLA i"
+    },
+    {
+      "title": "Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to d"
+    }
+  ]
 }
