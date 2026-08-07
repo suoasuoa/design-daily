@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-07",
+  "rounds": [
+    {
+      "round": 1,
+      "generated_at": "2026-08-07T09:55:18+08:00",
+      "accepted_before": 0,
+      "accepted_by_category_before": {},
+      "queries": 50,
+      "search_results": 120,
+      "fresh_direct_urls": 60,
+      "pages_enriched": 26,
+      "pre_screened": 60,
+      "kept": 0,
+      "staged_for_company_review": 0,
+      "added": 0,
+      "by_category": {}
+    },
+    {
+      "round": 2,
+      "generated_at": "2026-08-07T10:00:31+08:00",
+      "accepted_before": 1,
+      "accepted_by_category_before": {
+        "创意桌搭": 1
+      },
+      "queries": 50,
+      "search_results": 161,
+      "fresh_direct_urls": 64,
+      "pages_enriched": 8,
+      "pre_screened": 64,
+      "kept": 3,
+      "staged_for_company_review": 0,
+      "added": 3,
+      "by_category": {
+        "手机壳": 3
+      }
+    },
+    {
+      "round": 3,
+      "generated_at": "2026-08-07T10:04:08+08:00",
+      "accepted_before": 2,
+      "accepted_by_category_before": {
+        "创意桌搭": 1,
+        "手机壳": 1
+      },
+      "queries": 50,
+      "search_results": 132,
+      "fresh_direct_urls": 12,
+      "pages_enriched": 3,
+      "pre_screened": 12,
+      "kept": 0,
+      "staged_for_company_review": 0,
+      "added": 0,
+      "by_category": {}
+    },
+    {
+      "round": 4,
+      "generated_at": "2026-08-07T10:07:08+08:00",
+      "accepted_before": 2,
+      "accepted_by_category_before": {
+        "创意桌搭": 1,
+        "手机壳": 1
+      },
+      "queries": 50,
+      "search_results": 96,
+      "fresh_direct_urls": 5,
+      "pages_enriched": 5,
+      "pre_screened": 5,
+      "kept": 0,
+      "staged_for_company_review": 0,
+      "added": 0,
+      "by_category": {}
+    }
+  ],
+  "generated_at": "2026-08-07T10:07:08+08:00",
+  "total_kept": 3
+}

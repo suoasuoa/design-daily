@@ -365,5 +365,67 @@
       "source_family": "媒体案例"
     },
     "created_at": "2026-08-05T09:02:36.429+00:00"
+  },
+  {
+    "event_id": "1c6a33e0-807a-4261-854c-02159c42fc87",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "dc53b2b03538",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-06",
+      "weekly_group": "2026-W32"
+    },
+    "item_snapshot": {
+      "url": "https://shop.uncrate.com/products/gerber-compleat-tool-set",
+      "axes": [
+        "功能启发",
+        "包装启发"
+      ],
+      "tags": [
+        ">35",
+        "Uncrate Shop"
+      ],
+      "title": "Gerber Compleat Tool Set",
+      "summary": "该产品属于直接用于户外进食和简易备餐的创意厨具，不是普通餐具。亮点在于叉、勺、铲和多功能工具的模块化组合收纳，并带有开瓶器等附加功能，适合露营、通勤备餐、车载应急等场景；35美元价格具备一定价格空间。创新主要是结构整合和便携收纳，实用性强但并非颠覆型创新，因此作为可用灵感保留。",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "source_name": "Uncrate Shop",
+      "source_family": "市场信号"
+    },
+    "created_at": "2026-08-06T06:54:29.291+00:00"
+  },
+  {
+    "event_id": "dfb908c5-91e0-44a3-bb33-cf92adccf8a5",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "af35c41b37b1",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-06",
+      "weekly_group": "2026-W32"
+    },
+    "item_snapshot": {
+      "url": "https://www.designboom.com/design/vollebak-blue-morpho-jacket-10-10-2019",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "vollebak introduces a jacket that mimics the wings of a blue morpho butterfly",
+      "summary": "属于可穿着的功能外套/冲锋衣，标题和摘要明确其采用模拟蓝闪蝶翅膀结构的三层防水透湿膜面料，并配有五口袋、双向拉链、调节绳等完整户外夹克结构。创新点不是普通换色，而是将仿生结构色与防水透湿材料结合，兼具视觉识别和功能面料启发；实用性、价格空间和转化为高端功能服装方向的价值都较强。",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "source_name": "Designboom",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-08-06T06:54:35.355+00:00"
   }
 ]

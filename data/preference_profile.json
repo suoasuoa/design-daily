@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "generated_at": "2026-08-06T14:40:55+08:00",
+  "generated_at": "2026-08-07T09:51:57+08:00",
   "stats": {
-    "events": 11,
-    "active_decisions": 7,
-    "likes": 6,
+    "events": 13,
+    "active_decisions": 9,
+    "likes": 8,
     "passes": 1
   },
   "positive_patterns": {
     "category": [
       {
         "name": "创意厨具",
-        "count": 3
+        "count": 4
       },
       {
         "name": "水杯",
@@ -24,16 +24,20 @@
       {
         "name": "创意桌搭",
         "count": 1
+      },
+      {
+        "name": "冲锋衣",
+        "count": 1
       }
     ],
     "source_family": [
       {
         "name": "媒体案例",
-        "count": 3
+        "count": 4
       },
       {
         "name": "市场信号",
-        "count": 2
+        "count": 3
       },
       {
         "name": "社交灵感",
@@ -43,31 +47,39 @@
     "action_lane": [
       {
         "name": "适合改造",
-        "count": 5
+        "count": 6
       },
       {
         "name": "方向参考",
-        "count": 1
+        "count": 2
       }
     ],
     "axes": [
       {
         "name": "功能启发",
-        "count": 6
+        "count": 8
       },
       {
         "name": "结构启发",
-        "count": 3
+        "count": 4
       },
       {
         "name": "视觉启发",
+        "count": 1
+      },
+      {
+        "name": "包装启发",
         "count": 1
       }
     ],
     "tags": [
       {
         "name": "deepseek_search_agent",
-        "count": 6
+        "count": 7
+      },
+      {
+        "name": "adapt",
+        "count": 3
       },
       {
         "name": "editorial_main",
@@ -75,10 +87,6 @@
       },
       {
         "name": "创意厨具",
-        "count": 2
-      },
-      {
-        "name": "adapt",
         "count": 2
       },
       {
@@ -199,6 +207,20 @@
       "title": "B!POD’s DRO!D Finally Makes Food Storage Worth Showing Off - Yanko Design",
       "category": "创意厨具",
       "summary": "产品功能创新且实用，能显著延长食物保鲜时间，设计美观具备情绪价值，但使用频率可能不高，价格可能偏高。",
+      "reason": ""
+    },
+    {
+      "product_id": "dc53b2b03538",
+      "title": "Gerber Compleat Tool Set",
+      "category": "创意厨具",
+      "summary": "该产品属于直接用于户外进食和简易备餐的创意厨具，不是普通餐具。亮点在于叉、勺、铲和多功能工具的模块化组合收纳，并带有开瓶器等附加功能，适合露营、通勤备餐、车载应急等场景；35美元价格具备一定价格空间。创新主要是结构整合和便携收纳，实用性强但并非颠覆型创新，因此作为可用灵感保留。",
+      "reason": ""
+    },
+    {
+      "product_id": "af35c41b37b1",
+      "title": "vollebak introduces a jacket that mimics the wings of a blue morpho butterfly",
+      "category": "冲锋衣",
+      "summary": "属于可穿着的功能外套/冲锋衣，标题和摘要明确其采用模拟蓝闪蝶翅膀结构的三层防水透湿膜面料，并配有五口袋、双向拉链、调节绳等完整户外夹克结构。创新点不是普通换色，而是将仿生结构色与防水透湿材料结合，兼具视觉识别和功能面料启发；实用性、价格空间和转化为高端功能服装方向的价值都较强。",
       "reason": ""
     }
   ],
