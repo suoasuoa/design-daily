@@ -44,6 +44,7 @@ def main():
     parser.add_argument("--agent-queries", type=int, default=60)
     parser.add_argument("--agent-pages", type=int, default=280)
     parser.add_argument("--agent-screen-workers", type=int, default=6)
+    parser.add_argument("--agent-batch-size", type=int, default=10)
     args = parser.parse_args()
 
     total_jobs = job_count()
@@ -74,6 +75,8 @@ def main():
                 str(args.workers),
                 "--screen-workers",
                 str(args.agent_screen_workers),
+                "--batch-size",
+                str(args.agent_batch_size),
             ]
         )
         run(

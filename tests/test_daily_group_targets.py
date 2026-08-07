@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_site import category_under_cap, daily_group_limit, merge_historical_snapshots, sorted_daily_items
+from deepseek_search_agent import fallback_query_jobs
 
 
 class DailyGroupTargetTests(unittest.TestCase):
@@ -59,6 +60,13 @@ class DailyGroupTargetTests(unittest.TestCase):
         picks = [{"category": "充电宝"} for _ in range(3)]
 
         self.assertFalse(category_under_cap(picks, "充电宝", relaxed=True))
+
+    def test_fallback_queries_limit_phone_cases_and_power_banks(self):
+        jobs = fallback_query_jobs(50, 0)
+        categories = [job.get("category") for job in jobs]
+
+        self.assertLessEqual(categories.count("手机壳"), 3)
+        self.assertLessEqual(categories.count("充电宝"), 3)
 
 
 if __name__ == "__main__":

@@ -118,7 +118,7 @@ def ensure_secrets():
     os.environ.setdefault("COMPANY_GPT_MODEL", "gpt-5.5")
     os.environ.setdefault("COMPANY_GPT_BASE_URL", "https://ai-gateway.insta360.cn/v1")
     os.environ["STAGE_COMPANY_REVIEW_CANDIDATES"] = "1"
-    os.environ["USE_COMPANY_QUERY_PLANNER"] = "1"
+    os.environ["USE_COMPANY_QUERY_PLANNER"] = "0"
     if not os.environ.get("DEEPSEEK_API_KEY"):
         raise RuntimeError("DeepSeek key is missing from the environment and macOS Keychain")
     if not os.environ.get("GH_TOKEN"):
@@ -185,24 +185,27 @@ def top_up(target, pass_index, workers, review_limit):
         queries, pages = 70, 320
     else:
         queries, pages = 90, 420
-    run(
-        [
-            sys.executable,
-            "scripts/company_search_agent.py",
-            "--target",
-            str(target),
-            "--round",
-            str(pass_index - 1),
-            "--query-count",
-            str(queries),
-            "--max-pages",
-            str(pages),
-            "--screen-workers",
-            str(workers),
-        ]
-    )
-    run([sys.executable, "scripts/dedupe.py"])
-    run_company_review(workers, review_limit)
+    if company_gateway_available():
+        run(
+            [
+                sys.executable,
+                "scripts/company_search_agent.py",
+                "--target",
+                str(target),
+                "--round",
+                str(pass_index - 1),
+                "--query-count",
+                str(queries),
+                "--max-pages",
+                str(pages),
+                "--screen-workers",
+                str(workers),
+            ]
+        )
+        run([sys.executable, "scripts/dedupe.py"])
+        run_company_review(workers, review_limit)
+    else:
+        print("company_lane=skipped reason=gateway_unavailable", flush=True)
     company_count = today_count(target)
     print(
         f"company_lane pass={pass_index} target={target} accepted={company_count}",

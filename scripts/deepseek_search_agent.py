@@ -2,6 +2,7 @@
 """Use DeepSeek to plan, execute, and pre-screen real product searches."""
 
 import argparse
+import math
 from collections import Counter, defaultdict, deque
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
@@ -132,7 +133,16 @@ def call_deepseek(prompt, max_tokens=7000, attempts=3):
         try:
             with urllib.request.urlopen(req, timeout=120, context=SSL_CONTEXT) as response:
                 payload = json.loads(response.read().decode("utf-8"))
-            return parse_json_response(payload["choices"][0]["message"]["content"])
+            choice = payload["choices"][0]
+            message = choice["message"]
+            content = message.get("content") or ""
+            if not content.strip():
+                raise ValueError(
+                    "empty DeepSeek content "
+                    f"finish_reason={choice.get('finish_reason')} "
+                    f"reasoning_chars={len(message.get('reasoning_content') or '')}"
+                )
+            return parse_json_response(content)
         except urllib.error.HTTPError as exc:
             last_error = exc
             if exc.code == 400 and body.pop("response_format", None):
@@ -181,9 +191,34 @@ def fallback_query_jobs(limit, round_index=0):
     jobs = [job for job in payload.get("jobs", []) if job.get("category") in CATEGORIES]
     if not jobs:
         return []
-    start = (round_index * limit) % len(jobs)
-    ordered = jobs[start:] + jobs[:start]
-    return ordered[:limit]
+    buckets = defaultdict(deque)
+    for job in jobs:
+        buckets[job.get("category")].append(job)
+    categories = [category for category in CATEGORIES if buckets[category]]
+    if not categories:
+        return []
+    shift = round_index % len(categories)
+    categories = categories[shift:] + categories[:shift]
+    restricted = {"手机壳", "充电宝"}
+    restricted_limit = max(1, min(3, math.ceil(limit * 0.08)))
+    counts = Counter()
+    ordered = []
+    while len(ordered) < limit and any(buckets.values()):
+        added = False
+        for category in categories:
+            if not buckets[category]:
+                continue
+            if category in restricted and counts[category] >= restricted_limit:
+                buckets[category].clear()
+                continue
+            ordered.append(buckets[category].popleft())
+            counts[category] += 1
+            added = True
+            if len(ordered) >= limit:
+                break
+        if not added:
+            break
+    return ordered
 
 
 def plan_queries(query_count, target, round_index, planner="auto"):
@@ -251,7 +286,7 @@ def plan_queries(query_count, target, round_index, planner="auto"):
             print(f"company_query_plan_fallback error={exc}", flush=True)
     if not rows and planner != "company":
         try:
-            rows = call_deepseek(prompt, max_tokens=8000, attempts=1).get("queries", [])
+            rows = call_deepseek(prompt, max_tokens=8000, attempts=2).get("queries", [])
         except RuntimeError as exc:
             print(f"query_plan_fallback error={exc}", flush=True)
             rows = []
@@ -448,7 +483,23 @@ def screen_batch(batch):
         result = call_deepseek(prompt, max_tokens=7000).get("items", [])
     except RuntimeError as exc:
         print(f"screen_batch_failed size={len(batch)} error={exc}", flush=True)
-        return []
+        return [
+            {
+                **row,
+                "agent_decision": {
+                    "category": row.get("category_hint") if row.get("category_hint") in CATEGORIES else CATEGORIES[0],
+                    "reason": "预筛接口暂时不可用，保留页面证据并转交后续终审",
+                    "keep": False,
+                    "model_keep": False,
+                    "confidence": 0,
+                    "relevance": 0,
+                    "innovation": 0,
+                    "utility": 0,
+                    "clarity": 0,
+                },
+            }
+            for row in batch
+        ]
     by_id = {row.get("id"): row for row in batch}
     reviewed = []
     for decision in result:
