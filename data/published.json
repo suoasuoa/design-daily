@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-07T17:17:50+08:00",
+  "generated_at": "2026-08-07T17:29:41+08:00",
   "stats": {
-    "total_items": 2146,
+    "total_items": 2149,
     "by_category": {
       "氛围灯": 388,
-      "水杯": 335,
-      "创意厨具": 334,
+      "水杯": 336,
+      "创意厨具": 335,
       "创意桌搭": 300,
       "充电宝": 290,
-      "冲锋衣": 169,
+      "冲锋衣": 170,
       "手机壳": 158,
       "日历": 69,
       "创意礼盒": 52,
@@ -18,20 +18,20 @@
       "钥匙扣水壶": 3
     },
     "by_lane": {
-      "适合改造": 1621,
+      "适合改造": 1624,
       "方向参考": 508,
       "可直接买样": 17
     },
     "by_axis": {
-      "功能启发": 1447,
-      "结构启发": 1062,
+      "功能启发": 1450,
+      "结构启发": 1065,
       "情绪启发": 454,
-      "视觉启发": 314,
+      "视觉启发": 315,
       "包装启发": 265
     },
     "by_source_family": {
-      "市场信号": 833,
-      "媒体案例": 746,
+      "市场信号": 835,
+      "媒体案例": 747,
       "奖项案例": 350,
       "社交灵感": 87,
       "设计社区": 69,
@@ -40,190 +40,65 @@
       "趋势观察": 1
     },
     "by_image_state": {
-      "缺图": 1174,
-      "已对齐": 967,
+      "缺图": 1190,
+      "已对齐": 954,
       "待核图": 5
     }
   },
   "trends": {
-    "generated_at": "2026-08-07T17:17:48+08:00",
-    "source": "local_summary",
-    "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
-    "hot_categories": {
-      "氛围灯": 388,
-      "水杯": 335,
-      "创意厨具": 334,
-      "创意桌搭": 300,
-      "充电宝": 290,
-      "冲锋衣": 169,
-      "手机壳": 158,
-      "日历": 69,
-      "创意礼盒": 52,
-      "中秋礼盒": 35,
-      "端午礼盒": 8,
-      "装置艺术": 5
-    },
-    "hot_sources": {
-      "Yanko Design": 420,
-      "Kickstarter": 387,
-      "Indiegogo": 245,
-      "Red Dot": 242,
-      "Core77": 117,
-      "iF设计奖": 91,
-      "Design Milk": 91,
-      "Uncrate": 91,
-      "Designboom": 87,
-      "The Grommet": 69,
-      "Cool Material": 68,
-      "Behance": 61
-    },
-    "hot_tags": {
-      "deepseek_search_agent": 1683,
-      "editorial_main": 666,
-      "market_signal_strong": 593,
-      "adapt": 592,
-      "trend": 572,
-      "buy_sample": 555,
-      "氛围灯": 379,
-      "创意厨具": 336,
-      "水杯": 327,
-      "award_gallery": 324,
-      "创意桌搭": 296,
-      "充电宝": 295,
-      "白名单来源": 291,
-      "design_community": 220,
-      "适合作为趋势、内容爆点或方向参考": 172,
-      "冲锋衣": 167,
-      "手机壳": 156,
-      "market_signal": 124,
-      "适合做结构、包装、功能或外观改造": 105,
-      "日历": 69
-    },
-    "recommended": [
-      {
-        "title": "Red Dot Design Award: Vacuum Bottles",
-        "category": "水杯",
-        "score": 86,
-        "reason": "真空水杯是高频实用产品，设计奖加持提升外观和握感，功能完善，价格有支撑，3秒可识别，情绪价值来自设计美学和户外场景。"
-      },
-      {
-        "title": "OXO沙拉甩干器",
-        "category": "创意厨具",
-        "score": 86,
-        "reason": "Pinterest · OXO Good Grips沙拉脱水器"
-      },
-      {
-        "title": "蘑菇氛围灯",
-        "category": "氛围灯",
-        "score": 86,
-        "reason": "Pinterest · 可爱蘑菇造型小夜灯"
-      },
-      {
-        "title": "磁吸锅铲套装",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Pinterest · 磁吸收纳锅铲套装"
-      },
-      {
-        "title": "Nanoleaf 智能灯板",
-        "category": "氛围灯",
-        "score": 84,
-        "reason": "加拿大Nanoleaf模块化智能LED灯板"
-      },
-      {
-        "title": "M01",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
-      },
-      {
-        "title": "Nano bubble shaker",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
-      },
-      {
-        "title": "SELECT100 grater",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
-      },
-      {
-        "title": "WMF Flexi Whisk",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
-      },
-      {
-        "title": "Multi-Functional Magnetic Knife Sheath",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
-      },
-      {
-        "title": "360KYUSU",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
-      },
-      {
-        "title": "The T-Pot",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
-      },
-      {
-        "title": "VERMICULAR OVEN POT２ & Recraft program",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
-      },
-      {
-        "title": "PETARI Shallow Pot",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called"
-      },
-      {
-        "title": "ARAHI",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of"
-      },
-      {
-        "title": "Zaru-ya no bon zaru （Flat strainer）",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · The flattening of the colander allows foodstuffs to be placed side by side without overlapping. By p"
-      },
-      {
-        "title": "PackStaff FITLOCK",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · The food storage container that closes tightly but It is easy to open.It has a high level of airtigh"
-      },
-      {
-        "title": "360°Tumbler・Cup",
-        "category": "水杯",
-        "score": 84,
-        "reason": "Good Design Award · This tumbler and cup allows one to drink from any position without removing the lid. The rim made wi"
-      },
-      {
-        "title": "A sturdy sugarcane cup that you can reuse many times and still throw away with burnable waste.",
-        "category": "水杯",
-        "score": 84,
-        "reason": "Good Design Award · The returnable, or Biodegradable Cup that is petroleum-free, plant-based plastic, the thinnest PLA i"
-      },
-      {
-        "title": "Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001",
-        "category": "创意厨具",
-        "score": 84,
-        "reason": "Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to d"
-      }
-    ]
+    "summary": "整体呈现‘功能复合+材料升级+智能微创新’趋势。高频厨具与氛围灯线索最多，实用型创新（如砧板导流、可折叠餐具、磁吸收纳、感应夜灯）比纯装饰概念更值得跟进；强调在基础功能成立的前提下叠加情绪价值。",
+    "hot_categories": [
+      "创意厨具",
+      "氛围灯",
+      "水杯",
+      "手机壳",
+      "创意桌搭",
+      "充电宝"
+    ],
+    "hot_signals": [
+      "多功能一体化",
+      "模块化/可扩展",
+      "磁吸/卡扣结构",
+      "材料升级（钛、石墨烯、环保再生）",
+      "智能感应/物联",
+      "便携折叠",
+      "健康安全设计",
+      "可持续/环保",
+      "单手/免手持操作",
+      "结构创新突破常规"
+    ],
+    "recommended_directions": [
+      "厨房测量与收纳工具（如立方体量具、折叠量杯、可平放滤盆）",
+      "带结构创新的手机壳/平板支架（磁吸环+折叠支架）",
+      "便携感应夜灯/氛围灯（可调光、运动感应、充电式）",
+      "模块化桌搭/无线充电座（显示器架+扩展坞）",
+      "钛合金户外餐具/水具（轻量+抗菌）",
+      "智能日历/桌面效率设备（E-ink日历、智能显示器架）"
+    ],
+    "avoid_or_watch": [
+      "纯节日礼盒（高频低、打击面窄）",
+      "过度依赖耗材的配件（如即时打印手机壳）",
+      "概念性装饰灯（功能弱、价格高）",
+      "功能冗余的跨界产品（如无叶风扇灯）",
+      "小众造型设计（需验证市场教育成本）"
+    ],
+    "next_search_keywords": [
+      "modular kitchen utensil",
+      "magnetic phone stand case",
+      "motion sensor night light",
+      "titanium cutlery set",
+      "foldable measuring cup",
+      "smart desk organizer",
+      "portable LED lamp rechargeable",
+      "multi-tool cooking spatula",
+      "biodegradable tableware",
+      "e-ink smart calendar"
+    ],
+    "generated_at": "2026-08-07T17:29:39+08:00",
+    "source": "deepseek"
   },
   "weekly_report": {
-    "generated_at": "2026-08-07T17:17:49+08:00",
+    "generated_at": "2026-08-07T17:29:41+08:00",
     "week": "2026-W32",
     "group_id": "2026-W32",
     "date_start": "2026-08-03",
@@ -1270,16 +1145,12 @@
         "source_quality": "premium",
         "url": "https://www.yankodesign.com/2024/01/12/regular-phone-cases-are-dead-these-phone-stands-from-torras-offer-ultimate-hands-free-ergonomics",
         "image": "https://www.yankodesign.com/images/design_news/2024/01/auto-draft/torras_ces_2024_1.jpg",
-        "summary": "手机壳集成支架和磁吸环，解决高频免手持需求，功能实用且受众广泛，设计清晰易懂，价格空间充足，在功能基础上提供便利和科技感。",
+        "summary": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
         "risk": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
         "review_confidence": 9,
         "review_reason": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
         "next_action": "提取可借鉴元素，做同品类差异化改造",
         "tags": [
-          "phone stand",
-          "magsafe",
-          "hands-free",
-          "phone case",
           "adapt",
           "company_gpt_discovery"
         ]
@@ -2941,7 +2812,7 @@
   },
   "weekly_groups": [
     {
-      "generated_at": "2026-08-07T17:17:49+08:00",
+      "generated_at": "2026-08-07T17:29:41+08:00",
       "week": "2026-W32",
       "group_id": "2026-W32",
       "date_start": "2026-08-03",
@@ -3988,16 +3859,12 @@
           "source_quality": "premium",
           "url": "https://www.yankodesign.com/2024/01/12/regular-phone-cases-are-dead-these-phone-stands-from-torras-offer-ultimate-hands-free-ergonomics",
           "image": "https://www.yankodesign.com/images/design_news/2024/01/auto-draft/torras_ces_2024_1.jpg",
-          "summary": "手机壳集成支架和磁吸环，解决高频免手持需求，功能实用且受众广泛，设计清晰易懂，价格空间充足，在功能基础上提供便利和科技感。",
+          "summary": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
           "risk": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
           "review_confidence": 9,
           "review_reason": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
           "next_action": "提取可借鉴元素，做同品类差异化改造",
           "tags": [
-            "phone stand",
-            "magsafe",
-            "hands-free",
-            "phone case",
             "adapt",
             "company_gpt_discovery"
           ]
@@ -30466,7 +30333,7 @@
           "id": "298d5457cf0c",
           "title": "Regular Phone Cases are Dead… These Phone Stands from TORRAS offer Ultimate Hands-free Ergonomics - Yanko Design",
           "category": "手机壳",
-          "summary": "手机壳集成支架和磁吸环，解决高频免手持需求，功能实用且受众广泛，设计清晰易懂，价格空间充足，在功能基础上提供便利和科技感。",
+          "summary": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
           "score": 86,
           "price_gate": "unknown",
           "image": "https://www.yankodesign.com/images/design_news/2024/01/auto-draft/torras_ces_2024_1.jpg",
@@ -30486,17 +30353,82 @@
           "first_seen": "2026-08-07",
           "last_seen": "2026-08-07",
           "review_reason": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
-          "review_source": "",
+          "review_source": "company_gpt_multimodal",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 86,
           "innovation": 7,
           "relevance": 10,
           "tags": [
-            "phone stand",
-            "magsafe",
-            "hands-free",
-            "phone case",
+            "adapt",
+            "company_gpt_discovery"
+          ]
+        },
+        {
+          "id": "afdd9215ad09",
+          "title": "Dripless Cutting Board | 2-in-1 System with Thermometer | Grommet",
+          "category": "创意厨具",
+          "summary": "这是明确用于备餐切片的创意厨具，不是普通砧板。其核心创新在于倾斜/导流砧板结构、边缘排水槽与可拆卸滴盘组合，可减少肉汁污染台面；配合固定钉和数字肉类温度计形成较完整的烤肉切分系统。功能痛点清晰、家庭厨房和烧烤场景适用，具备可转化的结构创新和较强选品价值。",
+          "score": 82,
+          "price_gate": "unknown",
+          "image": "https://dxzihkgog0d85.cloudfront.net/products/36881/200x200_41GKmdripless-cutting-board.jpg",
+          "url": "https://thegrommet.com/product/kitchen/dripless-cutting-board-system?pid=email-newsletter15920november2024-free",
+          "source_name": "The Grommet",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 2,
+          "first_seen": "2026-08-07",
+          "last_seen": "2026-08-07",
+          "review_reason": "这是明确用于备餐切片的创意厨具，不是普通砧板。其核心创新在于倾斜/导流砧板结构、边缘排水槽与可拆卸滴盘组合，可减少肉汁污染台面；配合固定钉和数字肉类温度计形成较完整的烤肉切分系统。功能痛点清晰、家庭厨房和烧烤场景适用，具备可转化的结构创新和较强选品价值。",
+          "review_source": "company_gpt_multimodal",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 82,
+          "innovation": 8,
+          "relevance": 10,
+          "tags": [
+            "adapt",
+            "buy_sample"
+          ]
+        },
+        {
+          "id": "9c53f9289500",
+          "title": "TIBO Titanium Cutting Board | Antibacterial Prep | Grommet",
+          "category": "创意厨具",
+          "summary": "产品真实用途与标题中的 Titanium Cutting Board 匹配，属于直接用于备餐切配的创意厨具。钛金属材质带来抗菌、减少塑料砧板微塑料残留、耐用易清洁等材料升级价值，边缘槽和挂孔也提升清洁收纳与使用体验；切菜是高频厨房需求，受众广，具备35元以上价格空间。创新主要是健康材料替代和细节结构优化，不是复杂交互或颠覆结构，因此评为可用灵感而非顶级。",
+          "score": 82,
+          "price_gate": "unknown",
+          "image": "https://dxzihkgog0d85.cloudfront.net/products/72940/200x200_WHHVRTIBO01_92e90b54c7d1a2839289467237047a53.webp",
+          "url": "https://thegrommet.com/product/kitchen/tibo",
+          "source_name": "The Grommet",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发",
+            "视觉启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-07",
+          "last_seen": "2026-08-07",
+          "review_reason": "产品真实用途与标题中的 Titanium Cutting Board 匹配，属于直接用于备餐切配的创意厨具。钛金属材质带来抗菌、减少塑料砧板微塑料残留、耐用易清洁等材料升级价值，边缘槽和挂孔也提升清洁收纳与使用体验；切菜是高频厨房需求，受众广，具备35元以上价格空间。创新主要是健康材料替代和细节结构优化，不是复杂交互或颠覆结构，因此评为可用灵感而非顶级。",
+          "review_source": "company_gpt_multimodal",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 82,
+          "innovation": 7,
+          "relevance": 9,
+          "tags": [
             "adapt",
             "company_gpt_discovery"
           ]
@@ -30505,7 +30437,7 @@
           "id": "da564cc7e998",
           "title": "Red Dot Design Award: Electric Fondue Set Pro",
           "category": "创意厨具",
-          "summary": "该产品将传统芝士火锅与现代电热技术结合，精准控温，设计美观，获红点奖验证，功能完善，但受众较小，属于特定场景下的高端厨电。",
+          "summary": "电动火锅功能完善，控温精准，设计获奖，兼具实用与美观；但目标群体较窄，非高频使用场景。",
           "score": 80,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30532,19 +30464,17 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "红点设计奖",
-            "电动火锅",
-            "智能控温",
-            "创意厨具",
             "award_gallery",
-            "deepseek_search_agent"
+            "deepseek_search_agent",
+            "trend",
+            "创意厨具"
           ]
         },
         {
           "id": "d1d1f81109e7",
           "title": "Red Dot Design Award: Vacuum Bottles",
           "category": "水杯",
-          "summary": "真空水杯是高频实用产品，设计奖加持提升外观和握感，功能完善，价格有支撑，3秒可识别，情绪价值来自设计美学和户外场景。",
+          "summary": "真空水杯实用性强，日常及户外高频使用，受众广泛；红点设计奖加持提升情绪价值，喷涂成型技术改善握持，防腐蚀材料功能可靠；售价预计超35元，但设计感可能弱化3秒内直观认知。",
           "score": 80,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30572,15 +30502,16 @@
           "tags": [
             "award_gallery",
             "trend",
-            "deepseek_search_agent",
-            "水杯"
+            "水杯",
+            "户外运动",
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "e9cd33e9abc5",
           "title": "Mobile island - modular wireless charger :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebo",
           "category": "创意桌搭",
-          "summary": "产品将无线充电与收纳结合，解决桌面充电和整理的高频需求，结构创新，实用性强；但量产信息不明，价格和功能稳定性存疑。",
+          "summary": "符合创意桌搭品类，直接服务桌面手机无线充电、小物收纳和桌面分区。创新点在于把无线充电板做成可拼接的模块系统，并与半圆收纳托盘组合成“充电岛”，比普通无线充电板多了扩展连接、设备停靠和耳机小物归置场景。图片与标题匹配，产品明确；但来源为Behance概念项目，量产、成本和稳定供电方案不明，因此作为可用灵感保留而非顶级推荐。",
           "score": 79,
           "price_gate": "unknown",
           "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/37bf9767684211.5bc1405ba7a66.jpg",
@@ -30599,17 +30530,13 @@
           "first_seen": "2026-08-07",
           "last_seen": "2026-08-07",
           "review_reason": "符合创意桌搭品类，直接服务桌面手机无线充电、小物收纳和桌面分区。创新点在于把无线充电板做成可拼接的模块系统，并与半圆收纳托盘组合成“充电岛”，比普通无线充电板多了扩展连接、设备停靠和耳机小物归置场景。图片与标题匹配，产品明确；但来源为Behance概念项目，量产、成本和稳定供电方案不明，因此作为可用灵感保留而非顶级推荐。",
-          "review_source": "",
+          "review_source": "company_gpt_multimodal",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 79,
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "创意桌搭",
-            "无线充电",
-            "桌面收纳",
-            "模块化",
             "adapt",
             "company_gpt_discovery"
           ]
@@ -30618,7 +30545,7 @@
           "id": "89e5e0d4cf2b",
           "title": "This flexible mouse works in both standard and vertical configuration without breaking a sweat",
           "category": "创意桌搭",
-          "summary": "灵活鼠标兼顾标准与垂直两种握持方式，实用价值高，尤其对内容创作者高频使用，省去切换鼠标的麻烦。功能设计有创新，但3秒内未必能直观理解其特色，且售价可能偏高，影响大众接受度。",
+          "summary": "柔性鼠标一物两用，解决标准与垂直两种使用场景，实用性和便捷性突出；受众覆盖内容创作者及普通办公人群，价格潜力较高，设计直观易懂。但可折叠结构可能影响耐用性，且市场认知度尚待验证。",
           "score": 78,
           "price_gate": "unknown",
           "image": "https://www.yankodesign.com/images/design_news/2026/08/this-flexible-mouse-works-in-both-standard-and-vertical-configuration-without-breaking-a-sweat/DUO-Flexible-Mouse-9.jpg",
@@ -30643,18 +30570,85 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "创意桌搭",
-            "人体工学",
-            "灵活设计",
             "Yanko Design",
+            "创意桌搭",
             "公开来源"
+          ]
+        },
+        {
+          "id": "cb39ffaa0698",
+          "title": "iPhone 15 Pro Max photography features got a whole lot better with this ingenious phone case - Yanko Design",
+          "category": "手机壳",
+          "summary": "该产品属于直接安装在手机上的手机壳，不是普通印花壳或基础皮壳。核心创新点在于将 MagSafe 圆环、可展开支架和保护壳整合，可支持横竖屏桌面观看、拍摄取景辅助和握持稳定，具备明确结构与交互价值；手机壳为高频刚需且受众广。不过磁吸支架手机壳已有较多成熟同类，创新强度中等，适合作为可用选品方向保留但不列为顶级。",
+          "score": 77,
+          "price_gate": "unknown",
+          "image": "https://www.yankodesign.com/images/design_news/2023/09/torras-upro-ostand-ss-and-r-cases-for-iphone-15-hands-on-elevating-the-mobile-experience/torras-upro-ss.jpg",
+          "url": "https://www.yankodesign.com/2023/09/12/torras-upro-ostand-ss-and-r-iphone-15-cases-hands-on-elevating-the-mobile-experience",
+          "source_name": "Yanko Design",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发",
+            "情绪启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-07",
+          "last_seen": "2026-08-07",
+          "review_reason": "该产品属于直接安装在手机上的手机壳，不是普通印花壳或基础皮壳。核心创新点在于将 MagSafe 圆环、可展开支架和保护壳整合，可支持横竖屏桌面观看、拍摄取景辅助和握持稳定，具备明确结构与交互价值；手机壳为高频刚需且受众广。不过磁吸支架手机壳已有较多成熟同类，创新强度中等，适合作为可用选品方向保留但不列为顶级。",
+          "review_source": "company_gpt_multimodal",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 77,
+          "innovation": 6,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "company_gpt_discovery"
+          ]
+        },
+        {
+          "id": "7038ff8d0276",
+          "title": "Squeezable Metal Bottles Hit Kickstarter - Core77",
+          "category": "水杯",
+          "summary": "文字证据指向 KEEGO 可挤压金属运动水瓶，属于可直接饮用的水杯/运动水瓶品类；创新点是将运动塑料挤压瓶的单手快速精准出水结构与金属内层或金属瓶身结合，针对塑料异味、健康顾虑和一次性消耗问题，在骑行、健身、跑步等高频场景有明确实用价值。因图片缺失且链接信息不完整，不能评为 top，但文字层面的产品机制清楚，可作为可用选品方向保留。",
+          "score": 76,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.core77.com/projects/74269/not+implemented",
+          "source_name": "Core77",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-07",
+          "last_seen": "2026-08-07",
+          "review_reason": "文字证据指向 KEEGO 可挤压金属运动水瓶，属于可直接饮用的水杯/运动水瓶品类；创新点是将运动塑料挤压瓶的单手快速精准出水结构与金属内层或金属瓶身结合，针对塑料异味、健康顾虑和一次性消耗问题，在骑行、健身、跑步等高频场景有明确实用价值。因图片缺失且链接信息不完整，不能评为 top，但文字层面的产品机制清楚，可作为可用选品方向保留。",
+          "review_source": "company_gpt_multimodal",
+          "review_confidence": 7,
+          "review_policy_version": 3,
+          "quality_score": 76,
+          "innovation": 8,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "company_gpt_discovery"
           ]
         },
         {
           "id": "4d12c7bfc057",
           "title": "G-Hold: Grips and cases for iPads, tablets and phones. by Alison Grieve — Kickstarter",
           "category": "手机壳",
-          "summary": "产品结构创新明确，解决单手握持痛点，功能成立且实用性强；手机壳需求高频，但带握把的细分市场可能相对小众，打击面中等。价格未明确但Kickstarter项目通常高于35RMB，3秒内可理解核心卖点，情绪价值围绕舒适握持。",
+          "summary": "创新型旋转折叠握把有效解决单手操作大设备的痛点，适用手机/平板/iPad，使用高频且一目了然。功能聚焦实用，但价格和长期耐用性存在不确定性。",
           "score": 75,
           "price_gate": "unknown",
           "image": "",
@@ -30680,17 +30674,18 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
+            "手机壳",
+            "握把",
+            "众筹",
             "deepseek_search_agent",
-            "market_signal_strong",
-            "trend",
-            "手机壳"
+            "market_signal_strong"
           ]
         },
         {
           "id": "db202353c7e8",
           "title": "Red Dot Design Award: 2012 “Short Sayings” Pop-Up Calendar",
           "category": "日历",
-          "summary": "经典红点奖设计，立体弹出结构新颖有艺术感，但作为2012年日历已过时，实用性低；受众限于设计爱好者，功能上日历基础功能完整，价格可能超过35元，视觉冲击力强能快速吸引注意，情绪价值在于收藏和装饰。",
+          "summary": "产品以立体弹出结构呈现每日箴言，兼具日历与日记功能，交互创新但实用性和高频需求一般，适用人群较窄，功能上有一定亮点但非刚需。价格预计超过35元，3秒内可看懂其创意，情绪价值较高但功能依赖单一。",
           "score": 75,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30719,7 +30714,6 @@
             "award_gallery",
             "trend",
             "calendar",
-            "design",
             "deepseek_search_agent",
             "日历"
           ]
@@ -30728,7 +30722,7 @@
           "id": "a32297319f0c",
           "title": "Red Dot Design Award: Bladeless Fan For Home Lighting",
           "category": "氛围灯",
-          "summary": "结合风扇与落地灯，功能集成有创意，但作为氛围灯概念产品，实用性待验证，售价高，视觉清晰，具获奖设计情绪价值。",
+          "summary": "概念创新，结合风扇与灯，但作为氛围灯不够纯粹，功能集成复杂性可能影响实用性与市场接受度。",
           "score": 75,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30761,47 +30755,10 @@
           ]
         },
         {
-          "id": "47530dde6f78",
-          "title": "Prynt: the first instant camera case for iPhone and Android - Kickstarter",
-          "category": "手机壳",
-          "summary": "产品具备创新性，但实用性和高频需求不足，且功能有短板。价格有优势，但理解成本高。",
-          "score": 74,
-          "price_gate": "unknown",
-          "image": "",
-          "url": "https://www.kickstarter.com/projects/prynt/prynt-the-first-instant-camera-case-for-iphone-and",
-          "source_name": "Kickstarter",
-          "source_family": "市场信号",
-          "source_type": "market_reference",
-          "source_quality": "standard",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "缺图",
-          "seen_count": 1,
-          "first_seen": "2026-08-07",
-          "last_seen": "2026-08-07",
-          "review_reason": "内置打印模块可即时打印照片，并支持AR动态视频，功能与交互双重创新。",
-          "review_source": "",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 74,
-          "innovation": 9,
-          "relevance": 9,
-          "tags": [
-            "AR",
-            "instant printing",
-            "phone case",
-            "deepseek_search_agent",
-            "market_signal_strong"
-          ]
-        },
-        {
           "id": "cffee62ee3f3",
           "title": "Red Dot Design Award: Little KONG",
           "category": "氛围灯",
-          "summary": "氛围灯具备实用性，手势开关增加便利性，设计获奖提升情绪价值，预估售价超35元，功能无明显短板，外观直观易懂。",
+          "summary": "产品设计创新，手势控制和无可见光源是亮点，但属于小众装饰类产品，实用性一般。",
           "score": 74,
           "price_gate": "likely_over_35",
           "image": "",
@@ -30827,17 +30784,19 @@
           "innovation": 8,
           "relevance": 9,
           "tags": [
+            "氛围灯",
+            "红点设计奖",
+            "手势控制",
+            "家居装饰",
             "award_gallery",
-            "deepseek_search_agent",
-            "trend",
-            "氛围灯"
+            "deepseek_search_agent"
           ]
         },
         {
           "id": "fa56ff0fda4b",
           "title": "Titanium Folding Spork Multifunction Compact Eating Tool by ProperGear — Kickstarter",
           "category": "创意厨具",
-          "summary": "钛金属折叠多功能餐具，功能集成度高，适合户外场景，高价格容忍度，名称清晰，情绪价值足，但目标市场小众。",
+          "summary": "文字信息足以判断其为直接用于户外/旅行用餐的创意厨具：通过折叠结构将勺叉刀、开瓶器、挑针整合为便携餐具，具备明确的结构整合、多功能使用和收纳便携创新，不是普通基础餐具。缺少图片导致视觉核验不足，因此不列为 top，但可作为多功能露营餐具方向保留。",
           "score": 74,
           "price_gate": "unknown",
           "image": "",
@@ -30856,17 +30815,13 @@
           "first_seen": "2026-08-07",
           "last_seen": "2026-08-07",
           "review_reason": "文字信息足以判断其为直接用于户外/旅行用餐的创意厨具：通过折叠结构将勺叉刀、开瓶器、挑针整合为便携餐具，具备明确的结构整合、多功能使用和收纳便携创新，不是普通基础餐具。缺少图片导致视觉核验不足，因此不列为 top，但可作为多功能露营餐具方向保留。",
-          "review_source": "",
+          "review_source": "company_gpt_multimodal",
           "review_confidence": 7,
           "review_policy_version": 3,
           "quality_score": 74,
           "innovation": 7,
           "relevance": 9,
           "tags": [
-            "钛金属",
-            "折叠餐具",
-            "多功能工具",
-            "户外装备",
             "adapt",
             "company_gpt_discovery"
           ]
@@ -30875,7 +30830,7 @@
           "id": "7bf354f97919",
           "title": "Timeless Gate Arc II 2026",
           "category": "中秋礼盒",
-          "summary": "该产品为高端中秋礼盒包装，设计独特具有创意，能吸引眼球并激发情绪价值，但作为节令性消费品，实用性和高频需求不足，目标受众相对狭窄。",
+          "summary": "该产品为中秋礼盒包装设计，创意独特，文化氛围浓厚，但作为节日礼品，使用频率低，实用性和广谱性有限，且设计复杂，难以3秒内理解，但价格大概率高于35元，情绪价值较高，但需先确保功能成立。",
           "score": 73,
           "price_gate": "likely_over_35",
           "image": "https://i0.wp.com/packagingoftheworld.com/wp-content/uploads/2026/08/6-1-3-scaled-e1786086250458.jpg?fit=300%2C200&amp;ssl=1",
@@ -30901,10 +30856,10 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "包装设计",
             "中秋礼盒",
-            "节日礼品",
-            "高端礼盒",
+            "包装设计",
+            "Laluna",
+            "Bracom",
             "Packaging of the World",
             "公开来源"
           ]
@@ -30913,7 +30868,7 @@
           "id": "52ecdd46edd0",
           "title": "luke cardew recycles market stall material to create 100% waterproof raincoat",
           "category": "冲锋衣",
-          "summary": "概念性环保雨衣，防水功能尚可，但款式小众，需求频次低，打击面窄，价格变量大，3秒内不易理解。",
+          "summary": "该产品属于可穿着防雨外套，符合冲锋衣/雨衣方向。核心创新在于将市场摊位篷布类材料回收再制成100%防水雨衣，兼具材料再利用、防水保护和城市通勤/户外雨天场景启发，不是普通基础款。缺点是造型偏概念、小众，量产、价格和舒适透气等信息不充分，因此适合作为可用材料与可持续结构方向参考，未达到顶级推荐。",
           "score": 73,
           "price_gate": "unknown",
           "image": "https://www.designboom.com/twitterimages/uploads/2018/12/market-trench-jacket-luke-cardew-designboom-1200.jpg",
@@ -30931,26 +30886,56 @@
           "first_seen": "2026-08-07",
           "last_seen": "2026-08-07",
           "review_reason": "该产品属于可穿着防雨外套，符合冲锋衣/雨衣方向。核心创新在于将市场摊位篷布类材料回收再制成100%防水雨衣，兼具材料再利用、防水保护和城市通勤/户外雨天场景启发，不是普通基础款。缺点是造型偏概念、小众，量产、价格和舒适透气等信息不充分，因此适合作为可用材料与可持续结构方向参考，未达到顶级推荐。",
-          "review_source": "",
+          "review_source": "company_gpt_multimodal",
           "review_confidence": 8,
           "review_policy_version": 3,
           "quality_score": 73,
           "innovation": 8,
           "relevance": 8,
           "tags": [
-            "可持续",
-            "环保设计",
-            "防水雨衣",
-            "概念设计",
             "company_gpt_discovery",
             "company_search_agent"
+          ]
+        },
+        {
+          "id": "b79a097beac4",
+          "title": "Holden Packable Down Jacket | Uncrate Supply",
+          "category": "冲锋衣",
+          "summary": "该产品属于可穿着功能外套，文字明确提供日本7D防撕裂尼龙、750蓬可追溯羽绒和可打包收纳卖点，具备轻量保暖、抗撕裂材料和便携收纳方向，满足冲锋衣/功能外套的材料与结构创新要求。图片与标题一致，产品清晰可见。创新主要是成熟高端户外服技术组合而非全新形态，适合作为轻量便携保暖外套方向参考，保留为usable。",
+          "score": 73,
+          "price_gate": "likely_over_35",
+          "image": "http://shop.uncrate.com/cdn/shop/files/DAY2MENS_0031_ONGRAY_e26f63e1-95f2-4974-91a8-b37945c2bb9e.jpg?v=1783708988",
+          "url": "https://shop.uncrate.com/products/m-packable-down-jacket-black",
+          "source_name": "Uncrate",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 2,
+          "first_seen": "2026-08-07",
+          "last_seen": "2026-08-07",
+          "review_reason": "该产品属于可穿着功能外套，文字明确提供日本7D防撕裂尼龙、750蓬可追溯羽绒和可打包收纳卖点，具备轻量保暖、抗撕裂材料和便携收纳方向，满足冲锋衣/功能外套的材料与结构创新要求。图片与标题一致，产品清晰可见。创新主要是成熟高端户外服技术组合而非全新形态，适合作为轻量便携保暖外套方向参考，保留为usable。",
+          "review_source": "company_gpt_multimodal",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 73,
+          "innovation": 6,
+          "relevance": 8,
+          "tags": [
+            "buy_sample",
+            "company_gpt_discovery"
           ]
         },
         {
           "id": "c326a15e1a4f",
           "title": "THE SPLITTER : Titanium Multi Utensil by Full Windsor — Kickstarter",
           "category": "创意厨具",
-          "summary": "The product is a practical multi-tool for outdoor cooking and eating, combining tongs, spatula, and spork. It serves high-frequency needs in camping and BBQ scenarios, with broad appeal to outdoor enthusiasts. Functionally strong due to titanium build and lightweight design, but price power is uncertain (unknown). Clear 3-second understanding of its multi-functional nature. Emotional value exists for camping/outdoor lifestyles, but not highly emphasized.",
+          "summary": "文字证据明确指向一款钛合金多功能厨房/户外餐具，将夹子、锅铲和叉勺整合为单件轻量工具，可用于露营、烧烤、背包旅行中的烹饪、夹取、翻炒和进食，符合创意厨具品类且有结构与场景创新；但图片缺失，无法验证实物可见性和视觉卖点，因此保留为可用灵感而非顶级。",
           "score": 72,
           "price_gate": "unknown",
           "image": "",
@@ -30968,15 +30953,13 @@
           "first_seen": "2026-08-07",
           "last_seen": "2026-08-07",
           "review_reason": "文字证据明确指向一款钛合金多功能厨房/户外餐具，将夹子、锅铲和叉勺整合为单件轻量工具，可用于露营、烧烤、背包旅行中的烹饪、夹取、翻炒和进食，符合创意厨具品类且有结构与场景创新；但图片缺失，无法验证实物可见性和视觉卖点，因此保留为可用灵感而非顶级。",
-          "review_source": "",
+          "review_source": "company_gpt_multimodal",
           "review_confidence": 7,
           "review_policy_version": 3,
           "quality_score": 72,
           "innovation": 8,
           "relevance": 9,
           "tags": [
-            "创意厨具",
-            "market_signal_strong",
             "adapt",
             "company_gpt_discovery"
           ]
@@ -30985,7 +30968,7 @@
           "id": "76f2e5441ba5",
           "title": "荣耀端午礼盒：《端阳・逐光航海》_TAOOOOOOOO-站酷ZCOOL",
           "category": "端午礼盒",
-          "summary": "产品为荣耀定制端午礼盒，内含风扇和毛毯，实用性尚可，但端午送礼属低频需求，目标受众偏向企业礼品市场，打击面不够广。价格明确高于35元，3秒内可识别为端午礼盒，情绪价值通过航海叙事体现，但整体市场宽度有限。",
+          "summary": "产品为端午礼盒，内含风扇和毛毯，功能明确且有一定实用性，但季节性需求明显，非高频。航海主题结合中式底蕴，情绪价值丰富，但目标受众较窄，打击面一般。售价预计高于35元，价格力强。整体设计独特，但市场容量有限。",
           "score": 71,
           "price_gate": "likely_over_35",
           "image": "https://img.zcool.cn/community/689eea0e16fc8knuzr5z5c1628.png?k=9bd5c94ec085b332dec611b7fa60a975&t=6a775280",
@@ -31012,35 +30995,102 @@
           "relevance": 10,
           "tags": [
             "端午礼盒",
-            "荣耀",
+            "企业礼品",
             "定制礼盒",
-            "航海主题",
             "deepseek_search_agent",
             "design_community"
           ]
+        },
+        {
+          "id": "69f11f7555c2",
+          "title": "You’ll Have To Join A Waitlist For The First-Ever Graphene Jacket",
+          "category": "冲锋衣",
+          "summary": "文字信息明确为 Vollebak graphene-infused weatherproof shell jacket，是可穿着的防风防雨外套，符合冲锋衣品类。主要可取点是将石墨烯注入纺织面料作为防护外壳卖点，属于材料性能创新，具备选品和面料方向参考价值；但缺少图片验证，且目前文字未充分展示具体结构、透气、收纳、口袋系统等完整功能细节，因此保留为可用灵感而非顶级推荐。",
+          "score": 69,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.gearpatrol.com/briefings/a481398/vollebak-graphene-jacket",
+          "source_name": "Gear Patrol",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-07",
+          "last_seen": "2026-08-07",
+          "review_reason": "文字信息明确为 Vollebak graphene-infused weatherproof shell jacket，是可穿着的防风防雨外套，符合冲锋衣品类。主要可取点是将石墨烯注入纺织面料作为防护外壳卖点，属于材料性能创新，具备选品和面料方向参考价值；但缺少图片验证，且目前文字未充分展示具体结构、透气、收纳、口袋系统等完整功能细节，因此保留为可用灵感而非顶级推荐。",
+          "review_source": "company_gpt_multimodal",
+          "review_confidence": 7,
+          "review_policy_version": 3,
+          "quality_score": 69,
+          "innovation": 7,
+          "relevance": 8,
+          "tags": [
+            "company_gpt_discovery",
+            "company_search_agent"
+          ]
+        },
+        {
+          "id": "8d2f787a8493",
+          "title": "Ensō: Eco-Friendly Pure Titanium Cutlery, Chopsticks & Straw by Ti22 — Kickstarter",
+          "category": "创意厨具",
+          "summary": "标题和文字明确为纯钛餐具、筷子与吸管套装，直接用于进餐、饮用和可重复使用，符合创意厨具。可取点在医用级纯钛材料、抗菌、耐腐蚀、低致敏和环保替代一次性餐具，具备一定材料与可持续卖点；但主要是高端材料升级，缺少明显结构、交互或收纳机制创新，因此不列为top，作为可用方向保留。",
+          "score": 68,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.kickstarter.com/projects/ti22/ti22-enso-pure-titanium-modern-luxury-cutlery-and",
+          "source_name": "Kickstarter",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-07",
+          "last_seen": "2026-08-07",
+          "review_reason": "标题和文字明确为纯钛餐具、筷子与吸管套装，直接用于进餐、饮用和可重复使用，符合创意厨具。可取点在医用级纯钛材料、抗菌、耐腐蚀、低致敏和环保替代一次性餐具，具备一定材料与可持续卖点；但主要是高端材料升级，缺少明显结构、交互或收纳机制创新，因此不列为top，作为可用方向保留。",
+          "review_source": "company_gpt_multimodal",
+          "review_confidence": 7,
+          "review_policy_version": 3,
+          "quality_score": 68,
+          "innovation": 6,
+          "relevance": 8,
+          "tags": [
+            "adapt",
+            "company_gpt_discovery"
+          ]
         }
       ],
-      "actual_count": 15,
+      "actual_count": 21,
       "stats": {
         "by_lane": {
-          "适合改造": 11,
+          "适合改造": 17,
           "方向参考": 4
         },
         "by_category": {
+          "创意厨具": 6,
           "手机壳": 3,
-          "创意厨具": 3,
+          "冲锋衣": 3,
+          "水杯": 2,
           "创意桌搭": 2,
           "氛围灯": 2,
-          "水杯": 1,
           "日历": 1,
           "中秋礼盒": 1,
-          "冲锋衣": 1,
           "端午礼盒": 1
         },
         "by_source_family": {
+          "市场信号": 8,
+          "媒体案例": 5,
           "奖项案例": 5,
-          "市场信号": 4,
-          "媒体案例": 3,
           "社交灵感": 1,
           "包装专项": 1,
           "设计社区": 1
@@ -31056,7 +31106,7 @@
         },
         "source_quota_fill": {
           "奖项案例": 5,
-          "媒体案例": 3,
+          "媒体案例": 5,
           "包装专项": 1,
           "设计社区": 1,
           "市场信号": 3,
@@ -32166,7 +32216,7 @@
           "summary": "双口运动水杯，采用二合一吸管+直饮盖设计，直饮盖带磁性可吸附在防尘吸管盖背面防丢失，具备结构/交互创新。。页面证据：双口运动水杯,该系列水具采用二合一吸管和吸嘴盖设计，让您可以根据喜好直接饮用或通过吸管饮用。,直饮盖带有磁性，可吸附在防尘吸管盖的背面，防止饮用时遗失。无论您是在家、在健身房,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
           "score": 79,
           "price_gate": "unknown",
-          "image": "https://img.zcool.cn/community/68c6279b5f743oqjbamu5k7020.png?k=1dc6db77e7792627ad8d0a682674b009&t=6a775280",
+          "image": "",
           "url": "https://www.zcool.com.cn/work/ZNzI1MjYwNjQ=.html",
           "source_name": "站酷",
           "source_family": "设计社区",
@@ -32177,7 +32227,7 @@
             "功能启发",
             "结构启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-08-06",
           "last_seen": "2026-08-06",
@@ -36552,7 +36602,7 @@
           "summary": "Pinterest · OWALA旋转保温杯，单手开合设计",
           "score": 73,
           "price_gate": "unknown",
-          "image": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/Owala-brand-logo400x400.png?v=1760045540",
+          "image": "",
           "url": "https://www.owalalife.com",
           "source_name": "Pinterest",
           "source_family": "社交灵感",
@@ -36562,7 +36612,7 @@
           "axes": [
             "功能启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -52283,7 +52333,7 @@
           "summary": "Sharge透明机甲风充电宝",
           "score": 76,
           "price_gate": "unknown",
-          "image": "http://sharge.com/cdn/shop/files/31a0784cce3883498068716cffd3264c_7e9d7db5-ef7b-4bb1-ba70-47838d1d938a.jpg?v=1763619605",
+          "image": "",
           "url": "https://sharge.com",
           "source_name": "抖音",
           "source_family": "社交灵感",
@@ -52293,7 +52343,7 @@
           "axes": [
             "功能启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -52531,7 +52581,7 @@
           "summary": "Pinterest · 智能日落渐变投影氛围灯",
           "score": 72,
           "price_gate": "unknown",
-          "image": "https://us-cdn.nanoleaf.me/assets/img/favicons/nanoleaf-small-icon.png",
+          "image": "",
           "url": "https://nanoleaf.com/en-US/products/nanoleaf-aurora",
           "source_name": "Pinterest",
           "source_family": "社交灵感",
@@ -52541,7 +52591,7 @@
           "axes": [
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -52676,7 +52726,7 @@
           "summary": "A 3D-Printed Lamp That Finally Makes Sustainability Look GreatMost lamps do one thing. They sit on your desk, light your space, and get buried under the slow-moving chaos of charger cables and forgott",
           "score": 70,
           "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2026/05/a-3d-printed-lamp-that-finally-makes-sustainability-look-great/drop-light-00.jpg",
+          "image": "",
           "url": "https://www.yankodesign.com/2026/05/20/a-3d-printed-lamp-that-finally-makes-sustainability-look-great",
           "source_name": "Yanko Design",
           "source_family": "媒体案例",
@@ -52687,7 +52737,7 @@
             "功能启发",
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -53217,7 +53267,7 @@
           "summary": "Pinterest · 卧室星空投影氛围灯",
           "score": 72,
           "price_gate": "unknown",
-          "image": "http://twinkly.com/cdn/shop/files/Twinkly_Christmas_2025_1.jpg?v=1757930784",
+          "image": "",
           "url": "https://www.twinkly.com",
           "source_name": "Pinterest",
           "source_family": "社交灵感",
@@ -53227,7 +53277,7 @@
           "axes": [
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -53358,7 +53408,7 @@
           "summary": "Endless Flat Studio presents their first lighting collection, an ode to the paper lamps that have guided us through centuries.",
           "score": 70,
           "price_gate": "unknown",
-          "image": "https://design-milk.com/images/2026/04/Find-Your-Serpentine-Endless-Flat-1.jpg",
+          "image": "",
           "url": "https://design-milk.com/endless-flat-studios-sculptural-lighting-series-marries-traditional-techniques-with-modern-gestures",
           "source_name": "Design Milk",
           "source_family": "媒体案例",
@@ -53368,7 +53418,7 @@
           "axes": [
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -53394,7 +53444,7 @@
           "summary": "This Lamp Finally Belongs on a Bookshelf Because It Looks Like a BookReading lamps have always had a tension with the spaces they occupy. The ones bright enough to actually read by tend to be too hars",
           "score": 70,
           "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2026/05/this-lamp-finally-belongs-on-a-bookshelf-because-it-looks-like-a-book/folio-book-inspired-lamp-concept-11.jpg",
+          "image": "",
           "url": "https://www.yankodesign.com/2026/05/05/this-lamp-finally-belongs-on-a-bookshelf-because-it-looks-like-a-book",
           "source_name": "Yanko Design",
           "source_family": "媒体案例",
@@ -53405,7 +53455,7 @@
             "结构启发",
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -54101,7 +54151,7 @@
           "summary": "加拿大Nanoleaf模块化智能LED灯板",
           "score": 74,
           "price_gate": "likely_over_35",
-          "image": "https://us-cdn.nanoleaf.me/assets/img/favicons/nanoleaf-small-icon.png",
+          "image": "",
           "url": "https://nanoleaf.me",
           "source_name": "Red Dot",
           "source_family": "奖项案例",
@@ -54113,7 +54163,7 @@
             "结构启发",
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -54426,7 +54476,7 @@
           "summary": "三宅一生In-Ei褶皱回收纸灯",
           "score": 70,
           "price_gate": "likely_over_35",
-          "image": "https://static.wixstatic.com/media/d5accd_8dbacb18438e483dad6dc47b744af782~mv2_d_5000_3330_s_4_2.jpg/v1/fill/w_5000,h_3330,al_c/d5accd_8dbacb18438e483dad6dc47b744af782~mv2_d_5000_3330_s_4_2.jpg",
+          "image": "",
           "url": "https://www.issho.com",
           "source_name": "A' Design Award",
           "source_family": "奖项案例",
@@ -54436,7 +54486,7 @@
           "axes": [
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -67185,7 +67235,7 @@
           "summary": "FlexiSpot智能电动升降桌",
           "score": 81,
           "price_gate": "unknown",
-          "image": "https://s3.springbeetle.eu/dev-de-s3-flexispot/commodity/item/logo20260311-161729_20260311_U8Cfepoq.jpg",
+          "image": "",
           "url": "https://www.flexispot.com",
           "source_name": "抖音",
           "source_family": "社交灵感",
@@ -67195,7 +67245,7 @@
           "axes": [
             "结构启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -67251,7 +67301,7 @@
           "summary": "Gantri and Ammunition Group take the party outside with Gantri Wireless, offering portable lighting for modern life.",
           "score": 80,
           "price_gate": "unknown",
-          "image": "https://design-milk.com/images/2026/04/Gantri-Wireless-Lamp-0.jpg",
+          "image": "",
           "url": "https://design-milk.com/gantri-goes-wireless-for-the-first-time",
           "source_name": "Design Milk",
           "source_family": "媒体案例",
@@ -67262,7 +67312,7 @@
             "功能启发",
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -67351,7 +67401,7 @@
           "summary": "Ready to take the party outside? The ILO Lamp from Arieto Studio charges passively, detaching completely for a portable lighting solution.",
           "score": 78,
           "price_gate": "unknown",
-          "image": "https://design-milk.com/images/2026/04/Ilo-Lamp-Arieto-Studio-7.jpg",
+          "image": "",
           "url": "https://design-milk.com/the-ilo-lamp-is-ready-to-rally-and-beautiful-at-rest",
           "source_name": "Design Milk",
           "source_family": "媒体案例",
@@ -67362,7 +67412,7 @@
             "功能启发",
             "情绪启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -67517,7 +67567,7 @@
           "summary": "Lofree Just Made the Most Eye-Candy Mechanical Keyboard of 2026 and It’s Inspired by LipstickYour desk says something about you before you ever open your mouth. The monitor, the mug, the little",
           "score": 76,
           "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2026/05/auto-draft/lofree_lipstick_keyboard_1.jpeg",
+          "image": "",
           "url": "https://www.yankodesign.com/2026/05/17/lofree-just-made-the-most-eye-candy-mechanical-keyboard-of-2026-and-its-inspired-by-lipstick",
           "source_name": "Yanko Design",
           "source_family": "媒体案例",
@@ -67527,7 +67577,7 @@
           "axes": [
             "结构启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-05-25",
           "last_seen": "2026-05-25",
@@ -68828,7 +68878,7 @@
       "id": "298d5457cf0c",
       "title": "Regular Phone Cases are Dead… These Phone Stands from TORRAS offer Ultimate Hands-free Ergonomics - Yanko Design",
       "category": "手机壳",
-      "summary": "手机壳集成支架和磁吸环，解决高频免手持需求，功能实用且受众广泛，设计清晰易懂，价格空间充足，在功能基础上提供便利和科技感。",
+      "summary": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
       "score": 86,
       "price_gate": "unknown",
       "image": "https://www.yankodesign.com/images/design_news/2024/01/auto-draft/torras_ces_2024_1.jpg",
@@ -68848,17 +68898,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 86,
       "innovation": 7,
       "relevance": 10,
       "tags": [
-        "phone stand",
-        "magsafe",
-        "hands-free",
-        "phone case",
         "adapt",
         "company_gpt_discovery"
       ]
@@ -75317,6 +75363,40 @@
       ]
     },
     {
+      "id": "afdd9215ad09",
+      "title": "Dripless Cutting Board | 2-in-1 System with Thermometer | Grommet",
+      "category": "创意厨具",
+      "summary": "这是明确用于备餐切片的创意厨具，不是普通砧板。其核心创新在于倾斜/导流砧板结构、边缘排水槽与可拆卸滴盘组合，可减少肉汁污染台面；配合固定钉和数字肉类温度计形成较完整的烤肉切分系统。功能痛点清晰、家庭厨房和烧烤场景适用，具备可转化的结构创新和较强选品价值。",
+      "score": 82,
+      "price_gate": "unknown",
+      "image": "https://dxzihkgog0d85.cloudfront.net/products/36881/200x200_41GKmdripless-cutting-board.jpg",
+      "url": "https://thegrommet.com/product/kitchen/dripless-cutting-board-system?pid=email-newsletter15920november2024-free",
+      "source_name": "The Grommet",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "review_reason": "这是明确用于备餐切片的创意厨具，不是普通砧板。其核心创新在于倾斜/导流砧板结构、边缘排水槽与可拆卸滴盘组合，可减少肉汁污染台面；配合固定钉和数字肉类温度计形成较完整的烤肉切分系统。功能痛点清晰、家庭厨房和烧烤场景适用，具备可转化的结构创新和较强选品价值。",
+      "review_source": "company_gpt_multimodal",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 82,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "buy_sample"
+      ]
+    },
+    {
       "id": "2aceffdece4d",
       "title": "iF Design - Aquacendo LightUp Filtered Bottle",
       "category": "水杯",
@@ -75517,6 +75597,41 @@
       ]
     },
     {
+      "id": "9c53f9289500",
+      "title": "TIBO Titanium Cutting Board | Antibacterial Prep | Grommet",
+      "category": "创意厨具",
+      "summary": "产品真实用途与标题中的 Titanium Cutting Board 匹配，属于直接用于备餐切配的创意厨具。钛金属材质带来抗菌、减少塑料砧板微塑料残留、耐用易清洁等材料升级价值，边缘槽和挂孔也提升清洁收纳与使用体验；切菜是高频厨房需求，受众广，具备35元以上价格空间。创新主要是健康材料替代和细节结构优化，不是复杂交互或颠覆结构，因此评为可用灵感而非顶级。",
+      "score": 82,
+      "price_gate": "unknown",
+      "image": "https://dxzihkgog0d85.cloudfront.net/products/72940/200x200_WHHVRTIBO01_92e90b54c7d1a2839289467237047a53.webp",
+      "url": "https://thegrommet.com/product/kitchen/tibo",
+      "source_name": "The Grommet",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "review_reason": "产品真实用途与标题中的 Titanium Cutting Board 匹配，属于直接用于备餐切配的创意厨具。钛金属材质带来抗菌、减少塑料砧板微塑料残留、耐用易清洁等材料升级价值，边缘槽和挂孔也提升清洁收纳与使用体验；切菜是高频厨房需求，受众广，具备35元以上价格空间。创新主要是健康材料替代和细节结构优化，不是复杂交互或颠覆结构，因此评为可用灵感而非顶级。",
+      "review_source": "company_gpt_multimodal",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 82,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "company_gpt_discovery"
+      ]
+    },
+    {
       "id": "d7c4cf3e4628",
       "title": "Kickstarter >> Loopy® | No More Phone Drops, Easy One-Handed Use by Loopy Cases",
       "category": "手机壳",
@@ -75547,40 +75662,6 @@
       "tags": [
         "deepseek_search_agent",
         "market_signal_strong"
-      ]
-    },
-    {
-      "id": "afdd9215ad09",
-      "title": "Dripless Cutting Board | 2-in-1 System with Thermometer | Grommet",
-      "category": "创意厨具",
-      "summary": "Karving King Dripless Cutting Board System采用倾斜表面与排水槽引导肉汁进入可拆卸滴盘，内置固定钉保障切片安全，并附赠数字肉类温度计，是带明显功能与结构创新的明确砧板单品。。页面证据：Keep counters clean with the Karving King Dripless Cutting Board, complete with a drip tray and bonus digital thermometer. Save 20% on Grommet.",
-      "score": 82,
-      "price_gate": "unknown",
-      "image": "https://dxzihkgog0d85.cloudfront.net/products/36881/200x200_41GKmdripless-cutting-board.jpg",
-      "url": "https://thegrommet.com/product/kitchen/dripless-cutting-board-system",
-      "source_name": "The Grommet",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-06",
-      "last_seen": "2026-08-06",
-      "review_reason": "这是明确用于备餐切片的创意厨具，不是普通砧板。其核心创新在于倾斜/导流砧板结构、边缘排水槽与可拆卸滴盘组合，可减少肉汁污染台面；配合固定钉和数字肉类温度计形成较完整的烤肉切分系统。功能痛点清晰、家庭厨房和烧烤场景适用，具备可转化的结构创新和较强选品价值。",
-      "review_source": "",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 82,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -80562,7 +80643,7 @@
       "summary": "FlexiSpot智能电动升降桌",
       "score": 81,
       "price_gate": "unknown",
-      "image": "https://s3.springbeetle.eu/dev-de-s3-flexispot/commodity/item/logo20260311-161729_20260311_U8Cfepoq.jpg",
+      "image": "",
       "url": "https://www.flexispot.com",
       "source_name": "抖音",
       "source_family": "社交灵感",
@@ -80572,7 +80653,7 @@
       "axes": [
         "结构启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -80893,7 +80974,7 @@
       "id": "d1d1f81109e7",
       "title": "Red Dot Design Award: Vacuum Bottles",
       "category": "水杯",
-      "summary": "真空水杯是高频实用产品，设计奖加持提升外观和握感，功能完善，价格有支撑，3秒可识别，情绪价值来自设计美学和户外场景。",
+      "summary": "真空水杯实用性强，日常及户外高频使用，受众广泛；红点设计奖加持提升情绪价值，喷涂成型技术改善握持，防腐蚀材料功能可靠；售价预计超35元，但设计感可能弱化3秒内直观认知。",
       "score": 80,
       "price_gate": "likely_over_35",
       "image": "",
@@ -80921,15 +81002,16 @@
       "tags": [
         "award_gallery",
         "trend",
-        "deepseek_search_agent",
-        "水杯"
+        "水杯",
+        "户外运动",
+        "deepseek_search_agent"
       ]
     },
     {
       "id": "da564cc7e998",
       "title": "Red Dot Design Award: Electric Fondue Set Pro",
       "category": "创意厨具",
-      "summary": "该产品将传统芝士火锅与现代电热技术结合，精准控温，设计美观，获红点奖验证，功能完善，但受众较小，属于特定场景下的高端厨电。",
+      "summary": "电动火锅功能完善，控温精准，设计获奖，兼具实用与美观；但目标群体较窄，非高频使用场景。",
       "score": 80,
       "price_gate": "likely_over_35",
       "image": "",
@@ -80956,12 +81038,10 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "红点设计奖",
-        "电动火锅",
-        "智能控温",
-        "创意厨具",
         "award_gallery",
-        "deepseek_search_agent"
+        "deepseek_search_agent",
+        "trend",
+        "创意厨具"
       ]
     },
     {
@@ -84130,7 +84210,7 @@
       "summary": "Gantri and Ammunition Group take the party outside with Gantri Wireless, offering portable lighting for modern life.",
       "score": 80,
       "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2026/04/Gantri-Wireless-Lamp-0.jpg",
+      "image": "",
       "url": "https://design-milk.com/gantri-goes-wireless-for-the-first-time",
       "source_name": "Design Milk",
       "source_family": "媒体案例",
@@ -84141,7 +84221,7 @@
         "功能启发",
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -84429,7 +84509,7 @@
       "id": "e9cd33e9abc5",
       "title": "Mobile island - modular wireless charger :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebo",
       "category": "创意桌搭",
-      "summary": "产品将无线充电与收纳结合，解决桌面充电和整理的高频需求，结构创新，实用性强；但量产信息不明，价格和功能稳定性存疑。",
+      "summary": "符合创意桌搭品类，直接服务桌面手机无线充电、小物收纳和桌面分区。创新点在于把无线充电板做成可拼接的模块系统，并与半圆收纳托盘组合成“充电岛”，比普通无线充电板多了扩展连接、设备停靠和耳机小物归置场景。图片与标题匹配，产品明确；但来源为Behance概念项目，量产、成本和稳定供电方案不明，因此作为可用灵感保留而非顶级推荐。",
       "score": 79,
       "price_gate": "unknown",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/37bf9767684211.5bc1405ba7a66.jpg",
@@ -84448,17 +84528,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "符合创意桌搭品类，直接服务桌面手机无线充电、小物收纳和桌面分区。创新点在于把无线充电板做成可拼接的模块系统，并与半圆收纳托盘组合成“充电岛”，比普通无线充电板多了扩展连接、设备停靠和耳机小物归置场景。图片与标题匹配，产品明确；但来源为Behance概念项目，量产、成本和稳定供电方案不明，因此作为可用灵感保留而非顶级推荐。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 79,
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "创意桌搭",
-        "无线充电",
-        "桌面收纳",
-        "模块化",
         "adapt",
         "company_gpt_discovery"
       ]
@@ -84467,7 +84543,7 @@
       "id": "a0771b675ca1",
       "title": "Discretely Asymmetrical Drinkware: The 'Tilt Cup' Inconspicuously Leans to One Side to Dry | Trend Hunter",
       "category": "水杯",
-      "summary": "倾斜杯体设计解决沥水防霉痛点，实用性强，水杯属高频刚需，大众适用；功能明确，价格有望超35元。但设计可能增加成本，且情绪价值较弱。",
+      "summary": "倾斜设计聚焦干燥防霉，功能明确但需求频率中等，外观独特易于识别，售价可能因设计溢价，市场信号弱。",
       "score": 79,
       "price_gate": "unknown",
       "image": "",
@@ -84494,9 +84570,9 @@
       "relevance": 10,
       "tags": [
         "trend",
-        "market_signal_weak",
         "水杯",
-        "deepseek_search_agent"
+        "deepseek_search_agent",
+        "market_signal_weak"
       ]
     },
     {
@@ -84506,7 +84582,7 @@
       "summary": "双口运动水杯，采用二合一吸管+直饮盖设计，直饮盖带磁性可吸附在防尘吸管盖背面防丢失，具备结构/交互创新。。页面证据：双口运动水杯,该系列水具采用二合一吸管和吸嘴盖设计，让您可以根据喜好直接饮用或通过吸管饮用。,直饮盖带有磁性，可吸附在防尘吸管盖的背面，防止饮用时遗失。无论您是在家、在健身房,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
       "score": 79,
       "price_gate": "unknown",
-      "image": "https://img.zcool.cn/community/68c6279b5f743oqjbamu5k7020.png?k=1dc6db77e7792627ad8d0a682674b009&t=6a775280",
+      "image": "",
       "url": "https://www.zcool.com.cn/work/ZNzI1MjYwNjQ=.html",
       "source_name": "站酷",
       "source_family": "设计社区",
@@ -84517,7 +84593,7 @@
         "功能启发",
         "结构启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-06",
@@ -89086,7 +89162,7 @@
       "id": "89e5e0d4cf2b",
       "title": "This flexible mouse works in both standard and vertical configuration without breaking a sweat",
       "category": "创意桌搭",
-      "summary": "灵活鼠标兼顾标准与垂直两种握持方式，实用价值高，尤其对内容创作者高频使用，省去切换鼠标的麻烦。功能设计有创新，但3秒内未必能直观理解其特色，且售价可能偏高，影响大众接受度。",
+      "summary": "柔性鼠标一物两用，解决标准与垂直两种使用场景，实用性和便捷性突出；受众覆盖内容创作者及普通办公人群，价格潜力较高，设计直观易懂。但可折叠结构可能影响耐用性，且市场认知度尚待验证。",
       "score": 78,
       "price_gate": "unknown",
       "image": "https://www.yankodesign.com/images/design_news/2026/08/this-flexible-mouse-works-in-both-standard-and-vertical-configuration-without-breaking-a-sweat/DUO-Flexible-Mouse-9.jpg",
@@ -89111,10 +89187,8 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "创意桌搭",
-        "人体工学",
-        "灵活设计",
         "Yanko Design",
+        "创意桌搭",
         "公开来源"
       ]
     },
@@ -95278,7 +95352,7 @@
       "summary": "Ready to take the party outside? The ILO Lamp from Arieto Studio charges passively, detaching completely for a portable lighting solution.",
       "score": 78,
       "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2026/04/Ilo-Lamp-Arieto-Studio-7.jpg",
+      "image": "",
       "url": "https://design-milk.com/the-ilo-lamp-is-ready-to-rally-and-beautiful-at-rest",
       "source_name": "Design Milk",
       "source_family": "媒体案例",
@@ -95289,7 +95363,7 @@
         "功能启发",
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -95746,7 +95820,7 @@
       "id": "cb39ffaa0698",
       "title": "iPhone 15 Pro Max photography features got a whole lot better with this ingenious phone case - Yanko Design",
       "category": "手机壳",
-      "summary": "磁吸支架手机壳兼具保护与支撑功能，实用性强且使用场景高频；手机壳覆盖用户广，售价通常高于35RMB，功能直观易理解。虽同类产品较多，但结合拍摄取景辅助的交互创新有一定吸引力。",
+      "summary": "该产品属于直接安装在手机上的手机壳，不是普通印花壳或基础皮壳。核心创新点在于将 MagSafe 圆环、可展开支架和保护壳整合，可支持横竖屏桌面观看、拍摄取景辅助和握持稳定，具备明确结构与交互价值；手机壳为高频刚需且受众广。不过磁吸支架手机壳已有较多成熟同类，创新强度中等，适合作为可用选品方向保留但不列为顶级。",
       "score": 77,
       "price_gate": "unknown",
       "image": "https://www.yankodesign.com/images/design_news/2023/09/torras-upro-ostand-ss-and-r-cases-for-iphone-15-hands-on-elevating-the-mobile-experience/torras-upro-ss.jpg",
@@ -95766,16 +95840,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "该产品属于直接安装在手机上的手机壳，不是普通印花壳或基础皮壳。核心创新点在于将 MagSafe 圆环、可展开支架和保护壳整合，可支持横竖屏桌面观看、拍摄取景辅助和握持稳定，具备明确结构与交互价值；手机壳为高频刚需且受众广。不过磁吸支架手机壳已有较多成熟同类，创新强度中等，适合作为可用选品方向保留但不列为顶级。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 77,
       "innovation": 6,
       "relevance": 9,
       "tags": [
-        "手机壳",
-        "磁吸支架",
-        "iPhone 15 Pro Max",
         "adapt",
         "company_gpt_discovery"
       ]
@@ -100923,6 +100994,40 @@
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "7038ff8d0276",
+      "title": "Squeezable Metal Bottles Hit Kickstarter - Core77",
+      "category": "水杯",
+      "summary": "文字证据指向 KEEGO 可挤压金属运动水瓶，属于可直接饮用的水杯/运动水瓶品类；创新点是将运动塑料挤压瓶的单手快速精准出水结构与金属内层或金属瓶身结合，针对塑料异味、健康顾虑和一次性消耗问题，在骑行、健身、跑步等高频场景有明确实用价值。因图片缺失且链接信息不完整，不能评为 top，但文字层面的产品机制清楚，可作为可用选品方向保留。",
+      "score": 76,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.core77.com/projects/74269/not+implemented",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "review_reason": "文字证据指向 KEEGO 可挤压金属运动水瓶，属于可直接饮用的水杯/运动水瓶品类；创新点是将运动塑料挤压瓶的单手快速精准出水结构与金属内层或金属瓶身结合，针对塑料异味、健康顾虑和一次性消耗问题，在骑行、健身、跑步等高频场景有明确实用价值。因图片缺失且链接信息不完整，不能评为 top，但文字层面的产品机制清楚，可作为可用选品方向保留。",
+      "review_source": "company_gpt_multimodal",
+      "review_confidence": 7,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "company_gpt_discovery"
       ]
     },
     {
@@ -107972,7 +108077,7 @@
       "summary": "Sharge透明机甲风充电宝",
       "score": 76,
       "price_gate": "unknown",
-      "image": "http://sharge.com/cdn/shop/files/31a0784cce3883498068716cffd3264c_7e9d7db5-ef7b-4bb1-ba70-47838d1d938a.jpg?v=1763619605",
+      "image": "",
       "url": "https://sharge.com",
       "source_name": "抖音",
       "source_family": "社交灵感",
@@ -107982,7 +108087,7 @@
       "axes": [
         "功能启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -108038,7 +108143,7 @@
       "summary": "Lofree Just Made the Most Eye-Candy Mechanical Keyboard of 2026 and It’s Inspired by LipstickYour desk says something about you before you ever open your mouth. The monitor, the mug, the little",
       "score": 76,
       "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2026/05/auto-draft/lofree_lipstick_keyboard_1.jpeg",
+      "image": "",
       "url": "https://www.yankodesign.com/2026/05/17/lofree-just-made-the-most-eye-candy-mechanical-keyboard-of-2026-and-its-inspired-by-lipstick",
       "source_name": "Yanko Design",
       "source_family": "媒体案例",
@@ -108048,7 +108153,7 @@
       "axes": [
         "结构启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -108369,7 +108474,7 @@
       "id": "4d12c7bfc057",
       "title": "G-Hold: Grips and cases for iPads, tablets and phones. by Alison Grieve — Kickstarter",
       "category": "手机壳",
-      "summary": "产品结构创新明确，解决单手握持痛点，功能成立且实用性强；手机壳需求高频，但带握把的细分市场可能相对小众，打击面中等。价格未明确但Kickstarter项目通常高于35RMB，3秒内可理解核心卖点，情绪价值围绕舒适握持。",
+      "summary": "创新型旋转折叠握把有效解决单手操作大设备的痛点，适用手机/平板/iPad，使用高频且一目了然。功能聚焦实用，但价格和长期耐用性存在不确定性。",
       "score": 75,
       "price_gate": "unknown",
       "image": "",
@@ -108395,17 +108500,18 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
+        "手机壳",
+        "握把",
+        "众筹",
         "deepseek_search_agent",
-        "market_signal_strong",
-        "trend",
-        "手机壳"
+        "market_signal_strong"
       ]
     },
     {
       "id": "a32297319f0c",
       "title": "Red Dot Design Award: Bladeless Fan For Home Lighting",
       "category": "氛围灯",
-      "summary": "结合风扇与落地灯，功能集成有创意，但作为氛围灯概念产品，实用性待验证，售价高，视觉清晰，具获奖设计情绪价值。",
+      "summary": "概念创新，结合风扇与灯，但作为氛围灯不够纯粹，功能集成复杂性可能影响实用性与市场接受度。",
       "score": 75,
       "price_gate": "likely_over_35",
       "image": "",
@@ -108441,7 +108547,7 @@
       "id": "db202353c7e8",
       "title": "Red Dot Design Award: 2012 “Short Sayings” Pop-Up Calendar",
       "category": "日历",
-      "summary": "经典红点奖设计，立体弹出结构新颖有艺术感，但作为2012年日历已过时，实用性低；受众限于设计爱好者，功能上日历基础功能完整，价格可能超过35元，视觉冲击力强能快速吸引注意，情绪价值在于收藏和装饰。",
+      "summary": "产品以立体弹出结构呈现每日箴言，兼具日历与日记功能，交互创新但实用性和高频需求一般，适用人群较窄，功能上有一定亮点但非刚需。价格预计超过35元，3秒内可看懂其创意，情绪价值较高但功能依赖单一。",
       "score": 75,
       "price_gate": "likely_over_35",
       "image": "",
@@ -108470,7 +108576,6 @@
         "award_gallery",
         "trend",
         "calendar",
-        "design",
         "deepseek_search_agent",
         "日历"
       ]
@@ -113552,7 +113657,7 @@
       "id": "fa56ff0fda4b",
       "title": "Titanium Folding Spork Multifunction Compact Eating Tool by ProperGear — Kickstarter",
       "category": "创意厨具",
-      "summary": "钛金属折叠多功能餐具，功能集成度高，适合户外场景，高价格容忍度，名称清晰，情绪价值足，但目标市场小众。",
+      "summary": "文字信息足以判断其为直接用于户外/旅行用餐的创意厨具：通过折叠结构将勺叉刀、开瓶器、挑针整合为便携餐具，具备明确的结构整合、多功能使用和收纳便携创新，不是普通基础餐具。缺少图片导致视觉核验不足，因此不列为 top，但可作为多功能露营餐具方向保留。",
       "score": 74,
       "price_gate": "unknown",
       "image": "",
@@ -113571,17 +113676,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "文字信息足以判断其为直接用于户外/旅行用餐的创意厨具：通过折叠结构将勺叉刀、开瓶器、挑针整合为便携餐具，具备明确的结构整合、多功能使用和收纳便携创新，不是普通基础餐具。缺少图片导致视觉核验不足，因此不列为 top，但可作为多功能露营餐具方向保留。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 7,
       "review_policy_version": 3,
       "quality_score": 74,
       "innovation": 7,
       "relevance": 9,
       "tags": [
-        "钛金属",
-        "折叠餐具",
-        "多功能工具",
-        "户外装备",
         "adapt",
         "company_gpt_discovery"
       ]
@@ -113590,7 +113691,7 @@
       "id": "cffee62ee3f3",
       "title": "Red Dot Design Award: Little KONG",
       "category": "氛围灯",
-      "summary": "氛围灯具备实用性，手势开关增加便利性，设计获奖提升情绪价值，预估售价超35元，功能无明显短板，外观直观易懂。",
+      "summary": "产品设计创新，手势控制和无可见光源是亮点，但属于小众装饰类产品，实用性一般。",
       "score": 74,
       "price_gate": "likely_over_35",
       "image": "",
@@ -113616,17 +113717,19 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "氛围灯",
+        "红点设计奖",
+        "手势控制",
+        "家居装饰",
         "award_gallery",
-        "deepseek_search_agent",
-        "trend",
-        "氛围灯"
+        "deepseek_search_agent"
       ]
     },
     {
       "id": "47530dde6f78",
       "title": "Prynt: the first instant camera case for iPhone and Android - Kickstarter",
       "category": "手机壳",
-      "summary": "产品具备创新性，但实用性和高频需求不足，且功能有短板。价格有优势，但理解成本高。",
+      "summary": "Prynt 即时相机手机壳将手机壳与即时打印功能结合，并支持 AR 动态视频，概念新颖且具备一定趣味性，但实用性受限于耗材成本和打印频率，功能稳定性可能存疑，定位偏小众。",
       "score": 74,
       "price_gate": "unknown",
       "image": "",
@@ -113652,9 +113755,9 @@
       "innovation": 9,
       "relevance": 9,
       "tags": [
-        "AR",
-        "instant printing",
+        "instant camera",
         "phone case",
+        "AR",
         "deepseek_search_agent",
         "market_signal_strong"
       ]
@@ -119220,7 +119323,7 @@
       "summary": "加拿大Nanoleaf模块化智能LED灯板",
       "score": 74,
       "price_gate": "likely_over_35",
-      "image": "https://us-cdn.nanoleaf.me/assets/img/favicons/nanoleaf-small-icon.png",
+      "image": "",
       "url": "https://nanoleaf.me",
       "source_name": "Red Dot",
       "source_family": "奖项案例",
@@ -119232,7 +119335,7 @@
         "结构启发",
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -119419,7 +119522,7 @@
       "id": "b79a097beac4",
       "title": "Holden Packable Down Jacket | Uncrate Supply",
       "category": "冲锋衣",
-      "summary": "产品实用性强，轻量保暖且可打包，功能明确无短板，售价高于35元，三秒可懂，但情绪价值一般。",
+      "summary": "该产品属于可穿着功能外套，文字明确提供日本7D防撕裂尼龙、750蓬可追溯羽绒和可打包收纳卖点，具备轻量保暖、抗撕裂材料和便携收纳方向，满足冲锋衣/功能外套的材料与结构创新要求。图片与标题一致，产品清晰可见。创新主要是成熟高端户外服技术组合而非全新形态，适合作为轻量便携保暖外套方向参考，保留为usable。",
       "score": 73,
       "price_gate": "likely_over_35",
       "image": "http://shop.uncrate.com/cdn/shop/files/DAY2MENS_0031_ONGRAY_e26f63e1-95f2-4974-91a8-b37945c2bb9e.jpg?v=1783708988",
@@ -119438,16 +119541,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "该产品属于可穿着功能外套，文字明确提供日本7D防撕裂尼龙、750蓬可追溯羽绒和可打包收纳卖点，具备轻量保暖、抗撕裂材料和便携收纳方向，满足冲锋衣/功能外套的材料与结构创新要求。图片与标题一致，产品清晰可见。创新主要是成熟高端户外服技术组合而非全新形态，适合作为轻量便携保暖外套方向参考，保留为usable。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 8,
       "review_policy_version": 3,
       "quality_score": 73,
       "innovation": 6,
       "relevance": 8,
       "tags": [
-        "轻量羽绒",
-        "可打包",
-        "户外保暖",
         "buy_sample",
         "company_gpt_discovery"
       ]
@@ -119524,7 +119624,7 @@
       "id": "52ecdd46edd0",
       "title": "luke cardew recycles market stall material to create 100% waterproof raincoat",
       "category": "冲锋衣",
-      "summary": "概念性环保雨衣，防水功能尚可，但款式小众，需求频次低，打击面窄，价格变量大，3秒内不易理解。",
+      "summary": "该产品属于可穿着防雨外套，符合冲锋衣/雨衣方向。核心创新在于将市场摊位篷布类材料回收再制成100%防水雨衣，兼具材料再利用、防水保护和城市通勤/户外雨天场景启发，不是普通基础款。缺点是造型偏概念、小众，量产、价格和舒适透气等信息不充分，因此适合作为可用材料与可持续结构方向参考，未达到顶级推荐。",
       "score": 73,
       "price_gate": "unknown",
       "image": "https://www.designboom.com/twitterimages/uploads/2018/12/market-trench-jacket-luke-cardew-designboom-1200.jpg",
@@ -119542,17 +119642,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "该产品属于可穿着防雨外套，符合冲锋衣/雨衣方向。核心创新在于将市场摊位篷布类材料回收再制成100%防水雨衣，兼具材料再利用、防水保护和城市通勤/户外雨天场景启发，不是普通基础款。缺点是造型偏概念、小众，量产、价格和舒适透气等信息不充分，因此适合作为可用材料与可持续结构方向参考，未达到顶级推荐。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 8,
       "review_policy_version": 3,
       "quality_score": 73,
       "innovation": 8,
       "relevance": 8,
       "tags": [
-        "可持续",
-        "环保设计",
-        "防水雨衣",
-        "概念设计",
         "company_gpt_discovery",
         "company_search_agent"
       ]
@@ -119561,7 +119657,7 @@
       "id": "7bf354f97919",
       "title": "Timeless Gate Arc II 2026",
       "category": "中秋礼盒",
-      "summary": "该产品为高端中秋礼盒包装，设计独特具有创意，能吸引眼球并激发情绪价值，但作为节令性消费品，实用性和高频需求不足，目标受众相对狭窄。",
+      "summary": "该产品为中秋礼盒包装设计，创意独特，文化氛围浓厚，但作为节日礼品，使用频率低，实用性和广谱性有限，且设计复杂，难以3秒内理解，但价格大概率高于35元，情绪价值较高，但需先确保功能成立。",
       "score": 73,
       "price_gate": "likely_over_35",
       "image": "https://i0.wp.com/packagingoftheworld.com/wp-content/uploads/2026/08/6-1-3-scaled-e1786086250458.jpg?fit=300%2C200&amp;ssl=1",
@@ -119587,10 +119683,10 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "包装设计",
         "中秋礼盒",
-        "节日礼品",
-        "高端礼盒",
+        "包装设计",
+        "Laluna",
+        "Bracom",
         "Packaging of the World",
         "公开来源"
       ]
@@ -124795,7 +124891,7 @@
       "summary": "Pinterest · OWALA旋转保温杯，单手开合设计",
       "score": 73,
       "price_gate": "unknown",
-      "image": "https://cdn.shopify.com/s/files/1/0439/2537/3087/files/Owala-brand-logo400x400.png?v=1760045540",
+      "image": "",
       "url": "https://www.owalalife.com",
       "source_name": "Pinterest",
       "source_family": "社交灵感",
@@ -124805,7 +124901,7 @@
       "axes": [
         "功能启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -125165,7 +125261,7 @@
       "id": "c326a15e1a4f",
       "title": "THE SPLITTER : Titanium Multi Utensil by Full Windsor — Kickstarter",
       "category": "创意厨具",
-      "summary": "The product is a practical multi-tool for outdoor cooking and eating, combining tongs, spatula, and spork. It serves high-frequency needs in camping and BBQ scenarios, with broad appeal to outdoor enthusiasts. Functionally strong due to titanium build and lightweight design, but price power is uncertain (unknown). Clear 3-second understanding of its multi-functional nature. Emotional value exists for camping/outdoor lifestyles, but not highly emphasized.",
+      "summary": "文字证据明确指向一款钛合金多功能厨房/户外餐具，将夹子、锅铲和叉勺整合为单件轻量工具，可用于露营、烧烤、背包旅行中的烹饪、夹取、翻炒和进食，符合创意厨具品类且有结构与场景创新；但图片缺失，无法验证实物可见性和视觉卖点，因此保留为可用灵感而非顶级。",
       "score": 72,
       "price_gate": "unknown",
       "image": "",
@@ -125183,15 +125279,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "文字证据明确指向一款钛合金多功能厨房/户外餐具，将夹子、锅铲和叉勺整合为单件轻量工具，可用于露营、烧烤、背包旅行中的烹饪、夹取、翻炒和进食，符合创意厨具品类且有结构与场景创新；但图片缺失，无法验证实物可见性和视觉卖点，因此保留为可用灵感而非顶级。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 7,
       "review_policy_version": 3,
       "quality_score": 72,
       "innovation": 8,
       "relevance": 9,
       "tags": [
-        "创意厨具",
-        "market_signal_strong",
         "adapt",
         "company_gpt_discovery"
       ]
@@ -130454,7 +130548,7 @@
       "summary": "Pinterest · 卧室星空投影氛围灯",
       "score": 72,
       "price_gate": "unknown",
-      "image": "http://twinkly.com/cdn/shop/files/Twinkly_Christmas_2025_1.jpg?v=1757930784",
+      "image": "",
       "url": "https://www.twinkly.com",
       "source_name": "Pinterest",
       "source_family": "社交灵感",
@@ -130464,7 +130558,7 @@
       "axes": [
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -130520,7 +130614,7 @@
       "summary": "Pinterest · 智能日落渐变投影氛围灯",
       "score": 72,
       "price_gate": "unknown",
-      "image": "https://us-cdn.nanoleaf.me/assets/img/favicons/nanoleaf-small-icon.png",
+      "image": "",
       "url": "https://nanoleaf.com/en-US/products/nanoleaf-aurora",
       "source_name": "Pinterest",
       "source_family": "社交灵感",
@@ -130530,7 +130624,7 @@
       "axes": [
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -130783,7 +130877,7 @@
       "id": "76f2e5441ba5",
       "title": "荣耀端午礼盒：《端阳・逐光航海》_TAOOOOOOOO-站酷ZCOOL",
       "category": "端午礼盒",
-      "summary": "产品为荣耀定制端午礼盒，内含风扇和毛毯，实用性尚可，但端午送礼属低频需求，目标受众偏向企业礼品市场，打击面不够广。价格明确高于35元，3秒内可识别为端午礼盒，情绪价值通过航海叙事体现，但整体市场宽度有限。",
+      "summary": "产品为端午礼盒，内含风扇和毛毯，功能明确且有一定实用性，但季节性需求明显，非高频。航海主题结合中式底蕴，情绪价值丰富，但目标受众较窄，打击面一般。售价预计高于35元，价格力强。整体设计独特，但市场容量有限。",
       "score": 71,
       "price_gate": "likely_over_35",
       "image": "https://img.zcool.cn/community/689eea0e16fc8knuzr5z5c1628.png?k=9bd5c94ec085b332dec611b7fa60a975&t=6a775280",
@@ -130810,9 +130904,8 @@
       "relevance": 10,
       "tags": [
         "端午礼盒",
-        "荣耀",
+        "企业礼品",
         "定制礼盒",
-        "航海主题",
         "deepseek_search_agent",
         "design_community"
       ]
@@ -139758,7 +139851,7 @@
       "summary": "三宅一生In-Ei褶皱回收纸灯",
       "score": 70,
       "price_gate": "likely_over_35",
-      "image": "https://static.wixstatic.com/media/d5accd_8dbacb18438e483dad6dc47b744af782~mv2_d_5000_3330_s_4_2.jpg/v1/fill/w_5000,h_3330,al_c/d5accd_8dbacb18438e483dad6dc47b744af782~mv2_d_5000_3330_s_4_2.jpg",
+      "image": "",
       "url": "https://www.issho.com",
       "source_name": "A' Design Award",
       "source_family": "奖项案例",
@@ -139768,7 +139861,7 @@
       "axes": [
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -139923,7 +140016,7 @@
       "summary": "Endless Flat Studio presents their first lighting collection, an ode to the paper lamps that have guided us through centuries.",
       "score": 70,
       "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2026/04/Find-Your-Serpentine-Endless-Flat-1.jpg",
+      "image": "",
       "url": "https://design-milk.com/endless-flat-studios-sculptural-lighting-series-marries-traditional-techniques-with-modern-gestures",
       "source_name": "Design Milk",
       "source_family": "媒体案例",
@@ -139933,7 +140026,7 @@
       "axes": [
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -139956,7 +140049,7 @@
       "summary": "This Lamp Finally Belongs on a Bookshelf Because It Looks Like a BookReading lamps have always had a tension with the spaces they occupy. The ones bright enough to actually read by tend to be too hars",
       "score": 70,
       "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2026/05/this-lamp-finally-belongs-on-a-bookshelf-because-it-looks-like-a-book/folio-book-inspired-lamp-concept-11.jpg",
+      "image": "",
       "url": "https://www.yankodesign.com/2026/05/05/this-lamp-finally-belongs-on-a-bookshelf-because-it-looks-like-a-book",
       "source_name": "Yanko Design",
       "source_family": "媒体案例",
@@ -139967,7 +140060,7 @@
         "结构启发",
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -140023,7 +140116,7 @@
       "summary": "A 3D-Printed Lamp That Finally Makes Sustainability Look GreatMost lamps do one thing. They sit on your desk, light your space, and get buried under the slow-moving chaos of charger cables and forgott",
       "score": 70,
       "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2026/05/a-3d-printed-lamp-that-finally-makes-sustainability-look-great/drop-light-00.jpg",
+      "image": "",
       "url": "https://www.yankodesign.com/2026/05/20/a-3d-printed-lamp-that-finally-makes-sustainability-look-great",
       "source_name": "Yanko Design",
       "source_family": "媒体案例",
@@ -140034,7 +140127,7 @@
         "功能启发",
         "情绪启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-05-25",
       "last_seen": "2026-05-25",
@@ -140084,10 +140177,44 @@
       ]
     },
     {
+      "id": "69f11f7555c2",
+      "title": "You’ll Have To Join A Waitlist For The First-Ever Graphene Jacket",
+      "category": "冲锋衣",
+      "summary": "文字信息明确为 Vollebak graphene-infused weatherproof shell jacket，是可穿着的防风防雨外套，符合冲锋衣品类。主要可取点是将石墨烯注入纺织面料作为防护外壳卖点，属于材料性能创新，具备选品和面料方向参考价值；但缺少图片验证，且目前文字未充分展示具体结构、透气、收纳、口袋系统等完整功能细节，因此保留为可用灵感而非顶级推荐。",
+      "score": 69,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.gearpatrol.com/briefings/a481398/vollebak-graphene-jacket",
+      "source_name": "Gear Patrol",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "review_reason": "文字信息明确为 Vollebak graphene-infused weatherproof shell jacket，是可穿着的防风防雨外套，符合冲锋衣品类。主要可取点是将石墨烯注入纺织面料作为防护外壳卖点，属于材料性能创新，具备选品和面料方向参考价值；但缺少图片验证，且目前文字未充分展示具体结构、透气、收纳、口袋系统等完整功能细节，因此保留为可用灵感而非顶级推荐。",
+      "review_source": "company_gpt_multimodal",
+      "review_confidence": 7,
+      "review_policy_version": 3,
+      "quality_score": 69,
+      "innovation": 7,
+      "relevance": 8,
+      "tags": [
+        "company_gpt_discovery",
+        "company_search_agent"
+      ]
+    },
+    {
       "id": "8d2f787a8493",
       "title": "Ensō: Eco-Friendly Pure Titanium Cutlery, Chopsticks & Straw by Ti22 — Kickstarter",
       "category": "创意厨具",
-      "summary": "纯钛餐具实用且高频，功能全面，售价远超35元，3秒可懂，环保与高端材料赋予情绪价值，但目标人群较窄，创新性一般。",
+      "summary": "标题和文字明确为纯钛餐具、筷子与吸管套装，直接用于进餐、饮用和可重复使用，符合创意厨具。可取点在医用级纯钛材料、抗菌、耐腐蚀、低致敏和环保替代一次性餐具，具备一定材料与可持续卖点；但主要是高端材料升级，缺少明显结构、交互或收纳机制创新，因此不列为top，作为可用方向保留。",
       "score": 68,
       "price_gate": "likely_over_35",
       "image": "",
@@ -140106,15 +140233,13 @@
       "first_seen": "2026-08-07",
       "last_seen": "2026-08-07",
       "review_reason": "标题和文字明确为纯钛餐具、筷子与吸管套装，直接用于进餐、饮用和可重复使用，符合创意厨具。可取点在医用级纯钛材料、抗菌、耐腐蚀、低致敏和环保替代一次性餐具，具备一定材料与可持续卖点；但主要是高端材料升级，缺少明显结构、交互或收纳机制创新，因此不列为top，作为可用方向保留。",
-      "review_source": "",
+      "review_source": "company_gpt_multimodal",
       "review_confidence": 7,
       "review_policy_version": 3,
       "quality_score": 68,
       "innovation": 6,
       "relevance": 8,
       "tags": [
-        "创意厨具",
-        "market_signal_strong",
         "adapt",
         "company_gpt_discovery"
       ]

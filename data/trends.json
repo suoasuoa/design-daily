@@ -1,177 +1,52 @@
 {
-  "generated_at": "2026-08-07T17:17:48+08:00",
-  "source": "local_summary",
-  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
-  "hot_categories": {
-    "氛围灯": 388,
-    "水杯": 335,
-    "创意厨具": 334,
-    "创意桌搭": 300,
-    "充电宝": 290,
-    "冲锋衣": 169,
-    "手机壳": 158,
-    "日历": 69,
-    "创意礼盒": 52,
-    "中秋礼盒": 35,
-    "端午礼盒": 8,
-    "装置艺术": 5
-  },
-  "hot_sources": {
-    "Yanko Design": 420,
-    "Kickstarter": 387,
-    "Indiegogo": 245,
-    "Red Dot": 242,
-    "Core77": 117,
-    "iF设计奖": 91,
-    "Design Milk": 91,
-    "Uncrate": 91,
-    "Designboom": 87,
-    "The Grommet": 69,
-    "Cool Material": 68,
-    "Behance": 61
-  },
-  "hot_tags": {
-    "deepseek_search_agent": 1683,
-    "editorial_main": 666,
-    "market_signal_strong": 593,
-    "adapt": 592,
-    "trend": 572,
-    "buy_sample": 555,
-    "氛围灯": 379,
-    "创意厨具": 336,
-    "水杯": 327,
-    "award_gallery": 324,
-    "创意桌搭": 296,
-    "充电宝": 295,
-    "白名单来源": 291,
-    "design_community": 220,
-    "适合作为趋势、内容爆点或方向参考": 172,
-    "冲锋衣": 167,
-    "手机壳": 156,
-    "market_signal": 124,
-    "适合做结构、包装、功能或外观改造": 105,
-    "日历": 69
-  },
-  "recommended": [
-    {
-      "title": "Red Dot Design Award: Vacuum Bottles",
-      "category": "水杯",
-      "score": 86,
-      "reason": "真空水杯是高频实用产品，设计奖加持提升外观和握感，功能完善，价格有支撑，3秒可识别，情绪价值来自设计美学和户外场景。"
-    },
-    {
-      "title": "OXO沙拉甩干器",
-      "category": "创意厨具",
-      "score": 86,
-      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
-    },
-    {
-      "title": "蘑菇氛围灯",
-      "category": "氛围灯",
-      "score": 86,
-      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
-    },
-    {
-      "title": "磁吸锅铲套装",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Pinterest · 磁吸收纳锅铲套装"
-    },
-    {
-      "title": "Nanoleaf 智能灯板",
-      "category": "氛围灯",
-      "score": 84,
-      "reason": "加拿大Nanoleaf模块化智能LED灯板"
-    },
-    {
-      "title": "M01",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
-    },
-    {
-      "title": "Nano bubble shaker",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
-    },
-    {
-      "title": "SELECT100 grater",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
-    },
-    {
-      "title": "WMF Flexi Whisk",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
-    },
-    {
-      "title": "Multi-Functional Magnetic Knife Sheath",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
-    },
-    {
-      "title": "360KYUSU",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
-    },
-    {
-      "title": "The T-Pot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
-    },
-    {
-      "title": "VERMICULAR OVEN POT２ & Recraft program",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
-    },
-    {
-      "title": "PETARI Shallow Pot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called"
-    },
-    {
-      "title": "ARAHI",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of"
-    },
-    {
-      "title": "Zaru-ya no bon zaru （Flat strainer）",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The flattening of the colander allows foodstuffs to be placed side by side without overlapping. By p"
-    },
-    {
-      "title": "PackStaff FITLOCK",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The food storage container that closes tightly but It is easy to open.It has a high level of airtigh"
-    },
-    {
-      "title": "360°Tumbler・Cup",
-      "category": "水杯",
-      "score": 84,
-      "reason": "Good Design Award · This tumbler and cup allows one to drink from any position without removing the lid. The rim made wi"
-    },
-    {
-      "title": "A sturdy sugarcane cup that you can reuse many times and still throw away with burnable waste.",
-      "category": "水杯",
-      "score": 84,
-      "reason": "Good Design Award · The returnable, or Biodegradable Cup that is petroleum-free, plant-based plastic, the thinnest PLA i"
-    },
-    {
-      "title": "Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to d"
-    }
-  ]
+  "summary": "整体呈现‘功能复合+材料升级+智能微创新’趋势。高频厨具与氛围灯线索最多，实用型创新（如砧板导流、可折叠餐具、磁吸收纳、感应夜灯）比纯装饰概念更值得跟进；强调在基础功能成立的前提下叠加情绪价值。",
+  "hot_categories": [
+    "创意厨具",
+    "氛围灯",
+    "水杯",
+    "手机壳",
+    "创意桌搭",
+    "充电宝"
+  ],
+  "hot_signals": [
+    "多功能一体化",
+    "模块化/可扩展",
+    "磁吸/卡扣结构",
+    "材料升级（钛、石墨烯、环保再生）",
+    "智能感应/物联",
+    "便携折叠",
+    "健康安全设计",
+    "可持续/环保",
+    "单手/免手持操作",
+    "结构创新突破常规"
+  ],
+  "recommended_directions": [
+    "厨房测量与收纳工具（如立方体量具、折叠量杯、可平放滤盆）",
+    "带结构创新的手机壳/平板支架（磁吸环+折叠支架）",
+    "便携感应夜灯/氛围灯（可调光、运动感应、充电式）",
+    "模块化桌搭/无线充电座（显示器架+扩展坞）",
+    "钛合金户外餐具/水具（轻量+抗菌）",
+    "智能日历/桌面效率设备（E-ink日历、智能显示器架）"
+  ],
+  "avoid_or_watch": [
+    "纯节日礼盒（高频低、打击面窄）",
+    "过度依赖耗材的配件（如即时打印手机壳）",
+    "概念性装饰灯（功能弱、价格高）",
+    "功能冗余的跨界产品（如无叶风扇灯）",
+    "小众造型设计（需验证市场教育成本）"
+  ],
+  "next_search_keywords": [
+    "modular kitchen utensil",
+    "magnetic phone stand case",
+    "motion sensor night light",
+    "titanium cutlery set",
+    "foldable measuring cup",
+    "smart desk organizer",
+    "portable LED lamp rechargeable",
+    "multi-tool cooking spatula",
+    "biodegradable tableware",
+    "e-ink smart calendar"
+  ],
+  "generated_at": "2026-08-07T17:29:39+08:00",
+  "source": "deepseek"
 }

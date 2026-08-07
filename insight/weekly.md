@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-07T17:17:49+08:00
+- 生成时间：2026-08-07T17:29:41+08:00
 
 ## 行动分布
 
@@ -467,7 +467,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 - 下一步：提取可借鉴元素，做同品类差异化改造
 - 链接：https://www.yankodesign.com/2024/01/12/regular-phone-cases-are-dead-these-phone-stands-from-torras-offer-ultimate-hands-free-ergonomics
 
-手机壳集成支架和磁吸环，解决高频免手持需求，功能实用且受众广泛，设计清晰易懂，价格空间充足，在功能基础上提供便利和科技感。
+符合手机壳品类，图片与标题匹配且明确展示可安装在手机上的保护壳。核心卖点不是普通印花或基础保护，而是将手机壳、磁吸定位环与可折叠环形支架结合，覆盖视频观看、视频通话、桌面免手持、MagSafe配件兼容等高频场景；功能完整、受众广、价格空间通常可高于35元，适合作为高质量手机壳结构创新选品灵感。
 
 ### 39. Why over 50,000 people have switched to this titanium cutting board
 

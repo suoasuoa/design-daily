@@ -26588,6 +26588,222 @@
           "reasoning_tokens": 68
         }
       }
+    },
+    "69f11f7555c2": {
+      "id": "69f11f7555c2",
+      "keep": true,
+      "hard_reject": false,
+      "recommendation_tier": "usable",
+      "category": "冲锋衣",
+      "suggested_category": "冲锋衣",
+      "confidence": 7,
+      "relevance": 8,
+      "utility": 8,
+      "frequency": 6,
+      "broad_appeal": 6,
+      "functionality": 7,
+      "innovation": 7,
+      "price_power": 8,
+      "clarity": 6,
+      "emotion": 6,
+      "quality_score": 69,
+      "image_status": "missing",
+      "product_visible": false,
+      "title_image_match": 0,
+      "visual_evidence": "未提供图片链接，无法验证画面中是否有夹克实物、版型、口袋、拉链、帽兜或面料细节。",
+      "reason": "文字信息明确为 Vollebak graphene-infused weatherproof shell jacket，是可穿着的防风防雨外套，符合冲锋衣品类。主要可取点是将石墨烯注入纺织面料作为防护外壳卖点，属于材料性能创新，具备选品和面料方向参考价值；但缺少图片验证，且目前文字未充分展示具体结构、透气、收纳、口袋系统等完整功能细节，因此保留为可用灵感而非顶级推荐。",
+      "reviewed_at": "2026-08-07T17:26:05+08:00",
+      "source": "company_gpt_multimodal",
+      "policy_version": 3,
+      "company_review_version": 3,
+      "usage": {
+        "prompt_tokens": 2100,
+        "completion_tokens": 402,
+        "total_tokens": 2502,
+        "completion_tokens_details": {
+          "reasoning_tokens": 133
+        }
+      }
+    },
+    "20cae62efe2e": {
+      "id": "20cae62efe2e",
+      "keep": false,
+      "hard_reject": false,
+      "recommendation_tier": "reject",
+      "category": "",
+      "suggested_category": "创意桌搭",
+      "confidence": 7,
+      "relevance": 7,
+      "utility": 6,
+      "frequency": 8,
+      "broad_appeal": 6,
+      "functionality": 6,
+      "innovation": 7,
+      "price_power": 3,
+      "clarity": 6,
+      "emotion": 3,
+      "quality_score": 62,
+      "image_status": "missing",
+      "product_visible": false,
+      "title_image_match": 0,
+      "visual_evidence": "未提供图片链接，无法验证页面视觉中是否存在平板键盘界面或具体产品形态。",
+      "reason": "文字证据指向KALQ平板分屏键盘布局，针对双手拇指输入重新分配按键以提升平板打字速度，属于输入交互和移动办公效率方向，具备明确的功能机制与可转化启发，可归入创意桌搭。但它主要是软件键盘布局/研究概念，不是完整硬件桌面单品，图片缺失且价格空间和商品化完整度不清，因此保留为可用灵感而非高优先级。",
+      "reviewed_at": "2026-08-07T17:26:06+08:00",
+      "source": "company_gpt_multimodal",
+      "policy_version": 3,
+      "company_review_version": 3,
+      "usage": {
+        "prompt_tokens": 2045,
+        "completion_tokens": 393,
+        "total_tokens": 2438,
+        "completion_tokens_details": {
+          "reasoning_tokens": 138
+        }
+      }
+    },
+    "9c53f9289500": {
+      "id": "9c53f9289500",
+      "keep": true,
+      "hard_reject": false,
+      "recommendation_tier": "usable",
+      "category": "创意厨具",
+      "suggested_category": "创意厨具",
+      "confidence": 9,
+      "relevance": 9,
+      "utility": 9,
+      "frequency": 9,
+      "broad_appeal": 8,
+      "functionality": 8,
+      "innovation": 7,
+      "price_power": 8,
+      "clarity": 9,
+      "emotion": 5,
+      "quality_score": 82,
+      "image_status": "loaded",
+      "product_visible": true,
+      "title_image_match": 9,
+      "visual_evidence": "图片中可见一块银灰色金属质感砧板放在厨房台面上，边缘有黑色包边和导流/防溢槽，左上角有长条挂孔/手提孔；砧板上正在用刀切肉，旁边有番茄和青椒，使用场景明确为备餐切配。",
+      "reason": "产品真实用途与标题中的 Titanium Cutting Board 匹配，属于直接用于备餐切配的创意厨具。钛金属材质带来抗菌、减少塑料砧板微塑料残留、耐用易清洁等材料升级价值，边缘槽和挂孔也提升清洁收纳与使用体验；切菜是高频厨房需求，受众广，具备35元以上价格空间。创新主要是健康材料替代和细节结构优化，不是复杂交互或颠覆结构，因此评为可用灵感而非顶级。",
+      "reviewed_at": "2026-08-07T17:26:06+08:00",
+      "source": "company_gpt_multimodal",
+      "policy_version": 3,
+      "company_review_version": 3,
+      "usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 390,
+        "total_tokens": 2548,
+        "completion_tokens_details": {
+          "reasoning_tokens": 63
+        }
+      }
+    },
+    "7038ff8d0276": {
+      "id": "7038ff8d0276",
+      "keep": true,
+      "hard_reject": false,
+      "recommendation_tier": "usable",
+      "category": "水杯",
+      "suggested_category": "水杯",
+      "confidence": 7,
+      "relevance": 9,
+      "utility": 8,
+      "frequency": 8,
+      "broad_appeal": 7,
+      "functionality": 8,
+      "innovation": 8,
+      "price_power": 6,
+      "clarity": 7,
+      "emotion": 5,
+      "quality_score": 76,
+      "image_status": "missing",
+      "product_visible": false,
+      "title_image_match": 0,
+      "visual_evidence": "未提供图片链接，无法确认画面中是否存在水瓶产品，也无法做标题与图片匹配判断。",
+      "reason": "文字证据指向 KEEGO 可挤压金属运动水瓶，属于可直接饮用的水杯/运动水瓶品类；创新点是将运动塑料挤压瓶的单手快速精准出水结构与金属内层或金属瓶身结合，针对塑料异味、健康顾虑和一次性消耗问题，在骑行、健身、跑步等高频场景有明确实用价值。因图片缺失且链接信息不完整，不能评为 top，但文字层面的产品机制清楚，可作为可用选品方向保留。",
+      "reviewed_at": "2026-08-07T17:26:16+08:00",
+      "source": "company_gpt_multimodal",
+      "policy_version": 3,
+      "company_review_version": 3,
+      "usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 356,
+        "total_tokens": 2417,
+        "completion_tokens_details": {
+          "reasoning_tokens": 86
+        }
+      }
+    },
+    "9fc14b4efd79": {
+      "id": "9fc14b4efd79",
+      "keep": true,
+      "hard_reject": false,
+      "recommendation_tier": "usable",
+      "category": "冲锋衣",
+      "suggested_category": "冲锋衣",
+      "confidence": 7,
+      "relevance": 8,
+      "utility": 8,
+      "frequency": 6,
+      "broad_appeal": 6,
+      "functionality": 8,
+      "innovation": 8,
+      "price_power": 7,
+      "clarity": 7,
+      "emotion": 7,
+      "quality_score": 72,
+      "image_status": "missing",
+      "product_visible": false,
+      "title_image_match": 0,
+      "visual_evidence": "未提供图片链接，无法验证页面主图或产品外观；文字证据明确描述 Vollebak Firefly Jacket 为五层防水防风外壳、约400g轻量结构，并使用磷光与荧光化合物形成随环境变化的变色视觉机制。",
+      "reason": "符合冲锋衣品类：文字指向可穿着的高性能技术外套，具备防水、防风、轻量壳体等功能属性，并有磷光/荧光材料带来的颜色变化机制，区别于普通基础款。缺点是来源为媒体合集且缺少图片验证，具体版型、口袋、透气、收纳等结构信息不足，因此作为可用方向参考而非顶级选品。",
+      "reviewed_at": "2026-08-07T17:26:32+08:00",
+      "source": "company_gpt_multimodal",
+      "policy_version": 3,
+      "company_review_version": 3,
+      "usage": {
+        "prompt_tokens": 2071,
+        "completion_tokens": 364,
+        "total_tokens": 2435,
+        "completion_tokens_details": {
+          "reasoning_tokens": 88
+        }
+      }
+    },
+    "7c9ebb5f4a91": {
+      "id": "7c9ebb5f4a91",
+      "keep": false,
+      "hard_reject": false,
+      "recommendation_tier": "reject",
+      "category": "",
+      "suggested_category": "创意桌搭",
+      "confidence": 8,
+      "relevance": 8,
+      "utility": 8,
+      "frequency": 7,
+      "broad_appeal": 7,
+      "functionality": 8,
+      "innovation": 7,
+      "price_power": 7,
+      "clarity": 7,
+      "emotion": 6,
+      "quality_score": 74,
+      "image_status": "loaded",
+      "product_visible": true,
+      "title_image_match": 6,
+      "visual_evidence": "图片中是一个灰黑色方块状桌面扩展坞/工作站配件，正面有大号圆形旋钮，旋钮周围有绿色环形状态灯；侧面可见多种接口标识和端口，包括 HDMI、LAN、USB-C/SD、Micro SD 等，外壳有分层拼接结构和圆角边缘。",
+      "reason": "该物件不是充电宝，而是面向笔记本/数字游民桌面办公的多接口扩展坞或控制中心，符合创意桌搭。多接口集成、实体旋钮交互、环形状态灯提示和紧凑立方体结构具备明确功能与结构创新，可转化为桌面工作站/便携办公配件灵感；但标题是泛科技装备合集而非单品，图片仅展示一个产品且缺少具体规格、兼容性和真实使用场景，因此保留为usable而非top。",
+      "reviewed_at": "2026-08-07T17:26:35+08:00",
+      "source": "company_gpt_multimodal",
+      "policy_version": 3,
+      "company_review_version": 3,
+      "usage": {
+        "prompt_tokens": 3636,
+        "completion_tokens": 396,
+        "total_tokens": 4032,
+        "completion_tokens_details": {
+          "reasoning_tokens": 71
+        }
+      }
     }
   },
   "daily": {
@@ -26638,24 +26854,25 @@
       }
     },
     "2026-08-07": {
-      "generated_at": "2026-08-07T16:58:56+08:00",
-      "reviewed": 14,
-      "kept": 13,
-      "rejected": 1,
+      "generated_at": "2026-08-07T17:26:58+08:00",
+      "reviewed": 20,
+      "kept": 17,
+      "rejected": 3,
       "by_tier": {
-        "usable": 12,
+        "usable": 16,
         "top": 1,
-        "reject": 1
+        "reject": 3
       },
       "by_category": {
-        "创意厨具": 4,
-        "手机壳": 2,
+        "创意厨具": 5,
         "创意桌搭": 4,
-        "冲锋衣": 2,
-        "充电宝": 1
+        "冲锋衣": 4,
+        "手机壳": 2,
+        "充电宝": 1,
+        "水杯": 1
       }
     }
   },
-  "generated_at": "2026-08-07T16:58:56+08:00",
+  "generated_at": "2026-08-07T17:26:58+08:00",
   "policy_version": 3
 }
