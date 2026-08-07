@@ -7,8 +7,11 @@ import fcntl
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
+import tarfile
+import tempfile
 from zoneinfo import ZoneInfo
 
 from company_gpt import keychain_secret
@@ -37,10 +40,37 @@ def phase_target(now=None):
     return 40
 
 
-def sync_main():
-    result = run(["git", "pull", "--rebase", "--autostash", "origin", "main"], check=False)
-    if result.returncode:
-        raise RuntimeError("Could not synchronize the local runner with origin/main")
+def sync_main(repo):
+    """Refresh cloud-produced data without relying on the broken local Git transport."""
+    with tempfile.TemporaryDirectory(prefix="design-daily-sync-") as temp_dir:
+        archive_path = Path(temp_dir) / "repo.tar.gz"
+        with archive_path.open("wb") as archive:
+            result = subprocess.run(
+                ["gh", "api", f"repos/{repo}/tarball/main"],
+                cwd=ROOT,
+                stdout=archive,
+                stderr=subprocess.PIPE,
+                check=False,
+            )
+        if result.returncode:
+            raise RuntimeError(f"Could not download the GitHub data snapshot: {result.stderr.decode().strip()}")
+        extract_dir = Path(temp_dir) / "repo"
+        extract_dir.mkdir()
+        with tarfile.open(archive_path, "r:gz") as archive:
+            archive.extractall(extract_dir)
+        roots = [path for path in extract_dir.iterdir() if path.is_dir()]
+        if len(roots) != 1:
+            raise RuntimeError("The GitHub data snapshot had an unexpected layout")
+        snapshot = roots[0]
+        for name in ("data", "insight"):
+            source = snapshot / name
+            destination = ROOT / name
+            if not source.exists():
+                continue
+            if destination.exists():
+                shutil.rmtree(destination)
+            shutil.copytree(source, destination)
+    print(f"sync=github_api_snapshot repo={repo}", flush=True)
 
 
 def ensure_secrets():
@@ -219,7 +249,7 @@ def main():
         if not args.ignore_cloud_busy and cloud_insight_active(args.repo):
             print("dual_model_update=skipped reason=cloud_insight_active")
             return
-        sync_main()
+        sync_main(args.repo)
         target = args.target or phase_target(now)
         run_company_review(args.company_workers, args.company_review_limit)
         count = today_count(target)

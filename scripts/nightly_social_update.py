@@ -110,10 +110,11 @@ def publish_api_only(repo, message):
     commit_sha = publish_with_github_api(repo, message, files)
     if not commit_sha:
         return
-    run(["git", "fetch", "origin", "main"])
-    run(["git", "update-ref", "refs/heads/main", commit_sha])
-    run(["git", "read-tree", commit_sha])
-    print(f"publish=local_index_synced sha={commit_sha}")
+    run(["git", "add", "--", *files])
+    run(["git", "config", "user.name", "design-insight-bot"])
+    run(["git", "config", "user.email", "bot@design-digest.com"])
+    run(["git", "commit", "--no-gpg-sign", "-m", f"Local mirror: {message}"], check=False)
+    print(f"publish=local_snapshot_recorded sha={commit_sha}")
 
 
 def publish(repo, message):
