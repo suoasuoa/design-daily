@@ -299,6 +299,7 @@ def main():
     parser.add_argument("--window-start", type=parse_clock_time, default=None, help="Skip push before this Asia/Shanghai HH:MM time.")
     parser.add_argument("--window-end", type=parse_clock_time, default=None, help="Skip push after this Asia/Shanghai HH:MM time.")
     parser.add_argument("--sent-log", default="", help="JSON file used to skip duplicate same-day pushes.")
+    parser.add_argument("--force-resend", action="store_true", help="Resend a complete digest even when the date is already marked sent.")
     parser.add_argument("--chunk-size", type=int, default=10, help="Items per Feishu message.")
     parser.add_argument("--format", choices=["card", "post"], default="card", help="Feishu message format.")
     parser.add_argument("--dry-run", action="store_true", help="Print messages instead of sending.")
@@ -333,7 +334,7 @@ def main():
     sent_log = {}
     if args.sent_log:
         sent_log = load_json(args.sent_log, {})
-        if sent_log.get(date, {}).get("sent"):
+        if sent_log.get(date, {}).get("sent") and not args.force_resend:
             print(f"feishu_push=skipped reason=already_sent date={date} sent_at={sent_log[date].get('sent_at', '')}")
             return
 

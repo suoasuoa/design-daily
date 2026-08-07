@@ -39,7 +39,11 @@ on:
   workflow_dispatch:
     inputs:
       force_send:
-        description: "Bypass time window for manual recovery"
+        description: "Bypass time window only; still requires all 40 picks"
+        required: false
+        default: "false"
+      force_resend:
+        description: "Resend today's completed 40-pick digest even if it was already sent"
         required: false
         default: "false"
 
@@ -69,16 +73,20 @@ jobs:
         run: |
           WINDOW_ARGS="--window-start 18:00 --window-end 23:30"
           MIN_COUNT="40"
+          RESEND_ARGS=""
           if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 10 * * 1-5" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
-            MIN_COUNT="40"
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_send || 'false' }}" = "true" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
-            MIN_COUNT="1"
           fi
-          python3 scripts/push_feishu_recovery.py --limit 40 --top-limit 5 --min-count 40 --recover-days 7 --sent-log data/feishu_push_log.json
-          python3 scripts/push_feishu_daily.py --limit 40 --top-limit 5 --min-count "$MIN_COUNT" --require-today $WINDOW_ARGS --sent-log data/feishu_push_log.json --format card
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_resend || 'false' }}" = "true" ]; then
+            WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
+            RESEND_ARGS="--force-resend"
+          else
+            python3 scripts/push_feishu_recovery.py --limit 40 --top-limit 5 --min-count 40 --recover-days 7 --sent-log data/feishu_push_log.json
+          fi
+          python3 scripts/push_feishu_daily.py --limit 40 --top-limit 5 --min-count "$MIN_COUNT" --require-today $WINDOW_ARGS $RESEND_ARGS --sent-log data/feishu_push_log.json --format card
 
       - name: Commit push log
         run: |
