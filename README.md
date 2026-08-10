@@ -85,7 +85,7 @@ GitHub Actions 仅在周一至周五按北京时间运行：
 - `11:30`：第二阶段，目标累计 30 条。
 - `15:30`：第三阶段，目标累计 40 条。
 - 每个阶段约 40 分钟后有一次漏跑检查，已经达标则自动跳过。
-- `17:00` 起飞书每 10 分钟检查一次，满 40 条后推送 Top 5；`18:00` 是强制检查点，但仍必须满 40 条。
+- `17:00` 起飞书每 10 分钟检查一次，满 40 条后推送 Top 5；`17:30` 是强制检查点，但仍必须满 40 条。
 - 周六、周日不收集、不更新当日分组，也不发送飞书。
 
 Mac 多模态复核在工作日 `08:45 / 12:45 / 16:15` 运行，分别复核三个阶段的新条目。审核后低于阶段目标时，会由 DeepSeek 补充新候选，再交给 GPT-5.5 复核。`17:20` 还有一次本机安全检查，正常满 40 条时立即退出，只在缺量、未复核或未回传时修复。
@@ -182,8 +182,8 @@ scripts/review_categories.py           严格品类终审
 scripts/company_multimodal_review.py   公司 GPT-5.5 图片与质量复核
 scripts/local_dual_model_update.py     Mac 双模型补量、复核与发布
 scripts/install_dual_model_launchd.py  Mac 工作日三阶段调度安装器
-scripts/dispatch_feishu_workflow.py    18:00 主动触发飞书工作流
-scripts/install_feishu_dispatch_launchd.py  飞书 18:00/18:20 本机兜底安装器
+scripts/dispatch_feishu_workflow.py    17:30 主动触发飞书工作流
+scripts/install_feishu_dispatch_launchd.py  飞书 17:30/17:50 本机兜底安装器
 scripts/ensure_daily_minimum.py         工作日 40 条补量循环
 scripts/insight_config.py               品类、来源与选品规则
 data/products.json                      当前严格通过的产品池

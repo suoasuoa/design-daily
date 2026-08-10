@@ -11,7 +11,7 @@ from insight_common import ROOT
 
 
 LABEL = "com.design-daily.feishu-dispatch"
-DEFAULT_TIMES = ((18, 0), (18, 20))
+DEFAULT_TIMES = ((17, 30), (17, 50))
 
 
 def calendar_intervals(times):
@@ -56,7 +56,7 @@ def main():
     subprocess.run(["launchctl", "bootstrap", domain, str(plist_path)], check=True)
     subprocess.run(["launchctl", "enable", f"{domain}/{LABEL}"], check=True)
     print(f"installed={plist_path}")
-    print("schedule=weekdays 18:00; recovery check 18:20 Asia/Shanghai")
+    print("schedule=weekdays 17:30; recovery check 17:50 Asia/Shanghai")
     print(f"logs={log_dir}")
 
 
