@@ -7,11 +7,54 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_site import display_eligible
-from insight_common import semantic_title_duplicate
+from insight_common import product_identity_keys, semantic_product_duplicate, semantic_title_duplicate
 from promote_reviewed_backlog import clean_candidate_title
 
 
 class SemanticDedupeTests(unittest.TestCase):
+    def test_detects_gerber_compleat_across_different_sites(self):
+        uncrate = {
+            "title": "Gerber Compleat Tool Set",
+            "summary": "The ComplEAT tool set includes a fork and spoon.",
+            "category": "创意厨具",
+        }
+        yanko = {
+            "title": "The Gerber ComplEAT puts an entire cutlery set into your pocket - Yanko Design",
+            "summary": "Gerber ComplEAT 将完整厨房工具集成到口袋大小。",
+            "category": "创意厨具",
+        }
+
+        self.assertTrue(semantic_product_duplicate(uncrate, yanko))
+        self.assertTrue(product_identity_keys(uncrate) & product_identity_keys(yanko))
+
+    def test_detects_torras_ostand_family_across_headlines(self):
+        earlier = {
+            "title": "TORRAS Ostand Case Adds a Magnetic Twist Apple Didn't Think Of",
+            "summary": "TORRAS Ostand手机壳，内置磁吸支架。",
+            "category": "手机壳",
+        }
+        current = {
+            "title": "Regular Phone Cases are Dead - These Phone Stands from TORRAS",
+            "summary": "TORRAS Ostand R手机壳内置可旋转支架。",
+            "category": "手机壳",
+        }
+
+        self.assertTrue(semantic_product_duplicate(earlier, current))
+
+    def test_does_not_merge_different_torras_product_categories(self):
+        phone_case = {
+            "title": "TORRAS Ostand phone case",
+            "summary": "Integrated rotating stand.",
+            "category": "手机壳",
+        }
+        charger = {
+            "title": "Meet TORRAS Flexline 67W Retractable Charger",
+            "summary": "A retractable GaN charger.",
+            "category": "创意桌搭",
+        }
+
+        self.assertFalse(semantic_product_duplicate(phone_case, charger))
+
     def test_detects_same_product_worded_as_light_and_lighting(self):
         self.assertTrue(
             semantic_title_duplicate(

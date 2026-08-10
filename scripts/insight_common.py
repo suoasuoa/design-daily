@@ -109,6 +109,29 @@ SEMANTIC_TITLE_NOISE = {
     "the", "a", "an", "for", "of", "and", "with", "from", "this", "to",
     "in", "by", "home",
 }
+PRODUCT_IDENTITY_NOISE = SEMANTIC_TITLE_NOISE | {
+    "regular", "phone", "phones", "smartphone", "iphone", "case", "cases",
+    "cover", "covers", "stand", "stands", "kickstand", "product", "products",
+    "tool", "tools", "set", "sets", "series", "system", "edition", "model",
+    "puts", "entire", "into", "your", "pocket", "offer", "offers", "ultimate",
+    "hands", "free", "ergonomics", "adds", "provides", "solution", "debut",
+    "debuts", "secret", "hiding", "running", "shoes", "content", "creator",
+    "dream", "apple", "think", "powered", "magnetic", "magsafe", "rotating",
+    "spin", "degree", "slim", "durable", "compatibility", "built", "integrated",
+    "portable", "smart", "all", "one", "dead", "these", "was", "its",
+    "power", "bank", "battery", "water", "bottle", "cup", "cups", "mug",
+    "modular", "desk", "desktop", "lamp", "light", "lighting", "wireless",
+    "world", "first", "best", "fastest", "thinnest", "most", "smallest",
+    "jacket", "travel", "measuring", "cutting", "board", "visual", "reviewed",
+    "review", "kickstarter", "indiegogo", "dia", "intelligence", "more", "much",
+    "that", "with", "than", "just", "made", "makes", "meet", "gets", "got",
+    "charger", "mah", "in1", "led", "midautumn", "festival", "campaign", "images",
+    "are", "is", "has", "have", "had", "were", "will", "can", "could", "should",
+}
+PRODUCT_FAMILY_CONCEPTS = {
+    "stand": ("ostand", "kickstand", "phone stand", "rotating stand", "支架", "支撑", "支点"),
+}
+PRODUCT_FAMILY_BRANDS = {"手机壳": {"torras"}}
 
 
 def ensure_dirs():
@@ -311,6 +334,102 @@ def semantic_title_duplicate(left, right):
         return False
     length_ratio = min(len(left_text), len(right_text)) / max(len(left_text), len(right_text))
     return length_ratio >= 0.72 and SequenceMatcher(None, left_text, right_text).ratio() >= 0.90
+
+
+def product_identity_text(item):
+    """Return the short, product-specific text before scraped article evidence."""
+    title = clean_title(item.get("title") or "")
+    summary = str(item.get("reason") or item.get("summary") or item.get("ai_reason") or "")
+    summary = re.split(r"页面证据|page evidence", summary, maxsplit=1, flags=re.IGNORECASE)[0]
+    return f"{title} {summary[:320]}".strip()
+
+
+def product_identity_tokens(item):
+    """Extract conservative brand/model tokens used for cross-source identity matching."""
+    value = unicodedata.normalize("NFKC", product_identity_text(item))
+    raw_tokens = re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", value)
+    tokens = []
+    for raw in raw_tokens:
+        token = raw.lower().replace("-", "")
+        if token in PRODUCT_IDENTITY_NOISE or len(token) < 3:
+            continue
+        if token not in tokens:
+            tokens.append(token)
+    return tokens[:8]
+
+
+def product_brand_token(item):
+    """Extract a likely brand from the headline, then fall back to explicit caps."""
+    title = unicodedata.normalize("NFKC", clean_title(item.get("title") or ""))
+    title_tokens = []
+    for raw in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", title):
+        token = raw.lower().replace("-", "")
+        if token not in PRODUCT_IDENTITY_NOISE:
+            title_tokens.append((raw, token))
+    if title_tokens:
+        return title_tokens[0][1]
+
+    value = unicodedata.normalize("NFKC", product_identity_text(item))
+    for raw in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", value):
+        token = raw.lower().replace("-", "")
+        if raw.isupper() and token not in PRODUCT_IDENTITY_NOISE:
+            return token
+    return ""
+
+
+def product_identity_parts(item):
+    """Return normalized and original brand/model tokens from the short product text."""
+    value = unicodedata.normalize("NFKC", product_identity_text(item))
+    candidates = []
+    for raw in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", value):
+        token = raw.lower().replace("-", "")
+        if token in PRODUCT_IDENTITY_NOISE:
+            continue
+        candidates.append((token, raw))
+    brand = product_brand_token(item)
+    model = next(((token, raw) for token, raw in candidates if token != brand), ("", ""))
+    brand_raw = next((raw for token, raw in candidates if token == brand), "")
+    return brand, brand_raw, model[0], model[1]
+
+
+def is_stylized_model_token(raw):
+    if not raw:
+        return False
+    has_digit = any(char.isdigit() for char in raw)
+    has_internal_cap = any(char.isupper() for char in raw[1:]) and not raw.isupper()
+    return has_digit or has_internal_cap or raw.isupper() or len(raw) >= 7
+
+
+def product_identity_keys(item):
+    """Build stable keys for the same named product or tightly scoped product family."""
+    category = item.get("category") or guess_category(
+        item.get("title") or "",
+        item.get("reason") or item.get("summary") or "",
+    ) or "未分类"
+    keys = set()
+    brand, brand_raw, model, model_raw = product_identity_parts(item)
+    brand_is_stylized = bool(brand_raw) and not brand_raw.isupper() and is_stylized_model_token(brand_raw)
+    if brand and model and (brand_is_stylized or is_stylized_model_token(model_raw)):
+        keys.add(f"identity:{category}:{brand}:{model}")
+
+    if brand in PRODUCT_FAMILY_BRANDS.get(category, set()):
+        text = product_identity_text(item).lower()
+        if brand:
+            for concept, markers in PRODUCT_FAMILY_CONCEPTS.items():
+                if any(marker in text for marker in markers):
+                    keys.add(f"family:{category}:{brand}:{concept}")
+    return keys
+
+
+def semantic_product_duplicate(left, right):
+    """Detect the same product even when different sites use different headlines."""
+    left_category = left.get("category") or ""
+    right_category = right.get("category") or ""
+    if left_category and right_category and left_category != right_category:
+        return False
+    if semantic_title_duplicate(left.get("title") or "", right.get("title") or ""):
+        return True
+    return bool(product_identity_keys(left) & product_identity_keys(right))
 
 
 def guess_category(title, text=""):

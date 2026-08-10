@@ -13,7 +13,7 @@ import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, load_env, load_json, now_iso, semantic_title_duplicate, today, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, load_env, load_json, now_iso, semantic_product_duplicate, today, write_json
 from insight_config import (
     CATEGORIES,
     CATEGORY_KEYWORDS,
@@ -490,7 +490,7 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
             for historical in historical_by_category.get(item.get("category"), []):
                 if historical.get("url") == cleaned_url:
                     continue
-                if semantic_title_duplicate(item.get("title"), historical.get("title")):
+                if semantic_product_duplicate(item, historical):
                     reviews[item.get("id")] = semantic_duplicate_review(item, historical.get("title") or "")
                     break
     todo = [

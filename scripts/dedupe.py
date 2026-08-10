@@ -18,6 +18,7 @@ from insight_common import (
     make_source_record,
     merge_unique_sources,
     now_iso,
+    product_identity_keys,
     product_key,
     stable_hash,
     today,
@@ -110,11 +111,17 @@ def build_pool(leads, seen_fingerprints=None):
     url_index = {}
     product_index = {}
     content_index = {}
+    entity_index = {}
     seen_fingerprints = seen_fingerprints or {}
 
     for item in leads:
         url = canonical_url(item.get("url", ""))
         key = product_key(item)
+        entity_keys = product_identity_keys(item)
+        entity_product_id = next(
+            (entity_index[entity_key] for entity_key in sorted(entity_keys) if entity_key in entity_index),
+            None,
+        )
 
         if url and url in url_index:
             product_id = url_index[url]
@@ -122,6 +129,8 @@ def build_pool(leads, seen_fingerprints=None):
             product_id = product_index[key]
         elif content_fingerprint(item) in content_index:
             product_id = content_index[content_fingerprint(item)]
+        elif entity_product_id:
+            product_id = entity_product_id
         else:
             product = empty_product(item, key, seen_fingerprints)
             product_id = product["id"]
@@ -136,11 +145,13 @@ def build_pool(leads, seen_fingerprints=None):
         fingerprint = content_fingerprint(item)
         if fingerprint:
             content_index[fingerprint] = product_id
+        for entity_key in entity_keys:
+            entity_index[entity_key] = product_id
 
         if products[product_id]["sources"][0].get("url") != url:
             merge_product(products[product_id], item)
 
-    return products, url_index, product_index
+    return products, url_index, product_index, entity_index
 
 
 def write_seen_fingerprints(products, existing=None):
@@ -210,7 +221,7 @@ def main():
     leads.extend(load_raw_leads())
 
     seen_fingerprints = load_seen_fingerprints()
-    products, url_index, product_index = build_pool(leads, seen_fingerprints)
+    products, url_index, product_index, entity_index = build_pool(leads, seen_fingerprints)
     published = build_published(products)
     write_seen_fingerprints(products, seen_fingerprints)
 
@@ -221,6 +232,7 @@ def main():
             "generated_at": now_iso(),
             "url_index": url_index,
             "product_index": product_index,
+            "entity_index": entity_index,
             "content_index": {
                 item.get("content_fingerprint"): item.get("id")
                 for item in products.values()
