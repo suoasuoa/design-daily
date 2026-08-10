@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-10",
+  "rounds": [
+    {
+      "round": 1,
+      "generated_at": "2026-08-10T08:05:59+08:00",
+      "accepted_before": 0,
+      "accepted_by_category_before": {},
+      "queries": 50,
+      "search_results": 235,
+      "fresh_direct_urls": 135,
+      "pages_enriched": 45,
+      "pre_screened": 135,
+      "kept": 0,
+      "added": 0,
+      "by_category": {}
+    },
+    {
+      "round": 2,
+      "generated_at": "2026-08-10T08:11:42+08:00",
+      "accepted_before": 1,
+      "accepted_by_category_before": {
+        "创意桌搭": 1
+      },
+      "queries": 50,
+      "search_results": 326,
+      "fresh_direct_urls": 220,
+      "pages_enriched": 131,
+      "pre_screened": 220,
+      "kept": 53,
+      "added": 53,
+      "by_category": {
+        "创意厨具": 13,
+        "水杯": 11,
+        "冲锋衣": 9,
+        "创意桌搭": 7,
+        "氛围灯": 7,
+        "装置艺术": 3,
+        "手机壳": 1,
+        "创意礼盒": 1,
+        "中秋礼盒": 1
+      }
+    }
+  ],
+  "generated_at": "2026-08-10T08:11:42+08:00",
+  "total_kept": 53
+}
