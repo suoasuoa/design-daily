@@ -1,177 +1,45 @@
 {
-  "generated_at": "2026-08-11T08:16:24+08:00",
-  "source": "local_summary",
-  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
-  "hot_categories": {
-    "氛围灯": 387,
-    "创意厨具": 339,
-    "水杯": 319,
-    "创意桌搭": 301,
-    "充电宝": 281,
-    "冲锋衣": 158,
-    "手机壳": 153,
-    "日历": 70,
-    "创意礼盒": 61,
-    "中秋礼盒": 41,
-    "端午礼盒": 10,
-    "装置艺术": 10
-  },
-  "hot_sources": {
-    "Yanko Design": 435,
-    "Kickstarter": 395,
-    "Indiegogo": 251,
-    "Red Dot": 246,
-    "Core77": 128,
-    "Designboom": 100,
-    "Design Milk": 95,
-    "Uncrate": 95,
-    "iF设计奖": 94,
-    "The Grommet": 77,
-    "Behance": 67,
-    "Cool Material": 67
-  },
-  "hot_tags": {
-    "deepseek_search_agent": 1647,
-    "editorial_main": 680,
-    "adapt": 598,
-    "trend": 572,
-    "market_signal_strong": 564,
-    "buy_sample": 543,
-    "氛围灯": 374,
-    "创意厨具": 336,
-    "award_gallery": 329,
-    "水杯": 310,
-    "白名单来源": 293,
-    "创意桌搭": 291,
-    "充电宝": 285,
-    "design_community": 198,
-    "适合作为趋势、内容爆点或方向参考": 174,
-    "冲锋衣": 158,
-    "手机壳": 151,
-    "market_signal": 125,
-    "适合做结构、包装、功能或外观改造": 106,
-    "日历": 71
-  },
-  "recommended": [
-    {
-      "title": "Anker 无线充电宝",
-      "category": "充电宝",
-      "score": 86,
-      "reason": "Anker无线充电宝满足实用与高频需求，Qi2认证与磁吸设计提升便利性，品牌信任度高，价格远超35元标准，功能清晰易懂，适合广泛手机用户。情绪价值作为加分项。"
-    },
-    {
-      "title": "OXO沙拉甩干器",
-      "category": "创意厨具",
-      "score": 86,
-      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
-    },
-    {
-      "title": "蘑菇氛围灯",
-      "category": "氛围灯",
-      "score": 86,
-      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
-    },
-    {
-      "title": "Polygons flat 3-in-1 Measuring Spoon",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Polygons 4-in-1 measuring spoon that folds flat like origami and adjusts to four sizes; structural innovation for kitche"
-    },
-    {
-      "title": "2050® Edible Cutlery",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly tableware made from grain by-products like "
-    },
-    {
-      "title": "ZGO ZPX/ZGX Monitor Arm Ecosystem :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adob",
-      "category": "创意桌搭",
-      "score": 84,
-      "reason": "显示器支架具有明确实用价值，办公和游戏用户高频使用，适配多种桌面场景，功能设计清晰且无明显短板，售价通常高于35元，结构创新易被理解，同时契合创意桌搭趋势，具备一定情绪价值。"
-    },
-    {
-      "title": "磁吸锅铲套装",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Pinterest · 磁吸收纳锅铲套装"
-    },
-    {
-      "title": "Nanoleaf 智能灯板",
-      "category": "氛围灯",
-      "score": 84,
-      "reason": "加拿大Nanoleaf模块化智能LED灯板"
-    },
-    {
-      "title": "Presso SmartShot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The Presso SmartShot is a planet-friendly, manually operated espresso machine for use within the hom"
-    },
-    {
-      "title": "M01",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
-    },
-    {
-      "title": "Nano bubble shaker",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
-    },
-    {
-      "title": "SELECT100 grater",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
-    },
-    {
-      "title": "WMF Flexi Whisk",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
-    },
-    {
-      "title": "Multi-Functional Magnetic Knife Sheath",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
-    },
-    {
-      "title": "Louis",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · It is a steak knife that, by notching part of the blade, creates a function that makes it easy to sh"
-    },
-    {
-      "title": "360KYUSU",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
-    },
-    {
-      "title": "The T-Pot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
-    },
-    {
-      "title": "VERMICULAR OVEN POT２ & Recraft program",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
-    },
-    {
-      "title": "PETARI Shallow Pot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called"
-    },
-    {
-      "title": "ARAHI",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of"
-    }
-  ]
+  "summary": "产品线索中高频出现创意厨具、氛围灯、水杯、创意桌搭、充电宝等品类，设计驱动且功能实用性强的产品评分普遍偏高。整体趋势偏向‘功能成立+情绪加分’，便携、收纳、模块化、智能交互是明显信号。需规避功能复杂、人群过窄或价格不确定的产品。",
+  "hot_categories": [
+    "创意厨具",
+    "氛围灯",
+    "水杯",
+    "创意桌搭",
+    "充电宝"
+  ],
+  "hot_signals": [
+    "模块化/多功能集成",
+    "便携/户外场景",
+    "智能交互与显示",
+    "收纳与空间优化",
+    "环保材料与可持续",
+    "磁吸/快拆结构"
+  ],
+  "recommended_directions": [
+    "厨房多功能工具（折叠量勺、可收纳砧板、磁吸收纳）",
+    "智能保温杯/显温杯（温度显示、茶仓分离）",
+    "模块化桌面收纳与支架（磁吸/无线充电集成）",
+    "便携氛围灯（无线充电、投影、可拆卸）",
+    "高颜值实用充电宝（透明/复古/模块化）"
+  ],
+  "avoid_or_watch": [
+    "钛合金砧板（价格高且可能损伤刀具）",
+    "骑行专用充电宝（人群窄）",
+    "内容创作者手机壳（功能复杂）",
+    "野营枯枝炉（低频且功能有短板）",
+    "纯概念设计未量产（需验证落地）"
+  ],
+  "next_search_keywords": [
+    "modular kitchen tools",
+    "smart water bottle temperature",
+    "magnetic desk organizer",
+    "portable lamp wireless charging",
+    "transparent power bank",
+    "foldable measuring cup",
+    "magnetic knife holder",
+    "ambient light projector",
+    "modular phone case magsafe"
+  ],
+  "generated_at": "2026-08-11T17:54:34+08:00",
+  "source": "deepseek"
 }

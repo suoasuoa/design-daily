@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-11T08:16:25+08:00
+- 生成时间：2026-08-11T17:54:35+08:00
 
 ## 行动分布
 
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-专为老年手部设计的人机工学厨具，实用性强，握持负担低，磁吸挂架提升便利性，功能明确，价格超过35RMB，但目标人群偏窄，情绪价值一般。
+针对老年人手部设计的倾斜手柄和磁吸挂架，功能明确且实用，厨房场景高频需求，价格超过35元，设计直观易懂，兼具关怀情绪价值。
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -59,7 +59,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407
 
-设计独特的月饼礼盒，可展开为梯田模块并转化为灯笼，结构创新，兼具功能与情绪价值，但实用性局限于节日场景，且理解门槛较高。
+该月饼盒设计将包装与灯笼功能结合，实用性强，但结构复杂，3秒内难以理解，适合设计爱好者市场。
 
 ### 5. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -71,7 +71,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-折叠礼盒设计独特，一秒成型和打平功能显著，便于存储和运输，适用于高档礼品场景，但需求频率和受众范围有限，情绪价值需依附于功能。
+折叠盒设计巧妙，一秒成型，实用性强，适合高档礼品包装，但礼盒需求偏向低频，需注意结构稳定性。
 
 ### 6. Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.
 
@@ -83,7 +83,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947
 
-该中秋礼盒设计巧妙，实现月饼礼盒与灯笼的双重功能，极大增强实用性和节日仪式感，适合作为创意礼品，价格上属于中高端，有市场潜力。
+同dbdfed1b70d4，同一项目不同模块，月饼盒可变形为灯笼，结构复用创新。。页面证据：The result is a mooncake box that is “functionally aesthetic”. It features a cylindrical component that opens up into a “terraced” module, storing and displaying four mooncakes. The box itself can hold a tealight or a candle, quickly transforming it into a lantern. The soft glow of the light within the box will accentuate the intricate pattern cut into its walls.
 
 ### 7. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -143,7 +143,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161108345/-2022-
 
-黑天鹅2022中秋月饼礼盒开盒设计为天鹅展翅，结构叙事新颖，属于高端礼品，单价远超35元。但月饼为季节性强、低频需求，受众窄，实用性受限于食品用途。功能上为月饼提供良好包装且无短板，但3秒内理解其设计亮点有一定门槛。情绪价值突出，适合节日礼品场景。
+黑天鹅2022中秋月饼礼盒：开盒过程设计成天鹅展开羽翼的动作，黑色折叠羽翼环抱中央白色纸浆月饼盒，具有明确的结构与叙事创新，是可买样的实体礼盒产品。。页面证据：Branding, Packaging, Art Direction
 
 ### 12. Introducing our Changeable Photo Phone Case How you can ...
 
@@ -167,19 +167,19 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/145263273/_
 
-端午礼盒采用魔方盒子结构，旋转互动增加趣味，功能明确，售价预计较高，视觉直观，但属于节日性产品，使用频率低，受众有限。
+端午礼盒采用魔方盒子结构，开启有旋转互动，增加节日趣味，包装结构创新明确。。页面证据：Branding, Packaging, Graphic Design, Adobe Illustrator, Blender
 
 ### 14. Wine box with sliding lid-butler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe
 
 - 品类：创意礼盒
 - 路径：可直接买样
-- 启发：功能启发、包装启发
+- 启发：包装启发
 - 分数：7.0
 - 来源：Behance
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-产品具有双功能设计（滑动盖兼作托盘），结构有巧思，但酒类场景有限，实用性一般，价格可支撑。
+Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...
 
 ### 15. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
@@ -215,7 +215,7 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/181747603/-Moon-Fun
 
-该产品作为中秋礼盒设计，实用性强，采用环保材料，功能完整，价格预计超过35元，节日情绪价值高，且设计直观易懂。但仅作为设计参考，未实际投产。
+明确的中秋礼盒设计，采用可循环水洗牛皮纸袋和可降解纸浆礼盒，具备可持续材料创新，可作为中秋礼盒包装结构及材料创新参考。。页面证据：Photography, Graphic Design, Illustration
 
 ### 18. Dragon Boat tenon and tenon gift box design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fac
 
@@ -479,7 +479,7 @@ LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，�
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.yankodesign.com/2014/08/28/flat-spoon-means-super-functionality
 
-产品创新性强，但实用性受限于使用场景，量勺属于中频需求，目标用户偏烘焙爱好者，功能上折叠结构可能不如传统量勺稳固，价格未知但创意设计可能支撑较高定价，3秒内理解有难度，情绪价值体现在新奇感上。
+创新折叠设计节省空间，结构清晰易懂，但实用性和耐用性待验证。
 
 ### 40. Why over 50,000 people have switched to this titanium cutting board
 
@@ -755,7 +755,7 @@ Cantilevered Flatware: 悬臂式餐具，手柄抬高使餐具头不接触桌面
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-集成充电、夜灯、可调角度，实用且创新，面向创意桌搭人群。
+Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity
 
 ### 63. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
 
