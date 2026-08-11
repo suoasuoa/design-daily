@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generated_at": "2026-08-10T11:28:05+08:00",
+  "generated_at": "2026-08-11T08:02:10+08:00",
   "stats": {
-    "events": 15,
-    "active_decisions": 11,
-    "likes": 10,
+    "events": 16,
+    "active_decisions": 12,
+    "likes": 11,
     "passes": 1
   },
   "positive_patterns": {
@@ -28,12 +28,16 @@
       {
         "name": "冲锋衣",
         "count": 1
+      },
+      {
+        "name": "手机壳",
+        "count": 1
       }
     ],
     "source_family": [
       {
         "name": "媒体案例",
-        "count": 5
+        "count": 6
       },
       {
         "name": "市场信号",
@@ -47,7 +51,7 @@
     "action_lane": [
       {
         "name": "适合改造",
-        "count": 8
+        "count": 9
       },
       {
         "name": "方向参考",
@@ -61,7 +65,7 @@
       },
       {
         "name": "结构启发",
-        "count": 5
+        "count": 6
       },
       {
         "name": "视觉启发",
@@ -75,11 +79,11 @@
     "tags": [
       {
         "name": "deepseek_search_agent",
-        "count": 9
+        "count": 10
       },
       {
         "name": "adapt",
-        "count": 4
+        "count": 5
       },
       {
         "name": "editorial_main",
@@ -235,6 +239,13 @@
       "title": "Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77",
       "category": "水杯",
       "summary": "DiFOLD Origami Bottle可折叠可重用水杯，通过折纸结构实现收纳体积大幅缩小，Kickstarter众筹超额500%完成，是可买样的明确单品。。页面证据：The DiFOLD Origami Bottle finds success in a crowded market",
+      "reason": ""
+    },
+    {
+      "product_id": "7b7afc7883a5",
+      "title": "Foray in computational design - Parachute Phone Case - projects - Core77 Discussion Boards",
+      "category": "手机壳",
+      "summary": "概念原型，主打抗摔功能，实用性较强且手机壳市场高频广谱，但产品未落地，功能验证不足，定价不明确，结构创新需解释才能看懂，情绪价值尚未叠加。",
       "reason": ""
     }
   ],

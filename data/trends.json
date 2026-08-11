@@ -1,44 +1,177 @@
 {
-  "summary": "综合产品线索，高潜品类集中在创意厨具、氛围灯、水杯、充电宝与桌搭配件。共同趋势是高频场景的微创新：从多功能结构、磁吸/模块化、折叠便携，到获奖设计加持。优先关注功能明确、售价超过35元、可快速理解的产品，情绪价值作为叠加项。",
-  "hot_categories": [
-    "创意厨具",
-    "氛围灯",
-    "水杯",
-    "充电宝",
-    "创意桌搭"
-  ],
-  "hot_signals": [
-    "多功能/一物多用",
-    "模块化/磁吸设计",
-    "折叠或扁平化收纳",
-    "无线充电/磁吸充电",
-    "获奖设计背书",
-    "便携/轻量化"
-  ],
-  "recommended_directions": [
-    "高频厨房小工具：可调量勺、磁性锅铲收纳、多用途滤水篮",
-    "便携随行杯：单手开合、茶仓分离、易清洁结构",
-    "无线充电周边：Qi2磁吸充电宝、折叠无线充电器、模块化充电支架",
-    "桌面生态配件：显示器架、磁吸收纳、线缆管理",
-    "氛围照明：模块化灯板、便携可充电灯具、智能调光"
-  ],
-  "avoid_or_watch": [
-    "场景过于窄的节日礼品（如中秋礼盒）需谨慎，除非有强社交/情绪价值",
-    "功能复杂、3秒看不懂的产品（如可穿戴帐篷、高度模块化键盘）需警惕理解门槛",
-    "价格过高或功能重叠明显的（如智能升降桌)要看性价比",
-    "单一功能且清洗不便的厨房小工具（如蒜泥器）要加强易维护性"
-  ],
-  "next_search_keywords": [
-    "Qi2 magnetic power bank",
-    "adjustable measuring spoon",
-    "foldable silicone colander",
-    "magnetic kitchen utensil set",
-    "portable ambient light rechargeable",
-    "modular desk organizer",
-    "one-hand water bottle",
-    "tea infuser bottle",
-    "wireless charger stand"
-  ],
-  "generated_at": "2026-08-10T12:03:08+08:00",
-  "source": "deepseek"
+  "generated_at": "2026-08-11T08:16:24+08:00",
+  "source": "local_summary",
+  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
+  "hot_categories": {
+    "氛围灯": 387,
+    "创意厨具": 339,
+    "水杯": 319,
+    "创意桌搭": 301,
+    "充电宝": 281,
+    "冲锋衣": 158,
+    "手机壳": 153,
+    "日历": 70,
+    "创意礼盒": 61,
+    "中秋礼盒": 41,
+    "端午礼盒": 10,
+    "装置艺术": 10
+  },
+  "hot_sources": {
+    "Yanko Design": 435,
+    "Kickstarter": 395,
+    "Indiegogo": 251,
+    "Red Dot": 246,
+    "Core77": 128,
+    "Designboom": 100,
+    "Design Milk": 95,
+    "Uncrate": 95,
+    "iF设计奖": 94,
+    "The Grommet": 77,
+    "Behance": 67,
+    "Cool Material": 67
+  },
+  "hot_tags": {
+    "deepseek_search_agent": 1647,
+    "editorial_main": 680,
+    "adapt": 598,
+    "trend": 572,
+    "market_signal_strong": 564,
+    "buy_sample": 543,
+    "氛围灯": 374,
+    "创意厨具": 336,
+    "award_gallery": 329,
+    "水杯": 310,
+    "白名单来源": 293,
+    "创意桌搭": 291,
+    "充电宝": 285,
+    "design_community": 198,
+    "适合作为趋势、内容爆点或方向参考": 174,
+    "冲锋衣": 158,
+    "手机壳": 151,
+    "market_signal": 125,
+    "适合做结构、包装、功能或外观改造": 106,
+    "日历": 71
+  },
+  "recommended": [
+    {
+      "title": "Anker 无线充电宝",
+      "category": "充电宝",
+      "score": 86,
+      "reason": "Anker无线充电宝满足实用与高频需求，Qi2认证与磁吸设计提升便利性，品牌信任度高，价格远超35元标准，功能清晰易懂，适合广泛手机用户。情绪价值作为加分项。"
+    },
+    {
+      "title": "OXO沙拉甩干器",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
+    },
+    {
+      "title": "蘑菇氛围灯",
+      "category": "氛围灯",
+      "score": 86,
+      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
+    },
+    {
+      "title": "Polygons flat 3-in-1 Measuring Spoon",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Polygons 4-in-1 measuring spoon that folds flat like origami and adjusts to four sizes; structural innovation for kitche"
+    },
+    {
+      "title": "2050® Edible Cutlery",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly tableware made from grain by-products like "
+    },
+    {
+      "title": "ZGO ZPX/ZGX Monitor Arm Ecosystem :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adob",
+      "category": "创意桌搭",
+      "score": 84,
+      "reason": "显示器支架具有明确实用价值，办公和游戏用户高频使用，适配多种桌面场景，功能设计清晰且无明显短板，售价通常高于35元，结构创新易被理解，同时契合创意桌搭趋势，具备一定情绪价值。"
+    },
+    {
+      "title": "磁吸锅铲套装",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Pinterest · 磁吸收纳锅铲套装"
+    },
+    {
+      "title": "Nanoleaf 智能灯板",
+      "category": "氛围灯",
+      "score": 84,
+      "reason": "加拿大Nanoleaf模块化智能LED灯板"
+    },
+    {
+      "title": "Presso SmartShot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The Presso SmartShot is a planet-friendly, manually operated espresso machine for use within the hom"
+    },
+    {
+      "title": "M01",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
+    },
+    {
+      "title": "Nano bubble shaker",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
+    },
+    {
+      "title": "SELECT100 grater",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
+    },
+    {
+      "title": "WMF Flexi Whisk",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
+    },
+    {
+      "title": "Multi-Functional Magnetic Knife Sheath",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
+    },
+    {
+      "title": "Louis",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · It is a steak knife that, by notching part of the blade, creates a function that makes it easy to sh"
+    },
+    {
+      "title": "360KYUSU",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
+    },
+    {
+      "title": "The T-Pot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
+    },
+    {
+      "title": "VERMICULAR OVEN POT２ & Recraft program",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
+    },
+    {
+      "title": "PETARI Shallow Pot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called"
+    },
+    {
+      "title": "ARAHI",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of"
+    }
+  ]
 }
