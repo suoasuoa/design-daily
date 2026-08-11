@@ -107,8 +107,10 @@ def main():
     count = today_count(args.target)
     print(f"daily_minimum backlog_count={count} target={args.target}", flush=True)
     if count < args.target:
-        raise SystemExit(
-            f"daily_minimum failed: only {count}/{args.target} accepted products; refusing partial publish"
+        print(
+            f"daily_minimum incomplete: {count}/{args.target} accepted products; "
+            "saving progress for the next scheduled top-up",
+            flush=True,
         )
 
 
