@@ -313,6 +313,8 @@ def main():
             selected=selected,
         )
 
+    strict_ids = {item.get("id") for item in strict_candidates}
+
     selected_ids = {item.get("id") for item in selected}
     review_cache = load_json(DATA_DIR / "category_review.json", {})
     reviews = review_cache.get("reviews") or {}
@@ -322,12 +324,17 @@ def main():
         clone = dict(item)
         original_first_seen = clone.get("first_seen") or ""
         review = dict(clone.get("category_review") or {})
+        review_source = (
+            "deepseek_backlog_recheck"
+            if clone.get("id") in strict_ids
+            else "deepseek_backlog_balanced"
+        )
         review.update(
             {
                 "status": "approved",
                 "reason": f"DeepSeek候选复核：{review.get('reason') or '具体创新证据明确'}",
                 "reviewed_at": timestamp,
-                "source": "deepseek_backlog_recheck",
+                "source": review_source,
                 "policy_version": 3,
                 "backlog_promotion": True,
                 "original_first_seen": original_first_seen,
@@ -353,7 +360,7 @@ def main():
             "price_power": int(review.get("price_power") or 0),
             "reason": review.get("reason"),
             "reviewed_at": timestamp,
-            "source": "deepseek_backlog_recheck",
+            "source": review_source,
             "policy_version": 3,
         }
 
