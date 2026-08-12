@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T21:12:43+08:00",
+  "generated_at": "2026-08-12T21:22:41+08:00",
   "week": "2026-W33",
   "group_id": "2026-W33",
   "date_start": "2026-08-10",
@@ -11,16 +11,16 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 50,
+      "适合改造": 49,
       "方向参考": 31,
-      "可直接买样": 19
+      "可直接买样": 20
     },
     "by_category": {
       "充电宝": 20,
-      "水杯": 17,
+      "水杯": 16,
       "氛围灯": 14,
+      "创意礼盒": 10,
       "创意桌搭": 9,
-      "创意礼盒": 9,
       "冲锋衣": 8,
       "创意厨具": 6,
       "手机壳": 6,
@@ -29,8 +29,8 @@
       "端午礼盒": 2
     },
     "by_axis": {
-      "功能启发": 66,
-      "结构启发": 59,
+      "功能启发": 65,
+      "结构启发": 58,
       "包装启发": 24,
       "情绪启发": 18,
       "视觉启发": 7
@@ -532,7 +532,7 @@
     {
       "id": "35c37bc2f9d3",
       "product_key": null,
-      "title": "Business gifts ĮSIBERK",
+      "title": "Business gifts ĮSIBERK :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
       "category": "创意礼盒",
       "action_lane": "可直接买样",
       "axes": [
@@ -554,6 +554,32 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "f98cb2d00459",
+      "product_key": null,
+      "title": "Moon Spinning for Château :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 61,
+      "score_label": "6.1",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/95528181/Moon-Spinning-for-Chateau",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7b220095528181.5e9974002e430.jpg",
+      "summary": "Moon Spinning for Château，酒店礼品盒，互动设计，月兔旋转主题。。页面证据：Creative and interactive packaging design for Hotel Château.",
+      "risk": "DeepSeek候选复核：月兔旋转互动包装结构",
+      "review_confidence": 8,
+      "review_reason": "DeepSeek候选复核：月兔旋转互动包装结构",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -2681,34 +2707,6 @@
       "risk": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
       "review_confidence": 9,
       "review_reason": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "editorial_main",
-        "水杯"
-      ]
-    },
-    {
-      "id": "1385098d1e59",
-      "product_key": null,
-      "title": "This 100% plastic-free bottle comes with a reusable filter that can ...",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2021/10/25/this-100-plastic-free-bottle-comes-with-a-reusable-filter-that-can-literally-purify-water-forever",
-      "image": "",
-      "summary": "To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro",
-      "risk": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
-      "review_confidence": 9,
-      "review_reason": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "editorial_main",
