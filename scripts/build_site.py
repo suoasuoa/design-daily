@@ -265,7 +265,7 @@ def category_under_cap(picks, category, relaxed=False):
     category = (category or "").strip()
     cap = DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP)
     if relaxed and category in RELAXABLE_CATEGORIES:
-        cap += 2
+        cap += 3 if relaxed == "emergency" else 2
     current = sum(1 for item in picks if item.get("category") == category)
     return current < cap
 
@@ -446,6 +446,7 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
 
         append_balanced_fill(ranked, picks, seen, day_limit, relaxed=False)
         append_balanced_fill(ranked, picks, seen, day_limit, relaxed=True)
+        append_balanced_fill(ranked, picks, seen, day_limit, relaxed="emergency")
 
         groups.append(
             {
