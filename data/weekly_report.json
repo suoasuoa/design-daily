@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T20:55:37+08:00",
+  "generated_at": "2026-08-12T21:12:43+08:00",
   "week": "2026-W33",
   "group_id": "2026-W33",
   "date_start": "2026-08-10",
@@ -11,16 +11,16 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 51,
+      "适合改造": 50,
       "方向参考": 31,
-      "可直接买样": 18
+      "可直接买样": 19
     },
     "by_category": {
       "充电宝": 20,
-      "水杯": 18,
+      "水杯": 17,
       "氛围灯": 14,
       "创意桌搭": 9,
-      "创意礼盒": 8,
+      "创意礼盒": 9,
       "冲锋衣": 8,
       "创意厨具": 6,
       "手机壳": 6,
@@ -29,9 +29,9 @@
       "端午礼盒": 2
     },
     "by_axis": {
-      "功能启发": 67,
-      "结构启发": 58,
-      "包装启发": 23,
+      "功能启发": 66,
+      "结构启发": 59,
+      "包装启发": 24,
       "情绪启发": 18,
       "视觉启发": 7
     }
@@ -523,6 +523,33 @@
       "risk": "DeepSeek候选复核：榫卯结构结合绳子元素，包装结构创新",
       "review_confidence": 8,
       "review_reason": "DeepSeek候选复核：榫卯结构结合绳子元素，包装结构创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "35c37bc2f9d3",
+      "product_key": null,
+      "title": "Business gifts ĮSIBERK",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 63,
+      "score_label": "6.3",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/75633507/Business-gifts-SIBERK",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3563e975633507.5c5200c0576b3.gif",
+      "summary": "明确产品：SIBERK 时间主题商务礼品盒，采用滑动开启机制，含3D模型、压印、圣诞版等设计过程。创新证据：互动滑盖开箱结构，非平面贴图。。页面证据：Time themed business gift series with fun sliding opening mechanism.",
+      "risk": "DeepSeek候选复核：时间主题商务礼盒，滑动开启机制，开箱结构创新",
+      "review_confidence": 8,
+      "review_reason": "DeepSeek候选复核：时间主题商务礼盒，滑动开启机制，开箱结构创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "adapt",
@@ -2686,32 +2713,6 @@
       "tags": [
         "editorial_main",
         "水杯"
-      ]
-    },
-    {
-      "id": "124cf4c0fb52",
-      "product_key": null,
-      "title": "The Luma Bottle | A Self-Cleaning Reusable Water... — Kickstarter",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/lumabottle/the-luma-bottle-a-self-cleaning-reusable-water-bot",
-      "image": "",
-      "summary": "Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细菌，在材料或功能上有明确创新。。页面证据：A reusable water bottle that harnesses the power of digital UV-C light to kill 99.999% of bacteria in your water and bottle.",
-      "risk": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
-      "review_confidence": 9,
-      "review_reason": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     }
   ]
