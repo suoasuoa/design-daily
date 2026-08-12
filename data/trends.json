@@ -1,36 +1,177 @@
 {
-  "summary": "产品样本以创意厨具、氛围灯、创意桌搭、水杯为主，核心趋势集中在多功能、模块化和高频生活场景的升级设计。厨具创新聚焦收纳与结构优化，氛围灯走向智能+场景融合，桌搭强调集成与效率，水杯则注重功能叠加。整体符合实用为先、高频需求、广泛适用、功能无短板、3秒可懂、价格潜力>35RMB的选品原则。情绪价值作为功能之上的加分项，而非核心驱动力。",
-  "hot_categories": [
-    "创意厨具",
-    "氛围灯",
-    "创意桌搭",
-    "水杯"
-  ],
-  "hot_signals": [
-    "多功能集成，如磁吸、折叠、模块化",
-    "高频生活场景覆盖（厨房、桌面、随身）",
-    "设计获奖或社区高赞验证",
-    "智能+功能结合（无线充电、感应、AI）",
-    "材质或结构创新提升实用性"
-  ],
-  "recommended_directions": [
-    "多功能厨房收纳工具（如磁吸刀架、折叠量杯）",
-    "便携氛围灯结合无线充电（如露营灯、床头灯）",
-    "桌面一体化收纳充电站（集线器+无线充+支架）",
-    "高颜值功能性水杯（茶仓分离、计时提醒、保温）"
-  ],
-  "avoid_or_watch": [
-    "过于概念化的获奖设计，如食用餐具、纳米气泡摇摇杯，市场需求窄",
-    "季节性礼盒（中秋、端午）非高频，需谨慎。",
-    "功能复杂、3秒内难懂的产品",
-    "售价过高或功能单一缺乏附加价值的品类"
-  ],
-  "next_search_keywords": [
-    "模块化厨房收纳 折叠 磁吸",
-    "氛围灯 无线充电 便携",
-    "桌面集线器 充电 收纳 一体",
-    "智能水杯 提醒 保温 茶仓"
-  ],
-  "generated_at": "2026-08-12T14:24:59+08:00",
-  "source": "deepseek"
+  "generated_at": "2026-08-12T15:33:46+08:00",
+  "source": "local_summary",
+  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
+  "hot_categories": {
+    "氛围灯": 400,
+    "创意厨具": 352,
+    "水杯": 328,
+    "创意桌搭": 312,
+    "充电宝": 282,
+    "冲锋衣": 162,
+    "手机壳": 157,
+    "创意礼盒": 73,
+    "日历": 73,
+    "中秋礼盒": 45,
+    "装置艺术": 12,
+    "端午礼盒": 11
+  },
+  "hot_sources": {
+    "Yanko Design": 450,
+    "Kickstarter": 404,
+    "Indiegogo": 254,
+    "Red Dot": 249,
+    "Core77": 139,
+    "Designboom": 107,
+    "Design Milk": 99,
+    "Uncrate": 99,
+    "iF设计奖": 98,
+    "The Grommet": 77,
+    "Behance": 70,
+    "Cool Material": 70
+  },
+  "hot_tags": {
+    "deepseek_search_agent": 1720,
+    "editorial_main": 717,
+    "adapt": 639,
+    "trend": 594,
+    "market_signal_strong": 576,
+    "buy_sample": 557,
+    "氛围灯": 387,
+    "创意厨具": 352,
+    "award_gallery": 332,
+    "水杯": 316,
+    "创意桌搭": 305,
+    "白名单来源": 294,
+    "充电宝": 285,
+    "design_community": 212,
+    "适合作为趋势、内容爆点或方向参考": 175,
+    "冲锋衣": 162,
+    "手机壳": 155,
+    "market_signal": 125,
+    "适合做结构、包装、功能或外观改造": 106,
+    "创意礼盒": 80
+  },
+  "recommended": [
+    {
+      "title": "OXO沙拉甩干器",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
+    },
+    {
+      "title": "蘑菇氛围灯",
+      "category": "氛围灯",
+      "score": 86,
+      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
+    },
+    {
+      "title": "Polygons flat 3-in-1 Measuring Spoon",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Polygons 4-in-1 measuring spoon that folds flat like origami and adjusts to four sizes; structural innovation for kitche"
+    },
+    {
+      "title": "2050® Edible Cutlery",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly tableware made from grain by-products like "
+    },
+    {
+      "title": "SAKE BOTTLE OPENER",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of it"
+    },
+    {
+      "title": "磁吸锅铲套装",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Pinterest · 磁吸收纳锅铲套装"
+    },
+    {
+      "title": "Nanoleaf 智能灯板",
+      "category": "氛围灯",
+      "score": 84,
+      "reason": "加拿大Nanoleaf模块化智能LED灯板"
+    },
+    {
+      "title": "Presso SmartShot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The Presso SmartShot is a planet-friendly, manually operated espresso machine for use within the hom"
+    },
+    {
+      "title": "M01",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
+    },
+    {
+      "title": "Nano bubble shaker",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
+    },
+    {
+      "title": "SELECT100 grater",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
+    },
+    {
+      "title": "WMF Flexi Whisk",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
+    },
+    {
+      "title": "Multi-Functional Magnetic Knife Sheath",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
+    },
+    {
+      "title": "Louis",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · It is a steak knife that, by notching part of the blade, creates a function that makes it easy to sh"
+    },
+    {
+      "title": "360KYUSU",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
+    },
+    {
+      "title": "The T-Pot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
+    },
+    {
+      "title": "VERMICULAR OVEN POT２ & Recraft program",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
+    },
+    {
+      "title": "PETARI Shallow Pot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This product is a cooking utensil and a vessel, made in the motif of a heat-resistant ceramic called"
+    },
+    {
+      "title": "ARAHI",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A household hagama developed to cook rice deliciously. It enables rice cooking comparable to that of"
+    },
+    {
+      "title": "Zaru-ya no bon zaru （Flat strainer）",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The flattening of the colander allows foodstuffs to be placed side by side without overlapping. By p"
+    }
+  ]
 }
