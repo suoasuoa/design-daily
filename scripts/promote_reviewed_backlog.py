@@ -59,6 +59,17 @@ TITLE_NOISE = re.compile(
     re.IGNORECASE,
 )
 HARD_CAPS = {"手机壳", "充电宝"}
+ENTITY_TERMS = {
+    "水杯": ("mug", "bottle", "tumbler", "flask", "thermos", "drinkware", "水杯", "饮水", "水瓶", "随行杯", "保温杯"),
+    "氛围灯": ("lamp", "light", "lighting", "lantern", "chandelier", "灯", "燈", "照明"),
+    "创意礼盒": ("gift", "box", "packaging", "package", "礼盒", "包装", "礼赠", "开箱"),
+    "装置艺术": ("installation", "sculpture", "interactive art", "装置", "雕塑", "互动艺术"),
+    "中秋礼盒": ("mid-autumn", "mid autumn", "mooncake", "中秋", "月饼"),
+    "端午礼盒": ("dragon boat", "zongzi", "端午", "粽"),
+    "充电宝": ("power bank", "powerbank", "battery pack", "portable charger", "移动电源", "充电宝"),
+    "日历": ("calendar", "date display", "planner", "日历", "台历", "年历", "日期", "节气", "撕历"),
+    "冲锋衣": ("jacket", "windbreaker", "shell jacket", "outerwear", "parka", "vest", "冲锋衣", "夹克", "外套", "防晒衣"),
+}
 
 
 def dashboard_payload():
@@ -125,7 +136,38 @@ def clean_candidate_title(value):
     return value or "未命名产品"
 
 
-def is_candidate(item, published_urls, product_urls):
+def has_category_evidence(item):
+    category = item.get("category") or ""
+    title = str(item.get("title") or "").lower()
+    text = " ".join(
+        [
+            str(item.get("title") or ""),
+            str(item.get("summary") or ""),
+        ]
+    ).lower().replace("world cup", "worldcup")
+    if category == "手机壳":
+        return "手机壳" in text or "保护壳" in text or (
+            "case" in text and any(token in text for token in ("phone", "iphone", "smartphone", "magsafe"))
+        )
+    if category == "钥匙扣水壶":
+        hydration = any(token in text for token in ("bottle", "flask", "水瓶", "水壶", "饮水", "杯"))
+        attachment = any(token in text for token in ("keychain", "key chain", "carabiner", "clip-on", "挂环", "挂扣", "钥匙扣"))
+        return hydration and attachment
+    if category == "装置艺术":
+        return any(token in title for token in ENTITY_TERMS[category])
+    terms = ENTITY_TERMS.get(category)
+    return not terms or any(token in text for token in terms)
+
+
+def is_candidate(
+    item,
+    published_urls,
+    product_urls,
+    *,
+    min_quality=65,
+    min_innovation=8,
+    min_relevance=8,
+):
     review = item.get("category_review") or {}
     reason = str(review.get("reason") or "").lower()
     return (
@@ -136,9 +178,10 @@ def is_candidate(item, published_urls, product_urls):
         and item.get("url") not in product_urls
         and bool(item.get("image"))
         and int(review.get("confidence") or 0) >= 8
-        and int(review.get("quality_score") or 0) >= 65
-        and int(review.get("innovation") or 0) >= 8
-        and int(review.get("relevance") or 0) >= 8
+        and int(review.get("quality_score") or 0) >= min_quality
+        and int(review.get("innovation") or 0) >= min_innovation
+        and int(review.get("relevance") or 0) >= min_relevance
+        and has_category_evidence(item)
         and not any(signal in reason for signal in BAD_REASONS)
     )
 
@@ -148,12 +191,18 @@ def category_cap(category):
     return base if category in HARD_CAPS else base + 2
 
 
-def choose_candidates(candidates, needed, today_items, known_titles):
-    selected = []
+def choose_candidates(candidates, needed, today_items, known_titles, selected=None):
+    selected = list(selected or [])
+    initial_count = len(selected)
     category_counts = Counter(item.get("category") for item in today_items)
     source_counts = Counter(item.get("source_name") for item in today_items)
 
-    while len(selected) < needed:
+    for item in selected:
+        category_counts[item.get("category")] += 1
+        source_counts[source_name(item)] += 1
+        known_titles.append(item.get("title") or "")
+
+    while len(selected) < initial_count + needed:
         options = []
         for item in candidates:
             if item in selected:
@@ -162,7 +211,7 @@ def choose_candidates(candidates, needed, today_items, known_titles):
             source = source_name(item)
             if category_counts[category] >= category_cap(category):
                 continue
-            if source_counts[source] >= 5:
+            if source_counts[source] >= 6:
                 continue
             if too_similar(item.get("title"), known_titles):
                 continue
@@ -216,18 +265,53 @@ def main():
 
     published_items = [item for group in previous_groups for item in group.get("items", [])]
     published_urls = {item.get("url") for item in published_items if item.get("url")}
-    product_urls = {item.get("url") for item in products if item.get("url")}
+    # Rejected candidates are often still present in products.json as raw records.
+    # Only published URLs should block backlog promotion; otherwise valid reviewed
+    # candidates are incorrectly treated as already shown.
+    accepted_product_urls = {
+        item.get("url")
+        for item in products
+        if item.get("url") and item.get("status") == "scored"
+    }
     known_titles = [item.get("title") or "" for item in published_items]
-    known_titles.extend(item.get("title") or "" for item in products)
-    candidates = [
+    strict_candidates = [
         item for item in rejected
-        if is_candidate(item, published_urls, product_urls)
+        if is_candidate(item, published_urls, accepted_product_urls)
     ]
-    candidates = [
-        item for item in candidates
+    strict_candidates = [
+        item for item in strict_candidates
         if not too_similar(item.get("title"), known_titles)
     ]
-    selected = choose_candidates(candidates, needed, today_items, [])
+    selected = choose_candidates(
+        strict_candidates,
+        needed,
+        today_items,
+        [],
+    )
+
+    remaining = needed - len(selected)
+    if remaining > 0:
+        selected_ids = {item.get("id") for item in selected}
+        fallback_candidates = [
+            item for item in rejected
+            if item.get("id") not in selected_ids
+            and is_candidate(
+                item,
+                published_urls,
+                accepted_product_urls,
+                min_quality=60,
+                min_innovation=7,
+                min_relevance=8,
+            )
+            and not too_similar(item.get("title"), known_titles)
+        ]
+        selected = choose_candidates(
+            fallback_candidates,
+            remaining,
+            today_items,
+            [],
+            selected=selected,
+        )
 
     selected_ids = {item.get("id") for item in selected}
     review_cache = load_json(DATA_DIR / "category_review.json", {})
@@ -273,6 +357,11 @@ def main():
             "policy_version": 3,
         }
 
+    selected_urls = {item.get("url") for item in selected if item.get("url")}
+    products = [
+        item for item in products
+        if item.get("id") not in selected_ids and item.get("url") not in selected_urls
+    ]
     products.extend(promoted)
     rejected = [item for item in rejected if item.get("id") not in selected_ids]
     write_json(DATA_DIR / "products.json", products)
