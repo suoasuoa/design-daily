@@ -186,12 +186,14 @@ def is_candidate(
     )
 
 
-def category_cap(category):
+def category_cap(category, emergency=False):
     base = DAILY_CATEGORY_CAPS.get(category, 3)
-    return base if category in HARD_CAPS else base + 2
+    if category in HARD_CAPS:
+        return base
+    return base + (3 if emergency else 2)
 
 
-def choose_candidates(candidates, needed, today_items, known_titles, selected=None):
+def choose_candidates(candidates, needed, today_items, known_titles, selected=None, emergency=False):
     selected = list(selected or [])
     initial_count = len(selected)
     category_counts = Counter(item.get("category") for item in today_items)
@@ -209,7 +211,7 @@ def choose_candidates(candidates, needed, today_items, known_titles, selected=No
                 continue
             category = item.get("category")
             source = source_name(item)
-            if category_counts[category] >= category_cap(category):
+            if category_counts[category] >= category_cap(category, emergency=emergency):
                 continue
             if source_counts[source] >= 6:
                 continue
@@ -311,6 +313,31 @@ def main():
             today_items,
             [],
             selected=selected,
+        )
+
+    remaining = needed - len(selected)
+    if remaining > 0:
+        selected_ids = {item.get("id") for item in selected}
+        emergency_candidates = [
+            item for item in rejected
+            if item.get("id") not in selected_ids
+            and is_candidate(
+                item,
+                published_urls,
+                accepted_product_urls,
+                min_quality=60,
+                min_innovation=7,
+                min_relevance=8,
+            )
+            and not too_similar(item.get("title"), known_titles)
+        ]
+        selected = choose_candidates(
+            emergency_candidates,
+            remaining,
+            today_items,
+            [],
+            selected=selected,
+            emergency=True,
         )
 
     strict_ids = {item.get("id") for item in strict_candidates}
