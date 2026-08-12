@@ -392,7 +392,7 @@ def merge_historical_snapshots(groups, previous_groups, current_date):
     for group in groups:
         day = group.get("date", "")
         previous = previous_by_date.get(day)
-        if not previous or day >= current_date:
+        if not previous or day > current_date:
             continue
 
         target = int(group.get("target_count") or LEGACY_DAILY_TARGET)
