@@ -118,8 +118,17 @@ def trusted_cached_review(review):
             policy_version == REVIEW_POLICY_VERSION
             and review.get("category") in CATEGORIES
             and int(review.get("confidence") or 0) >= 8
-            and int(review.get("quality_score") or 0) >= 65
-            and int(review.get("innovation") or 0) >= 8
+            and int(review.get("quality_score") or 0) >= 60
+            and int(review.get("innovation") or 0) >= 7
+            and int(review.get("relevance") or 0) >= 8
+        )
+    if review.get("source") == "deepseek_backlog_balanced":
+        return (
+            policy_version == REVIEW_POLICY_VERSION
+            and review.get("category") in CATEGORIES
+            and int(review.get("confidence") or 0) >= 8
+            and int(review.get("quality_score") or 0) >= 60
+            and int(review.get("innovation") or 0) >= 7
             and int(review.get("relevance") or 0) >= 8
         )
     if policy_version != REVIEW_POLICY_VERSION:
