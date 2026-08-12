@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-12T19:17:13+08:00
+- 生成时间：2026-08-12T20:55:37+08:00
 
 ## 行动分布
 
@@ -23,7 +23,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/p/Cw3_PyNvVeX
 
-产品为中秋礼盒，兼具贺卡、红包和立体旋转木马功能，创意独特，但组装复杂，实用性一般，节日性需求明显，价格超过35元，但3秒内不易理解。
+摺疊形式的外包裝俐落地包覆賀卡及紅包，拆封後可逐一組裝成立體旋轉木馬，透過鑲嵌卡榫結構使木馬得以撥動旋轉。由平面賀卡轉化為桌上型趣味月曆，讓收禮者
 
 ### 2. Eyra Kitchen Utensils - Behance
 
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-产品为老年人手部设计的倾斜手柄和磁吸挂架，人机工学创新明确，功能成立，有独特卖点，且预估售价超过35元，具备较高实用性和情感关怀价值。
+明确产品：Eyra厨房用具套装，为老年手部设计独特倾斜手柄，降低握持负担，并配有磁吸挂架，人机工学创新明确。。页面证据：Uniquely angled handles make each utensil easier to cook with.Early Bird Special - 25% off RRP A set of four Eyra kitchen utensils: pasta grabber, serving spoon, spatula and slotted spoon. Plus a magnetic rack for easy access and storage. Available in aubergine or orange.
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -47,7 +47,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars
 
-产品为游戏场景设计的RGB氛围灯，外观科幻，功能单一但定位清晰，价格高于35元，主要吸引游戏玩家和桌搭爱好者，实用性中等，需求频次一般，竞争较激烈。
+Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。
 
 ### 4. Mid-Autumn Festival Campaign 2011 (7) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.
 
@@ -59,7 +59,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407
 
-结构创新且功能复用（月饼盒变灯笼），具备实用性和情绪价值，但季节性需求强，概念需解释，非高频。
+Mid-Autumn Festival Campaign 2011月饼盒：圆柱形组件可展开成梯田模块展示月饼，并可放入蜡烛转化为灯笼，结构复用创新。。页面证据：The result is a mooncake box that is “functionally aesthetic”. It features a cylindrical component that opens up into a “terraced” module, storing and displaying four mooncakes. The box itself can hold a tealight or a candle, quickly transforming it into a lantern. The soft glow of the light within the box will accentuate the intricate pattern cut into its walls.
 
 ### 5. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -71,7 +71,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-折叠式礼盒设计巧妙，一秒成型易展示，节省空间，适用于高档礼品场景，功能明确且外观有提升空间，售价有望超过35元。但属于低频礼品需求，目标人群相对垂直。
+诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平
 
 ### 6. Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.
 
@@ -83,7 +83,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947
 
-该产品是一款可变形为灯笼的中秋月饼礼盒，功能设计巧妙，兼具实用与情绪价值，但季节性强，需求频率低。
+同dbdfed1b70d4，同一项目不同模块，月饼盒可变形为灯笼，结构复用创新。。页面证据：The result is a mooncake box that is “functionally aesthetic”. It features a cylindrical component that opens up into a “terraced” module, storing and displaying four mooncakes. The box itself can hold a tealight or a candle, quickly transforming it into a lantern. The soft glow of the light within the box will accentuate the intricate pattern cut into its walls.
 
 ### 7. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -95,7 +95,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/p/DVcdTXnk4_6
 
-定位为概念性编织日历，强调艺术表达，实用性弱，目标群体窄，功能缺失影响日常使用。
+随着时间的推移，不断扩展和演变，展现出生命般的活力和繁茂。就像一块吸收了能量的海绵，不断吸收周围的灵感和资源，变得更加充实和丰富。与之匹配的Newone
 
 ### 8. This One-Second Luxury Gift Box From China Is Going Viral
 
@@ -107,7 +107,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DR16K1HDoG-
 
-产品为创意礼盒，实用性强但非日常高频消费，适合送礼场景，覆盖面较广，功能无明显短板，预估售价超过35元，滑盖设计3秒可懂，具备情绪价值。
+想定制创意性礼盒，这款滑盖盒千万别错过。 English Transcript. It ... because customers see your packaging first, not your product... and box ideas
 
 ### 9. Flat When You Ship. Fabulous When They Open. Save on freight ...
 
@@ -119,7 +119,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWG0uhwj22i
 
-产品以节省运费和开箱惊喜为核心卖点，实用性强，适合电商卖家；但受众偏B端，普及度有限。价格可能超过35元，概念直观易理解，情绪价值突出。
+It's always satisfying to see a packaging idea become a real product. ... 想定制创意性礼盒，这款滑盖盒千万别错过。 English Transcript. It
 
 ### 10. 磁吸锅铲套装
 
@@ -131,7 +131,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.peugeot-saveurs.com
 
-磁吸锅铲套装解决收纳痛点，功能明确，价格高于35元，但实用性受磁力稳定性影响，频率中等。
+Pinterest · 磁吸收纳锅铲套装
 
 ### 11. 黑天鹅 2022 中秋月饼礼盒 :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.
 
@@ -143,7 +143,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161108345/-2022-
 
-该产品为中秋月饼礼盒，具备明确的应节礼品属性，开盒结构创新（天鹅展翅），有一定视觉冲击力，价格预计超35元，但属季节性消费，用户需求频率低，实用场景相对单一，整体评分中规中矩。
+黑天鹅2022中秋月饼礼盒：开盒过程设计成天鹅展开羽翼的动作，黑色折叠羽翼环抱中央白色纸浆月饼盒，具有明确的结构与叙事创新，是可买样的实体礼盒产品。。页面证据：Branding, Packaging, Art Direction
 
 ### 12. Introducing our Changeable Photo Phone Case How you can ...
 
@@ -155,7 +155,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DUAXDNNjGWN
 
-可更换照片的手机壳，兼顾保护与个性化，送礼有情绪价值，但市场同质化明显，需差异化设计。
+✨ Because ordinary gifts are boring Make gifts extra special with our premium customized mobile covers by ThebaeGift Here we have something
 
 ### 13. 情有独粽｜端午礼盒设计 :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.
 
@@ -167,7 +167,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/145263273/_
 
-作为端午礼盒，魔方盒子结构有创新互动，但实用性一般，属节日性低频需求，受众有限，售价应超35元，但功能非日常必需，主要靠情绪价值支撑。
+端午礼盒采用魔方盒子结构，开启有旋转互动，增加节日趣味，包装结构创新明确。。页面证据：Branding, Packaging, Graphic Design, Adobe Illustrator, Blender
 
 ### 14. Wine box with sliding lid-butler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe
 
@@ -179,19 +179,19 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-结构创新，滑动盖变托盘，实用且易理解，但受众限于爱酒人士，非高频需求，市场范围窄。
+Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...
 
 ### 15. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
 - 品类：日历
 - 路径：可直接买样
-- 启发：包装启发、情绪启发
+- 启发：包装启发
 - 分数：7.0
 - 来源：Behance
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar
 
-概念直观，结合日历与种植，有情绪价值，但实用性偏低，受众较窄，且受季节影响，功能有短板。
+Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...
 
 ### 16. 趣香七夕表白礼盒创意设计 :: Behance
 
@@ -203,7 +203,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/229023437/_
 
-以可录音点心礼盒传递情感，功能新颖且兼具地域文化特色，但使用场景较局限，实用性一般。
+Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。
 
 ### 17. 中秋礼盒｜满，是人间灯火时 Moon Fun :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.
 
@@ -215,7 +215,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/181747603/-Moon-Fun
 
-可持续材料创新且设计明确，作为中秋礼盒功能成立，但节日属性导致高频需求和打击面一般，主要靠情绪价值支撑。
+明确的中秋礼盒设计，采用可循环水洗牛皮纸袋和可降解纸浆礼盒，具备可持续材料创新，可作为中秋礼盒包装结构及材料创新参考。。页面证据：Photography, Graphic Design, Illustration
 
 ### 18. Dragon Boat tenon and tenon gift box design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fac
 
@@ -227,7 +227,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/173012211/Dragon-Boat-tenon-and-tenon-gift-box-design
 
-端午礼盒结合榫卯结构，具有结构创新和传统文化传承，但实用性一般，且为季节性需求，受众相对特定。价格预估高于35元，但设计需要一定理解成本，3秒内未必直观。情绪价值较高，适合节日送礼场景。
+明确的端午礼盒设计，结合榫卯结构和绳子元素，具有结构创新和传统文化传承。。页面证据：Product Design, Graphic Design, Illustration, Adobe Illustrator, Adobe Photoshop, Blender 3D, Maxon Cinema 4D, Adobe After Effects
 
 ### 19. Quench Your Thirst and Ditch Plastic Water Bottles Forever
 
@@ -755,7 +755,7 @@ Cantilevered Flatware: 悬臂式餐具，手柄抬高使餐具头不接触桌面
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-产品集成无线充电、夜灯和MagSafe，功能实用且外观有创意，但目标用户偏向苹果生态和桌面收纳爱好者，打击面有限。售价可能高于35元，但概念性较强，实际功能稳定性待验证。
+Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity
 
 ### 63. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
 
