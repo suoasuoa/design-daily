@@ -1,17 +1,17 @@
 {
   "version": 1,
-  "generated_at": "2026-08-11T17:12:01+08:00",
+  "generated_at": "2026-08-12T08:08:25+08:00",
   "stats": {
-    "events": 16,
-    "active_decisions": 12,
-    "likes": 11,
-    "passes": 1
+    "events": 19,
+    "active_decisions": 15,
+    "likes": 13,
+    "passes": 2
   },
   "positive_patterns": {
     "category": [
       {
         "name": "创意厨具",
-        "count": 5
+        "count": 6
       },
       {
         "name": "水杯",
@@ -32,12 +32,16 @@
       {
         "name": "手机壳",
         "count": 1
+      },
+      {
+        "name": "日历",
+        "count": 1
       }
     ],
     "source_family": [
       {
         "name": "媒体案例",
-        "count": 6
+        "count": 8
       },
       {
         "name": "市场信号",
@@ -51,21 +55,21 @@
     "action_lane": [
       {
         "name": "适合改造",
-        "count": 9
+        "count": 10
       },
       {
         "name": "方向参考",
-        "count": 2
+        "count": 3
       }
     ],
     "axes": [
       {
         "name": "功能启发",
-        "count": 10
+        "count": 12
       },
       {
         "name": "结构启发",
-        "count": 6
+        "count": 8
       },
       {
         "name": "视觉启发",
@@ -79,22 +83,26 @@
     "tags": [
       {
         "name": "deepseek_search_agent",
-        "count": 10
+        "count": 12
       },
       {
         "name": "adapt",
-        "count": 5
+        "count": 7
+      },
+      {
+        "name": "创意厨具",
+        "count": 3
       },
       {
         "name": "editorial_main",
         "count": 2
       },
       {
-        "name": "创意厨具",
+        "name": "buy_sample",
         "count": 2
       },
       {
-        "name": "buy_sample",
+        "name": "厨房收纳",
         "count": 2
       },
       {
@@ -104,10 +112,6 @@
       {
         "name": "水杯",
         "count": 1
-      },
-      {
-        "name": "户外用品",
-        "count": 1
       }
     ]
   },
@@ -116,27 +120,43 @@
       {
         "name": "充电宝",
         "count": 1
+      },
+      {
+        "name": "日历",
+        "count": 1
       }
     ],
     "source_family": [
       {
         "name": "市场信号",
-        "count": 1
+        "count": 2
       }
     ],
     "action_lane": [
       {
         "name": "适合改造",
-        "count": 1
+        "count": 2
       }
     ],
     "axes": [
       {
         "name": "功能启发",
         "count": 1
+      },
+      {
+        "name": "视觉启发",
+        "count": 1
       }
     ],
     "tags": [
+      {
+        "name": "buy_sample",
+        "count": 2
+      },
+      {
+        "name": "deepseek_search_agent",
+        "count": 2
+      },
       {
         "name": "充电宝",
         "count": 1
@@ -154,11 +174,11 @@
         "count": 1
       },
       {
-        "name": "buy_sample",
+        "name": "日历",
         "count": 1
       },
       {
-        "name": "deepseek_search_agent",
+        "name": "干擦",
         "count": 1
       }
     ]
@@ -167,7 +187,7 @@
     {
       "code": "too_ordinary",
       "label": "太普通，没有明显创意增量",
-      "count": 1
+      "count": 2
     }
   ],
   "positive_examples": [
@@ -247,6 +267,13 @@
       "category": "手机壳",
       "summary": "概念原型，主打抗摔功能，实用性较强且手机壳市场高频广谱，但产品未落地，功能验证不足，定价不明确，结构创新需解释才能看懂，情绪价值尚未叠加。",
       "reason": ""
+    },
+    {
+      "product_id": "52939afb0bfa",
+      "title": "From Japan, a Modular Stamp for Creating Calendars - Core77",
+      "category": "日历",
+      "summary": "模块化日期印章设计新颖，但受众限于手账爱好者，实用性中等，价格可能偏高，情绪价值较好。",
+      "reason": ""
     }
   ],
   "negative_examples": [
@@ -256,9 +283,17 @@
       "category": "充电宝",
       "summary": "解决多设备无线充电痛点，体积小巧，实用性强，但目标用户限于Apple Watch和iPhone用户，覆盖范围有限。",
       "reason": "too_ordinary"
+    },
+    {
+      "product_id": "80d219f3af88",
+      "title": "Dry Erase Calendar Vinyl Sticker | Cool Material",
+      "category": "日历",
+      "summary": "干擦日历墙贴免测量直接粘贴，使用便捷，功能实用；日历需求高频且受众广；但预估售价可能低于35元，价格优势不足，同时情绪价值较弱。",
+      "reason": "too_ordinary"
     }
   ],
   "blocked_product_ids": [
-    "275ffefe6459"
+    "275ffefe6459",
+    "80d219f3af88"
   ]
 }

@@ -522,5 +522,107 @@
       "source_family": "媒体案例"
     },
     "created_at": "2026-08-10T04:15:33.725+00:00"
+  },
+  {
+    "event_id": "56be42f2-0d6d-42fc-b8d7-aaa6397b0aeb",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "52939afb0bfa",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-11",
+      "weekly_group": "2026-W33"
+    },
+    "item_snapshot": {
+      "url": "https://www.core77.com/posts/126546/From-Japan-a-Modular-Stamp-for-Creating-Calendars",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "tags": [
+        "手账",
+        "文具",
+        "DIY",
+        "日本品牌",
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "From Japan, a Modular Stamp for Creating Calendars - Core77",
+      "summary": "模块化日期印章设计新颖，但受众限于手账爱好者，实用性中等，价格可能偏高，情绪价值较好。",
+      "category": "日历",
+      "action_lane": "方向参考",
+      "source_name": "Core77",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-08-11T10:14:22.545+00:00"
+  },
+  {
+    "event_id": "e5400f73-a7b5-4517-b3a7-d70f63897c3a",
+    "workspace": "design-daily",
+    "actor_id": "608dc295-6386-4f6e-861f-dd661f589f36",
+    "product_id": "80d219f3af88",
+    "action": "pass",
+    "reason": "too_ordinary",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-11",
+      "weekly_group": "2026-W33"
+    },
+    "item_snapshot": {
+      "url": "https://coolmaterial.com/lifestyle/home/dry-erase-calendar-vinyl-sticker",
+      "axes": [
+        "视觉启发"
+      ],
+      "tags": [
+        "日历",
+        "干擦",
+        "墙贴",
+        "buy_sample",
+        "deepseek_search_agent"
+      ],
+      "title": "Dry Erase Calendar Vinyl Sticker | Cool Material",
+      "summary": "干擦日历墙贴免测量直接粘贴，使用便捷，功能实用；日历需求高频且受众广；但预估售价可能低于35元，价格优势不足，同时情绪价值较弱。",
+      "category": "日历",
+      "action_lane": "适合改造",
+      "source_name": "Cool Material",
+      "source_family": "市场信号"
+    },
+    "created_at": "2026-08-11T10:14:24.119+00:00"
+  },
+  {
+    "event_id": "374501cd-8bf2-4eee-a9be-78b2a7f2aa18",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "9e6eed170b66",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-11",
+      "weekly_group": "2026-W33"
+    },
+    "item_snapshot": {
+      "url": "https://www.yankodesign.com/2014/08/28/flat-spoon-means-super-functionality",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "tags": [
+        "创意厨具",
+        "折叠设计",
+        "厨房收纳",
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "Flat Spoon Means Super Functionality - Yanko Design",
+      "summary": "创新折叠设计节省空间，结构清晰易懂，但实用性和耐用性待验证。",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-08-11T10:14:52.876+00:00"
   }
 ]
