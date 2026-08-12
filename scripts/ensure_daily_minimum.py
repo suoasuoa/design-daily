@@ -55,6 +55,22 @@ def main():
     if count >= args.target:
         return
 
+    # Use already-reviewed, never-published candidates before spending time and
+    # API calls on another search round. Search remains the fallback when the
+    # reviewed reserve cannot satisfy the target.
+    run(
+        [
+            sys.executable,
+            "scripts/promote_reviewed_backlog.py",
+            "--target",
+            str(args.target),
+        ]
+    )
+    count = today_count(args.target)
+    print(f"daily_minimum reserve_count={count} target={args.target}", flush=True)
+    if count >= args.target:
+        return
+
     for index in range(args.max_passes):
         run(
             [
