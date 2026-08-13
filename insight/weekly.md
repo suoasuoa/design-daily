@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-13T08:25:07+08:00
+- 生成时间：2026-08-13T11:54:12+08:00
 
 ## 行动分布
 
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-创意厨具，专为老年人设计，倾斜手柄降低握持负担，磁吸挂架方便收纳，功能创新明确。虽针对特定人群，但实用性和功能设计良好，价格预计高于35元，3秒可理解卖点。
+人体工学设计解决老年握持痛点，磁吸收纳提升实用性，价格高于35元，设计易于理解，兼具关怀感。
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -59,7 +59,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407
 
-设计有创意，但商业化程度低，针对性太强。
+设计独特，功能创新，兼具展示与灯笼功能，情绪价值高，但节日性需求频率低，且结构复杂可能影响实用性，3秒看懂难度大。
 
 ### 5. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -71,7 +71,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-折叠礼盒设计实用，节省空间，适合高档礼品包装，视频展示成型过程直观易懂，具备情绪价值。但需求频率中等，功能门槛不高。
+折叠礼盒设计巧妙，节省空间且成型快速，实用性强，适用于高档礼品包装，具有一定情绪价值和社交属性。
 
 ### 6. Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.
 
@@ -83,7 +83,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947
 
-月饼盒可变形为灯笼，功能与节日场景结合，结构创新，实用性和情绪价值兼备，但使用频率低，3秒内理解难度较高。
+月饼盒可变形为灯笼，兼具包装与实用功能，情感价值丰富，但节令性强且需注意安全风险。
 
 ### 7. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -143,7 +143,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161108345/-2022-
 
-开盒结构有叙事创新，具备情绪价值，但节日性、低频、受众窄导致功能与普适性一般。
+包装结构创新，有叙事性，但月饼礼盒为节日性消费品，使用频率较低，功能上无明显短板，但实用性主要依赖礼赠场景。
 
 ### 12. Introducing our Changeable Photo Phone Case How you can ...
 
@@ -167,7 +167,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/145263273/_
 
-包装结构创新，魔方旋转互动有辨识度，3秒内可理解；端午礼盒属于节令性商品，场景明确，售价预计超过35元，但需求频率低，实用性偏弱。
+礼盒包装结构创新，互动趣味性强，适合节日送礼场景；定价有溢价空间，视觉传达清晰。但使用频率低，季节限定明显。
 
 ### 14. Wine box with sliding lid-butler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe
 
@@ -179,7 +179,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler
 
-Wine box with sliding lid that doubles as a butler for two glasses. Innovation in structural design: lid slides open and can be used as a serving tray.。页面证据：Wine box with sliding lid-butlerWine box has a sliding lid. Lid can be used like a butler for two glasses. You can make different engraving both sides of lid-butler. Wine butler makes carrying and serving your favorite wine and glasses easy.Lasercut vec...
+滑盖酒盒兼具展示与托盘功能，结构设计有创新，但使用场景偏窄，适合送礼或特定场合，非高频需求。
 
 ### 15. The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance
 
@@ -215,7 +215,7 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/181747603/-Moon-Fun
 
-产品为中秋礼盒设计，实用性和高频需求低，但具备可持续材料创新和情绪价值，售价可能高于35，3秒看懂度一般。
+产品为中秋礼盒包装设计，具备可持续材料创新，但内容物未明确，实际功能性依赖内部产品。价格可能高于35元，但作为礼品盒有一定情绪价值。
 
 ### 18. Dragon Boat tenon and tenon gift box design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fac
 
@@ -239,7 +239,7 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75633507/Business-gifts-SIBERK
 
-产品为创意商务礼品盒，滑动开启机制独特，具备设计感和情绪价值，但实用性和高频需求较弱，受众范围有限，功能上可能不如传统包装便捷。
+时间主题商务礼盒设计新颖，滑动开箱有互动性，适用于商务赠送，但实用性有限，需求频次低，认知成本较高。
 
 ### 20. Moon Spinning for Château :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.
 
@@ -251,7 +251,7 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/95528181/Moon-Spinning-for-Chateau
 
-产品为酒店创意礼盒，实用性和频率较低，但价格可能较高，主题独特，但3秒内不易理解，功能支撑不足。
+创意礼盒具备互动设计，但实用性一般，目标人群窄，价格支撑足够，视觉清晰度尚可。
 
 ### 21. Quench Your Thirst and Ditch Plastic Water Bottles Forever
 
@@ -779,7 +779,7 @@ Cantilevered Flatware: 悬臂式餐具，手柄抬高使餐具头不接触桌面
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-可折叠无线充电站结合4合1功能、夜灯和MagSafe，实用性高，充电为高频需求，创意桌搭带来情绪价值，但受众以数码爱好者为主，功能集成可能增加成本。
+可折叠无线充电站集成多合一功能，实用性强，但目标用户较窄，依赖苹果生态，功能无明显短板，但价格和落地性不确定。
 
 ### 65. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
 
@@ -1045,7 +1045,19 @@ Loop万年历采用深浅双色同心大理石环结构，深色内环雕刻月�
 
 iF Design Award · BrightMate is a playful AI lighting companion that blends functionality, entertainment, and companionship for an emotionally engaging home experience. Beyond hundreds of preset lighting scenes, it uses generative AI to create unlimited light effects
 
-### 87. Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer
+### 87. A Sleek Wireless, Portable Lamp that Can Charge Your Devices - Core77
+
+- 品类：氛围灯
+- 路径：方向参考
+- 启发：功能启发、情绪启发
+- 分数：8.1
+- 来源：Core77
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.core77.com/projects/80288/A-Sleek-Wireless-Portable-Lamp-that-Can-Charge-Your-Devices
+
+Rise是明确的可便携无线灯具，内置电池提供12小时照明，顶部集成无线充电板并支持USB-C/A同时为两台设备充电，将灯具与充电功能结合，创新与实用性明确。。页面证据：Benjamin Hubert of experience design agency LAYER has designed a wireless lamp for London-based tech brand nolii. Called Rise, the lamp is the first product in the brand's first collection of wireless tech products, which will launch next year. It has integrated charging capability for up to two devices and
+
+### 88. Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1057,7 +1069,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 具体产品为Eco-design Circular Lightweight Functional Down Puffer，创新在于一步分离羽绒和外壳、单尼龙材料实现闭环回收、专利热湿平衡系统。。页面证据：The jacket’s down and shell can be easily separated in one step and the mono-nylon materials enable recycling, achieving a closed-loop cycling from material to material. The jacket features a patented system to keep the body in thermal and moisture balance, resulting in a reliable garment for urban sports and outdoor activities.
 
-### 88. A portable charger for all batteries! - Yanko Design
+### 89. A portable charger for all batteries! - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1069,7 +1081,7 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 
 便携充电器同时具备汽车应急启动功能，是明确移动电源产品，多功能集成创新突出。。页面证据：It's not common knowledge, but guess what. That portable charger you carry with you can jump-start your car! It's essentially a rather powerful battery the size of your palm, and it can be a life-saver when you're stranded in the middle of nowhere and your car refuses to start. Well, it can charge your phone,
 
-### 89. vollebak introduces a jacket that mimics the wings of a blue morpho butterfly
+### 90. vollebak introduces a jacket that mimics the wings of a blue morpho butterfly
 
 - 品类：冲锋衣
 - 路径：方向参考
@@ -1080,18 +1092,6 @@ iF Design Award · BrightMate is a playful AI lighting companion that blends fun
 - 链接：https://www.designboom.com/design/vollebak-blue-morpho-jacket-10-10-2019
 
 Vollebak 蓝闪蝶夹克，具体可穿功能外套；模拟蝴蝶翅膀结构的三层防水透湿膜面料，含五口袋、双向拉链与调节绳，材料和结构创新明确。。页面证据：following their black squid jacket released earlier this year, british clothing brand vollebak launches their most recent design, the 'blue morpho jacket'.
-
-### 90. This delicate glass lamp invites you to touch and move it to actually use it - Yanko Design
-
-- 品类：氛围灯
-- 路径：方向参考
-- 启发：情绪启发
-- 分数：8.1
-- 来源：Yanko Design
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.yankodesign.com/2023/01/16/this-delicate-glass-lamp-invites-you-to-touch-and-move-it-to-actually-use-it
-
-明确单品：通过滑动玻璃球调节亮度的灯具。创新证据：无按钮，玻璃球在圆盘上的位置决定亮度，中心最亮、边缘最暗，交互方式独特。。页面证据：When faced with something fine and intricate, our initial and natural reaction would be to stay at a safe distance to look but not touch. Almost like snowflakes, these things of beauty risk being destroyed if not handled properly, which probably applies to the majority of us. There are, however, some rather seemingly fragile objects
 
 ### 91. Red Dot Design Award: Xiaomi UltraThin Magnetic Power Bank 5000 15W
 

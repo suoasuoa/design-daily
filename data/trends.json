@@ -1,45 +1,177 @@
 {
-  "summary": "产品线索多来自设计奖项、众筹及设计社区，集中于厨房器具、照明、桌搭等场景。整体呈现多功能、便携、磁吸、模块化、环保可持续等设计趋势，但部分产品功能复杂、定位小众或偏重情绪价值，需结合实用性与高频需求筛选。充电宝、创意厨具、水杯等品类实用性强且需求高频，适合深入挖掘；氛围灯虽有市场，但须确保功能成立。",
-  "hot_categories": [
-    "创意厨具",
-    "充电宝",
-    "水杯",
-    "创意桌搭"
-  ],
-  "hot_signals": [
-    "多功能集成",
-    "可折叠/便携",
-    "磁吸设计",
-    "模块化",
-    "快充",
-    "环保可持续",
-    "健康管理",
-    "单手操作"
-  ],
-  "recommended_directions": [
-    "便携可折叠水杯/餐具",
-    "模块化厨房收纳（磁吸刀架、锅铲）",
-    "多功能充电设备（充电宝+快充+无线）",
-    "健康管理小工具（控盐勺、定时水杯）",
-    "兼具实用功能的氛围灯（香薰+番茄钟）"
-  ],
-  "avoid_or_watch": [
-    "纯概念设计且无量产证据",
-    "功能过度复杂的模块化产品",
-    "受众过窄的单一功能设计",
-    "价格过高但功能提升有限",
-    "低频创意礼盒"
-  ],
-  "next_search_keywords": [
-    "折叠水杯 便携 户外",
-    "磁吸收纳 厨房 刀架",
-    "模块化 充电站 桌面",
-    "智能水杯 喝水提醒",
-    "可折叠午餐盒 便当盒",
-    "多功能厨具 收纳",
-    "控盐勺 健康",
-    "便携咖啡杯"
-  ],
-  "generated_at": "2026-08-13T08:25:06+08:00",
-  "source": "deepseek"
+  "generated_at": "2026-08-13T11:54:11+08:00",
+  "source": "local_summary",
+  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
+  "hot_categories": {
+    "氛围灯": 432,
+    "创意厨具": 368,
+    "水杯": 342,
+    "创意桌搭": 334,
+    "充电宝": 284,
+    "冲锋衣": 168,
+    "手机壳": 161,
+    "创意礼盒": 101,
+    "日历": 79,
+    "中秋礼盒": 54,
+    "装置艺术": 18,
+    "端午礼盒": 11
+  },
+  "hot_sources": {
+    "Yanko Design": 467,
+    "Kickstarter": 413,
+    "Indiegogo": 254,
+    "Red Dot": 252,
+    "Core77": 154,
+    "Designboom": 124,
+    "Design Milk": 112,
+    "iF设计奖": 108,
+    "Uncrate": 107,
+    "The Grommet": 78,
+    "Cool Material": 76,
+    "Behance": 75
+  },
+  "hot_tags": {
+    "deepseek_search_agent": 1788,
+    "editorial_main": 760,
+    "adapt": 685,
+    "trend": 620,
+    "market_signal_strong": 587,
+    "buy_sample": 567,
+    "氛围灯": 414,
+    "创意厨具": 364,
+    "award_gallery": 340,
+    "水杯": 329,
+    "创意桌搭": 326,
+    "白名单来源": 295,
+    "充电宝": 286,
+    "design_community": 209,
+    "适合作为趋势、内容爆点或方向参考": 175,
+    "冲锋衣": 167,
+    "手机壳": 160,
+    "market_signal": 125,
+    "创意礼盒": 108,
+    "适合做结构、包装、功能或外观改造": 107
+  },
+  "recommended": [
+    {
+      "title": "Vegetable Peeler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
+      "category": "创意厨具",
+      "score": 87,
+      "reason": "削皮器为厨房高频实用工具，适用范围广；人体工学手柄和短刀片设计提升安全性与易用性，无明显功能短板。价格未知且来自设计社区，可能溢价但未证实，故售价评分中等。产品外观直观易识别，功能性明确，情感价值适中。"
+    },
+    {
+      "title": "OXO沙拉甩干器",
+      "category": "创意厨具",
+      "score": 86,
+      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
+    },
+    {
+      "title": "蘑菇氛围灯",
+      "category": "氛围灯",
+      "score": 86,
+      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
+    },
+    {
+      "title": "Polygons flat 3-in-1 Measuring Spoon",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Polygons 4-in-1 measuring spoon that folds flat like origami and adjusts to four sizes; structural innovation for kitche"
+    },
+    {
+      "title": "2050® Edible Cutlery",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly tableware made from grain by-products like "
+    },
+    {
+      "title": "Eco-friendly Packaging for Cloud Erosion Whisky",
+      "category": "创意礼盒",
+      "score": 84,
+      "reason": "iF Design Award · \"Mist Carving\" whisky packaging embodies Yunnan's terroir through sustainable innovation, transforming"
+    },
+    {
+      "title": "SAKE BOTTLE OPENER",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of it"
+    },
+    {
+      "title": "LAZYCAT-A Magnetic Charging Cable With A Built-in Power Bank",
+      "category": "充电宝",
+      "score": 84,
+      "reason": "磁性充电线内置移动电源，解决充电线+应急电源双重需求，使用场景高频且广泛，功能集成明确，易于理解。潜在短板是移动电源容量较小，但作为应急场景可接受。价格未知，但同类产品通常超过35元。"
+    },
+    {
+      "title": "磁吸锅铲套装",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Pinterest · 磁吸收纳锅铲套装"
+    },
+    {
+      "title": "Nanoleaf 智能灯板",
+      "category": "氛围灯",
+      "score": 84,
+      "reason": "加拿大Nanoleaf模块化智能LED灯板"
+    },
+    {
+      "title": "Presso SmartShot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The Presso SmartShot is a planet-friendly, manually operated espresso machine for use within the hom"
+    },
+    {
+      "title": "M01",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
+    },
+    {
+      "title": "BIRDY.",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · Designed in a new, streamlined form against the standard shape of a cocktail shaker. Of particular n"
+    },
+    {
+      "title": "Nano bubble shaker",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
+    },
+    {
+      "title": "SELECT100 grater",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
+    },
+    {
+      "title": "WMF Flexi Whisk",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
+    },
+    {
+      "title": "Multi-Functional Magnetic Knife Sheath",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
+    },
+    {
+      "title": "Louis",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · It is a steak knife that, by notching part of the blade, creates a function that makes it easy to sh"
+    },
+    {
+      "title": "360KYUSU",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
+    },
+    {
+      "title": "The T-Pot",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
+    }
+  ]
 }
