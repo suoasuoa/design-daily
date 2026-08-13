@@ -1,177 +1,45 @@
 {
-  "generated_at": "2026-08-13T20:06:18+08:00",
-  "source": "local_summary",
-  "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
-  "hot_categories": {
-    "氛围灯": 415,
-    "创意厨具": 361,
-    "水杯": 340,
-    "创意桌搭": 287,
-    "充电宝": 283,
-    "冲锋衣": 163,
-    "手机壳": 159,
-    "日历": 75,
-    "创意礼盒": 64,
-    "中秋礼盒": 43,
-    "端午礼盒": 10,
-    "装置艺术": 6
-  },
-  "hot_sources": {
-    "Yanko Design": 445,
-    "Kickstarter": 405,
-    "Indiegogo": 252,
-    "Red Dot": 251,
-    "Core77": 146,
-    "Designboom": 108,
-    "Design Milk": 102,
-    "Uncrate": 101,
-    "iF设计奖": 96,
-    "The Grommet": 77,
-    "Cool Material": 75,
-    "Behance": 70
-  },
-  "hot_tags": {
-    "deepseek_search_agent": 1674,
-    "editorial_main": 708,
-    "adapt": 621,
-    "trend": 584,
-    "market_signal_strong": 568,
-    "buy_sample": 547,
-    "氛围灯": 398,
-    "创意厨具": 362,
-    "award_gallery": 332,
-    "水杯": 320,
-    "充电宝": 284,
-    "白名单来源": 283,
-    "创意桌搭": 277,
-    "design_community": 188,
-    "适合作为趋势、内容爆点或方向参考": 168,
-    "冲锋衣": 162,
-    "手机壳": 156,
-    "market_signal": 125,
-    "适合做结构、包装、功能或外观改造": 101,
-    "日历": 75
-  },
-  "recommended": [
-    {
-      "title": "Anker 无线充电宝",
-      "category": "充电宝",
-      "score": 88,
-      "reason": "充电宝实用性强，高频需求，品牌可靠，无线充电功能明确，价格高于35美元，符合多数标准。"
-    },
-    {
-      "title": "LAZYCAT-A Magnetic Charging Cable With A Built-in Power Bank",
-      "category": "充电宝",
-      "score": 87,
-      "reason": "产品将充电线、移动电源、磁吸设计集于一体，满足高频充电需求，目标用户广泛。100W快充和直通充电功能实用，便携性提升。价格预计高于35元，功能清晰，情绪价值较好。"
-    },
-    {
-      "title": "OXO沙拉甩干器",
-      "category": "创意厨具",
-      "score": 86,
-      "reason": "Pinterest · OXO Good Grips沙拉脱水器"
-    },
-    {
-      "title": "蘑菇氛围灯",
-      "category": "氛围灯",
-      "score": 86,
-      "reason": "Pinterest · 可爱蘑菇造型小夜灯"
-    },
-    {
-      "title": "TITANER Titanium Water Bottle- A Bottle You Have... — Kickstarter",
-      "category": "水杯",
-      "score": 85,
-      "reason": "钛合金水杯兼具轻便耐用与LED温度显示创新交互，实用性强，水杯为高频刚需，覆盖面广，功能无明显短板，预估售价高于35元，温度显示功能直观易懂，时尚色彩与科技感提供情绪价值。"
-    },
-    {
-      "title": "Polygons flat 3-in-1 Measuring Spoon",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Polygons 4-in-1 measuring spoon that folds flat like origami and adjusts to four sizes; structural innovation for kitche"
-    },
-    {
-      "title": "2050® Edible Cutlery",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly tableware made from grain by-products like "
-    },
-    {
-      "title": "Vegetable Peeler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "削皮器作为厨房必需品，实用性和高频需求都很强，受众广泛。人体工学手柄和短刀片设计兼顾舒适与安全，功能无明显短板。外观简洁，3秒内可辨认。设计感带来一定情绪价值，但售价未知，价格优势不明显。"
-    },
-    {
-      "title": "WOKY –[ ] 渾圓杯 770ml｜募資影片 :: Behance",
-      "category": "水杯",
-      "score": 84,
-      "reason": "水杯作为日常高频实用品，770ml大容量贴合手摇饮需求，功能明确，外观易懂，且兼具文化情绪价值，预估售价有支撑。"
-    },
-    {
-      "title": "磁吸锅铲套装",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Pinterest · 磁吸收纳锅铲套装"
-    },
-    {
-      "title": "Nanoleaf 智能灯板",
-      "category": "氛围灯",
-      "score": 84,
-      "reason": "加拿大Nanoleaf模块化智能LED灯板"
-    },
-    {
-      "title": "Presso SmartShot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The Presso SmartShot is a planet-friendly, manually operated espresso machine for use within the hom"
-    },
-    {
-      "title": "M01",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
-    },
-    {
-      "title": "Nano bubble shaker",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A shaker generates nanobubbles just by shaking, which helps dissolve protein drinks etc, improving p"
-    },
-    {
-      "title": "SELECT100 grater",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The SELECT100 Grater is a compact, easy-to-store grater that can be used not only for hard cheeses a"
-    },
-    {
-      "title": "WMF Flexi Whisk",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A unique and functional whisk made of high-quality stainless steel Cromargan, featuring flexible wir"
-    },
-    {
-      "title": "Multi-Functional Magnetic Knife Sheath",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
-    },
-    {
-      "title": "360KYUSU",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · The 360 KYUSU is a teapot designed to revolutionize the way you enjoy Japanese tea and to spread Jap"
-    },
-    {
-      "title": "The T-Pot",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
-    },
-    {
-      "title": "VERMICULAR OVEN POT２ & Recraft program",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
-    }
-  ]
+  "summary": "整体产品线索中，创意厨具、氛围灯、水杯、充电宝、创意桌搭等品类出现频率高，且不少产品具备获奖背书或社交热度。选品应优先聚焦实用性强、高频使用、用户覆盖面广的厨房小工具、便携水杯、快充充电宝等，并结合折叠、多合一、磁吸等直观功能点，确保价格高于35元、3秒内可理解，再叠加设计感或环保等情绪价值。",
+  "hot_categories": [
+    "创意厨具",
+    "氛围灯",
+    "水杯",
+    "充电宝",
+    "创意桌搭"
+  ],
+  "hot_signals": [
+    "折叠/便携",
+    "多合一",
+    "磁吸收纳",
+    "快充/无线充",
+    "获奖设计(iF/Good Design)",
+    "Pinterest社交热度",
+    "模块化",
+    "透明机甲风"
+  ],
+  "recommended_directions": [
+    "实用型厨房小工具：可折叠量杯、磁吸锅铲收纳、分类砧板、多功能削皮器",
+    "便携水杯：茶仓分离杯、折叠防漏杯、单手开合保温杯",
+    "快充充电宝：透明机甲风、磁吸无线充、带TFT彩屏",
+    "智能氛围灯：投影星空灯、便携户外灯、可调光调色小夜灯",
+    "办公桌搭：实木显示器架、隐藏式线缆收纳、升降桌"
+  ],
+  "avoid_or_watch": [
+    "概念型产品：热敏变色夹克、自充气水瓶、模块化钓鱼夹克，实用性低或受众窄",
+    "悬浮月亮灯等纯装饰性灯品，功能短板明显、使用频率低",
+    "高成本智能水杯（如Ember），价格过高且需App交互，大众接受度有限",
+    "电子墨水屏手机壳等小众创新，需求频率低、成本高"
+  ],
+  "next_search_keywords": [
+    "折叠硅胶量杯",
+    "磁吸厨具收纳",
+    "便携榨汁杯",
+    "透明快充充电宝",
+    "智能氛围灯 便携",
+    "桌面收纳 无线充电",
+    "茶仓分离杯",
+    "折叠水杯 防漏"
+  ],
+  "generated_at": "2026-08-14T07:51:01+08:00",
+  "source": "deepseek"
 }
