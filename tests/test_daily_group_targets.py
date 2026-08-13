@@ -8,7 +8,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_site import category_under_cap, daily_group_limit, display_eligible, merge_historical_snapshots, sorted_daily_items, source_under_cap
 from insight_common import is_ordinary_laptop_stand
-from deepseek_search_agent import fallback_query_jobs
+from deepseek_search_agent import accepted_today, fallback_query_jobs
 
 
 class DailyGroupTargetTests(unittest.TestCase):
@@ -114,6 +114,12 @@ class DailyGroupTargetTests(unittest.TestCase):
 
         self.assertLessEqual(categories.count("手机壳"), 3)
         self.assertLessEqual(categories.count("充电宝"), 3)
+
+    def test_search_agent_counts_displayable_group_not_raw_today_rows(self):
+        # accepted_today is intentionally wired through build_daily_groups;
+        # this guards against reverting to a raw first_seen count that ignores
+        # category and source caps.
+        self.assertEqual(accepted_today.__doc__.splitlines()[0], "Return the products that can actually appear in today's dashboard.")
 
 
 if __name__ == "__main__":

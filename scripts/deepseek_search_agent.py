@@ -144,10 +144,28 @@ def call_deepseek(prompt, max_tokens=7000, attempts=3):
     raise RuntimeError(f"DeepSeek request failed after retries: {last_error}")
 
 
-def accepted_today():
+def accepted_today(target=40):
+    """Return the products that can actually appear in today's dashboard.
+
+    Counting every reviewed product made the search agent believe the target
+    was complete even when category/source caps left the published group short.
+    """
     products = load_json(DATA_DIR / "products.json", [])
-    current_day = today()
-    rows = [item for item in products if item.get("first_seen") == current_day]
+    published = load_json(DATA_DIR / "published.json", {})
+    try:
+        from build_site import build_daily_groups, record, sorted_products
+
+        groups = build_daily_groups(
+            [record(item) for item in sorted_products(products)],
+            per_day=max(40, target),
+            max_days=1,
+            previous_groups=published.get("daily_groups", []),
+            current_date=today(),
+        )
+        group = next((row for row in groups if row.get("date") == today()), {})
+        rows = group.get("items") or []
+    except Exception:
+        rows = [item for item in products if item.get("first_seen") == today()]
     return len(rows), Counter(item.get("category") or "未分类" for item in rows)
 
 
@@ -188,7 +206,7 @@ def fallback_query_jobs(limit, round_index=0):
 
 
 def plan_queries(query_count, target, round_index):
-    current_count, current_categories = accepted_today()
+    current_count, current_categories = accepted_today(target)
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
     domains = ", ".join(allowed_domains())
     preferences = preference_context()
@@ -210,7 +228,7 @@ def plan_queries(query_count, target, round_index):
 请生成最多 {query_count} 条高精度搜索词。目标是找到数据库从未收录的具体产品或具体设计案例，不要求当天发布。
 
 硬规则：
-1. 只搜索下面的允许品类，优先今天数量少的品类；同一品类计划不超过总搜索词的 20%。
+1. 只搜索下面的允许品类。以“最终页面已展示分布”为准，优先仍有展示席位且今天数量少的品类；已达到单品类 4 条的品类停止搜索，手机壳和充电宝达到 3 条后停止搜索，钥匙扣水壶达到 2 条后停止搜索。同一品类计划不超过总搜索词的 20%。
 2. 70% 搜索词必须带 site:白名单域名，优先设计奖、设计媒体、包装网站、众筹和真实商品页。
 3. 搜索词必须指向具体产品页或具体案例页，避免 search、collection、tag、topic、首页和泛文章。
 4. 明确排除普通基础款、换色/印花/普通联名、建筑新闻、汽车、宠物用品、泛科技新闻和已停用品类。
@@ -527,7 +545,7 @@ def write_agent_report(stats):
 
 
 def run_agent(args):
-    current_count, current_categories = accepted_today()
+    current_count, current_categories = accepted_today(args.target)
     jobs = plan_queries(args.query_count, args.target, args.round)
     print(f"agent_plan queries={len(jobs)} current={current_count}/{args.target}", flush=True)
     results = execute_searches(jobs, args.per_query, args.search_workers)

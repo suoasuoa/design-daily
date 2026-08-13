@@ -85,6 +85,11 @@ def main():
             return
 
     for index in range(args.max_passes):
+        # Later passes should broaden the query plan when a strict quality
+        # gate leaves a real display deficit instead of repeating the same
+        # small set of saturated categories.
+        pass_queries = args.agent_queries + index * max(20, args.agent_queries // 2)
+        pass_pages = args.agent_pages + index * max(80, args.agent_pages // 2)
         run(
             [
                 sys.executable,
@@ -94,11 +99,11 @@ def main():
                 "--round",
                 str(index + 1),
                 "--query-count",
-                str(args.agent_queries),
+                str(pass_queries),
                 "--per-query",
                 str(args.per_job),
                 "--max-pages",
-                str(args.agent_pages),
+                str(pass_pages),
                 "--search-workers",
                 str(args.workers),
                 "--screen-workers",
