@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-12T21:22:41+08:00
+- 生成时间：2026-08-13T08:25:07+08:00
 
 ## 行动分布
 
@@ -35,7 +35,7 @@
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils
 
-明确产品：Eyra厨房用具套装，为老年手部设计独特倾斜手柄，降低握持负担，并配有磁吸挂架，人机工学创新明确。。页面证据：Uniquely angled handles make each utensil easier to cook with.Early Bird Special - 25% off RRP A set of four Eyra kitchen utensils: pasta grabber, serving spoon, spatula and slotted spoon. Plus a magnetic rack for easy access and storage. Available in aubergine or orange.
+创意厨具，专为老年人设计，倾斜手柄降低握持负担，磁吸挂架方便收纳，功能创新明确。虽针对特定人群，但实用性和功能设计良好，价格预计高于35元，3秒可理解卖点。
 
 ### 3. Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance
 
@@ -59,7 +59,7 @@ Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB 
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407
 
-Mid-Autumn Festival Campaign 2011月饼盒：圆柱形组件可展开成梯田模块展示月饼，并可放入蜡烛转化为灯笼，结构复用创新。。页面证据：The result is a mooncake box that is “functionally aesthetic”. It features a cylindrical component that opens up into a “terraced” module, storing and displaying four mooncakes. The box itself can hold a tealight or a candle, quickly transforming it into a lantern. The soft glow of the light within the box will accentuate the intricate pattern cut into its walls.
+设计有创意，但商业化程度低，针对性太强。
 
 ### 5. #折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram
 
@@ -71,7 +71,7 @@ Mid-Autumn Festival Campaign 2011月饼盒：圆柱形组件可展开成梯田�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.instagram.com/reel/DWpmFr-iWrO
 
-诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平
+折叠礼盒设计实用，节省空间，适合高档礼品包装，视频展示成型过程直观易懂，具备情绪价值。但需求频率中等，功能门槛不高。
 
 ### 6. Mid-Autumn Festival Campaign 2011 (10) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.
 
@@ -83,7 +83,7 @@ Mid-Autumn Festival Campaign 2011月饼盒：圆柱形组件可展开成梯田�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947
 
-同dbdfed1b70d4，同一项目不同模块，月饼盒可变形为灯笼，结构复用创新。。页面证据：The result is a mooncake box that is “functionally aesthetic”. It features a cylindrical component that opens up into a “terraced” module, storing and displaying four mooncakes. The box itself can hold a tealight or a candle, quickly transforming it into a lantern. The soft glow of the light within the box will accentuate the intricate pattern cut into its walls.
+月饼盒可变形为灯笼，功能与节日场景结合，结构创新，实用性和情绪价值兼备，但使用频率低，3秒内理解难度较高。
 
 ### 7. Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA
 
@@ -143,7 +143,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/161108345/-2022-
 
-黑天鹅2022中秋月饼礼盒：开盒过程设计成天鹅展开羽翼的动作，黑色折叠羽翼环抱中央白色纸浆月饼盒，具有明确的结构与叙事创新，是可买样的实体礼盒产品。。页面证据：Branding, Packaging, Art Direction
+开盒结构有叙事创新，具备情绪价值，但节日性、低频、受众窄导致功能与普适性一般。
 
 ### 12. Introducing our Changeable Photo Phone Case How you can ...
 
@@ -167,7 +167,7 @@ Pinterest · 磁吸收纳锅铲套装
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/145263273/_
 
-端午礼盒采用魔方盒子结构，开启有旋转互动，增加节日趣味，包装结构创新明确。。页面证据：Branding, Packaging, Graphic Design, Adobe Illustrator, Blender
+包装结构创新，魔方旋转互动有辨识度，3秒内可理解；端午礼盒属于节令性商品，场景明确，售价预计超过35元，但需求频率低，实用性偏弱。
 
 ### 14. Wine box with sliding lid-butler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe
 
@@ -215,7 +215,7 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/181747603/-Moon-Fun
 
-明确的中秋礼盒设计，采用可循环水洗牛皮纸袋和可降解纸浆礼盒，具备可持续材料创新，可作为中秋礼盒包装结构及材料创新参考。。页面证据：Photography, Graphic Design, Illustration
+产品为中秋礼盒设计，实用性和高频需求低，但具备可持续材料创新和情绪价值，售价可能高于35，3秒看懂度一般。
 
 ### 18. Dragon Boat tenon and tenon gift box design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fac
 
@@ -239,7 +239,7 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/75633507/Business-gifts-SIBERK
 
-明确产品：SIBERK 时间主题商务礼品盒，采用滑动开启机制，含3D模型、压印、圣诞版等设计过程。创新证据：互动滑盖开箱结构，非平面贴图。。页面证据：Time themed business gift series with fun sliding opening mechanism.
+产品为创意商务礼品盒，滑动开启机制独特，具备设计感和情绪价值，但实用性和高频需求较弱，受众范围有限，功能上可能不如传统包装便捷。
 
 ### 20. Moon Spinning for Château :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.
 
@@ -251,7 +251,7 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 - 下一步：买样看材质、尺寸、成本和差评点
 - 链接：https://www.behance.net/gallery/95528181/Moon-Spinning-for-Chateau
 
-Moon Spinning for Château，酒店礼品盒，互动设计，月兔旋转主题。。页面证据：Creative and interactive packaging design for Hotel Château.
+产品为酒店创意礼盒，实用性和频率较低，但价格可能较高，主题独特，但3秒内不易理解，功能支撑不足。
 
 ### 21. Quench Your Thirst and Ditch Plastic Water Bottles Forever
 
@@ -445,7 +445,19 @@ TEÏDO self-powered water bottle with NASA membrane filtration and UV-C.。页�
 
 Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to do so by changing their diet. It makes lightly seasoned meals healthier and more enjoyable. The tableware and cutlery act as tools to help start and ma
 
-### 37. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
+### 37. 6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡
+
+- 品类：充电宝
+- 路径：适合改造
+- 启发：功能启发、结构启发
+- 分数：8.6
+- 来源：Kickstarter
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.kickstarter.com/projects/2107105009/amplyte-6-in-1-smartcharge-power-bank-charger
+
+明确单品：Amplyte 6合1移动电源，内置AC插头与双端线，支持无线快充和智能手表充电，并带手机支架；功能集成度高，便携指向明确。。页面证据：Wireless Charging | Super Powerful & Fast Charging | AC Plug & Dual-End Cable | Smartwatch Compatible | Pocket Size | Phone Stand. For creators For creators Log in.
+
+### 38. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -457,7 +469,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 LARQ Bottle自清洁水杯，UV-C LED消除99.9999%生物污染物，兼具保温/净化功能，明确单品，功能创新。。页面证据：Justin Wang さんはLARQ Bottle - Water Purification in a Self-Cleaning Bottle としてファンディングを開始しました。 No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.
 
-### 38. Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77
+### 39. Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77
 
 - 品类：水杯
 - 路径：适合改造
@@ -468,18 +480,6 @@ LARQ Bottle自清洁水杯，UV-C LED消除99.9999%生物污染物，兼具保�
 - 链接：https://www.core77.com/posts/100354/Collapsible-Reusable-Water-Bottle-Gets-500-Funded-on-Kickstarter
 
 Stojo 20盎司硅胶水瓶可折叠成球体，便携结构创新，解决空瓶收纳问题。。页面证据：It doesn't collapse down quite as small as that DiFOLD Origami Bottle, but this 20-ounce silicone water bottle by Stojo "collapses into a polite sphere when empty," the brand writes. The brand, started by a trio of NYC-based dads, got their start
-
-### 39. 6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡
-
-- 品类：充电宝
-- 路径：适合改造
-- 启发：功能启发、结构启发
-- 分数：8.6
-- 来源：Kickstarter
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.kickstarter.com/projects/2107105009/amplyte-6-in-1-smartcharge-power-bank-charger
-
-6-in-1 Power Bank Charger 是明确的充电宝单品，集成无线充电、AC插头、双端线、智能手表充电、手机支架等功能，便携且多合一，创新点可明确从标题和描述中确认。。页面证据：Wireless Charging | Super Powerful & Fast Charging | AC Plug & Dual-End Cable | Smartwatch Compatible | Pocket Size | Phone Stand.
 
 ### 40. LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter
 
@@ -779,7 +779,7 @@ Cantilevered Flatware: 悬臂式餐具，手柄抬高使餐具头不接触桌面
 - 下一步：提取结构或功能点，换材质/场景重新组合
 - 链接：https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station
 
-Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity
+可折叠无线充电站结合4合1功能、夜灯和MagSafe，实用性高，充电为高频需求，创意桌搭带来情绪价值，但受众以数码爱好者为主，功能集成可能增加成本。
 
 ### 65. Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter
 
