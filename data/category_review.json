@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T11:40:25+08:00",
+  "generated_at": "2026-08-13T13:16:30+08:00",
   "policy_version": 3,
   "reviews": {
     "457f979bb17e": {
@@ -35127,23 +35127,20 @@
       "policy_version": 3
     },
     "1e43b832be07": {
-      "keep": false,
-      "category": "",
+      "id": "1e43b832be07",
+      "keep": true,
+      "category": "创意礼盒",
       "confidence": 8,
-      "relevance": 9,
-      "utility": 6,
-      "frequency": 5,
-      "broad_appeal": 7,
-      "functionality": 6,
-      "innovation": 7,
-      "price_power": 7,
-      "clarity": 8,
-      "emotion": 8,
       "quality_score": 63,
-      "reason": "Fortnum and Mason biscuit tin with unique circus typography and Victorian tiger illustrations; structural and visual innovation in packaging.",
-      "reviewed_at": "2026-07-16T19:20:56+08:00",
-      "source": "deepseek",
-      "policy_version": 2
+      "relevance": 9,
+      "innovation": 7,
+      "functionality": 6,
+      "clarity": 8,
+      "price_power": 7,
+      "reason": "DeepSeek候选复核：Fortnum and Mason biscuit tin with unique circus typography and Victorian tiger illustrations; structural and visual innovation in packaging.",
+      "reviewed_at": "2026-08-13T13:16:30+08:00",
+      "source": "deepseek_backlog_balanced",
+      "policy_version": 3
     },
     "cf2740f090d3": {
       "id": "cf2740f090d3",

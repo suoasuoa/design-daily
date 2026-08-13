@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-13T11:54:13+08:00",
+  "generated_at": "2026-08-13T13:20:14+08:00",
   "stats": {
-    "total_items": 2355,
+    "total_items": 2356,
     "by_category": {
       "氛围灯": 432,
       "创意厨具": 368,
@@ -10,7 +10,7 @@
       "充电宝": 284,
       "冲锋衣": 168,
       "手机壳": 161,
-      "创意礼盒": 101,
+      "创意礼盒": 102,
       "日历": 79,
       "中秋礼盒": 54,
       "装置艺术": 18,
@@ -18,30 +18,30 @@
       "钥匙扣水壶": 3
     },
     "by_lane": {
-      "适合改造": 1755,
+      "适合改造": 1756,
       "方向参考": 580,
       "可直接买样": 20
     },
     "by_axis": {
       "功能启发": 1520,
       "结构启发": 1193,
-      "情绪启发": 504,
-      "包装启发": 350,
-      "视觉启发": 345
+      "情绪启发": 505,
+      "包装启发": 351,
+      "视觉启发": 346
     },
     "by_source_family": {
       "媒体案例": 867,
       "市场信号": 835,
       "奖项案例": 371,
       "社交灵感": 96,
-      "包装专项": 79,
+      "包装专项": 80,
       "设计社区": 77,
       "弱市场信号": 28,
       "趋势观察": 2
     },
     "by_image_state": {
-      "已对齐": 1198,
-      "缺图": 1151,
+      "已对齐": 1204,
+      "缺图": 1146,
       "待核图": 6
     }
   },
@@ -34706,6 +34706,42 @@
           ]
         },
         {
+          "id": "1e43b832be07",
+          "title": "It’s Biscuit O’Clock With Fortnum and Mason’s Whoppalossus",
+          "category": "创意礼盒",
+          "summary": "创意礼盒设计独特，具有品牌溢价和情绪价值，但实用性、高频属性和受众广度有限。",
+          "score": 63,
+          "price_gate": "likely_over_35",
+          "image": "https://thedieline.com/wp-content/uploads/2026/05/SnapInsta.to_701157188_18586820743019433_9165081646697493850_n.jpg",
+          "url": "https://thedieline.com/fortnum-mason-whoppalossus-design-bridge-biscuit-tin",
+          "source_name": "The Dieline",
+          "source_family": "包装专项",
+          "source_type": "packaging_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "包装启发",
+            "视觉启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-13",
+          "last_seen": "2026-08-13",
+          "review_reason": "DeepSeek候选复核：Fortnum and Mason biscuit tin with unique circus typography and Victorian tiger illustrations; structural and visual innovation in packaging.",
+          "review_source": "deepseek_backlog_balanced",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 63,
+          "innovation": 7,
+          "relevance": 9,
+          "tags": [
+            "创意礼盒",
+            "The Dieline",
+            "Fortnum and Mason",
+            "公开来源"
+          ]
+        },
+        {
           "id": "afcec2bdd1b9",
           "title": "Dyson 限定礼盒",
           "category": "创意礼盒",
@@ -34741,10 +34777,10 @@
           ]
         }
       ],
-      "actual_count": 39,
+      "actual_count": 40,
       "stats": {
         "by_lane": {
-          "适合改造": 30,
+          "适合改造": 31,
           "方向参考": 9
         },
         "by_category": {
@@ -34752,7 +34788,7 @@
           "创意厨具": 7,
           "创意桌搭": 7,
           "氛围灯": 7,
-          "创意礼盒": 3,
+          "创意礼盒": 4,
           "冲锋衣": 2,
           "充电宝": 2,
           "日历": 2,
@@ -34763,7 +34799,7 @@
           "媒体案例": 16,
           "市场信号": 15,
           "奖项案例": 4,
-          "包装专项": 2,
+          "包装专项": 3,
           "设计社区": 2
         },
         "source_quota": {
@@ -34778,7 +34814,7 @@
         "source_quota_fill": {
           "奖项案例": 4,
           "媒体案例": 6,
-          "包装专项": 2,
+          "包装专项": 3,
           "设计社区": 2,
           "市场信号": 3,
           "弱市场信号": 0,
@@ -89890,7 +89926,7 @@
       "id": "29a9b2cd0689",
       "title": "PURITIN (Portable water bottle) :: Behance",
       "category": "水杯",
-      "summary": "具体产品：PURITIN便携自净化水瓶。创新证据：利用仿生学（蝉的启发）实现自净化功能，专为旅行者设计，在材料或结构上有便携和净化创新。。页面证据：PURITIN (Portable water bottle). Introducing the Self-Purifying Bottle, inspired by the remarkable resilience of insects like the Cicadas. Designed to accompany travelers wherever their journey takes them, this cutting-edge bottle revolutionizes water purification on the go.",
+      "summary": "自净化水杯功能实用，适合旅行场景，但目标人群相对有限；功能有创新但需验证实际效果，售价预期高且概念需要一定解释。",
       "score": 81,
       "price_gate": "unknown",
       "image": "",
@@ -89916,6 +89952,10 @@
       "innovation": 9,
       "relevance": 9,
       "tags": [
+        "便携水杯",
+        "自净化",
+        "旅行用",
+        "仿生设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -91034,7 +91074,7 @@
       "summary": "手机壳为高频消耗品，基础保护功能明确，设计独特可提供情绪价值，但目标用户局限于特定机型，实用性受设计影响，价格预计较高。",
       "score": 80,
       "price_gate": "unknown",
-      "image": "",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/51f836189925657.65c0bb18d63cd.png",
       "url": "https://www.behance.net/gallery/189925657/am-emptiness-phonecase",
       "source_name": "Behance",
       "source_family": "社交灵感",
@@ -91044,7 +91084,7 @@
       "axes": [
         "视觉启发"
       ],
-      "image_state": "缺图",
+      "image_state": "已对齐",
       "seen_count": 2,
       "first_seen": "2026-06-11",
       "last_seen": "2026-07-06",
@@ -93981,7 +94021,7 @@
       "id": "aededf7bd733",
       "title": "AYANEO Retro Mini PC AM01 :: Behance",
       "category": "创意桌搭",
-      "summary": "它不仅是一台迷你电脑主机，同时还兼具装饰的桌搭属性，首次为 Mini PC 赋予「潮玩精品」属性，让 Mini PC 从此迈进复古潮玩精品时代。",
+      "summary": "产品将迷你PC与复古潮玩结合，实用性与情绪价值兼备，3秒可识别，售价远超35元，但属于小众高频需求较低。",
       "score": 80,
       "price_gate": "unknown",
       "image": "",
@@ -94008,7 +94048,9 @@
       "relevance": 10,
       "tags": [
         "design_community",
-        "创意桌搭"
+        "创意桌搭",
+        "白名单来源",
+        "适合做结构、包装、功能或外观改造"
       ]
     },
     {
@@ -94082,7 +94124,7 @@
       "id": "11bd09b789ab",
       "title": "WOKY渾圓杯 3.0 ｜MOZU募資動畫 :: Behance",
       "category": "水杯",
-      "summary": "M O Z U. MOZU擴充系統 延伸使用壽命. 這次我們選擇站在你這邊 渾圓杯 3.0 專案正式上線 >>. WOKY 全新升級渾圓杯 3.0 三種上蓋隨心替換，史上最強優化， 顛覆你對所有保溫杯的想像！",
+      "summary": "水杯是日常高频实用品，击中广泛人群；产品设计强调多功能替换上盖，功能无明显短板；外观和设计感有助于情绪价值，但价格未知，存在市场接受度风险。",
       "score": 80,
       "price_gate": "unknown",
       "image": "",
@@ -94108,7 +94150,9 @@
       "relevance": 9,
       "tags": [
         "design_community",
-        "水杯"
+        "水杯",
+        "白名单来源",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
@@ -99041,7 +99085,7 @@
       "id": "3748233b5900",
       "title": "PICDANCE SMART IPHONECASE :: Behance",
       "category": "手机壳",
-      "summary": "Jun 27, 2025 · PICDANCE是一家把科技与潮流完美融合的智能手机壳品牌，品牌致力于为'Z世代'消费群体创造更加个性化更高可玩性的潮流单品。 2023-2024年期间，KIWIDESIGN与PICDANCE团队共同设计开发了该品牌同名手机壳。PICDANCE手机壳通过超高集成度的LED矩阵屏幕技术方案在仅3.6MM的厚度空间实现了随心换图 自由创作 ...",
+      "summary": "产品融合LED显示屏与手机壳，提供个性化互动体验，技术集成度高（3.6mm厚度），视觉效果直观，情感价值突出，适合追求潮流与个性化的年轻群体。但实用性偏向附加功能，受众相对小众。",
       "score": 79,
       "price_gate": "unknown",
       "image": "",
@@ -99066,6 +99110,10 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
+        "LED手机壳",
+        "Z世代",
+        "潮流科技",
+        "可玩性",
         "design_community",
         "手机壳"
       ]
@@ -103263,7 +103311,7 @@
       "id": "fca547e0b6e2",
       "title": "CordSnaps :: Behance",
       "category": "创意桌搭",
-      "summary": "CordSnaps 是一种线缆管理带，通过一系列狭缝固定线缆，实现优雅、耐用且易用的桌面线缆整理。产品明确，结构创新，非基础款。。页面证据：product design industrial design organization leather cable managment.The strap includes a set of slits that the cord is passed through, keeping the strap attached to the cord at all times. The overall effect is a cord management solution that is elegant, durable, and easy to use.",
+      "summary": "产品是简洁高效的线缆管理带，实用性极强，适用于所有桌面用户，概念直观，易理解。虽然使用频率中等，但一次安装长期受益。售价未知，若定价合理（>35元）则竞争力强。简洁设计也带来整洁有序的情绪价值。",
       "score": 78,
       "price_gate": "unknown",
       "image": "",
@@ -103288,6 +103336,10 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "线缆管理",
+        "桌搭",
+        "皮革",
+        "桌面整理",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -105245,7 +105297,7 @@
       "id": "0c8cea59c34e",
       "title": "WOKY –[ ] 渾圓杯 770ml｜募資影片 :: Behance",
       "category": "水杯",
-      "summary": "WOKY –[] 渾圓杯｜募資影片. 【最台吸管保溫杯】 770ml 超大容量！ 一杯暢飲全部外帶手搖由台灣手搖文化出發設計. 有感升級開發770ml大容量結合獨家鈦陶...",
+      "summary": "水杯高频实用，设计源自手摇文化，易理解，但价格未知，功能未显独特优势。",
       "score": 78,
       "price_gate": "unknown",
       "image": "",
@@ -105271,7 +105323,10 @@
       "relevance": 9,
       "tags": [
         "design_community",
-        "水杯"
+        "水杯",
+        "白名单来源",
+        "趋势",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
@@ -105311,7 +105366,7 @@
       "id": "c72769a5dfc1",
       "title": "区别于市面上同质化的圆润充电宝。 维度设计©｜Dimension Design",
       "category": "充电宝",
-      "summary": "设计亮点○ 透明机械美学，打造「看得见的硬核」 采用高透外壳，直接展示内部电芯、电路板、接口等核心组件，打破传统数码产品的封闭黑盒，把“内部结构” 变成",
+      "summary": "透明机械美学设计独特，满足充电功能的同时提供情绪价值，但受众可能偏向科技爱好者。",
       "score": 78,
       "price_gate": "unknown",
       "image": "",
@@ -105337,6 +105392,9 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "透明机械美学",
+        "科技感",
+        "设计驱动",
         "social_public_index",
         "充电宝"
       ]
@@ -110767,7 +110825,7 @@
       "id": "1bf600255450",
       "title": "無敵變形金剛衝鋒衣在這!一件可以三穿.不用$2000. 加LINE官方",
       "category": "冲锋衣",
-      "summary": "自己感覺也蠻透氣的,帽子也是防水的. 喔,這個整個防裝防水. 喔,真的很放下來, 看來機緣之間就穿外層外套的內裡,整件滿版刷絨,保暖效果非常好,所以穿暖,",
+      "summary": "产品功能明确，三穿设计满足多场景需求，防水保暖实用，价格有吸引力。",
       "score": 77,
       "price_gate": "unknown",
       "image": "",
@@ -110792,8 +110850,12 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "冲锋衣",
+        "三穿",
+        "防水保暖",
+        "社交电商",
         "social_public_index",
-        "冲锋衣"
+        "白名单来源"
       ]
     },
     {
@@ -118416,7 +118478,7 @@
       "id": "54d6144ec064",
       "title": "The Tilting Water Cup - Behance",
       "category": "水杯",
-      "summary": "Jun 3, 2024 · 为了解决这个问题，我们设计了一款水杯，鼓励用户多喝水，解决脱水的健康风险。 Industrial design | 2024 Designed by INSPIRE CURVE We designed a tilting cup to encourage people to drink more water. Simple reminders like alarms are often ignored, but people are more likely to react when t",
+      "summary": "解决喝水提醒需求，设计有创意，但倾斜设计可能影响使用稳定性，存在漏水风险。",
       "score": 76,
       "price_gate": "unknown",
       "image": "",
@@ -118441,15 +118503,18 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "水杯",
+        "健康饮水",
+        "创意设计",
         "design_community",
-        "水杯"
+        "白名单来源"
       ]
     },
     {
       "id": "15f7a965b2cf",
       "title": "Smart Kitchen Helper (SKH) :: Behance",
       "category": "创意厨具",
-      "summary": "Apr 27, 2026 · Smart Kitchen Helper (SKH) The Smart Kitchen Helper (SKH) is an intelligent kitchen aid designed to streamline the cooking experience by ensuring essential spices are always within reach. It moves safely along a guided track on the kitchen slab,",
+      "summary": "智能移动香料架，提升烹饪便利性，但仅限特定场景，功能依赖技术稳定性，售价可超35元，但概念需时间理解。",
       "score": 76,
       "price_gate": "unknown",
       "image": "",
@@ -118477,7 +118542,9 @@
       "relevance": 9,
       "tags": [
         "design_community",
-        "创意厨具"
+        "创意厨具",
+        "白名单来源",
+        "适合做结构、包装、功能或外观改造"
       ]
     },
     {
@@ -119575,7 +119642,7 @@
       "summary": "具体产品为“黑胶唱片发光中秋月饼礼盒”，获2024 MUSE设计奖，采用黑胶唱片造型与发光结构，具备包装/结构创新，可转化为礼盒产品。。页面证据：斩获 2024 MUSE 设计奖｜黑胶唱片发光中秋月饼礼盒（图ZNDEwNzk0NTI0） - 包装 - 站酷设计师柏星龙设计原创素材 - 站酷ZCOOL.",
       "score": 75,
       "price_gate": "likely_over_35",
-      "image": "",
+      "image": "https://img.zcool.cn/community/6a7adbce49ec215oykraul9484.png?k=24e68220a7bccc1fba6ca6221af2fff9&t=6a7f3b80",
       "url": "https://www.zcool.com.cn/work/ZNzM5OTgxMjA=.html",
       "source_name": "站酷",
       "source_family": "设计社区",
@@ -119586,7 +119653,7 @@
         "包装启发",
         "结构启发"
       ],
-      "image_state": "缺图",
+      "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-12",
       "last_seen": "2026-08-12",
@@ -124088,7 +124155,7 @@
       "id": "a7ca7680e34e",
       "title": "Moonlit Delights 中秋禮盒設計］ 當法式點心化為蔚然綻放的花，表現 ...",
       "category": "中秋礼盒",
-      "summary": "摺疊形式的外包裝俐落地包覆賀卡及紅包，拆封後可逐一組裝成立體旋轉木馬，透過鑲嵌卡榫結構使木馬得以撥動旋轉。由平面賀卡轉化為桌上型趣味月曆，讓收禮者",
+      "summary": "创意设计将贺卡、红包与立体旋转木马结合，功能完整，情绪价值高，但需求频率低且实用性一般。",
       "score": 75,
       "price_gate": "likely_over_35",
       "image": "",
@@ -124114,8 +124181,11 @@
       "innovation": 9,
       "relevance": 10,
       "tags": [
+        "中秋礼盒",
+        "社媒公开索引",
+        "近现成消费品",
         "social_public_index",
-        "中秋礼盒"
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
@@ -124626,7 +124696,7 @@
       "summary": "人体工学设计解决老年握持痛点，磁吸收纳提升实用性，价格高于35元，设计易于理解，兼具关怀感。",
       "score": 74,
       "price_gate": "likely_over_35",
-      "image": "",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4b12b0161519023.63c6b7088bf9e.jpg",
       "url": "https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils",
       "source_name": "Behance",
       "source_family": "社交灵感",
@@ -124637,7 +124707,7 @@
         "功能启发",
         "包装启发"
       ],
-      "image_state": "缺图",
+      "image_state": "已对齐",
       "seen_count": 2,
       "first_seen": "2026-07-21",
       "last_seen": "2026-08-11",
@@ -129208,7 +129278,7 @@
       "id": "a3cfc72930ea",
       "title": "Highlight Moment 3-in-1 Camping Light - Behance",
       "category": "氛围灯",
-      "summary": "Jan 30, 2025 · 「HIGHLIGHT」作为AUGE LIGHT露营系列第二款产品，集三模照明于一体：手电筒自然光模式专为阅读设计，灯丝氛围灯模式一键切换温馨暖光，SOS模式应对户外险情。",
+      "summary": "三合一功能实用，设计简洁易懂，价格预计高于35元，情绪价值通过氛围灯体现，但需求频次和受众广度受限于露营场景。",
       "score": 74,
       "price_gate": "unknown",
       "image": "",
@@ -129234,14 +129304,17 @@
       "relevance": 9,
       "tags": [
         "design_community",
-        "氛围灯"
+        "氛围灯",
+        "白名单来源",
+        "趋势参考",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
       "id": "c7ae9f13c7f3",
       "title": "Product Design, Rhinoceros, Adobe Photoshop, Keyshot :: Behance",
       "category": "创意桌搭",
-      "summary": "Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。",
+      "summary": "Govee游戏氛围灯套装为游戏场景提供沉浸式RGB氛围照明，外观科技感强，但实用性受限，主要面向游戏玩家和桌搭爱好者，细分市场导致打击面一般。功能单一但基本无短板，售价超过35元，3秒可识别为灯具，情绪价值较高。",
       "score": 74,
       "price_gate": "likely_over_35",
       "image": "",
@@ -129268,8 +129341,11 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
+        "创意桌搭",
+        "游戏氛围灯",
+        "RGB灯",
         "design_community",
-        "创意桌搭"
+        "白名单来源"
       ]
     },
     {
@@ -129785,7 +129861,7 @@
       "id": "49e787c766ae",
       "title": "地球就慢慢“长”出来！一年撕完，直接变身精致地球仪摆件～既实用又 ...",
       "category": "日历",
-      "summary": "DIY Calendar Craft Ideas / Easy Paper Craft Ideas #viralreels #calendar #craft #ideas #papercraft ... #product #reels #trend #rell. more. 7",
+      "summary": "作为日历具备基本实用性，但需一年才能完成，考验耐心；创意性强，易传播，受众较广；价格可能适中，但长期使用可能导致用户放弃。",
       "score": 74,
       "price_gate": "unknown",
       "image": "",
@@ -129810,8 +129886,12 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "日历",
+        "DIY",
+        "地球仪",
+        "创意",
         "social_public_index",
-        "日历"
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
@@ -135159,7 +135239,7 @@
       "id": "c3999abaa05d",
       "title": "旅行折叠漱口杯 - 抖音",
       "category": "水杯",
-      "summary": "TakeToday折叠水杯：户外旅行便携漱口杯神器 #户外旅行必备 #便携折叠水杯 #旅行洗漱神器 #环保水杯推荐 #运动水杯新品.",
+      "summary": "折叠漱口杯在旅行场景下具备实用性，但使用频率较低，目标人群有限；功能上折叠设计便携，但可能存在稳定性和耐用性短板；价格低于35元风险较高，整体竞争激烈。",
       "score": 73,
       "price_gate": "unknown",
       "image": "",
@@ -135184,6 +135264,9 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
+        "旅行户外",
+        "便携折叠",
+        "洗漱神器",
         "curated_keyword",
         "更接近现成消费品，适合买样验证"
       ]
@@ -135567,7 +135650,7 @@
       "id": "80f1ad5938e3",
       "title": "保温杯/魔法分享杯 :: Behance",
       "category": "水杯",
-      "summary": "保温杯/魔法分享杯 一款多功能户外分享杯，分为三部分，杯盖、上半部分为主杯，下半部分为杯子。 考虑生产制造成本，工艺良品等问题，该保温杯方案为最终选定生产方案。 在此只做于分享。 CMF-渐变颜色",
+      "summary": "多功能分享杯设计新颖，兼具保温功能，但概念性较强，实用场景有限。",
       "score": 73,
       "price_gate": "unknown",
       "image": "",
@@ -135594,7 +135677,10 @@
       "relevance": 9,
       "tags": [
         "design_community",
-        "水杯"
+        "水杯",
+        "白名单来源",
+        "趋势",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
@@ -136249,7 +136335,7 @@
       "summary": "折叠礼盒设计巧妙，节省空间且成型快速，实用性强，适用于高档礼品包装，具有一定情绪价值和社交属性。",
       "score": 72,
       "price_gate": "likely_over_35",
-      "image": "",
+      "image": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/656650121_984881997298173_6433831497477513970_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=KnwkbZJaQq8Q7kNvwHXVHLB&_nc_oc=AdrkbvhE1C25b-WP8MdlGM4JweMYWWXTdHL6h_isD1Q8xK7kXosEUyzA5ESEQie_F6E&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=4H5LB1XODbvYhShX7qywrQ&_nc_ss=7c60f&oh=00_AQGE7OfE2e_jXGOSvE7QgvCUD6ahucM7u0AAj2YN3pbcvg&oe=6A831F33",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "source_name": "Instagram",
       "source_family": "社交灵感",
@@ -136261,7 +136347,7 @@
         "包装启发",
         "结构启发"
       ],
-      "image_state": "缺图",
+      "image_state": "已对齐",
       "seen_count": 2,
       "first_seen": "2026-06-11",
       "last_seen": "2026-06-11",
@@ -141142,7 +141228,7 @@
       "id": "b3f8701b4db1",
       "title": "Light Speaker :: Behance",
       "category": "氛围灯",
-      "summary": "五官是我们感知世界的媒介，不同感官的共同运用会产生奇妙的效果。 所以我设计了这一款音箱氛围灯，从视觉和听觉层面创造氛围，提升生活情调。",
+      "summary": "产品兼具氛围灯和音箱功能，实用性与氛围感结合，但功能非刚需且受众较窄，价格不明但设计款可能较高，概念清晰，情绪价值突出。",
       "score": 72,
       "price_gate": "unknown",
       "image": "",
@@ -141168,14 +141254,16 @@
       "relevance": 9,
       "tags": [
         "design_community",
-        "氛围灯"
+        "氛围灯",
+        "白名单来源",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
       "id": "8380b1a78cf6",
       "title": "这是一个关于中国传统24 节气的日历设计项目。客户的 ... - Instagram",
       "category": "日历",
-      "summary": "... 产品结构上把信息与插画分为两个独立的部分，以画框的形式展示艺术家的插画。插画与信息同步，每到一个节气更换画面与日期信息。This is a calendar design",
+      "summary": "24节气日历结合插画展示，兼具实用性与艺术感，但节气文化属性使其受众相对窄，使用频率不高，且功能上需用户理解插画与日期的关联，3秒内不易完全看懂，整体偏小众。",
       "score": 72,
       "price_gate": "unknown",
       "image": "",
@@ -141200,8 +141288,12 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "日历",
+        "节气",
+        "插画",
+        "艺术",
         "social_public_index",
-        "日历"
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
@@ -141274,7 +141366,7 @@
       "id": "7d060ea0d525",
       "title": "冄｜RAN 是一组基于百叶结构的氛围灯具。 层层金属板以理性的节奏 ...",
       "category": "氛围灯",
-      "summary": "冄｜RAN 是一组基于百叶结构的氛围灯具。 层层金属板以理性的节奏展开，构成克制而有序的外壳。 光源隐藏于结构中心，通过几何内核向外渗透，在秩序与留白",
+      "summary": "设计感强的氛围灯，但实用性一般，需求频次较低，目标人群偏小众，功能上作为灯具基本可用，价格未知但设计款通常较高，3秒内不易理解百叶结构，功能成立后情绪价值较好。",
       "score": 72,
       "price_gate": "unknown",
       "image": "",
@@ -141301,14 +141393,18 @@
       "relevance": 9,
       "tags": [
         "social_public_index",
-        "更接近现成消费品，适合买样验证"
+        "氛围灯",
+        "白名单来源",
+        "需人工复核",
+        "更接近现成消费品，适合买样验证",
+        "社媒公开索引"
       ]
     },
     {
       "id": "ef98a52f2ae7",
       "title": "Fleurit Après la Fanure III 在枯萎后绽放 III Collection - Instagram",
       "category": "日历",
-      "summary": "2024 Calendar Design by our studio C.T.S ·Transparent Vinyl •12+1 magnetic visuals •Triple light modes #design #graphicdesign #productdesign #",
+      "summary": "该产品为设计感强的透明磁吸日历，功能基本完整，但面向小众设计爱好者，实用性一般，购买频率低，市场覆盖面窄，情绪价值高于实用价值。",
       "score": 72,
       "price_gate": "unknown",
       "image": "",
@@ -141334,15 +141430,19 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "日历",
+        "设计",
+        "透明",
+        "磁吸",
         "social_public_index",
-        "日历"
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
       "id": "e227c1fc446d",
       "title": "Award360° 2025 BEST 100 >> 編織日曆Interwoven Calendar DA",
       "category": "日历",
-      "summary": "随着时间的推移，不断扩展和演变，展现出生命般的活力和繁茂。就像一块吸收了能量的海绵，不断吸收周围的灵感和资源，变得更加充实和丰富。与之匹配的Newone",
+      "summary": "该产品为概念性编织日历，实用性一般，主要面向设计爱好者，大众需求不高。价格或可接受，但功能单一，3秒内难以理解其价值。强调情绪价值但功能基础较弱。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "",
@@ -141368,14 +141468,17 @@
       "relevance": 9,
       "tags": [
         "social_public_index",
-        "日历"
+        "日历",
+        "偏概念设计",
+        "更接近现成消费品，适合买样验证",
+        "白名单来源"
       ]
     },
     {
       "id": "73b4c404a7e8",
       "title": "This One-Second Luxury Gift Box From China Is Going Viral",
       "category": "创意礼盒",
-      "summary": "想定制创意性礼盒，这款滑盖盒千万别错过。 English Transcript. It ... because customers see your packaging first, not your product... and box ideas",
+      "summary": "滑盖礼盒设计独特，开盒体验有仪式感，适合送礼场景，售价可能超35元，但使用频率低，功能单一。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "",
@@ -141400,15 +141503,18 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "创意礼盒",
+        "白名单来源",
+        "社媒公开索引",
         "social_public_index",
-        "创意礼盒"
+        "更接近现成消费品，适合买样验证"
       ]
     },
     {
       "id": "1f4902154daa",
       "title": "Flat When You Ship. Fabulous When They Open. Save on freight ...",
       "category": "创意礼盒",
-      "summary": "It's always satisfying to see a packaging idea become a real product. ... 想定制创意性礼盒，这款滑盖盒千万别错过。 English Transcript. It",
+      "summary": "创意礼盒设计巧妙，节省运费且开箱体验佳，虽然使用频率不高，但受众广，价格可超过35元。3秒内能展示核心卖点，情绪价值明显。",
       "score": 72,
       "price_gate": "likely_over_35",
       "image": "",
@@ -141419,7 +141525,8 @@
       "source_quality": "standard",
       "action_lane": "可直接买样",
       "axes": [
-        "包装启发"
+        "包装启发",
+        "情绪启发"
       ],
       "image_state": "缺图",
       "seen_count": 1,
@@ -141433,8 +141540,12 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "创意礼盒",
         "social_public_index",
-        "创意礼盒"
+        "扁平包装",
+        "惊喜开箱",
+        "更接近现成消费品，适合买样验证",
+        "白名单来源"
       ]
     },
     {
@@ -145464,7 +145575,7 @@
       "id": "12530ac39cc3",
       "title": "Introducing our Changeable Photo Phone Case How you can ...",
       "category": "手机壳",
-      "summary": "✨ Because ordinary gifts are boring Make gifts extra special with our premium customized mobile covers by ThebaeGift Here we have something",
+      "summary": "可更换照片手机壳结合了手机壳的高频需求与个性化定制的情感价值，概念简单易懂，售价能超过35元，且社媒来源显示有内容爆点潜力。",
       "score": 71,
       "price_gate": "likely_over_35",
       "image": "",
@@ -145490,7 +145601,9 @@
       "relevance": 9,
       "tags": [
         "social_public_index",
-        "手机壳"
+        "手机壳",
+        "白名单来源",
+        "社媒公开索引"
       ]
     },
     {
@@ -146077,7 +146190,7 @@
       "summary": "以台历为基础，融合小房子造型和翻页交互，兼具实用与设计感；'回家'概念赋予情绪价值，但受众偏设计爱好者，大众接受度有限。",
       "score": 70,
       "price_gate": "unknown",
-      "image": "",
+      "image": "https://img.zcool.cn/community/6a7c7ef2b110c08s0gced35797.png?k=9fb09839672f803eb7ecbccb84ad00d9&t=6a7f3b80",
       "url": "https://www.zcool.com.cn/work/ZNzQwMDI0MjA=.html",
       "source_name": "站酷",
       "source_family": "设计社区",
@@ -146087,7 +146200,7 @@
       "axes": [
         "结构启发"
       ],
-      "image_state": "缺图",
+      "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-13",
       "last_seen": "2026-08-13",
@@ -150182,7 +150295,7 @@
       "id": "257ea2ba1ab1",
       "title": "如何用丙烯马克笔改造多巴胺手机壳-抖音",
       "category": "手机壳",
-      "summary": "手机壳DIY过程 黑猫 和鱼 工具 ：透明手机壳+丙烯马克笔 #手工diy #手工 #创意diy #画画 #手机壳diy. 拥有一套丙烯马克笔就是实现手机壳自由！",
+      "summary": "产品为DIY手机壳，实用性和高频需求一般，受众偏手工爱好者，功能上可能存在易掉色、操作门槛等短板，价格不明确，但3秒内能直观展示创意过程，个性化情绪价值较高。",
       "score": 70,
       "price_gate": "unknown",
       "image": "",
@@ -150208,8 +150321,12 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
+        "手机壳",
+        "DIY",
+        "丙烯马克笔",
+        "手工",
         "curated_keyword",
-        "手机壳"
+        "白名单来源"
       ]
     },
     {
@@ -150351,7 +150468,7 @@
       "id": "8e245cfe953e",
       "title": "The SEEDTOPIA™ 24 Solar Terms Seeds Calendar - Behance",
       "category": "日历",
-      "summary": "Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...",
+      "summary": "产品将日历与种植结合，有一定实用性，但功能定位偏向小众，主要吸引城市青年，打击面有限。价格超过35元，且概念简单易于理解，能带来情感上的自然连接，但使用频率不高，种子种植与日历功能可能存在季节不符的短板。",
       "score": 70,
       "price_gate": "likely_over_35",
       "image": "",
@@ -150377,7 +150494,9 @@
       "relevance": 9,
       "tags": [
         "design_community",
-        "日历"
+        "日历",
+        "白名单来源",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
@@ -150757,7 +150876,7 @@
       "id": "217f67c19e2c",
       "title": "趣香七夕表白礼盒创意设计 :: Behance",
       "category": "创意礼盒",
-      "summary": "Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。",
+      "summary": "产品将广式点心与录音功能结合，定位七夕表白场景，情感价值高，但使用频率低，地域性偏强，功能直观度一般，价格有支撑。",
       "score": 70,
       "price_gate": "likely_over_35",
       "image": "",
@@ -150783,8 +150902,12 @@
       "innovation": 8,
       "relevance": 9,
       "tags": [
+        "创意礼盒",
+        "表白神器",
+        "录音功能",
+        "广式点心",
         "design_community",
-        "创意礼盒"
+        "白名单来源"
       ]
     },
     {
@@ -150857,7 +150980,7 @@
       "id": "7d61df904a3c",
       "title": "終於可以分享一個我藏很久的project了我們剛完成一盞新燈的設計想 ...",
       "category": "氛围灯",
-      "summary": "... 燈。這款隨形燈是用旋鈕來調整亮度的，不像有些燈只有三段讓你選，可以細緻的調整到最適合每個場景的亮度。想擺在玄關當氛圍燈，或是在床頭當小夜燈都可以。",
+      "summary": "这是一款可调亮度的氛围灯，适用于玄关、床头等场景，功能简单实用，但需求频率和受众范围一般。售价可能高于35元，但需关注市场竞争。",
       "score": 70,
       "price_gate": "unknown",
       "image": "",
@@ -150882,6 +151005,9 @@
       "innovation": 7,
       "relevance": 9,
       "tags": [
+        "氛围灯",
+        "可调亮度",
+        "家居装饰",
         "social_public_index",
         "更接近现成消费品，适合买样验证"
       ]
@@ -155722,7 +155848,7 @@
       "id": "af19d1b7db49",
       "title": "Dragon Boat tenon and tenon gift box design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fac",
       "category": "端午礼盒",
-      "summary": "明确的端午礼盒设计，结合榫卯结构和绳子元素，具有结构创新和传统文化传承。。页面证据：Product Design, Graphic Design, Illustration, Adobe Illustrator, Adobe Photoshop, Blender 3D, Maxon Cinema 4D, Adobe After Effects",
+      "summary": "端午礼盒结合榫卯结构，具有创新性和传统文化底蕴，包装设计美观，情绪价值高，但季节性明显，需求频次低。",
       "score": 65,
       "price_gate": "likely_over_35",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c86693173012211.64891d780def6.gif",
@@ -155749,6 +155875,10 @@
       "innovation": 8,
       "relevance": 10,
       "tags": [
+        "端午",
+        "礼盒",
+        "榫卯",
+        "国潮",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -156558,6 +156688,42 @@
       "tags": [
         "editorial_main",
         "iF Design Award"
+      ]
+    },
+    {
+      "id": "1e43b832be07",
+      "title": "It’s Biscuit O’Clock With Fortnum and Mason’s Whoppalossus",
+      "category": "创意礼盒",
+      "summary": "创意礼盒设计独特，具有品牌溢价和情绪价值，但实用性、高频属性和受众广度有限。",
+      "score": 63,
+      "price_gate": "likely_over_35",
+      "image": "https://thedieline.com/wp-content/uploads/2026/05/SnapInsta.to_701157188_18586820743019433_9165081646697493850_n.jpg",
+      "url": "https://thedieline.com/fortnum-mason-whoppalossus-design-bridge-biscuit-tin",
+      "source_name": "The Dieline",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-13",
+      "review_reason": "DeepSeek候选复核：Fortnum and Mason biscuit tin with unique circus typography and Victorian tiger illustrations; structural and visual innovation in packaging.",
+      "review_source": "deepseek_backlog_balanced",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 63,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "创意礼盒",
+        "The Dieline",
+        "Fortnum and Mason",
+        "公开来源"
       ]
     },
     {

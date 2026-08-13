@@ -25037,10 +25037,34 @@
       "端午礼盒"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 48,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 2,
+      "broad_appeal": 3,
+      "functionality": 6,
+      "price_power": 8,
+      "clarity": 7,
+      "emotion": 8,
+      "trend_tags": [
+        "端午",
+        "礼盒",
+        "榫卯",
+        "国潮",
+        "包装设计"
+      ],
+      "reason": "端午礼盒结合榫卯结构，具有创新性和传统文化底蕴，包装设计美观，情绪价值高，但季节性明显，需求频次低。",
+      "risk": "季节性需求，销售窗口短；榫卯结构可能增加生产成本和组装难度；目标客群窄，需强化文化营销。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "端午",
+      "礼盒",
+      "榫卯",
+      "国潮",
+      "包装设计"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -25062,7 +25086,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/173012211/Dragon-Boat-tenon-and-tenon-gift-box-design",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:02+08:00",
+    "updated_at": "2026-08-13T13:17:18+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -25080,7 +25104,9 @@
       "clarity": 8,
       "emotion": 0,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "端午礼盒结合榫卯结构，具有创新性和传统文化底蕴，包装设计美观，情绪价值高，但季节性明显，需求频次低。",
+    "ai_risk": "季节性需求，销售窗口短；榫卯结构可能增加生产成本和组装难度；目标客群窄，需强化文化营销。"
   },
   {
     "id": "120e4754c919",
@@ -30578,10 +30604,32 @@
       "创意桌搭"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 76,
+    "selection_scores": {
+      "utility": 9,
+      "frequency": 6,
+      "broad_appeal": 8,
+      "functionality": 8,
+      "price_power": 5,
+      "clarity": 9,
+      "emotion": 7,
+      "trend_tags": [
+        "线缆管理",
+        "桌搭",
+        "皮革",
+        "桌面整理"
+      ],
+      "reason": "产品是简洁高效的线缆管理带，实用性极强，适用于所有桌面用户，概念直观，易理解。虽然使用频率中等，但一次安装长期受益。售价未知，若定价合理（>35元）则竞争力强。简洁设计也带来整洁有序的情绪价值。",
+      "risk": "市场已有多种线缆管理产品，竞争激烈，需突出材质和设计差异化。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "线缆管理",
+      "桌搭",
+      "皮革",
+      "桌面整理"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -30603,7 +30651,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/41116073/CordSnaps",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:02+08:00",
+    "updated_at": "2026-08-13T13:17:03+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -30621,7 +30669,9 @@
       "clarity": 9,
       "emotion": 6,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品是简洁高效的线缆管理带，实用性极强，适用于所有桌面用户，概念直观，易理解。虽然使用频率中等，但一次安装长期受益。售价未知，若定价合理（>35元）则竞争力强。简洁设计也带来整洁有序的情绪价值。",
+    "ai_risk": "市场已有多种线缆管理产品，竞争激烈，需突出材质和设计差异化。"
   },
   {
     "id": "05a15a1d39f0",
@@ -31955,7 +32005,7 @@
     "title": "Eyra Kitchen Utensils - Behance",
     "category": "创意厨具",
     "summary": "明确产品：Eyra厨房用具套装，为老年手部设计独特倾斜手柄，降低握持负担，并配有磁吸挂架，人机工学创新明确。。页面证据：Uniquely angled handles make each utensil easier to cook with.Early Bird Special - 25% off RRP A set of four Eyra kitchen utensils: pasta grabber, serving spoon, spatula and slotted spoon. Plus a magnetic rack for easy access and storage. Available in aubergine or orange.",
-    "image": "",
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4b12b0161519023.63c6b7088bf9e.jpg",
     "tags": [
       "adapt",
       "buy_sample",
@@ -32044,7 +32094,8 @@
       "policy_version": 3
     },
     "ai_reason": "人体工学设计解决老年握持痛点，磁吸收纳提升实用性，价格高于35元，设计易于理解，兼具关怀感。",
-    "ai_risk": "目标人群偏窄，可能因价格和颜色选择有限而影响市场渗透。"
+    "ai_risk": "目标人群偏窄，可能因价格和颜色选择有限而影响市场渗透。",
+    "image_enriched_at": "2026-08-13T13:16:36+08:00"
   },
   {
     "id": "1ef3ffe4a048",
@@ -33264,10 +33315,32 @@
       "水杯"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 69,
+    "selection_scores": {
+      "utility": 7,
+      "frequency": 8,
+      "broad_appeal": 6,
+      "functionality": 6,
+      "price_power": 8,
+      "clarity": 6,
+      "emotion": 7,
+      "trend_tags": [
+        "便携水杯",
+        "自净化",
+        "旅行用",
+        "仿生设计"
+      ],
+      "reason": "自净化水杯功能实用，适合旅行场景，但目标人群相对有限；功能有创新但需验证实际效果，售价预期高且概念需要一定解释。",
+      "risk": "自净化技术的实际过滤效率和可靠性可能成为短板；价格过高或功能体验不佳可能影响普及。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "便携水杯",
+      "自净化",
+      "旅行用",
+      "仿生设计"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -33289,7 +33362,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/193264039/PURITIN-(Portable-water-bottle)",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:02+08:00",
+    "updated_at": "2026-08-13T13:17:08+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -33307,7 +33380,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "自净化水杯功能实用，适合旅行场景，但目标人群相对有限；功能有创新但需验证实际效果，售价预期高且概念需要一定解释。",
+    "ai_risk": "自净化技术的实际过滤效率和可靠性可能成为短板；价格过高或功能体验不佳可能影响普及。"
   },
   {
     "id": "dcfe2fee0901",
@@ -123534,7 +123609,7 @@
     "title": "斩获 2024 MUSE...",
     "category": "中秋礼盒",
     "summary": "具体产品为“黑胶唱片发光中秋月饼礼盒”，获2024 MUSE设计奖，采用黑胶唱片造型与发光结构，具备包装/结构创新，可转化为礼盒产品。。页面证据：斩获 2024 MUSE 设计奖｜黑胶唱片发光中秋月饼礼盒（图ZNDEwNzk0NTI0） - 包装 - 站酷设计师柏星龙设计原创素材 - 站酷ZCOOL.",
-    "image": "",
+    "image": "https://img.zcool.cn/community/6a7adbce49ec215oykraul9484.png?k=24e68220a7bccc1fba6ca6221af2fff9&t=6a7f3b80",
     "tags": [
       "deepseek_search_agent",
       "design_community",
@@ -123585,7 +123660,8 @@
       "clarity": 9,
       "emotion": 9,
       "policy_version": 3
-    }
+    },
+    "image_enriched_at": "2026-08-13T13:16:52+08:00"
   },
   {
     "id": "703773d13cfb",
@@ -125578,7 +125654,7 @@
     "title": "星光小屋台历 | 一座可以翻阅四季的小房子_文创鸭小分队-站酷ZCOOL",
     "category": "日历",
     "summary": "站酷设计作品《星光小屋台历》，把台历做成可放在桌上的小房子，翻日历被设计为“回家”，具有房子结构和翻阅四季的交互创新，是明确的日历单品。。页面证据：2026年台历项目，我们想做不一样的尝试——把台历设计成一座可以放在桌上的小房子，让翻日历这件事变成\"回家\"。 - 插画 | @花枝子Nora @冰醇糕YC @鱼川 @WWilla @TITO @图图 @猩猩.",
-    "image": "",
+    "image": "https://img.zcool.cn/community/6a7c7ef2b110c08s0gced35797.png?k=9fb09839672f803eb7ecbccb84ad00d9&t=6a7f3b80",
     "tags": [
       "deepseek_search_agent",
       "design_community",
@@ -125653,7 +125729,8 @@
       "policy_version": 3
     },
     "ai_reason": "以台历为基础，融合小房子造型和翻页交互，兼具实用与设计感；'回家'概念赋予情绪价值，但受众偏设计爱好者，大众接受度有限。",
-    "ai_risk": "价格未知，若定价过高可能影响购买；实用性可能因造型而打折，且竞争激烈。"
+    "ai_risk": "价格未知，若定价过高可能影响购买；实用性可能因造型而打折，且竞争激烈。",
+    "image_enriched_at": "2026-08-13T13:16:45+08:00"
   },
   {
     "id": "c78b3d06b657",
@@ -132799,10 +132876,32 @@
       "需人工复核"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 52,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 4,
+      "broad_appeal": 4,
+      "functionality": 5,
+      "price_power": 7,
+      "clarity": 6,
+      "emotion": 7,
+      "trend_tags": [
+        "日历",
+        "节气",
+        "插画",
+        "艺术"
+      ],
+      "reason": "24节气日历结合插画展示，兼具实用性与艺术感，但节气文化属性使其受众相对窄，使用频率不高，且功能上需用户理解插画与日期的关联，3秒内不易完全看懂，整体偏小众。",
+      "risk": "目标用户群有限，认知门槛较高，需依赖文化认同和审美偏好，市场教育成本高，可能导致复购率低。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "日历",
+      "节气",
+      "插画",
+      "艺术"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -132824,7 +132923,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/p/CzYzM4uyuzn",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:54+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -132842,7 +132941,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "24节气日历结合插画展示，兼具实用性与艺术感，但节气文化属性使其受众相对窄，使用频率不高，且功能上需用户理解插画与日期的关联，3秒内不易完全看懂，整体偏小众。",
+    "ai_risk": "目标用户群有限，认知门槛较高，需依赖文化认同和审美偏好，市场教育成本高，可能导致复购率低。"
   },
   {
     "id": "ee8fcb6d35ff",
@@ -133271,7 +133372,7 @@
     "title": "#折叠盒定制 #创意礼盒定制 #折叠天地盒 #三角折叠盒 ... - Instagram",
     "category": "创意礼盒",
     "summary": "诶，这种包装盒还要压成一片片的？那怎么成型呢？ 四角胶贴，一秒即可成型。适用于装香水、护肤化妆品等高档礼品。包装盒还能一秒打平，秒变一片片纸板。打平之前，打平",
-    "image": "",
+    "image": "https://scontent-ord5-2.cdninstagram.com/v/t51.71878-15/656650121_984881997298173_6433831497477513970_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=KnwkbZJaQq8Q7kNvwHXVHLB&_nc_oc=AdrkbvhE1C25b-WP8MdlGM4JweMYWWXTdHL6h_isD1Q8xK7kXosEUyzA5ESEQie_F6E&_nc_zt=23&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_gid=4H5LB1XODbvYhShX7qywrQ&_nc_ss=7c60f&oh=00_AQGE7OfE2e_jXGOSvE7QgvCUD6ahucM7u0AAj2YN3pbcvg&oe=6A831F33",
     "tags": [
       "social_public_index",
       "创意礼盒",
@@ -133358,7 +133459,8 @@
       "policy_version": 3
     },
     "ai_reason": "折叠礼盒设计巧妙，节省空间且成型快速，实用性强，适用于高档礼品包装，具有一定情绪价值和社交属性。",
-    "ai_risk": "市场已有类似产品，需明确差异化；预估售价较高，但需验证消费者接受度。"
+    "ai_risk": "市场已有类似产品，需明确差异化；预估售价较高，但需验证消费者接受度。",
+    "image_enriched_at": "2026-08-13T13:16:39+08:00"
   },
   {
     "id": "c72769a5dfc1",
@@ -133377,10 +133479,30 @@
       "需人工复核"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 79,
+    "selection_scores": {
+      "utility": 8,
+      "frequency": 8,
+      "broad_appeal": 7,
+      "functionality": 8,
+      "price_power": 8,
+      "clarity": 9,
+      "emotion": 9,
+      "trend_tags": [
+        "透明机械美学",
+        "科技感",
+        "设计驱动"
+      ],
+      "reason": "透明机械美学设计独特，满足充电功能的同时提供情绪价值，但受众可能偏向科技爱好者。",
+      "risk": "透明外壳易刮花，强度可能不足；售价可能较高，影响大众普及。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "透明机械美学",
+      "科技感",
+      "设计驱动"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -133402,7 +133524,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/p/DYy_NDRk_Oe",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:08+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -133420,7 +133542,9 @@
       "clarity": 9,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "透明机械美学设计独特，满足充电功能的同时提供情绪价值，但受众可能偏向科技爱好者。",
+    "ai_risk": "透明外壳易刮花，强度可能不足；售价可能较高，影响大众普及。"
   },
   {
     "id": "3c087945995e",
@@ -133739,10 +133863,32 @@
       "需人工复核"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 46,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 4,
+      "broad_appeal": 3,
+      "functionality": 6,
+      "price_power": 5,
+      "clarity": 4,
+      "emotion": 6,
+      "trend_tags": [
+        "social_public_index",
+        "氛围灯",
+        "白名单来源",
+        "需人工复核"
+      ],
+      "reason": "设计感强的氛围灯，但实用性一般，需求频次较低，目标人群偏小众，功能上作为灯具基本可用，价格未知但设计款通常较高，3秒内不易理解百叶结构，功能成立后情绪价值较好。",
+      "risk": "市场教育成本高，受众窄，可能叫好不叫座，需人工复核实际销售表现。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "social_public_index",
+      "氛围灯",
+      "白名单来源",
+      "需人工复核"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -133764,7 +133910,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/p/DX1PG4TFIfh",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:13+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -133782,7 +133928,9 @@
       "clarity": 8,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "设计感强的氛围灯，但实用性一般，需求频次较低，目标人群偏小众，功能上作为灯具基本可用，价格未知但设计款通常较高，3秒内不易理解百叶结构，功能成立后情绪价值较好。",
+    "ai_risk": "市场教育成本高，受众窄，可能叫好不叫座，需人工复核实际销售表现。"
   },
   {
     "id": "ef98a52f2ae7",
@@ -133801,10 +133949,34 @@
       "需人工复核"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 45,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 3,
+      "broad_appeal": 2,
+      "functionality": 7,
+      "price_power": 5,
+      "clarity": 6,
+      "emotion": 5,
+      "trend_tags": [
+        "日历",
+        "设计",
+        "透明",
+        "磁吸",
+        "灯光"
+      ],
+      "reason": "该产品为设计感强的透明磁吸日历，功能基本完整，但面向小众设计爱好者，实用性一般，购买频率低，市场覆盖面窄，情绪价值高于实用价值。",
+      "risk": "目标用户群体较小，可能因价格较高或实用性不足而销量有限。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "日历",
+      "设计",
+      "透明",
+      "磁吸",
+      "灯光"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -133826,7 +133998,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/p/CmJmjKdSQYY",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:19+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -133844,7 +134016,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "该产品为设计感强的透明磁吸日历，功能基本完整，但面向小众设计爱好者，实用性一般，购买频率低，市场覆盖面窄，情绪价值高于实用价值。",
+    "ai_risk": "目标用户群体较小，可能因价格较高或实用性不足而销量有限。"
   },
   {
     "id": "e227c1fc446d",
@@ -133863,10 +134037,30 @@
       "需人工复核"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 36,
+    "selection_scores": {
+      "utility": 3,
+      "frequency": 4,
+      "broad_appeal": 2,
+      "functionality": 3,
+      "price_power": 7,
+      "clarity": 4,
+      "emotion": 5,
+      "trend_tags": [
+        "social_public_index",
+        "日历",
+        "偏概念设计"
+      ],
+      "reason": "该产品为概念性编织日历，实用性一般，主要面向设计爱好者，大众需求不高。价格或可接受，但功能单一，3秒内难以理解其价值。强调情绪价值但功能基础较弱。",
+      "risk": "概念性强，可能小众，市场接受度不确定。且功能不突出，易沦为装饰品。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "social_public_index",
+      "日历",
+      "偏概念设计"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -133888,7 +134082,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/p/DVcdTXnk4_6",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:24+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -133906,7 +134100,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "该产品为概念性编织日历，实用性一般，主要面向设计爱好者，大众需求不高。价格或可接受，但功能单一，3秒内难以理解其价值。强调情绪价值但功能基础较弱。",
+    "ai_risk": "概念性强，可能小众，市场接受度不确定。且功能不突出，易沦为装饰品。"
   },
   {
     "id": "73b4c404a7e8",
@@ -133925,10 +134121,30 @@
       "需人工复核"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 57,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 3,
+      "broad_appeal": 6,
+      "functionality": 7,
+      "price_power": 8,
+      "clarity": 8,
+      "emotion": 7,
+      "trend_tags": [
+        "创意礼盒",
+        "白名单来源",
+        "社媒公开索引"
+      ],
+      "reason": "滑盖礼盒设计独特，开盒体验有仪式感，适合送礼场景，售价可能超35元，但使用频率低，功能单一。",
+      "risk": "属于创意消费品，市场教育成本高，需验证实际购买意愿，且易被模仿。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "创意礼盒",
+      "白名单来源",
+      "社媒公开索引"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -133950,7 +134166,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/reel/DR16K1HDoG-",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:29+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -133968,7 +134184,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "滑盖礼盒设计独特，开盒体验有仪式感，适合送礼场景，售价可能超35元，但使用频率低，功能单一。",
+    "ai_risk": "属于创意消费品，市场教育成本高，需验证实际购买意愿，且易被模仿。"
   },
   {
     "id": "1f4902154daa",
@@ -133987,10 +134205,32 @@
       "需人工复核"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 65,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 3,
+      "broad_appeal": 7,
+      "functionality": 8,
+      "price_power": 9,
+      "clarity": 9,
+      "emotion": 7,
+      "trend_tags": [
+        "创意礼盒",
+        "social_public_index",
+        "扁平包装",
+        "惊喜开箱"
+      ],
+      "reason": "创意礼盒设计巧妙，节省运费且开箱体验佳，虽然使用频率不高，但受众广，价格可超过35元。3秒内能展示核心卖点，情绪价值明显。",
+      "risk": "节日性依赖强，日常需求低，可能竞争激烈。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "创意礼盒",
+      "social_public_index",
+      "扁平包装",
+      "惊喜开箱"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -134012,7 +134252,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/reel/DWG0uhwj22i",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:41+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -134030,7 +134270,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "创意礼盒设计巧妙，节省运费且开箱体验佳，虽然使用频率不高，但受众广，价格可超过35元。3秒内能展示核心卖点，情绪价值明显。",
+    "ai_risk": "节日性依赖强，日常需求低，可能竞争激烈。"
   },
   {
     "id": "12530ac39cc3",
@@ -134049,10 +134291,36 @@
       "需人工复核"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 68,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 7,
+      "broad_appeal": 7,
+      "functionality": 6,
+      "price_power": 8,
+      "clarity": 8,
+      "emotion": 8,
+      "trend_tags": [
+        "social_public_index",
+        "手机壳",
+        "白名单来源",
+        "社媒公开索引",
+        "适合作为趋势、内容爆点或方向参考",
+        "需人工复核"
+      ],
+      "reason": "可更换照片手机壳结合了手机壳的高频需求与个性化定制的情感价值，概念简单易懂，售价能超过35元，且社媒来源显示有内容爆点潜力。",
+      "risk": "可更换结构可能影响保护性，且市场竞争激烈，需注意差异化设计和耐用性。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "social_public_index",
+      "手机壳",
+      "白名单来源",
+      "社媒公开索引",
+      "适合作为趋势、内容爆点或方向参考",
+      "需人工复核"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -134074,7 +134342,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/reel/DUAXDNNjGWN",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:46+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -134092,7 +134360,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "可更换照片手机壳结合了手机壳的高频需求与个性化定制的情感价值，概念简单易懂，售价能超过35元，且社媒来源显示有内容爆点潜力。",
+    "ai_risk": "可更换结构可能影响保护性，且市场竞争激烈，需注意差异化设计和耐用性。"
   },
   {
     "id": "1bf600255450",
@@ -134111,10 +134381,32 @@
       "需人工复核"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 79,
+    "selection_scores": {
+      "utility": 9,
+      "frequency": 7,
+      "broad_appeal": 8,
+      "functionality": 9,
+      "price_power": 7,
+      "clarity": 6,
+      "emotion": 6,
+      "trend_tags": [
+        "冲锋衣",
+        "三穿",
+        "防水保暖",
+        "社交电商"
+      ],
+      "reason": "产品功能明确，三穿设计满足多场景需求，防水保暖实用，价格有吸引力。",
+      "risk": "竞品多，需验证质量，标题略显夸张可能影响信任。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "冲锋衣",
+      "三穿",
+      "防水保暖",
+      "社交电商"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -134136,7 +134428,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/reel/DQT9jqUiNie",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:19:52+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -134154,7 +134446,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品功能明确，三穿设计满足多场景需求，防水保暖实用，价格有吸引力。",
+    "ai_risk": "竞品多，需验证质量，标题略显夸张可能影响信任。"
   },
   {
     "id": "a7ca7680e34e",
@@ -134173,10 +134467,30 @@
       "需人工复核"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 52,
+    "selection_scores": {
+      "utility": 4,
+      "frequency": 3,
+      "broad_appeal": 5,
+      "functionality": 7,
+      "price_power": 8,
+      "clarity": 6,
+      "emotion": 8,
+      "trend_tags": [
+        "中秋礼盒",
+        "社媒公开索引",
+        "近现成消费品"
+      ],
+      "reason": "创意设计将贺卡、红包与立体旋转木马结合，功能完整，情绪价值高，但需求频率低且实用性一般。",
+      "risk": "季节性限制明显，组装过程可能复杂，目标受众较窄。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "中秋礼盒",
+      "社媒公开索引",
+      "近现成消费品"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -134198,7 +134512,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/p/Cw3_PyNvVeX",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:20:02+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -134216,7 +134530,9 @@
       "clarity": 9,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "创意设计将贺卡、红包与立体旋转木马结合，功能完整，情绪价值高，但需求频率低且实用性一般。",
+    "ai_risk": "季节性限制明显，组装过程可能复杂，目标受众较窄。"
   },
   {
     "id": "7d61df904a3c",
@@ -134235,10 +134551,30 @@
       "需人工复核"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 64,
+    "selection_scores": {
+      "utility": 8,
+      "frequency": 5,
+      "broad_appeal": 5,
+      "functionality": 7,
+      "price_power": 6,
+      "clarity": 8,
+      "emotion": 6,
+      "trend_tags": [
+        "氛围灯",
+        "可调亮度",
+        "家居装饰"
+      ],
+      "reason": "这是一款可调亮度的氛围灯，适用于玄关、床头等场景，功能简单实用，但需求频率和受众范围一般。售价可能高于35元，但需关注市场竞争。",
+      "risk": "市场已有类似产品，需在设计或功能上体现差异化。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "氛围灯",
+      "可调亮度",
+      "家居装饰"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -134260,7 +134596,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/reel/DXTzn9Dsfc8",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:20:07+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -134278,7 +134614,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "这是一款可调亮度的氛围灯，适用于玄关、床头等场景，功能简单实用，但需求频率和受众范围一般。售价可能高于35元，但需关注市场竞争。",
+    "ai_risk": "市场已有类似产品，需在设计或功能上体现差异化。"
   },
   {
     "id": "e4230baf3975",
@@ -134357,10 +134695,34 @@
       "需人工复核"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 58,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 6,
+      "broad_appeal": 6,
+      "functionality": 5,
+      "price_power": 7,
+      "clarity": 7,
+      "emotion": 6,
+      "trend_tags": [
+        "日历",
+        "DIY",
+        "地球仪",
+        "创意",
+        "摆件"
+      ],
+      "reason": "作为日历具备基本实用性，但需一年才能完成，考验耐心；创意性强，易传播，受众较广；价格可能适中，但长期使用可能导致用户放弃。",
+      "risk": "创意日历可能属于小众需求，且撕页过程冗长，用户可能半途而废，造成负面体验。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "日历",
+      "DIY",
+      "地球仪",
+      "创意",
+      "摆件"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Instagram",
     "sources": [
@@ -134382,7 +134744,7 @@
     "seen_count": 1,
     "url": "https://www.instagram.com/reel/DSMsF1rEgA8",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:20:13+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -134400,7 +134762,9 @@
       "clarity": 9,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "作为日历具备基本实用性，但需一年才能完成，考验耐心；创意性强，易传播，受众较广；价格可能适中，但长期使用可能导致用户放弃。",
+    "ai_risk": "创意日历可能属于小众需求，且撕页过程冗长，用户可能半途而废，造成负面体验。"
   },
   {
     "id": "2e1d8adb8e66",
@@ -134409,7 +134773,7 @@
     "title": "Angry Miao | AM Emptiness Phone Case :: Behance",
     "category": "手机壳",
     "summary": "束下蔓延生长于手机表面。 以 iPhone 15 Pro 为基础，我们分析并确定了手机跌落易损的部位，分别是四角与摄像头，手机壳仅需要对...",
-    "image": "",
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/51f836189925657.65c0bb18d63cd.png",
     "tags": [
       "design_community",
       "手机壳",
@@ -134496,7 +134860,8 @@
       "policy_version": 3
     },
     "ai_reason": "手机壳为高频消耗品，基础保护功能明确，设计独特可提供情绪价值，但目标用户局限于特定机型，实用性受设计影响，价格预计较高。",
-    "ai_risk": "设计感强但可能牺牲部分防护或手感，且品类竞争激烈，非大众款销量有限。"
+    "ai_risk": "设计感强但可能牺牲部分防护或手感，且品类竞争激烈，非大众款销量有限。",
+    "image_enriched_at": "2026-08-13T13:16:37+08:00"
   },
   {
     "id": "6497a1d6782c",
@@ -135893,10 +136258,32 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 71,
+    "selection_scores": {
+      "utility": 7,
+      "frequency": 8,
+      "broad_appeal": 7,
+      "functionality": 7,
+      "price_power": 6,
+      "clarity": 8,
+      "emotion": 6,
+      "trend_tags": [
+        "design_community",
+        "水杯",
+        "白名单来源",
+        "趋势"
+      ],
+      "reason": "水杯高频实用，设计源自手摇文化，易理解，但价格未知，功能未显独特优势。",
+      "risk": "价格不明，市场竞品多，需突出差异化。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "水杯",
+      "白名单来源",
+      "趋势"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -135918,7 +136305,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/157779697/WOKY-770ml",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:21+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -135936,7 +136323,9 @@
       "clarity": 9,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "水杯高频实用，设计源自手摇文化，易理解，但价格未知，功能未显独特优势。",
+    "ai_risk": "价格不明，市场竞品多，需突出差异化。"
   },
   {
     "id": "11bd09b789ab",
@@ -135953,10 +136342,30 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 83,
+    "selection_scores": {
+      "utility": 9,
+      "frequency": 9,
+      "broad_appeal": 8,
+      "functionality": 8,
+      "price_power": 7,
+      "clarity": 8,
+      "emotion": 7,
+      "trend_tags": [
+        "design_community",
+        "水杯",
+        "白名单来源"
+      ],
+      "reason": "水杯是日常高频实用品，击中广泛人群；产品设计强调多功能替换上盖，功能无明显短板；外观和设计感有助于情绪价值，但价格未知，存在市场接受度风险。",
+      "risk": "价格若超过大众心理预期可能影响销量；同类竞品多，需依赖设计差异化。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "水杯",
+      "白名单来源"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -135978,7 +136387,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/234709729/WOKY-30-MOZU",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:25+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -135996,7 +136405,9 @@
       "clarity": 9,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "水杯是日常高频实用品，击中广泛人群；产品设计强调多功能替换上盖，功能无明显短板；外观和设计感有助于情绪价值，但价格未知，存在市场接受度风险。",
+    "ai_risk": "价格若超过大众心理预期可能影响销量；同类竞品多，需依赖设计差异化。"
   },
   {
     "id": "b3f8701b4db1",
@@ -136013,10 +136424,30 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 55,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 5,
+      "broad_appeal": 4,
+      "functionality": 5,
+      "price_power": 6,
+      "clarity": 8,
+      "emotion": 8,
+      "trend_tags": [
+        "design_community",
+        "氛围灯",
+        "白名单来源"
+      ],
+      "reason": "产品兼具氛围灯和音箱功能，实用性与氛围感结合，但功能非刚需且受众较窄，价格不明但设计款可能较高，概念清晰，情绪价值突出。",
+      "risk": "功能可能存在短板（如音质或灯光效果），价格可能过高或过低，市场需求不确定，需验证实际场景。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "氛围灯",
+      "白名单来源"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -136038,7 +136469,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/85499809/Light-Speaker",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:29+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -136056,7 +136487,9 @@
       "clarity": 9,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品兼具氛围灯和音箱功能，实用性与氛围感结合，但功能非刚需且受众较窄，价格不明但设计款可能较高，概念清晰，情绪价值突出。",
+    "ai_risk": "功能可能存在短板（如音质或灯光效果），价格可能过高或过低，市场需求不确定，需验证实际场景。"
   },
   {
     "id": "58d514166edb",
@@ -136193,10 +136626,36 @@
       "适合做结构、包装、功能或外观改造"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 57,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 5,
+      "broad_appeal": 5,
+      "functionality": 6,
+      "price_power": 7,
+      "clarity": 5,
+      "emotion": 7,
+      "trend_tags": [
+        "创意礼盒",
+        "表白神器",
+        "录音功能",
+        "广式点心",
+        "七夕",
+        "国潮"
+      ],
+      "reason": "产品将广式点心与录音功能结合，定位七夕表白场景，情感价值高，但使用频率低，地域性偏强，功能直观度一般，价格有支撑。",
+      "risk": "功能单一，可替代性强，节庆性依赖高，广式点心可能局限非广东用户理解。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "创意礼盒",
+      "表白神器",
+      "录音功能",
+      "广式点心",
+      "七夕",
+      "国潮"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -136218,7 +136677,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/229023437/_",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:42+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -136236,7 +136695,9 @@
       "clarity": 8,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品将广式点心与录音功能结合，定位七夕表白场景，情感价值高，但使用频率低，地域性偏强，功能直观度一般，价格有支撑。",
+    "ai_risk": "功能单一，可替代性强，节庆性依赖高，广式点心可能局限非广东用户理解。"
   },
   {
     "id": "7dfae0316728",
@@ -136374,10 +136835,32 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 66,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 7,
+      "broad_appeal": 5,
+      "functionality": 7,
+      "price_power": 7,
+      "clarity": 8,
+      "emotion": 9,
+      "trend_tags": [
+        "LED手机壳",
+        "Z世代",
+        "潮流科技",
+        "可玩性"
+      ],
+      "reason": "产品融合LED显示屏与手机壳，提供个性化互动体验，技术集成度高（3.6mm厚度），视觉效果直观，情感价值突出，适合追求潮流与个性化的年轻群体。但实用性偏向附加功能，受众相对小众。",
+      "risk": "售价可能偏高，LED屏幕耐用性与功耗存在不确定性，功能对部分用户非刚需，市场教育成本高。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "LED手机壳",
+      "Z世代",
+      "潮流科技",
+      "可玩性"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -136399,7 +136882,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/229089071/PICDANCE-SMART-IPHONECASE",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:49+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -136417,7 +136900,9 @@
       "clarity": 9,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品融合LED显示屏与手机壳，提供个性化互动体验，技术集成度高（3.6mm厚度），视觉效果直观，情感价值突出，适合追求潮流与个性化的年轻群体。但实用性偏向附加功能，受众相对小众。",
+    "ai_risk": "售价可能偏高，LED屏幕耐用性与功耗存在不确定性，功能对部分用户非刚需，市场教育成本高。"
   },
   {
     "id": "8d054c3eba10",
@@ -136674,10 +137159,30 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 76,
+    "selection_scores": {
+      "utility": 8,
+      "frequency": 9,
+      "broad_appeal": 8,
+      "functionality": 6,
+      "price_power": 6,
+      "clarity": 7,
+      "emotion": 7,
+      "trend_tags": [
+        "水杯",
+        "健康饮水",
+        "创意设计"
+      ],
+      "reason": "解决喝水提醒需求，设计有创意，但倾斜设计可能影响使用稳定性，存在漏水风险。",
+      "risk": "概念产品可能难以量产，实际使用体验存疑。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "水杯",
+      "健康饮水",
+      "创意设计"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -136699,7 +137204,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/199843065/The-Tilting-Water-Cup",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:06+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -136717,7 +137222,9 @@
       "clarity": 9,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "解决喝水提醒需求，设计有创意，但倾斜设计可能影响使用稳定性，存在漏水风险。",
+    "ai_risk": "概念产品可能难以量产，实际使用体验存疑。"
   },
   {
     "id": "80f1ad5938e3",
@@ -136734,10 +137241,32 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 62,
+    "selection_scores": {
+      "utility": 7,
+      "frequency": 6,
+      "broad_appeal": 6,
+      "functionality": 7,
+      "price_power": 5,
+      "clarity": 5,
+      "emotion": 6,
+      "trend_tags": [
+        "design_community",
+        "水杯",
+        "白名单来源",
+        "趋势"
+      ],
+      "reason": "多功能分享杯设计新颖，兼具保温功能，但概念性较强，实用场景有限。",
+      "risk": "生产良率待考量，消费者对分享杯接受度未知。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "水杯",
+      "白名单来源",
+      "趋势"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -136759,7 +137288,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/182691649/_",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:12+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -136777,7 +137306,9 @@
       "clarity": 8,
       "emotion": 6,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "多功能分享杯设计新颖，兼具保温功能，但概念性较强，实用场景有限。",
+    "ai_risk": "生产良率待考量，消费者对分享杯接受度未知。"
   },
   {
     "id": "d6884ab7ca75",
@@ -136854,10 +137385,28 @@
       "适合做结构、包装、功能或外观改造"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 62,
+    "selection_scores": {
+      "utility": 7,
+      "frequency": 6,
+      "broad_appeal": 5,
+      "functionality": 6,
+      "price_power": 8,
+      "clarity": 5,
+      "emotion": 6,
+      "trend_tags": [
+        "design_community",
+        "创意厨具"
+      ],
+      "reason": "智能移动香料架，提升烹饪便利性，但仅限特定场景，功能依赖技术稳定性，售价可超35元，但概念需时间理解。",
+      "risk": "功能单一，技术故障风险，价格可能过高影响普及。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "创意厨具"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -136879,7 +137428,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/248298423/Smart-Kitchen-Helper-(SKH)",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:03+08:00",
+    "updated_at": "2026-08-13T13:18:16+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -136897,7 +137446,9 @@
       "clarity": 8,
       "emotion": 6,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "智能移动香料架，提升烹饪便利性，但仅限特定场景，功能依赖技术稳定性，售价可超35元，但概念需时间理解。",
+    "ai_risk": "功能单一，技术故障风险，价格可能过高影响普及。"
   },
   {
     "id": "b99bb7bceb3e",
@@ -142986,10 +143537,32 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 72,
+    "selection_scores": {
+      "utility": 8,
+      "frequency": 6,
+      "broad_appeal": 6,
+      "functionality": 8,
+      "price_power": 8,
+      "clarity": 8,
+      "emotion": 7,
+      "trend_tags": [
+        "design_community",
+        "氛围灯",
+        "白名单来源",
+        "趋势参考"
+      ],
+      "reason": "三合一功能实用，设计简洁易懂，价格预计高于35元，情绪价值通过氛围灯体现，但需求频次和受众广度受限于露营场景。",
+      "risk": "市场定位偏垂直，可能面临小众市场竞争和价格敏感度挑战。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "氛围灯",
+      "白名单来源",
+      "趋势参考"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -143011,7 +143584,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/197556879/Highlight-Moment-3-in-1-Camping-Light",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:04+08:00",
+    "updated_at": "2026-08-13T13:17:52+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -143029,7 +143602,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "三合一功能实用，设计简洁易懂，价格预计高于35元，情绪价值通过氛围灯体现，但需求频次和受众广度受限于露营场景。",
+    "ai_risk": "市场定位偏垂直，可能面临小众市场竞争和价格敏感度挑战。"
   },
   {
     "id": "c7ae9f13c7f3",
@@ -143046,10 +143621,30 @@
       "适合做结构、包装、功能或外观改造"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 59,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 6,
+      "broad_appeal": 5,
+      "functionality": 6,
+      "price_power": 8,
+      "clarity": 7,
+      "emotion": 7,
+      "trend_tags": [
+        "创意桌搭",
+        "游戏氛围灯",
+        "RGB灯"
+      ],
+      "reason": "Govee游戏氛围灯套装为游戏场景提供沉浸式RGB氛围照明，外观科技感强，但实用性受限，主要面向游戏玩家和桌搭爱好者，细分市场导致打击面一般。功能单一但基本无短板，售价超过35元，3秒可识别为灯具，情绪价值较高。",
+      "risk": "细分市场需求有限，同质化竞争激烈，若功能叠加不足可能影响复购。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "创意桌搭",
+      "游戏氛围灯",
+      "RGB灯"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -143071,7 +143666,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:04+08:00",
+    "updated_at": "2026-08-13T13:17:57+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -143089,7 +143684,9 @@
       "clarity": 8,
       "emotion": 7,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "Govee游戏氛围灯套装为游戏场景提供沉浸式RGB氛围照明，外观科技感强，但实用性受限，主要面向游戏玩家和桌搭爱好者，细分市场导致打击面一般。功能单一但基本无短板，售价超过35元，3秒可识别为灯具，情绪价值较高。",
+    "ai_risk": "细分市场需求有限，同质化竞争激烈，若功能叠加不足可能影响复购。"
   },
   {
     "id": "8e245cfe953e",
@@ -143106,10 +143703,30 @@
       "适合作为趋势、内容爆点或方向参考"
     ],
     "price_gate": "likely_over_35",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 51,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 4,
+      "broad_appeal": 3,
+      "functionality": 5,
+      "price_power": 7,
+      "clarity": 6,
+      "emotion": 8,
+      "trend_tags": [
+        "design_community",
+        "日历",
+        "白名单来源"
+      ],
+      "reason": "产品将日历与种植结合，有一定实用性，但功能定位偏向小众，主要吸引城市青年，打击面有限。价格超过35元，且概念简单易于理解，能带来情感上的自然连接，但使用频率不高，种子种植与日历功能可能存在季节不符的短板。",
+      "risk": "目标人群狭窄，种子成活率和季节性问题可能影响用户体验，导致复购率低。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "日历",
+      "白名单来源"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -143131,7 +143748,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:04+08:00",
+    "updated_at": "2026-08-13T13:18:02+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -143149,7 +143766,9 @@
       "clarity": 8,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品将日历与种植结合，有一定实用性，但功能定位偏向小众，主要吸引城市青年，打击面有限。价格超过35元，且概念简单易于理解，能带来情感上的自然连接，但使用频率不高，种子种植与日历功能可能存在季节不符的短板。",
+    "ai_risk": "目标人群狭窄，种子成活率和季节性问题可能影响用户体验，导致复购率低。"
   },
   {
     "id": "572c28d5b5fe",
@@ -143586,10 +144205,30 @@
       "白名单来源"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 58,
+    "selection_scores": {
+      "utility": 6,
+      "frequency": 4,
+      "broad_appeal": 6,
+      "functionality": 7,
+      "price_power": 5,
+      "clarity": 8,
+      "emotion": 5,
+      "trend_tags": [
+        "旅行户外",
+        "便携折叠",
+        "洗漱神器"
+      ],
+      "reason": "折叠漱口杯在旅行场景下具备实用性，但使用频率较低，目标人群有限；功能上折叠设计便携，但可能存在稳定性和耐用性短板；价格低于35元风险较高，整体竞争激烈。",
+      "risk": "低频需求，价格战风险大，功能易被替代。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "旅行户外",
+      "便携折叠",
+      "洗漱神器"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "抖音",
     "sources": [
@@ -143611,7 +144250,7 @@
     "seen_count": 1,
     "url": "https://www.douyin.com/zhuanti/7620587773607069696",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:04+08:00",
+    "updated_at": "2026-08-13T13:17:43+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -143629,7 +144268,9 @@
       "clarity": 8,
       "emotion": 6,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "折叠漱口杯在旅行场景下具备实用性，但使用频率较低，目标人群有限；功能上折叠设计便携，但可能存在稳定性和耐用性短板；价格低于35元风险较高，整体竞争激烈。",
+    "ai_risk": "低频需求，价格战风险大，功能易被替代。"
   },
   {
     "id": "aededf7bd733",
@@ -143646,10 +144287,32 @@
       "适合做结构、包装、功能或外观改造"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 63,
+    "selection_scores": {
+      "utility": 7,
+      "frequency": 4,
+      "broad_appeal": 5,
+      "functionality": 6,
+      "price_power": 10,
+      "clarity": 8,
+      "emotion": 9,
+      "trend_tags": [
+        "design_community",
+        "创意桌搭",
+        "白名单来源",
+        "适合做结构、包装、功能或外观改造"
+      ],
+      "reason": "产品将迷你PC与复古潮玩结合，实用性与情绪价值兼备，3秒可识别，售价远超35元，但属于小众高频需求较低。",
+      "risk": "迷你PC市场较小，功能可能受限于体积导致性能短板，且目标人群有限。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "design_community",
+      "创意桌搭",
+      "白名单来源",
+      "适合做结构、包装、功能或外观改造"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "Behance",
     "sources": [
@@ -143671,7 +144334,7 @@
     "seen_count": 1,
     "url": "https://www.behance.net/gallery/185553851/AYANEO-Retro-Mini-PC-AM01",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:04+08:00",
+    "updated_at": "2026-08-13T13:17:48+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 9,
@@ -143689,7 +144352,9 @@
       "clarity": 9,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品将迷你PC与复古潮玩结合，实用性与情绪价值兼备，3秒可识别，售价远超35元，但属于小众高频需求较低。",
+    "ai_risk": "迷你PC市场较小，功能可能受限于体积导致性能短板，且目标人群有限。"
   },
   {
     "id": "65721418cddd",
@@ -145508,10 +146173,32 @@
       "适合做结构、包装、功能或外观改造"
     ],
     "price_gate": "unknown",
-    "selection_score": 0,
-    "selection_scores": {},
-    "trend_tags": [],
-    "status": "raw",
+    "selection_score": 45,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 4,
+      "broad_appeal": 4,
+      "functionality": 4,
+      "price_power": 3,
+      "clarity": 7,
+      "emotion": 6,
+      "trend_tags": [
+        "手机壳",
+        "DIY",
+        "丙烯马克笔",
+        "手工"
+      ],
+      "reason": "产品为DIY手机壳，实用性和高频需求一般，受众偏手工爱好者，功能上可能存在易掉色、操作门槛等短板，价格不明确，但3秒内能直观展示创意过程，个性化情绪价值较高。",
+      "risk": "属于手工改造类，成品稳定性较差，市场接受度可能受限于手工能力和审美偏好。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "手机壳",
+      "DIY",
+      "丙烯马克笔",
+      "手工"
+    ],
+    "status": "scored",
     "review_status": "unreviewed",
     "source_primary": "抖音",
     "sources": [
@@ -145533,7 +146220,7 @@
     "seen_count": 1,
     "url": "https://www.douyin.com/shipin/7573492234608248872",
     "likes_total": 0,
-    "updated_at": "2026-08-13T11:30:04+08:00",
+    "updated_at": "2026-08-13T13:17:39+08:00",
     "category_review": {
       "status": "approved",
       "confidence": 8,
@@ -145551,7 +146238,9 @@
       "clarity": 9,
       "emotion": 8,
       "policy_version": 3
-    }
+    },
+    "ai_reason": "产品为DIY手机壳，实用性和高频需求一般，受众偏手工爱好者，功能上可能存在易掉色、操作门槛等短板，价格不明确，但3秒内能直观展示创意过程，个性化情绪价值较高。",
+    "ai_risk": "属于手工改造类，成品稳定性较差，市场接受度可能受限于手工能力和审美偏好。"
   },
   {
     "id": "54d1d8b6e05d",
@@ -148088,5 +148777,89 @@
     },
     "ai_reason": "Dyson品牌力强，吹风机实用且功能出色，礼盒形式叠加情绪价值，但高价格和窄受众限制打击面。",
     "ai_risk": "高客单价可能导致转化率低，且来源次数少，存在市场验证不足风险。"
+  },
+  {
+    "id": "1e43b832be07",
+    "product_key": "创意礼盒:ea2ef7e9e51696a9",
+    "content_fingerprint": "创意礼盒:ab0c0274e4d4302d",
+    "title": "It’s Biscuit O’Clock With Fortnum and Mason’s Whoppalossus",
+    "category": "创意礼盒",
+    "summary": "Design Bridge's Whoppalossus tin for Fortnum and Mason pairs a circus marquee typographic ring, a parade of Victorian illustrated tigers, and a teal organic center medallion with a flat-color Biscuits for Drinks box range to create one of t",
+    "image": "https://thedieline.com/wp-content/uploads/2026/05/SnapInsta.to_701157188_18586820743019433_9165081646697493850_n.jpg",
+    "tags": [
+      "The Dieline",
+      "公开来源",
+      "创意礼盒"
+    ],
+    "price_gate": "likely_over_35",
+    "selection_score": 51,
+    "selection_scores": {
+      "utility": 5,
+      "frequency": 3,
+      "broad_appeal": 3,
+      "functionality": 7,
+      "price_power": 8,
+      "clarity": 6,
+      "emotion": 8,
+      "trend_tags": [
+        "创意礼盒",
+        "The Dieline",
+        "Fortnum and Mason"
+      ],
+      "reason": "创意礼盒设计独特，具有品牌溢价和情绪价值，但实用性、高频属性和受众广度有限。",
+      "risk": "小众设计可能限制市场覆盖，价格偏高且非刚需，销售周期可能较长。",
+      "source": "deepseek"
+    },
+    "trend_tags": [
+      "创意礼盒",
+      "The Dieline",
+      "Fortnum and Mason"
+    ],
+    "status": "scored",
+    "review_status": "unreviewed",
+    "source_primary": "The Dieline",
+    "sources": [
+      {
+        "source": "The Dieline",
+        "source_type": "packaging_source",
+        "source_group": "",
+        "quality_tier": "",
+        "source_quality": "premium",
+        "url": "https://thedieline.com/fortnum-mason-whoppalossus-design-bridge-biscuit-tin",
+        "title": "It’s Biscuit O’Clock With Fortnum and Mason’s Whoppalossus",
+        "image": "https://thedieline.com/wp-content/uploads/2026/05/SnapInsta.to_701157188_18586820743019433_9165081646697493850_n.jpg",
+        "likes": 0,
+        "collected_at": "2026-06-04"
+      }
+    ],
+    "first_seen": "2026-08-13",
+    "last_seen": "2026-08-13",
+    "seen_count": 1,
+    "url": "https://thedieline.com/fortnum-mason-whoppalossus-design-bridge-biscuit-tin",
+    "likes_total": 0,
+    "updated_at": "2026-08-13T13:16:57+08:00",
+    "category_review": {
+      "status": "approved",
+      "suggested_category": "",
+      "confidence": 8,
+      "reason": "DeepSeek候选复核：Fortnum and Mason biscuit tin with unique circus typography and Victorian tiger illustrations; structural and visual innovation in packaging.",
+      "reviewed_at": "2026-08-13T13:16:30+08:00",
+      "quality_score": 63,
+      "relevance": 9,
+      "utility": 6,
+      "frequency": 5,
+      "broad_appeal": 7,
+      "functionality": 6,
+      "innovation": 7,
+      "price_power": 7,
+      "clarity": 8,
+      "emotion": 8,
+      "policy_version": 3,
+      "source": "deepseek_backlog_balanced",
+      "backlog_promotion": true,
+      "original_first_seen": "2026-06-04"
+    },
+    "ai_reason": "创意礼盒设计独特，具有品牌溢价和情绪价值，但实用性、高频属性和受众广度有限。",
+    "ai_risk": "小众设计可能限制市场覆盖，价格偏高且非刚需，销售周期可能较长。"
   }
 ]
