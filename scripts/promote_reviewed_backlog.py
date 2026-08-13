@@ -162,7 +162,6 @@ def has_category_evidence(item):
 def is_candidate(
     item,
     published_urls,
-    product_urls,
     *,
     min_quality=70,
     min_innovation=7,
@@ -175,7 +174,6 @@ def is_candidate(
         and item.get("category") not in RETIRED_CATEGORIES
         and bool(item.get("url"))
         and item.get("url") not in published_urls
-        and item.get("url") not in product_urls
         and bool(item.get("image"))
         and int(review.get("confidence") or 0) >= 8
         and int(review.get("quality_score") or 0) >= min_quality
@@ -265,18 +263,13 @@ def main():
 
     published_items = [item for group in previous_groups for item in group.get("items", [])]
     published_urls = {item.get("url") for item in published_items if item.get("url")}
-    # Rejected candidates are often still present in products.json as raw records.
-    # Only published URLs should block backlog promotion; otherwise valid reviewed
-    # candidates are incorrectly treated as already shown.
-    accepted_product_urls = {
-        item.get("url")
-        for item in products
-        if item.get("url") and item.get("status") == "scored"
-    }
+    # Strong products can live in the main pool without ever being shown because
+    # their original date/category was full. They are valid reserve candidates;
+    # only a URL that already appeared in a daily group is ineligible.
     known_titles = [item.get("title") or "" for item in published_items]
     strict_candidates = [
-        item for item in rejected
-        if is_candidate(item, published_urls, accepted_product_urls)
+        item for item in list(products) + list(rejected)
+        if is_candidate(item, published_urls)
     ]
     strict_candidates = [
         item for item in strict_candidates

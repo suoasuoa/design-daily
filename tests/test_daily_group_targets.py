@@ -73,9 +73,13 @@ class DailyGroupTargetTests(unittest.TestCase):
         self.assertFalse(category_under_cap(picks, "充电宝", relaxed=True))
 
     def test_all_categories_keep_strict_caps_during_fill(self):
-        picks = [{"category": "创意桌搭"} for _ in range(4)]
+        picks = [{"category": "创意桌搭"} for _ in range(5)]
 
         self.assertFalse(category_under_cap(picks, "创意桌搭", relaxed="emergency"))
+
+    def test_regular_category_cap_is_five_for_balanced_forty(self):
+        self.assertTrue(category_under_cap([{"category": "水杯"} for _ in range(4)], "水杯"))
+        self.assertFalse(category_under_cap([{"category": "水杯"} for _ in range(5)], "水杯"))
 
     def test_single_source_is_capped_at_five(self):
         picks = [{"source_name": "Yanko Design"} for _ in range(5)]
@@ -122,7 +126,7 @@ class DailyGroupTargetTests(unittest.TestCase):
         self.assertEqual(accepted_today.__doc__.splitlines()[0], "Return the products that can actually appear in today's dashboard.")
 
     def test_search_agent_excludes_categories_with_no_display_slots(self):
-        current = {"水杯": 4, "氛围灯": 4, "创意厨具": 4, "手机壳": 2}
+        current = {"水杯": 5, "氛围灯": 5, "创意厨具": 5, "手机壳": 2}
 
         allowed = searchable_categories(current)
 
