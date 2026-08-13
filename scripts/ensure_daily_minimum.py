@@ -51,6 +51,11 @@ def main():
     parser.add_argument("--agent-queries", type=int, default=60)
     parser.add_argument("--agent-pages", type=int, default=280)
     parser.add_argument("--agent-screen-workers", type=int, default=6)
+    parser.add_argument(
+        "--refresh",
+        action="store_true",
+        help="Search once even when 40 items exist so stronger candidates can replace the bottom of today's group.",
+    )
     args = parser.parse_args()
 
     total_jobs = job_count()
@@ -59,24 +64,25 @@ def main():
 
     count = today_count(args.target)
     print(f"daily_minimum initial={count} target={args.target} jobs={total_jobs}", flush=True)
-    if count >= args.target:
+    if count >= args.target and not args.refresh:
         return
 
     # Use already-reviewed, never-published candidates before spending time and
     # API calls on another search round. Search remains the fallback when the
     # reviewed reserve cannot satisfy the target.
-    run(
-        [
-            sys.executable,
-            "scripts/promote_reviewed_backlog.py",
-            "--target",
-            str(args.target),
-        ]
-    )
-    count = today_count(args.target)
-    print(f"daily_minimum reserve_count={count} target={args.target}", flush=True)
-    if count >= args.target:
-        return
+    if not args.refresh:
+        run(
+            [
+                sys.executable,
+                "scripts/promote_reviewed_backlog.py",
+                "--target",
+                str(args.target),
+            ]
+        )
+        count = today_count(args.target)
+        print(f"daily_minimum reserve_count={count} target={args.target}", flush=True)
+        if count >= args.target:
+            return
 
     for index in range(args.max_passes):
         run(

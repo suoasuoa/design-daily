@@ -9,7 +9,7 @@ from collections import Counter
 from difflib import SequenceMatcher
 
 from build_site import DAILY_CATEGORY_CAPS, build_daily_groups, record, sorted_products
-from insight_common import DATA_DIR, INSIGHT_DIR, load_json, now_iso, semantic_title_duplicate, today, write_json
+from insight_common import DATA_DIR, INSIGHT_DIR, is_ordinary_laptop_stand, load_json, now_iso, semantic_title_duplicate, today, write_json
 from insight_config import CATEGORIES, RETIRED_CATEGORIES
 
 
@@ -164,8 +164,8 @@ def is_candidate(
     published_urls,
     product_urls,
     *,
-    min_quality=65,
-    min_innovation=8,
+    min_quality=70,
+    min_innovation=7,
     min_relevance=8,
 ):
     review = item.get("category_review") or {}
@@ -182,15 +182,13 @@ def is_candidate(
         and int(review.get("innovation") or 0) >= min_innovation
         and int(review.get("relevance") or 0) >= min_relevance
         and has_category_evidence(item)
+        and not is_ordinary_laptop_stand(item)
         and not any(signal in reason for signal in BAD_REASONS)
     )
 
 
 def category_cap(category, emergency=False):
-    base = DAILY_CATEGORY_CAPS.get(category, 3)
-    if category in HARD_CAPS:
-        return base
-    return base + (3 if emergency else 2)
+    return DAILY_CATEGORY_CAPS.get(category, 3)
 
 
 def choose_candidates(candidates, needed, today_items, known_titles, selected=None, emergency=False):
@@ -213,7 +211,7 @@ def choose_candidates(candidates, needed, today_items, known_titles, selected=No
             source = source_name(item)
             if category_counts[category] >= category_cap(category, emergency=emergency):
                 continue
-            if source_counts[source] >= 6:
+            if source_counts[source] >= 5:
                 continue
             if too_similar(item.get("title"), known_titles):
                 continue
@@ -290,55 +288,6 @@ def main():
         today_items,
         [],
     )
-
-    remaining = needed - len(selected)
-    if remaining > 0:
-        selected_ids = {item.get("id") for item in selected}
-        fallback_candidates = [
-            item for item in rejected
-            if item.get("id") not in selected_ids
-            and is_candidate(
-                item,
-                published_urls,
-                accepted_product_urls,
-                min_quality=60,
-                min_innovation=7,
-                min_relevance=8,
-            )
-            and not too_similar(item.get("title"), known_titles)
-        ]
-        selected = choose_candidates(
-            fallback_candidates,
-            remaining,
-            today_items,
-            [],
-            selected=selected,
-        )
-
-    remaining = needed - len(selected)
-    if remaining > 0:
-        selected_ids = {item.get("id") for item in selected}
-        emergency_candidates = [
-            item for item in rejected
-            if item.get("id") not in selected_ids
-            and is_candidate(
-                item,
-                published_urls,
-                accepted_product_urls,
-                min_quality=60,
-                min_innovation=7,
-                min_relevance=8,
-            )
-            and not too_similar(item.get("title"), known_titles)
-        ]
-        selected = choose_candidates(
-            emergency_candidates,
-            remaining,
-            today_items,
-            [],
-            selected=selected,
-            emergency=True,
-        )
 
     strict_ids = {item.get("id") for item in strict_candidates}
 

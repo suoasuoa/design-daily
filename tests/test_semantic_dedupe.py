@@ -71,7 +71,7 @@ class SemanticDedupeTests(unittest.TestCase):
             )
         )
 
-    def test_backlog_recheck_keeps_high_innovation_direction_item(self):
+    def test_backlog_recheck_keeps_high_quality_innovation_item(self):
         item = {
             "title": "A modular light",
             "url": "https://example.com/product/modular-light",
@@ -79,7 +79,7 @@ class SemanticDedupeTests(unittest.TestCase):
             "review_policy_version": 3,
             "review_source": "deepseek_backlog_recheck",
             "review_reason": "模块可重新组合，结构创新明确",
-            "quality_score": 65,
+            "quality_score": 70,
             "innovation": 8,
             "relevance": 9,
             "review_confidence": 8,

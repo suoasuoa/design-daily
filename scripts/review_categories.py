@@ -13,7 +13,7 @@ import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, load_env, load_json, now_iso, semantic_product_duplicate, today, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, is_ordinary_laptop_stand, load_env, load_json, now_iso, semantic_product_duplicate, today, write_json
 from insight_config import (
     CATEGORIES,
     CATEGORY_KEYWORDS,
@@ -118,7 +118,7 @@ def trusted_cached_review(review):
             policy_version == REVIEW_POLICY_VERSION
             and review.get("category") in CATEGORIES
             and int(review.get("confidence") or 0) >= 8
-            and int(review.get("quality_score") or 0) >= 60
+            and int(review.get("quality_score") or 0) >= 70
             and int(review.get("innovation") or 0) >= 7
             and int(review.get("relevance") or 0) >= 8
         )
@@ -127,7 +127,7 @@ def trusted_cached_review(review):
             policy_version == REVIEW_POLICY_VERSION
             and review.get("category") in CATEGORIES
             and int(review.get("confidence") or 0) >= 8
-            and int(review.get("quality_score") or 0) >= 60
+            and int(review.get("quality_score") or 0) >= 70
             and int(review.get("innovation") or 0) >= 7
             and int(review.get("relevance") or 0) >= 8
         )
@@ -240,6 +240,9 @@ def deterministic_evidence_gate(item, review, category):
     if any(signal in reason for signal in UNCERTAINTY_SIGNALS):
         return False, "审核理由含有‘可能/需确认/信息不足’，没有足够证据证明产品价值"
 
+    if is_ordinary_laptop_stand(item, category):
+        return False, "普通笔记本电脑支架方向已过度重复，且缺少足够的功能创新"
+
     text = " ".join(
         [
             str(item.get("title") or ""),
@@ -341,7 +344,7 @@ def review_batch(batch, api_key):
 2. 必须是明确、具体的产品或可转化物件。建筑新闻、汽车、宠物用品、泛设计文章、合集、搜索页、话题页、用户页、首页、纯概念叙事必须删除。
 3. 原品类错误但明确属于另一个允许品类时可以修正；不能因为标题或搜索词出现 bag、case、outdoor、lamp 等单词就硬归类。
 4. 分别评估实用性、高频需求、打击面、功能完整度、创新增量、价格空间、3 秒看懂、情绪价值，所有分数 0-10。
-5. 创新增量必须清楚：至少在功能、结构、材料、交互、视觉、包装或使用场景中有一项明显不同。普通基础款、只换颜色/图案/品牌、常规联名、没有亮点的常规产品，innovation 不得超过 5 且 keep=false。
+5. 创新增量必须清楚：至少在功能、结构、材料、交互、视觉、包装或使用场景中有一项明显不同。普通基础款、只换颜色/图案/品牌、常规联名、没有亮点的常规产品，innovation 不得超过 5 且 keep=false。创意桌搭中的普通笔记本电脑支架、折叠支架或增高架一律 keep=false。
 6. 普通产品必须同时满足：quality_score >= 70、innovation >= 7、functionality >= 6、clarity >= 6、price_power >= 5、confidence >= 8。刚好踩线但说不清创新证据时必须删除。
 7. 装置艺术只作为方向参考：必须 innovation >= 8、clarity >= 6，并能明确提炼为产品结构、交互、光影、材料或内容创意；单纯建筑或大型公共项目不保留。
 8. 礼盒与包装必须有明确的结构、开箱、复用、材料或叙事创新；只有平面视觉或普通盒型不保留。

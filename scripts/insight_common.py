@@ -432,6 +432,26 @@ def semantic_product_duplicate(left, right):
     return bool(product_identity_keys(left) & product_identity_keys(right))
 
 
+def is_ordinary_laptop_stand(item, category=None):
+    """Block the saturated laptop-stand direction from creative desk picks."""
+    category = category or item.get("category") or ""
+    if category != "创意桌搭":
+        return False
+    review = item.get("category_review") or {}
+    text = " ".join(
+        str(value or "")
+        for value in (
+            item.get("title"),
+            item.get("summary"),
+            item.get("reason"),
+            review.get("reason"),
+        )
+    ).lower()
+    laptop_terms = ("laptop", "notebook computer", "macbook", "笔记本电脑", "笔记本")
+    stand_terms = ("stand", "riser", "support", "prop up", "支架", "托架", "增高架", "支撑架")
+    return any(term in text for term in laptop_terms) and any(term in text for term in stand_terms)
+
+
 def guess_category(title, text=""):
     haystack = normalize_text(f"{title} {text}")
     best_category = None

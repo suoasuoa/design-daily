@@ -6,7 +6,7 @@ import json
 import re
 from urllib.parse import urlparse
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, load_json, now_iso, source_quality, source_type, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, is_ordinary_laptop_stand, load_json, now_iso, source_quality, source_type, write_json
 from insight_config import CATEGORIES, DAILY_TARGET_40_CUTOFF, LEGACY_DAILY_TARGET, RETIRED_CATEGORIES
 
 
@@ -49,6 +49,7 @@ DAILY_CATEGORY_CAPS = {
     "冲锋衣": 4,
 }
 DEFAULT_DAILY_CATEGORY_CAP = 3
+DAILY_SOURCE_CAP = 5
 
 
 def effective_score(item):
@@ -257,17 +258,17 @@ def dedupe_key(item):
     return item.get("id") or normalize_key(item.get("url")) or normalize_key(item.get("title"))
 
 
-HARD_DAILY_CATEGORY_CAPS = {"手机壳", "充电宝"}
-RELAXABLE_CATEGORIES = set(DAILY_CATEGORY_CAPS) - HARD_DAILY_CATEGORY_CAPS
-
-
 def category_under_cap(picks, category, relaxed=False):
     category = (category or "").strip()
     cap = DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP)
-    if relaxed and category in RELAXABLE_CATEGORIES:
-        cap += 3 if relaxed == "emergency" else 2
     current = sum(1 for item in picks if item.get("category") == category)
     return current < cap
+
+
+def source_under_cap(picks, source_name_value):
+    source_name_value = (source_name_value or "未知来源").strip()
+    current = sum(1 for item in picks if item.get("source_name") == source_name_value)
+    return current < DAILY_SOURCE_CAP
 
 
 def display_eligible(item):
@@ -279,21 +280,11 @@ def display_eligible(item):
         return False
     if int(item.get("review_policy_version") or 0) < 3:
         return False
-    review_source = str(item.get("review_source") or "")
-    if review_source == "deepseek_backlog_recheck":
-        # Older promoted records used this source for both strict and balanced
-        # tiers. Keep them visible under the balanced floor after the split.
-        minimum_quality = 60
-        minimum_innovation = 7
-    elif review_source == "deepseek_backlog_balanced":
-        minimum_quality = 60
-        minimum_innovation = 7
-    else:
-        minimum_quality = 70
-        minimum_innovation = 7
-    if int(item.get("quality_score") or 0) < minimum_quality:
+    if int(item.get("quality_score") or 0) < 70:
         return False
-    if int(item.get("innovation") or 0) < minimum_innovation or int(item.get("relevance") or 0) < 8:
+    if int(item.get("innovation") or 0) < 7 or int(item.get("relevance") or 0) < 8:
+        return False
+    if is_ordinary_laptop_stand(item):
         return False
     text = f"{item.get('summary', '')} {item.get('review_reason', '')}".lower()
     mismatch_signals = [
@@ -344,6 +335,8 @@ def append_balanced_fill(ranked, picks, seen, per_day, relaxed=False):
         for item in balanced_ranked_items(ranked, picks, seen):
             if not category_under_cap(picks, item.get("category"), relaxed=relaxed):
                 continue
+            if not source_under_cap(picks, item.get("source_name")):
+                continue
             chosen = item
             break
         if not chosen:
@@ -392,7 +385,7 @@ def merge_historical_snapshots(groups, previous_groups, current_date):
     for group in groups:
         day = group.get("date", "")
         previous = previous_by_date.get(day)
-        if not previous or day > current_date:
+        if not previous or day >= current_date:
             continue
 
         target = int(group.get("target_count") or LEGACY_DAILY_TARGET)
@@ -437,6 +430,8 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
                     continue
                 if not category_under_cap(picks, item.get("category")):
                     continue
+                if not source_under_cap(picks, item.get("source_name")):
+                    continue
                 seen.add(key)
                 picks.append(item)
                 if len(picks) >= day_limit:
@@ -445,8 +440,6 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
                 break
 
         append_balanced_fill(ranked, picks, seen, day_limit, relaxed=False)
-        append_balanced_fill(ranked, picks, seen, day_limit, relaxed=True)
-        append_balanced_fill(ranked, picks, seen, day_limit, relaxed="emergency")
 
         groups.append(
             {

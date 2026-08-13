@@ -6,7 +6,8 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_site import category_under_cap, daily_group_limit, merge_historical_snapshots, sorted_daily_items
+from build_site import category_under_cap, daily_group_limit, display_eligible, merge_historical_snapshots, sorted_daily_items, source_under_cap
+from insight_common import is_ordinary_laptop_stand
 from deepseek_search_agent import fallback_query_jobs
 
 
@@ -29,6 +30,16 @@ class DailyGroupTargetTests(unittest.TestCase):
 
         self.assertEqual(len(merged[0]["items"]), 40)
         self.assertEqual(merged[0]["items"][:30], previous_items)
+
+    def test_current_day_snapshot_can_be_replaced_by_better_candidates(self):
+        previous_items = [{"id": "weak", "score": 62}]
+        fresh_items = [{"id": "strong", "score": 84}]
+        groups = [{"date": "2026-08-13", "target_count": 40, "items": fresh_items}]
+        previous = [{"date": "2026-08-13", "target_count": 40, "items": previous_items}]
+
+        merged = merge_historical_snapshots(groups, previous, "2026-08-13")
+
+        self.assertEqual(merged[0]["items"], fresh_items)
 
     def test_daily_items_are_displayed_by_score_descending(self):
         items = [
@@ -60,6 +71,42 @@ class DailyGroupTargetTests(unittest.TestCase):
         picks = [{"category": "充电宝"} for _ in range(3)]
 
         self.assertFalse(category_under_cap(picks, "充电宝", relaxed=True))
+
+    def test_all_categories_keep_strict_caps_during_fill(self):
+        picks = [{"category": "创意桌搭"} for _ in range(4)]
+
+        self.assertFalse(category_under_cap(picks, "创意桌搭", relaxed="emergency"))
+
+    def test_single_source_is_capped_at_five(self):
+        picks = [{"source_name": "Yanko Design"} for _ in range(5)]
+
+        self.assertFalse(source_under_cap(picks, "Yanko Design"))
+
+    def test_seven_point_floor_is_hard_for_backlog_items(self):
+        item = {
+            "title": "Weak gift box",
+            "category": "创意礼盒",
+            "url": "https://example.com/product",
+            "review_policy_version": 3,
+            "review_source": "deepseek_backlog_balanced",
+            "quality_score": 69,
+            "innovation": 8,
+            "relevance": 9,
+            "review_confidence": 9,
+            "summary": "Concrete packaging structure",
+            "source_quality": "premium",
+        }
+
+        self.assertFalse(display_eligible(item))
+
+    def test_laptop_stands_are_not_desk_inspiration(self):
+        item = {
+            "title": "Ultra-thin origami laptop stand",
+            "summary": "A folded stand props up a notebook computer.",
+            "category": "创意桌搭",
+        }
+
+        self.assertTrue(is_ordinary_laptop_stand(item))
 
     def test_fallback_queries_limit_phone_cases_and_power_banks(self):
         jobs = fallback_query_jobs(50, 0)
