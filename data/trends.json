@@ -1,63 +1,69 @@
 {
-  "generated_at": "2026-08-13T11:54:11+08:00",
+  "generated_at": "2026-08-13T20:06:18+08:00",
   "source": "local_summary",
   "summary": "本地趋势摘要。接入 DeepSeek 后会生成更完整的品类方向、机会点和风险判断。",
   "hot_categories": {
-    "氛围灯": 432,
-    "创意厨具": 368,
-    "水杯": 342,
-    "创意桌搭": 334,
-    "充电宝": 284,
-    "冲锋衣": 168,
-    "手机壳": 161,
-    "创意礼盒": 101,
-    "日历": 79,
-    "中秋礼盒": 54,
-    "装置艺术": 18,
-    "端午礼盒": 11
+    "氛围灯": 415,
+    "创意厨具": 361,
+    "水杯": 340,
+    "创意桌搭": 287,
+    "充电宝": 283,
+    "冲锋衣": 163,
+    "手机壳": 159,
+    "日历": 75,
+    "创意礼盒": 64,
+    "中秋礼盒": 43,
+    "端午礼盒": 10,
+    "装置艺术": 6
   },
   "hot_sources": {
-    "Yanko Design": 467,
-    "Kickstarter": 413,
-    "Indiegogo": 254,
-    "Red Dot": 252,
-    "Core77": 154,
-    "Designboom": 124,
-    "Design Milk": 112,
-    "iF设计奖": 108,
-    "Uncrate": 107,
-    "The Grommet": 78,
-    "Cool Material": 76,
-    "Behance": 75
+    "Yanko Design": 445,
+    "Kickstarter": 405,
+    "Indiegogo": 252,
+    "Red Dot": 251,
+    "Core77": 146,
+    "Designboom": 108,
+    "Design Milk": 102,
+    "Uncrate": 101,
+    "iF设计奖": 96,
+    "The Grommet": 77,
+    "Cool Material": 75,
+    "Behance": 70
   },
   "hot_tags": {
-    "deepseek_search_agent": 1788,
-    "editorial_main": 760,
-    "adapt": 685,
-    "trend": 620,
-    "market_signal_strong": 587,
-    "buy_sample": 567,
-    "氛围灯": 414,
-    "创意厨具": 364,
-    "award_gallery": 340,
-    "水杯": 329,
-    "创意桌搭": 326,
-    "白名单来源": 295,
-    "充电宝": 286,
-    "design_community": 209,
-    "适合作为趋势、内容爆点或方向参考": 175,
-    "冲锋衣": 167,
-    "手机壳": 160,
+    "deepseek_search_agent": 1674,
+    "editorial_main": 708,
+    "adapt": 621,
+    "trend": 584,
+    "market_signal_strong": 568,
+    "buy_sample": 547,
+    "氛围灯": 398,
+    "创意厨具": 362,
+    "award_gallery": 332,
+    "水杯": 320,
+    "充电宝": 284,
+    "白名单来源": 283,
+    "创意桌搭": 277,
+    "design_community": 188,
+    "适合作为趋势、内容爆点或方向参考": 168,
+    "冲锋衣": 162,
+    "手机壳": 156,
     "market_signal": 125,
-    "创意礼盒": 108,
-    "适合做结构、包装、功能或外观改造": 107
+    "适合做结构、包装、功能或外观改造": 101,
+    "日历": 75
   },
   "recommended": [
     {
-      "title": "Vegetable Peeler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
-      "category": "创意厨具",
+      "title": "Anker 无线充电宝",
+      "category": "充电宝",
+      "score": 88,
+      "reason": "充电宝实用性强，高频需求，品牌可靠，无线充电功能明确，价格高于35美元，符合多数标准。"
+    },
+    {
+      "title": "LAZYCAT-A Magnetic Charging Cable With A Built-in Power Bank",
+      "category": "充电宝",
       "score": 87,
-      "reason": "削皮器为厨房高频实用工具，适用范围广；人体工学手柄和短刀片设计提升安全性与易用性，无明显功能短板。价格未知且来自设计社区，可能溢价但未证实，故售价评分中等。产品外观直观易识别，功能性明确，情感价值适中。"
+      "reason": "产品将充电线、移动电源、磁吸设计集于一体，满足高频充电需求，目标用户广泛。100W快充和直通充电功能实用，便携性提升。价格预计高于35元，功能清晰，情绪价值较好。"
     },
     {
       "title": "OXO沙拉甩干器",
@@ -72,6 +78,12 @@
       "reason": "Pinterest · 可爱蘑菇造型小夜灯"
     },
     {
+      "title": "TITANER Titanium Water Bottle- A Bottle You Have... — Kickstarter",
+      "category": "水杯",
+      "score": 85,
+      "reason": "钛合金水杯兼具轻便耐用与LED温度显示创新交互，实用性强，水杯为高频刚需，覆盖面广，功能无明显短板，预估售价高于35元，温度显示功能直观易懂，时尚色彩与科技感提供情绪价值。"
+    },
+    {
       "title": "Polygons flat 3-in-1 Measuring Spoon",
       "category": "创意厨具",
       "score": 84,
@@ -84,22 +96,16 @@
       "reason": "iF Design Award · TwentyFifty® Edible Cutlery is an innovative, eco-friendly tableware made from grain by-products like "
     },
     {
-      "title": "Eco-friendly Packaging for Cloud Erosion Whisky",
-      "category": "创意礼盒",
-      "score": 84,
-      "reason": "iF Design Award · \"Mist Carving\" whisky packaging embodies Yunnan's terroir through sustainable innovation, transforming"
-    },
-    {
-      "title": "SAKE BOTTLE OPENER",
+      "title": "Vegetable Peeler :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
       "category": "创意厨具",
       "score": 84,
-      "reason": "iF Design Award · The Sake Bottle Opener redefines how Japanese sake is enjoyed by addressing the unique challenge of it"
+      "reason": "削皮器作为厨房必需品，实用性和高频需求都很强，受众广泛。人体工学手柄和短刀片设计兼顾舒适与安全，功能无明显短板。外观简洁，3秒内可辨认。设计感带来一定情绪价值，但售价未知，价格优势不明显。"
     },
     {
-      "title": "LAZYCAT-A Magnetic Charging Cable With A Built-in Power Bank",
-      "category": "充电宝",
+      "title": "WOKY –[ ] 渾圓杯 770ml｜募資影片 :: Behance",
+      "category": "水杯",
       "score": 84,
-      "reason": "磁性充电线内置移动电源，解决充电线+应急电源双重需求，使用场景高频且广泛，功能集成明确，易于理解。潜在短板是移动电源容量较小，但作为应急场景可接受。价格未知，但同类产品通常超过35元。"
+      "reason": "水杯作为日常高频实用品，770ml大容量贴合手摇饮需求，功能明确，外观易懂，且兼具文化情绪价值，预估售价有支撑。"
     },
     {
       "title": "磁吸锅铲套装",
@@ -126,12 +132,6 @@
       "reason": "Good Design Award · M01, a competition-grade hand grinder with a revolutionary new conical burr. M01 introduces a radica"
     },
     {
-      "title": "BIRDY.",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · Designed in a new, streamlined form against the standard shape of a cocktail shaker. Of particular n"
-    },
-    {
       "title": "Nano bubble shaker",
       "category": "创意厨具",
       "score": 84,
@@ -156,12 +156,6 @@
       "reason": "Good Design Award · This is a shape-shifting magnetic knife sheath. Its primary purpose is to protect the blade and prev"
     },
     {
-      "title": "Louis",
-      "category": "创意厨具",
-      "score": 84,
-      "reason": "Good Design Award · It is a steak knife that, by notching part of the blade, creates a function that makes it easy to sh"
-    },
-    {
       "title": "360KYUSU",
       "category": "创意厨具",
       "score": 84,
@@ -172,6 +166,12 @@
       "category": "创意厨具",
       "score": 84,
       "reason": "Good Design Award · \"The T-POT redefines tea preparation with innovative features and timeless tradition. Its groundbrea"
+    },
+    {
+      "title": "VERMICULAR OVEN POT２ & Recraft program",
+      "category": "创意厨具",
+      "score": 84,
+      "reason": "Good Design Award · A new era of enameled cast iron pots, merging innovative cooking performance, ease of use, and susta"
     }
   ]
 }

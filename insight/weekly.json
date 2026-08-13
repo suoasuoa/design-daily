@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T11:54:12+08:00",
+  "generated_at": "2026-08-13T20:06:19+08:00",
   "week": "2026-W33",
   "group_id": "2026-W33",
   "date_start": "2026-08-10",
@@ -11,28 +11,28 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 49,
-      "方向参考": 31,
-      "可直接买样": 20
+      "适合改造": 51,
+      "方向参考": 32,
+      "可直接买样": 17
     },
     "by_category": {
       "充电宝": 20,
-      "水杯": 16,
-      "氛围灯": 14,
-      "创意礼盒": 10,
-      "创意桌搭": 9,
-      "冲锋衣": 8,
+      "水杯": 18,
+      "氛围灯": 15,
+      "冲锋衣": 9,
+      "创意礼盒": 8,
+      "创意桌搭": 7,
+      "手机壳": 7,
       "创意厨具": 6,
-      "手机壳": 6,
-      "中秋礼盒": 5,
+      "中秋礼盒": 4,
       "日历": 4,
       "端午礼盒": 2
     },
     "by_axis": {
       "功能启发": 66,
-      "结构启发": 58,
-      "包装启发": 24,
-      "情绪启发": 18,
+      "结构启发": 56,
+      "包装启发": 22,
+      "情绪启发": 19,
       "视觉启发": 7
     }
   },
@@ -41,6 +41,38 @@
     "unique_recommendations": 100
   },
   "recommendations": [
+    {
+      "id": "af19d1b7db49",
+      "product_key": null,
+      "title": "Dragon Boat tenon and tenon gift box design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fac",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/173012211/Dragon-Boat-tenon-and-tenon-gift-box-design",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c86693173012211.64891d780def6.gif",
+      "summary": "产品为端午礼盒设计，结合榫卯结构和绳子元素，具有结构创新和文化传承，实用性中等，节日性强，非高频需求，但价格定位高，情绪价值突出。",
+      "risk": "榫卯结构结合端午礼盒，开箱有互动性",
+      "review_confidence": 9,
+      "review_reason": "榫卯结构结合端午礼盒，开箱有互动性",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "端午礼盒",
+        "榫卯结构",
+        "传统文化",
+        "设计创意",
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
     {
       "id": "a7ca7680e34e",
       "product_key": null,
@@ -85,16 +117,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161519023/Eyra-Kitchen-Utensils",
       "image": "",
-      "summary": "人体工学设计解决老年握持痛点，磁吸收纳提升实用性，价格高于35元，设计易于理解，兼具关怀感。",
+      "summary": "产品针对老年手部设计，倾斜手柄和磁吸挂架功能明确，实用性高，但目标人群较狭窄，打击面有限。价格预计超35，展示直观，情绪价值体现在对老年人的关怀。",
       "risk": "人体工学斜角手柄，包容性设计",
       "review_confidence": 9,
       "review_reason": "人体工学斜角手柄，包容性设计",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "creativity",
-        "kitchen",
-        "ergonomics",
-        "senior",
+        "创意厨具",
+        "人机工学",
+        "适老化",
+        "磁吸挂架",
         "adapt",
         "buy_sample"
       ]
@@ -117,12 +149,16 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/235071307/Govee-Gaming-Light-Bars",
       "image": "",
-      "summary": "Govee游戏氛围灯套装. 2022. 专门为电子游戏场景推出的桌面RGB IC氛围灯柱，拥有科幻又独特的外观造型，配置简洁易用的控制器，赋予用户的桌搭场景以沉浸式的氛围体验。",
+      "summary": "该产品作为游戏氛围灯，实用性和频率中等，目标用户较集中于游戏玩家，但功能完善、外观易识别，且价格高于35元，具备一定情绪价值。",
       "risk": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "review_confidence": 8,
       "review_reason": "Govee游戏氛围灯套装，RGB IC灯柱专为游戏场景设计，造型科幻，控制器简洁",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "gaming",
+        "RGB",
+        "desk setup",
+        "ambient lighting",
         "design_community",
         "创意桌搭"
       ]
@@ -145,16 +181,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23294407",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/02fb8f23294407.56047bbe66984.jpg",
-      "summary": "设计独特，功能创新，兼具展示与灯笼功能，情绪价值高，但节日性需求频率低，且结构复杂可能影响实用性，3秒看懂难度大。",
+      "summary": "该产品作为中秋礼盒，设计新颖，兼具展示与灯笼功能，实用性与情绪价值兼备，但使用频率低，结构复杂可能影响大众接受度。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "中秋礼盒",
         "创意包装",
-        "多功能设计",
-        "节日氛围",
+        "中秋礼盒",
+        "设计感",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -177,17 +212,17 @@
       "source_quality": "standard",
       "url": "https://www.instagram.com/reel/DWpmFr-iWrO",
       "image": "",
-      "summary": "折叠礼盒设计巧妙，节省空间且成型快速，实用性强，适用于高档礼品包装，具有一定情绪价值和社交属性。",
+      "summary": "产品为创新结构折叠纸盒，一秒成型和打平的设计具有实用性和便利性，适用于高档礼品包装，售价预计高于35元。视频展示直观易懂，情绪价值较好。但目标场景偏窄，高频需求一般。",
       "risk": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "review_confidence": 8,
       "review_reason": "折叠盒可一秒成型和打平，结构创新，便于存储和运输。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "包装创新",
+        "创意礼盒",
         "折叠盒",
-        "礼盒定制",
+        "包装定制",
         "social_public_index",
-        "创意礼盒"
+        "白名单来源"
       ]
     },
     {
@@ -208,16 +243,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/2884239/Mid-Autumn-Festival-Campaign-2011-/modules/23316947",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/780bac23316947.56047c1718957.jpg",
-      "summary": "月饼盒可变形为灯笼，兼具包装与实用功能，情感价值丰富，但节令性强且需注意安全风险。",
+      "summary": "产品结合中秋传统与灯笼创新，结构复用巧妙，功能成立且具备情绪价值，但需求频次低、受众有限，且3秒内不易理解其变形玩法。",
       "risk": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "review_confidence": 9,
       "review_reason": "圆柱展开梯田展示并可变灯笼，结构复用创新（同上项目）",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "mid-autumn gift box",
-        "transformable packaging",
-        "lantern design",
-        "creative packaging",
+        "中秋礼盒",
+        "文创产品",
+        "结构创新",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -345,15 +379,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/161108345/-2022-",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf443b161108345.63bfbe2fa57d3.png",
-      "summary": "包装结构创新，有叙事性，但月饼礼盒为节日性消费品，使用频率较低，功能上无明显短板，但实用性主要依赖礼赠场景。",
+      "summary": "设计有创新，开盒仪式感强，但月饼礼盒使用频率低，目标人群有限，且价格高，需依赖情绪价值驱动。",
       "risk": "这是明确的中秋/月饼礼盒，且不是普通插画换肤盒。其核心创新在于开盒动作被设计成黑天鹅展翼的叙事结构，黑色折叠羽翼与中央白色纸浆感月饼盒形成强对比，具备开箱仪式感、结构记忆点和节日礼赠溢价空间，可转化为中秋礼盒的机关式展开、动物意象叙事和内外盒反差设计方向。",
       "review_confidence": 9,
       "review_reason": "这是明确的中秋/月饼礼盒，且不是普通插画换肤盒。其核心创新在于开盒动作被设计成黑天鹅展翼的叙事结构，黑色折叠羽翼与中央白色纸浆感月饼盒形成强对比，具备开箱仪式感、结构记忆点和节日礼赠溢价空间，可转化为中秋礼盒的机关式展开、动物意象叙事和内外盒反差设计方向。",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
-        "design_community",
         "中秋礼盒",
-        "packaging_design",
+        "包装设计",
+        "黑天鹅",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -402,7 +436,7 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/145263273/_",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ac229e145263273.629b0f4fcdea5.jpg",
-      "summary": "礼盒包装结构创新，互动趣味性强，适合节日送礼场景；定价有溢价空间，视觉传达清晰。但使用频率低，季节限定明显。",
+      "summary": "端午礼盒作为节日性礼品，实用性和高频需求一般，但包装结构创新，售价预计较高，3秒内可呈现魔方盒子的趣味性，具备一定情绪价值。",
       "risk": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
       "review_confidence": 9,
       "review_reason": "魔方盒子结构实现旋转互动开箱，属于包装结构创新",
@@ -410,7 +444,7 @@
       "tags": [
         "端午礼盒",
         "包装设计",
-        "节日礼盒",
+        "节日礼品",
         "deepseek_search_agent",
         "design_community"
       ]
@@ -431,15 +465,15 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/75055531/Wine-box-with-sliding-lid-butler",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/56f6ac75055531.5c41d1be7bc1c.jpg",
-      "summary": "滑盖酒盒兼具展示与托盘功能，结构设计有创新，但使用场景偏窄，适合送礼或特定场合，非高频需求。",
+      "summary": "结构创新兼具托盘功能，但使用场景和受众较窄，价格预计偏高，直观性一般。",
       "risk": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "review_confidence": 8,
       "review_reason": "滑动盖作托盘的结构创新，酒盒与托盘二合一",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "创意礼盒",
-        "酒盒",
-        "滑盖设计",
+        "红酒礼盒",
+        "滑动盖设计",
         "adapt",
         "deepseek_search_agent"
       ]
@@ -460,14 +494,17 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/98618717/The-SEEDTOPIA-24-Solar-Terms-Seeds-Calendar",
       "image": "",
-      "summary": "Jun 10, 2020 · 二十四节气种子历是一款迷你种植套装。其中包括含有种子的手工纸节气日历及其种植工具包。通过培育种子这一行为，我们为城市青年提供了人与土地、与 ...",
+      "summary": "将种植与日历结合，概念新颖，但实用性有限，面向城市青年群体，有一定情绪价值，功能创新但非刚需。",
       "risk": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "review_confidence": 8,
       "review_reason": "二十四节气种子日历，结合种子种植和日历功能，材料与交互创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "design_community",
-        "日历"
+        "日历",
+        "白名单来源",
+        "趋势参考",
+        "适合作为趋势、内容爆点或方向参考"
       ]
     },
     {
@@ -487,135 +524,18 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/229023437/_",
       "image": "",
-      "summary": "Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的情感表达习惯，以礼盒为媒介，用可录音的点心装置破解含蓄文化，将广式点心转化为“代你说爱”的传声密码，打造兼具地域温情与年轻潮趣的告白神器。",
+      "summary": "创意独特，结合地域文化与情感表达，功能（录音）与情绪价值结合好，但节日属性强、地域受众有限。",
       "risk": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
       "review_confidence": 8,
       "review_reason": "礼盒内置可录音点心装置，将广式点心转化为传声密码，结构创新与情感叙事结合",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
+        "创意礼盒",
+        "表白礼物",
+        "可录音",
+        "广式点心",
         "design_community",
-        "创意礼盒"
-      ]
-    },
-    {
-      "id": "c28d0421620b",
-      "product_key": null,
-      "title": "中秋礼盒｜满，是人间灯火时 Moon Fun :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
-      "category": "中秋礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发",
-        "结构启发",
-        "视觉启发"
-      ],
-      "score": 69,
-      "score_label": "6.9",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.behance.net/gallery/181747603/-Moon-Fun",
-      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7804ae181747603.65212de2b046f.jpg",
-      "summary": "产品为中秋礼盒包装设计，具备可持续材料创新，但内容物未明确，实际功能性依赖内部产品。价格可能高于35元，但作为礼品盒有一定情绪价值。",
-      "risk": "DeepSeek候选复核：采用可循环水洗牛皮纸袋与可降解纸浆礼盒，材料可持续创新明确。",
-      "review_confidence": 8,
-      "review_reason": "DeepSeek候选复核：采用可循环水洗牛皮纸袋与可降解纸浆礼盒，材料可持续创新明确。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "中秋礼盒",
-        "可持续包装",
-        "环保材料",
-        "纸浆模塑",
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "af19d1b7db49",
-      "product_key": null,
-      "title": "Dragon Boat tenon and tenon gift box design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fac",
-      "category": "端午礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发",
-        "结构启发",
-        "视觉启发"
-      ],
-      "score": 65,
-      "score_label": "6.5",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.behance.net/gallery/173012211/Dragon-Boat-tenon-and-tenon-gift-box-design",
-      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c86693173012211.64891d780def6.gif",
-      "summary": "明确的端午礼盒设计，结合榫卯结构和绳子元素，具有结构创新和传统文化传承。。页面证据：Product Design, Graphic Design, Illustration, Adobe Illustrator, Adobe Photoshop, Blender 3D, Maxon Cinema 4D, Adobe After Effects",
-      "risk": "DeepSeek候选复核：榫卯结构结合绳子元素，包装结构创新",
-      "review_confidence": 8,
-      "review_reason": "DeepSeek候选复核：榫卯结构结合绳子元素，包装结构创新",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "35c37bc2f9d3",
-      "product_key": null,
-      "title": "Business gifts ĮSIBERK :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 63,
-      "score_label": "6.3",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.behance.net/gallery/75633507/Business-gifts-SIBERK",
-      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3563e975633507.5c5200c0576b3.gif",
-      "summary": "时间主题商务礼盒设计新颖，滑动开箱有互动性，适用于商务赠送，但实用性有限，需求频次低，认知成本较高。",
-      "risk": "DeepSeek候选复核：时间主题商务礼盒，滑动开启机制，开箱结构创新",
-      "review_confidence": 8,
-      "review_reason": "DeepSeek候选复核：时间主题商务礼盒，滑动开启机制，开箱结构创新",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "滑动开箱",
-        "商务礼品",
-        "时间主题",
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "f98cb2d00459",
-      "product_key": null,
-      "title": "Moon Spinning for Château :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
-      "category": "创意礼盒",
-      "action_lane": "可直接买样",
-      "axes": [
-        "包装启发"
-      ],
-      "score": 61,
-      "score_label": "6.1",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.behance.net/gallery/95528181/Moon-Spinning-for-Chateau",
-      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7b220095528181.5e9974002e430.jpg",
-      "summary": "创意礼盒具备互动设计，但实用性一般，目标人群窄，价格支撑足够，视觉清晰度尚可。",
-      "risk": "DeepSeek候选复核：月兔旋转互动包装结构",
-      "review_confidence": 8,
-      "review_reason": "DeepSeek候选复核：月兔旋转互动包装结构",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "创意礼盒",
-        "互动设计",
-        "月兔旋转",
-        "酒店礼品",
-        "deepseek_search_agent",
-        "design_community"
+        "白名单来源"
       ]
     },
     {
@@ -1230,33 +1150,6 @@
       ]
     },
     {
-      "id": "dfa8e6daa5b8",
-      "product_key": null,
-      "title": "This Zoom-friendly charging station elevates + charges everything from your iPad to your laptop, making it the complete WFH package! - Yanko Design",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2021/10/14/this-zoom-friendly-charging-station-elevates-charges-everything-from-your-ipad-to-your-laptop-making-it-the-complete-wfh-package",
-      "image": "https://www.yankodesign.com/images/design_news/2021/10/all-in-one_charging_organizer_charging_station_for_all_your_devices.jpg",
-      "summary": "Bodo一体化充电站是明确单品，集成Bodo Board、Bodo Stand、多个无线充电点及Zoom Light，将视频通话照明与多设备充电整合到一个桌面设备中，功能创新明确。。页面证据：https://www.youtube.com/watch?v=YubUZPcjJFY This all-in-one charging station is the complete package - taking you from home comfort to professional Zoom call ready with its inbuilt Bodo Board, Bodo Stand, multiple wireless charging points as well as a Zoom Light in one neat setup. Equipped with a stand, the entire setup (including your iPad and the Zoom Light)",
-      "risk": "该产品属于直接服务桌面办公、视频会议、设备支撑与充电整理的创意桌搭。它不是普通支架或单一充电座，而是把平板/笔记本抬升、手机无线充电、可穿戴设备收纳充电和视频会议补光整合到一个立式工作站中，解决WFH场景中设备分散、视角不佳和光线不足的问题；功能完整、使用频率高、受众覆盖远程办公和内容创作人群，具备明确结构与场景创新，可作为高价值选品灵感。",
-      "review_confidence": 9,
-      "review_reason": "该产品属于直接服务桌面办公、视频会议、设备支撑与充电整理的创意桌搭。它不是普通支架或单一充电座，而是把平板/笔记本抬升、手机无线充电、可穿戴设备收纳充电和视频会议补光整合到一个立式工作站中，解决WFH场景中设备分散、视角不佳和光线不足的问题；功能完整、使用频率高、受众覆盖远程办公和内容创作人群，具备明确结构与场景创新，可作为高价值选品灵感。",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "6f73ceb5ade1",
       "product_key": null,
       "title": "Kickstarter >> hug - the insulated collapsible mug by The Huggable Co",
@@ -1521,33 +1414,6 @@
       ]
     },
     {
-      "id": "2a1967ae452c",
-      "product_key": null,
-      "title": "Red Dot Design Award: Cubert",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/cubert-7040",
-      "image": "",
-      "summary": "明确单品Cubert多功能桌面设备，将台灯、两个主电源插座和两个智能USB充电口集成于紧凑机身，面向笔记本、平板和手机供电，结构集成与桌面充电场景创新明确，Red Dot获奖佐证。。页面证据：The vision for Cubert was to design a multifunctional desktop product that combines a light, two mains sockets, and two smart USB power outlets with the intention of supporting technology such as laptops, tablets and mobile phones. A small form factor of...",
-      "risk": "集成台灯、两个电源插座和两个USB充电口于紧凑机身，多功能桌面设备，功能集成创新明确。",
-      "review_confidence": 10,
-      "review_reason": "集成台灯、两个电源插座和两个USB充电口于紧凑机身，多功能桌面设备，功能集成创新明确。",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
       "id": "1bb92bd8f091",
       "product_key": null,
       "title": "iRe5: Built-in Storage Expansion iPhone Case by iRe5 - Indiegogo",
@@ -1777,7 +1643,7 @@
       "source_quality": "standard",
       "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
       "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "可折叠无线充电站集成多合一功能，实用性强，但目标用户较窄，依赖苹果生态，功能无明显短板，但价格和落地性不确定。",
+      "summary": "产品集成4合1充电、夜灯和可调角度MagSafe充电板，结构创新，实用性较强。充电是高频需求，但目标人群偏向创意桌搭，受众较窄。功能无明显短板，价格未知但估计可超35元。折叠设计易于理解，兼具情绪价值。",
       "risk": "可折叠设计集成无线充电与夜灯，结构创新",
       "review_confidence": 8,
       "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
@@ -1816,29 +1682,56 @@
       ]
     },
     {
-      "id": "968d9e17cd2a",
+      "id": "5f5828269ba8",
       "product_key": null,
-      "title": "Red Dot Design Award: M150 & M250",
+      "title": "kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented...",
       "category": "充电宝",
-      "action_lane": "方向参考",
+      "action_lane": "适合改造",
       "axes": [
-        "功能启发"
+        "功能启发",
+        "结构启发"
       ],
-      "score": 90,
-      "score_label": "9.0",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/m150-m250-70840",
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented",
       "image": "",
-      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
-      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
+      "summary": "Ample Ultraslim Powerbank 是一款超薄充电宝，支持自选线缆，结构上实现极薄便携，符合充电宝品类创新要求。。页面证据：Pledge €49 or more About US$ 52. Early bird [single pack]. Experience the finest powerbank that ever charged! Save €20 (29% OFF RETAIL). Includes: Ample Ultraslim Powerbank. 2× Cables of your choice.",
+      "risk": "内置两条侧边线免去外带线缆，超薄设计",
       "review_confidence": 9,
-      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "review_reason": "内置两条侧边线免去外带线缆，超薄设计",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "f27c6e6a9455",
+      "product_key": null,
+      "title": "A Supersuit for Your Phone Camera - Yanko Design",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.yankodesign.com/2018/06/12/a-supersuit-for-your-phone-camera",
+      "image": "https://www.yankodesign.com/images/design_news/2018/06/a-supersuit-for-your-phone-camera/lemuro_iphone_case_lens_01.jpg",
+      "summary": "Lemuro 手机壳可旋入外置镜头，兼具保护与摄影增强功能，属于明确的手机壳单品，结构创新。。页面证据：https://www.kickstarter.com/projects/lemuro/lemuro-transform-your-smartphone-into-a-profession The phone camera isn't going anywhere. We've slowly done away with almost every other element barring the camera and the screen. First the external antenna, then the tactile keyboard, the MicroSD card slot, the headphone jack, the home button, and with wireless charging being adopted everywhere, the charging port may just make its exit",
+      "risk": "手机壳可旋入外置镜头，结构创新结合保护与摄影",
+      "review_confidence": 10,
+      "review_reason": "手机壳可旋入外置镜头，结构创新结合保护与摄影",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "adapt",
-        "award_gallery"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1866,6 +1759,32 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
+      ]
+    },
+    {
+      "id": "a960c4e0a737",
+      "product_key": null,
+      "title": "This dual-sided jacket blocks UV rays in the day, and increases visibility at night! - Yanko Design",
+      "category": "冲锋衣",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2019/08/22/this-dual-sided-jacket-blocks-uv-rays-in-the-day-and-increases-visibility-at-night",
+      "image": "https://www.yankodesign.com/images/design_news/2019/08/duotek_ultralight_reflective_reversible_jacket_layout.jpg",
+      "summary": "具体产品：DuoTek Ultralight Reversible and Reflective Jacket。创新证据：双面穿戴设计，一面防紫外线，一面高可见反光，超轻材料。。页面证据：https://www.kickstarter.com/projects/ffd/duotek-the-ultralight-reversible-and-reflective-jacket Twice as awesome as your favorite hoodie, the DuoTek serves different purposes in the day and at night. With a dual-fabric construction, the DuoTek can be worn both regularly as well as inside out. One side of the jacket serves as your classic black hoodie, but with the ability to block UV rays, while",
+      "risk": "双面穿夹克，一面防UV一面高反光，超轻材料，场景切换实用创新。",
+      "review_confidence": 9,
+      "review_reason": "双面穿夹克，一面防UV一面高反光，超轻材料，场景切换实用创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -2272,33 +2191,6 @@
       ]
     },
     {
-      "id": "153bb6f1fbb6",
-      "product_key": null,
-      "title": "Remember Apple’s AirPower Mat? Dreame Built A MagSafe Power Bank That Does The Same Thing - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2025/12/17/remember-apples-airpower-mat-dreame-built-a-magsafe-power-bank-that-does-the-same-thing",
-      "image": "https://www.yankodesign.com/images/design_news/2025/12/draft-dreame-power-bank/dreame_air_power_17_1.jpeg",
-      "summary": "Dreame Air Power 17 MagSafe充电宝，可同时充手机和手表，铝框+AG玻璃，多设备充电创新。。页面证据：Dreame built its name on robot vacuums and smart cleaning stations, but its newest release does not clean your floors at all. Dreame’s Air Power 17 arrives as a magnetic portable power bank with a surprisingly polished feel, pairing an aluminum frame with AG glass and a footprint barely larger than a bank card. It",
-      "risk": "可同时无线充手机和手表，多设备充电",
-      "review_confidence": 9,
-      "review_reason": "可同时无线充手机和手表，多设备充电",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "c54961925b73",
       "product_key": null,
       "title": "The $99 Gadget That Clears 3 Devices Off Your Nightstand",
@@ -2480,6 +2372,58 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "b98f671e3fb4",
+      "product_key": null,
+      "title": "This delicate glass lamp invites you to touch and move it to actually use it - Yanko Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 81,
+      "score_label": "8.1",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2023/01/16/this-delicate-glass-lamp-invites-you-to-touch-and-move-it-to-actually-use-it",
+      "image": "https://www.yankodesign.com/images/design_news/2023/01/this-delicate-glass-lamp-invites-you-to-touch-and-move-it-to-actually-use-it/bolita-glass-lamp-8.jpg",
+      "summary": "明确单品：通过滑动玻璃球调节亮度的灯具。创新证据：无按钮，玻璃球在圆盘上的位置决定亮度，中心最亮、边缘最暗，交互方式独特。。页面证据：When faced with something fine and intricate, our initial and natural reaction would be to stay at a safe distance to look but not touch. Almost like snowflakes, these things of beauty risk being destroyed if not handled properly, which probably applies to the majority of us. There are, however, some rather seemingly fragile objects",
+      "risk": "保留。该产品属于氛围灯，图片与标题和摘要高度匹配；不是普通造型灯，而是把调光交互从按钮/旋钮转化为移动玻璃球在圆盘上的位置，形成触摸、滑动、亮度变化的使用机制。其创新点具体体现在玻璃材质、圆盘轨道/底座、无按钮交互和情绪化光效，适合提炼为桌面夜灯、床头灯或礼品灯方向，具备较强视觉记忆点和可转化价值。",
+      "review_confidence": 9,
+      "review_reason": "保留。该产品属于氛围灯，图片与标题和摘要高度匹配；不是普通造型灯，而是把调光交互从按钮/旋钮转化为移动玻璃球在圆盘上的位置，形成触摸、滑动、亮度变化的使用机制。其创新点具体体现在玻璃材质、圆盘轨道/底座、无按钮交互和情绪化光效，适合提炼为桌面夜灯、床头灯或礼品灯方向，具备较强视觉记忆点和可转化价值。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "968d9e17cd2a",
+      "product_key": null,
+      "title": "Red Dot Design Award: M150 & M250",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 90,
+      "score_label": "9.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/m150-m250-70840",
+      "image": "",
+      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
+      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
+      "review_confidence": 9,
+      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
       ]
     },
     {
@@ -2750,6 +2694,60 @@
       "tags": [
         "editorial_main",
         "水杯"
+      ]
+    },
+    {
+      "id": "1385098d1e59",
+      "product_key": null,
+      "title": "This 100% plastic-free bottle comes with a reusable filter that can ...",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2021/10/25/this-100-plastic-free-bottle-comes-with-a-reusable-filter-that-can-literally-purify-water-forever",
+      "image": "",
+      "summary": "To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro",
+      "risk": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
+      "review_confidence": 9,
+      "review_reason": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "editorial_main",
+        "水杯"
+      ]
+    },
+    {
+      "id": "124cf4c0fb52",
+      "product_key": null,
+      "title": "The Luma Bottle | A Self-Cleaning Reusable Water... — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/lumabottle/the-luma-bottle-a-self-cleaning-reusable-water-bot",
+      "image": "",
+      "summary": "Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细菌，在材料或功能上有明确创新。。页面证据：A reusable water bottle that harnesses the power of digital UV-C light to kill 99.999% of bacteria in your water and bottle.",
+      "risk": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
+      "review_confidence": 9,
+      "review_reason": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     }
   ]
