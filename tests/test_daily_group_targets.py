@@ -8,7 +8,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_site import category_under_cap, daily_group_limit, display_eligible, merge_historical_snapshots, sorted_daily_items, source_under_cap
 from insight_common import is_ordinary_laptop_stand
-from deepseek_search_agent import accepted_today, fallback_query_jobs, searchable_categories
+from deepseek_search_agent import PRE_REVIEW_VERSION, accepted_today, fallback_query_jobs, searchable_categories
 
 
 class DailyGroupTargetTests(unittest.TestCase):
@@ -130,6 +130,9 @@ class DailyGroupTargetTests(unittest.TestCase):
         self.assertNotIn("氛围灯", allowed)
         self.assertNotIn("创意厨具", allowed)
         self.assertIn("手机壳", allowed)
+
+    def test_search_prescreen_policy_is_versioned_for_wider_recall(self):
+        self.assertEqual(PRE_REVIEW_VERSION, 2)
 
 
 if __name__ == "__main__":

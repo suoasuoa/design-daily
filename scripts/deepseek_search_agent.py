@@ -43,7 +43,7 @@ from preference_profile import preference_context
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
 USER_AGENT = "Mozilla/5.0 DesignDailyDeepSeekAgent/1.0"
-PRE_REVIEW_VERSION = 1
+PRE_REVIEW_VERSION = 2
 
 
 class PageMetaParser(HTMLParser):
@@ -446,7 +446,7 @@ def screen_batch(batch):
 
 必须拒绝：搜索/合集/分类页、泛文章、建筑/汽车/宠物、标题和摘要无法确认具体产品、普通基础款、仅换颜色图案或联名、创新点只能写成“设计感/材质好看”的内容，以及创意桌搭中的普通笔记本电脑支架/折叠支架/增高架。
 可以保留：明确单品、可买样产品、功能/结构/材料/交互创新、可转化的 DIY 或概念原型。必须符合指定品类实体边界。
-预筛通过必须同时满足 relevance>=8、innovation>=6、clarity>=7、confidence>=7，并在 reason 中说清楚具体产品和创新证据。不能用“可能、或许、需确认”。
+预筛的职责是排除明显垃圾并把有证据的候选交给严格终审，不要代替终审过度淘汰。预筛通过需同时满足 relevance>=7、innovation>=5、clarity>=6、confidence>=6，并在 reason 中说清楚具体产品和创新证据。最终页面仍由终审执行 quality>=70、innovation>=7、relevance>=8 的硬门槛。不能用“可能、或许、需确认”。
 
 团队偏好记忆：
 {preferences}
@@ -478,7 +478,7 @@ def screen_batch(batch):
             key: max(0, min(10, int(decision.get(key) or 0)))
             for key in ("confidence", "relevance", "innovation", "utility", "clarity")
         }
-        if scores["confidence"] < 7 or scores["relevance"] < 8 or scores["innovation"] < 6 or scores["clarity"] < 7:
+        if scores["confidence"] < 6 or scores["relevance"] < 7 or scores["innovation"] < 5 or scores["clarity"] < 6:
             continue
         reason = str(decision.get("reason") or "").strip()
         if not reason or any(token in reason.lower() for token in ("可能", "或许", "需确认", "unclear", "perhaps")):
