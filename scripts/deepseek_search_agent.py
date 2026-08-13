@@ -185,9 +185,25 @@ def allowed_domains():
     return sorted(SOURCE_DOMAIN_META)
 
 
-def fallback_query_jobs(limit, round_index=0):
+def searchable_categories(current_categories):
+    """Return categories that still have a real slot in today's dashboard."""
+    try:
+        from build_site import DAILY_CATEGORY_CAPS, DEFAULT_DAILY_CATEGORY_CAP
+    except Exception:
+        DAILY_CATEGORY_CAPS, DEFAULT_DAILY_CATEGORY_CAP = {}, 4
+    return {
+        category
+        for category in CATEGORIES
+        if int(current_categories.get(category) or 0)
+        < int(DAILY_CATEGORY_CAPS.get(category, DEFAULT_DAILY_CATEGORY_CAP))
+    }
+
+
+def fallback_query_jobs(limit, round_index=0, allowed_categories=None):
     payload = load_json(DATA_DIR / "search_jobs.json", {})
     jobs = [job for job in payload.get("jobs", []) if job.get("category") in CATEGORIES]
+    if allowed_categories is not None:
+        jobs = [job for job in jobs if job.get("category") in allowed_categories]
     if not jobs:
         return []
     start = (round_index * limit) % len(jobs)
@@ -207,6 +223,7 @@ def fallback_query_jobs(limit, round_index=0):
 
 def plan_queries(query_count, target, round_index):
     current_count, current_categories = accepted_today(target)
+    allowed_categories = searchable_categories(current_categories)
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
     domains = ", ".join(allowed_domains())
     preferences = preference_context()
@@ -240,7 +257,10 @@ def plan_queries(query_count, target, round_index):
 {preferences}
 
 品类定义：
-{rules}
+{chr(10).join(line for line in rules.splitlines() if line.split(':', 1)[0].lstrip('- ') in allowed_categories)}
+
+本轮仍有展示席位的品类（只能从这里选择）：
+{', '.join(category for category in CATEGORIES if category in allowed_categories)}
 
 白名单域名：
 {domains}
@@ -259,7 +279,7 @@ def plan_queries(query_count, target, round_index):
     for index, row in enumerate(rows):
         category = row.get("category")
         query = re.sub(r"\s+", " ", str(row.get("query") or "")).strip()
-        if category not in CATEGORIES or not query:
+        if category not in allowed_categories or not query:
             continue
         key = query.lower()
         if key in seen:
@@ -279,7 +299,7 @@ def plan_queries(query_count, target, round_index):
         if len(planned) >= query_count:
             break
 
-    for job in fallback_query_jobs(query_count, round_index):
+    for job in fallback_query_jobs(query_count, round_index, allowed_categories):
         if len(planned) >= query_count:
             break
         key = str(job.get("query") or "").lower()
@@ -546,6 +566,7 @@ def write_agent_report(stats):
 
 def run_agent(args):
     current_count, current_categories = accepted_today(args.target)
+    allowed_categories = searchable_categories(current_categories)
     jobs = plan_queries(args.query_count, args.target, args.round)
     print(f"agent_plan queries={len(jobs)} current={current_count}/{args.target}", flush=True)
     results = execute_searches(jobs, args.per_query, args.search_workers)
@@ -555,6 +576,11 @@ def run_agent(args):
     print(f"agent_search results={len(results)} fresh={len(fresh)} page_limit={args.max_pages}", flush=True)
     enriched = enrich_pages(fresh, args.page_workers)
     screened = screen_candidates(enriched, args.batch_size, args.screen_workers)
+    screened = [
+        row
+        for row in screened
+        if (row.get("agent_decision") or {}).get("category") in allowed_categories
+    ]
     leads = [lead_from_candidate(row, args.round) for row in screened]
     leads = [lead for lead in leads if lead.get("url") and lead.get("title")]
     path = RAW_DIR / f"deepseek-agent-{today()}.json"
