@@ -16,9 +16,16 @@ def run(cmd):
 
 def today_count(target=40):
     products = load_json(DATA_DIR / "products.json", [])
+    published = load_json(DATA_DIR / "published.json", {})
     current_day = today()
     items = [record(item) for item in sorted_products(products)]
-    groups = build_daily_groups(items, per_day=max(40, target), max_days=1)
+    groups = build_daily_groups(
+        items,
+        per_day=max(40, target),
+        max_days=1,
+        previous_groups=published.get("daily_groups", []),
+        current_date=current_day,
+    )
     for group in groups:
         if group.get("date") == current_day:
             return int(group.get("actual_count") or len(group.get("items") or []))
