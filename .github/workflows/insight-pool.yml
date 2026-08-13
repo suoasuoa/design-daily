@@ -2,17 +2,11 @@ name: Insight Pool
 
 on:
   schedule:
-    # Main runs on Beijing weekdays at 07:30, 11:30, and 13:30 so the 40-pick target has ample deadline headroom.
+    # Beijing weekdays: 06:30 full collection, then 11:30 and 15:30 gap checks.
     # The first cron is Sunday-Thursday UTC because it is the previous UTC day.
-    - cron: "30 23 * * 0-4"
+    - cron: "30 22 * * 0-4"
     - cron: "30 3 * * 1-5"
-    - cron: "30 5 * * 1-5"
-    # Backup checks keep retrying through 16:10 and skip once the phase target is met.
-    - cron: "10 0 * * 1-5"
-    - cron: "10 4 * * 1-5"
-    - cron: "10 6 * * 1-5"
-    - cron: "10 7 * * 1-5"
-    - cron: "10 8 * * 1-5"
+    - cron: "30 7 * * 1-5"
   workflow_dispatch:
     inputs:
       score_limit:
@@ -49,14 +43,18 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Set phased daily targets
+      - name: Set collection mode and daily target
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
               echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
+              echo "RUN_MODE=main" >> "$GITHUB_ENV"
               echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '60' }}" >> "$GITHUB_ENV"
               echo "AGENT_QUERIES=${{ github.event.inputs.agent_queries || '90' }}" >> "$GITHUB_ENV"
               echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
+              echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
+              echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
+              echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
                 echo "USE_TAVILY_SEARCH=1" >> "$GITHUB_ENV"
               else
@@ -64,21 +62,23 @@ jobs:
               fi
           else
               bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
-              if [ "$bj_hm" -lt 1100 ]; then
-                echo "DAILY_TARGET=15" >> "$GITHUB_ENV"
-                echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
-                echo "AGENT_QUERIES=50" >> "$GITHUB_ENV"
-                echo "AGENT_PAGES=220" >> "$GITHUB_ENV"
-              elif [ "$bj_hm" -lt 1300 ]; then
-                echo "DAILY_TARGET=30" >> "$GITHUB_ENV"
-                echo "SCORE_LIMIT=80" >> "$GITHUB_ENV"
-                echo "AGENT_QUERIES=70" >> "$GITHUB_ENV"
-                echo "AGENT_PAGES=320" >> "$GITHUB_ENV"
+              echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
+              if [ "${{ github.event.schedule }}" = "30 22 * * 0-4" ]; then
+                echo "RUN_MODE=main" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=100" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=140" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=650" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
+                echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
               else
-                echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
-                echo "SCORE_LIMIT=60" >> "$GITHUB_ENV"
-                echo "AGENT_QUERIES=90" >> "$GITHUB_ENV"
-                echo "AGENT_PAGES=420" >> "$GITHUB_ENV"
+                echo "RUN_MODE=check" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=30" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
+                echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
               fi
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
@@ -120,26 +120,26 @@ jobs:
           PY
 
       - name: Sync team feedback
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: python3 scripts/sync_feedback.py
 
       - name: Build preference profile
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         run: python3 scripts/build_preference_profile.py
 
       - name: Collect public leads
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         run: python3 scripts/collect_public.py
 
       - name: Collect curated product pages
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         run: python3 scripts/collect_curated_pages.py --limit 90 --shopify-pages 1
 
       - name: Generate search job matrix
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         run: python3 scripts/search_jobs.py
 
       - name: Install free search backend
@@ -147,7 +147,7 @@ jobs:
         run: python3 -m pip install -q ddgs
 
       - name: Run DeepSeek search agent
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         timeout-minutes: 90
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -164,11 +164,11 @@ jobs:
           --screen-workers 6
 
       - name: Dedupe product pool
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         run: python3 scripts/dedupe.py
 
       - name: Review category fit
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
@@ -176,7 +176,7 @@ jobs:
         run: python3 scripts/review_categories.py --batch-size 10
 
       - name: Ensure phased public social picks
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
@@ -184,7 +184,7 @@ jobs:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: python3 scripts/ensure_daily_social_minimum.py --target "$SOCIAL_TARGET" --batch-jobs 50 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
 
-      - name: Ensure phased daily accepted picks
+      - name: Ensure 40 daily accepted picks
         if: env.SKIP_INSIGHT != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -195,10 +195,10 @@ jobs:
           python3 scripts/ensure_daily_minimum.py
           --target "$DAILY_TARGET"
           --per-job 10
-          --max-passes 3
+          --max-passes "$TOPUP_MAX_PASSES"
           --workers 10
-          --agent-queries "$AGENT_QUERIES"
-          --agent-pages "$AGENT_PAGES"
+          --agent-queries "$TOPUP_AGENT_QUERIES"
+          --agent-pages "$TOPUP_AGENT_PAGES"
           --agent-screen-workers 6
           --curated-limit 90
           --shopify-pages 1
@@ -215,7 +215,7 @@ jobs:
         run: python3 scripts/score.py --limit "$SCORE_LIMIT"
 
       - name: Generate trend report
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         timeout-minutes: 12
         continue-on-error: true
         env:
@@ -228,7 +228,7 @@ jobs:
         run: python3 scripts/build_site.py
 
       - name: Generate weekly 100-pick report
-        if: env.SKIP_INSIGHT != '1'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
         run: python3 scripts/weekly_report.py --limit 100
 
       - name: Rebuild dashboard with weekly report
