@@ -269,7 +269,11 @@ def plan_queries(query_count, target, round_index):
 {json.dumps(schema, ensure_ascii=False)}
 """
     try:
-        rows = call_deepseek(prompt, max_tokens=8000).get("queries", [])
+        # Large top-up rounds can request 100+ structured query objects. A
+        # fixed 8k response budget truncates otherwise valid JSON and forces
+        # the agent onto the much less targeted fallback matrix.
+        plan_tokens = min(24000, max(8000, query_count * 180))
+        rows = call_deepseek(prompt, max_tokens=plan_tokens).get("queries", [])
     except RuntimeError as exc:
         print(f"query_plan_fallback error={exc}", flush=True)
         rows = []
