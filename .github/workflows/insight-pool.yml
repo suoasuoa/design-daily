@@ -84,8 +84,8 @@ jobs:
                 echo "SCORE_LIMIT=30" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_QUERIES=100" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_PAGES=500" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
                 echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
               fi
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
