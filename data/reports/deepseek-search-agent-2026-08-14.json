@@ -122,8 +122,57 @@
       "kept": 0,
       "added": 0,
       "by_category": {}
+    },
+    {
+      "round": 2,
+      "generated_at": "2026-08-14T16:46:28+08:00",
+      "accepted_before": 33,
+      "accepted_by_category_before": {
+        "充电宝": 3,
+        "水杯": 5,
+        "手机壳": 3,
+        "创意桌搭": 5,
+        "创意厨具": 5,
+        "冲锋衣": 5,
+        "氛围灯": 5,
+        "创意礼盒": 1,
+        "中秋礼盒": 1
+      },
+      "queries": 60,
+      "search_results": 297,
+      "fresh_direct_urls": 147,
+      "pages_enriched": 124,
+      "pre_screened": 147,
+      "kept": 11,
+      "added": 11,
+      "by_category": {
+        "创意礼盒": 10,
+        "中秋礼盒": 1
+      }
+    },
+    {
+      "round": 3,
+      "generated_at": "2026-08-14T16:54:38+08:00",
+      "accepted_before": 7,
+      "accepted_by_category_before": {
+        "创意桌搭": 1,
+        "创意礼盒": 5,
+        "中秋礼盒": 1
+      },
+      "queries": 90,
+      "search_results": 429,
+      "fresh_direct_urls": 237,
+      "pages_enriched": 164,
+      "pre_screened": 237,
+      "kept": 6,
+      "added": 3,
+      "by_category": {
+        "氛围灯": 3,
+        "创意厨具": 2,
+        "水杯": 1
+      }
     }
   ],
-  "generated_at": "2026-08-14T13:25:32+08:00",
-  "total_kept": 6
+  "generated_at": "2026-08-14T16:54:38+08:00",
+  "total_kept": 23
 }
