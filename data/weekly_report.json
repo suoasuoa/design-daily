@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-08-14T07:51:03+08:00",
-  "week": "2026-W33",
-  "group_id": "2026-W33",
-  "date_start": "2026-08-10",
-  "date_end": "2026-08-16",
-  "date_label": "2026-08-10 至 2026-08-16",
-  "title": "2026-W33 选品机会周报",
+  "generated_at": "2026-08-17T07:37:20+08:00",
+  "week": "2026-W34",
+  "group_id": "2026-W34",
+  "date_start": "2026-08-17",
+  "date_end": "2026-08-23",
+  "date_label": "2026-08-17 至 2026-08-23",
+  "title": "2026-W34 选品机会周报",
   "target_count": 100,
   "actual_count": 100,
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
       "适合改造": 51,
-      "方向参考": 32,
-      "可直接买样": 17
+      "方向参考": 30,
+      "可直接买样": 19
     },
     "by_category": {
-      "充电宝": 21,
+      "充电宝": 19,
       "水杯": 18,
-      "氛围灯": 15,
+      "氛围灯": 14,
+      "创意厨具": 8,
       "创意礼盒": 8,
-      "冲锋衣": 8,
+      "手机壳": 8,
       "创意桌搭": 7,
-      "手机壳": 7,
-      "创意厨具": 6,
-      "中秋礼盒": 4,
+      "冲锋衣": 7,
+      "中秋礼盒": 5,
       "日历": 4,
       "端午礼盒": 2
     },
     "by_axis": {
-      "功能启发": 67,
-      "结构启发": 56,
+      "功能启发": 68,
+      "结构启发": 59,
       "包装启发": 23,
-      "情绪启发": 19,
-      "视觉启发": 8
+      "情绪启发": 18,
+      "视觉启发": 7
     }
   },
   "dedupe": {
@@ -41,6 +41,33 @@
     "unique_recommendations": 100
   },
   "recommendations": [
+    {
+      "id": "8798aadcdbf2",
+      "product_key": null,
+      "title": "Smart Air Grill | Product Design & CMF :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook",
+      "category": "创意厨具",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 79,
+      "score_label": "7.9",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/253513987/Smart-Air-Grill-Product-Design-CMF",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a88b3253513987.6a6ad6e9e81ca.png",
+      "summary": "Smart Air Grill，空气炸与烧烤二合一紧凑台面电器，结构/功能创新，Behance产品设计明确。页面证据：Smart Air Grill is a premium countertop cooking appliance designed for dearHOME. It combines grilling and hot-air circulation in a compact structure, supporting a wide range of everyday cooking functions.The design focuses on a strong yet refined kitche...",
+      "risk": "将空气炸与烧烤结合于紧凑台面结构，二合一功能创新。",
+      "review_confidence": 8,
+      "review_reason": "将空气炸与烧烤结合于紧凑台面结构，二合一功能创新。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
+      ]
+    },
     {
       "id": "af19d1b7db49",
       "product_key": null,
@@ -121,6 +148,38 @@
       "tags": [
         "adapt",
         "buy_sample"
+      ]
+    },
+    {
+      "id": "0fd136063f6d",
+      "product_key": null,
+      "title": "七个月亮™中秋礼盒 ｜ 猫 主食 罐头 包装 品牌",
+      "category": "中秋礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/233929197/_",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8e70b2233929197.68b91210edee0.jpg",
+      "summary": "猫主食罐头本身实用，但礼盒形式因节日主题降低了日常实用性；主食罐头属于高频需求，但中秋限定频次低；目标人群限于养猫者及其送礼场景；产品功能设计用心，餐杯和开罐器增加实际价值；售价大概率高于35元；猫罐头和中秋礼盒概念直观，容易理解；在实用基础上叠加了节日情绪和包装复用价值。",
+      "risk": "DeepSeek候选复核：猫主食罐头中秋礼盒，含可复用贝果餐杯和猫尾巴开罐器，实用结构创新。",
+      "review_confidence": 8,
+      "review_reason": "DeepSeek候选复核：猫主食罐头中秋礼盒，含可复用贝果餐杯和猫尾巴开罐器，实用结构创新。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "中秋礼盒",
+        "宠物食品",
+        "创新包装",
+        "design_community",
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1059,6 +1118,86 @@
       ]
     },
     {
+      "id": "37043d58598b",
+      "product_key": null,
+      "title": "Boomerang Wok by Nikolai Carels",
+      "category": "创意厨具",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/boomerang-wok-by-nikolai-carels",
+      "image": "https://design-milk.com/images/2010/08/boomerang-wok-1.jpg",
+      "summary": "明确炒锅单品，专利凹边设计让翻炒时食材回落到锅内，解决翻炒洒出问题。。页面证据：The Boomerang Wok by Nikolai Carels allows you to flip omelets back onto themselves or cook without flinging food out of your pan. The pan has a",
+      "risk": "专利凹边设计使翻炒时食材回落，防止飞溅，烹饪结构创新明确",
+      "review_confidence": 10,
+      "review_reason": "专利凹边设计使翻炒时食材回落，防止飞溅，烹饪结构创新明确",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "cec71ea577b7",
+      "product_key": null,
+      "title": "the first no mess traveler mug heats coffee for over 50% longer",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Designboom",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.designboom.com/design/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-08-24-2022",
+      "image": "https://www.designboom.com/twitterimages/uploads/2022/08/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-designboom-1200-1.jpg",
+      "summary": "SüpKüp 旅行杯内置一次性纸杯弹出结构，免清洗并延长保温时间，材料与结构创新明确。。页面证据：SüpKüp by nobot labs is the first reusable traveler mug that heats hot drinks for over 50% longer, without requiring cleaning between uses.",
+      "risk": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
+      "review_confidence": 10,
+      "review_reason": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "cad468a4c8d8",
+      "product_key": null,
+      "title": "iRe5 Gen 2: Bring Expandable Storage Back to Smartphones",
+      "category": "手机壳",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/ire5/ire5-gen-2",
+      "image": "",
+      "summary": "iRe5 Gen 2手机壳集成MicroSD扩展、PD快充与模块化Hub，明确单品且功能/结构创新显著。。页面证据：Instant MicroSD Access | PD Fast Charging | One-Tap SyncPal Backup | Modular Hub & Integrated Case | Pro-Rig Ready | No Cloud Fees",
+      "risk": "集成MicroSD扩展、PD快充和模块化Hub，功能结构创新显著",
+      "review_confidence": 9,
+      "review_reason": "集成MicroSD扩展、PD快充和模块化Hub，功能结构创新显著",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "9e6eed170b66",
       "product_key": null,
       "title": "Flat Spoon Means Super Functionality - Yanko Design",
@@ -1135,33 +1274,6 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "6f73ceb5ade1",
-      "product_key": null,
-      "title": "Kickstarter >> hug - the insulated collapsible mug by The Huggable Co",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/-hug-/hug-600ml-20oz-double-walled-insulation-in-your-pocket",
-      "image": "",
-      "summary": "hug可折叠保温杯，双壁保温、9档高度、口袋便携、回收材料，明确单品且有结构创新。。页面证据：The Huggable Co is raising funds for hug - the insulated collapsible mug on Kickstarter! Up to 9 height options, double walled insulation, pocket friendly, made from recycled material and climate positive +",
-      "risk": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
-      "review_confidence": 8,
-      "review_reason": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
         "deepseek_search_agent"
       ]
     },
@@ -1643,55 +1755,55 @@
       ]
     },
     {
-      "id": "47fa34f21332",
+      "id": "968d9e17cd2a",
       "product_key": null,
-      "title": "Ample: Ultraslim Powerbank with No Annoying External... — Kickstarter",
+      "title": "Red Dot Design Award: M150 & M250",
       "category": "充电宝",
-      "action_lane": "适合改造",
+      "action_lane": "方向参考",
       "axes": [
         "功能启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/ample/ample-the-powerbank-reinvented",
+      "score": 90,
+      "score_label": "9.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/m150-m250-70840",
       "image": "",
-      "summary": "Ample超薄充电宝，内置两条侧边线，自动开机，直通充电，无需外接线。。页面证据：Kickstarter's most popular powerbank! Customized with two integrated side cables of your choice.There’s no need to carry additional cables to recharge your Ample powerbank. Ample offers automatic power on and a pass-through charging capability that most powerbanks lack.",
-      "risk": "内置两条侧边线免去外带线缆，超薄设计",
+      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
+      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
       "review_confidence": 9,
-      "review_reason": "内置两条侧边线免去外带线缆，超薄设计",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
+        "adapt",
+        "award_gallery"
       ]
     },
     {
-      "id": "5f5828269ba8",
+      "id": "556697f617d0",
       "product_key": null,
-      "title": "kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented...",
+      "title": "Red Dot Design Award: Xiaomi UltraThin Magnetic Power Bank 5000 15W",
       "category": "充电宝",
-      "action_lane": "适合改造",
+      "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "结构启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/1829065284/ample-the-powerbank-reinvented",
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/xiaomi-ultrathin-magnetic-power-bank-5000-15w-89435",
       "image": "",
-      "summary": "Ample Ultraslim Powerbank 是一款超薄充电宝，支持自选线缆，结构上实现极薄便携，符合充电宝品类创新要求。。页面证据：Pledge €49 or more About US$ 52. Early bird [single pack]. Experience the finest powerbank that ever charged! Save €20 (29% OFF RETAIL). Includes: Ample Ultraslim Powerbank. 2× Cables of your choice.",
-      "risk": "内置两条侧边线免去外带线缆，超薄设计",
-      "review_confidence": 9,
-      "review_reason": "内置两条侧边线免去外带线缆，超薄设计",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "summary": "小米UltraThin磁吸充电宝厚度仅6mm、重量98g，5000mAh磁吸无线充电，石墨散热片提升安全，具备超薄便携结构创新。。页面证据：The Xiaomi UltraThin Magnetic Power Bank 5000 15W is a 6 mm thin, 98 gram light battery with 5,000 mAh and magnetic attachment. It supports wireless charging, time-controlled fast charging and parallel charging of two devices. A 4,369 mm² graphite heat...",
+      "risk": "符合充电宝品类：面向日常携带的磁吸无线移动电源。文字证据显示其具备6mm超薄机身、98g轻量、5000mAh容量、15W磁吸无线充电、双设备并行充电、定时快充以及4369mm²石墨散热片等明确结构与功能创新；高频刚需、便携性强、价格空间大概率超过35元，适合作为轻薄磁吸充电宝方向参考。",
+      "review_confidence": 8,
+      "review_reason": "符合充电宝品类：面向日常携带的磁吸无线移动电源。文字证据显示其具备6mm超薄机身、98g轻量、5000mAh容量、15W磁吸无线充电、双设备并行充电、定时快充以及4369mm²石墨散热片等明确结构与功能创新；高频刚需、便携性强、价格空间大概率超过35元，适合作为轻薄磁吸充电宝方向参考。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "buy_sample",
+        "award_gallery",
         "deepseek_search_agent"
       ]
     },
@@ -2073,6 +2185,33 @@
       ]
     },
     {
+      "id": "3f57927c2e1a",
+      "product_key": null,
+      "title": "iF Design - ZMI MiFi Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/zmi-mifi-power-bank/233117",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "ZMI MiFi 移动电源整合 4G LTE 热点与 10000mAh 电池，金属外壳内置线缆，便携性创新。。页面证据：This smart 4G LTE mobile hotspot combined with a 10000mAh power bank is the perfect travel companion. It offers 150Mbps speed and fast charging. The design is sleek, compact and robust thanks to the metal shell and built-in cable. As world’s largest power bank producer, ZMI have managed to combine sophisticated design in structure and electronics with an incredible retail price.",
+      "risk": "集成4G LTE热点与充电宝，内置线缆",
+      "review_confidence": 9,
+      "review_reason": "集成4G LTE热点与充电宝，内置线缆",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "6fea4188d13f",
       "product_key": null,
       "title": "Not enough pockets to carry your stuff? This outdoor jacket can instantly transform into a 35L backpack - Yanko Design",
@@ -2148,6 +2287,33 @@
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "153bb6f1fbb6",
+      "product_key": null,
+      "title": "Remember Apple’s AirPower Mat? Dreame Built A MagSafe Power Bank That Does The Same Thing - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/12/17/remember-apples-airpower-mat-dreame-built-a-magsafe-power-bank-that-does-the-same-thing",
+      "image": "https://www.yankodesign.com/images/design_news/2025/12/draft-dreame-power-bank/dreame_air_power_17_1.jpeg",
+      "summary": "Dreame Air Power 17 MagSafe充电宝，可同时充手机和手表，铝框+AG玻璃，多设备充电创新。。页面证据：Dreame built its name on robot vacuums and smart cleaning stations, but its newest release does not clean your floors at all. Dreame’s Air Power 17 arrives as a magnetic portable power bank with a surprisingly polished feel, pairing an aluminum frame with AG glass and a footprint barely larger than a bank card. It",
+      "risk": "可同时无线充手机和手表，多设备充电",
+      "review_confidence": 9,
+      "review_reason": "可同时无线充手机和手表，多设备充电",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -2253,178 +2419,6 @@
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "1c19dbee414d",
-      "product_key": null,
-      "title": "Red Dot Design Award: Eco-design Circular Lightweight Functional Down Puffer",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/de/project/eco-design-circular-lightweight-functional-down-puffer-68268",
-      "image": "",
-      "summary": "具体产品为Eco-design Circular Lightweight Functional Down Puffer，创新在于一步分离羽绒和外壳、单尼龙材料实现闭环回收、专利热湿平衡系统。。页面证据：The jacket’s down and shell can be easily separated in one step and the mono-nylon materials enable recycling, achieving a closed-loop cycling from material to material. The jacket features a patented system to keep the body in thermal and moisture balance, resulting in a reliable garment for urban sports and outdoor activities.",
-      "risk": "生物基尼龙PA510和回收拉链的环保材料创新",
-      "review_confidence": 9,
-      "review_reason": "生物基尼龙PA510和回收拉链的环保材料创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "a4afce3914f2",
-      "product_key": null,
-      "title": "iF Design - Gendome Micro Power Bank 15000mAh",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/gendome-micro-power-bank-15000mah/681405",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "充电宝是高频刚需，功能全面（三接口、无线充电、IP55防护），价格符合标准，环保设计提升情绪价值。",
-      "risk": "DeepSeek候选复核：DeepSeek候选复核：EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
-      "review_confidence": 9,
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "环保",
-        "户外",
-        "无线充电",
-        "快充",
-        "award_gallery",
-        "buy_sample"
-      ]
-    },
-    {
-      "id": "54aade48850e",
-      "product_key": null,
-      "title": "This Just Inbox: In these lamps, the socket is the bulb - Core77",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "包装启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.core77.com/posts/17088/this-just-inbox-in-these-lamps-the-socket-is-the-bulb-17088",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_17088_.jpg",
-      "summary": "设计新颖，插座即灯泡，可指向性照明和可换灯罩增加互动性，但作为氛围灯实用性有限，受众可能小众。",
-      "risk": "DeepSeek候选复核：DeepSeek候选复核：插座直接作为光源，可旋转指向，可更换灯罩",
-      "review_confidence": 9,
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：插座直接作为光源，可旋转指向，可更换灯罩",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "氛围灯",
-        "灯具设计",
-        "创新结构",
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "f1c60d1ce110",
-      "product_key": null,
-      "title": "iF Design - 145W Fast Charging Power Bank",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "视觉启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "功能全面，满足快充、无线充电和多设备需求，高频使用场景，但价格和专业定位可能限制大众市场。",
-      "risk": "DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
-      "review_confidence": 8,
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "快充",
-        "磁吸",
-        "TFT彩屏",
-        "大功率",
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
-      "id": "968d9e17cd2a",
-      "product_key": null,
-      "title": "Red Dot Design Award: M150 & M250",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 90,
-      "score_label": "9.0",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/m150-m250-70840",
-      "image": "",
-      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
-      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
-      "review_confidence": 9,
-      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
-      "id": "556697f617d0",
-      "product_key": null,
-      "title": "Red Dot Design Award: Xiaomi UltraThin Magnetic Power Bank 5000 15W",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 88,
-      "score_label": "8.8",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/xiaomi-ultrathin-magnetic-power-bank-5000-15w-89435",
-      "image": "",
-      "summary": "小米UltraThin磁吸充电宝厚度仅6mm、重量98g，5000mAh磁吸无线充电，石墨散热片提升安全，具备超薄便携结构创新。。页面证据：The Xiaomi UltraThin Magnetic Power Bank 5000 15W is a 6 mm thin, 98 gram light battery with 5,000 mAh and magnetic attachment. It supports wireless charging, time-controlled fast charging and parallel charging of two devices. A 4,369 mm² graphite heat...",
-      "risk": "符合充电宝品类：面向日常携带的磁吸无线移动电源。文字证据显示其具备6mm超薄机身、98g轻量、5000mAh容量、15W磁吸无线充电、双设备并行充电、定时快充以及4369mm²石墨散热片等明确结构与功能创新；高频刚需、便携性强、价格空间大概率超过35元，适合作为轻薄磁吸充电宝方向参考。",
-      "review_confidence": 8,
-      "review_reason": "符合充电宝品类：面向日常携带的磁吸无线移动电源。文字证据显示其具备6mm超薄机身、98g轻量、5000mAh容量、15W磁吸无线充电、双设备并行充电、定时快充以及4369mm²石墨散热片等明确结构与功能创新；高频刚需、便携性强、价格空间大概率超过35元，适合作为轻薄磁吸充电宝方向参考。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
         "deepseek_search_agent"
       ]
     },
@@ -2563,6 +2557,33 @@
       ]
     },
     {
+      "id": "6f73ceb5ade1",
+      "product_key": null,
+      "title": "Kickstarter >> hug - the insulated collapsible mug by The Huggable Co",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/-hug-/hug-600ml-20oz-double-walled-insulation-in-your-pocket",
+      "image": "",
+      "summary": "hug可折叠保温杯，双壁保温、9档高度、口袋便携、回收材料，明确单品且有结构创新。。页面证据：The Huggable Co is raising funds for hug - the insulated collapsible mug on Kickstarter! Up to 9 height options, double walled insulation, pocket friendly, made from recycled material and climate positive +",
+      "risk": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
+      "review_confidence": 8,
+      "review_reason": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "c08e96dcc07e",
       "product_key": null,
       "title": "Red Dot Design Award: Thermo Mug Without Thread",
@@ -2697,32 +2718,6 @@
       "tags": [
         "editorial_main",
         "水杯"
-      ]
-    },
-    {
-      "id": "124cf4c0fb52",
-      "product_key": null,
-      "title": "The Luma Bottle | A Self-Cleaning Reusable Water... — Kickstarter",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/lumabottle/the-luma-bottle-a-self-cleaning-reusable-water-bot",
-      "image": "",
-      "summary": "Luma Bottle是一款自清洁可重复水壶，使用UV-C光杀灭99.999%的细菌，在材料或功能上有明确创新。。页面证据：A reusable water bottle that harnesses the power of digital UV-C light to kill 99.999% of bacteria in your water and bottle.",
-      "risk": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
-      "review_confidence": 9,
-      "review_reason": "内置UV-C光自清洁，杀灭99.999%细菌，功能创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     }
   ]
