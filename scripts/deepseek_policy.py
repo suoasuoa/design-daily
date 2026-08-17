@@ -118,19 +118,35 @@ def _mutate_usage(mutator):
 
 def reserve_deepseek_call(component: str = "deepseek") -> dict:
     status = require_deepseek_window(component)
-    limit = max(0, int(os.environ.get("DEEPSEEK_MAX_CALLS", "80")))
+    run_limit = max(0, int(os.environ.get("DEEPSEEK_MAX_CALLS", "80")))
+    daily_limit = max(0, int(os.environ.get("DEEPSEEK_DAILY_MAX_CALLS", "0")))
+    run_id = os.environ.get("GITHUB_RUN_ID") or os.environ.get("DEEPSEEK_RUN_ID") or "local"
 
     def reserve(payload):
         calls = int(payload.get("calls") or 0)
-        if limit and calls >= limit:
+        runs = payload.setdefault("runs", {})
+        run_row = runs.setdefault(run_id, {"calls": 0})
+        run_calls = int(run_row.get("calls") or 0)
+        if daily_limit and calls >= daily_limit:
             raise DeepSeekBudgetExceeded(
-                f"DeepSeek call budget reached: {calls}/{limit}; component={component}"
+                f"DeepSeek daily call budget reached: {calls}/{daily_limit}; component={component}"
+            )
+        if run_limit and run_calls >= run_limit:
+            raise DeepSeekBudgetExceeded(
+                f"DeepSeek run call budget reached: {run_calls}/{run_limit}; component={component}"
             )
         payload["calls"] = calls + 1
+        run_row["calls"] = run_calls + 1
         components = payload.setdefault("components", {})
         row = components.setdefault(component, {"calls": 0, "total_tokens": 0})
         row["calls"] = int(row.get("calls") or 0) + 1
-        return {**status, "calls": payload["calls"], "limit": limit}
+        return {
+            **status,
+            "daily_calls": payload["calls"],
+            "daily_limit": daily_limit,
+            "run_calls": run_row["calls"],
+            "run_limit": run_limit,
+        }
 
     return _mutate_usage(reserve)
 

@@ -44,7 +44,8 @@ jobs:
     env:
       DEEPSEEK_ALLOWED_WINDOWS: "06:00-08:30,12:01-13:59"
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "3"
-      DEEPSEEK_USAGE_FILE: "/tmp/design-daily-deepseek-usage.json"
+      DEEPSEEK_USAGE_FILE: "data/reports/deepseek-usage.json"
+      DEEPSEEK_DAILY_MAX_CALLS: "100"
     steps:
       - uses: actions/checkout@v4
 

@@ -31,6 +31,8 @@ class DeepSeekPolicyTests(unittest.TestCase):
             env = {
                 "DEEPSEEK_ALLOW_OUTSIDE_WINDOW": "1",
                 "DEEPSEEK_MAX_CALLS": "2",
+                "DEEPSEEK_DAILY_MAX_CALLS": "10",
+                "DEEPSEEK_RUN_ID": "test-run",
                 "DEEPSEEK_USAGE_FILE": str(usage_file),
             }
             with patch.dict(os.environ, env, clear=False):
@@ -40,6 +42,7 @@ class DeepSeekPolicyTests(unittest.TestCase):
                     reserve_deepseek_call("test")
             payload = json.loads(usage_file.read_text(encoding="utf-8"))
             self.assertEqual(payload["calls"], 2)
+            self.assertEqual(payload["runs"]["test-run"]["calls"], 2)
 
 
 if __name__ == "__main__":
