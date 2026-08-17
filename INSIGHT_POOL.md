@@ -99,10 +99,12 @@ cp .env.example .env
 
 ```bash
 DEEPSEEK_API_KEY
-DEEPSEEK_MODEL=deepseek-chat
+DEEPSEEK_MODEL=deepseek-v4-flash
 ```
 
 本地脚本会自动读取 `.env`。
+
+DeepSeek 请求受北京时间硬门禁保护，只能在 `06:00-08:30` 和 `12:01-13:59` 发起。高峰期手动运行会停止 AI 请求，避免意外消耗；如需查看当次调用与 token 统计，可在 GitHub Actions 的 `DeepSeek usage` 摘要中查看。
 
 如果要让 GitHub Actions 使用 DeepSeek，在仓库设置里添加 Secret：
 
