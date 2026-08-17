@@ -1,0 +1,26 @@
+{
+  "calls": 42,
+  "completion_tokens": 256140,
+  "components": {
+    "category_review": {
+      "calls": 14,
+      "total_tokens": 176117
+    },
+    "search_agent": {
+      "calls": 27,
+      "total_tokens": 285605
+    },
+    "trend_report": {
+      "calls": 1,
+      "total_tokens": 10615
+    }
+  },
+  "date": "2026-08-18",
+  "prompt_tokens": 216197,
+  "runs": {
+    "32076320975": {
+      "calls": 42
+    }
+  },
+  "total_tokens": 472337
+}
