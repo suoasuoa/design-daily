@@ -13,6 +13,7 @@ import urllib.request
 
 from insight_common import DATA_DIR, load_env, load_json, now_iso, today, write_json
 from insight_config import SCORING_PRINCIPLES, SELECTION_WEIGHTS
+from deepseek_policy import record_deepseek_usage, reserve_deepseek_call
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
@@ -141,6 +142,7 @@ def deepseek_score(product, api_key):
     )
     last_error = None
     for attempt in range(1, 4):
+        reserve_deepseek_call("product_score")
         req = urllib.request.Request(
             DEEPSEEK_URL,
             data=json.dumps(body).encode("utf-8"),
@@ -150,6 +152,7 @@ def deepseek_score(product, api_key):
         try:
             with urllib.request.urlopen(req, timeout=60, context=SSL_CONTEXT) as resp:
                 payload = json.loads(resp.read().decode("utf-8"))
+            record_deepseek_usage("product_score", payload)
             content = payload["choices"][0]["message"]["content"]
             result = parse_json_response(content)
             for key in SELECTION_WEIGHTS:

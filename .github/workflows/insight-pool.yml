@@ -2,11 +2,12 @@ name: Insight Pool
 
 on:
   schedule:
-    # Beijing weekdays: 06:30 full collection, then 11:30 and 15:30 gap checks.
-    # The first cron is Sunday-Thursday UTC because it is the previous UTC day.
-    - cron: "30 22 * * 0-4"
-    - cron: "30 3 * * 1-5"
-    - cron: "30 7 * * 1-5"
+    # Beijing weekdays: one full off-peak collection and three deficit-only checks.
+    # Morning UTC schedules use Sunday-Thursday because Beijing is on the next day.
+    - cron: "5 22 * * 0-4"  # 06:05 Beijing
+    - cron: "35 23 * * 0-4" # 07:35 Beijing
+    - cron: "10 4 * * 1-5"  # 12:10 Beijing
+    - cron: "10 5 * * 1-5"  # 13:10 Beijing
   workflow_dispatch:
     inputs:
       score_limit:
@@ -40,12 +41,19 @@ concurrency:
 jobs:
   build-insight-pool:
     runs-on: ubuntu-latest
+    env:
+      DEEPSEEK_ALLOWED_WINDOWS: "06:00-08:30,12:01-13:59"
+      DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "3"
+      DEEPSEEK_USAGE_FILE: "/tmp/design-daily-deepseek-usage.json"
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Check DeepSeek off-peak window
+        run: python3 scripts/deepseek_policy.py --export-github-env
 
       - name: Set collection mode and daily target
         run: |
@@ -60,9 +68,10 @@ jobs:
               echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '60' }}" >> "$GITHUB_ENV"
               echo "AGENT_QUERIES=${{ github.event.inputs.agent_queries || '90' }}" >> "$GITHUB_ENV"
               echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
-              echo "TOPUP_AGENT_QUERIES=100" >> "$GITHUB_ENV"
-              echo "TOPUP_AGENT_PAGES=500" >> "$GITHUB_ENV"
-              echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
+              echo "TOPUP_AGENT_QUERIES=50" >> "$GITHUB_ENV"
+              echo "TOPUP_AGENT_PAGES=240" >> "$GITHUB_ENV"
+              echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+              echo "DEEPSEEK_MAX_CALLS=60" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
                 echo "USE_TAVILY_SEARCH=1" >> "$GITHUB_ENV"
               else
@@ -71,29 +80,43 @@ jobs:
           else
               bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
               echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
-              if [ "${{ github.event.schedule }}" = "30 22 * * 0-4" ]; then
+              if [ "${{ github.event.schedule }}" = "5 22 * * 0-4" ]; then
                 echo "RUN_MODE=main" >> "$GITHUB_ENV"
-                echo "SCORE_LIMIT=100" >> "$GITHUB_ENV"
-                echo "AGENT_QUERIES=140" >> "$GITHUB_ENV"
-                echo "AGENT_PAGES=650" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
-                echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=60" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=320" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_QUERIES=40" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_PAGES=200" >> "$GITHUB_ENV"
+                echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+                echo "DEEPSEEK_MAX_CALLS=65" >> "$GITHUB_ENV"
               else
                 echo "RUN_MODE=check" >> "$GITHUB_ENV"
-                echo "SCORE_LIMIT=30" >> "$GITHUB_ENV"
+                echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
-                echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
+                if [ "${{ github.event.schedule }}" = "35 23 * * 0-4" ]; then
+                  echo "TOPUP_AGENT_QUERIES=35" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=160" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=1" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=30" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "10 4 * * 1-5" ]; then
+                  echo "TOPUP_AGENT_QUERIES=40" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=200" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=45" >> "$GITHUB_ENV"
+                else
+                  echo "TOPUP_AGENT_QUERIES=24" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=120" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=1" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=24" >> "$GITHUB_ENV"
+                fi
               fi
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               echo "USE_TAVILY_SEARCH=0" >> "$GITHUB_ENV"
               echo "PHASE_CLOCK=$bj_hm" >> "$GITHUB_ENV"
           fi
 
-      - name: Skip completed morning phase
+      - name: Skip closed or completed phase
         run: |
           python3 - <<'PY'
           import datetime as dt
@@ -109,7 +132,11 @@ jobs:
           skip = False
           reason = "manual_or_incomplete"
 
-          if event_name == "schedule" and run_mode == "main":
+          if os.environ.get("DEEPSEEK_WINDOW_OPEN") != "1":
+              skip = True
+              reason = "outside_configured_deepseek_window"
+
+          elif event_name == "schedule":
               path = Path("insight/data.raw.json")
               if path.exists():
                   data = json.loads(path.read_text(encoding="utf-8"))
@@ -122,9 +149,6 @@ jobs:
                       reason = f"needs_run date={group.get('date')} actual={actual} target={target} today={today}"
               else:
                   reason = "no_existing_dashboard_data"
-
-          elif event_name == "schedule" and run_mode == "check":
-              reason = "scheduled_quality_refresh"
 
           with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as f:
               f.write(f"SKIP_INSIGHT={'1' if skip else '0'}\n")
@@ -185,7 +209,7 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
           CATEGORY_REVIEW_WORKERS: "4"
-        run: python3 scripts/review_categories.py --batch-size 10
+        run: python3 scripts/review_categories.py --batch-size 20
 
       - name: Ensure phased public social picks
         if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
@@ -204,10 +228,6 @@ jobs:
           SEARXNG_BASE_URL: ${{ secrets.SEARXNG_BASE_URL }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: |
-          refresh_args=()
-          if [ "$RUN_MODE" = "check" ]; then
-            refresh_args+=(--refresh)
-          fi
           python3 scripts/ensure_daily_minimum.py \
             --target "$DAILY_TARGET" \
             --per-job 10 \
@@ -216,20 +236,13 @@ jobs:
             --agent-queries "$TOPUP_AGENT_QUERIES" \
             --agent-pages "$TOPUP_AGENT_PAGES" \
             --agent-screen-workers 6 \
+            --review-batch-size 20 \
             --curated-limit 90 \
-            --shopify-pages 1 \
-            "${refresh_args[@]}"
+            --shopify-pages 1
 
       - name: Enrich missing product images
         if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/enrich_images.py --limit 50
-
-      - name: Score products
-        if: env.SKIP_INSIGHT != '1'
-        env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          DEEPSEEK_MODEL: deepseek-v4-flash
-        run: python3 scripts/score.py --limit "$SCORE_LIMIT" --date "$(TZ=Asia/Shanghai date +%F)"
 
       - name: Generate trend report
         if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
@@ -239,6 +252,13 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
         run: python3 scripts/trend_agent.py --limit 100
+
+      - name: Report DeepSeek usage
+        if: always()
+        run: |
+          python3 scripts/deepseek_policy.py --report
+          echo "### DeepSeek usage" >> "$GITHUB_STEP_SUMMARY"
+          python3 scripts/deepseek_policy.py --report >> "$GITHUB_STEP_SUMMARY"
 
       - name: Build static insight dashboard
         if: env.SKIP_INSIGHT != '1'

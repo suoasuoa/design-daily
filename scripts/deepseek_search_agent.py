@@ -16,6 +16,7 @@ import urllib.parse
 import urllib.request
 
 from collect_search import fetch_results, source_meta_for_url
+from deepseek_policy import record_deepseek_usage, reserve_deepseek_call
 from insight_common import (
     DATA_DIR,
     RAW_DIR,
@@ -122,6 +123,7 @@ def call_deepseek(prompt, max_tokens=7000, attempts=3):
     )
     last_error = None
     for attempt in range(1, attempts + 1):
+        reserve_deepseek_call("search_agent")
         req = urllib.request.Request(
             DEEPSEEK_URL,
             data=json.dumps(body).encode("utf-8"),
@@ -131,6 +133,7 @@ def call_deepseek(prompt, max_tokens=7000, attempts=3):
         try:
             with urllib.request.urlopen(req, timeout=120, context=SSL_CONTEXT) as response:
                 payload = json.loads(response.read().decode("utf-8"))
+            record_deepseek_usage("search_agent", payload)
             return parse_json_response(payload["choices"][0]["message"]["content"])
         except urllib.error.HTTPError as exc:
             last_error = exc
@@ -239,10 +242,7 @@ def plan_queries(query_count, target, round_index):
         ]
     }
     prompt = f"""
-你负责为选品团队制定第 {round_index + 1} 轮真实网页搜索计划。今天已经严格通过 {current_count}/{target} 条，品类分布：
-{json.dumps(dict(current_categories), ensure_ascii=False)}
-
-请生成最多 {query_count} 条高精度搜索词。目标是找到数据库从未收录的具体产品或具体设计案例，不要求当天发布。
+你负责为选品团队制定真实网页搜索计划。目标是找到数据库从未收录的具体产品或具体设计案例，不要求当天发布。
 
 硬规则：
 1. 只搜索下面的允许品类。以“最终页面已展示分布”为准，优先仍有展示席位且今天数量少的品类；常规品类达到 5 条后停止搜索，手机壳和充电宝达到 3 条后停止搜索，钥匙扣水壶达到 2 条后停止搜索，中秋/端午礼盒达到 3 条后停止搜索。同一品类计划不超过总搜索词的 20%。
@@ -264,6 +264,10 @@ def plan_queries(query_count, target, round_index):
 
 白名单域名：
 {domains}
+
+本轮状态：第 {round_index + 1} 轮；今天已经严格通过 {current_count}/{target} 条；最多生成 {query_count} 条高精度搜索词。
+当前品类分布：
+{json.dumps(dict(current_categories), ensure_ascii=False)}
 
 只返回 JSON：
 {json.dumps(schema, ensure_ascii=False)}

@@ -26,6 +26,10 @@ permissions:
 jobs:
   accumulate-and-generate:
     runs-on: ubuntu-latest
+    env:
+      DEEPSEEK_ALLOWED_WINDOWS: "06:00-08:30,12:01-13:59"
+      DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "3"
+      DEEPSEEK_MAX_CALLS: "40"
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,6 +39,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: Enforce DeepSeek off-peak window
+        if: github.event.inputs.deepseek != 'false'
+        run: python3 scripts/deepseek_policy.py --check
 
       - name: Install Playwright
         run: |

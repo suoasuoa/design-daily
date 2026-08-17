@@ -22,6 +22,8 @@ DeepSeek 精细化评分模块（Phase 2）
 import json, os, sys, time, ssl, urllib.request, urllib.error
 from typing import Optional, Dict, Any, List
 
+from scripts.deepseek_policy import DeepSeekPolicyError, record_deepseek_usage, reserve_deepseek_call
+
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 
 # 宽松 SSL 上下文
@@ -31,7 +33,7 @@ _CTX.verify_mode = ssl.CERT_NONE
 
 # DeepSeek API 配置
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
-MODEL = "deepseek-chat"  # 标准对话模型，快且便宜
+MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-v4-flash")
 
 # 每批处理的并发数（DeepSeek API 没有严格限制，但别太快）
 BATCH_SIZE = 5
@@ -90,8 +92,13 @@ def _call_deepseek(prompt: str, retries: int = 2) -> Optional[Dict[str, int]]:
     
     for attempt in range(retries + 1):
         try:
+            reserve_deepseek_call("legacy_score")
             with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT, context=_CTX) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
+            record_deepseek_usage("legacy_score", data)
+        except DeepSeekPolicyError as e:
+            print(f"  DeepSeek 调用已被时段/预算规则阻止: {e}", file=sys.stderr)
+            return None
         except (urllib.error.URLError, urllib.error.HTTPError, 
                 json.JSONDecodeError, TimeoutError) as e:
             if attempt < retries:

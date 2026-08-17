@@ -85,11 +85,18 @@ def main():
             return
 
     for index in range(args.max_passes):
-        # Later passes should broaden the query plan when a strict quality
-        # gate leaves a real display deficit instead of repeating the same
-        # small set of saturated categories.
-        pass_queries = args.agent_queries + index * max(20, args.agent_queries // 2)
-        pass_pages = args.agent_pages + index * max(80, args.agent_pages // 2)
+        # Scale each round to the remaining display deficit. Small gaps should
+        # not pay for the same large plan used to build a whole daily group.
+        gap = max(1, args.target - count)
+        expanded_queries = args.agent_queries + index * max(12, args.agent_queries // 3)
+        expanded_pages = args.agent_pages + index * max(60, args.agent_pages // 3)
+        pass_queries = min(expanded_queries, max(12, gap * 4 + index * 6))
+        pass_pages = min(expanded_pages, max(60, gap * 18 + index * 30))
+        print(
+            f"daily_minimum budget pass={index + 1} gap={gap} "
+            f"queries={pass_queries} pages={pass_pages}",
+            flush=True,
+        )
         run(
             [
                 sys.executable,

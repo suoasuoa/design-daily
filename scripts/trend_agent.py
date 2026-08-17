@@ -12,6 +12,7 @@ from collections import Counter
 
 from insight_common import DATA_DIR, load_env, load_json, now_iso, write_json
 from insight_config import RETIRED_CATEGORIES
+from deepseek_policy import DeepSeekPolicyError, record_deepseek_usage, reserve_deepseek_call
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
@@ -118,6 +119,7 @@ def deepseek_report(products, api_key, limit=80):
         "response_format": {"type": "json_object"},
     }
     payload = json.dumps(body).encode("utf-8")
+    reserve_deepseek_call("trend_report")
     req = urllib.request.Request(
         DEEPSEEK_URL,
         data=payload,
@@ -127,10 +129,12 @@ def deepseek_report(products, api_key, limit=80):
     try:
         with urllib.request.urlopen(req, timeout=60, context=SSL_CONTEXT) as resp:
             payload = json.loads(resp.read().decode("utf-8"))
+        record_deepseek_usage("trend_report", payload)
     except urllib.error.HTTPError as exc:
         if exc.code != 400:
             raise
         body.pop("response_format", None)
+        reserve_deepseek_call("trend_report")
         req = urllib.request.Request(
             DEEPSEEK_URL,
             data=json.dumps(body).encode("utf-8"),
@@ -139,6 +143,7 @@ def deepseek_report(products, api_key, limit=80):
         )
         with urllib.request.urlopen(req, timeout=60, context=SSL_CONTEXT) as resp:
             payload = json.loads(resp.read().decode("utf-8"))
+        record_deepseek_usage("trend_report", payload)
     text = payload["choices"][0]["message"]["content"].strip()
     start = text.find("{")
     end = text.rfind("}")
@@ -166,7 +171,7 @@ def main():
         report = deepseek_report(products, api_key, args.limit) if api_key else local_report(products, args.limit)
         if api_key:
             time.sleep(0.3)
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError) as exc:
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, KeyError, DeepSeekPolicyError) as exc:
         print(f"fallback local trend report ({exc})")
         report = local_report(products, args.limit)
     write_json(DATA_DIR / "trends.json", report)

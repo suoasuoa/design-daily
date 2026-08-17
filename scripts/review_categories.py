@@ -22,6 +22,7 @@ from insight_config import (
     RETIRED_CATEGORY_CUTOFF,
 )
 from preference_profile import preference_context
+from deepseek_policy import DeepSeekPolicyError, record_deepseek_usage, reserve_deepseek_call
 
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
@@ -375,6 +376,7 @@ def review_batch(batch, api_key):
         "max_tokens": 7000,
         "response_format": {"type": "json_object"},
     }
+    reserve_deepseek_call("category_review")
     req = urllib.request.Request(
         DEEPSEEK_URL,
         data=json.dumps(body).encode("utf-8"),
@@ -384,10 +386,12 @@ def review_batch(batch, api_key):
     try:
         with urllib.request.urlopen(req, timeout=90, context=SSL_CONTEXT) as resp:
             payload = json.loads(resp.read().decode("utf-8"))
+        record_deepseek_usage("category_review", payload)
     except urllib.error.HTTPError as exc:
         if exc.code != 400:
             raise
         body.pop("response_format", None)
+        reserve_deepseek_call("category_review")
         req = urllib.request.Request(
             DEEPSEEK_URL,
             data=json.dumps(body).encode("utf-8"),
@@ -396,6 +400,7 @@ def review_batch(batch, api_key):
         )
         with urllib.request.urlopen(req, timeout=90, context=SSL_CONTEXT) as resp:
             payload = json.loads(resp.read().decode("utf-8"))
+        record_deepseek_usage("category_review", payload)
     content = payload["choices"][0]["message"]["content"]
     return parse_json_response(content).get("items", [])
 
@@ -437,6 +442,9 @@ def review_one_batch(batch, api_key):
     for attempt in range(1, 4):
         try:
             return review_batch(batch, api_key)
+        except DeepSeekPolicyError as exc:
+            print(f"category review stopped by DeepSeek policy ({exc})", flush=True)
+            return [local_fallback(item) for item in batch]
         except recoverable as exc:
             last_error = exc
             print(f"retry category review attempt={attempt}/3 ({exc})", flush=True)
