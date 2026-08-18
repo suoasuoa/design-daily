@@ -85,15 +85,14 @@ def main():
             return
 
     for index in range(args.max_passes):
-        # Scale each round to the remaining display deficit. Small gaps should
-        # not pay for the same large plan used to build a whole daily group.
+        # Keep a broad candidate pool even when the display deficit is small.
+        # The review gate decides quality; the remaining gap only decides
+        # whether another search round is necessary.
         gap = max(1, args.target - count)
-        expanded_queries = args.agent_queries + index * max(12, args.agent_queries // 3)
-        expanded_pages = args.agent_pages + index * max(60, args.agent_pages // 3)
-        pass_queries = min(expanded_queries, max(12, gap * 4 + index * 6))
-        pass_pages = min(expanded_pages, max(60, gap * 18 + index * 30))
+        pass_queries = args.agent_queries + index * max(20, args.agent_queries // 2)
+        pass_pages = args.agent_pages + index * max(80, args.agent_pages // 2)
         print(
-            f"daily_minimum budget pass={index + 1} gap={gap} "
+            f"daily_minimum broad_search pass={index + 1} gap={gap} "
             f"queries={pass_queries} pages={pass_pages}",
             flush=True,
         )

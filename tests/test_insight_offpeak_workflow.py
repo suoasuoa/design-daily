@@ -19,7 +19,9 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         self.assertNotIn('cron: "30 3 * * 1-5"', workflow)
         self.assertNotIn('cron: "30 7 * * 1-5"', workflow)
         self.assertIn('DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:59,12:01-13:59,18:01-23:59"', workflow)
-        self.assertIn('DEEPSEEK_DAILY_MAX_CALLS: "100"', workflow)
+        self.assertIn('DEEPSEEK_DAILY_MAX_CALLS: "0"', workflow)
+        self.assertIn('echo "AGENT_QUERIES=140"', workflow)
+        self.assertIn('echo "AGENT_PAGES=650"', workflow)
 
     def test_checks_only_fill_real_deficits(self):
         workflow = (ROOT / ".github/workflows/insight-pool.yml").read_text(encoding="utf-8")
