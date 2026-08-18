@@ -2,13 +2,14 @@ name: Insight Pool
 
 on:
   schedule:
-    # Beijing weekdays: one full off-peak collection and four deficit-only checks.
+    # Beijing weekdays: one full off-peak collection and five deficit-only checks.
     # Early-morning UTC schedules use Sunday-Thursday because Beijing is on the next day.
     - cron: "30 18 * * 0-4" # 02:30 Beijing
     - cron: "30 21 * * 0-4" # 05:30 Beijing
     - cron: "0 0 * * 1-5"   # 08:00 Beijing
     - cron: "10 4 * * 1-5"  # 12:10 Beijing
-    - cron: "10 5 * * 1-5"  # 13:10 Beijing
+    - cron: "45 4 * * 1-5"  # 12:45 Beijing; leaves room for GitHub queue delays
+    - cron: "10 10 * * 1-5" # 18:10 Beijing emergency gap check
   workflow_dispatch:
     inputs:
       score_limit:
@@ -106,7 +107,12 @@ jobs:
                   echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 4 * * 1-5" ]; then
+                elif [ "${{ github.event.schedule }}" = "10 4 * * 1-5" ] || [ "${{ github.event.schedule }}" = "45 4 * * 1-5" ]; then
+                  echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "10 10 * * 1-5" ]; then
                   echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
@@ -292,3 +298,26 @@ jobs:
           else
             echo "No insight pool changes"
           fi
+
+      - name: Verify daily target
+        if: env.SKIP_INSIGHT != '1'
+        run: |
+          python3 - <<'PY'
+          import datetime as dt
+          import json
+          import os
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          target = int(os.environ.get("DAILY_TARGET", "40"))
+          today = dt.datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+          data = json.loads(Path("insight/data.raw.json").read_text(encoding="utf-8"))
+          group = (data.get("daily_groups") or [{}])[0]
+          actual = int(group.get("actual_count") or len(group.get("items") or []))
+          report = f"daily_target date={group.get('date')} actual={actual} target={target}"
+          print(report)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+              f.write(f"### Daily target verification\n\n{report}\n")
+          if group.get("date") != today or actual < target:
+              raise SystemExit(f"Daily target incomplete: {report}")
+          PY
