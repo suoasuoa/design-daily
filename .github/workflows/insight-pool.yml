@@ -74,8 +74,8 @@ jobs:
               echo "SCORE_LIMIT=${{ github.event.inputs.score_limit || '60' }}" >> "$GITHUB_ENV"
               echo "AGENT_QUERIES=${{ github.event.inputs.agent_queries || '90' }}" >> "$GITHUB_ENV"
               echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
-              echo "TOPUP_AGENT_QUERIES=100" >> "$GITHUB_ENV"
-              echo "TOPUP_AGENT_PAGES=500" >> "$GITHUB_ENV"
+              echo "TOPUP_AGENT_QUERIES=${{ github.event.inputs.agent_queries || '90' }}" >> "$GITHUB_ENV"
+              echo "TOPUP_AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
               echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
               echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then

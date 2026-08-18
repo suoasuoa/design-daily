@@ -32,6 +32,8 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
     def test_checks_only_fill_real_deficits(self):
         workflow = (ROOT / ".github/workflows/insight-pool.yml").read_text(encoding="utf-8")
         self.assertIn("elif event_name == \"schedule\":", workflow)
+        self.assertIn('echo "TOPUP_AGENT_QUERIES=${{ github.event.inputs.agent_queries', workflow)
+        self.assertIn('echo "TOPUP_AGENT_PAGES=${{ github.event.inputs.agent_pages', workflow)
         self.assertNotIn("scheduled_quality_refresh", workflow)
         self.assertNotIn("refresh_args", workflow)
         self.assertNotIn("python3 scripts/score.py", workflow)
