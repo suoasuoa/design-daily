@@ -9,12 +9,10 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
     def test_schedules_stay_inside_deepseek_windows(self):
         workflow = (ROOT / ".github/workflows/insight-pool.yml").read_text(encoding="utf-8")
         for cron in (
-            'cron: "30 18 * * 0-4"',
-            'cron: "30 21 * * 0-4"',
-            'cron: "0 0 * * 1-5"',
-            'cron: "10 4 * * 1-5"',
-            'cron: "45 4 * * 1-5"',
-            'cron: "10 10 * * 1-5"',
+            'cron: "30 16 * * 0-4"',
+            'cron: "30 20 * * 0-4"',
+            'cron: "0 23 * * 0-4"',
+            'cron: "5 4 * * 1-5"',
         ):
             self.assertIn(cron, workflow)
         self.assertNotIn('cron: "30 3 * * 1-5"', workflow)
@@ -23,6 +21,8 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         self.assertIn('DEEPSEEK_DAILY_MAX_CALLS: "0"', workflow)
         self.assertIn('echo "AGENT_QUERIES=140"', workflow)
         self.assertIn('echo "AGENT_PAGES=650"', workflow)
+        self.assertIn("DEEPSEEK_ALLOW_OUTSIDE_WINDOW:", workflow)
+        self.assertNotIn('cron: "10 10 * * 1-5"', workflow)
 
     def test_incomplete_days_are_reported_as_failures(self):
         workflow = (ROOT / ".github/workflows/insight-pool.yml").read_text(encoding="utf-8")

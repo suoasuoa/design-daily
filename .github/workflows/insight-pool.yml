@@ -2,14 +2,12 @@ name: Insight Pool
 
 on:
   schedule:
-    # Beijing weekdays: one full off-peak collection and five deficit-only checks.
+    # Beijing weekdays: finish collection before 09:00; noon is emergency repair only.
     # Early-morning UTC schedules use Sunday-Thursday because Beijing is on the next day.
-    - cron: "30 18 * * 0-4" # 02:30 Beijing
-    - cron: "30 21 * * 0-4" # 05:30 Beijing
-    - cron: "0 0 * * 1-5"   # 08:00 Beijing
-    - cron: "10 4 * * 1-5"  # 12:10 Beijing
-    - cron: "45 4 * * 1-5"  # 12:45 Beijing; leaves room for GitHub queue delays
-    - cron: "10 10 * * 1-5" # 18:10 Beijing emergency gap check
+    - cron: "30 16 * * 0-4" # 00:30 Beijing: full collection
+    - cron: "30 20 * * 0-4" # 04:30 Beijing: deficit check
+    - cron: "0 23 * * 0-4"  # 07:00 Beijing: final morning check
+    - cron: "5 4 * * 1-5"   # 12:05 Beijing: emergency repair only
   workflow_dispatch:
     inputs:
       score_limit:
@@ -32,6 +30,10 @@ on:
         description: "Only fill/refresh today's displayable picks"
         required: true
         default: "false"
+      allow_peak:
+        description: "Emergency manual run outside DeepSeek off-peak windows"
+        required: true
+        default: "false"
 
 permissions:
   contents: write
@@ -48,6 +50,7 @@ jobs:
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "3"
       DEEPSEEK_USAGE_FILE: "data/reports/deepseek-usage.json"
       DEEPSEEK_DAILY_MAX_CALLS: "0"
+      DEEPSEEK_ALLOW_OUTSIDE_WINDOW: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.allow_peak == 'true' && '1' || '0' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -83,7 +86,7 @@ jobs:
           else
               bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
               echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
-              if [ "${{ github.event.schedule }}" = "30 18 * * 0-4" ]; then
+              if [ "${{ github.event.schedule }}" = "30 16 * * 0-4" ]; then
                 echo "RUN_MODE=main" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=140" >> "$GITHUB_ENV"
@@ -97,22 +100,12 @@ jobs:
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
-                if [ "${{ github.event.schedule }}" = "30 21 * * 0-4" ]; then
+                if [ "${{ github.event.schedule }}" = "30 20 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "0 0 * * 1-5" ]; then
-                  echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 4 * * 1-5" ] || [ "${{ github.event.schedule }}" = "45 4 * * 1-5" ]; then
-                  echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 10 * * 1-5" ]; then
+                elif [ "${{ github.event.schedule }}" = "0 23 * * 0-4" ] || [ "${{ github.event.schedule }}" = "5 4 * * 1-5" ]; then
                   echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=3" >> "$GITHUB_ENV"
