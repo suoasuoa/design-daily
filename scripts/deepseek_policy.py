@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 
 
 LOCAL_TZ = ZoneInfo("Asia/Shanghai")
-DEFAULT_WINDOWS = "06:00-08:30,12:01-13:59"
+DEFAULT_WINDOWS = "00:00-08:59,12:01-13:59,18:01-23:59"
 DEFAULT_USAGE_FILE = "/tmp/design-daily-deepseek-usage.json"
 
 

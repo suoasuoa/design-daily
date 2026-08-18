@@ -27,7 +27,7 @@ jobs:
   accumulate-and-generate:
     runs-on: ubuntu-latest
     env:
-      DEEPSEEK_ALLOWED_WINDOWS: "06:00-08:30,12:01-13:59"
+      DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:59,12:01-13:59,18:01-23:59"
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "3"
       DEEPSEEK_MAX_CALLS: "40"
     steps:

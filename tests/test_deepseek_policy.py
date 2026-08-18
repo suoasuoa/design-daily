@@ -19,11 +19,12 @@ TZ = ZoneInfo("Asia/Shanghai")
 
 class DeepSeekPolicyTests(unittest.TestCase):
     def test_only_configured_beijing_windows_are_open(self):
-        self.assertTrue(window_status(dt.datetime(2026, 8, 17, 6, 0, tzinfo=TZ))["open"])
-        self.assertTrue(window_status(dt.datetime(2026, 8, 17, 8, 27, tzinfo=TZ))["open"])
+        self.assertTrue(window_status(dt.datetime(2026, 8, 17, 0, 0, tzinfo=TZ))["open"])
+        self.assertTrue(window_status(dt.datetime(2026, 8, 17, 8, 56, tzinfo=TZ))["open"])
         self.assertFalse(window_status(dt.datetime(2026, 8, 17, 9, 0, tzinfo=TZ))["open"])
         self.assertTrue(window_status(dt.datetime(2026, 8, 17, 12, 1, tzinfo=TZ))["open"])
         self.assertFalse(window_status(dt.datetime(2026, 8, 17, 14, 0, tzinfo=TZ))["open"])
+        self.assertTrue(window_status(dt.datetime(2026, 8, 17, 18, 1, tzinfo=TZ))["open"])
 
     def test_call_budget_is_hard_limited(self):
         with tempfile.TemporaryDirectory() as directory:
