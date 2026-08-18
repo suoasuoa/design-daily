@@ -163,7 +163,7 @@ def is_candidate(
     item,
     published_urls,
     *,
-    min_quality=70,
+    min_quality=74,
     min_innovation=7,
     min_relevance=8,
 ):

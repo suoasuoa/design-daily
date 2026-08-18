@@ -6,7 +6,7 @@ import json
 import re
 from urllib.parse import urlparse
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, is_ordinary_laptop_stand, load_json, now_iso, source_quality, source_type, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, is_ordinary_laptop_stand, load_daily_history, load_json, now_iso, semantic_product_duplicate, source_quality, source_type, write_json
 from insight_config import CATEGORIES, DAILY_TARGET_40_CUTOFF, LEGACY_DAILY_TARGET, RETIRED_CATEGORIES
 
 
@@ -280,7 +280,7 @@ def display_eligible(item):
         return False
     if int(item.get("review_policy_version") or 0) < 3:
         return False
-    if int(item.get("quality_score") or 0) < 70:
+    if int(item.get("quality_score") or 0) < 74:
         return False
     if int(item.get("innovation") or 0) < 7 or int(item.get("relevance") or 0) < 8:
         return False
@@ -329,10 +329,17 @@ def balanced_ranked_items(ranked, picks, seen):
     )
 
 
-def append_balanced_fill(ranked, picks, seen, per_day, relaxed=False):
+def semantic_duplicate_in(item, known_items):
+    return any(semantic_product_duplicate(item, known) for known in known_items)
+
+
+def append_balanced_fill(ranked, picks, seen, per_day, relaxed=False, semantic_blocklist=None):
+    semantic_blocklist = list(semantic_blocklist or [])
     while len(picks) < per_day:
         chosen = None
         for item in balanced_ranked_items(ranked, picks, seen):
+            if semantic_duplicate_in(item, semantic_blocklist + picks):
+                continue
             if not category_under_cap(picks, item.get("category"), relaxed=relaxed):
                 continue
             if not source_under_cap(picks, item.get("source_name")):
@@ -404,6 +411,13 @@ def merge_historical_snapshots(groups, previous_groups, current_date):
 
 
 def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, current_date=None):
+    current_date = current_date or now_iso()[:10]
+    historical_items = [
+        item
+        for group in (previous_groups or [])
+        if (group.get("date") or "") < current_date
+        for item in (group.get("items") or [])
+    ]
     by_day = defaultdict(list)
     for item in items:
         by_day[item.get("first_seen") or item.get("last_seen") or "unknown"].append(item)
@@ -417,6 +431,7 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
             item
             for item in sorted(by_day[day], key=lambda row: (row.get("score", 0), row.get("seen_count", 0)), reverse=True)
             if display_eligible(item)
+            and not (day == current_date and semantic_duplicate_in(item, historical_items))
         ]
 
         for family, quota in DAILY_SOURCE_QUOTAS.items():
@@ -427,6 +442,8 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
                     continue
                 key = dedupe_key(item)
                 if key in seen:
+                    continue
+                if semantic_duplicate_in(item, picks):
                     continue
                 if not category_under_cap(picks, item.get("category")):
                     continue
@@ -439,7 +456,14 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
             if len(picks) >= day_limit:
                 break
 
-        append_balanced_fill(ranked, picks, seen, day_limit, relaxed=False)
+        append_balanced_fill(
+            ranked,
+            picks,
+            seen,
+            day_limit,
+            relaxed=False,
+            semantic_blocklist=historical_items if day == current_date else None,
+        )
 
         groups.append(
             {
@@ -451,7 +475,6 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
             }
         )
 
-    current_date = current_date or now_iso()[:10]
     merge_historical_snapshots(groups, previous_groups, current_date)
 
     # Historical groups are immutable daily snapshots. When stricter display rules
@@ -1295,7 +1318,6 @@ HTML = """<!doctype html>
 
 def main():
     ensure_dirs()
-    previous_payload = load_json(DATA_DIR / "published.json", {})
     products = load_json(DATA_DIR / "products.json", [])
     trends = load_json(DATA_DIR / "trends.json", {})
     weekly_report = load_json(DATA_DIR / "weekly_report.json", {})
@@ -1311,7 +1333,7 @@ def main():
         trends,
         weekly_report,
         weekly_groups[:12],
-        previous_daily_groups=previous_payload.get("daily_groups", []),
+        previous_daily_groups=load_daily_history(),
     )
     write_json(DATA_DIR / "published.json", payload)
     write_json(INSIGHT_DIR / "data.raw.json", payload)

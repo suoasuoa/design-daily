@@ -86,14 +86,14 @@ class DailyGroupTargetTests(unittest.TestCase):
 
         self.assertFalse(source_under_cap(picks, "Yanko Design"))
 
-    def test_seven_point_floor_is_hard_for_backlog_items(self):
+    def test_quality_floor_is_hard_for_backlog_items(self):
         item = {
             "title": "Weak gift box",
             "category": "创意礼盒",
             "url": "https://example.com/product",
             "review_policy_version": 3,
             "review_source": "deepseek_backlog_balanced",
-            "quality_score": 69,
+            "quality_score": 73,
             "innovation": 8,
             "relevance": 9,
             "review_confidence": 9,

@@ -1,17 +1,41 @@
 import sys
+import json
 from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_site import display_eligible
-from insight_common import product_identity_keys, semantic_product_duplicate, semantic_title_duplicate
+from build_site import build_daily_groups, display_eligible
+from insight_common import load_daily_history, product_identity_keys, semantic_product_duplicate, semantic_title_duplicate
 from promote_reviewed_backlog import clean_candidate_title
 
 
 class SemanticDedupeTests(unittest.TestCase):
+    def test_daily_history_prefers_last_public_snapshot(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            insight_dir = root / "insight"
+            data_dir = root / "data"
+            insight_dir.mkdir()
+            data_dir.mkdir()
+            (insight_dir / "data.raw.json").write_text(
+                json.dumps({"daily_groups": [{"date": "2026-08-17", "items": [{"id": "public"}]}]}),
+                encoding="utf-8",
+            )
+            (data_dir / "published.json").write_text(
+                json.dumps({"items": [{"id": "in-flight"}]}),
+                encoding="utf-8",
+            )
+
+            with patch("insight_common.INSIGHT_DIR", insight_dir), patch("insight_common.DATA_DIR", data_dir):
+                groups = load_daily_history()
+
+        self.assertEqual(groups[0]["items"][0]["id"], "public")
+
     def test_detects_gerber_compleat_across_different_sites(self):
         uncrate = {
             "title": "Gerber Compleat Tool Set",
@@ -63,6 +87,61 @@ class SemanticDedupeTests(unittest.TestCase):
             )
         )
 
+    def test_detects_anker_nano_across_award_sites(self):
+        self.assertTrue(
+            semantic_title_duplicate(
+                "iF Design - Anker Nano Power Bank (10K, 45W)",
+                "Red Dot Design Award: Anker Nano Power Bank",
+            )
+        )
+
+    def test_current_daily_group_blocks_historical_cross_site_product(self):
+        common = {
+            "category": "充电宝",
+            "score": 82,
+            "quality_score": 82,
+            "innovation": 8,
+            "relevance": 9,
+            "review_confidence": 9,
+            "review_policy_version": 3,
+            "source_quality": "premium",
+            "source_name": "iF Design",
+            "source_family": "奖项案例",
+            "action_lane": "适合改造",
+            "summary": "品牌型号与功能证据明确",
+            "first_seen": "2026-08-18",
+        }
+        duplicate = {
+            **common,
+            "id": "anker-if",
+            "title": "iF Design - Anker Nano Power Bank (10K, 45W)",
+            "url": "https://ifdesign.com/anker-nano",
+        }
+        unique = {
+            **common,
+            "id": "unique-power",
+            "title": "Orbit emergency crank power bank",
+            "url": "https://example.com/orbit-power-bank",
+        }
+        previous = [{
+            "date": "2026-08-17",
+            "items": [{
+                "title": "Red Dot Design Award: Anker Nano Power Bank",
+                "category": "充电宝",
+                "url": "https://red-dot.org/anker-nano",
+            }],
+        }]
+
+        groups = build_daily_groups(
+            [duplicate, unique],
+            per_day=2,
+            max_days=1,
+            previous_groups=previous,
+            current_date="2026-08-18",
+        )
+
+        self.assertEqual([item["id"] for item in groups[0]["items"]], ["unique-power"])
+
     def test_does_not_merge_distinct_bottle_names(self):
         self.assertFalse(
             semantic_title_duplicate(
@@ -79,7 +158,7 @@ class SemanticDedupeTests(unittest.TestCase):
             "review_policy_version": 3,
             "review_source": "deepseek_backlog_recheck",
             "review_reason": "模块可重新组合，结构创新明确",
-            "quality_score": 70,
+            "quality_score": 74,
             "innovation": 8,
             "relevance": 9,
             "review_confidence": 8,

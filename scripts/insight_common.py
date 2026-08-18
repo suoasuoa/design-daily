@@ -175,6 +175,16 @@ def load_json(path, default):
         return json.load(f)
 
 
+def load_daily_history():
+    """Load the last public daily snapshots, never an in-flight pool rewrite."""
+    for path in (INSIGHT_DIR / "data.raw.json", DATA_DIR / "published.json"):
+        payload = load_json(path, {})
+        groups = payload.get("daily_groups") if isinstance(payload, dict) else None
+        if groups:
+            return groups
+    return []
+
+
 def write_json(path, data):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -326,7 +336,7 @@ def semantic_title_duplicate(left, right):
     right_set = set(right_tokens)
     if len(left_set) >= 2 and len(right_set) >= 2:
         overlap = len(left_set & right_set) / len(left_set | right_set)
-        if overlap >= 0.72:
+        if overlap >= 0.60:
             return True
     left_text = " ".join(left_tokens)
     right_text = " ".join(right_tokens)

@@ -6,7 +6,7 @@ import subprocess
 import sys
 
 from build_site import build_daily_groups, record, sorted_products
-from insight_common import DATA_DIR, load_json, today
+from insight_common import DATA_DIR, load_daily_history, load_json, today
 
 
 def run(cmd):
@@ -16,14 +16,13 @@ def run(cmd):
 
 def today_count(target=40):
     products = load_json(DATA_DIR / "products.json", [])
-    published = load_json(DATA_DIR / "published.json", {})
     current_day = today()
     items = [record(item) for item in sorted_products(products)]
     groups = build_daily_groups(
         items,
         per_day=max(40, target),
         max_days=1,
-        previous_groups=published.get("daily_groups", []),
+        previous_groups=load_daily_history(),
         current_date=current_day,
     )
     for group in groups:

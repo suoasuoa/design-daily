@@ -24,6 +24,7 @@ from insight_common import (
     clean_direct_product_url,
     ensure_dirs,
     load_env,
+    load_daily_history,
     load_json,
     now_iso,
     stable_hash,
@@ -154,7 +155,6 @@ def accepted_today(target=40):
     was complete even when category/source caps left the published group short.
     """
     products = load_json(DATA_DIR / "products.json", [])
-    published = load_json(DATA_DIR / "published.json", {})
     try:
         from build_site import build_daily_groups, record, sorted_products
 
@@ -162,7 +162,7 @@ def accepted_today(target=40):
             [record(item) for item in sorted_products(products)],
             per_day=max(40, target),
             max_days=1,
-            previous_groups=published.get("daily_groups", []),
+            previous_groups=load_daily_history(),
             current_date=today(),
         )
         group = next((row for row in groups if row.get("date") == today()), {})
