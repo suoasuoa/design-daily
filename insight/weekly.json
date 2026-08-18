@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T07:00:30+08:00",
+  "generated_at": "2026-08-19T02:02:38+08:00",
   "week": "2026-W34",
   "group_id": "2026-W34",
   "date_start": "2026-08-17",
@@ -11,27 +11,27 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 50,
-      "方向参考": 32,
+      "适合改造": 51,
+      "方向参考": 31,
       "可直接买样": 18
     },
     "by_category": {
-      "充电宝": 22,
-      "水杯": 17,
+      "充电宝": 20,
+      "水杯": 18,
       "氛围灯": 14,
       "创意礼盒": 8,
       "手机壳": 8,
       "冲锋衣": 8,
       "创意厨具": 7,
-      "创意桌搭": 6,
+      "创意桌搭": 7,
       "中秋礼盒": 5,
       "日历": 4,
       "端午礼盒": 1
     },
     "by_axis": {
       "功能启发": 68,
-      "结构启发": 57,
-      "包装启发": 21,
+      "结构启发": 58,
+      "包装启发": 22,
       "情绪启发": 17,
       "视觉启发": 8
     }
@@ -1113,6 +1113,33 @@
       ]
     },
     {
+      "id": "bbec914f74ca",
+      "product_key": null,
+      "title": "Level Up Your Tech Setup in 2025 with Aulumu’s Techno-Minimal Accessories - Yanko Design",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/01/04/level-up-your-tech-setup-in-2025-with-aulumus-techno-minimal-accessories",
+      "image": "https://www.yankodesign.com/images/design_news/2025/01/draft-aulumu/Aulumu_4_in_1_charging_station_airpods_cover_wallet_hero.jpg",
+      "summary": "Aulumu M01 4合1折叠无线充电站：整合iPhone、AirPods、Apple Watch及USB-C设备，折叠结构解决桌面多设备充电与理线，是具体桌面单品。。页面证据：https://youtu.be/ZHPAWGfFrTk There’s a certain irony in how we treat our gadgets. We spend hours agonizing over which phone to buy, which laptop to upgrade to, or which smartwatch will best track our lives—only to neglect the tools that connect them all. Accessories, often relegated to afterthoughts, are the unsung heroes of tech. When was the",
+      "risk": "Aulumu M01 4合1折叠无线充电站，一个折叠结构整合手机/手表/耳机充电，解决桌面理线。",
+      "review_confidence": 9,
+      "review_reason": "Aulumu M01 4合1折叠无线充电站，一个折叠结构整合手机/手表/耳机充电，解决桌面理线。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "3446517fdc21",
       "product_key": null,
       "title": "This $450 Gadget Swaps Your Phone Battery in 2 Seconds",
@@ -1697,30 +1724,29 @@
       ]
     },
     {
-      "id": "8126a737383e",
+      "id": "968d9e17cd2a",
       "product_key": null,
-      "title": "SplitGo: Magnetic Modular Power Bank for EDC by SplitGo — Kickstarter",
+      "title": "Red Dot Design Award: M150 & M250",
       "category": "充电宝",
-      "action_lane": "适合改造",
+      "action_lane": "方向参考",
       "axes": [
-        "功能启发",
-        "结构启发"
+        "功能启发"
       ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/splitgo/splitgo-magnetic-modular-power-bank-for-edc",
+      "score": 90,
+      "score_label": "9.0",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/m150-m250-70840",
       "image": "",
-      "summary": "SplitGo磁性模块化充电宝，5000mAh，可附加冷却、照明、雾化等模块，扩展性强，创新模块化设计。。页面证据：A 5000mAh pocket power system with magnetic snap-on modules for charging, cooling, lighting, misting, and daily carry.",
-      "risk": "磁性模块化设计，可附加冷却、照明、雾化等扩展模块。",
+      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
+      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
       "review_confidence": 9,
-      "review_reason": "磁性模块化设计，可附加冷却、照明、雾化等扩展模块。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
+        "adapt",
+        "award_gallery"
       ]
     },
     {
@@ -2355,65 +2381,13 @@
       "url": "https://ifdesign.com/en/winner-ranking/project/gendome-micro-power-bank-15000mah/681405",
       "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
       "summary": "明确产品：Gendome Micro Power Bank 15000mAh。创新点：世界首个EV级LiFePO4电池、三接口输出、独特无线充电模块（支持手表耳机）、IP55防护、全金属外壳、可回收。。页面证据：Micro30 is a power bank with the world's first EV - proven LiFePO4 and 3 - interface output for multiple devices. It has a unique wireless charging module for wearables like Apple Watch and wireless headphones, is IP55 dust and waterproof with a full - metal rugged shell for outdoor use. Sold products can be recycled, and qualified LiFePo4 cores are reused in large - scale ESS energy storage equipment to reduce battery - caused environmental pollution.",
-      "risk": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
+      "risk": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
       "review_confidence": 9,
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：EV级LiFePO4电池材料创新，三接口无线充电模块，IP55防护全金属外壳",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "award_gallery",
         "buy_sample"
-      ]
-    },
-    {
-      "id": "4d5e577d1d4c",
-      "product_key": null,
-      "title": "A portable charger for all batteries! - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 81,
-      "score_label": "8.1",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2017/05/04/a-portable-charger-for-all-batteries",
-      "image": "https://www.yankodesign.com/images/design_news/2017/05/draft-car/car_powerbank_layout.jpg",
-      "summary": "便携充电器同时具备汽车应急启动功能，是明确移动电源产品，多功能集成创新突出。。页面证据：It's not common knowledge, but guess what. That portable charger you carry with you can jump-start your car! It's essentially a rather powerful battery the size of your palm, and it can be a life-saver when you're stranded in the middle of nowhere and your car refuses to start. Well, it can charge your phone,",
-      "risk": "属于日常便携移动电源/充电宝范畴，且不是普通基础款；它将手机USB充电、内置照明和汽车电瓶应急启动夹线集成在一个掌心设备中，功能完整、场景清晰，适合车主和户外应急需求。价格空间大概率可支撑35元以上，但品类已有类似产品，创新不是顶级，作为可用选品方向保留。",
-      "review_confidence": 9,
-      "review_reason": "属于日常便携移动电源/充电宝范畴，且不是普通基础款；它将手机USB充电、内置照明和汽车电瓶应急启动夹线集成在一个掌心设备中，功能完整、场景清晰，适合车主和户外应急需求。价格空间大概率可支撑35元以上，但品类已有类似产品，创新不是顶级，作为可用选品方向保留。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "968d9e17cd2a",
-      "product_key": null,
-      "title": "Red Dot Design Award: M150 & M250",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 90,
-      "score_label": "9.0",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/m150-m250-70840",
-      "image": "",
-      "summary": "Product: M150 & M250 power banks. Innovation: Can charge up to six devices simultaneously, has storage for charging cables/earbuds, and doubles as a phone stand (Qi2 compatible).。页面证据：The digital lifestyle was the focus during the development of the high-performance power banks M150 and M250. They offer the possibility to charge up to six devices simultaneously and have storage space for charging cables or earbuds. Moreover, they can...",
-      "risk": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
-      "review_confidence": 9,
-      "review_reason": "Can charge 6 devices simultaneously, has storage for cables and earbuds, doubles as phone stand (Qi2).",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
       ]
     },
     {
@@ -2706,6 +2680,34 @@
       "risk": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
       "review_confidence": 9,
       "review_reason": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "editorial_main",
+        "水杯"
+      ]
+    },
+    {
+      "id": "1385098d1e59",
+      "product_key": null,
+      "title": "This 100% plastic-free bottle comes with a reusable filter that can ...",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2021/10/25/this-100-plastic-free-bottle-comes-with-a-reusable-filter-that-can-literally-purify-water-forever",
+      "image": "",
+      "summary": "To clean the Claysilite filter, all you need to do is put it in boiling water for 10 minutes every month, and the Claysilite filter will practically last forever. Along with the filter comes a Claysilite pearl, a tiny pellet that can remove 99% of chlorine fro",
+      "risk": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
+      "review_confidence": 9,
+      "review_reason": "100%无塑料瓶身搭配可永久使用的Claysilite滤芯，材料与功能双重创新",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "editorial_main",

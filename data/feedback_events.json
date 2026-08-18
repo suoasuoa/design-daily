@@ -624,5 +624,35 @@
       "source_family": "媒体案例"
     },
     "created_at": "2026-08-11T10:14:52.876+00:00"
+  },
+  {
+    "event_id": "73057ab2-2f2f-4a18-b756-0ae4c25d884c",
+    "workspace": "design-daily",
+    "actor_id": "09532d1c-f2b5-4f84-85b7-eb1c4124def6",
+    "product_id": "79c855a6a11e",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "daily",
+      "daily_group": "daily-2026-08-18",
+      "weekly_group": "2026-W34"
+    },
+    "item_snapshot": {
+      "url": "https://www.core77.com/posts/71053/The-Quartz-is-a-Brilliant-Self-Cleaning-Reusable-Water-Bottle",
+      "axes": [
+        "功能启发"
+      ],
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "The Quartz is a Brilliant, Self-Cleaning Reusable Water Bottle - Core77",
+      "summary": "The Quartz 自清洁可重复使用水杯，通过内置自洁机制解决传统水瓶内部顽固污渍问题，功能创新明确，可买样。。页面证据：I had a transparent reusable water bottle I used to bring to my training hall, but I stopped using it because these gross black dots were forming on the inside near the bottom and they were difficult to scrub out, even with a bristle brush. The developers of the",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "source_name": "Core77",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-08-18T09:28:44.697+00:00"
   }
 ]
