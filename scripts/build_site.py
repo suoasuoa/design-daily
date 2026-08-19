@@ -6,7 +6,7 @@ import json
 import re
 from urllib.parse import urlparse
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, is_ordinary_laptop_stand, load_daily_history, load_json, now_iso, semantic_product_duplicate, source_quality, source_type, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, ensure_dirs, is_ordinary_laptop_stand, is_rejected_product, load_daily_history, load_json, now_iso, semantic_product_duplicate, source_quality, source_type, write_json
 from insight_config import CATEGORIES, DAILY_TARGET_40_CUTOFF, LEGACY_DAILY_TARGET, RETIRED_CATEGORIES
 
 
@@ -30,10 +30,10 @@ DAILY_SOURCE_QUOTAS = {
 DAILY_CATEGORY_CAPS = {
     "创意礼盒": 5,
     "装置艺术": 5,
-    "创意厨具": 5,
+    "创意厨具": 6,
     "创意桌搭": 5,
     "氛围灯": 5,
-    "水杯": 5,
+    "水杯": 6,
     "中秋礼盒": 3,
     "端午礼盒": 3,
     "收纳包": 2,
@@ -41,13 +41,14 @@ DAILY_CATEGORY_CAPS = {
     "卫衣": 2,
     "Polo衫": 2,
     "帽子": 2,
-    "手机壳": 3,
+    "手机壳": 2,
     "卡包": 2,
     "钥匙扣水壶": 2,
-    "充电宝": 3,
-    "日历": 5,
-    "冲锋衣": 5,
+    "充电宝": 2,
+    "日历": 6,
+    "冲锋衣": 2,
 }
+DAILY_CATEGORY_MINIMUMS = {"日历": 4, "水杯": 5, "创意厨具": 5}
 DEFAULT_DAILY_CATEGORY_CAP = 5
 DAILY_SOURCE_CAP = 5
 
@@ -220,6 +221,7 @@ def record(item):
         "title": item.get("title", ""),
         "category": item.get("category", ""),
         "summary": item.get("ai_reason") or item.get("summary", ""),
+        "product_identity": item.get("product_identity", ""),
         "score": effective_score(item),
         "price_gate": item.get("price_gate", "unknown"),
         "image": image,
@@ -272,6 +274,8 @@ def source_under_cap(picks, source_name_value):
 
 
 def display_eligible(item):
+    if is_rejected_product(item):
+        return False
     if item.get("category") in RETIRED_CATEGORIES:
         return False
     if not item.get("title"):
@@ -350,6 +354,28 @@ def append_balanced_fill(ranked, picks, seen, per_day, relaxed=False, semantic_b
             return
         seen.add(dedupe_key(chosen))
         picks.append(chosen)
+
+
+def append_category_minimums(ranked, picks, seen, semantic_blocklist=None):
+    semantic_blocklist = list(semantic_blocklist or [])
+    for category, minimum in DAILY_CATEGORY_MINIMUMS.items():
+        while sum(item.get("category") == category for item in picks) < minimum:
+            chosen = next(
+                (
+                    item
+                    for item in ranked
+                    if item.get("category") == category
+                    and dedupe_key(item) not in seen
+                    and not semantic_duplicate_in(item, semantic_blocklist + picks)
+                    and category_under_cap(picks, category)
+                    and source_under_cap(picks, item.get("source_name"))
+                ),
+                None,
+            )
+            if not chosen:
+                break
+            seen.add(dedupe_key(chosen))
+            picks.append(chosen)
 
 
 def compact_weekly_report(report):
@@ -433,6 +459,13 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
             if display_eligible(item)
             and not (day == current_date and semantic_duplicate_in(item, historical_items))
         ]
+
+        append_category_minimums(
+            ranked,
+            picks,
+            seen,
+            semantic_blocklist=historical_items if day == current_date else None,
+        )
 
         for family, quota in DAILY_SOURCE_QUOTAS.items():
             for item in ranked:

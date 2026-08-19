@@ -35,7 +35,8 @@ class CrossSourceDedupeTests(unittest.TestCase):
         self.assertEqual(len(products), 1)
         product = next(iter(products.values()))
         self.assertEqual(product["seen_count"], 2)
-        self.assertEqual(len(entity_index), 1)
+        self.assertTrue(entity_index)
+        self.assertEqual(len(set(entity_index.values())), 1)
 
     def test_torras_charger_does_not_merge_with_ostand_case(self):
         leads = [

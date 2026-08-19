@@ -27,6 +27,7 @@ from insight_common import (
     load_daily_history,
     load_json,
     now_iso,
+    rejected_product_urls,
     stable_hash,
     strip_html,
     today,
@@ -45,7 +46,7 @@ from preference_profile import preference_context
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
 USER_AGENT = "Mozilla/5.0 DesignDailyDeepSeekAgent/1.0"
-PRE_REVIEW_VERSION = 2
+PRE_REVIEW_VERSION = 3
 
 
 class PageMetaParser(HTMLParser):
@@ -173,7 +174,7 @@ def accepted_today(target=40):
 
 
 def seen_urls():
-    seen = set()
+    seen = set(rejected_product_urls())
     index = load_json(DATA_DIR / "dedupe_index.json", {})
     seen.update(canonical_url(url) for url in (index.get("url_index") or {}) if url)
     for path in [DATA_DIR / "products.json", DATA_DIR / "rejected_category.json"]:
@@ -211,11 +212,14 @@ def fallback_query_jobs(limit, round_index=0, allowed_categories=None):
         return []
     start = (round_index * limit) % len(jobs)
     ordered = jobs[start:] + jobs[:start]
+    priority = {"日历": 0, "水杯": 1, "创意厨具": 2}
+    ordered = sorted(enumerate(ordered), key=lambda row: (priority.get(row[1].get("category"), 3), row[0]))
+    ordered = [job for _, job in ordered]
     selected = []
     category_counts = Counter()
     for job in ordered:
         category = job.get("category")
-        if category in {"手机壳", "充电宝"} and category_counts[category] >= 3:
+        if category in {"手机壳", "充电宝"} and category_counts[category] >= 2:
             continue
         selected.append(job)
         category_counts[category] += 1
@@ -245,7 +249,7 @@ def plan_queries(query_count, target, round_index):
 你负责为选品团队制定真实网页搜索计划。目标是找到数据库从未收录的具体产品或具体设计案例，不要求当天发布。
 
 硬规则：
-1. 只搜索下面的允许品类。以“最终页面已展示分布”为准，优先仍有展示席位且今天数量少的品类；常规品类达到 5 条后停止搜索，手机壳和充电宝达到 3 条后停止搜索，钥匙扣水壶达到 2 条后停止搜索，中秋/端午礼盒达到 3 条后停止搜索。同一品类计划不超过总搜索词的 20%。
+1. 只搜索下面的允许品类。以“最终页面已展示分布”为准，优先补日历、水杯、创意厨具；手机壳和充电宝达到 2 条后停止搜索，冲锋衣达到 2 条后停止搜索，其他品类按页面剩余席位执行。同一品类计划不超过总搜索词的 20%。
 2. 70% 搜索词必须带 site:白名单域名，优先设计奖、设计媒体、包装网站、众筹和真实商品页。
 3. 搜索词必须指向具体产品页或具体案例页，避免 search、collection、tag、topic、首页和泛文章。
 4. 明确排除普通基础款、换色/印花/普通联名、建筑新闻、汽车、宠物用品、泛科技新闻和已停用品类。
@@ -446,6 +450,7 @@ def screen_batch(batch):
                 "utility": 0,
                 "clarity": 0,
                 "reason": "specific product and innovation evidence",
+                "product_identity": "brand + exact model/product name",
             }
         ]
     }
@@ -454,7 +459,7 @@ def screen_batch(batch):
 
 必须拒绝：搜索/合集/分类页、泛文章、建筑/汽车/宠物、标题和摘要无法确认具体产品、普通基础款、仅换颜色图案或联名、创新点只能写成“设计感/材质好看”的内容，以及创意桌搭中的普通笔记本电脑支架/折叠支架/增高架。
 可以保留：明确单品、可买样产品、功能/结构/材料/交互创新、可转化的 DIY 或概念原型。必须符合指定品类实体边界。
-预筛的职责是排除明显垃圾并把有证据的候选交给严格终审，不要代替终审过度淘汰。预筛通过需同时满足 relevance>=7、innovation>=5、clarity>=6、confidence>=6，并在 reason 中说清楚具体产品和创新证据。最终页面仍由终审执行 quality>=70、innovation>=7、relevance>=8 的硬门槛。不能用“可能、或许、需确认”。
+预筛的职责是排除明显垃圾并把有证据的候选交给严格终审，不要代替终审过度淘汰。预筛通过需同时满足 relevance>=7、innovation>=5、clarity>=6、confidence>=6，并在 reason 中说清楚具体产品和创新证据。product_identity 必须填写页面明确出现的“品牌 + 精确型号/产品名”，不能写品类通称；无法确认身份则拒绝。最终页面仍由终审执行 quality>=70、innovation>=7、relevance>=8 的硬门槛。不能用“可能、或许、需确认”。
 
 团队偏好记忆：
 {preferences}
@@ -489,12 +494,14 @@ def screen_batch(batch):
         if scores["confidence"] < 6 or scores["relevance"] < 7 or scores["innovation"] < 5 or scores["clarity"] < 6:
             continue
         reason = str(decision.get("reason") or "").strip()
-        if not reason or any(token in reason.lower() for token in ("可能", "或许", "需确认", "unclear", "perhaps")):
+        product_identity = str(decision.get("product_identity") or "").strip()
+        if not reason or not product_identity or any(token in reason.lower() for token in ("可能", "或许", "需确认", "unclear", "perhaps")):
             continue
         candidate = dict(candidate)
         candidate["agent_decision"] = {
             "category": category,
             "reason": reason[:320],
+            "product_identity": product_identity[:120],
             **scores,
         }
         kept.append(candidate)
@@ -522,6 +529,7 @@ def lead_from_candidate(row, round_index):
     return {
         "id": stable_hash(f"deepseek-agent|{row.get('url')}|{title}"),
         "title": title[:180],
+        "product_identity": decision.get("product_identity", ""),
         "reason": reason,
         "source": meta.get("source") or row.get("source") or "DeepSeek Curated Search",
         "source_type": meta.get("source_type") or row.get("source_type") or "",

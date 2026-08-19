@@ -65,6 +65,61 @@ class SemanticDedupeTests(unittest.TestCase):
 
         self.assertTrue(semantic_product_duplicate(earlier, current))
 
+    def test_detects_exovault_across_design_sites(self):
+        earlier = {
+            "title": "EXOvault Metal iPhone Case | Cool Material",
+            "summary": "A solid metal protective enclosure.",
+            "category": "手机壳",
+        }
+        current = {
+            "title": "Exovault iPhone Case",
+            "summary": "Exovault 金属手机壳采用锁闭结构。",
+            "category": "手机壳",
+        }
+
+        self.assertTrue(semantic_product_duplicate(earlier, current))
+
+    def test_detects_vollebak_full_metal_jacket_across_headlines(self):
+        earlier = {
+            "title": "virus-killing copper jacket by vollebak wipes out bacteria and germs",
+            "summary": "Vollebak copper Full Metal Jacket.",
+            "category": "冲锋衣",
+        }
+        current = {
+            "title": "Vollebak Full Metal Jacket",
+            "summary": "Copper Edition uses woven copper wire.",
+            "category": "冲锋衣",
+        }
+
+        self.assertTrue(semantic_product_duplicate(earlier, current))
+
+    def test_explicit_product_identity_drives_future_cross_site_dedupe(self):
+        earlier = {
+            "title": "A protective phone accessory with a hidden stand",
+            "product_identity": "ESR Cyber Tough Magnetic Case",
+            "category": "手机壳",
+        }
+        current = {
+            "title": "Apple says its newest phone is tough",
+            "product_identity": "ESR Cyber Tough Magnetic Case for iPhone 17",
+            "category": "手机壳",
+        }
+
+        self.assertTrue(semantic_product_duplicate(earlier, current))
+
+    def test_human_confirmed_duplicate_url_is_not_displayed(self):
+        item = {
+            "title": "Exovault iPhone Case",
+            "category": "手机壳",
+            "url": "https://design-milk.com/exovault-iphone-case",
+            "review_policy_version": 3,
+            "quality_score": 90,
+            "innovation": 9,
+            "relevance": 9,
+        }
+
+        self.assertFalse(display_eligible(item))
+
     def test_does_not_merge_different_torras_product_categories(self):
         phone_case = {
             "title": "TORRAS Ostand phone case",

@@ -6,7 +6,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from build_site import category_under_cap, daily_group_limit, display_eligible, merge_historical_snapshots, sorted_daily_items, source_under_cap
+from build_site import append_category_minimums, category_under_cap, daily_group_limit, display_eligible, merge_historical_snapshots, sorted_daily_items, source_under_cap
 from insight_common import is_ordinary_laptop_stand
 from deepseek_search_agent import PRE_REVIEW_VERSION, accepted_today, fallback_query_jobs, searchable_categories
 
@@ -63,12 +63,12 @@ class DailyGroupTargetTests(unittest.TestCase):
         self.assertEqual(ranked[0]["title"], "higher-quality")
 
     def test_phone_case_hard_cap_survives_relaxed_fill(self):
-        picks = [{"category": "手机壳"} for _ in range(3)]
+        picks = [{"category": "手机壳"} for _ in range(2)]
 
         self.assertFalse(category_under_cap(picks, "手机壳", relaxed=True))
 
     def test_power_bank_hard_cap_survives_relaxed_fill(self):
-        picks = [{"category": "充电宝"} for _ in range(3)]
+        picks = [{"category": "充电宝"} for _ in range(2)]
 
         self.assertFalse(category_under_cap(picks, "充电宝", relaxed=True))
 
@@ -77,9 +77,28 @@ class DailyGroupTargetTests(unittest.TestCase):
 
         self.assertFalse(category_under_cap(picks, "创意桌搭", relaxed="emergency"))
 
-    def test_regular_category_cap_is_five_for_balanced_forty(self):
-        self.assertTrue(category_under_cap([{"category": "水杯"} for _ in range(4)], "水杯"))
-        self.assertFalse(category_under_cap([{"category": "水杯"} for _ in range(5)], "水杯"))
+    def test_priority_category_cap_is_six_for_balanced_forty(self):
+        self.assertTrue(category_under_cap([{"category": "水杯"} for _ in range(5)], "水杯"))
+        self.assertFalse(category_under_cap([{"category": "水杯"} for _ in range(6)], "水杯"))
+
+    def test_priority_categories_are_filled_before_general_quotas(self):
+        ranked = []
+        names = ["orbit", "prism", "harbor", "tempo", "ember"]
+        for category, count in (("日历", 4), ("水杯", 5), ("创意厨具", 5)):
+            for index in range(count):
+                ranked.append({
+                    "id": f"{category}-{index}",
+                    "title": f"{category} {names[index]}",
+                    "category": category,
+                    "source_name": f"source-{category}-{index}",
+                })
+        picks, seen = [], set()
+
+        append_category_minimums(ranked, picks, seen)
+
+        self.assertEqual(sum(item["category"] == "日历" for item in picks), 4)
+        self.assertEqual(sum(item["category"] == "水杯" for item in picks), 5)
+        self.assertEqual(sum(item["category"] == "创意厨具" for item in picks), 5)
 
     def test_single_source_is_capped_at_five(self):
         picks = [{"source_name": "Yanko Design"} for _ in range(5)]
@@ -116,8 +135,8 @@ class DailyGroupTargetTests(unittest.TestCase):
         jobs = fallback_query_jobs(50, 0)
         categories = [job.get("category") for job in jobs]
 
-        self.assertLessEqual(categories.count("手机壳"), 3)
-        self.assertLessEqual(categories.count("充电宝"), 3)
+        self.assertLessEqual(categories.count("手机壳"), 2)
+        self.assertLessEqual(categories.count("充电宝"), 2)
 
     def test_search_agent_counts_displayable_group_not_raw_today_rows(self):
         # accepted_today is intentionally wired through build_daily_groups;
@@ -126,17 +145,17 @@ class DailyGroupTargetTests(unittest.TestCase):
         self.assertEqual(accepted_today.__doc__.splitlines()[0], "Return the products that can actually appear in today's dashboard.")
 
     def test_search_agent_excludes_categories_with_no_display_slots(self):
-        current = {"水杯": 5, "氛围灯": 5, "创意厨具": 5, "手机壳": 2}
+        current = {"水杯": 6, "氛围灯": 5, "创意厨具": 6, "手机壳": 2}
 
         allowed = searchable_categories(current)
 
         self.assertNotIn("水杯", allowed)
         self.assertNotIn("氛围灯", allowed)
         self.assertNotIn("创意厨具", allowed)
-        self.assertIn("手机壳", allowed)
+        self.assertNotIn("手机壳", allowed)
 
     def test_search_prescreen_policy_is_versioned_for_wider_recall(self):
-        self.assertEqual(PRE_REVIEW_VERSION, 2)
+        self.assertEqual(PRE_REVIEW_VERSION, 3)
 
 
 if __name__ == "__main__":

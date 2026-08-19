@@ -68,6 +68,7 @@ def empty_product(item, key, seen_fingerprints=None):
         "title": clean_title(item.get("title", "")),
         "category": item.get("category") or "未分类",
         "summary": item.get("reason", ""),
+        "product_identity": item.get("product_identity", ""),
         "image": item.get("image", ""),
         "tags": sorted(set(item.get("tags", []) or [])),
         "price_gate": infer_price_power(item),
@@ -98,6 +99,8 @@ def merge_product(product, item):
         product["image"] = item["image"]
     if len(item.get("reason", "")) > len(product.get("summary", "")):
         product["summary"] = item.get("reason", "")
+    if not product.get("product_identity") and item.get("product_identity"):
+        product["product_identity"] = item.get("product_identity")
     if product.get("price_gate") == "unknown":
         product["price_gate"] = infer_price_power(item)
     incoming_score = item.get("_score_total") or int(float(item.get("score") or 0) * 5)

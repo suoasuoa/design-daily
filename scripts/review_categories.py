@@ -13,7 +13,7 @@ import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, is_ordinary_laptop_stand, load_env, load_json, now_iso, semantic_product_duplicate, today, write_json
+from insight_common import clean_direct_product_url, DATA_DIR, INSIGHT_DIR, is_ordinary_laptop_stand, is_rejected_product, load_env, load_json, now_iso, semantic_product_duplicate, today, write_json
 from insight_config import (
     CATEGORIES,
     CATEGORY_KEYWORDS,
@@ -498,7 +498,9 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
             for source in item.get("sources") or []:
                 if source.get("url") == original_url:
                     source["url"] = cleaned_url
-        if item.get("id") in blocked_product_ids:
+        if is_rejected_product(item):
+            reviews[item.get("id")] = semantic_duplicate_review(item, "人工确认的历史重复产品")
+        elif item.get("id") in blocked_product_ids:
             reviews[item.get("id")] = preference_block_review(item)
         elif item.get("category") in RETIRED_CATEGORIES:
             reviews[item.get("id")] = retirement_review(item)
@@ -516,7 +518,8 @@ def review_products(products, batch_size=10, force=False, sleep=0.5):
     todo = [
         item
         for item in products
-        if item.get("id") not in blocked_product_ids
+        if not is_rejected_product(item)
+        and item.get("id") not in blocked_product_ids
         and item.get("category") not in RETIRED_CATEGORIES
         and clean_direct_product_url(item.get("url") or "")
         and not is_generic_content(item)

@@ -20,6 +20,7 @@ DATA_DIR = ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
 PROCESSED_DIR = DATA_DIR / "processed"
 INSIGHT_DIR = ROOT / "insight"
+REJECTED_PRODUCT_URLS_PATH = DATA_DIR / "rejected_product_urls.json"
 LOCAL_TZ = ZoneInfo("Asia/Shanghai")
 
 TRACKING_PARAMS = {
@@ -126,12 +127,14 @@ PRODUCT_IDENTITY_NOISE = SEMANTIC_TITLE_NOISE | {
     "review", "kickstarter", "indiegogo", "dia", "intelligence", "more", "much",
     "that", "with", "than", "just", "made", "makes", "meet", "gets", "got",
     "charger", "mah", "in1", "led", "midautumn", "festival", "campaign", "images",
+    "calendar", "planner", "display", "family", "accessory", "accessories",
+    "device", "devices", "concept", "collection", "material", "materials",
     "are", "is", "has", "have", "had", "were", "will", "can", "could", "should",
 }
 PRODUCT_FAMILY_CONCEPTS = {
     "stand": ("ostand", "kickstand", "phone stand", "rotating stand", "支架", "支撑", "支点"),
 }
-PRODUCT_FAMILY_BRANDS = {"手机壳": {"torras"}}
+PRODUCT_FAMILY_BRANDS = {"手机壳": {"torras", "esr"}}
 
 
 def ensure_dirs():
@@ -349,9 +352,14 @@ def semantic_title_duplicate(left, right):
 def product_identity_text(item):
     """Return the short, product-specific text before scraped article evidence."""
     title = clean_title(item.get("title") or "")
+    explicit_identity = str(
+        item.get("product_identity")
+        or (item.get("agent_pre_review") or {}).get("product_identity")
+        or ""
+    ).strip()
     summary = str(item.get("reason") or item.get("summary") or item.get("ai_reason") or "")
     summary = re.split(r"页面证据|page evidence", summary, maxsplit=1, flags=re.IGNORECASE)[0]
-    return f"{title} {summary[:320]}".strip()
+    return f"{explicit_identity} {title} {summary[:320]}".strip()
 
 
 def product_identity_tokens(item):
@@ -365,11 +373,21 @@ def product_identity_tokens(item):
             continue
         if token not in tokens:
             tokens.append(token)
-    return tokens[:8]
+    return tokens[:14]
 
 
 def product_brand_token(item):
     """Extract a likely brand from the headline, then fall back to explicit caps."""
+    explicit_identity = str(
+        item.get("product_identity")
+        or (item.get("agent_pre_review") or {}).get("product_identity")
+        or ""
+    ).strip()
+    for raw in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", explicit_identity):
+        token = raw.lower().replace("-", "")
+        if token not in PRODUCT_IDENTITY_NOISE:
+            return token
+
     title = unicodedata.normalize("NFKC", clean_title(item.get("title") or ""))
     title_tokens = []
     for raw in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", title):
@@ -417,6 +435,20 @@ def product_identity_keys(item):
         item.get("reason") or item.get("summary") or "",
     ) or "未分类"
     keys = set()
+    explicit_identity = str(
+        item.get("product_identity")
+        or (item.get("agent_pre_review") or {}).get("product_identity")
+        or ""
+    ).strip()
+    explicit_tokens = []
+    for raw in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", explicit_identity):
+        token = raw.lower().replace("-", "")
+        if token not in PRODUCT_IDENTITY_NOISE and token not in explicit_tokens:
+            explicit_tokens.append(token)
+    if len(explicit_tokens) >= 2:
+        keys.add(f"explicit:{category}:{':'.join(explicit_tokens[:4])}")
+        keys.add(f"explicit-core:{category}:{':'.join(explicit_tokens[:3])}")
+
     brand, brand_raw, model, model_raw = product_identity_parts(item)
     brand_is_stylized = bool(brand_raw) and not brand_raw.isupper() and is_stylized_model_token(brand_raw)
     if brand and model and (brand_is_stylized or is_stylized_model_token(model_raw)):
@@ -428,7 +460,36 @@ def product_identity_keys(item):
             for concept, markers in PRODUCT_FAMILY_CONCEPTS.items():
                 if any(marker in text for marker in markers):
                     keys.add(f"family:{category}:{brand}:{concept}")
+
+    tokens = product_identity_tokens(item)
+    # Rare product names are useful even when an article omits the model.
+    for token in tokens:
+        if token in {"exovault", "gatherer"}:
+            keys.add(f"named:{category}:{token}")
+
+    # Cross-site headlines often put the brand at the end and the model in the
+    # summary. Pair keys preserve that identity without merging an entire brand.
+    for index, left in enumerate(tokens[:12]):
+        for right in tokens[index + 1 : 12]:
+            if left == right or max(len(left), len(right)) < 6:
+                continue
+            keys.add(f"pair:{category}:{':'.join(sorted((left, right)))}")
     return keys
+
+
+def rejected_product_urls():
+    payload = load_json(REJECTED_PRODUCT_URLS_PATH, {})
+    rows = payload.get("urls", []) if isinstance(payload, dict) else payload
+    return {
+        canonical_url(str(row.get("url") if isinstance(row, dict) else row or ""))
+        for row in rows
+        if str(row.get("url") if isinstance(row, dict) else row or "").strip()
+    }
+
+
+def is_rejected_product(item):
+    url = canonical_url(item.get("url") or "")
+    return bool(url and url in rejected_product_urls())
 
 
 def semantic_product_duplicate(left, right):
