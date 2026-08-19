@@ -46,7 +46,7 @@ jobs:
   build-insight-pool:
     runs-on: ubuntu-latest
     env:
-      DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:59,12:01-13:59,18:01-23:59"
+      DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:59,12:01-13:59"
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "3"
       DEEPSEEK_USAGE_FILE: "data/reports/deepseek-usage.json"
       DEEPSEEK_DAILY_MAX_CALLS: "0"
@@ -201,7 +201,7 @@ jobs:
           --query-count "$AGENT_QUERIES"
           --per-query 10
           --max-pages "$AGENT_PAGES"
-          --search-workers 10
+          --search-workers 6
           --page-workers 12
           --screen-workers 6
 
@@ -238,7 +238,7 @@ jobs:
             --target "$DAILY_TARGET" \
             --per-job 10 \
             --max-passes "$TOPUP_MAX_PASSES" \
-            --workers 10 \
+            --workers 6 \
             --agent-queries "$TOPUP_AGENT_QUERIES" \
             --agent-pages "$TOPUP_AGENT_PAGES" \
             --agent-screen-workers 6 \
