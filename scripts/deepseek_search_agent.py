@@ -435,7 +435,7 @@ def compact_candidate(row):
     }
 
 
-def screen_batch(batch):
+def screen_batch(batch, split_on_failure=True):
     rules = "\n".join(f"- {category}: {CATEGORY_REVIEW_RULES[category]}" for category in CATEGORIES)
     preferences = preference_context()
     schema = {
@@ -479,9 +479,9 @@ def screen_batch(batch):
         result = call_deepseek(prompt, max_tokens=7000).get("items", [])
     except RuntimeError as exc:
         print(f"screen_batch_failed size={len(batch)} error={exc}", flush=True)
-        if len(batch) > 1:
+        if split_on_failure and len(batch) > 1:
             midpoint = max(1, len(batch) // 2)
-            return screen_batch(batch[:midpoint]) + screen_batch(batch[midpoint:])
+            return screen_batch(batch[:midpoint], False) + screen_batch(batch[midpoint:], False)
         return []
     by_id = {row.get("id"): row for row in batch}
     kept = []
@@ -637,7 +637,7 @@ def main():
     parser.add_argument("--query-count", type=int, default=60)
     parser.add_argument("--per-query", type=int, default=10)
     parser.add_argument("--max-pages", type=int, default=280)
-    parser.add_argument("--batch-size", type=int, default=20)
+    parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--search-workers", type=int, default=10)
     parser.add_argument("--page-workers", type=int, default=12)
     parser.add_argument("--screen-workers", type=int, default=6)
