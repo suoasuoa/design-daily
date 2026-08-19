@@ -194,6 +194,7 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: >-
           python3 scripts/deepseek_search_agent.py
           --target "$DAILY_TARGET"

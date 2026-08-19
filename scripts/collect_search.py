@@ -5,6 +5,8 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import datetime as dt
 from html.parser import HTMLParser
+import json
+import os
 import re
 import ssl
 import time
@@ -87,6 +89,34 @@ def is_product_like_url(url):
 
 
 def fetch_results(query, timeout=6):
+    if os.environ.get("USE_TAVILY_SEARCH") == "1" and os.environ.get("TAVILY_API_KEY", "").strip():
+        body = {
+            "api_key": os.environ["TAVILY_API_KEY"].strip(),
+            "query": query,
+            "search_depth": "basic",
+            "max_results": 10,
+            "include_answer": False,
+            "include_raw_content": False,
+            "include_images": False,
+        }
+        req = urllib.request.Request(
+            "https://api.tavily.com/search",
+            data=json.dumps(body).encode("utf-8"),
+            headers={"Content-Type": "application/json", "User-Agent": "DesignDailyInsight/1.0"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=max(20, timeout), context=SSL_CONTEXT) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+        return [
+            {
+                "url": row.get("url") or "",
+                "title": row.get("title") or "",
+                "snippet": row.get("content") or "",
+            }
+            for row in payload.get("results", [])
+            if row.get("url") and row.get("title")
+        ]
+
     if DDGS_AVAILABLE:
         try:
             with DDGS(timeout=timeout) as ddgs:

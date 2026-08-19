@@ -135,6 +135,9 @@ PRODUCT_FAMILY_CONCEPTS = {
     "stand": ("ostand", "kickstand", "phone stand", "rotating stand", "支架", "支撑", "支点"),
 }
 PRODUCT_FAMILY_BRANDS = {"手机壳": {"torras", "esr"}}
+KNOWN_PRODUCT_SIGNATURES = {
+    "vollebak-full-metal": {"vollebak", "full", "metal"},
+}
 
 
 def ensure_dirs():
@@ -467,13 +470,10 @@ def product_identity_keys(item):
         if token in {"exovault", "gatherer"}:
             keys.add(f"named:{category}:{token}")
 
-    # Cross-site headlines often put the brand at the end and the model in the
-    # summary. Pair keys preserve that identity without merging an entire brand.
-    for index, left in enumerate(tokens[:12]):
-        for right in tokens[index + 1 : 12]:
-            if left == right or max(len(left), len(right)) < 6:
-                continue
-            keys.add(f"pair:{category}:{':'.join(sorted((left, right)))}")
+    token_set = set(tokens)
+    for name, markers in KNOWN_PRODUCT_SIGNATURES.items():
+        if markers <= token_set:
+            keys.add(f"named:{category}:{name}")
     return keys
 
 
