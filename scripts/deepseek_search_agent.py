@@ -219,7 +219,7 @@ def fallback_query_jobs(limit, round_index=0, allowed_categories=None):
     category_counts = Counter()
     for job in ordered:
         category = job.get("category")
-        if category in {"手机壳", "充电宝"} and category_counts[category] >= 2:
+        if category in {"手机壳", "充电宝", "冲锋衣"} and category_counts[category] >= 2:
             continue
         selected.append(job)
         category_counts[category] += 1

@@ -137,6 +137,7 @@ class DailyGroupTargetTests(unittest.TestCase):
 
         self.assertLessEqual(categories.count("手机壳"), 2)
         self.assertLessEqual(categories.count("充电宝"), 2)
+        self.assertLessEqual(categories.count("冲锋衣"), 2)
 
     def test_search_agent_counts_displayable_group_not_raw_today_rows(self):
         # accepted_today is intentionally wired through build_daily_groups;
