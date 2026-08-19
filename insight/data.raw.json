@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-08-19T05:24:16+08:00",
+  "generated_at": "2026-08-19T08:00:21+08:00",
   "stats": {
-    "total_items": 2459,
+    "total_items": 2482,
     "by_category": {
-      "氛围灯": 467,
-      "创意厨具": 400,
-      "水杯": 364,
+      "氛围灯": 469,
+      "创意厨具": 403,
+      "水杯": 367,
       "创意桌搭": 333,
-      "充电宝": 292,
-      "冲锋衣": 186,
-      "手机壳": 170,
+      "充电宝": 295,
+      "冲锋衣": 187,
+      "手机壳": 174,
+      "创意礼盒": 90,
       "日历": 86,
-      "创意礼盒": 85,
-      "中秋礼盒": 50,
+      "中秋礼盒": 51,
+      "装置艺术": 13,
       "端午礼盒": 12,
-      "装置艺术": 12,
       "钥匙扣水壶": 2
     },
     "by_lane": {
-      "适合改造": 1827,
-      "方向参考": 612,
-      "可直接买样": 20
+      "适合改造": 1845,
+      "方向参考": 616,
+      "可直接买样": 21
     },
     "by_axis": {
-      "功能启发": 1623,
-      "结构启发": 1276,
-      "情绪启发": 546,
-      "视觉启发": 348,
-      "包装启发": 332
+      "功能启发": 1635,
+      "结构启发": 1295,
+      "情绪启发": 550,
+      "视觉启发": 351,
+      "包装启发": 338
     },
     "by_source_family": {
-      "媒体案例": 949,
-      "市场信号": 872,
-      "奖项案例": 370,
-      "社交灵感": 95,
-      "设计社区": 80,
-      "包装专项": 58,
+      "媒体案例": 957,
+      "市场信号": 878,
+      "奖项案例": 372,
+      "社交灵感": 98,
+      "设计社区": 81,
+      "包装专项": 61,
       "弱市场信号": 29,
       "趋势观察": 6
     },
     "by_image_state": {
-      "已对齐": 1229,
-      "缺图": 1224,
+      "已对齐": 1241,
+      "缺图": 1235,
       "待核图": 6
     }
   },
@@ -33551,6 +33551,39 @@
       "target_count": 40,
       "items": [
         {
+          "id": "11bacf284b7d",
+          "title": "Apollo Max, The Power Bank Recharges in 19 Mins",
+          "category": "充电宝",
+          "summary": "Apollo Max石墨烯充电宝，19分钟充满，轻便口袋大小，超快充电材料创新。。页面证据：Ordinary fast charging power banks are usually bulky and need to recharge overnight. And it’s not uncommon to find that your power bank is still not fully recharged when you are ready to go for the day. Who doesn't want an ultra-efficient, lightweight, graphene power bank that fits in any pocket and can be fully recharged in an incredible 19 minutes! Say Hello to Apollo Max!",
+          "score": 86,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.indiegogo.com/en/projects/elecjetcom/apollo-max-the-power-bank-recharges-in-19-mins",
+          "source_name": "Indiegogo",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-19",
+          "last_seen": "2026-08-19",
+          "review_reason": "采用石墨烯电池，19分钟快速充满，轻便口袋大小，材料与充电性能创新。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 86,
+          "innovation": 8,
+          "relevance": 10,
+          "tags": [
+            "deepseek_search_agent",
+            "market_signal_strong"
+          ]
+        },
+        {
           "id": "bbec914f74ca",
           "title": "Level Up Your Tech Setup in 2025 with Aulumu’s Techno-Minimal Accessories - Yanko Design",
           "category": "创意桌搭",
@@ -33618,69 +33651,70 @@
           ]
         },
         {
-          "id": "f1c60d1ce110",
-          "title": "iF Design - 145W Fast Charging Power Bank",
-          "category": "充电宝",
-          "summary": "145W快充移动电源集成磁吸无线充电和TFT彩屏，功能创新。。页面证据：145W high-power mobile power supply integrates magnetic wireless charging function. Adjustable angle magnetic wireless charging module enhances comfort of use. TFT color screen clearly displays battery level, parameters and UI expression. 1C1A port layout supports simultaneous charging of multiple devices. USB-C port charges the device and powers other devices. Raised silicone pads elevate the bottom space to optimize heat dissipation. The product breaks through traditional desktop wireless charging and use limitations of conventional mobile power supplies, suitable for indoor and outdoor use, powering devices any time anywhere.",
-          "score": 81,
-          "price_gate": "likely_over_35",
-          "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-          "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
-          "source_name": "iF设计奖",
-          "source_family": "奖项案例",
-          "source_type": "verified_official",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发",
-            "视觉启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-19",
-          "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 8,
-          "review_policy_version": 3,
-          "quality_score": 81,
-          "innovation": 7,
-          "relevance": 10,
-          "tags": [
-            "adapt",
-            "award_gallery"
-          ]
-        },
-        {
-          "id": "c36453183477",
-          "title": "Everdure 4K木炭烤架",
+          "id": "2718a7f2807b",
+          "title": "Obol | Uncrate",
           "category": "创意厨具",
-          "summary": "Everdure 4K木炭烤架，具备按钮快速点火、集成探头与气流控制、蓝牙App温控和食谱引导，功能交互创新明确。。页面证据：这款木炭烤架的灵感来自可追溯到4000年前的Kamado风格的烹饪，是Everdure和米其林三星级厨师Heston Blumenthal的合作。光滑的独立烤架由压铸铝和厚金属制成，可以烹饪任何适合内部的东西 - 从汉堡到牛腩，蔬菜或比萨饼。烤架采用快速点火木炭点火，只需按一下按钮即可启动火灾，而环境和集成探头 - 与气流控制系统相结合 - 可控制肉类和空气温度。通过蓝牙应用程序连接，您可以获取手机上的所有温度数据，以及逐步的食谱，以帮助您完成烧烤的完美之路。...",
-          "score": 80,
+          "summary": "Obol 是明确单品早餐工具，通过分区结构将麦片与牛奶分离，解决麦片泡软问题，具有功能创新，符合创意厨具品类。。页面证据：We've all faced it: the dilemma of dousing your favorite cereal in milk, only to battle against the inevitability of sogginess. The Obol ($20) is...",
+          "score": 81,
           "price_gate": "unknown",
-          "image": "https://uncrate.com/p/2018/12/everdure-grill1.jpg",
-          "url": "https://uncrate.com/cn/article/everdure-4k-charcoal-grill",
+          "image": "",
+          "url": "https://uncrate.com/obol",
           "source_name": "Uncrate",
           "source_family": "市场信号",
           "source_type": "market_reference",
           "source_quality": "standard",
           "action_lane": "适合改造",
           "axes": [
-            "功能启发"
+            "功能启发",
+            "结构启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：按钮快速点火、集成探头与气流控制、蓝牙App温控和食谱引导，功能交互创新明确",
-          "review_source": "deepseek_backlog_recheck",
+          "review_reason": "Obol通过分区结构将麦片与牛奶分离，避免泡软，功能创新明确。",
+          "review_source": "deepseek",
           "review_confidence": 9,
           "review_policy_version": 3,
-          "quality_score": 80,
-          "innovation": 9,
+          "quality_score": 81,
+          "innovation": 8,
           "relevance": 10,
           "tags": [
             "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "abb041bbe9f3",
+          "title": "GLÏTCH by L-E-D - Indiegogo",
+          "category": "充电宝",
+          "summary": "GLÏTCH 自充电移动电源，内置动能/太阳能自充电模块，无需插电，功能创新明确。。页面证据：Imagine a portable battery you never need to plug in again. A battery that recharges itself automatically as you walk, as you set down your bag, as you travel, or simply as you move under the sun. A battery that works for you—quietly, effortlessly… and for free. GLÏTCH is the first fully autonomous powerbank designed to fit directly inside your backpack and recharge through an ultra-thin ...",
+          "score": 80,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.indiegogo.com/en/projects/l-e-d/glitch973",
+          "source_name": "Indiegogo",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-19",
+          "last_seen": "2026-08-19",
+          "review_reason": "内置动能/太阳能自充电模块，无需插电即可自充电，功能创新明确。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 80,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "buy_sample",
             "deepseek_search_agent"
           ]
         },
@@ -33754,40 +33788,6 @@
           ]
         },
         {
-          "id": "d65dd8eb5e18",
-          "title": "iF Design - PicoGo AR11 Telescopic line mobile power supply",
-          "category": "充电宝",
-          "summary": "PicoGo AR11：伸缩线+提手一体化移动电源，结构创新，明确单品。。页面证据：This product is a retractable cord mobile power, the retractable cord and carrying handle structure clever integration, so that the mobile power in travel, commuting, outdoor and other variable scenarios of flexible use. In the era of high-frequency mobility, users' charging behavior has changed from \"desktop behavior\" to \"on-the-go replenishment\". Through the cable integrated telescopic structure + carrying handle fusion design, to realize \"no exposed cable, easy to carry, flexible charging\" comprehensive experience, for the mobile lifestyle born of intelligent energy module.",
-          "score": 80,
-          "price_gate": "likely_over_35",
-          "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-          "url": "https://ifdesign.com/en/winner-ranking/project/picogo-ar11-telescopic-line-mobile-power-supply/759475",
-          "source_name": "iF设计奖",
-          "source_family": "奖项案例",
-          "source_type": "verified_official",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-19",
-          "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：伸缩线+提手一体化结构，便于携带和使用",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 80,
-          "innovation": 8,
-          "relevance": 9,
-          "tags": [
-            "adapt",
-            "award_gallery"
-          ]
-        },
-        {
           "id": "072b9cb55df3",
           "title": "Kazuhiro Yamanaka designs paper lamp that fits in an envelope",
           "category": "氛围灯",
@@ -33856,29 +33856,28 @@
           ]
         },
         {
-          "id": "7a280c052e0b",
-          "title": "Noa - by Darren Wells / Core77 Design Awards",
+          "id": "21fb12567071",
+          "title": "coco game controller smartphone case",
           "category": "手机壳",
-          "summary": "Noa手机壳带可拆卸电子墨水屏幕，通过磁吸固定，兼作通知中心支架。。页面证据：The detachable e-ink screen is used when the user wants to enter \"work mode\". The user detaches the screen, held to the case via magnets, and uses the kickstand to set up a notification center so they can put their phone out of sight.",
+          "summary": "具体产品：coco游戏控制器手机壳，为iPhone和Galaxy SIII设计，集成D-pad、摇杆和标准游戏按键，将手机壳变为实体游戏手柄，功能与结构创新显著。。页面证据：developed by new startup milkshake labs, the case for iPhone and galaxy SIII returns tactility to modern entertainment, providing a D-pad, analog stick, and standard control buttons for gaming apps.",
           "score": 78,
-          "price_gate": "likely_over_35",
-          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1000357_lead_400_94955__sharing.jpg",
-          "url": "https://designawards.core77.com/Strategy-Research/94955/Noa",
-          "source_name": "Core77",
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.designboom.com/technology/coco-game-controller-smartphone-case",
+          "source_name": "Designboom",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
-            "功能启发",
             "结构启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可拆卸电子墨水屏磁吸固定，兼作通知中心支架",
-          "review_source": "deepseek_backlog_recheck",
+          "review_reason": "手机壳集成实体D-pad、摇杆与游戏按键，将保护壳变为游戏手柄，功能创新显著。",
+          "review_source": "deepseek",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 78,
@@ -33887,6 +33886,39 @@
           "tags": [
             "deepseek_search_agent",
             "editorial_main"
+          ]
+        },
+        {
+          "id": "5ffc0a3519c4",
+          "title": "Good stuff, Gatherer Jacket adapts to unexpected climate changes - Core77",
+          "category": "冲锋衣",
+          "summary": "Merrell Gatherer Jacket，轻量夹克，通过填充口袋内材料调节保暖，创新保暖机制，明确功能外套。。页面证据：Merrell's new lightweight Gather Jacket helps hikers and climbers adapt to rapid temperature changes by filling pockets throughout the jacket with any found materials for increased insulation. It's nice to actually see this concept realized after years of student projects presenting similar solutions for helping the homeless survive cold nights....",
+          "score": 78,
+          "price_gate": "unknown",
+          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_10365_.jpg",
+          "url": "https://www.core77.com/posts/10365/good-stuff-gatherer-jacket-adapts-to-unexpected-climate-changes-10365",
+          "source_name": "Core77",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "视觉启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 2,
+          "first_seen": "2026-08-19",
+          "last_seen": "2026-08-19",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通过填充口袋内材料调节保暖，创新保暖机制",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 78,
+          "innovation": 8,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
           ]
         },
         {
@@ -33923,15 +33955,15 @@
           ]
         },
         {
-          "id": "d0f89a36e059",
-          "title": "Finally: A Smart Design for a Daily Drinking Bottle That's Easy to Clean and More Functional - Core77",
-          "category": "水杯",
-          "summary": "JuNiki 双颈保温瓶，罐状宽口设计方便清洗，双开口结构优化饮水与清洁，明确产品。。页面证据：The JuNiki Double Neck insulated bottle is the design we've been waiting for",
+          "id": "8dfa39db0734",
+          "title": "Geistmaschine ASP Series Keyboards Are Ambitiously Elegant",
+          "category": "创意桌搭",
+          "summary": "Geistmaschine ASP Series Keyboards 具备磁性模块化设计，左侧数字键盘、音频旋钮可自定义，创新点在于磁吸结构与模块化组合。。页面证据：The elegant Geistmaschine keyboards imagined for designers, architects, and aesthetes hide a magnetic modular customization design.",
           "score": 78,
           "price_gate": "unknown",
-          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/827310_lead_400_79419_.jpg",
-          "url": "https://www.core77.com/posts/79419/Finally-A-Smart-Design-for-a-Daily-Drinking-Bottle-Thats-Easy-to-Clean-and-More-Functional",
-          "source_name": "Core77",
+          "image": "https://design-milk.com/images/2023/06/geistmaschine-keyboards-june162023-13.jpg",
+          "url": "https://design-milk.com/geistmaschine-asp-series-keyboards-are-ambitiously-elegant",
+          "source_name": "Design Milk",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
@@ -33944,16 +33976,16 @@
           "seen_count": 1,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "双颈结构兼顾饮水与清洗便利",
-          "review_source": "deepseek",
-          "review_confidence": 8,
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：磁性模块化设计，可自定义数字键盘和音频旋钮",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 78,
           "innovation": 8,
-          "relevance": 9,
+          "relevance": 10,
           "tags": [
-            "adapt",
-            "deepseek_search_agent"
+            "deepseek_search_agent",
+            "editorial_main"
           ]
         },
         {
@@ -34025,36 +34057,35 @@
           ]
         },
         {
-          "id": "3b9e67000e62",
-          "title": "NexTrend Garlic Twister | Garlic Crusher",
-          "category": "创意厨具",
-          "summary": "明确厨具单品 NexTrend 大蒜扭扭帮手，通过旋转扭压结构快速处理蒜泥，替代传统按压，结构创新，Grommet 在售可买样。。页面证据：Save time in the kitchen with the NexTrend Garlic Twister! See how others use it as a garlic crusher, ginger crusher & more! Get 20% off the Garlic Twister + more on Grommet.",
+          "id": "3737fd95fb90",
+          "title": "Apple Says the iPhone 17 is Tough. This $27 Case is Tougher. - Yanko Design",
+          "category": "手机壳",
+          "summary": "iPhone 17保护壳打开后可变成可调支架，铰链支持15°-69°视角，横竖屏均可，功能结构创新明确。。页面证据：The dust has barely settled on the iPhone 17 series launch, and the hype is palpable. Apple’s keynote was a masterclass in engineering poetry, touting a forged reinforced chassis (made from specialized Aluminum alloy or Titanium depending on the Pro or Air models) and a next-generation Ceramic Shield display that supposedly laughs in the face",
           "score": 78,
           "price_gate": "unknown",
-          "image": "https://dxzihkgog0d85.cloudfront.net/products/2394/200x200_6DLMPGarlic%20Crusher.jpg",
-          "url": "https://thegrommet.com/product/kitchen/garlic-twister-4th-generation",
-          "source_name": "The Grommet",
-          "source_family": "市场信号",
-          "source_type": "market_reference",
-          "source_quality": "standard",
+          "image": "https://www.yankodesign.com/images/design_news/2025/09/draft-esr/ESR_iPhone_17_Accessories_hero.jpg",
+          "url": "https://www.yankodesign.com/2025/09/16/apple-says-the-iphone-17-is-tough-this-27-case-is-tougher",
+          "source_name": "Yanko Design",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
-            "功能启发",
             "结构启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：旋转扭压结构快速处理蒜泥，替代传统按压方式，操作体验创新。",
-          "review_source": "deepseek_backlog_recheck",
+          "review_reason": "保护壳铰链可展开为15°-69°可调支架，横竖屏支持，结构功能创新",
+          "review_source": "deepseek",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 78,
           "innovation": 7,
           "relevance": 10,
           "tags": [
-            "buy_sample",
+            "adapt",
             "deepseek_search_agent"
           ]
         },
@@ -34093,33 +34124,34 @@
           ]
         },
         {
-          "id": "5645e31dc61c",
-          "title": "Transfer Cutting Board",
+          "id": "574bb5c24f5b",
+          "title": "Cooking by the Milliliter - Yanko Design",
           "category": "创意厨具",
-          "summary": "Transfer Cutting Board转移切菜板，特殊设计便于将切好的食物直接滑入盘子，功能创新。。页面证据：The Transfer Cutting Board by chris&ruby makes transferring your food to plate pretty foolproof.",
-          "score": 78,
+          "summary": "明确单品概念：Scale Gas Range 将电子秤集成进燃气灶架，通过监测锅内重量变化判断水分蒸发和酱汁浓稠度，防止烧焦。功能/交互创新明确，可转化为灶具或智能锅具产品。。页面证据：The Scale Gas Range integrates a weighing scale within the framework of the cooking range. The idea behind the concept to save your meals from getting burnt! Each recipe has a particular weight when it starts to cook, eventually as the moisture evaporates and the gravy thickens, the weight drops. At this time, if we",
+          "score": 77,
           "price_gate": "unknown",
-          "image": "https://design-milk.com/images/2011/10/transfer-cutting-board-plate.jpg",
-          "url": "https://design-milk.com/transfer-cutting-board",
-          "source_name": "Design Milk",
+          "image": "https://www.yankodesign.com/images/design_news/2011/12/21/scale_gasrange.jpg",
+          "url": "https://www.yankodesign.com/2011/12/21/cooking-by-the-milliliter",
+          "source_name": "Yanko Design",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
-            "功能启发"
+            "功能启发",
+            "结构启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：特殊形状设计方便食物直接滑入盘子，功能创新",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
+          "review_reason": "Scale Gas Range将电子秤集成于灶架，通过重量变化判断水分蒸发和酱汁浓度，防止烧焦。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
           "review_policy_version": 3,
-          "quality_score": 78,
-          "innovation": 7,
-          "relevance": 10,
+          "quality_score": 77,
+          "innovation": 9,
+          "relevance": 9,
           "tags": [
             "adapt",
             "deepseek_search_agent"
@@ -34192,33 +34224,69 @@
           ]
         },
         {
-          "id": "e3f0dc568b9f",
-          "title": "The Dina Is One Part Lamp, One Part Piggybank",
+          "id": "4de5fa7587cb",
+          "title": "sixbox | designboom.com",
+          "category": "创意礼盒",
+          "summary": "Sixbox六盒系统打开后可变成桌、椅、床等家具，实现包装到家具的复用与结构创新，是可转化的概念原型。。页面证据：closed half-open open",
+          "score": 76,
+          "price_gate": "likely_over_35",
+          "image": "https://www.designboom.com/contest/files/copy_59_01.jpg",
+          "url": "https://www.designboom.com/project/sixbox",
+          "source_name": "Designboom",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-19",
+          "last_seen": "2026-08-19",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：六盒系统打开后变为桌椅床等家具，实现包装到家具的结构复用创新。",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 76,
+          "innovation": 9,
+          "relevance": 10,
+          "tags": [
+            "deepseek_search_agent",
+            "editorial_main"
+          ]
+        },
+        {
+          "id": "6e1cbb6da1ae",
+          "title": "Vespertine lamp: versatile lighting with a single device : DesignWanted",
           "category": "氛围灯",
-          "summary": "Dina灯，投币才亮并兼作存钱罐，交互创新独特。页面证据：Moak Studio's Dina LED lamp only operates with a proper coin donation, dropping every coin into its receptacle for safe keepings.",
+          "summary": "Vespertine 吊灯将传统吊灯与便携照明结合，内置电池可取下移动使用，具备结构/充电功能创新。。页面证据：Designed by studio sugar, the Vespertine lamp functions as a pendant light that charges its integrated batteries for versatile use.",
           "score": 76,
           "price_gate": "unknown",
-          "image": "https://design-milk.com/images/2018/05/Moak-Studio-Dina-1.jpg",
-          "url": "https://design-milk.com/dina-one-part-lamp-one-part-piggybank",
-          "source_name": "Design Milk",
+          "image": "http://designwanted.com/wp-content/uploads/2023/04/Vespertine-lamp-by-studio-sugar-_-Tim-Schuetze-and-Max-Hausmann-_-2023-DesignWanted-Award-winner-_-Milan-Design-Week-cover.jpg",
+          "url": "https://designwanted.com/vespertine-lamp-versatile-lighting-single-device",
+          "source_name": "DesignWanted",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
           "action_lane": "方向参考",
           "axes": [
+            "功能启发",
+            "结构启发",
             "情绪启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：投币才亮的交互设计使灯与存钱罐合体，行为触发创新。",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：吊灯内置电池可取下作便携照明，双模式结构创新",
           "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 10,
+          "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 76,
-          "innovation": 9,
-          "relevance": 10,
+          "innovation": 8,
+          "relevance": 9,
           "tags": [
             "adapt",
             "deepseek_search_agent"
@@ -34248,6 +34316,74 @@
           "review_reason": "Asus ProArt MD301支持用户自行更换微动开关，可定制手感并延长鼠标寿命，交互与结构创新具体。",
           "review_source": "deepseek",
           "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 76,
+          "innovation": 7,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "a829cccdfae8",
+          "title": "Exovault iPhone Case",
+          "category": "手机壳",
+          "summary": "Exovault 金属iPhone壳，采用锁闭结构保护手机，结构创新。。页面证据：Exovault is a metal iPhone case that acts like a vault -- locking your iPhone inside and protecting it from damage. Made of two pieces of solid metal, the",
+          "score": 76,
+          "price_gate": "unknown",
+          "image": "https://design-milk.com/images/2011/01/exovault-1.jpg",
+          "url": "https://design-milk.com/exovault-iphone-case",
+          "source_name": "Design Milk",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-19",
+          "last_seen": "2026-08-19",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：金属锁闭结构提供额外保护，结构创新",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 76,
+          "innovation": 7,
+          "relevance": 9,
+          "tags": [
+            "deepseek_search_agent",
+            "editorial_main"
+          ]
+        },
+        {
+          "id": "5f76b6f1eefe",
+          "title": "The Solae Lamp by Cecilie Manz for Fritz Hansen Steps Outside",
+          "category": "氛围灯",
+          "summary": "Solae Portable Lamp，单挤压铝型材，调光功能，便携设计，适合室内外使用，结构创新。。页面证据：Ergonomic, functional, and effortlessly chic, the Solae Portable Lamp by Cecilie Manz for Fritz Hansen works both indoors and outside.",
+          "score": 76,
+          "price_gate": "unknown",
+          "image": "https://design-milk.com/images/2025/08/Solae-Light-Fritz-Hansen-9-e1766526512221.jpg",
+          "url": "https://design-milk.com/the-solae-lamp-by-cecilie-manz-for-fritz-hansen-steps-outside",
+          "source_name": "Design Milk",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "功能启发",
+            "结构启发",
+            "情绪启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-19",
+          "last_seen": "2026-08-19",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：单挤压铝型材结构创新，便携设计，适合室内外使用",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 76,
           "innovation": 7,
@@ -34292,40 +34428,6 @@
           ]
         },
         {
-          "id": "061e9ba3e68c",
-          "title": "POD portable table lamp concept saves space by holding your pens inside - Yanko Design",
-          "category": "氛围灯",
-          "summary": "POD便携台灯将笔筒与灯结合，木质主体+半透明灯罩，节省桌面空间，具有功能整合创新。。页面证据：We don't have infinite space on top of our desks, no matter how much we wish we did. More often than not, we have to choose and compromise on what we put on top to fit everything that we need or want. That's why modular or multi-functional desk accessories have become more fashionable and in",
-          "score": 75,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2022/08/pod-portable-table-lamp-concept-saves-space-by-holding-your-pens-inside/pod-lamp-2.jpg",
-          "url": "https://www.yankodesign.com/2022/08/31/pod-portable-table-lamp-concept-saves-space-by-holding-your-pens-inside",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发",
-            "情绪启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-19",
-          "last_seen": "2026-08-19",
-          "review_reason": "笔筒与台灯整合，节省桌面空间",
-          "review_source": "deepseek",
-          "review_confidence": 8,
-          "review_policy_version": 3,
-          "quality_score": 75,
-          "innovation": 8,
-          "relevance": 10,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ]
-        },
-        {
           "id": "3fc5b25b3c84",
           "title": "The Square, by Clean Bottle by David Mayer — Kickstarter",
           "category": "水杯",
@@ -34360,36 +34462,36 @@
           ]
         },
         {
-          "id": "ff3df745d640",
-          "title": "skinarma reimagines iphone 17 case in post-apocalyptic design",
-          "category": "手机壳",
-          "summary": "skinarma AEGIS手机壳，末日风格设计，内置握把支架，结构创新。。页面证据：skinarma launches its iphone 17 case range, creating a new class of rugged tech accessories, inspired by survival gear.",
-          "score": 75,
+          "id": "fd89957c710a",
+          "title": "Vollebak Full Metal Jacket",
+          "category": "冲锋衣",
+          "summary": "明确单品 Vollebak Full Metal Jacket: Copper Edition，采用逾11公里铜线制成，具备导电导热和抗菌性能，材料创新突出。。页面证据：Copper is one of the most advanced materials in the solar system, with the ability to conduct heat and power while killing bacteria and viruses....",
+          "score": 74,
           "price_gate": "unknown",
-          "image": "https://www.designboom.com/twitterimages/uploads/2025/09/skinarma-iphone-17-case-collection-designboom-facebook.jpg",
-          "url": "https://www.designboom.com/design/skinarma-upgrade-iphone-17-case-grip-stands-interchangeable-lanyard-bumpers-09-30-2025",
-          "source_name": "Designboom",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
+          "image": "https://uncrate.com/p/2025/01/vollebak-fmj-25-1.jpg",
+          "url": "https://uncrate.com/vollebak-full-metal-jacket",
+          "source_name": "Uncrate",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
           "action_lane": "适合改造",
           "axes": [
-            "结构启发"
+            "视觉启发"
           ],
           "image_state": "已对齐",
-          "seen_count": 1,
+          "seen_count": 2,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置握把支架和可互换挂绳挡板，结构创新",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：铜丝编织材料，结合可开闭防水透气膜，材料与结构双创新",
           "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
+          "review_confidence": 8,
           "review_policy_version": 3,
-          "quality_score": 75,
-          "innovation": 7,
-          "relevance": 9,
+          "quality_score": 74,
+          "innovation": 9,
+          "relevance": 10,
           "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
+            "buy_sample",
+            "deepseek_search_agent"
           ]
         },
         {
@@ -34460,60 +34562,95 @@
           ]
         },
         {
-          "id": "3b4241aec077",
-          "title": "Modular wireless mouse and presenter has a curious ergonomic design - Yanko Design",
-          "category": "创意桌搭",
-          "summary": "明确单品：模块化无线鼠标与演示器组合，具备人体工学造型，可拆分/组合实现鼠标与演示控制功能，属于结构与功能创新。。页面证据：Computer mice aren't exactly the most comfortable products to use despite how critical they are to computers. Some laptop owners even prefer using a mouse instead of the built-in trackpad, even if it means bringing along a bulky item. Yes, there are ergonomic mouse designs, but the majority of them wouldn't even fit in your",
+          "id": "6cd916b82532",
+          "title": "Bottle",
+          "category": "水杯",
+          "summary": "Aquacendo LightUp Filtered Bottle带过滤与灯光提示，结合饮水安全问题。页面证据：Aquacendo LightUp Filtered Bottle is designed to make a real impact, in line with the United Nations’ Sustainable Development Goals. It shines a light on the struggles faced by children in impoverished areas. With its thoughtful and heartwarming design, it’s helping to address health issues caused by the lack of clean water.",
           "score": 74,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2025/02/modular-wireless-mouse-and-presenter-has-a-curious-ergonomic-design/air-nova-modular-mouse-08.jpg",
-          "url": "https://www.yankodesign.com/2025/02/07/modular-wireless-mouse-and-presenter-has-a-curious-ergonomic-design",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
+          "price_gate": "likely_over_35",
+          "image": "https://award-attachments.g-mark.io/winners/2025/28675/main.jpg?size=medium",
+          "url": "https://www.g-mark.org/en/gallery/winners/28675?years=2025",
+          "source_name": "Good Design Award",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "情绪启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-19",
+          "last_seen": "2026-08-19",
+          "review_reason": "滤水杯带灯光提示，将饮水安全与可见反馈结合，功能创新明确。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 74,
+          "innovation": 7,
+          "relevance": 8,
+          "tags": [
+            "award_gallery",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "c029d518d2bd",
+          "title": "Red Dot Design Award: ARBA for FABINI",
+          "category": "创意厨具",
+          "summary": "ARBA for FABINI 木质厨具系列，切菜板带汁槽、托盘可单手携带，具备结构与使用创新。。页面证据：Arba for FABINI is a series of kitchen accessories made of high-quality wood, characterised by soft contours. The chopping boards feature a distinctive juice groove, while the serving boards are designed to be carried with one hand. The burr set of the...",
+          "score": 74,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.red-dot.org/project/arba-for-fabini-86147",
+          "source_name": "Red Dot",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
           "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
             "功能启发",
             "结构启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-08-19",
           "last_seen": "2026-08-19",
-          "review_reason": "模块化鼠标与演示器可拆分组合，一个设备覆盖办公与演示场景，结构创新明确。",
+          "review_reason": "切菜板集成汁槽与可单手携带托盘，结构与操作创新明确。",
           "review_source": "deepseek",
-          "review_confidence": 8,
+          "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 74,
-          "innovation": 8,
+          "innovation": 7,
           "relevance": 9,
           "tags": [
-            "adapt",
+            "award_gallery",
             "deepseek_search_agent"
           ]
         }
       ],
-      "actual_count": 28,
+      "actual_count": 32,
       "stats": {
         "by_lane": {
-          "适合改造": 20,
-          "方向参考": 8
+          "适合改造": 25,
+          "方向参考": 7
         },
         "by_category": {
           "创意桌搭": 5,
           "水杯": 5,
           "创意厨具": 5,
           "氛围灯": 5,
+          "冲锋衣": 4,
           "充电宝": 3,
-          "手机壳": 2,
-          "冲锋衣": 2,
+          "手机壳": 3,
+          "创意礼盒": 1,
           "日历": 1
         },
         "by_source_family": {
-          "媒体案例": 16,
+          "媒体案例": 18,
+          "市场信号": 6,
           "奖项案例": 5,
-          "市场信号": 4,
           "趋势观察": 2,
           "社交灵感": 1
         },
@@ -82456,6 +82593,39 @@
       ]
     },
     {
+      "id": "11bacf284b7d",
+      "title": "Apollo Max, The Power Bank Recharges in 19 Mins",
+      "category": "充电宝",
+      "summary": "Apollo Max石墨烯充电宝，19分钟充满，轻便口袋大小，超快充电材料创新。。页面证据：Ordinary fast charging power banks are usually bulky and need to recharge overnight. And it’s not uncommon to find that your power bank is still not fully recharged when you are ready to go for the day. Who doesn't want an ultra-efficient, lightweight, graphene power bank that fits in any pocket and can be fully recharged in an incredible 19 minutes! Say Hello to Apollo Max!",
+      "score": 86,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/elecjetcom/apollo-max-the-power-bank-recharges-in-19-mins",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "采用石墨烯电池，19分钟快速充满，轻便口袋大小，材料与充电性能创新。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 86,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "market_signal_strong"
+      ]
+    },
+    {
       "id": "3446517fdc21",
       "title": "This $450 Gadget Swaps Your Phone Battery in 2 Seconds",
       "category": "充电宝",
@@ -83197,6 +83367,39 @@
       ]
     },
     {
+      "id": "1bb92bd8f091",
+      "title": "iRe5: Built-in Storage Expansion iPhone Case by iRe5 - Indiegogo",
+      "category": "手机壳",
+      "summary": "iRe5 手机壳内置 microSD 卡槽和 USB-C/Lightning 扩展口，可实际扩展 iPhone 存储，功能创新明确，Indiegogo 有可购买产品页。。页面证据：Introducing iRe5: the revolutionary iPhone case with built-in memory expansion. With its integrated microSD card slot and USB-C / Lightning port, iRe5 seamlessly combines sleek design with expanded storage capabilities.",
+      "score": 85,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/ire5/ire5-built-in-storage-expansion-iphone-case",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-19",
+      "review_reason": "文字证据明确指向可直接安装在 iPhone 上的手机壳，并非普通印花壳或基础保护壳；其核心创新是将 microSD 卡槽与 USB-C/Lightning 扩展口集成进手机壳，用于扩展 iPhone 存储，具备清晰的结构和功能创新。该功能对应高频的手机拍摄、文件存储和容量不足痛点，实用性强、受众广，且价格空间通常可支撑人民币35元以上。因缺少图片，不能验证实物与标题匹配，但文字证据充分，保留为高优先级选品方向。",
+      "review_source": "company_gpt_multimodal",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 85,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "124cf4c0fb52",
       "title": "The Luma Bottle | A Self-Cleaning Reusable Water... — Kickstarter",
       "category": "水杯",
@@ -83395,39 +83598,6 @@
       "relevance": 10,
       "tags": [
         "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "1bb92bd8f091",
-      "title": "iRe5: Built-in Storage Expansion iPhone Case by iRe5 - Indiegogo",
-      "category": "手机壳",
-      "summary": "iRe5 手机壳内置 microSD 卡槽和 USB-C/Lightning 扩展口，可实际扩展 iPhone 存储，功能创新明确，Indiegogo 有可购买产品页。。页面证据：Introducing iRe5: the revolutionary iPhone case with built-in memory expansion. With its integrated microSD card slot and USB-C / Lightning port, iRe5 seamlessly combines sleek design with expanded storage capabilities.",
-      "score": 85,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.indiegogo.com/en/projects/ire5/ire5-built-in-storage-expansion-iphone-case",
-      "source_name": "Indiegogo",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-08-06",
-      "last_seen": "2026-08-06",
-      "review_reason": "文字证据明确指向可直接安装在 iPhone 上的手机壳，并非普通印花壳或基础保护壳；其核心创新是将 microSD 卡槽与 USB-C/Lightning 扩展口集成进手机壳，用于扩展 iPhone 存储，具备清晰的结构和功能创新。该功能对应高频的手机拍摄、文件存储和容量不足痛点，实用性强、受众广，且价格空间通常可支撑人民币35元以上。因缺少图片，不能验证实物与标题匹配，但文字证据充分，保留为高优先级选品方向。",
-      "review_source": "company_gpt_multimodal",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 85,
-      "innovation": 9,
-      "relevance": 10,
-      "tags": [
-        "buy_sample",
         "deepseek_search_agent"
       ]
     },
@@ -92434,37 +92604,37 @@
       ]
     },
     {
-      "id": "f1c60d1ce110",
-      "title": "iF Design - 145W Fast Charging Power Bank",
-      "category": "充电宝",
-      "summary": "145W快充移动电源集成磁吸无线充电和TFT彩屏，功能创新。。页面证据：145W high-power mobile power supply integrates magnetic wireless charging function. Adjustable angle magnetic wireless charging module enhances comfort of use. TFT color screen clearly displays battery level, parameters and UI expression. 1C1A port layout supports simultaneous charging of multiple devices. USB-C port charges the device and powers other devices. Raised silicone pads elevate the bottom space to optimize heat dissipation. The product breaks through traditional desktop wireless charging and use limitations of conventional mobile power supplies, suitable for indoor and outdoor use, powering devices any time anywhere.",
+      "id": "2718a7f2807b",
+      "title": "Obol | Uncrate",
+      "category": "创意厨具",
+      "summary": "Obol 是明确单品早餐工具，通过分区结构将麦片与牛奶分离，解决麦片泡软问题，具有功能创新，符合创意厨具品类。。页面证据：We've all faced it: the dilemma of dousing your favorite cereal in milk, only to battle against the inevitability of sogginess. The Obol ($20) is...",
       "score": 81,
-      "price_gate": "likely_over_35",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://uncrate.com/obol",
+      "source_name": "Uncrate",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
       "axes": [
         "功能启发",
-        "视觉启发"
+        "结构启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-08-19",
       "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
+      "review_reason": "Obol通过分区结构将麦片与牛奶分离，避免泡软，功能创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 81,
-      "innovation": 7,
+      "innovation": 8,
       "relevance": 10,
       "tags": [
         "adapt",
-        "award_gallery"
+        "deepseek_search_agent"
       ]
     },
     {
@@ -94223,6 +94393,40 @@
       ]
     },
     {
+      "id": "f1c60d1ce110",
+      "title": "iF Design - 145W Fast Charging Power Bank",
+      "category": "充电宝",
+      "summary": "145W快充移动电源集成磁吸无线充电和TFT彩屏，功能创新。。页面证据：145W high-power mobile power supply integrates magnetic wireless charging function. Adjustable angle magnetic wireless charging module enhances comfort of use. TFT color screen clearly displays battery level, parameters and UI expression. 1C1A port layout supports simultaneous charging of multiple devices. USB-C port charges the device and powers other devices. Raised silicone pads elevate the bottom space to optimize heat dissipation. The product breaks through traditional desktop wireless charging and use limitations of conventional mobile power supplies, suitable for indoor and outdoor use, powering devices any time anywhere.",
+      "score": 81,
+      "price_gate": "likely_over_35",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 81,
+      "innovation": 7,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
       "id": "c3e89dc8f20a",
       "title": "Red Dot Design Award: Anker 548 Emergency Power Bank",
       "category": "充电宝",
@@ -95466,70 +95670,37 @@
       ]
     },
     {
-      "id": "c36453183477",
-      "title": "Everdure 4K木炭烤架",
-      "category": "创意厨具",
-      "summary": "Everdure 4K木炭烤架，具备按钮快速点火、集成探头与气流控制、蓝牙App温控和食谱引导，功能交互创新明确。。页面证据：这款木炭烤架的灵感来自可追溯到4000年前的Kamado风格的烹饪，是Everdure和米其林三星级厨师Heston Blumenthal的合作。光滑的独立烤架由压铸铝和厚金属制成，可以烹饪任何适合内部的东西 - 从汉堡到牛腩，蔬菜或比萨饼。烤架采用快速点火木炭点火，只需按一下按钮即可启动火灾，而环境和集成探头 - 与气流控制系统相结合 - 可控制肉类和空气温度。通过蓝牙应用程序连接，您可以获取手机上的所有温度数据，以及逐步的食谱，以帮助您完成烧烤的完美之路。...",
+      "id": "abb041bbe9f3",
+      "title": "GLÏTCH by L-E-D - Indiegogo",
+      "category": "充电宝",
+      "summary": "GLÏTCH 自充电移动电源，内置动能/太阳能自充电模块，无需插电，功能创新明确。。页面证据：Imagine a portable battery you never need to plug in again. A battery that recharges itself automatically as you walk, as you set down your bag, as you travel, or simply as you move under the sun. A battery that works for you—quietly, effortlessly… and for free. GLÏTCH is the first fully autonomous powerbank designed to fit directly inside your backpack and recharge through an ultra-thin ...",
       "score": 80,
       "price_gate": "unknown",
-      "image": "https://uncrate.com/p/2018/12/everdure-grill1.jpg",
-      "url": "https://uncrate.com/cn/article/everdure-4k-charcoal-grill",
-      "source_name": "Uncrate",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/l-e-d/glitch973",
+      "source_name": "Indiegogo",
       "source_family": "市场信号",
       "source_type": "market_reference",
       "source_quality": "standard",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-19",
-      "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：按钮快速点火、集成探头与气流控制、蓝牙App温控和食谱引导，功能交互创新明确",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 80,
-      "innovation": 9,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "d65dd8eb5e18",
-      "title": "iF Design - PicoGo AR11 Telescopic line mobile power supply",
-      "category": "充电宝",
-      "summary": "PicoGo AR11：伸缩线+提手一体化移动电源，结构创新，明确单品。。页面证据：This product is a retractable cord mobile power, the retractable cord and carrying handle structure clever integration, so that the mobile power in travel, commuting, outdoor and other variable scenarios of flexible use. In the era of high-frequency mobility, users' charging behavior has changed from \"desktop behavior\" to \"on-the-go replenishment\". Through the cable integrated telescopic structure + carrying handle fusion design, to realize \"no exposed cable, easy to carry, flexible charging\" comprehensive experience, for the mobile lifestyle born of intelligent energy module.",
-      "score": 80,
-      "price_gate": "likely_over_35",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "url": "https://ifdesign.com/en/winner-ranking/project/picogo-ar11-telescopic-line-mobile-power-supply/759475",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
         "功能启发",
         "结构启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-08-19",
       "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：伸缩线+提手一体化结构，便于携带和使用",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
+      "review_reason": "内置动能/太阳能自充电模块，无需插电即可自充电，功能创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
       "review_policy_version": 3,
       "quality_score": 80,
-      "innovation": 8,
+      "innovation": 9,
       "relevance": 9,
       "tags": [
-        "adapt",
-        "award_gallery"
+        "buy_sample",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -96443,6 +96614,39 @@
       "tags": [
         "adapt",
         "award_gallery"
+      ]
+    },
+    {
+      "id": "c36453183477",
+      "title": "Everdure 4K木炭烤架 | Uncrate",
+      "category": "创意厨具",
+      "summary": "Everdure 4K木炭烤架，具备按钮快速点火、集成探头与气流控制、蓝牙App温控和食谱引导，功能交互创新明确。。页面证据：这款木炭烤架的灵感来自可追溯到4000年前的Kamado风格的烹饪，是Everdure和米其林三星级厨师Heston Blumenthal的合作。光滑的独立烤架由压铸铝和厚金属制成，可以烹饪任何适合内部的东西 - 从汉堡到牛腩，蔬菜或比萨饼。烤架采用快速点火木炭点火，只需按一下按钮即可启动火灾，而环境和集成探头 - 与气流控制系统相结合 - 可控制肉类和空气温度。通过蓝牙应用程序连接，您可以获取手机上的所有温度数据，以及逐步的食谱，以帮助您完成烧烤的完美之路。...",
+      "score": 80,
+      "price_gate": "unknown",
+      "image": "https://uncrate.com/p/2018/12/everdure-grill1.jpg",
+      "url": "https://uncrate.com/cn/article/everdure-4k-charcoal-grill",
+      "source_name": "Uncrate",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-04",
+      "last_seen": "2026-08-04",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：按钮快速点火、集成探头与气流控制、蓝牙App温控和食谱引导，功能交互创新明确",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 80,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -97825,6 +98029,40 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
+      ]
+    },
+    {
+      "id": "d65dd8eb5e18",
+      "title": "iF Design - PicoGo AR11 Telescopic line mobile power supply",
+      "category": "充电宝",
+      "summary": "PicoGo AR11：伸缩线+提手一体化移动电源，结构创新，明确单品。。页面证据：This product is a retractable cord mobile power, the retractable cord and carrying handle structure clever integration, so that the mobile power in travel, commuting, outdoor and other variable scenarios of flexible use. In the era of high-frequency mobility, users' charging behavior has changed from \"desktop behavior\" to \"on-the-go replenishment\". Through the cable integrated telescopic structure + carrying handle fusion design, to realize \"no exposed cable, easy to carry, flexible charging\" comprehensive experience, for the mobile lifestyle born of intelligent energy module.",
+      "score": 80,
+      "price_gate": "likely_over_35",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "url": "https://ifdesign.com/en/winner-ranking/project/picogo-ar11-telescopic-line-mobile-power-supply/759475",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：伸缩线+提手一体化结构，便于携带和使用",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 80,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "award_gallery"
       ]
     },
     {
@@ -104401,6 +104639,39 @@
       ]
     },
     {
+      "id": "5ffc0a3519c4",
+      "title": "Good stuff, Gatherer Jacket adapts to unexpected climate changes - Core77",
+      "category": "冲锋衣",
+      "summary": "Merrell Gatherer Jacket，轻量夹克，通过填充口袋内材料调节保暖，创新保暖机制，明确功能外套。。页面证据：Merrell's new lightweight Gather Jacket helps hikers and climbers adapt to rapid temperature changes by filling pockets throughout the jacket with any found materials for increased insulation. It's nice to actually see this concept realized after years of student projects presenting similar solutions for helping the homeless survive cold nights....",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_10365_.jpg",
+      "url": "https://www.core77.com/posts/10365/good-stuff-gatherer-jacket-adapts-to-unexpected-climate-changes-10365",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通过填充口袋内材料调节保暖，创新保暖机制",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "578cf34183a9",
       "title": "Alternative, Compact Design for Jar Opener Doesn't Rely on Grip...",
       "category": "创意厨具",
@@ -104877,39 +105148,6 @@
       ]
     },
     {
-      "id": "5ffc0a3519c4",
-      "title": "Good stuff, Gatherer Jacket adapts to unexpected climate changes - Core77",
-      "category": "冲锋衣",
-      "summary": "Merrell Gatherer Jacket，轻量夹克，通过填充口袋内材料调节保暖，创新保暖机制，明确功能外套。。页面证据：Merrell's new lightweight Gather Jacket helps hikers and climbers adapt to rapid temperature changes by filling pockets throughout the jacket with any found materials for increased insulation. It's nice to actually see this concept realized after years of student projects presenting similar solutions for helping the homeless survive cold nights....",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_10365_.jpg",
-      "url": "https://www.core77.com/posts/10365/good-stuff-gatherer-jacket-adapts-to-unexpected-climate-changes-10365",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 2,
-      "first_seen": "2026-07-17",
-      "last_seen": "2026-07-17",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通过填充口袋内材料调节保暖，创新保暖机制",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "d0f89a36e059",
       "title": "Finally: A Smart Design for a Daily Drinking Bottle That's Easy to Clean and More Functional - Core77",
       "category": "水杯",
@@ -105046,6 +105284,39 @@
       ]
     },
     {
+      "id": "21fb12567071",
+      "title": "coco game controller smartphone case",
+      "category": "手机壳",
+      "summary": "具体产品：coco游戏控制器手机壳，为iPhone和Galaxy SIII设计，集成D-pad、摇杆和标准游戏按键，将手机壳变为实体游戏手柄，功能与结构创新显著。。页面证据：developed by new startup milkshake labs, the case for iPhone and galaxy SIII returns tactility to modern entertainment, providing a D-pad, analog stick, and standard control buttons for gaming apps.",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.designboom.com/technology/coco-game-controller-smartphone-case",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "手机壳集成实体D-pad、摇杆与游戏按键，将保护壳变为游戏手柄，功能创新显著。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "5c58686cd785",
       "title": "DuoShift - by Seung Bin Bae / Core77 Design Awards",
       "category": "创意桌搭",
@@ -105079,96 +105350,28 @@
       ]
     },
     {
-      "id": "7a280c052e0b",
-      "title": "Noa - by Darren Wells / Core77 Design Awards",
+      "id": "3737fd95fb90",
+      "title": "Apple Says the iPhone 17 is Tough. This $27 Case is Tougher. - Yanko Design",
       "category": "手机壳",
-      "summary": "Noa手机壳带可拆卸电子墨水屏幕，通过磁吸固定，兼作通知中心支架。。页面证据：The detachable e-ink screen is used when the user wants to enter \"work mode\". The user detaches the screen, held to the case via magnets, and uses the kickstand to set up a notification center so they can put their phone out of sight.",
+      "summary": "iPhone 17保护壳打开后可变成可调支架，铰链支持15°-69°视角，横竖屏均可，功能结构创新明确。。页面证据：The dust has barely settled on the iPhone 17 series launch, and the hype is palpable. Apple’s keynote was a masterclass in engineering poetry, touting a forged reinforced chassis (made from specialized Aluminum alloy or Titanium depending on the Pro or Air models) and a next-generation Ceramic Shield display that supposedly laughs in the face",
       "score": 78,
-      "price_gate": "likely_over_35",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1000357_lead_400_94955__sharing.jpg",
-      "url": "https://designawards.core77.com/Strategy-Research/94955/Noa",
-      "source_name": "Core77",
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2025/09/draft-esr/ESR_iPhone_17_Accessories_hero.jpg",
+      "url": "https://www.yankodesign.com/2025/09/16/apple-says-the-iphone-17-is-tough-this-27-case-is-tougher",
+      "source_name": "Yanko Design",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
       "source_quality": "premium",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发",
         "结构启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-19",
       "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可拆卸电子墨水屏磁吸固定，兼作通知中心支架",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 9,
-      "relevance": 9,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "3b9e67000e62",
-      "title": "NexTrend Garlic Twister | Garlic Crusher",
-      "category": "创意厨具",
-      "summary": "明确厨具单品 NexTrend 大蒜扭扭帮手，通过旋转扭压结构快速处理蒜泥，替代传统按压，结构创新，Grommet 在售可买样。。页面证据：Save time in the kitchen with the NexTrend Garlic Twister! See how others use it as a garlic crusher, ginger crusher & more! Get 20% off the Garlic Twister + more on Grommet.",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://dxzihkgog0d85.cloudfront.net/products/2394/200x200_6DLMPGarlic%20Crusher.jpg",
-      "url": "https://thegrommet.com/product/kitchen/garlic-twister-4th-generation",
-      "source_name": "The Grommet",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-19",
-      "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：旋转扭压结构快速处理蒜泥，替代传统按压方式，操作体验创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 7,
-      "relevance": 10,
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "5645e31dc61c",
-      "title": "Transfer Cutting Board",
-      "category": "创意厨具",
-      "summary": "Transfer Cutting Board转移切菜板，特殊设计便于将切好的食物直接滑入盘子，功能创新。。页面证据：The Transfer Cutting Board by chris&ruby makes transferring your food to plate pretty foolproof.",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2011/10/transfer-cutting-board-plate.jpg",
-      "url": "https://design-milk.com/transfer-cutting-board",
-      "source_name": "Design Milk",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-19",
-      "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：特殊形状设计方便食物直接滑入盘子，功能创新",
-      "review_source": "deepseek_backlog_recheck",
+      "review_reason": "保护壳铰链可展开为15°-69°可调支架，横竖屏支持，结构功能创新",
+      "review_source": "deepseek",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 78,
@@ -105177,6 +105380,40 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "8dfa39db0734",
+      "title": "Geistmaschine ASP Series Keyboards Are Ambitiously Elegant",
+      "category": "创意桌搭",
+      "summary": "Geistmaschine ASP Series Keyboards 具备磁性模块化设计，左侧数字键盘、音频旋钮可自定义，创新点在于磁吸结构与模块化组合。。页面证据：The elegant Geistmaschine keyboards imagined for designers, architects, and aesthetes hide a magnetic modular customization design.",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://design-milk.com/images/2023/06/geistmaschine-keyboards-june162023-13.jpg",
+      "url": "https://design-milk.com/geistmaschine-asp-series-keyboards-are-ambitiously-elegant",
+      "source_name": "Design Milk",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：磁性模块化设计，可自定义数字键盘和音频旋钮",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -105917,6 +106154,40 @@
       "relevance": 10,
       "tags": [
         "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "3b9e67000e62",
+      "title": "NexTrend Garlic Twister | Garlic Crusher | Grommet",
+      "category": "创意厨具",
+      "summary": "明确厨具单品 NexTrend 大蒜扭扭帮手，通过旋转扭压结构快速处理蒜泥，替代传统按压，结构创新，Grommet 在售可买样。。页面证据：Save time in the kitchen with the NexTrend Garlic Twister! See how others use it as a garlic crusher, ginger crusher & more! Get 20% off the Garlic Twister + more on Grommet.",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://dxzihkgog0d85.cloudfront.net/products/2394/200x200_6DLMPGarlic%20Crusher.jpg",
+      "url": "https://thegrommet.com/product/kitchen/garlic-twister-4th-generation",
+      "source_name": "The Grommet",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：旋转扭压结构快速处理蒜泥，替代传统按压方式，操作体验创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 7,
+      "relevance": 10,
+      "tags": [
+        "buy_sample",
         "deepseek_search_agent"
       ]
     },
@@ -109125,15 +109396,15 @@
       ]
     },
     {
-      "id": "8dfa39db0734",
-      "title": "Geistmaschine ASP Series Keyboards Are Ambitiously Elegant",
-      "category": "创意桌搭",
-      "summary": "Geistmaschine ASP Series Keyboards 具备磁性模块化设计，左侧数字键盘、音频旋钮可自定义，创新点在于磁吸结构与模块化组合。。页面证据：The elegant Geistmaschine keyboards imagined for designers, architects, and aesthetes hide a magnetic modular customization design.",
+      "id": "7a280c052e0b",
+      "title": "Noa - by Darren Wells / Core77 Design Awards",
+      "category": "手机壳",
+      "summary": "Noa手机壳带可拆卸电子墨水屏幕，通过磁吸固定，兼作通知中心支架。。页面证据：The detachable e-ink screen is used when the user wants to enter \"work mode\". The user detaches the screen, held to the case via magnets, and uses the kickstand to set up a notification center so they can put their phone out of sight.",
       "score": 78,
-      "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2023/06/geistmaschine-keyboards-june162023-13.jpg",
-      "url": "https://design-milk.com/geistmaschine-asp-series-keyboards-are-ambitiously-elegant",
-      "source_name": "Design Milk",
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1000357_lead_400_94955__sharing.jpg",
+      "url": "https://designawards.core77.com/Strategy-Research/94955/Noa",
+      "source_name": "Core77",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
       "source_quality": "premium",
@@ -109146,13 +109417,13 @@
       "seen_count": 1,
       "first_seen": "2026-07-21",
       "last_seen": "2026-07-21",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：磁性模块化设计，可自定义数字键盘和音频旋钮",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可拆卸电子墨水屏磁吸固定，兼作通知中心支架",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 78,
-      "innovation": 8,
-      "relevance": 10,
+      "innovation": 9,
+      "relevance": 9,
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
@@ -110060,6 +110331,39 @@
       "quality_score": 78,
       "innovation": 8,
       "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "5645e31dc61c",
+      "title": "Transfer Cutting Board",
+      "category": "创意厨具",
+      "summary": "Transfer Cutting Board转移切菜板，特殊设计便于将切好的食物直接滑入盘子，功能创新。。页面证据：The Transfer Cutting Board by chris&ruby makes transferring your food to plate pretty foolproof.",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://design-milk.com/images/2011/10/transfer-cutting-board-plate.jpg",
+      "url": "https://design-milk.com/transfer-cutting-board",
+      "source_name": "Design Milk",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "review_reason": "DeepSeek候选复核：特殊形状设计方便食物直接滑入盘子，功能创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 7,
+      "relevance": 10,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -112236,6 +112540,40 @@
       "review_policy_version": 3,
       "quality_score": 77,
       "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "574bb5c24f5b",
+      "title": "Cooking by the Milliliter - Yanko Design",
+      "category": "创意厨具",
+      "summary": "明确单品概念：Scale Gas Range 将电子秤集成进燃气灶架，通过监测锅内重量变化判断水分蒸发和酱汁浓稠度，防止烧焦。功能/交互创新明确，可转化为灶具或智能锅具产品。。页面证据：The Scale Gas Range integrates a weighing scale within the framework of the cooking range. The idea behind the concept to save your meals from getting burnt! Each recipe has a particular weight when it starts to cook, eventually as the moisture evaporates and the gravy thickens, the weight drops. At this time, if we",
+      "score": 77,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2011/12/21/scale_gasrange.jpg",
+      "url": "https://www.yankodesign.com/2011/12/21/cooking-by-the-milliliter",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "Scale Gas Range将电子秤集成于灶架，通过重量变化判断水分蒸发和酱汁浓度，防止烧焦。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 77,
+      "innovation": 9,
       "relevance": 9,
       "tags": [
         "adapt",
@@ -118200,33 +118538,137 @@
       ]
     },
     {
-      "id": "e3f0dc568b9f",
-      "title": "The Dina Is One Part Lamp, One Part Piggybank",
-      "category": "氛围灯",
-      "summary": "Dina灯，投币才亮并兼作存钱罐，交互创新独特。页面证据：Moak Studio's Dina LED lamp only operates with a proper coin donation, dropping every coin into its receptacle for safe keepings.",
+      "id": "4de5fa7587cb",
+      "title": "sixbox | designboom.com",
+      "category": "创意礼盒",
+      "summary": "Sixbox六盒系统打开后可变成桌、椅、床等家具，实现包装到家具的复用与结构创新，是可转化的概念原型。。页面证据：closed half-open open",
+      "score": 76,
+      "price_gate": "likely_over_35",
+      "image": "https://www.designboom.com/contest/files/copy_59_01.jpg",
+      "url": "https://www.designboom.com/project/sixbox",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：六盒系统打开后变为桌椅床等家具，实现包装到家具的结构复用创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "a829cccdfae8",
+      "title": "Exovault iPhone Case",
+      "category": "手机壳",
+      "summary": "Exovault 金属iPhone壳，采用锁闭结构保护手机，结构创新。。页面证据：Exovault is a metal iPhone case that acts like a vault -- locking your iPhone inside and protecting it from damage. Made of two pieces of solid metal, the",
       "score": 76,
       "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2018/05/Moak-Studio-Dina-1.jpg",
-      "url": "https://design-milk.com/dina-one-part-lamp-one-part-piggybank",
+      "image": "https://design-milk.com/images/2011/01/exovault-1.jpg",
+      "url": "https://design-milk.com/exovault-iphone-case",
       "source_name": "Design Milk",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：金属锁闭结构提供额外保护，结构创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "6e1cbb6da1ae",
+      "title": "Vespertine lamp: versatile lighting with a single device : DesignWanted",
+      "category": "氛围灯",
+      "summary": "Vespertine 吊灯将传统吊灯与便携照明结合，内置电池可取下移动使用，具备结构/充电功能创新。。页面证据：Designed by studio sugar, the Vespertine lamp functions as a pendant light that charges its integrated batteries for versatile use.",
+      "score": 76,
+      "price_gate": "unknown",
+      "image": "http://designwanted.com/wp-content/uploads/2023/04/Vespertine-lamp-by-studio-sugar-_-Tim-Schuetze-and-Max-Hausmann-_-2023-DesignWanted-Award-winner-_-Milan-Design-Week-cover.jpg",
+      "url": "https://designwanted.com/vespertine-lamp-versatile-lighting-single-device",
+      "source_name": "DesignWanted",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
       "source_quality": "premium",
       "action_lane": "方向参考",
       "axes": [
+        "功能启发",
+        "结构启发",
         "情绪启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-19",
       "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：投币才亮的交互设计使灯与存钱罐合体，行为触发创新。",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：吊灯内置电池可取下作便携照明，双模式结构创新",
       "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 10,
+      "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 76,
-      "innovation": 9,
-      "relevance": 10,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "5f76b6f1eefe",
+      "title": "The Solae Lamp by Cecilie Manz for Fritz Hansen Steps Outside",
+      "category": "氛围灯",
+      "summary": "Solae Portable Lamp，单挤压铝型材，调光功能，便携设计，适合室内外使用，结构创新。。页面证据：Ergonomic, functional, and effortlessly chic, the Solae Portable Lamp by Cecilie Manz for Fritz Hansen works both indoors and outside.",
+      "score": 76,
+      "price_gate": "unknown",
+      "image": "https://design-milk.com/images/2025/08/Solae-Light-Fritz-Hansen-9-e1766526512221.jpg",
+      "url": "https://design-milk.com/the-solae-lamp-by-cecilie-manz-for-fritz-hansen-steps-outside",
+      "source_name": "Design Milk",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：单挤压铝型材结构创新，便携设计，适合室内外使用",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 7,
+      "relevance": 9,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -118330,6 +118772,39 @@
       "relevance": 9,
       "tags": [
         "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "e3f0dc568b9f",
+      "title": "The Dina Is One Part Lamp, One Part Piggybank",
+      "category": "氛围灯",
+      "summary": "Dina灯，投币才亮并兼作存钱罐，交互创新独特。页面证据：Moak Studio's Dina LED lamp only operates with a proper coin donation, dropping every coin into its receptacle for safe keepings.",
+      "score": 76,
+      "price_gate": "unknown",
+      "image": "https://design-milk.com/images/2018/05/Moak-Studio-Dina-1.jpg",
+      "url": "https://design-milk.com/dina-one-part-lamp-one-part-piggybank",
+      "source_name": "Design Milk",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-18",
+      "last_seen": "2026-08-18",
+      "review_reason": "DeepSeek候选复核：投币才亮的交互设计使灯与存钱罐合体，行为触发创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 10,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -118571,40 +119046,6 @@
       ]
     },
     {
-      "id": "4de5fa7587cb",
-      "title": "sixbox | designboom.com",
-      "category": "创意礼盒",
-      "summary": "Sixbox六盒系统打开后可变成桌、椅、床等家具，实现包装到家具的复用与结构创新，是可转化的概念原型。。页面证据：closed half-open open",
-      "score": 76,
-      "price_gate": "likely_over_35",
-      "image": "https://www.designboom.com/contest/files/copy_59_01.jpg",
-      "url": "https://www.designboom.com/project/sixbox",
-      "source_name": "Designboom",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-17",
-      "last_seen": "2026-08-17",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：六盒系统打开后变为桌椅床等家具，实现包装到家具的结构复用创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 76,
-      "innovation": 9,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
       "id": "0ea2077d8f4d",
       "title": "Customizable Ketchup Squeeze Lids : Love Lid",
       "category": "创意厨具",
@@ -118832,41 +119273,6 @@
       "review_policy_version": 3,
       "quality_score": 76,
       "innovation": 7,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "6e1cbb6da1ae",
-      "title": "Vespertine lamp: versatile lighting with a single device : DesignWanted",
-      "category": "氛围灯",
-      "summary": "Vespertine 吊灯将传统吊灯与便携照明结合，内置电池可取下移动使用，具备结构/充电功能创新。。页面证据：Designed by studio sugar, the Vespertine lamp functions as a pendant light that charges its integrated batteries for versatile use.",
-      "score": 76,
-      "price_gate": "unknown",
-      "image": "http://designwanted.com/wp-content/uploads/2023/04/Vespertine-lamp-by-studio-sugar-_-Tim-Schuetze-and-Max-Hausmann-_-2023-DesignWanted-Award-winner-_-Milan-Design-Week-cover.jpg",
-      "url": "https://designwanted.com/vespertine-lamp-versatile-lighting-single-device",
-      "source_name": "DesignWanted",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-14",
-      "last_seen": "2026-08-14",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：吊灯内置电池可取下作便携照明，双模式结构创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 76,
-      "innovation": 8,
       "relevance": 9,
       "tags": [
         "adapt",
@@ -122980,39 +123386,6 @@
       ]
     },
     {
-      "id": "a829cccdfae8",
-      "title": "Exovault iPhone Case",
-      "category": "手机壳",
-      "summary": "Exovault 金属iPhone壳，采用锁闭结构保护手机，结构创新。。页面证据：Exovault is a metal iPhone case that acts like a vault -- locking your iPhone inside and protecting it from damage. Made of two pieces of solid metal, the",
-      "score": 76,
-      "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2011/01/exovault-1.jpg",
-      "url": "https://design-milk.com/exovault-iphone-case",
-      "source_name": "Design Milk",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-22",
-      "last_seen": "2026-07-22",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：金属锁闭结构提供额外保护，结构创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 76,
-      "innovation": 7,
-      "relevance": 9,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
       "id": "df5ed9a2b7cd",
       "title": "iF Design - XIONGMAO ECO-JACKET FOR HIKING & TRAIL RUNNING",
       "category": "冲锋衣",
@@ -124254,41 +124627,6 @@
       "quality_score": 76,
       "innovation": 9,
       "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "5f76b6f1eefe",
-      "title": "The Solae Lamp by Cecilie Manz for Fritz Hansen Steps Outside",
-      "category": "氛围灯",
-      "summary": "Solae Portable Lamp，单挤压铝型材，调光功能，便携设计，适合室内外使用，结构创新。。页面证据：Ergonomic, functional, and effortlessly chic, the Solae Portable Lamp by Cecilie Manz for Fritz Hansen works both indoors and outside.",
-      "score": 76,
-      "price_gate": "unknown",
-      "image": "https://design-milk.com/images/2025/08/Solae-Light-Fritz-Hansen-9-e1766526512221.jpg",
-      "url": "https://design-milk.com/the-solae-lamp-by-cecilie-manz-for-fritz-hansen-steps-outside",
-      "source_name": "Design Milk",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-17",
-      "last_seen": "2026-07-17",
-      "review_reason": "DeepSeek候选复核：单挤压铝型材结构创新，便携设计，适合室内外使用",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 76,
-      "innovation": 7,
-      "relevance": 9,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -126758,36 +127096,37 @@
       ]
     },
     {
-      "id": "ff3df745d640",
-      "title": "skinarma reimagines iphone 17 case in post-apocalyptic design",
-      "category": "手机壳",
-      "summary": "skinarma AEGIS手机壳，末日风格设计，内置握把支架，结构创新。。页面证据：skinarma launches its iphone 17 case range, creating a new class of rugged tech accessories, inspired by survival gear.",
+      "id": "4612f5c32d01",
+      "title": "A Fashionable on-the-go Powerbank that you can wear - Yanko Design",
+      "category": "充电宝",
+      "summary": "MChaos 10000mAh可穿戴充电宝，可挂在身上/包上，带双向USB-C，便携结构创新。页面证据：https://www.youtube.com/watch?v=85XFjsLgOQc There's a significant demand for creatively designed power banks, as demonstrated by MChaos' new on-the-go power bank. This product cleverly attaches to you and whatever you're carrying. Not only did MChaos backers fund this product, but they also exceeded the funding goal by 650%. So, what makes this product so popular? Let's delve in",
       "score": 75,
       "price_gate": "unknown",
-      "image": "https://www.designboom.com/twitterimages/uploads/2025/09/skinarma-iphone-17-case-collection-designboom-facebook.jpg",
-      "url": "https://www.designboom.com/design/skinarma-upgrade-iphone-17-case-grip-stands-interchangeable-lanyard-bumpers-09-30-2025",
-      "source_name": "Designboom",
+      "image": "https://www.yankodesign.com/images/design_news/2024/02/a-fashionable-on-the-go-powerbank-that-you-can-wear/MChaos-On-the-Go-Wearable-Power-Bank-hero.jpg",
+      "url": "https://www.yankodesign.com/2024/02/08/a-fashionable-on-the-go-powerbank-that-you-can-wear",
+      "source_name": "Yanko Design",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
       "source_quality": "premium",
-      "action_lane": "适合改造",
+      "action_lane": "方向参考",
       "axes": [
+        "功能启发",
         "结构启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-19",
       "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置握把支架和可互换挂绳挡板，结构创新",
-      "review_source": "deepseek_backlog_recheck",
+      "review_reason": "可穿戴式充电宝，可挂于身上或包上，双向USB-C结构创新",
+      "review_source": "deepseek",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 75,
-      "innovation": 7,
+      "innovation": 8,
       "relevance": 9,
       "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -130770,6 +131109,39 @@
       ]
     },
     {
+      "id": "ff3df745d640",
+      "title": "skinarma reimagines iphone 17 case in post-apocalyptic design",
+      "category": "手机壳",
+      "summary": "skinarma AEGIS手机壳，末日风格设计，内置握把支架，结构创新。。页面证据：skinarma launches its iphone 17 case range, creating a new class of rugged tech accessories, inspired by survival gear.",
+      "score": 75,
+      "price_gate": "unknown",
+      "image": "https://www.designboom.com/twitterimages/uploads/2025/09/skinarma-iphone-17-case-collection-designboom-facebook.jpg",
+      "url": "https://www.designboom.com/design/skinarma-upgrade-iphone-17-case-grip-stands-interchangeable-lanyard-bumpers-09-30-2025",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置握把支架和可互换挂绳挡板，结构创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 75,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "94a7affe42a9",
       "title": "Vapur Eclipse Anti-Bottle Collapsible Water Bottles | Cool Material",
       "category": "水杯",
@@ -132546,6 +132918,39 @@
       ]
     },
     {
+      "id": "fd89957c710a",
+      "title": "Vollebak Full Metal Jacket",
+      "category": "冲锋衣",
+      "summary": "明确单品 Vollebak Full Metal Jacket: Copper Edition，采用逾11公里铜线制成，具备导电导热和抗菌性能，材料创新突出。。页面证据：Copper is one of the most advanced materials in the solar system, with the ability to conduct heat and power while killing bacteria and viruses....",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "https://uncrate.com/p/2025/01/vollebak-fmj-25-1.jpg",
+      "url": "https://uncrate.com/vollebak-full-metal-jacket",
+      "source_name": "Uncrate",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：铜丝编织材料，结合可开闭防水透气膜，材料与结构双创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "459382dc54b6",
       "title": "Eyra Kitchen Utensils - Behance",
       "category": "创意厨具",
@@ -132641,39 +133046,6 @@
       "quality_score": 74,
       "innovation": 7,
       "relevance": 9,
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "fd89957c710a",
-      "title": "Vollebak Full Metal Jacket | Uncrate",
-      "category": "冲锋衣",
-      "summary": "明确单品 Vollebak Full Metal Jacket: Copper Edition，采用逾11公里铜线制成，具备导电导热和抗菌性能，材料创新突出。。页面证据：Copper is one of the most advanced materials in the solar system, with the ability to conduct heat and power while killing bacteria and viruses....",
-      "score": 74,
-      "price_gate": "unknown",
-      "image": "https://uncrate.com/p/2025/01/vollebak-fmj-25-1.jpg",
-      "url": "https://uncrate.com/vollebak-full-metal-jacket",
-      "source_name": "Uncrate",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 2,
-      "first_seen": "2026-07-30",
-      "last_seen": "2026-08-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：铜丝编织材料，结合可开闭防水透气膜，材料与结构双创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 74,
-      "innovation": 9,
-      "relevance": 10,
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
@@ -132915,6 +133287,74 @@
       ]
     },
     {
+      "id": "c029d518d2bd",
+      "title": "Red Dot Design Award: ARBA for FABINI",
+      "category": "创意厨具",
+      "summary": "ARBA for FABINI 木质厨具系列，切菜板带汁槽、托盘可单手携带，具备结构与使用创新。。页面证据：Arba for FABINI is a series of kitchen accessories made of high-quality wood, characterised by soft contours. The chopping boards feature a distinctive juice groove, while the serving boards are designed to be carried with one hand. The burr set of the...",
+      "score": 74,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.red-dot.org/project/arba-for-fabini-86147",
+      "source_name": "Red Dot",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "切菜板集成汁槽与可单手携带托盘，结构与操作创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "6cd916b82532",
+      "title": "Bottle",
+      "category": "水杯",
+      "summary": "Aquacendo LightUp Filtered Bottle带过滤与灯光提示，结合饮水安全问题。页面证据：Aquacendo LightUp Filtered Bottle is designed to make a real impact, in line with the United Nations’ Sustainable Development Goals. It shines a light on the struggles faced by children in impoverished areas. With its thoughtful and heartwarming design, it’s helping to address health issues caused by the lack of clean water.",
+      "score": 74,
+      "price_gate": "likely_over_35",
+      "image": "https://award-attachments.g-mark.io/winners/2025/28675/main.jpg?size=medium",
+      "url": "https://www.g-mark.org/en/gallery/winners/28675?years=2025",
+      "source_name": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "滤水杯带灯光提示，将饮水安全与可见反馈结合，功能创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 7,
+      "relevance": 8,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "3b4241aec077",
       "title": "Modular wireless mouse and presenter has a curious ergonomic design - Yanko Design",
       "category": "创意桌搭",
@@ -132978,6 +133418,40 @@
       "relevance": 8,
       "tags": [
         "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "7497541c8e4f",
+      "title": "Table lamp concept sculpts light and shadow in your space - Yanko Design",
+      "category": "氛围灯",
+      "summary": "Veo台灯概念：可旋转灯罩塑造光影，是具体灯具产品，结构与交互创新明确。。页面证据：Lighting plays an increasingly significant role in contemporary interior design, evolving far beyond its basic function of illumination. Sure it is still a practical necessity but it's also more of a vital element that fundamentally shapes the ambiance and adds distinct character to our living spaces. Homeowners and interior designers alike have grown more conscious",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2025/06/table-lamp-concept-sculpts-light-and-shadow-in-your-space/veo-01.jpg",
+      "url": "https://www.yankodesign.com/2025/06/14/table-lamp-concept-sculpts-light-and-shadow-in-your-space",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "可旋转灯罩塑造光影，交互与光影创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -137013,7 +137487,7 @@
       "seen_count": 1,
       "first_seen": "2026-07-21",
       "last_seen": "2026-07-21",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：钛合金材质，按手机形状定制，背面可定制图案，材料与个性化创新",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：钛合金材质，按手机形状定制，背面可定制图案，材料与个性化创新",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -139520,6 +139994,39 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "2496bd2de4aa",
+      "title": "vollebak makes martian aerogel jackets from space parachutes NASA used in rover mission",
+      "category": "冲锋衣",
+      "summary": "明确单品：Vollebak Martian Aerogel Jacket，使用NASA火星任务中的降落伞材料并采用气凝胶绝热。创新证据：材料来源太空废弃降落伞，气凝胶超轻隔热，Designboom图文报道，创新度突出。。页面证据：vollebak produces martian aerogel jackets using the space parachutes that NASA used to land the rover mission on mars.",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "https://www.designboom.com/twitterimages/uploads/2024/11/vollebak-space-parachutes-NASA-rover-mission-martian-aerogel-jackets-designboom-fb.jpg",
+      "url": "https://www.designboom.com/technology/vollebak-martian-aerogel-jackets-space-parachutes-nasa-rover-mission-11-01-2024",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "采用NASA火星任务降落伞材料与气凝胶绝热，超轻且隔热，材料创新显著。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 73,
+      "innovation": 10,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -146033,6 +146540,178 @@
       "quality_score": 72,
       "innovation": 9,
       "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "810b9f55afbf",
+      "title": "box - structural packaging design :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adob",
+      "category": "创意礼盒",
+      "summary": "box 结构包装概念，剪式穹顶结构，开箱时展开显露产品，开箱体验和结构创新明确。。页面证据：box shows the potential of a structural packaging concept which elevates user experience while providing for a more sustainable option.",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b6101495837739.5ea09d15d57ca.jpg",
+      "url": "https://www.behance.net/gallery/95837739/box-structural-packaging-design",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "剪式穹顶结构开箱，展开时显露产品，结构创新和开箱体验突出。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 8,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "b610f362a3e9",
+      "title": "Thuya Magic Box, Wooden Puzzle Box, Secret Compartment ... - Etsy",
+      "category": "创意礼盒",
+      "summary": "Thuya 木制魔法礼盒，手工木制拼图盒，带秘密开启机关，开箱互动创新明确。。页面证据：Materials: Wood Discover the charm of traditional Moroccan craftsmanship with this **Handmade Moroccan Thuya Magic Box**, a unique wooden puzzle box designed with a clever secret-opening mechanism. Handcrafted in Morocco from beautiful **Thuya wood**, this decorative box features rich natural grain, warm amber tones and a polished artisan finish.",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.etsy.com/listing/4555417609/thuya-magic-box-wooden-puzzle-box-secret",
+      "source_name": "Etsy",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "情绪启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "手工木制拼图盒，带秘密开启机关，开箱互动创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 8,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "599e6fea5e09",
+      "title": "POP case: The Ultimate Modular iPhone Battery Case by Colorii ...",
+      "category": "手机壳",
+      "summary": "POP Case模块化iPhone电池壳，可拆卸电池、混搭颜色，结构/功能创新明确。页面证据：Super slim protective case with removable battery. Mix and match colors for iPhone 6/6s+/ 7/7+/8/8+. POP Case.The Ultimate Modular iPhone Battery Case on indiegogo now!",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/projects/pop-case-the-ultimate-modular-iphone-battery-case",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "模块化电池壳，可拆卸电池与混搭色彩结构，创新明确",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "13f0fb9ad822",
+      "title": "The Perfect Pop's Lavishly Tubular Packaging System - DIELINE The Perfect Pop's Lavishly Tubular Packaging System - DIELINE",
+      "category": "创意礼盒",
+      "summary": "The Perfect Pop品牌的模块化管状礼盒包装系统，由Auge Design设计，多节管模块通过fitting system和内部底座可堆叠，顶部盖子封口，具备明确的结构创新和礼赠场景。。页面证据：Popcorn already feels like an indulgent treat, but Auge Design took the luxury snack to the next level. In partnership with The Perfect Pop, Auge Design concocted a stunning modular packaging system for the brand. The innovative popcorn tubes are adorned with bold patterns consisting of stripes and popped kernels to create a cohesive branding […]",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "https://i0.wp.com/thedieline.com/wp-content/uploads/2022/03/df5c0425-118c-4516-acac-01a5334f389a_1.jpeg",
+      "url": "https://thedieline.com/the-perfect-pop",
+      "source_name": "The Dieline",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "模块化管状礼盒系统，多节管堆叠并可拆装，结构创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "cdbdf3b193c1",
+      "title": "Pringles Goes Pop Mart With 'Once You Pop Mystery Boxes' - DIELINE Pringles Goes Pop Mart With 'Once You Pop Mystery Boxes' - DIELINE",
+      "category": "创意礼盒",
+      "summary": "品客'Once You Pop Mystery Boxes'盲盒，将薯片桶与 Pop Mart 式随机收藏盲盒结合，具备开箱与收藏叙事，是可买样的礼盒单品。。页面证据：Pringles capitalizes on the popularity of mystery boxes and the Pop Mart-ing of collectibles.",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "https://i0.wp.com/thedieline.com/wp-content/uploads/2025/11/Pringles_OnceYouPopMysteryBoxTBFeature.jpg",
+      "url": "https://thedieline.com/pringles-goes-pop-mart-with-once-you-pop-mystery-boxes",
+      "source_name": "The Dieline",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "薯片桶与盲盒收藏玩法结合，开箱交互创新",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 7,
+      "relevance": 9,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -152639,6 +153318,40 @@
       ]
     },
     {
+      "id": "dbdad253cb5a",
+      "title": "bertjan pot: cluster lights",
+      "category": "氛围灯",
+      "summary": "Bertjan Pot 为 Moooi 设计的 Heracleum 枝形 LED 灯，以植物叶片为灵感的白色透镜从枝条分叉，形成独特光学照明结构，是明确可用吊灯单品。。页面证据：influenced by the heracleum plant, bertjan pot's new LED lamp for moooi features white leaves / lenses that ramify off branches.",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.designboom.com/design/bertjan-pot-cluster-lights",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-08-19",
+      "review_reason": "针织纺织品吸入树脂制作灯罩，材料工艺创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "d64a896a8e0b",
       "title": "Grommet: Find New Products & Discover What’s Next",
       "category": "创意桌搭",
@@ -152909,6 +153622,74 @@
       ]
     },
     {
+      "id": "4a764566f6e1",
+      "title": "Behance",
+      "category": "水杯",
+      "summary": "Behance 设计挑战作品模块化水杯，明确以模块化结构为核心，可拆装组合，具有结构创新，但细节描述有限。。页面证据：Behance ... Behance",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.behance.net/gallery/217001355/Design-Challenge-Modular-Water-Bottle",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "模块化拆装结构，可更换部件实现一瓶多变，超越基础水杯的功能创新。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "bebb02164575",
+      "title": "MUJI MODULAR WATER BOTTLE on Behance",
+      "category": "水杯",
+      "summary": "MUJI模块化水瓶概念，通过更换部件实现一瓶多变，结构创新明确。页面证据：Progetto realizzato per il corso di Design del Prodotto con il professor Marco Sito e Gianfranco Vasselli",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.behance.net/gallery/52556977/MUJI-MODULAR-WATER-BOTTLE",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "MUJI风格模块化水瓶，通过更换部件实现瓶体变形，结构创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 8,
+      "relevance": 8,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "529841131c39",
       "title": "KÜHL STRETCH VOYAGR Jacket | Uncrate",
       "category": "冲锋衣",
@@ -152938,6 +153719,107 @@
       "relevance": 8,
       "tags": [
         "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "7ba6b38d30ff",
+      "title": "皆行×义统包装丨原创互动包装，玩趣十足通用礼盒_皆行创意设计-站酷ZCOOL",
+      "category": "创意礼盒",
+      "summary": "具体产品：皆行×义统包装「幽蝉幻韵」互动礼盒。创新证据：以叶态摇曳和金蝉寓意高升，结合互动开启结构和吉祥纹样，形成可把玩的节日叙事包装。页面证据：皆行×义统包装丨原创互动包装，玩趣十足通用礼盒,蝉，寓意高洁，有高声，一鸣惊人的寓意。「幽蝉幻韵」礼盒，用叶态的摇曳高升，和点缀其间的金蝉，寓意运势的高升，喜旺。细节脉络，特地选用寿松、祥纹等不同吉祥元素，呈,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
+      "score": 71,
+      "price_gate": "likely_over_35",
+      "image": "https://img.zcool.cn/community/66d6cbc22a833n7f1coxud2357.png?k=6d8090dbc7fbdc177e26a9cefbaeabab&t=6a872480",
+      "url": "https://www.zcool.com.cn/work/ZNzAzNDUxNjg=.html",
+      "source_name": "站酷",
+      "source_family": "设计社区",
+      "source_type": "design_community",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "互动开启结构结合叶态金蝉叙事，包装可把玩、复用",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
+      ]
+    },
+    {
+      "id": "8476b21a6240",
+      "title": "Crocs goes into smartphone cases with SLBS partnership - Yanko Design",
+      "category": "手机壳",
+      "summary": "Crocs联名手机壳采用TPU和通风鞋面设计，带可拆卸可调节模块化肩带，有功能创新而非仅图案。。页面证据：Crocs is a brand that is polarizing, but the ones who love it, really love it. We've seen some pretty unique collaborations and co-branding efforts, which, again, if you're a fan, you probably loved or maybe even bought for yourself. If you’re one of the fans, or if you like the design but wouldn’t want",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2025/09/crocs-goes-into-smartphone-cases-with-slbs-partnership/slbs-crocs-00.jpg",
+      "url": "https://www.yankodesign.com/2025/09/02/crocs-goes-into-smartphone-cases-with-slbs-partnership",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "TPU通风鞋面结合可拆卸模块化肩带，功能结构创新",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "3ea39a7256af",
+      "title": "Biomimicry cooler merges nature with modern technology : DesignWanted",
+      "category": "装置艺术",
+      "summary": "Simon Pavy 设计的仿生冷却器，以算法生成珊瑚状波纹陶土结构，优化陶土与气流交互实现被动蒸发冷却，是可转化的材料装置原型。。页面证据：Inspired by the natural world’s elegance, Simon Pavy optimized the interaction between terracotta and airflow to birth the Biomimicry cooler.",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "http://designwanted.com/wp-content/uploads/2023/09/Biomimicry-cooler-_-3d-printed-ceramic-terracotta-by-Simon-Pavy-_-Entreautre-design-agency-cover.jpg",
+      "url": "https://designwanted.com/biomimicry-cooler-nature-modern-technology",
+      "source_name": "DesignWanted",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "仿生珊瑚状陶土结构被动蒸发冷却，材料与结构可转化为产品原型",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 9,
+      "relevance": 8,
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -155430,39 +156312,6 @@
       ]
     },
     {
-      "id": "dbdad253cb5a",
-      "title": "bertjan pot: cluster lights",
-      "category": "氛围灯",
-      "summary": "具体灯具，采用针织纺织品吸入树脂的工艺制作灯罩，材料工艺创新。。页面证据：the light shades are made by sucking a circular knitted textile around resin a cluster of balloons.",
-      "score": 71,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.designboom.com/design/bertjan-pot-cluster-lights",
-      "source_name": "Designboom",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-07-23",
-      "last_seen": "2026-07-23",
-      "review_reason": "针织纺织品吸入树脂制作灯罩，材料工艺创新",
-      "review_source": "deepseek",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 71,
-      "innovation": 9,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
       "id": "fae0b6003d6b",
       "title": "This Designer Concept Is the First Portable Charger You’d Wear - Yanko Design",
       "category": "充电宝",
@@ -157828,6 +158677,74 @@
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "a202a7906642",
+      "title": "Student Spotlight: CULT Moon Cake Packaging | Dieline",
+      "category": "中秋礼盒",
+      "summary": "明确月饼礼盒概念，花形结构实现2D/3D统一，具有结构创新，可转化为产品。页面证据：However, this tradition is not ... traditional asian floral motifs with modernistic design elements.\" The structure takes on a floral form to achieve a consistency between it's 2D and 3D design consideration....",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://beta.thedieline.com/blog/2011/9/19/student-spotlight-cult-moon-cake-packaging.html",
+      "source_name": "The Dieline",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "花形结构实现2D/3D统一，明确月饼礼盒结构创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "5d6a005de2e2",
+      "title": "Pabst Blue Ribbon Beer Can Lamp - Cool Material",
+      "category": "氛围灯",
+      "summary": "Pabst Blue Ribbon啤酒罐改造灯具，以拉环为灯罩，将废弃啤酒罐转化为可用灯具，结构创意明确。。页面证据：Aug 29, 2012 · Holy hipster lighting, Batman! If you just carried your fixie up the stairs to your Brooklyn apartment and are reaching for the light switch, you can only hope it's this one. Okay, while the whole hipster thing is getting a little ridiculous, we do appreciate the originality of this lamp, primarily the pull tab shade. |",
+      "score": 70,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://coolmaterial.com/lifestyle/home/pabst-blue-ribbon-beer-can-lamp",
+      "source_name": "Cool Material",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "review_reason": "啤酒罐改造灯具，拉环作灯罩，回收材料结构创意",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "market_signal_strong"
       ]
     },
     {

@@ -1,14 +1,14 @@
 {
-  "calls": 147,
-  "completion_tokens": 838827,
+  "calls": 193,
+  "completion_tokens": 1090616,
   "components": {
     "category_review": {
-      "calls": 61,
-      "total_tokens": 774317
+      "calls": 74,
+      "total_tokens": 930574
     },
     "search_agent": {
-      "calls": 85,
-      "total_tokens": 873361
+      "calls": 118,
+      "total_tokens": 1210893
     },
     "trend_report": {
       "calls": 1,
@@ -16,14 +16,17 @@
     }
   },
   "date": "2026-08-19",
-  "prompt_tokens": 820707,
+  "prompt_tokens": 1062707,
   "runs": {
     "32163133640": {
       "calls": 91
     },
     "32184079799": {
       "calls": 56
+    },
+    "32197276796": {
+      "calls": 46
     }
   },
-  "total_tokens": 1659534
+  "total_tokens": 2153323
 }
