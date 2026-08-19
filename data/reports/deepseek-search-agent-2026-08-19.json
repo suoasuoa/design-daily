@@ -427,8 +427,99 @@
         "中秋礼盒": 5,
         "日历": 2
       }
+    },
+    {
+      "round": 2,
+      "generated_at": "2026-08-19T15:49:44+08:00",
+      "accepted_before": 30,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "创意桌搭": 5,
+        "水杯": 6,
+        "创意厨具": 6,
+        "氛围灯": 5,
+        "手机壳": 2,
+        "冲锋衣": 2,
+        "创意礼盒": 1,
+        "日历": 1
+      },
+      "queries": 40,
+      "search_results": 197,
+      "fresh_direct_urls": 133,
+      "pages_enriched": 82,
+      "pre_screened": 133,
+      "kept": 13,
+      "added": 13,
+      "by_category": {
+        "日历": 8,
+        "装置艺术": 2,
+        "端午礼盒": 1,
+        "创意礼盒": 1,
+        "钥匙扣水壶": 1
+      }
+    },
+    {
+      "round": 3,
+      "generated_at": "2026-08-19T16:02:32+08:00",
+      "accepted_before": 33,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "创意桌搭": 5,
+        "手机壳": 2,
+        "水杯": 6,
+        "创意厨具": 6,
+        "氛围灯": 5,
+        "创意礼盒": 3,
+        "冲锋衣": 2,
+        "日历": 2
+      },
+      "queries": 60,
+      "search_results": 423,
+      "fresh_direct_urls": 326,
+      "pages_enriched": 227,
+      "pre_screened": 326,
+      "kept": 32,
+      "added": 28,
+      "by_category": {
+        "装置艺术": 10,
+        "创意礼盒": 9,
+        "日历": 7,
+        "中秋礼盒": 3,
+        "端午礼盒": 3
+      }
+    },
+    {
+      "round": 4,
+      "generated_at": "2026-08-19T16:11:08+08:00",
+      "accepted_before": 39,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "创意桌搭": 5,
+        "手机壳": 2,
+        "水杯": 6,
+        "创意厨具": 6,
+        "氛围灯": 5,
+        "创意礼盒": 4,
+        "日历": 5,
+        "冲锋衣": 2,
+        "装置艺术": 2
+      },
+      "queries": 80,
+      "search_results": 554,
+      "fresh_direct_urls": 420,
+      "pages_enriched": 323,
+      "pre_screened": 420,
+      "kept": 36,
+      "added": 32,
+      "by_category": {
+        "日历": 12,
+        "装置艺术": 10,
+        "创意礼盒": 8,
+        "中秋礼盒": 4,
+        "钥匙扣水壶": 2
+      }
     }
   ],
-  "generated_at": "2026-08-19T14:35:41+08:00",
-  "total_kept": 308
+  "generated_at": "2026-08-19T16:11:08+08:00",
+  "total_kept": 389
 }
