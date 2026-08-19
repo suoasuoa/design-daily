@@ -479,6 +479,9 @@ def screen_batch(batch):
         result = call_deepseek(prompt, max_tokens=7000).get("items", [])
     except RuntimeError as exc:
         print(f"screen_batch_failed size={len(batch)} error={exc}", flush=True)
+        if len(batch) > 1:
+            midpoint = max(1, len(batch) // 2)
+            return screen_batch(batch[:midpoint]) + screen_batch(batch[midpoint:])
         return []
     by_id = {row.get("id"): row for row in batch}
     kept = []

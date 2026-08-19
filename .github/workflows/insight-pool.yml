@@ -243,7 +243,7 @@ jobs:
             --agent-queries "$TOPUP_AGENT_QUERIES" \
             --agent-pages "$TOPUP_AGENT_PAGES" \
             --agent-screen-workers 6 \
-            --review-batch-size 20 \
+            --review-batch-size 8 \
             --curated-limit 90 \
             --shopify-pages 1
 
