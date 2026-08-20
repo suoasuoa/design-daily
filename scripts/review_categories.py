@@ -439,7 +439,7 @@ def review_one_batch(batch, api_key, split_on_failure=True):
         http.client.HTTPException,
     )
     last_error = None
-    for attempt in range(1, 4):
+    for attempt in range(1, 3):
         try:
             return review_batch(batch, api_key)
         except DeepSeekPolicyError as exc:
@@ -447,8 +447,8 @@ def review_one_batch(batch, api_key, split_on_failure=True):
             return [local_fallback(item) for item in batch]
         except recoverable as exc:
             last_error = exc
-            print(f"retry category review attempt={attempt}/3 ({exc})", flush=True)
-            if attempt < 3:
+            print(f"retry category review attempt={attempt}/2 ({exc})", flush=True)
+            if attempt < 2:
                 time.sleep(attempt * 2)
     if split_on_failure and len(batch) > 1:
         midpoint = max(1, len(batch) // 2)

@@ -98,7 +98,7 @@ def parse_json_response(text):
     return json.loads(text)
 
 
-def call_deepseek(prompt, max_tokens=7000, attempts=3):
+def call_deepseek(prompt, max_tokens=7000, attempts=2):
     api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
     if not api_key:
         raise RuntimeError("DEEPSEEK_API_KEY is required for the search agent")

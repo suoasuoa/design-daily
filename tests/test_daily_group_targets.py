@@ -146,7 +146,7 @@ class DailyGroupTargetTests(unittest.TestCase):
         self.assertEqual(accepted_today.__doc__.splitlines()[0], "Return the products that can actually appear in today's dashboard.")
 
     def test_search_agent_excludes_categories_with_no_display_slots(self):
-        current = {"水杯": 6, "氛围灯": 5, "创意厨具": 6, "手机壳": 2}
+        current = {"水杯": 6, "氛围灯": 5, "创意厨具": 7, "手机壳": 2}
 
         allowed = searchable_categories(current)
 
