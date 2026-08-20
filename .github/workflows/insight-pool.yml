@@ -48,10 +48,10 @@ jobs:
       DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:40"
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "1"
       DEEPSEEK_USAGE_FILE: "data/reports/deepseek-usage.json"
-      # High ceilings are circuit breakers only. Quality search should normally
-      # finish well below them; the overnight window remains the cost control.
-      DEEPSEEK_DAILY_MAX_CALLS: "500"
-      DEEPSEEK_DAILY_MAX_TOKENS: "4000000"
+      # Overnight time enforcement is the cost control. Usage remains recorded
+      # for evaluation, but quality collection is not stopped by a token quota.
+      DEEPSEEK_DAILY_MAX_CALLS: "0"
+      DEEPSEEK_DAILY_MAX_TOKENS: "0"
       DEEPSEEK_ALLOW_OUTSIDE_WINDOW: "0"
     steps:
       - uses: actions/checkout@v4
@@ -84,7 +84,7 @@ jobs:
               if [ "${{ github.event.inputs.backlog_only || 'false' }}" = "true" ]; then
                 echo "DEEPSEEK_MAX_CALLS=1" >> "$GITHUB_ENV"
               else
-                echo "DEEPSEEK_MAX_CALLS=200" >> "$GITHUB_ENV"
+                echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
               fi
               if [ "${{ github.event.inputs.use_tavily || 'false' }}" = "true" ]; then
                 echo "USE_TAVILY_SEARCH=1" >> "$GITHUB_ENV"
@@ -102,7 +102,7 @@ jobs:
                 echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
                 echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
                 echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
-                echo "DEEPSEEK_MAX_CALLS=250" >> "$GITHUB_ENV"
+                echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
               else
                 echo "RUN_MODE=check" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
@@ -112,17 +112,17 @@ jobs:
                   echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=300" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=180" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 elif [ "${{ github.event.schedule }}" = "30 22 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=80" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=380" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=180" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 else
                   echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=180" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 fi
               fi
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
