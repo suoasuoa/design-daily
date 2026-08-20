@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T01:39:25+08:00",
+  "generated_at": "2026-08-21T01:17:27+08:00",
   "week": "2026-W34",
   "group_id": "2026-W34",
   "date_start": "2026-08-17",
@@ -11,29 +11,29 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 50,
+      "适合改造": 48,
       "方向参考": 29,
-      "可直接买样": 21
+      "可直接买样": 23
     },
     "by_category": {
-      "充电宝": 21,
-      "水杯": 17,
-      "氛围灯": 11,
-      "创意礼盒": 9,
+      "充电宝": 24,
+      "水杯": 15,
+      "创意礼盒": 10,
+      "氛围灯": 10,
       "手机壳": 9,
       "创意桌搭": 8,
       "创意厨具": 7,
       "中秋礼盒": 7,
-      "冲锋衣": 7,
+      "冲锋衣": 5,
       "日历": 3,
-      "端午礼盒": 1
+      "端午礼盒": 2
     },
     "by_axis": {
-      "功能启发": 69,
+      "功能启发": 67,
       "结构启发": 59,
-      "包装启发": 24,
-      "情绪启发": 14,
-      "视觉启发": 8
+      "包装启发": 27,
+      "情绪启发": 13,
+      "视觉启发": 9
     }
   },
   "dedupe": {
@@ -62,6 +62,33 @@
       "risk": "将空气炸与烧烤结合于紧凑台面结构，二合一功能创新。",
       "review_confidence": 8,
       "review_reason": "将空气炸与烧烤结合于紧凑台面结构，二合一功能创新。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
+      ]
+    },
+    {
+      "id": "530b9f90b507",
+      "product_key": null,
+      "title": "Packaging Design for Dragon Boat Festival :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Faceb",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/165771283/Packaging-Design-for-Dragon-Boat-Festival",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/adfc86165771283.648e95086a50a.jpg",
+      "summary": "明确端午礼盒包装设计项目：'out of the reed' 以芦苇为材料制作粽子礼盒包装，结合龙舟/粽子意象进行结构造型设计，由设计团队 zwqy.lab 造物起异完成。具有材料创新（芦苇）和结构创新（包装与产品造型融合），是可转化的概念原型。。页面证据：Packaging, Product Design, Calligraphy, Behance Mobile",
+      "risk": "DeepSeek候选复核：以芦苇为材料制作粽子礼盒包装，结合龙舟意象的结构设计，材料与结构双创新",
+      "review_confidence": 9,
+      "review_reason": "DeepSeek候选复核：以芦苇为材料制作粽子礼盒包装，结合龙舟意象的结构设计，材料与结构双创新",
       "next_action": "买样看材质、尺寸、成本和差评点",
       "tags": [
         "deepseek_search_agent",
@@ -204,6 +231,34 @@
       "tags": [
         "design_community",
         "创意桌搭"
+      ]
+    },
+    {
+      "id": "d950aa81c49e",
+      "product_key": null,
+      "title": "Kinetic packaging for gifting :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, I",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "score": 73,
+      "score_label": "7.3",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/111933179/Kinetic-packaging-for-gifting",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/8dcb07111933179.6508999c6f3ae.jpg",
+      "summary": "Behance 上的动能礼盒包装项目，开箱时通过中心齿轮和机翼机构产生动态效果，具有明确的结构与交互创新，可作为创意礼盒的结构启发案例。。页面证据：Graphic Design, Packaging, Industrial Design, laser cutter, CorelDRAW x8, Spray Paint, handmade",
+      "risk": "开箱时通过中心齿轮和机翼机构产生动能动态效果，包装结构创新明显",
+      "review_confidence": 9,
+      "review_reason": "开箱时通过中心齿轮和机翼机构产生动能动态效果，包装结构创新明显",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -2101,6 +2156,59 @@
       ]
     },
     {
+      "id": "39c645746e14",
+      "product_key": null,
+      "title": "iF Design - Mijia Desk Study Lamp Pro",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/mijia-desk-study-lamp-pro/730668",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "米家台灯Pro（Mijia Desk Study Lamp Pro）是明确可用的台灯单品，出自iF设计奖。创新点包括：行业首创水平微结构光罩防眩光、双光源全光谱LED减少桌面阴影、双旋转轴调节高度角度、触控旋钮与环形指示灯、双传感器实现自动亮度和入座/离开开关的隐形交互。。页面证据：This Lamp is designed for the healthy eye care needs of children and teenagers during study.It features an innovative dual-light source design with full-spectrum LED beads, which helps reduce desktop shadows.The industry's first horizontal micro-structured light cover helps prevent glare.The lamp can adjust the height and angle of the light source by two rotation axes.The touch-sensitive knob and ring indicator on the lamp make operation more intuitive. Equipped with dual sensors, it automatically adjusts brightness, turns on/off upon sitting/leaving,",
+      "risk": "水平微结构光罩防眩光、双光源全光谱+双传感器自动调光，台灯功能创新明确。",
+      "review_confidence": 9,
+      "review_reason": "水平微结构光罩防眩光、双光源全光谱+双传感器自动调光，台灯功能创新明确。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
+      "id": "20a083cd0d5b",
+      "product_key": null,
+      "title": "SHARGE Flow Mini Hands-On at CES 2024: A Tiny yet Mighty ‘Power Backpack’ for your Smartphone - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2024/01/12/sharge-flow-mini-hands-on-at-ces-2024-a-tiny-yet-mighty-power-backpack-for-your-smartphone",
+      "image": "https://www.yankodesign.com/images/design_news/2024/01/draft-sharge-flow-mini/sharge_flow_mini_9.jpg",
+      "summary": "明确单品：SHARGE Flow Mini充电宝，可直接插入手机底部，集成连接端口无需数据线，体积小巧，解决传统充电宝携带和接线痛点。。页面证据：Power banks have a reputation for being bulky. Nobody really likes carrying them in their pockets given how large and heavy they can be, which often means most power banks spend all their time inside backpacks and purses. The Flow Mini, from Sharge (formerly Shargeek) has a different story to tell. It's extremely handy, with",
+      "risk": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
+      "review_confidence": 9,
+      "review_reason": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "67884dde5c60",
       "product_key": null,
       "title": "Good 20th Century Industrial Design: This West German Perpetual Calendar - Core77",
@@ -2124,6 +2232,140 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "414f8027fc43",
+      "product_key": null,
+      "title": "Red Dot Design Award: MR Charging A travel charging device",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/de/project/mr-charging-a-travel-charging-device-26316",
+      "image": "",
+      "summary": "MR Charging is a travel charging device combining an AC wall charger with a powerbank, featuring a retractable micro USB cable and lightning adapter. This innovation addresses the need for a single portable device that works both as a charger and a power source, with integrated cables.。页面证据：MR Charging is a portable charging device, which combines AC wall charger with powerbank capabilities. It has a retractable built-in micro USB cable and lightning-charging adaptor, dedicated to providing a convenient charge to most mobile phones on the...",
+      "risk": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
+      "review_confidence": 9,
+      "review_reason": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
+      "id": "f4c411c43186",
+      "product_key": null,
+      "title": "Magnetic Charging Cable with a Built-in Power Bank might be the most GENIUS Smartphone Accessory - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2024/02/02/magnetic-charging-cable-with-a-built-in-power-bank-might-be-the-most-genius-smartphone-accessory",
+      "image": "https://www.yankodesign.com/images/design_news/2024/02/auto-draft/ivycable_gen_2_1.jpg",
+      "summary": "IVYCable Gen2是一款内置充电宝的磁吸充电线，创新点在于充电线自身集成电池，断开电源后自动为手机充电，解决了有线无电源的问题，属于明确的可买单品。。页面证据：﻿﻿ Ever had a charging cable but nowhere to plug it? Or a power bank but no charging cable to connect it to your phone? The IVYCable Gen2 is an oddly brilliant product that solves both those problems. Designed like a relatively thick charging cord, the IVYCable Gen2 actually has four separate power banks built",
+      "risk": "充电线内置电池，断开电源自动为手机充电，解决有线无插座痛点",
+      "review_confidence": 9,
+      "review_reason": "充电线内置电池，断开电源自动为手机充电，解决有线无插座痛点",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "027af993208c",
+      "product_key": null,
+      "title": "iF Design - PMT portable power series mobile power supply",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/pmt-portable-power-series-mobile-power-supply/612590",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "具体产品PMT便携电源系列，采用磷酸铁锂电池，内置AC插座、手柄和照明，创新在于安全性和多功能便携设计。。页面证据：The PMT Power Bank series represents the industry's first Specific Outdoor Power Bank, using lithium iron phosphate automotive-grade batteries. It is characterized by safety and support for fast charging and is suitable for multiple devices. Multiple ports and equipped with AC socket to power large electrical appliances. The product's handle and lighting design achieve portability and expand the range of activity scenarios.",
+      "risk": "内置AC插座、手柄和照明，磷酸铁锂电池安全，多功能便携",
+      "review_confidence": 9,
+      "review_reason": "内置AC插座、手柄和照明，磷酸铁锂电池安全，多功能便携",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
+      "id": "2f997f9713b4",
+      "product_key": null,
+      "title": "RedMagic Go Power Bank is also a 65W charger for your laptop",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/01/28/redmagic-go-power-bank-is-also-a-65w-charger-for-your-laptop",
+      "image": "",
+      "summary": "Jan 28, 2025 · The third “mode” of this gadget, if you can really call it that, is the aforementioned USB-C cable that saves you time and effort when you only need a quick recharge. The cable also acts as a handle or carrying loop, and its nylon-braided materi",
+      "risk": "充电宝兼65W笔记本充电器，自带USB-C线可作为提手，结构创新。",
+      "review_confidence": 9,
+      "review_reason": "充电宝兼65W笔记本充电器，自带USB-C线可作为提手，结构创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "2945570203a2",
+      "product_key": null,
+      "title": "This MagSafe Wallet + Power Bank + Tracking Device might just be the ...",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2023/09/15/this-magsafe-wallet-power-bank-tracking-device-might-just-be-the-ultimate-iphone-accessory-ever",
+      "image": "",
+      "summary": "The people who say Less Is More clearly didn't come across the Stympro. A 4-in-1 accessory for your iPhone, this bad-boy is a MagSafe Power Bank, a Wallet, a Phone Stand, and a 'Find My' compatible Tracking Device all bundled into one. Quite literally the perf",
+      "risk": "四合一设计：MagSafe充电宝、钱包、手机支架、追踪器，功能集成创新。",
+      "review_confidence": 9,
+      "review_reason": "四合一设计：MagSafe充电宝、钱包、手机支架、追踪器，功能集成创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "editorial_main",
+        "充电宝"
       ]
     },
     {
@@ -2281,192 +2523,6 @@
       "risk": "DeepSeek候选复核：集成汽车启动和LED手电筒的多功能充电宝，功能创新。",
       "review_confidence": 9,
       "review_reason": "DeepSeek候选复核：集成汽车启动和LED手电筒的多功能充电宝，功能创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "ecc07d904baf",
-      "product_key": null,
-      "title": "This Card Works for a Different Bank! - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2016/06/20/this-card-works-for-a-different-bank",
-      "image": "https://www.yankodesign.com/images/design_news/2016/06/lifecard.jpg",
-      "summary": "Life Card超薄充电宝，可放入钱包，号称最薄最小，便携创新明确。。页面证据：What IS a power bank? Just a phone without any of the fluff... just the battery. So pray, tell me, why are power banks so large and clunky?! Power Bricks, more like. Well, the Life Card isn't like those hulking slabs of Lithium Ion you'll find everywhere. Just like the phone you use, the Life",
-      "risk": "超薄卡片设计，可放入钱包，便携性创新",
-      "review_confidence": 9,
-      "review_reason": "超薄卡片设计，可放入钱包，便携性创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "a0444cce971a",
-      "product_key": null,
-      "title": "This BUDDY Portable Lamp is one multi-function lighting solution - Yanko Design",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2022/04/15/this-buddy-portable-lamp-is-one-multi-function-lighting-solution",
-      "image": "https://www.yankodesign.com/images/design_news/2022/04/auto-draft/BUDDY-Portable-lamp-Faro-Barcelona-Design.jpg",
-      "summary": "BUDDY便携灯，兼具氛围灯与手电筒功能，双面发光，多功能创新。。页面证据：The term buddy is widely used as it pertains to anyone or anything that can be considered a friend. This new lamp can be a buddy or a friend in times of darkness as it can be many things. The BUDDY Portable Lamp can work as ambient light and as a flashlight. The top light",
-      "risk": "DeepSeek候选复核：双面发光设计，兼具氛围灯与手电筒功能，便携多功能创新",
-      "review_confidence": 9,
-      "review_reason": "DeepSeek候选复核：双面发光设计，兼具氛围灯与手电筒功能，便携多功能创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "3f57927c2e1a",
-      "product_key": null,
-      "title": "iF Design - ZMI MiFi Power Bank",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/zmi-mifi-power-bank/233117",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "ZMI MiFi 移动电源整合 4G LTE 热点与 10000mAh 电池，金属外壳内置线缆，便携性创新。。页面证据：This smart 4G LTE mobile hotspot combined with a 10000mAh power bank is the perfect travel companion. It offers 150Mbps speed and fast charging. The design is sleek, compact and robust thanks to the metal shell and built-in cable. As world’s largest power bank producer, ZMI have managed to combine sophisticated design in structure and electronics with an incredible retail price.",
-      "risk": "集成4G LTE热点与充电宝，内置线缆",
-      "review_confidence": 9,
-      "review_reason": "集成4G LTE热点与充电宝，内置线缆",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "6fea4188d13f",
-      "product_key": null,
-      "title": "Not enough pockets to carry your stuff? This outdoor jacket can instantly transform into a 35L backpack - Yanko Design",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2022/02/15/not-enough-pockets-to-carry-your-stuff-this-outdoor-jacket-can-instantly-transform-into-a-35l-backpack",
-      "image": "https://www.yankodesign.com/images/design_news/2022/02/versatile_jacket_morphs_into_a_35L_backpack_hero.jpg",
-      "summary": "JackBag外套可翻转变形为35L背包，具有结构创新，同时具备防水透气功能。。页面证据：https://www.kickstarter.com/projects/outernative/jackbag-a-hands-free-on-the-go-jacket-and-bag-in-one Offering more space than all the pockets on your regular jacket combined, the JackBag is an outdoor jacket that flips inwards, shapeshifting into a 35L backpack on demand. It's also waterproof, breathable, and comes with 14 different pockets for good measure. Talk about being a Jack(Bag) of all trades! The JackBag serves a unique",
-      "risk": "外套可翻转变形为35L背包，结构创新，防水透气。",
-      "review_confidence": 9,
-      "review_reason": "外套可翻转变形为35L背包，结构创新，防水透气。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "c6a5ff77f696",
-      "product_key": null,
-      "title": "Remember Aerogel? This insulated outdoor jacket has an aerogel layer, giving you -40°F protection - Yanko Design",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2024/02/28/remember-aerogel-this-insulated-outdoor-jacket-has-an-aerogel-layer-giving-you-40f-protection",
-      "image": "https://www.yankodesign.com/images/design_news/2024/02/remember-aerogel-this-insulated-outdoor-jacket-has-an-aerogel-layer-giving-you-40f-protection/Aerogel_Insulated_3_in_1_Jacket_with_20_Pockets_layout.jpg",
-      "summary": "内层采用气凝胶隔热层的户外夹克，外层防水防风，提供-40°F防护，材料创新。。页面证据：https://youtu.be/3ii7evbrvp4 Anyone who even vaguely remembers the late 2000s remembers Aerogel, the 'wonder material' that was 99% air, and had the incredible ability to insulate against high heat or cold because of its thermal absorption properties. Aerogel got all the press back in the day, but didn't really see much consumer application because of how",
-      "risk": "内层气凝胶隔热层，提供-40°F防护，材料创新。",
-      "review_confidence": 9,
-      "review_reason": "内层气凝胶隔热层，提供-40°F防护，材料创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "f41e3e60ffbc",
-      "product_key": null,
-      "title": "Red Dot Design Award: WiZ Portrait Desk Lamp",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/wiz-portrait-desk-lamp-67172",
-      "image": "",
-      "summary": "WiZ Portrait Desk Lamp with dual light sources and rotatable head; functional innovation for home office flexible lighting.。页面证据：The WiZ Portrait Desk Lamp was specifically designed to meet the needs of people who work from home. It offers flexible lighting thanks to its dual light sources at the top and bottom. Work efficiency is enhanced through targeted light distribution, which...",
-      "risk": "双光源可旋转台灯，针对居家办公场景优化照明，结构功能创新明确。",
-      "review_confidence": 9,
-      "review_reason": "双光源可旋转台灯，针对居家办公场景优化照明，结构功能创新明确。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "153bb6f1fbb6",
-      "product_key": null,
-      "title": "Remember Apple’s AirPower Mat? Dreame Built A MagSafe Power Bank That Does The Same Thing - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2025/12/17/remember-apples-airpower-mat-dreame-built-a-magsafe-power-bank-that-does-the-same-thing",
-      "image": "https://www.yankodesign.com/images/design_news/2025/12/draft-dreame-power-bank/dreame_air_power_17_1.jpeg",
-      "summary": "Dreame Air Power 17 MagSafe充电宝，可同时充手机和手表，铝框+AG玻璃，多设备充电创新。。页面证据：Dreame built its name on robot vacuums and smart cleaning stations, but its newest release does not clean your floors at all. Dreame’s Air Power 17 arrives as a magnetic portable power bank with a surprisingly polished feel, pairing an aluminum frame with AG glass and a footprint barely larger than a bank card. It",
-      "risk": "可同时无线充手机和手表，多设备充电",
-      "review_confidence": 9,
-      "review_reason": "可同时无线充手机和手表，多设备充电",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
@@ -2658,61 +2714,6 @@
       "tags": [
         "award_gallery",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "d560c879735f",
-      "product_key": null,
-      "title": "Turn any mug into a travel mug - Yanko Design",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2019/01/31/turn-any-mug-into-a-travel-mug",
-      "image": "https://www.yankodesign.com/images/design_news/2019/01/turn-any-mug-into-a-travel-mug/portavia_universal_lid_layout.jpg",
-      "summary": "通用旅行杯盖PortaVia，可适配任何杯子，防溅便携，结构创新。页面证据：https://youtu.be/i5LMSBxFX18 The PortaVia Universal To-Go Lid does something quite marvelous. It retrofits onto the top of any drinking vessel (mugs, cups, glasses, usually have roughly the same diameter at the lip) and instantly turns it into a travel cup that you can carry around with you without splashing your drink. It covers the mouth of",
-      "risk": "通用杯盖适配任何杯子，防溅便携，结构创新明确",
-      "review_confidence": 9,
-      "review_reason": "通用杯盖适配任何杯子，防溅便携，结构创新明确",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "54d1d8b6e05d",
-      "product_key": null,
-      "title": "LARQ Bottle is a sustainable and travel-friendly bottle ...",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "DesignWanted",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://designwanted.com/larq-bottle-water-purifier-uv-light",
-      "image": "",
-      "summary": "Sep 20, 2019 · The LARQ Bottle is a reusable, stainless-steel and self-cleaning water bottle, which purifies drinking water killing bacteria, using UV light tech.",
-      "risk": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
-      "review_confidence": 9,
-      "review_reason": "自清洁水杯，利用UV-C LED技术净化水和瓶身，功能创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "editorial_main",
-        "水杯"
       ]
     }
   ]
