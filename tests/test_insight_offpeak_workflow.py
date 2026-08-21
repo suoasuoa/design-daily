@@ -8,12 +8,10 @@ ROOT = Path(__file__).resolve().parents[1]
 class InsightOffPeakWorkflowTests(unittest.TestCase):
     def test_schedules_stay_inside_deepseek_windows(self):
         workflow = (ROOT / ".github/workflows/insight-pool.yml").read_text(encoding="utf-8")
-        for cron in (
-            'cron: "10 16 * * 0-4"',
-            'cron: "30 19 * * 0-4"',
-            'cron: "30 22 * * 0-4"',
-        ):
+        for hour in range(16, 24):
+            cron = f'cron: "10 {hour} * * 0-4"'
             self.assertIn(cron, workflow)
+        self.assertEqual(workflow.count('cron: "10 '), 8)
         self.assertNotIn('cron: "5 4 * * 1-5"', workflow)
         self.assertNotIn('cron: "30 3 * * 1-5"', workflow)
         self.assertNotIn('cron: "30 7 * * 1-5"', workflow)
@@ -27,7 +25,10 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         self.assertIn("github.event.inputs.topup_passes || '4'", workflow)
         self.assertIn('echo "AGENT_QUERIES=180"', workflow)
         self.assertIn('echo "AGENT_PAGES=800"', workflow)
+        self.assertIn('echo "TOPUP_AGENT_QUERIES=180"', workflow)
+        self.assertIn('echo "TOPUP_AGENT_PAGES=800"', workflow)
         self.assertIn("Final overnight search-provider fallback", workflow)
+        self.assertIn("github.event.schedule == '10 23 * * 0-4'", workflow)
         self.assertIn('USE_TAVILY_SEARCH: "1"', workflow)
         self.assertIn('--search-workers 3', workflow)
         self.assertIn('--curated-limit 180', workflow)

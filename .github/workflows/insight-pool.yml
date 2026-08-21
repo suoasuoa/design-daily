@@ -5,8 +5,13 @@ on:
     # Beijing weekdays: all DeepSeek work runs overnight and finishes before 09:00.
     # Early-morning UTC schedules use Sunday-Thursday because Beijing is on the next day.
     - cron: "10 16 * * 0-4" # 00:10 Beijing: full collection
-    - cron: "30 19 * * 0-4" # 03:30 Beijing: deficit check
-    - cron: "30 22 * * 0-4" # 06:30 Beijing: final top-up
+    - cron: "10 17 * * 0-4" # 01:10 Beijing: deficit check 1
+    - cron: "10 18 * * 0-4" # 02:10 Beijing: deficit check 2
+    - cron: "10 19 * * 0-4" # 03:10 Beijing: deficit check 3
+    - cron: "10 20 * * 0-4" # 04:10 Beijing: deficit check 4
+    - cron: "10 21 * * 0-4" # 05:10 Beijing: deficit check 5
+    - cron: "10 22 * * 0-4" # 06:10 Beijing: deficit check 6
+    - cron: "10 23 * * 0-4" # 07:10 Beijing: final top-up
   workflow_dispatch:
     inputs:
       score_limit:
@@ -112,14 +117,39 @@ jobs:
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
-                if [ "${{ github.event.schedule }}" = "30 19 * * 0-4" ]; then
+                if [ "${{ github.event.schedule }}" = "10 17 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=90" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=420" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "30 22 * * 0-4" ]; then
+                elif [ "${{ github.event.schedule }}" = "10 18 * * 0-4" ]; then
+                  echo "TOPUP_AGENT_QUERIES=100" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=460" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "10 19 * * 0-4" ]; then
+                  echo "TOPUP_AGENT_QUERIES=110" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=500" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "10 20 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=120" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=560" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=540" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "10 21 * * 0-4" ]; then
+                  echo "TOPUP_AGENT_QUERIES=140" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=620" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "10 22 * * 0-4" ]; then
+                  echo "TOPUP_AGENT_QUERIES=160" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=700" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "10 23 * * 0-4" ]; then
+                  echo "TOPUP_AGENT_QUERIES=180" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=800" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 else
@@ -261,7 +291,7 @@ jobs:
             --shopify-pages 3
 
       - name: Final overnight search-provider fallback
-        if: env.SKIP_INSIGHT != '1' && github.event_name == 'schedule' && github.event.schedule == '30 22 * * 0-4'
+        if: env.SKIP_INSIGHT != '1' && github.event_name == 'schedule' && github.event.schedule == '10 23 * * 0-4'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
@@ -273,8 +303,8 @@ jobs:
             --per-job 10 \
             --max-passes 1 \
             --workers 3 \
-            --agent-queries 80 \
-            --agent-pages 420 \
+            --agent-queries 120 \
+            --agent-pages 600 \
             --agent-screen-workers 6 \
             --review-batch-size 8 \
             --curated-limit 180 \
