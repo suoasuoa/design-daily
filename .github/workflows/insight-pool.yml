@@ -4,14 +4,9 @@ on:
   schedule:
     # Beijing weekdays: all DeepSeek work runs overnight and finishes before 09:00.
     # Early-morning UTC schedules use Sunday-Thursday because Beijing is on the next day.
-    - cron: "10 16 * * 0-4" # 00:10 Beijing: full collection
-    - cron: "10 17 * * 0-4" # 01:10 Beijing: deficit check 1
-    - cron: "10 18 * * 0-4" # 02:10 Beijing: deficit check 2
-    - cron: "10 19 * * 0-4" # 03:10 Beijing: deficit check 3
-    - cron: "10 20 * * 0-4" # 04:10 Beijing: deficit check 4
-    - cron: "10 21 * * 0-4" # 05:10 Beijing: deficit check 5
-    - cron: "10 22 * * 0-4" # 06:10 Beijing: deficit check 6
-    - cron: "10 23 * * 0-4" # 07:10 Beijing: final top-up
+    - cron: "10 16 * * 0-4" # 00:10 Beijing: continuous collection, up to 8 rounds
+    - cron: "0 20 * * 0-4"  # 04:00 Beijing: recovery checkpoint
+    - cron: "10 23 * * 0-4" # 07:10 Beijing: final recovery
   workflow_dispatch:
     inputs:
       score_limit:
@@ -64,6 +59,11 @@ jobs:
       DEEPSEEK_ALLOW_OUTSIDE_WINDOW: "0"
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Scheduled runs can queue behind the continuous job. Always start
+          # recovery from the newest committed pool instead of the event SHA.
+          ref: main
+          fetch-depth: 1
 
       - uses: actions/setup-python@v5
         with:
@@ -110,47 +110,24 @@ jobs:
                 echo "AGENT_PAGES=800" >> "$GITHUB_ENV"
                 echo "TOPUP_AGENT_QUERIES=90" >> "$GITHUB_ENV"
                 echo "TOPUP_AGENT_PAGES=420" >> "$GITHUB_ENV"
-                echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                # One initial search-agent pass plus seven top-up passes gives
+                # the continuous overnight job at most eight quality rounds.
+                echo "TOPUP_MAX_PASSES=7" >> "$GITHUB_ENV"
                 echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
               else
                 echo "RUN_MODE=check" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
-                if [ "${{ github.event.schedule }}" = "10 17 * * 0-4" ]; then
-                  echo "TOPUP_AGENT_QUERIES=90" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=420" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 18 * * 0-4" ]; then
-                  echo "TOPUP_AGENT_QUERIES=100" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=460" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 19 * * 0-4" ]; then
-                  echo "TOPUP_AGENT_QUERIES=110" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=500" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 20 * * 0-4" ]; then
-                  echo "TOPUP_AGENT_QUERIES=120" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=540" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 21 * * 0-4" ]; then
+                if [ "${{ github.event.schedule }}" = "0 20 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=140" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=620" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
-                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 22 * * 0-4" ]; then
-                  echo "TOPUP_AGENT_QUERIES=160" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=700" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=650" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=6" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 elif [ "${{ github.event.schedule }}" = "10 23 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=180" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=800" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 else
                   echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
@@ -345,6 +322,10 @@ jobs:
       - name: Rebuild dashboard with weekly report
         if: env.SKIP_INSIGHT != '1'
         run: python3 scripts/build_site.py
+
+      - name: Enforce daily quality gate
+        if: env.SKIP_INSIGHT != '1'
+        run: python3 scripts/verify_daily_quality.py
 
       - name: Commit data and dashboard
         if: env.SKIP_INSIGHT != '1'
