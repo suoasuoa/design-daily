@@ -33,10 +33,6 @@ on:
         description: "Promote reviewed reserve candidates without DeepSeek"
         required: true
         default: "false"
-      emergency_noon:
-        description: "One-time 2026-08-21 off-peak noon top-up"
-        required: true
-        default: "false"
       topup_passes:
         description: "Maximum top-up rounds for a manual run"
         required: true
@@ -53,7 +49,7 @@ jobs:
   build-insight-pool:
     runs-on: ubuntu-latest
     env:
-      DEEPSEEK_ALLOWED_WINDOWS: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.emergency_noon == 'true' && '00:00-08:40,12:01-13:59' || '00:00-08:40' }}
+      DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:40"
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "1"
       DEEPSEEK_USAGE_FILE: "data/reports/deepseek-usage.json"
       # Overnight time enforcement is the cost control. Usage remains recorded
@@ -74,10 +70,6 @@ jobs:
       - name: Set collection mode and daily target
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-              if [ "${{ github.event.inputs.emergency_noon || 'false' }}" = "true" ] && [ "$(TZ=Asia/Shanghai date +%F)" != "2026-08-21" ]; then
-                echo "The one-time noon emergency window expired on 2026-08-21." >&2
-                exit 1
-              fi
               echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
               echo "SOCIAL_TARGET=0" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.backlog_only || 'false' }}" = "true" ]; then
