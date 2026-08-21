@@ -241,6 +241,44 @@ class SemanticDedupeTests(unittest.TestCase):
 
         self.assertFalse(display_eligible(item))
 
+    def test_date_scoped_emergency_fill_only_relaxes_quality_line(self):
+        candidate = {
+            "id": "reviewed-reserve",
+            "title": "A modular kitchen tool",
+            "url": "https://example.com/product/modular-kitchen-tool",
+            "category": "创意厨具",
+            "score": 72,
+            "quality_score": 72,
+            "innovation": 8,
+            "relevance": 9,
+            "review_confidence": 8,
+            "review_policy_version": 3,
+            "source_quality": "standard",
+            "source_name": "Design Media",
+            "source_family": "媒体案例",
+            "action_lane": "适合改造",
+            "summary": "模块结构解决明确使用问题",
+            "first_seen": "2026-08-21",
+        }
+        with tempfile.TemporaryDirectory() as temp_dir:
+            data_dir = Path(temp_dir)
+            (data_dir / "emergency_daily_fill.json").write_text(
+                json.dumps({"date": "2026-08-21", "product_ids": ["reviewed-reserve"]}),
+                encoding="utf-8",
+            )
+            with patch("build_site.DATA_DIR", data_dir):
+                groups = build_daily_groups(
+                    [candidate],
+                    per_day=40,
+                    max_days=1,
+                    previous_groups=[],
+                    current_date="2026-08-21",
+                )
+
+        self.assertEqual(groups[0]["actual_count"], 1)
+        self.assertTrue(groups[0]["items"][0]["is_emergency_fill"])
+        self.assertEqual(groups[0]["stats"]["emergency_fill_count"], 1)
+
     def test_cleans_scraped_source_suffixes(self):
         self.assertEqual(
             clean_candidate_title("Moon Gift :: Behance Adobe, Inc. Behance"),

@@ -273,7 +273,7 @@ def source_under_cap(picks, source_name_value):
     return current < DAILY_SOURCE_CAP
 
 
-def display_eligible(item):
+def display_eligible(item, min_quality=74):
     if is_rejected_product(item):
         return False
     if item.get("category") in RETIRED_CATEGORIES:
@@ -284,7 +284,7 @@ def display_eligible(item):
         return False
     if int(item.get("review_policy_version") or 0) < 3:
         return False
-    if int(item.get("quality_score") or 0) < 74:
+    if int(item.get("quality_score") or 0) < min_quality:
         return False
     if int(item.get("innovation") or 0) < 7 or int(item.get("relevance") or 0) < 8:
         return False
@@ -310,6 +310,33 @@ def display_eligible(item):
         if item.get("category") in {"T恤", "卫衣", "Polo衫", "帽子"} and score < 84:
             return False
     return True
+
+
+def append_date_scoped_emergency_fill(day, day_items, picks, seen, per_day, historical_items):
+    """Apply a reviewed, date-scoped exception without weakening normal policy."""
+    payload = load_json(DATA_DIR / "emergency_daily_fill.json", {})
+    if payload.get("date") != day:
+        return
+
+    by_id = {item.get("id"): item for item in day_items if item.get("id")}
+    for item_id in payload.get("product_ids") or []:
+        if len(picks) >= per_day:
+            break
+        item = by_id.get(item_id)
+        if not item or dedupe_key(item) in seen:
+            continue
+        # Emergency candidates still need the complete review policy, strong
+        # innovation/relevance, clean URLs and historical semantic dedupe. The
+        # only relaxed rule is today's 74-point display line/category mix.
+        if not display_eligible(item, min_quality=70):
+            continue
+        if semantic_duplicate_in(item, historical_items + picks):
+            continue
+        emergency_item = dict(item)
+        emergency_item["is_emergency_fill"] = True
+        emergency_item["emergency_fill_reason"] = payload.get("reason", "")
+        seen.add(dedupe_key(emergency_item))
+        picks.append(emergency_item)
 
 
 def balanced_ranked_items(ranked, picks, seen):
@@ -498,6 +525,16 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
             semantic_blocklist=historical_items if day == current_date else None,
         )
 
+        if day == current_date and len(picks) < day_limit:
+            append_date_scoped_emergency_fill(
+                day,
+                by_day[day],
+                picks,
+                seen,
+                day_limit,
+                historical_items,
+            )
+
         groups.append(
             {
                 "date": day,
@@ -562,6 +599,7 @@ def build_daily_groups(items, per_day=40, max_days=90, previous_groups=None, cur
                 for family, quota in DAILY_SOURCE_QUOTAS.items()
             },
             "backfill_count": sum(1 for item in picks if item.get("is_backfill")),
+            "emergency_fill_count": sum(1 for item in picks if item.get("is_emergency_fill")),
         }
     return groups
 

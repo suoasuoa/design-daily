@@ -101,10 +101,10 @@ jobs:
               if [ "${{ github.event.schedule }}" = "10 16 * * 0-4" ]; then
                 echo "RUN_MODE=main" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
-                echo "AGENT_QUERIES=140" >> "$GITHUB_ENV"
-                echo "AGENT_PAGES=650" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
-                echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
+                echo "AGENT_QUERIES=180" >> "$GITHUB_ENV"
+                echo "AGENT_PAGES=800" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_QUERIES=90" >> "$GITHUB_ENV"
+                echo "TOPUP_AGENT_PAGES=420" >> "$GITHUB_ENV"
                 echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                 echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
               else
@@ -113,13 +113,13 @@ jobs:
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
                 if [ "${{ github.event.schedule }}" = "30 19 * * 0-4" ]; then
-                  echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=300" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_QUERIES=90" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=420" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 elif [ "${{ github.event.schedule }}" = "30 22 * * 0-4" ]; then
-                  echo "TOPUP_AGENT_QUERIES=80" >> "$GITHUB_ENV"
-                  echo "TOPUP_AGENT_PAGES=380" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_QUERIES=120" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=560" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 else
@@ -190,7 +190,7 @@ jobs:
 
       - name: Collect curated product pages
         if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
-        run: python3 scripts/collect_curated_pages.py --limit 90 --shopify-pages 1
+        run: python3 scripts/collect_curated_pages.py --limit 180 --shopify-pages 3
 
       - name: Generate search job matrix
         if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'main'
@@ -214,7 +214,7 @@ jobs:
           --query-count "$AGENT_QUERIES"
           --per-query 10
           --max-pages "$AGENT_PAGES"
-          --search-workers 6
+          --search-workers 3
           --page-workers 12
           --screen-workers 6
           --batch-size 12
@@ -252,13 +252,33 @@ jobs:
             --target "$DAILY_TARGET" \
             --per-job 10 \
             --max-passes "$TOPUP_MAX_PASSES" \
-            --workers 6 \
+            --workers 3 \
             --agent-queries "$TOPUP_AGENT_QUERIES" \
             --agent-pages "$TOPUP_AGENT_PAGES" \
             --agent-screen-workers 6 \
             --review-batch-size 8 \
-            --curated-limit 90 \
-            --shopify-pages 1
+            --curated-limit 180 \
+            --shopify-pages 3
+
+      - name: Final overnight search-provider fallback
+        if: env.SKIP_INSIGHT != '1' && github.event_name == 'schedule' && github.event.schedule == '30 22 * * 0-4'
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          USE_TAVILY_SEARCH: "1"
+        run: |
+          python3 scripts/ensure_daily_minimum.py \
+            --target "$DAILY_TARGET" \
+            --per-job 10 \
+            --max-passes 1 \
+            --workers 3 \
+            --agent-queries 80 \
+            --agent-pages 420 \
+            --agent-screen-workers 6 \
+            --review-batch-size 8 \
+            --curated-limit 180 \
+            --shopify-pages 3
 
       - name: Promote reviewed backlog without DeepSeek
         if: env.SKIP_INSIGHT != '1' && env.RUN_MODE == 'backlog'
