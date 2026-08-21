@@ -26,6 +26,8 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         self.assertIn('emergency_noon:', workflow)
         self.assertIn('00:00-08:40,12:01-13:59', workflow)
         self.assertIn('2026-08-21', workflow)
+        self.assertIn('topup_passes:', workflow)
+        self.assertIn("github.event.inputs.topup_passes || '4'", workflow)
         self.assertIn('echo "AGENT_QUERIES=140"', workflow)
         self.assertIn('echo "AGENT_PAGES=650"', workflow)
         self.assertIn('DEEPSEEK_ALLOW_OUTSIDE_WINDOW: "0"', workflow)

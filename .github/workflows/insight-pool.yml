@@ -37,6 +37,10 @@ on:
         description: "One-time 2026-08-21 off-peak noon top-up"
         required: true
         default: "false"
+      topup_passes:
+        description: "Maximum top-up rounds for a manual run"
+        required: true
+        default: "4"
 
 permissions:
   contents: write
@@ -88,7 +92,7 @@ jobs:
               echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
               echo "TOPUP_AGENT_QUERIES=${{ github.event.inputs.agent_queries || '90' }}" >> "$GITHUB_ENV"
               echo "TOPUP_AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
-              echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
+              echo "TOPUP_MAX_PASSES=${{ github.event.inputs.topup_passes || '4' }}" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.backlog_only || 'false' }}" = "true" ]; then
                 echo "DEEPSEEK_MAX_CALLS=1" >> "$GITHUB_ENV"
               else
