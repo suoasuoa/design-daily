@@ -80,7 +80,7 @@ jobs:
               echo "AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
               echo "TOPUP_AGENT_QUERIES=${{ github.event.inputs.agent_queries || '90' }}" >> "$GITHUB_ENV"
               echo "TOPUP_AGENT_PAGES=${{ github.event.inputs.agent_pages || '420' }}" >> "$GITHUB_ENV"
-              echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+              echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
               if [ "${{ github.event.inputs.backlog_only || 'false' }}" = "true" ]; then
                 echo "DEEPSEEK_MAX_CALLS=1" >> "$GITHUB_ENV"
               else
@@ -101,7 +101,7 @@ jobs:
                 echo "AGENT_PAGES=650" >> "$GITHUB_ENV"
                 echo "TOPUP_AGENT_QUERIES=70" >> "$GITHUB_ENV"
                 echo "TOPUP_AGENT_PAGES=320" >> "$GITHUB_ENV"
-                echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+                echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                 echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
               else
                 echo "RUN_MODE=check" >> "$GITHUB_ENV"
@@ -111,17 +111,17 @@ jobs:
                 if [ "${{ github.event.schedule }}" = "30 19 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=300" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 elif [ "${{ github.event.schedule }}" = "30 22 * * 0-4" ]; then
                   echo "TOPUP_AGENT_QUERIES=80" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=380" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 else
                   echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
-                  echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 fi
               fi

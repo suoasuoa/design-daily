@@ -21,6 +21,8 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         self.assertNotIn("18:01-23:59", workflow)
         self.assertIn('DEEPSEEK_DAILY_MAX_CALLS: "0"', workflow)
         self.assertIn('DEEPSEEK_DAILY_MAX_TOKENS: "0"', workflow)
+        self.assertIn('TOPUP_MAX_PASSES=4', workflow)
+        self.assertNotIn('TOPUP_MAX_PASSES=2', workflow)
         self.assertIn('echo "AGENT_QUERIES=140"', workflow)
         self.assertIn('echo "AGENT_PAGES=650"', workflow)
         self.assertIn('DEEPSEEK_ALLOW_OUTSIDE_WINDOW: "0"', workflow)

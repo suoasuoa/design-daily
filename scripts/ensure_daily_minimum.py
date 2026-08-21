@@ -36,6 +36,15 @@ def job_count():
     return len(payload.get("jobs", []))
 
 
+def agent_round_offset():
+    """Continue today's search rounds across separate scheduled workflow runs."""
+    payload = load_json(
+        DATA_DIR / "reports" / f"deepseek-search-agent-{today()}.json",
+        {},
+    )
+    return len(payload.get("rounds", []))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=40, help="Required same-day accepted products.")
@@ -83,6 +92,7 @@ def main():
         if count >= args.target:
             return
 
+    round_offset = agent_round_offset()
     for index in range(args.max_passes):
         # Keep a broad candidate pool even when the display deficit is small.
         # The review gate decides quality; the remaining gap only decides
@@ -90,8 +100,9 @@ def main():
         gap = max(1, args.target - count)
         pass_queries = args.agent_queries + index * max(20, args.agent_queries // 2)
         pass_pages = args.agent_pages + index * max(80, args.agent_pages // 2)
+        round_index = round_offset + index
         print(
-            f"daily_minimum broad_search pass={index + 1} gap={gap} "
+            f"daily_minimum broad_search pass={index + 1} round={round_index + 1} gap={gap} "
             f"queries={pass_queries} pages={pass_pages}",
             flush=True,
         )
@@ -102,7 +113,7 @@ def main():
                 "--target",
                 str(args.target),
                 "--round",
-                str(index + 1),
+                str(round_index),
                 "--query-count",
                 str(pass_queries),
                 "--per-query",
@@ -124,7 +135,7 @@ def main():
                 "--shopify-pages",
                 str(args.shopify_pages),
                 "--page-offset",
-                str(index * args.shopify_pages),
+                str(round_index * args.shopify_pages),
             ]
         )
         run([sys.executable, "scripts/dedupe.py"])
