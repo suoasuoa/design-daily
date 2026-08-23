@@ -1,9 +1,9 @@
-# 2026-W34 选品机会周报
+# 2026-W35 选品机会周报
 
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-21T01:17:27+08:00
+- 生成时间：2026-08-24T03:34:22+08:00
 
 ## 行动分布
 
@@ -421,7 +421,19 @@ Jun 18, 2020 · devised around the principle idea of reducing packaging waste wh
 
 Dometic GO Hydration Water Jug 11L 水壶，具有通用Nalgene瓶口可加滤芯、舒适提手和绑带，结构创新便携。。页面证据：Size matters on a hot summer day, I have to say. It’s also got comfortable webbed handles and built-in tie-down guides for easy carrying and transport. But, the best thing of all is the universal Nalgene top, making it a breeze to hook in your accessories, like a filter, for even more use.
 
-### 35. 鹈鹕去充电案例 | Uncrate
+### 35. A Sweat-Proof Gaming Mouse - Core77
+
+- 品类：创意桌搭
+- 路径：适合改造
+- 启发：结构启发
+- 分数：8.7
+- 来源：Core77
+- 下一步：提取结构或功能点，换材质/场景重新组合
+- 链接：https://www.core77.com/posts/109316/A-Sweat-Proof-Gaming-Mouse
+
+明确单品：Marsback Zephyr Pro 游戏鼠标。创新点：为易出汗玩家设计，具备防汗/通风结构，解决游戏时手汗问题，属于桌面输入设备的功能创新。。页面证据："The right mouse is the most critical weapon in your PC-gaming arsenal," says product designer Gary Lin, who admits he has "glands that produce excessive sweat while gaming." Lin, a designer for PC hardware manufacturer Marsback, was in a position to do something about it. Lin designed the Zephyr Pro,
+
+### 36. 鹈鹕去充电案例 | Uncrate
 
 - 品类：手机壳
 - 路径：适合改造
@@ -433,7 +445,7 @@ Dometic GO Hydration Water Jug 11L 水壶，具有通用Nalgene瓶口可加滤�
 
 Pelican Go Charge Case: rugged protective phone case with integrated removable 10,000 mAh battery, IP67 waterproof, floats, wireless charging, USB port for other devices, handle and carabiner loop. Clearly a portable charging product with combined protection and power innovation.。页面证据：在Pelican Go Charge Case中同时保持手机充电和保护。防摔外壳是IP67防护等级，非常适合户外探险，可抵御水和灰尘的侵袭，如果掉落到舷外也可以漂浮。内部，一个可拆卸的10,000 mAh电池组可为基于Qi的设备提供无线充电，并具有一个micro-USB端口，可为其他小工具（如平板电脑，相机和扬声器）充电，并具有足够的电量为手机充电四次。它还具有一体式手柄，便于携带，也可以将其连接到登山扣上，以实现免提运输。内部长度：7英寸/内部宽度：3.5英寸/内部深度：1.6英寸/外部长度：10.63英寸/外部宽度：5.39英寸/外部深度：2.42英寸...
 
-### 36. Red Dot Design Award: LARQ Bottle
+### 37. Red Dot Design Award: LARQ Bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -445,7 +457,7 @@ Pelican Go Charge Case: rugged protective phone case with integrated removable 1
 
 LARQ Bottle利用专利LED紫外线技术自动清洁水质，无需化学物质，实现随行净水，是水杯功能创新的代表。。页面证据：Good quality drinking water is vital for people worldwide; however, in many parts of the world, it is not always readily available. Against this backdrop, LARQ represents an impressively innovative development, as this system is capable of automatically...
 
-### 37. Kickstarter >> Fluora – A Glow Lantern with Built-in Flashlight by PoleShine
+### 38. Kickstarter >> Fluora – A Glow Lantern with Built-in Flashlight by PoleShine
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -457,7 +469,7 @@ LARQ Bottle利用专利LED紫外线技术自动清洁水质，无需化学物质
 
 Fluora 是透明360°氛围提灯，内置荧光液体核心并集成顶部手电，三合一防风雨，功能与结构创新明确。。页面证据：January 22, 2026 - A transparent 360° ambient lantern / A mesmerizing fluorescent liquid core / A powerful top flashlight / 3 in 1 weatherproof light
 
-### 38. This circuit board desk integrates a cabling solution to give you the ultimate wire-free desk setup! - Yanko Design
+### 39. This circuit board desk integrates a cabling solution to give you the ultimate wire-free desk setup! - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -469,7 +481,7 @@ Fluora 是透明360°氛围提灯，内置荧光液体核心并集成顶部手�
 
 具体产品为电路板桌，集成线缆管理方案，通过桌面结构创新实现无线桌面。。页面证据：As I write from my desk, a countless number of wires hang on and tangle between my legs: the trio of cables coming from my WiFi Router, the designated spots for my phone and laptop chargers, along with some other wires whose purposes remain unknown to me. Surely, the mess of wires underneath my desk
 
-### 39. TEÏDO™ Drink everywhere with Next-Gen twin tech water bottle
+### 40. TEÏDO™ Drink everywhere with Next-Gen twin tech water bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -481,7 +493,7 @@ Fluora 是透明360°氛围提灯，内置荧光液体核心并集成顶部手�
 
 TEÏDO self-powered water bottle with NASA membrane filtration and UV-C.。页面证据：TEÏDO harness NASA membrane filtration combined to UV-C to bring drinking water in a light self-powered water bottle.
 
-### 40. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
+### 41. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -493,7 +505,7 @@ TEÏDO self-powered water bottle with NASA membrane filtration and UV-C.。页�
 
 Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to do so by changing their diet. It makes lightly seasoned meals healthier and more enjoyable. The tableware and cutlery act as tools to help start and ma
 
-### 41. 6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡
+### 42. 6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡
 
 - 品类：充电宝
 - 路径：适合改造
@@ -505,7 +517,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 明确单品：Amplyte 6合1移动电源，内置AC插头与双端线，支持无线快充和智能手表充电，并带手机支架；功能集成度高，便携指向明确。。页面证据：Wireless Charging | Super Powerful & Fast Charging | AC Plug & Dual-End Cable | Smartwatch Compatible | Pocket Size | Phone Stand. For creators For creators Log in.
 
-### 42. Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77
+### 43. Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77
 
 - 品类：水杯
 - 路径：适合改造
@@ -517,7 +529,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 可重复使用水瓶，中间可拧开清洁，解决清洗难题，结构创新，明确为水杯。。页面证据：You can show up at your gym drinkless and buy overpriced beverages there, or you can save a few bucks (and the environment) and carry your own refillable bottle. As someone in the latter camp, I haven't been able to find a bottle I can easily clean the inside of,...
 
-### 43. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
+### 44. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -529,7 +541,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 LARQ Bottle自清洁水杯，UV-C LED消除99.9999%生物污染物，兼具保温/净化功能，明确单品，功能创新。。页面证据：Justin Wang さんはLARQ Bottle - Water Purification in a Self-Cleaning Bottle としてファンディングを開始しました。 No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.
 
-### 44. Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77
+### 45. Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77
 
 - 品类：水杯
 - 路径：适合改造
@@ -541,7 +553,7 @@ LARQ Bottle自清洁水杯，UV-C LED消除99.9999%生物污染物，兼具保�
 
 Stojo 20盎司硅胶水瓶可折叠成球体，便携结构创新，解决空瓶收纳问题。。页面证据：It doesn't collapse down quite as small as that DiFOLD Origami Bottle, but this 20-ounce silicone water bottle by Stojo "collapses into a polite sphere when empty," the brand writes. The brand, started by a trio of NYC-based dads, got their start
 
-### 45. LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter
+### 46. LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -553,7 +565,7 @@ Stojo 20盎司硅胶水瓶可折叠成球体，便携结构创新，解决空瓶
 
 LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，技术创新明显。。页面证据：The smarter and better self-cleaning bottle with two-stage purification and new app integration for hydration tracking and reminders.
 
-### 46. Level Up Your Tech Setup in 2025 with Aulumu’s Techno-Minimal Accessories - Yanko Design
+### 47. Level Up Your Tech Setup in 2025 with Aulumu’s Techno-Minimal Accessories - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -565,7 +577,7 @@ LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，�
 
 Aulumu M01 4合1折叠无线充电站：整合iPhone、AirPods、Apple Watch及USB-C设备，折叠结构解决桌面多设备充电与理线，是具体桌面单品。。页面证据：https://youtu.be/ZHPAWGfFrTk There’s a certain irony in how we treat our gadgets. We spend hours agonizing over which phone to buy, which laptop to upgrade to, or which smartwatch will best track our lives—only to neglect the tools that connect them all. Accessories, often relegated to afterthoughts, are the unsung heroes of tech. When was the
 
-### 47. Apollo Max, The Power Bank Recharges in 19 Mins
+### 48. Apollo Max, The Power Bank Recharges in 19 Mins
 
 - 品类：充电宝
 - 路径：适合改造
@@ -577,7 +589,7 @@ Aulumu M01 4合1折叠无线充电站：整合iPhone、AirPods、Apple Watch及U
 
 Apollo Max石墨烯充电宝，19分钟充满，轻便口袋大小，超快充电材料创新。。页面证据：Ordinary fast charging power banks are usually bulky and need to recharge overnight. And it’s not uncommon to find that your power bank is still not fully recharged when you are ready to go for the day. Who doesn't want an ultra-efficient, lightweight, graphene power bank that fits in any pocket and can be fully recharged in an incredible 19 minutes! Say Hello to Apollo Max!
 
-### 48. This $450 Gadget Swaps Your Phone Battery in 2 Seconds
+### 49. This $450 Gadget Swaps Your Phone Battery in 2 Seconds
 
 - 品类：充电宝
 - 路径：适合改造
@@ -589,7 +601,7 @@ Apollo Max石墨烯充电宝，19分钟充满，轻便口袋大小，超快充�
 
 Swippitt Instant Power System 是明确的便携换电充电系统，通过换电盒实现2秒更换手机电池，具有结构和使用方式创新，可作为充电宝品类候选。。页面证据：Jun 18, 2025 · There was so much AI-powered nonsense at CES earlier this year that it was refreshing to see a very straightforward gadget like the Swippitt Instant Power System.
 
-### 49. Boomerang Wok by Nikolai Carels
+### 50. Boomerang Wok by Nikolai Carels
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -601,7 +613,7 @@ Swippitt Instant Power System 是明确的便携换电充电系统，通过换�
 
 明确炒锅单品，专利凹边设计让翻炒时食材回落到锅内，解决翻炒洒出问题。。页面证据：The Boomerang Wok by Nikolai Carels allows you to flip omelets back onto themselves or cook without flinging food out of your pan. The pan has a
 
-### 50. the first no mess traveler mug heats coffee for over 50% longer
+### 51. the first no mess traveler mug heats coffee for over 50% longer
 
 - 品类：水杯
 - 路径：适合改造
@@ -613,7 +625,7 @@ Swippitt Instant Power System 是明确的便携换电充电系统，通过换�
 
 SüpKüp 旅行杯内置一次性纸杯弹出结构，免清洗并延长保温时间，材料与结构创新明确。。页面证据：SüpKüp by nobot labs is the first reusable traveler mug that heats hot drinks for over 50% longer, without requiring cleaning between uses.
 
-### 51. iRe5 Gen 2: Bring Expandable Storage Back to Smartphones
+### 52. iRe5 Gen 2: Bring Expandable Storage Back to Smartphones
 
 - 品类：手机壳
 - 路径：适合改造
@@ -625,7 +637,7 @@ SüpKüp 旅行杯内置一次性纸杯弹出结构，免清洗并延长保温�
 
 iRe5 Gen 2手机壳集成MicroSD扩展、PD快充与模块化Hub，明确单品且功能/结构创新显著。。页面证据：Instant MicroSD Access | PD Fast Charging | One-Tap SyncPal Backup | Modular Hub & Integrated Case | Pro-Rig Ready | No Cloud Fees
 
-### 52. Flat Spoon Means Super Functionality - Yanko Design
+### 53. Flat Spoon Means Super Functionality - Yanko Design
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -637,7 +649,7 @@ iRe5 Gen 2手机壳集成MicroSD扩展、PD快充与模块化Hub，明确单品�
 
 Polygons Measuring Spoon由单张塑料经几何切割折叠形成不同容量量勺，消除多个量勺需求，结构创新明确，有图视频证据。。页面证据：The Polygons Measuring Spoon is an innovative and surprising redesign of the kitchen tool that eliminates the need for multiple measuring units, thereby saving space and time. The design applies intentional geometric cuts to a single sheet of plastic that allow the design to be pinched at different sections to create varying bowl sizes. When
 
-### 53. Why over 50,000 people have switched to this titanium cutting board
+### 54. Why over 50,000 people have switched to this titanium cutting board
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -649,7 +661,7 @@ Polygons Measuring Spoon由单张塑料经几何切割折叠形成不同容量�
 
 TIBO Titanium Cutting Board采用钛合金材质，宣称避免木质/塑料砧板的细菌隐藏与微塑料问题，主打抗菌、耐用和易清洁，是材料和卫生维度有明显创新点的明确砧板单品。。页面证据：Say goodbye to microplastics & bacteria: here's why titanium is the superior choice for food prep
 
-### 54. Yooatom: World's First Smart Modular Power System by YOOATOM ...
+### 55. Yooatom: World's First Smart Modular Power System by YOOATOM ...
 
 - 品类：充电宝
 - 路径：适合改造
@@ -661,7 +673,7 @@ TIBO Titanium Cutting Board采用钛合金材质，宣称避免木质/塑料砧�
 
 具体产品：Yooatom智能模块化电源系统，每个电池可独立作为充电宝，也可在底座上热插拔持续供电，创新在模块化换电结构，明确便携充电宝功能，符合品类。。页面证据：Not only can each battery double as a standalone power bank, but also, by swapping them on the Power Hub (base unit), you can keep your devices running non-stop.
 
-### 55. Dream Recorder | Uncrate
+### 56. Dream Recorder | Uncrate
 
 - 品类：充电宝
 - 路径：适合改造
@@ -673,7 +685,7 @@ TIBO Titanium Cutting Board采用钛合金材质，宣称避免木质/塑料砧�
 
 Native Union (Re)Classic Magnetic Power Bank，号称最薄便携无线充电宝，支持磁吸无线充电，创新点在于超薄设计和磁吸功能。。页面证据：There are plenty of reasons why you might want to replay a dream, but sadly, the best you can do is keep a journal of...
 
-### 56. This iPhone 17 Pro Kevlar® Case is like a Bulletproof Vest for your phone - Yanko Design
+### 57. This iPhone 17 Pro Kevlar® Case is like a Bulletproof Vest for your phone - Yanko Design
 
 - 品类：手机壳
 - 路径：适合改造
@@ -685,7 +697,7 @@ Native Union (Re)Classic Magnetic Power Bank，号称最薄便携无线充电宝
 
 ArmorGrid Kevlar手机壳，采用防弹材料，防护创新。。页面证据：https://www.youtube.com/watch?v=iwocZ3v74a0 The annual ritual of a new iPhone launch brings with it an equally important, almost spiritual, quest for the perfect case. Let’s be frank; the naked device, while a marvel of industrial design, feels unnervingly fragile in a world of concrete sidewalks and crowded coffee shops. The problem is that most protection comes at
 
-### 57. MagInk: AI Customizable Smart E-Ink Power Bank by Tmobi - Indiegogo
+### 58. MagInk: AI Customizable Smart E-Ink Power Bank by Tmobi - Indiegogo
 
 - 品类：充电宝
 - 路径：适合改造
@@ -697,7 +709,7 @@ ArmorGrid Kevlar手机壳，采用防弹材料，防护创新。。页面证据�
 
 明确产品MagInk智能E-Ink充电宝，创新点E-Ink屏幕可自定义，超薄快充。页面证据：MagInk supports 15W wireless and 22.5W wired fast charging, all packed into an ultra-slim design. Charge multiple devices at once—without the bulk.
 
-### 58. VoltGo N31:10000mAh Portable Wall Socket 3-in-1 Power Bank
+### 59. VoltGo N31:10000mAh Portable Wall Socket 3-in-1 Power Bank
 
 - 品类：充电宝
 - 路径：适合改造
@@ -709,7 +721,7 @@ ArmorGrid Kevlar手机壳，采用防弹材料，防护创新。。页面证据�
 
 VoltGo N31 10000mAh充电宝，自带墙插，可同时充3台设备，22.5W快充，创新在于便携墙插一体化设计。。页面证据：VoltGo is raising funds for VoltGo N31:10000mAh Portable Wall Socket 3-in-1 Power Bank on Kickstarter! Portable wall socket / 10000mAh / Multi-brand compatibility / Charge 3 devices at once / 22.5W fast charging
 
-### 59. Byredo Infra Luna Scent & Light Diffuser | Uncrate
+### 60. Byredo Infra Luna Scent & Light Diffuser | Uncrate
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -721,7 +733,7 @@ VoltGo N31 10000mAh充电宝，自带墙插，可同时充3台设备，22.5W快�
 
 Byredo Infra Luna Scent & Light Diffuser 是一款结合香薰扩散功能的台灯，LED加热蜡烛实现香薰，结构创新。。页面证据：In collaboration with French designer and light artist Benoit Lalloz, Byredo has introduced its latest limited-edition Byproduct. The Infra Luna is a lamp that doubles...
 
-### 60. Marie Antoinette – Avant Guillotine – Vin Rouge – Packaging Of The...
+### 61. Marie Antoinette – Avant Guillotine – Vin Rouge – Packaging Of The...
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -733,7 +745,7 @@ Byredo Infra Luna Scent & Light Diffuser 是一款结合香薰扩散功能的台
 
 Marie Antoinette礼品包装采用滑轨抽屉柜结构，内含酒杯及酒具，包装结构创新。。页面证据：This is a gift package that is more like a cabinet with 4 sliding drawers. The top left drawer contains two wine glasses, and the right top drawer has a wine utility set which is a cork screw, T-Shape thermometer, Stopper, Nozzle (with a stopper), and a Neck Ring (to avoid dripping).
 
-### 61. This case deploys an airbag when you drop your phone! - Yanko Design
+### 62. This case deploys an airbag when you drop your phone! - Yanko Design
 
 - 品类：手机壳
 - 路径：适合改造
@@ -745,7 +757,7 @@ Marie Antoinette礼品包装采用滑轨抽屉柜结构，内含酒杯及酒具�
 
 该手机壳在跌落时自动弹出八根金属腿作为气囊缓冲，创新性结构保护手机，属于明确的手机壳单品。。页面证据：The only thing worse than selling a kidney to buy an expensive phone is dropping said expensive phone and having your heart sink as you pick it up to see a crack running across its beautiful screen. Not many people enjoy putting covers on their phones because of the added bulk. It makes much more
 
-### 62. This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
+### 63. This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -757,7 +769,7 @@ Marie Antoinette礼品包装采用滑轨抽屉柜结构，内含酒杯及酒具�
 
 This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub The modern workflow is often a series of disconnected actions; typing in one window, clicking in another, and plugging in peripherals just to get started....
 
-### 63. Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa
+### 64. Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -769,7 +781,7 @@ This Presenter Remote Will Replace Your Mouse, Mic, AI Translator, and USB-C Hub
 
 Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity
 
-### 64. iRe5: Built-in Storage Expansion iPhone Case by iRe5 - Indiegogo
+### 65. iRe5: Built-in Storage Expansion iPhone Case by iRe5 - Indiegogo
 
 - 品类：手机壳
 - 路径：适合改造
@@ -781,7 +793,7 @@ Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站�
 
 iRe5 手机壳内置 microSD 卡槽和 USB-C/Lightning 扩展口，可实际扩展 iPhone 存储，功能创新明确，Indiegogo 有可购买产品页。。页面证据：Introducing iRe5: the revolutionary iPhone case with built-in memory expansion. With its integrated microSD card slot and USB-C / Lightning port, iRe5 seamlessly combines sleek design with expanded storage capabilities.
 
-### 65. Canyon’s Hexagon Charger Makes Wireless Charging Actually Cool - Yanko Design
+### 66. Canyon’s Hexagon Charger Makes Wireless Charging Actually Cool - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -793,7 +805,7 @@ iRe5 手机壳内置 microSD 卡槽和 USB-C/Lightning 扩展口，可实际扩�
 
 明确的桌面充电单品：Canyon Hexagon Charger（VLND Studio设计），3合1六边形无线充电站，15W快充，结合结构化收纳，非普通充电板，结构创新明显。。页面证据：When you think about wireless chargers, your mind probably goes straight to flat discs or boring black rectangles scattered across your desk. But VLND Studio just flipped that script with their Wireless Charging Station for Canyon, and the design world took notice. This isn't just another tech accessory pretending to be minimal. It's a genuine
 
-### 66. Portugal’s Official TORRAS Phone Case for World Cup 2026 Has A Hands-Free Camera Stand - Yanko Design
+### 67. Portugal’s Official TORRAS Phone Case for World Cup 2026 Has A Hands-Free Camera Stand - Yanko Design
 
 - 品类：手机壳
 - 路径：适合改造
@@ -805,7 +817,7 @@ iRe5 手机壳内置 microSD 卡槽和 USB-C/Lightning 扩展口，可实际扩�
 
 TORRAS Ostand Q3 Air 葡萄牙队联名手机壳，内置免提相机支架，有功能结构创新，非仅换图案联名。。页面证据：https://www.youtube.com/watch?v=Ku9v_BEvmLI Cristiano Ronaldo did not become the most recognizable footballer of his generation by accident. The discipline, the training footage, the obsessive documentation of progress over years and decades, all of that has been as central to the story as any trophy or record. Portuguese football has a particular relationship with that kind of dedication,
 
-### 67. IVYCable P6- Fast-Charging Magnetic Cable & Power Bank
+### 68. IVYCable P6- Fast-Charging Magnetic Cable & Power Bank
 
 - 品类：充电宝
 - 路径：适合改造
@@ -816,18 +828,6 @@ TORRAS Ostand Q3 Air 葡萄牙队联名手机壳，内置免提相机支架，�
 - 链接：https://www.kickstarter.com/projects/azurbit/ivycable-p6-fast-charging-magnetic-cable-and-power-bank
 
 IVYCable P6为Kickstarter具体单品，将自折叠磁性充电线与移动电源二合一，支持PD 60W快充和通过充电，创新点在便携结构整合。。页面证据：Dec 10, 2025 · Matt Chang is raising funds for IVYCable P6- Fast-Charging Magnetic Cable & Power Bank on Kickstarter! PD 60W Fast Charging | Pass-Through-Charging Power Bank| One Cable Charges All Your Devices | Self-Folding Magnetic Cable
-
-### 68. This modular desk lets you design every element to create the perfect work setup that meets your changing needs! - Yanko Design
-
-- 品类：创意桌搭
-- 路径：适合改造
-- 启发：功能启发、结构启发
-- 分数：8.5
-- 来源：Yanko Design
-- 下一步：提取结构或功能点，换材质/场景重新组合
-- 链接：https://www.yankodesign.com/2020/12/07/this-modular-desk-lets-you-design-every-element-to-create-the-perfect-work-setup-that-meets-your-changing-needs
-
-LastDesk模块化书桌是明确单品，可定制桌面元素，集成下一代无线充电模块、智能坐站OLED控制器和内置60W USB充电口，结构及功能创新明确。。页面证据：https://vimeo.com/483587318 The right desk is arguably the most important addition to every workspace. They set the tone and pace for organization, creativity, and productivity for each workday. Over time, desks somehow end up personifying the people sitting behind them, becoming either messy with miscellaneous paper scraps for the scatter-brained creative or tidier than ever with
 
 ### 69. Red Dot Design Award: M150 & M250
 
@@ -1081,7 +1081,19 @@ iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of i
 
 明确单品：Future Shell Modular Suit，红点奖；儿童三合一模块化夹克，外层、保暖层、运动层可自由组合适应天气，保暖层使用回收海洋塑料填充，结构创新和环保材料明确。。页面证据：The Future Shell Modular Suit is an all-weather jacket for children. It consists of three layers: a protective layer, a thermal layer and a sportswear layer. These can be combined depending on weather conditions, making the jacket suitable for outdoor...
 
-### 90. Red Dot Design Award: Light Ball Lamp
+### 90. IKEA Built A $4 Stick-On Light That Lasts 6 Months - Yanko Design
+
+- 品类：氛围灯
+- 路径：方向参考
+- 启发：结构启发、情绪启发
+- 分数：8.2
+- 来源：Yanko Design
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.yankodesign.com/2026/03/05/ikea-built-a-4-stick-on-light-that-lasts-6-months
+
+IKEA ANKARLÄGG 是一款低价（约$4）电池驱动粘贴式LED夜灯，续航6个月，用极简设计解决夜间照明摩擦，功能与交互创新明确。。页面证据：IKEA has always had a knack for making you feel clever. You walk into the store needing a bookshelf, and you leave with a bag full of small, inexpensive things you didn't know existed but now can't imagine living without. The ANKARLÄGG is exactly that kind of product. It's a battery-operated LED nightlight shaped like
+
+### 91. Red Dot Design Award: Light Ball Lamp
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1093,7 +1105,7 @@ iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of i
 
 Red Dot Light Ball Lamp为明确灯具单品，球体通过磁吸固定于底座并可无线充电，可拆卸移动使用，结构交互创新清晰。。页面证据：The Light Ball Lamp brings a fresh look to contemporary household lightning, allowing light and colour to be brought to all parts of the home. The light source can be detached from its base and placed anywhere to illuminate every corner of the room. With...
 
-### 91. The Most Fun Lamp/Power-bank EVER! - Yanko Design
+### 92. The Most Fun Lamp/Power-bank EVER! - Yanko Design
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1105,7 +1117,7 @@ Red Dot Light Ball Lamp为明确灯具单品，球体通过磁吸固定于底座
 
 Lunar灯笼灯是多功能氛围灯+充电宝，核心创新是模块化设计——手电模块可替换为环境光模块，并能给手机充电，互动性和场景适配创新明确，产品形态清晰。。页面证据：https://vimeo.com/201286573 Honestly though. The Lunar lantern is just the most nerdy, fun lamp you'll ever own. Trust it to be the perfect addition to your parties or camping trips because it'll get everyone talking in no time! Designed to work like a gas lantern, the lamp spreads a wonderful incandescent glow, mimicking the warmth and
 
-### 92. The SuperTank powers your phone for a week, and recharges in an hour! - Yanko Design
+### 93. The SuperTank powers your phone for a week, and recharges in an hour! - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1116,18 +1128,6 @@ Lunar灯笼灯是多功能氛围灯+充电宝，核心创新是模块化设计�
 - 链接：https://www.yankodesign.com/2019/06/18/the-supertank-powers-your-phone-for-a-week-and-recharges-in-an-hour
 
 SuperTank 27000mAh充电宝，双USB-C PD 100W+60W，快速自充。。页面证据：https://youtu.be/-pKgyWAvceM Sixty minutes is all that it takes for the SuperTank to power-up and be ready for deployment. This 27,000 mAh portable charger with dual USB-C PD (100W + 60W) and dual USB-A ports, has the potential to quickly charge MacBook Pros and many other devices. What this means to people on the go, is
-
-### 93. This multi-functional 24,000mAh Power Bank can also jump-start your Car - Yanko Design
-
-- 品类：充电宝
-- 路径：方向参考
-- 启发：功能启发
-- 分数：8.2
-- 来源：Yanko Design
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.yankodesign.com/2025/06/24/this-multi-functional-24000mah-power-bank-can-also-jump-start-your-car
-
-24000mAh 多功能充电宝，集汽车启动、LED手电筒（SOS/频闪）于一体，多合一创新。。页面证据：We've all been there - stranded in a parking lot with a dead car battery, frantically calling for help while your phone battery dwindles to single digits. It's a modern catch-22 that perfectly captures our dependence on technology. Your car needs electricity to start, your phone needs power to call for help, and you're stuck
 
 ### 94. Red Dot Design Award: 3-in-1 Travel Portable Charger
 

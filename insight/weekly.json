@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-21T01:17:27+08:00",
-  "week": "2026-W34",
-  "group_id": "2026-W34",
-  "date_start": "2026-08-17",
-  "date_end": "2026-08-23",
-  "date_label": "2026-08-17 至 2026-08-23",
-  "title": "2026-W34 选品机会周报",
+  "generated_at": "2026-08-24T03:34:22+08:00",
+  "week": "2026-W35",
+  "group_id": "2026-W35",
+  "date_start": "2026-08-24",
+  "date_end": "2026-08-30",
+  "date_label": "2026-08-24 至 2026-08-30",
+  "title": "2026-W35 选品机会周报",
   "target_count": 100,
   "actual_count": 100,
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
@@ -16,10 +16,10 @@
       "可直接买样": 23
     },
     "by_category": {
-      "充电宝": 24,
+      "充电宝": 23,
       "水杯": 15,
+      "氛围灯": 11,
       "创意礼盒": 10,
-      "氛围灯": 10,
       "手机壳": 9,
       "创意桌搭": 8,
       "创意厨具": 7,
@@ -29,10 +29,10 @@
       "端午礼盒": 2
     },
     "by_axis": {
-      "功能启发": 67,
-      "结构启发": 59,
+      "功能启发": 65,
+      "结构启发": 60,
       "包装启发": 27,
-      "情绪启发": 13,
+      "情绪启发": 14,
       "视觉启发": 9
     }
   },
@@ -959,6 +959,32 @@
       ]
     },
     {
+      "id": "d8a036bbaaa8",
+      "product_key": null,
+      "title": "A Sweat-Proof Gaming Mouse - Core77",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Core77",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.core77.com/posts/109316/A-Sweat-Proof-Gaming-Mouse",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1197522_lead_400_109316_.jpg",
+      "summary": "明确单品：Marsback Zephyr Pro 游戏鼠标。创新点：为易出汗玩家设计，具备防汗/通风结构，解决游戏时手汗问题，属于桌面输入设备的功能创新。。页面证据：\"The right mouse is the most critical weapon in your PC-gaming arsenal,\" says product designer Gary Lin, who admits he has \"glands that produce excessive sweat while gaming.\" Lin, a designer for PC hardware manufacturer Marsback, was in a position to do something about it. Lin designed the Zephyr Pro,",
+      "risk": "防汗通风结构解决游戏手汗问题，是明确的游戏鼠标功能创新。",
+      "review_confidence": 9,
+      "review_reason": "防汗通风结构解决游戏手汗问题，是明确的游戏鼠标功能创新。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "86ebd684e7ca",
       "product_key": null,
       "title": "鹈鹕去充电案例 | Uncrate",
@@ -1834,33 +1860,6 @@
       ]
     },
     {
-      "id": "a34c5172573a",
-      "product_key": null,
-      "title": "This modular desk lets you design every element to create the perfect work setup that meets your changing needs! - Yanko Design",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2020/12/07/this-modular-desk-lets-you-design-every-element-to-create-the-perfect-work-setup-that-meets-your-changing-needs",
-      "image": "https://www.yankodesign.com/images/design_news/2020/11/design-your-own-workspace-with-this-modular-desktop-it-might-be-the-last-desk-youll-ever-need/01_LastDesk_FrameCPH_ModularDesk_hero.jpg",
-      "summary": "LastDesk模块化书桌是明确单品，可定制桌面元素，集成下一代无线充电模块、智能坐站OLED控制器和内置60W USB充电口，结构及功能创新明确。。页面证据：https://vimeo.com/483587318 The right desk is arguably the most important addition to every workspace. They set the tone and pace for organization, creativity, and productivity for each workday. Over time, desks somehow end up personifying the people sitting behind them, becoming either messy with miscellaneous paper scraps for the scatter-brained creative or tidier than ever with",
-      "risk": "属于创意桌搭。该产品不是普通书桌，文字信息显示其为LastDesk模块化书桌，可定制桌面元素，并集成无线充电模块、坐站OLED控制器和内置60W USB充电口，直接服务桌面工作、充电、显示器走线和坐站调节等高频办公需求。图片与标题匹配，产品明确，具备结构模块化、桌面供电和人机工学交互创新，适合作为可转化的桌搭选品方向。",
-      "review_confidence": 9,
-      "review_reason": "属于创意桌搭。该产品不是普通书桌，文字信息显示其为LastDesk模块化书桌，可定制桌面元素，并集成无线充电模块、坐站OLED控制器和内置60W USB充电口，直接服务桌面工作、充电、显示器走线和坐站调节等高频办公需求。图片与标题匹配，产品明确，具备结构模块化、桌面供电和人机工学交互创新，适合作为可转化的桌搭选品方向。",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "968d9e17cd2a",
       "product_key": null,
       "title": "Red Dot Design Award: M150 & M250",
@@ -2422,6 +2421,33 @@
       ]
     },
     {
+      "id": "50d95cbc255b",
+      "product_key": null,
+      "title": "IKEA Built A $4 Stick-On Light That Lasts 6 Months - Yanko Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 82,
+      "score_label": "8.2",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/03/05/ikea-built-a-4-stick-on-light-that-lasts-6-months",
+      "image": "https://www.yankodesign.com/images/design_news/2026/03/ikea-built-a-4-stick-on-light-that-lasts-6-months/ANKARLAGG-01.jpg",
+      "summary": "IKEA ANKARLÄGG 是一款低价（约$4）电池驱动粘贴式LED夜灯，续航6个月，用极简设计解决夜间照明摩擦，功能与交互创新明确。。页面证据：IKEA has always had a knack for making you feel clever. You walk into the store needing a bookshelf, and you leave with a bag full of small, inexpensive things you didn't know existed but now can't imagine living without. The ANKARLÄGG is exactly that kind of product. It's a battery-operated LED nightlight shaped like",
+      "risk": "粘贴式电池LED灯，约4美元，续航6个月，低成本易部署的日常照明创新。",
+      "review_confidence": 9,
+      "review_reason": "粘贴式电池LED灯，约4美元，续航6个月，低成本易部署的日常照明创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "0ca6612f0a22",
       "product_key": null,
       "title": "Red Dot Design Award: Light Ball Lamp",
@@ -2501,32 +2527,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "23106c0109cf",
-      "product_key": null,
-      "title": "This multi-functional 24,000mAh Power Bank can also jump-start your Car - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "standard",
-      "url": "https://www.yankodesign.com/2025/06/24/this-multi-functional-24000mah-power-bank-can-also-jump-start-your-car",
-      "image": "https://www.yankodesign.com/images/design_news/2025/06/this-multi-functional-24000mah-power-bank-can-also-jump-start-your-car/gooloo_gp4000_power_bank_1.jpg",
-      "summary": "24000mAh 多功能充电宝，集汽车启动、LED手电筒（SOS/频闪）于一体，多合一创新。。页面证据：We've all been there - stranded in a parking lot with a dead car battery, frantically calling for help while your phone battery dwindles to single digits. It's a modern catch-22 that perfectly captures our dependence on technology. Your car needs electricity to start, your phone needs power to call for help, and you're stuck",
-      "risk": "DeepSeek候选复核：集成汽车启动和LED手电筒的多功能充电宝，功能创新。",
-      "review_confidence": 9,
-      "review_reason": "DeepSeek候选复核：集成汽车启动和LED手电筒的多功能充电宝，功能创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     },
     {
