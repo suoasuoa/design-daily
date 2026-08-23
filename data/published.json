@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-08-24T03:34:23+08:00",
+  "generated_at": "2026-08-24T06:37:33+08:00",
   "stats": {
-    "total_items": 2694,
+    "total_items": 2716,
     "by_category": {
-      "氛围灯": 517,
+      "氛围灯": 518,
       "创意厨具": 452,
       "水杯": 383,
-      "创意桌搭": 357,
-      "充电宝": 297,
-      "冲锋衣": 185,
-      "手机壳": 174,
-      "创意礼盒": 123,
-      "日历": 117,
+      "创意桌搭": 360,
+      "充电宝": 298,
+      "冲锋衣": 186,
+      "手机壳": 178,
+      "创意礼盒": 130,
+      "日历": 119,
       "中秋礼盒": 53,
-      "装置艺术": 20,
-      "端午礼盒": 14,
+      "装置艺术": 22,
+      "端午礼盒": 15,
       "钥匙扣水壶": 2
     },
     "by_lane": {
-      "适合改造": 2002,
-      "方向参考": 668,
-      "可直接买样": 24
+      "适合改造": 2021,
+      "方向参考": 670,
+      "可直接买样": 25
     },
     "by_axis": {
-      "功能启发": 1739,
-      "结构启发": 1442,
-      "情绪启发": 601,
-      "包装启发": 394,
-      "视觉启发": 386
+      "功能启发": 1750,
+      "结构启发": 1460,
+      "情绪启发": 603,
+      "包装启发": 403,
+      "视觉启发": 388
     },
     "by_source_family": {
-      "媒体案例": 1032,
-      "市场信号": 940,
-      "奖项案例": 392,
-      "社交灵感": 107,
-      "包装专项": 91,
-      "设计社区": 88,
+      "媒体案例": 1038,
+      "市场信号": 949,
+      "奖项案例": 394,
+      "社交灵感": 108,
+      "包装专项": 94,
+      "设计社区": 89,
       "弱市场信号": 29,
       "趋势观察": 15
     },
     "by_image_state": {
-      "已对齐": 1346,
-      "缺图": 1341,
+      "已对齐": 1357,
+      "缺图": 1352,
       "待核图": 7
     }
   },
@@ -33759,6 +33759,42 @@
           ]
         },
         {
+          "id": "820b9a155190",
+          "title": "KUMIKO OLED Modular Lighting Turns Off Into a Mirror",
+          "category": "氛围灯",
+          "summary": "KUMIKO OLED Modular Lighting是明确的模块化灯具单品：1mm厚OLED面板可磁吸拼接，开启为氛围灯，关闭时变身镜子，以光电材料与交互结构实现双重功能，创新证据明确。。页面证据：A customizable and modular system of 1mm-thick OLED panels snap magnetically into mood lighting when on, and transform into a mirror while off.",
+          "product_identity": "",
+          "score": 84,
+          "price_gate": "unknown",
+          "image": "https://design-milk.com/images/2017/07/kumiko-OLED.jpg",
+          "url": "https://design-milk.com/kumiko-oled-lighting",
+          "source_name": "Design Milk",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "功能启发",
+            "结构启发",
+            "情绪启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "1mm厚OLED面板磁吸拼接，开启为氛围灯、关闭为镜子，光电材料与模块化结构双功能创新明确",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 84,
+          "innovation": 10,
+          "relevance": 10,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "3bb0f65eca0c",
           "title": "Glowing Water Warmers: The Binatone CelsiuS Kettle Indicates ...",
           "category": "创意厨具",
@@ -33899,6 +33935,41 @@
           ]
         },
         {
+          "id": "0967a57f68fa",
+          "title": "Base Case: The Ultraportable Mobile Workstation ... - Indiegogo",
+          "category": "手机壳",
+          "summary": "明确单品：Base Case 是一款将手机保护壳与移动工作台结合的专利设计，保护屏幕的同时可展开为移动工作站，集成便携办公功能，属于手机壳结构/功能创新，且有众筹页面可购买样品。。页面证据：The patent pending Base Case has the perfect blend of compact design and ultimate portability. The fully integrated case not only protects your screens but also transforms into your high-performance mobile workstation.",
+          "product_identity": "",
+          "score": 81,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.indiegogo.com/en/projects/basecase/base-case-the-ultraportable-mobile-workstation",
+          "source_name": "Indiegogo",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "专利可展开移动工作台，手机壳结构/功能创新显著",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 81,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "buy_sample",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "cea255e3935a",
           "title": "SliceCharge Pro: World's 1st 6-coils Wireless Charging Mat",
           "category": "创意桌搭",
@@ -33931,41 +34002,6 @@
           "tags": [
             "buy_sample",
             "deepseek_search_agent"
-          ]
-        },
-        {
-          "id": "f1c60d1ce110",
-          "title": "iF Design - 145W Fast Charging Power Bank",
-          "category": "充电宝",
-          "summary": "145W快充移动电源集成磁吸无线充电和TFT彩屏，功能创新。。页面证据：145W high-power mobile power supply integrates magnetic wireless charging function. Adjustable angle magnetic wireless charging module enhances comfort of use. TFT color screen clearly displays battery level, parameters and UI expression. 1C1A port layout supports simultaneous charging of multiple devices. USB-C port charges the device and powers other devices. Raised silicone pads elevate the bottom space to optimize heat dissipation. The product breaks through traditional desktop wireless charging and use limitations of conventional mobile power supplies, suitable for indoor and outdoor use, powering devices any time anywhere.",
-          "product_identity": "",
-          "score": 81,
-          "price_gate": "likely_over_35",
-          "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-          "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
-          "source_name": "iF设计奖",
-          "source_family": "奖项案例",
-          "source_type": "verified_official",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发",
-            "视觉启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-24",
-          "last_seen": "2026-08-24",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 8,
-          "review_policy_version": 3,
-          "quality_score": 81,
-          "innovation": 7,
-          "relevance": 10,
-          "tags": [
-            "adapt",
-            "award_gallery"
           ]
         },
         {
@@ -34106,40 +34142,6 @@
           "tags": [
             "deepseek_search_agent",
             "packaging_specialist"
-          ]
-        },
-        {
-          "id": "865871202a1f",
-          "title": "NanoKVM-Go: World's First AI-Native 4K USB-C KVM",
-          "category": "创意桌搭",
-          "summary": "明确单品：全球首款AI原生4K USB-C KVM，单线远程控制任何USB-C设备，功能与交互创新明确，可买样。。页面证据：Jul 9, 2026 · Control any USB-C device from anywhere with one cable. Empower AI Agent with full screen memory and control. Work Remote, Flow Smart.",
-          "product_identity": "",
-          "score": 79,
-          "price_gate": "unknown",
-          "image": "",
-          "url": "https://www.kickstarter.com/projects/zepan/nanokvm-go-worlds-first-ai-native-4k-usb-c-kvm",
-          "source_name": "Kickstarter",
-          "source_family": "市场信号",
-          "source_type": "market_reference",
-          "source_quality": "standard",
-          "action_lane": "适合改造",
-          "axes": [
-            "结构启发"
-          ],
-          "image_state": "缺图",
-          "seen_count": 1,
-          "first_seen": "2026-08-24",
-          "last_seen": "2026-08-24",
-          "review_reason": "单根USB-C线即可远程控制任意USB-C设备并具备AI原生屏幕记忆，颠覆传统KV M接线与交互模式",
-          "review_source": "deepseek",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 9,
-          "relevance": 9,
-          "tags": [
-            "buy_sample",
-            "deepseek_search_agent"
           ]
         },
         {
@@ -34458,36 +34460,109 @@
           ]
         },
         {
-          "id": "acfe13c744d3",
-          "title": "Pebble Bottle:On-The-Go Coffee and Tea Maker by Hyunsoo Kim ...",
-          "category": "水杯",
-          "summary": "Pebble Bottle is a 3-in-1 insulated flask that brews coffee/tea and makes fruit-infused water, combining brewing and insulation in one portable bottle. Clear product identity and functional innovation.。页面证据：Oct 16, 2025 · The Pebble bottle is a 3 in 1 flask that can be used to brew coffee and tea, make fruit infused water, all in an insulated container. Let the Pebble bottle adapt to your needs.",
+          "id": "7f09a59a0fe6",
+          "title": "The Spoonbox: A Brilliant Design for a Dosing Spoon - Core77",
+          "category": "创意厨具",
+          "summary": "明确单品：Stiplastics设计的The Spoonbox液体定量勺，解决向勺中精确倒液的问题，结构/功能创新，可买样，符合创意厨具边界。页面证据：I'd like to see these made for kitchen klutzes like me",
+          "product_identity": "",
+          "score": 78,
+          "price_gate": "unknown",
+          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/351330_lead_400_41856_.jpg",
+          "url": "https://www.core77.com/posts/41856",
+          "source_name": "Core77",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "勺柄内置储液腔，按压定量出液，实现单手精确量取",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 78,
+          "innovation": 8,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "ce9ff4e0db96",
+          "title": "MOFT Float: Invisible Stand&Case For iPad Pro by MOFT Stand ...",
+          "category": "创意桌搭",
+          "summary": "MOFT Float是用于iPad Pro的隐形折叠支架+保护壳，具有可折叠结构、4合1多功能和隐形收纳设计，创新点清晰，服务桌面显示与收纳。页面证据：We developed and launched a series of creations for various mobile devices at a steady pace, including the invisible and foldway MOFT X phone & tablet stand, the 4-in-1 invisible MOFT Z sit-stand desk, and the MOFT Carry Sleeve with an invisible stand and storage.",
           "product_identity": "",
           "score": 78,
           "price_gate": "unknown",
           "image": "",
-          "url": "https://www.indiegogo.com/en/projects/hyunsookim/pebble-bottle-on-the-go-coffee-and-tea-maker",
+          "url": "https://www.indiegogo.com/en/projects/moftstand/moft-float-invisible-stand-case-for-ipad-pro",
           "source_name": "Indiegogo",
           "source_family": "市场信号",
           "source_type": "market_reference",
           "source_quality": "standard",
           "action_lane": "适合改造",
           "axes": [
-            "功能启发"
+            "功能启发",
+            "结构启发"
           ],
           "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-08-24",
           "last_seen": "2026-08-24",
-          "review_reason": "3合1保温瓶内置冲泡装置，可做咖啡/茶/果水，便携多功能",
+          "review_reason": "隐形折叠支架与保护壳一体化，4合1功能，结构创新。",
           "review_source": "deepseek",
-          "review_confidence": 8,
+          "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 78,
           "innovation": 7,
-          "relevance": 10,
+          "relevance": 8,
           "tags": [
             "buy_sample",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "45a960d030cd",
+          "title": "inDare | 原创新年礼盒 创意视觉 _inDare格外设计-站酷ZCOOL",
+          "category": "创意礼盒",
+          "summary": "明确单品：inDare「宝藏礼盒/百变礼盒」，新年限定礼盒，既是花盆也是收纳盒、纸巾筒，具备结构复用与场景创新，属于可落地的设计案例。。页面证据：inDare | 原创新年礼盒 创意视觉 ,2021 新春将至,inDare 创异®事务所 精心筹备新年限定「宝藏礼盒」,这可能是你见过，最特别的新年礼物,「 百变礼盒 」它既是花盆也是收纳盒、纸巾筒..,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
+          "product_identity": "",
+          "score": 77,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.zcool.com.cn/work/ZNTA2ODkyODA=.html",
+          "source_name": "站酷",
+          "source_family": "设计社区",
+          "source_type": "design_community",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "礼盒可复用为花盆/收纳盒/纸巾筒，结构复用创新明确",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 77,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "adapt",
             "deepseek_search_agent"
           ]
         },
@@ -34528,7 +34603,7 @@
         },
         {
           "id": "888c42edb75d",
-          "title": "Pizza Hut Blockbuster Box",
+          "title": "Pizza Hut Blockbuster Box - DIELINE Pizza Hut Blockbuster Box - DIELINE",
           "category": "创意礼盒",
           "summary": "Pizza Hut Blockbuster Box 是可复用礼盒包装，披萨盒弹出圆孔并内置小透镜变成投影仪，结构创新明确，品牌型号清晰。。页面证据：Pizzas and movies just belong together. Pizza Hut has always been an innovator in their business, so for their latest promotion Ogilvy & Mather Group HK created a pizza box that you won’t want to toss in the recycling. The box features a small circle in the front that you can pop out so it […]",
           "product_identity": "",
@@ -34558,6 +34633,77 @@
           "relevance": 10,
           "tags": [
             "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "4a59574c5ad3",
+          "title": "Alpargali Cargo: No Bag Days Start Here. by ... - Kickstarter",
+          "category": "冲锋衣",
+          "summary": "明确单品：Alpargali Cargo Trench，19口袋系统、内置收纳袋、15K防水/8K透气，结构创新明显，属功能外套。。页面证据：19-Pocket System | All-Weather Shield | Built-in Bag | Classic Silhouette | 15K Waterproof | 8K Breathable | Engineered for Real Life",
+          "product_identity": "",
+          "score": 76,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.kickstarter.com/projects/alpargali/algargali-cargo-trench",
+          "source_name": "Kickstarter",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "19口袋系统与内置收纳袋，15K防水8K透气，结构创新明显。",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 76,
+          "innovation": 8,
+          "relevance": 10,
+          "tags": [
+            "deepseek_search_agent",
+            "market_signal_strong"
+          ]
+        },
+        {
+          "id": "423daa7facf6",
+          "title": "Red Dot Design Award: Schwarzkopf – Celebrating 50 years of color excellence",
+          "category": "日历",
+          "summary": "Schwarzkopf IGORA 50周年限量日历盒，手动铆接，含日历卡、月份卡与俳句，支持自由组合图案和文字，结构及交互创新明确。。页面证据：This manually riveted, limited calendar box was designed for the anniversary of IGORA, a Schwarzkopf Professional brand. The calendar features a flexible design consisting of three elements: in addition to calendar and month cards, original haiku were...",
+          "product_identity": "",
+          "score": 75,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.red-dot.org/zh/project/schwarzkopf-celebrating-50-years-of-color-excellence-17404",
+          "source_name": "Red Dot",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "包装启发",
+            "结构启发",
+            "视觉启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "手动铆接的限量日历盒，卡片自由组合图案和文字，突破固定版式，交互结构创新。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 75,
+          "innovation": 9,
+          "relevance": 10,
+          "tags": [
+            "award_gallery",
             "deepseek_search_agent"
           ]
         },
@@ -34668,68 +34814,68 @@
           ]
         },
         {
-          "id": "ff3df745d640",
-          "title": "skinarma reimagines iphone 17 case in post-apocalyptic design",
-          "category": "手机壳",
-          "summary": "skinarma AEGIS手机壳，末日风格设计，内置握把支架，结构创新。。页面证据：skinarma launches its iphone 17 case range, creating a new class of rugged tech accessories, inspired by survival gear.",
+          "id": "b10f8295ec0f",
+          "title": "Keeptr: World's 1st Find My Keychain with Emergency Power",
+          "category": "充电宝",
+          "summary": "明确单品：Keeptr是全球首款带Find My定位的钥匙扣应急充电宝，内置2000mAh，集成磁吸充电座和双充电线，兼具钥匙扣、定位查找和应急电源功能，创新点明确。。页面证据：Emergency Power Bank｜Find My | Smart Keychain Design | Magnetic Charging Dock｜Dual Charging Cables｜2000mAh｜Colorful & Stylish",
           "product_identity": "",
-          "score": 75,
+          "score": 74,
           "price_gate": "unknown",
-          "image": "https://www.designboom.com/twitterimages/uploads/2025/09/skinarma-iphone-17-case-collection-designboom-facebook.jpg",
-          "url": "https://www.designboom.com/design/skinarma-upgrade-iphone-17-case-grip-stands-interchangeable-lanyard-bumpers-09-30-2025",
+          "image": "",
+          "url": "https://www.kickstarter.com/projects/keeptr/keeptr-worlds-1st-find-my-keychain-with-emergency-power",
+          "source_name": "Kickstarter",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "视觉启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "将2000mAh应急充电宝、Find My定位与磁吸充电座集成于钥匙扣形态，功能组合与便携结构创新。",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 74,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "deepseek_search_agent",
+            "market_signal_strong"
+          ]
+        },
+        {
+          "id": "e39e0287424a",
+          "title": "dubai design week 2016: bottlelight purifies water",
+          "category": "水杯",
+          "summary": "明确单品 Bottlelight（Christoph Kuppert & Helena Wendt）：将UV净水器与手电筒结合的水壶/净水瓶，在Dubai Design Week展出，功能创新显著，可转化为饮水产品概念。。页面证据：dubai design week 2016 will present the 'bottlelight' - a UV water purifier and torch, developed by christoph kuppert and helena wendt.",
+          "product_identity": "",
+          "score": 74,
+          "price_gate": "unknown",
+          "image": "https://www.designboom.com/twitterimages/uploads/2016/08/dubai-design-week-bottlelight-designboom-01-818x492.jpg",
+          "url": "https://www.designboom.com/design/dubai-design-week-2016-bottlelight-08-13-2016",
           "source_name": "Designboom",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
-            "结构启发"
+            "功能启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-08-24",
           "last_seen": "2026-08-24",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置握把支架和可互换挂绳挡板，结构创新",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 75,
-          "innovation": 7,
-          "relevance": 9,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
-        },
-        {
-          "id": "7e36541b2afc",
-          "title": "EatOut Camp Kitchen | Cool Material",
-          "category": "创意厨具",
-          "summary": "明确单品：EatOut Camp Kitchen，一体式露营厨房；打开包含双灶、备餐台、LED灯与储物，一分钟内快速部署，功能与结构创新明显，适合户外场景改造。。页面证据：Dec 7, 2017 · Open it up to reveal a double burner stove, prep table with an LED lantern, and plenty of storage for pots and pans. And before you think EatOut is as annoying to set up as that tangled tent, the entire thing is ready to go in under a minute.",
-          "product_identity": "",
-          "score": 74,
-          "price_gate": "unknown",
-          "image": "",
-          "url": "https://coolmaterial.com/gear/eatout-camp-kitchen",
-          "source_name": "Cool Material",
-          "source_family": "市场信号",
-          "source_type": "market_reference",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "缺图",
-          "seen_count": 1,
-          "first_seen": "2026-08-24",
-          "last_seen": "2026-08-24",
-          "review_reason": "一体式露营厨房，展开后集成双灶、备餐台、LED灯与储物，结构创新明显，1分钟快速部署，户外场景价值突出。",
+          "review_reason": "将UV净水器与手电筒集成于水壶，户外净水+照明双功能，属于功能集成创新。",
           "review_source": "deepseek",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 74,
-          "innovation": 8,
+          "innovation": 9,
           "relevance": 9,
           "tags": [
             "adapt",
@@ -34769,48 +34915,12 @@
             "adapt",
             "deepseek_search_agent"
           ]
-        },
-        {
-          "id": "c2236cb89384",
-          "title": "Tom Dixon’s Melt Portable Light Glows Luxuriously for 10 Hours",
-          "category": "氛围灯",
-          "summary": "明确单品 Tom Dixon Melt Portable Light，一款便携可充电氛围灯，具有触摸调光、USB-A 磁吸充电、2.5W LED 100流明等结构和交互创新，属于可买样产品。。页面证据：The iconic Tom Dixon Melt light is now available as a portable and rechargeable USB light, bringing its nebulous luminosity nearly anywhere.",
-          "product_identity": "",
-          "score": 74,
-          "price_gate": "unknown",
-          "image": "https://design-milk.com/images/2023/11/TOM_DIXON-MELT_PORTABLE_LAMP-017.jpg",
-          "url": "https://design-milk.com/tom-dixons-melt-portable-light-glows-luxuriously-for-10-hours",
-          "source_name": "Design Milk",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发",
-            "结构启发",
-            "情绪启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-24",
-          "last_seen": "2026-08-24",
-          "review_reason": "经典Melt灯改为便携可充电，触摸调光与磁吸充电",
-          "review_source": "deepseek",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 74,
-          "innovation": 7,
-          "relevance": 10,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ]
         }
       ],
-      "actual_count": 31,
+      "actual_count": 34,
       "stats": {
         "by_lane": {
-          "适合改造": 24,
+          "适合改造": 27,
           "方向参考": 7
         },
         "by_category": {
@@ -34818,19 +34928,19 @@
           "水杯": 6,
           "创意桌搭": 5,
           "氛围灯": 5,
-          "充电宝": 2,
+          "日历": 3,
           "手机壳": 2,
-          "日历": 2,
-          "冲锋衣": 1,
-          "创意礼盒": 1
+          "冲锋衣": 2,
+          "充电宝": 2,
+          "创意礼盒": 2
         },
         "by_source_family": {
-          "媒体案例": 12,
-          "市场信号": 11,
+          "媒体案例": 13,
+          "市场信号": 12,
           "奖项案例": 3,
           "包装专项": 3,
-          "趋势观察": 1,
-          "设计社区": 1
+          "设计社区": 2,
+          "趋势观察": 1
         },
         "source_quota": {
           "奖项案例": 8,
@@ -34845,7 +34955,7 @@
           "奖项案例": 3,
           "媒体案例": 6,
           "包装专项": 3,
-          "设计社区": 1,
+          "设计社区": 2,
           "市场信号": 3,
           "弱市场信号": 0,
           "社交灵感": 0
@@ -89435,6 +89545,42 @@
       ]
     },
     {
+      "id": "820b9a155190",
+      "title": "KUMIKO OLED Modular Lighting Turns Off Into a Mirror",
+      "category": "氛围灯",
+      "summary": "KUMIKO OLED Modular Lighting是明确的模块化灯具单品：1mm厚OLED面板可磁吸拼接，开启为氛围灯，关闭时变身镜子，以光电材料与交互结构实现双重功能，创新证据明确。。页面证据：A customizable and modular system of 1mm-thick OLED panels snap magnetically into mood lighting when on, and transform into a mirror while off.",
+      "product_identity": "",
+      "score": 84,
+      "price_gate": "unknown",
+      "image": "https://design-milk.com/images/2017/07/kumiko-OLED.jpg",
+      "url": "https://design-milk.com/kumiko-oled-lighting",
+      "source_name": "Design Milk",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "1mm厚OLED面板磁吸拼接，开启为氛围灯、关闭为镜子，光电材料与模块化结构双功能创新明确",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 84,
+      "innovation": 10,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "f2f9a43f1a68",
       "title": "GRAYL - The Water Filtration Cup - by GRAYL / Core77 Design Awards",
       "category": "水杯",
@@ -91077,9 +91223,9 @@
         "视觉启发"
       ],
       "image_state": "缺图",
-      "seen_count": 5,
+      "seen_count": 6,
       "first_seen": "2026-07-23",
-      "last_seen": "2026-07-30",
+      "last_seen": "2026-08-24",
       "review_reason": "彩色电子墨水屏智能日历，实现动态日程显示与同步。",
       "review_source": "deepseek",
       "review_confidence": 9,
@@ -97422,38 +97568,38 @@
       ]
     },
     {
-      "id": "f1c60d1ce110",
-      "title": "iF Design - 145W Fast Charging Power Bank",
-      "category": "充电宝",
-      "summary": "145W快充移动电源集成磁吸无线充电和TFT彩屏，功能创新。。页面证据：145W high-power mobile power supply integrates magnetic wireless charging function. Adjustable angle magnetic wireless charging module enhances comfort of use. TFT color screen clearly displays battery level, parameters and UI expression. 1C1A port layout supports simultaneous charging of multiple devices. USB-C port charges the device and powers other devices. Raised silicone pads elevate the bottom space to optimize heat dissipation. The product breaks through traditional desktop wireless charging and use limitations of conventional mobile power supplies, suitable for indoor and outdoor use, powering devices any time anywhere.",
+      "id": "0967a57f68fa",
+      "title": "Base Case: The Ultraportable Mobile Workstation ... - Indiegogo",
+      "category": "手机壳",
+      "summary": "明确单品：Base Case 是一款将手机保护壳与移动工作台结合的专利设计，保护屏幕的同时可展开为移动工作站，集成便携办公功能，属于手机壳结构/功能创新，且有众筹页面可购买样品。。页面证据：The patent pending Base Case has the perfect blend of compact design and ultimate portability. The fully integrated case not only protects your screens but also transforms into your high-performance mobile workstation.",
       "product_identity": "",
       "score": 81,
-      "price_gate": "likely_over_35",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/basecase/base-case-the-ultraportable-mobile-workstation",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
       "axes": [
         "功能启发",
-        "视觉启发"
+        "结构启发"
       ],
-      "image_state": "已对齐",
+      "image_state": "缺图",
       "seen_count": 1,
       "first_seen": "2026-08-24",
       "last_seen": "2026-08-24",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
+      "review_reason": "专利可展开移动工作台，手机壳结构/功能创新显著",
+      "review_source": "deepseek",
+      "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 81,
-      "innovation": 7,
-      "relevance": 10,
+      "innovation": 9,
+      "relevance": 9,
       "tags": [
-        "adapt",
-        "award_gallery"
+        "buy_sample",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -99334,6 +99480,41 @@
       ]
     },
     {
+      "id": "f1c60d1ce110",
+      "title": "iF Design - 145W Fast Charging Power Bank",
+      "category": "充电宝",
+      "summary": "145W快充移动电源集成磁吸无线充电和TFT彩屏，功能创新。。页面证据：145W high-power mobile power supply integrates magnetic wireless charging function. Adjustable angle magnetic wireless charging module enhances comfort of use. TFT color screen clearly displays battery level, parameters and UI expression. 1C1A port layout supports simultaneous charging of multiple devices. USB-C port charges the device and powers other devices. Raised silicone pads elevate the bottom space to optimize heat dissipation. The product breaks through traditional desktop wireless charging and use limitations of conventional mobile power supplies, suitable for indoor and outdoor use, powering devices any time anywhere.",
+      "product_identity": "",
+      "score": 81,
+      "price_gate": "likely_over_35",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "url": "https://ifdesign.com/en/winner-ranking/project/145w-fast-charging-power-bank/702627",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成磁吸无线充电可调角度，TFT屏幕显示，145W快充，功能集成创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 81,
+      "innovation": 7,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
       "id": "c3e89dc8f20a",
       "title": "Red Dot Design Award: Anker 548 Emergency Power Bank",
       "category": "充电宝",
@@ -100714,6 +100895,41 @@
       "relevance": 10,
       "tags": [
         "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "89611e3057aa",
+      "title": "The Dragonfly Futurefön by Jeff Batio - Indiegogo",
+      "category": "手机壳",
+      "summary": "Dragonfly Futurefön是一款可变形多功能手机壳，内置平板支架等，通过结构创新将手机扩展为多种设备形态，解决多配件携带痛点，符合手机壳的明确功能/结构创新要求。。页面证据：\"Dragonfly’s versatility makes having to buy multiple devices, accessories and data plans … a thing of the past.\" Built-In Tablet Stand: No one likes to hold their tablet while they enjoy a movie, so some people opt to buy some form of tablet stand, which means yet another accessory to buy and carry.",
+      "product_identity": "",
+      "score": 80,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/jeffbatio/the-dragonfly-futurefon--3",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "可变形结构，内置平板支架，实现多设备形态切换。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 80,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
         "deepseek_search_agent"
       ]
     },
@@ -111282,6 +111498,41 @@
       ]
     },
     {
+      "id": "ce9ff4e0db96",
+      "title": "MOFT Float: Invisible Stand&Case For iPad Pro by MOFT Stand ...",
+      "category": "创意桌搭",
+      "summary": "MOFT Float是用于iPad Pro的隐形折叠支架+保护壳，具有可折叠结构、4合1多功能和隐形收纳设计，创新点清晰，服务桌面显示与收纳。页面证据：We developed and launched a series of creations for various mobile devices at a steady pace, including the invisible and foldway MOFT X phone & tablet stand, the 4-in-1 invisible MOFT Z sit-stand desk, and the MOFT Carry Sleeve with an invisible stand and storage.",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/moftstand/moft-float-invisible-stand-case-for-ipad-pro",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "隐形折叠支架与保护壳一体化，4合1功能，结构创新。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 7,
+      "relevance": 8,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "baf50e8c643d",
       "title": "Watti Is the Robotic Desk Lamp That Wants to Know What You’re Doing Before You Ask for Light",
       "category": "氛围灯",
@@ -119355,6 +119606,42 @@
       ]
     },
     {
+      "id": "45a960d030cd",
+      "title": "inDare | 原创新年礼盒 创意视觉 _inDare格外设计-站酷ZCOOL",
+      "category": "创意礼盒",
+      "summary": "明确单品：inDare「宝藏礼盒/百变礼盒」，新年限定礼盒，既是花盆也是收纳盒、纸巾筒，具备结构复用与场景创新，属于可落地的设计案例。。页面证据：inDare | 原创新年礼盒 创意视觉 ,2021 新春将至,inDare 创异®事务所 精心筹备新年限定「宝藏礼盒」,这可能是你见过，最特别的新年礼物,「 百变礼盒 」它既是花盆也是收纳盒、纸巾筒..,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
+      "product_identity": "",
+      "score": 77,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.zcool.com.cn/work/ZNTA2ODkyODA=.html",
+      "source_name": "站酷",
+      "source_family": "设计社区",
+      "source_type": "design_community",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "礼盒可复用为花盆/收纳盒/纸巾筒，结构复用创新明确",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 77,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "c035b1b70b87",
       "title": "What the Heck is That!? The NexTrend Garlic Twister | Discover What's Next | Grommet",
       "category": "创意厨具",
@@ -125876,7 +126163,7 @@
     },
     {
       "id": "888c42edb75d",
-      "title": "Pizza Hut Blockbuster Box",
+      "title": "Pizza Hut Blockbuster Box - DIELINE Pizza Hut Blockbuster Box - DIELINE",
       "category": "创意礼盒",
       "summary": "Pizza Hut Blockbuster Box 是可复用礼盒包装，披萨盒弹出圆孔并内置小透镜变成投影仪，结构创新明确，品牌型号清晰。。页面证据：Pizzas and movies just belong together. Pizza Hut has always been an innovator in their business, so for their latest promotion Ogilvy & Mather Group HK created a pizza box that you won’t want to toss in the recycling. The box features a small circle in the front that you can pop out so it […]",
       "product_identity": "",
@@ -125907,6 +126194,41 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "4a59574c5ad3",
+      "title": "Alpargali Cargo: No Bag Days Start Here. by ... - Kickstarter",
+      "category": "冲锋衣",
+      "summary": "明确单品：Alpargali Cargo Trench，19口袋系统、内置收纳袋、15K防水/8K透气，结构创新明显，属功能外套。。页面证据：19-Pocket System | All-Weather Shield | Built-in Bag | Classic Silhouette | 15K Waterproof | 8K Breathable | Engineered for Real Life",
+      "product_identity": "",
+      "score": 76,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/alpargali/algargali-cargo-trench",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "19口袋系统与内置收纳袋，15K防水8K透气，结构创新明显。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "market_signal_strong"
       ]
     },
     {
@@ -135591,16 +135913,16 @@
       ]
     },
     {
-      "id": "ff3df745d640",
-      "title": "skinarma reimagines iphone 17 case in post-apocalyptic design",
+      "id": "855f6913fcd9",
+      "title": "SUPCASE’s Military-Grade MagSafe Case Redefines Galaxy S25 Ultra Protection - Yanko Design",
       "category": "手机壳",
-      "summary": "skinarma AEGIS手机壳，末日风格设计，内置握把支架，结构创新。。页面证据：skinarma launches its iphone 17 case range, creating a new class of rugged tech accessories, inspired by survival gear.",
+      "summary": "SUPCASE Unicorn Beetle Grip 为Galaxy S25 Ultra设计的军规级MagSafe保护壳，内置可调金属支架兼指环扣，提升手持与车载固定体验，功能结构上有明确增量。。页面证据：https://youtu.be/56ooPVEda18 The Samsung Galaxy S25 Ultra is a powerhouse of innovation, boasting a refined design, cutting-edge camera system, and the latest in mobile processing technology. But even the most advanced smartphones need a reliable layer of protection—something that safeguards against drops and damage while enhancing usability. The SUPCASE Unicorn Beetle Grip is built to handle",
       "product_identity": "",
       "score": 75,
       "price_gate": "unknown",
-      "image": "https://www.designboom.com/twitterimages/uploads/2025/09/skinarma-iphone-17-case-collection-designboom-facebook.jpg",
-      "url": "https://www.designboom.com/design/skinarma-upgrade-iphone-17-case-grip-stands-interchangeable-lanyard-bumpers-09-30-2025",
-      "source_name": "Designboom",
+      "image": "https://www.yankodesign.com/images/design_news/2025/02/supcases-military-grade-magsafe-case-redefines-galaxy-s25-ultra-protection/SUPCASE_for_Samsung_Galaxy_S25_Ultra_Case_with_Stand_hero.jpg",
+      "url": "https://www.yankodesign.com/2025/02/06/supcases-military-grade-magsafe-case-redefines-galaxy-s25-ultra-protection",
+      "source_name": "Yanko Design",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
       "source_quality": "premium",
@@ -135612,12 +135934,119 @@
       "seen_count": 1,
       "first_seen": "2026-08-24",
       "last_seen": "2026-08-24",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置握把支架和可互换挂绳挡板，结构创新",
-      "review_source": "deepseek_backlog_recheck",
+      "review_reason": "内置可调金属支架兼指环扣，MagSafe+军规防护结构创新",
+      "review_source": "deepseek",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 75,
       "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "423daa7facf6",
+      "title": "Red Dot Design Award: Schwarzkopf – Celebrating 50 years of color excellence",
+      "category": "日历",
+      "summary": "Schwarzkopf IGORA 50周年限量日历盒，手动铆接，含日历卡、月份卡与俳句，支持自由组合图案和文字，结构及交互创新明确。。页面证据：This manually riveted, limited calendar box was designed for the anniversary of IGORA, a Schwarzkopf Professional brand. The calendar features a flexible design consisting of three elements: in addition to calendar and month cards, original haiku were...",
+      "product_identity": "",
+      "score": 75,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.red-dot.org/zh/project/schwarzkopf-celebrating-50-years-of-color-excellence-17404",
+      "source_name": "Red Dot",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "手动铆接的限量日历盒，卡片自由组合图案和文字，突破固定版式，交互结构创新。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 75,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "b9e717bb1209",
+      "title": "DeskBrick Organizer | Weighted Cord Holder & Phone Stand | Grommet",
+      "category": "创意桌搭",
+      "summary": "DeskBrick Organizer是配重硅胶桌面整理器，可收纳线材、笔并作为手机支架，无需胶粘，结构上采用钢质配重稳定，功能集成度高，具有明确的桌面整理创新。。页面证据：Keep your desk clutter-free with DeskBrick. This steel-weighted silicone organizer holds cords, pens, and even stands your phone without adhesive. Save 20% on Grommet.",
+      "product_identity": "",
+      "score": 75,
+      "price_gate": "unknown",
+      "image": "https://dxzihkgog0d85.cloudfront.net/products/36878/200x200_TpjPldeskbrick-weighted-cord-%26-des-organizer.jpg",
+      "url": "https://thegrommet.com/product/gadgets-1%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520waitfor%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520delay%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525270:0:15%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252527%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520--%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520/deskbrick",
+      "source_name": "The Grommet",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "钢质配重硅胶组织器，无需胶粘，集成线材收纳与手机支架。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 75,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "455afaf17d8b",
+      "title": "This modular packaging is inspired by how various atoms link together to form different materials! - Yanko Design",
+      "category": "创意礼盒",
+      "summary": "明确产品 CY-BO 模块化包装材料：受细胞学启发的可拼接单元，可无限重组为不同形状，用于各种包装场景，具有结构/材料/复用创新。。页面证据：Everything starts with a small building block. Humans, animals, plants, all started as a single cell, multiplying into various multi-cellular organisms... and the world around us is made from materials that are superclusters of individual atoms and molecules. In fact, the very medium you're reading this on is an organized grid of individual building-blocks called",
+      "product_identity": "",
+      "score": 75,
+      "price_gate": "likely_over_35",
+      "image": "https://www.yankodesign.com/images/design_news/2021/04/this-modular-packaging-is-inspired-by-how-various-atoms-link-together-to-form-different-materials/CY-BO_cytologically_inspired_packaging_2021_Lexus_Design_Award_finalist.jpg",
+      "url": "https://www.yankodesign.com/2021/04/18/this-modular-packaging-is-inspired-by-how-various-atoms-link-together-to-form-different-materials",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "CY-BO模块化包装以细胞结构启发可重组单元，能无限拼接成不同形态，具有明确的结构复用创新，可转化为礼盒包装系统",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 75,
+      "innovation": 9,
       "relevance": 9,
       "tags": [
         "deepseek_search_agent",
@@ -140519,6 +140948,40 @@
       ]
     },
     {
+      "id": "ff3df745d640",
+      "title": "skinarma reimagines iphone 17 case in post-apocalyptic design",
+      "category": "手机壳",
+      "summary": "skinarma AEGIS手机壳，末日风格设计，内置握把支架，结构创新。。页面证据：skinarma launches its iphone 17 case range, creating a new class of rugged tech accessories, inspired by survival gear.",
+      "product_identity": "",
+      "score": 75,
+      "price_gate": "unknown",
+      "image": "https://www.designboom.com/twitterimages/uploads/2025/09/skinarma-iphone-17-case-collection-designboom-facebook.jpg",
+      "url": "https://www.designboom.com/design/skinarma-upgrade-iphone-17-case-grip-stands-interchangeable-lanyard-bumpers-09-30-2025",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置握把支架和可互换挂绳挡板，结构创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 75,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "94a7affe42a9",
       "title": "Vapur Eclipse Anti-Bottle Collapsible Water Bottles | Cool Material",
       "category": "水杯",
@@ -142349,6 +142812,40 @@
       ]
     },
     {
+      "id": "d418b3905fe6",
+      "title": "ENDOROL—Titanium Portable Multifunctional EDC Flashlight",
+      "category": "充电宝",
+      "summary": "明确单品：ENDOROL钛合金EDC手电，内置3250mAh高密度锂电池可作充电宝，具备磁吸、背夹、双用钥匙扣、爆闪报警等多功能，属于便携电源与工具结合创新。。页面证据：ENDOROL is raising funds for ENDOROL—Titanium Portable Multifunctional EDC Flashlight on Kickstarter! Grade 5 Titanium |3250mAh high-density lithium |Daily Use | Strobe Alert | Magnetic|Back clip |two way keychain |power bank",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/endorol/endoroltitanium-portable-multifunctional-edc-flashlight",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "钛合金手电筒集成充电宝，便携多功能",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "market_signal_strong"
+      ]
+    },
+    {
       "id": "1d674341907f",
       "title": "Portable Water Bottle, Purisoo - Pump to Purify | Indiegogo",
       "category": "水杯",
@@ -142865,6 +143362,41 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "b10f8295ec0f",
+      "title": "Keeptr: World's 1st Find My Keychain with Emergency Power",
+      "category": "充电宝",
+      "summary": "明确单品：Keeptr是全球首款带Find My定位的钥匙扣应急充电宝，内置2000mAh，集成磁吸充电座和双充电线，兼具钥匙扣、定位查找和应急电源功能，创新点明确。。页面证据：Emergency Power Bank｜Find My | Smart Keychain Design | Magnetic Charging Dock｜Dual Charging Cables｜2000mAh｜Colorful & Stylish",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/keeptr/keeptr-worlds-1st-find-my-keychain-with-emergency-power",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "将2000mAh应急充电宝、Find My定位与磁吸充电座集成于钥匙扣形态，功能组合与便携结构创新。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "market_signal_strong"
       ]
     },
     {
@@ -146487,41 +147019,6 @@
       ]
     },
     {
-      "id": "d418b3905fe6",
-      "title": "ENDOROL—Titanium Portable Multifunctional EDC Flashlight",
-      "category": "充电宝",
-      "summary": "具体产品：钛合金手电筒集成充电宝，具有便携多功能创新。。页面证据：Emergency power bank 3250mAh high-density lithium battery in a compact frame – doubles as an emergency charger, no more dead phone anxiety outdoors.",
-      "product_identity": "",
-      "score": 74,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.indiegogo.com/en/projects/endorol/endoroltitanium-portable-multifunctional-edc-flashlight",
-      "source_name": "Indiegogo",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24",
-      "review_reason": "钛合金手电筒集成充电宝，便携多功能",
-      "review_source": "deepseek",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 74,
-      "innovation": 7,
-      "relevance": 9,
-      "tags": [
-        "deepseek_search_agent",
-        "market_signal_strong"
-      ]
-    },
-    {
       "id": "17235605e4fd",
       "title": "The Tea Cup SlingsHOT Means No More Wet Tea Bags",
       "category": "水杯",
@@ -149880,6 +150377,40 @@
       ]
     },
     {
+      "id": "b68561eeb20a",
+      "title": "The Life Box: Packaging that turns into trees - Core77",
+      "category": "创意礼盒",
+      "summary": "Life Box 纸板箱嵌入种子与菌根孢子，用后可种植成树，将包装转化为生态材料，材料与复用创新。。页面证据：Now this is some truly brilliant package design: Mycologist Paul Stamets' Life Box, a simple cardboard box impregnated with a mixture of Department-of-Agriculture-approved seeds. The Life Box suite of products builds upon the synergy of fungi and plants by infusing spores and seeds together inside of packaging materials that can...",
+      "product_identity": "",
+      "score": 73,
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_16882_.jpg",
+      "url": "https://www.core77.com/posts/16882",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-24",
+      "review_reason": "纸板箱嵌入种子与菌根孢子，用后种入土壤可长成树，包装转化为生态产品。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 73,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "564053f08b5e",
       "title": "The Herston Self-Balancing Desk Lamp | Cool Material",
       "category": "氛围灯",
@@ -150332,6 +150863,76 @@
       "relevance": 10,
       "tags": [
         "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "cb39ffaa0698",
+      "title": "iPhone 15 Pro Max photography features got a whole lot better with this ingenious phone case - Yanko Design",
+      "category": "手机壳",
+      "summary": "明确单品：TORRAS UPRO Ostand手机壳以O形环支架为核心，可垂直或水平支撑手机，方便视频通话和拍摄，结构创新，适用于iPhone 15系列。。页面证据：https://www.youtube.com/watch?v=M7MSFQIJ1Jk Apple has just launched the latest generation of iPhones and, to no one's surprise, they are chock full of new features and stunning designs that take smartphones to the next level. Of course, the occasion is also an opportunity for brands to show off their new wares designed specifically for the new iPhone 15",
+      "product_identity": "",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2023/09/torras-upro-ostand-ss-and-r-cases-for-iphone-15-hands-on-elevating-the-mobile-experience/torras-upro-ss.jpg",
+      "url": "https://www.yankodesign.com/2023/09/12/torras-upro-ostand-ss-and-r-iphone-15-cases-hands-on-elevating-the-mobile-experience",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "O形环支架支持垂直/水平支撑，兼顾保护与拍摄/视频场景，结构上有明确使用创新。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 73,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "260fe81fcf91",
+      "title": "The Leitz Portable Desk Organizer for Hot-Desking - Core77",
+      "category": "创意桌搭",
+      "summary": "Leitz Hanging Desk Organizer是一款可悬挂在共享办公桌边缘的毛毡收纳袋，解决热桌空间收纳问题，结构创新明确，可买样。。页面证据：It must be hard to believe, for those that work in hot-desking situations, that there was once a time when professionals all had their own offices. Instead, the current mode is that workers keep their stuff in a locker, and break it out when a desk is available. To make",
+      "product_identity": "",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1845850_lead_400_145074_.jpg",
+      "url": "https://www.core77.com/posts/145074",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "可悬挂共享桌边缘的毛毡收纳袋，热桌场景结构创新",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 73,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -151172,40 +151773,6 @@
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "b68561eeb20a",
-      "title": "The Life Box: Packaging that turns into trees - Core77",
-      "category": "创意礼盒",
-      "summary": "Life Box 纸板箱嵌入种子与菌根孢子，用后可种植成树，将包装转化为生态材料，材料与复用创新。。页面证据：Now this is some truly brilliant package design: Mycologist Paul Stamets' Life Box, a simple cardboard box impregnated with a mixture of Department-of-Agriculture-approved seeds. The Life Box suite of products builds upon the synergy of fungi and plants by infusing spores and seeds together inside of packaging materials that can...",
-      "product_identity": "",
-      "score": 73,
-      "price_gate": "likely_over_35",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_16882_.jpg",
-      "url": "https://www.core77.com/posts/16882",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-17",
-      "last_seen": "2026-08-17",
-      "review_reason": "纸板箱嵌入种子与菌根孢子，用后种入土壤可长成树，包装转化为生态产品。",
-      "review_source": "deepseek",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 73,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
       ]
     },
     {
@@ -157009,6 +157576,40 @@
       ]
     },
     {
+      "id": "aa17831c7af4",
+      "title": "Red Dot Design Award: Magic Bamboo Charcoal Paper Packaging",
+      "category": "创意礼盒",
+      "summary": "明确单品：Red Dot获奖的Magic Bamboo Charcoal Paper Packaging。创新证据：采用台湾孟宗竹制成的竹炭纸，盒内防潮除臭且可重复使用，材料与功能创新明确，符合创意礼盒实体边界。。页面证据：“Magic Bamboo Charcoal” is an elaborately designed gift packaging manufactured using bamboo charcoal paper made from Taiwanese Moso bamboo. The inside of the two boxes is moisture-proof and deodorising so that they can be reused many times. The visual...",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.red-dot.org/de/project/magic-bamboo-charcoal-paper-packaging-21660-21660",
+      "source_name": "Red Dot",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "竹炭纸材料创新，防潮除臭功能整合于包装",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "fb94f03fbc2e",
       "title": "leon laskowski designs all in, world's first entirely 3D-printed foldable lamp",
       "category": "氛围灯",
@@ -157666,6 +158267,74 @@
       "quality_score": 72,
       "innovation": 8,
       "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "3c68bb16d8cf",
+      "title": "BLOOMIN8 -World's First Smart COLOUR E-Ink Canvas by Arpobot ...",
+      "category": "装置艺术",
+      "summary": "明确单品Arpobot BLOOMIN8，世界首款智能彩色E-Ink画布，可通过Matter-over-Thread集成智能家居，支持动态变色与艺术显示，属互动数字装置，创新证据明确。。页面证据：Oct 16, 2025 · Our journey began with Arpobot Smart Shade, a Matter-over-Thread smart home device backed by hundreds of early supporters on Kickstarter&Indiegogo. We believe that technology should be an extension of your home, not a distraction from it. Surprisingly, BLOOMIN8 Canvas was actually not inspired by famous artists.",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/arpobot/bloomin8-world-s-first-smart-colour-e-ink-canvas",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "世界首款智能彩色E-Ink画布，支持Matter智能家居动态变色，兼具数字艺术与装饰功能。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "1328dd1495eb",
+      "title": "LumiCube: An LED cube kit for the Raspberry Pi by Abstract ...",
+      "category": "装置艺术",
+      "summary": "Abstract Foundry的LumiCube是可编程LED立方体套件，带环境传感器并可自动记录温湿度/气压，属于可购买的互动光影装置，符合装置艺术预筛。。页面证据：Oct 16, 2025 · The advanced kit features an environmental sensor, so you can monitor your home or office environment. Plus it automatically records the values of all its sensors over time, so you can look back at the temperature, humidity and air pressure variations of your space.",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/abstractfoundry/lumicube-an-led-cube-kit-for-the-raspberry-pi",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "可编程LED立方体套件，集成环境传感器自动记录温湿度气压，光影互动与数据可视化结合。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 9,
+      "relevance": 8,
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
@@ -160115,6 +160784,41 @@
       ]
     },
     {
+      "id": "ce07dd816265",
+      "title": "Pencil Concept",
+      "category": "创意礼盒",
+      "summary": "明确创意礼盒概念Pencil Concept，铅笔造型，扭转末端可放入手工巧克力作为礼物，由THINK Packaging设计，结构上融合书写工具与礼品盒，具有结构创新。。页面证据：Designed by THINK Packaging | Country: New Zealand",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "https://lovelypackage.com/wp-content/uploads/2010/12/Pencil.jpg",
+      "url": "https://lovelypackage.com/pencil-concept",
+      "source_name": "Lovely Package",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "review_reason": "铅笔造型礼盒，扭转末端放入巧克力，融合书写工具与礼品盒的结构创新。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "a0bf542ac862",
       "title": "Red Dot Design Award: Prelude X Series",
       "category": "充电宝",
@@ -161959,40 +162663,6 @@
       "relevance": 9,
       "tags": [
         "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "aa17831c7af4",
-      "title": "Red Dot Design Award: Magic Bamboo Charcoal Paper Packaging",
-      "category": "创意礼盒",
-      "summary": "Magic Bamboo Charcoal纸包装，采用台湾竹炭纸，内部防潮除臭可重复使用，材料与功能创新。。页面证据：“Magic Bamboo Charcoal” is an elaborately designed gift packaging manufactured using bamboo charcoal paper made from Taiwanese Moso bamboo. The inside of the two boxes is moisture-proof and deodorising so that they can be reused many times. The visual...",
-      "product_identity": "",
-      "score": 72,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.red-dot.org/de/project/magic-bamboo-charcoal-paper-packaging-21660-21660",
-      "source_name": "Red Dot",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-07-24",
-      "review_reason": "竹炭纸材料创新，防潮除臭功能整合于包装",
-      "review_source": "deepseek",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 72,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "award_gallery",
         "deepseek_search_agent"
       ]
     },
@@ -171110,6 +171780,76 @@
       ]
     },
     {
+      "id": "ffb34eb9436b",
+      "title": "Daji Dali - Interactive Paper Calendar - by Wan Sian Lai / Core77 Design Awards",
+      "category": "日历",
+      "summary": "具体产品为 Wan Sian Lai 设计的 Daji Dali 互动纸日历，通过折叠、撕拉、按压等纸张特性呈现台湾传统节日，具有明确的交互与材料创新，可买样或作为概念原型转化。。页面证据：Daji Dali - Interactive Paper Calendar The interactive calendar of the year 2020 is made for introducing Taiwanese traditional Holidays to foreigners. The concept of the interactivities is based on the customs or topic of the main holiday each month. We utilize specific characteristics of paper, such as foldable, tearable, and pressable to create various methods of interaction. Besides, the ...",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1153648_title__106697_np3kyV6LN_sharing.jpg",
+      "url": "https://designawards.core77.com/Visual-Communication/106697/Daji-Dali-Interactive-Paper-Calendar",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-08-24",
+      "review_reason": "通过互动介绍传统节日，交互创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "e060e445a931",
+      "title": "Red Dot Design Award: ZHULAODA Soaring Dragon Gift Box – Zongzi Collection",
+      "category": "端午礼盒",
+      "summary": "Red Dot获奖的诸老大飞龙粽子礼盒，是明确礼盒产品，具备节日叙事与包装结构创新（飞龙造型/开箱设计），身份明确。。页面证据：Gift Packaging ZHULAODA Soaring Dragon Gift Box – Zongzi Collection Client Huzhou Zhulaoda Industrial Co., Ltd., Jiaxing, China Design Shanghai Xian Cao Enterprise Management Co., Ltd., Shanghai, China Web zhulaoda.tmall.com visdombrand.com",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.red-dot.org/project/zhulaoda-soaring-dragon-gift-box-zongzi-collection-73419",
+      "source_name": "Red Dot",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "Red Dot 获奖的诸老大飞龙粽子礼盒，以飞龙造型和开箱结构营造端午叙事，具备结构创新和节日礼赠价值。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 8,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "e816e4b317d7",
       "title": "Qi Lamp - A Wireless Charging Lamp for Every Home... — Kickstarter",
       "category": "氛围灯",
@@ -171423,41 +172163,6 @@
       ]
     },
     {
-      "id": "e060e445a931",
-      "title": "Red Dot Design Award: ZHULAODA Soaring Dragon Gift Box – Zongzi Collection",
-      "category": "端午礼盒",
-      "summary": "Red Dot获奖的诸老大飞龙粽子礼盒，是明确礼盒产品，具备节日叙事与包装结构创新（飞龙造型/开箱设计），身份明确。。页面证据：Gift Packaging ZHULAODA Soaring Dragon Gift Box – Zongzi Collection Client Huzhou Zhulaoda Industrial Co., Ltd., Jiaxing, China Design Shanghai Xian Cao Enterprise Management Co., Ltd., Shanghai, China Web zhulaoda.tmall.com visdombrand.com",
-      "product_identity": "",
-      "score": 70,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.red-dot.org/project/zhulaoda-soaring-dragon-gift-box-zongzi-collection-73419",
-      "source_name": "Red Dot",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-08-24",
-      "last_seen": "2026-08-24",
-      "review_reason": "Red Dot 获奖的诸老大飞龙粽子礼盒，以飞龙造型和开箱结构营造端午叙事，具备结构创新和节日礼赠价值。",
-      "review_source": "deepseek",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 70,
-      "innovation": 8,
-      "relevance": 8,
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "e9ced381f56d",
       "title": "Potiss (Concept) – Packaging Of The World",
       "category": "创意礼盒",
@@ -171625,6 +172330,179 @@
       "quality_score": 70,
       "innovation": 8,
       "relevance": 8,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "226a0ef397e0",
+      "title": "Packaging A Seed - Core77",
+      "category": "创意礼盒",
+      "summary": "Seed Symbiotic产品包装采用FSC认证纸盒与菌丝体缓冲托盘，具有材料创新和可持续叙事，符合创意礼盒。。页面证据：The biotech startup uses a bold packaging strategy to communicate their strong commitment to sustainability and design",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/968040_lead_400_91529_.jpg",
+      "url": "https://www.core77.com/posts/91529/Packaging-A-Seed",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "菌丝体托盘替代泡沫，FSC纸盒，材料可持续创新",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "6e0ec86bf3f5",
+      "title": "Red Dot Design Award: Advent Calendar and Wine Tasting Diary",
+      "category": "创意礼盒",
+      "summary": "明确单品：红点奖作品“Advent Calendar and Wine Tasting Diary”，将品酒日记与圣诞倒数日历结合，24天对应24款斯洛文尼亚葡萄酒，配手工木盒与日记本，具有结构、叙事和复用创新，具备礼盒属性。。页面证据：This wine tasting diary has 24 days, like an advent calendar. As part of a promotion set, it references 24 selected Slovenian wines. The limited edition comprises 24 randomly numbered bottles, packaged in a handmade wooden box, accompanied by a diary and...",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.red-dot.org/zh/project/advent-calendar-and-wine-tasting-diary-40964",
+      "source_name": "Red Dot",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "将品酒日记与24天圣诞倒数日历结合，手工木盒+日记本形成叙事与复用创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "b63bf5f25a4f",
+      "title": "ZARA SKIN: More Sustainable And Refillable Packaging Design",
+      "category": "创意礼盒",
+      "summary": "明确单品ZARA SKIN，包装采用hemp和mycelium材料，可再填充，属材料与可持续创新，符合创意礼盒。。页面证据：Discover ZARA SKIN: a revolutionary skincare range reflecting ZARA's minimalist aesthetic. With refillable, nature-inspired packaging, the line champions conscious consumption and environmental responsibility, offering an inclusive range of products for the 21st-century consumer.",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "https://lovelypackage.com/wp-content/uploads/2024/04/ZARA-SKIN-Revolutionizing-Skincare-with-Sustainable-and-Refillable-Packaging-Design-1024x576.png",
+      "url": "https://lovelypackage.com/zara-skin-more-sustainable-and-refillable-packaging-design",
+      "source_name": "Lovely Package",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "麻纤+菌丝体材料，可再填充结构，材料/结构创新明确",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "packaging_specialist"
+      ]
+    },
+    {
+      "id": "a3c2e9f53b97",
+      "title": "端午节礼盒the Dragon Boat Festival :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, I",
+      "category": "端午礼盒",
+      "summary": "明确端午礼盒设计项目，与完美世界游戏公司合作，画面以中国山水为原型创作粽子山，礼盒内附香囊和茶叶，有节日叙事和内容组合创新。。页面证据：Illustration, Packaging, Painting, Adobe Photoshop",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/aa835481536027.5d02504c955d2.jpg",
+      "url": "https://www.behance.net/gallery/81536027/the-Dragon-Boat-Festival",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "粽子山山水插画与游戏公司联名，内附香囊和茶叶，节日叙事和内容组合有创新",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
+      ]
+    },
+    {
+      "id": "1216dbeda376",
+      "title": "MARAIS - DIELINE MARAIS - DIELINE",
+      "category": "创意礼盒",
+      "summary": "MARAIS 礼盒由 Latona Marketing Inc. 设计，利用盒子的六个表面组合拼出键盘等图案，具备结构可组合性和复用价值，是明确的创意礼盒单品。。页面证据：Gift boxes usually just line up products neatly, one after the other, in a uniform fashion. But the boxes for MARAIS, designed by Latona Marketing Inc., are unique and can create different patterns together. By focusing on only one design but making use of all six surfaces, they made it possible to recreate keyboards and […]",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "https://i0.wp.com/thedieline.com/wp-content/uploads/2018/10/827903fd-56fb-4daa-b10a-37be33fe9532_marais02.jpg",
+      "url": "https://thedieline.com/marais",
+      "source_name": "The Dieline",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "MARAIS礼盒通过六个表面组合拼出键盘图案，结构可重组并复用展示，具有明确的包装结构创新",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -177008,6 +177886,40 @@
       ]
     },
     {
+      "id": "7e71385e1e6c",
+      "title": "Slice Planner:Hybrid paper-digital planning system by Slice ...",
+      "category": "日历",
+      "summary": "明确单品：Slice Planner 是混合纸本与数字日历的规划系统，通过计算机视觉和增强现实将纸质手写计划与 Google/Apple/Outlook 数字日历同步，属于日程规划核心创新，功能/交互/结构均有明确升级，可买样（Indiegogo 众筹），符合日历品类硬门槛。。页面证据：Oct 16, 2025 · Slice Planner is a brand new hybrid approach to planning, combining an old-fashioned paper planner with a digital calendar. Powered by computer vision and augmented reality, our unique system complements your favorite digital calendars (Google, Apple and Outlook) and provides even more flexibility to your daily planning routine.",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/sliceplanner/slice-planner-hybrid-paper-digital-planning-system",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "使用计算机视觉和AR混合纸数字规划系统，同步数字日历",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 8,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "e3b34997f53d",
       "title": "Folding Lamp Spreads Light on Interactive Art and Mass-Customization | designboom.com",
       "category": "氛围灯",
@@ -177247,40 +178159,6 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "ffb34eb9436b",
-      "title": "Daji Dali - Interactive Paper Calendar - by Wan Sian Lai / Core77 Design Awards",
-      "category": "日历",
-      "summary": "交互式纸日历，通过互动方式介绍台湾传统节日，具有交互创新，是可买样的明确单品。。页面证据：The interactive calendar of the year 2020 is made for introducing Taiwanese traditional Holidays to foreigners. The concept of the interactivities is based on the customs or topic of the main holiday each month.",
-      "product_identity": "",
-      "score": 70,
-      "price_gate": "likely_over_35",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1153648_title__106697_np3kyV6LN_sharing.jpg",
-      "url": "https://designawards.core77.com/Visual-Communication/106697/Daji-Dali-Interactive-Paper-Calendar",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-20",
-      "review_reason": "通过互动介绍传统节日，交互创新",
-      "review_source": "deepseek",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 70,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
       ]
     },
     {
