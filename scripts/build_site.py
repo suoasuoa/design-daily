@@ -31,8 +31,8 @@ DAILY_CATEGORY_CAPS = {
     "创意礼盒": 5,
     "装置艺术": 5,
     "创意厨具": 7,
-    "创意桌搭": 5,
-    "氛围灯": 5,
+    "创意桌搭": 6,
+    "氛围灯": 7,
     "水杯": 6,
     "中秋礼盒": 3,
     "端午礼盒": 3,
@@ -50,7 +50,7 @@ DAILY_CATEGORY_CAPS = {
 }
 DAILY_CATEGORY_MINIMUMS = {"日历": 4, "水杯": 5, "创意厨具": 5}
 DEFAULT_DAILY_CATEGORY_CAP = 5
-DAILY_SOURCE_CAP = 5
+DAILY_SOURCE_CAP = 7
 
 
 def effective_score(item):

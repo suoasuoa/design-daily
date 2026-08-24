@@ -98,8 +98,17 @@ def main():
         # The review gate decides quality; the remaining gap only decides
         # whether another search round is necessary.
         gap = max(1, args.target - count)
-        pass_queries = args.agent_queries + index * max(20, args.agent_queries // 2)
-        pass_pages = args.agent_pages + index * max(80, args.agent_pages // 2)
+        # More generic fallback queries reduce quality after a point. Keep each
+        # round broad but bounded, and spend the remaining overnight budget on
+        # rotating to a new round/source offset instead.
+        pass_queries = min(
+            240,
+            args.agent_queries + index * max(20, args.agent_queries // 2),
+        )
+        pass_pages = min(
+            1400,
+            args.agent_pages + index * max(80, args.agent_pages // 2),
+        )
         round_index = round_offset + index
         print(
             f"daily_minimum broad_search pass={index + 1} round={round_index + 1} gap={gap} "

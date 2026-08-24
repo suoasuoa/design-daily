@@ -11,7 +11,7 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         for cron in (
             'cron: "10 16 * * 0-4"',
             'cron: "0 20 * * 0-4"',
-            'cron: "10 23 * * 0-4"',
+            'cron: "10 22 * * 0-4"',
         ):
             self.assertIn(cron, workflow)
         self.assertEqual(workflow.count("- cron:"), 3)
@@ -32,7 +32,7 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         self.assertIn('echo "TOPUP_AGENT_QUERIES=180"', workflow)
         self.assertIn('echo "TOPUP_AGENT_PAGES=800"', workflow)
         self.assertIn("Final overnight search-provider fallback", workflow)
-        self.assertIn("github.event.schedule == '10 23 * * 0-4'", workflow)
+        self.assertIn('echo "FINAL_PROVIDER=1"', workflow)
         self.assertIn('USE_TAVILY_SEARCH: "1"', workflow)
         self.assertIn('--search-workers 3', workflow)
         self.assertIn('--curated-limit 180', workflow)
@@ -41,6 +41,9 @@ class InsightOffPeakWorkflowTests(unittest.TestCase):
         self.assertIn("ref: main", workflow)
         self.assertIn("Enforce daily quality gate", workflow)
         self.assertIn("python3 scripts/verify_daily_quality.py", workflow)
+        self.assertIn('echo "FINAL_PROVIDER=1"', workflow)
+        self.assertIn("env.FINAL_PROVIDER != '1'", workflow)
+        self.assertIn("env.FINAL_PROVIDER == '1'", workflow)
         self.assertNotIn("allow_peak:", workflow)
         self.assertNotIn('cron: "10 10 * * 1-5"', workflow)
 

@@ -6,7 +6,7 @@ on:
     # Early-morning UTC schedules use Sunday-Thursday because Beijing is on the next day.
     - cron: "10 16 * * 0-4" # 00:10 Beijing: continuous collection, up to 8 rounds
     - cron: "0 20 * * 0-4"  # 04:00 Beijing: recovery checkpoint
-    - cron: "10 23 * * 0-4" # 07:10 Beijing: final recovery
+    - cron: "10 22 * * 0-4" # 06:10 Beijing: final recovery
   workflow_dispatch:
     inputs:
       score_limit:
@@ -104,6 +104,7 @@ jobs:
               bj_hm="$(TZ=Asia/Shanghai date +%H%M)"
               echo "DAILY_TARGET=40" >> "$GITHUB_ENV"
               if [ "${{ github.event.schedule }}" = "10 16 * * 0-4" ]; then
+                echo "FINAL_PROVIDER=0" >> "$GITHUB_ENV"
                 echo "RUN_MODE=main" >> "$GITHUB_ENV"
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=180" >> "$GITHUB_ENV"
@@ -120,16 +121,19 @@ jobs:
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
                 if [ "${{ github.event.schedule }}" = "0 20 * * 0-4" ]; then
+                  echo "FINAL_PROVIDER=0" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_QUERIES=140" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=650" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=6" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
-                elif [ "${{ github.event.schedule }}" = "10 23 * * 0-4" ]; then
+                elif [ "${{ github.event.schedule }}" = "10 22 * * 0-4" ]; then
+                  echo "FINAL_PROVIDER=1" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_QUERIES=180" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=800" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
                   echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
                 else
+                  echo "FINAL_PROVIDER=0" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_QUERIES=60" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=280" >> "$GITHUB_ENV"
                   echo "TOPUP_MAX_PASSES=4" >> "$GITHUB_ENV"
@@ -248,7 +252,7 @@ jobs:
         run: python3 scripts/ensure_daily_social_minimum.py --target "$SOCIAL_TARGET" --batch-jobs 50 --per-job 4 --max-passes 1 --sleep 0.1 --workers 4
 
       - name: Ensure 40 daily accepted picks
-        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE != 'backlog'
+        if: env.SKIP_INSIGHT != '1' && env.RUN_MODE != 'backlog' && env.FINAL_PROVIDER != '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
@@ -268,7 +272,7 @@ jobs:
             --shopify-pages 3
 
       - name: Final overnight search-provider fallback
-        if: env.SKIP_INSIGHT != '1' && github.event_name == 'schedule' && github.event.schedule == '10 23 * * 0-4'
+        if: env.SKIP_INSIGHT != '1' && env.FINAL_PROVIDER == '1'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: deepseek-v4-flash
@@ -278,7 +282,7 @@ jobs:
           python3 scripts/ensure_daily_minimum.py \
             --target "$DAILY_TARGET" \
             --per-job 10 \
-            --max-passes 1 \
+            --max-passes 2 \
             --workers 3 \
             --agent-queries 120 \
             --agent-pages 600 \
