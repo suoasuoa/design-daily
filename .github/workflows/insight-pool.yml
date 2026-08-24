@@ -51,6 +51,9 @@ jobs:
     env:
       DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:40"
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "1"
+      # Do not start a costly search/screen round that cannot finish before the
+      # overnight window closes.
+      DEEPSEEK_MIN_ROUND_MINUTES: "35"
       DEEPSEEK_USAGE_FILE: "data/reports/deepseek-usage.json"
       # Overnight time enforcement is the cost control. Usage remains recorded
       # for evaluation, but quality collection is not stopped by a token quota.
@@ -267,6 +270,8 @@ jobs:
             --agent-queries "$TOPUP_AGENT_QUERIES" \
             --agent-pages "$TOPUP_AGENT_PAGES" \
             --agent-screen-workers 6 \
+            --agent-batch-size 12 \
+            --min-round-minutes "$DEEPSEEK_MIN_ROUND_MINUTES" \
             --review-batch-size 8 \
             --curated-limit 180 \
             --shopify-pages 3
@@ -287,6 +292,8 @@ jobs:
             --agent-queries 120 \
             --agent-pages 600 \
             --agent-screen-workers 6 \
+            --agent-batch-size 12 \
+            --min-round-minutes "$DEEPSEEK_MIN_ROUND_MINUTES" \
             --review-batch-size 8 \
             --curated-limit 180 \
             --shopify-pages 3

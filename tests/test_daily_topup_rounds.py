@@ -31,12 +31,22 @@ class DailyTopupRoundTests(unittest.TestCase):
         ), patch.object(ensure_daily_minimum, "today", return_value="2026-08-21"):
             self.assertEqual(ensure_daily_minimum.agent_round_offset(), 0)
 
-    def test_each_round_caps_generic_query_growth(self):
+    def test_each_round_rotates_without_generic_query_growth(self):
         source = inspect.getsource(ensure_daily_minimum.main)
-        self.assertIn("pass_queries = min(", source)
-        self.assertIn("240,", source)
-        self.assertIn("pass_pages = min(", source)
-        self.assertIn("1400,", source)
+        self.assertIn("pass_queries = min(240, max(60, args.agent_queries))", source)
+        self.assertIn("pass_pages = min(1400, max(280, args.agent_pages))", source)
+        self.assertNotIn("args.agent_queries + index", source)
+
+    def test_rounds_stop_when_the_window_is_too_short(self):
+        source = inspect.getsource(ensure_daily_minimum.main)
+        self.assertIn("window_status()", source)
+        self.assertIn("args.min_round_minutes", source)
+        self.assertIn("daily_minimum stop_before_round", source)
+
+    def test_each_round_uses_failure_resistant_screen_batches(self):
+        source = inspect.getsource(ensure_daily_minimum.main)
+        self.assertIn('"--batch-size"', source)
+        self.assertIn("str(args.agent_batch_size)", source)
 
 
 if __name__ == "__main__":

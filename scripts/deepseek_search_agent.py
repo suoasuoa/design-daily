@@ -16,7 +16,7 @@ import urllib.parse
 import urllib.request
 
 from collect_search import fetch_results, source_meta_for_url
-from deepseek_policy import record_deepseek_usage, reserve_deepseek_call
+from deepseek_policy import record_deepseek_usage, reserve_deepseek_call, usage_report
 from insight_common import (
     DATA_DIR,
     RAW_DIR,
@@ -47,6 +47,8 @@ DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 SSL_CONTEXT = ssl._create_unverified_context()
 USER_AGENT = "Mozilla/5.0 DesignDailyDeepSeekAgent/1.0"
 PRE_REVIEW_VERSION = 3
+SCREEN_LEDGER_VERSION = 1
+SCREEN_LEDGER_NAME = "deepseek-screened-today.json"
 
 
 class PageMetaParser(HTMLParser):
@@ -183,6 +185,40 @@ def seen_urls():
             if url:
                 seen.add(url)
     return seen
+
+
+def candidate_screen_key(row):
+    url = canonical_url(row.get("url") or "")
+    return stable_hash(url) if url else ""
+
+
+def screened_candidate_keys():
+    """Return candidates already sent to DeepSeek pre-screening today."""
+    payload = load_json(DATA_DIR / "reports" / SCREEN_LEDGER_NAME, {})
+    if payload.get("date") != today() or payload.get("version") != SCREEN_LEDGER_VERSION:
+        return set()
+    return {str(value) for value in payload.get("candidate_keys", []) if value}
+
+
+def remember_screened_candidates(candidate_ids, rows):
+    """Persist only candidates for which DeepSeek returned a decision."""
+    by_id = {row.get("id"): row for row in rows}
+    keys = screened_candidate_keys()
+    for candidate_id in candidate_ids:
+        row = by_id.get(candidate_id)
+        key = candidate_screen_key(row or {})
+        if key:
+            keys.add(key)
+    write_json(
+        DATA_DIR / "reports" / SCREEN_LEDGER_NAME,
+        {
+            "date": today(),
+            "version": SCREEN_LEDGER_VERSION,
+            "updated_at": now_iso(),
+            "candidate_keys": sorted(keys),
+        },
+    )
+    return len(keys)
 
 
 def allowed_domains():
@@ -481,9 +517,16 @@ def screen_batch(batch, split_on_failure=True):
         print(f"screen_batch_failed size={len(batch)} error={exc}", flush=True)
         if split_on_failure and len(batch) > 1:
             midpoint = max(1, len(batch) // 2)
-            return screen_batch(batch[:midpoint], False) + screen_batch(batch[midpoint:], False)
-        return []
+            left_kept, left_processed = screen_batch(batch[:midpoint], False)
+            right_kept, right_processed = screen_batch(batch[midpoint:], False)
+            return left_kept + right_kept, left_processed | right_processed
+        return [], set()
     by_id = {row.get("id"): row for row in batch}
+    processed = {
+        decision.get("id")
+        for decision in result
+        if decision.get("id") in by_id
+    }
     kept = []
     for decision in result:
         candidate = by_id.get(decision.get("id"))
@@ -508,19 +551,21 @@ def screen_batch(batch, split_on_failure=True):
             **scores,
         }
         kept.append(candidate)
-    return kept
+    return kept, processed
 
 
 def screen_candidates(rows, batch_size=20, workers=6):
     batches = [rows[index : index + batch_size] for index in range(0, len(rows), batch_size)]
     kept = []
+    processed = set()
     with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = [executor.submit(screen_batch, batch) for batch in batches]
         for future in as_completed(futures):
-            accepted = future.result()
+            accepted, decided_ids = future.result()
             kept.extend(accepted)
+            processed.update(decided_ids)
             print(f"agent_screen progress_kept={len(kept)}", flush=True)
-    return kept
+    return kept, processed
 
 
 def lead_from_candidate(row, round_index):
@@ -584,17 +629,32 @@ def write_agent_report(stats):
 
 
 def run_agent(args):
+    usage_before = usage_report()
     current_count, current_categories = accepted_today(args.target)
     allowed_categories = searchable_categories(current_categories)
     jobs = plan_queries(args.query_count, args.target, args.round)
     print(f"agent_plan queries={len(jobs)} current={current_count}/{args.target}", flush=True)
     results = execute_searches(jobs, args.per_query, args.search_workers)
     known = seen_urls()
-    fresh = [row for row in results if canonical_url(row.get("url") or "") not in known]
+    screened_today = screened_candidate_keys()
+    unseen_history = [
+        row for row in results
+        if canonical_url(row.get("url") or "") not in known
+    ]
+    fresh = [
+        row for row in unseen_history
+        if candidate_screen_key(row) not in screened_today
+    ]
+    skipped_screened_today = len(unseen_history) - len(fresh)
     fresh = balanced_limit(fresh, args.max_pages)
-    print(f"agent_search results={len(results)} fresh={len(fresh)} page_limit={args.max_pages}", flush=True)
+    print(
+        f"agent_search results={len(results)} fresh={len(fresh)} "
+        f"skipped_screened_today={skipped_screened_today} page_limit={args.max_pages}",
+        flush=True,
+    )
     enriched = enrich_pages(fresh, args.page_workers)
-    screened = screen_candidates(enriched, args.batch_size, args.screen_workers)
+    screened, processed_ids = screen_candidates(enriched, args.batch_size, args.screen_workers)
+    screened_ledger_size = remember_screened_candidates(processed_ids, enriched)
     screened = [
         row
         for row in screened
@@ -606,6 +666,7 @@ def run_agent(args):
     merged, existing, added = merge_leads(path, leads)
     write_json(path, merged)
     by_category = Counter(lead.get("category") for lead in leads)
+    usage_after = usage_report()
     stats = {
         "round": args.round + 1,
         "generated_at": now_iso(),
@@ -614,10 +675,18 @@ def run_agent(args):
         "queries": len(jobs),
         "search_results": len(results),
         "fresh_direct_urls": len(fresh),
+        "skipped_screened_today": skipped_screened_today,
         "pages_enriched": sum(bool(row.get("description") or row.get("page_title")) for row in enriched),
         "pre_screened": len(enriched),
+        "screened_decisions": len(processed_ids),
+        "screened_ledger_size": screened_ledger_size,
         "kept": len(leads),
         "added": added,
+        "deepseek_calls": max(0, int(usage_after.get("calls") or 0) - int(usage_before.get("calls") or 0)),
+        "deepseek_tokens": max(
+            0,
+            int(usage_after.get("total_tokens") or 0) - int(usage_before.get("total_tokens") or 0),
+        ),
         "by_category": dict(by_category.most_common()),
     }
     write_agent_report(stats)

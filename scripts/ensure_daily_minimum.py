@@ -6,6 +6,7 @@ import subprocess
 import sys
 
 from build_site import build_daily_groups, record, sorted_products
+from deepseek_policy import window_status
 from insight_common import DATA_DIR, load_daily_history, load_json, today
 
 
@@ -59,6 +60,8 @@ def main():
     parser.add_argument("--agent-queries", type=int, default=60)
     parser.add_argument("--agent-pages", type=int, default=280)
     parser.add_argument("--agent-screen-workers", type=int, default=6)
+    parser.add_argument("--agent-batch-size", type=int, default=12)
+    parser.add_argument("--min-round-minutes", type=int, default=35)
     parser.add_argument(
         "--refresh",
         action="store_true",
@@ -94,21 +97,24 @@ def main():
 
     round_offset = agent_round_offset()
     for index in range(args.max_passes):
+        window = window_status()
+        if not window.get("open") or int(window.get("minutes_remaining") or 0) < args.min_round_minutes:
+            print(
+                "daily_minimum stop_before_round "
+                f"open={window.get('open')} remaining={window.get('minutes_remaining')} "
+                f"required={args.min_round_minutes}",
+                flush=True,
+            )
+            break
         # Keep a broad candidate pool even when the display deficit is small.
         # The review gate decides quality; the remaining gap only decides
         # whether another search round is necessary.
         gap = max(1, args.target - count)
-        # More generic fallback queries reduce quality after a point. Keep each
-        # round broad but bounded, and spend the remaining overnight budget on
-        # rotating to a new round/source offset instead.
-        pass_queries = min(
-            240,
-            args.agent_queries + index * max(20, args.agent_queries // 2),
-        )
-        pass_pages = min(
-            1400,
-            args.agent_pages + index * max(80, args.agent_pages // 2),
-        )
+        # Rotate queries and sources between rounds instead of increasing every
+        # later round. The old growth reached hundreds of broad queries after
+        # marginal yield had fallen, multiplying pre-screen token use.
+        pass_queries = min(240, max(60, args.agent_queries))
+        pass_pages = min(1400, max(280, args.agent_pages))
         round_index = round_offset + index
         print(
             f"daily_minimum broad_search pass={index + 1} round={round_index + 1} gap={gap} "
@@ -133,6 +139,8 @@ def main():
                 str(args.workers),
                 "--screen-workers",
                 str(args.agent_screen_workers),
+                "--batch-size",
+                str(args.agent_batch_size),
             ]
         )
         run(
@@ -149,6 +157,14 @@ def main():
         )
         run([sys.executable, "scripts/dedupe.py"])
         run([sys.executable, "scripts/review_categories.py", "--batch-size", str(args.review_batch_size)])
+        run(
+            [
+                sys.executable,
+                "scripts/promote_reviewed_backlog.py",
+                "--target",
+                str(args.target),
+            ]
+        )
 
         count = today_count(args.target)
         print(f"daily_minimum pass={index + 1} count={count} target={args.target}", flush=True)
