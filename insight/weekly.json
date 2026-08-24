@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T03:34:22+08:00",
+  "generated_at": "2026-08-25T03:07:57+08:00",
   "week": "2026-W35",
   "group_id": "2026-W35",
   "date_start": "2026-08-24",
@@ -11,29 +11,29 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 48,
+      "适合改造": 47,
       "方向参考": 29,
-      "可直接买样": 23
+      "可直接买样": 24
     },
     "by_category": {
-      "充电宝": 23,
-      "水杯": 15,
-      "氛围灯": 11,
+      "充电宝": 27,
+      "水杯": 14,
       "创意礼盒": 10,
       "手机壳": 9,
       "创意桌搭": 8,
+      "氛围灯": 8,
       "创意厨具": 7,
       "中秋礼盒": 7,
-      "冲锋衣": 5,
-      "日历": 3,
-      "端午礼盒": 2
+      "冲锋衣": 4,
+      "端午礼盒": 3,
+      "日历": 3
     },
     "by_axis": {
-      "功能启发": 65,
-      "结构启发": 60,
+      "功能启发": 66,
+      "结构启发": 56,
       "包装启发": 27,
-      "情绪启发": 14,
-      "视觉启发": 9
+      "情绪启发": 12,
+      "视觉启发": 10
     }
   },
   "dedupe": {
@@ -556,6 +556,32 @@
       "tags": [
         "social_public_index",
         "手机壳"
+      ]
+    },
+    {
+      "id": "a3c2e9f53b97",
+      "product_key": null,
+      "title": "端午节礼盒the Dragon Boat Festival :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, I",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/81536027/the-Dragon-Boat-Festival",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/aa835481536027.5d02504c955d2.jpg",
+      "summary": "明确端午礼盒设计项目，与完美世界游戏公司合作，画面以中国山水为原型创作粽子山，礼盒内附香囊和茶叶，有节日叙事和内容组合创新。。页面证据：Illustration, Packaging, Painting, Adobe Photoshop",
+      "risk": "粽子山山水插画与游戏公司联名，内附香囊和茶叶，节日叙事和内容组合有创新",
+      "review_confidence": 8,
+      "review_reason": "粽子山山水插画与游戏公司联名，内附香囊和茶叶，节日叙事和内容组合有创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -2155,6 +2181,193 @@
       ]
     },
     {
+      "id": "000d9ca41917",
+      "product_key": null,
+      "title": "Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "standard",
+      "url": "https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost",
+      "image": "https://www.yankodesign.com/images/design_news/2024/05/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost/TORRAS_MiniMag_Power_Bank_Ostand_R_hero.jpg",
+      "summary": "TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，超薄磁吸设计。。页面证据：https://youtu.be/cJQ3YE5U2xA Picture this, it’s summer, you’ve packed your bags and you’re heading on a Eurotrip (maybe for a nice holiday on the Amalfi coast or to see Taylor Swift perform). In true holiday fashion, you intend on spending the entire day out and about, exploring the city, but you realize an hour in that your",
+      "risk": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小超薄设计，磁吸充电，便携性结构创新",
+      "review_confidence": 9,
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小超薄设计，磁吸充电，便携性结构创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "820b9a155190",
+      "product_key": null,
+      "title": "KUMIKO OLED Modular Lighting Turns Off Into a Mirror",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/kumiko-oled-lighting",
+      "image": "https://design-milk.com/images/2017/07/kumiko-OLED.jpg",
+      "summary": "KUMIKO OLED Modular Lighting是明确的模块化灯具单品：1mm厚OLED面板可磁吸拼接，开启为氛围灯，关闭时变身镜子，以光电材料与交互结构实现双重功能，创新证据明确。。页面证据：A customizable and modular system of 1mm-thick OLED panels snap magnetically into mood lighting when on, and transform into a mirror while off.",
+      "risk": "1mm厚OLED面板磁吸拼接，开启为氛围灯、关闭为镜子，光电材料与模块化结构双功能创新明确",
+      "review_confidence": 9,
+      "review_reason": "1mm厚OLED面板磁吸拼接，开启为氛围灯、关闭为镜子，光电材料与模块化结构双功能创新明确",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "146445843e50",
+      "product_key": null,
+      "title": "Finally, Wireless and GaN Charging That’s Tiny And Turbo-fast: Meet the Baseus PicoGo II Series - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/09/10/finally-wireless-and-gan-charging-thats-tiny-and-turbo-fast-meet-the-baseus-picogo-ii-series",
+      "image": "https://www.yankodesign.com/images/design_news/2025/09/draft-baseus/baseus_picogo_2_1.jpeg",
+      "summary": "Baseus PicoGo AM31磁吸充电宝，采用GaN技术和Qi2认证，实现小型化与15W无线快充。。页面证据：The charging accessory market feels a lot like the wild west of consumer tech, a sprawling landscape of promises and pitfalls. For years, we’ve been stuffing our bags with bulky power bricks, tangled cables, and chargers that feel suspiciously warm to the touch. The Gallium Nitride (GaN) revolution promised a new world order, one defined",
+      "risk": "采用GaN技术与Qi2认证，实现小型化与15W无线快充",
+      "review_confidence": 9,
+      "review_reason": "采用GaN技术与Qi2认证，实现小型化与15W无线快充",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "819157f1aedb",
+      "product_key": null,
+      "title": "MagSafe Power Bank Has All The Charging Options You Need For Power On The Go - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/03/28/magsafe-power-bank-has-all-the-charging-options-you-need-for-power-on-the-go",
+      "image": "https://www.yankodesign.com/images/design_news/2025/03/magsafe-power-bank-has-all-the-charging-options-you-need-for-power-on-the-go/ridge-magnetic-power-bank-08.jpg",
+      "summary": "明确MagSafe充电宝，兼具无线充电与内置线缆，创新一体设计。。页面证据：Remember the days when you'd scramble to find different chargers for each of your devices? Those frantic moments of digging through bags for the right cable while your phone battery hovers at 2% are becoming a thing of the past. The latest MagSafe power banks are revolutionizing how we keep our growing collection of tech",
+      "risk": "内置多条充电线缆与MagSafe无线充电，一体化设计",
+      "review_confidence": 9,
+      "review_reason": "内置多条充电线缆与MagSafe无线充电，一体化设计",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "7f541c5c8c79",
+      "product_key": null,
+      "title": "Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/8-in-1-magnetic-wireless-power-bank-82071",
+      "image": "",
+      "summary": "明确单品：8-in-1 Magnetic Wireless Power Bank，集成15W无线充电、手表耳机充电、70cm拉出线及手机支架，多合一功能创新，实用性强。。页面证据：This multifunctional 10,000 mAh 8-in-1 Magnetic Wireless Power Bank combines a 15-watt wireless charger with dedicated charging areas for watches and headphones, alongside a pull-out 70 cm data cable and a phone stand. It replaces multiple chargers with...",
+      "risk": "8-in-1功能集成，自带70cm拉出线和手机支架，创新结构设计",
+      "review_confidence": 9,
+      "review_reason": "8-in-1功能集成，自带70cm拉出线和手机支架，创新结构设计",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
+      "id": "419b27660e51",
+      "product_key": null,
+      "title": "iF Design - Anker Laptop Power Bank (25K, 165W)",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "视觉启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/anker-laptop-power-bank-25k-165w/711250",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "具体产品：Anker Laptop Power Bank (25K, 165W) / 型号Zolo。创新为内置可伸缩双USB-C线缆（70cm和30cm）及1.3英寸彩色屏幕显示实时时间，集成度高。。页面证据：The Anker Zolo Power Bank (25K, 165W, built-in retractable cables) is designed for fast charging multiple devices simultaneously, compatible with all devices. This power bank allows users to charge freely in various settings—traveling, at home, or outdoors—eliminating battery anxiety. With a capacity of 25,000mAh and an output power of 100W, it features four ports and two built-in USB-C cables (a 70cm retractable cable and a 30cm short cable). It also has a high-definition 1.3-inch color screen displaying real-time time information.",
+      "risk": "内置70cm伸缩线和30cm短线，1.3英寸彩屏显示信息",
+      "review_confidence": 9,
+      "review_reason": "内置70cm伸缩线和30cm短线，1.3英寸彩屏显示信息",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "buy_sample"
+      ]
+    },
+    {
+      "id": "741eb88143f4",
+      "product_key": null,
+      "title": "Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2026/05/22/stop-packing-two-chargers-trozks-50-binary-star-does-both",
+      "image": "",
+      "summary": "Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both Travel chargers have always been a bit of a negotiation. You pack a power bank for the long haul, then stuff a wall adapter in...",
+      "risk": "二合一设计，集成充电宝与墙充，减少携带设备数量",
+      "review_confidence": 9,
+      "review_reason": "二合一设计，集成充电宝与墙充，减少携带设备数量",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "Yanko Design",
+        "充电宝"
+      ]
+    },
+    {
       "id": "39c645746e14",
       "product_key": null,
       "title": "iF Design - Mijia Desk Study Lamp Pro",
@@ -2340,196 +2553,6 @@
       ]
     },
     {
-      "id": "2945570203a2",
-      "product_key": null,
-      "title": "This MagSafe Wallet + Power Bank + Tracking Device might just be the ...",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2023/09/15/this-magsafe-wallet-power-bank-tracking-device-might-just-be-the-ultimate-iphone-accessory-ever",
-      "image": "",
-      "summary": "The people who say Less Is More clearly didn't come across the Stympro. A 4-in-1 accessory for your iPhone, this bad-boy is a MagSafe Power Bank, a Wallet, a Phone Stand, and a 'Find My' compatible Tracking Device all bundled into one. Quite literally the perf",
-      "risk": "四合一设计：MagSafe充电宝、钱包、手机支架、追踪器，功能集成创新。",
-      "review_confidence": 9,
-      "review_reason": "四合一设计：MagSafe充电宝、钱包、手机支架、追踪器，功能集成创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "editorial_main",
-        "充电宝"
-      ]
-    },
-    {
-      "id": "a3ba600a327d",
-      "product_key": null,
-      "title": "LEDVANCE AI Companion Lighting Robot",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/ledvance-ai-companion-lighting-robot/763544",
-      "image": "https://ifdalivestorage.blob.core.windows.net/user-uploads/1180348/763544/5905cf6b-0f65-46df-bb36-75b88e158abd/1_ai_companion_lighting_robot.jpeg",
-      "summary": "iF Design Award · LEDVANCE AI Companion Lighting Robot defines a new class of intelligent, responsive luminaires by combining six-axis robotics, AI vision, and affective computing. It proactively adapts to five key user activities with optimized beam distribution, arm",
-      "risk": "Combines six-axis robotics, AI vision, and affective computing to proactively adapt lighting to user activities.",
-      "review_confidence": 9,
-      "review_reason": "Combines six-axis robotics, AI vision, and affective computing to proactively adapt lighting to user activities.",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "iF Design Award",
-        "iF获奖"
-      ]
-    },
-    {
-      "id": "cf94356db077",
-      "product_key": null,
-      "title": "Red Dot Design Award: Future Shell Modular Suit",
-      "category": "冲锋衣",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/future-shell-modular-suit-68496",
-      "image": "",
-      "summary": "明确单品：Future Shell Modular Suit，红点奖；儿童三合一模块化夹克，外层、保暖层、运动层可自由组合适应天气，保暖层使用回收海洋塑料填充，结构创新和环保材料明确。。页面证据：The Future Shell Modular Suit is an all-weather jacket for children. It consists of three layers: a protective layer, a thermal layer and a sportswear layer. These can be combined depending on weather conditions, making the jacket suitable for outdoor...",
-      "risk": "三层模块化设计，适应-15°C至+25°C，可组合拆解",
-      "review_confidence": 9,
-      "review_reason": "三层模块化设计，适应-15°C至+25°C，可组合拆解",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "50d95cbc255b",
-      "product_key": null,
-      "title": "IKEA Built A $4 Stick-On Light That Lasts 6 Months - Yanko Design",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/03/05/ikea-built-a-4-stick-on-light-that-lasts-6-months",
-      "image": "https://www.yankodesign.com/images/design_news/2026/03/ikea-built-a-4-stick-on-light-that-lasts-6-months/ANKARLAGG-01.jpg",
-      "summary": "IKEA ANKARLÄGG 是一款低价（约$4）电池驱动粘贴式LED夜灯，续航6个月，用极简设计解决夜间照明摩擦，功能与交互创新明确。。页面证据：IKEA has always had a knack for making you feel clever. You walk into the store needing a bookshelf, and you leave with a bag full of small, inexpensive things you didn't know existed but now can't imagine living without. The ANKARLÄGG is exactly that kind of product. It's a battery-operated LED nightlight shaped like",
-      "risk": "粘贴式电池LED灯，约4美元，续航6个月，低成本易部署的日常照明创新。",
-      "review_confidence": 9,
-      "review_reason": "粘贴式电池LED灯，约4美元，续航6个月，低成本易部署的日常照明创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "0ca6612f0a22",
-      "product_key": null,
-      "title": "Red Dot Design Award: Light Ball Lamp",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/de/project/light-ball-lamp-40495",
-      "image": "",
-      "summary": "Red Dot Light Ball Lamp为明确灯具单品，球体通过磁吸固定于底座并可无线充电，可拆卸移动使用，结构交互创新清晰。。页面证据：The Light Ball Lamp brings a fresh look to contemporary household lightning, allowing light and colour to be brought to all parts of the home. The light source can be detached from its base and placed anywhere to illuminate every corner of the room. With...",
-      "risk": "符合氛围灯品类：核心是可使用的家用灯具单品。文字信息提供了明确的结构与交互创新，包括球体光源、磁吸底座、可拆卸移动照明、无线充电，以及可把光和色彩带到不同空间的使用场景；不是普通基础灯或纯造型变化，具备较高转化价值和价格空间。",
-      "review_confidence": 8,
-      "review_reason": "符合氛围灯品类：核心是可使用的家用灯具单品。文字信息提供了明确的结构与交互创新，包括球体光源、磁吸底座、可拆卸移动照明、无线充电，以及可把光和色彩带到不同空间的使用场景；不是普通基础灯或纯造型变化，具备较高转化价值和价格空间。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "f6c81f7d84a1",
-      "product_key": null,
-      "title": "The Most Fun Lamp/Power-bank EVER! - Yanko Design",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2017/01/27/lunar-the-most-fun-multifunctional-lantern",
-      "image": "https://www.yankodesign.com/images/design_news/2017/01/project_lunar_cover2.jpg",
-      "summary": "Lunar灯笼灯是多功能氛围灯+充电宝，核心创新是模块化设计——手电模块可替换为环境光模块，并能给手机充电，互动性和场景适配创新明确，产品形态清晰。。页面证据：https://vimeo.com/201286573 Honestly though. The Lunar lantern is just the most nerdy, fun lamp you'll ever own. Trust it to be the perfect addition to your parties or camping trips because it'll get everyone talking in no time! Designed to work like a gas lantern, the lamp spreads a wonderful incandescent glow, mimicking the warmth and",
-      "risk": "该产品属于可使用的便携氛围灯/露营灯，不是纯装置或普通灯具。文字说明提供了模块化灯笼、手电模块与环境光模块替换、可为手机充电等功能证据；图片也显示其在营地和手持照明场景下的双形态使用。具备结构转换、户外便携、照明氛围和移动电源复合功能，实用性和可转化选品价值较强。",
-      "review_confidence": 9,
-      "review_reason": "该产品属于可使用的便携氛围灯/露营灯，不是纯装置或普通灯具。文字说明提供了模块化灯笼、手电模块与环境光模块替换、可为手机充电等功能证据；图片也显示其在营地和手持照明场景下的双形态使用。具备结构转换、户外便携、照明氛围和移动电源复合功能，实用性和可转化选品价值较强。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "0732c60f6c7b",
-      "product_key": null,
-      "title": "The SuperTank powers your phone for a week, and recharges in an hour! - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 82,
-      "score_label": "8.2",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2019/06/18/the-supertank-powers-your-phone-for-a-week-and-recharges-in-an-hour",
-      "image": "https://www.yankodesign.com/images/design_news/2019/06/supertank_portable_charger_layout.jpg",
-      "summary": "SuperTank 27000mAh充电宝，双USB-C PD 100W+60W，快速自充。。页面证据：https://youtu.be/-pKgyWAvceM Sixty minutes is all that it takes for the SuperTank to power-up and be ready for deployment. This 27,000 mAh portable charger with dual USB-C PD (100W + 60W) and dual USB-A ports, has the potential to quickly charge MacBook Pros and many other devices. What this means to people on the go, is",
-      "risk": "27000mAh容量，双USB-C PD 100W+60W输出，1小时快速自充",
-      "review_confidence": 9,
-      "review_reason": "27000mAh容量，双USB-C PD 100W+60W输出，1小时快速自充",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
       "id": "d651bc7fe84f",
       "product_key": null,
       "title": "Red Dot Design Award: 3-in-1 Travel Portable Charger",
@@ -2686,33 +2709,6 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "c08e96dcc07e",
-      "product_key": null,
-      "title": "Red Dot Design Award: Thermo Mug Without Thread",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/thermo-mug-without-thread-79401",
-      "image": "",
-      "summary": "Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置锁定防漏，可拆卸硅胶套，结构创新与交互创新明确。。页面证据：This thermo mug without a screw thread features a push-button opening mechanism that can be operated with one hand. A built-in toggle lock prevents accidental spills, while also serving as a fun fidget feature. The smooth rim and removable silicone sleeve...",
-      "risk": "无螺纹按压开盖单手操作，内置锁定防漏",
-      "review_confidence": 9,
-      "review_reason": "无螺纹按压开盖单手操作，内置锁定防漏",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "award_gallery",
         "deepseek_search_agent"
       ]
     }
