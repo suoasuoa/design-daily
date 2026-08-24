@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-24T06:37:33+08:00",
+  "generated_at": "2026-08-24T08:46:21+08:00",
   "stats": {
-    "total_items": 2716,
+    "total_items": 2721,
     "by_category": {
       "氛围灯": 518,
       "创意厨具": 452,
@@ -10,38 +10,38 @@
       "充电宝": 298,
       "冲锋衣": 186,
       "手机壳": 178,
-      "创意礼盒": 130,
+      "创意礼盒": 133,
       "日历": 119,
       "中秋礼盒": 53,
-      "装置艺术": 22,
-      "端午礼盒": 15,
+      "装置艺术": 23,
+      "端午礼盒": 16,
       "钥匙扣水壶": 2
     },
     "by_lane": {
-      "适合改造": 2021,
-      "方向参考": 670,
+      "适合改造": 2025,
+      "方向参考": 671,
       "可直接买样": 25
     },
     "by_axis": {
       "功能启发": 1750,
-      "结构启发": 1460,
-      "情绪启发": 603,
-      "包装启发": 403,
+      "结构启发": 1464,
+      "情绪启发": 604,
+      "包装启发": 407,
       "视觉启发": 388
     },
     "by_source_family": {
-      "媒体案例": 1038,
-      "市场信号": 949,
+      "媒体案例": 1039,
+      "市场信号": 952,
       "奖项案例": 394,
       "社交灵感": 108,
       "包装专项": 94,
-      "设计社区": 89,
+      "设计社区": 90,
       "弱市场信号": 29,
       "趋势观察": 15
     },
     "by_image_state": {
-      "已对齐": 1357,
-      "缺图": 1352,
+      "已对齐": 1358,
+      "缺图": 1356,
       "待核图": 7
     }
   },
@@ -34145,6 +34145,41 @@
           ]
         },
         {
+          "id": "c0ab2a0c7326",
+          "title": "Kickstarter >> INSCAPE- Pirate Treasure- Dragons Gate- Heartlock Puzzle Box by INSCAPE",
+          "category": "创意礼盒",
+          "summary": "INSCAPE手工木制密室逃脱拼图礼盒，三个主题（Pirate Treasure/Dragons Gate/Heartlock），带隐藏机械开箱结构，有叙事和解谜创新，可买样。。页面证据：Handcrafted wooden escape room in a box with hidden mechanisms - creative box – challenge your logic and dexterity! 3 new puzzle boxes",
+          "product_identity": "",
+          "score": 79,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.kickstarter.com/projects/inscapebox/inscape-pirate-chest-dragons-gate-heartlock-puzzle-box",
+          "source_name": "Kickstarter",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "手工木制密室逃脱拼图盒，隐藏机械开箱，多主题叙事，解谜交互创新。",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 79,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "buy_sample",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "bb6297cf9c4d",
           "title": "The ‘Swiss Army Knife’ of bottles has its own straw, spork, and storage compartment for your EDC - Yanko Design",
           "category": "水杯",
@@ -34211,41 +34246,6 @@
           "tags": [
             "deepseek_search_agent",
             "market_signal_strong"
-          ]
-        },
-        {
-          "id": "e6b27c134d45",
-          "title": "Disk Pro 2丨Ultimate Choice Cooling Hub for EDC Devices",
-          "category": "创意桌搭",
-          "summary": "明确单品：6端口冷却扩展坞，冰暴冷却、磁吸附件、口袋尺寸、可换SSD、HDMI 2.1，功能与结构创新明确，直接服务桌面设备。。页面证据：6 days ago · Disk Pro 2丨Ultimate Choice Cooling Hub for EDC Devices 6-ports丨Ice-storm Cooler丨Magnetic Attachment丨Pocket Size丨4 Control Chips丨Max 8TB| Swappable SSD 丨10Gbps丨HDMI 2.1丨Lanyard Cable",
-          "product_identity": "",
-          "score": 79,
-          "price_gate": "unknown",
-          "image": "",
-          "url": "https://www.kickstarter.com/projects/shargetech/disk-pro-2",
-          "source_name": "Kickstarter",
-          "source_family": "市场信号",
-          "source_type": "market_reference",
-          "source_quality": "standard",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "缺图",
-          "seen_count": 1,
-          "first_seen": "2026-08-24",
-          "last_seen": "2026-08-24",
-          "review_reason": "口袋尺寸6端口扩展坞整合冰暴散热与磁吸快拆SSD，将散热结构、存储扩展与便携形态融合",
-          "review_source": "deepseek",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 8,
-          "relevance": 9,
-          "tags": [
-            "buy_sample",
-            "deepseek_search_agent"
           ]
         },
         {
@@ -34779,6 +34779,41 @@
           ]
         },
         {
+          "id": "b9e717bb1209",
+          "title": "DeskBrick Organizer | Weighted Cord Holder & Phone Stand | Grommet",
+          "category": "创意桌搭",
+          "summary": "DeskBrick Organizer是配重硅胶桌面整理器，可收纳线材、笔并作为手机支架，无需胶粘，结构上采用钢质配重稳定，功能集成度高，具有明确的桌面整理创新。。页面证据：Keep your desk clutter-free with DeskBrick. This steel-weighted silicone organizer holds cords, pens, and even stands your phone without adhesive. Save 20% on Grommet.",
+          "product_identity": "",
+          "score": 75,
+          "price_gate": "unknown",
+          "image": "https://dxzihkgog0d85.cloudfront.net/products/36878/200x200_TpjPldeskbrick-weighted-cord-%26-des-organizer.jpg",
+          "url": "https://thegrommet.com/product/gadgets-1%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520waitfor%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520delay%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525270:0:15%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252527%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520--%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520/deskbrick",
+          "source_name": "The Grommet",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "钢质配重硅胶组织器，无需胶粘，集成线材收纳与手机支架。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 75,
+          "innovation": 7,
+          "relevance": 9,
+          "tags": [
+            "buy_sample",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "10f256d6e5b2",
           "title": "The Ridge Valet Tray - Cool Material",
           "category": "创意桌搭",
@@ -34883,6 +34918,41 @@
           ]
         },
         {
+          "id": "d3f6a06d92f0",
+          "title": "造物起异节日礼盒设计 - 站酷ZCOOL",
+          "category": "端午礼盒",
+          "summary": "明确单品：造物起异《龙粽登场》端午礼盒，含榫卯结构设计、礼盒造型设计、包装设计，产品线含香薰/香囊/粽子等，有结构创新证据。页面证据：造物起异节日礼盒设计,作品名称丨《龙粽登场》端午礼盒包装全案（ 榫卯结构设计 产品设计 礼盒造型设计 包装设计 ）,产品线丨香薰 香囊 粽子 书签 蒲扇 物料周边设计 ,原创设计团,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
+          "product_identity": "",
+          "score": 74,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.zcool.com.cn/work/ZNjU0ODIwMTY=.html",
+          "source_name": "站酷",
+          "source_family": "设计社区",
+          "source_type": "design_community",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-24",
+          "last_seen": "2026-08-24",
+          "review_reason": "榫卯结构融入端午礼盒，结合香薰香囊书签蒲扇产品线，结构与节日叙事创新。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 74,
+          "innovation": 8,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "85760bfaf4c9",
           "title": "Tala launches The Muse 2.0 lamp in seasonal colourways for ...",
           "category": "氛围灯",
@@ -34917,10 +34987,10 @@
           ]
         }
       ],
-      "actual_count": 34,
+      "actual_count": 36,
       "stats": {
         "by_lane": {
-          "适合改造": 27,
+          "适合改造": 29,
           "方向参考": 7
         },
         "by_category": {
@@ -34928,18 +34998,19 @@
           "水杯": 6,
           "创意桌搭": 5,
           "氛围灯": 5,
+          "创意礼盒": 3,
           "日历": 3,
           "手机壳": 2,
           "冲锋衣": 2,
           "充电宝": 2,
-          "创意礼盒": 2
+          "端午礼盒": 1
         },
         "by_source_family": {
           "媒体案例": 13,
-          "市场信号": 12,
+          "市场信号": 13,
           "奖项案例": 3,
+          "设计社区": 3,
           "包装专项": 3,
-          "设计社区": 2,
           "趋势观察": 1
         },
         "source_quota": {
@@ -34955,7 +35026,7 @@
           "奖项案例": 3,
           "媒体案例": 6,
           "包装专项": 3,
-          "设计社区": 2,
+          "设计社区": 3,
           "市场信号": 3,
           "弱市场信号": 0,
           "社交灵感": 0
@@ -105307,6 +105378,77 @@
       ]
     },
     {
+      "id": "448396dc15ad",
+      "title": "The Wonderbox of Alice. Unlock the puzzle box piece by piece by iDventure — Kickstarter",
+      "category": "创意礼盒",
+      "summary": "明确单品：iDventure推出的The Wonderbox of Alice拼图盒，将拼图机制与逃脱盒结合，通过逐块解锁实现开箱惊喜，属于创新礼盒产品，有清晰的结构和交互创新。。页面证据：Discover the cutting-edge concept of CluePuzzle, where traditional jigsaw mechanics fuse with the mechanisms of an escape box!",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/idventure-games/the-wonderbox-of-alice-unlock-the-puzzle-box-piece-by-piece",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "拼图机制与逃脱盒融合，逐块解锁创造开箱惊喜，结构交互创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "c0ab2a0c7326",
+      "title": "Kickstarter >> INSCAPE- Pirate Treasure- Dragons Gate- Heartlock Puzzle Box by INSCAPE",
+      "category": "创意礼盒",
+      "summary": "INSCAPE手工木制密室逃脱拼图礼盒，三个主题（Pirate Treasure/Dragons Gate/Heartlock），带隐藏机械开箱结构，有叙事和解谜创新，可买样。。页面证据：Handcrafted wooden escape room in a box with hidden mechanisms - creative box – challenge your logic and dexterity! 3 new puzzle boxes",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/inscapebox/inscape-pirate-chest-dragons-gate-heartlock-puzzle-box",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "手工木制密室逃脱拼图盒，隐藏机械开箱，多主题叙事，解谜交互创新。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "6afcb7eb3914",
       "title": "wireless portable split keyboard with circular ‘mouse’ fits tray tables",
       "category": "创意桌搭",
@@ -110767,6 +110909,41 @@
       ]
     },
     {
+      "id": "52939afb0bfa",
+      "title": "From Japan, a Modular Stamp for Creating Calendars - Core77",
+      "category": "日历",
+      "summary": "明确单品：日本 Shachihata 出品的模块化日期印章，由38个独立印章（31个日期+7个星期+2个空白）组合，可自由拼装成自定义日历，属机械/交互式日期间创新，非普通台历。。页面证据：Here's a curious object: This Consolidated Number Stamp, for journalers who want to make their own little calendars. Devised by Japanese stationery company Shachihata, it consists of 38 individual stamps (31 dates plus 7 days of the week), along with two blanks, so that you can snap them all",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1464574_lead_400_126546_.jpg",
+      "url": "https://www.core77.com/posts/126546/From-Japan-a-Modular-Stamp-for-Creating-Calendars",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-08-11",
+      "last_seen": "2026-08-24",
+      "review_reason": "模块化日期印章，38个独立印章自由组合，实现DIY日历，属机械/交互创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "f8d0729f64b4",
       "title": "A Modular Mess-Minded Cutting Board - Core77",
       "category": "创意厨具",
@@ -112883,41 +113060,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "52939afb0bfa",
-      "title": "From Japan, a Modular Stamp for Creating Calendars - Core77",
-      "category": "日历",
-      "summary": "明确单品：日本 Shachihata 出品的模块化日期印章，由38个独立印章（31个日期+7个星期+2个空白）组合，可自由拼装成自定义日历，属机械/交互式日期间创新，非普通台历。。页面证据：Here's a curious object: This Consolidated Number Stamp, for journalers who want to make their own little calendars. Devised by Japanese stationery company Shachihata, it consists of 38 individual stamps (31 dates plus 7 days of the week), along with two blanks, so that you can snap them all",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1464574_lead_400_126546_.jpg",
-      "url": "https://www.core77.com/posts/126546/From-Japan-a-Modular-Stamp-for-Creating-Calendars",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-11",
-      "last_seen": "2026-08-11",
-      "review_reason": "模块化日期印章，38个独立印章自由组合，实现DIY日历，属机械/交互创新",
-      "review_source": "deepseek",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -143400,6 +143542,41 @@
       ]
     },
     {
+      "id": "d3f6a06d92f0",
+      "title": "造物起异节日礼盒设计 - 站酷ZCOOL",
+      "category": "端午礼盒",
+      "summary": "明确单品：造物起异《龙粽登场》端午礼盒，含榫卯结构设计、礼盒造型设计、包装设计，产品线含香薰/香囊/粽子等，有结构创新证据。页面证据：造物起异节日礼盒设计,作品名称丨《龙粽登场》端午礼盒包装全案（ 榫卯结构设计 产品设计 礼盒造型设计 包装设计 ）,产品线丨香薰 香囊 粽子 书签 蒲扇 物料周边设计 ,原创设计团,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.zcool.com.cn/work/ZNjU0ODIwMTY=.html",
+      "source_name": "站酷",
+      "source_family": "设计社区",
+      "source_type": "design_community",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "榫卯结构融入端午礼盒，结合香薰香囊书签蒲扇产品线，结构与节日叙事创新。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "c9c171c3fed0",
       "title": "Ikea’s First Post-Sonos Speaker Blends Affordability with Eye ...",
       "category": "氛围灯",
@@ -166433,6 +166610,40 @@
       ]
     },
     {
+      "id": "759674589c17",
+      "title": "Seth Goldstein's kinetic sculptures provide a grim commentary on the daily grind - Core77",
+      "category": "装置艺术",
+      "summary": "具体产品：Seth Goldstein的动力学雕塑作品“Why Knot?”。该作品以机械运动模拟日常劳作的徒劳循环，属于有明确机械/运动创新的装置艺术，可提炼为主题的桌面机械摆件或互动玩具。。页面证据：You'll work for years, accomplish things, then retire. When you look back on all that labor and schoolwork, what will it look like, what conclusions will you draw?Retired mechanical engineer Seth Goldstein, who has turned to creating expressive robotic sculptures, offers some witty but grim summations:\"Why Knot?\" is a kinetically...",
+      "product_identity": "",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_18460_.jpg",
+      "url": "https://www.core77.com/posts/18460",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "动力学雕塑以机械运动模拟日常劳作的徒劳循环，可提炼为桌面机械摆件，机械与叙事创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 9,
+      "relevance": 8,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "842fae5defa4",
       "title": "talking with yusuke kawai about pedrali's kawara lighting collection",
       "category": "氛围灯",
@@ -172505,6 +172716,40 @@
       "relevance": 9,
       "tags": [
         "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "28f946b57ea1",
+      "title": "Arcanium - Puzzle Box / Escape Room in a box by Enigma Lab — Kickstarter",
+      "category": "创意礼盒",
+      "summary": "明确单品：Enigma Lab木质谜题盒Arcanium，内含机械谜题与暗格，开箱和叙事创新，可复用送礼，符合创意礼盒实体边界。。页面证据：Enigma Lab is raising funds for Arcanium - Puzzle Box / Escape Room in a box on Kickstarter! Unique wooden puzzle box with intricate puzzles and secret mechanisms – unlock the magic of this escape room box Arcanium.",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/enigmalab/arcanium-puzzle-box-escape-room-in-a-box",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "review_reason": "木质谜题盒内藏机械谜题与暗格，开箱过程如同密室逃脱，互动开箱创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
         "deepseek_search_agent"
       ]
     },
