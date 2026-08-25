@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-25T03:07:57+08:00
+- 生成时间：2026-08-26T02:50:30+08:00
 
 ## 行动分布
 
@@ -973,19 +973,7 @@ Detachable 3-in-1 Functional Jacket by Bosideng, featuring innovative quick-deta
 
 Helly Hansen Arctic Patrol Modular Parka 2.0 轻量硬壳冲锋衣，采用创新 LIFA INFINITY 膜（含≥50%回收材料、无化学涂层），PFC-free 防泼水涂层，功能与材料创新明确。。页面证据：To truly understand the strengths of the Arctic Patrol Modular Parka 2.0, you have to wear it in the Arctic, as the name indicates. The designers at the tradition-steeped outdoor specialist Helly Hansen developed the parka in close collaboration with...
 
-### 81. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost
-
-- 品类：充电宝
-- 路径：方向参考
-- 启发：功能启发
-- 分数：8.4
-- 来源：Yanko Design
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost
-
-TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，超薄磁吸设计。。页面证据：https://youtu.be/cJQ3YE5U2xA Picture this, it’s summer, you’ve packed your bags and you’re heading on a Eurotrip (maybe for a nice holiday on the Amalfi coast or to see Taylor Swift perform). In true holiday fashion, you intend on spending the entire day out and about, exploring the city, but you realize an hour in that your
-
-### 82. KUMIKO OLED Modular Lighting Turns Off Into a Mirror
+### 81. KUMIKO OLED Modular Lighting Turns Off Into a Mirror
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -997,7 +985,7 @@ TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，�
 
 KUMIKO OLED Modular Lighting是明确的模块化灯具单品：1mm厚OLED面板可磁吸拼接，开启为氛围灯，关闭时变身镜子，以光电材料与交互结构实现双重功能，创新证据明确。。页面证据：A customizable and modular system of 1mm-thick OLED panels snap magnetically into mood lighting when on, and transform into a mirror while off.
 
-### 83. Finally, Wireless and GaN Charging That’s Tiny And Turbo-fast: Meet the Baseus PicoGo II Series - Yanko Design
+### 82. Finally, Wireless and GaN Charging That’s Tiny And Turbo-fast: Meet the Baseus PicoGo II Series - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1009,7 +997,7 @@ KUMIKO OLED Modular Lighting是明确的模块化灯具单品：1mm厚OLED面板
 
 Baseus PicoGo AM31磁吸充电宝，采用GaN技术和Qi2认证，实现小型化与15W无线快充。。页面证据：The charging accessory market feels a lot like the wild west of consumer tech, a sprawling landscape of promises and pitfalls. For years, we’ve been stuffing our bags with bulky power bricks, tangled cables, and chargers that feel suspiciously warm to the touch. The Gallium Nitride (GaN) revolution promised a new world order, one defined
 
-### 84. MagSafe Power Bank Has All The Charging Options You Need For Power On The Go - Yanko Design
+### 83. MagSafe Power Bank Has All The Charging Options You Need For Power On The Go - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1020,6 +1008,18 @@ Baseus PicoGo AM31磁吸充电宝，采用GaN技术和Qi2认证，实现小型�
 - 链接：https://www.yankodesign.com/2025/03/28/magsafe-power-bank-has-all-the-charging-options-you-need-for-power-on-the-go
 
 明确MagSafe充电宝，兼具无线充电与内置线缆，创新一体设计。。页面证据：Remember the days when you'd scramble to find different chargers for each of your devices? Those frantic moments of digging through bags for the right cable while your phone battery hovers at 2% are becoming a thing of the past. The latest MagSafe power banks are revolutionizing how we keep our growing collection of tech
+
+### 84. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
+
+- 品类：充电宝
+- 路径：方向参考
+- 启发：功能启发
+- 分数：8.4
+- 来源：Yanko Design
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.yankodesign.com/2024/05/27/credit-card-shaped-magsafe-power-bank-gives-your-iphone-a-massive-5000mah-battery-boost
+
+TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，超薄磁吸设计。。页面证据：https://youtu.be/cJQ3YE5U2xA Picture this, it’s summer, you’ve packed your bags and you’re heading on a Eurotrip (maybe for a nice holiday on the Amalfi coast or to see Taylor Swift perform). In true holiday fashion, you intend on spending the entire day out and about, exploring the city, but you realize an hour in that your
 
 ### 85. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
 

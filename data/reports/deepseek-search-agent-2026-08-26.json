@@ -1,0 +1,258 @@
+{
+  "date": "2026-08-26",
+  "rounds": [
+    {
+      "round": 1,
+      "generated_at": "2026-08-26T01:10:00+08:00",
+      "accepted_before": 0,
+      "accepted_by_category_before": {},
+      "queries": 180,
+      "search_results": 452,
+      "fresh_direct_urls": 280,
+      "skipped_screened_today": 0,
+      "pages_enriched": 127,
+      "pre_screened": 280,
+      "screened_decisions": 280,
+      "screened_ledger_size": 273,
+      "kept": 11,
+      "added": 11,
+      "deepseek_calls": 0,
+      "deepseek_tokens": 0,
+      "by_category": {
+        "氛围灯": 5,
+        "创意厨具": 2,
+        "端午礼盒": 1,
+        "日历": 1,
+        "创意桌搭": 1,
+        "水杯": 1
+      }
+    },
+    {
+      "round": 2,
+      "generated_at": "2026-08-26T01:24:47+08:00",
+      "accepted_before": 30,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "水杯": 6,
+        "氛围灯": 7,
+        "创意厨具": 7,
+        "手机壳": 2,
+        "创意桌搭": 6
+      },
+      "queries": 90,
+      "search_results": 272,
+      "fresh_direct_urls": 170,
+      "skipped_screened_today": 2,
+      "pages_enriched": 95,
+      "pre_screened": 170,
+      "screened_decisions": 148,
+      "screened_ledger_size": 401,
+      "kept": 3,
+      "added": 3,
+      "deepseek_calls": 18,
+      "deepseek_tokens": 153779,
+      "by_category": {
+        "日历": 3
+      }
+    },
+    {
+      "round": 3,
+      "generated_at": "2026-08-26T01:40:26+08:00",
+      "accepted_before": 32,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "水杯": 6,
+        "氛围灯": 7,
+        "创意厨具": 7,
+        "手机壳": 2,
+        "日历": 2,
+        "创意桌搭": 6
+      },
+      "queries": 90,
+      "search_results": 302,
+      "fresh_direct_urls": 170,
+      "skipped_screened_today": 17,
+      "pages_enriched": 101,
+      "pre_screened": 170,
+      "screened_decisions": 149,
+      "screened_ledger_size": 543,
+      "kept": 10,
+      "added": 10,
+      "deepseek_calls": 21,
+      "deepseek_tokens": 191138,
+      "by_category": {
+        "日历": 3,
+        "创意礼盒": 2,
+        "中秋礼盒": 2,
+        "装置艺术": 2,
+        "钥匙扣水壶": 1
+      }
+    },
+    {
+      "round": 4,
+      "generated_at": "2026-08-26T01:54:59+08:00",
+      "accepted_before": 33,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "水杯": 6,
+        "氛围灯": 7,
+        "创意厨具": 7,
+        "手机壳": 2,
+        "日历": 2,
+        "创意桌搭": 6,
+        "钥匙扣水壶": 1
+      },
+      "queries": 90,
+      "search_results": 284,
+      "fresh_direct_urls": 133,
+      "skipped_screened_today": 28,
+      "pages_enriched": 78,
+      "pre_screened": 133,
+      "screened_decisions": 101,
+      "screened_ledger_size": 639,
+      "kept": 16,
+      "added": 16,
+      "deepseek_calls": 14,
+      "deepseek_tokens": 107197,
+      "by_category": {
+        "冲锋衣": 10,
+        "中秋礼盒": 3,
+        "创意礼盒": 2,
+        "日历": 1
+      }
+    },
+    {
+      "round": 5,
+      "generated_at": "2026-08-26T02:07:39+08:00",
+      "accepted_before": 35,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "水杯": 6,
+        "氛围灯": 7,
+        "创意厨具": 7,
+        "手机壳": 2,
+        "冲锋衣": 2,
+        "日历": 2,
+        "创意桌搭": 6,
+        "钥匙扣水壶": 1
+      },
+      "queries": 90,
+      "search_results": 273,
+      "fresh_direct_urls": 149,
+      "skipped_screened_today": 17,
+      "pages_enriched": 56,
+      "pre_screened": 149,
+      "screened_decisions": 116,
+      "screened_ledger_size": 753,
+      "kept": 10,
+      "added": 10,
+      "deepseek_calls": 14,
+      "deepseek_tokens": 96889,
+      "by_category": {
+        "装置艺术": 4,
+        "创意礼盒": 2,
+        "端午礼盒": 2,
+        "日历": 2
+      }
+    },
+    {
+      "round": 6,
+      "generated_at": "2026-08-26T02:20:28+08:00",
+      "accepted_before": 35,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "水杯": 6,
+        "氛围灯": 7,
+        "创意厨具": 7,
+        "手机壳": 2,
+        "冲锋衣": 2,
+        "日历": 2,
+        "创意桌搭": 6,
+        "钥匙扣水壶": 1
+      },
+      "queries": 90,
+      "search_results": 187,
+      "fresh_direct_urls": 71,
+      "skipped_screened_today": 11,
+      "pages_enriched": 38,
+      "pre_screened": 71,
+      "screened_decisions": 61,
+      "screened_ledger_size": 806,
+      "kept": 9,
+      "added": 9,
+      "deepseek_calls": 7,
+      "deepseek_tokens": 56700,
+      "by_category": {
+        "装置艺术": 4,
+        "日历": 2,
+        "创意礼盒": 2,
+        "中秋礼盒": 1
+      }
+    },
+    {
+      "round": 7,
+      "generated_at": "2026-08-26T02:33:42+08:00",
+      "accepted_before": 35,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "水杯": 6,
+        "氛围灯": 7,
+        "创意厨具": 7,
+        "手机壳": 2,
+        "冲锋衣": 2,
+        "日历": 2,
+        "创意桌搭": 6,
+        "钥匙扣水壶": 1
+      },
+      "queries": 90,
+      "search_results": 238,
+      "fresh_direct_urls": 89,
+      "skipped_screened_today": 46,
+      "pages_enriched": 59,
+      "pre_screened": 89,
+      "screened_decisions": 79,
+      "screened_ledger_size": 876,
+      "kept": 2,
+      "added": 2,
+      "deepseek_calls": 10,
+      "deepseek_tokens": 75527,
+      "by_category": {
+        "装置艺术": 2
+      }
+    },
+    {
+      "round": 8,
+      "generated_at": "2026-08-26T02:47:24+08:00",
+      "accepted_before": 35,
+      "accepted_by_category_before": {
+        "充电宝": 2,
+        "水杯": 6,
+        "氛围灯": 7,
+        "创意厨具": 7,
+        "手机壳": 2,
+        "冲锋衣": 2,
+        "日历": 2,
+        "创意桌搭": 6,
+        "钥匙扣水壶": 1
+      },
+      "queries": 90,
+      "search_results": 175,
+      "fresh_direct_urls": 99,
+      "skipped_screened_today": 14,
+      "pages_enriched": 54,
+      "pre_screened": 99,
+      "screened_decisions": 87,
+      "screened_ledger_size": 959,
+      "kept": 4,
+      "added": 4,
+      "deepseek_calls": 10,
+      "deepseek_tokens": 81332,
+      "by_category": {
+        "装置艺术": 3,
+        "创意礼盒": 1
+      }
+    }
+  ],
+  "generated_at": "2026-08-26T02:47:24+08:00",
+  "total_kept": 65
+}
