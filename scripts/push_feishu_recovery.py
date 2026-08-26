@@ -19,7 +19,7 @@ def group_date(group):
         return None
 
 
-def recoverable_groups(data, sent_log, today, recover_days, min_count):
+def recoverable_groups(data, sent_log, today, recover_days, min_count, include_backfill=False):
     candidates = []
     for group in data.get("daily_groups") or []:
         day = group_date(group)
@@ -35,7 +35,7 @@ def recoverable_groups(data, sent_log, today, recover_days, min_count):
         if len(items) < min_count:
             continue
         backfill_count = int((group.get("stats") or {}).get("backfill_count") or 0)
-        if backfill_count or any(item.get("is_backfill") for item in items):
+        if not include_backfill and (backfill_count or any(item.get("is_backfill") for item in items)):
             continue
         candidates.append((day, group))
     return [group for _, group in sorted(candidates, key=lambda pair: pair[0])]
@@ -51,6 +51,11 @@ def main():
     parser.add_argument("--min-count", type=int, default=40)
     parser.add_argument("--recover-days", type=int, default=7)
     parser.add_argument("--sent-log", default="data/feishu_push_log.json")
+    parser.add_argument(
+        "--include-backfill",
+        action="store_true",
+        help="Allow recovery of a complete day that includes explicitly marked backfill items.",
+    )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -63,6 +68,7 @@ def main():
         now.date(),
         max(args.recover_days, 0),
         max(args.min_count, 1),
+        args.include_backfill,
     )
     if not candidates:
         print("feishu_recovery=skipped reason=no_completed_unsent_weekday")
