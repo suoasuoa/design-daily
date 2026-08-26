@@ -312,8 +312,14 @@ def main():
     )
     emergency_ids = set()
     if len(selected) < needed:
+        emergency_candidates = [
+            item
+            for item in list(products) + list(rejected)
+            if is_candidate(item, published_urls, min_quality=70)
+            and not too_similar(item.get("title"), known_titles + today_titles)
+        ]
         emergency = choose_emergency_candidates(
-            [item for item in strict_candidates if item not in selected],
+            [item for item in emergency_candidates if item not in selected],
             needed - len(selected),
             today_items,
             known_titles + today_titles,
