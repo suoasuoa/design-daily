@@ -235,6 +235,34 @@ def choose_candidates(candidates, needed, today_items, known_titles, selected=No
     return selected
 
 
+def choose_emergency_candidates(candidates, needed, today_items, known_titles, selected=None):
+    """Select reviewed reserve items without repeating today's category mix."""
+    selected = list(selected or [])
+    known = list(known_titles) + [item.get("title") or "" for item in today_items]
+    known.extend(item.get("title") or "" for item in selected)
+    while len(selected) < needed:
+        options = []
+        for item in candidates:
+            if item in selected or too_similar(item.get("title"), known):
+                continue
+            review = item.get("category_review") or {}
+            options.append(
+                (
+                    -int(review.get("quality_score") or 0),
+                    -int(review.get("innovation") or 0),
+                    -int(review.get("relevance") or 0),
+                    item.get("title") or "",
+                    item,
+                )
+            )
+        if not options:
+            break
+        chosen = min(options)[-1]
+        selected.append(chosen)
+        known.append(chosen.get("title") or "")
+    return selected
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=40)
@@ -275,12 +303,23 @@ def main():
         item for item in strict_candidates
         if not too_similar(item.get("title"), known_titles)
     ]
+    today_titles = [item.get("title") or "" for item in today_items]
     selected = choose_candidates(
         strict_candidates,
         needed,
         today_items,
-        [],
+        today_titles,
     )
+    emergency_ids = set()
+    if len(selected) < needed:
+        emergency = choose_emergency_candidates(
+            [item for item in strict_candidates if item not in selected],
+            needed - len(selected),
+            today_items,
+            known_titles + today_titles,
+        )
+        selected.extend(emergency)
+        emergency_ids = {item.get("id") for item in emergency}
 
     strict_ids = {item.get("id") for item in strict_candidates}
 
@@ -315,6 +354,8 @@ def main():
         clone["last_seen"] = today()
         clone["updated_at"] = timestamp
         clone["status"] = "scored"
+        if clone.get("id") in emergency_ids:
+            clone["backlog_emergency_fill"] = True
         promoted.append(clone)
         reviews[clone.get("id")] = {
             "id": clone.get("id"),
@@ -350,9 +391,18 @@ def main():
             "reviews": reviews,
         },
     )
+    if emergency_ids:
+        write_json(
+            DATA_DIR / "emergency_daily_fill.json",
+            {
+                "date": today(),
+                "reason": "当日临时补录：普通品类配额后仍有缺口，从已完成 DeepSeek 审核且未进入正式展示的高分候选中补足。",
+                "product_ids": [item.get("id") for item in promoted if item.get("id") in emergency_ids],
+            },
+        )
     print(
         f"backlog_promotion needed={needed} selected={len(promoted)} "
-        f"categories={dict(Counter(item.get('category') for item in promoted))}"
+        f"emergency={len(emergency_ids)} categories={dict(Counter(item.get('category') for item in promoted))}"
     )
 
 
