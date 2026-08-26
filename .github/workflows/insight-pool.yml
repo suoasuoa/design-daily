@@ -2,11 +2,12 @@ name: Insight Pool
 
 on:
   schedule:
-    # Beijing weekdays: all DeepSeek work runs overnight and finishes before 09:00.
+    # Beijing weekdays: collect overnight, then run a bounded midday recovery if needed.
     # Early-morning UTC schedules use Sunday-Thursday because Beijing is on the next day.
     - cron: "10 16 * * 0-4" # 00:10 Beijing: continuous collection, up to 8 rounds
     - cron: "0 20 * * 0-4"  # 04:00 Beijing: recovery checkpoint
     - cron: "10 22 * * 0-4" # 06:10 Beijing: final recovery
+    - cron: "1 4 * * 1-5"   # 12:01 Beijing: daytime recovery for any remaining gap
   workflow_dispatch:
     inputs:
       score_limit:
@@ -49,14 +50,14 @@ jobs:
   build-insight-pool:
     runs-on: ubuntu-latest
     env:
-      DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:40"
+      DEEPSEEK_ALLOWED_WINDOWS: "00:00-08:40,12:01-13:59"
       DEEPSEEK_WINDOW_END_BUFFER_MINUTES: "1"
       # Do not start a costly search/screen round that cannot finish before the
       # overnight window closes.
       DEEPSEEK_MIN_ROUND_MINUTES: "35"
       DEEPSEEK_USAGE_FILE: "data/reports/deepseek-usage.json"
-      # Overnight time enforcement is the cost control. Usage remains recorded
-      # for evaluation, but quality collection is not stopped by a token quota.
+      # Time enforcement is the cost control. Usage remains recorded for
+      # evaluation, but quality collection is not stopped by a token quota.
       DEEPSEEK_DAILY_MAX_CALLS: "0"
       DEEPSEEK_DAILY_MAX_TOKENS: "0"
       DEEPSEEK_ALLOW_OUTSIDE_WINDOW: "0"
@@ -123,7 +124,16 @@ jobs:
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
-                if [ "${{ github.event.schedule }}" = "0 20 * * 0-4" ]; then
+                if [ "${{ github.event.schedule }}" = "1 4 * * 1-5" ]; then
+                  echo "FINAL_PROVIDER=1" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_QUERIES=120" >> "$GITHUB_ENV"
+                  echo "TOPUP_AGENT_PAGES=600" >> "$GITHUB_ENV"
+                  echo "TOPUP_MAX_PASSES=2" >> "$GITHUB_ENV"
+                  # The noon window is shorter than the overnight window. Allow
+                  # one bounded round even when GitHub starts this job late.
+                  echo "DEEPSEEK_MIN_ROUND_MINUTES=20" >> "$GITHUB_ENV"
+                  echo "DEEPSEEK_MAX_CALLS=0" >> "$GITHUB_ENV"
+                elif [ "${{ github.event.schedule }}" = "0 20 * * 0-4" ]; then
                   echo "FINAL_PROVIDER=0" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_QUERIES=140" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=650" >> "$GITHUB_ENV"
