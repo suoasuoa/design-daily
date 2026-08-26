@@ -46,6 +46,10 @@ on:
         description: "Resend today's completed 40-pick digest even if it was already sent"
         required: false
         default: "false"
+      recovery_only:
+        description: "Send only the oldest eligible missed digest, including backfill items"
+        required: false
+        default: "false"
 
 
 permissions:
@@ -79,6 +83,10 @@ jobs:
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_send || 'false' }}" = "true" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.recovery_only || 'false' }}" = "true" ]; then
+            python3 scripts/push_feishu_recovery.py --limit 40 --top-limit 5 --min-count 40 --recover-days 7 --include-backfill --sent-log data/feishu_push_log.json
+            exit 0
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force_resend || 'false' }}" = "true" ]; then
             WINDOW_ARGS="--window-start 00:00 --window-end 23:59"
