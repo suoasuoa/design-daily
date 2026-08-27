@@ -203,8 +203,113 @@
       "deepseek_calls": 1,
       "deepseek_tokens": 15502,
       "by_category": {}
+    },
+    {
+      "round": 9,
+      "generated_at": "2026-08-27T07:02:07+08:00",
+      "accepted_before": 35,
+      "accepted_by_category_before": {
+        "水杯": 6,
+        "充电宝": 6,
+        "创意厨具": 7,
+        "创意桌搭": 8,
+        "手机壳": 1,
+        "氛围灯": 7
+      },
+      "queries": 140,
+      "search_results": 859,
+      "fresh_direct_urls": 595,
+      "skipped_screened_today": 0,
+      "pages_enriched": 405,
+      "pre_screened": 595,
+      "screened_decisions": 531,
+      "screened_ledger_size": 531,
+      "kept": 54,
+      "added": 53,
+      "deepseek_calls": 54,
+      "deepseek_tokens": 434752,
+      "by_category": {
+        "日历": 14,
+        "冲锋衣": 11,
+        "装置艺术": 10,
+        "创意礼盒": 9,
+        "手机壳": 6,
+        "钥匙扣水壶": 2,
+        "中秋礼盒": 1,
+        "端午礼盒": 1
+      }
+    },
+    {
+      "round": 10,
+      "generated_at": "2026-08-27T07:37:50+08:00",
+      "accepted_before": 39,
+      "accepted_by_category_before": {
+        "水杯": 6,
+        "日历": 3,
+        "充电宝": 5,
+        "创意桌搭": 5,
+        "手机壳": 2,
+        "冲锋衣": 2,
+        "氛围灯": 6,
+        "创意礼盒": 3,
+        "创意厨具": 7
+      },
+      "queries": 140,
+      "search_results": 489,
+      "fresh_direct_urls": 260,
+      "skipped_screened_today": 51,
+      "pages_enriched": 177,
+      "pre_screened": 260,
+      "screened_decisions": 212,
+      "screened_ledger_size": 727,
+      "kept": 35,
+      "added": 35,
+      "deepseek_calls": 27,
+      "deepseek_tokens": 239822,
+      "by_category": {
+        "氛围灯": 27,
+        "装置艺术": 3,
+        "端午礼盒": 2,
+        "创意礼盒": 1,
+        "创意桌搭": 1,
+        "中秋礼盒": 1
+      }
+    },
+    {
+      "round": 11,
+      "generated_at": "2026-08-27T08:04:45+08:00",
+      "accepted_before": 39,
+      "accepted_by_category_before": {
+        "氛围灯": 7,
+        "水杯": 6,
+        "日历": 3,
+        "充电宝": 4,
+        "创意桌搭": 5,
+        "手机壳": 2,
+        "冲锋衣": 2,
+        "创意礼盒": 3,
+        "创意厨具": 7
+      },
+      "queries": 140,
+      "search_results": 304,
+      "fresh_direct_urls": 137,
+      "skipped_screened_today": 61,
+      "pages_enriched": 103,
+      "pre_screened": 137,
+      "screened_decisions": 126,
+      "screened_ledger_size": 839,
+      "kept": 7,
+      "added": 7,
+      "deepseek_calls": 15,
+      "deepseek_tokens": 132756,
+      "by_category": {
+        "装置艺术": 4,
+        "日历": 1,
+        "创意桌搭": 1,
+        "中秋礼盒": 1
+      }
     }
   ],
-  "generated_at": "2026-08-27T05:05:05+08:00",
-  "total_kept": 9
+  "generated_at": "2026-08-27T08:04:45+08:00",
+  "total_kept": 105
 }
