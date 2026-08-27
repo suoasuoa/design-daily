@@ -36,6 +36,9 @@ on:
     - cron: "10 13 * * 1-5"
     - cron: "20 13 * * 1-5"
     - cron: "30 13 * * 1-5"
+    # Final missed-trigger watchdog at 23:20 Beijing. It is idempotent: the
+    # send script skips when today's log already contains sent=true.
+    - cron: "20 15 * * 1-5"
   workflow_dispatch:
     inputs:
       force_send:
