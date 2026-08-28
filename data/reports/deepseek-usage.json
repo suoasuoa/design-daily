@@ -1,18 +1,21 @@
 {
-  "calls": 2,
-  "completion_tokens": 32340,
+  "calls": 4,
+  "completion_tokens": 55884,
   "components": {
     "search_agent": {
-      "calls": 2,
-      "total_tokens": 35986
+      "calls": 4,
+      "total_tokens": 63237
     }
   },
   "date": "2026-08-29",
-  "prompt_tokens": 3646,
+  "prompt_tokens": 7353,
   "runs": {
     "33189965109": {
       "calls": 2
+    },
+    "33192138461": {
+      "calls": 2
     }
   },
-  "total_tokens": 35986
+  "total_tokens": 63237
 }

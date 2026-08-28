@@ -52,8 +52,59 @@
       "deepseek_calls": 1,
       "deepseek_tokens": 22077,
       "by_category": {}
+    },
+    {
+      "round": 3,
+      "generated_at": "2026-08-29T00:57:03+08:00",
+      "accepted_before": 33,
+      "accepted_by_category_before": {
+        "创意桌搭": 9,
+        "水杯": 6,
+        "充电宝": 5,
+        "创意厨具": 7,
+        "氛围灯": 5,
+        "手机壳": 1
+      },
+      "queries": 120,
+      "search_results": 0,
+      "fresh_direct_urls": 0,
+      "skipped_screened_today": 0,
+      "pages_enriched": 0,
+      "pre_screened": 0,
+      "screened_decisions": 0,
+      "screened_ledger_size": 0,
+      "kept": 0,
+      "added": 0,
+      "deepseek_calls": 1,
+      "deepseek_tokens": 14243,
+      "by_category": {}
+    },
+    {
+      "round": 4,
+      "generated_at": "2026-08-29T00:59:59+08:00",
+      "accepted_before": 31,
+      "accepted_by_category_before": {
+        "充电宝": 5,
+        "创意桌搭": 3,
+        "水杯": 7,
+        "创意厨具": 11,
+        "氛围灯": 5
+      },
+      "queries": 120,
+      "search_results": 0,
+      "fresh_direct_urls": 0,
+      "skipped_screened_today": 0,
+      "pages_enriched": 0,
+      "pre_screened": 0,
+      "screened_decisions": 0,
+      "screened_ledger_size": 0,
+      "kept": 0,
+      "added": 0,
+      "deepseek_calls": 1,
+      "deepseek_tokens": 13008,
+      "by_category": {}
     }
   ],
-  "generated_at": "2026-08-29T00:32:48+08:00",
+  "generated_at": "2026-08-29T00:59:59+08:00",
   "total_kept": 0
 }
