@@ -8,6 +8,9 @@ on:
     - cron: "0 20 * * 0-4"  # 04:00 Beijing: recovery checkpoint
     - cron: "10 22 * * 0-4" # 06:10 Beijing: final recovery
     - cron: "1 4 * * 1-5"   # 12:01 Beijing: daytime recovery for any remaining gap
+    - cron: "20 4 * * 1-5"  # 12:20 Beijing: retry if the first midday run was delayed
+    - cron: "40 4 * * 1-5"  # 12:40 Beijing: retry if the first midday run was delayed
+    - cron: "0 5 * * 1-5"   # 13:00 Beijing: final midday retry
   workflow_dispatch:
     inputs:
       score_limit:
@@ -124,7 +127,10 @@ jobs:
                 echo "SCORE_LIMIT=0" >> "$GITHUB_ENV"
                 echo "AGENT_QUERIES=0" >> "$GITHUB_ENV"
                 echo "AGENT_PAGES=0" >> "$GITHUB_ENV"
-                if [ "${{ github.event.schedule }}" = "1 4 * * 1-5" ]; then
+                if [ "${{ github.event.schedule }}" = "1 4 * * 1-5" ] || \
+                   [ "${{ github.event.schedule }}" = "20 4 * * 1-5" ] || \
+                   [ "${{ github.event.schedule }}" = "40 4 * * 1-5" ] || \
+                   [ "${{ github.event.schedule }}" = "0 5 * * 1-5" ]; then
                   echo "FINAL_PROVIDER=1" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_QUERIES=120" >> "$GITHUB_ENV"
                   echo "TOPUP_AGENT_PAGES=600" >> "$GITHUB_ENV"
