@@ -307,10 +307,10 @@ def main():
     # Strong products can live in the main pool without ever being shown because
     # their original date/category was full. They are valid reserve candidates;
     # only a URL that already appeared in a daily group is ineligible.
-    # Exact published URLs remain fully protected. Limit the expensive semantic
-    # title comparison to the newest snapshots; build_site performs the final
-    # same-day and historical semantic duplicate gate after promotion.
-    known_titles = [item.get("title") or "" for item in published_items[:500]]
+    # Exact published URLs remain fully protected. The final build_site pass
+    # performs the historical semantic duplicate gate; this step only compares
+    # candidates with today's picks to keep full-day recovery bounded.
+    known_titles = []
     strict_candidates = [
         item for item in list(products) + list(rejected)
         if is_candidate(item, published_urls)
