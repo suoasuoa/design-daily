@@ -263,6 +263,19 @@ def choose_emergency_candidates(candidates, needed, today_items, known_titles, s
     return selected
 
 
+def ranked_reviewed_candidates(candidates, limit=1500):
+    """Bound semantic-dedupe work when a whole day is missing."""
+    return sorted(
+        candidates,
+        key=lambda item: (
+            -int((item.get("category_review") or {}).get("quality_score") or 0),
+            -int((item.get("category_review") or {}).get("innovation") or 0),
+            -int((item.get("category_review") or {}).get("relevance") or 0),
+            item.get("title") or "",
+        ),
+    )[:limit]
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=40)
@@ -299,6 +312,7 @@ def main():
         item for item in list(products) + list(rejected)
         if is_candidate(item, published_urls)
     ]
+    strict_candidates = ranked_reviewed_candidates(strict_candidates)
     strict_candidates = [
         item for item in strict_candidates
         if not too_similar(item.get("title"), known_titles)
@@ -316,7 +330,12 @@ def main():
             item
             for item in list(products) + list(rejected)
             if is_candidate(item, published_urls, min_quality=70)
-            and not too_similar(item.get("title"), known_titles + today_titles)
+        ]
+        emergency_candidates = ranked_reviewed_candidates(emergency_candidates)
+        emergency_candidates = [
+            item
+            for item in emergency_candidates
+            if not too_similar(item.get("title"), known_titles + today_titles)
         ]
         emergency = choose_emergency_candidates(
             [item for item in emergency_candidates if item not in selected],
