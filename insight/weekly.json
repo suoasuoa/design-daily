@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T05:34:33+08:00",
+  "generated_at": "2026-08-28T13:47:23+08:00",
   "week": "2026-W35",
   "group_id": "2026-W35",
   "date_start": "2026-08-24",
@@ -11,17 +11,17 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 47,
-      "方向参考": 29,
+      "适合改造": 48,
+      "方向参考": 28,
       "可直接买样": 24
     },
     "by_category": {
-      "充电宝": 27,
-      "水杯": 14,
+      "充电宝": 24,
+      "水杯": 15,
       "创意礼盒": 10,
+      "氛围灯": 10,
       "手机壳": 9,
       "创意桌搭": 8,
-      "氛围灯": 8,
       "创意厨具": 7,
       "中秋礼盒": 7,
       "冲锋衣": 4,
@@ -29,10 +29,10 @@
       "日历": 3
     },
     "by_axis": {
-      "功能启发": 66,
-      "结构启发": 56,
-      "包装启发": 27,
-      "情绪启发": 12,
+      "功能启发": 64,
+      "结构启发": 55,
+      "包装启发": 26,
+      "情绪启发": 14,
       "视觉启发": 10
     }
   },
@@ -1806,6 +1806,32 @@
       ]
     },
     {
+      "id": "fde7bea7525e",
+      "product_key": null,
+      "title": "Dyson Lightcycle™ task light – Overview",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Uncrate",
+      "source_family": "市场信号",
+      "source_quality": "premium",
+      "url": "https://uncrate.com/uncr/esdysonlightcycleledlamp",
+      "image": "",
+      "summary": "Dyson Lightcycle task light 是明确任务灯单品，具备通过算法模拟日光的自动色温/亮度调节，以及环境光感应等智能功能。。页面证据：",
+      "risk": "智能任务灯，通过算法模拟日光自动调节色温亮度，环境光感应，功能创新明确。",
+      "review_confidence": 10,
+      "review_reason": "智能任务灯，通过算法模拟日光自动调节色温亮度，环境光感应，功能创新明确。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "d507c6fe76fe",
       "product_key": null,
       "title": "Canyon’s Hexagon Charger Makes Wireless Charging Actually Cool - Yanko Design",
@@ -1855,33 +1881,6 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "9318616f0307",
-      "product_key": null,
-      "title": "IVYCable P6- Fast-Charging Magnetic Cable & Power Bank",
-      "category": "充电宝",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/azurbit/ivycable-p6-fast-charging-magnetic-cable-and-power-bank",
-      "image": "",
-      "summary": "IVYCable P6为Kickstarter具体单品，将自折叠磁性充电线与移动电源二合一，支持PD 60W快充和通过充电，创新点在便携结构整合。。页面证据：Dec 10, 2025 · Matt Chang is raising funds for IVYCable P6- Fast-Charging Magnetic Cable & Power Bank on Kickstarter! PD 60W Fast Charging | Pass-Through-Charging Power Bank| One Cable Charges All Your Devices | Self-Folding Magnetic Cable",
-      "risk": "自折叠磁性充电线与移动电源二合一，支持PD 60W与通过充电，便携结构整合创新。",
-      "review_confidence": 10,
-      "review_reason": "自折叠磁性充电线与移动电源二合一，支持PD 60W与通过充电，便携结构整合创新。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
         "deepseek_search_agent"
       ]
     },
@@ -1990,6 +1989,33 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
+      ]
+    },
+    {
+      "id": "d651bc7fe84f",
+      "product_key": null,
+      "title": "Red Dot Design Award: 3-in-1 Travel Portable Charger",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/3-in-1-travel-portable-charger-89301",
+      "image": "",
+      "summary": "Red Dot 获奖的 3合1 旅行便携充电器：集成移动电源、充电器和可伸缩快充线，折叠插头，45W 同时充壳内电池与外部设备，结构创新明确。。页面证据：The 3-in-1 Travel Portable Charger combines a power bank, charger and retractable quick-charging cable in one compact housing. A fold-out mains plug enables direct connection to power sockets. With 45 watts, the system simultaneously charges the...",
+      "risk": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
+      "review_confidence": 8,
+      "review_reason": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -2368,6 +2394,32 @@
       ]
     },
     {
+      "id": "0cd6a37a5117",
+      "product_key": null,
+      "title": "An Intuitive, Solar Powered, Motion Sensor Light",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Design Milk",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://design-milk.com/intuitive-solar-powered-motion-sensor-light",
+      "image": "https://design-milk.com/images/2016/02/ellum-Solar-Smart-illumination-Feltmark-1.jpg",
+      "summary": "Feltmark 的 Ellum Solar 是太阳能供电壁挂灯，集成运动传感器，检测到移动自动亮起，免布线。。页面证据：Feltmark developed Ellum Solar, a smart, wall-mounted light decked out with motion sensors that will illuminate your path when it detects movement.",
+      "risk": "太阳能供电加运动传感器免布线",
+      "review_confidence": 9,
+      "review_reason": "太阳能供电加运动传感器免布线",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "39c645746e14",
       "product_key": null,
       "title": "iF Design - Mijia Desk Study Lamp Pro",
@@ -2496,87 +2548,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "027af993208c",
-      "product_key": null,
-      "title": "iF Design - PMT portable power series mobile power supply",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/pmt-portable-power-series-mobile-power-supply/612590",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "具体产品PMT便携电源系列，采用磷酸铁锂电池，内置AC插座、手柄和照明，创新在于安全性和多功能便携设计。。页面证据：The PMT Power Bank series represents the industry's first Specific Outdoor Power Bank, using lithium iron phosphate automotive-grade batteries. It is characterized by safety and support for fast charging and is suitable for multiple devices. Multiple ports and equipped with AC socket to power large electrical appliances. The product's handle and lighting design achieve portability and expand the range of activity scenarios.",
-      "risk": "内置AC插座、手柄和照明，磷酸铁锂电池安全，多功能便携",
-      "review_confidence": 9,
-      "review_reason": "内置AC插座、手柄和照明，磷酸铁锂电池安全，多功能便携",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
-      "id": "2f997f9713b4",
-      "product_key": null,
-      "title": "RedMagic Go Power Bank is also a 65W charger for your laptop",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "包装启发",
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2025/01/28/redmagic-go-power-bank-is-also-a-65w-charger-for-your-laptop",
-      "image": "",
-      "summary": "Jan 28, 2025 · The third “mode” of this gadget, if you can really call it that, is the aforementioned USB-C cable that saves you time and effort when you only need a quick recharge. The cable also acts as a handle or carrying loop, and its nylon-braided materi",
-      "risk": "充电宝兼65W笔记本充电器，自带USB-C线可作为提手，结构创新。",
-      "review_confidence": 9,
-      "review_reason": "充电宝兼65W笔记本充电器，自带USB-C线可作为提手，结构创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "editorial_main",
-        "充电宝"
-      ]
-    },
-    {
-      "id": "d651bc7fe84f",
-      "product_key": null,
-      "title": "Red Dot Design Award: 3-in-1 Travel Portable Charger",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 87,
-      "score_label": "8.7",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/3-in-1-travel-portable-charger-89301",
-      "image": "",
-      "summary": "Red Dot 获奖的 3合1 旅行便携充电器：集成移动电源、充电器和可伸缩快充线，折叠插头，45W 同时充壳内电池与外部设备，结构创新明确。。页面证据：The 3-in-1 Travel Portable Charger combines a power bank, charger and retractable quick-charging cable in one compact housing. A fold-out mains plug enables direct connection to power sockets. With 45 watts, the system simultaneously charges the...",
-      "risk": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
-      "review_confidence": 8,
-      "review_reason": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -2709,6 +2680,33 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "c08e96dcc07e",
+      "product_key": null,
+      "title": "Red Dot Design Award: Thermo Mug Without Thread",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/thermo-mug-without-thread-79401",
+      "image": "",
+      "summary": "Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置锁定防漏，可拆卸硅胶套，结构创新与交互创新明确。。页面证据：This thermo mug without a screw thread features a push-button opening mechanism that can be operated with one hand. A built-in toggle lock prevents accidental spills, while also serving as a fun fidget feature. The smooth rim and removable silicone sleeve...",
+      "risk": "无螺纹按压开盖单手操作，内置锁定防漏",
+      "review_confidence": 9,
+      "review_reason": "无螺纹按压开盖单手操作，内置锁定防漏",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "award_gallery",
         "deepseek_search_agent"
       ]
     }

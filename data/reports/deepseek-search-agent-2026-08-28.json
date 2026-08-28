@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-28",
+  "rounds": [
+    {
+      "round": 1,
+      "generated_at": "2026-08-28T13:44:23+08:00",
+      "accepted_before": 31,
+      "accepted_by_category_before": {
+        "水杯": 7,
+        "充电宝": 4,
+        "创意厨具": 7,
+        "氛围灯": 7,
+        "创意桌搭": 4,
+        "冲锋衣": 1,
+        "手机壳": 1
+      },
+      "queries": 90,
+      "search_results": 465,
+      "fresh_direct_urls": 283,
+      "skipped_screened_today": 0,
+      "pages_enriched": 189,
+      "pre_screened": 283,
+      "screened_decisions": 266,
+      "screened_ledger_size": 259,
+      "kept": 27,
+      "added": 27,
+      "deepseek_calls": 0,
+      "deepseek_tokens": 0,
+      "by_category": {
+        "创意桌搭": 9,
+        "装置艺术": 7,
+        "创意礼盒": 6,
+        "冲锋衣": 4,
+        "中秋礼盒": 1
+      }
+    }
+  ],
+  "generated_at": "2026-08-28T13:44:23+08:00",
+  "total_kept": 27
+}
