@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-08-31T05:09:11+08:00",
+  "generated_at": "2026-08-31T07:59:17+08:00",
   "stats": {
-    "total_items": 2882,
+    "total_items": 2903,
     "by_category": {
       "氛围灯": 549,
       "创意厨具": 465,
       "水杯": 400,
-      "创意桌搭": 381,
+      "创意桌搭": 387,
       "充电宝": 300,
       "冲锋衣": 206,
       "手机壳": 185,
-      "创意礼盒": 149,
-      "日历": 139,
+      "创意礼盒": 157,
+      "日历": 144,
       "中秋礼盒": 57,
-      "装置艺术": 30,
+      "装置艺术": 32,
       "端午礼盒": 17,
       "钥匙扣水壶": 4
     },
     "by_lane": {
-      "适合改造": 2145,
-      "方向参考": 712,
-      "可直接买样": 25
+      "适合改造": 2160,
+      "方向参考": 716,
+      "可直接买样": 27
     },
     "by_axis": {
-      "功能启发": 1831,
-      "结构启发": 1570,
-      "情绪启发": 642,
-      "包装启发": 437,
-      "视觉启发": 415
+      "功能启发": 1840,
+      "结构启发": 1587,
+      "情绪启发": 643,
+      "包装启发": 445,
+      "视觉启发": 419
     },
     "by_source_family": {
-      "媒体案例": 1089,
-      "市场信号": 1017,
-      "奖项案例": 405,
-      "社交灵感": 110,
-      "包装专项": 104,
-      "设计社区": 102,
+      "媒体案例": 1094,
+      "市场信号": 1021,
+      "奖项案例": 408,
+      "社交灵感": 113,
+      "包装专项": 108,
+      "设计社区": 103,
       "弱市场信号": 29,
-      "趋势观察": 26
+      "趋势观察": 27
     },
     "by_image_state": {
-      "缺图": 1459,
-      "已对齐": 1415,
-      "待核图": 8
+      "缺图": 1471,
+      "已对齐": 1423,
+      "待核图": 9
     }
   },
   "trends": {
@@ -34058,6 +34058,74 @@
       "target_count": 40,
       "items": [
         {
+          "id": "939e980eff19",
+          "title": "Kylendar 2.0：Design Your Perfect Desk Dashboard - Kickstarter",
+          "category": "日历",
+          "summary": "Kylendar 2.0是7英寸电子墨水桌面仪表盘，提供39个widget、AI布局生成器和多页面日历/任务视图，具备明确交互和功能创新。。页面证据：Kylendar is raising funds for Kylendar 2.0：Design Your Perfect Desk Dashboard on Kickstarter! A customizable 7-inch E-Paper dashboard with 39 widgets, AI layout generator, and up to 10 pages for your calendar, tasks, and data.",
+          "product_identity": "",
+          "score": 86,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.kickstarter.com/projects/1290645639/kylendar-20-design-your-perfect-desk-dashboard",
+          "source_name": "Kickstarter",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "视觉启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "7英寸电子墨水桌面仪表盘，集成39个widget和AI布局生成器，将日历与效率仪表盘融合，交互创新显著。",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 86,
+          "innovation": 9,
+          "relevance": 10,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "be70d09d50c4",
+          "title": "Red Dot Design Award: Nova",
+          "category": "创意桌搭",
+          "summary": "Nova是一款无运动部件桌面冷却器，采用离子电极技术引导气流，解决传统风扇噪音、振动和灰尘问题，流体导引结构创新明确，是可买样单品。。页面证据：Nova, a motionless desktop cooler, addresses noise, vibration, and dust issues in traditional coolers. Instead of mechanically moving air, it directs airflow with ion electrode technology, eliminating moving parts. Fluid-guiding structures based on...",
+          "product_identity": "",
+          "score": 85,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.red-dot.org/project/nova-83050",
+          "source_name": "Red Dot",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "无运动部件，利用离子电极直接导流空气，解决传统风扇噪音振动灰尘问题，功能原理有明显创新。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 85,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "award_gallery",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "7ae75ee8d262",
           "title": "Brita Premium Filtering Water Bottle - by Russ Bell / Core77 Design Awards",
           "category": "水杯",
@@ -34196,6 +34264,40 @@
           ]
         },
         {
+          "id": "0279e639140a",
+          "title": "Panettone Box Design – Entelvais - Packaging Of The World",
+          "category": "创意礼盒",
+          "summary": "Entelvais Panettone box features a smart bag-box structural design integrating handles that function directly as a carrier bag, combining packaging and carrying functionality with clear structural innovation.。页面证据：Jun 17, 2026 · Additionally, the smart structural design of the box (bag-box), which integrates handles to function directly as a carrier bag, elevates ...",
+          "product_identity": "",
+          "score": 83,
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://packagingoftheworld.com/2026/06/panettone-box-design-entelvais.html",
+          "source_name": "Packaging of the World",
+          "source_family": "包装专项",
+          "source_type": "packaging_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "包装启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "利用盒体结构本身形成提手，兼具包装与手提袋功能，省去额外拎袋，结构创新明确。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 83,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "d1b199461be8",
           "title": "Eco-Friendly, All-Purpose Camper Hooded Jacket 2.0 - Indiegogo",
           "category": "冲锋衣",
@@ -34265,40 +34367,6 @@
           ]
         },
         {
-          "id": "c78ccea2f0d4",
-          "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device",
-          "category": "充电宝",
-          "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
-          "product_identity": "",
-          "score": 80,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
-          "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-31",
-          "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小太阳能充电宝，集成快充与多端口",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 80,
-          "innovation": 8,
-          "relevance": 10,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
-        },
-        {
           "id": "e7f11e929f2c",
           "title": "Wake Sleep light by Thomas Heatherwick for Tala - Dezeen",
           "category": "氛围灯",
@@ -34327,40 +34395,6 @@
           "quality_score": 80,
           "innovation": 8,
           "relevance": 10,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ]
-        },
-        {
-          "id": "3cb05c25d299",
-          "title": "Samsung Go wireless power bank brings some magnet magic to Android phones",
-          "category": "充电宝",
-          "summary": "具体产品Samsung Go无线充电宝，磁吸无线充电，便携交互创新。。页面证据：https://www.youtube.com/watch?v=y2PzOz1Ndb0 For a nerd what's that one Holy Grail accessory that’s more valued than the gadget itself? The power bank of course. With most of the gadgets going the wireless route, the future is going to be a truly wireless world. So why not a wireless power bank be the norm? The accessory is already",
-          "product_identity": "",
-          "score": 80,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2021/10/samsung-go-wireless-power-bank-magnetically-attaches-to-android-phones/Samsung-Go-Wireless-Power-Bank_-7.jpg",
-          "url": "https://www.yankodesign.com/2021/10/08/samsung-go-wireless-power-bank-brings-some-magnet-magic-to-android-phones",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-31",
-          "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：磁吸无线充电的交互创新",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 80,
-          "innovation": 7,
-          "relevance": 9,
           "tags": [
             "adapt",
             "deepseek_search_agent"
@@ -34439,6 +34473,40 @@
           ]
         },
         {
+          "id": "4cfba2fa7f1c",
+          "title": "This AI-enabled phone case has detachable display that prioritizes and manages your notifications!",
+          "category": "手机壳",
+          "summary": "Noa AI 手机壳带可分离 e-ink 显示屏，可学习用户通知反应并优先管理通知，结构交互创新明确。。页面证据：https://www.youtube.com/watch?v=sNBKuhXnnv0&t=21s A smartphone case that lets you focus on work at hand without being worried about missing any important notifications. Smartphones are like a second skin to us as they constantly keep beaming notifications (more than 100 in a day on average) that can adversely affect productivity and focus levels. It is like, we get",
+          "product_identity": "",
+          "score": 79,
+          "price_gate": "unknown",
+          "image": "https://www.yankodesign.com/images/design_news/2021/08/this-ai-enabled-phone-case-has-detachable-display-that-prioritizes-notifications-for-peak-focus/Noa-detachable-smartphone-case_Accessories_Phone-Case-2.jpg",
+          "url": "https://www.yankodesign.com/2021/08/18/this-ai-enabled-phone-case-has-detachable-display-that-prioritizes-and-manages-your-notifications",
+          "source_name": "Yanko Design",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可分离e-ink副屏，AI管理通知优先级",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 79,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "7447b1176269",
           "title": "All-in-One Desk Mats: Lemat Fixer is the Ultimate Desk ...",
           "category": "创意桌搭",
@@ -34463,41 +34531,6 @@
           "last_seen": "2026-08-31",
           "review_reason": "桌面垫集成无线充电、NFC、工具栏和USB-C，功能整合创新。",
           "review_source": "deepseek",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 8,
-          "relevance": 9,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
-        },
-        {
-          "id": "a1cbed7721a6",
-          "title": "Anker made the ultimate monitor stand with its own built-in multiport hub and wireless charging pad",
-          "category": "创意桌搭",
-          "summary": "Anker 675显示器支架，集成了多口USB-C/USB-A集线器、4K HDMI、以太网口、SD卡槽和无线充电板，提升桌面功能和整洁度，结构创新明显。。页面证据：Elevating your monitor to the appropriate eye level is the least of what the Anker 675 is capable of. The slick stand also houses multiple USB-C ports (going all the way up to 100W output) and USB-A ports, along with a 4K HDMI port, an Ethernet port, and an SD card slot. If that wasn't",
-          "product_identity": "",
-          "score": 79,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2023/02/auto-draft/anker_675_docking_station_1.jpg",
-          "url": "https://www.yankodesign.com/2023/02/08/anker-made-the-ultimate-monitor-stand-with-its-own-built-in-multiport-hub-and-wireless-charging-pad",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-31",
-          "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：显示器支架集成多口集线器和无线充电板，功能整合创新。",
-          "review_source": "deepseek_backlog_recheck",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 79,
@@ -34544,18 +34577,18 @@
           ]
         },
         {
-          "id": "d316781855d9",
-          "title": "This Reusable Modular Magnetic Sticky Note is About to Make Post-Its Obsolete",
+          "id": "16f2967e329b",
+          "title": "デスクトップオーガナイザー",
           "category": "创意桌搭",
-          "summary": "M NOTE可重复使用的模块化磁性便签，结合磁性背衬与可重复粘合层，支持金属和非金属表面，模块化可重组，明确改善桌面记录与收纳痛点。。页面证据：https://youtu.be/3qh6BuAPqr4 Sticky notes have been the backbone of brainstorming sessions, productivity hacks, and last-minute reminders for decades. But let’s be honest—paper notes curl, lose their stickiness, clutter desks, and end up in the trash. As designers and creatives, we need something better. Something modular, flexible, and sustainable. Enter M NOTE, a next-generation sticky note that",
+          "summary": "KOKUYO设计奖大奖作品RAE桌面收纳盒，用户通过折叠一张纸即可组装，材料来自国誉工厂生产笔记本时产生的纸边角料，具备结构创新、可持续材料创新和明确的桌面收纳功能，是具体可参考单品。。页面证据：RAEはコクヨデザインアワード2021でグランプリを受賞した商品。ユーザー自らが1枚の紙を折る事で組み立てる。現在のPC作業中心の生活の中でも必要な小物を収納するオーガナイザーとして「機能性」「審美性」「情緒性」を目指した。更にRAE本体の製品材料としてコクヨ工場で主にノート等の生産時に発生する紙端材を再利用した。",
           "product_identity": "",
           "score": 79,
-          "price_gate": "risk_under_35",
-          "image": "https://www.yankodesign.com/images/design_news/2025/02/draft-m-note/M_NOTE_Reusable_Sticky_Notes_01.jpg",
-          "url": "https://www.yankodesign.com/2025/02/11/this-reusable-modular-magnetic-sticky-note-is-about-to-make-post-its-obsolete",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
+          "price_gate": "likely_over_35",
+          "image": "https://award-attachments.g-mark.io/winners/2024/24608/main.jpg?size=medium",
+          "url": "https://www.g-mark.org/gallery/winners/24608?companies=e66fe9cf-d61f-4f23-9147-813bff313e8a",
+          "source_name": "Good Design Award",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
           "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
@@ -34566,121 +34599,51 @@
           "seen_count": 1,
           "first_seen": "2026-08-31",
           "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可重复使用+磁性背衬+模块化重组，解决传统便签不可重复和难固定的痛点",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 8,
-          "relevance": 9,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
-        },
-        {
-          "id": "a2d32508f28f",
-          "title": "This slim laptop sleeve doubles as a portable desk mat and wireless charger",
-          "category": "创意桌搭",
-          "summary": "Laptop sleeve转换成便携桌垫并内置无线充电器，创新结合桌面整理和充电功能。。页面证据：Working from home might no longer be a buzzword these days, but sitting down anywhere with your laptop has always been a thing even before 2020. That is also why there will always be a thriving market for accessories that help make working anywhere more pleasant, even if you don't have all the comforts and",
-          "product_identity": "",
-          "score": 79,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2023/11/this-slim-laptop-sleeve-doubles-as-a-portable-desk-mat-and-wireless-charger/nexa-laptop-sleeve-10.jpg",
-          "url": "https://www.yankodesign.com/2023/11/21/this-slim-laptop-sleeve-doubles-as-a-portable-desk-mat-and-wireless-charger",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-31",
-          "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：电脑套可转换为桌垫并内置无线充电，多功能结构创新",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
+          "review_reason": "一张纸折叠成桌面收纳盒，利用笔记本边角料，具备结构创新和可持续材料创新",
+          "review_source": "deepseek",
+          "review_confidence": 10,
           "review_policy_version": 3,
           "quality_score": 79,
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
-        },
-        {
-          "id": "d95a16857477",
-          "title": "Wireless charging meets a DIY light that changes intensity with distance!",
-          "category": "创意桌搭",
-          "summary": "Line无线充电灯，通过传感器距离调节亮度，结合无线充电，交互创新。。页面证据：This is Line, and having seen this you may never be content with the comparatively mundane lamp that resides on your desk ever again. Line encourages a rather unique form of user interaction for the adjustment of the intensity of the light; by increasing the distance between the sensors that are housed within the base",
-          "product_identity": "",
-          "score": 79,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2019/05/wireless_diy_lamp_and_charger_layout.jpg",
-          "url": "https://www.yankodesign.com/2019/05/31/wireless-charging-meets-a-diy-light-that-changes-intensity-with-distance",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-31",
-          "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通过传感器距离调节亮度，交互创新",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 8,
-          "relevance": 10,
-          "tags": [
-            "adapt",
+            "award_gallery",
             "deepseek_search_agent"
-          ],
-          "is_emergency_fill": true,
-          "emergency_fill_reason": "当日临时补录：普通品类配额后仍有缺口，从已完成 DeepSeek 审核且未进入正式展示的高分候选中补足。"
+          ]
         },
         {
-          "id": "4b2bbdf89b18",
-          "title": "PITAKA Launches Their Latest iPhone 16 Cases: Slim, Light, Strong",
-          "category": "手机壳",
-          "summary": "PITAKA iPhone 16 case with Lumintex™ luminescent polymer fiber, emitting soft green glow after absorbing light for up to 20 minutes. Material innovation clearly described.。页面证据：Smartphones are getting more durable every generation, but there's no escaping the fact that a single wrong fall could render it useless. Protective cases increase their chances of survival at the expense of hiding their beauty, and even those clear silicone ones can sometimes make otherwise luxurious phones look cheap. If you're going to cover",
+          "id": "270603460c1a",
+          "title": "Red Dot Design Award: Milo Aluminium",
+          "category": "创意桌搭",
+          "summary": "Milo Aluminium是一款桌面手机/移动设备支架，采用日本微吸技术，可无残胶固定光滑表面并调节角度，属于明确单品的桌面收纳配件，结构创新明确。。页面证据：Milo is an elegant, minimalist accessory for the desktop – a place to hold smartphones or other mobile devices. The sleek aluminium stand uses high-tech, Japanese, micro-suction technology to hold devices with smooth surfaces at a desired angle without leaving a residue.",
           "product_identity": "",
           "score": 78,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2024/09/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong/PITAKA_glow_in_the_dark_phone_cover_hero.jpg",
-          "url": "https://www.yankodesign.com/2024/09/14/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
+          "price_gate": "likely_over_35",
+          "image": "",
+          "url": "https://www.red-dot.org/zh/project/milo-aluminium-1-7746",
+          "source_name": "Red Dot",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
           "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
+            "功能启发",
+            "结构启发",
             "视觉启发"
           ],
-          "image_state": "已对齐",
+          "image_state": "缺图",
           "seen_count": 1,
           "first_seen": "2026-08-31",
           "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Lumintex™发光聚合物纤维，吸收光后自发光20分钟，材料创新",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
+          "review_reason": "采用日本微吸技术，可无残胶吸附光滑表面并调节角度，相比普通重力支架有明确结构创新。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
           "review_policy_version": 3,
           "quality_score": 78,
           "innovation": 8,
-          "relevance": 10,
+          "relevance": 9,
           "tags": [
-            "adapt",
+            "award_gallery",
             "deepseek_search_agent"
           ]
         },
@@ -34720,70 +34683,174 @@
           ]
         },
         {
-          "id": "689207fe0db5",
-          "title": "i(Phone) is for indestructible",
-          "category": "手机壳",
-          "summary": "RhinoShield Crash Guard是超薄防撞手机壳，超越军用级冲击防护，结构创新体现在超薄设计同时提供高防护。。页面证据：Combine Evolutive Labs' incredible RhinoShield Screen Protector with their latest product, the RhinoShield Crash Guard and your precious iPhone 5/6/6+ will be battle-ready! Exceeding military standard impact protection and absorption, the ultra-slim bumper can withstand the most damage a user could possibly do while simultaneously reflecting the original sleek design of the iPhone... in other",
+          "id": "cb5b3eef5b9d",
+          "title": "iF Design - Miele M Sense Cookware",
+          "category": "创意厨具",
+          "summary": "Miele M Sense 智能传感器锅具能与灶具联动，自动调节火力，防止烧焦和溢出，功能创新明确。。页面证据：\"Nothing burns. Nothing boils over.\" This isn’t just a promise - It's the beginning of a new era of intelligent cooking! M Sense cookware combines sleek aesthetics with advanced functionality. Whether you're simmering, boiling, or frying, M Sense fine-tunes the process and eliminates the need for manual re-adjustments, so you can focus your time and attention on other things. Intelligent sensors and perfect sync with KM 8000 hobs ensure automatic power adjustment, keeping your setting steady – for precise, consistent results. Miele unveils the multi-patented innovation in combination with the new generation of induction hobs KM 8000.",
           "product_identity": "",
           "score": 78,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2014/10/16/rhinoshield_01.jpg",
-          "url": "https://www.yankodesign.com/2014/10/17/iphone-is-for-indestructible",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "standard",
+          "price_gate": "likely_over_35",
+          "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+          "url": "https://ifdesign.com/en/winner-ranking/project/miele-m-sense-cookware/742688",
+          "source_name": "iF设计奖",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
+          "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
-            "结构启发"
+            "功能启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-08-31",
           "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：超薄结构同时提供军用级防摔防护，结构创新明显",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：智能传感器锅具与灶具联动，自动防止烧焦溢出",
           "review_source": "deepseek_backlog_recheck",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 78,
-          "innovation": 7,
-          "relevance": 10,
+          "innovation": 8,
+          "relevance": 9,
           "tags": [
-            "adapt",
-            "deepseek_search_agent"
+            "award_gallery",
+            "buy_sample"
           ]
         },
         {
-          "id": "d3fa38e4ee83",
-          "title": "Carousel - by Pablo Designs / Core77 Design Awards",
-          "category": "氛围灯",
-          "summary": "明确单品Carousel灯，台灯/落地灯，融合无线充电托盘，照明与功能创新。。页面证据：Carousel Table and Floor, blur the line between ambiance and utility combining a low-setting wireless charging tray surface for your mobile devices with warm, glare-free illumination.",
+          "id": "31fe8eb96bcc",
+          "title": "Staying Organized at a Sit/Stand Desk - Core77",
+          "category": "创意桌搭",
+          "summary": "Bold Furniture 的 Joey Ruiter 设计的双储物柜升降桌，将储物柜集成到升降桌结构中，提供站坐办公时的就近收纳，属于明确单品的结构创新。。页面证据：Height-adjustable desks are getting very popular as people become concerned about the health risks of sitting all day. Many of these desks are just flat surfaces with legs and an adjustment mechanism—you often see photos of the desks looking quite bare, with just a computer on them. But as a",
           "product_identity": "",
           "score": 77,
-          "price_gate": "likely_over_35",
-          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1331330_title__118035_R739H76bD_sharing.jpg",
-          "url": "https://designawards.core77.com/Furniture-Lighting/118035/Carousel",
+          "price_gate": "unknown",
+          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_37588_.jpg",
+          "url": "https://www.core77.com/posts/37588",
           "source_name": "Core77",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
-          "source_quality": "standard",
-          "action_lane": "方向参考",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
           "axes": [
             "功能启发",
-            "情绪启发",
+            "结构启发",
             "视觉启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-08-31",
           "last_seen": "2026-08-31",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：台灯集成无线充电托盘，照明与实用功能结合",
+          "review_reason": "将双储物柜直接集成到升降桌结构中，在站坐切换时提供就近收纳，结构创新明确。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 77,
+          "innovation": 8,
+          "relevance": 8,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "38414bb16d75",
+          "title": "X6: Most Versatile USB-C PD Power Bank & Hub Ever",
+          "category": "充电宝",
+          "summary": "Zendure X6 是一款可同时为智能手表、耳机等低功耗设备充电的 USB-C PD 移动电源兼集线器，具备高度通用输出能力，功能创新明确。。页面证据：17-day returns X6 is the only USB-C power bank on the market that can charge an almost unlimited range of low-power devices such as smart watches, Bluetooth earphones, fitness ...",
+          "product_identity": "",
+          "score": 77,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.indiegogo.com/en/projects/zendure/x6-most-versatile-usb-c-pd-power-bank-hub-ever",
+          "source_name": "Indiegogo",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "USB-C PD充电宝可向智能手表等低功耗设备充电，同时具备集线器功能，低功耗输出创新。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 77,
+          "innovation": 8,
+          "relevance": 9,
+          "tags": [
+            "deepseek_search_agent",
+            "market_signal_strong"
+          ]
+        },
+        {
+          "id": "e014c821b1cd",
+          "title": "portable lamp modules integrate into furniture for compact living",
+          "category": "氛围灯",
+          "summary": "SAI便携灯模块，可收纳进胶合板架中并充电，专为紧凑居住设计，具备调节亮度与色温，创新点明确。。页面证据：junhee lee and chaewon kim's 'SAI' storable and portable lamp modules charge in a plywood shelf that doubles as furniture for compact spaces.",
+          "product_identity": "",
+          "score": 77,
+          "price_gate": "unknown",
+          "image": "https://www.designboom.com/twitterimages/uploads/2023/07/SAI-light-storage-designboom-1200.jpg",
+          "url": "https://www.designboom.com/design/sai-storable-portable-lamp-modules-compact-living-07-07-2023",
+          "source_name": "Designboom",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "功能启发",
+            "结构启发",
+            "情绪启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：便携灯模块可收纳进胶合板架并充电，模块化与家具整合创新明确。",
           "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
+          "review_confidence": 8,
           "review_policy_version": 3,
           "quality_score": 77,
           "innovation": 8,
           "relevance": 10,
+          "tags": [
+            "deepseek_search_agent",
+            "editorial_main"
+          ]
+        },
+        {
+          "id": "16782afd5660",
+          "title": "俗画说一历解药2024日历创意机械遥杆盲盒台历_有物猩球-站酷ZCOOL",
+          "category": "日历",
+          "summary": "明确单品：俗画说一历解药2024机械摇杆盲盒台历，采用机械摇杆交互，结合盲盒抽取与原创公仔卡片，兼具解压和桌面装饰功能，符合日历类机械/交互创新。。页面证据：俗画说一历解药2024日历创意机械遥杆盲盒台历,机械摇杆日历,解压治愈，拒绝焦虑,原创公仔卡片,有颜值，很有料,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
+          "product_identity": "",
+          "score": 77,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.zcool.com.cn/work/ZNjYwNzgxNTY=.html",
+          "source_name": "站酷",
+          "source_family": "设计社区",
+          "source_type": "design_community",
+          "source_quality": "standard",
+          "action_lane": "方向参考",
+          "axes": [
+            "情绪启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "机械摇杆交互+盲盒抽取结构，原创公仔卡片，解压与桌面装饰结合",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 77,
+          "innovation": 8,
+          "relevance": 9,
           "tags": [
             "adapt",
             "deepseek_search_agent"
@@ -34822,6 +34889,41 @@
           "tags": [
             "adapt",
             "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "d668eeb39c91",
+          "title": "Desan Advent Box — Corporate Gift Design (11) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
+          "category": "创意礼盒",
+          "summary": "Desan 企业礼品盒将品牌名五个字母转化为五种香料，开箱过程成为品牌风味体验系统，概念与结构均有创新。。页面证据：Corporate gift for partners, designed as a system of flavors and meanings. The five letters of the brand name transform into five spices, turning the unboxing process into a brand experience.",
+          "product_identity": "",
+          "score": 76,
+          "price_gate": "likely_over_35",
+          "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/5722b8241097807.699823c971358.jpg",
+          "url": "https://www.behance.net/gallery/241097807/Desan-Advent-Box-Corporate-Gift-Design/modules/1411437767",
+          "source_name": "Behance",
+          "source_family": "社交灵感",
+          "source_type": "social_signal",
+          "source_quality": "standard",
+          "action_lane": "可直接买样",
+          "axes": [
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "待核图",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "品牌名五个字母转化为五种香料，开箱形成品牌风味体验系统，概念与结构均创新",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 76,
+          "innovation": 9,
+          "relevance": 10,
+          "tags": [
+            "deepseek_search_agent",
+            "design_community"
           ]
         },
         {
@@ -35000,38 +35102,37 @@
           ]
         },
         {
-          "id": "0980558c34c1",
-          "title": "Chopsy - Food Prep Made Easy by Graham Ripple - Indiegogo",
-          "category": "创意厨具",
-          "summary": "Chopsy是模块化切菜系统，包含1-4块不同切菜板和5个可连接底座特殊pod，实现备餐一体化的结构与功能创新。。页面证据：Chopsy is a modular chopping system that comes with between 1-4 different cutting boards and 5 unique pods that attach to the base unit.",
+          "id": "ca6498e68610",
+          "title": "PopSlate Case",
+          "category": "手机壳",
+          "summary": "PopSlate Case 在手机壳背面集成4英寸电子纸显示屏，通过蓝牙与App同步显示单色内容，实现动态外观和信息展示，属于明确的功能与交互创新单品。。页面证据：Your iPhone is great communications tool — but it's mostly only useful if the screen is on, meaning that you're drawing battery power like crazy...",
           "product_identity": "",
           "score": 75,
           "price_gate": "unknown",
-          "image": "",
-          "url": "https://www.indiegogo.com/en/projects/grahamripple/chopsy-food-prep-made-easy",
-          "source_name": "Indiegogo",
+          "image": "https://uncrate.com/p/2015/01/popslate.jpg",
+          "url": "https://uncrate.com/popslate-case",
+          "source_name": "Uncrate",
           "source_family": "市场信号",
           "source_type": "market_reference",
-          "source_quality": "standard",
+          "source_quality": "premium",
           "action_lane": "适合改造",
           "axes": [
-            "功能启发",
-            "结构启发"
+            "视觉启发"
           ],
-          "image_state": "缺图",
+          "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-08-31",
           "last_seen": "2026-08-31",
-          "review_reason": "模块化切菜系统，多块切菜板与可连接底座pod，实现备餐一体化操作",
-          "review_source": "deepseek",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：在手机壳背面集成4英寸电子纸显示屏，通过App同步显示动态内容，实现个性化外观与信息展示，功能交互创新明确。",
+          "review_source": "deepseek_backlog_recheck",
           "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 75,
-          "innovation": 8,
+          "innovation": 9,
           "relevance": 9,
           "tags": [
-            "deepseek_search_agent",
-            "market_signal_strong"
+            "buy_sample",
+            "deepseek_search_agent"
           ]
         },
         {
@@ -35070,6 +35171,40 @@
           ]
         },
         {
+          "id": "aca77eb7c737",
+          "title": "This $28 Power Bank Accidentally Recreated the iPhone 3G Design - Yanko Design",
+          "category": "充电宝",
+          "summary": "Cuktech 10 Air磁吸充电宝，10000mAh、55W有线、15W无线，外壳致敬iPhone 3G，明确品牌型号，视觉设计创新。。页面证据：Cuktech just dropped their 10 Air magnetic power bank in China, and honestly, the most interesting thing about it has nothing to do with the specs. Sure, it's got a 10,000mAh battery with 55W wired fast charging and 15W wireless, and yeah, the CNY 199 price tag (roughly $28) is aggressively reasonable. But look at",
+          "product_identity": "",
+          "score": 75,
+          "price_gate": "unknown",
+          "image": "https://www.yankodesign.com/images/design_news/2025/11/auto-draft/cuktech_10_air_power_bank_1.jpg",
+          "url": "https://www.yankodesign.com/2025/12/31/this-28-power-bank-accidentally-recreated-the-iphone-3g-design",
+          "source_name": "Yanko Design",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "功能启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "磁吸充电宝以外观致敬iPhone 3G，视觉差异化明显，具备情绪价值。",
+          "review_source": "deepseek",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 75,
+          "innovation": 7,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "7325c186d57c",
           "title": "Build the Tiny Food Village of Your Dreams with Cafe de Papa's Street Kiosk Packaging - DIELINE Build the Tiny Food Village of Your Dreams with Cafe de Papa's Street Kiosk Packagin",
           "category": "创意礼盒",
@@ -35102,6 +35237,78 @@
           "tags": [
             "adapt",
             "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "223d8886211b",
+          "title": "Cascauvas is a Sustainable Take on Christmas Liquor Packaging - DIELINE Cascauvas is a Sustainable Take on Christmas Liquor Packaging - DIELINE",
+          "category": "创意礼盒",
+          "summary": "Cascauvas 是可持续圣诞利口酒礼盒包装，木制士兵造型可拆解为拼图，并兼具游戏、装饰与收纳功能，具有清晰的结构/复用/材料创新，符合创意礼盒品类。。页面证据：Laura Ramos combines sustainability and playfulness with her “Cascauvas” packaging—a festive and multifunctional design that doubles as a puzzle game.",
+          "product_identity": "",
+          "score": 74,
+          "price_gate": "likely_over_35",
+          "image": "https://i0.wp.com/thedieline.com/wp-content/uploads/2024/08/7-10-cover.jpg",
+          "url": "https://thedieline.com/sw-cascauvas-is-an-ingenious-take-on-sustainable-christmas-liquor-packaging",
+          "source_name": "The Dieline",
+          "source_family": "包装专项",
+          "source_type": "packaging_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "木质士兵造型可拆解为拼图，兼具游戏、装饰与收纳功能，结构创新清晰。",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 74,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "378bb9de4a74",
+          "title": "Ramen Library & Asiafood. Brand Applications. :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest F",
+          "category": "创意礼盒",
+          "summary": "明确的书形礼盒单品，外观仿真书籍，内部收纳礼物与宣传物料，开箱过程有结构叙事体验，创新点突出。。页面证据：Graphic Design, Illustration, Packaging, Adobe Illustrator, Adobe Photoshop",
+          "product_identity": "",
+          "score": 74,
+          "price_gate": "likely_over_35",
+          "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0d00de251926529.6a53bb2163a58.jpg",
+          "url": "https://www.behance.net/gallery/251926529/Ramen-Library-Asiafood-Brand-Applications",
+          "source_name": "Behance",
+          "source_family": "社交灵感",
+          "source_type": "social_signal",
+          "source_quality": "standard",
+          "action_lane": "可直接买样",
+          "axes": [
+            "功能启发",
+            "包装启发",
+            "结构启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-08-31",
+          "last_seen": "2026-08-31",
+          "review_reason": "书形礼盒结构创新，仿真书籍外观，内部收纳礼物与宣传物料，开箱过程有结构叙事体验",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 74,
+          "innovation": 9,
+          "relevance": 10,
+          "tags": [
+            "deepseek_search_agent",
+            "design_community"
           ]
         },
         {
@@ -35242,67 +35449,34 @@
             "buy_sample",
             "deepseek_search_agent"
           ]
-        },
-        {
-          "id": "6cb06fac1db8",
-          "title": "Wireless Charging Teams up With Intelligent Lighting in Carousel",
-          "category": "创意桌搭",
-          "summary": "Pablo Designs Carousel 明确两件套产品，将无线充电托盘与无眩光照明结合，支持桌面充电与照明，功能结构创新。。页面证据：Pablo Designs' Carousel is a two piece lighting series that combines a wireless mobile charging tray with glare-free lighting.",
-          "product_identity": "",
-          "score": 74,
-          "price_gate": "unknown",
-          "image": "https://design-milk.com/images/2023/07/Carousel-Pablo-Designs-Featured-Image.jpg",
-          "url": "https://design-milk.com?p=514988",
-          "source_name": "Design Milk",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-08-31",
-          "last_seen": "2026-08-31",
-          "review_reason": "无线充电托盘与无眩光台灯结合，一套产品覆盖桌面照明与充电，结构整合清晰。",
-          "review_source": "deepseek",
-          "review_confidence": 8,
-          "review_policy_version": 3,
-          "quality_score": 74,
-          "innovation": 7,
-          "relevance": 9,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
         }
       ],
-      "actual_count": 35,
+      "actual_count": 40,
       "stats": {
         "by_lane": {
-          "适合改造": 28,
-          "方向参考": 7
+          "适合改造": 31,
+          "方向参考": 7,
+          "可直接买样": 2
         },
         "by_category": {
           "氛围灯": 7,
-          "创意桌搭": 7,
           "创意厨具": 7,
+          "创意桌搭": 6,
           "水杯": 6,
+          "创意礼盒": 5,
+          "日历": 3,
           "冲锋衣": 2,
-          "充电宝": 2,
           "手机壳": 2,
-          "日历": 1,
-          "创意礼盒": 1
+          "充电宝": 2
         },
         "by_source_family": {
-          "媒体案例": 16,
-          "市场信号": 14,
-          "设计社区": 2,
-          "趋势观察": 1,
-          "奖项案例": 1,
-          "包装专项": 1
+          "市场信号": 16,
+          "媒体案例": 10,
+          "奖项案例": 5,
+          "设计社区": 3,
+          "包装专项": 3,
+          "社交灵感": 2,
+          "趋势观察": 1
         },
         "source_quota": {
           "奖项案例": 8,
@@ -35314,16 +35488,16 @@
           "社交灵感": 3
         },
         "source_quota_fill": {
-          "奖项案例": 1,
+          "奖项案例": 5,
           "媒体案例": 6,
-          "包装专项": 1,
-          "设计社区": 2,
+          "包装专项": 3,
+          "设计社区": 3,
           "市场信号": 3,
           "弱市场信号": 0,
-          "社交灵感": 0
+          "社交灵感": 2
         },
         "backfill_count": 0,
-        "emergency_fill_count": 1
+        "emergency_fill_count": 0
       }
     },
     {
@@ -94500,6 +94674,40 @@
       ]
     },
     {
+      "id": "939e980eff19",
+      "title": "Kylendar 2.0：Design Your Perfect Desk Dashboard - Kickstarter",
+      "category": "日历",
+      "summary": "Kylendar 2.0是7英寸电子墨水桌面仪表盘，提供39个widget、AI布局生成器和多页面日历/任务视图，具备明确交互和功能创新。。页面证据：Kylendar is raising funds for Kylendar 2.0：Design Your Perfect Desk Dashboard on Kickstarter! A customizable 7-inch E-Paper dashboard with 39 widgets, AI layout generator, and up to 10 pages for your calendar, tasks, and data.",
+      "product_identity": "",
+      "score": 86,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/1290645639/kylendar-20-design-your-perfect-desk-dashboard",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "7英寸电子墨水桌面仪表盘，集成39个widget和AI布局生成器，将日历与效率仪表盘融合，交互创新显著。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 86,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "bbec914f74ca",
       "title": "Level Up Your Tech Setup in 2025 with Aulumu’s Techno-Minimal Accessories - Yanko Design",
       "category": "创意桌搭",
@@ -95465,6 +95673,40 @@
       "relevance": 9,
       "tags": [
         "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "be70d09d50c4",
+      "title": "Red Dot Design Award: Nova",
+      "category": "创意桌搭",
+      "summary": "Nova是一款无运动部件桌面冷却器，采用离子电极技术引导气流，解决传统风扇噪音、振动和灰尘问题，流体导引结构创新明确，是可买样单品。。页面证据：Nova, a motionless desktop cooler, addresses noise, vibration, and dust issues in traditional coolers. Instead of mechanically moving air, it directs airflow with ion electrode technology, eliminating moving parts. Fluid-guiding structures based on...",
+      "product_identity": "",
+      "score": 85,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.red-dot.org/project/nova-83050",
+      "source_name": "Red Dot",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "无运动部件，利用离子电极直接导流空气，解决传统风扇噪音振动灰尘问题，功能原理有明显创新。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 85,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "award_gallery",
         "deepseek_search_agent"
       ]
     },
@@ -99415,6 +99657,40 @@
       ]
     },
     {
+      "id": "0279e639140a",
+      "title": "Panettone Box Design – Entelvais - Packaging Of The World",
+      "category": "创意礼盒",
+      "summary": "Entelvais Panettone box features a smart bag-box structural design integrating handles that function directly as a carrier bag, combining packaging and carrying functionality with clear structural innovation.。页面证据：Jun 17, 2026 · Additionally, the smart structural design of the box (bag-box), which integrates handles to function directly as a carrier bag, elevates ...",
+      "product_identity": "",
+      "score": 83,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://packagingoftheworld.com/2026/06/panettone-box-design-entelvais.html",
+      "source_name": "Packaging of the World",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "利用盒体结构本身形成提手，兼具包装与手提袋功能，省去额外拎袋，结构创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 83,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "0cd6a37a5117",
       "title": "An Intuitive, Solar Powered, Motion Sensor Light",
       "category": "氛围灯",
@@ -102567,6 +102843,41 @@
       ]
     },
     {
+      "id": "c1985e967fa1",
+      "title": "Astral- The World’s First Smart Desk Organizer by Harsharan ...",
+      "category": "创意桌搭",
+      "summary": "明确单品：Astral 智能桌面收纳盒，集成 Alexa 语音助手与磁吸模块，实现智能交互与灵活整理，功能与结构创新明显；Indiegogo 众筹页可购买样品。。页面证据：Unleash Next-Level Smart Productivity with an Alexa-powered Desk Organizer with magnetic modules.",
+      "product_identity": "",
+      "score": 82,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.indiegogo.com/en/projects/harsharandeepsingh/astral-the-world-s-first-smart-desk-organizer",
+      "source_name": "Indiegogo",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "集成Alexa语音助手的智能桌面收纳盒，配磁吸模块，将收纳与语音交互结合，功能创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 82,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "e307fff08626",
       "title": "Grayl Geopress——可以更快完成净水任务的水杯设计！ - 普象网",
       "category": "水杯",
@@ -103733,7 +104044,7 @@
       "seen_count": 1,
       "first_seen": "2026-07-27",
       "last_seen": "2026-07-27",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成汽车启动和LED手电筒的多功能充电宝，功能创新。",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成汽车启动和LED手电筒的多功能充电宝，功能创新。",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -105873,7 +106184,7 @@
       "seen_count": 1,
       "first_seen": "2026-08-19",
       "last_seen": "2026-08-19",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：台灯+多口插座+无线充电三合一，整合桌面充电场景减少线缆",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：台灯+多口插座+无线充电三合一，整合桌面充电场景减少线缆",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 8,
       "review_policy_version": 3,
@@ -109040,74 +109351,6 @@
       ]
     },
     {
-      "id": "c78ccea2f0d4",
-      "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device",
-      "category": "充电宝",
-      "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
-      "product_identity": "",
-      "score": 80,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
-      "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小太阳能充电宝，集成快充与多端口",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 80,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "3cb05c25d299",
-      "title": "Samsung Go wireless power bank brings some magnet magic to Android phones",
-      "category": "充电宝",
-      "summary": "具体产品Samsung Go无线充电宝，磁吸无线充电，便携交互创新。。页面证据：https://www.youtube.com/watch?v=y2PzOz1Ndb0 For a nerd what's that one Holy Grail accessory that’s more valued than the gadget itself? The power bank of course. With most of the gadgets going the wireless route, the future is going to be a truly wireless world. So why not a wireless power bank be the norm? The accessory is already",
-      "product_identity": "",
-      "score": 80,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2021/10/samsung-go-wireless-power-bank-magnetically-attaches-to-android-phones/Samsung-Go-Wireless-Power-Bank_-7.jpg",
-      "url": "https://www.yankodesign.com/2021/10/08/samsung-go-wireless-power-bank-brings-some-magnet-magic-to-android-phones",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：磁吸无线充电的交互创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 80,
-      "innovation": 7,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "5db2aaf18577",
       "title": "Prong PWR Case | Uncrate",
       "category": "手机壳",
@@ -111269,6 +111512,40 @@
       ]
     },
     {
+      "id": "3cb05c25d299",
+      "title": "Samsung Go wireless power bank brings some magnet magic to Android phones - Yanko Design",
+      "category": "充电宝",
+      "summary": "具体产品Samsung Go无线充电宝，磁吸无线充电，便携交互创新。。页面证据：https://www.youtube.com/watch?v=y2PzOz1Ndb0 For a nerd what's that one Holy Grail accessory that’s more valued than the gadget itself? The power bank of course. With most of the gadgets going the wireless route, the future is going to be a truly wireless world. So why not a wireless power bank be the norm? The accessory is already",
+      "product_identity": "",
+      "score": 80,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2021/10/samsung-go-wireless-power-bank-magnetically-attaches-to-android-phones/Samsung-Go-Wireless-Power-Bank_-7.jpg",
+      "url": "https://www.yankodesign.com/2021/10/08/samsung-go-wireless-power-bank-brings-some-magnet-magic-to-android-phones",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：磁吸无线充电的交互创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 80,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "8a2d82c2db79",
       "title": "No More Hot Hands - Yanko Design",
       "category": "水杯",
@@ -111498,7 +111775,7 @@
       "seen_count": 1,
       "first_seen": "2026-07-23",
       "last_seen": "2026-07-23",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可拆卸药盒与水杯集成，提醒用药，功能整合创新。",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可拆卸药盒与水杯集成，提醒用药，功能整合创新。",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -111789,6 +112066,40 @@
       ]
     },
     {
+      "id": "c78ccea2f0d4",
+      "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device - Yanko Design",
+      "category": "充电宝",
+      "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
+      "product_identity": "",
+      "score": 80,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
+      "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小太阳能充电宝，集成快充与多端口",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 80,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "0022da57f24a",
       "title": "Sleek all-black desk organizer makes all wires disappear + offers shadowless lighting - Yanko Design",
       "category": "创意桌搭",
@@ -111810,7 +112121,7 @@
       "seen_count": 1,
       "first_seen": "2026-07-21",
       "last_seen": "2026-07-21",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成无影灯与线缆管理的桌面整理器，专利系统，功能与结构创新",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：集成无影灯与线缆管理的桌面整理器，专利系统，功能与结构创新",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -112996,40 +113307,6 @@
       ]
     },
     {
-      "id": "0bc87e921441",
-      "title": "iF Design - Smart Water Bottle",
-      "category": "水杯",
-      "summary": "明确产品：Smart Water Bottle 智能水杯，内置传感器记录饮水量、监测水质，通过蓝牙连接 App 提醒补水，并以灯光反馈，具备交互与功能创新。。页面证据：Bei unserem Produkt handelt es sich um eine intelligente Wasserflasche mit einem internen Sensor, der die vom Benutzer täglich konsumierte Wassermenge erfasst. Indem die Flasche über Bluetooth mit einer motivierenden mobilen Anwendung verbunden wird, kann der Nutzer den ganzen Tag über motiviert bleiben. Wenn zu einer bestimmten Tageszeit zu wenig Wasser getrunken wird, leuchtet die Flasche auf, um den Benutzer daran zu erinnern, Wasser zu trinken. In der Zwischenzeit ist die Flasche mit intelligenten Sensoren ausgestattet, die die Qualität des Wassers in der Flasche messen und dem Benutzer über eine mobile A",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "likely_over_35",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "url": "https://ifdesign.com/en/winner-ranking/project/smart-water-bottle/565585",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 2,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置传感器追踪饮水量，蓝牙连接APP，发光提醒，功能创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
       "id": "77996705bff6",
       "title": "Red Dot Design Award: Owala FreeSip",
       "category": "水杯",
@@ -113094,6 +113371,40 @@
       "review_policy_version": 3,
       "quality_score": 79,
       "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
+      "id": "0bc87e921441",
+      "title": "iF Design - Smart Water Bottle",
+      "category": "水杯",
+      "summary": "明确产品：Smart Water Bottle 智能水杯，内置传感器记录饮水量、监测水质，通过蓝牙连接 App 提醒补水，并以灯光反馈，具备交互与功能创新。。页面证据：Bei unserem Produkt handelt es sich um eine intelligente Wasserflasche mit einem internen Sensor, der die vom Benutzer täglich konsumierte Wassermenge erfasst. Indem die Flasche über Bluetooth mit einer motivierenden mobilen Anwendung verbunden wird, kann der Nutzer den ganzen Tag über motiviert bleiben. Wenn zu einer bestimmten Tageszeit zu wenig Wasser getrunken wird, leuchtet die Flasche auf, um den Benutzer daran zu erinnern, Wasser zu trinken. In der Zwischenzeit ist die Flasche mit intelligenten Sensoren ausgestattet, die die Qualität des Wassers in der Flasche messen und dem Benutzer über eine mobile A",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "likely_over_35",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "url": "https://ifdesign.com/en/winner-ranking/project/smart-water-bottle/565585",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-08-06",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置传感器追踪饮水量，蓝牙连接APP，发光提醒，功能创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
       "relevance": 10,
       "tags": [
         "adapt",
@@ -113590,18 +113901,18 @@
       ]
     },
     {
-      "id": "a1cbed7721a6",
-      "title": "Anker made the ultimate monitor stand with its own built-in multiport hub and wireless charging pad",
+      "id": "16f2967e329b",
+      "title": "デスクトップオーガナイザー",
       "category": "创意桌搭",
-      "summary": "Anker 675显示器支架，集成了多口USB-C/USB-A集线器、4K HDMI、以太网口、SD卡槽和无线充电板，提升桌面功能和整洁度，结构创新明显。。页面证据：Elevating your monitor to the appropriate eye level is the least of what the Anker 675 is capable of. The slick stand also houses multiple USB-C ports (going all the way up to 100W output) and USB-A ports, along with a 4K HDMI port, an Ethernet port, and an SD card slot. If that wasn't",
+      "summary": "KOKUYO设计奖大奖作品RAE桌面收纳盒，用户通过折叠一张纸即可组装，材料来自国誉工厂生产笔记本时产生的纸边角料，具备结构创新、可持续材料创新和明确的桌面收纳功能，是具体可参考单品。。页面证据：RAEはコクヨデザインアワード2021でグランプリを受賞した商品。ユーザー自らが1枚の紙を折る事で組み立てる。現在のPC作業中心の生活の中でも必要な小物を収納するオーガナイザーとして「機能性」「審美性」「情緒性」を目指した。更にRAE本体の製品材料としてコクヨ工場で主にノート等の生産時に発生する紙端材を再利用した。",
       "product_identity": "",
       "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2023/02/auto-draft/anker_675_docking_station_1.jpg",
-      "url": "https://www.yankodesign.com/2023/02/08/anker-made-the-ultimate-monitor-stand-with-its-own-built-in-multiport-hub-and-wireless-charging-pad",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
+      "price_gate": "likely_over_35",
+      "image": "https://award-attachments.g-mark.io/winners/2024/24608/main.jpg?size=medium",
+      "url": "https://www.g-mark.org/gallery/winners/24608?companies=e66fe9cf-d61f-4f23-9147-813bff313e8a",
+      "source_name": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
       "source_quality": "premium",
       "action_lane": "适合改造",
       "axes": [
@@ -113612,256 +113923,47 @@
       "seen_count": 1,
       "first_seen": "2026-08-31",
       "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：显示器支架集成多口集线器和无线充电板，功能整合创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
+      "review_reason": "一张纸折叠成桌面收纳盒，利用笔记本边角料，具备结构创新和可持续材料创新",
+      "review_source": "deepseek",
+      "review_confidence": 10,
       "review_policy_version": 3,
       "quality_score": 79,
       "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "d316781855d9",
-      "title": "This Reusable Modular Magnetic Sticky Note is About to Make Post-Its Obsolete",
-      "category": "创意桌搭",
-      "summary": "M NOTE可重复使用的模块化磁性便签，结合磁性背衬与可重复粘合层，支持金属和非金属表面，模块化可重组，明确改善桌面记录与收纳痛点。。页面证据：https://youtu.be/3qh6BuAPqr4 Sticky notes have been the backbone of brainstorming sessions, productivity hacks, and last-minute reminders for decades. But let’s be honest—paper notes curl, lose their stickiness, clutter desks, and end up in the trash. As designers and creatives, we need something better. Something modular, flexible, and sustainable. Enter M NOTE, a next-generation sticky note that",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "risk_under_35",
-      "image": "https://www.yankodesign.com/images/design_news/2025/02/draft-m-note/M_NOTE_Reusable_Sticky_Notes_01.jpg",
-      "url": "https://www.yankodesign.com/2025/02/11/this-reusable-modular-magnetic-sticky-note-is-about-to-make-post-its-obsolete",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可重复使用+磁性背衬+模块化重组，解决传统便签不可重复和难固定的痛点",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "c0a96f10ea2e",
-      "title": "Modular power bank concept uses a series of wireless snap-on battery ‘bookmarks’ to give your phone 30 hours of charge",
-      "category": "充电宝",
-      "summary": "Battery Pods模块化无线磁吸充电宝概念，通过磁吸电池条提供充电，创新结构。。页面证据：Battery Pods is a smartphone charging system comprised of a smartphone charging case and magnetic battery strips to supply your smartphone with 1400mAh worth of charge. Everyone needs a charger, but no one wants to carry one around. Battery packs are bulkier than your smartphone and wire chargers depend on an outlet to actually work.",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2022/01/355005/05_batterypods_psdesign_chargingsystem.jpg",
-      "url": "https://www.yankodesign.com/2022/01/10/modular-power-bank-concept-uses-a-series-of-wireless-snap-on-battery-bookmarks-to-give-your-phone-30-hours-of-charge",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：模块化磁吸充电宝概念，通过磁吸电池条实现无线充电和模块化扩容，结构创新显著。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 9,
       "relevance": 10,
       "tags": [
-        "adapt",
+        "award_gallery",
         "deepseek_search_agent"
       ]
     },
     {
-      "id": "0c30c991e3aa",
-      "title": "A Bright, Right Night Light!",
-      "category": "氛围灯",
-      "summary": "Zing智能夜灯，可学习用户习惯自动照明，并具备运动检测推送通知功能，交互创新显著。。页面证据：https://www.kickstarter.com/projects/2042970092/zing-worlds-smartest-night-light?ref=b3lrze Zing, named appropriately because it aims at bringing some zing into your life, is the kind of thing you plug in once and forget about, while it works its magic on a daily level, making your life better at every step. You'd probably wonder how much better a night light could make your life,",
+      "id": "4cfba2fa7f1c",
+      "title": "This AI-enabled phone case has detachable display that prioritizes and manages your notifications!",
+      "category": "手机壳",
+      "summary": "Noa AI 手机壳带可分离 e-ink 显示屏，可学习用户通知反应并优先管理通知，结构交互创新明确。。页面证据：https://www.youtube.com/watch?v=sNBKuhXnnv0&t=21s A smartphone case that lets you focus on work at hand without being worried about missing any important notifications. Smartphones are like a second skin to us as they constantly keep beaming notifications (more than 100 in a day on average) that can adversely affect productivity and focus levels. It is like, we get",
       "product_identity": "",
       "score": 79,
       "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2017/08/zing_cover.jpg",
-      "url": "https://www.yankodesign.com/2017/08/19/a-bright-right-night-light",
+      "image": "https://www.yankodesign.com/images/design_news/2021/08/this-ai-enabled-phone-case-has-detachable-display-that-prioritizes-notifications-for-peak-focus/Noa-detachable-smartphone-case_Accessories_Phone-Case-2.jpg",
+      "url": "https://www.yankodesign.com/2021/08/18/this-ai-enabled-phone-case-has-detachable-display-that-prioritizes-and-manages-your-notifications",
       "source_name": "Yanko Design",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "方向参考",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
       "axes": [
-        "情绪启发"
+        "结构启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-31",
       "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：智能夜灯具备机器学习用户习惯和运动检测推送通知，交互创新显著。",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可分离e-ink副屏，AI管理通知优先级",
       "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
+      "review_confidence": 8,
       "review_policy_version": 3,
       "quality_score": 79,
       "innovation": 9,
       "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "6c28abf6db38",
-      "title": "This innovative Power Bank with its own Display has the ability to be MUCH more than just a battery",
-      "category": "充电宝",
-      "summary": "产品：PDGO带显示屏充电宝。创新：内置显示屏，可提供更多功能扩展，如数据线检测、电量显示。。页面证据：Power Banks haven't changed in decades. The PDGO, however, is showing that adding a display could make them MUCH more versatile, and vastly more popular.",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2022/01/this-innovative-power-bank-with-its-own-display-has-the-ability-to-be-much-more-than-just-a-battery/pdgo_power_bank_1.jpg",
-      "url": "https://www.yankodesign.com/2022/01/27/this-innovative-power-bank-with-its-own-display-has-the-ability-to-be-much-more-than-just-a-battery",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置显示屏实现数据线检测、电量显示等扩展功能",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "a2d32508f28f",
-      "title": "This slim laptop sleeve doubles as a portable desk mat and wireless charger",
-      "category": "创意桌搭",
-      "summary": "Laptop sleeve转换成便携桌垫并内置无线充电器，创新结合桌面整理和充电功能。。页面证据：Working from home might no longer be a buzzword these days, but sitting down anywhere with your laptop has always been a thing even before 2020. That is also why there will always be a thriving market for accessories that help make working anywhere more pleasant, even if you don't have all the comforts and",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2023/11/this-slim-laptop-sleeve-doubles-as-a-portable-desk-mat-and-wireless-charger/nexa-laptop-sleeve-10.jpg",
-      "url": "https://www.yankodesign.com/2023/11/21/this-slim-laptop-sleeve-doubles-as-a-portable-desk-mat-and-wireless-charger",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：电脑套可转换为桌垫并内置无线充电，多功能结构创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "e766f860fe44",
-      "title": "These measuring cups are designed to visually represent fractions for intuitive use!",
-      "category": "创意厨具",
-      "summary": "Visual Measuring Cups 通过量杯形状直观表示分数，创新点在于视觉化结构设计，无需学习即可使用。。页面证据：https://www.youtube.com/watch?v=aoS_7cqxlZ0 The joy of my job comes in discovering products that make me go \"Damn, I wish I thought of that\". These moments admittedly don't come often, but that just makes their arrival more worthwhile. The Visual Measuring Cups are one of those products. They're sensible, they're useful, and they have absolutely no learning curve.",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2019/07/shape_itself_tells_the_unit_of_measure_layout.jpg",
-      "url": "https://www.yankodesign.com/2019/07/09/these-measuring-cups-are-designed-to-visually-represent-fractions-for-intuitive-use",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：量杯形状直观表示分数，无需学习即可使用",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "d95a16857477",
-      "title": "Wireless charging meets a DIY light that changes intensity with distance!",
-      "category": "创意桌搭",
-      "summary": "Line无线充电灯，通过传感器距离调节亮度，结合无线充电，交互创新。。页面证据：This is Line, and having seen this you may never be content with the comparatively mundane lamp that resides on your desk ever again. Line encourages a rather unique form of user interaction for the adjustment of the intensity of the light; by increasing the distance between the sensors that are housed within the base",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2019/05/wireless_diy_lamp_and_charger_layout.jpg",
-      "url": "https://www.yankodesign.com/2019/05/31/wireless-charging-meets-a-diy-light-that-changes-intensity-with-distance",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通过传感器距离调节亮度，交互创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 8,
-      "relevance": 10,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -114670,6 +114772,41 @@
       ]
     },
     {
+      "id": "d316781855d9",
+      "title": "This Reusable Modular Magnetic Sticky Note is About to Make Post-Its Obsolete - Yanko Design",
+      "category": "创意桌搭",
+      "summary": "M NOTE可重复使用的模块化磁性便签，结合磁性背衬与可重复粘合层，支持金属和非金属表面，模块化可重组，明确改善桌面记录与收纳痛点。。页面证据：https://youtu.be/3qh6BuAPqr4 Sticky notes have been the backbone of brainstorming sessions, productivity hacks, and last-minute reminders for decades. But let’s be honest—paper notes curl, lose their stickiness, clutter desks, and end up in the trash. As designers and creatives, we need something better. Something modular, flexible, and sustainable. Enter M NOTE, a next-generation sticky note that",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "risk_under_35",
+      "image": "https://www.yankodesign.com/images/design_news/2025/02/draft-m-note/M_NOTE_Reusable_Sticky_Notes_01.jpg",
+      "url": "https://www.yankodesign.com/2025/02/11/this-reusable-modular-magnetic-sticky-note-is-about-to-make-post-its-obsolete",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可重复使用+磁性背衬+模块化重组，解决传统便签不可重复和难固定的痛点",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "84e5e1002f59",
       "title": "[rebox.eco] // new boxes from old boxes - by Filip Harding / Core77 Design Awards",
       "category": "创意礼盒",
@@ -115050,40 +115187,6 @@
       "quality_score": 79,
       "innovation": 9,
       "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "4cfba2fa7f1c",
-      "title": "This AI-enabled phone case has detachable display that prioritizes and manages your notifications! - Yanko Design",
-      "category": "手机壳",
-      "summary": "Noa AI 手机壳带可分离 e-ink 显示屏，可学习用户通知反应并优先管理通知，结构交互创新明确。。页面证据：https://www.youtube.com/watch?v=sNBKuhXnnv0&t=21s A smartphone case that lets you focus on work at hand without being worried about missing any important notifications. Smartphones are like a second skin to us as they constantly keep beaming notifications (more than 100 in a day on average) that can adversely affect productivity and focus levels. It is like, we get",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2021/08/this-ai-enabled-phone-case-has-detachable-display-that-prioritizes-notifications-for-peak-focus/Noa-detachable-smartphone-case_Accessories_Phone-Case-2.jpg",
-      "url": "https://www.yankodesign.com/2021/08/18/this-ai-enabled-phone-case-has-detachable-display-that-prioritizes-and-manages-your-notifications",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-13",
-      "last_seen": "2026-08-13",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：可分离e-ink副屏，AI管理通知优先级",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 9,
-      "relevance": 9,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -116423,6 +116526,75 @@
       ]
     },
     {
+      "id": "0c30c991e3aa",
+      "title": "A Bright, Right Night Light! - Yanko Design",
+      "category": "氛围灯",
+      "summary": "Zing智能夜灯，可学习用户习惯自动照明，并具备运动检测推送通知功能，交互创新显著。。页面证据：https://www.kickstarter.com/projects/2042970092/zing-worlds-smartest-night-light?ref=b3lrze Zing, named appropriately because it aims at bringing some zing into your life, is the kind of thing you plug in once and forget about, while it works its magic on a daily level, making your life better at every step. You'd probably wonder how much better a night light could make your life,",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2017/08/zing_cover.jpg",
+      "url": "https://www.yankodesign.com/2017/08/19/a-bright-right-night-light",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "standard",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：智能夜灯具备机器学习用户习惯和运动检测推送通知，交互创新显著。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "a2d32508f28f",
+      "title": "This slim laptop sleeve doubles as a portable desk mat and wireless charger - Yanko Design",
+      "category": "创意桌搭",
+      "summary": "Laptop sleeve转换成便携桌垫并内置无线充电器，创新结合桌面整理和充电功能。。页面证据：Working from home might no longer be a buzzword these days, but sitting down anywhere with your laptop has always been a thing even before 2020. That is also why there will always be a thriving market for accessories that help make working anywhere more pleasant, even if you don't have all the comforts and",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2023/11/this-slim-laptop-sleeve-doubles-as-a-portable-desk-mat-and-wireless-charger/nexa-laptop-sleeve-10.jpg",
+      "url": "https://www.yankodesign.com/2023/11/21/this-slim-laptop-sleeve-doubles-as-a-portable-desk-mat-and-wireless-charger",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：电脑套可转换为桌垫并内置无线充电，多功能结构创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "0f91a12a074f",
       "title": "Red Dot Design Award: Anker Prime Series",
       "category": "充电宝",
@@ -117560,6 +117732,40 @@
       ]
     },
     {
+      "id": "6c28abf6db38",
+      "title": "This innovative Power Bank with its own Display has the ability to be MUCH more than just a battery - Yanko Design",
+      "category": "充电宝",
+      "summary": "产品：PDGO带显示屏充电宝。创新：内置显示屏，可提供更多功能扩展，如数据线检测、电量显示。。页面证据：Power Banks haven't changed in decades. The PDGO, however, is showing that adding a display could make them MUCH more versatile, and vastly more popular.",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2022/01/this-innovative-power-bank-with-its-own-display-has-the-ability-to-be-much-more-than-just-a-battery/pdgo_power_bank_1.jpg",
+      "url": "https://www.yankodesign.com/2022/01/27/this-innovative-power-bank-with-its-own-display-has-the-ability-to-be-much-more-than-just-a-battery",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置显示屏实现数据线检测、电量显示等扩展功能",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "1ef3ffe4a048",
       "title": "KOR Plus: Super Water Bottle for Health & Fitness by KOR ...",
       "category": "水杯",
@@ -117660,6 +117866,76 @@
       "tags": [
         "adapt",
         "award_gallery"
+      ]
+    },
+    {
+      "id": "e766f860fe44",
+      "title": "These measuring cups are designed to visually represent fractions for intuitive use! - Yanko Design",
+      "category": "创意厨具",
+      "summary": "Visual Measuring Cups 通过量杯形状直观表示分数，创新点在于视觉化结构设计，无需学习即可使用。。页面证据：https://www.youtube.com/watch?v=aoS_7cqxlZ0 The joy of my job comes in discovering products that make me go \"Damn, I wish I thought of that\". These moments admittedly don't come often, but that just makes their arrival more worthwhile. The Visual Measuring Cups are one of those products. They're sensible, they're useful, and they have absolutely no learning curve.",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2019/07/shape_itself_tells_the_unit_of_measure_layout.jpg",
+      "url": "https://www.yankodesign.com/2019/07/09/these-measuring-cups-are-designed-to-visually-represent-fractions-for-intuitive-use",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：量杯形状直观表示分数，无需学习即可使用",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "a1cbed7721a6",
+      "title": "Anker made the ultimate monitor stand with its own built-in multiport hub and wireless charging pad - Yanko Design",
+      "category": "创意桌搭",
+      "summary": "Anker 675显示器支架，集成了多口USB-C/USB-A集线器、4K HDMI、以太网口、SD卡槽和无线充电板，提升桌面功能和整洁度，结构创新明显。。页面证据：Elevating your monitor to the appropriate eye level is the least of what the Anker 675 is capable of. The slick stand also houses multiple USB-C ports (going all the way up to 100W output) and USB-A ports, along with a 4K HDMI port, an Ethernet port, and an SD card slot. If that wasn't",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2023/02/auto-draft/anker_675_docking_station_1.jpg",
+      "url": "https://www.yankodesign.com/2023/02/08/anker-made-the-ultimate-monitor-stand-with-its-own-built-in-multiport-hub-and-wireless-charging-pad",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：显示器支架集成多口集线器和无线充电板，功能整合创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -118181,6 +118457,41 @@
       ]
     },
     {
+      "id": "c0a96f10ea2e",
+      "title": "Modular power bank concept uses a series of wireless snap-on battery ‘bookmarks’ to give your phone 30 hours of charge - Yanko Design",
+      "category": "充电宝",
+      "summary": "Battery Pods模块化无线磁吸充电宝概念，通过磁吸电池条提供充电，创新结构。。页面证据：Battery Pods is a smartphone charging system comprised of a smartphone charging case and magnetic battery strips to supply your smartphone with 1400mAh worth of charge. Everyone needs a charger, but no one wants to carry one around. Battery packs are bulkier than your smartphone and wire chargers depend on an outlet to actually work.",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2022/01/355005/05_batterypods_psdesign_chargingsystem.jpg",
+      "url": "https://www.yankodesign.com/2022/01/10/modular-power-bank-concept-uses-a-series-of-wireless-snap-on-battery-bookmarks-to-give-your-phone-30-hours-of-charge",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "standard",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：模块化磁吸充电宝概念，通过磁吸电池条实现无线充电和模块化扩容，结构创新显著。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "8264fc11d7be",
       "title": "anton strainer bowl by caveman factory solves multiple kitchen problems",
       "category": "创意厨具",
@@ -118380,6 +118691,41 @@
       "review_reason": "DeepSeek候选复核：DeepSeek候选复核：磁性垫与灯交互，使充电过程更有仪式感",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "d95a16857477",
+      "title": "Wireless charging meets a DIY light that changes intensity with distance! - Yanko Design",
+      "category": "创意桌搭",
+      "summary": "Line无线充电灯，通过传感器距离调节亮度，结合无线充电，交互创新。。页面证据：This is Line, and having seen this you may never be content with the comparatively mundane lamp that resides on your desk ever again. Line encourages a rather unique form of user interaction for the adjustment of the intensity of the light; by increasing the distance between the sensors that are housed within the base",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2019/05/wireless_diy_lamp_and_charger_layout.jpg",
+      "url": "https://www.yankodesign.com/2019/05/31/wireless-charging-meets-a-diy-light-that-changes-intensity-with-distance",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通过传感器距离调节亮度，交互创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 79,
       "innovation": 8,
@@ -119500,6 +119846,41 @@
       ]
     },
     {
+      "id": "82922a938027",
+      "title": "Brum Box - by Toms Grinbergs, Aldis Blicsons / Core77 Design Awards",
+      "category": "创意礼盒",
+      "summary": "Brum Box 是一款由 Toms Grinbergs 和 Aldis Blicsons 设计的复杂包装盒，将包装转化为产品本身的一部分——微型工具箱，内含工具、组装说明和贴纸，可复用并创造开箱体验。结构创新明显，符合创意礼盒的复用/结构创新标准。。页面证据：experience in complex packaging production. In collaboration with them we went through the industrial prototyping process and set up the tiny instrument suitcase for storing the necessary tools , assembly instructions and stickers. [...] > This packaging could be more than packaging, it can be part of product and also create new experience for customer using. It’s very good selling point that can be interacted between brand and customer. Share This Y1 m1 H1 ## Packaging Award See All Honorees ##",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/428925_lead_400_48756__sharing.jpg",
+      "url": "https://designawards.core77.com/Packaging/48756/Brum-Box",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-31",
+      "review_reason": "包装盒内含工具可组装为微型工具箱，复用与开箱体验双重创新。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "71ff5d5baefc",
       "title": "Red Dot Design Award: NINJA PILLOW JACKET",
       "category": "冲锋衣",
@@ -120127,71 +120508,73 @@
       ]
     },
     {
-      "id": "4b2bbdf89b18",
-      "title": "PITAKA Launches Their Latest iPhone 16 Cases: Slim, Light, Strong",
-      "category": "手机壳",
-      "summary": "PITAKA iPhone 16 case with Lumintex™ luminescent polymer fiber, emitting soft green glow after absorbing light for up to 20 minutes. Material innovation clearly described.。页面证据：Smartphones are getting more durable every generation, but there's no escaping the fact that a single wrong fall could render it useless. Protective cases increase their chances of survival at the expense of hiding their beauty, and even those clear silicone ones can sometimes make otherwise luxurious phones look cheap. If you're going to cover",
+      "id": "270603460c1a",
+      "title": "Red Dot Design Award: Milo Aluminium",
+      "category": "创意桌搭",
+      "summary": "Milo Aluminium是一款桌面手机/移动设备支架，采用日本微吸技术，可无残胶固定光滑表面并调节角度，属于明确单品的桌面收纳配件，结构创新明确。。页面证据：Milo is an elegant, minimalist accessory for the desktop – a place to hold smartphones or other mobile devices. The sleek aluminium stand uses high-tech, Japanese, micro-suction technology to hold devices with smooth surfaces at a desired angle without leaving a residue.",
       "product_identity": "",
       "score": 78,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2024/09/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong/PITAKA_glow_in_the_dark_phone_cover_hero.jpg",
-      "url": "https://www.yankodesign.com/2024/09/14/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.red-dot.org/zh/project/milo-aluminium-1-7746",
+      "source_name": "Red Dot",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
       "source_quality": "premium",
       "action_lane": "适合改造",
       "axes": [
+        "功能启发",
+        "结构启发",
         "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "采用日本微吸技术，可无残胶吸附光滑表面并调节角度，相比普通重力支架有明确结构创新。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "cb5b3eef5b9d",
+      "title": "iF Design - Miele M Sense Cookware",
+      "category": "创意厨具",
+      "summary": "Miele M Sense 智能传感器锅具能与灶具联动，自动调节火力，防止烧焦和溢出，功能创新明确。。页面证据：\"Nothing burns. Nothing boils over.\" This isn’t just a promise - It's the beginning of a new era of intelligent cooking! M Sense cookware combines sleek aesthetics with advanced functionality. Whether you're simmering, boiling, or frying, M Sense fine-tunes the process and eliminates the need for manual re-adjustments, so you can focus your time and attention on other things. Intelligent sensors and perfect sync with KM 8000 hobs ensure automatic power adjustment, keeping your setting steady – for precise, consistent results. Miele unveils the multi-patented innovation in combination with the new generation of induction hobs KM 8000.",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "likely_over_35",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "url": "https://ifdesign.com/en/winner-ranking/project/miele-m-sense-cookware/742688",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-31",
       "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Lumintex™发光聚合物纤维，吸收光后自发光20分钟，材料创新",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：智能传感器锅具与灶具联动，自动防止烧焦溢出",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 78,
       "innovation": 8,
-      "relevance": 10,
+      "relevance": 9,
       "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "689207fe0db5",
-      "title": "i(Phone) is for indestructible",
-      "category": "手机壳",
-      "summary": "RhinoShield Crash Guard是超薄防撞手机壳，超越军用级冲击防护，结构创新体现在超薄设计同时提供高防护。。页面证据：Combine Evolutive Labs' incredible RhinoShield Screen Protector with their latest product, the RhinoShield Crash Guard and your precious iPhone 5/6/6+ will be battle-ready! Exceeding military standard impact protection and absorption, the ultra-slim bumper can withstand the most damage a user could possibly do while simultaneously reflecting the original sleek design of the iPhone... in other",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2014/10/16/rhinoshield_01.jpg",
-      "url": "https://www.yankodesign.com/2014/10/17/iphone-is-for-indestructible",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：超薄结构同时提供军用级防摔防护，结构创新明显",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 7,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
+        "award_gallery",
+        "buy_sample"
       ]
     },
     {
@@ -121374,41 +121757,6 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "82922a938027",
-      "title": "Brum Box - by Toms Grinbergs, Aldis Blicsons / Core77 Design Awards",
-      "category": "创意礼盒",
-      "summary": "Brum Box 是一款由 Toms Grinbergs 和 Aldis Blicsons 设计的复杂包装盒，将包装转化为产品本身的一部分——微型工具箱，内含工具、组装说明和贴纸，可复用并创造开箱体验。结构创新明显，符合创意礼盒的复用/结构创新标准。。页面证据：experience in complex packaging production. In collaboration with them we went through the industrial prototyping process and set up the tiny instrument suitcase for storing the necessary tools , assembly instructions and stickers. [...] > This packaging could be more than packaging, it can be part of product and also create new experience for customer using. It’s very good selling point that can be interacted between brand and customer. Share This Y1 m1 H1 ## Packaging Award See All Honorees ##",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "likely_over_35",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/428925_lead_400_48756__sharing.jpg",
-      "url": "https://designawards.core77.com/Packaging/48756/Brum-Box",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-19",
-      "last_seen": "2026-08-19",
-      "review_reason": "包装盒内含工具可组装为微型工具箱，复用与开箱体验双重创新。",
-      "review_source": "deepseek",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
       ]
     },
     {
@@ -123951,6 +124299,40 @@
       ]
     },
     {
+      "id": "4b2bbdf89b18",
+      "title": "PITAKA Launches Their Latest iPhone 16 Cases: Slim, Light, Strong - Yanko Design",
+      "category": "手机壳",
+      "summary": "PITAKA iPhone 16 case with Lumintex™ luminescent polymer fiber, emitting soft green glow after absorbing light for up to 20 minutes. Material innovation clearly described.。页面证据：Smartphones are getting more durable every generation, but there's no escaping the fact that a single wrong fall could render it useless. Protective cases increase their chances of survival at the expense of hiding their beauty, and even those clear silicone ones can sometimes make otherwise luxurious phones look cheap. If you're going to cover",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2024/09/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong/PITAKA_glow_in_the_dark_phone_cover_hero.jpg",
+      "url": "https://www.yankodesign.com/2024/09/14/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Lumintex™发光聚合物纤维，吸收光后自发光20分钟，材料创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "5d0d4c12d1f6",
       "title": "Slimmods by SLIMMODS - Indiegogo",
       "category": "手机壳",
@@ -124257,40 +124639,6 @@
       "review_policy_version": 3,
       "quality_score": 78,
       "innovation": 7,
-      "relevance": 9,
-      "tags": [
-        "award_gallery",
-        "buy_sample"
-      ]
-    },
-    {
-      "id": "cb5b3eef5b9d",
-      "title": "iF Design - Miele M Sense Cookware",
-      "category": "创意厨具",
-      "summary": "Miele M Sense 智能传感器锅具能与灶具联动，自动调节火力，防止烧焦和溢出，功能创新明确。。页面证据：\"Nothing burns. Nothing boils over.\" This isn’t just a promise - It's the beginning of a new era of intelligent cooking! M Sense cookware combines sleek aesthetics with advanced functionality. Whether you're simmering, boiling, or frying, M Sense fine-tunes the process and eliminates the need for manual re-adjustments, so you can focus your time and attention on other things. Intelligent sensors and perfect sync with KM 8000 hobs ensure automatic power adjustment, keeping your setting steady – for precise, consistent results. Miele unveils the multi-patented innovation in combination with the new generation of induction hobs KM 8000.",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "likely_over_35",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "url": "https://ifdesign.com/en/winner-ranking/project/miele-m-sense-cookware/742688",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：智能传感器锅具与灶具联动，自动防止烧焦溢出",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
       "relevance": 9,
       "tags": [
         "award_gallery",
@@ -124987,6 +125335,40 @@
       "review_policy_version": 3,
       "quality_score": 78,
       "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "689207fe0db5",
+      "title": "i(Phone) is for indestructible - Yanko Design",
+      "category": "手机壳",
+      "summary": "RhinoShield Crash Guard是超薄防撞手机壳，超越军用级冲击防护，结构创新体现在超薄设计同时提供高防护。。页面证据：Combine Evolutive Labs' incredible RhinoShield Screen Protector with their latest product, the RhinoShield Crash Guard and your precious iPhone 5/6/6+ will be battle-ready! Exceeding military standard impact protection and absorption, the ultra-slim bumper can withstand the most damage a user could possibly do while simultaneously reflecting the original sleek design of the iPhone... in other",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2014/10/16/rhinoshield_01.jpg",
+      "url": "https://www.yankodesign.com/2014/10/17/iphone-is-for-indestructible",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：超薄结构同时提供军用级防摔防护，结构创新明显",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 7,
       "relevance": 10,
       "tags": [
         "adapt",
@@ -128722,39 +129104,109 @@
       ]
     },
     {
-      "id": "d3fa38e4ee83",
-      "title": "Carousel - by Pablo Designs / Core77 Design Awards",
-      "category": "氛围灯",
-      "summary": "明确单品Carousel灯，台灯/落地灯，融合无线充电托盘，照明与功能创新。。页面证据：Carousel Table and Floor, blur the line between ambiance and utility combining a low-setting wireless charging tray surface for your mobile devices with warm, glare-free illumination.",
+      "id": "31fe8eb96bcc",
+      "title": "Staying Organized at a Sit/Stand Desk - Core77",
+      "category": "创意桌搭",
+      "summary": "Bold Furniture 的 Joey Ruiter 设计的双储物柜升降桌，将储物柜集成到升降桌结构中，提供站坐办公时的就近收纳，属于明确单品的结构创新。。页面证据：Height-adjustable desks are getting very popular as people become concerned about the health risks of sitting all day. Many of these desks are just flat surfaces with legs and an adjustment mechanism—you often see photos of the desks looking quite bare, with just a computer on them. But as a",
       "product_identity": "",
       "score": 77,
-      "price_gate": "likely_over_35",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1331330_title__118035_R739H76bD_sharing.jpg",
-      "url": "https://designawards.core77.com/Furniture-Lighting/118035/Carousel",
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_37588_.jpg",
+      "url": "https://www.core77.com/posts/37588",
       "source_name": "Core77",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "方向参考",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
       "axes": [
         "功能启发",
-        "情绪启发",
+        "结构启发",
         "视觉启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-31",
       "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：台灯集成无线充电托盘，照明与实用功能结合",
+      "review_reason": "将双储物柜直接集成到升降桌结构中，在站坐切换时提供就近收纳，结构创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 77,
+      "innovation": 8,
+      "relevance": 8,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "16782afd5660",
+      "title": "俗画说一历解药2024日历创意机械遥杆盲盒台历_有物猩球-站酷ZCOOL",
+      "category": "日历",
+      "summary": "明确单品：俗画说一历解药2024机械摇杆盲盒台历，采用机械摇杆交互，结合盲盒抽取与原创公仔卡片，兼具解压和桌面装饰功能，符合日历类机械/交互创新。。页面证据：俗画说一历解药2024日历创意机械遥杆盲盒台历,机械摇杆日历,解压治愈，拒绝焦虑,原创公仔卡片,有颜值，很有料,站酷聚集了1800万设计师、摄影师、插画师、艺术家、创意人,设计创意群体中具有较高的影响力与号召力.",
+      "product_identity": "",
+      "score": 77,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.zcool.com.cn/work/ZNjYwNzgxNTY=.html",
+      "source_name": "站酷",
+      "source_family": "设计社区",
+      "source_type": "design_community",
+      "source_quality": "standard",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "机械摇杆交互+盲盒抽取结构，原创公仔卡片，解压与桌面装饰结合",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 77,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "e014c821b1cd",
+      "title": "portable lamp modules integrate into furniture for compact living",
+      "category": "氛围灯",
+      "summary": "SAI便携灯模块，可收纳进胶合板架中并充电，专为紧凑居住设计，具备调节亮度与色温，创新点明确。。页面证据：junhee lee and chaewon kim's 'SAI' storable and portable lamp modules charge in a plywood shelf that doubles as furniture for compact spaces.",
+      "product_identity": "",
+      "score": 77,
+      "price_gate": "unknown",
+      "image": "https://www.designboom.com/twitterimages/uploads/2023/07/SAI-light-storage-designboom-1200.jpg",
+      "url": "https://www.designboom.com/design/sai-storable-portable-lamp-modules-compact-living-07-07-2023",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：便携灯模块可收纳进胶合板架并充电，模块化与家具整合创新明确。",
       "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
+      "review_confidence": 8,
       "review_policy_version": 3,
       "quality_score": 77,
       "innovation": 8,
       "relevance": 10,
       "tags": [
-        "adapt",
-        "deepseek_search_agent"
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -129945,42 +130397,6 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "e014c821b1cd",
-      "title": "portable lamp modules integrate into furniture for compact living",
-      "category": "氛围灯",
-      "summary": "SAI便携灯模块，可收纳进胶合板架中并充电，专为紧凑居住设计，具备调节亮度与色温，创新点明确。。页面证据：junhee lee and chaewon kim's 'SAI' storable and portable lamp modules charge in a plywood shelf that doubles as furniture for compact spaces.",
-      "product_identity": "",
-      "score": 77,
-      "price_gate": "unknown",
-      "image": "https://www.designboom.com/twitterimages/uploads/2023/07/SAI-light-storage-designboom-1200.jpg",
-      "url": "https://www.designboom.com/design/sai-storable-portable-lamp-modules-compact-living-07-07-2023",
-      "source_name": "Designboom",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-11",
-      "last_seen": "2026-08-11",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：便携灯模块可收纳进胶合板架并充电，模块化与家具整合创新明确。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 77,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
       ]
     },
     {
@@ -132538,6 +132954,42 @@
       "review_policy_version": 3,
       "quality_score": 77,
       "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "d3fa38e4ee83",
+      "title": "Carousel - by Pablo Designs / Core77 Design Awards",
+      "category": "氛围灯",
+      "summary": "明确单品Carousel灯，台灯/落地灯，融合无线充电托盘，照明与功能创新。。页面证据：Carousel Table and Floor, blur the line between ambiance and utility combining a low-setting wireless charging tray surface for your mobile devices with warm, glare-free illumination.",
+      "product_identity": "",
+      "score": 77,
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1331330_title__118035_R739H76bD_sharing.jpg",
+      "url": "https://designawards.core77.com/Furniture-Lighting/118035/Carousel",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "standard",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：台灯集成无线充电托盘，照明与实用功能结合",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 77,
+      "innovation": 8,
       "relevance": 10,
       "tags": [
         "adapt",
@@ -135485,6 +135937,41 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "d668eeb39c91",
+      "title": "Desan Advent Box — Corporate Gift Design (11) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
+      "category": "创意礼盒",
+      "summary": "Desan 企业礼品盒将品牌名五个字母转化为五种香料，开箱过程成为品牌风味体验系统，概念与结构均有创新。。页面证据：Corporate gift for partners, designed as a system of flavors and meanings. The five letters of the brand name transform into five spices, turning the unboxing process into a brand experience.",
+      "product_identity": "",
+      "score": 76,
+      "price_gate": "likely_over_35",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/5722b8241097807.699823c971358.jpg",
+      "url": "https://www.behance.net/gallery/241097807/Desan-Advent-Box-Corporate-Gift-Design/modules/1411437767",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "待核图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "品牌名五个字母转化为五种香料，开箱形成品牌风味体验系统，概念与结构均创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -145828,6 +146315,40 @@
       ]
     },
     {
+      "id": "ca6498e68610",
+      "title": "PopSlate Case",
+      "category": "手机壳",
+      "summary": "PopSlate Case 在手机壳背面集成4英寸电子纸显示屏，通过蓝牙与App同步显示单色内容，实现动态外观和信息展示，属于明确的功能与交互创新单品。。页面证据：Your iPhone is great communications tool — but it's mostly only useful if the screen is on, meaning that you're drawing battery power like crazy...",
+      "product_identity": "",
+      "score": 75,
+      "price_gate": "unknown",
+      "image": "https://uncrate.com/p/2015/01/popslate.jpg",
+      "url": "https://uncrate.com/popslate-case",
+      "source_name": "Uncrate",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：在手机壳背面集成4英寸电子纸显示屏，通过App同步显示动态内容，实现个性化外观与信息展示，功能交互创新明确。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 75,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "24ca40e23fb4",
       "title": "The Leandesk Turns Walls + Windows Into a Home Office",
       "category": "创意桌搭",
@@ -145860,40 +146381,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "ca6498e68610",
-      "title": "PopSlate Case | Uncrate",
-      "category": "手机壳",
-      "summary": "PopSlate Case 在手机壳背面集成4英寸电子纸显示屏，通过蓝牙与App同步显示单色内容，实现动态外观和信息展示，属于明确的功能与交互创新单品。。页面证据：Your iPhone is great communications tool — but it's mostly only useful if the screen is on, meaning that you're drawing battery power like crazy...",
-      "product_identity": "",
-      "score": 75,
-      "price_gate": "unknown",
-      "image": "https://uncrate.com/p/2015/01/popslate.jpg",
-      "url": "https://uncrate.com/popslate-case",
-      "source_name": "Uncrate",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-27",
-      "last_seen": "2026-08-27",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：在手机壳背面集成4英寸电子纸显示屏，通过App同步显示动态内容，实现个性化外观与信息展示，功能交互创新明确。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 75,
-      "innovation": 9,
-      "relevance": 9,
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -153766,34 +154253,105 @@
       ]
     },
     {
-      "id": "5c66f911c40c",
-      "title": "游牧移动厨房",
-      "category": "创意厨具",
-      "summary": "Nomad Kitchen 移动车载厨房系统，明确单品。创新点：免工具快速安装/拆卸，多合一集成不锈钢水盆、竹砧板、晾衣架、14加仑储水空间、双燃烧器炉灶抽屉，专为掀背车/SUV 设计，具备结构、收纳和场景创新。。页面证据：从网格烹饪到您的下一个后挡板，Nomad Kitchen将为您的车辆配备一个大本营厨房，无论您在哪里停车都可以使用。它适合大多数掀背车和SUV，无需工具即可轻松安装或拆卸。多合一的车载系统包括一个不锈钢洗脸盆，一个竹砧板，一个晾衣架，最多可容纳14加仑水的空间，足够的存储空间以及一个可容纳两个燃烧器的抽屉单独出售。活动营地厨房有黑色或天然饰面。...",
+      "id": "785757012412",
+      "title": "Studio Other's convertible table is two flexible desks in one",
+      "category": "创意桌搭",
+      "summary": "Studio Other的可转换桌子，可在公共工作台和两个独立书桌之间切换，结构创新明确，是实体单品。。页面证据：Oct 24, 2025 · American industrial design brand Studio Other has created a custom-engineered table that can be used as a communal worktop or a duo of personal desks.",
       "product_identity": "",
       "score": 74,
       "price_gate": "unknown",
-      "image": "https://uncrate.com/p/2020/03/nomad-kitchen-1.jpg",
-      "url": "https://uncrate.com/cn/article/nomad-mobile-kitchen",
-      "source_name": "Uncrate",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
-      "source_quality": "standard",
+      "image": "",
+      "url": "https://www.dezeen.com/2025/10/24/studio-other-convertible-table-two-flexible-desks-in-one",
+      "source_name": "Dezeen",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
       "action_lane": "适合改造",
       "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "通过定制机械结构在公共工作台与双人独立办公桌之间转换，实现一物两用，结构创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "378bb9de4a74",
+      "title": "Ramen Library & Asiafood. Brand Applications. :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest F",
+      "category": "创意礼盒",
+      "summary": "明确的书形礼盒单品，外观仿真书籍，内部收纳礼物与宣传物料，开箱过程有结构叙事体验，创新点突出。。页面证据：Graphic Design, Illustration, Packaging, Adobe Illustrator, Adobe Photoshop",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "likely_over_35",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0d00de251926529.6a53bb2163a58.jpg",
+      "url": "https://www.behance.net/gallery/251926529/Ramen-Library-Asiafood-Brand-Applications",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "可直接买样",
+      "axes": [
         "功能启发",
+        "包装启发",
         "结构启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-08-31",
       "last_seen": "2026-08-31",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：免工具安装集成水槽、砧板、储物和双燃烧器，专为SUV设计",
-      "review_source": "deepseek_backlog_recheck",
+      "review_reason": "书形礼盒结构创新，仿真书籍外观，内部收纳礼物与宣传物料，开箱过程有结构叙事体验",
+      "review_source": "deepseek",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 74,
-      "innovation": 8,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
+      ]
+    },
+    {
+      "id": "223d8886211b",
+      "title": "Cascauvas is a Sustainable Take on Christmas Liquor Packaging - DIELINE Cascauvas is a Sustainable Take on Christmas Liquor Packaging - DIELINE",
+      "category": "创意礼盒",
+      "summary": "Cascauvas 是可持续圣诞利口酒礼盒包装，木制士兵造型可拆解为拼图，并兼具游戏、装饰与收纳功能，具有清晰的结构/复用/材料创新，符合创意礼盒品类。。页面证据：Laura Ramos combines sustainability and playfulness with her “Cascauvas” packaging—a festive and multifunctional design that doubles as a puzzle game.",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "likely_over_35",
+      "image": "https://i0.wp.com/thedieline.com/wp-content/uploads/2024/08/7-10-cover.jpg",
+      "url": "https://thedieline.com/sw-cascauvas-is-an-ingenious-take-on-sustainable-christmas-liquor-packaging",
+      "source_name": "The Dieline",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "木质士兵造型可拆解为拼图，兼具游戏、装饰与收纳功能，结构创新清晰。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 9,
       "relevance": 9,
       "tags": [
         "adapt",
@@ -156937,6 +157495,41 @@
       "tags": [
         "deepseek_search_agent",
         "market_signal_strong"
+      ]
+    },
+    {
+      "id": "5c66f911c40c",
+      "title": "游牧移动厨房 | Uncrate",
+      "category": "创意厨具",
+      "summary": "Nomad Kitchen 移动车载厨房系统，明确单品。创新点：免工具快速安装/拆卸，多合一集成不锈钢水盆、竹砧板、晾衣架、14加仑储水空间、双燃烧器炉灶抽屉，专为掀背车/SUV 设计，具备结构、收纳和场景创新。。页面证据：从网格烹饪到您的下一个后挡板，Nomad Kitchen将为您的车辆配备一个大本营厨房，无论您在哪里停车都可以使用。它适合大多数掀背车和SUV，无需工具即可轻松安装或拆卸。多合一的车载系统包括一个不锈钢洗脸盆，一个竹砧板，一个晾衣架，最多可容纳14加仑水的空间，足够的存储空间以及一个可容纳两个燃烧器的抽屉单独出售。活动营地厨房有黑色或天然饰面。...",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "https://uncrate.com/p/2020/03/nomad-kitchen-1.jpg",
+      "url": "https://uncrate.com/cn/article/nomad-mobile-kitchen",
+      "source_name": "Uncrate",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：免工具安装集成水槽、砧板、储物和双燃烧器，专为SUV设计",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -161920,6 +162513,75 @@
       "quality_score": 73,
       "innovation": 8,
       "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "f9e4bb290cd7",
+      "title": "Expanding Mechanisms Designed by Henry Segerman - Core77",
+      "category": "装置艺术",
+      "summary": "明确单品：Henry Segerman设计的Expanding Mechanisms，基于齿轮齿条机构的可扩展机械装置，提供免费3D打印文件；结构创新清晰，可提炼为折叠/展开装置或产品启发。。页面证据：Here the mathematician shows you how they work—and provides the files",
+      "product_identity": "",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1728304_lead_400_137381_.jpg",
+      "url": "https://www.core77.com/posts/137381/Expanding-Mechanisms-Designed-by-Henry-Segerman",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "基于齿轮齿条的扩张机制可3D打印，结构原理清晰，为折叠/展开产品提供直接可复现的机构灵感。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 73,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "341ad92f6582",
+      "title": "responsive light installation by b-reel creative is controlled by viewer’s breath",
+      "category": "装置艺术",
+      "summary": "明确产品：b-reel creative的'prana'呼吸控制互动灯光装置，由13,211个LED球体组成，通过观者呼吸实时改变光影，属于边界清楚的光影互动装置，可提炼为智能灯光或情绪可视化产品启发。创新证据充分，单一作品有明确描述。。页面证据：the prana b-reel creative experience gives visitors the ability the visualize their energy through its impact of a 13, 211 individual LED sphere.",
+      "product_identity": "",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "https://www.designboom.com/twitterimages/uploads/2015/08/b-reel-creative-prana-light-installation-designboom-01-818x456.jpg",
+      "url": "https://www.designboom.com/technology/prana-b-reel-creative-light-breath-08-17-2015",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "呼吸控制13,211个LED球体实时变光，交互新颖，可提炼为情绪可视化智能灯或冥想灯光产品。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 73,
+      "innovation": 9,
+      "relevance": 9,
       "tags": [
         "adapt",
         "deepseek_search_agent"
@@ -169993,6 +170655,111 @@
       "quality_score": 72,
       "innovation": 8,
       "relevance": 10,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "e32c461e2ddd",
+      "title": "City Chomp Box: HCMC Edition – Door Creative’s Souvenir ...",
+      "category": "创意礼盒",
+      "summary": "Specific gift product: Door Creative's City Chomp Box: HCMC Edition. A conceptual souvenir gift box with reusable packaging, storytelling, and a city-flavored recipe / unboxing experience. Clear product identity and evidence of structural/narrative/reuse innovation.。页面证据：Aug 30, 2024 · Door Creative’s conceptual project isn’t just another souvenir, it’s an experience, a story, and a slice of Ho Chi Minh City’s vibrant culture, all neatly packed into a stylish, reusable box. With the City Chomp Box, every unboxing is an adventure – a chance to savor the city’s flavors and take home a piece of its soul.",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://packagingoftheworld.com/2024/08/city-chomp-box-hcmc-edition-door-creatives-souvenir-recipe.html",
+      "source_name": "Packaging of the World",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "可复用包装结合城市风味食谱与开箱叙事，结构创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "a38b224db2a3",
+      "title": "Streaming Service Gift Boxes: The Netflix Gift Box Shares ...Couture Take-Out Containers: Etsy's Sobresitos Shop Creates ...Gourmet Holiday Gift Shops: Bonnie & Pop Boasts a Divers",
+      "category": "创意礼盒",
+      "summary": "明确单品：Netflix Gift Box。开箱时播放 Netflix 标志性三音符 Tudum 音效，内部隔层模仿 Netflix 主屏幕布局，具有互动开箱体验和收纳复用价值，是叙事与结构创新的礼盒。。页面证据：Sep 10, 2024 · The many premium gifts within the Netflix-themed product are protected within a sleek black box that supports a dynamic unboxing experience by opening with Netflix's three-note Tudum melody. With compartments styled to resemble the Netflix home screen, the Netflix Gift Box is a treat for streaming service lovers who want a collectible to display or use for storage. The Netflix Gift Box will be ... Aug 15, 2014 · Etsy’s Sobresitos shop creates custom gift boxes that are designed to",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.trendhunter.com/trends/netflix-gift-box",
+      "source_name": "TrendHunter",
+      "source_family": "趋势观察",
+      "source_type": "trend_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "Netflix礼物盒开箱自动播放标志性Tudum音效，内部模拟主屏幕布局，互动开箱与复用结构创新。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "fa0d8b5f19bf",
+      "title": "INTUITIVE Mechanical Engineering. World 1st visual HandbookTitanium Perpetual Ring Calendar by Athlone Designs - KickstarterThrottled (429)Spintronics: Build mechanical circuits by",
+      "category": "日历",
+      "summary": "明确单品：Athlone Designs 的 Titanium Perpetual Ring Calendar，Kickstarter 众筹。创新点：实体钛金属/铝精密加工的环形永久日历，专利设计，无年份限制，结构创新，将日历佩戴为戒指，属于机械结构创新。页面证据：Jul 27, 2019 · Easy, Clear & Concise handbook about Mechanical Engineering. Graphically designed for Students, Product Developers & Project Managers. Oct 5, 2023 · Athlone Designs is raising funds for Titanium Perpetual Ring Calendar by Athlone Designs on Kickstarter! The worlds most innovative calendar: solid Titanium or Aluminum machined with precision. Patent pending design! Kickstarter exists to help bring creative projects to life. A home for film, music, art, theater, games, comics, design",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/905604980/intuitive-mechanical-engineering-world-1st-visual-handbook",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "钛金属环形永久日历可佩戴为戒指，无年份限制，结构创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 9,
+      "relevance": 9,
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
@@ -178261,6 +179028,40 @@
       ]
     },
     {
+      "id": "17f2b29b93a4",
+      "title": "Kinetic Calendar • Digital Society Laboratory (11) | GIFs ...",
+      "category": "日历",
+      "summary": "明确概念产品：Digital Society Laboratory的Kinetic Calendar，以同心圆结构组织时间流转，机械/交互创新，可提炼为桌面日历或装置。。页面证据：Kinetic calendar's idea was to organize and show how time goes by. I organized the information through a structure of concentric circles in which I progressively used data from the International System of Units for Time, starting from milliseconds, deciseconds, seconds, minutes, hours, day phases, days of the week, number of month days, months, seasons, winds... as well as the features and ...",
+      "product_identity": "",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.behance.net/gallery/13903143/Kinetic-Calendar-Digital-Society-Laboratory/modules/96258207",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "同心圆机械结构展示时间流动，交互和视觉创新明显，可转化为桌面日历。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "c62f8fdd5c7d",
       "title": "Red Dot Design Award: Keyboard and Mouse",
       "category": "创意礼盒",
@@ -178540,6 +179341,77 @@
       "relevance": 10,
       "tags": [
         "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "ba2a909725ee",
+      "title": "Young Willow's Packaging Will Make Your Gifts Look Even More Adorable - DIELINE Young Willow's Packaging Will Make Your Gifts Look Even More Adorable - DIELINE",
+      "category": "创意礼盒",
+      "summary": "明确礼盒包装设计：Young Willow婴儿礼物盒，多层开盒结构，外部黑白图案与内部爆炸色彩形成反差，由Studio Marché设计，具结构开箱与视觉叙事创新。页面证据：Studio Marché designed the fresh yet adorable packaging for Australian-based company Young Willow, a store dedicated to selling precious gifts for babies. The gift box designs feature contemporary illustrations and patterns that add to the special quality of the merchandise. “Melbourne based mum Emily Wilson founded Young Willow with the sole purpose of showering new […]",
+      "product_identity": "",
+      "score": 71,
+      "price_gate": "likely_over_35",
+      "image": "https://i0.wp.com/thedieline.com/wp-content/uploads/2018/10/237913ed-b9af-412f-9cad-8249d2391eca_hopandcottonpackagingdesign06.jpg",
+      "url": "https://thedieline.com/young-willow",
+      "source_name": "The Dieline",
+      "source_family": "包装专项",
+      "source_type": "packaging_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "多层开盒结构与内外色彩反差，具备结构开箱和视觉叙事创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "61d8b4c9319f",
+      "title": "CyWoodCreation: Custom wooden boxes with hidden compartment",
+      "category": "创意礼盒",
+      "summary": "CyWoodCreation是明确单品：定制木盒带隐藏抽屉，可存放卡牌、文件等，兼具收纳与礼赠功能，结构创新明显，众筹页面信息清晰。。页面证据：Cyril Laboureau is raising funds for CyWoodCreation: Custom wooden boxes with hidden compartment on Kickstarter! Wooden box with hidden drawer for deck cards, games, documents, precious and essential possessions. Choose the size, wood and create it",
+      "product_identity": "",
+      "score": 71,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/cywoodcreation/cywoodcreation-custom-wooden-boxes-with-hidden-com",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "定制木盒带隐藏抽屉，兼具礼赠与收纳，结构创新",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 7,
+      "relevance": 8,
+      "tags": [
+        "buy_sample",
         "deepseek_search_agent"
       ]
     },
@@ -184372,6 +185244,42 @@
       ]
     },
     {
+      "id": "f4d2d35c3ba4",
+      "title": "普象网_普象工业设计小站_工业产品创意设计_原创分享交流 - 普象网",
+      "category": "端午礼盒",
+      "summary": "明确单品：八十八仓端午“粽情与你”礼盒。创新证据：内盒小三角造型拼成大三角的结构创新，不同色域渐变色区分产品，礼盒袋采用镭射透明材质，在阳光下呈现不同颜色。。页面证据：普象工业设计小站与180万设计师分享你的原创设计；普象官网提供丰富设计学习资料、红点设计作品、IF大奖优秀作品、设计手绘稿、产品设计细节图、全球新设计产品图、设计师原创设计分享交流；全球优秀设计产品分享，帮助设计师提升眼界、开阔视野。",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.puxiang.com/galleries/7d8d4e1fec892799195d3051d007ed8f",
+      "source_name": "普象网",
+      "source_family": "设计社区",
+      "source_type": "design_community",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 5,
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-31",
+      "review_reason": "外部做成大方粽造型呼应端午文化，内部四味乌米粽，包装结构与节日叙事创新",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "e477a6f6aa27",
       "title": "iF Design - Mooncake Gift Box",
       "category": "中秋礼盒",
@@ -184405,42 +185313,6 @@
       "tags": [
         "adapt",
         "award_gallery"
-      ]
-    },
-    {
-      "id": "f4d2d35c3ba4",
-      "title": "普象网_普象工业设计小站_工业产品创意设计_原创分享交流 - 普象网",
-      "category": "端午礼盒",
-      "summary": "明确单品：八十八仓端午“粽情与你”礼盒。创新证据：内盒小三角造型拼成大三角的结构创新，不同色域渐变色区分产品，礼盒袋采用镭射透明材质，在阳光下呈现不同颜色。。页面证据：普象工业设计小站与180万设计师分享你的原创设计；普象官网提供丰富设计学习资料、红点设计作品、IF大奖优秀作品、设计手绘稿、产品设计细节图、全球新设计产品图、设计师原创设计分享交流；全球优秀设计产品分享，帮助设计师提升眼界、开阔视野。",
-      "product_identity": "",
-      "score": 70,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://www.puxiang.com/galleries/7d8d4e1fec892799195d3051d007ed8f",
-      "source_name": "普象网",
-      "source_family": "设计社区",
-      "source_type": "design_community",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发",
-        "视觉启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 4,
-      "first_seen": "2026-08-17",
-      "last_seen": "2026-08-25",
-      "review_reason": "外部做成大方粽造型呼应端午文化，内部四味乌米粽，包装结构与节日叙事创新",
-      "review_source": "deepseek",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 70,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -184862,6 +185734,42 @@
       ]
     },
     {
+      "id": "e4230baf3975",
+      "title": "月满金秋｜中秋礼盒设计_JMZWdesign-站酷ZCOOL",
+      "category": "中秋礼盒",
+      "summary": "-本礼盒以「月相更迭·东方雅韵」为核心，将中秋“月满人间”的文化意象与传统匣藏礼器的形制结合，用现代设计语言重构东方美学，传递“藏礼于器、寄情于月”的节日情感. -外层腰封封印，撕开后抽拉盒身，内部以交错层叠的抽屉式结构呈现，既最大化利用空间，也让每一次取物都充满“开箱寻宝”的仪式感，强化节日惊喜感. 月满金秋｜中秋礼盒设计（图ZNDA0NjAzMDI4） - 包装 - 站酷设计师JMZWdesign原创素材 - 站酷ZCOOL. Roborock 石头科技 | A30 Pro 2.0 洗地机产品TVC. IP 形",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "likely_over_35",
+      "image": "",
+      "url": "https://www.zcool.com.cn/work/ZNzMzNjA2MDg=.html",
+      "source_name": "站酷",
+      "source_family": "设计社区",
+      "source_type": "design_community",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 2,
+      "first_seen": "2026-06-11",
+      "last_seen": "2026-06-11",
+      "review_reason": "采用交错层叠抽屉式结构，开箱有寻宝仪式感，结构创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "3934cbff22f9",
       "title": "Smaller Wick S Glows With Romanticism and Modernist Design",
       "category": "氛围灯",
@@ -185105,6 +186013,40 @@
       "tags": [
         "adapt",
         "award_gallery"
+      ]
+    },
+    {
+      "id": "7c39098aab5e",
+      "title": "Gregor Calendar by Patrick Frey",
+      "category": "日历",
+      "summary": "Patrick Frey设计的Gregor Calendar，通过拆解编织线使月份随时间消散，具有明确的结构和交互创新，属于可直接转化的概念产品。。页面证据：An unraveling sweater is not a very good thing, but this unraveling calendar designed by Patrick Frey is genius! As the year progresses, you can pull on a",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "unknown",
+      "image": "https://design-milk.com/images/2010/03/gregor-calendar.jpg",
+      "url": "https://design-milk.com/gregor-calendar-by-patrick-frey",
+      "source_name": "Design Milk",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "review_reason": "通过拆解编织线让月份随时间消散，结构交互创新独特",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -192738,42 +193680,6 @@
       "tags": [
         "social_public_index",
         "更接近现成消费品，适合买样验证"
-      ]
-    },
-    {
-      "id": "e4230baf3975",
-      "title": "月满金秋｜中秋礼盒设计_JMZWdesign-站酷ZCOOL",
-      "category": "中秋礼盒",
-      "summary": "-本礼盒以「月相更迭·东方雅韵」为核心，将中秋“月满人间”的文化意象与传统匣藏礼器的形制结合，用现代设计语言重构东方美学，传递“藏礼于器、寄情于月”的节日情感. -外层腰封封印，撕开后抽拉盒身，内部以交错层叠的抽屉式结构呈现，既最大化利用空间，也让每一次取物都充满“开箱寻宝”的仪式感，强化节日惊喜感. 月满金秋｜中秋礼盒设计（图ZNDA0NjAzMDI4） - 包装 - 站酷设计师JMZWdesign原创素材 - 站酷ZCOOL. Roborock 石头科技 | A30 Pro 2.0 洗地机产品TVC. IP 形",
-      "product_identity": "",
-      "score": 70,
-      "price_gate": "likely_over_35",
-      "image": "",
-      "url": "https://m.zcool.com.cn/work/ZNzMzNjA2MDg=.html",
-      "source_name": "站酷",
-      "source_family": "设计社区",
-      "source_type": "design_community",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "包装启发",
-        "结构启发",
-        "情绪启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 1,
-      "first_seen": "2026-06-11",
-      "last_seen": "2026-06-11",
-      "review_reason": "采用交错层叠抽屉式结构，开箱有寻宝仪式感，结构创新明确。",
-      "review_source": "deepseek",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 70,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "packaging_specialist",
-        "中秋礼盒"
       ]
     },
     {
