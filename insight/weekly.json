@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-28T13:47:23+08:00",
-  "week": "2026-W35",
-  "group_id": "2026-W35",
-  "date_start": "2026-08-24",
-  "date_end": "2026-08-30",
-  "date_label": "2026-08-24 至 2026-08-30",
-  "title": "2026-W35 选品机会周报",
+  "generated_at": "2026-08-31T05:09:11+08:00",
+  "week": "2026-W36",
+  "group_id": "2026-W36",
+  "date_start": "2026-08-31",
+  "date_end": "2026-09-06",
+  "date_label": "2026-08-31 至 2026-09-06",
+  "title": "2026-W36 选品机会周报",
   "target_count": 100,
   "actual_count": 100,
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
@@ -16,10 +16,10 @@
       "可直接买样": 24
     },
     "by_category": {
-      "充电宝": 24,
+      "充电宝": 23,
       "水杯": 15,
+      "氛围灯": 11,
       "创意礼盒": 10,
-      "氛围灯": 10,
       "手机壳": 9,
       "创意桌搭": 8,
       "创意厨具": 7,
@@ -29,10 +29,10 @@
       "日历": 3
     },
     "by_axis": {
-      "功能启发": 64,
+      "功能启发": 63,
       "结构启发": 55,
       "包装启发": 26,
-      "情绪启发": 14,
+      "情绪启发": 15,
       "视觉启发": 10
     }
   },
@@ -2207,6 +2207,32 @@
       ]
     },
     {
+      "id": "e01cb6f4fd94",
+      "product_key": null,
+      "title": "Breathing Light | Shortlists | Dezeen Awards 2025",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Dezeen",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.dezeen.com/awards/2025/shortlists/breathing-light",
+      "image": "",
+      "summary": "明确单品氛围灯，通过模拟呼吸节奏的移动光点引导深呼吸以减压，具有交互功能创新。产品名Breathing Light，Dezeen Awards 2025 shortlist。。页面证据：It introduces moving spots of light replicating the gentle rhythm of breathing, encouraging you to breathe in a proven deep-breathing rhythm to help reduce stress.",
+      "risk": "通过模拟呼吸节奏的移动光点引导深呼吸减压，交互方式与健康场景结合创新明显",
+      "review_confidence": 9,
+      "review_reason": "通过模拟呼吸节奏的移动光点引导深呼吸减压，交互方式与健康场景结合创新明显",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "820b9a155190",
       "product_key": null,
       "title": "KUMIKO OLED Modular Lighting Turns Off Into a Mirror",
@@ -2522,32 +2548,6 @@
       "tags": [
         "adapt",
         "award_gallery"
-      ]
-    },
-    {
-      "id": "f4c411c43186",
-      "product_key": null,
-      "title": "Magnetic Charging Cable with a Built-in Power Bank might be the most GENIUS Smartphone Accessory - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2024/02/02/magnetic-charging-cable-with-a-built-in-power-bank-might-be-the-most-genius-smartphone-accessory",
-      "image": "https://www.yankodesign.com/images/design_news/2024/02/auto-draft/ivycable_gen_2_1.jpg",
-      "summary": "IVYCable Gen2是一款内置充电宝的磁吸充电线，创新点在于充电线自身集成电池，断开电源后自动为手机充电，解决了有线无电源的问题，属于明确的可买单品。。页面证据：﻿﻿ Ever had a charging cable but nowhere to plug it? Or a power bank but no charging cable to connect it to your phone? The IVYCable Gen2 is an oddly brilliant product that solves both those problems. Designed like a relatively thick charging cord, the IVYCable Gen2 actually has four separate power banks built",
-      "risk": "充电线内置电池，断开电源自动为手机充电，解决有线无插座痛点",
-      "review_confidence": 9,
-      "review_reason": "充电线内置电池，断开电源自动为手机充电，解决有线无插座痛点",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
       ]
     },
     {

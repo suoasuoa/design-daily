@@ -1,9 +1,9 @@
-# 2026-W35 选品机会周报
+# 2026-W36 选品机会周报
 
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-08-28T13:47:23+08:00
+- 生成时间：2026-08-31T05:09:11+08:00
 
 ## 行动分布
 
@@ -985,7 +985,19 @@ Detachable 3-in-1 Functional Jacket by Bosideng, featuring innovative quick-deta
 
 Helly Hansen Arctic Patrol Modular Parka 2.0 轻量硬壳冲锋衣，采用创新 LIFA INFINITY 膜（含≥50%回收材料、无化学涂层），PFC-free 防泼水涂层，功能与材料创新明确。。页面证据：To truly understand the strengths of the Arctic Patrol Modular Parka 2.0, you have to wear it in the Arctic, as the name indicates. The designers at the tradition-steeped outdoor specialist Helly Hansen developed the parka in close collaboration with...
 
-### 82. KUMIKO OLED Modular Lighting Turns Off Into a Mirror
+### 82. Breathing Light | Shortlists | Dezeen Awards 2025
+
+- 品类：氛围灯
+- 路径：方向参考
+- 启发：情绪启发
+- 分数：8.4
+- 来源：Dezeen
+- 下一步：保留为趋势语言和内容方向，暂不直接打样
+- 链接：https://www.dezeen.com/awards/2025/shortlists/breathing-light
+
+明确单品氛围灯，通过模拟呼吸节奏的移动光点引导深呼吸以减压，具有交互功能创新。产品名Breathing Light，Dezeen Awards 2025 shortlist。。页面证据：It introduces moving spots of light replicating the gentle rhythm of breathing, encouraging you to breathe in a proven deep-breathing rhythm to help reduce stress.
+
+### 83. KUMIKO OLED Modular Lighting Turns Off Into a Mirror
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -997,7 +1009,7 @@ Helly Hansen Arctic Patrol Modular Parka 2.0 轻量硬壳冲锋衣，采用创�
 
 KUMIKO OLED Modular Lighting是明确的模块化灯具单品：1mm厚OLED面板可磁吸拼接，开启为氛围灯，关闭时变身镜子，以光电材料与交互结构实现双重功能，创新证据明确。。页面证据：A customizable and modular system of 1mm-thick OLED panels snap magnetically into mood lighting when on, and transform into a mirror while off.
 
-### 83. Finally, Wireless and GaN Charging That’s Tiny And Turbo-fast: Meet the Baseus PicoGo II Series - Yanko Design
+### 84. Finally, Wireless and GaN Charging That’s Tiny And Turbo-fast: Meet the Baseus PicoGo II Series - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1009,7 +1021,7 @@ KUMIKO OLED Modular Lighting是明确的模块化灯具单品：1mm厚OLED面板
 
 Baseus PicoGo AM31磁吸充电宝，采用GaN技术和Qi2认证，实现小型化与15W无线快充。。页面证据：The charging accessory market feels a lot like the wild west of consumer tech, a sprawling landscape of promises and pitfalls. For years, we’ve been stuffing our bags with bulky power bricks, tangled cables, and chargers that feel suspiciously warm to the touch. The Gallium Nitride (GaN) revolution promised a new world order, one defined
 
-### 84. MagSafe Power Bank Has All The Charging Options You Need For Power On The Go - Yanko Design
+### 85. MagSafe Power Bank Has All The Charging Options You Need For Power On The Go - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1021,7 +1033,7 @@ Baseus PicoGo AM31磁吸充电宝，采用GaN技术和Qi2认证，实现小型�
 
 明确MagSafe充电宝，兼具无线充电与内置线缆，创新一体设计。。页面证据：Remember the days when you'd scramble to find different chargers for each of your devices? Those frantic moments of digging through bags for the right cable while your phone battery hovers at 2% are becoming a thing of the past. The latest MagSafe power banks are revolutionizing how we keep our growing collection of tech
 
-### 85. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
+### 86. Credit Card-shaped MagSafe Power Bank gives your iPhone a massive 5000mAh Battery Boost - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1033,7 +1045,7 @@ Baseus PicoGo AM31磁吸充电宝，采用GaN技术和Qi2认证，实现小型�
 
 TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，超薄磁吸设计。。页面证据：https://youtu.be/cJQ3YE5U2xA Picture this, it’s summer, you’ve packed your bags and you’re heading on a Eurotrip (maybe for a nice holiday on the Amalfi coast or to see Taylor Swift perform). In true holiday fashion, you intend on spending the entire day out and about, exploring the city, but you realize an hour in that your
 
-### 86. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
+### 87. Red Dot Design Award: 8-in-1 Magnetic Wireless Power Bank
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1045,7 +1057,7 @@ TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，�
 
 明确单品：8-in-1 Magnetic Wireless Power Bank，集成15W无线充电、手表耳机充电、70cm拉出线及手机支架，多合一功能创新，实用性强。。页面证据：This multifunctional 10,000 mAh 8-in-1 Magnetic Wireless Power Bank combines a 15-watt wireless charger with dedicated charging areas for watches and headphones, alongside a pull-out 70 cm data cable and a phone stand. It replaces multiple chargers with...
 
-### 87. iF Design - Anker Laptop Power Bank (25K, 165W)
+### 88. iF Design - Anker Laptop Power Bank (25K, 165W)
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1057,7 +1069,7 @@ TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，�
 
 具体产品：Anker Laptop Power Bank (25K, 165W) / 型号Zolo。创新为内置可伸缩双USB-C线缆（70cm和30cm）及1.3英寸彩色屏幕显示实时时间，集成度高。。页面证据：The Anker Zolo Power Bank (25K, 165W, built-in retractable cables) is designed for fast charging multiple devices simultaneously, compatible with all devices. This power bank allows users to charge freely in various settings—traveling, at home, or outdoors—eliminating battery anxiety. With a capacity of 25,000mAh and an output power of 100W, it features four ports and two built-in USB-C cables (a 70cm retractable cable and a 30cm short cable). It also has a high-definition 1.3-inch color screen displaying real-time time information.
 
-### 88. Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both
+### 89. Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1069,7 +1081,7 @@ TORRAS MiniMag 信用卡大小 MagSafe 充电宝，5000mAh，厚度0.3英寸，�
 
 Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both Travel chargers have always been a bit of a negotiation. You pack a power bank for the long haul, then stuff a wall adapter in...
 
-### 89. An Intuitive, Solar Powered, Motion Sensor Light
+### 90. An Intuitive, Solar Powered, Motion Sensor Light
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1081,7 +1093,7 @@ Stop Packing Two Chargers: Trozk’s $50 Binary Star Does Both Travel chargers h
 
 Feltmark 的 Ellum Solar 是太阳能供电壁挂灯，集成运动传感器，检测到移动自动亮起，免布线。。页面证据：Feltmark developed Ellum Solar, a smart, wall-mounted light decked out with motion sensors that will illuminate your path when it detects movement.
 
-### 90. iF Design - Mijia Desk Study Lamp Pro
+### 91. iF Design - Mijia Desk Study Lamp Pro
 
 - 品类：氛围灯
 - 路径：方向参考
@@ -1093,7 +1105,7 @@ Feltmark 的 Ellum Solar 是太阳能供电壁挂灯，集成运动传感器，�
 
 米家台灯Pro（Mijia Desk Study Lamp Pro）是明确可用的台灯单品，出自iF设计奖。创新点包括：行业首创水平微结构光罩防眩光、双光源全光谱LED减少桌面阴影、双旋转轴调节高度角度、触控旋钮与环形指示灯、双传感器实现自动亮度和入座/离开开关的隐形交互。。页面证据：This Lamp is designed for the healthy eye care needs of children and teenagers during study.It features an innovative dual-light source design with full-spectrum LED beads, which helps reduce desktop shadows.The industry's first horizontal micro-structured light cover helps prevent glare.The lamp can adjust the height and angle of the light source by two rotation axes.The touch-sensitive knob and ring indicator on the lamp make operation more intuitive. Equipped with dual sensors, it automatically adjusts brightness, turns on/off upon sitting/leaving,
 
-### 91. SHARGE Flow Mini Hands-On at CES 2024: A Tiny yet Mighty ‘Power Backpack’ for your Smartphone - Yanko Design
+### 92. SHARGE Flow Mini Hands-On at CES 2024: A Tiny yet Mighty ‘Power Backpack’ for your Smartphone - Yanko Design
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1105,7 +1117,7 @@ Feltmark 的 Ellum Solar 是太阳能供电壁挂灯，集成运动传感器，�
 
 明确单品：SHARGE Flow Mini充电宝，可直接插入手机底部，集成连接端口无需数据线，体积小巧，解决传统充电宝携带和接线痛点。。页面证据：Power banks have a reputation for being bulky. Nobody really likes carrying them in their pockets given how large and heavy they can be, which often means most power banks spend all their time inside backpacks and purses. The Flow Mini, from Sharge (formerly Shargeek) has a different story to tell. It's extremely handy, with
 
-### 92. Good 20th Century Industrial Design: This West German Perpetual Calendar - Core77
+### 93. Good 20th Century Industrial Design: This West German Perpetual Calendar - Core77
 
 - 品类：日历
 - 路径：方向参考
@@ -1117,7 +1129,7 @@ Feltmark 的 Ellum Solar 是太阳能供电壁挂灯，集成运动传感器，�
 
 明确单品：Berendsohn西德永恒日历。创新证据：由数十个白色塑料圆柱体及红黄柱体组成，通过旋转/调整实现永久日历显示，交互式机械结构，无需逐年更换，概念可转化为现代桌面日历。。页面证据：Here's something that was designed around the 1960s or '70s, yet would probably sell well today. This perpetual calendar is by Berendsohn, a company that made a fortune designing promotional objects in 20th-century West Germany. (More on that in a moment.) Image: Wertwerk Image: Wertwerk The calendar's design
 
-### 93. Red Dot Design Award: MR Charging A travel charging device
+### 94. Red Dot Design Award: MR Charging A travel charging device
 
 - 品类：充电宝
 - 路径：方向参考
@@ -1128,18 +1140,6 @@ Feltmark 的 Ellum Solar 是太阳能供电壁挂灯，集成运动传感器，�
 - 链接：https://www.red-dot.org/de/project/mr-charging-a-travel-charging-device-26316
 
 MR Charging is a travel charging device combining an AC wall charger with a powerbank, featuring a retractable micro USB cable and lightning adapter. This innovation addresses the need for a single portable device that works both as a charger and a power source, with integrated cables.。页面证据：MR Charging is a portable charging device, which combines AC wall charger with powerbank capabilities. It has a retractable built-in micro USB cable and lightning-charging adaptor, dedicated to providing a convenient charge to most mobile phones on the...
-
-### 94. Magnetic Charging Cable with a Built-in Power Bank might be the most GENIUS Smartphone Accessory - Yanko Design
-
-- 品类：充电宝
-- 路径：方向参考
-- 启发：功能启发
-- 分数：8.3
-- 来源：Yanko Design
-- 下一步：保留为趋势语言和内容方向，暂不直接打样
-- 链接：https://www.yankodesign.com/2024/02/02/magnetic-charging-cable-with-a-built-in-power-bank-might-be-the-most-genius-smartphone-accessory
-
-IVYCable Gen2是一款内置充电宝的磁吸充电线，创新点在于充电线自身集成电池，断开电源后自动为手机充电，解决了有线无电源的问题，属于明确的可买单品。。页面证据：﻿﻿ Ever had a charging cable but nowhere to plug it? Or a power bank but no charging cable to connect it to your phone? The IVYCable Gen2 is an oddly brilliant product that solves both those problems. Designed like a relatively thick charging cord, the IVYCable Gen2 actually has four separate power banks built
 
 ### 95. Red Dot Design Award: Baseus NOMOS Kickstand Magnetic Power Bank
 
