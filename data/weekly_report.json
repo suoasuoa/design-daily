@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T05:09:11+08:00",
+  "generated_at": "2026-09-01T07:18:39+08:00",
   "week": "2026-W36",
   "group_id": "2026-W36",
   "date_start": "2026-08-31",
@@ -11,29 +11,29 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 48,
+      "适合改造": 46,
       "方向参考": 28,
-      "可直接买样": 24
+      "可直接买样": 26
     },
     "by_category": {
-      "充电宝": 23,
-      "水杯": 15,
+      "充电宝": 24,
+      "水杯": 13,
+      "创意礼盒": 12,
       "氛围灯": 11,
-      "创意礼盒": 10,
-      "手机壳": 9,
-      "创意桌搭": 8,
-      "创意厨具": 7,
+      "创意厨具": 8,
+      "手机壳": 8,
       "中秋礼盒": 7,
+      "创意桌搭": 7,
       "冲锋衣": 4,
       "端午礼盒": 3,
       "日历": 3
     },
     "by_axis": {
       "功能启发": 63,
-      "结构启发": 55,
-      "包装启发": 26,
+      "结构启发": 54,
+      "包装启发": 28,
       "情绪启发": 15,
-      "视觉启发": 10
+      "视觉启发": 11
     }
   },
   "dedupe": {
@@ -93,6 +93,33 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "d668eeb39c91",
+      "product_key": null,
+      "title": "Desan Advent Box — Corporate Gift Design (11) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 76,
+      "score_label": "7.6",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/241097807/Desan-Advent-Box-Corporate-Gift-Design/modules/1411437767",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/5722b8241097807.699823c971358.jpg",
+      "summary": "Desan 企业礼品盒将品牌名五个字母转化为五种香料，开箱过程成为品牌风味体验系统，概念与结构均有创新。。页面证据：Corporate gift for partners, designed as a system of flavors and meanings. The five letters of the brand name transform into five spices, turning the unboxing process into a brand experience.",
+      "risk": "品牌名五个字母转化为五种香料，开箱形成品牌风味体验系统，概念与结构均创新",
+      "review_confidence": 9,
+      "review_reason": "品牌名五个字母转化为五种香料，开箱形成品牌风味体验系统，概念与结构均创新",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -175,6 +202,34 @@
       "tags": [
         "adapt",
         "buy_sample"
+      ]
+    },
+    {
+      "id": "378bb9de4a74",
+      "product_key": null,
+      "title": "Ramen Library & Asiafood. Brand Applications. :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest F",
+      "category": "创意礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "功能启发",
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 74,
+      "score_label": "7.4",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/251926529/Ramen-Library-Asiafood-Brand-Applications",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0d00de251926529.6a53bb2163a58.jpg",
+      "summary": "明确的书形礼盒单品，外观仿真书籍，内部收纳礼物与宣传物料，开箱过程有结构叙事体验，创新点突出。。页面证据：Graphic Design, Illustration, Packaging, Adobe Illustrator, Adobe Photoshop",
+      "risk": "书形礼盒结构创新，仿真书籍外观，内部收纳礼物与宣传物料，开箱过程有结构叙事体验",
+      "review_confidence": 9,
+      "review_reason": "书形礼盒结构创新，仿真书籍外观，内部收纳礼物与宣传物料，开箱过程有结构叙事体验",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
       ]
     },
     {
@@ -1302,6 +1357,58 @@
       ]
     },
     {
+      "id": "fe9ac1638ead",
+      "product_key": null,
+      "title": "Sunflower X: Smarter Sleep with AI Sensing & Sunrise Light by ...",
+      "category": "氛围灯",
+      "action_lane": "适合改造",
+      "axes": [
+        "情绪启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/261716880/sunflower-x-smarter-sleep-with-ai-sensing-and-sunrise-light?result=project&total_hits=18",
+      "image": "",
+      "summary": "明确单品：Sunflower X 智能床头夜灯，集成 AI 睡意检测、无接触睡眠追踪与日出唤醒功能，将灯具与健康监测结合，属交互/功能创新而非普通台灯，可买样进入终审。。页面证据：A smart bedside lamp with AI drowsiness detection, contactless sleep tracking, and a gentle sunrise alarm",
+      "risk": "集成AI睡意检测、无接触睡眠追踪与日出唤醒的智能床头灯，将照明与健康监测结合",
+      "review_confidence": 9,
+      "review_reason": "集成AI睡意检测、无接触睡眠追踪与日出唤醒的智能床头灯，将照明与健康监测结合",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "939e980eff19",
+      "product_key": null,
+      "title": "Kylendar 2.0：Design Your Perfect Desk Dashboard - Kickstarter",
+      "category": "日历",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "score": 86,
+      "score_label": "8.6",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/1290645639/kylendar-20-design-your-perfect-desk-dashboard",
+      "image": "",
+      "summary": "Kylendar 2.0是7英寸电子墨水桌面仪表盘，提供39个widget、AI布局生成器和多页面日历/任务视图，具备明确交互和功能创新。。页面证据：Kylendar is raising funds for Kylendar 2.0：Design Your Perfect Desk Dashboard on Kickstarter! A customizable 7-inch E-Paper dashboard with 39 widgets, AI layout generator, and up to 10 pages for your calendar, tasks, and data.",
+      "risk": "7英寸电子墨水桌面仪表盘，集成39个widget和AI布局生成器，将日历与效率仪表盘融合，交互创新显著。",
+      "review_confidence": 9,
+      "review_reason": "7英寸电子墨水桌面仪表盘，集成39个widget和AI布局生成器，将日历与效率仪表盘融合，交互创新显著。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "bbec914f74ca",
       "product_key": null,
       "title": "Level Up Your Tech Setup in 2025 with Aulumu’s Techno-Minimal Accessories - Yanko Design",
@@ -1806,82 +1913,29 @@
       ]
     },
     {
-      "id": "fde7bea7525e",
+      "id": "62bf1c3646d5",
       "product_key": null,
-      "title": "Dyson Lightcycle™ task light – Overview",
-      "category": "氛围灯",
+      "title": "Dreo Chefmaker - iF Design",
+      "category": "创意厨具",
       "action_lane": "适合改造",
       "axes": [
-        "情绪启发"
+        "功能启发"
       ],
       "score": 85,
       "score_label": "8.5",
-      "source": "Uncrate",
-      "source_family": "市场信号",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
       "source_quality": "premium",
-      "url": "https://uncrate.com/uncr/esdysonlightcycleledlamp",
+      "url": "https://ifdesign.com/en/winner-ranking/project/dreo-chefmaker/568155",
       "image": "",
-      "summary": "Dyson Lightcycle task light 是明确任务灯单品，具备通过算法模拟日光的自动色温/亮度调节，以及环境光感应等智能功能。。页面证据：",
-      "risk": "智能任务灯，通过算法模拟日光自动调节色温亮度，环境光感应，功能创新明确。",
-      "review_confidence": 10,
-      "review_reason": "智能任务灯，通过算法模拟日光自动调节色温亮度，环境光感应，功能创新明确。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "d507c6fe76fe",
-      "product_key": null,
-      "title": "Canyon’s Hexagon Charger Makes Wireless Charging Actually Cool - Yanko Design",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/01/29/canyons-hexagon-charger-makes-wireless-charging-actually-cool",
-      "image": "https://www.yankodesign.com/images/design_news/2026/01/canyons-hexagon-charger-makes-wireless-charging-actually-cool/hexagon-01.jpg",
-      "summary": "明确的桌面充电单品：Canyon Hexagon Charger（VLND Studio设计），3合1六边形无线充电站，15W快充，结合结构化收纳，非普通充电板，结构创新明显。。页面证据：When you think about wireless chargers, your mind probably goes straight to flat discs or boring black rectangles scattered across your desk. But VLND Studio just flipped that script with their Wireless Charging Station for Canyon, and the design world took notice. This isn't just another tech accessory pretending to be minimal. It's a genuine",
-      "risk": "六边形3合1无线充电站，15W快充，结构化收纳，非普通充电板。",
+      "summary": "明确单品：Dreo ChefMaker (C1)，智能烹饪设备，结合烹饪科学和技术，具备功能创新，可买样。。页面证据：For decades, home cooking has been considered too difficult to master, requiring intense focus, perfect technique and multiple appliances to enjoy. Dreo's take on the kitchen segment aims to bring design, culinary science and technology together. ChefMaker (C1) is the first step towards this objective. Allowing aspiring home cooks to enjoy the simplicity of cooking with fine cuisine taste and ...",
+      "risk": "内置探针与智能算法自动完成烹饪，将专业烹饪技术集成到单一桌面设备",
       "review_confidence": 9,
-      "review_reason": "六边形3合1无线充电站，15W快充，结构化收纳，非普通充电板。",
+      "review_reason": "内置探针与智能算法自动完成烹饪，将专业烹饪技术集成到单一桌面设备",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "c8eaa9861c8d",
-      "product_key": null,
-      "title": "Portugal’s Official TORRAS Phone Case for World Cup 2026 Has A Hands-Free Camera Stand - Yanko Design",
-      "category": "手机壳",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/04/04/portugals-official-torras-phone-case-for-world-cup-2026-has-a-hands-free-camera-stand",
-      "image": "https://www.yankodesign.com/images/design_news/2026/04/draft-torras-wc/TORRAS_Portuguese_Football_Federation_FPF_Limited_Edition_for_iPhone_hero.jpg",
-      "summary": "TORRAS Ostand Q3 Air 葡萄牙队联名手机壳，内置免提相机支架，有功能结构创新，非仅换图案联名。。页面证据：https://www.youtube.com/watch?v=Ku9v_BEvmLI Cristiano Ronaldo did not become the most recognizable footballer of his generation by accident. The discipline, the training footage, the obsessive documentation of progress over years and decades, all of that has been as central to the story as any trophy or record. Portuguese football has a particular relationship with that kind of dedication,",
-      "risk": "内置免提相机支架，功能结构创新，非仅换图案联名。",
-      "review_confidence": 8,
-      "review_reason": "内置免提相机支架，功能结构创新，非仅换图案联名。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
+        "award_gallery"
       ]
     },
     {
@@ -2127,6 +2181,60 @@
       ]
     },
     {
+      "id": "43af7c54187c",
+      "product_key": null,
+      "title": "iF Design - FLEXTAIL ZERO POWER BANK 10000C",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/flextail-zero-power-bank-10000c/755983",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "具体产品：FLEXTAIL ZERO POWER BANK 10000C。创新为世界首个使用锻造碳纤维的充电宝，厚度仅9.9mm，重145g，具备IPX4防水，实现超轻量化与高耐久性结合。。页面证据：FLEXTAIL ZERO POWER BANK 10000C is a power bank designed for trail running, redefining portability and durability in extreme outdoor conditions. With a body only 9.9 mm thick and weighing 145 g, it achieves a rare balance between 10,000 mAh capacity and ultra-light structure. As the world’s first power bank using forged carbon fiber, combined with a high-toughness nylon frame, it ensures exceptional strength, puncture resistance, and IPX4 water protection—making outdoor energy carrying lighter and more reliable.",
+      "risk": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
+      "review_confidence": 9,
+      "review_reason": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "buy_sample"
+      ]
+    },
+    {
+      "id": "5d85b9e11cd3",
+      "product_key": null,
+      "title": "Red Dot Design Award: Anker Zolo Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/zh/project/anker-zolo-power-bank-82151",
+      "image": "",
+      "summary": "Anker Zolo Power Bank，胶囊形状，集成两个可伸缩USB-C线和多功能侧边线，1.3英寸彩色显示屏，75%回收材料，充电便携创新。。页面证据：The capsule-like shape of the Anker Zolo Power Bank integrates a functional structure for mobile use. Two retractable USB-C cables and a multifunctional cable on the side enable organised charging without separate accessories. A 1.3\" colour display...",
+      "risk": "胶囊形状集成可伸缩双USB-C线和多功能线，1.3英寸彩屏，75%回收材料，结构与环保创新",
+      "review_confidence": 9,
+      "review_reason": "胶囊形状集成可伸缩双USB-C线和多功能线，1.3英寸彩屏，75%回收材料，结构与环保创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "buy_sample"
+      ]
+    },
+    {
       "id": "c7b5bfaab593",
       "product_key": null,
       "title": "When Your Desk Lamp Becomes Your Study Partner: Check Mate - Yanko Design",
@@ -2151,6 +2259,32 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "a81f1440e6f3",
+      "product_key": null,
+      "title": "Power bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/en/gallery/winners/27994",
+      "image": "https://award-attachments.g-mark.io/winners/2025/27994/main.jpg?size=medium",
+      "summary": "World's first PD-compatible power bank with lithium iron phosphate battery that does not ignite when punctured, safety material innovation and cobalt-free.。页面证据：This product is the world's first PD output-compatible battery with a lithium-ion iron phosphate battery. This product features the use of a safe battery that does not ignite even when a nail is inserted into it, preventing fire accidents. It is also an environmentally friendly product that does not use cobalt in the battery's positive electrode material.",
+      "risk": "世界首个钠离子移动电源，安全性提升，循环寿命约5000次，外壳回收塑料，无塑料包装，材料与技术双重创新。",
+      "review_confidence": 9,
+      "review_reason": "世界首个钠离子移动电源，安全性提升，循环寿命约5000次，外壳回收塑料，无塑料包装，材料与技术双重创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
       ]
     },
     {
@@ -2473,84 +2607,6 @@
       ]
     },
     {
-      "id": "20a083cd0d5b",
-      "product_key": null,
-      "title": "SHARGE Flow Mini Hands-On at CES 2024: A Tiny yet Mighty ‘Power Backpack’ for your Smartphone - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2024/01/12/sharge-flow-mini-hands-on-at-ces-2024-a-tiny-yet-mighty-power-backpack-for-your-smartphone",
-      "image": "https://www.yankodesign.com/images/design_news/2024/01/draft-sharge-flow-mini/sharge_flow_mini_9.jpg",
-      "summary": "明确单品：SHARGE Flow Mini充电宝，可直接插入手机底部，集成连接端口无需数据线，体积小巧，解决传统充电宝携带和接线痛点。。页面证据：Power banks have a reputation for being bulky. Nobody really likes carrying them in their pockets given how large and heavy they can be, which often means most power banks spend all their time inside backpacks and purses. The Flow Mini, from Sharge (formerly Shargeek) has a different story to tell. It's extremely handy, with",
-      "risk": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
-      "review_confidence": 9,
-      "review_reason": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "67884dde5c60",
-      "product_key": null,
-      "title": "Good 20th Century Industrial Design: This West German Perpetual Calendar - Core77",
-      "category": "日历",
-      "action_lane": "方向参考",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.core77.com/posts/141433",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1803113_lead_400_141433_.jpg",
-      "summary": "明确单品：Berendsohn西德永恒日历。创新证据：由数十个白色塑料圆柱体及红黄柱体组成，通过旋转/调整实现永久日历显示，交互式机械结构，无需逐年更换，概念可转化为现代桌面日历。。页面证据：Here's something that was designed around the 1960s or '70s, yet would probably sell well today. This perpetual calendar is by Berendsohn, a company that made a fortune designing promotional objects in 20th-century West Germany. (More on that in a moment.) Image: Wertwerk Image: Wertwerk The calendar's design",
-      "risk": "该产品属于以日期显示为核心的日历，且不是普通印刷台历；其用多组圆柱滚轴和窗口结构实现可反复调节的永久日历显示，具备明确机械交互、桌面/墙面使用价值和复古工业设计启发，可转化为现代桌搭日历或礼品方向。",
-      "review_confidence": 9,
-      "review_reason": "该产品属于以日期显示为核心的日历，且不是普通印刷台历；其用多组圆柱滚轴和窗口结构实现可反复调节的永久日历显示，具备明确机械交互、桌面/墙面使用价值和复古工业设计启发，可转化为现代桌搭日历或礼品方向。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "414f8027fc43",
-      "product_key": null,
-      "title": "Red Dot Design Award: MR Charging A travel charging device",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/de/project/mr-charging-a-travel-charging-device-26316",
-      "image": "",
-      "summary": "MR Charging is a travel charging device combining an AC wall charger with a powerbank, featuring a retractable micro USB cable and lightning adapter. This innovation addresses the need for a single portable device that works both as a charger and a power source, with integrated cables.。页面证据：MR Charging is a portable charging device, which combines AC wall charger with powerbank capabilities. It has a retractable built-in micro USB cable and lightning-charging adaptor, dedicated to providing a convenient charge to most mobile phones on the...",
-      "risk": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
-      "review_confidence": 9,
-      "review_reason": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
       "id": "76737ae89826",
       "product_key": null,
       "title": "Red Dot Design Award: Baseus NOMOS Kickstand Magnetic Power Bank",
@@ -2653,60 +2709,6 @@
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "6f73ceb5ade1",
-      "product_key": null,
-      "title": "Kickstarter >> hug - the insulated collapsible mug by The Huggable Co",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Kickstarter",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.kickstarter.com/projects/-hug-/hug-600ml-20oz-double-walled-insulation-in-your-pocket",
-      "image": "",
-      "summary": "hug可折叠保温杯，双壁保温、9档高度、口袋便携、回收材料，明确单品且有结构创新。。页面证据：The Huggable Co is raising funds for hug - the insulated collapsible mug on Kickstarter! Up to 9 height options, double walled insulation, pocket friendly, made from recycled material and climate positive +",
-      "risk": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
-      "review_confidence": 8,
-      "review_reason": "文字证据明确指向可直接饮用的 insulated collapsible mug，属于水杯品类；卖点包含双壁保温、最高9档高度调节、可折叠入口袋、600ml/20oz容量、回收材料与气候友好属性，具备结构便携、保温功能和材料叙事创新，不是普通基础杯。图片缺失降低视觉确认度，但文字信息充分且产品机制清楚，可作为高价值选品灵感保留。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "c08e96dcc07e",
-      "product_key": null,
-      "title": "Red Dot Design Award: Thermo Mug Without Thread",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/thermo-mug-without-thread-79401",
-      "image": "",
-      "summary": "Thermo Mug Without Thread，无螺纹设计，按压开盖单手操作，内置锁定防漏，可拆卸硅胶套，结构创新与交互创新明确。。页面证据：This thermo mug without a screw thread features a push-button opening mechanism that can be operated with one hand. A built-in toggle lock prevents accidental spills, while also serving as a fun fidget feature. The smooth rim and removable silicone sleeve...",
-      "risk": "无螺纹按压开盖单手操作，内置锁定防漏",
-      "review_confidence": 9,
-      "review_reason": "无螺纹按压开盖单手操作，内置锁定防漏",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "award_gallery",
         "deepseek_search_agent"
       ]
     }
