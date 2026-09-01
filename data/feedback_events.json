@@ -654,5 +654,98 @@
       "source_family": "媒体案例"
     },
     "created_at": "2026-08-18T09:28:44.697+00:00"
+  },
+  {
+    "event_id": "28801e57-a9bf-48bd-bf1e-f93db9d93b17",
+    "workspace": "design-daily",
+    "actor_id": "c211aec0-9673-4929-b50c-1e0e66cde26c",
+    "product_id": "8798aadcdbf2",
+    "action": "pass",
+    "reason": "wrong_category",
+    "context": {
+      "tab": "weekly",
+      "daily_group": "daily-2026-09-01",
+      "weekly_group": "2026-W36"
+    },
+    "item_snapshot": {
+      "url": "https://www.behance.net/gallery/253513987/Smart-Air-Grill-Product-Design-CMF",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "tags": [
+        "deepseek_search_agent",
+        "design_community"
+      ],
+      "title": "Smart Air Grill | Product Design & CMF :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook",
+      "summary": "Smart Air Grill，空气炸与烧烤二合一紧凑台面电器，结构/功能创新，Behance产品设计明确。页面证据：Smart Air Grill is a premium countertop cooking appliance designed for dearHOME. It combines grilling and hot-air circulation in a compact structure, supporting a wide range of everyday cooking functions.The design focuses on a strong yet refined kitche...",
+      "category": "创意厨具",
+      "action_lane": "可直接买样",
+      "source_name": "Behance",
+      "source_family": "社交灵感"
+    },
+    "created_at": "2026-09-01T10:37:09.236+00:00"
+  },
+  {
+    "event_id": "7d1af5b6-351a-4986-840a-6901c83d0ad2",
+    "workspace": "design-daily",
+    "actor_id": "c211aec0-9673-4929-b50c-1e0e66cde26c",
+    "product_id": "bbec914f74ca",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "weekly",
+      "daily_group": "daily-2026-09-01",
+      "weekly_group": "2026-W36"
+    },
+    "item_snapshot": {
+      "url": "https://www.yankodesign.com/2025/01/04/level-up-your-tech-setup-in-2025-with-aulumus-techno-minimal-accessories",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "Level Up Your Tech Setup in 2025 with Aulumu’s Techno-Minimal Accessories - Yanko Design",
+      "summary": "Aulumu M01 4合1折叠无线充电站：整合iPhone、AirPods、Apple Watch及USB-C设备，折叠结构解决桌面多设备充电与理线，是具体桌面单品。。页面证据：https://youtu.be/ZHPAWGfFrTk There’s a certain irony in how we treat our gadgets. We spend hours agonizing over which phone to buy, which laptop to upgrade to, or which smartwatch will best track our lives—only to neglect the tools that connect them all. Accessories, often relegated to afterthoughts, are the unsung heroes of tech. When was the",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例"
+    },
+    "created_at": "2026-09-01T10:37:41.821+00:00"
+  },
+  {
+    "event_id": "c37d62d3-44d2-45b3-ae24-69a5909123e6",
+    "workspace": "design-daily",
+    "actor_id": "c211aec0-9673-4929-b50c-1e0e66cde26c",
+    "product_id": "8345d71d3bfe",
+    "action": "like",
+    "reason": "",
+    "context": {
+      "tab": "weekly",
+      "daily_group": "daily-2026-09-01",
+      "weekly_group": "2026-W36"
+    },
+    "item_snapshot": {
+      "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ],
+      "title": "Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa",
+      "summary": "Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "source_name": "Behance",
+      "source_family": "社交灵感"
+    },
+    "created_at": "2026-09-01T10:37:45.058+00:00"
   }
 ]

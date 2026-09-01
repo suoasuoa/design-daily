@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generated_at": "2026-09-01T05:26:51+08:00",
+  "generated_at": "2026-09-02T03:21:56+08:00",
   "stats": {
-    "events": 20,
-    "active_decisions": 16,
-    "likes": 14,
-    "passes": 2
+    "events": 23,
+    "active_decisions": 19,
+    "likes": 16,
+    "passes": 3
   },
   "positive_patterns": {
     "category": [
@@ -18,11 +18,11 @@
         "count": 3
       },
       {
-        "name": "充电宝",
-        "count": 1
+        "name": "创意桌搭",
+        "count": 3
       },
       {
-        "name": "创意桌搭",
+        "name": "充电宝",
         "count": 1
       },
       {
@@ -41,7 +41,7 @@
     "source_family": [
       {
         "name": "媒体案例",
-        "count": 9
+        "count": 10
       },
       {
         "name": "市场信号",
@@ -49,13 +49,13 @@
       },
       {
         "name": "社交灵感",
-        "count": 1
+        "count": 2
       }
     ],
     "action_lane": [
       {
         "name": "适合改造",
-        "count": 11
+        "count": 13
       },
       {
         "name": "方向参考",
@@ -65,11 +65,11 @@
     "axes": [
       {
         "name": "功能启发",
-        "count": 13
+        "count": 15
       },
       {
         "name": "结构启发",
-        "count": 8
+        "count": 10
       },
       {
         "name": "视觉启发",
@@ -83,11 +83,11 @@
     "tags": [
       {
         "name": "deepseek_search_agent",
-        "count": 13
+        "count": 15
       },
       {
         "name": "adapt",
-        "count": 8
+        "count": 10
       },
       {
         "name": "创意厨具",
@@ -124,37 +124,53 @@
       {
         "name": "日历",
         "count": 1
+      },
+      {
+        "name": "创意厨具",
+        "count": 1
       }
     ],
     "source_family": [
       {
         "name": "市场信号",
         "count": 2
+      },
+      {
+        "name": "社交灵感",
+        "count": 1
       }
     ],
     "action_lane": [
       {
         "name": "适合改造",
         "count": 2
+      },
+      {
+        "name": "可直接买样",
+        "count": 1
       }
     ],
     "axes": [
       {
         "name": "功能启发",
-        "count": 1
+        "count": 2
       },
       {
         "name": "视觉启发",
+        "count": 1
+      },
+      {
+        "name": "结构启发",
         "count": 1
       }
     ],
     "tags": [
       {
-        "name": "buy_sample",
-        "count": 2
+        "name": "deepseek_search_agent",
+        "count": 3
       },
       {
-        "name": "deepseek_search_agent",
+        "name": "buy_sample",
         "count": 2
       },
       {
@@ -188,6 +204,11 @@
       "code": "too_ordinary",
       "label": "太普通，没有明显创意增量",
       "count": 2
+    },
+    {
+      "code": "wrong_category",
+      "label": "品类错误或与选品范围无关",
+      "count": 1
     }
   ],
   "positive_examples": [
@@ -290,10 +311,18 @@
       "category": "日历",
       "summary": "干擦日历墙贴免测量直接粘贴，使用便捷，功能实用；日历需求高频且受众广；但预估售价可能低于35元，价格优势不足，同时情绪价值较弱。",
       "reason": "too_ordinary"
+    },
+    {
+      "product_id": "8798aadcdbf2",
+      "title": "Smart Air Grill | Product Design & CMF :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook",
+      "category": "创意厨具",
+      "summary": "Smart Air Grill，空气炸与烧烤二合一紧凑台面电器，结构/功能创新，Behance产品设计明确。页面证据：Smart Air Grill is a premium countertop cooking appliance designed for dearHOME. It combines grilling and hot-air circulation in a compact structure, supporting a wide range of everyday cooking functions.The design focuses on a strong yet refined kitche...",
+      "reason": "wrong_category"
     }
   ],
   "blocked_product_ids": [
     "275ffefe6459",
-    "80d219f3af88"
+    "80d219f3af88",
+    "8798aadcdbf2"
   ]
 }

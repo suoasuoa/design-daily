@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T07:18:39+08:00",
+  "generated_at": "2026-09-02T05:13:30+08:00",
   "week": "2026-W36",
   "group_id": "2026-W36",
   "date_start": "2026-08-31",
@@ -12,27 +12,27 @@
   "stats": {
     "by_lane": {
       "适合改造": 46,
-      "方向参考": 28,
-      "可直接买样": 26
+      "方向参考": 29,
+      "可直接买样": 25
     },
     "by_category": {
       "充电宝": 24,
       "水杯": 13,
       "创意礼盒": 12,
-      "氛围灯": 11,
-      "创意厨具": 8,
+      "氛围灯": 12,
       "手机壳": 8,
       "中秋礼盒": 7,
       "创意桌搭": 7,
+      "创意厨具": 6,
+      "日历": 4,
       "冲锋衣": 4,
-      "端午礼盒": 3,
-      "日历": 3
+      "端午礼盒": 3
     },
     "by_axis": {
-      "功能启发": 63,
-      "结构启发": 54,
+      "功能启发": 61,
+      "结构启发": 55,
       "包装启发": 28,
-      "情绪启发": 15,
+      "情绪启发": 16,
       "视觉启发": 11
     }
   },
@@ -41,33 +41,6 @@
     "unique_recommendations": 100
   },
   "recommendations": [
-    {
-      "id": "8798aadcdbf2",
-      "product_key": null,
-      "title": "Smart Air Grill | Product Design & CMF :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook",
-      "category": "创意厨具",
-      "action_lane": "可直接买样",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 79,
-      "score_label": "7.9",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.behance.net/gallery/253513987/Smart-Air-Grill-Product-Design-CMF",
-      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3a88b3253513987.6a6ad6e9e81ca.png",
-      "summary": "Smart Air Grill，空气炸与烧烤二合一紧凑台面电器，结构/功能创新，Behance产品设计明确。页面证据：Smart Air Grill is a premium countertop cooking appliance designed for dearHOME. It combines grilling and hot-air circulation in a compact structure, supporting a wide range of everyday cooking functions.The design focuses on a strong yet refined kitche...",
-      "risk": "将空气炸与烧烤结合于紧凑台面结构，二合一功能创新。",
-      "review_confidence": 8,
-      "review_reason": "将空气炸与烧烤结合于紧凑台面结构，二合一功能创新。",
-      "next_action": "买样看材质、尺寸、成本和差评点",
-      "tags": [
-        "deepseek_search_agent",
-        "design_community"
-      ]
-    },
     {
       "id": "530b9f90b507",
       "product_key": null,
@@ -773,6 +746,33 @@
       ]
     },
     {
+      "id": "e9ad9776dd61",
+      "product_key": null,
+      "title": "Power Cube Titan— 65W & Qi 25W Solid-State 6-in-1 Power Bank",
+      "category": "充电宝",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 89,
+      "score_label": "8.9",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/1387800698/20000mah-solid-state-power-beast-6-in-1-travel-power-bank",
+      "image": "",
+      "summary": "明确单品：Power Cube Titan 6合1充电宝，固态电池、65W GaN、Qi2.2、内置双线、内置插头与隐藏支架，功能/结构创新突出。页面证据：Jan 9, 2026 · Fire-Resistant Solid-State | 65W GaN | Qi2.2 | Dual Built-in C-to-C & Lightning | Built-in Plug + Desk-Length Extension | Hidden Stand",
+      "risk": "6合1充电宝集成固态电池、GaN、Qi2.2、内置双线和插头，功能集成创新明显。",
+      "review_confidence": 9,
+      "review_reason": "6合1充电宝集成固态电池、GaN、Qi2.2、内置双线和插头，功能集成创新明显。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "8a6892366fd3",
       "product_key": null,
       "title": "iF Design - RHINOSHIELD AirX",
@@ -1037,6 +1037,33 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
+      ]
+    },
+    {
+      "id": "48f4c813ab8e",
+      "product_key": null,
+      "title": "memobottle - A4, A5 & Letter Reusable Water Bottles by memobottle » memobottle - A4, A5 & Letter Reusable Water Bottles by memobottle — Kickstarter",
+      "category": "水杯",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Kickstarter",
+      "source_family": "市场信号",
+      "source_quality": "standard",
+      "url": "https://www.kickstarter.com/projects/memobottle-stainless/memobottle-a4-a5-and-letter-reusable-water-bottles",
+      "image": "",
+      "summary": "明确单品：memobottle 可重复使用水瓶，核心创新为扁平 A4/A5/Letter 尺寸结构，可放入笔记本包侧袋，属于结构创新的便携水杯，证据充分。。页面证据：The memobottle fits in your bag alongside your laptop and books. Together we can reduce the consumption of single-use bottles.",
+      "risk": "扁平水瓶设计，可放入包侧袋与笔记本同携，结构创新显著。",
+      "review_confidence": 9,
+      "review_reason": "扁平水瓶设计，可放入包侧袋与笔记本同携，结构创新显著。",
+      "next_action": "提取可借鉴元素，做同品类差异化改造",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1515,33 +1542,6 @@
       ]
     },
     {
-      "id": "cec71ea577b7",
-      "product_key": null,
-      "title": "the first no mess traveler mug heats coffee for over 50% longer",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Designboom",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.designboom.com/design/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-08-24-2022",
-      "image": "https://www.designboom.com/twitterimages/uploads/2022/08/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-designboom-1200-1.jpg",
-      "summary": "SüpKüp 旅行杯内置一次性纸杯弹出结构，免清洗并延长保温时间，材料与结构创新明确。。页面证据：SüpKüp by nobot labs is the first reusable traveler mug that heats hot drinks for over 50% longer, without requiring cleaning between uses.",
-      "risk": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
-      "review_confidence": 10,
-      "review_reason": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "cad468a4c8d8",
       "product_key": null,
       "title": "iRe5 Gen 2: Bring Expandable Storage Back to Smartphones",
@@ -1913,32 +1913,6 @@
       ]
     },
     {
-      "id": "62bf1c3646d5",
-      "product_key": null,
-      "title": "Dreo Chefmaker - iF Design",
-      "category": "创意厨具",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/dreo-chefmaker/568155",
-      "image": "",
-      "summary": "明确单品：Dreo ChefMaker (C1)，智能烹饪设备，结合烹饪科学和技术，具备功能创新，可买样。。页面证据：For decades, home cooking has been considered too difficult to master, requiring intense focus, perfect technique and multiple appliances to enjoy. Dreo's take on the kitchen segment aims to bring design, culinary science and technology together. ChefMaker (C1) is the first step towards this objective. Allowing aspiring home cooks to enjoy the simplicity of cooking with fine cuisine taste and ...",
-      "risk": "内置探针与智能算法自动完成烹饪，将专业烹饪技术集成到单一桌面设备",
-      "review_confidence": 9,
-      "review_reason": "内置探针与智能算法自动完成烹饪，将专业烹饪技术集成到单一桌面设备",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
       "id": "968d9e17cd2a",
       "product_key": null,
       "title": "Red Dot Design Award: M150 & M250",
@@ -2043,33 +2017,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "d651bc7fe84f",
-      "product_key": null,
-      "title": "Red Dot Design Award: 3-in-1 Travel Portable Charger",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 87,
-      "score_label": "8.7",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/project/3-in-1-travel-portable-charger-89301",
-      "image": "",
-      "summary": "Red Dot 获奖的 3合1 旅行便携充电器：集成移动电源、充电器和可伸缩快充线，折叠插头，45W 同时充壳内电池与外部设备，结构创新明确。。页面证据：The 3-in-1 Travel Portable Charger combines a power bank, charger and retractable quick-charging cable in one compact housing. A fold-out mains plug enables direct connection to power sockets. With 45 watts, the system simultaneously charges the...",
-      "risk": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
-      "review_confidence": 8,
-      "review_reason": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -2181,60 +2128,6 @@
       ]
     },
     {
-      "id": "43af7c54187c",
-      "product_key": null,
-      "title": "iF Design - FLEXTAIL ZERO POWER BANK 10000C",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/flextail-zero-power-bank-10000c/755983",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "具体产品：FLEXTAIL ZERO POWER BANK 10000C。创新为世界首个使用锻造碳纤维的充电宝，厚度仅9.9mm，重145g，具备IPX4防水，实现超轻量化与高耐久性结合。。页面证据：FLEXTAIL ZERO POWER BANK 10000C is a power bank designed for trail running, redefining portability and durability in extreme outdoor conditions. With a body only 9.9 mm thick and weighing 145 g, it achieves a rare balance between 10,000 mAh capacity and ultra-light structure. As the world’s first power bank using forged carbon fiber, combined with a high-toughness nylon frame, it ensures exceptional strength, puncture resistance, and IPX4 water protection—making outdoor energy carrying lighter and more reliable.",
-      "risk": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
-      "review_confidence": 9,
-      "review_reason": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "buy_sample"
-      ]
-    },
-    {
-      "id": "5d85b9e11cd3",
-      "product_key": null,
-      "title": "Red Dot Design Award: Anker Zolo Power Bank",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/zh/project/anker-zolo-power-bank-82151",
-      "image": "",
-      "summary": "Anker Zolo Power Bank，胶囊形状，集成两个可伸缩USB-C线和多功能侧边线，1.3英寸彩色显示屏，75%回收材料，充电便携创新。。页面证据：The capsule-like shape of the Anker Zolo Power Bank integrates a functional structure for mobile use. Two retractable USB-C cables and a multifunctional cable on the side enable organised charging without separate accessories. A 1.3\" colour display...",
-      "risk": "胶囊形状集成可伸缩双USB-C线和多功能线，1.3英寸彩屏，75%回收材料，结构与环保创新",
-      "review_confidence": 9,
-      "review_reason": "胶囊形状集成可伸缩双USB-C线和多功能线，1.3英寸彩屏，75%回收材料，结构与环保创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "award_gallery",
-        "buy_sample"
-      ]
-    },
-    {
       "id": "c7b5bfaab593",
       "product_key": null,
       "title": "When Your Desk Lamp Becomes Your Study Partner: Check Mate - Yanko Design",
@@ -2259,32 +2152,6 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "a81f1440e6f3",
-      "product_key": null,
-      "title": "Power bank",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 84,
-      "score_label": "8.4",
-      "source": "Good Design Award",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.g-mark.org/en/gallery/winners/27994",
-      "image": "https://award-attachments.g-mark.io/winners/2025/27994/main.jpg?size=medium",
-      "summary": "World's first PD-compatible power bank with lithium iron phosphate battery that does not ignite when punctured, safety material innovation and cobalt-free.。页面证据：This product is the world's first PD output-compatible battery with a lithium-ion iron phosphate battery. This product features the use of a safe battery that does not ignite even when a nail is inserted into it, preventing fire accidents. It is also an environmentally friendly product that does not use cobalt in the battery's positive electrode material.",
-      "risk": "世界首个钠离子移动电源，安全性提升，循环寿命约5000次，外壳回收塑料，无塑料包装，材料与技术双重创新。",
-      "review_confidence": 9,
-      "review_reason": "世界首个钠离子移动电源，安全性提升，循环寿命约5000次，外壳回收塑料，无塑料包装，材料与技术双重创新。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
       ]
     },
     {
@@ -2554,6 +2421,33 @@
       ]
     },
     {
+      "id": "c9e81083bc28",
+      "product_key": null,
+      "title": "Low Level Lighting Table Lamp - iF Design",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/low-level-lighting-table-lamp/713965",
+      "image": "",
+      "summary": "明确单品Low Level Lighting Table Lamp是一款小型台灯，采用创新多反射技术，仅用单颗灯珠实现大面积均匀照明，并辅以LED侧发光技术创造柔和无眩光环境，锥形机身易操作，兼具功能与结构创新。。页面证据：Combining lighting technology and elegant design for small spaces. The product adopts innovative multi-reflective technology, which can realize even illumination over a large area with only a single lamp bead, supplemented by LED side-illumination technology to create a softer, non-glare comfortable light environment. Its design is simple and artistic, the cone-shaped body is easy to operate ...",
+      "risk": "采用多反射技术，单颗灯珠实现大面积均匀照明，结构和技术创新",
+      "review_confidence": 9,
+      "review_reason": "采用多反射技术，单颗灯珠实现大面积均匀照明，结构和技术创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
       "id": "0cd6a37a5117",
       "product_key": null,
       "title": "An Intuitive, Solar Powered, Motion Sensor Light",
@@ -2604,6 +2498,111 @@
       "tags": [
         "adapt",
         "award_gallery"
+      ]
+    },
+    {
+      "id": "20a083cd0d5b",
+      "product_key": null,
+      "title": "SHARGE Flow Mini Hands-On at CES 2024: A Tiny yet Mighty ‘Power Backpack’ for your Smartphone - Yanko Design",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2024/01/12/sharge-flow-mini-hands-on-at-ces-2024-a-tiny-yet-mighty-power-backpack-for-your-smartphone",
+      "image": "https://www.yankodesign.com/images/design_news/2024/01/draft-sharge-flow-mini/sharge_flow_mini_9.jpg",
+      "summary": "明确单品：SHARGE Flow Mini充电宝，可直接插入手机底部，集成连接端口无需数据线，体积小巧，解决传统充电宝携带和接线痛点。。页面证据：Power banks have a reputation for being bulky. Nobody really likes carrying them in their pockets given how large and heavy they can be, which often means most power banks spend all their time inside backpacks and purses. The Flow Mini, from Sharge (formerly Shargeek) has a different story to tell. It's extremely handy, with",
+      "risk": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
+      "review_confidence": 9,
+      "review_reason": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "67884dde5c60",
+      "product_key": null,
+      "title": "Good 20th Century Industrial Design: This West German Perpetual Calendar - Core77",
+      "category": "日历",
+      "action_lane": "方向参考",
+      "axes": [
+        "结构启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Core77",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.core77.com/posts/141433",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1803113_lead_400_141433_.jpg",
+      "summary": "明确单品：Berendsohn西德永恒日历。创新证据：由数十个白色塑料圆柱体及红黄柱体组成，通过旋转/调整实现永久日历显示，交互式机械结构，无需逐年更换，概念可转化为现代桌面日历。。页面证据：Here's something that was designed around the 1960s or '70s, yet would probably sell well today. This perpetual calendar is by Berendsohn, a company that made a fortune designing promotional objects in 20th-century West Germany. (More on that in a moment.) Image: Wertwerk Image: Wertwerk The calendar's design",
+      "risk": "该产品属于以日期显示为核心的日历，且不是普通印刷台历；其用多组圆柱滚轴和窗口结构实现可反复调节的永久日历显示，具备明确机械交互、桌面/墙面使用价值和复古工业设计启发，可转化为现代桌搭日历或礼品方向。",
+      "review_confidence": 9,
+      "review_reason": "该产品属于以日期显示为核心的日历，且不是普通印刷台历；其用多组圆柱滚轴和窗口结构实现可反复调节的永久日历显示，具备明确机械交互、桌面/墙面使用价值和复古工业设计启发，可转化为现代桌搭日历或礼品方向。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "414f8027fc43",
+      "product_key": null,
+      "title": "Red Dot Design Award: MR Charging A travel charging device",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 83,
+      "score_label": "8.3",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/de/project/mr-charging-a-travel-charging-device-26316",
+      "image": "",
+      "summary": "MR Charging is a travel charging device combining an AC wall charger with a powerbank, featuring a retractable micro USB cable and lightning adapter. This innovation addresses the need for a single portable device that works both as a charger and a power source, with integrated cables.。页面证据：MR Charging is a portable charging device, which combines AC wall charger with powerbank capabilities. It has a retractable built-in micro USB cable and lightning-charging adaptor, dedicated to providing a convenient charge to most mobile phones on the...",
+      "risk": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
+      "review_confidence": 9,
+      "review_reason": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
+      "id": "d651bc7fe84f",
+      "product_key": null,
+      "title": "Red Dot Design Award: 3-in-1 Travel Portable Charger",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/3-in-1-travel-portable-charger-89301",
+      "image": "",
+      "summary": "Red Dot 获奖的 3合1 旅行便携充电器：集成移动电源、充电器和可伸缩快充线，折叠插头，45W 同时充壳内电池与外部设备，结构创新明确。。页面证据：The 3-in-1 Travel Portable Charger combines a power bank, charger and retractable quick-charging cable in one compact housing. A fold-out mains plug enables direct connection to power sockets. With 45 watts, the system simultaneously charges the...",
+      "risk": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
+      "review_confidence": 8,
+      "review_reason": "符合充电宝品类：面向日常和旅行携带的移动电源/便携充电设备。创新点具体，包括3合1结构、内置可伸缩快充线、折叠市电插头、45W输出且可同时为壳内电池和外部设备充电，解决旅行中墙充、线缆和充电宝分散携带的问题；实用性和高频需求强，价格空间预计支持35元以上。因图片缺失不能做图文匹配验证，但文字证据充分，可作为优先选品方向。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -2687,25 +2686,26 @@
       ]
     },
     {
-      "id": "3ad1008070cc",
+      "id": "cec71ea577b7",
       "product_key": null,
-      "title": "This smart gallon bottle tracks how much water you drink, and can help you maintain hydration consistency - Yanko Design",
+      "title": "the first no mess traveler mug heats coffee for over 50% longer",
       "category": "水杯",
       "action_lane": "适合改造",
       "axes": [
-        "功能启发"
+        "功能启发",
+        "结构启发"
       ],
       "score": 86,
       "score_label": "8.6",
-      "source": "Yanko Design",
+      "source": "Designboom",
       "source_family": "媒体案例",
       "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2022/07/07/this-smart-gallon-bottle-tracks-how-much-water-you-drink-and-can-help-you-maintain-hydration-consistency",
-      "image": "https://www.yankodesign.com/images/design_news/2022/07/smart_gallon_water_bottle_hero.jpg",
-      "summary": "Ghydion Gallon智能水瓶，明确饮水容器单品，通过底部屏幕与灯环实时追踪饮水量和频率，具备数字化健康管理功能创新。。页面证据：https://youtu.be/ecLaaO8Tov0 I keep three bottles around the house. Whenever I see them, I just go ahead and have a sip of water. It's a strangely effective way of keeping myself hydrated... but that isn't everyone's story. Staying hydrated is a key to maintaining peak health and energy levels, but chances are you won't drink water",
-      "risk": "符合水杯品类，且不是普通基础杯。该产品将大容量饮水容器与底部屏幕、灯环/进度指示和饮水追踪结合，能围绕健身、办公、家庭等高频补水场景提供饮水量和频率提醒，功能机制清晰、可转化性强，价格空间也明显高于普通水杯。",
-      "review_confidence": 9,
-      "review_reason": "符合水杯品类，且不是普通基础杯。该产品将大容量饮水容器与底部屏幕、灯环/进度指示和饮水追踪结合，能围绕健身、办公、家庭等高频补水场景提供饮水量和频率提醒，功能机制清晰、可转化性强，价格空间也明显高于普通水杯。",
+      "url": "https://www.designboom.com/design/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-08-24-2022",
+      "image": "https://www.designboom.com/twitterimages/uploads/2022/08/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-designboom-1200-1.jpg",
+      "summary": "SüpKüp 旅行杯内置一次性纸杯弹出结构，免清洗并延长保温时间，材料与结构创新明确。。页面证据：SüpKüp by nobot labs is the first reusable traveler mug that heats hot drinks for over 50% longer, without requiring cleaning between uses.",
+      "risk": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
+      "review_confidence": 10,
+      "review_reason": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
       "next_action": "提取可借鉴元素，做同品类差异化改造",
       "tags": [
         "adapt",
