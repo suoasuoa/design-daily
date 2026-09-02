@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T05:13:30+08:00",
+  "generated_at": "2026-09-03T05:51:15+08:00",
   "week": "2026-W36",
   "group_id": "2026-W36",
   "date_start": "2026-08-31",
@@ -11,27 +11,27 @@
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
   "stats": {
     "by_lane": {
-      "适合改造": 46,
+      "适合改造": 45,
       "方向参考": 29,
-      "可直接买样": 25
+      "可直接买样": 26
     },
     "by_category": {
       "充电宝": 24,
-      "水杯": 13,
       "创意礼盒": 12,
+      "水杯": 12,
       "氛围灯": 12,
       "手机壳": 8,
       "中秋礼盒": 7,
       "创意桌搭": 7,
       "创意厨具": 6,
+      "端午礼盒": 4,
       "日历": 4,
-      "冲锋衣": 4,
-      "端午礼盒": 3
+      "冲锋衣": 4
     },
     "by_axis": {
-      "功能启发": 61,
+      "功能启发": 60,
       "结构启发": 55,
-      "包装启发": 28,
+      "包装启发": 29,
       "情绪启发": 16,
       "视觉启发": 11
     }
@@ -41,6 +41,33 @@
     "unique_recommendations": 100
   },
   "recommendations": [
+    {
+      "id": "5055c7521b75",
+      "product_key": null,
+      "title": "VGT 201 Packaging Design (2020) :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe,",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发"
+      ],
+      "score": 78,
+      "score_label": "7.8",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/108478869/VGT-201-Packaging-Design-(2020)",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/035beb108478869.5fbe83d4041f1.jpg",
+      "summary": "明确粽子礼盒包装设计项目VGT 201，采用牛奶盒单包结构创新，符合端午礼盒包装结构创新要求。。页面证据：Branding, Logo Design, Packaging, Adobe Illustrator",
+      "risk": "粽子礼盒采用牛奶盒单包结构，独立包装与开箱形式创新，符合端午礼盒结构创新要求。",
+      "review_confidence": 9,
+      "review_reason": "粽子礼盒采用牛奶盒单包结构，独立包装与开箱形式创新，符合端午礼盒结构创新要求。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
     {
       "id": "530b9f90b507",
       "product_key": null,
@@ -2155,6 +2182,32 @@
       ]
     },
     {
+      "id": "a81f1440e6f3",
+      "product_key": null,
+      "title": "Power bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "score": 84,
+      "score_label": "8.4",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/en/gallery/winners/27994",
+      "image": "https://award-attachments.g-mark.io/winners/2025/27994/main.jpg?size=medium",
+      "summary": "World's first PD-compatible power bank with lithium iron phosphate battery that does not ignite when punctured, safety material innovation and cobalt-free.。页面证据：This product is the world's first PD output-compatible battery with a lithium-ion iron phosphate battery. This product features the use of a safe battery that does not ignite even when a nail is inserted into it, preventing fire accidents. It is also an environmentally friendly product that does not use cobalt in the battery's positive electrode material.",
+      "risk": "世界首个钠离子移动电源，安全性提升，循环寿命约5000次，外壳回收塑料，无塑料包装，材料与技术双重创新。",
+      "review_confidence": 9,
+      "review_reason": "世界首个钠离子移动电源，安全性提升，循环寿命约5000次，外壳回收塑料，无塑料包装，材料与技术双重创新。",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
       "id": "023702357cbf",
       "product_key": null,
       "title": "iF Design - Detachable 3-in-1 Functional Jacket",
@@ -2553,32 +2606,6 @@
       ]
     },
     {
-      "id": "414f8027fc43",
-      "product_key": null,
-      "title": "Red Dot Design Award: MR Charging A travel charging device",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Red Dot",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://www.red-dot.org/de/project/mr-charging-a-travel-charging-device-26316",
-      "image": "",
-      "summary": "MR Charging is a travel charging device combining an AC wall charger with a powerbank, featuring a retractable micro USB cable and lightning adapter. This innovation addresses the need for a single portable device that works both as a charger and a power source, with integrated cables.。页面证据：MR Charging is a portable charging device, which combines AC wall charger with powerbank capabilities. It has a retractable built-in micro USB cable and lightning-charging adaptor, dedicated to providing a convenient charge to most mobile phones on the...",
-      "risk": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
-      "review_confidence": 9,
-      "review_reason": "AC充电器与充电宝集成，带伸缩线，实现一物多用",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
       "id": "d651bc7fe84f",
       "product_key": null,
       "title": "Red Dot Design Award: 3-in-1 Travel Portable Charger",
@@ -2683,33 +2710,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "cec71ea577b7",
-      "product_key": null,
-      "title": "the first no mess traveler mug heats coffee for over 50% longer",
-      "category": "水杯",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 86,
-      "score_label": "8.6",
-      "source": "Designboom",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.designboom.com/design/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-08-24-2022",
-      "image": "https://www.designboom.com/twitterimages/uploads/2022/08/no-mess-traveler-mug-built-in-paper-cup-ejector-coffee-nobot-labs-designboom-1200-1.jpg",
-      "summary": "SüpKüp 旅行杯内置一次性纸杯弹出结构，免清洗并延长保温时间，材料与结构创新明确。。页面证据：SüpKüp by nobot labs is the first reusable traveler mug that heats hot drinks for over 50% longer, without requiring cleaning between uses.",
-      "risk": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
-      "review_confidence": 10,
-      "review_reason": "内置一次性纸杯弹出结构，免清洗且延长保温，结构创新明确",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     }
   ]
