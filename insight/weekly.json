@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T05:51:15+08:00",
+  "generated_at": "2026-09-04T05:39:58+08:00",
   "week": "2026-W36",
   "group_id": "2026-W36",
   "date_start": "2026-08-31",
@@ -12,28 +12,28 @@
   "stats": {
     "by_lane": {
       "适合改造": 45,
-      "方向参考": 29,
-      "可直接买样": 26
+      "方向参考": 28,
+      "可直接买样": 27
     },
     "by_category": {
       "充电宝": 24,
       "创意礼盒": 12,
       "水杯": 12,
       "氛围灯": 12,
-      "手机壳": 8,
+      "创意桌搭": 8,
       "中秋礼盒": 7,
-      "创意桌搭": 7,
+      "手机壳": 7,
       "创意厨具": 6,
-      "端午礼盒": 4,
-      "日历": 4,
-      "冲锋衣": 4
+      "端午礼盒": 5,
+      "冲锋衣": 4,
+      "日历": 3
     },
     "by_axis": {
       "功能启发": 60,
-      "结构启发": 55,
-      "包装启发": 29,
+      "结构启发": 58,
+      "包装启发": 30,
       "情绪启发": 16,
-      "视觉启发": 11
+      "视觉启发": 12
     }
   },
   "dedupe": {
@@ -614,6 +614,34 @@
       ]
     },
     {
+      "id": "d699a63c2b46",
+      "product_key": null,
+      "title": "Dragon Boat tenon and tenon gift box design (7) | Images :: Behance Adobe, Inc. Behance Behance search search search Adobe, Inc. Adobe, Inc. LinkOut Adobe, Inc.",
+      "category": "端午礼盒",
+      "action_lane": "可直接买样",
+      "axes": [
+        "包装启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "score": 70,
+      "score_label": "7.0",
+      "source": "Behance",
+      "source_family": "社交灵感",
+      "source_quality": "standard",
+      "url": "https://www.behance.net/gallery/173012211/Dragon-Boat-tenon-and-tenon-gift-box-design/modules/976663559",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/92461f173012211.64891d780b7fa.jpg",
+      "summary": "明确端午粽子礼盒设计作品，名称直接标注使用榫卯结构（tenon and tenon）进行包装结构设计，具备结构创新和再利用潜力，可作为端午礼盒结构方向概念原型。。页面证据：Product Design,Graphic Design,Illustration,Adobe Illustrator,Adobe Photoshop,Blender 3D,Maxon Cinema 4D,Adobe After Effects",
+      "risk": "粽子礼盒采用榫卯结构，实现免胶组装与复用，结构创新明确，兼具文化与收纳价值。",
+      "review_confidence": 9,
+      "review_reason": "粽子礼盒采用榫卯结构，实现免胶组装与复用，结构创新明确，兼具文化与收纳价值。",
+      "next_action": "买样看材质、尺寸、成本和差评点",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "a3c2e9f53b97",
       "product_key": null,
       "title": "端午节礼盒the Dragon Boat Festival :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, I",
@@ -1064,6 +1092,33 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
+      ]
+    },
+    {
+      "id": "94e3e1a7294e",
+      "product_key": null,
+      "title": "Naya Connect Keyboard Lets You Snap On a Trackball, Numpad, or Dial - Yanko Design",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 87,
+      "score_label": "8.7",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2025/12/17/naya-connect-keyboard-lets-you-snap-on-a-trackball-numpad-or-dial",
+      "image": "https://www.yankodesign.com/images/design_news/2025/12/naya-connect-keyboard-lets-you-snap-on-a-trackball-numpad-or-dial/naya-connect-modular-mechanical-keyboard-07.jpg",
+      "summary": "明确单品：Naya Connect Keyboard。键盘两侧含磁吸连接点，可吸附轨迹球、数字键盘、旋钮、宏键盘等模块，实现模块化桌面控制台，结构/交互创新清晰。来源为媒体案例，符合创意桌搭方向。。页面证据：Most desks end up with a nice mechanical keyboard, a separate mouse, maybe a trackpad, a macro pad, and, if you work in 3D, a space controller, all fighting for room. Keyboards stay fixed layouts, even as workflows get more complex and tools multiply. Naya Connect treats the keyboard as the center of a modular",
+      "risk": "键盘通过磁吸连接点吸附轨迹球、数字键盘、旋钮等模块，实现模块化桌面控制台",
+      "review_confidence": 9,
+      "review_reason": "键盘通过磁吸连接点吸附轨迹球、数字键盘、旋钮等模块，实现模块化桌面控制台",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -1914,32 +1969,6 @@
       ]
     },
     {
-      "id": "1bb92bd8f091",
-      "product_key": null,
-      "title": "iRe5: Built-in Storage Expansion iPhone Case by iRe5 - Indiegogo",
-      "category": "手机壳",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Indiegogo",
-      "source_family": "市场信号",
-      "source_quality": "standard",
-      "url": "https://www.indiegogo.com/en/projects/ire5/ire5-built-in-storage-expansion-iphone-case",
-      "image": "",
-      "summary": "iRe5 手机壳内置 microSD 卡槽和 USB-C/Lightning 扩展口，可实际扩展 iPhone 存储，功能创新明确，Indiegogo 有可购买产品页。。页面证据：Introducing iRe5: the revolutionary iPhone case with built-in memory expansion. With its integrated microSD card slot and USB-C / Lightning port, iRe5 seamlessly combines sleek design with expanded storage capabilities.",
-      "risk": "文字证据明确指向可直接安装在 iPhone 上的手机壳，并非普通印花壳或基础保护壳；其核心创新是将 microSD 卡槽与 USB-C/Lightning 扩展口集成进手机壳，用于扩展 iPhone 存储，具备清晰的结构和功能创新。该功能对应高频的手机拍摄、文件存储和容量不足痛点，实用性强、受众广，且价格空间通常可支撑人民币35元以上。因缺少图片，不能验证实物与标题匹配，但文字证据充分，保留为高优先级选品方向。",
-      "review_confidence": 8,
-      "review_reason": "文字证据明确指向可直接安装在 iPhone 上的手机壳，并非普通印花壳或基础保护壳；其核心创新是将 microSD 卡槽与 USB-C/Lightning 扩展口集成进手机壳，用于扩展 iPhone 存储，具备清晰的结构和功能创新。该功能对应高频的手机拍摄、文件存储和容量不足痛点，实用性强、受众广，且价格空间通常可支撑人民币35元以上。因缺少图片，不能验证实物与标题匹配，但文字证据充分，保留为高优先级选品方向。",
-      "next_action": "提取可借鉴元素，做同品类差异化改造",
-      "tags": [
-        "buy_sample",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "968d9e17cd2a",
       "product_key": null,
       "title": "Red Dot Design Award: M150 & M250",
@@ -2152,6 +2181,60 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
+      ]
+    },
+    {
+      "id": "43af7c54187c",
+      "product_key": null,
+      "title": "iF Design - FLEXTAIL ZERO POWER BANK 10000C",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://ifdesign.com/en/winner-ranking/project/flextail-zero-power-bank-10000c/755983",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "summary": "具体产品：FLEXTAIL ZERO POWER BANK 10000C。创新为世界首个使用锻造碳纤维的充电宝，厚度仅9.9mm，重145g，具备IPX4防水，实现超轻量化与高耐久性结合。。页面证据：FLEXTAIL ZERO POWER BANK 10000C is a power bank designed for trail running, redefining portability and durability in extreme outdoor conditions. With a body only 9.9 mm thick and weighing 145 g, it achieves a rare balance between 10,000 mAh capacity and ultra-light structure. As the world’s first power bank using forged carbon fiber, combined with a high-toughness nylon frame, it ensures exceptional strength, puncture resistance, and IPX4 water protection—making outdoor energy carrying lighter and more reliable.",
+      "risk": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
+      "review_confidence": 9,
+      "review_reason": "锻造碳纤维材质，超薄9.9mm，IPX4防水",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "buy_sample"
+      ]
+    },
+    {
+      "id": "5d85b9e11cd3",
+      "product_key": null,
+      "title": "Red Dot Design Award: Anker Zolo Power Bank",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/zh/project/anker-zolo-power-bank-82151",
+      "image": "",
+      "summary": "Anker Zolo Power Bank，胶囊形状，集成两个可伸缩USB-C线和多功能侧边线，1.3英寸彩色显示屏，75%回收材料，充电便携创新。。页面证据：The capsule-like shape of the Anker Zolo Power Bank integrates a functional structure for mobile use. Two retractable USB-C cables and a multifunctional cable on the side enable organised charging without separate accessories. A 1.3\" colour display...",
+      "risk": "胶囊形状集成可伸缩双USB-C线和多功能线，1.3英寸彩屏，75%回收材料，结构与环保创新",
+      "review_confidence": 9,
+      "review_reason": "胶囊形状集成可伸缩双USB-C线和多功能线，1.3英寸彩屏，75%回收材料，结构与环保创新",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "award_gallery",
+        "buy_sample"
       ]
     },
     {
@@ -2554,58 +2637,6 @@
       ]
     },
     {
-      "id": "20a083cd0d5b",
-      "product_key": null,
-      "title": "SHARGE Flow Mini Hands-On at CES 2024: A Tiny yet Mighty ‘Power Backpack’ for your Smartphone - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2024/01/12/sharge-flow-mini-hands-on-at-ces-2024-a-tiny-yet-mighty-power-backpack-for-your-smartphone",
-      "image": "https://www.yankodesign.com/images/design_news/2024/01/draft-sharge-flow-mini/sharge_flow_mini_9.jpg",
-      "summary": "明确单品：SHARGE Flow Mini充电宝，可直接插入手机底部，集成连接端口无需数据线，体积小巧，解决传统充电宝携带和接线痛点。。页面证据：Power banks have a reputation for being bulky. Nobody really likes carrying them in their pockets given how large and heavy they can be, which often means most power banks spend all their time inside backpacks and purses. The Flow Mini, from Sharge (formerly Shargeek) has a different story to tell. It's extremely handy, with",
-      "risk": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
-      "review_confidence": 9,
-      "review_reason": "直插式微型充电宝，无需数据线直接连接手机，便携性显著提升。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "67884dde5c60",
-      "product_key": null,
-      "title": "Good 20th Century Industrial Design: This West German Perpetual Calendar - Core77",
-      "category": "日历",
-      "action_lane": "方向参考",
-      "axes": [
-        "结构启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Core77",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.core77.com/posts/141433",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1803113_lead_400_141433_.jpg",
-      "summary": "明确单品：Berendsohn西德永恒日历。创新证据：由数十个白色塑料圆柱体及红黄柱体组成，通过旋转/调整实现永久日历显示，交互式机械结构，无需逐年更换，概念可转化为现代桌面日历。。页面证据：Here's something that was designed around the 1960s or '70s, yet would probably sell well today. This perpetual calendar is by Berendsohn, a company that made a fortune designing promotional objects in 20th-century West Germany. (More on that in a moment.) Image: Wertwerk Image: Wertwerk The calendar's design",
-      "risk": "该产品属于以日期显示为核心的日历，且不是普通印刷台历；其用多组圆柱滚轴和窗口结构实现可反复调节的永久日历显示，具备明确机械交互、桌面/墙面使用价值和复古工业设计启发，可转化为现代桌搭日历或礼品方向。",
-      "review_confidence": 9,
-      "review_reason": "该产品属于以日期显示为核心的日历，且不是普通印刷台历；其用多组圆柱滚轴和窗口结构实现可反复调节的永久日历显示，具备明确机械交互、桌面/墙面使用价值和复古工业设计启发，可转化为现代桌搭日历或礼品方向。",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "d651bc7fe84f",
       "product_key": null,
       "title": "Red Dot Design Award: 3-in-1 Travel Portable Charger",
@@ -2684,32 +2715,6 @@
       "tags": [
         "award_gallery",
         "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "8e195b2e180d",
-      "product_key": null,
-      "title": "This $17 Power Bank (20,000mAh) can charge a MacBook Air and it’s cheaper than Apple’s cleaning cloth - Yanko Design",
-      "category": "充电宝",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "score": 87,
-      "score_label": "8.7",
-      "source": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://www.yankodesign.com/2026/01/29/this-17-power-bank-20000mah-can-charge-a-macbook-air-and-its-cheaper-than-apples-cleaning-cloth",
-      "image": "https://www.yankodesign.com/images/design_news/2026/01/605812/tessan_20k_power_bank_1.jpg",
-      "summary": "TESSAN 20,000mAh power bank with built-in Lightning and USB-C cables, 30W charging, and low price ($17), representing a functional integration innovation.。页面证据：Apple sells a polishing cloth for about twenty bucks. TESSAN is out here offering a 20,000 mAh power bank with 30 watt USB C charging and built in USB C and Lightning cables for less than that. One cleans fingerprints off your screen. The other can recharge your phone several times, top up a thin",
-      "risk": "内置Lightning和USB-C充电线，30W快充且价格极低，零负担便携",
-      "review_confidence": 9,
-      "review_reason": "内置Lightning和USB-C充电线，30W快充且价格极低，零负担便携",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
       ]
     }
   ]
