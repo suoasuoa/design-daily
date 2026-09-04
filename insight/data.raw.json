@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-09-04T05:39:58+08:00",
+  "generated_at": "2026-09-04T08:08:26+08:00",
   "stats": {
-    "total_items": 3078,
+    "total_items": 3082,
     "by_category": {
       "氛围灯": 586,
       "创意厨具": 503,
       "水杯": 433,
       "创意桌搭": 418,
       "充电宝": 302,
-      "冲锋衣": 212,
-      "手机壳": 189,
+      "冲锋衣": 213,
+      "手机壳": 190,
       "创意礼盒": 167,
-      "日历": 150,
+      "日历": 152,
       "中秋礼盒": 58,
       "装置艺术": 37,
       "端午礼盒": 19,
       "钥匙扣水壶": 4
     },
     "by_lane": {
-      "适合改造": 2301,
+      "适合改造": 2305,
       "方向参考": 749,
       "可直接买样": 28
     },
     "by_axis": {
-      "功能启发": 1954,
-      "结构启发": 1712,
+      "功能启发": 1956,
+      "结构启发": 1716,
       "情绪启发": 683,
       "包装启发": 464,
-      "视觉启发": 440
+      "视觉启发": 441
     },
     "by_source_family": {
       "媒体案例": 1163,
-      "市场信号": 1084,
+      "市场信号": 1086,
       "奖项案例": 432,
-      "社交灵感": 119,
+      "社交灵感": 120,
       "包装专项": 113,
       "设计社区": 106,
-      "趋势观察": 32,
+      "趋势观察": 33,
       "弱市场信号": 29
     },
     "by_image_state": {
-      "缺图": 1566,
-      "已对齐": 1501,
+      "缺图": 1568,
+      "已对齐": 1503,
       "待核图": 11
     }
   },
@@ -34105,6 +34105,41 @@
           ]
         },
         {
+          "id": "23272e5a0dda",
+          "title": "The Meta Shell by WESTERN RISE — Kickstarter",
+          "category": "冲锋衣",
+          "summary": "Western Rise Meta Shell为明确单品，Kickstarter众筹的伸缩雨壳，可折叠收纳成自身配套的斜挎包，兼具旅行、户外和日常场景，收纳结构创新明显。。页面证据：May 14, 2024 · WESTERN RISE is raising funds for The Meta Shell on Kickstarter! The world's most versatile stretch rain shell. Packs into its own sling bag. The perfect jacket for travel, outdoors, everyday.",
+          "product_identity": "",
+          "score": 83,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.kickstarter.com/projects/westernrise-bags/the-meta-shell",
+          "source_name": "Kickstarter",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-09-04",
+          "last_seen": "2026-09-04",
+          "review_reason": "伸缩雨壳可作为外衣并折叠收纳成自带斜挎包，实现穿携一体化，结构收纳创新明确。",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 83,
+          "innovation": 8,
+          "relevance": 10,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "d9fab6b0c945",
           "title": "EQUILIBRIO - A lamp floating in the air - Kickstarter",
           "category": "氛围灯",
@@ -34138,40 +34173,6 @@
           "tags": [
             "deepseek_search_agent",
             "market_signal_strong"
-          ]
-        },
-        {
-          "id": "c78ccea2f0d4",
-          "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device",
-          "category": "充电宝",
-          "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
-          "product_identity": "",
-          "score": 80,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
-          "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "功能启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小太阳能充电宝，集成快充与多端口",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 80,
-          "innovation": 8,
-          "relevance": 10,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
           ]
         },
         {
@@ -34210,40 +34211,6 @@
           ]
         },
         {
-          "id": "e4c49947f47b",
-          "title": "This cleverly designed cooling lid brings your hot Starbucks coffee to the perfect sipping temperature",
-          "category": "水杯",
-          "summary": "KØLINGSIP travel mug with cooling lid that rapidly cools hot beverages to sip-friendly temperature, preventing tongue burns.。页面证据：https://youtu.be/kITVboPyq1I Many a tongue has fallen victim to the deceptive travel mug lid. Mine too. KØLINGSIP™ hopes to change that. Pronounced 'Cooling Sip', the KØLINGSIP™ is a travel mug with a remarkably simple and clever lid that radically cools down hot beverages to a sip-friendly temperature. Designed so that you don't accidentally burn your tongue",
-          "product_identity": "",
-          "score": 79,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2022/05/this-cleverly-designed-cooling-lid-brings-your-hot-starbucks-coffee-to-the-perfect-sipping-temperature/portable_coffee_mug_hero.jpg",
-          "url": "https://www.yankodesign.com/2022/05/29/this-cleverly-designed-cooling-lid-brings-your-hot-starbucks-coffee-to-the-perfect-sipping-temperature",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 2,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：冷却盖快速降温至适宜饮用温度，防止烫伤",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 8,
-          "relevance": 10,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
-        },
-        {
           "id": "413036c0815d",
           "title": "多功能桌面收纳_FANZ反正设计-站酷ZCOOL",
           "category": "创意桌搭",
@@ -34279,126 +34246,52 @@
           ]
         },
         {
-          "id": "d013b4f08e4e",
-          "title": "Elegant Solution to Cable Management",
-          "category": "创意桌搭",
-          "summary": "OneLessDrop线缆管理器，通过上下凹槽分别固定电脑电源线和手机充电线，结构简洁，桌面整理创新。。页面证据：Our buddy Dean Heckler of his eponymous Heckler Design has something new up his sleeve called OneLessDrop. It's a simple, elegant solution to cable management. The top groove keeps your computer's power cable at the ready while the bottom groove continuously anchors your mobile phone cable. It's minimal, inconspicuous and C2C- just how I like",
+          "id": "c73b13368a7e",
+          "title": "Belkin’s 10,000mAh power bank with pop-up motion sensing LED delivers 45W output",
+          "category": "充电宝",
+          "summary": "Belkin BoostCharge Pro Power Bank 10K: 10000mAh, pop-up motion-sensing LED light, digital screen for battery percentage, 45W output.。页面证据：Power banks have progressed from mere portable battery backups to devices with many other practical features. To spice the market further, consumer tech company Belkin has launched the BoostCharge Pro Power Bank 10K in China, which includes a pop-up motion-sensing light. The power bank from Belkin is now available for 329 yuan (approximately $49), but",
           "product_identity": "",
           "score": 79,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2011/02/02/onelessdrop_01.jpg",
-          "url": "https://www.yankodesign.com/2011/02/02/elegant-solution-to-cable-management",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "standard",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：上下凹槽分别固定电脑电源线和手机充电线，结构简洁有效",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 8,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 7,
-          "relevance": 9,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ],
-          "is_emergency_fill": true,
-          "emergency_fill_reason": "当日临时补录：普通品类配额后仍有缺口，从已完成 DeepSeek 审核且未进入正式展示的高分候选中补足。"
-        },
-        {
-          "id": "ec6d47444f9a",
-          "title": "This Travel Bottle’s Built-in Purifier Makes Any Outdoor Water Drinkable",
-          "category": "水杯",
-          "summary": "Vitaloop旅行杯: 内置电动马达多级过滤系统，可将任何户外水源净化成安全饮用水，结构创新的饮用杯。。页面证据：\"Water water everywhere, but not a drop to drink.\" Samuel Taylor Coleridge wrote those words back in 1834, but nearly 200 years later, nothing's really changed. Whether it's water from a tap or an outdoor stream, you really don't know whether it's safe to drink. The color and smell of water will tell you only",
-          "product_identity": "",
-          "score": 79,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2023/12/465029/vitaloop_1.jpg",
-          "url": "https://www.yankodesign.com/2023/12/01/this-travel-bottles-built-in-purifier-makes-any-outdoor-water-drinkable",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "standard",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发",
-            "视觉启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置电动多级过滤系统，可净化户外水源",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 79,
-          "innovation": 7,
-          "relevance": 10,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ]
-        },
-        {
-          "id": "c168bf3d53c2",
-          "title": "The hollow structure of this vegetable peeler stores your peels!",
-          "category": "创意厨具",
-          "summary": "空心结构削皮器，内部可储存果皮，减少清理麻烦，功能创新。。页面证据：A vegetable peeler, to be honest, isn't my favorite kitchen tool. The blade always feels dangerously close to your fingers, and the mess left behind is a horror show to clean up. Not to mention, no matter how you hold it, the peeler always manages to feel uncomfortable in your hand. Hence, product designer Kevin",
-          "product_identity": "",
-          "score": 78,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2019/12/auto-draft/graze_vegetable_peeler-yankoeesign12.jpg",
-          "url": "https://www.yankodesign.com/2019/12/24/the-hollow-structure-of-this-vegetable-peeler-stores-your-peels",
+          "price_gate": "likely_over_35",
+          "image": "https://www.yankodesign.com/images/design_news/2026/07/belkins-10000mah-power-bank-with-pop-up-motion-sensing-led-delivers-45w-output/Belkin-BoostCharge-Pro-Power-Bank_0000_Layer-8.jpg",
+          "url": "https://www.yankodesign.com/2026/07/17/belkins-10000mah-power-bank-with-pop-up-motion-sensing-led-delivers-45w-output",
           "source_name": "Yanko Design",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
-          "action_lane": "适合改造",
+          "action_lane": "方向参考",
           "axes": [
-            "功能启发",
-            "结构启发"
+            "功能启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-09-04",
           "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：空心结构储存果皮，减少清理麻烦，功能创新明确",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：pop-up运动感应LED灯，数显电池百分比，45W快充",
           "review_source": "deepseek_backlog_recheck",
           "review_confidence": 9,
           "review_policy_version": 3,
-          "quality_score": 78,
-          "innovation": 9,
+          "quality_score": 79,
+          "innovation": 7,
           "relevance": 10,
           "tags": [
             "adapt",
-            "deepseek_search_agent"
+            "award_gallery"
           ]
         },
         {
-          "id": "22cf6a4c05f1",
-          "title": "Breville Bluicer Pro",
+          "id": "17bbf110b7f0",
+          "title": "Insanely Futuristic Grill Cooks Your Steak With Light Instead of Fire: Hands-on With LUMO at CES 2026",
           "category": "创意厨具",
-          "summary": "Breville Bluicer Pro，结合榨汁机与搅拌机，专利Cold Spin Technology保护维生素，创新性高。页面证据：Aiming to create a new category of kitchen gadget, Breville's 3X Bluicer Pro combines a blender with a juicer. Patented Cold Spin Technology helps protect...",
+          "summary": "LUMO optical grill: 用光代替火烹饪牛排，无烟，三种模式，功能创新明确，CES 2026展品可买样。。页面证据：Kitchen appliances don't usually stop me dead in my tracks at CES, but a grill that cooks with light instead of fire deserves at least a few minutes of attention, right?! Cozytime brought their LUMO optical grill to CES 2026, and the pitch sounds almost too convenient to be true: restaurant-quality char marks without smoke,",
           "product_identity": "",
           "score": 78,
           "price_gate": "unknown",
-          "image": "https://uncrate.com/p/2020/01/breville-bluicer-pro.jpg",
-          "url": "https://uncrate.com/breville-bluicer-pro",
-          "source_name": "Uncrate",
-          "source_family": "市场信号",
-          "source_type": "market_reference",
+          "image": "https://www.yankodesign.com/images/design_news/2026/01/insanely-futuristic-grill-cooks-your-steak-with-light-instead-of-fire-hands-on-with-lumo-at-ces-2026/cozytime_lumo_ces2026_24.jpg",
+          "url": "https://www.yankodesign.com/2026/01/08/insanely-futuristic-grill-cooks-your-steak-with-light-instead-of-fire-hands-on-with-lumo-at-ces-2026",
+          "source_name": "Yanko Design",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
           "source_quality": "standard",
           "action_lane": "适合改造",
           "axes": [
@@ -34408,7 +34301,42 @@
           "seen_count": 1,
           "first_seen": "2026-09-04",
           "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：Bluicer Pro结合榨汁与搅拌功能，并采用Cold Spin Technology保护营养",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：使用光代替火焰烹饪，无烟高效，创新明确",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 78,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "73a719009776",
+          "title": "Chef-Approved Super Ceramic Sashimi Knife for Precision Cuts and Lasting Sharpness",
+          "category": "创意厨具",
+          "summary": "超级陶瓷刺身刀，采用陶瓷刀片和木质手柄搭配水牛角箍，日本工艺制造，材料创新（陶瓷）结合人体工学设计，提升切割精度和耐久性。。页面证据：https://www.youtube.com/watch?v=v28yzJUKywQ Cutting and slicing ingredients might sometimes feel mechanical, but seasoned cooks and food lovers know that there's some magic behind the seemingly mundane process. Cutting the wrong way can, for example, adversely affect not only the texture of the piece, it can even ruin its flavor. More importantly, the kind of knife used also",
+          "product_identity": "",
+          "score": 78,
+          "price_gate": "unknown",
+          "image": "https://www.yankodesign.com/images/design_news/2024/06/maintenance-free-ceramic-knife-makes-sashimi-and-other-dishes-even-more-delicious/super_ceramic_sashimi_knife_for_precision_hero.jpg",
+          "url": "https://www.yankodesign.com/2024/11/28/chef-approved-super-ceramic-sashimi-knife-for-precision-cuts-and-lasting-sharpness",
+          "source_name": "Yanko Design",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "视觉启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-09-04",
+          "last_seen": "2026-09-04",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：陶瓷刀片材料创新，搭配传统日本工艺，提升锋利度和耐久性",
           "review_source": "deepseek_backlog_recheck",
           "review_confidence": 9,
           "review_policy_version": 3,
@@ -34416,7 +34344,41 @@
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "buy_sample",
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "4b2bbdf89b18",
+          "title": "PITAKA Launches Their Latest iPhone 16 Cases: Slim, Light, Strong",
+          "category": "手机壳",
+          "summary": "PITAKA iPhone 16 case with Lumintex™ luminescent polymer fiber, emitting soft green glow after absorbing light for up to 20 minutes. Material innovation clearly described.。页面证据：Smartphones are getting more durable every generation, but there's no escaping the fact that a single wrong fall could render it useless. Protective cases increase their chances of survival at the expense of hiding their beauty, and even those clear silicone ones can sometimes make otherwise luxurious phones look cheap. If you're going to cover",
+          "product_identity": "",
+          "score": 78,
+          "price_gate": "unknown",
+          "image": "https://www.yankodesign.com/images/design_news/2024/09/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong/PITAKA_glow_in_the_dark_phone_cover_hero.jpg",
+          "url": "https://www.yankodesign.com/2024/09/14/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong",
+          "source_name": "Yanko Design",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "视觉启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-09-04",
+          "last_seen": "2026-09-04",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Lumintex™发光聚合物纤维，吸收光后自发光20分钟，材料创新",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 78,
+          "innovation": 8,
+          "relevance": 10,
+          "tags": [
+            "adapt",
             "deepseek_search_agent"
           ]
         },
@@ -34457,38 +34419,37 @@
           ]
         },
         {
-          "id": "ec9d253f4aff",
-          "title": "Ro lamp - by 250 Design / Core77 Design Awards",
-          "category": "氛围灯",
-          "summary": "Ro lamp is an aroma diffuser lamp with dual color temperature (orange/white light). Innovation in combining diffusion and lighting.。页面证据：Ro Lamp is an aroma diffuser lamp and you can choose an orange light resembling sunlight or a while light resembling moonlight by using the on/off button · When using the lamp, drop the aroma oil and scent on the aroma plate located at the ...",
+          "id": "a0e202940c3a",
+          "title": "Solar powered Hydrade is a smart bottle with unique features!",
+          "category": "水杯",
+          "summary": "Solar powered Hydrade智能水瓶，明确单品。太阳能自充电，监测饮水量并自动记录，结合慈善捐赠功能。创新点：太阳能自充电、智能监测、公益激励。。页面证据：https://youtu.be/jpmb9A3jjhk The automatic self-charging Solar Powered Hydrade Bottle, sounds very high-tech, but is very simple to use. This insulated bottle keeps a tab on your hydration levels and monitors your intake, and even donates to charity based on how good you are with your drink! We all know that keeping yourself hydrated during the day",
           "product_identity": "",
           "score": 78,
-          "price_gate": "likely_over_35",
-          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/442838_lead_400_49698__sharing.jpg",
-          "url": "https://designawards.core77.com/Furniture-Lighting/49698/Ro-lamp",
-          "source_name": "Core77",
+          "price_gate": "unknown",
+          "image": "https://www.yankodesign.com/images/design_news/2019/05/hydrade_solar_powered_smart_bottle_layout.jpg",
+          "url": "https://www.yankodesign.com/2019/05/03/solar-powered-hydrade-is-a-smart-bottle-with-unique-features",
+          "source_name": "Yanko Design",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
-          "action_lane": "方向参考",
+          "action_lane": "适合改造",
           "axes": [
-            "情绪启发",
-            "视觉启发"
+            "功能启发"
           ],
           "image_state": "已对齐",
           "seen_count": 1,
           "first_seen": "2026-09-04",
           "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：香薰扩散灯与双色温灯泡融合，可切换日光色和白光，功能与结构创新。",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：太阳能自充电+智能监测饮水量+慈善捐赠功能，技术集成与公益激励创新",
           "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 8,
+          "review_confidence": 9,
           "review_policy_version": 3,
           "quality_score": 78,
           "innovation": 8,
           "relevance": 10,
           "tags": [
-            "adapt",
-            "deepseek_search_agent"
+            "deepseek_search_agent",
+            "editorial_main"
           ]
         },
         {
@@ -34598,40 +34559,6 @@
           ]
         },
         {
-          "id": "622f02c7968d",
-          "title": "An Elegant, User-Transformable Lampshade Changes the Function of this Pendant Lamp - Core77",
-          "category": "氛围灯",
-          "summary": "具体产品为Méduse吊灯，灯罩采用蜂巢帘材料，用户可调节灯罩形状改变光照功能，实现交互创新。。页面证据：Industrial designer Lukas Bazle, who works for Ikea in Sweden but still does his own stuff on the side, devised this elegant user-adjustable Méduse lamp. It's capable of a very neat trick: The design came about because Bazle was doing what they taught us all in",
-          "product_identity": "",
-          "score": 77,
-          "price_gate": "unknown",
-          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1344700_lead_400_119220_.jpg",
-          "url": "https://www.core77.com/posts/119220/An-Elegant-User-Transformable-Lampshade-Changes-the-Function-of-this-Pendant-Lamp",
-          "source_name": "Core77",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "standard",
-          "action_lane": "方向参考",
-          "axes": [
-            "情绪启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：蜂巢帘灯罩可用户自行揉捏变形，改变照明功能",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 77,
-          "innovation": 9,
-          "relevance": 10,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ]
-        },
-        {
           "id": "d55101024d22",
           "title": "Water Purifier with Antibacterial Modular Filter | Indiegogo",
           "category": "水杯",
@@ -34661,40 +34588,6 @@
           "quality_score": 77,
           "innovation": 7,
           "relevance": 10,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ]
-        },
-        {
-          "id": "916a49b351a7",
-          "title": "NDF zürich POVLAMP, the world's first interactive 3D pendant LED light",
-          "category": "氛围灯",
-          "summary": "POVLAMP，世界首款交互式3D投影吊灯，手机控制产生三维灯罩投影，交互与技术集成创新。。页面证据：designer leonardo novella from NDF zürich introduces POVLAMP, a smartphone-controlled LED pendant light with eye-catching features and lighting effects.",
-          "product_identity": "",
-          "score": 76,
-          "price_gate": "unknown",
-          "image": "https://www.designboom.com/twitterimages/uploads/2016/12/ndf-zurich-povlamp-led-designboom-01-818x365.jpg",
-          "url": "https://www.designboom.com/design/ndf-zurich-povlamp-3d-led-light-12-15-2016",
-          "source_name": "Designboom",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "方向参考",
-          "axes": [
-            "情绪启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：交互式3D投影吊灯，手机控制产生三维灯罩投影，技术集成创新",
-          "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 76,
-          "innovation": 9,
-          "relevance": 9,
           "tags": [
             "adapt",
             "deepseek_search_agent"
@@ -34771,6 +34664,41 @@
           ]
         },
         {
+          "id": "d2c27f66a61b",
+          "title": "iF Design - Kinari Cutlery",
+          "category": "创意厨具",
+          "summary": "Kinari Cutlery便携餐具套装，采用Panasonic Kinari材料（85%天然纤维复合），可堆叠、轻便、耐热，替代一次性餐具，材料创新。。页面证据：In collaboration with Panasonic, Tom Robinson Studio designed a nestling cutlery set for eating in public & on-the-go, made from Panasonic’s pioneering Kinari material - a mold-able composite made from up to 85% natural or waste fibers. The Kinari Cutlery Set offers a positive alternative to disposable cutlery, providing you with portable eating tools that are elegant, compact, heat-resistant, durable, lightweight and re-usable. The shallow grooved profiles of the fork and spoon directly reference that of a thumb and finger, providing an intuitively comfortable grip and a stack-able nestling profile that can fi",
+          "product_identity": "",
+          "score": 76,
+          "price_gate": "likely_over_35",
+          "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+          "url": "https://ifdesign.com/en/winner-ranking/project/kinari-cutlery/686962",
+          "source_name": "iF设计奖",
+          "source_family": "奖项案例",
+          "source_type": "verified_official",
+          "source_quality": "premium",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "包装启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-09-04",
+          "last_seen": "2026-09-04",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Panasonic Kinari天然纤维复合材料，可堆叠、轻便、耐热，材料创新。",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 76,
+          "innovation": 8,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "award_gallery"
+          ]
+        },
+        {
           "id": "e5bb14e656ac",
           "title": "scroll pan | designboom.com",
           "category": "创意厨具",
@@ -34799,41 +34727,6 @@
           "review_policy_version": 3,
           "quality_score": 76,
           "innovation": 8,
-          "relevance": 9,
-          "tags": [
-            "adapt",
-            "deepseek_search_agent"
-          ]
-        },
-        {
-          "id": "9e5d0ef79bd6",
-          "title": "Bellroy’s iPhone case wants to stay slim but be functional - Yanko Design",
-          "category": "手机壳",
-          "summary": "明确单品：Bellroy 专为 iPhone X 设计的皮革保护壳，创新点在于利用手机摄像头下方的闲置空间收纳卡片（如公交卡/支付卡），在保持薄型外观的同时增加功能性，属于手机壳的结构/收纳创新，证据充分，符合品类边界。。页面证据：Simple, sensible, and sufficient, much like most Bellroy products, the Leather iPhone X case looks dapper, and puts the space under your phone's camera to use by letting you store a favorite card in it, be it a business card, or your go-to payments card. A protective case for the iPhone X, Bellroy's leather case",
-          "product_identity": "",
-          "score": 76,
-          "price_gate": "unknown",
-          "image": "https://www.yankodesign.com/images/design_news/2018/05/auto-draft/card_leather_iphone_case_7.jpg",
-          "url": "https://www.yankodesign.com/2018/05/01/bellroys-iphone-case-wants-to-stay-slim-but-be-functional",
-          "source_name": "Yanko Design",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "手机壳在摄像头下方闲置空间集成卡片收纳，保持薄型外观的同时增加实用功能。",
-          "review_source": "deepseek",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 76,
-          "innovation": 7,
           "relevance": 9,
           "tags": [
             "adapt",
@@ -34873,6 +34766,41 @@
           "relevance": 8,
           "tags": [
             "buy_sample",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "8bb59b211665",
+          "title": "DUO: The 2in1 water bottle for hot & cold drinks | Indiegogo",
+          "category": "水杯",
+          "summary": "明确单品：DUO 2合1水瓶，可同时携带冷热两种饮品，共用同一杯盖饮用，双仓一体结构实现冷热分储，是水杯的结构和交互创新。。页面证据：April 13, 2019 - Carry hot & cold liquids simultaneously and drink both from the same lid. | Check out ' DUO: The 2in1 water bottle for hot & cold drinks' on Indiegogo.",
+          "product_identity": "",
+          "score": 75,
+          "price_gate": "unknown",
+          "image": "",
+          "url": "https://www.indiegogo.com/projects/duo-the-2in1-water-bottle-for-hot-cold-drinks--2",
+          "source_name": "Indiegogo",
+          "source_family": "市场信号",
+          "source_type": "market_reference",
+          "source_quality": "standard",
+          "action_lane": "适合改造",
+          "axes": [
+            "功能启发",
+            "结构启发"
+          ],
+          "image_state": "缺图",
+          "seen_count": 1,
+          "first_seen": "2026-09-04",
+          "last_seen": "2026-09-04",
+          "review_reason": "双仓同瓶独立保温冷热饮品，共用一个瓶盖与饮水口，实现热冷同时携带与饮用",
+          "review_source": "deepseek",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 75,
+          "innovation": 7,
+          "relevance": 10,
+          "tags": [
+            "adapt",
             "deepseek_search_agent"
           ]
         },
@@ -34947,6 +34875,76 @@
           ]
         },
         {
+          "id": "9998bee9efe8",
+          "title": "Fiber Pattern Lamp: A Lightweight Lamp Made by Robots - Core77",
+          "category": "氛围灯",
+          "summary": "Fiber Pattern Lamp，采用航空纤维缠绕技术和工业机器人制造，实现轻量化与独特纹理。。页面证据：Atelier Robotiq employs Aerospace fiber winding technology to make intricate designs for their lightweight lamps made by an industrial robot. Lamps are produced using 100-meter long fiber cord, which is then woven around a shape using robotic technology.",
+          "product_identity": "",
+          "score": 74,
+          "price_gate": "unknown",
+          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/343630_lead_400_41331_.jpg",
+          "url": "https://www.core77.com/projects/41331",
+          "source_name": "Core77",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "情绪启发",
+            "视觉启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-09-04",
+          "last_seen": "2026-09-04",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用航空纤维缠绕技术和工业机器人制造，实现轻量化与独特纹理",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 8,
+          "review_policy_version": 3,
+          "quality_score": 74,
+          "innovation": 9,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
+          "id": "7c4ee8271472",
+          "title": "A Japanese Desk Lamp Designed for Sketching, Based on No-Glare Surgeon's Lamps - Core77",
+          "category": "氛围灯",
+          "summary": "Balmuda The Light是明确台灯单品，创新点在于采用外科手术灯的无眩光原理，光线向外倾斜以避免阴影，并配有绘图工具收纳，功能与交互均有明确证据。。页面证据：Balmuda's The Light offers no shadows nor glare, features on-board drawing utensil storage",
+          "product_identity": "",
+          "score": 74,
+          "price_gate": "unknown",
+          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/859281_lead_400_82287_.jpg",
+          "url": "https://www.core77.com/posts/82287/A-Japanese-Desk-Lamp-Designed-for-Sketching-Based-on-No-Glare-Surgeons-Lamps",
+          "source_name": "Core77",
+          "source_family": "媒体案例",
+          "source_type": "editorial_source",
+          "source_quality": "premium",
+          "action_lane": "方向参考",
+          "axes": [
+            "功能启发",
+            "情绪启发"
+          ],
+          "image_state": "已对齐",
+          "seen_count": 1,
+          "first_seen": "2026-09-04",
+          "last_seen": "2026-09-04",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用外科手术灯无眩光原理，光向外倾斜无阴影，并带绘图工具收纳",
+          "review_source": "deepseek_backlog_recheck",
+          "review_confidence": 9,
+          "review_policy_version": 3,
+          "quality_score": 74,
+          "innovation": 8,
+          "relevance": 9,
+          "tags": [
+            "adapt",
+            "deepseek_search_agent"
+          ]
+        },
+        {
           "id": "6d7fcc4166ac",
           "title": "MagmoFlex: Flexible Magnetic Organization for Any Space",
           "category": "创意桌搭",
@@ -34982,65 +34980,29 @@
           ]
         },
         {
-          "id": "db627e891cc5",
-          "title": "Nestout's Ruggedized Power Banks with a Bottle Form Factor - Core77",
-          "category": "充电宝",
-          "summary": "Nestout户外充电宝，瓶状机身，可加装配件，防水防尘防震。页面证据：Aimed at outdoorsfolk, these ruggedized power banks are by Nestout, a subsidiary of Japanese consumer products brand Elecom. Each features USB-A and USB-C ports. They're shock-resistant, dust-proof and waterproof. The bottoms have a threaded insert so you can attach accessories, which makes more sense when they're paired with optional lighting",
+          "id": "88f3472dd53b",
+          "title": "Aim: A new lighting collection designed to reinvent task lighting - by Smart Design / Core77 Design Awards",
+          "category": "氛围灯",
+          "summary": "Aim灯具系列，多个可调点实现从聚焦到环境光切换，任务照明创新。。页面证据：This versatility is enabled by multiple points of adjustability that allow the user to transition from focused lighting to ambient lighting. By changing the character of light we can change the entire mood of the room promoting a healthier distinction between work time and home time.",
           "product_identity": "",
           "score": 74,
-          "price_gate": "unknown",
-          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1578009_lead_400_133742_.jpg",
-          "url": "https://www.core77.com/posts/133742/Nestouts-Ruggedized-Power-Banks-with-a-Bottle-Form-Factor",
+          "price_gate": "likely_over_35",
+          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1263984_title__114130_gCMqKRQR2_sharing.jpg",
+          "url": "https://designawards.core77.com/Furniture-Lighting/114130/Aim-A-new-lighting-collection-designed-to-reinvent-task-lighting",
           "source_name": "Core77",
           "source_family": "媒体案例",
           "source_type": "editorial_source",
           "source_quality": "premium",
           "action_lane": "方向参考",
           "axes": [
-            "功能启发"
+            "情绪启发"
           ],
           "image_state": "已对齐",
-          "seen_count": 1,
+          "seen_count": 2,
           "first_seen": "2026-09-04",
           "last_seen": "2026-09-04",
-          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：瓶状机身可加装配件，户外加固设计",
+          "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：传统灯笼元素与现代任务灯结合，可旋转灯头，结构创新",
           "review_source": "deepseek_backlog_recheck",
-          "review_confidence": 9,
-          "review_policy_version": 3,
-          "quality_score": 74,
-          "innovation": 7,
-          "relevance": 10,
-          "tags": [
-            "deepseek_search_agent",
-            "editorial_main"
-          ]
-        },
-        {
-          "id": "fd67c6399183",
-          "title": "Snowpeak's Folding Cutting Boards - Core77",
-          "category": "创意厨具",
-          "summary": "明确单品创意厨具：Snow Peak Folding Cutting Boards 折叠切菜板，将刀与切菜面整合并折叠，便于携带和收纳，适合野餐场景，具备结构创新，可购买样品。。页面证据：For as long as I've been seeing these things, they're consistently sold out. But for those of you lucky enough to score one, Snowpeak's Folding Cutting Boards seem a good way to transport a knife and cutting surface, at least for car-based picnics (we doubt you'll want to carry the",
-          "product_identity": "",
-          "score": 74,
-          "price_gate": "unknown",
-          "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/lead_400_36954_.jpg",
-          "url": "https://www.core77.com/posts/36954",
-          "source_name": "Core77",
-          "source_family": "媒体案例",
-          "source_type": "editorial_source",
-          "source_quality": "premium",
-          "action_lane": "适合改造",
-          "axes": [
-            "功能启发",
-            "结构启发",
-            "视觉启发"
-          ],
-          "image_state": "已对齐",
-          "seen_count": 1,
-          "first_seen": "2026-09-04",
-          "last_seen": "2026-09-04",
-          "review_reason": "可折叠并内置刀具的一体化砧板，收纳与携带结构创新显著。",
-          "review_source": "deepseek",
           "review_confidence": 8,
           "review_policy_version": 3,
           "quality_score": 74,
@@ -35052,25 +35014,26 @@
           ]
         }
       ],
-      "actual_count": 28,
+      "actual_count": 27,
       "stats": {
         "by_lane": {
           "适合改造": 22,
-          "方向参考": 6
+          "方向参考": 5
         },
         "by_category": {
           "创意厨具": 7,
-          "创意桌搭": 6,
           "氛围灯": 6,
           "水杯": 6,
-          "充电宝": 2,
+          "创意桌搭": 5,
+          "冲锋衣": 1,
+          "充电宝": 1,
           "手机壳": 1
         },
         "by_source_family": {
-          "媒体案例": 17,
-          "市场信号": 8,
+          "媒体案例": 14,
+          "市场信号": 9,
+          "奖项案例": 2,
           "设计社区": 1,
-          "奖项案例": 1,
           "社交灵感": 1
         },
         "source_quota": {
@@ -35083,7 +35046,7 @@
           "社交灵感": 3
         },
         "source_quota_fill": {
-          "奖项案例": 1,
+          "奖项案例": 2,
           "媒体案例": 6,
           "包装专项": 0,
           "设计社区": 1,
@@ -35092,7 +35055,7 @@
           "社交灵感": 1
         },
         "backfill_count": 0,
-        "emergency_fill_count": 1
+        "emergency_fill_count": 0
       }
     },
     {
@@ -103071,8 +103034,8 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "USB-C拓展坞与LCD宏键盘一体化，8K HDMI、以太网等端口集成，兼顾扩展与快捷操作",
-      "review_source": "deepseek",
+      "review_reason": "DeepSeek候选复核：USB-C拓展坞与LCD宏键盘一体化，8K HDMI、以太网等端口集成，兼顾扩展与快捷操作",
+      "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 84,
@@ -105255,6 +105218,41 @@
       "relevance": 10,
       "tags": [
         "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "23272e5a0dda",
+      "title": "The Meta Shell by WESTERN RISE — Kickstarter",
+      "category": "冲锋衣",
+      "summary": "Western Rise Meta Shell为明确单品，Kickstarter众筹的伸缩雨壳，可折叠收纳成自身配套的斜挎包，兼具旅行、户外和日常场景，收纳结构创新明显。。页面证据：May 14, 2024 · WESTERN RISE is raising funds for The Meta Shell on Kickstarter! The world's most versatile stretch rain shell. Packs into its own sling bag. The perfect jacket for travel, outdoors, everyday.",
+      "product_identity": "",
+      "score": 83,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/westernrise-bags/the-meta-shell",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "伸缩雨壳可作为外衣并折叠收纳成自带斜挎包，实现穿携一体化，结构收纳创新明确。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 83,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
@@ -108641,7 +108639,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：扩展坞集成双4K输出和物理媒体/隐私快捷键，将端口扩展与实体控制结合",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：扩展坞集成双4K输出和物理媒体/隐私快捷键，将端口扩展与实体控制结合",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -111852,7 +111850,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：模块化磁吸电源中心可自由组合插座/USB/无线充模块，解决固定接口不匹配问题",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：模块化磁吸电源中心可自由组合插座/USB/无线充模块，解决固定接口不匹配问题",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -115409,40 +115407,6 @@
       ]
     },
     {
-      "id": "c78ccea2f0d4",
-      "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device",
-      "category": "充电宝",
-      "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
-      "product_identity": "",
-      "score": 80,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
-      "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-09-04",
-      "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小太阳能充电宝，集成快充与多端口",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 80,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
       "id": "ab2dd053a508",
       "title": "Kickstarter >> ExpandaLid®: The Smart, Space-Saving Food Storage Solution by Seth Henriques",
       "category": "创意厨具",
@@ -118365,6 +118329,40 @@
       ]
     },
     {
+      "id": "c78ccea2f0d4",
+      "title": "This credit card sized solar power bank comes with fast-charging and lets you plug in any device - Yanko Design",
+      "category": "充电宝",
+      "summary": "产品：Photon信用卡大小太阳能充电宝。创新：太阳能板集成，信用卡尺寸，快充与多端口。。页面证据：https://www.kickstarter.com/projects/2004985795/sunslice-the-smallest-and-most-powerfund-solar-charger Each hour, roughly 430 quintillion Joules of energy from the sun reach earth. Each HOUR. If humanity had the apparatus to capture and store just one day's worth of that energy, it would practically offset the entire planet's energy requirements for an entire year. The sad truth is that humanity just uses 0.01% of",
+      "product_identity": "",
+      "score": 80,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2020/10/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device/Sunslice_worlds_smallest_solar_power_bank_hero.jpg",
+      "url": "https://www.yankodesign.com/2020/10/03/this-credit-card-sized-solar-power-bank-comes-with-fast-charging-and-lets-you-plug-in-any-device",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：信用卡大小太阳能充电宝，集成快充与多端口",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 80,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "0022da57f24a",
       "title": "Sleek all-black desk organizer makes all wires disappear + offers shadowless lighting - Yanko Design",
       "category": "创意桌搭",
@@ -119572,40 +119570,6 @@
       ]
     },
     {
-      "id": "e4c49947f47b",
-      "title": "This cleverly designed cooling lid brings your hot Starbucks coffee to the perfect sipping temperature",
-      "category": "水杯",
-      "summary": "KØLINGSIP travel mug with cooling lid that rapidly cools hot beverages to sip-friendly temperature, preventing tongue burns.。页面证据：https://youtu.be/kITVboPyq1I Many a tongue has fallen victim to the deceptive travel mug lid. Mine too. KØLINGSIP™ hopes to change that. Pronounced 'Cooling Sip', the KØLINGSIP™ is a travel mug with a remarkably simple and clever lid that radically cools down hot beverages to a sip-friendly temperature. Designed so that you don't accidentally burn your tongue",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2022/05/this-cleverly-designed-cooling-lid-brings-your-hot-starbucks-coffee-to-the-perfect-sipping-temperature/portable_coffee_mug_hero.jpg",
-      "url": "https://www.yankodesign.com/2022/05/29/this-cleverly-designed-cooling-lid-brings-your-hot-starbucks-coffee-to-the-perfect-sipping-temperature",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 2,
-      "first_seen": "2026-09-04",
-      "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：冷却盖快速降温至适宜饮用温度，防止烫伤",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
       "id": "0bc87e921441",
       "title": "iF Design - Smart Water Bottle",
       "category": "水杯",
@@ -119627,7 +119591,7 @@
       "seen_count": 2,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置传感器追踪饮水量，蓝牙连接APP，发光提醒，功能创新。",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置传感器追踪饮水量，蓝牙连接APP，发光提醒，功能创新。",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -119919,6 +119883,40 @@
       ]
     },
     {
+      "id": "e4c49947f47b",
+      "title": "This cleverly designed cooling lid brings your hot Starbucks coffee to the perfect sipping temperature - Yanko Design",
+      "category": "水杯",
+      "summary": "KØLINGSIP travel mug with cooling lid that rapidly cools hot beverages to sip-friendly temperature, preventing tongue burns.。页面证据：https://youtu.be/kITVboPyq1I Many a tongue has fallen victim to the deceptive travel mug lid. Mine too. KØLINGSIP™ hopes to change that. Pronounced 'Cooling Sip', the KØLINGSIP™ is a travel mug with a remarkably simple and clever lid that radically cools down hot beverages to a sip-friendly temperature. Designed so that you don't accidentally burn your tongue",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2022/05/this-cleverly-designed-cooling-lid-brings-your-hot-starbucks-coffee-to-the-perfect-sipping-temperature/portable_coffee_mug_hero.jpg",
+      "url": "https://www.yankodesign.com/2022/05/29/this-cleverly-designed-cooling-lid-brings-your-hot-starbucks-coffee-to-the-perfect-sipping-temperature",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：冷却盖快速降温至适宜饮用温度，防止烫伤",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
       "id": "518970c8ba10",
       "title": "Modo - Modular Desktop Organizer by B&A Studio — Kickstarter",
       "category": "创意桌搭",
@@ -120117,7 +120115,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：AI音频Dock集成了录音、转写、总结会议能力，硬件与AI语音处理深度结合",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：AI音频Dock集成了录音、转写、总结会议能力，硬件与AI语音处理深度结合",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -120151,7 +120149,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：智能夜灯具备机器学习用户习惯和运动检测推送通知，交互创新显著。",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：智能夜灯具备机器学习用户习惯和运动检测推送通知，交互创新显著。",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -120186,7 +120184,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：模块化3D打印回收塑料电源模块可自由组合，从桌下移上桌面管理走线",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：模块化3D打印回收塑料电源模块可自由组合，从桌下移上桌面管理走线",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 8,
       "review_policy_version": 3,
@@ -120220,7 +120218,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：pop-up运动感应LED灯，数显电池百分比，45W快充",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：pop-up运动感应LED灯，数显电池百分比，45W快充",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -120255,7 +120253,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通用锅盖带通气/滤水孔，能适配多种尺寸锅具，解决溢锅及滤水问题，结构与功能创新明确。",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：通用锅盖带通气/滤水孔，能适配多种尺寸锅具，解决溢锅及滤水问题，结构与功能创新明确。",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -120290,7 +120288,7 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：量杯形状直观表示分数，无需学习即可使用",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：量杯形状直观表示分数，无需学习即可使用",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
@@ -120300,77 +120298,6 @@
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
-      ]
-    },
-    {
-      "id": "ec6d47444f9a",
-      "title": "This Travel Bottle’s Built-in Purifier Makes Any Outdoor Water Drinkable",
-      "category": "水杯",
-      "summary": "Vitaloop旅行杯: 内置电动马达多级过滤系统，可将任何户外水源净化成安全饮用水，结构创新的饮用杯。。页面证据：\"Water water everywhere, but not a drop to drink.\" Samuel Taylor Coleridge wrote those words back in 1834, but nearly 200 years later, nothing's really changed. Whether it's water from a tap or an outdoor stream, you really don't know whether it's safe to drink. The color and smell of water will tell you only",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2023/12/465029/vitaloop_1.jpg",
-      "url": "https://www.yankodesign.com/2023/12/01/this-travel-bottles-built-in-purifier-makes-any-outdoor-water-drinkable",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发",
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-09-04",
-      "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置电动多级过滤系统，可净化户外水源",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 7,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "d013b4f08e4e",
-      "title": "Elegant Solution to Cable Management",
-      "category": "创意桌搭",
-      "summary": "OneLessDrop线缆管理器，通过上下凹槽分别固定电脑电源线和手机充电线，结构简洁，桌面整理创新。。页面证据：Our buddy Dean Heckler of his eponymous Heckler Design has something new up his sleeve called OneLessDrop. It's a simple, elegant solution to cable management. The top groove keeps your computer's power cable at the ready while the bottom groove continuously anchors your mobile phone cable. It's minimal, inconspicuous and C2C- just how I like",
-      "product_identity": "",
-      "score": 79,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2011/02/02/onelessdrop_01.jpg",
-      "url": "https://www.yankodesign.com/2011/02/02/elegant-solution-to-cable-management",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-09-04",
-      "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：上下凹槽分别固定电脑电源线和手机充电线，结构简洁有效",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 79,
-      "innovation": 7,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
       ]
     },
     {
@@ -124929,6 +124856,41 @@
       ]
     },
     {
+      "id": "d013b4f08e4e",
+      "title": "Elegant Solution to Cable Management - Yanko Design",
+      "category": "创意桌搭",
+      "summary": "OneLessDrop线缆管理器，通过上下凹槽分别固定电脑电源线和手机充电线，结构简洁，桌面整理创新。。页面证据：Our buddy Dean Heckler of his eponymous Heckler Design has something new up his sleeve called OneLessDrop. It's a simple, elegant solution to cable management. The top groove keeps your computer's power cable at the ready while the bottom groove continuously anchors your mobile phone cable. It's minimal, inconspicuous and C2C- just how I like",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2011/02/02/onelessdrop_01.jpg",
+      "url": "https://www.yankodesign.com/2011/02/02/elegant-solution-to-cable-management",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：上下凹槽分别固定电脑电源线和手机充电线，结构简洁有效",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "25516fd04d68",
       "title": "OHYO: Expandable 2Bag and Collapsible Bottle. by Guy Jeremiah and Felix Conran — Kickstarter",
       "category": "水杯",
@@ -125026,6 +124988,42 @@
       "review_policy_version": 3,
       "quality_score": 79,
       "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "ec6d47444f9a",
+      "title": "This Travel Bottle’s Built-in Purifier Makes Any Outdoor Water Drinkable - Yanko Design",
+      "category": "水杯",
+      "summary": "Vitaloop旅行杯: 内置电动马达多级过滤系统，可将任何户外水源净化成安全饮用水，结构创新的饮用杯。。页面证据：\"Water water everywhere, but not a drop to drink.\" Samuel Taylor Coleridge wrote those words back in 1834, but nearly 200 years later, nothing's really changed. Whether it's water from a tap or an outdoor stream, you really don't know whether it's safe to drink. The color and smell of water will tell you only",
+      "product_identity": "",
+      "score": 79,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2023/12/465029/vitaloop_1.jpg",
+      "url": "https://www.yankodesign.com/2023/12/01/this-travel-bottles-built-in-purifier-makes-any-outdoor-water-drinkable",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：内置电动多级过滤系统，可净化户外水源",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 79,
+      "innovation": 7,
       "relevance": 10,
       "tags": [
         "adapt",
@@ -127333,53 +127331,18 @@
       ]
     },
     {
-      "id": "ec9d253f4aff",
-      "title": "Ro lamp - by 250 Design / Core77 Design Awards",
-      "category": "氛围灯",
-      "summary": "Ro lamp is an aroma diffuser lamp with dual color temperature (orange/white light). Innovation in combining diffusion and lighting.。页面证据：Ro Lamp is an aroma diffuser lamp and you can choose an orange light resembling sunlight or a while light resembling moonlight by using the on/off button · When using the lamp, drop the aroma oil and scent on the aroma plate located at the ...",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "likely_over_35",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/442838_lead_400_49698__sharing.jpg",
-      "url": "https://designawards.core77.com/Furniture-Lighting/49698/Ro-lamp",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发",
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-09-04",
-      "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：香薰扩散灯与双色温灯泡融合，可切换日光色和白光，功能与结构创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "22cf6a4c05f1",
-      "title": "Breville Bluicer Pro",
+      "id": "17bbf110b7f0",
+      "title": "Insanely Futuristic Grill Cooks Your Steak With Light Instead of Fire: Hands-on With LUMO at CES 2026",
       "category": "创意厨具",
-      "summary": "Breville Bluicer Pro，结合榨汁机与搅拌机，专利Cold Spin Technology保护维生素，创新性高。页面证据：Aiming to create a new category of kitchen gadget, Breville's 3X Bluicer Pro combines a blender with a juicer. Patented Cold Spin Technology helps protect...",
+      "summary": "LUMO optical grill: 用光代替火烹饪牛排，无烟，三种模式，功能创新明确，CES 2026展品可买样。。页面证据：Kitchen appliances don't usually stop me dead in my tracks at CES, but a grill that cooks with light instead of fire deserves at least a few minutes of attention, right?! Cozytime brought their LUMO optical grill to CES 2026, and the pitch sounds almost too convenient to be true: restaurant-quality char marks without smoke,",
       "product_identity": "",
       "score": 78,
       "price_gate": "unknown",
-      "image": "https://uncrate.com/p/2020/01/breville-bluicer-pro.jpg",
-      "url": "https://uncrate.com/breville-bluicer-pro",
-      "source_name": "Uncrate",
-      "source_family": "市场信号",
-      "source_type": "market_reference",
+      "image": "https://www.yankodesign.com/images/design_news/2026/01/insanely-futuristic-grill-cooks-your-steak-with-light-instead-of-fire-hands-on-with-lumo-at-ces-2026/cozytime_lumo_ces2026_24.jpg",
+      "url": "https://www.yankodesign.com/2026/01/08/insanely-futuristic-grill-cooks-your-steak-with-light-instead-of-fire-hands-on-with-lumo-at-ces-2026",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
       "source_quality": "standard",
       "action_lane": "适合改造",
       "axes": [
@@ -127389,33 +127352,33 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：Bluicer Pro结合榨汁与搅拌功能，并采用Cold Spin Technology保护营养",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：使用光代替火焰烹饪，无烟高效，创新明确",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 78,
-      "innovation": 8,
-      "relevance": 10,
+      "innovation": 9,
+      "relevance": 9,
       "tags": [
-        "buy_sample",
+        "adapt",
         "deepseek_search_agent"
       ]
     },
     {
-      "id": "c168bf3d53c2",
-      "title": "The hollow structure of this vegetable peeler stores your peels!",
-      "category": "创意厨具",
-      "summary": "空心结构削皮器，内部可储存果皮，减少清理麻烦，功能创新。。页面证据：A vegetable peeler, to be honest, isn't my favorite kitchen tool. The blade always feels dangerously close to your fingers, and the mess left behind is a horror show to clean up. Not to mention, no matter how you hold it, the peeler always manages to feel uncomfortable in your hand. Hence, product designer Kevin",
+      "id": "901ae98877e0",
+      "title": "This Swiss army knife of power banks is a must-have EDC for the digital age",
+      "category": "充电宝",
+      "summary": "Modulor模块化充电宝概念，带磁吸可换组件，包括手电筒、无线充电器和U盘模块。。页面证据：Loaded with modular magnetic slots, the Modulor comes with a flashlight, a Qi wireless charger and a flash drive module to be the one gadget that solves multiple concerns. Modularity has a significant advantage because it brings so much more to the table. So why not have a power bank that does more than just",
       "product_identity": "",
       "score": 78,
       "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2019/12/auto-draft/graze_vegetable_peeler-yankoeesign12.jpg",
-      "url": "https://www.yankodesign.com/2019/12/24/the-hollow-structure-of-this-vegetable-peeler-stores-your-peels",
+      "image": "https://www.yankodesign.com/images/design_news/2021/08/this-modular-power-bank-is-the-swiss-army-knife-nerds-want-in-their-backpack/Modular-Power-Bank_Gadgets_Product-Design_02.jpg",
+      "url": "https://www.yankodesign.com/2021/08/04/this-swiss-army-knife-of-power-banks-is-a-must-have-edc-for-the-digital-age",
       "source_name": "Yanko Design",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
       "source_quality": "premium",
-      "action_lane": "适合改造",
+      "action_lane": "方向参考",
       "axes": [
         "功能启发",
         "结构启发"
@@ -127424,16 +127387,119 @@
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：空心结构储存果皮，减少清理麻烦，功能创新明确",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：模块化磁吸可换组件，集成手电筒、无线充电和U盘，扩展便携充电场景",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "73a719009776",
+      "title": "Chef-Approved Super Ceramic Sashimi Knife for Precision Cuts and Lasting Sharpness",
+      "category": "创意厨具",
+      "summary": "超级陶瓷刺身刀，采用陶瓷刀片和木质手柄搭配水牛角箍，日本工艺制造，材料创新（陶瓷）结合人体工学设计，提升切割精度和耐久性。。页面证据：https://www.youtube.com/watch?v=v28yzJUKywQ Cutting and slicing ingredients might sometimes feel mechanical, but seasoned cooks and food lovers know that there's some magic behind the seemingly mundane process. Cutting the wrong way can, for example, adversely affect not only the texture of the piece, it can even ruin its flavor. More importantly, the kind of knife used also",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2024/06/maintenance-free-ceramic-knife-makes-sashimi-and-other-dishes-even-more-delicious/super_ceramic_sashimi_knife_for_precision_hero.jpg",
+      "url": "https://www.yankodesign.com/2024/11/28/chef-approved-super-ceramic-sashimi-knife-for-precision-cuts-and-lasting-sharpness",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：陶瓷刀片材料创新，搭配传统日本工艺，提升锋利度和耐久性",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 78,
-      "innovation": 9,
+      "innovation": 8,
       "relevance": 10,
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "4b2bbdf89b18",
+      "title": "PITAKA Launches Their Latest iPhone 16 Cases: Slim, Light, Strong",
+      "category": "手机壳",
+      "summary": "PITAKA iPhone 16 case with Lumintex™ luminescent polymer fiber, emitting soft green glow after absorbing light for up to 20 minutes. Material innovation clearly described.。页面证据：Smartphones are getting more durable every generation, but there's no escaping the fact that a single wrong fall could render it useless. Protective cases increase their chances of survival at the expense of hiding their beauty, and even those clear silicone ones can sometimes make otherwise luxurious phones look cheap. If you're going to cover",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2024/09/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong/PITAKA_glow_in_the_dark_phone_cover_hero.jpg",
+      "url": "https://www.yankodesign.com/2024/09/14/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Lumintex™发光聚合物纤维，吸收光后自发光20分钟，材料创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "a0e202940c3a",
+      "title": "Solar powered Hydrade is a smart bottle with unique features!",
+      "category": "水杯",
+      "summary": "Solar powered Hydrade智能水瓶，明确单品。太阳能自充电，监测饮水量并自动记录，结合慈善捐赠功能。创新点：太阳能自充电、智能监测、公益激励。。页面证据：https://youtu.be/jpmb9A3jjhk The automatic self-charging Solar Powered Hydrade Bottle, sounds very high-tech, but is very simple to use. This insulated bottle keeps a tab on your hydration levels and monitors your intake, and even donates to charity based on how good you are with your drink! We all know that keeping yourself hydrated during the day",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2019/05/hydrade_solar_powered_smart_bottle_layout.jpg",
+      "url": "https://www.yankodesign.com/2019/05/03/solar-powered-hydrade-is-a-smart-bottle-with-unique-features",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：太阳能自充电+智能监测饮水量+慈善捐赠功能，技术集成与公益激励创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -131122,6 +131188,40 @@
       ]
     },
     {
+      "id": "22cf6a4c05f1",
+      "title": "Breville Bluicer Pro | Uncrate",
+      "category": "创意厨具",
+      "summary": "Breville Bluicer Pro，结合榨汁机与搅拌机，专利Cold Spin Technology保护维生素，创新性高。页面证据：Aiming to create a new category of kitchen gadget, Breville's 3X Bluicer Pro combines a blender with a juicer. Patented Cold Spin Technology helps protect...",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://uncrate.com/p/2020/01/breville-bluicer-pro.jpg",
+      "url": "https://uncrate.com/breville-bluicer-pro",
+      "source_name": "Uncrate",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：Bluicer Pro结合榨汁与搅拌功能，并采用Cold Spin Technology保护营养",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "cbb7ae9cb8d5",
       "title": "ILO Lamp Lets Soft Light Wander Between Rooms - Yanko Design",
       "category": "氛围灯",
@@ -131150,40 +131250,6 @@
       "review_policy_version": 3,
       "quality_score": 78,
       "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "17bbf110b7f0",
-      "title": "Insanely Futuristic Grill Cooks Your Steak With Light Instead of Fire: Hands-on With LUMO at CES 2026 - Yanko Design",
-      "category": "创意厨具",
-      "summary": "LUMO optical grill: 用光代替火烹饪牛排，无烟，三种模式，功能创新明确，CES 2026展品可买样。。页面证据：Kitchen appliances don't usually stop me dead in my tracks at CES, but a grill that cooks with light instead of fire deserves at least a few minutes of attention, right?! Cozytime brought their LUMO optical grill to CES 2026, and the pitch sounds almost too convenient to be true: restaurant-quality char marks without smoke,",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2026/01/insanely-futuristic-grill-cooks-your-steak-with-light-instead-of-fire-hands-on-with-lumo-at-ces-2026/cozytime_lumo_ces2026_24.jpg",
-      "url": "https://www.yankodesign.com/2026/01/08/insanely-futuristic-grill-cooks-your-steak-with-light-instead-of-fire-hands-on-with-lumo-at-ces-2026",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-30",
-      "last_seen": "2026-07-30",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：使用光代替火焰烹饪，无烟高效，创新明确",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 9,
       "relevance": 9,
       "tags": [
         "adapt",
@@ -131610,40 +131676,6 @@
       ]
     },
     {
-      "id": "4b2bbdf89b18",
-      "title": "PITAKA Launches Their Latest iPhone 16 Cases: Slim, Light, Strong - Yanko Design",
-      "category": "手机壳",
-      "summary": "PITAKA iPhone 16 case with Lumintex™ luminescent polymer fiber, emitting soft green glow after absorbing light for up to 20 minutes. Material innovation clearly described.。页面证据：Smartphones are getting more durable every generation, but there's no escaping the fact that a single wrong fall could render it useless. Protective cases increase their chances of survival at the expense of hiding their beauty, and even those clear silicone ones can sometimes make otherwise luxurious phones look cheap. If you're going to cover",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2024/09/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong/PITAKA_glow_in_the_dark_phone_cover_hero.jpg",
-      "url": "https://www.yankodesign.com/2024/09/14/pitaka-launches-their-latest-iphone-16-cases-slim-light-strong",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Lumintex™发光聚合物纤维，吸收光后自发光20分钟，材料创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "5d0d4c12d1f6",
       "title": "Slimmods by SLIMMODS - Indiegogo",
       "category": "手机壳",
@@ -131845,40 +131877,6 @@
       "review_policy_version": 3,
       "quality_score": 78,
       "innovation": 7,
-      "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "a0e202940c3a",
-      "title": "Solar powered Hydrade is a smart bottle with unique features! - Yanko Design",
-      "category": "水杯",
-      "summary": "Solar powered Hydrade智能水瓶，明确单品。太阳能自充电，监测饮水量并自动记录，结合慈善捐赠功能。创新点：太阳能自充电、智能监测、公益激励。。页面证据：https://youtu.be/jpmb9A3jjhk The automatic self-charging Solar Powered Hydrade Bottle, sounds very high-tech, but is very simple to use. This insulated bottle keeps a tab on your hydration levels and monitors your intake, and even donates to charity based on how good you are with your drink! We all know that keeping yourself hydrated during the day",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2019/05/hydrade_solar_powered_smart_bottle_layout.jpg",
-      "url": "https://www.yankodesign.com/2019/05/03/solar-powered-hydrade-is-a-smart-bottle-with-unique-features",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：太阳能自充电+智能监测饮水量+慈善捐赠功能，技术集成与公益激励创新",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
       "relevance": 10,
       "tags": [
         "deepseek_search_agent",
@@ -132445,6 +132443,41 @@
       ]
     },
     {
+      "id": "c168bf3d53c2",
+      "title": "The hollow structure of this vegetable peeler stores your peels! - Yanko Design",
+      "category": "创意厨具",
+      "summary": "空心结构削皮器，内部可储存果皮，减少清理麻烦，功能创新。。页面证据：A vegetable peeler, to be honest, isn't my favorite kitchen tool. The blade always feels dangerously close to your fingers, and the mess left behind is a horror show to clean up. Not to mention, no matter how you hold it, the peeler always manages to feel uncomfortable in your hand. Hence, product designer Kevin",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "unknown",
+      "image": "https://www.yankodesign.com/images/design_news/2019/12/auto-draft/graze_vegetable_peeler-yankoeesign12.jpg",
+      "url": "https://www.yankodesign.com/2019/12/24/the-hollow-structure-of-this-vegetable-peeler-stores-your-peels",
+      "source_name": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：空心结构储存果皮，减少清理麻烦，功能创新明确",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "63f697944c49",
       "title": "Multi-function Cooking Pot works as a hotpot, frying pan, and griller in one - Yanko Design",
       "category": "创意厨具",
@@ -132508,41 +132541,6 @@
       "quality_score": 78,
       "innovation": 8,
       "relevance": 10,
-      "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
-      ]
-    },
-    {
-      "id": "901ae98877e0",
-      "title": "This Swiss army knife of power banks is a must-have EDC for the digital age - Yanko Design",
-      "category": "充电宝",
-      "summary": "Modulor模块化充电宝概念，带磁吸可换组件，包括手电筒、无线充电器和U盘模块。。页面证据：Loaded with modular magnetic slots, the Modulor comes with a flashlight, a Qi wireless charger and a flash drive module to be the one gadget that solves multiple concerns. Modularity has a significant advantage because it brings so much more to the table. So why not have a power bank that does more than just",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2021/08/this-modular-power-bank-is-the-swiss-army-knife-nerds-want-in-their-backpack/Modular-Power-Bank_Gadgets_Product-Design_02.jpg",
-      "url": "https://www.yankodesign.com/2021/08/04/this-swiss-army-knife-of-power-banks-is-a-must-have-edc-for-the-digital-age",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-23",
-      "last_seen": "2026-07-23",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：模块化磁吸可换组件，集成手电筒、无线充电和U盘，扩展便携充电场景",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 9,
-      "relevance": 9,
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
@@ -133686,41 +133684,6 @@
       ]
     },
     {
-      "id": "73a719009776",
-      "title": "Chef-Approved Super Ceramic Sashimi Knife for Precision Cuts and Lasting Sharpness - Yanko Design",
-      "category": "创意厨具",
-      "summary": "超级陶瓷刺身刀，采用陶瓷刀片和木质手柄搭配水牛角箍，日本工艺制造，材料创新（陶瓷）结合人体工学设计，提升切割精度和耐久性。。页面证据：https://www.youtube.com/watch?v=v28yzJUKywQ Cutting and slicing ingredients might sometimes feel mechanical, but seasoned cooks and food lovers know that there's some magic behind the seemingly mundane process. Cutting the wrong way can, for example, adversely affect not only the texture of the piece, it can even ruin its flavor. More importantly, the kind of knife used also",
-      "product_identity": "",
-      "score": 78,
-      "price_gate": "unknown",
-      "image": "https://www.yankodesign.com/images/design_news/2024/06/maintenance-free-ceramic-knife-makes-sashimi-and-other-dishes-even-more-delicious/super_ceramic_sashimi_knife_for_precision_hero.jpg",
-      "url": "https://www.yankodesign.com/2024/11/28/chef-approved-super-ceramic-sashimi-knife-for-precision-cuts-and-lasting-sharpness",
-      "source_name": "Yanko Design",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-07-20",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：陶瓷刀片材料创新，搭配传统日本工艺，提升锋利度和耐久性",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 78,
-      "innovation": 8,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "0669954f52e9",
       "title": "iF Design - T2 little luxuries",
       "category": "创意礼盒",
@@ -133922,6 +133885,41 @@
       "review_policy_version": 3,
       "quality_score": 78,
       "innovation": 7,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "ec9d253f4aff",
+      "title": "Ro lamp - by 250 Design / Core77 Design Awards",
+      "category": "氛围灯",
+      "summary": "Ro lamp is an aroma diffuser lamp with dual color temperature (orange/white light). Innovation in combining diffusion and lighting.。页面证据：Ro Lamp is an aroma diffuser lamp and you can choose an orange light resembling sunlight or a while light resembling moonlight by using the on/off button · When using the lamp, drop the aroma oil and scent on the aroma plate located at the ...",
+      "product_identity": "",
+      "score": 78,
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/442838_lead_400_49698__sharing.jpg",
+      "url": "https://designawards.core77.com/Furniture-Lighting/49698/Ro-lamp",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发",
+        "视觉启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：香薰扩散灯与双色温灯泡融合，可切换日光色和白光，功能与结构创新。",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 78,
+      "innovation": 8,
       "relevance": 10,
       "tags": [
         "adapt",
@@ -136442,40 +136440,6 @@
       "review_policy_version": 3,
       "quality_score": 77,
       "innovation": 7,
-      "relevance": 10,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "622f02c7968d",
-      "title": "An Elegant, User-Transformable Lampshade Changes the Function of this Pendant Lamp - Core77",
-      "category": "氛围灯",
-      "summary": "具体产品为Méduse吊灯，灯罩采用蜂巢帘材料，用户可调节灯罩形状改变光照功能，实现交互创新。。页面证据：Industrial designer Lukas Bazle, who works for Ikea in Sweden but still does his own stuff on the side, devised this elegant user-adjustable Méduse lamp. It's capable of a very neat trick: The design came about because Bazle was doing what they taught us all in",
-      "product_identity": "",
-      "score": 77,
-      "price_gate": "unknown",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1344700_lead_400_119220_.jpg",
-      "url": "https://www.core77.com/posts/119220/An-Elegant-User-Transformable-Lampshade-Changes-the-Function-of-this-Pendant-Lamp",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "standard",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-09-04",
-      "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：蜂巢帘灯罩可用户自行揉捏变形，改变照明功能",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 77,
-      "innovation": 9,
       "relevance": 10,
       "tags": [
         "adapt",
@@ -140968,6 +140932,40 @@
       ]
     },
     {
+      "id": "622f02c7968d",
+      "title": "An Elegant, User-Transformable Lampshade Changes the Function of this Pendant Lamp - Core77",
+      "category": "氛围灯",
+      "summary": "具体产品为Méduse吊灯，灯罩采用蜂巢帘材料，用户可调节灯罩形状改变光照功能，实现交互创新。。页面证据：Industrial designer Lukas Bazle, who works for Ikea in Sweden but still does his own stuff on the side, devised this elegant user-adjustable Méduse lamp. It's capable of a very neat trick: The design came about because Bazle was doing what they taught us all in",
+      "product_identity": "",
+      "score": 77,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1344700_lead_400_119220_.jpg",
+      "url": "https://www.core77.com/posts/119220/An-Elegant-User-Transformable-Lampshade-Changes-the-Function-of-this-Pendant-Lamp",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "standard",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：蜂巢帘灯罩可用户自行揉捏变形，改变照明功能",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 77,
+      "innovation": 9,
+      "relevance": 10,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "d3fa38e4ee83",
       "title": "Carousel - by Pablo Designs / Core77 Design Awards",
       "category": "氛围灯",
@@ -143912,37 +143910,38 @@
       ]
     },
     {
-      "id": "916a49b351a7",
-      "title": "NDF zürich POVLAMP, the world's first interactive 3D pendant LED light",
-      "category": "氛围灯",
-      "summary": "POVLAMP，世界首款交互式3D投影吊灯，手机控制产生三维灯罩投影，交互与技术集成创新。。页面证据：designer leonardo novella from NDF zürich introduces POVLAMP, a smartphone-controlled LED pendant light with eye-catching features and lighting effects.",
+      "id": "d2c27f66a61b",
+      "title": "iF Design - Kinari Cutlery",
+      "category": "创意厨具",
+      "summary": "Kinari Cutlery便携餐具套装，采用Panasonic Kinari材料（85%天然纤维复合），可堆叠、轻便、耐热，替代一次性餐具，材料创新。。页面证据：In collaboration with Panasonic, Tom Robinson Studio designed a nestling cutlery set for eating in public & on-the-go, made from Panasonic’s pioneering Kinari material - a mold-able composite made from up to 85% natural or waste fibers. The Kinari Cutlery Set offers a positive alternative to disposable cutlery, providing you with portable eating tools that are elegant, compact, heat-resistant, durable, lightweight and re-usable. The shallow grooved profiles of the fork and spoon directly reference that of a thumb and finger, providing an intuitively comfortable grip and a stack-able nestling profile that can fi",
       "product_identity": "",
       "score": 76,
-      "price_gate": "unknown",
-      "image": "https://www.designboom.com/twitterimages/uploads/2016/12/ndf-zurich-povlamp-led-designboom-01-818x365.jpg",
-      "url": "https://www.designboom.com/design/ndf-zurich-povlamp-3d-led-light-12-15-2016",
-      "source_name": "Designboom",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
+      "price_gate": "likely_over_35",
+      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
+      "url": "https://ifdesign.com/en/winner-ranking/project/kinari-cutlery/686962",
+      "source_name": "iF设计奖",
+      "source_family": "奖项案例",
+      "source_type": "verified_official",
       "source_quality": "premium",
-      "action_lane": "方向参考",
+      "action_lane": "适合改造",
       "axes": [
-        "情绪启发"
+        "功能启发",
+        "包装启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：交互式3D投影吊灯，手机控制产生三维灯罩投影，技术集成创新",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Panasonic Kinari天然纤维复合材料，可堆叠、轻便、耐热，材料创新。",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 76,
-      "innovation": 9,
+      "innovation": 8,
       "relevance": 9,
       "tags": [
         "adapt",
-        "deepseek_search_agent"
+        "award_gallery"
       ]
     },
     {
@@ -151298,41 +151297,6 @@
       ]
     },
     {
-      "id": "d2c27f66a61b",
-      "title": "iF Design - Kinari Cutlery",
-      "category": "创意厨具",
-      "summary": "Kinari Cutlery便携餐具套装，采用Panasonic Kinari材料（85%天然纤维复合），可堆叠、轻便、耐热，替代一次性餐具，材料创新。。页面证据：In collaboration with Panasonic, Tom Robinson Studio designed a nestling cutlery set for eating in public & on-the-go, made from Panasonic’s pioneering Kinari material - a mold-able composite made from up to 85% natural or waste fibers. The Kinari Cutlery Set offers a positive alternative to disposable cutlery, providing you with portable eating tools that are elegant, compact, heat-resistant, durable, lightweight and re-usable. The shallow grooved profiles of the fork and spoon directly reference that of a thumb and finger, providing an intuitively comfortable grip and a stack-able nestling profile that can fi",
-      "product_identity": "",
-      "score": 76,
-      "price_gate": "likely_over_35",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "url": "https://ifdesign.com/en/winner-ranking/project/kinari-cutlery/686962",
-      "source_name": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_type": "verified_official",
-      "source_quality": "premium",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "包装启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-21",
-      "last_seen": "2026-07-21",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用Panasonic Kinari天然纤维复合材料，可堆叠、轻便、耐热，材料创新。",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 76,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
       "id": "026968cf4f2a",
       "title": "Red Dot Design Award: Sodium-ion power bank",
       "category": "充电宝",
@@ -152198,6 +152162,40 @@
       "review_policy_version": 3,
       "quality_score": 76,
       "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "916a49b351a7",
+      "title": "NDF zürich POVLAMP, the world's first interactive 3D pendant LED light",
+      "category": "氛围灯",
+      "summary": "POVLAMP，世界首款交互式3D投影吊灯，手机控制产生三维灯罩投影，交互与技术集成创新。。页面证据：designer leonardo novella from NDF zürich introduces POVLAMP, a smartphone-controlled LED pendant light with eye-catching features and lighting effects.",
+      "product_identity": "",
+      "score": 76,
+      "price_gate": "unknown",
+      "image": "https://www.designboom.com/twitterimages/uploads/2016/12/ndf-zurich-povlamp-led-designboom-01-818x365.jpg",
+      "url": "https://www.designboom.com/design/ndf-zurich-povlamp-3d-led-light-12-15-2016",
+      "source_name": "Designboom",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：交互式3D投影吊灯，手机控制产生三维灯罩投影，技术集成创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 76,
+      "innovation": 9,
       "relevance": 9,
       "tags": [
         "adapt",
@@ -162721,6 +162719,40 @@
       ]
     },
     {
+      "id": "88f3472dd53b",
+      "title": "Aim: A new lighting collection designed to reinvent task lighting - by Smart Design / Core77 Design Awards",
+      "category": "氛围灯",
+      "summary": "Aim灯具系列，多个可调点实现从聚焦到环境光切换，任务照明创新。。页面证据：This versatility is enabled by multiple points of adjustability that allow the user to transition from focused lighting to ambient lighting. By changing the character of light we can change the entire mood of the room promoting a healthier distinction between work time and home time.",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "likely_over_35",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1263984_title__114130_gCMqKRQR2_sharing.jpg",
+      "url": "https://designawards.core77.com/Furniture-Lighting/114130/Aim-A-new-lighting-collection-designed-to-reinvent-task-lighting",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 2,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：传统灯笼元素与现代任务灯结合，可旋转灯头，结构创新",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 7,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "6cd916b82532",
       "title": "Bottle",
       "category": "水杯",
@@ -163103,40 +163135,6 @@
       ]
     },
     {
-      "id": "88f3472dd53b",
-      "title": "Aim: A new lighting collection designed to reinvent task lighting - by Smart Design / Core77 Design Awards",
-      "category": "氛围灯",
-      "summary": "Aim灯具系列，多个可调点实现从聚焦到环境光切换，任务照明创新。。页面证据：This versatility is enabled by multiple points of adjustability that allow the user to transition from focused lighting to ambient lighting. By changing the character of light we can change the entire mood of the room promoting a healthier distinction between work time and home time.",
-      "product_identity": "",
-      "score": 74,
-      "price_gate": "likely_over_35",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1263984_title__114130_gCMqKRQR2_sharing.jpg",
-      "url": "https://designawards.core77.com/Furniture-Lighting/114130/Aim-A-new-lighting-collection-designed-to-reinvent-task-lighting",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 2,
-      "first_seen": "2026-07-17",
-      "last_seen": "2026-07-23",
-      "review_reason": "传统灯笼元素与现代任务灯结合，可旋转灯头，结构创新",
-      "review_source": "deepseek",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 74,
-      "innovation": 7,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "24ae2f54163d",
       "title": "Bottley - Solar-Powered Double Wall Smart Bottle! | Indiegogo",
       "category": "水杯",
@@ -163346,37 +163344,73 @@
       ]
     },
     {
-      "id": "db627e891cc5",
-      "title": "Nestout's Ruggedized Power Banks with a Bottle Form Factor - Core77",
-      "category": "充电宝",
-      "summary": "Nestout户外充电宝，瓶状机身，可加装配件，防水防尘防震。页面证据：Aimed at outdoorsfolk, these ruggedized power banks are by Nestout, a subsidiary of Japanese consumer products brand Elecom. Each features USB-A and USB-C ports. They're shock-resistant, dust-proof and waterproof. The bottoms have a threaded insert so you can attach accessories, which makes more sense when they're paired with optional lighting",
+      "id": "9998bee9efe8",
+      "title": "Fiber Pattern Lamp: A Lightweight Lamp Made by Robots - Core77",
+      "category": "氛围灯",
+      "summary": "Fiber Pattern Lamp，采用航空纤维缠绕技术和工业机器人制造，实现轻量化与独特纹理。。页面证据：Atelier Robotiq employs Aerospace fiber winding technology to make intricate designs for their lightweight lamps made by an industrial robot. Lamps are produced using 100-meter long fiber cord, which is then woven around a shape using robotic technology.",
       "product_identity": "",
       "score": 74,
       "price_gate": "unknown",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1578009_lead_400_133742_.jpg",
-      "url": "https://www.core77.com/posts/133742/Nestouts-Ruggedized-Power-Banks-with-a-Bottle-Form-Factor",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/343630_lead_400_41331_.jpg",
+      "url": "https://www.core77.com/projects/41331",
       "source_name": "Core77",
       "source_family": "媒体案例",
       "source_type": "editorial_source",
       "source_quality": "premium",
       "action_lane": "方向参考",
       "axes": [
-        "功能启发"
+        "情绪启发",
+        "视觉启发"
       ],
       "image_state": "已对齐",
       "seen_count": 1,
       "first_seen": "2026-09-04",
       "last_seen": "2026-09-04",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：瓶状机身可加装配件，户外加固设计",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用航空纤维缠绕技术和工业机器人制造，实现轻量化与独特纹理",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 9,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "7c4ee8271472",
+      "title": "A Japanese Desk Lamp Designed for Sketching, Based on No-Glare Surgeon's Lamps - Core77",
+      "category": "氛围灯",
+      "summary": "Balmuda The Light是明确台灯单品，创新点在于采用外科手术灯的无眩光原理，光线向外倾斜以避免阴影，并配有绘图工具收纳，功能与交互均有明确证据。。页面证据：Balmuda's The Light offers no shadows nor glare, features on-board drawing utensil storage",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/859281_lead_400_82287_.jpg",
+      "url": "https://www.core77.com/posts/82287/A-Japanese-Desk-Lamp-Designed-for-Sketching-Based-on-No-Glare-Surgeons-Lamps",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "情绪启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用外科手术灯无眩光原理，光向外倾斜无阴影，并带绘图工具收纳",
       "review_source": "deepseek_backlog_recheck",
       "review_confidence": 9,
       "review_policy_version": 3,
       "quality_score": 74,
-      "innovation": 7,
-      "relevance": 10,
+      "innovation": 8,
+      "relevance": 9,
       "tags": [
-        "deepseek_search_agent",
-        "editorial_main"
+        "adapt",
+        "deepseek_search_agent"
       ]
     },
     {
@@ -164384,41 +164418,6 @@
       "review_policy_version": 3,
       "quality_score": 74,
       "innovation": 9,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "7c4ee8271472",
-      "title": "A Japanese Desk Lamp Designed for Sketching, Based on No-Glare Surgeon's Lamps - Core77",
-      "category": "氛围灯",
-      "summary": "Balmuda The Light是明确台灯单品，创新点在于采用外科手术灯的无眩光原理，光线向外倾斜以避免阴影，并配有绘图工具收纳，功能与交互均有明确证据。。页面证据：Balmuda's The Light offers no shadows nor glare, features on-board drawing utensil storage",
-      "product_identity": "",
-      "score": 74,
-      "price_gate": "unknown",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/859281_lead_400_82287_.jpg",
-      "url": "https://www.core77.com/posts/82287/A-Japanese-Desk-Lamp-Designed-for-Sketching-Based-on-No-Glare-Surgeons-Lamps",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "功能启发",
-        "情绪启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-08-27",
-      "last_seen": "2026-08-27",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：采用外科手术灯无眩光原理，光向外倾斜无阴影，并带绘图工具收纳",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 9,
-      "review_policy_version": 3,
-      "quality_score": 74,
-      "innovation": 8,
       "relevance": 9,
       "tags": [
         "adapt",
@@ -167942,41 +167941,6 @@
       ]
     },
     {
-      "id": "9998bee9efe8",
-      "title": "Fiber Pattern Lamp: A Lightweight Lamp Made by Robots - Core77",
-      "category": "氛围灯",
-      "summary": "Fiber Pattern Lamp，采用航空纤维缠绕技术和工业机器人制造，实现轻量化与独特纹理。。页面证据：Atelier Robotiq employs Aerospace fiber winding technology to make intricate designs for their lightweight lamps made by an industrial robot. Lamps are produced using 100-meter long fiber cord, which is then woven around a shape using robotic technology.",
-      "product_identity": "",
-      "score": 74,
-      "price_gate": "unknown",
-      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/343630_lead_400_41331_.jpg",
-      "url": "https://www.core77.com/projects/41331",
-      "source_name": "Core77",
-      "source_family": "媒体案例",
-      "source_type": "editorial_source",
-      "source_quality": "premium",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发",
-        "视觉启发"
-      ],
-      "image_state": "已对齐",
-      "seen_count": 1,
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
-      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：采用航空纤维缠绕技术和工业机器人制造，实现轻量化与独特纹理",
-      "review_source": "deepseek_backlog_recheck",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 74,
-      "innovation": 9,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "d1fe0a377b26",
       "title": "Filson Fleece Lined Wax Jacket | Uncrate",
       "category": "冲锋衣",
@@ -169522,6 +169486,40 @@
       "quality_score": 74,
       "innovation": 7,
       "relevance": 9,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
+      ]
+    },
+    {
+      "id": "db627e891cc5",
+      "title": "Nestout's Ruggedized Power Banks with a Bottle Form Factor - Core77",
+      "category": "充电宝",
+      "summary": "Nestout户外充电宝，瓶状机身，可加装配件，防水防尘防震。页面证据：Aimed at outdoorsfolk, these ruggedized power banks are by Nestout, a subsidiary of Japanese consumer products brand Elecom. Each features USB-A and USB-C ports. They're shock-resistant, dust-proof and waterproof. The bottoms have a threaded insert so you can attach accessories, which makes more sense when they're paired with optional lighting",
+      "product_identity": "",
+      "score": 74,
+      "price_gate": "unknown",
+      "image": "https://s3files.core77.com/blog/images/lead_n_spotlight/1578009_lead_400_133742_.jpg",
+      "url": "https://www.core77.com/posts/133742/Nestouts-Ruggedized-Power-Banks-with-a-Bottle-Form-Factor",
+      "source_name": "Core77",
+      "source_family": "媒体案例",
+      "source_type": "editorial_source",
+      "source_quality": "premium",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：瓶状机身可加装配件，户外加固设计",
+      "review_source": "deepseek_backlog_recheck",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 74,
+      "innovation": 7,
+      "relevance": 10,
       "tags": [
         "deepseek_search_agent",
         "editorial_main"
@@ -172235,6 +172233,41 @@
       "tags": [
         "adapt",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "b449ba476838",
+      "title": "Modular Date Keepers: Yan Yunyong's Puzzle Calendar Features ...",
+      "category": "日历",
+      "summary": "TrendHunter 报道的 Yan Yunyong Puzzle Calendar 是一款模块化拼图日历，通过滑动/重排小瓷砖即可表示任意年月日，无需每年购买新日历，交互结构和便携性创新明确。。页面证据：Jan 11, 2011 · Forget about buying a new calendar with each passing year; instead, invest in a calendar with the purchase of the Puzzle Calendar. An easy date-keeping system, it features shifting tiles that can represent any day, month and year.",
+      "product_identity": "",
+      "score": 73,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.trendhunter.com/trends/puzzle-calendar",
+      "source_name": "TrendHunter",
+      "source_family": "趋势观察",
+      "source_type": "trend_source",
+      "source_quality": "premium",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "模块化拼图结构，通过滑动小瓷砖组合任意日期，可永久重复使用",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 73,
+      "innovation": 8,
+      "relevance": 10,
+      "tags": [
+        "deepseek_search_agent",
+        "editorial_main"
       ]
     },
     {
@@ -180546,6 +180579,41 @@
       "quality_score": 72,
       "innovation": 8,
       "relevance": 9,
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "8f78a4442133",
+      "title": "LEMURO: Transform Your Smartphone Into A Powerful Camera6 Pound Phone Case by Matter Neuroscience — KickstarterNext Wave Fund - start.kickstarter.comEufyMake’s Printer Surges to $4",
+      "category": "手机壳",
+      "summary": "LEMURO 是一个带4颗可拆卸镜头的手机保护壳套件，能将智能手机变为多镜头拍摄设备，属于明确手机壳单品并具有功能/配件结构创新。。页面证据：Dec 30, 2019 · Lanyard Hook Our lanyard hook will allow you to attach a strap to your phone case to wear it on your wrist or neck. We offer a set of 4 detachable lenses and a protective phone case that are available for iPhone X, iPhone 7/8 and iPhone 7plus/8plus. Our lenses come in 2 different finishings. You can choose between Black or Silver Aluminum. Matter Neuroscience is raising funds for 6 Pound Phone Case on Kickstarter! The 6 Pound Phone Case is chunky, dense, and made of stainless stee",
+      "product_identity": "",
+      "score": 72,
+      "price_gate": "unknown",
+      "image": "",
+      "url": "https://www.kickstarter.com/projects/lemuro/lemuro-transform-your-smartphone-into-a-profession",
+      "source_name": "Kickstarter",
+      "source_family": "市场信号",
+      "source_type": "market_reference",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发",
+        "视觉启发"
+      ],
+      "image_state": "缺图",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "4颗可拆卸镜头套件，将手机保护壳扩展为多镜头拍摄系统",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 72,
+      "innovation": 8,
+      "relevance": 10,
       "tags": [
         "buy_sample",
         "deepseek_search_agent"
@@ -189440,6 +189508,40 @@
       ]
     },
     {
+      "id": "17f2b29b93a4",
+      "title": "Kinetic Calendar • Digital Society Laboratory (11) | GIFs ...",
+      "category": "日历",
+      "summary": "明确概念产品 Kinetic Calendar，以同心圆结构组织并动态展示时间流逝，涉及毫秒到季节等多层级时间信息，属于日历结构/交互创新，可转化。。页面证据：Kinetic calendar's idea was to organize and show how time goes by. I organized the information through a structure of concentric circles in which I progressively used data from the International System of Units for Time, starting from milliseconds, deciseconds, seconds, minutes, hours, day phases, days of the week, number of month days, months, seasons, winds... as well as the features and tools of the customer strategy of Digital Society Laboratory.",
+      "product_identity": "",
+      "score": 71,
+      "price_gate": "unknown",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/45e15113903143.5627a0484da92.jpg",
+      "url": "https://www.behance.net/gallery/13903143/Kinetic-Calendar-Digital-Society-Laboratory/modules/96258207",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 3,
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-09-04",
+      "review_reason": "同心圆机械结构展示时间流动，交互和视觉创新明显，可转化为桌面日历。",
+      "review_source": "deepseek",
+      "review_confidence": 8,
+      "review_policy_version": 3,
+      "quality_score": 71,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "f5d413b63896",
       "title": "Vollebak’s new hoodie is fireproof, waterproof, and lasts a 100 years - Yanko Design",
       "category": "冲锋衣",
@@ -189497,40 +189599,6 @@
       "first_seen": "2026-08-31",
       "last_seen": "2026-09-01",
       "review_reason": "模块化iPhone手机壳系统，可组合不同功能模块，结构创新明确。",
-      "review_source": "deepseek",
-      "review_confidence": 8,
-      "review_policy_version": 3,
-      "quality_score": 71,
-      "innovation": 8,
-      "relevance": 9,
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "17f2b29b93a4",
-      "title": "Kinetic Calendar • Digital Society Laboratory (11) | GIFs ...",
-      "category": "日历",
-      "summary": "明确概念产品：Digital Society Laboratory的Kinetic Calendar，以同心圆结构组织时间流转，机械/交互创新，可提炼为桌面日历或装置。。页面证据：Kinetic calendar's idea was to organize and show how time goes by. I organized the information through a structure of concentric circles in which I progressively used data from the International System of Units for Time, starting from milliseconds, deciseconds, seconds, minutes, hours, day phases, days of the week, number of month days, months, seasons, winds... as well as the features and ...",
-      "product_identity": "",
-      "score": 71,
-      "price_gate": "unknown",
-      "image": "",
-      "url": "https://www.behance.net/gallery/13903143/Kinetic-Calendar-Digital-Society-Laboratory/modules/96258207",
-      "source_name": "Behance",
-      "source_family": "社交灵感",
-      "source_type": "social_signal",
-      "source_quality": "standard",
-      "action_lane": "适合改造",
-      "axes": [
-        "结构启发"
-      ],
-      "image_state": "缺图",
-      "seen_count": 2,
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "review_reason": "同心圆机械结构展示时间流动，交互和视觉创新明显，可转化为桌面日历。",
       "review_source": "deepseek",
       "review_confidence": 8,
       "review_policy_version": 3,
@@ -196834,6 +196902,40 @@
       "relevance": 9,
       "tags": [
         "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "37ac1c27a2dc",
+      "title": "CALENDAR CUBE 2014 :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Facebook Adobe, Inc.",
+      "category": "日历",
+      "summary": "CALENDAR CUBE 2014是一款通过白卡纸立方体翻面来显示12个月的日历，6+6面结构让月份切换具有交互性和展示性，属于明确日历单品且结构创新。。页面证据：A calendar on a reversible white cardboard cube. 6+6 faces for all months",
+      "product_identity": "",
+      "score": 70,
+      "price_gate": "unknown",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/6ce98512305297.5626637490cad.jpg",
+      "url": "https://www.behance.net/gallery/12305297/CALENDAR-CUBE-2014",
+      "source_name": "Behance",
+      "source_family": "社交灵感",
+      "source_type": "social_signal",
+      "source_quality": "standard",
+      "action_lane": "适合改造",
+      "axes": [
+        "结构启发"
+      ],
+      "image_state": "已对齐",
+      "seen_count": 1,
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "review_reason": "用可翻转的6+6面立方体替代传统翻页日历，将一年12个月藏于体量结构中，翻动动作提供新的时间交互体验。",
+      "review_source": "deepseek",
+      "review_confidence": 9,
+      "review_policy_version": 3,
+      "quality_score": 70,
+      "innovation": 8,
+      "relevance": 9,
+      "tags": [
+        "adapt",
         "deepseek_search_agent"
       ]
     },
