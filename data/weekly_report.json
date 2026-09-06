@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-04T05:39:58+08:00",
-  "week": "2026-W36",
-  "group_id": "2026-W36",
-  "date_start": "2026-08-31",
-  "date_end": "2026-09-06",
-  "date_label": "2026-08-31 至 2026-09-06",
-  "title": "2026-W36 选品机会周报",
+  "generated_at": "2026-09-07T04:34:10+08:00",
+  "week": "2026-W37",
+  "group_id": "2026-W37",
+  "date_start": "2026-09-07",
+  "date_end": "2026-09-13",
+  "date_label": "2026-09-07 至 2026-09-13",
+  "title": "2026-W37 选品机会周报",
   "target_count": 100,
   "actual_count": 100,
   "summary": "本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。",
@@ -16,10 +16,10 @@
       "可直接买样": 27
     },
     "by_category": {
-      "充电宝": 24,
+      "充电宝": 25,
       "创意礼盒": 12,
       "水杯": 12,
-      "氛围灯": 12,
+      "氛围灯": 11,
       "创意桌搭": 8,
       "中秋礼盒": 7,
       "手机壳": 7,
@@ -29,10 +29,10 @@
       "日历": 3
     },
     "by_axis": {
-      "功能启发": 60,
-      "结构启发": 58,
+      "功能启发": 62,
+      "结构启发": 59,
       "包装启发": 30,
-      "情绪启发": 16,
+      "情绪启发": 15,
       "视觉启发": 12
     }
   },
@@ -933,6 +933,33 @@
       ]
     },
     {
+      "id": "e7c1898083af",
+      "product_key": null,
+      "title": "Anker MagGo 3-in-1 Foldable Wireless Charging Station is a pocketable accessory for juicing-up Apple devices - Yanko Design",
+      "category": "创意桌搭",
+      "action_lane": "适合改造",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 88,
+      "score_label": "8.8",
+      "source": "Yanko Design",
+      "source_family": "媒体案例",
+      "source_quality": "premium",
+      "url": "https://www.yankodesign.com/2024/09/08/anker-maggo-3-in-1-foldable-wireless-charging-station-is-a-pocketable-accessory-for-juicing-up-apple-devices",
+      "image": "https://www.yankodesign.com/images/design_news/2024/09/anker-maggo-3-in-1-foldable-wireless-charging-station-is-a-pocketable-accessory-for-juicing-up-apple-devices/Anker-3-in-1-MagGo-foldable-wireless-charger-7.jpg",
+      "summary": "明确单品 Anker MagGo 3-in-1 可折叠无线充电站，支持 Apple 设备三合一无线充电，采用折叠成饼状的结构实现便携性，是对 Twelve South Butterfly 的改进，具有明确结构和便携创新，实际可买样。。页面证据：Anker has brought its new line of chargers to IFA 2024 that enhance your wireless charging experience and hone portability. The one making headlines is the MagSafe-compatible 3-in-1 travel charger that folds like a puck, something similar to the Twelve South Butterfly. The fold-out charger does draw inspiration from the Butterfly but improves on the",
+      "risk": "Anker MagGo 3-in-1 采用可折叠成饼状的结构，将 Apple 三设备无线充电集成为口袋级便携充电站，结构创新明确，优于常规折叠支架。",
+      "review_confidence": 9,
+      "review_reason": "Anker MagGo 3-in-1 采用可折叠成饼状的结构，将 Apple 三设备无线充电集成为口袋级便携充电站，结构创新明确，优于常规折叠支架。",
+      "next_action": "提取结构或功能点，换材质/场景重新组合",
+      "tags": [
+        "buy_sample",
+        "deepseek_search_agent"
+      ]
+    },
+    {
       "id": "39d24d86e412",
       "product_key": null,
       "title": "Hydration Made More Cool With the Collapsible elio Water Bottle",
@@ -1097,7 +1124,7 @@
     {
       "id": "94e3e1a7294e",
       "product_key": null,
-      "title": "Naya Connect Keyboard Lets You Snap On a Trackball, Numpad, or Dial - Yanko Design",
+      "title": "Naya Connect Keyboard Lets You Snap On a Trackball, Numpad, or Dial",
       "category": "创意桌搭",
       "action_lane": "适合改造",
       "axes": [
@@ -1112,9 +1139,9 @@
       "url": "https://www.yankodesign.com/2025/12/17/naya-connect-keyboard-lets-you-snap-on-a-trackball-numpad-or-dial",
       "image": "https://www.yankodesign.com/images/design_news/2025/12/naya-connect-keyboard-lets-you-snap-on-a-trackball-numpad-or-dial/naya-connect-modular-mechanical-keyboard-07.jpg",
       "summary": "明确单品：Naya Connect Keyboard。键盘两侧含磁吸连接点，可吸附轨迹球、数字键盘、旋钮、宏键盘等模块，实现模块化桌面控制台，结构/交互创新清晰。来源为媒体案例，符合创意桌搭方向。。页面证据：Most desks end up with a nice mechanical keyboard, a separate mouse, maybe a trackpad, a macro pad, and, if you work in 3D, a space controller, all fighting for room. Keyboards stay fixed layouts, even as workflows get more complex and tools multiply. Naya Connect treats the keyboard as the center of a modular",
-      "risk": "键盘通过磁吸连接点吸附轨迹球、数字键盘、旋钮等模块，实现模块化桌面控制台",
+      "risk": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：键盘通过磁吸连接点吸附轨迹球、数字键盘、旋钮等模块，实现模块化桌面控制台",
       "review_confidence": 9,
-      "review_reason": "键盘通过磁吸连接点吸附轨迹球、数字键盘、旋钮等模块，实现模块化桌面控制台",
+      "review_reason": "DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：DeepSeek候选复核：键盘通过磁吸连接点吸附轨迹球、数字键盘、旋钮等模块，实现模块化桌面控制台",
       "next_action": "提取结构或功能点，换材质/场景重新组合",
       "tags": [
         "adapt",
@@ -1942,33 +1969,6 @@
       ]
     },
     {
-      "id": "8345d71d3bfe",
-      "product_key": null,
-      "title": "Aulumu M01 Folding Wireless Charging Station :: Behance Adobe, Inc. Behance Behance search search Adobe, Inc. Adobe, Inc. SuSiFacebook SuSiFacebook Adobe, Inc. Behance Pinterest Fa",
-      "category": "创意桌搭",
-      "action_lane": "适合改造",
-      "axes": [
-        "功能启发",
-        "结构启发"
-      ],
-      "score": 85,
-      "score_label": "8.5",
-      "source": "Behance",
-      "source_family": "社交灵感",
-      "source_quality": "standard",
-      "url": "https://www.behance.net/gallery/245405249/Aulumu-M01-Folding-Wireless-Charging-Station",
-      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/ed8ada245405249.69ad42604325c.jpg",
-      "summary": "Aulumu M01 Folding Wireless Charging Station 是一款可折叠无线充电站，集成4合1充电、夜灯、可调角度MagSafe充电板，结构创新。。页面证据：3D Art, 3D Modeling, 3D Motion, Maxon Cinema 4D, Octane Render, Adobe After Effects, Davinci Resolve, Plasticity",
-      "risk": "可折叠设计集成无线充电与夜灯，结构创新",
-      "review_confidence": 8,
-      "review_reason": "可折叠设计集成无线充电与夜灯，结构创新",
-      "next_action": "提取结构或功能点，换材质/场景重新组合",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
       "id": "968d9e17cd2a",
       "product_key": null,
       "title": "Red Dot Design Award: M150 & M250",
@@ -2102,6 +2102,34 @@
       ]
     },
     {
+      "id": "872af129ff42",
+      "product_key": null,
+      "title": "LED lamp",
+      "category": "氛围灯",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发",
+        "情绪启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Good Design Award",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.g-mark.org/en/gallery/winners/9dc36eba-803d-11ed-af7e-0242ac130002",
+      "image": "https://award-attachments.g-mark.io/winners/2015/9dc36eba-803d-11ed-af7e-0242ac130002/main.jpg?size=medium",
+      "summary": "Good Design Award获奖产品Chocolight，是一款专为儿童设计的无线充电巧克力造型灯具。创新点包括：采用无线充电技术实现无充电端口，提升安全性；整灯防水；通过轻拍灯体即可开关并调节亮度。结构、交互与材料均有明确创新，是可买样的明确单品。。页面证据：Inspired from chocolate, we design this wireless charging lamp, and it has a lovely name: Chocolight. We design this lamp most for children and babies. first, the shape must be rounded. And second, it must be safe, we use wireless charging technology to make it hasn't any ports, and also waterproof. Finally, it must easy to use, so we make this lamp control by tapping, tap the lamp and it will turn on and change brightness.",
+      "risk": "无线充电巧克力灯，轻拍开关调光，无端口防水，儿童安全与交互方式创新具体",
+      "review_confidence": 9,
+      "review_reason": "无线充电巧克力灯，轻拍开关调光，无端口防水，儿童安全与交互方式创新具体",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
+      ]
+    },
+    {
       "id": "d54fc3bc6863",
       "product_key": null,
       "title": "Down Jacket",
@@ -2155,6 +2183,33 @@
       "tags": [
         "award_gallery",
         "deepseek_search_agent"
+      ]
+    },
+    {
+      "id": "4773858b5f9f",
+      "product_key": null,
+      "title": "Red Dot Design Award: Multi-Functional Fast Charging Power Bank-PB7S",
+      "category": "充电宝",
+      "action_lane": "方向参考",
+      "axes": [
+        "功能启发",
+        "结构启发"
+      ],
+      "score": 85,
+      "score_label": "8.5",
+      "source": "Red Dot",
+      "source_family": "奖项案例",
+      "source_quality": "premium",
+      "url": "https://www.red-dot.org/project/multi-functional-fast-charging-power-bank-pb7s-89325",
+      "image": "",
+      "summary": "具体产品：UGREEN All-in-One Magnetic Wireless Power Bank PB7S，创新证据：折叠外壳内含磁吸Qi2.2充电板、集成线缆和接口，可同时为多设备充电并调节支架角度。。页面证据：The UGREEN All-in-One Magnetic Wireless Power Bank series comprises compact charging units that combine a wireless charger and a power bank with stand function in one product. A foldable casing with a magnetic Qi2.2 charging pad as well as integrated...",
+      "risk": "折叠外壳集成磁吸无线充、线缆和支架，支持多设备同时充电",
+      "review_confidence": 9,
+      "review_reason": "折叠外壳集成磁吸无线充、线缆和支架，支持多设备同时充电",
+      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
+      "tags": [
+        "adapt",
+        "award_gallery"
       ]
     },
     {
@@ -2577,59 +2632,6 @@
       "risk": "采用多反射技术，单颗灯珠实现大面积均匀照明，结构和技术创新",
       "review_confidence": 9,
       "review_reason": "采用多反射技术，单颗灯珠实现大面积均匀照明，结构和技术创新",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "award_gallery"
-      ]
-    },
-    {
-      "id": "0cd6a37a5117",
-      "product_key": null,
-      "title": "An Intuitive, Solar Powered, Motion Sensor Light",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "情绪启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "Design Milk",
-      "source_family": "媒体案例",
-      "source_quality": "premium",
-      "url": "https://design-milk.com/intuitive-solar-powered-motion-sensor-light",
-      "image": "https://design-milk.com/images/2016/02/ellum-Solar-Smart-illumination-Feltmark-1.jpg",
-      "summary": "Feltmark 的 Ellum Solar 是太阳能供电壁挂灯，集成运动传感器，检测到移动自动亮起，免布线。。页面证据：Feltmark developed Ellum Solar, a smart, wall-mounted light decked out with motion sensors that will illuminate your path when it detects movement.",
-      "risk": "太阳能供电加运动传感器免布线",
-      "review_confidence": 9,
-      "review_reason": "太阳能供电加运动传感器免布线",
-      "next_action": "保留为趋势语言和内容方向，暂不直接打样",
-      "tags": [
-        "adapt",
-        "deepseek_search_agent"
-      ]
-    },
-    {
-      "id": "39c645746e14",
-      "product_key": null,
-      "title": "iF Design - Mijia Desk Study Lamp Pro",
-      "category": "氛围灯",
-      "action_lane": "方向参考",
-      "axes": [
-        "结构启发",
-        "情绪启发"
-      ],
-      "score": 83,
-      "score_label": "8.3",
-      "source": "iF设计奖",
-      "source_family": "奖项案例",
-      "source_quality": "premium",
-      "url": "https://ifdesign.com/en/winner-ranking/project/mijia-desk-study-lamp-pro/730668",
-      "image": "https://images.ctfassets.net/9el74s703hin/7KU8NX9CLnATk4ZXk9pETO/c68961f9085f82758264f09fe7542bbe/Screenshot_2022-03-08_at_10.13.29.png",
-      "summary": "米家台灯Pro（Mijia Desk Study Lamp Pro）是明确可用的台灯单品，出自iF设计奖。创新点包括：行业首创水平微结构光罩防眩光、双光源全光谱LED减少桌面阴影、双旋转轴调节高度角度、触控旋钮与环形指示灯、双传感器实现自动亮度和入座/离开开关的隐形交互。。页面证据：This Lamp is designed for the healthy eye care needs of children and teenagers during study.It features an innovative dual-light source design with full-spectrum LED beads, which helps reduce desktop shadows.The industry's first horizontal micro-structured light cover helps prevent glare.The lamp can adjust the height and angle of the light source by two rotation axes.The touch-sensitive knob and ring indicator on the lamp make operation more intuitive. Equipped with dual sensors, it automatically adjusts brightness, turns on/off upon sitting/leaving,",
-      "risk": "水平微结构光罩防眩光、双光源全光谱+双传感器自动调光，台灯功能创新明确。",
-      "review_confidence": 9,
-      "review_reason": "水平微结构光罩防眩光、双光源全光谱+双传感器自动调光，台灯功能创新明确。",
       "next_action": "保留为趋势语言和内容方向，暂不直接打样",
       "tags": [
         "adapt",
