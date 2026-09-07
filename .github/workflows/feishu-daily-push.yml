@@ -36,9 +36,11 @@ on:
     - cron: "10 13 * * 1-5"
     - cron: "20 13 * * 1-5"
     - cron: "30 13 * * 1-5"
-    # Final missed-trigger watchdog at 23:20 Beijing. It is idempotent: the
-    # send script skips when today's log already contains sent=true.
+    # Final missed-trigger watchdogs at 23:20 and 23:40 Beijing. They are
+    # idempotent: the send script skips when today's log already contains
+    # sent=true.
     - cron: "20 15 * * 1-5"
+    - cron: "40 15 * * 1-5"
   workflow_dispatch:
     inputs:
       force_send:
@@ -64,7 +66,10 @@ concurrency:
 
 jobs:
   push-feishu-daily:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    # A failed Insight Pool run may still have committed a complete older day
+    # or partial recovery data. Always let the idempotent recovery checker run
+    # for completed workflow_run events instead of discarding those failures.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
