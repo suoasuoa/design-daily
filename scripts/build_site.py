@@ -445,13 +445,28 @@ def merge_historical_snapshots(groups, previous_groups, current_date):
     for group in groups:
         day = group.get("date", "")
         previous = previous_by_date.get(day)
-        if not previous or day >= current_date:
+        # Keep the current-day snapshot monotonic as well as historical
+        # snapshots. Separate top-up runs rebuild the pool from products.json;
+        # without this merge, a later run can re-apply category/source caps and
+        # silently remove picks that an earlier run already accepted today.
+        if not previous or day > current_date:
             continue
 
         target = int(group.get("target_count") or LEGACY_DAILY_TARGET)
         merged = []
         seen = set()
-        for item in list(previous.get("items") or []) + list(group.get("items") or []):
+        previous_items = list(previous.get("items") or [])
+        if day == current_date:
+            # Current-day groups contain normalized display records. Ignore
+            # skeletal test/legacy snapshots here; only preserve records that
+            # still have the fields required for a real daily card. This keeps
+            # accepted picks monotonic without resurrecting malformed entries.
+            previous_items = [
+                item
+                for item in previous_items
+                if item.get("id") and item.get("title") and item.get("category")
+            ]
+        for item in previous_items + list(group.get("items") or []):
             key = dedupe_key(item)
             if key in seen:
                 continue
