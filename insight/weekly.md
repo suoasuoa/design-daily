@@ -3,7 +3,7 @@
 本周推荐按买样、改造、方向参考分流，优先服务选品会讨论和后续人工筛选。
 
 - 推荐数量：100 / 100
-- 生成时间：2026-09-09T05:39:22+08:00
+- 生成时间：2026-09-10T05:08:07+08:00
 
 ## 行动分布
 
@@ -361,7 +361,19 @@ Advertising, Packaging, PS AI, Midjourney 广东人“爱在心口难开”的�
 
 LARQ Black + Clay Bottle Movement，内置UV-C LED灯，可自清洁瓶身和净化水质，材料与功能创新。。页面证据：A reusable water bottle pays for itself in a just a short amount of time and it's a simple change we can all do to help the environment!
 
-### 30. Power Cube Titan— 65W & Qi 25W Solid-State 6-in-1 Power Bank
+### 30. LARQ bottle by LARQ | Dezeen Awards | Winners
+
+- 品类：水杯
+- 路径：适合改造
+- 启发：功能启发
+- 分数：8.9
+- 来源：Dezeen
+- 下一步：提取可借鉴元素，做同品类差异化改造
+- 链接：https://www.dezeen.com/awards/2019/winners/larq-bottle
+
+明确单品 LARQ Bottle：自清洁水瓶采用 UV-C LED 技术，在瓶盖内集成紫外消毒机制解决水瓶难清洁问题，材料与交互创新明确。。页面证据：The minimalist LARQ bottle cleans itself using UV light using LED technology, for people troubled by the hygiene of tricky-to-wash reusable water bottles.
+
+### 31. Power Cube Titan— 65W & Qi 25W Solid-State 6-in-1 Power Bank
 
 - 品类：充电宝
 - 路径：适合改造
@@ -373,7 +385,7 @@ LARQ Black + Clay Bottle Movement，内置UV-C LED灯，可自清洁瓶身和净
 
 明确单品：Power Cube Titan 6合1充电宝，固态电池、65W GaN、Qi2.2、内置双线、内置插头与隐藏支架，功能/结构创新突出。页面证据：Jan 9, 2026 · Fire-Resistant Solid-State | 65W GaN | Qi2.2 | Dual Built-in C-to-C & Lightning | Built-in Plug + Desk-Length Extension | Hidden Stand
 
-### 31. iF Design - RHINOSHIELD AirX
+### 32. iF Design - RHINOSHIELD AirX
 
 - 品类：手机壳
 - 路径：适合改造
@@ -385,7 +397,7 @@ LARQ Black + Clay Bottle Movement，内置UV-C LED灯，可自清洁瓶身和净
 
 RHINOSHIELD AirX手机壳，内部损伤保护系统（类似安全气囊）、360°环绕空气缓冲、嵌入式按钮、单材料可回收设计，结构创新突出。。页面证据：Engineered for Extreme Protection, Inside and out Internal Damage Protection System acts like an airbag for your phone. Multi-layered protection isolates 81% of impact, reducing the risk of internal damage. 360° wraparound air-cushioning with embedded buttons to soften side-impact damage. 30x extended durability—built to withstand repeated impact without performance decline. Committed to mono-material design for 100% recyclability and full circularity. Material-led, function-shaped—a futuristic expression of air-flux aesthetics. Dual-side pressure relief chambers sculpted for grip — comfort even in extended use.
 
-### 32. This Game-Changing Table Mat Wirelessly Charges your Keyboard, Mouse, Smartphone, and AirPods - Yanko Design
+### 33. This Game-Changing Table Mat Wirelessly Charges your Keyboard, Mouse, Smartphone, and AirPods - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -397,7 +409,7 @@ RHINOSHIELD AirX手机壳，内部损伤保护系统（类似安全气囊）、3
 
 明确产品：JSD Mat桌面无线充电垫。创新点：整张桌垫可任意位置无线充电键盘鼠标手机等，突破定点充电局限。。页面证据：https://youtu.be/sYIFtajRjj0 The JSD Mat does what Apple's AirPower Mat couldn't do... and more than that, it's a real, existing product. It's the year 2023 and we really haven't achieved the full potential with wireless chargers. Even today, a majority of wireless chargers can only charge a tiny handful of devices at a time - your
 
-### 33. Mobile: A phone case that does more, with zero bulk. by Peak Design — Kickstarter
+### 34. Mobile: A phone case that does more, with zero bulk. by Peak Design — Kickstarter
 
 - 品类：手机壳
 - 路径：适合改造
@@ -409,7 +421,7 @@ RHINOSHIELD AirX手机壳，内部损伤保护系统（类似安全气囊）、3
 
 Peak Design Mobile phone case is only 2.4mm thin but includes a built-in grip and a brilliant mounting system. It is a specific phone case with innovation in slim profile and integrated functionality.。页面证据：Peak Design is raising funds for Mobile: A phone case that does more, with zero bulk. on Kickstarter! Total protection + built-in grip + brilliant mounting system, in a 2.4mm slim case.
 
-### 34. 3.8mm The World's Thinnest Power Bank by bo wang - Indiegogo
+### 35. 3.8mm The World's Thinnest Power Bank by bo wang - Indiegogo
 
 - 品类：充电宝
 - 路径：适合改造
@@ -421,7 +433,7 @@ Peak Design Mobile phone case is only 2.4mm thin but includes a built-in grip an
 
 Sylphene 石墨烯卡片式充电宝，厚度仅3.8mm，号称世界最薄，采用石墨烯技术，便携性和形态创新显著。。页面证据：Sylphene | Graphene Card-Style Portable Charger.Sylphene is more than just a power bank—it’s a step toward the future of portable charging.
 
-### 35. Anker MagGo 3-in-1 Foldable Wireless Charging Station is a pocketable accessory for juicing-up Apple devices - Yanko Design
+### 36. Anker MagGo 3-in-1 Foldable Wireless Charging Station is a pocketable accessory for juicing-up Apple devices - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -433,7 +445,7 @@ Sylphene 石墨烯卡片式充电宝，厚度仅3.8mm，号称世界最薄，采
 
 明确单品 Anker MagGo 3-in-1 可折叠无线充电站，支持 Apple 设备三合一无线充电，采用折叠成饼状的结构实现便携性，是对 Twelve South Butterfly 的改进，具有明确结构和便携创新，实际可买样。。页面证据：Anker has brought its new line of chargers to IFA 2024 that enhance your wireless charging experience and hone portability. The one making headlines is the MagSafe-compatible 3-in-1 travel charger that folds like a puck, something similar to the Twelve South Butterfly. The fold-out charger does draw inspiration from the Butterfly but improves on the
 
-### 36. Hydration Made More Cool With the Collapsible elio Water Bottle
+### 37. Hydration Made More Cool With the Collapsible elio Water Bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -445,7 +457,7 @@ Sylphene 石墨烯卡片式充电宝，厚度仅3.8mm，号称世界最薄，采
 
 elio 可折叠水杯，从1英寸扁盘展开至750ml，极致便携结构创新明确。页面证据：Is your current water bottle bulky? The elio is a collapsable water bottle that starts at a minuscule 1" tall disc that expands to hold 750ml.
 
-### 37. 14 Levels – Packaging Of The World
+### 38. 14 Levels – Packaging Of The World
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -457,7 +469,7 @@ elio 可折叠水杯，从1英寸扁盘展开至750ml，极致便携结构创新
 
 14 Levels fragrance gift box with integrated pamphlet and rounded pull-out inserts in a sleek sleeve, offering a unique unboxing experience.。页面证据：The packaging design of this fragrance is built as a gift box set, and is unique in it’s combined pamphlet, rounded inserts that pull out easily, and sleek cover sleeve.
 
-### 38. Illui Truffles – Packaging Of The World
+### 39. Illui Truffles – Packaging Of The World
 
 - 品类：创意礼盒
 - 路径：适合改造
@@ -469,7 +481,7 @@ elio 可折叠水杯，从1英寸扁盘展开至750ml，极致便携结构创新
 
 明确产品：Illui Truffles松露礼盒。创新点：包装可展开为托盘，抽屉式结构， sleeves作为托盘腿，兼具复用功能。。页面证据：Limited edition gift packaging for truffles which becomes a serving tray after being given to the recipient.The construction consists of a drawer, two sleeves and inserts. After being fully extended, the sleeves can be used as serving tray legs.
 
-### 39. DiFOLD designs the collapsible and reusable 'origami bottle'
+### 40. DiFOLD designs the collapsible and reusable 'origami bottle'
 
 - 品类：水杯
 - 路径：适合改造
@@ -481,7 +493,7 @@ elio 可折叠水杯，从1英寸扁盘展开至750ml，极致便携结构创新
 
 Jun 18, 2020 · devised around the principle idea of reducing packaging waste while creating a stylish water flask, the team at DiFOLD has designed the origami bottle. foldable, reusable, and recyclable, the ...
 
-### 40. 水プロジェクト
+### 41. 水プロジェクト
 
 - 品类：水杯
 - 路径：适合改造
@@ -493,7 +505,7 @@ Jun 18, 2020 · devised around the principle idea of reducing packaging waste wh
 
 明确单品：MUJI水项目配套的可重复使用扁平水瓶‘My Bottle’，与公共饮水机联动，app可查看供水点与减碳量；结构上采用扁平易携设计，属于结构+交互创新。。页面证据：プラスチックごみ削減のため、誰もが無料で使える給水機を無印良品の店舗に設置し、水は買わず持ち歩く事を提案。給水機はフィルターを通した水道水を使用。繰り返し使える水のボトルは給水機の利用を促進。ボトルは持ち歩きやすいフラットな形とサイズ。アプリは給水スポットや給水量、給水したことによるCO₂削減量が分かる仕様。
 
-### 41. Stay Hydrated with a Reusable, Minimalist memobottle
+### 42. Stay Hydrated with a Reusable, Minimalist memobottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -505,7 +517,7 @@ Jun 18, 2020 · devised around the principle idea of reducing packaging waste wh
 
 Dometic GO Hydration Water Jug 11L 水壶，具有通用Nalgene瓶口可加滤芯、舒适提手和绑带，结构创新便携。。页面证据：Size matters on a hot summer day, I have to say. It’s also got comfortable webbed handles and built-in tie-down guides for easy carrying and transport. But, the best thing of all is the universal Nalgene top, making it a breeze to hook in your accessories, like a filter, for even more use.
 
-### 42. Naya Create | The Keyboard that Transforms with You
+### 43. Naya Create | The Keyboard that Transforms with You
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -517,7 +529,7 @@ Dometic GO Hydration Water Jug 11L 水壶，具有通用Nalgene瓶口可加滤�
 
 Naya Create 是 Kickstarter 上的模块化人体工学键盘，支持无限自定义组合与可变形态，直接服务桌面输入场景，具备明确结构和交互创新。。页面证据：Nov 7, 2023 · Naya is raising funds for Naya Create | The Keyboard that Transforms with You on Kickstarter! The Infinitely Customizable Modular Ergonomic Keyboard for 21st Century Digital Creators.
 
-### 43. Naya Connect Keyboard Lets You Snap On a Trackball, Numpad, or Dial - Yanko Design
+### 44. Naya Connect Keyboard Lets You Snap On a Trackball, Numpad, or Dial - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -529,7 +541,7 @@ Naya Create 是 Kickstarter 上的模块化人体工学键盘，支持无限自�
 
 明确单品：Naya Connect Keyboard。键盘两侧含磁吸连接点，可吸附轨迹球、数字键盘、旋钮、宏键盘等模块，实现模块化桌面控制台，结构/交互创新清晰。来源为媒体案例，符合创意桌搭方向。。页面证据：Most desks end up with a nice mechanical keyboard, a separate mouse, maybe a trackpad, a macro pad, and, if you work in 3D, a space controller, all fighting for room. Keyboards stay fixed layouts, even as workflows get more complex and tools multiply. Naya Connect treats the keyboard as the center of a modular
 
-### 44. memobottle - A4, A5 & Letter Reusable Water Bottles by memobottle » memobottle - A4, A5 & Letter Reusable Water Bottles by memobottle — Kickstarter
+### 45. memobottle - A4, A5 & Letter Reusable Water Bottles by memobottle » memobottle - A4, A5 & Letter Reusable Water Bottles by memobottle — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -541,7 +553,7 @@ Naya Create 是 Kickstarter 上的模块化人体工学键盘，支持无限自�
 
 明确单品：memobottle 可重复使用水瓶，核心创新为扁平 A4/A5/Letter 尺寸结构，可放入笔记本包侧袋，属于结构创新的便携水杯，证据充分。。页面证据：The memobottle fits in your bag alongside your laptop and books. Together we can reduce the consumption of single-use bottles.
 
-### 45. A Sweat-Proof Gaming Mouse - Core77
+### 46. A Sweat-Proof Gaming Mouse - Core77
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -553,7 +565,7 @@ Naya Create 是 Kickstarter 上的模块化人体工学键盘，支持无限自�
 
 明确单品：Marsback Zephyr Pro 游戏鼠标。创新点：为易出汗玩家设计，具备防汗/通风结构，解决游戏时手汗问题，属于桌面输入设备的功能创新。。页面证据："The right mouse is the most critical weapon in your PC-gaming arsenal," says product designer Gary Lin, who admits he has "glands that produce excessive sweat while gaming." Lin, a designer for PC hardware manufacturer Marsback, was in a position to do something about it. Lin designed the Zephyr Pro,
 
-### 46. 鹈鹕去充电案例 | Uncrate
+### 47. 鹈鹕去充电案例 | Uncrate
 
 - 品类：手机壳
 - 路径：适合改造
@@ -565,7 +577,7 @@ Naya Create 是 Kickstarter 上的模块化人体工学键盘，支持无限自�
 
 Pelican Go Charge Case: rugged protective phone case with integrated removable 10,000 mAh battery, IP67 waterproof, floats, wireless charging, USB port for other devices, handle and carabiner loop. Clearly a portable charging product with combined protection and power innovation.。页面证据：在Pelican Go Charge Case中同时保持手机充电和保护。防摔外壳是IP67防护等级，非常适合户外探险，可抵御水和灰尘的侵袭，如果掉落到舷外也可以漂浮。内部，一个可拆卸的10,000 mAh电池组可为基于Qi的设备提供无线充电，并具有一个micro-USB端口，可为其他小工具（如平板电脑，相机和扬声器）充电，并具有足够的电量为手机充电四次。它还具有一体式手柄，便于携带，也可以将其连接到登山扣上，以实现免提运输。内部长度：7英寸/内部宽度：3.5英寸/内部深度：1.6英寸/外部长度：10.63英寸/外部宽度：5.39英寸/外部深度：2.42英寸...
 
-### 47. Red Dot Design Award: LARQ Bottle
+### 48. Red Dot Design Award: LARQ Bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -577,7 +589,7 @@ Pelican Go Charge Case: rugged protective phone case with integrated removable 1
 
 LARQ Bottle利用专利LED紫外线技术自动清洁水质，无需化学物质，实现随行净水，是水杯功能创新的代表。。页面证据：Good quality drinking water is vital for people worldwide; however, in many parts of the world, it is not always readily available. Against this backdrop, LARQ represents an impressively innovative development, as this system is capable of automatically...
 
-### 48. Kickstarter >> Fluora – A Glow Lantern with Built-in Flashlight by PoleShine
+### 49. Kickstarter >> Fluora – A Glow Lantern with Built-in Flashlight by PoleShine
 
 - 品类：氛围灯
 - 路径：适合改造
@@ -589,7 +601,7 @@ LARQ Bottle利用专利LED紫外线技术自动清洁水质，无需化学物质
 
 Fluora 是透明360°氛围提灯，内置荧光液体核心并集成顶部手电，三合一防风雨，功能与结构创新明确。。页面证据：January 22, 2026 - A transparent 360° ambient lantern / A mesmerizing fluorescent liquid core / A powerful top flashlight / 3 in 1 weatherproof light
 
-### 49. This circuit board desk integrates a cabling solution to give you the ultimate wire-free desk setup! - Yanko Design
+### 50. This circuit board desk integrates a cabling solution to give you the ultimate wire-free desk setup! - Yanko Design
 
 - 品类：创意桌搭
 - 路径：适合改造
@@ -601,7 +613,7 @@ Fluora 是透明360°氛围提灯，内置荧光液体核心并集成顶部手�
 
 具体产品为电路板桌，集成线缆管理方案，通过桌面结构创新实现无线桌面。。页面证据：As I write from my desk, a countless number of wires hang on and tangle between my legs: the trio of cables coming from my WiFi Router, the designated spots for my phone and laptop chargers, along with some other wires whose purposes remain unknown to me. Surely, the mess of wires underneath my desk
 
-### 50. TEÏDO™ Drink everywhere with Next-Gen twin tech water bottle
+### 51. TEÏDO™ Drink everywhere with Next-Gen twin tech water bottle
 
 - 品类：水杯
 - 路径：适合改造
@@ -613,7 +625,7 @@ Fluora 是透明360°氛围提灯，内置荧光液体核心并集成顶部手�
 
 TEÏDO self-powered water bottle with NASA membrane filtration and UV-C.。页面证据：TEÏDO harness NASA membrane filtration combined to UV-C to bring drinking water in a light self-powered water bottle.
 
-### 51. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
+### 52. Electricsalt Spoon ES-S002、 Electricsalt Cup ES-B001
 
 - 品类：创意厨具
 - 路径：适合改造
@@ -625,7 +637,7 @@ TEÏDO self-powered water bottle with NASA membrane filtration and UV-C.。页�
 
 Good Design Award · This design targets people who need to reduce salt intake for health reasons and those who wish to do so by changing their diet. It makes lightly seasoned meals healthier and more enjoyable. The tableware and cutlery act as tools to help start and ma
 
-### 52. 6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡
+### 53. 6-in-1 Power Bank Charger with AC Plug And Built-in Cables⚡
 
 - 品类：充电宝
 - 路径：适合改造
@@ -637,7 +649,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 明确单品：Amplyte 6合1移动电源，内置AC插头与双端线，支持无线快充和智能手表充电，并带手机支架；功能集成度高，便携指向明确。。页面证据：Wireless Charging | Super Powerful & Fast Charging | AC Plug & Dual-End Cable | Smartwatch Compatible | Pocket Size | Phone Stand. For creators For creators Log in.
 
-### 53. Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77
+### 54. Finally, a Reusable Bottle That Unscrews in the Middle for Cleaning - Core77
 
 - 品类：水杯
 - 路径：适合改造
@@ -649,7 +661,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 可重复使用水瓶，中间可拧开清洁，解决清洗难题，结构创新，明确为水杯。。页面证据：You can show up at your gym drinkless and buy overpriced beverages there, or you can save a few bucks (and the environment) and carry your own refillable bottle. As someone in the latter camp, I haven't been able to find a bottle I can easily clean the inside of,...
 
-### 54. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
+### 55. LARQ Bottle - Water Purification in a Self-Cleaning... — Kickstarter
 
 - 品类：水杯
 - 路径：适合改造
@@ -661,7 +673,7 @@ Good Design Award · This design targets people who need to reduce salt intake f
 
 LARQ Bottle自清洁水杯，UV-C LED消除99.9999%生物污染物，兼具保温/净化功能，明确单品，功能创新。。页面证据：Justin Wang さんはLARQ Bottle - Water Purification in a Self-Cleaning Bottle としてファンディングを開始しました。 No more stinky water bottles. LARQ harness UV-C LED light to eliminate 99.9999% of bio-contaminants from your water and bottle.
 
-### 55. Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77
+### 56. Collapsible, Reusable Water Bottle Gets 500% Funded on Kickstarter - Core77
 
 - 品类：水杯
 - 路径：适合改造
@@ -672,18 +684,6 @@ LARQ Bottle自清洁水杯，UV-C LED消除99.9999%生物污染物，兼具保�
 - 链接：https://www.core77.com/posts/100354/Collapsible-Reusable-Water-Bottle-Gets-500-Funded-on-Kickstarter
 
 Stojo 20盎司硅胶水瓶可折叠成球体，便携结构创新，解决空瓶收纳问题。。页面证据：It doesn't collapse down quite as small as that DiFOLD Origami Bottle, but this 20-ounce silicone water bottle by Stojo "collapses into a polite sphere when empty," the brand writes. The brand, started by a trio of NYC-based dads, got their start
-
-### 56. LARQ Bottle PureVis 2: Purify. Track. Self-cleaning. — Kickstarter
-
-- 品类：水杯
-- 路径：适合改造
-- 启发：功能启发
-- 分数：8.6
-- 来源：Kickstarter
-- 下一步：提取可借鉴元素，做同品类差异化改造
-- 链接：https://www.kickstarter.com/projects/livelarq/larq-bottle-purevis-2-purify-track-self-cleaning
-
-LARQ Bottle PureVis 2集成两级净化和App跟踪，自清洁功能升级，技术创新明显。。页面证据：The smarter and better self-cleaning bottle with two-stage purification and new app integration for hydration tracking and reminders.
 
 ### 57. Sunflower X: Smarter Sleep with AI Sensing & Sunrise Light by ...
 
