@@ -1,13 +1,13 @@
 {
-  "calls": 5453,
+  "calls": 5065,
   "completion_tokens": 0,
   "components": {
     "category_review": {
-      "calls": 4752,
+      "calls": 4944,
       "total_tokens": 0
     },
     "search_agent": {
-      "calls": 700,
+      "calls": 120,
       "total_tokens": 0
     },
     "trend_report": {
@@ -15,11 +15,11 @@
       "total_tokens": 0
     }
   },
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "prompt_tokens": 0,
   "runs": {
-    "39487910400": {
-      "calls": 5453
+    "39667121053": {
+      "calls": 5065
     }
   },
   "total_tokens": 0
